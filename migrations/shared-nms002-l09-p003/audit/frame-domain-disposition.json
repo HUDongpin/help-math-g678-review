@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l09-p003",
+  "sourceSha256": "d6841b40ee8da4857ba9075944c2393ee214e056373fe10abd2f0c2b2a375ebd",
+  "sourceStructureFingerprintSha256": "d342ae6aed23631a8e0ee0c2a2506d32dd9552570063d11d4e2f93ffcf0b0562",
+  "domainCount": 11,
+  "claimBoundary": "all statically root-reachable frame domains enumerated; candidate drawing queries do not establish original natural traces or fidelity",
+  "domains": [
+    {"frameDomainId":"root","sourceFrames":10,"parents":[],"sourcePlacementFrames":[],"disposition":"Preloader stop at 1; begin and stop at 6; root Canvas export retains main, title, title sprite and border.","candidateQueryable":true,"originalNaturalTraceAccepted":false},
+    {"frameDomainId":"sprite-246","sourceFrames":635,"parents":["root"],"sourcePlacementFrames":[6],"disposition":"Direct root main; one frame-635 stop; private root-held drawing candidate queries 1..635.","candidateQueryable":true,"originalNaturalTraceAccepted":false},
+    {"frameDomainId":"sprite-249","sourceFrames":1,"parents":["root"],"sourcePlacementFrames":[6],"disposition":"Static root sibling title ornament; retained in root export.","candidateQueryable":true,"originalNaturalTraceAccepted":false},
+    {"frameDomainId":"sprite-10","sourceFrames":607,"parents":["sprite-246"],"sourcePlacementFrames":[1],"disposition":"Nested graphics clock; source Canvas expression retained but natural-trace parity open.","candidateQueryable":true,"originalNaturalTraceAccepted":false},
+    {"frameDomainId":"sprite-23","sourceFrames":442,"parents":["sprite-246"],"sourcePlacementFrames":[1],"disposition":"Nested graphics clock; source Canvas expression retained but natural-trace parity open.","candidateQueryable":true,"originalNaturalTraceAccepted":false},
+    {"frameDomainId":"sprite-28","sourceFrames":610,"parents":["sprite-246"],"sourcePlacementFrames":[1],"disposition":"Nested graphics clock; source Canvas expression retained but natural-trace parity open.","candidateQueryable":true,"originalNaturalTraceAccepted":false},
+    {"frameDomainId":"sprite-55","sourceFrames":200,"parents":["sprite-246"],"sourcePlacementFrames":[1],"disposition":"Nested graphics clock; source Canvas expression retained but natural-trace parity open.","candidateQueryable":true,"originalNaturalTraceAccepted":false},
+    {"frameDomainId":"sprite-74","sourceFrames":520,"parents":["sprite-246"],"sourcePlacementFrames":[1],"disposition":"Nested graphics clock; source Canvas expression retained but natural-trace parity open.","candidateQueryable":true,"originalNaturalTraceAccepted":false},
+    {"frameDomainId":"sprite-88","sourceFrames":23,"parents":["sprite-246"],"sourcePlacementFrames":[1],"disposition":"Two instances on the main at frame 1; draw-time subframe progression retained, original trace open.","candidateQueryable":true,"originalNaturalTraceAccepted":false},
+    {"frameDomainId":"sprite-101","sourceFrames":22,"parents":["sprite-246"],"sourcePlacementFrames":[1,554,623],"disposition":"Reused nested symbol at three main-frame placements; exact lifecycle/clock restart needs original-runtime validation.","candidateQueryable":true,"originalNaturalTraceAccepted":false},
+    {"frameDomainId":"sprite-241","sourceFrames":19,"parents":["sprite-246"],"sourcePlacementFrames":[620],"disposition":"Late nested symbol; first placed at main frame 620, not at page start.","candidateQueryable":true,"originalNaturalTraceAccepted":false}
+  ]
+}
