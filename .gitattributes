@@ -1,0 +1,11 @@
+# Frozen generated candidate renderers are hash-bound evidence. Treat them as
+# opaque bytes so Git never normalizes or whitespace-checks their contents.
+apps/web/candidate-assets/flash-assets/**/canvas-renderer.js binary
+
+# Generated material is preserved for hash review; maintained code remains visible.
+packages/demos/src/hfr-pages/** linguist-generated=true
+packages/demos/src/generated/** linguist-generated=true
+packages/demos/src/registry*.generated.ts linguist-generated=true
+catalog/** linguist-generated=true
+migrations/** linguist-generated=true
+work/g678-shared-page-factory/** linguist-generated=true

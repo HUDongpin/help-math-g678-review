@@ -1,0 +1,58 @@
+{
+  "$schema": "../schemas/g678-review-governance-v1.schema.json",
+  "schemaVersion": 1,
+  "artifactType": "help-math-g678-review-governance",
+  "governanceId": "g678-review-governance-v1",
+  "scope": {
+    "profileId": "g678-shared-source-profile-v1",
+    "mappingVersion": "ccss-math-2010-v1",
+    "lessonCount": 44,
+    "activePagePlacementCount": 2282,
+    "legacyCourseShellExcluded": true
+  },
+  "status": "blocked",
+  "requiredRoles": [
+    {"role": "product-owner", "primary": "dr-peter-hu", "backup": null, "minimumHoursPerWeek": {"primary": 4, "backup": 0}, "independence": "final-scope-and-promotion-only"},
+    {"role": "migration-lead", "primary": "dr-peter-hu", "backup": null, "minimumHoursPerWeek": {"primary": 8, "backup": 4}, "independence": "orchestration-and-ledger"},
+    {"role": "factory-toolchain-engineer", "primary": "dr-peter-hu", "backup": null, "minimumHoursPerWeek": {"primary": 8, "backup": 4}, "independence": "parser-ir-generator-cas-license"},
+    {"role": "integration-engineer", "primary": "dr-peter-hu", "backup": null, "minimumHoursPerWeek": {"primary": 8, "backup": 4}, "independence": "registry-descriptor-route-host"},
+    {"role": "qa-strict-authority", "primary": "dr-peter-hu", "backup": null, "minimumHoursPerWeek": {"primary": 8, "backup": 4}, "independence": "independent-validator-and-ledger"},
+    {"role": "authorized-original-runtime-operator", "primary": "dr-peter-hu", "backup": null, "minimumHoursPerWeek": {"primary": 20, "backup": 8}, "independence": "cannot-self-sign-implementation"},
+    {"role": "math-ccss-reviewer", "primary": "professor-eric", "backup": null, "minimumHoursPerWeek": {"primary": 8, "backup": 4}, "independence": "grade-mapping-and-mathematical-semantics"},
+    {"role": "spanish-reviewer", "primary": "dr-peter-hu", "backup": null, "minimumHoursPerWeek": {"primary": 8, "backup": 4}, "independence": "language-and-behavior-review"},
+    {"role": "audio-reviewer", "primary": "dr-peter-hu", "backup": null, "minimumHoursPerWeek": {"primary": 8, "backup": 4}, "independence": "named-human-listening-and-sync"},
+    {"role": "independent-visual-reviewer", "primary": "dr-peter-hu", "backup": null, "minimumHoursPerWeek": {"primary": 8, "backup": 4}, "independence": "must-not-be-implementation-author"},
+    {"role": "owner-approver", "primary": "dr-peter-hu", "backup": null, "minimumHoursPerWeek": {"primary": 4, "backup": 2}, "independence": "separate-from-professional-reviewers"},
+    {"role": "release-custodian", "primary": "dr-peter-hu", "backup": null, "minimumHoursPerWeek": {"primary": 4, "backup": 2}, "independence": "atomic-release-and-publication-boundary"}
+  ],
+  "budget": {
+    "currency": "USD",
+    "weeklyCap": 1000,
+    "procurementOwner": "dr-peter-hu",
+    "status": "owner-approved-planning-cap-pending-procurement-controls"
+  },
+  "m0Exit": false,
+  "blockers": [
+    "all-required-primary-slots-named-capacity-not-verified",
+    "dr-peter-hu-aggregate-minimum-88h-per-week-capacity-not-verified",
+    "product-owner-identity-self-attested-not-independently-verified",
+    "owner-approver-identity-self-attested-not-independently-verified",
+    "professor-eric-capacity-and-qualification-not-verified",
+    "effective-backups-not-verified",
+    "distinct-backup-record-not-located-on-other-drive",
+    "procurement-controls-not-yet-live-verified",
+    "original-runtime-containment-not-live-verified"
+  ],
+  "acceptanceEffects": {
+    "canonicalSourcePromoted": false,
+    "currentJavaScriptRegistered": false,
+    "authoritativeOriginalRuntime": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "released": false,
+    "published": false
+  }
+}

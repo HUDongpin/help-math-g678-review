@@ -1,0 +1,66 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "@helpmath/demos/animation-registry": [
+        "../../packages/demos/src/animation-registry.ts"
+      ],
+      "@helpmath/demos/prototype-manifest": [
+        "../../packages/demos/src/prototype-manifest.ts"
+      ],
+      "@helpmath/demos/runtime": [
+        "../../packages/demos/src/runtime.ts"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    ".next-g4-l3-package/types/**/*.ts",
+    ".next-g4-l3-package/dev/types/**/*.ts",
+    ".next-g5-l4-package/types/**/*.ts",
+    ".next-g5-l4-package/dev/types/**/*.ts",
+    ".next-g4-l3-package-v3-1/types/**/*.ts",
+    ".next-g4-l3-package-v3-1/dev/types/**/*.ts",
+    ".next-g4-l3-package-v3-2/types/**/*.ts",
+    ".next-g4-l3-package-v3-2/dev/types/**/*.ts",
+    ".next-g4-l3-package-v3-3/types/**/*.ts",
+    ".next-g4-l3-package-v3-3/dev/types/**/*.ts",
+    ".next-local-reference-diagnostic/types/**/*.ts",
+    ".next-local-reference-diagnostic/dev/types/**/*.ts",
+    ".next-clerk-synthetic/types/**/*.ts",
+    ".next-clerk-synthetic/dev/types/**/*.ts",
+    ".next-current-js-candidate-qa/types/**/*.ts",
+    ".next-current-js-candidate-qa/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
