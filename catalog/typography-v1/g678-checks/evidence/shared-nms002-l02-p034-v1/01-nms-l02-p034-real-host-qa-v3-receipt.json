@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "check": "actualMyLesson-page34-paused-noindex"
+    },
+    {
+      "check": "source-main-audio-signal"
+    },
+    {
+      "check": "glossary-pause-resume-full395-interval"
+    },
+    {
+      "check": "range100-and-reset-down-sound-release"
+    },
+    {
+      "check": "host-mute-silences-reset"
+    },
+    {
+      "check": "practice-after-term-close-stays-interactive"
+    },
+    {
+      "check": "Replay-cache-next35-unavailable-cleanup"
+    },
+    {
+      "check": "P033-predecessor-preserved"
+    }
+  ],
+  "errors": [],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p034/source-audio/167?sha256=ad4a86a727b8d4b5379655258cdffc62f85f89cb460a96565fad27d975a2aa38",
+      "status": 200,
+      "bytes": "1950"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p034/source-audio/172?sha256=98279128d01b5421035a3314c59c237fb6eab2bff34a32a6ca289f865915c8cc",
+      "status": 200,
+      "bytes": "161200"
+    }
+  ],
+  "navigations": [
+    {
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p034",
+      "at": 1789851731650
+    },
+    {
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p034",
+      "at": 1789851743117
+    },
+    {
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p034",
+      "at": 1789851801146
+    }
+  ],
+  "refreshMessages": [
+    "[HMR] connected",
+    "[Fast Refresh] rebuilding",
+    "[Fast Refresh] done in 1823ms"
+  ],
+  "failure": null,
+  "scope": "Actual local MyLesson; open-ended practice has no invented completion event. No original-runtime/listening/human acceptance.",
+  "registeredAdmission": false
+}

@@ -1,0 +1,56 @@
+{
+  "status": "FAIL",
+  "rows": [
+    {
+      "check": "actualMyLesson-page35-paused-noindex"
+    },
+    {
+      "check": "explicit-page-title-24px"
+    },
+    {
+      "check": "source-main-audio-signal"
+    },
+    {
+      "check": "both-glossary-actions-pause-explicit-resume"
+    },
+    {
+      "check": "host-master-mute-and-restore"
+    },
+    {
+      "check": "full1036interval-terminal-correct-equation-and-model"
+    }
+  ],
+  "errors": [],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p035/source-audio/46?sha256=b21ca497758b47d362fca34457a83a85bab6d3998e9a5e3073dcfc66cc6e7e70",
+      "status": 200,
+      "bytes": "428610"
+    }
+  ],
+  "navigations": [
+    {
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p035",
+      "at": 1789855429586
+    },
+    {
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p035",
+      "at": 1789855430246
+    },
+    {
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p035",
+      "at": 1789855441311
+    },
+    {
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p035",
+      "at": 1789855441859
+    }
+  ],
+  "refreshMessages": [
+    "[HMR] connected",
+    "[HMR] connected"
+  ],
+  "failure": "locator.waitFor: Timeout 110000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-current-page=\"35\"]') to be visible\u001b[22m\n\n    at /Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p035-product-tools-v1/qa-real-host-v3.mjs:8:486",
+  "scope": "Actual local MyLesson; full1036interval native terminalhold is qualified and not an authored source stop. No original-runtime/listening/human acceptance.",
+  "registeredAdmission": false
+}

@@ -1,0 +1,64 @@
+{
+  "continuation": 213,
+  "createdAt": "2026-09-20T11:19:07.282461+00:00",
+  "classification": "progress",
+  "currentJsAdmitted": 460,
+  "totalPages": 2282,
+  "remaining": 1822,
+  "animationId": "shared-nms002-l02-p042",
+  "evidence": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/scripts/p042-controlled-fixture-v1.tsx",
+      "bytes": 1187,
+      "sha256": "2eb87306dba76fa91facc2b033dfe73f021c2db3e60ebb6cc5f1044dd8046ca2"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p042-presentation-v1.css",
+      "bytes": 1983,
+      "sha256": "8b52d413d52c3ebe8b3466d7a1fe1cd82ce54f60b0ecc93cb39e231a9c0fc095"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p042-browser-v1/layout-interaction-v1.log",
+      "bytes": 216,
+      "sha256": "ced43c2874cf9ab992b5c0e7e122f79457703abc775964fa320911e467dac428"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p042-browser-v1/layout-v3.log",
+      "bytes": 1294,
+      "sha256": "2f7167295b3d672e820c4dcce5b80c45f4a607c9892b6357711635c78758b9ba"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p042-browser-v1/interaction-v3.log",
+      "bytes": 1332,
+      "sha256": "4ab0bb9f9c80cf97e79e49129534f9b5e79855887b6821ae071dc3766d961dca"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p042-browser-v1/es-390-text200-v3.png",
+      "bytes": 163381,
+      "sha256": "0c6d276d930387ce0032c884a18575a55b67207bff060d063f94d5d40fe34b3b"
+    }
+  ],
+  "completed": [
+    "Real Chromium controlled fixture checked.",
+    "Fixed range default margin causing 2px internal overflow.",
+    "Changed equivalent-form grid to auto-fit minimum readable widths after visual 200% ES inspection.",
+    "16 language/width/text-size cases passed structural overflow checks; final ES 390 200% screenshot visually inspected.",
+    "Keyboard End linked transfers, Replay and real mouse click passed."
+  ],
+  "limitations": [
+    "Controlled fixture only, not My Lesson.",
+    "Audio, player and teaching pointer/highlight coverage remain pending."
+  ],
+  "next": "Complete source pointer/highlight dispositions and source PCM scheduling, then integrate player and real host.",
+  "goalComplete": false,
+  "providerActions": false,
+  "acceptance": {
+    "originalRuntime": false,
+    "fidelity": false,
+    "audio": false,
+    "human": false,
+    "owner": false,
+    "strictCompletion": false,
+    "publication": false
+  }
+}

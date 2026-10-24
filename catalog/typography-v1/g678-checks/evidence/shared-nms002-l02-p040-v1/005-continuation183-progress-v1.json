@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-09-20T09:30:01.393998+00:00",
+  "previousGoalTurn": "progress",
+  "status": "P040-native-instruction-and-source-word-controls-implemented",
+  "registeredCurrentJs": 459,
+  "admittedCurrentJs": 459,
+  "totalActivePagePlacements": 2282,
+  "remaining": 1823,
+  "goalComplete": false,
+  "animationId": "shared-nms002-l02-p040",
+  "validation": {
+    "testsPassed": 5,
+    "demosTypeScript": "exit0",
+    "sourceGlyphFramesCompared": 440,
+    "wordGateFrames": {
+      "percent": 60,
+      "equivalent": 78,
+      "fraction": 83,
+      "denominator": 97
+    },
+    "reducedMotionShowsWholeSentence": true,
+    "reducedMotionKeepsInteractionTiming": true
+  },
+  "evidence": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p040-instruction-v1.tsx",
+      "bytes": 1740,
+      "sha256": "c46bacc74d641f2c65a92506032514a7afb601146ac2f9ab4bf0d134ad1f4f37"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/tests/nms-l02-p040-instruction-v1.test.tsx",
+      "bytes": 1603,
+      "sha256": "5c908781caa17e6e757ada260bebb1b6efa83a4f6fea8101612be23cce817ee6"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation183-tests-v1.log",
+      "bytes": 544,
+      "sha256": "6ae57b0835bba0278bc07633512e0dda3858dd33b3cbee65ee234b0dfdcd7e1a"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation183-demos-types-v1.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "limitations": [
+    "Component/state tests only; fullpage renderer, glossarydialog/audio andhostintegration remain.",
+    "No browser accessibility or typography acceptance yet forP040."
+  ],
+  "next": [
+    "Implement source equation presentation and glossarydialog with focus restoration.",
+    "Compose actualplayer and verify responsive text/math/audio lifecycle."
+  ],
+  "runningOwnedJobs": []
+}

@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "check": "three exact hashes and complete browser PCM partitions",
+      "reads": {
+        "52": 1,
+        "79": 1,
+        "80": 1
+      }
+    },
+    {
+      "check": "main442 stops its node",
+      "frame": 442
+    },
+    {
+      "check": "parallel hidden popup/coach, pause, volume and narration lifecycle"
+    },
+    {
+      "check": "five matches, late distractor, glossary, source outro and cached replay",
+      "reads": {
+        "52": 1,
+        "79": 1,
+        "80": 1
+      }
+    },
+    {
+      "check": "closed engine remains closed"
+    },
+    {
+      "check": "late read after pause is ignored before decode"
+    },
+    {
+      "check": "source byte drift fails before decoding"
+    }
+  ],
+  "contexts": 3,
+  "scope": "Synthetic controllable transport clock with real Chromium OfflineAudioContext decoding and exact source bytes; not actual audible playback or MyLesson acceptance."
+}

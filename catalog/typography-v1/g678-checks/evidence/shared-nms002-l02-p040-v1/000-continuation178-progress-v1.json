@@ -1,0 +1,88 @@
+{
+  "checkedAt": "2026-09-20T09:18:05.564211+00:00",
+  "previousGoalTurn": "progress",
+  "status": "P040-exact-quadratic-glyph-containment-and-word-boundaries-audited",
+  "registeredCurrentJs": 459,
+  "admittedCurrentJs": 459,
+  "totalActivePagePlacements": 2282,
+  "remaining": 1823,
+  "goalComplete": false,
+  "animationId": "shared-nms002-l02-p040",
+  "glyphCount": 77,
+  "firstFullyContainedGlyphFrame": 47,
+  "lastFullyContainedGlyphFrame": 102,
+  "unrevealedNonspaceGlyphs": 0,
+  "monotonicThroughFrame": 440,
+  "boundaries": {
+    "sourceSha256": "be66f636ecc8a705fa6e61b5de03d044cfe0f9b988585a708ecaf0f1e1e832fb",
+    "wordBoundaries": [
+      {
+        "term": "percent",
+        "firstOffset": 17,
+        "lastOffset": 23,
+        "firstCompleteWordFrame": 60
+      },
+      {
+        "term": "equivalent",
+        "firstOffset": 31,
+        "lastOffset": 40,
+        "firstCompleteWordFrame": 78
+      },
+      {
+        "term": "fraction",
+        "firstOffset": 42,
+        "lastOffset": 49,
+        "firstCompleteWordFrame": 83
+      },
+      {
+        "term": "denominator",
+        "firstOffset": 58,
+        "lastOffset": 68,
+        "firstCompleteWordFrame": 97
+      }
+    ],
+    "audioFacts": {
+      "sumDeclaredSamples": 800640,
+      "decodedSamples": 800640,
+      "differenceSamples": 0,
+      "firstBlockFrame": 5,
+      "firstBlockSeekSamples": 1673,
+      "sampleRate": 22050
+    },
+    "qualification": "Word completeness uses conservative glyph containment. Audio counts and seeks are source facts; no native playback offset chosen until frame/sample mapping is reconciled."
+  },
+  "reproduction": "byte-identical",
+  "evidence": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/scripts/audit-nms-l02-p040-glyph-mask-v1.py",
+      "bytes": 4078,
+      "sha256": "057be3015aba64b565f0aaea751584421ed97e1db93a67220b272768d738134b"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p040/audit/source-glyph-mask-v1.json",
+      "bytes": 323414,
+      "sha256": "2a932ead8545cb289c850b64e0ed5cd07d6f30b3b3ce0aff08a82d4e791f2c77"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p040/audit/teaching-boundaries-v1.json",
+      "bytes": 1004,
+      "sha256": "29c5e8f63ecea791e346f86bed24e7f2f752bc08bfbdd668e67a47de3d569f8d"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation178-glyph-reproduction-v1.log",
+      "bytes": 67,
+      "sha256": "3813233b6a5c31c48de652f89741ee5cd62e1ab91fecabcbf394d68fcf040142"
+    }
+  ],
+  "limitations": [
+    "Quadratic bounds against exact rectangular mask are conservative containment, not original-runtime pixel fidelity.",
+    "Shape21outlinedheading/shape22figure still require composed visual and geometry audit.",
+    "Audio offset and stream seek mapping not yet finalized.",
+    "P040 remains unregistered."
+  ],
+  "next": [
+    "Recover source shape geometry and final instructional layout.",
+    "Reconcile audio sample/seek mapping then write source-backed implementation spec."
+  ],
+  "runningOwnedJobs": []
+}

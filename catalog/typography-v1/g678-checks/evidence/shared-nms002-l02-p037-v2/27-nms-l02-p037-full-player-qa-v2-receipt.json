@@ -1,0 +1,13 @@
+{
+  "status": "FAIL",
+  "checks": [
+    "actual-main-audio-nonzero",
+    "primary-terms-freeze-explicit-resume-focus",
+    "master-mute-restore",
+    "real-wrong-feedback-three-terms-and-focus"
+  ],
+  "errors": [],
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n6 !== 0\n\n    at file:///Volumes/American%20Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p037-source-tools-v1/check-full-player-v2.mjs:10:680",
+  "scope": "Composed player, actual Chromium AudioContext clock and analyser signal. Original-runtime/listening/human acceptance and MyLesson integration pending.",
+  "registered": false
+}

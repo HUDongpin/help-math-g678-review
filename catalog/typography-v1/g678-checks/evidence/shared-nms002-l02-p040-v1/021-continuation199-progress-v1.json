@@ -1,0 +1,83 @@
+{
+  "checkedAt": "2026-09-20T10:21:57.129328+00:00",
+  "previousGoalTurn": "progress",
+  "status": "P040-staticDOM-text-snapshot-comparison-verified",
+  "registeredCurrentJs": 459,
+  "admittedCurrentJs": 459,
+  "totalActivePagePlacements": 2282,
+  "remaining": 1823,
+  "goalComplete": false,
+  "validation": {
+    "cases": 112,
+    "checks": 1232,
+    "errors": [],
+    "audioRequests": 0
+  },
+  "additionalChecks": [
+    "rootframes1and5 have no teachingtext",
+    "staticcontrolsdisabled andnoopenmodal",
+    "ESpercentglossary440screenshotinspected"
+  ],
+  "evidence": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/scripts/p040-static-browser-fixture-v1.tsx",
+      "bytes": 650,
+      "sha256": "5dc58020ff1a7af0ca0b0f9d5abe9a265c0dcb62675d79ca6fa1e89fbde85a1a"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-static-browser-v1/index.html",
+      "bytes": 281,
+      "sha256": "1ed369fcbe7ec32eeff44107f6ad5038bcbaa2a28ad8689faf85c57857b97e03"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-static-browser-v1/static-glossary-v1.log",
+      "bytes": 799,
+      "sha256": "63d06c82aa5340abf3355bb0462b8366a1ad9d628896461177b5bde24f845fb8"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-static-browser-v1/fredoka-variable.ttf",
+      "bytes": 159184,
+      "sha256": "2ba02e68b152868aef9ba28e24b3648c7d457fe6f25c761f2c2c53fb61a73fc8"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-static-browser-v1/fixture.js",
+      "bytes": 1198342,
+      "sha256": "559687cacfad77d5e8c156c4891275a96941e2a29e48090b2e85a66313e5531a"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-static-browser-v1/nunito-sans-variable.ttf",
+      "bytes": 571240,
+      "sha256": "f934d7142fb4784bf828da485b7dcbd90c0c80d514e9d49a5da0ed3a1ae2491d"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-static-browser-v1/static-es-percent-440.png",
+      "bytes": 90353,
+      "sha256": "93e2d3c4c5adae14271b87e31554b7a311d2b73da27ba383496175f47d3d9f93"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-static-browser-v1/fixture.css",
+      "bytes": 2648,
+      "sha256": "4f1ec6507dacb7d8e1e20b2b335360b9cb5d6bd0911fe6258348dbf35dcecb0f"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-static-browser-v1/static-dom-matrix-v1.log",
+      "bytes": 1636,
+      "sha256": "b6f428299d1fbc81f8abf3fbe0c9d886aeecb3df8b9d5d5ae7ceccaf71237fa0"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-static-browser-v1/snapshot-shape-v1.log",
+      "bytes": 1674,
+      "sha256": "a648046c9b8df54eef1816388be9ab47670b0d88d4838a894baff7cdade84946"
+    }
+  ],
+  "limitations": [
+    "Boundaryframematrix112cases, notall4500queriesrenderedDOM.",
+    "Moduleunregistered;hostscope/audioendpoint/descriptor/freeze/finaltypographychecks remain.",
+    "Nooriginalruntimeorhumanacceptance."
+  ],
+  "next": [
+    "Implementhostruntimeadapterandnegativeaccesschecks.",
+    "Createhashboundserverpacket/lessonroute/audioendpointthenfreezeandstagecandidate."
+  ],
+  "runningOwnedJobs": []
+}

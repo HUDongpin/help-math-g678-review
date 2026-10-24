@@ -1,0 +1,70 @@
+{
+  "checkedAt": "2026-09-20T09:38:44.688663+00:00",
+  "previousGoalTurn": "progress",
+  "status": "P040-source-equation-component-implemented",
+  "registeredCurrentJs": 459,
+  "admittedCurrentJs": 459,
+  "totalActivePagePlacements": 2282,
+  "remaining": 1823,
+  "goalComplete": false,
+  "validation": {
+    "testsPassed": 7,
+    "demosTypeScript": "exit0",
+    "equationTextRecords": 10,
+    "generatorReproduction": "byte-identical",
+    "descriptionDoesNotRevealFutureDecimals": true,
+    "sourceMovingTokensAndAlpha": true,
+    "sourceBlinkOverlays": true
+  },
+  "evidence": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/scripts/generate-nms-l02-p040-equation-text-v1.py",
+      "bytes": 1050,
+      "sha256": "cf0c4d6a6d9c52a1ab8097c02faa632659de58163e5874686e8c6dca0ab82774"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/generated/nms-l02-p040-equation-text-v1.ts",
+      "bytes": 1165,
+      "sha256": "7ac4e4203324dfb7f49801a886c2c67a0444a4e505814d98352a5812a8d53e5a"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p040-equation-v1.tsx",
+      "bytes": 2464,
+      "sha256": "3a08dcd8a25bc231daf74b0822cece09324532eb1fa48549ed7f436548b4a250"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/tests/nms-l02-p040-equation-v1.test.tsx",
+      "bytes": 1142,
+      "sha256": "267560b0f6cf20b10ca554812b4ecf08a4e7bfcca080012ca8de1eb8ca432798"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation186-tests-v1.log",
+      "bytes": 690,
+      "sha256": "b54102b7e9f30c3845f7b27c688f7a3420010587b012d42ff66f0308b5719eec"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation186-demos-types-v1.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation186-generation-check-v1.log",
+      "bytes": 107,
+      "sha256": "8fcb6bd75f81f3a2a52e684dc91b8055b43e27cc4862fb64b73b561873e38392"
+    }
+  ],
+  "adaptations": [
+    "Native font uses source baseline and textadvance scaling, not original embedded font rasterization.",
+    "Reducedmotion suppresses blinking white overlays; timeline phases remain.",
+    "Narrow viewport uses bounded horizontal equation scrolling instead of clipping; actualbrowser usability remains unverified."
+  ],
+  "limitations": [
+    "No equationbrowser/visualacceptance yet.",
+    "Fullpage/audio/player/hostintegration and P040registration remainpending."
+  ],
+  "next": [
+    "Compose instruction,grid,equation,dialog in realbrowserfixture and inspect transitionframes withofficialfonts.",
+    "Implement sourceaudio clock andplayer then officialhostintegration."
+  ],
+  "runningOwnedJobs": []
+}

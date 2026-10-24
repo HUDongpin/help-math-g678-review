@@ -1,0 +1,54 @@
+{
+  "continuation": 210,
+  "createdAt": "2026-09-20T11:06:49.384856+00:00",
+  "classification": "progress",
+  "currentJsAdmitted": 460,
+  "totalPages": 2282,
+  "remaining": 1822,
+  "animationId": "shared-nms002-l02-p042",
+  "evidence": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/scripts/build-nms-l02-p042-display-ir-v1.py",
+      "bytes": 2458,
+      "sha256": "35f6ab14fa11e62499ba03c3efc59f4820b29eab06562458cde0260dd7a7bdfd"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/scripts/audit-nms-l02-p042-teaching-timeline-v1.py",
+      "bytes": 1355,
+      "sha256": "6bf3215e6e9bf22ecf5bbb08fa548c6d929fa89fe96aeb406ab51ce4c999e640"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p042/audit/display-ir-v1.json",
+      "bytes": 7619717,
+      "sha256": "d4d333f2f41d664e76c48d3fe6ac823fcb01a8baf4573524c5be3ed126c366ce"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p042/audit/teaching-text-timeline-v1.json",
+      "bytes": 593766,
+      "sha256": "c5a6a429a870ba0433fdde05fb457db9347f641e3d44e9d2d300b0aeecf3e1ad"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p042/audit/source-audio-clock-audit-v1.json",
+      "bytes": 95820,
+      "sha256": "b7e848ab1343de825607262990ef12fbb8719cb4e1e20c4ad59eda916cdc7f70"
+    }
+  ],
+  "findings": [
+    "All 10 structural timelines reconstructed, main 626 frames with inherited placement state.",
+    "72 runs of text placements recorded with matrices, alpha transforms and mask depth references.",
+    "Numeric fields removed at 498 through 624, dynamic practice fields installed at 625.",
+    "618 audio clock anchors recorded; negative seek at empty block 499 and post-stop block 626 require review."
+  ],
+  "next": "Extract/render source shapes and masks to verify actual teaching roles, inspect source PCM around audio gaps and stop, then implement full presentation with practice state.",
+  "goalComplete": false,
+  "providerActions": false,
+  "acceptance": {
+    "originalRuntime": false,
+    "fidelity": false,
+    "audio": false,
+    "human": false,
+    "owner": false,
+    "strictCompletion": false,
+    "publication": false
+  }
+}

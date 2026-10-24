@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-09-19T23:29:09.134840+00:00",
+  "animationId": "shared-nms002-l02-p036",
+  "sourceSpec": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p036-source-spec-v1.json",
+    "bytes": 30419,
+    "sha256": "79ffb23e8303130be5cec16e8947f88f7f6276a1c7e4de04b1896923be01c570"
+  },
+  "sourceTrainContainment": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p036-behavior-source-v1/source-train-visible-containment-v1.json",
+    "bytes": 642,
+    "sha256": "fb884eefa44cbf8574e995679bf54d8bec02478144389376ebbabc2079fae47a"
+  },
+  "decisions": [
+    {
+      "area": "wide train",
+      "decision": "At ordinary text size and at least700px container width, native MathML cards use source panel rectangle bounds and pose matrices over the moving source train. Caption10is moved above the image with source opacity for readable heading text; decorative yellow caption plate8is not redrawn."
+    },
+    {
+      "area": "narrow or enlarged text",
+      "decision": "When container is narrower or text grows beyond the18px baseline, the same four source pairs reflow below the train in one or two columns. Values, source order and source opacity/onset remain unchanged. This is an explicit responsive geometry adaptation."
+    },
+    {
+      "area": "source image window",
+      "decision": "Source clip2x/bottom geometry retained; empty upper background cropped from viewBox. Mask-fill opacity is not applied to dim native content; source mask parity remains unverified."
+    },
+    {
+      "area": "calculator",
+      "decision": "All22source key labels shown as passive spans, not interactive controls. Native high-contrast labels and readable CALCULATOR caption replace outlines. Decorative circled cross has no close action. Source display and emphasis intervals retained; duplicated0.75display represented once."
+    },
+    {
+      "area": "pointer",
+      "decision": "Source pointer tip coordinates map piecewise through source and measured native key centers. ResizeObserver follows actual text/viewport geometry; source timing and all four held destinations retained. Pointer remains a visual demonstration, not an executed click trace."
+    },
+    {
+      "area": "reduced motion",
+      "decision": "Keep source train/pointer/value/appearance timing, use settled train position and hide decorative pointer motion. Numerator/denominator emphasis persists across each source blink window instead of rapid blinking."
+    },
+    {
+      "area": "math division",
+      "decision": "Insert source division glyph inside Step2parentheses, preserving its independent mask-bound reveal at332..333."
+    },
+    {
+      "area": "preparation",
+      "decision": "Verify and decode exact five embedded image bytes before composed playback. ActualMyLesson font/image gates and production exclusion remain future checks."
+    }
+  ],
+  "originalRuntimeAccepted": false,
+  "fidelityAccepted": false,
+  "humanReviewed": false,
+  "registered": false
+}

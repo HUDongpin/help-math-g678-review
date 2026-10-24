@@ -1,0 +1,124 @@
+{
+  "checkedAt": "2026-09-20T07:44:26.552582+00:00",
+  "previousGoalTurn": "progress",
+  "status": "P039-C2-layout-fix-staged-real-host-verified",
+  "registeredCurrentJs": 459,
+  "admittedCurrentJs": 458,
+  "totalActivePagePlacements": 2282,
+  "remainingUnadmitted": 1824,
+  "deltaAdmittedThisContinuation": 0,
+  "goalComplete": false,
+  "freeze": {
+    "path": "catalog/product-bridge-calibrations/g678-nms-l02-p039-native-percent-practice-current-js-v1-compile-v2.json",
+    "bytes": 161144,
+    "sha256": "948b10c40a817b57c3f16ee94b9e51742fb7ed9d955e3e373962a73a2d62117f"
+  },
+  "recovery": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p039-c1-layout-recovery-v1/receipt.json",
+    "bytes": 4017,
+    "sha256": "40d80373363d8b1a165b78aae261b39cf3f4ea4e2f14e1034e045db47b8305bc"
+  },
+  "changedBehavior": [
+    "P039-scoped host control labels now wrap instead of overflowing at large text.",
+    "P039 narrow padding gives headings, feedback and buttons more content width."
+  ],
+  "validation": {
+    "p039Inputs": 535,
+    "p039Outputs": 62,
+    "p039Mismatches": 0,
+    "p038Mismatches": 0,
+    "c1RecoverablePinMismatches": 0,
+    "registryGeneration": "PASS workspace script v2; root missing-script attempt retained",
+    "realHostCssInjected": false,
+    "textRootPx": 32,
+    "testedWidths": [
+      320,
+      390,
+      768,
+      1280
+    ],
+    "actualTimelineGlyphsContainedAll": true,
+    "before390GlyphLeft": -46.15625,
+    "before390GlyphRight": 436.15625,
+    "after390GlyphLeft": 67.71875,
+    "after390GlyphRight": 322.28125,
+    "finalTypographyPassed": false
+  },
+  "evidence": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p039-layout-investigation-v1/actual-c2-intro.png",
+      "bytes": 74720,
+      "sha256": "fe360a0063d7398860e23dfb7d5040cf31d42adb62067bb11ba727d690b19c02"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p039-layout-investigation-v1/actual-c2-timeline.png",
+      "bytes": 8018,
+      "sha256": "61a25f8ec9b7f45d6b3664896e70f6234a5110a7ca1176cfda42940ad21327c3"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p039-layout-investigation-v1/actual-c2-v1.log",
+      "bytes": 123,
+      "sha256": "5cefccbce789a617bb9f18658a866b00a6445e038693764554a286ece99a704c"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p039-layout-investigation-v1/actual-c2-v2.log",
+      "bytes": 2065,
+      "sha256": "1f6c97a95dc364050afea842531aa254076482faba0dcd3e7035bab1e149e922"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p039-layout-investigation-v1/after-timeline.png",
+      "bytes": 8018,
+      "sha256": "61a25f8ec9b7f45d6b3664896e70f6234a5110a7ca1176cfda42940ad21327c3"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p039-layout-investigation-v1/after-v1.log",
+      "bytes": 2535,
+      "sha256": "212c3ce7fa5a53908bcb4bd0d7fc6adad447a6270949d05caaa578698b927ee3"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p039-layout-investigation-v1/before-v1.log",
+      "bytes": 1307,
+      "sha256": "8c011851aa7d1de89eae6ba50e451f0f73bafdf8dd764add25b77862b00dcbf9"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p039-layout-investigation-v1/c1-recovery-check-v1.json",
+      "bytes": 193,
+      "sha256": "560a2bf64542bd64afc6c4e549ef695cb11456dfe8a385d22cdcaecdfe5dbbd2"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p039-layout-investigation-v1/candidate-layout-v1.css",
+      "bytes": 1104,
+      "sha256": "b9f11981b4ff8057494ff0cf89e9a012a2b56cbd330e9fba88b105676204d1b6"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p039-layout-investigation-v1/current-pins-c2-v1.json",
+      "bytes": 304,
+      "sha256": "f64257449eed303fc432e7d612f4103093944a9d08941c3aaa1e9f47af9a4574"
+    }
+  ],
+  "limitations": [
+    "Actual reload wait55s expired; same browser later showed hydrated page, then real C2 check passed.",
+    "Screenshots of scrolled element include sticky host overlays; they establish wrapping only, not full-screen final typography acceptance.",
+    "Full phase responsive matrix, lifecycle/navigation, and production-negative checks still pending."
+  ],
+  "acceptance": {
+    "originalRuntime": false,
+    "fidelity": false,
+    "audioListeningAcceptance": false,
+    "humanVisual": false,
+    "owner": false,
+    "strictComplete": false,
+    "release": false,
+    "publication": false
+  },
+  "runningOwnedJobs": [],
+  "retainedDevServer": {
+    "pid": 94150,
+    "port": 3343,
+    "notRestarted": true
+  },
+  "next": [
+    "Complete C2 real-host phase/layout/resource/navigation matrix.",
+    "Prepare final typography binding/check and production-negative validation before admission."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-09-20T10:27:46.983600+00:00",
+  "previousGoalTurn": "progress",
+  "status": "P040-server-file-binding-and-module-closure-prepared",
+  "registeredCurrentJs": 459,
+  "admittedCurrentJs": 459,
+  "totalActivePagePlacements": 2282,
+  "remaining": 1823,
+  "goalComplete": false,
+  "validation": {
+    "bindingTestGroup": "PASS",
+    "webTypeScript": "exit0",
+    "exactRecoveredGlossaryObjectsVerified": 2,
+    "moduleProjectDependencies": 17
+  },
+  "evidence": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/apps/web/lib/nms-l02-p040-binding.server.ts",
+      "bytes": 1631,
+      "sha256": "143ea5195010ce36cc750337228cae4d81965e8f8745d2e56531785287da2322"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/apps/web/tests/nms-l02-p040-binding.test.ts",
+      "bytes": 1746,
+      "sha256": "6e419f343f3e65db33c38192f3a5f871589b7d2cc35ed8abf056805346c91fea"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/timelines/g678-nms-l02-native-equivalent-percents-p040.ts",
+      "bytes": 174,
+      "sha256": "01983188a6988b1cc4b8f1f054795a59cbc346ee591a1015069010c7145f0d33"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation201-binding-tests-v1.log",
+      "bytes": 225,
+      "sha256": "43cb2dbf867221ec1f1c28437895877fa165f280fd10daf464347eefad1ed058"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation201-web-types-v1.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation201-glossary-bindings-v1.json",
+      "bytes": 795,
+      "sha256": "b09af2381d3ea22952f1dbb84064699631d2e1197cfa075385ce060d21067050"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-integration-prepared-v1/module-dependency-closure-v1.json",
+      "bytes": 3364,
+      "sha256": "182dcf61fd442e239f64de8d36a6a2fc1b34f27da1201e7e4aeb6283a2a36ab6"
+    }
+  ],
+  "limitations": [
+    "Dependencyclosure ispreparednotcandidatefreeze; runtimeadapter/player dependencies mustalsojoinfinalclosure.",
+    "No packet/descriptor/livepage/audioendpoint orregistration yet."
+  ],
+  "next": [
+    "Build source-boundpacket andlessonroute fromP039baselinewithonepageaddition.",
+    "Freeze allinputs/outputsthentest registration andactualhost."
+  ],
+  "runningOwnedJobs": []
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "status": "PASS",
+      "mode": "blocked",
+      "before": {
+        "calls": 5,
+        "contexts": 0,
+        "audioFetches": 0,
+        "native": 0,
+        "failure": "TEST_IMAGE_DECODE_BLOCKED"
+      }
+    },
+    {
+      "status": "PASS",
+      "mode": "delayed",
+      "before": {
+        "calls": 5,
+        "contexts": 0,
+        "audioFetches": 0,
+        "native": 0
+      }
+    }
+  ],
+  "scope": "Actual MyLesson image decode gate; no listening or fidelity acceptance"
+}

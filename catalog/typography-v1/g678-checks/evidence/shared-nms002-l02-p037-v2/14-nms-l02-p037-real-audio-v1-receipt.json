@@ -1,0 +1,188 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "check": "real context exact three streams and main signal"
+    },
+    {
+      "check": "pause, gain silence, narration-off continuing clock and restore"
+    },
+    {
+      "check": "glossary explicit-resume and actual intro through authored442 hold"
+    },
+    {
+      "check": "wrong voice continues after source Close and overlaps real coach"
+    },
+    {
+      "check": "five matches, late-popup parallel glossary, source outro signal/alignment and483 stop",
+      "alignment": {
+        "frame": 448,
+        "sourceOffset": 37.31004535147392,
+        "stateOffset": 37.31004535147392
+      }
+    },
+    {
+      "check": "replay reuses three buffers/one context and close releases audio"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "end": {
+    "reads": {
+      "52": 1,
+      "79": 1,
+      "80": 1
+    },
+    "state": {
+      "phase": "closed",
+      "state": {
+        "seed": 0,
+        "replay": 1,
+        "mainFrame": 2,
+        "mainPlaying": true,
+        "coachFrame": null,
+        "coachPlaying": false,
+        "successFrame": null,
+        "successPlaying": false,
+        "popupFrame": null,
+        "popupPlaying": false,
+        "popupVisible": false,
+        "sourcesEnabled": false,
+        "quizSection": false,
+        "matchedMask": 0,
+        "selectedCard": null,
+        "term": null
+      },
+      "fraction": 0.6021768707482522,
+      "volume": 0.8,
+      "narrationEnabled": true,
+      "failure": null
+    },
+    "nodes": [
+      {
+        "domain": "80",
+        "stopped": true,
+        "ended": true,
+        "offset": 0,
+        "duration": 36.75,
+        "at": 0.023219954648526078
+      },
+      {
+        "domain": "80",
+        "stopped": true,
+        "ended": true,
+        "offset": 0.4295691609977325,
+        "duration": 36.32043083900226,
+        "at": 0.6965986394557823
+      },
+      {
+        "domain": "80",
+        "stopped": true,
+        "ended": true,
+        "offset": 0.7952834467120183,
+        "duration": 35.95471655328798,
+        "at": 1.062312925170068
+      },
+      {
+        "domain": "80",
+        "stopped": false,
+        "ended": true,
+        "offset": 0.8010884353741496,
+        "duration": 35.94891156462585,
+        "at": 1.2829024943310658
+      },
+      {
+        "domain": "79",
+        "stopped": false,
+        "ended": true,
+        "offset": 0.08333333333333333,
+        "duration": 1.0833333333333333,
+        "at": 37.239002267573696
+      },
+      {
+        "domain": "52",
+        "stopped": true,
+        "ended": true,
+        "offset": 0.12770975056689338,
+        "duration": 1.5389569160997734,
+        "at": 37.36671201814059
+      },
+      {
+        "domain": "52",
+        "stopped": true,
+        "ended": true,
+        "offset": 0.0963718820861672,
+        "duration": 1.5702947845804995,
+        "at": 38.83537414965986
+      },
+      {
+        "domain": "52",
+        "stopped": true,
+        "ended": true,
+        "offset": 0.0998639455782282,
+        "duration": 1.5668027210884385,
+        "at": 40.338866213151924
+      },
+      {
+        "domain": "52",
+        "stopped": true,
+        "ended": true,
+        "offset": 0.09755102040816155,
+        "duration": 1.5691156462585052,
+        "at": 41.83655328798186
+      },
+      {
+        "domain": "52",
+        "stopped": true,
+        "ended": true,
+        "offset": 0.10104308390022965,
+        "duration": 1.565623582766437,
+        "at": 43.340045351473925
+      },
+      {
+        "domain": "79",
+        "stopped": true,
+        "ended": true,
+        "offset": 0.09873015873015589,
+        "duration": 1.0679365079365108,
+        "at": 44.83773242630385
+      },
+      {
+        "domain": "52",
+        "stopped": false,
+        "ended": true,
+        "offset": 1.598730158730156,
+        "duration": 0.06793650793651078,
+        "at": 45.07573696145125
+      },
+      {
+        "domain": "79",
+        "stopped": false,
+        "ended": true,
+        "offset": 0.09873015873015589,
+        "duration": 1.0679365079365108,
+        "at": 45.07573696145125
+      },
+      {
+        "domain": "80",
+        "stopped": false,
+        "ended": true,
+        "offset": 36.752766439909294,
+        "duration": 3.4139002267573724,
+        "at": 46.97977324263039
+      },
+      {
+        "domain": "80",
+        "stopped": true,
+        "ended": false,
+        "offset": 0,
+        "duration": 36.75,
+        "at": 50.43374149659864
+      }
+    ],
+    "contexts": [
+      "closed"
+    ]
+  },
+  "scope": "Independent P037 real AudioContext controller playback, not rendered MyLesson, original-runtime fidelity or human listening acceptance."
+}

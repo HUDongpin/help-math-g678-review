@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-09-20T09:32:45.221488+00:00",
+  "previousGoalTurn": "progress",
+  "status": "P040-native-source-glossary-dialog-implemented-and-keyboard-checked",
+  "registeredCurrentJs": 459,
+  "admittedCurrentJs": 459,
+  "totalActivePagePlacements": 2282,
+  "remaining": 1823,
+  "goalComplete": false,
+  "validation": {
+    "demosTypeScript": "exit0",
+    "realBrowserLanguageTermFlows": 8,
+    "initialFocus": "H2",
+    "tabAndShiftTab": "Close action",
+    "escape": "closes and returnsfocus",
+    "smallScreenWidth": 320,
+    "rootFontPercent": 200,
+    "dialogClientWidth": 254,
+    "dialogScrollWidth": 254,
+    "dialogScrollHeight": 2086
+  },
+  "evidence": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p040-term-dialog-v1.tsx",
+      "bytes": 2720,
+      "sha256": "2b630e04b6aa12e8d04932f6cf52c6d0d175a065c3e71d8dfdc3bbf2aeff2e2c"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p040-term-dialog-v1.css",
+      "bytes": 1066,
+      "sha256": "327a6fd624119b73cf6f3c63719cf7eb69ed9fd2f693e6919a3e767add60b48b"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p040-term-dialog-v1.css.d.ts",
+      "bytes": 51,
+      "sha256": "bdf8565418971a8c30dcc35e5fe4240a5edf7791bc57b255aa9bd8047564c678"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/scripts/p040-dialog-fixture-v1.tsx",
+      "bytes": 944,
+      "sha256": "eefd97625d56ae0ba2832eebd80939f22551dba9aa74a4cef07648f8601098d3"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation184-demos-types-v1.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-dialog-browser-v1/dialog-flow-v1.log",
+      "bytes": 2958,
+      "sha256": "b391e26d22ac4b01fb99ac21c6a61354ea4f13a665956de5f2a6589aebcc2411"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-dialog-browser-v1/fixture.js",
+      "bytes": 1175161,
+      "sha256": "0a377b1894421c482e8e5cb72db398f51be79927182e73d30ea9d7f4fdf4cb83"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-dialog-browser-v1/fixture.css",
+      "bytes": 1278,
+      "sha256": "f75da5c858f44ba0b6540d87358dec6aa4aea4addddb32dab56dbbd2f96c3755"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-dialog-browser-v1/es-320-text200.png",
+      "bytes": 7230,
+      "sha256": "5c095a783d7a5ffab505a61b801f762adeaf0dc20f6f47f4c05dd43654b80a6b"
+    }
+  ],
+  "limitations": [
+    "Screenshot taken before modal settled; image does not show dialog and is retained as failed visual evidence. Geometry captured subsequently but visual layout acceptance pending.",
+    "Browserfixture uses fallbackfonts; officiallessonfonts and hostintegration remainpending.",
+    "Onlyconsoleerrorwasmissingfavicon404.",
+    "P040 equationrenderer/audio/player/registration still pending."
+  ],
+  "next": [
+    "Capture settled dialog visual and verify scrolltoClose on320px200%text withofficialfonts.",
+    "Implement equationpresentation and composed pageplayer."
+  ],
+  "runningOwnedJobs": []
+}

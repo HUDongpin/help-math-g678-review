@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "action": "pause",
+      "snapshot": {
+        "phase": "paused",
+        "elapsedSeconds": 0,
+        "frame": 1,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.8,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "aborted": true,
+      "contextsClosed": true
+    },
+    {
+      "action": "close",
+      "snapshot": {
+        "phase": "closed",
+        "elapsedSeconds": 0,
+        "frame": 1,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.8,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "aborted": true,
+      "contextsClosed": true
+    },
+    {
+      "action": "tampered-source-fails-valid-retry-works",
+      "failed": {
+        "phase": "failed",
+        "elapsedSeconds": 0,
+        "frame": 1,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.8,
+        "narrationEnabled": true,
+        "failure": "P032_AUDIO_HASH"
+      },
+      "held": {
+        "phase": "paused",
+        "elapsedSeconds": 0.09287981859410431,
+        "frame": 2,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.8,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "contextClosed": true
+    }
+  ],
+  "errors": [],
+  "registered": false,
+  "scope": "Real browser AudioContext cancellation, stale-load rejection, hash failure and valid retry; no original-runtime or listening acceptance."
+}

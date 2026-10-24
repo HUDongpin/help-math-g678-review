@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-09-20T09:57:33.950143+00:00",
+  "previousGoalTurn": "progress",
+  "status": "P040-WebAudio-controller-implemented-with-stale-request-guards",
+  "registeredCurrentJs": 459,
+  "admittedCurrentJs": 459,
+  "totalActivePagePlacements": 2282,
+  "remaining": 1823,
+  "goalComplete": false,
+  "validation": {
+    "controllerTestGroups": 2,
+    "demosTypeScript": "exit0",
+    "pauseCancelsPendingRead": true,
+    "staleLoadStartsNoNode": true,
+    "glossaryPausesNodeAndClock": true,
+    "narrationTogglePreservesVisualClock": true,
+    "terminalStopsNode": true,
+    "repeatedCloseClosesContextOnce": true
+  },
+  "evidence": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p040-audio-v1.ts",
+      "bytes": 4543,
+      "sha256": "81f95df0b6b22fee04624c6af25a8b3786c76f6c426044fbffdde277c61b77b0"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/tests/nms-l02-p040-audio-v1.test.ts",
+      "bytes": 2336,
+      "sha256": "ace240fed07cf889e242e537b07ceccdf614a6a477c55ce3524726d2be02feca"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation192-controller-tests-v1.log",
+      "bytes": 290,
+      "sha256": "41f3703dbd0bec5ae7346e46ea0494236d9d059061d7f39446c0b86d5937b499"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation192-demos-types-v1.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "limitations": [
+    "Controller validated usingAudioContexttestdouble; actualbrowserdecode/playback remains.",
+    "Dependencyread mustsupplyhashverifiedsource via existingloader.",
+    "NoReactplayer/officialhostregistrationyet."
+  ],
+  "next": [
+    "Create actualWebAudiofixture withfullsourceMP3 andverifydecode/playpauseglossaryReplay andcleanup.",
+    "Connectcontrollertoreactplayerandmodernhost."
+  ],
+  "runningOwnedJobs": []
+}

@@ -1,0 +1,81 @@
+{
+  "checkedAt": "2026-09-20T10:03:01.480923+00:00",
+  "previousGoalTurn": "progress",
+  "status": "P040-actual-WebAudio-source-playback-pause-Replay-and-cleanup-verified",
+  "registeredCurrentJs": 459,
+  "admittedCurrentJs": 459,
+  "totalActivePagePlacements": 2282,
+  "remaining": 1823,
+  "goalComplete": false,
+  "validation": {
+    "realBrowserDecode": "PASS",
+    "sourceHashVerifiedInFixture": true,
+    "muted": true,
+    "glossaryPauseFrame": 65,
+    "heldElapsed": 5.346394557823132,
+    "resumedFrame": 68,
+    "resumedElapsed": 5.648253968253968,
+    "terminalFrame": 440,
+    "terminalSeconds": 36.666666666666664,
+    "ReplayCount": 2,
+    "contextsClosed": 1
+  },
+  "evidence": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/scripts/p040-audio-browser-fixture-v1.ts",
+      "bytes": 1015,
+      "sha256": "208fafcf822879d8cc1aaa002f117694c33239627fc00dd3d1e5e94180b469e4"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p040-audio-v1.ts",
+      "bytes": 4543,
+      "sha256": "81f95df0b6b22fee04624c6af25a8b3786c76f6c426044fbffdde277c61b77b0"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-audio-browser-v1/source.mp3",
+      "bytes": 180700,
+      "sha256": "93af0f4c375356d5a10f5e2a420222bdb91ff3fa3b8e8440af1e0c02eea2d020"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-audio-browser-v1/actual-decode-v1.log",
+      "bytes": 445,
+      "sha256": "7173f4410f70764262c82d10dfaa294be678a98b72669bbc82c3d8ba3723f304"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-audio-browser-v1/index.html",
+      "bytes": 91,
+      "sha256": "2980cfecb2dea46d3c8ed85fe8dcff6e1099e5189346caf2c84011892f8ad596"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-audio-browser-v1/fixture.js",
+      "bytes": 55030,
+      "sha256": "1ed769a294e140d2953793a05347df68d7b10e8f7eec530a5841ac73cefccbb5"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-audio-browser-v1/actual-pause-replay-v1.log",
+      "bytes": 31,
+      "sha256": "f536f12b997cca51006bb7c0a4efa80b42d5146da6d954a8c85b6512f829b427"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-audio-browser-v1/actual-pause-replay-v2.log",
+      "bytes": 1726,
+      "sha256": "8fb3ea9d1571bfb42d1c4ae363487a1eb9089c306047aee1cbf0420264c16764"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-audio-browser-v1/actual-terminal-cleanup-v1.log",
+      "bytes": 721,
+      "sha256": "1a1706bdecd25dba3e0a90b1077243a58190bd42bce05239f7a0c4f0da90a6a9"
+    }
+  ],
+  "limitations": [
+    "Firstresumecheckranatterminal; retainedfailurev1 andv2priorstatesprovealreadycompleted.",
+    "Fixtureloaderfetches exactsource hash butdoesnotexerciseofficialguardedroute.",
+    "Nohumanlistening/originalruntimesyncacceptance.",
+    "Reactplayerintegration and actualMyLessonstillpending."
+  ],
+  "next": [
+    "ConnectP040SourceAudio toReactpresentation and hosttransportcallbacks.",
+    "Verify componentmount/unmount,fonts,failedloads andReplaybeforeofficialregistration."
+  ],
+  "runningOwnedJobs": []
+}

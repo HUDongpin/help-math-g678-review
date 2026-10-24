@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "mode": "pause-loading",
+      "phase": "paused",
+      "replay": 0,
+      "frame": 1,
+      "aborted": true,
+      "reads": 1,
+      "closed": "closed"
+    },
+    {
+      "mode": "close-loading",
+      "phase": "closed",
+      "replay": 0,
+      "frame": 1,
+      "aborted": true,
+      "reads": 1,
+      "closed": "closed"
+    },
+    {
+      "mode": "replay-loading",
+      "phase": "playing",
+      "replay": 1,
+      "frame": 2,
+      "aborted": true,
+      "reads": 2,
+      "closed": "closed"
+    },
+    {
+      "mode": "wrong-hash",
+      "phase": "failed",
+      "failure": "P036_AUDIO_HASH"
+    },
+    {
+      "mode": "wrong-size",
+      "phase": "failed",
+      "failure": "P036_AUDIO_BYTES"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "scope": "Real Chromium decode plus delayed-read cancellation and rejected source bytes; not original-runtime or human listening acceptance."
+}

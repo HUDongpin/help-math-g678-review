@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-09-20T09:24:46.062746+00:00",
+  "previousGoalTurn": "progress",
+  "status": "P040-source-presentation-generation-and-native-state-started",
+  "registeredCurrentJs": 459,
+  "admittedCurrentJs": 459,
+  "totalActivePagePlacements": 2282,
+  "remaining": 1823,
+  "goalComplete": false,
+  "animationId": "shared-nms002-l02-p040",
+  "equationBeats": 62,
+  "sourceFrames": 440,
+  "testsPassed": 2,
+  "evidence": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/scripts/generate-nms-l02-p040-presentation-v1.py",
+      "bytes": 2083,
+      "sha256": "9f8f31fd7c545565a49b219aaee854d6233747d7d6603645202110f76d12d0be"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/generated/nms-l02-p040-presentation-v1.ts",
+      "bytes": 37164,
+      "sha256": "5e36fbdb818d904ff47c3bce965ea07803fed985d974977905f8655486e56e24"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p040-state-v1.ts",
+      "bytes": 1902,
+      "sha256": "757597186ff907e9415ed4ac2eb03d2f170cd50ace9ae1ee3dd57a6fed257ecb"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/tests/nms-l02-p040-state-v1.test.ts",
+      "bytes": 1400,
+      "sha256": "ba16abd145f4a09f4f2b88495aa70a9f467988177ec1b3ff7a27274bd355226a"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p040/audit/native-behavior-decisions-v1.json",
+      "bytes": 1551,
+      "sha256": "dcfba63cd3fb621ea073ebada67ce41ec7f87226d1f9d9d721f9a594ee54dab8"
+    }
+  ],
+  "limitations": [
+    "State and generated presentation only; no renderer, browser playback, hostintegration or registration.",
+    "Audiooffsetdecisionpending; source-qualified native terminalhold and explicitplay decisions recorded."
+  ],
+  "next": [
+    "Implement semantic source-bound renderer with responsivegrid, wordreveal, equation movement and glossarydialog.",
+    "Complete audio clock treatment, actual player and allindependentgates."
+  ],
+  "runningOwnedJobs": []
+}

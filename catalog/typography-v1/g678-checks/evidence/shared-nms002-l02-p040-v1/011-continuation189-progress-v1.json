@@ -1,0 +1,84 @@
+{
+  "checkedAt": "2026-09-20T09:49:40.384764+00:00",
+  "previousGoalTurn": "progress",
+  "status": "P040-sourcePCM-plan-and-preparation-implemented",
+  "registeredCurrentJs": 459,
+  "admittedCurrentJs": 459,
+  "totalActivePagePlacements": 2282,
+  "remaining": 1823,
+  "goalComplete": false,
+  "validation": {
+    "testsPassed": 2,
+    "demosTypeScript": "exit0",
+    "planReproduction": "byte-identical",
+    "actualSourcePcmPrepared": true,
+    "sourceSamples": 800640,
+    "latencySamples": 1673,
+    "retainedSamples": 798967,
+    "preparedSamples": 808500,
+    "frame6GapSamples": 1838,
+    "endPaddingSamples": 345
+  },
+  "evidence": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/scripts/generate-nms-l02-p040-audio-plan-v1.py",
+      "bytes": 2432,
+      "sha256": "b76e389b63a8f6a61451d296548623a24b8d4492542a1319ce0c6eed9ba3e7f9"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/generated/nms-l02-p040-audio-plan-v1.ts",
+      "bytes": 493,
+      "sha256": "3d225826d3000750204c5d246f26cf4f0789ceb2fdf5a1f31fb8498b9df7fde1"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p040-audio-pcm-v1.ts",
+      "bytes": 1047,
+      "sha256": "8c8b9e924673e3c19e4e99be5a1d05752127b622e56b2d20e868aa88e833bfb8"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/tests/nms-l02-p040-audio-pcm-v1.test.ts",
+      "bytes": 931,
+      "sha256": "d59f874beecfdfca3edbc98eb2e8a3aade325319319191e938ec119973398e85"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p040/audit/native-audio-plan-v1.json",
+      "bytes": 1299,
+      "sha256": "53420485e418c488fa0708bb3517fc2afc49b090df058018e373c7beb8401b8f"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p040/audit/native-prepared-pcm-v1.json",
+      "bytes": 192,
+      "sha256": "657a4c69d77d100acb7146f737d26ecec983733d134ac86fb4cfc7f0674ca9ef"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p040/audit/native-prepared-pcm-v1.f32le",
+      "bytes": 3234000,
+      "sha256": "475a6b0c8832dc152a23cb0696dffb83b79f26d23042b19167f9df2d0867cf4b"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation189-audio-tests-v1.log",
+      "bytes": 247,
+      "sha256": "957bceef2bb3cd610c1e16649bf662a212c1afacee8a01c053997c9fda0bd6e6"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation189-demos-types-v1.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation189-audio-plan-check-v1.log",
+      "bytes": 317,
+      "sha256": "1ffea494c859606485fb13ef0ed3c4df9dbfac7b169b88952e12daebd41728f3"
+    }
+  ],
+  "limitations": [
+    "NativewholePCMgapplan; doesnotproveoriginalFlashsync orhumanlistening.",
+    "No browserdecode/playback verification ofP040yet.",
+    "Sourceheaderrounding drift retained as explicitqualification; no droppingduplicatingPCM to force perframealignment."
+  ],
+  "next": [
+    "Implement hashverifiedbrowseraudio load/decode and sourceclockcontroller.",
+    "ConnectPlay/Pause/glossary/Replay to controlledpresentation andverifyactualWebAudio."
+  ],
+  "runningOwnedJobs": []
+}

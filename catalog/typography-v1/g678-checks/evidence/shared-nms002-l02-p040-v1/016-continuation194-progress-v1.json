@@ -1,0 +1,82 @@
+{
+  "checkedAt": "2026-09-20T10:05:42.225386+00:00",
+  "previousGoalTurn": "progress",
+  "status": "P040-React-player-and-official-font-gate-implemented",
+  "registeredCurrentJs": 459,
+  "admittedCurrentJs": 459,
+  "totalActivePagePlacements": 2282,
+  "remaining": 1823,
+  "goalComplete": false,
+  "validation": {
+    "demosTypeScript": "exit0",
+    "browserFixtureBundled": true
+  },
+  "implementation": [
+    "ControllerownedbysingleReacteffect withlatestproprefs",
+    "FontreadinessrequiredforPlay; fontfailurevisible",
+    "HostcontrolssetPaused/replay/narration/stop",
+    "Completionnotificationonceperreplay",
+    "Visibilitypause andunmountcancelRAF/disconnectcontrols/closeaudio"
+  ],
+  "evidence": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p040-player-v1.tsx",
+      "bytes": 4417,
+      "sha256": "418b19bd65babc33e0e82cbc23bd0eb68083fdf4748f5739290eab15b05c6167"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p040-fonts-v1.ts",
+      "bytes": 534,
+      "sha256": "f59d08412ef857536eec3e6d15ee8f02ac73d4a090d73e702aebb9de1e253dd1"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/scripts/p040-player-fixture-v1.tsx",
+      "bytes": 1532,
+      "sha256": "c20daa17450eada254f9adce8496496d6a6b3d0abde7c9689f59c6aa078f78df"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation194-demos-types-v1.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-player-browser-v1/source.mp3",
+      "bytes": 180700,
+      "sha256": "93af0f4c375356d5a10f5e2a420222bdb91ff3fa3b8e8440af1e0c02eea2d020"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-player-browser-v1/index.html",
+      "bytes": 368,
+      "sha256": "acaf7c2754d7a9a04cdb32a6c5ec28fef933fcb7a1c38b2f0680db157970c1dd"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-player-browser-v1/fredoka-variable.ttf",
+      "bytes": 159184,
+      "sha256": "2ba02e68b152868aef9ba28e24b3648c7d457fe6f25c761f2c2c53fb61a73fc8"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-player-browser-v1/fixture.js",
+      "bytes": 1201848,
+      "sha256": "1306118a24efcf576a20eeea9d082373accf5103fc72d12459947560c09e79ad"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-player-browser-v1/nunito-sans-variable.ttf",
+      "bytes": 571240,
+      "sha256": "f934d7142fb4784bf828da485b7dcbd90c0c80d514e9d49a5da0ed3a1ae2491d"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-player-browser-v1/fixture.css",
+      "bytes": 2648,
+      "sha256": "4f1ec6507dacb7d8e1e20b2b335360b9cb5d6bd0911fe6258348dbf35dcecb0f"
+    }
+  ],
+  "limitations": [
+    "ActualReactplay/mount/unmount verificationpending; fixturepreparedbutnotrun.",
+    "Officialhostadapter/route/registration notimplemented."
+  ],
+  "next": [
+    "Run preparedrealReactplayerfixture withsourceaudio and officialfonts.",
+    "TestPlayPauseglossaryReplaycompletionunmount andfont/loadfailure, thenpreparehostadapter."
+  ],
+  "runningOwnedJobs": []
+}

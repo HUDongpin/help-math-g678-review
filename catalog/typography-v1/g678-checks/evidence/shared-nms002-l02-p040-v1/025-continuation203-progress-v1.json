@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-09-20T10:38:55.933603+00:00",
+  "previousGoalTurn": "progress",
+  "status": "P040-C1-realMyLesson-EN-play-glossary-Replay-and-audio-verified",
+  "registeredCurrentJs": 460,
+  "admittedCurrentJs": 459,
+  "provisionalOnly": 1,
+  "totalActivePagePlacements": 2282,
+  "remainingUnadmitted": 1823,
+  "goalComplete": false,
+  "validation": {
+    "frozenInputs": 80,
+    "frozenOutputs": 89,
+    "pinMismatches": 0,
+    "actualHost": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p040",
+    "muted": true,
+    "glossaryPausedFrame": 65,
+    "heldFrame": 65,
+    "resumedFrame": 70,
+    "focusRestored": "percent",
+    "ReplayInitialObservedFrame": 1,
+    "hostReplayAutoPlays": true,
+    "terminalFrame": 440,
+    "sourceAudioBytes": 180700,
+    "sourceAudioHashMatches": true,
+    "unqualifiedDirectAudioStatus": 404,
+    "pausedAndTerminalScreenshotsInspected": true
+  },
+  "evidence": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-real-host-v1/host-terminal.png",
+      "bytes": 146759,
+      "sha256": "262264cc0156b76327ce7be78efb4676b5141b6a12cb34c17c217374f16c0fc1"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-real-host-v1/host-replay-terminal-v1.log",
+      "bytes": 70,
+      "sha256": "3613f4d7999dceb8f576c8d16b507b271ee0381709f4ee0e3c016b3f5861bdd6"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-real-host-v1/host-replay-terminal-v2.log",
+      "bytes": 800,
+      "sha256": "6ec4f029fc27a6f869a1d7f7aabda5406a23e4cd17654d975351638cf946d4c7"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-real-host-v1/host-play-glossary-pause-v1.log",
+      "bytes": 2103,
+      "sha256": "7a5352bb4c83c9259158a224fe3a25738791efc902850e2f4ee331028812f87b"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-real-host-v1/host-audio-bytes-v1.log",
+      "bytes": 737,
+      "sha256": "d688b247cf9d3397d0cff53217ee2f7ec10c69c6e9827309a0a3f2ca8dfd9d25"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-real-host-v1/direct-audio-negative-v1.log",
+      "bytes": 4,
+      "sha256": "f8bf41177a5f5e808a7ccb648b51080b031f15ca8018d91a576263d6cc626eb6"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p040-real-host-v1/host-paused.png",
+      "bytes": 132485,
+      "sha256": "441b41fd2e34b7ec70febe44499a1dcadda040f6c40d2bfebd86e88d2a4f9ead"
+    }
+  ],
+  "limitations": [
+    "FirstReplayassert expectedpausedframe1after100ms; hostalreadyplayingframe3. Retainedv1failure; correctedv2observesframe1thenfullnaturalterminal.",
+    "ES, navigation,large-text/responsive,finaltypographyandproductionnegative checks stillpending.",
+    "Nolistening/originalruntime/humanacceptance."
+  ],
+  "next": [
+    "RunESandnavigationresponsive checks againstfrozenC1; fixonlythroughversionedcandidate ifneeded.",
+    "Finalizetypography/production-negative evidence beforeadmission."
+  ],
+  "runningOwnedJobs": [],
+  "retainedDevServer": {
+    "pid": 94150,
+    "port": 3343
+  }
+}

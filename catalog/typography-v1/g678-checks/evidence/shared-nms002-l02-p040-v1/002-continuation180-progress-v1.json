@@ -1,0 +1,57 @@
+{
+  "checkedAt": "2026-09-20T09:22:28.731468+00:00",
+  "previousGoalTurn": "progress",
+  "status": "P040-heading-transcribed-and-stream-clock-reconciled",
+  "registeredCurrentJs": 459,
+  "admittedCurrentJs": 459,
+  "totalActivePagePlacements": 2282,
+  "remaining": 1823,
+  "goalComplete": false,
+  "animationId": "shared-nms002-l02-p040",
+  "heading": "Fractions, Decimals, and Percents Concepts: Instruction",
+  "audioFindings": {
+    "sampleCount": 800640,
+    "headerSamplesPerFrame": 1837,
+    "rateDividedByFps": 1837.5,
+    "steadyBlocks": 434,
+    "steadyFrames": [
+      7,
+      440
+    ],
+    "steadySeekCoordinateOffset": -7512,
+    "firstBlockExceptional": true,
+    "frame6Empty": true
+  },
+  "evidence": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p040/audit/source-heading-path-v1.svg",
+      "bytes": 13968,
+      "sha256": "a79f2cf5b3eb10a8f97b720f38013cb6f5478ce6020bcd1ee4f7cf6fe2d318d5"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p040/audit/source-heading-path-v1.png",
+      "bytes": 126455,
+      "sha256": "4a7a750be63abd80b8c4156696b5669de0ab7c4417e7b2333ba872c6753ca8bf"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p040/audit/source-heading-transcription-v1.json",
+      "bytes": 782,
+      "sha256": "d19e57fb22b946841df174fb61b447e3f831b40e0024482a29be06e470d26939"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p040/audit/source-audio-clock-audit-v1.json",
+      "bytes": 111198,
+      "sha256": "71463bc72b4e700babc0cdc550c2558a7926e280009bd0665cf19472c94ec7e1"
+    }
+  ],
+  "limitations": [
+    "Source path rendering establishes heading transcription only, not original-runtime fidelity.",
+    "Audio pre-roll and last-frame tail still need explicit native treatment and checks.",
+    "P040 unregistered; no Current-JS count increment."
+  ],
+  "next": [
+    "Write native implementation decisions for deterministic state, glossary pause/resume and full PCM clock.",
+    "Implement source-bound renderer with exact grid, word schedule, equation transitions and Replay."
+  ],
+  "runningOwnedJobs": []
+}

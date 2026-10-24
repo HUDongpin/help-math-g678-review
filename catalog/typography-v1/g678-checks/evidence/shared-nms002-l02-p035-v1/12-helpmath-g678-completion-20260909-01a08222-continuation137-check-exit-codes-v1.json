@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-09-19T22:04:54.323723+00:00",
+  "status": "PASS",
+  "audioAccessTests": {
+    "command": "node --import tsx --test tests/nms-l02-p035-audio-access.test.ts",
+    "exitCode": 0,
+    "tests": 2,
+    "passed": 2,
+    "failed": 0
+  },
+  "webTypecheck": {
+    "command": "npm run typecheck --workspace @helpmath/web",
+    "exitCode": 0,
+    "log": "continuation137-web-types-v1.log"
+  },
+  "productionBuild": {
+    "command": "HELP_MATH_LOCAL_REFERENCE_DIAGNOSTIC=1 NODE_ENV=production npm run build --workspace @helpmath/web",
+    "exitCode": 0,
+    "log": "continuation137-production-build-v2.log"
+  },
+  "scope": "Exit codes observed from completed owned tool sessions; no external deployment."
+}

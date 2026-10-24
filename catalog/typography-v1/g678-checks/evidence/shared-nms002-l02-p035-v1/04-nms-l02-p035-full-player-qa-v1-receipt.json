@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "checks": [
+    "actual-main-audio-nonzero",
+    "both-terms-pause-and-explicit-resume",
+    "master-mute-silence",
+    "full1036interval-native-terminal-single-completion",
+    "Replay-cache-and-narration-off-clock",
+    "unmount-context-cleanup"
+  ],
+  "errors": [],
+  "failure": null,
+  "scope": "Composed player, actual Chromium AudioContext clock and analyser signal. Original-runtime/listening/human acceptance and MyLesson integration pending.",
+  "registered": false
+}

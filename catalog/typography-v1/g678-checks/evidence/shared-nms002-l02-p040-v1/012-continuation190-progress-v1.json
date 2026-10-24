@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-09-20T09:52:06.827196+00:00",
+  "previousGoalTurn": "progress",
+  "status": "P040-hash-bound-audio-loader-implemented",
+  "registeredCurrentJs": 459,
+  "admittedCurrentJs": 459,
+  "totalActivePagePlacements": 2282,
+  "remaining": 1823,
+  "goalComplete": false,
+  "validation": {
+    "loaderTestGroup": "PASS",
+    "demosTypeScript": "exit0",
+    "actualSourceBytes": 180700,
+    "sameLengthCorruptionRejected": true,
+    "wrongLengthRejected": true,
+    "redirectRejected": true,
+    "preAbortedRequestDoesNotFetch": true
+  },
+  "evidence": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p040-audio-loader-v1.ts",
+      "bytes": 1539,
+      "sha256": "9c9cf68b5f06ca2a1c8355813ea6bcfb4cb482e7e83bd04655defbf283a9c119"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/tests/nms-l02-p040-audio-loader-v1.test.ts",
+      "bytes": 2093,
+      "sha256": "0148428ad344e42a3d4b38147f090e97a452a0f6b901096944845d26523fcdad"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation190-loader-tests-v1.log",
+      "bytes": 222,
+      "sha256": "5664aa321fe82ef8105e4138878efb96eaad0b7639c7e8e014ff9017887cf7be"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation190-demos-types-v1.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "limitations": [
+    "Response transport mocked inloaderunitcheck; actualbrowserfetch/decode pending.",
+    "Local scoped audio route notyetimplemented orregistered.",
+    "No playbackcontrollerorReactplayer yet."
+  ],
+  "next": [
+    "Implement cancellableWebAudio load/decode and sourceclockcontroller.",
+    "Verify actualbrowserPlay/Pause/Replay/glossary lifecycle beforelocalhostregistration."
+  ],
+  "runningOwnedJobs": []
+}
