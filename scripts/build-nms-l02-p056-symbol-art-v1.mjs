@@ -1,0 +1,122 @@
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+
+const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const sourceRoot = '/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware';
+const source = path.join(sourceRoot, 'G6-G8-shared/NMS002/L2/TS/L2TS03.swf');
+const output = path.join(projectRoot, 'packages/demos/src/generated/nms-l02-p056-symbol-art-v1.ts');
+const sourceSha256 = 'a1872d6c20987340889c1077d6720cbfe046faa3b5228164987e0834f3c639be';
+const frameHashes = {
+  32: '74fa748ff9e5e89bfc4fe76487c87457d5972daacd56ec34fea3c5c3e62285c9',
+  42: '0e734f1efe676bc16974ab006a5a79334969eb0bac9705324d1b2bc559198057',
+  234: '1d05f279e27194b4ed50834a29844c6cec5a62c27821f83879d3b086731e0bb1',
+};
+const expectedCharacters = [2, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 16, 17, 18, 19, 20, 21, 22, 23];
+const sha = bytes => createHash('sha256').update(bytes).digest('hex');
+
+function readBound(file, expected) {
+  const before = fs.lstatSync(file, {bigint: true});
+  assert.ok(before.isFile() && !before.isSymbolicLink() && before.nlink === 1n, file);
+  const bytes = fs.readFileSync(file);
+  const after = fs.lstatSync(file, {bigint: true});
+  for (const key of ['dev', 'ino', 'size', 'mtimeNs', 'mode', 'nlink']) {
+    assert.equal(before[key], after[key], file);
+  }
+  assert.equal(sha(bytes), expected, file);
+  return bytes.toString('utf8');
+}
+
+function groupById(svg, id) {
+  const start = svg.indexOf(`<g id="${id}">`);
+  assert.ok(start >= 0, `missing SVG group ${id}`);
+  const tags = /<\/?g(?:\s[^>]*)?>/gu;
+  let depth = 0;
+  for (const match of svg.slice(start).matchAll(tags)) {
+    depth += match[0].startsWith('</') ? -1 : 1;
+    if (depth === 0) return svg.slice(start, start + match.index + match[0].length);
+  }
+  throw new Error(`unclosed SVG group ${id}`);
+}
+
+function characterUses(svg) {
+  const placements = svg.slice(0, svg.indexOf('<defs>'));
+  const map = new Map();
+  for (const match of placements.matchAll(/<use\b[^>]*ffdec:characterId="(\d+)"[^>]*xlink:href="#([^"]+)"[^>]*\/>/gu)) {
+    const characterId = Number(match[1]);
+    if (map.has(characterId)) assert.equal(map.get(characterId), match[2]);
+    map.set(characterId, match[2]);
+  }
+  return map;
+}
+
+function build() {
+  assert.equal(process.env.HELP_MATH_G678_SOURCE_ROOT, sourceRoot,
+    'exact real G6-G8 source root required');
+  const rootStat = fs.lstatSync(sourceRoot);
+  assert.ok(rootStat.isDirectory() && !rootStat.isSymbolicLink(), 'source root must be real');
+  assert.equal(sha(fs.readFileSync(source)), sourceSha256);
+  const temporary = fs.mkdtempSync(path.join(os.tmpdir(), 'p056-symbol-art-'));
+  try {
+    const result = spawnSync('ffdec', ['-select', '24:32,42,234', '-format', 'sprite:svg',
+      '-export', 'sprite', temporary, source], {encoding: 'utf8', maxBuffer: 8 * 1024 * 1024});
+    assert.equal(result.status, 0, result.stderr || result.stdout);
+    assert.match(result.stdout + result.stderr, /JPEXS Free Flash Decompiler v\.26\.2\.1/u);
+    const frames = Object.fromEntries(Object.entries(frameHashes).map(([frame, hash]) =>
+      [frame, readBound(path.join(temporary, 'DefineSprite_24', `${frame}.svg`), hash)]));
+    const base = frames[234];
+    assert.match(base, /height="383\.1px" width="477\.5px"/u);
+    assert.match(base, /<g transform="matrix\(1\.0, 0\.0, 0\.0, 1\.0, 359\.45, 204\.2\)">/u);
+    const defsStart = base.indexOf('<defs>');
+    const defsEnd = base.lastIndexOf('</defs>');
+    assert.ok(defsStart > 0 && defsEnd > defsStart);
+    let defs = base.slice(defsStart, defsEnd);
+    const characters = characterUses(base);
+    for (const id of [18, 19]) {
+      const frame = id === 18 ? 32 : 42;
+      const symbolId = characterUses(frames[frame]).get(id);
+      assert.ok(symbolId, `missing flash text ${id}`);
+      const group = groupById(frames[frame], symbolId)
+        .replace(`<g id="${symbolId}">`, `<g id="p056-text-${id}">`);
+      for (const ref of group.matchAll(/xlink:href="#([^"]+)"/gu)) {
+        assert.ok(defs.includes(`id="${ref[1]}"`), `missing source glyph ${ref[1]}`);
+      }
+      defs += `\n    ${group}`;
+      characters.set(id, `p056-text-${id}`);
+    }
+    assert.equal(characters.get(11), 'text6');
+    assert.ok(!defs.includes('id="text6"'), 'dynamic edit text unexpectedly has static glyphs');
+    characters.set(11, null);
+    defs += '\n  </defs>';
+    assert.deepEqual([...characters.keys()].sort((a, b) => a - b), expectedCharacters);
+    assert.doesNotMatch(defs, /<(?:script|foreignObject|image)\b|\son[a-z]+=/iu);
+    for (const ref of defs.matchAll(/(?:xlink:href="#|url\(#)([^"\)]+)["\)]/gu)) {
+      assert.ok(defs.includes(`id="${ref[1]}"`), `unresolved SVG reference ${ref[1]}`);
+    }
+    return `// Generated by scripts/build-nms-l02-p056-symbol-art-v1.mjs; do not edit.\n` +
+      `// Exact-source forensic SVG symbols; not original-runtime or product acceptance.\n` +
+      `export const P056_SYMBOL_SOURCE = ${JSON.stringify({sourceSwfSha256: sourceSha256,
+        frameSvgSha256: frameHashes, crop: {width: 477.5, height: 383.1, x: 359.45, y: 204.2}})} as const;\n` +
+      `export const P056_CHARACTER_SYMBOL_IDS = ${JSON.stringify(Object.fromEntries(characters))} as const;\n` +
+      `export const P056_SYMBOL_DEFS_SVG = ${JSON.stringify(defs)};\n`;
+  } finally {
+    fs.rmSync(temporary, {recursive: true});
+  }
+}
+
+const mode = process.argv[2];
+if (!['--write', '--check'].includes(mode) || process.argv.length !== 3) {
+  throw new Error('Usage: node scripts/build-nms-l02-p056-symbol-art-v1.mjs --write|--check');
+}
+const rendered = build();
+if (mode === '--write') {
+  fs.writeFileSync(output, rendered, {flag: 'wx'});
+  process.stdout.write(`WROTE ${output} ${sha(Buffer.from(rendered))}\n`);
+} else {
+  assert.equal(fs.readFileSync(output, 'utf8'), rendered, 'generated P056 SVG symbols drifted');
+  process.stdout.write(`PASS ${output} ${sha(Buffer.from(rendered))}\n`);
+}

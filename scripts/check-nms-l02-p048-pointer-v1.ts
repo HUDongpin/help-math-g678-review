@@ -1,0 +1,4 @@
+import assert from 'node:assert/strict';import {p048Pointer} from '../packages/demos/src/nms-l02-p048-pointer-v1';
+const anchors={slider:{x:60,y:400},sliderEnd:{x:225,y:400},grid:{x:280,y:300},check:{x:160,y:500},exit:{x:290,y:524}};let visible=0;
+for(let frame=1;frame<=329;frame++){const p=p048Pointer(frame,anchors);assert.equal(p048Pointer(frame,anchors,true),null);if(p){visible++;assert.ok(Number.isFinite(p.x)&&Number.isFinite(p.y)&&p.alpha>0&&p.alpha<=1);if(frame>=84&&frame<=158)assert.deepEqual({x:p.x,y:p.y},anchors.slider);if(frame>=165&&frame<=288)assert.deepEqual({x:p.x,y:p.y},anchors.grid);if(frame>=299&&frame<=309)assert.deepEqual({x:p.x,y:p.y},anchors.check);}}
+assert.equal(visible,243);assert.equal(p048Pointer(75,anchors),null);assert.equal(p048Pointer(319,anchors),null);console.log(JSON.stringify({passed:true,frames:329,visibleFrames:visible,reducedMotionHidden:true,sourceTargetIntervals:true}));

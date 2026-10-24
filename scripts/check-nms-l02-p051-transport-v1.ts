@@ -1,0 +1,34 @@
+import assert from 'node:assert/strict';
+import {P051AudioTransport} from '../packages/demos/src/nms-l02-p051-audio-transport-v1';
+async function main(){
+ const starts:number[][]=[],nodes:any[]=[];let closes=0,reads=0;
+ const context:any={currentTime:0,destination:{},createGain:()=>({gain:{value:0},connect(){},disconnect(){}}),resume:async()=>{},close:async()=>{closes++;},createBufferSource:()=>{const node={buffer:null,onended:null,connect(){},disconnect(){},stop(){},start(...args:number[]){starts.push(args);}};nodes.push(node);return node;}};
+ const transport=new P051AudioTransport({context:()=>context,read:async()=>{reads++;return new ArrayBuffer(1);},decode:async()=>({length:100000,sampleRate:22050} as AudioBuffer)});
+ const window={domain:'250' as const,start:1838,end:36562};
+ assert.equal(await transport.play(window),true);context.currentTime=.5;transport.pause();assert.equal(transport.snapshot().elapsed,.5);assert.equal(await transport.resume(),true);assert.equal(starts[1]![1],(1838+11025)/22050);assert.equal(reads,1);await transport.resume();assert.equal(starts.length,2);transport.stop();assert.equal(transport.snapshot().window,null);await transport.close();await transport.close();assert.equal(closes,1);assert.equal(await transport.play(window),false);
+ let resolveRead!:(value:ArrayBuffer)=>void;let aborted=false;let decodes=0;
+ const late=new P051AudioTransport({context:()=>context,read:async(_d,signal)=>{signal.addEventListener('abort',()=>aborted=true);return new Promise(r=>resolveRead=r);},decode:async()=>{decodes++;return {length:100000} as AudioBuffer;}});
+ const pending=late.play(window);await late.close();resolveRead(new ArrayBuffer(1));assert.equal(await pending,false);assert.equal(aborted,true);assert.equal(decodes,0);assert.equal(starts.length,2);
+ let resolveDecode!:(value:AudioBuffer)=>void;
+ const lateDecode=new P051AudioTransport({context:()=>context,read:async()=>new ArrayBuffer(1),decode:()=>new Promise(r=>resolveDecode=r)});
+ const loading=lateDecode.play(window);await Promise.resolve();lateDecode.stop();resolveDecode({length:100000} as AudioBuffer);assert.equal(await loading,false);assert.equal(starts.length,2);await lateDecode.close();
+ let allocations=0;
+ const guarded=new P051AudioTransport({context:()=>{allocations++;return context;},read:async()=>new ArrayBuffer(1)});
+ for(const invalid of [{...window,start:-1},{...window,end:36563},{...window,end:window.start},{...window,start:.5}])await assert.rejects(()=>guarded.play(invalid),/WINDOW/);
+ await assert.rejects(()=>guarded.play(window,Infinity),/ELAPSED/);assert.equal(allocations,0);
+ assert.equal(await guarded.play(window,(window.end-window.start)/22050),false);assert.equal(allocations,0);await guarded.close();
+ let resolveResume!:()=>void;
+ const suspendedContext={...context,resume:()=>new Promise<void>(r=>resolveResume=r)};
+ const suspended=new P051AudioTransport({context:()=>suspendedContext,read:async()=>new ArrayBuffer(1),decode:async()=>({length:100000} as AudioBuffer)});
+ const pendingResume=suspended.play(window);await Promise.resolve();await Promise.resolve();await Promise.resolve();
+ suspended.pause();resolveResume();assert.equal(await pendingResume,false);assert.equal(starts.length,2);await suspended.close();
+ const clockStarts=starts.length;let clockReads=0;
+ const clockOnly=new P051AudioTransport({context:()=>context,read:async()=>{clockReads++;throw Error('unexpected read');}});
+ assert.equal(await clockOnly.resumeClock(),true);assert.equal(clockReads,0);assert.equal(starts.length,clockStarts);
+ context.currentTime=42;assert.equal(clockOnly.currentTime(),42);await clockOnly.close();assert.equal(await clockOnly.resumeClock(),false);
+ let completeClock!:()=>void;
+ const delayedClock=new P051AudioTransport({context:()=>({...context,resume:()=>new Promise<void>(r=>completeClock=r)}),read:async()=>{throw Error('unexpected read');}});
+ const clockPending=delayedClock.resumeClock();delayedClock.pause();completeClock();assert.equal(await clockPending,false);await delayedClock.close();
+ console.log(JSON.stringify({passed:true,silentClockWithoutSource:true,silentClockResumeCancelled:true,pauseResumeOffset:true,cacheReuse:true,duplicateResumeNoRestart:true,lateReadCancelled:true,lateDecodeCancelled:true,lateContextResumeCancelled:true,invalidWindowNoAllocation:true,completedWindowNoAllocation:true,idempotentClose:true,scope:'Injected audio-context lifecycle tests; real playback pending.'}));
+}
+void main();

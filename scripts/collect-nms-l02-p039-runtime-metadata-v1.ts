@@ -1,0 +1,11 @@
+import{readFileSync,writeFileSync}from'node:fs';import{createHash}from'node:crypto';import assert from'node:assert/strict';
+import animationModule from'../packages/demos/src/modules/g678-nms-l02-native-percent-practice-p039';
+import{NmsL2P039Player}from'../packages/demos/src/nms-l02-p039-player-v1';
+import{readP039SourceAudio}from'../packages/demos/src/nms-l02-p039-audio-loader-v1';
+import{isNmsL2P039AudioRequest}from'../apps/web/lib/nms-l02-p039-audio-access';
+export const runtimeEntrypoints={animationModule,NmsL2P039Player,readP039SourceAudio,isNmsL2P039AudioRequest};
+const irRaw=readFileSync(process.argv[2]);assert.equal(createHash('sha256').update(irRaw).digest('hex'),'afee7a2fa13b67694d609f7ed3828bebb5d7aceafe754f0c9160d39fb3aac5d7');const ir=JSON.parse(irRaw.toString());
+assert.equal(animationModule.key,ir.animationId);assert.equal(animationModule.movie.frameCount,ir.domains.root.frameCount);assert.equal(animationModule.movie.fps,ir.fps);assert.deepEqual(animationModule.movie.stage,{width:ir.stage[0],height:ir.stage[1]});
+for(const domain of animationModule.runtime!.frameDomains!)assert.equal(domain.frameCount,ir.domains[domain.id==='root'?'root':domain.id.slice(7)].frameCount);
+const output={schemaVersion:1,animationId:animationModule.key,movie:animationModule.movie,runtime:animationModule.runtime,scenarios:animationModule.scenarios,defaultScenarioByFrameDomain:animationModule.defaultScenarioByFrameDomain,source:animationModule.privateP039PercentPractice,textBindingVersion:animationModule.textPresentation!.binding.version,moduleMaturity:animationModule.maturity,registrationNotImplied:true,sourceIrSha256:createHash('sha256').update(irRaw).digest('hex')};
+writeFileSync(process.argv[3],JSON.stringify(output,null,2)+'\n');console.log(JSON.stringify({status:'PASS',domains:output.runtime!.frameDomains!.length,scenarios:output.scenarios.length,rootFrames:output.movie.frameCount,registered:false}));

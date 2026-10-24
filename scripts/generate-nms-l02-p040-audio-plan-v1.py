@@ -1,0 +1,12 @@
+from pathlib import Path
+import json,hashlib,sys
+R=Path(__file__).resolve().parents[1];A=R/'migrations/shared-nms002-l02-p040/audit';blocks=json.loads((A/'source-audio-blocks-v1.json').read_text());pcm=json.loads((A/'source-pcm-v1.json').read_text());rows=blocks['blocks'];assert len(rows)==436 and rows[0]['frame']==5 and rows[-1]['frame']==440;assert [b['frame']for b in rows if b['sampleCount']==0]==[6];assert rows[0]['sampleCount']==3456 and rows[0]['seekSamples']==1673;assert rows[2]['frame']==7 and rows[2]['seekSamples']==54
+split=rows[0]['sampleCount']+rows[2]['seekSamples'];assert split==3510;count=pcm['sampleFrames'];assert count==800640
+segments=[{'frame':5,'sourceStart':1673,'sourceEnd':split,'outputStart':7350,'outputEnd':7350+split-1673},{'frame':7,'sourceStart':split,'sourceEnd':count,'outputStart':11025,'outputEnd':11025+count-split}];assert segments[0]['sourceEnd']==segments[1]['sourceStart']
+plan={'sourceSha256':blocks['encodedStream']['sha256'],'sourceBytes':blocks['encodedStream']['bytes'],'sampleRate':22050,'channels':1,'decodedSamples':count,'latencySamples':1673,'totalSamples':808500,'segments':segments}
+receipt={'animationId':'shared-nms002-l02-p040','sourceSwfSha256':blocks['sourceSha256'],'plan':plan,'qualification':['Decode whole originalMP3, discard only sourcefirstseek1673 samples, preserve everyremainingPCM sample exactlyonce.','Frame6 hasemptySoundStreamBlock. Split atsourcecoordinate3510 fromframe7 cumulativecount+seek; insertgap untilframe7.','Segments begin at exact12fps time. Header1837 versus1837.5 sampling drift is not corrected by dropping/duplicatingPCM; remainder of eachcontinuous segment preserved.','Pad to440fullframeintervals; originalruntime synchronization andnamedhuman listening remainpending.'],'audioAccepted':False};dest=A/'native-audio-plan-v1.json';s=json.dumps(receipt,indent=2)+'\n';out=R/'packages/demos/src/generated/nms-l02-p040-audio-plan-v1.ts';ts='// Generated from source block/seek metadata; do not edit.\nexport const P040_AUDIO_SOURCE = '+json.dumps(plan,separators=(',',':'))+' as const;\n'
+if '--check'in sys.argv:assert dest.read_text()==s and out.read_text()==ts
+else:
+ with dest.open('x')as f:f.write(s)
+ with out.open('x')as f:f.write(ts)
+print(json.dumps({'status':'PASS','segments':segments,'totalSamples':808500,'retainedSamples':count-1673,'gapSamples':11025-segments[0]['outputEnd'],'tailPadding':808500-segments[-1]['outputEnd']}))

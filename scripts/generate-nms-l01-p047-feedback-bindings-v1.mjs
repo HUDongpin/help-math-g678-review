@@ -1,0 +1,14 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';import assert from 'node:assert/strict';
+import path from 'node:path';
+const ROOT=path.resolve(import.meta.dirname,'..');
+const source='/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p047-behavior-source-v1/dynamic-text-role-disposition-v1.json';
+const expected='7f32b44a5c55e7d3997439b3c37d07dd8068058775e963536a2154fff6beb1b1';
+const bytes=await readFile(source);assert.equal(createHash('sha256').update(bytes).digest('hex'),expected);
+const rows=JSON.parse(bytes).rows.filter(row=>row.role==='review-feedback');assert.equal(rows.length,108);
+const bindings=rows.map(row=>{assert.equal(row.uses.length,1);const use=row.uses[0];assert.equal(use.domain,'1024');assert.ok(use.frame>=47&&use.frame<=73);assert.match(use.name,/^TxtFeed[1-4]$/);const question=use.frame-46,letter='ABCD'[Number(use.name.slice(-1))-1];return {question,letter,blockId:`q${question}-feedback-${letter}`,sourceTextId:row.sourceTextId,sourceTagSha256:row.sourceTagSha256,sourceFrame:use.frame,sourceInstance:use.name};}).sort((a,b)=>a.question-b.question||a.letter.localeCompare(b.letter));
+assert.equal(new Set(bindings.map(b=>b.blockId)).size,108);
+for(let question=1;question<=27;question++)for(const letter of 'ABCD')assert.equal(bindings.filter(b=>b.question===question&&b.letter===letter).length,1);
+const output=ROOT+'/packages/demos/src/generated/nms-l01-p047-feedback-bindings-v1.ts';const text=`// Generated from the exact source feedback-field disposition. Do not edit.\n// Input SHA-256: ${expected}\nexport const P047_FEEDBACK_BINDINGS = ${JSON.stringify(bindings,null,2)} as const;\n`;
+if(process.argv.includes('--check'))assert.equal(await readFile(output,'utf8'),text);else await writeFile(output,text,{flag:'wx'});
+console.log(JSON.stringify({output,bindings:bindings.length,sourceSha256:expected,registered:false}));

@@ -1,0 +1,18 @@
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {fileURLToPath} from 'node:url';
+import {p052SupplementalCoverage} from './lib/nms-l02-p052-coverage-v1.mjs';
+import {validateRequirementCoverageGroups} from './lib/trace-frame-selection.mjs';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const base=path.join(root,'migrations/shared-nms002-l02-p052');
+const read=p=>JSON.parse(fs.readFileSync(path.join(base,p)));
+const plan=read('audit/native-main-capture-plan-v1.json'),manifest=read('migration.json'),coverage=read('evidence/full-frame-coverage.json');
+const expected=p052SupplementalCoverage(plan),actual=coverage.requirements.filter(r=>r.frameDomainId==='sprite-350');
+assert.deepEqual(actual,expected);
+const main=manifest.implementation.frameDomains.find(d=>d.id==='sprite-350');
+assert.equal(main.kind,'nested');assert.equal(main.parentFrameDomainId,'root');assert.equal(main.frameCount,156);
+assert.equal(manifest.runtime.frameCount,10);
+assert.deepEqual([...main.scenarioIds].sort(),[...new Set(expected.map(r=>r.scenario))].sort());
+for(const row of expected)assert.ok(manifest.scenarios.some(s=>s.id===row.scenario&&s.reachable));
+validateRequirementCoverageGroups(coverage.requirements,{root:10,'sprite-350':156});
+assert.equal(coverage.requirements.filter(r=>r.frameDomainId==='root').length,2);
+assert.ok(coverage.requirements.every(r=>r.status==='pending'&&r.capturedFrameCount===0&&r.baselineAuthority==='unresolved'));
+console.log(JSON.stringify({status:'PASS',supplemental:actual.length,scenarios:main.scenarioIds.length,rootPending:2,capturedImages:0,strictMainRequirements:0}));

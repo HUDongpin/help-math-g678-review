@@ -1,0 +1,11 @@
+import{chromium}from'playwright';import{mkdir,writeFile}from'node:fs/promises';
+const OUT='/Volumes/American Dream/hudongpin/helpmath-execution-20260906-01a0747f/nms-l02-replay-layout-diagnostic-v1';await mkdir(OUT);const browser=await chromium.launch({headless:true,args:['--mute-audio']});const records=[];
+try{for(const reserve of [false,true]){const ctx=await browser.newContext({viewport:{width:390,height:1000},reducedMotion:'reduce'}),page=await ctx.newPage();
+await page.goto('http://127.0.0.1:3340/en/migration-status/g678-calibration/shared-nms002-l02-p020',{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>document.querySelector('[data-source-clock-ready]')?.dataset.sourceClockReady==='true');
+if(reserve)await page.addStyleTag({content:'[data-hover-feedback]{height:72px;overflow-y:auto;line-height:24px}'});
+const slider=page.locator('input[data-responsive-focus-key="timeline"]:visible').first();await slider.focus();await slider.press('End');await page.waitForFunction(()=>document.querySelector('[data-source-clock-runtime] canvas')?.dataset.flashFrame==='151');
+await page.locator('[data-hover-choice="30"]').focus();await page.waitForFunction(()=>document.querySelector('[data-source-clock-runtime] canvas')?.dataset.sourceHoverCharacterIds==='30');
+await page.evaluate(()=>{window.layoutEvents=[];for(const name of ['pointerdown','pointerup','click'])document.addEventListener(name,e=>{window.layoutEvents.push({name,target:e.target.outerHTML.slice(0,350),replayRect:document.querySelector('[data-responsive-focus-key="replay"]')?.getBoundingClientRect().toJSON()});},true);});
+const before=await page.locator('[data-responsive-focus-key="replay"]:visible').first().boundingBox();await page.locator('[data-responsive-focus-key="replay"]:visible').first().click();await page.waitForTimeout(700);
+records.push({reservedFeedbackHeight:reserve,before,after:await page.evaluate(()=>({phase:document.querySelector('[data-source-clock-runtime]')?.dataset.sourceClockPhase,frame:document.querySelector('[data-source-clock-runtime] canvas')?.dataset.flashFrame,events:window.layoutEvents}))});await ctx.close();}}
+finally{await browser.close();await writeFile(OUT+'/receipt.json',JSON.stringify({scope:'Temporary CSS A/B diagnostic only; not product acceptance',records},null,2)+'\n',{flag:'wx'});console.log(JSON.stringify(records));}

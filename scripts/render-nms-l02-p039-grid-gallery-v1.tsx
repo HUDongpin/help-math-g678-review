@@ -1,0 +1,11 @@
+import * as React from 'react';
+import {renderToStaticMarkup} from 'react-dom/server';
+import {writeFileSync} from 'node:fs';
+import {P039Grid} from '../packages/demos/src/nms-l02-p039-grid-v1';
+import {p039Initial,p039Advance,p039SetPercent} from '../packages/demos/src/nms-l02-p039-state-v1';
+const frames=[1,34,43,62,134,158,287,302,400,421,449,545];
+const cards=frames.map(frame=>({label:`Intro ${frame}`,state:p039Advance(p039Initial(),frame-1)}));
+for(const percent of [0,1,25,50,100])cards.push({label:`Practice ${percent}%`,state:p039SetPercent(p039Advance(p039Initial(),545),percent)});
+const html=renderToStaticMarkup(<html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>P039 diagram engineering gallery</title><style>{`body{margin:16px;font-family:Arial,sans-serif;background:#eef2f5;color:#17232e}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}article{min-width:0;background:white;padding:12px;border:1px solid #bcc7d0}h1{font-size:24px}h2{font-size:18px;margin:0}svg{max-width:350px;margin:auto}`}</style></head><body><h1>P039 diagram engineering gallery</h1><main>{cards.map(c=><article key={c.label}><h2>{c.label}</h2><P039Grid state={c.state}/></article>)}</main></body></html>);
+writeFileSync(process.argv[2],'<!doctype html>'+html);
+console.log(JSON.stringify({status:'PASS',cards:cards.length}));

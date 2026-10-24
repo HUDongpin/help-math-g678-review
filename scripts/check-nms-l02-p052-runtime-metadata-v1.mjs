@@ -1,0 +1,21 @@
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';import {spawnSync} from 'node:child_process';import {fileURLToPath} from 'node:url';
+import {collectSwfTextSourceCatalog} from './lib/swf-text-source-catalog.mjs';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),base=path.join(root,'migrations/shared-nms002-l02-p052');
+const read=p=>JSON.parse(fs.readFileSync(path.join(base,p))),m=read('migration.json');
+const hash=b=>createHash('sha256').update(b).digest('hex');
+const bytes=fs.readFileSync(m.source.swf);assert.equal(hash(bytes),m.source.swfSha256);
+assert.equal(hash(fs.readFileSync(path.join(base,'audit/preserved-source-v1.swf'))),hash(bytes));
+const c=collectSwfTextSourceCatalog(bytes);assert.equal(c.header.frameCount,m.runtime.frameCount);
+assert.equal(c.header.frameRate,m.runtime.fps);assert.equal(c.header.version,m.runtime.swfVersion);
+assert.deepEqual(c.fonts.map(f=>[f.characterId,f.name.text]),[[3,'Bauhaus Md BT'],[106,'Arial'],[110,'Arial'],[143,'Bauhaus Md BT']]);
+assert.deepEqual(m.runtime.fonts,['Bauhaus Md BT (characters 3, 143)','Arial (characters 106, 110)']);
+const receipt=read('audit/ffdec-export-v1.json'),xml=path.join(receipt.output,'source.xml');
+assert.equal(hash(fs.readFileSync(xml)),receipt.files.find(f=>f.path===xml).sha256);
+const ruby=spawnSync('ruby',['-rrexml/document','-rjson','-e',
+ 'd=REXML::Document.new(File.read(ARGV[0])); b=REXML::XPath.first(d,%q{//item[@type="SetBackgroundColorTag"]/backgroundColor}); puts JSON.generate(%w[red green blue].map{|k|Integer(b.attributes[k])})',xml],{encoding:'utf8'});
+assert.equal(ruby.status,0,ruby.stderr);const rgb=JSON.parse(ruby.stdout);
+assert.equal('#'+rgb.map(v=>v.toString(16).padStart(2,'0')).join(''),m.runtime.backgroundColor);
+assert.equal(m.runtime.actionScriptVersion,'AVM1; AS1/AS2 authoring generation unresolved');
+assert.equal(m.implementation.rendering,'React + SVG + semantic HTML (selected; view pending)');
+assert.equal(m.status,'preserved');assert.equal(m.acceptance.ownerReview.decision,'pending');
+console.log(JSON.stringify({status:'PASS',background:m.runtime.backgroundColor,rootFrames:10,sourceFonts:4,view:'pending',acceptance:false}));
