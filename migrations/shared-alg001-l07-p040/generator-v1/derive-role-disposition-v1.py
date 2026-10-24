@@ -1,0 +1,37 @@
+from pathlib import Path
+import json,hashlib,re,datetime
+B=Path(__file__).resolve().parents[1];R=Path.cwd();m=json.loads((B/'native-v1/source-model-v1.json').read_text());sha=lambda b:hashlib.sha256(b).hexdigest();pin=lambda p:dict(path=str(p.relative_to(R)),bytes=p.stat().st_size,sha256=sha(p.read_bytes()))
+ts={int(t['timelineId'].split('-')[1]):t for t in m['timelines']if t['timelineId']!='root'};bs={b['characterId']:b for b in m['buttons']};sh={s['characterId']:s for s in m['shapes']};texts={t['characterId']:t for t in m['texts']};dormant={206,223,258,275,289,304}
+for id in dormant:
+ assert ts[id]['frames'][0]==[]
+ raw=next(s['source']for s in m['scripts']if s['file']['path'].endswith(f'DefineSprite_{id}/frame_1/DoAction.as'));assert re.sub(r'\s','',raw)==('stop();_parent.enableButton();'if id in[275,304]else'stop();')
+def reach(seed,prune):
+ seen=set();q=list(seed)
+ while q:
+  id=q.pop()
+  if id in seen:continue
+  seen.add(id)
+  if id in ts:q.extend(p['characterId']for row in(ts[id]['frames'][:1]if prune and id in dormant else ts[id]['frames'])for p in row)
+  elif id in bs:q.extend(p['characterId']for p in bs[id]['statePlacements'])
+ return seen
+active=reach([145,335],True);placed=reach([145,335],False);allIds=set(ts)|set(bs)|set(sh)|set(texts);activeTimelineIds=active&set(ts)-dormant;assert activeTimelineIds=={142,145,237,315,319,335}
+pre=json.loads((B/'source-v1/reachability-preflight-v1.json').read_text());assert sorted(active)==pre['activeDefinitions']and sorted(placed)==pre['placedDefinitions']
+for s in m['scripts']:
+ p=s['file']['path'];match=re.search(r'Define(?:Sprite|Button2)_(\d+)',p)
+ if p.endswith(('FScrollBarSymbol.as','FScrollPaneSymbol.as','FUIComponentSymbol.as')):continue
+ if match and int(match[1])not in active:continue
+ assert 'attachMovie('not in s['source']and 'new FScroll'not in s['source']
+roles={1:'Native Need More Help button background',2:'Native button highlight',6:'Native button highlight',132:'Native help dialog frame',133:'Source glossary underlines; native semantic buttons',135:'Invisible glossary hit region',144:'Outlined source title inspected and mapped to native heading',146:'Native question-number circle',148:'Native question glossary underline',154:'Native answer A control',156:'Source fraction bar reproduced as semantic native fraction',159:'Native answer B control',166:'Native answer C control',168:'Native answer D control',172:'Native Close button border',173:'Native Close button backing',174:'Native Close button fill',175:'Native Close button highlight',177:'Native Close hover background',178:'Native Close shadow',179:'Native Close pressed background',180:'Native Close hit region',284:'Native wrong-feedback message panel',307:'Feedback display mask; native bounded feedback region',308:'Outlined Try Again! duplicated by text310; native title retains source words and alpha',320:'White glyph underlay behind black equation B; native white text halo',321:'White glyph underlay behind black equations C/D; native white text halo',329:'White glyph underlay behind black equations C/D; native white text halo',330:'White glyph underlay behind black equations C/D; native white text halo',331:'White glyph underlay behind black equations C/D; native white text halo',332:'White glyph underlay behind black equations C/D; native white text halo',333:'Black outlined denominator x with white halo beneath text334; native semantic denominator x with halo'}
+for i in(active&set(sh))-set(roles):
+ assert i in{224,225,226,227,228,232,233,234,236,305,306,311,312,316,317,318};roles[i]='Decorative right/wrong feedback artwork retained privately; source title/message/Close/audio timing represented with native feedback card'
+assert set(roles)==active&set(sh)
+domains=[]
+for key,t in [('root',next(t for t in m['timelines']if t['timelineId']=='root'))]+[(f'sprite-{i}',t)for i,t in ts.items()]:
+ id=None if key=='root'else int(key[7:]);role='active source domain'if id is None or id in activeTimelineIds else'placed at quiz but stopped empty at frame1 and never selected'if id in dormant else'only reached through dormant feedback after frame1'if id in placed else'unplaced library/legacy component'
+ domains.append(dict(frameDomain=key,frames=t['declaredFrameCount'],disposition=role,inProduct=id is None or id in activeTimelineIds,originalRuntimeVerified=False))
+shapeRows=[dict(characterId=i,tagName=sh[i]['tagName'],sourceTagSha256=sh[i]['sourceTagSha256'],disposition=roles[i]if i in active else'dormant feedback asset retained, not called'if i in placed else'unplaced library asset retained, not in page execution')for i in sorted(sh)]
+receipt=dict(at=datetime.datetime.now(datetime.timezone.utc).isoformat(),source=pin(B/'native-v1/source-model-v1.json'),visual=pin(B/'native-v1/teaching-visual-source-v2.json'),domains=domains,shapes=shapeRows,activeDefinitions=sorted(active),placementReachableDefinitions=sorted(placed),unplacedDefinitions=sorted(allIds-placed),activeButtonIds=sorted(active&set(bs)),risks=[dict(kind=r['kind'],disposition='sprite206 is dormant empty stop1; trailing bytes retained, not interpreted'if r['kind']=='nonzero-bytes-after-end'else'see complete shape/domain/action/visual/dynamic-text records; no original-runtime claim')for r in m['risks']],dynamicText=[dict(characterId=i,disposition='WrongFeed from selected answer and attempt counter'if i==314 else'dormant feedback field retained, not instantiated')for i,t in texts.items()if t.get('kind')!='static-text'],libraryScripts=[s['file']for s in m['scripts']if s['file']['bytes']>2000],unresolvedLocalCallback=dict(sprites=[275,304,319],call='_parent.enableButton()',resolution='No enableButton definition in main335 or root. Do not substitute _root.enableQuizButton or unlock controls.'),boundary='Complete source reachability; no active FScroll instance/construction; six named dormant feedbacks stopped at1. Original-runtime remains unverified.',originalRuntimeAccepted=False)
+(B/'audit-v1/source-role-disposition-v1.json').open('x').write(json.dumps(receipt,indent=2)+'\n')
+files=sorted((B/'source-v1').glob('active-shapes-contact-*-v2.jpg'))+[B/'source-v1/static-v1/DefineSprite_335/170-white.png',B/'source-v1/static-v1/DefineSprite_142_show mc1_new_001/1-white.png'];assert len(files)==6
+review=dict(at=datetime.datetime.now(datetime.timezone.utc).isoformat(),reviewer='Codex source engineering review',viewedFiles=[pin(p)for p in files],roleAudit=pin(B/'audit-v1/source-role-disposition-v1.json'),priorStaticReview=pin(B/'source-v1/static-parent-review-v1.json'),findings=['Exact B = y equals 2x plus21, not plus2; A fraction1/x, C square minus1, D cubic plus2x.','Static help three sentences and six glossary terms exactly retained.','Source overlay vector paints are white/black only. Initial preflight description of red overlay was incorrect; no red equation emphasis exists.','Correct title Excellent!, wrong title Try Again!; source319 frame28 bare literal9 is effectless.','B source movement reaches its final position at236, held through241; prior v1 prose said235, actual states were already correct.'],scope='Static FFDec and source glyph/vector/ActionScript engineering review only. No original runtime, listening, human or Owner acceptance.')
+(B/'audit-v1/source-parent-review-v1.json').open('x').write(json.dumps(review,indent=2)+'\n');print(json.dumps(dict(pass_=True,domains=len(domains),productDomains=sum(d['inProduct']for d in domains),shapes=len(shapeRows),activeShapes=len(roles),viewedFiles=len(files))))

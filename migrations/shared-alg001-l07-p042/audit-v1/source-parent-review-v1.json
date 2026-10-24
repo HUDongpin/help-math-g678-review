@@ -1,0 +1,92 @@
+{
+  "at": "2026-10-05T04:53:25.627296+00:00",
+  "reviewer": "Codex source engineering review",
+  "viewedFiles": [
+    {
+      "path": "migrations/shared-alg001-l07-p042/source-v1/preflight-v1/shapes-contact-00-v1.jpg",
+      "bytes": 169084,
+      "sha256": "fe206885df2108c90b231add23ac2ebc349dbfc5cc8dc098284c286796017dd0"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p042/source-v1/preflight-v1/shapes-contact-01-v1.jpg",
+      "bytes": 122862,
+      "sha256": "d9329d4eb120f60f0632c69ca6a8dd15f040791d0476cdb84cf4ef6f301b9d2e"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p042/source-v1/preflight-v1/shapes-contact-02-v1.jpg",
+      "bytes": 194765,
+      "sha256": "b8c68be93d31d3bc6c96ed32e302334489453b6e9470edddcb73799164f70732"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p042/source-v1/preflight-v1/shapes-contact-03-v1.jpg",
+      "bytes": 162116,
+      "sha256": "0405aecc8bffb9393b81498b05e74b758988f99d8a1ecd55d4984437f37969ba"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p042/source-v1/preflight-v1/shapes-contact-04-v1.jpg",
+      "bytes": 84522,
+      "sha256": "d2b5b5e866ed0f6445211f893f7591172887d9fa147e0e9642c1b4ed852f3d23"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p042/source-v1/preflight-v1/shapes-contact-05-v1.jpg",
+      "bytes": 23709,
+      "sha256": "e8c90026e3506a3f2eb71ae147704e4e2ea830d22af8b9b8b24a951da61f6e99"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p042/source-v1/preflight-v1/static-contact-00-v1.jpg",
+      "bytes": 200513,
+      "sha256": "00d6a00d11f1dc617aed6a82931297fd1bf8ffe0f169c5737e464c68e57224d5"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p042/source-v1/preflight-v1/static-contact-01-v1.jpg",
+      "bytes": 182243,
+      "sha256": "fda14cb9e3ceae19c3e111623152446afea18e0ab7ff516264aa09c34e693f98"
+    }
+  ],
+  "priorSourceReview": [
+    {
+      "path": "migrations/shared-alg001-l07-p042/source-v1/preflight-v1/shape-parent-preview-v1.json",
+      "bytes": 2080,
+      "sha256": "0b70d50f21c20898da89b1d84ef906cb46ec2ea15758143015910a63f4349fbe"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p042/source-v1/preflight-v1/structured-preflight-v1.json",
+      "bytes": 82213,
+      "sha256": "357135d8cd126870f2e67099506e1fa0302b89773ced365df26a662eeb27016b"
+    }
+  ],
+  "sharedButtonShapes": {
+    "ids": [
+      1,
+      2,
+      6
+    ],
+    "sourceTagBytesMatchP040": true,
+    "review": {
+      "path": "migrations/shared-alg001-l07-p040/audit-v1/source-parent-review-v1.json",
+      "bytes": 2580,
+      "sha256": "4d5f49daa717259c22e089aa6b7ec21cbe860df7e5a49f49bc9f6c7553e64193"
+    }
+  },
+  "roleAudit": {
+    "path": "migrations/shared-alg001-l07-p042/audit-v1/source-role-disposition-v1.json",
+    "bytes": 66950,
+    "sha256": "013976940c58a21e9eb4813db2ad59e86f2c65eec966c3a943ea411ed2064651"
+  },
+  "sourceBehavior": {
+    "path": "migrations/shared-alg001-l07-p042/native-v1/source-model-v1.json",
+    "bytes": 17487279,
+    "sha256": "4e2d517335a603e7d2ca72ae80ecc1146d23e31928dc08997342df062859e33f"
+  },
+  "nativeVisual": {
+    "path": "migrations/shared-alg001-l07-p042/native-v1/teaching-visual-source-v2.json",
+    "bytes": 323830,
+    "sha256": "44db715c1ac360881ae3c2dd3362ac2e0bd13cac3abd02f6384d27f14f1a1b68"
+  },
+  "findings": [
+    "Question4 graph; D4/3; source graph points and slope vertical/horizontal fraction revealed progressively. Exact grammar graph in shown retained.",
+    "Both fixed feedback4 branches match the maintained fixed-exit reducer contract; count increments only at wrong terminal28, second wrong resets0 and resumes main.",
+    "All 95/102 domains retained with active versus dormant/library disposition. Static export does not execute ActionScript."
+  ],
+  "scope": "Native source static/path/glyph/script engineering review only; no original-runtime, listening, human or Owner acceptance."
+}

@@ -1,0 +1,30 @@
+{
+  "at": "2026-10-05T00:47:23.189573+00:00",
+  "source": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/TI/L7TI03.swf",
+  "bytes": 193469,
+  "sha256": "3ff16361b9a680ba8515a41fbd7df6d653ab2a38be56ec0b14ed82060a36656e",
+  "runs": [
+    {
+      "args": [
+        "/opt/homebrew/bin/swfmill",
+        "swf2xml",
+        "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/TI/L7TI03.swf",
+        "/tmp/alg-l07-p040-readonly-preflight-20261005/movie.xml"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/alg-l07-p040-readonly-preflight-20261005/swfmill.txt"
+    },
+    {
+      "args": [
+        "/opt/homebrew/bin/ffdec",
+        "-export",
+        "script,text",
+        "/tmp/alg-l07-p040-readonly-preflight-20261005/ffdec",
+        "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/TI/L7TI03.swf"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/alg-l07-p040-readonly-preflight-20261005/ffdec.txt"
+    }
+  ],
+  "scope": "Independent read-only source preflight outside active frozen browser worktree. No registration, scaffold or acceptance."
+}

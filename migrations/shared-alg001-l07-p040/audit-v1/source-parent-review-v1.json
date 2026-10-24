@@ -1,0 +1,54 @@
+{
+  "at": "2026-10-05T01:25:13.985806+00:00",
+  "reviewer": "Codex source engineering review",
+  "viewedFiles": [
+    {
+      "path": "migrations/shared-alg001-l07-p040/source-v1/active-shapes-contact-00-v2.jpg",
+      "bytes": 44350,
+      "sha256": "5a8b85e6b815d5cfb88132351d3918fe3c1cd03bdea53198d75a6006a18e5bed"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p040/source-v1/active-shapes-contact-01-v2.jpg",
+      "bytes": 51486,
+      "sha256": "eb57669702dc0c0ab92db64ca6654456e110907b2e9e004b378e3a58da6e8d5c"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p040/source-v1/active-shapes-contact-02-v2.jpg",
+      "bytes": 59859,
+      "sha256": "0a46219db4cb4efcbe8339ee3e16478718fe20889920dc4644cfcc43e4743376"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p040/source-v1/active-shapes-contact-03-v2.jpg",
+      "bytes": 18196,
+      "sha256": "543c115ac2d35908a7b2f498efd1ec6f9aa4ce910bead2ec135928f31d4992b8"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p040/source-v1/static-v1/DefineSprite_335/170-white.png",
+      "bytes": 26955,
+      "sha256": "341f3dcae8f7611ac5bd4f4e5c1bef6dbc8e79eedac4eeef71e6577172e76315"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p040/source-v1/static-v1/DefineSprite_142_show mc1_new_001/1-white.png",
+      "bytes": 28019,
+      "sha256": "ac454fc186c9c901c0945a8d708bce14f0c9e2a0b9a4200b3a4b08c0a60d1d7f"
+    }
+  ],
+  "roleAudit": {
+    "path": "migrations/shared-alg001-l07-p040/audit-v1/source-role-disposition-v1.json",
+    "bytes": 52992,
+    "sha256": "bd796c654008b85ad4aea9f7a011b19255c941b5610419b8f8c248ad4a11cd8d"
+  },
+  "priorStaticReview": {
+    "path": "migrations/shared-alg001-l07-p040/source-v1/static-parent-review-v1.json",
+    "bytes": 1921,
+    "sha256": "0cad2c376be5255077137a95c359438e351ae03c5add6c5b92452d19d0ad106d"
+  },
+  "findings": [
+    "Exact B = y equals 2x plus21, not plus2; A fraction1/x, C square minus1, D cubic plus2x.",
+    "Static help three sentences and six glossary terms exactly retained.",
+    "Source overlay vector paints are white/black only. Initial preflight description of red overlay was incorrect; no red equation emphasis exists.",
+    "Correct title Excellent!, wrong title Try Again!; source319 frame28 bare literal9 is effectless.",
+    "B source movement reaches its final position at236, held through241; prior v1 prose said235, actual states were already correct."
+  ],
+  "scope": "Static FFDec and source glyph/vector/ActionScript engineering review only. No original runtime, listening, human or Owner acceptance."
+}

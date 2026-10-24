@@ -1,0 +1,30 @@
+{
+  "at": "2026-10-05T02:10:17.711708+00:00",
+  "source": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/TI/L7TI04.swf",
+  "bytes": 285832,
+  "sha256": "2413fdd3c756e075f0cf6c7dedffcb48457f3a514c9e948073a377021a66a56b",
+  "runs": [
+    {
+      "args": [
+        "/opt/homebrew/bin/swfmill",
+        "swf2xml",
+        "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/TI/L7TI04.swf",
+        "/tmp/alg-l07-p041-readonly-preflight-20261005/movie.xml"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/alg-l07-p041-readonly-preflight-20261005/swfmill.txt"
+    },
+    {
+      "args": [
+        "/opt/homebrew/bin/ffdec",
+        "-export",
+        "script,text",
+        "/tmp/alg-l07-p041-readonly-preflight-20261005/ffdec",
+        "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/TI/L7TI04.swf"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/alg-l07-p041-readonly-preflight-20261005/ffdec.txt"
+    }
+  ],
+  "scope": "Read-only exact-source preflight outside active frozen browser inputs. No registration or acceptance."
+}

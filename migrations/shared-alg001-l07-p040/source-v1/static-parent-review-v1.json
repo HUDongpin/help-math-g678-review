@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-05T01:11:46.935885+00:00",
+  "kind": "P040-source-preflight-static-shape-review",
+  "sourceSha256": "3ff16361b9a680ba8515a41fbd7df6d653ab2a38be56ec0b14ed82060a36656e",
+  "viewedFiles": [
+    {
+      "path": "/tmp/alg-l07-p040-readonly-preflight-20261005/active-shapes-contact-00-v2.jpg",
+      "bytes": 44350,
+      "sha256": "5a8b85e6b815d5cfb88132351d3918fe3c1cd03bdea53198d75a6006a18e5bed"
+    },
+    {
+      "path": "/tmp/alg-l07-p040-readonly-preflight-20261005/active-shapes-contact-01-v2.jpg",
+      "bytes": 51486,
+      "sha256": "eb57669702dc0c0ab92db64ca6654456e110907b2e9e004b378e3a58da6e8d5c"
+    },
+    {
+      "path": "/tmp/alg-l07-p040-readonly-preflight-20261005/active-shapes-contact-02-v2.jpg",
+      "bytes": 59859,
+      "sha256": "0a46219db4cb4efcbe8339ee3e16478718fe20889920dc4644cfcc43e4743376"
+    },
+    {
+      "path": "/tmp/alg-l07-p040-readonly-preflight-20261005/active-shapes-contact-03-v2.jpg",
+      "bytes": 18196,
+      "sha256": "543c115ac2d35908a7b2f498efd1ec6f9aa4ce910bead2ec135928f31d4992b8"
+    },
+    {
+      "path": "/tmp/alg-l07-p040-readonly-preflight-20261005/static-v1/DefineSprite_335/170-white.png",
+      "bytes": 26955,
+      "sha256": "341f3dcae8f7611ac5bd4f4e5c1bef6dbc8e79eedac4eeef71e6577172e76315"
+    }
+  ],
+  "findings": [
+    "Outlined title144 reads Linear and Nonlinear Functions: Try It!",
+    "Buttons/background and feedback decorative shapes are distinct from native equation characters.",
+    "Shape333 is an outlined x overlay in the source final denominator emphasis.",
+    "Blank-looking white shapes132/133/148/156/172/173/175/320/321/329/330/331/332 need path/color/depth evidence before excluding as background or underlines.",
+    "Source B reads y = 2x + 21; source D reads y = x^3 + 2x."
+  ],
+  "boundary": "Static source shape thumbnails and FFDec frame170 only; no original runtime, listening, registration or acceptance."
+}
