@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-p044-prepared-local-registration-activation-v1",
+  "status": "local-p044-prepared-registration-activated-product-calibration-pending",
+  "deploymentScope": "local-only",
+  "createdAt": "2026-09-05T13:47:22.133Z",
+  "registryChanged": true,
+  "registrationCount": 379,
+  "addedModuleCount": 1,
+  "changedModuleIds": [
+    "shared-nms002-l01-p044"
+  ],
+  "preservedPageCount": 378,
+  "otherCalibrationsUnchanged": true,
+  "publicOutputBytesUnchanged": true,
+  "publicOutputFilesWritten": 0,
+  "privateOutputChangedCount": 2,
+  "completedReplacements": [
+    "packages/demos/private-current-js-registry.json",
+    "packages/demos/src/registry.local-only.generated.ts",
+    "packages/demos/src/registry.local-only.metadata.generated.ts"
+  ],
+  "inputBindings": [
+    {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-378-private-registry-witness-v1.json",
+      "bytes": 432557,
+      "sha256": "c075c204a21c020da2cef54bec74a2e713d7eba1c4fc3d55b158e0d8a8d464e2"
+    },
+    {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-378-page-registration-v1.json",
+      "bytes": 2415408,
+      "sha256": "cf4921508fcaff5270c2dc4a3bd2571397b9c456b0ff5c1cae46378081e71cf5"
+    },
+    {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-378-page-registration-v1.fragment.json",
+      "bytes": 385667,
+      "sha256": "ae0be0d61384d2f95049b0b37b464174b7829ff93a219272ddf4692f4e72a869"
+    },
+    {
+      "path": "catalog/product-bridge-calibrations/g678-nms-l01-p044-prepared-current-js-v2.fragment.json",
+      "bytes": 9139,
+      "sha256": "6208880d4423d19645b508106b65f53a692dcd2bebf5c98909379851d1f1c00d"
+    },
+    {
+      "path": "catalog/product-bridge-calibrations/g678-nms-l01-p044-prepared-current-js-v1.fragment.json",
+      "bytes": 8656,
+      "sha256": "7968b01d93dbba8fa073934f4c1f97a0914c3865eddcbdc485e4d27f49f309c0"
+    },
+    {
+      "path": "catalog/g678-shared-catalog.v1.json",
+      "bytes": 12534064,
+      "sha256": "a1692c2a86c6771dcb104f59195b5bfdd2b5281cceff0aaeb63a3aabcf4a5657"
+    },
+    {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-378-page-registration-v1.activation.json",
+      "bytes": 10639,
+      "sha256": "68a61339c66a0a46b740b4a6f06db0698a07a5a2057f5e78b3dce6e7a1e4d009"
+    },
+    {
+      "path": "scripts/plan-g678-nms-l01-p044-registration.mjs",
+      "bytes": 11908,
+      "sha256": "c1a9a18ffd9a7d4b4a6f0e29efe149aae4af4aabe8e4584136182b8a970ea323"
+    },
+    {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-379-page-registration-v1.json",
+      "bytes": 2424951,
+      "sha256": "1c80050ed48b12f4f16039c3a83136781c586da4520a4108d7b6cd8e5bb9cc81"
+    },
+    {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-379-page-registration-v1.fragment.json",
+      "bytes": 386993,
+      "sha256": "82ff42f9d38d3c66cf8b497645375970a773870af8975867fc046f231e3c23d5"
+    },
+    {
+      "path": "scripts/prepare-g678-nms-l01-p044-registration.mjs",
+      "bytes": 3417,
+      "sha256": "6369d34497ee7db13ff88dbf9bb027582051593ab7e1d7c795f7a52bf624f9a2"
+    },
+    {
+      "path": "scripts/activate-g678-nms-l01-p044-prepared-registration.mjs",
+      "bytes": 21084,
+      "sha256": "1dc56a775e31c2f0406c724eb7e4131a641c2e31cec1084098cf448dc3422a04"
+    },
+    {
+      "path": "scripts/plan-g678-nms-l01-p044-registration.test.mjs",
+      "bytes": 1921,
+      "sha256": "fc2a083cb4ce3d5e75a1bbecc09f7b0332e271d4c5a3c657fadcecd22bb907ef"
+    },
+    {
+      "path": "scripts/prepare-g678-nms-l01-p044-registration.test.mjs",
+      "bytes": 1456,
+      "sha256": "db1a68d4c614a10dacb3970066a54fa6f1f99a9446066b2b9805f70ef77b548d"
+    },
+    {
+      "path": "scripts/activate-g678-nms-l01-p044-prepared-registration.test.mjs",
+      "bytes": 13127,
+      "sha256": "729fc73111edac3ae3875df747c65d671320b18a918781f05c6c856c67a335d4"
+    },
+    {
+      "path": "scripts/g678-nms-l01-p044-prepared-registration-test-fixtures.mjs",
+      "bytes": 2883,
+      "sha256": "eccaf81810dcc075392a783a93735692c44b704a938eb6bae43d77fbaf447b63"
+    },
+    {
+      "path": "scripts/prepare-g678-nms-l01-p044-stable-candidate.mjs",
+      "bytes": 7331,
+      "sha256": "043d8bf1522cb39e5ee882af883b1963c996200ea7ff1b92241c7dca198ab393"
+    },
+    {
+      "path": "scripts/activate-g678-alg-l11-feedback-host-score-registration.mjs",
+      "bytes": 22880,
+      "sha256": "8610b53d71be5e5a3400bea2f8529ed4da72a78abbbe91e6e1bedb95bda40533"
+    },
+    {
+      "path": "scripts/prepare-g678-alg-l11-feedback-host-score-registration.mjs",
+      "bytes": 14719,
+      "sha256": "81785450cdf1243a526d799310c6f2bc09315a291920a6205ee99f5d4de9b1f9"
+    },
+    {
+      "path": "scripts/private-current-js-registry.mjs",
+      "bytes": 7135,
+      "sha256": "567ef522774f31348c8aaff0b385e071733779e5df2f9f4226f13ce318a7241c"
+    },
+    {
+      "path": "packages/demos/scripts/generate-registry.mjs",
+      "bytes": 19643,
+      "sha256": "bc29cf0d6fbd556eb8a4963bc11e359f320f4471e86c71232e242b30a365da9f"
+    },
+    {
+      "path": "packages/demos/prototype-registry.json",
+      "bytes": 44136,
+      "sha256": "b7e1c0a2b956ffacb6a2aaf5caef53488ef15506078a9e3677dcdc7531311190"
+    },
+    {
+      "path": "catalog/completion-ledger.json",
+      "bytes": 157918,
+      "sha256": "8bf1e70101729f48565385ae064a711cedf4935564a9f9fab2d9407c867c4d3b"
+    },
+    {
+      "path": "apps/web/lib/g678-calibration-product-bridge.server.ts",
+      "bytes": 185328,
+      "sha256": "f6f578c7ff6bac14a93a30a175869f4ecf29b92038b4ec77b92502bfdf73acc7"
+    },
+    {
+      "path": "apps/web/lib/g678-nms-l01-p044-authority.server.ts",
+      "bytes": 11818,
+      "sha256": "8c24a6e84c7d28b583b07165a368ff50b59ef58adc429840004f1d4cc5cba649"
+    },
+    {
+      "path": "apps/web/tests/g678-nms-l01-p044-authority.server-test.ts",
+      "bytes": 3289,
+      "sha256": "a0ff8d7febce20746d36fefb49efbb563abda6453c4fb5da122b4d4be90ff4fe"
+    },
+    {
+      "path": "apps/web/tests/g678-nms-l01-p044-product-bridge.server-test.ts",
+      "bytes": 6214,
+      "sha256": "17c2a5b8efbb8c80a3e0d61857e8b47528e17247c88e16adb16629d825aa12fd"
+    },
+    {
+      "path": "scripts/run-g678-nms-l01-p044-prepared-local-preview.mjs",
+      "bytes": 3168,
+      "sha256": "300cf08e6b20ccb1cf65bb508788477b3de38a3e313880a265e3f12c56ddc6ed"
+    },
+    {
+      "path": "scripts/run-g678-nms-l01-p044-prepared-local-preview.test.mjs",
+      "bytes": 1764,
+      "sha256": "5b922c5012c665c252dc26bedada40d7d842c138a0f08c5e8c33c8a705e5d2e1"
+    }
+  ],
+  "lock": {
+    "path": "work/g678-shared-page-factory/g678-nms-l01-p044-prepared-registration-379-v1-activation/activation-lock.json",
+    "bytes": 523,
+    "sha256": "f38c92ac9afd842a5a2b17aec732c8da8fc938190e94d1c159072c8a41dda54b"
+  },
+  "recovery": "work/g678-shared-page-factory/g678-nms-l01-p044-prepared-registration-379-v1-activation/activation-bNJCgE",
+  "backups": [
+    {
+      "original": {
+        "path": "packages/demos/private-current-js-registry.json",
+        "bytes": 432557,
+        "sha256": "c075c204a21c020da2cef54bec74a2e713d7eba1c4fc3d55b158e0d8a8d464e2"
+      },
+      "backup": {
+        "path": "work/g678-shared-page-factory/g678-nms-l01-p044-prepared-registration-379-v1-activation/activation-bNJCgE/before-private-current-js-registry.json",
+        "bytes": 432557,
+        "sha256": "c075c204a21c020da2cef54bec74a2e713d7eba1c4fc3d55b158e0d8a8d464e2"
+      },
+      "originalMode": 420
+    },
+    {
+      "original": {
+        "path": "packages/demos/src/registry.generated.ts",
+        "bytes": 130310,
+        "sha256": "88c107cd2ed96eae29734cda07aad1d4d5d5ace87d52b218981866845f51fa76"
+      },
+      "backup": {
+        "path": "work/g678-shared-page-factory/g678-nms-l01-p044-prepared-registration-379-v1-activation/activation-bNJCgE/before-registry.generated.ts",
+        "bytes": 130310,
+        "sha256": "88c107cd2ed96eae29734cda07aad1d4d5d5ace87d52b218981866845f51fa76"
+      },
+      "originalMode": 420
+    },
+    {
+      "original": {
+        "path": "packages/demos/src/registry.metadata.generated.ts",
+        "bytes": 75696,
+        "sha256": "da599a2f4d466d581abacf1f6d774e2995034c622cf01d17941f56c518cbe785"
+      },
+      "backup": {
+        "path": "work/g678-shared-page-factory/g678-nms-l01-p044-prepared-registration-379-v1-activation/activation-bNJCgE/before-registry.metadata.generated.ts",
+        "bytes": 75696,
+        "sha256": "da599a2f4d466d581abacf1f6d774e2995034c622cf01d17941f56c518cbe785"
+      },
+      "originalMode": 420
+    },
+    {
+      "original": {
+        "path": "packages/demos/src/registry.local-only.generated.ts",
+        "bytes": 281108,
+        "sha256": "756d0efa8e9887c63e91bb81d5ca8d678abc27543022f75199d604ffa6732f84"
+      },
+      "backup": {
+        "path": "work/g678-shared-page-factory/g678-nms-l01-p044-prepared-registration-379-v1-activation/activation-bNJCgE/before-registry.local-only.generated.ts",
+        "bytes": 281108,
+        "sha256": "756d0efa8e9887c63e91bb81d5ca8d678abc27543022f75199d604ffa6732f84"
+      },
+      "originalMode": 420
+    },
+    {
+      "original": {
+        "path": "packages/demos/src/registry.local-only.metadata.generated.ts",
+        "bytes": 218224,
+        "sha256": "453dd2225d320f12eb5c3e2700bb71475d458cdaab8a2eb72fce92ff33c4745f"
+      },
+      "backup": {
+        "path": "work/g678-shared-page-factory/g678-nms-l01-p044-prepared-registration-379-v1-activation/activation-bNJCgE/before-registry.local-only.metadata.generated.ts",
+        "bytes": 218224,
+        "sha256": "453dd2225d320f12eb5c3e2700bb71475d458cdaab8a2eb72fce92ff33c4745f"
+      },
+      "originalMode": 420
+    }
+  ],
+  "proposed": {
+    "registry": {
+      "path": "packages/demos/private-current-js-registry.json",
+      "bytes": 433966,
+      "sha256": "e68a3d39213766e220795a4f0a16412e09a0e830c9978a66bcd7dd02361372cb"
+    },
+    "generated": [
+      {
+        "path": "packages/demos/src/registry.generated.ts",
+        "bytes": 130310,
+        "sha256": "88c107cd2ed96eae29734cda07aad1d4d5d5ace87d52b218981866845f51fa76"
+      },
+      {
+        "path": "packages/demos/src/registry.metadata.generated.ts",
+        "bytes": 75696,
+        "sha256": "da599a2f4d466d581abacf1f6d774e2995034c622cf01d17941f56c518cbe785"
+      },
+      {
+        "path": "packages/demos/src/registry.local-only.generated.ts",
+        "bytes": 281996,
+        "sha256": "3603acba86e76dac0713967e7139866be263a8da00a23b824abf5c348bfae83b"
+      },
+      {
+        "path": "packages/demos/src/registry.local-only.metadata.generated.ts",
+        "bytes": 218932,
+        "sha256": "597566768888c0da38c5b29fe5836e642c27d7ebe565160cda049315b24c0eaa"
+      }
+    ]
+  },
+  "generatorCheck": {
+    "implementation": "maintained-buildRegistrySources-read-only",
+    "generator": "packages/demos/scripts/generate-registry.mjs",
+    "writes": 0,
+    "passed": true
+  },
+  "acceptanceEffects": {
+    "productCalibrationPassed": false,
+    "browserProductCalibrationPassed": false,
+    "originalRuntimeAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictCompletionPassed": false,
+    "acceptancePassed": false,
+    "releaseAuthorized": false,
+    "published": false
+  },
+  "limitations": [
+    "Three guarded file replacements are recoverable, not an atomic repository transaction or filesystem content-CAS.",
+    "The retained lock coordinates this activation tool; unrelated writers still require a held coordination window.",
+    "Local registration is not actual My Lesson companion QA, product calibration, audio/human/Owner acceptance, strict completion, release or publication."
+  ]
+}

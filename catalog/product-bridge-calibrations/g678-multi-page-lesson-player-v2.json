@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "scope": "Private modern host with exact page runtime dispatch and unchanged production/candidate/reviewer gates",
+  "inputs": [
+    {
+      "path": "apps/web/components/descriptor-driven-whole-lesson-player.tsx",
+      "bytes": 52078,
+      "sha256": "494cadc14b5b42dbde7e61733a8245dc05209b69d0a47db6dcec568a4eec4f78"
+    },
+    {
+      "path": "scripts/build-g678-multi-page-lesson-player-v2.mjs",
+      "bytes": 4383,
+      "sha256": "b519f19468d5dddfc6dd4b11197ecc28a74e8098ce27773f6b4f8835c29cbc2c"
+    },
+    {
+      "path": "apps/web/lib/g678-private-runtime-adapters-v1.ts",
+      "bytes": 743,
+      "sha256": "10d8cd1dac993688f789603bf3b34782971474836fbc136d5e16581cbe15a100"
+    }
+  ],
+  "output": {
+    "path": "apps/web/components/g678-multi-page-lesson-player-v2.generated.tsx",
+    "bytes": 52767,
+    "sha256": "653dee0d0bb5851d061d45a4d061106f5156ec658ca267298a75f12a96607c87"
+  },
+  "edits": [
+    {
+      "before": "import type {PrivateLessonRuntimeAdapter,LessonRuntimeAdapterControls,LessonRuntimeAdapterProps} from '@/lib/lesson-runtime-adapter';",
+      "after": "import type {PrivateLessonRuntimeAdapter,LessonRuntimeAdapterControls,LessonRuntimeAdapterProps} from '@/lib/lesson-runtime-adapter';\nimport {selectG678PrivateRuntimeAdapter} from '@/lib/g678-private-runtime-adapters-v1';"
+    },
+    {
+      "before": "export function DescriptorDrivenWholeLessonPlayer({",
+      "after": "export function G678MultiPageLessonPlayer({"
+    },
+    {
+      "before": "  privateRuntimeAdapter,",
+      "after": "  privateRuntimeAdapter,\n  privateRuntimeAdapters,"
+    },
+    {
+      "before": "  privateRuntimeAdapter?: PrivateLessonRuntimeAdapter;",
+      "after": "  privateRuntimeAdapter?: PrivateLessonRuntimeAdapter;\n  privateRuntimeAdapters?: readonly PrivateLessonRuntimeAdapter[];"
+    },
+    {
+      "before": "    runtimeAvailable && privateRuntimeAdapter?.animationId === currentPage.animationId ? privateRuntimeAdapter : undefined;",
+      "after": "    runtimeAvailable ? selectG678PrivateRuntimeAdapter(currentPage.animationId, privateRuntimeAdapter, privateRuntimeAdapters) : undefined;"
+    },
+    {
+      "before": "  useEffect(() => {\n    let active = true;\n    let serialized: string | null = null;",
+      "after": "  const progressInitializationIdentity = useMemo(() => JSON.stringify({descriptor, initialPlacementId, locale}), [descriptor, initialPlacementId, locale]);\n  const initializedProgressIdentity = useRef<string | null>(null);\n  useEffect(() => {\n    if (initializedProgressIdentity.current === progressInitializationIdentity) return;\n    let active = true;\n    let serialized: string | null = null;"
+    },
+    {
+      "before": "      setProgress(initialProgress);\n      setHydrated(true);",
+      "after": "      initializedProgressIdentity.current = progressInitializationIdentity;\n      setProgress(initialProgress);\n      setHydrated(true);"
+    },
+    {
+      "before": "  }, [descriptor, initialPlacementId, locale]);",
+      "after": "  }, [descriptor, initialPlacementId, locale, progressInitializationIdentity]);"
+    }
+  ],
+  "sourceBaseChanged": false,
+  "originalRuntimeAccepted": false,
+  "scaleOutAuthorized": false
+}

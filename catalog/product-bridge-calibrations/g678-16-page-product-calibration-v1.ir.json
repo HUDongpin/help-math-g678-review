@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-shared-current-js-calibration-ir-v1",
+  "calibrationId": "g678-16-page-product-calibration-v1",
+  "status": "reviewed-routing-freeze-no-acceptance",
+  "inputs": {
+    "structuralReport": {
+      "path": "work/g678-shared-page-factory/calibration-structure-final-20260901-155359-v2/report.json",
+      "bytes": 274459,
+      "sha256": "af830040388dd502ca193f482f084a9db49da2176e26ed39ebe7e01f5e706b97"
+    },
+    "structuralFactoryRun": {
+      "path": "work/g678-shared-page-factory/g678-calibration-current-profile-46a0b496-r1/run-manifest.json",
+      "bytes": 18984,
+      "sha256": "850e5913c6c20534b41273047911fd5a1580449ebcb01a648af57ac05d1aac0a"
+    },
+    "sourceProfile": {
+      "path": "catalog/g678-shared-source-profile.v1.json",
+      "bytes": 11091,
+      "sha256": "46a0b496139cb1faef2c6401c309db1c3badde15f2291549458fa6572c84e88f"
+    },
+    "sharedCatalog": {
+      "path": "catalog/g678-shared-catalog.v1.json",
+      "bytes": 12534064,
+      "sha256": "a1692c2a86c6771dcb104f59195b5bfdd2b5281cceff0aaeb63a3aabcf4a5657"
+    },
+    "safeCanvasAdapter": {
+      "path": "scripts/build-safe-ffdec-canvas-adapter.mjs",
+      "bytes": 115553,
+      "sha256": "1d1dd117dd59a6b7191f2fa8488249ece09bfb1da8837be146677f88a01315dd"
+    },
+    "sourceStaticCanvasHostAdapter": {
+      "path": "packages/demos/src/source-static-canvas-candidate.tsx",
+      "bytes": 56583,
+      "sha256": "68e4ba0254de7c48dc048146b32c3beb15f287efa9dbd59c23b698720cd5eb72"
+    }
+  },
+  "sourceRoot": {
+    "configuredRoot": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware",
+    "relativeRoot": "G6-G8-shared",
+    "trackedSourceBytes": false,
+    "requireReadOnlySources": true
+  },
+  "scope": {
+    "frozenCalibrationPlacementCount": 16,
+    "sharedAdapterPlacementCount": 13,
+    "advancedManualPlacementCount": 3,
+    "legacyFlashCourseShellCount": 0,
+    "modernMyLessonHostRetained": true,
+    "deploymentScope": "local-only"
+  },
+  "firstTranche": [
+    "shared-alg001-l06-p040",
+    "shared-nms002-l02-p020",
+    "shared-geo001-l01-p001",
+    "shared-nms002-l11-p030",
+    "shared-dat001-l05-p040"
+  ],
+  "placements": [
+    {
+      "animationId": "shared-nms002-l01-p001",
+      "sourceRelativePath": "NMS002/L1/IR/L1IR01.swf",
+      "sourceSha256": "714ecfc1cca2d49766c43c107337c7ef1996122d40073721ee67529cf89f9dd3",
+      "rootFrameCount": 10,
+      "rootBeginFrame": 6,
+      "mainChild": {"objectId": 113, "frameCount": 136},
+      "ffdecExportCanvas": {"width": 767, "height": 388},
+      "reviewedLane": "interactive-understood",
+      "adapterFamily": "intro-fui-source-static",
+      "implementationDisposition": "shared-adapter",
+      "productBlockers": [
+        "intro-fui-scroll-behavior-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ]
+    },
+    {
+      "animationId": "shared-nms002-l02-p020",
+      "sourceRelativePath": "NMS002/L2/IN/L2IN05.swf",
+      "sourceSha256": "5aaf739cf2ef1b093564d0f64d3799dcfca2ab5ffa7cc0375f4c0b43dc3364b5",
+      "rootFrameCount": 10,
+      "rootBeginFrame": 6,
+      "mainChild": {"objectId": 69, "frameCount": 151},
+      "ffdecExportCanvas": {"width": 717, "height": 404},
+      "reviewedLane": "interactive-understood",
+      "adapterFamily": "hover-glossary-source-static",
+      "implementationDisposition": "shared-adapter",
+      "productBlockers": [
+        "twelve-hover-reveal-controls-not-reconstructed",
+        "glossary-host-bridge-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ]
+    },
+    {
+      "animationId": "shared-nms002-l05-p040",
+      "sourceRelativePath": "NMS002/L5/TS/L5TS02.swf",
+      "sourceSha256": "c671ad00db12ec2270f25886f2b1b88f68311e411ccc1dee1f7e068a2dddaf16",
+      "rootFrameCount": 10,
+      "rootBeginFrame": 6,
+      "mainChild": {"objectId": 26, "frameCount": 351},
+      "ffdecExportCanvas": {"width": 647, "height": 382},
+      "reviewedLane": "interactive-understood",
+      "adapterFamily": "linear-glossary-source-static",
+      "implementationDisposition": "shared-adapter",
+      "productBlockers": [
+        "glossary-host-bridge-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ]
+    },
+    {
+      "animationId": "shared-nms002-l11-p030",
+      "sourceRelativePath": "NMS002/L11/TI/L11TI05.swf",
+      "sourceSha256": "853d0c3350fc1c39dfc730eb369041d91565003b6bdeed238aece874b2e06913",
+      "rootFrameCount": 10,
+      "rootBeginFrame": 6,
+      "mainChild": {"objectId": 260, "frameCount": 356},
+      "reviewedLane": "behavior-heavy",
+      "adapterFamily": "advanced-manual-choice-quiz",
+      "implementationDisposition": "advanced-manual",
+      "productBlockers": [
+        "choice-attempt-feedback-state-machine-not-implemented",
+        "ten-nested-audio-domains-not-mapped",
+        "quiz-host-contract-not-reconstructed"
+      ]
+    },
+    {
+      "animationId": "shared-geo001-l01-p001",
+      "sourceRelativePath": "GEO001/L1/IR/L1IR01.swf",
+      "sourceSha256": "3034f4bb5df7a2033a57aacf8de5ba1cbda5add4c2d30a7987bac0769403b226",
+      "rootFrameCount": 10,
+      "rootBeginFrame": 6,
+      "mainChild": {"objectId": 142, "frameCount": 127},
+      "reviewedLane": "behavior-heavy",
+      "adapterFamily": "advanced-manual-scrubber",
+      "implementationDisposition": "advanced-manual",
+      "productBlockers": [
+        "drag-enterframe-seek-resume-state-machine-not-implemented",
+        "intro-fui-scroll-behavior-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ]
+    },
+    {
+      "animationId": "shared-geo001-l02-p020",
+      "sourceRelativePath": "GEO001/L2/VB/L2VB13.swf",
+      "sourceSha256": "c467be6d21b6aab1eb09523014bfc4aa67b4b8da7dd1a8ad44c33d82a8d7e8c9",
+      "rootFrameCount": 10,
+      "rootBeginFrame": 6,
+      "mainChild": {"objectId": 22, "frameCount": 443},
+      "ffdecExportCanvas": {"width": 730, "height": 245},
+      "reviewedLane": "interactive-understood",
+      "adapterFamily": "linear-glossary-source-static",
+      "implementationDisposition": "shared-adapter",
+      "productBlockers": [
+        "glossary-host-bridge-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ]
+    },
+    {
+      "animationId": "shared-geo001-l07-p040",
+      "sourceRelativePath": "GEO001/L7/IN/L7IN23.swf",
+      "sourceSha256": "9fe3b0672c1be385e62f70cb097b69db232960b3e482f8e526f01496a11b18a7",
+      "rootFrameCount": 10,
+      "rootBeginFrame": 6,
+      "mainChild": {"objectId": 140, "frameCount": 1524},
+      "ffdecExportCanvas": {"width": 731, "height": 417},
+      "reviewedLane": "interactive-understood",
+      "adapterFamily": "linear-glossary-source-static",
+      "implementationDisposition": "shared-adapter",
+      "productBlockers": [
+        "glossary-host-bridge-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ]
+    },
+    {
+      "animationId": "shared-geo001-l11-p030",
+      "sourceRelativePath": "GEO001/L11/IN/L11IN17.swf",
+      "sourceSha256": "5b72509365917d1bb3e1312bd2d15da596cb582607f3aa4a1b1758dd24fed2dd",
+      "rootFrameCount": 10,
+      "rootBeginFrame": 6,
+      "mainChild": {"objectId": 134, "frameCount": 1405},
+      "ffdecExportCanvas": {"width": 764, "height": 406},
+      "reviewedLane": "interactive-understood",
+      "adapterFamily": "linear-glossary-source-static",
+      "implementationDisposition": "shared-adapter",
+      "productBlockers": [
+        "glossary-host-bridge-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ]
+    },
+    {
+      "animationId": "shared-alg001-l01-p001",
+      "sourceRelativePath": "ALG001/L1/IR/L1IR01.swf",
+      "sourceSha256": "cd5d73e2aed3214c547dd7758d0201905ce39e7cc0dcfc6d6473ca177d764650",
+      "rootFrameCount": 10,
+      "rootBeginFrame": 6,
+      "mainChild": {"objectId": 83, "frameCount": 135},
+      "ffdecExportCanvas": {"width": 577, "height": 50},
+      "reviewedLane": "interactive-understood",
+      "adapterFamily": "intro-fui-source-static",
+      "implementationDisposition": "shared-adapter",
+      "productBlockers": [
+        "intro-fui-component-behavior-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ]
+    },
+    {
+      "animationId": "shared-alg001-l05-p030",
+      "sourceRelativePath": "ALG001/L5/IN/L5IN05.swf",
+      "sourceSha256": "0c554ff28ad322a317fa2e5997f8ebec9fd1677a133c9c5cbbe6f9d5da50b09c",
+      "rootFrameCount": 10,
+      "rootBeginFrame": 6,
+      "mainChild": {"objectId": 172, "frameCount": 1250},
+      "ffdecExportCanvas": {"width": 1221, "height": 413},
+      "reviewedLane": "interactive-understood",
+      "adapterFamily": "linear-glossary-source-static",
+      "implementationDisposition": "shared-adapter",
+      "productBlockers": [
+        "glossary-host-bridge-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ]
+    },
+    {
+      "animationId": "shared-alg001-l06-p040",
+      "sourceRelativePath": "ALG001/L6/IN/L6IN12.swf",
+      "sourceSha256": "cb4b046089166eef2dd0407a921b91c89d33fe6d99071915325de3439b3b2653",
+      "rootFrameCount": 13,
+      "rootBeginFrame": 6,
+      "mainChild": {"objectId": 86, "frameCount": 189},
+      "ffdecExportCanvas": {"width": 951, "height": 429},
+      "reviewedLane": "interactive-understood",
+      "adapterFamily": "pure-linear-source-static",
+      "implementationDisposition": "shared-adapter",
+      "productBlockers": [
+        "embedded-audio-lifecycle-not-implemented"
+      ]
+    },
+    {
+      "animationId": "shared-alg001-l08-p025",
+      "sourceRelativePath": "ALG001/L8/IN/L8IN10.swf",
+      "sourceSha256": "83c9715714e8fc318ad066b8b731f2799c9a1d497a618c9b4fddb929947927df",
+      "rootFrameCount": 10,
+      "rootBeginFrame": 6,
+      "mainChild": {"objectId": 41, "frameCount": 425},
+      "ffdecExportCanvas": {"width": 741, "height": 349},
+      "reviewedLane": "interactive-understood",
+      "adapterFamily": "linear-glossary-source-static",
+      "implementationDisposition": "shared-adapter",
+      "productBlockers": [
+        "glossary-host-bridge-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ]
+    },
+    {
+      "animationId": "shared-dat001-l01-p001",
+      "sourceRelativePath": "DAT001/L1/IR/L1IR01.swf",
+      "sourceSha256": "9cb2f39f0f33fbf7a100f1f306424051864d932c7107b97649e88ae3253203c6",
+      "rootFrameCount": 10,
+      "rootBeginFrame": 6,
+      "mainChild": {"objectId": 133, "frameCount": 136},
+      "ffdecExportCanvas": {"width": 690, "height": 381},
+      "reviewedLane": "interactive-understood",
+      "adapterFamily": "intro-fui-source-static",
+      "implementationDisposition": "shared-adapter",
+      "productBlockers": [
+        "intro-fui-scroll-behavior-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ]
+    },
+    {
+      "animationId": "shared-dat001-l03-p030",
+      "sourceRelativePath": "DAT001/L3/IN/L3IN08.swf",
+      "sourceSha256": "5673a39710717ea1c550593e4c30b077be0e496d2f379161e388150eb4cda92f",
+      "rootFrameCount": 10,
+      "rootBeginFrame": 6,
+      "mainChild": {"objectId": 32, "frameCount": 383},
+      "ffdecExportCanvas": {"width": 682, "height": 350},
+      "reviewedLane": "interactive-understood",
+      "adapterFamily": "linear-glossary-source-static",
+      "implementationDisposition": "shared-adapter",
+      "productBlockers": [
+        "glossary-host-bridge-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ]
+    },
+    {
+      "animationId": "shared-dat001-l05-p040",
+      "sourceRelativePath": "DAT001/L5/TI/L5TI02.swf",
+      "sourceSha256": "0945d41f55d2c0746ccd4e7d820983f3eea2c49bf9c54e1f6174f5ee33d420f6",
+      "rootFrameCount": 10,
+      "rootBeginFrame": 6,
+      "mainChild": {"objectId": 315, "frameCount": 254},
+      "reviewedLane": "behavior-heavy",
+      "adapterFamily": "advanced-manual-drag-drop-quiz",
+      "implementationDisposition": "advanced-manual",
+      "productBlockers": [
+        "five-item-drag-drop-state-machine-not-implemented",
+        "dynamic-eval-droptarget-contract-not-reconstructed",
+        "eight-nested-audio-domains-not-mapped"
+      ]
+    },
+    {
+      "animationId": "shared-dat001-l07-p025",
+      "sourceRelativePath": "DAT001/L7/IN/L7IN15.swf",
+      "sourceSha256": "e77b243fe9ce9018cee1f87931487fb64ac21ec055ad36cdf8dbd5a94594fcb0",
+      "rootFrameCount": 10,
+      "rootBeginFrame": 6,
+      "mainChild": {"objectId": 83, "frameCount": 562},
+      "ffdecExportCanvas": {"width": 705, "height": 408},
+      "reviewedLane": "interactive-understood",
+      "adapterFamily": "linear-glossary-source-static",
+      "implementationDisposition": "shared-adapter",
+      "productBlockers": [
+        "glossary-host-bridge-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ]
+    }
+  ],
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "behaviorParityAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseEligible": false,
+    "published": false
+  },
+  "limitations": [
+    "The reviewed lane split is an engineering routing decision over structural AVM1 evidence; it is not behavior acceptance.",
+    "FFDec Canvas and P-code output remains ignored local compiler evidence and is not distributed in the product bundle.",
+    "No placement may be described as product-calibrated or engineering-preview-ready while its productBlockers are non-empty.",
+    "Private Current-JS registration does not establish AVM1 execution, nested audio playback, fidelity, human review, Owner acceptance, strict completion, release, or publication."
+  ]
+}

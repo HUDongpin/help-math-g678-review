@@ -1,0 +1,1075 @@
+{
+  "schemaVersion": 1,
+  "calibrationId": "g678-16-page-product-calibration-v1",
+  "deploymentScope": "local-only",
+  "status": "private-current-js-calibration-candidates-generated",
+  "frozenCalibrationPlacementCount": 16,
+  "registrationCandidatePlacementCount": 16,
+  "sharedAdapterPlacementCount": 13,
+  "advancedManualPlacementCount": 3,
+  "legacyFlashCourseShellCount": 0,
+  "scaleOutAuthorized": false,
+  "engineeringPreviewReady": false,
+  "productCalibrationPassed": false,
+  "inputs": {
+    "sharedCatalog": {
+      "path": "catalog/g678-shared-catalog.v1.json",
+      "bytes": 12534064,
+      "sha256": "a1692c2a86c6771dcb104f59195b5bfdd2b5281cceff0aaeb63a3aabcf4a5657"
+    },
+    "sourceProfile": {
+      "path": "catalog/g678-shared-source-profile.v1.json",
+      "bytes": 11091,
+      "sha256": "46a0b496139cb1faef2c6401c309db1c3badde15f2291549458fa6572c84e88f"
+    },
+    "structuralReport": {
+      "path": "work/g678-shared-page-factory/calibration-structure-final-20260901-155359-v2/report.json",
+      "bytes": 274459,
+      "sha256": "af830040388dd502ca193f482f084a9db49da2176e26ed39ebe7e01f5e706b97"
+    },
+    "structuralFactoryRun": {
+      "path": "work/g678-shared-page-factory/g678-calibration-current-profile-46a0b496-r1/run-manifest.json",
+      "bytes": 18984,
+      "sha256": "850e5913c6c20534b41273047911fd5a1580449ebcb01a648af57ac05d1aac0a"
+    },
+    "calibrationIr": {
+      "path": "catalog/product-bridge-calibrations/g678-16-page-product-calibration-v1.ir.json",
+      "bytes": 13795,
+      "sha256": "ecad2ced7eeb6aa2d3f86991efd0585adc3c281e4e8c02a3cb7183d92bbd5544"
+    },
+    "compilerRun": {
+      "path": "work/g678-shared-page-factory/g678-shared-current-js-calibration-13-v1/run-manifest.json",
+      "bytes": 29288,
+      "sha256": "6d0e8167170926028011cd9da501b8b2b20af32d099e4875d4cb3090decee1a2"
+    },
+    "safeCanvasAdapter": {
+      "path": "scripts/build-safe-ffdec-canvas-adapter.mjs",
+      "bytes": 115553,
+      "sha256": "1d1dd117dd59a6b7191f2fa8488249ece09bfb1da8837be146677f88a01315dd"
+    },
+    "sourceStaticCanvasHostAdapter": {
+      "path": "packages/demos/src/source-static-canvas-candidate.tsx",
+      "bytes": 56583,
+      "sha256": "68e4ba0254de7c48dc048146b32c3beb15f287efa9dbd59c23b698720cd5eb72"
+    },
+    "generator": {
+      "path": "scripts/build-g678-shared-current-js-calibration.mjs",
+      "bytes": 89123,
+      "sha256": "eff2a91a9ca446ef8aee756306f6f811db7d7d067a96d2480068efa3762e20fb"
+    },
+    "shared13Freeze": {
+      "path": "catalog/product-bridge-calibrations/g678-16-page-product-calibration-v1.json",
+      "bytes": 31550,
+      "sha256": "d918e43d97ebb7dad590c281da5cce8018923304b584b030b0c34b58c5291835"
+    },
+    "advanced3Fragment": {
+      "path": "catalog/product-bridge-calibrations/g678-16-page-product-calibration-v1.advanced-manual-3.fragment.json",
+      "bytes": 18803,
+      "sha256": "77439a1dd034b7aa5652d6face92cb31d851c42e82459bd41c4bebbed9a0000c"
+    },
+    "advanced3Run": {
+      "path": "work/g678-shared-page-factory/g678-advanced-manual-current-js-3-v1/run-manifest.json",
+      "bytes": 41039,
+      "sha256": "f04dae18677680b3f9dac65417893d4910e530cc092bac876fd13c209d29ed5d"
+    },
+    "finalizer": {
+      "path": "scripts/finalize-g678-16-page-private-calibration.mjs",
+      "bytes": 18609,
+      "sha256": "2e392225499773ced31fd0ef77506f9660611f2db737638153caaac64c0caeaa"
+    }
+  },
+  "selectedPages": [
+    {
+      "animationId": "shared-alg001-l01-p001",
+      "placementId": "shared-alg001-l01-p001",
+      "assetId": "swf-cd5d73e2aed3214c547dd7758d0201905ce39e7cc0dcfc6d6473ca177d764650",
+      "moduleCode": "ALG001",
+      "lessonNumber": 1,
+      "stableLessonKey": "shared-alg001-l01",
+      "globalPageOrdinal": 1,
+      "sectionCode": "IR",
+      "sectionPageOrdinal": 1,
+      "sourceSha256": "cd5d73e2aed3214c547dd7758d0201905ce39e7cc0dcfc6d6473ca177d764650",
+      "complexityLane": "interactive-understood",
+      "adapterFamily": "intro-fui-source-static",
+      "implementation": {
+        "kind": "source-static-current-js-candidate",
+        "deploymentScope": "local-only",
+        "productCalibrationPassed": false
+      },
+      "runtime": {
+        "stage": {
+          "width": 800,
+          "height": 600
+        },
+        "rootFrameCount": 10,
+        "rootBeginFrame": 6,
+        "frameDomain": "sprite-83",
+        "frameCount": 135,
+        "livePlaybackEndFrame": 135,
+        "language": "fixed-en",
+        "scenario": "source-static-frame",
+        "seed": "0",
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-shared-current-js-calibration-13-v1/members/shared-alg001-l01-p001/canvas-renderer.js",
+          "bytes": 117058,
+          "sha256": "56bc34a09d3f5127bd8ed440c8b4f65534cee27bbd8d6fbca13c2d2494460d1b",
+          "url": "/flash-assets/g678-local/shared-alg001-l01-p001/canvas-renderer.js"
+        }
+      },
+      "runtimeEvidenceBoundary": {
+        "runtimeKind": "source-static-current-js-candidate",
+        "actionScriptExecution": "not-executed",
+        "naturalTraceValidation": "not-established",
+        "audioAcceptance": "not-established",
+        "replaySemantics": "renderer-restart-only-source-behavior-not-established"
+      },
+      "productBlockers": [
+        "intro-fui-component-behavior-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ],
+      "productCalibrationPassed": false,
+      "engineeringPreviewReady": false
+    },
+    {
+      "animationId": "shared-alg001-l05-p030",
+      "placementId": "shared-alg001-l05-p030",
+      "assetId": "swf-0c554ff28ad322a317fa2e5997f8ebec9fd1677a133c9c5cbbe6f9d5da50b09c",
+      "moduleCode": "ALG001",
+      "lessonNumber": 5,
+      "stableLessonKey": "shared-alg001-l05",
+      "globalPageOrdinal": 30,
+      "sectionCode": "IN",
+      "sectionPageOrdinal": 4,
+      "sourceSha256": "0c554ff28ad322a317fa2e5997f8ebec9fd1677a133c9c5cbbe6f9d5da50b09c",
+      "complexityLane": "interactive-understood",
+      "adapterFamily": "linear-glossary-source-static",
+      "implementation": {
+        "kind": "source-static-current-js-candidate",
+        "deploymentScope": "local-only",
+        "productCalibrationPassed": false
+      },
+      "runtime": {
+        "stage": {
+          "width": 800,
+          "height": 600
+        },
+        "rootFrameCount": 10,
+        "rootBeginFrame": 6,
+        "frameDomain": "sprite-172",
+        "frameCount": 1250,
+        "livePlaybackEndFrame": 1250,
+        "language": "fixed-en",
+        "scenario": "source-static-frame",
+        "seed": "0",
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-shared-current-js-calibration-13-v1/members/shared-alg001-l05-p030/canvas-renderer.js",
+          "bytes": 20802196,
+          "sha256": "eea5fbddad5059f5f58b457550e450045c3bf8a5840bffcb359e87174d2beadf",
+          "url": "/flash-assets/g678-local/shared-alg001-l05-p030/canvas-renderer.js"
+        }
+      },
+      "runtimeEvidenceBoundary": {
+        "runtimeKind": "source-static-current-js-candidate",
+        "actionScriptExecution": "not-executed",
+        "naturalTraceValidation": "not-established",
+        "audioAcceptance": "not-established",
+        "replaySemantics": "renderer-restart-only-source-behavior-not-established"
+      },
+      "productBlockers": [
+        "glossary-host-bridge-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ],
+      "productCalibrationPassed": false,
+      "engineeringPreviewReady": false
+    },
+    {
+      "animationId": "shared-alg001-l06-p040",
+      "placementId": "shared-alg001-l06-p040",
+      "assetId": "swf-cb4b046089166eef2dd0407a921b91c89d33fe6d99071915325de3439b3b2653",
+      "moduleCode": "ALG001",
+      "lessonNumber": 6,
+      "stableLessonKey": "shared-alg001-l06",
+      "globalPageOrdinal": 40,
+      "sectionCode": "IN",
+      "sectionPageOrdinal": 11,
+      "sourceSha256": "cb4b046089166eef2dd0407a921b91c89d33fe6d99071915325de3439b3b2653",
+      "complexityLane": "interactive-understood",
+      "adapterFamily": "pure-linear-source-static",
+      "implementation": {
+        "kind": "source-static-current-js-candidate",
+        "deploymentScope": "local-only",
+        "productCalibrationPassed": false
+      },
+      "runtime": {
+        "stage": {
+          "width": 800,
+          "height": 600
+        },
+        "rootFrameCount": 13,
+        "rootBeginFrame": 6,
+        "frameDomain": "sprite-86",
+        "frameCount": 189,
+        "livePlaybackEndFrame": 189,
+        "language": "fixed-en",
+        "scenario": "source-static-frame",
+        "seed": "0",
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-shared-current-js-calibration-13-v1/members/shared-alg001-l06-p040/canvas-renderer.js",
+          "bytes": 2943132,
+          "sha256": "a6568ba88450bf9ec258942dc2efa516889caea4b9dd6304a8e38b47f4e90a7b",
+          "url": "/flash-assets/g678-local/shared-alg001-l06-p040/canvas-renderer.js"
+        }
+      },
+      "runtimeEvidenceBoundary": {
+        "runtimeKind": "source-static-current-js-candidate",
+        "actionScriptExecution": "not-executed",
+        "naturalTraceValidation": "not-established",
+        "audioAcceptance": "not-established",
+        "replaySemantics": "renderer-restart-only-source-behavior-not-established"
+      },
+      "productBlockers": [
+        "embedded-audio-lifecycle-not-implemented"
+      ],
+      "productCalibrationPassed": false,
+      "engineeringPreviewReady": false
+    },
+    {
+      "animationId": "shared-alg001-l08-p025",
+      "placementId": "shared-alg001-l08-p025",
+      "assetId": "swf-83c9715714e8fc318ad066b8b731f2799c9a1d497a618c9b4fddb929947927df",
+      "moduleCode": "ALG001",
+      "lessonNumber": 8,
+      "stableLessonKey": "shared-alg001-l08",
+      "globalPageOrdinal": 25,
+      "sectionCode": "IN",
+      "sectionPageOrdinal": 9,
+      "sourceSha256": "83c9715714e8fc318ad066b8b731f2799c9a1d497a618c9b4fddb929947927df",
+      "complexityLane": "interactive-understood",
+      "adapterFamily": "linear-glossary-source-static",
+      "implementation": {
+        "kind": "source-static-current-js-candidate",
+        "deploymentScope": "local-only",
+        "productCalibrationPassed": false
+      },
+      "runtime": {
+        "stage": {
+          "width": 800,
+          "height": 600
+        },
+        "rootFrameCount": 10,
+        "rootBeginFrame": 6,
+        "frameDomain": "sprite-41",
+        "frameCount": 425,
+        "livePlaybackEndFrame": 425,
+        "language": "fixed-en",
+        "scenario": "source-static-frame",
+        "seed": "0",
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-shared-current-js-calibration-13-v1/members/shared-alg001-l08-p025/canvas-renderer.js",
+          "bytes": 2321260,
+          "sha256": "714630d04ff696717a110eaf80e1a23b643c83268dc03bbeb3f7907f56f4aee9",
+          "url": "/flash-assets/g678-local/shared-alg001-l08-p025/canvas-renderer.js"
+        }
+      },
+      "runtimeEvidenceBoundary": {
+        "runtimeKind": "source-static-current-js-candidate",
+        "actionScriptExecution": "not-executed",
+        "naturalTraceValidation": "not-established",
+        "audioAcceptance": "not-established",
+        "replaySemantics": "renderer-restart-only-source-behavior-not-established"
+      },
+      "productBlockers": [
+        "glossary-host-bridge-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ],
+      "productCalibrationPassed": false,
+      "engineeringPreviewReady": false
+    },
+    {
+      "animationId": "shared-dat001-l01-p001",
+      "placementId": "shared-dat001-l01-p001",
+      "assetId": "swf-9cb2f39f0f33fbf7a100f1f306424051864d932c7107b97649e88ae3253203c6",
+      "moduleCode": "DAT001",
+      "lessonNumber": 1,
+      "stableLessonKey": "shared-dat001-l01",
+      "globalPageOrdinal": 1,
+      "sectionCode": "IR",
+      "sectionPageOrdinal": 1,
+      "sourceSha256": "9cb2f39f0f33fbf7a100f1f306424051864d932c7107b97649e88ae3253203c6",
+      "complexityLane": "interactive-understood",
+      "adapterFamily": "intro-fui-source-static",
+      "implementation": {
+        "kind": "source-static-current-js-candidate",
+        "deploymentScope": "local-only",
+        "productCalibrationPassed": false
+      },
+      "runtime": {
+        "stage": {
+          "width": 800,
+          "height": 600
+        },
+        "rootFrameCount": 10,
+        "rootBeginFrame": 6,
+        "frameDomain": "sprite-133",
+        "frameCount": 136,
+        "livePlaybackEndFrame": 136,
+        "language": "fixed-en",
+        "scenario": "source-static-frame",
+        "seed": "0",
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-shared-current-js-calibration-13-v1/members/shared-dat001-l01-p001/canvas-renderer.js",
+          "bytes": 1273873,
+          "sha256": "79025f8de4259e1e7e2daffc8529e7f487d8252aa36e66b8084476e8fd5400a8",
+          "url": "/flash-assets/g678-local/shared-dat001-l01-p001/canvas-renderer.js"
+        }
+      },
+      "runtimeEvidenceBoundary": {
+        "runtimeKind": "source-static-current-js-candidate",
+        "actionScriptExecution": "not-executed",
+        "naturalTraceValidation": "not-established",
+        "audioAcceptance": "not-established",
+        "replaySemantics": "renderer-restart-only-source-behavior-not-established"
+      },
+      "productBlockers": [
+        "intro-fui-scroll-behavior-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ],
+      "productCalibrationPassed": false,
+      "engineeringPreviewReady": false
+    },
+    {
+      "animationId": "shared-dat001-l03-p030",
+      "placementId": "shared-dat001-l03-p030",
+      "assetId": "swf-5673a39710717ea1c550593e4c30b077be0e496d2f379161e388150eb4cda92f",
+      "moduleCode": "DAT001",
+      "lessonNumber": 3,
+      "stableLessonKey": "shared-dat001-l03",
+      "globalPageOrdinal": 30,
+      "sectionCode": "IN",
+      "sectionPageOrdinal": 7,
+      "sourceSha256": "5673a39710717ea1c550593e4c30b077be0e496d2f379161e388150eb4cda92f",
+      "complexityLane": "interactive-understood",
+      "adapterFamily": "linear-glossary-source-static",
+      "implementation": {
+        "kind": "source-static-current-js-candidate",
+        "deploymentScope": "local-only",
+        "productCalibrationPassed": false
+      },
+      "runtime": {
+        "stage": {
+          "width": 800,
+          "height": 600
+        },
+        "rootFrameCount": 10,
+        "rootBeginFrame": 6,
+        "frameDomain": "sprite-32",
+        "frameCount": 383,
+        "livePlaybackEndFrame": 383,
+        "language": "fixed-en",
+        "scenario": "source-static-frame",
+        "seed": "0",
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-shared-current-js-calibration-13-v1/members/shared-dat001-l03-p030/canvas-renderer.js",
+          "bytes": 1548351,
+          "sha256": "881ea8fe3c9d82252b8f130440a57469b412e3f2186f0cb7d808847c683b95ba",
+          "url": "/flash-assets/g678-local/shared-dat001-l03-p030/canvas-renderer.js"
+        }
+      },
+      "runtimeEvidenceBoundary": {
+        "runtimeKind": "source-static-current-js-candidate",
+        "actionScriptExecution": "not-executed",
+        "naturalTraceValidation": "not-established",
+        "audioAcceptance": "not-established",
+        "replaySemantics": "renderer-restart-only-source-behavior-not-established"
+      },
+      "productBlockers": [
+        "glossary-host-bridge-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ],
+      "productCalibrationPassed": false,
+      "engineeringPreviewReady": false
+    },
+    {
+      "animationId": "shared-dat001-l05-p040",
+      "placementId": "shared-dat001-l05-p040",
+      "assetId": "swf-0945d41f55d2c0746ccd4e7d820983f3eea2c49bf9c54e1f6174f5ee33d420f6",
+      "moduleCode": "DAT001",
+      "lessonNumber": 5,
+      "stableLessonKey": "shared-dat001-l05",
+      "globalPageOrdinal": 40,
+      "sectionCode": "TI",
+      "sectionPageOrdinal": 1,
+      "sourceSha256": "0945d41f55d2c0746ccd4e7d820983f3eea2c49bf9c54e1f6174f5ee33d420f6",
+      "complexityLane": "behavior-heavy",
+      "adapterFamily": "advanced-manual-drag-drop-quiz",
+      "implementation": {
+        "kind": "source-script-bound-product-behavior-current-js-candidate",
+        "deploymentScope": "local-only",
+        "productCalibrationPassed": false
+      },
+      "runtime": {
+        "stage": {
+          "width": 800,
+          "height": 600
+        },
+        "rootFrameCount": 10,
+        "rootBeginFrame": 6,
+        "frameDomain": "sprite-315",
+        "frameCount": 254,
+        "livePlaybackEndFrame": 254,
+        "language": "fixed-en",
+        "scenario": "source-static-frame",
+        "seed": "0",
+        "replaySeedCycle": 12,
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-advanced-manual-current-js-3-v1/members/shared-dat001-l05-p040/canvas-renderer.js",
+          "bytes": 5084457,
+          "sha256": "bfe15341e4b321925ebbb558618800c8b07ae442c1d82260cd9515d2d590cf80",
+          "url": "/flash-assets/g678-local/shared-dat001-l05-p040/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "interactiveStops": [
+          {
+            "id": "dat-drag-set-frame-238",
+            "frameDomain": "sprite-315",
+            "stopFrame": 238,
+            "resumeFrame": 239,
+            "resolution": "explicit-source-drag-set-finished",
+            "completionDisposition": "blocked-while-unresolved",
+            "requiresHostInteractiveStop": true,
+            "strictAcceptanceEffect": "none"
+          }
+        ],
+        "interactiveSeek": null,
+        "companionDomains": [
+          {
+            "id": "sprite-202",
+            "frameCount": 28,
+            "label": "Mc_Wrong_Feed1 audio domain (blocked)"
+          },
+          {
+            "id": "sprite-214",
+            "frameCount": 29,
+            "label": "Mc_Wrong_Feed2 audio domain (blocked)"
+          },
+          {
+            "id": "sprite-226",
+            "frameCount": 28,
+            "label": "Mc_Wrong_Feed3 audio domain (blocked)"
+          },
+          {
+            "id": "sprite-314",
+            "frameCount": 33,
+            "label": "Mc_Right_Feed1 audio domain (blocked)"
+          },
+          {
+            "id": "sprite-258",
+            "frameCount": 25,
+            "label": "Mc_Right_Feed2 audio domain (blocked)"
+          },
+          {
+            "id": "sprite-294",
+            "frameCount": 28,
+            "label": "Mc_Right_Feed3 audio domain (blocked)"
+          },
+          {
+            "id": "sprite-266",
+            "frameCount": 27,
+            "label": "Mc_Right_Feed4 audio domain (blocked)"
+          }
+        ]
+      },
+      "runtimeEvidenceBoundary": {
+        "runtimeKind": "source-script-bound-product-behavior-current-js-candidate",
+        "actionScriptExecution": "not-executed",
+        "naturalTraceValidation": "not-established",
+        "audioAcceptance": "not-established",
+        "replaySemantics": "product-complete-state-reset-original-runtime-parity-not-established"
+      },
+      "productBlockers": [
+        "authoritative-original-runtime-not-established",
+        "visual-fidelity-not-accepted",
+        "feedback-and-embedded-audio-not-accepted",
+        "spanish-source-behavior-unavailable",
+        "quiztrycount-replay-reset-is-modern-product-assumption"
+      ],
+      "productCalibrationPassed": false,
+      "engineeringPreviewReady": false
+    },
+    {
+      "animationId": "shared-dat001-l07-p025",
+      "placementId": "shared-dat001-l07-p025",
+      "assetId": "swf-e77b243fe9ce9018cee1f87931487fb64ac21ec055ad36cdf8dbd5a94594fcb0",
+      "moduleCode": "DAT001",
+      "lessonNumber": 7,
+      "stableLessonKey": "shared-dat001-l07",
+      "globalPageOrdinal": 25,
+      "sectionCode": "IN",
+      "sectionPageOrdinal": 14,
+      "sourceSha256": "e77b243fe9ce9018cee1f87931487fb64ac21ec055ad36cdf8dbd5a94594fcb0",
+      "complexityLane": "interactive-understood",
+      "adapterFamily": "linear-glossary-source-static",
+      "implementation": {
+        "kind": "source-static-current-js-candidate",
+        "deploymentScope": "local-only",
+        "productCalibrationPassed": false
+      },
+      "runtime": {
+        "stage": {
+          "width": 800,
+          "height": 600
+        },
+        "rootFrameCount": 10,
+        "rootBeginFrame": 6,
+        "frameDomain": "sprite-83",
+        "frameCount": 562,
+        "livePlaybackEndFrame": 562,
+        "language": "fixed-en",
+        "scenario": "source-static-frame",
+        "seed": "0",
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-shared-current-js-calibration-13-v1/members/shared-dat001-l07-p025/canvas-renderer.js",
+          "bytes": 5941533,
+          "sha256": "c0a2affa1613885ddccb4c4c3f95c7842c0198e5da5fa932b5b6f83d46c6f159",
+          "url": "/flash-assets/g678-local/shared-dat001-l07-p025/canvas-renderer.js"
+        }
+      },
+      "runtimeEvidenceBoundary": {
+        "runtimeKind": "source-static-current-js-candidate",
+        "actionScriptExecution": "not-executed",
+        "naturalTraceValidation": "not-established",
+        "audioAcceptance": "not-established",
+        "replaySemantics": "renderer-restart-only-source-behavior-not-established"
+      },
+      "productBlockers": [
+        "glossary-host-bridge-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ],
+      "productCalibrationPassed": false,
+      "engineeringPreviewReady": false
+    },
+    {
+      "animationId": "shared-geo001-l01-p001",
+      "placementId": "shared-geo001-l01-p001",
+      "assetId": "swf-3034f4bb5df7a2033a57aacf8de5ba1cbda5add4c2d30a7987bac0769403b226",
+      "moduleCode": "GEO001",
+      "lessonNumber": 1,
+      "stableLessonKey": "shared-geo001-l01",
+      "globalPageOrdinal": 1,
+      "sectionCode": "IR",
+      "sectionPageOrdinal": 1,
+      "sourceSha256": "3034f4bb5df7a2033a57aacf8de5ba1cbda5add4c2d30a7987bac0769403b226",
+      "complexityLane": "behavior-heavy",
+      "adapterFamily": "advanced-manual-scrubber",
+      "implementation": {
+        "kind": "source-script-bound-product-behavior-current-js-candidate",
+        "deploymentScope": "local-only",
+        "productCalibrationPassed": false
+      },
+      "runtime": {
+        "stage": {
+          "width": 800,
+          "height": 600
+        },
+        "rootFrameCount": 10,
+        "rootBeginFrame": 6,
+        "frameDomain": "sprite-142",
+        "frameCount": 127,
+        "livePlaybackEndFrame": 127,
+        "language": "fixed-en",
+        "scenario": "source-static-frame",
+        "seed": "0",
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-advanced-manual-current-js-3-v1/members/shared-geo001-l01-p001/canvas-renderer.js",
+          "bytes": 114717,
+          "sha256": "9eaff53cdf088e3379b710d604aaf9ccdf40ab4f7aab24580cb2a99245a16d96",
+          "url": "/flash-assets/g678-local/shared-geo001-l01-p001/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "interactiveStops": [],
+        "interactiveSeek": {
+          "id": "geo-source-progress-seek",
+          "frameDomain": "sprite-142",
+          "minimumFrame": 1,
+          "maximumFrame": 127,
+          "terminalFrame": 127,
+          "resumeDisposition": "resume-only-when-nonterminal",
+          "requiresHostSeekConsumer": true,
+          "strictAcceptanceEffect": "none"
+        },
+        "companionDomains": [
+          {
+            "id": "sprite-11-progress-bar",
+            "frameCount": 2,
+            "label": "source progress-bar linkage (product range adapter active; source placement unresolved)"
+          }
+        ]
+      },
+      "runtimeEvidenceBoundary": {
+        "runtimeKind": "source-script-bound-product-behavior-current-js-candidate",
+        "actionScriptExecution": "not-executed",
+        "naturalTraceValidation": "not-established",
+        "audioAcceptance": "not-established",
+        "replaySemantics": "product-complete-state-reset-original-runtime-parity-not-established"
+      },
+      "productBlockers": [
+        "authoritative-original-runtime-not-established",
+        "visual-fidelity-not-accepted",
+        "feedback-and-embedded-audio-not-accepted",
+        "spanish-source-behavior-unavailable",
+        "source-fui-linkage-placement-unproven"
+      ],
+      "productCalibrationPassed": false,
+      "engineeringPreviewReady": false
+    },
+    {
+      "animationId": "shared-geo001-l02-p020",
+      "placementId": "shared-geo001-l02-p020",
+      "assetId": "swf-c467be6d21b6aab1eb09523014bfc4aa67b4b8da7dd1a8ad44c33d82a8d7e8c9",
+      "moduleCode": "GEO001",
+      "lessonNumber": 2,
+      "stableLessonKey": "shared-geo001-l02",
+      "globalPageOrdinal": 20,
+      "sectionCode": "VB",
+      "sectionPageOrdinal": 13,
+      "sourceSha256": "c467be6d21b6aab1eb09523014bfc4aa67b4b8da7dd1a8ad44c33d82a8d7e8c9",
+      "complexityLane": "interactive-understood",
+      "adapterFamily": "linear-glossary-source-static",
+      "implementation": {
+        "kind": "source-static-current-js-candidate",
+        "deploymentScope": "local-only",
+        "productCalibrationPassed": false
+      },
+      "runtime": {
+        "stage": {
+          "width": 800,
+          "height": 600
+        },
+        "rootFrameCount": 10,
+        "rootBeginFrame": 6,
+        "frameDomain": "sprite-22",
+        "frameCount": 443,
+        "livePlaybackEndFrame": 443,
+        "language": "fixed-en",
+        "scenario": "source-static-frame",
+        "seed": "0",
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-shared-current-js-calibration-13-v1/members/shared-geo001-l02-p020/canvas-renderer.js",
+          "bytes": 1156861,
+          "sha256": "e73b8598a8b9f116840d18eb5728da6c2edd61f07c1c0867356b1feb6eb9f6e5",
+          "url": "/flash-assets/g678-local/shared-geo001-l02-p020/canvas-renderer.js"
+        }
+      },
+      "runtimeEvidenceBoundary": {
+        "runtimeKind": "source-static-current-js-candidate",
+        "actionScriptExecution": "not-executed",
+        "naturalTraceValidation": "not-established",
+        "audioAcceptance": "not-established",
+        "replaySemantics": "renderer-restart-only-source-behavior-not-established"
+      },
+      "productBlockers": [
+        "glossary-host-bridge-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ],
+      "productCalibrationPassed": false,
+      "engineeringPreviewReady": false
+    },
+    {
+      "animationId": "shared-geo001-l07-p040",
+      "placementId": "shared-geo001-l07-p040",
+      "assetId": "swf-9fe3b0672c1be385e62f70cb097b69db232960b3e482f8e526f01496a11b18a7",
+      "moduleCode": "GEO001",
+      "lessonNumber": 7,
+      "stableLessonKey": "shared-geo001-l07",
+      "globalPageOrdinal": 40,
+      "sectionCode": "IN",
+      "sectionPageOrdinal": 22,
+      "sourceSha256": "9fe3b0672c1be385e62f70cb097b69db232960b3e482f8e526f01496a11b18a7",
+      "complexityLane": "interactive-understood",
+      "adapterFamily": "linear-glossary-source-static",
+      "implementation": {
+        "kind": "source-static-current-js-candidate",
+        "deploymentScope": "local-only",
+        "productCalibrationPassed": false
+      },
+      "runtime": {
+        "stage": {
+          "width": 800,
+          "height": 600
+        },
+        "rootFrameCount": 10,
+        "rootBeginFrame": 6,
+        "frameDomain": "sprite-140",
+        "frameCount": 1524,
+        "livePlaybackEndFrame": 1524,
+        "language": "fixed-en",
+        "scenario": "source-static-frame",
+        "seed": "0",
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-shared-current-js-calibration-13-v1/members/shared-geo001-l07-p040/canvas-renderer.js",
+          "bytes": 9678787,
+          "sha256": "874b45e935e316ebde0bfb8ba2f17c35196c775b9d650a69770eb8751d88e2e6",
+          "url": "/flash-assets/g678-local/shared-geo001-l07-p040/canvas-renderer.js"
+        }
+      },
+      "runtimeEvidenceBoundary": {
+        "runtimeKind": "source-static-current-js-candidate",
+        "actionScriptExecution": "not-executed",
+        "naturalTraceValidation": "not-established",
+        "audioAcceptance": "not-established",
+        "replaySemantics": "renderer-restart-only-source-behavior-not-established"
+      },
+      "productBlockers": [
+        "glossary-host-bridge-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ],
+      "productCalibrationPassed": false,
+      "engineeringPreviewReady": false
+    },
+    {
+      "animationId": "shared-geo001-l11-p030",
+      "placementId": "shared-geo001-l11-p030",
+      "assetId": "swf-5b72509365917d1bb3e1312bd2d15da596cb582607f3aa4a1b1758dd24fed2dd",
+      "moduleCode": "GEO001",
+      "lessonNumber": 11,
+      "stableLessonKey": "shared-geo001-l11",
+      "globalPageOrdinal": 30,
+      "sectionCode": "IN",
+      "sectionPageOrdinal": 16,
+      "sourceSha256": "5b72509365917d1bb3e1312bd2d15da596cb582607f3aa4a1b1758dd24fed2dd",
+      "complexityLane": "interactive-understood",
+      "adapterFamily": "linear-glossary-source-static",
+      "implementation": {
+        "kind": "source-static-current-js-candidate",
+        "deploymentScope": "local-only",
+        "productCalibrationPassed": false
+      },
+      "runtime": {
+        "stage": {
+          "width": 800,
+          "height": 600
+        },
+        "rootFrameCount": 10,
+        "rootBeginFrame": 6,
+        "frameDomain": "sprite-134",
+        "frameCount": 1405,
+        "livePlaybackEndFrame": 1405,
+        "language": "fixed-en",
+        "scenario": "source-static-frame",
+        "seed": "0",
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-shared-current-js-calibration-13-v1/members/shared-geo001-l11-p030/canvas-renderer.js",
+          "bytes": 15846755,
+          "sha256": "c9cf7df23122b38395bd640876863befd34189835924f77ccd6692a642cef8aa",
+          "url": "/flash-assets/g678-local/shared-geo001-l11-p030/canvas-renderer.js"
+        }
+      },
+      "runtimeEvidenceBoundary": {
+        "runtimeKind": "source-static-current-js-candidate",
+        "actionScriptExecution": "not-executed",
+        "naturalTraceValidation": "not-established",
+        "audioAcceptance": "not-established",
+        "replaySemantics": "renderer-restart-only-source-behavior-not-established"
+      },
+      "productBlockers": [
+        "glossary-host-bridge-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ],
+      "productCalibrationPassed": false,
+      "engineeringPreviewReady": false
+    },
+    {
+      "animationId": "shared-nms002-l01-p001",
+      "placementId": "shared-nms002-l01-p001",
+      "assetId": "swf-714ecfc1cca2d49766c43c107337c7ef1996122d40073721ee67529cf89f9dd3",
+      "moduleCode": "NMS002",
+      "lessonNumber": 1,
+      "stableLessonKey": "shared-nms002-l01",
+      "globalPageOrdinal": 1,
+      "sectionCode": "IR",
+      "sectionPageOrdinal": 1,
+      "sourceSha256": "714ecfc1cca2d49766c43c107337c7ef1996122d40073721ee67529cf89f9dd3",
+      "complexityLane": "interactive-understood",
+      "adapterFamily": "intro-fui-source-static",
+      "implementation": {
+        "kind": "source-static-current-js-candidate",
+        "deploymentScope": "local-only",
+        "productCalibrationPassed": false
+      },
+      "runtime": {
+        "stage": {
+          "width": 800,
+          "height": 600
+        },
+        "rootFrameCount": 10,
+        "rootBeginFrame": 6,
+        "frameDomain": "sprite-113",
+        "frameCount": 136,
+        "livePlaybackEndFrame": 136,
+        "language": "fixed-en",
+        "scenario": "source-static-frame",
+        "seed": "0",
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-shared-current-js-calibration-13-v1/members/shared-nms002-l01-p001/canvas-renderer.js",
+          "bytes": 906112,
+          "sha256": "ead3294ace3ea9a66160f3dffdd11cef9bcc4aada4ab3bb463587b65309d8a5e",
+          "url": "/flash-assets/g678-local/shared-nms002-l01-p001/canvas-renderer.js"
+        }
+      },
+      "runtimeEvidenceBoundary": {
+        "runtimeKind": "source-static-current-js-candidate",
+        "actionScriptExecution": "not-executed",
+        "naturalTraceValidation": "not-established",
+        "audioAcceptance": "not-established",
+        "replaySemantics": "renderer-restart-only-source-behavior-not-established"
+      },
+      "productBlockers": [
+        "intro-fui-scroll-behavior-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ],
+      "productCalibrationPassed": false,
+      "engineeringPreviewReady": false
+    },
+    {
+      "animationId": "shared-nms002-l02-p020",
+      "placementId": "shared-nms002-l02-p020",
+      "assetId": "swf-5aaf739cf2ef1b093564d0f64d3799dcfca2ab5ffa7cc0375f4c0b43dc3364b5",
+      "moduleCode": "NMS002",
+      "lessonNumber": 2,
+      "stableLessonKey": "shared-nms002-l02",
+      "globalPageOrdinal": 20,
+      "sectionCode": "IN",
+      "sectionPageOrdinal": 4,
+      "sourceSha256": "5aaf739cf2ef1b093564d0f64d3799dcfca2ab5ffa7cc0375f4c0b43dc3364b5",
+      "complexityLane": "interactive-understood",
+      "adapterFamily": "hover-glossary-source-static",
+      "implementation": {
+        "kind": "source-static-current-js-candidate",
+        "deploymentScope": "local-only",
+        "productCalibrationPassed": false
+      },
+      "runtime": {
+        "stage": {
+          "width": 800,
+          "height": 600
+        },
+        "rootFrameCount": 10,
+        "rootBeginFrame": 6,
+        "frameDomain": "sprite-69",
+        "frameCount": 151,
+        "livePlaybackEndFrame": 151,
+        "language": "fixed-en",
+        "scenario": "source-static-frame",
+        "seed": "0",
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-shared-current-js-calibration-13-v1/members/shared-nms002-l02-p020/canvas-renderer.js",
+          "bytes": 1099933,
+          "sha256": "1689bc6984240eaacb958f11498e49f0364ea29498d02535cb138fdddb3707bc",
+          "url": "/flash-assets/g678-local/shared-nms002-l02-p020/canvas-renderer.js"
+        }
+      },
+      "runtimeEvidenceBoundary": {
+        "runtimeKind": "source-static-current-js-candidate",
+        "actionScriptExecution": "not-executed",
+        "naturalTraceValidation": "not-established",
+        "audioAcceptance": "not-established",
+        "replaySemantics": "renderer-restart-only-source-behavior-not-established"
+      },
+      "productBlockers": [
+        "twelve-hover-reveal-controls-not-reconstructed",
+        "glossary-host-bridge-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ],
+      "productCalibrationPassed": false,
+      "engineeringPreviewReady": false
+    },
+    {
+      "animationId": "shared-nms002-l05-p040",
+      "placementId": "shared-nms002-l05-p040",
+      "assetId": "swf-c671ad00db12ec2270f25886f2b1b88f68311e411ccc1dee1f7e068a2dddaf16",
+      "moduleCode": "NMS002",
+      "lessonNumber": 5,
+      "stableLessonKey": "shared-nms002-l05",
+      "globalPageOrdinal": 40,
+      "sectionCode": "TS",
+      "sectionPageOrdinal": 1,
+      "sourceSha256": "c671ad00db12ec2270f25886f2b1b88f68311e411ccc1dee1f7e068a2dddaf16",
+      "complexityLane": "interactive-understood",
+      "adapterFamily": "linear-glossary-source-static",
+      "implementation": {
+        "kind": "source-static-current-js-candidate",
+        "deploymentScope": "local-only",
+        "productCalibrationPassed": false
+      },
+      "runtime": {
+        "stage": {
+          "width": 800,
+          "height": 600
+        },
+        "rootFrameCount": 10,
+        "rootBeginFrame": 6,
+        "frameDomain": "sprite-26",
+        "frameCount": 351,
+        "livePlaybackEndFrame": 351,
+        "language": "fixed-en",
+        "scenario": "source-static-frame",
+        "seed": "0",
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-shared-current-js-calibration-13-v1/members/shared-nms002-l05-p040/canvas-renderer.js",
+          "bytes": 657461,
+          "sha256": "b777b43813a8a1a5983edf8666837bd038d2a580e69f0204c32cf79384627c11",
+          "url": "/flash-assets/g678-local/shared-nms002-l05-p040/canvas-renderer.js"
+        }
+      },
+      "runtimeEvidenceBoundary": {
+        "runtimeKind": "source-static-current-js-candidate",
+        "actionScriptExecution": "not-executed",
+        "naturalTraceValidation": "not-established",
+        "audioAcceptance": "not-established",
+        "replaySemantics": "renderer-restart-only-source-behavior-not-established"
+      },
+      "productBlockers": [
+        "glossary-host-bridge-not-reconstructed",
+        "embedded-audio-lifecycle-not-implemented"
+      ],
+      "productCalibrationPassed": false,
+      "engineeringPreviewReady": false
+    },
+    {
+      "animationId": "shared-nms002-l11-p030",
+      "placementId": "shared-nms002-l11-p030",
+      "assetId": "swf-853d0c3350fc1c39dfc730eb369041d91565003b6bdeed238aece874b2e06913",
+      "moduleCode": "NMS002",
+      "lessonNumber": 11,
+      "stableLessonKey": "shared-nms002-l11",
+      "globalPageOrdinal": 30,
+      "sectionCode": "TI",
+      "sectionPageOrdinal": 4,
+      "sourceSha256": "853d0c3350fc1c39dfc730eb369041d91565003b6bdeed238aece874b2e06913",
+      "complexityLane": "behavior-heavy",
+      "adapterFamily": "advanced-manual-choice-quiz",
+      "implementation": {
+        "kind": "source-script-bound-product-behavior-current-js-candidate",
+        "deploymentScope": "local-only",
+        "productCalibrationPassed": false
+      },
+      "runtime": {
+        "stage": {
+          "width": 800,
+          "height": 600
+        },
+        "rootFrameCount": 10,
+        "rootBeginFrame": 6,
+        "frameDomain": "sprite-260",
+        "frameCount": 356,
+        "livePlaybackEndFrame": 356,
+        "language": "fixed-en",
+        "scenario": "source-static-frame",
+        "seed": "0",
+        "replaySeedCycle": 12,
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-advanced-manual-current-js-3-v1/members/shared-nms002-l11-p030/canvas-renderer.js",
+          "bytes": 3497434,
+          "sha256": "f1a120e9c7c126d8d70433d917f8fa34fda45b1a37c751617f9a0094f65762c3",
+          "url": "/flash-assets/g678-local/shared-nms002-l11-p030/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "interactiveStops": [
+          {
+            "id": "nms-question-frame-97",
+            "frameDomain": "sprite-260",
+            "stopFrame": 97,
+            "resumeFrame": 98,
+            "resolution": "explicit-source-feedback-finished",
+            "completionDisposition": "blocked-while-unresolved",
+            "requiresHostInteractiveStop": true,
+            "strictAcceptanceEffect": "none"
+          }
+        ],
+        "interactiveSeek": null,
+        "companionDomains": [
+          {
+            "id": "sprite-124",
+            "frameCount": 30,
+            "label": "Mc_Wrong_Feed1 audio domain (blocked)"
+          },
+          {
+            "id": "sprite-112",
+            "frameCount": 30,
+            "label": "Mc_Wrong_Feed2 audio domain (blocked)"
+          },
+          {
+            "id": "sprite-101",
+            "frameCount": 30,
+            "label": "Mc_Wrong_Feed3 audio domain (blocked)"
+          },
+          {
+            "id": "sprite-90",
+            "frameCount": 30,
+            "label": "Mc_Wrong_Feed4 audio domain (blocked)"
+          },
+          {
+            "id": "sprite-215",
+            "frameCount": 27,
+            "label": "Mc_Right_Feed1 audio domain (blocked)"
+          },
+          {
+            "id": "sprite-150",
+            "frameCount": 31,
+            "label": "Mc_Right_Feed2 audio domain (blocked)"
+          },
+          {
+            "id": "sprite-251",
+            "frameCount": 28,
+            "label": "Mc_Right_Feed3 audio domain (blocked)"
+          },
+          {
+            "id": "sprite-223",
+            "frameCount": 27,
+            "label": "Mc_Right_Feed4 audio domain (blocked)"
+          },
+          {
+            "id": "sprite-182",
+            "frameCount": 25,
+            "label": "Mc_Right_Feed5 audio domain (blocked)"
+          }
+        ]
+      },
+      "runtimeEvidenceBoundary": {
+        "runtimeKind": "source-script-bound-product-behavior-current-js-candidate",
+        "actionScriptExecution": "not-executed",
+        "naturalTraceValidation": "not-established",
+        "audioAcceptance": "not-established",
+        "replaySemantics": "product-complete-state-reset-original-runtime-parity-not-established"
+      },
+      "productBlockers": [
+        "authoritative-original-runtime-not-established",
+        "visual-fidelity-not-accepted",
+        "feedback-and-embedded-audio-not-accepted",
+        "spanish-source-behavior-unavailable",
+        "hint-host-content-not-reconstructed"
+      ],
+      "productCalibrationPassed": false,
+      "engineeringPreviewReady": false
+    }
+  ],
+  "pendingAdvancedManualPlacements": [],
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "behaviorParityAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseEligible": false,
+    "published": false
+  },
+  "limitations": [
+    "This is a private local-only Current-JS registration candidate freeze, not product calibration acceptance.",
+    "Sixteen placements across sixteen lessons do not constitute any N/N whole-lesson engineering preview.",
+    "Original-runtime, visual fidelity, audio, Spanish behavior, human, Owner, strict completion, release, and publication remain false.",
+    "Scale-out remains unauthorized."
+  ]
+}

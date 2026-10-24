@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-instructional-successor-local-registration-activation-v1",
+  "status": "local-registration-activated-product-calibration-pending",
+  "deploymentScope": "local-only",
+  "createdAt": "2026-09-05T04:50:11.054Z",
+  "registryChanged": true,
+  "registrationCount": 377,
+  "changedModuleCount": 23,
+  "changedModuleIds": [
+    "shared-alg001-l11-p006",
+    "shared-alg001-l11-p008",
+    "shared-alg001-l11-p009",
+    "shared-alg001-l11-p010",
+    "shared-alg001-l11-p011",
+    "shared-alg001-l11-p014",
+    "shared-alg001-l11-p019",
+    "shared-alg001-l11-p020",
+    "shared-alg001-l11-p021",
+    "shared-alg001-l11-p025",
+    "shared-alg001-l11-p026",
+    "shared-alg001-l11-p027",
+    "shared-alg001-l11-p028",
+    "shared-alg001-l11-p029",
+    "shared-alg001-l11-p030",
+    "shared-alg001-l11-p031",
+    "shared-alg001-l11-p032",
+    "shared-alg001-l11-p033",
+    "shared-alg001-l11-p034",
+    "shared-alg001-l11-p040",
+    "shared-alg001-l11-p041",
+    "shared-alg001-l11-p042",
+    "shared-alg001-l11-p044"
+  ],
+  "preservedPageCount": 354,
+  "otherCalibrationsUnchanged": true,
+  "publicOutputBytesUnchanged": true,
+  "privateOutputChangedCount": 2,
+  "inputBindings": [
+    {
+      "path": "catalog/product-bridge-calibrations/g678-provisional377-private-current-js-registry-witness-v1.json",
+      "bytes": 430979,
+      "sha256": "bdae8f916495a80d13dd1e02282c21f6de25a8f45247ddb1207b410fc68b9212"
+    },
+    {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-377-page-registration-v1.json",
+      "bytes": 2275220,
+      "sha256": "16a8e04786520f62e1e5a833cb9b23aa0e9c25c5e2c1a610970c4774e1bae646"
+    },
+    {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-377-page-registration-v2.json",
+      "bytes": 2400329,
+      "sha256": "4b11e46779f6c042c4a36ebb5b6e5eece1af3dc5b1b88796865abf01cb36bef6"
+    },
+    {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-377-page-registration-v2.fragment.json",
+      "bytes": 384166,
+      "sha256": "45089cc9b93ffa4e612111be251bcabcbfe8919bc024faf8e41e3a954c9bb230"
+    },
+    {
+      "path": "scripts/activate-g678-alg-l11-instructional-successor-registration.mjs",
+      "bytes": 23906,
+      "sha256": "f0913544e97a13c3a6aacfa8dbca66f0f046c94334e4943a06363adbb24af1a2"
+    },
+    {
+      "path": "scripts/prepare-g678-alg-l11-instructional-successor-registration.mjs",
+      "bytes": 13814,
+      "sha256": "482e5c8d25b56de73a9e57c9aeeef5fffd158e6abac66039666c245513f98a22"
+    },
+    {
+      "path": "scripts/private-current-js-registry.mjs",
+      "bytes": 7135,
+      "sha256": "567ef522774f31348c8aaff0b385e071733779e5df2f9f4226f13ce318a7241c"
+    },
+    {
+      "path": "packages/demos/scripts/generate-registry.mjs",
+      "bytes": 19643,
+      "sha256": "bc29cf0d6fbd556eb8a4963bc11e359f320f4471e86c71232e242b30a365da9f"
+    },
+    {
+      "path": "packages/demos/prototype-registry.json",
+      "bytes": 44136,
+      "sha256": "b7e1c0a2b956ffacb6a2aaf5caef53488ef15506078a9e3677dcdc7531311190"
+    },
+    {
+      "path": "catalog/completion-ledger.json",
+      "bytes": 157918,
+      "sha256": "8bf1e70101729f48565385ae064a711cedf4935564a9f9fab2d9407c867c4d3b"
+    }
+  ],
+  "recovery": "work/g678-shared-page-factory/g678-alg-l11-instructional-successor-registration-v2-activation/activation-MbLOHt",
+  "backups": [
+    {
+      "original": {
+        "path": "packages/demos/private-current-js-registry.json",
+        "bytes": 430979,
+        "sha256": "bdae8f916495a80d13dd1e02282c21f6de25a8f45247ddb1207b410fc68b9212"
+      },
+      "backup": {
+        "path": "work/g678-shared-page-factory/g678-alg-l11-instructional-successor-registration-v2-activation/activation-MbLOHt/before-private-current-js-registry.json",
+        "bytes": 430979,
+        "sha256": "bdae8f916495a80d13dd1e02282c21f6de25a8f45247ddb1207b410fc68b9212"
+      }
+    },
+    {
+      "original": {
+        "path": "packages/demos/src/registry.generated.ts",
+        "bytes": 130310,
+        "sha256": "88c107cd2ed96eae29734cda07aad1d4d5d5ace87d52b218981866845f51fa76"
+      },
+      "backup": {
+        "path": "work/g678-shared-page-factory/g678-alg-l11-instructional-successor-registration-v2-activation/activation-MbLOHt/before-registry.generated.ts",
+        "bytes": 130310,
+        "sha256": "88c107cd2ed96eae29734cda07aad1d4d5d5ace87d52b218981866845f51fa76"
+      }
+    },
+    {
+      "original": {
+        "path": "packages/demos/src/registry.metadata.generated.ts",
+        "bytes": 75696,
+        "sha256": "da599a2f4d466d581abacf1f6d774e2995034c622cf01d17941f56c518cbe785"
+      },
+      "backup": {
+        "path": "work/g678-shared-page-factory/g678-alg-l11-instructional-successor-registration-v2-activation/activation-MbLOHt/before-registry.metadata.generated.ts",
+        "bytes": 75696,
+        "sha256": "da599a2f4d466d581abacf1f6d774e2995034c622cf01d17941f56c518cbe785"
+      }
+    },
+    {
+      "original": {
+        "path": "packages/demos/src/registry.local-only.generated.ts",
+        "bytes": 280168,
+        "sha256": "15a6d26e5e76cf8c0dad3dfca8c888ea762a47c552b47143bedd1155dc7bd9d6"
+      },
+      "backup": {
+        "path": "work/g678-shared-page-factory/g678-alg-l11-instructional-successor-registration-v2-activation/activation-MbLOHt/before-registry.local-only.generated.ts",
+        "bytes": 280168,
+        "sha256": "15a6d26e5e76cf8c0dad3dfca8c888ea762a47c552b47143bedd1155dc7bd9d6"
+      }
+    },
+    {
+      "original": {
+        "path": "packages/demos/src/registry.local-only.metadata.generated.ts",
+        "bytes": 217516,
+        "sha256": "d8a67066f4363dd1b44798c46daf8340d24621ab81442ba688f051c2aa56c87f"
+      },
+      "backup": {
+        "path": "work/g678-shared-page-factory/g678-alg-l11-instructional-successor-registration-v2-activation/activation-MbLOHt/before-registry.local-only.metadata.generated.ts",
+        "bytes": 217516,
+        "sha256": "d8a67066f4363dd1b44798c46daf8340d24621ab81442ba688f051c2aa56c87f"
+      }
+    }
+  ],
+  "proposed": {
+    "registry": {
+      "path": "packages/demos/private-current-js-registry.json",
+      "bytes": 431142,
+      "sha256": "cd2f223ba4b8c34f19f4b7054bacc687b7e36616b9bab760132d6944b5e7bf42"
+    },
+    "generated": [
+      {
+        "path": "packages/demos/src/registry.generated.ts",
+        "bytes": 130310,
+        "sha256": "88c107cd2ed96eae29734cda07aad1d4d5d5ace87d52b218981866845f51fa76"
+      },
+      {
+        "path": "packages/demos/src/registry.metadata.generated.ts",
+        "bytes": 75696,
+        "sha256": "da599a2f4d466d581abacf1f6d774e2995034c622cf01d17941f56c518cbe785"
+      },
+      {
+        "path": "packages/demos/src/registry.local-only.generated.ts",
+        "bytes": 280210,
+        "sha256": "21c2b040c998bf681e03463022541c377d2758023c5817dc72dc0d93106094ce"
+      },
+      {
+        "path": "packages/demos/src/registry.local-only.metadata.generated.ts",
+        "bytes": 217516,
+        "sha256": "812481f8e64b321e8b4de893655496aa33f96e572734bb5203ca359afc4a28d0"
+      }
+    ]
+  },
+  "generatorCheck": {
+    "command": "node",
+    "args": [
+      "packages/demos/scripts/generate-registry.mjs",
+      "--check"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "acceptanceEffects": {
+    "productCalibrationPassed": false,
+    "browserProductCalibrationPassed": false,
+    "originalRuntimeAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictCompletionPassed": false,
+    "acceptancePassed": false,
+    "releaseAuthorized": false,
+    "published": false
+  },
+  "limitations": [
+    "Local registry activation is not My Lesson product calibration or 44-lesson engineering preview.",
+    "Original runtime, audio, visual fidelity, human/Owner acceptance, strict completion, release and publication remain unaccepted.",
+    "The maintained generator writes four files non-atomically after the atomic registry replacement; recoverable before copies are retained."
+  ]
+}

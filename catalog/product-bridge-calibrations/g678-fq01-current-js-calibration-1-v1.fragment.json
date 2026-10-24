@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-fq01-current-js-calibration-fragment-v1",
+  "runId": "g678-fq01-current-js-calibration-1-v1",
+  "compilerRun": {
+    "path": "work/g678-shared-page-factory/g678-fq01-current-js-calibration-1-v1/run-manifest.json",
+    "bytes": 24040,
+    "sha256": "cfb24b1e372cc8186b819214a90dd1030e22b22d33276432629d6b72e878c6cc"
+  },
+  "deploymentScope": "local-only",
+  "familyCalibrationPending": true,
+  "reviewedInventory": {
+    "path": "catalog/g678-final-quiz-intro-family-audit-v1.json",
+    "bytes": 32763,
+    "sha256": "8e12b0fb54214732264bd4544677ad37038467780c4e0da65a7678143bf18737"
+  },
+  "auditedPlacementCount": 44,
+  "predecessorOverlapCount": 0,
+  "generatedPlacementCount": 1,
+  "entries": [
+    {
+      "key": "shared-alg001-l01-p055",
+      "module": "./modules/shared-alg001-l01-p055",
+      "maturity": "private-current-js",
+      "complexityLane": "interactive-understood",
+      "deploymentScope": "local-only",
+      "adapterFamily": "final-quiz-intro-source-static",
+      "timeline": {
+        "path": "packages/demos/src/timelines/shared-alg001-l01-p055.ts",
+        "bytes": 1993,
+        "sha256": "1558bd630f37317322700a65009bacc67e766311443d18b90e2d212fcf5ce99d"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/shared-alg001-l01-p055.tsx",
+        "bytes": 817,
+        "sha256": "dee4a1e5fd3e8e2cab8f58a1f49a9ca60fdd77bc983dbee7c8de3c06d755607a"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-fq01-current-js-calibration-1-v1/members/shared-alg001-l01-p055/member-manifest.json",
+        "bytes": 7731,
+        "sha256": "862f18db4fd5467ac614456d1007d51ef4596c1c7ceee1d5f1e634bd8cf4dca9"
+      },
+      "runtime": {
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-fq01-current-js-calibration-1-v1/members/shared-alg001-l01-p055/canvas-renderer.js",
+          "bytes": 78358,
+          "sha256": "3f6df7ccd066b2cc932464e90fccaf78c024eb4b85bf264b00fa3d3706d69f13",
+          "url": "/flash-assets/g678-local/shared-alg001-l01-p055/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "frameDomain": "sprite-26",
+        "frameCount": 52,
+        "livePlaybackEndFrame": 52
+      }
+    }
+  ],
+  "currentJavaScriptRegisteredCount": 0,
+  "overallProductCalibrationPassed": false,
+  "wholeLessonEngineeringPreviewCount": 0,
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "behaviorAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseEligible": false,
+    "released": false,
+    "published": false
+  }
+}

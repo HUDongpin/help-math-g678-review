@@ -1,0 +1,489 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-ts07-assessment-lane-routing-v1",
+  "routingId": "g678-ts07-assessment-lane-routing-v1",
+  "status": "one-page-representative-implementation-authorized-registration-blocked",
+  "inputs": {
+    "audit": {
+      "path": "catalog/g678-ts07-family-audit-v1.json",
+      "bytes": 1973603,
+      "sha256": "a683423f753a65b5243eefff942ed0541223ea8a0b46f0d34c3b18c8b0d18123"
+    },
+    "recovery": {
+      "path": "catalog/g678-ts07-l1-keyterm-recovery-v1.json",
+      "bytes": 174337,
+      "sha256": "78fda81f5336991b563d173d9266494f1d7e2f17812f6aa2a84506eadf6144f7"
+    },
+    "predecessor": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-276-page-product-calibrated-registration-v1.json",
+      "bytes": 1026118,
+      "sha256": "e3bd85b0384f5d7fe4dc86656c50fe1e8e577d18f3353a86c0e2cb54774e1109"
+    },
+    "privateRegistry": {
+      "path": "packages/demos/private-current-js-registry.json",
+      "bytes": 316789,
+      "sha256": "26958778b57e6c1985ddd0eb4509e9afc09b58fbc1f14322c89d9c287bc34cbb"
+    },
+    "reducer": {
+      "path": "packages/demos/src/g678-ts07-assessment.ts",
+      "bytes": 9617,
+      "sha256": "91c2d8bc0a8327267bf9eda5b48c3b8066068520eab8d0d876a332434cb39fe0"
+    },
+    "feedbackSelector": {
+      "path": "packages/demos/src/g678-advanced-manual/host-feedback-selector.ts",
+      "bytes": 2976,
+      "sha256": "f73cdb10fc9c67e2fdf35b227e3abbad20adb6e2ab38599bd4031951148500b6"
+    },
+    "glossaryAdapter": {
+      "path": "packages/demos/src/private-source-static-glossary-candidate.tsx",
+      "bytes": 9928,
+      "sha256": "9514724b1a7807ab8b04e08bcf7e86a814b62a573bc4cfe493da6f2164c9c4c1"
+    },
+    "builder": {
+      "path": "scripts/build-g678-ts07-lane-routing.mjs",
+      "bytes": 13494,
+      "sha256": "3c1f9a94475452a090e2bd8f701bee0e63677e299cab4e14c784251d1b636d81"
+    }
+  },
+  "scope": {
+    "ts07Placements": 44,
+    "representativeProductSlicePlacements": 1,
+    "sharedDefinitionBlockedPlacements": 4,
+    "advancedManualReviewPlacements": 2,
+    "otherBlockedPlacements": 37,
+    "predecessorRegisteredPlacements": 276,
+    "courseShellsInMigrationScope": 0
+  },
+  "exactSets": {
+    "representativeProductSlice": "c59eed4f9dfd0d37c0ec579e2737ce4b93c4c34c8c537ca1d8ff19b6a595a480",
+    "sharedDefinitionBlocked": "42fab7b55eed41717a6ca0a8e9d1cc971f81acfa57f2a4a51e7a9ab92724daae",
+    "advancedManualReview": "80d1a6d22e91ea06589190114a82db56cdfdb463fcdad826f19fe93804bbfc10",
+    "blocked": "82e2af04d39ba805d686f40ea3a0a3f3faa2dcba4e79e7824e6b1da28e27a14e"
+  },
+  "representativeProductSlice": [
+    {
+      "animationId": "shared-nms002-l01-p043",
+      "stableLessonKey": "shared-nms002-l01",
+      "source": {
+        "path": "G6-G8-shared/NMS002/L1/TS/L1TS07.swf",
+        "bytes": 620151,
+        "sha256": "c920dfa231eb8d4e1824454df041899f8c1c979b94c0553ef44c527ac81c21df"
+      },
+      "lane": "interactive-understood-representative-product-slice",
+      "quizStopFrame": 757,
+      "correctAnswerOrdinal": 3,
+      "answerInstanceCount": 4,
+      "wrongFeedbackDomainCount": 3,
+      "rightFeedbackDomainCount": 4,
+      "inactiveFeedbackDomainCount": 0,
+      "glossaryTermCount": 3,
+      "definitionConflictNormalizedKeys": [],
+      "blockers": [
+        "source-answer-label-and-hit-geometry-evidence-pending",
+        "source-feedback-visual-and-audio-product-adapter-pending",
+        "my-lesson-browser-product-calibration-pending"
+      ]
+    }
+  ],
+  "sharedDefinitionBlocked": [
+    {
+      "animationId": "shared-alg001-l02-p054",
+      "stableLessonKey": "shared-alg001-l02",
+      "source": {
+        "path": "G6-G8-shared/ALG001/L2/TS/L2TS07.swf",
+        "bytes": 565989,
+        "sha256": "8f4d728431b9ef2f8bb95faa67ad2eb479bf452850cd322658e87b9378ecfb69"
+      },
+      "lane": "interactive-understood-after-content-authority",
+      "quizStopFrame": 866,
+      "correctAnswerOrdinal": 3,
+      "answerInstanceCount": 4,
+      "wrongFeedbackDomainCount": 3,
+      "rightFeedbackDomainCount": 4,
+      "inactiveFeedbackDomainCount": 0,
+      "glossaryTermCount": 12,
+      "definitionConflictNormalizedKeys": [
+        "acute angle",
+        "degree",
+        "greater"
+      ],
+      "blockers": [
+        "bilingual-definition-authority-unresolved",
+        "representative-product-slice-not-yet-passed"
+      ]
+    },
+    {
+      "animationId": "shared-alg001-l11-p040",
+      "stableLessonKey": "shared-alg001-l11",
+      "source": {
+        "path": "G6-G8-shared/ALG001/L11/TS/L11TS07.swf",
+        "bytes": 543508,
+        "sha256": "d6f115a52d6778b04891bb4b9f991a60718f17553a947536eb813ed10d0375b5"
+      },
+      "lane": "interactive-understood-after-content-authority",
+      "quizStopFrame": 812,
+      "correctAnswerOrdinal": 1,
+      "answerInstanceCount": 4,
+      "wrongFeedbackDomainCount": 3,
+      "rightFeedbackDomainCount": 4,
+      "inactiveFeedbackDomainCount": 0,
+      "glossaryTermCount": 15,
+      "definitionConflictNormalizedKeys": [
+        "acute angle",
+        "degree",
+        "greater",
+        "represent"
+      ],
+      "blockers": [
+        "bilingual-definition-authority-unresolved",
+        "representative-product-slice-not-yet-passed"
+      ]
+    },
+    {
+      "animationId": "shared-alg001-l12-p048",
+      "stableLessonKey": "shared-alg001-l12",
+      "source": {
+        "path": "G6-G8-shared/ALG001/L12/TS/L12TS07.swf",
+        "bytes": 523797,
+        "sha256": "2dc442410ff312b7e3b449ba04b55417c1c5da79a43f362556459fd57c015aa5"
+      },
+      "lane": "interactive-understood-after-content-authority",
+      "quizStopFrame": 894,
+      "correctAnswerOrdinal": 1,
+      "answerInstanceCount": 4,
+      "wrongFeedbackDomainCount": 3,
+      "rightFeedbackDomainCount": 4,
+      "inactiveFeedbackDomainCount": 0,
+      "glossaryTermCount": 20,
+      "definitionConflictNormalizedKeys": [
+        "acute angle",
+        "degree",
+        "greater"
+      ],
+      "blockers": [
+        "bilingual-definition-authority-unresolved",
+        "representative-product-slice-not-yet-passed"
+      ]
+    },
+    {
+      "animationId": "shared-dat001-l01-p052",
+      "stableLessonKey": "shared-dat001-l01",
+      "source": {
+        "path": "G6-G8-shared/DAT001/L1/TS/L1TS07.swf",
+        "bytes": 540001,
+        "sha256": "e85c3372613ea3adf99d9e04bdf2cee8816f7451ac5f1cc0a1ae4a442ee23b96"
+      },
+      "lane": "interactive-understood-after-content-authority",
+      "quizStopFrame": 745,
+      "correctAnswerOrdinal": 3,
+      "answerInstanceCount": 4,
+      "wrongFeedbackDomainCount": 3,
+      "rightFeedbackDomainCount": 4,
+      "inactiveFeedbackDomainCount": 0,
+      "glossaryTermCount": 16,
+      "definitionConflictNormalizedKeys": [
+        "acute angle",
+        "degree",
+        "greater",
+        "represent"
+      ],
+      "blockers": [
+        "bilingual-definition-authority-unresolved",
+        "representative-product-slice-not-yet-passed"
+      ]
+    }
+  ],
+  "advancedManualReview": [
+    {
+      "animationId": "shared-alg001-l01-p052",
+      "stableLessonKey": "shared-alg001-l01",
+      "source": {
+        "path": "G6-G8-shared/ALG001/L1/TS/L1TS07.swf",
+        "bytes": 607411,
+        "sha256": "72a0ce0d6490e1852a6972324ccd047093f3634475e9f341a2d40bc6651f21cb"
+      },
+      "lane": "advanced-manual-review",
+      "quizStopFrame": 702,
+      "correctAnswerOrdinal": 3,
+      "answerInstanceCount": 4,
+      "wrongFeedbackDomainCount": 3,
+      "rightFeedbackDomainCount": 4,
+      "inactiveFeedbackDomainCount": 0,
+      "glossaryTermCount": 7,
+      "definitionConflictNormalizedKeys": [
+        "set"
+      ],
+      "blockers": [
+        "fui-doinitaction-behavior-requires-source-first-implementation",
+        "bilingual-definition-authority-unresolved"
+      ]
+    },
+    {
+      "animationId": "shared-geo001-l01-p055",
+      "stableLessonKey": "shared-geo001-l01",
+      "source": {
+        "path": "G6-G8-shared/GEO001/L1/TS/L1TS07.swf",
+        "bytes": 649071,
+        "sha256": "21bd35b046954a2867f7d68e05aaf853998cccf63ffceba0204a1c5338613539"
+      },
+      "lane": "advanced-manual-review",
+      "quizStopFrame": 789,
+      "correctAnswerOrdinal": 3,
+      "answerInstanceCount": 4,
+      "wrongFeedbackDomainCount": 3,
+      "rightFeedbackDomainCount": 4,
+      "inactiveFeedbackDomainCount": 0,
+      "glossaryTermCount": 10,
+      "definitionConflictNormalizedKeys": [
+        "acute angle",
+        "degree",
+        "greater"
+      ],
+      "blockers": [
+        "help-button-and-mc-popup1-variant-requires-source-first-implementation",
+        "bilingual-definition-authority-unresolved"
+      ]
+    }
+  ],
+  "blocked": [
+    {
+      "animationId": "shared-alg001-l03-p052",
+      "stableLessonKey": "shared-alg001-l03",
+      "inactiveFeedbackDomainCount": 1,
+      "blocker": "feedback-domain-inactive-at-final-quiz-stop"
+    },
+    {
+      "animationId": "shared-alg001-l04-p049",
+      "stableLessonKey": "shared-alg001-l04",
+      "inactiveFeedbackDomainCount": 1,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-alg001-l05-p059",
+      "stableLessonKey": "shared-alg001-l05",
+      "inactiveFeedbackDomainCount": 1,
+      "blocker": "feedback-domain-inactive-at-final-quiz-stop"
+    },
+    {
+      "animationId": "shared-alg001-l06-p056",
+      "stableLessonKey": "shared-alg001-l06",
+      "inactiveFeedbackDomainCount": 1,
+      "blocker": "feedback-domain-inactive-at-final-quiz-stop"
+    },
+    {
+      "animationId": "shared-alg001-l07-p058",
+      "stableLessonKey": "shared-alg001-l07",
+      "inactiveFeedbackDomainCount": 1,
+      "blocker": "feedback-domain-inactive-at-final-quiz-stop"
+    },
+    {
+      "animationId": "shared-alg001-l08-p046",
+      "stableLessonKey": "shared-alg001-l08",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-alg001-l09-p037",
+      "stableLessonKey": "shared-alg001-l09",
+      "inactiveFeedbackDomainCount": 1,
+      "blocker": "feedback-domain-inactive-at-final-quiz-stop"
+    },
+    {
+      "animationId": "shared-alg001-l10-p048",
+      "stableLessonKey": "shared-alg001-l10",
+      "inactiveFeedbackDomainCount": 1,
+      "blocker": "feedback-domain-inactive-at-final-quiz-stop"
+    },
+    {
+      "animationId": "shared-dat001-l02-p049",
+      "stableLessonKey": "shared-dat001-l02",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-dat001-l03-p059",
+      "stableLessonKey": "shared-dat001-l03",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-dat001-l04-p035",
+      "stableLessonKey": "shared-dat001-l04",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-dat001-l05-p057",
+      "stableLessonKey": "shared-dat001-l05",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-dat001-l06-p042",
+      "stableLessonKey": "shared-dat001-l06",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-dat001-l07-p046",
+      "stableLessonKey": "shared-dat001-l07",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-dat001-l08-p030",
+      "stableLessonKey": "shared-dat001-l08",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-geo001-l02-p047",
+      "stableLessonKey": "shared-geo001-l02",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-geo001-l03-p045",
+      "stableLessonKey": "shared-geo001-l03",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-geo001-l04-p040",
+      "stableLessonKey": "shared-geo001-l04",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-geo001-l05-p047",
+      "stableLessonKey": "shared-geo001-l05",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-geo001-l06-p050",
+      "stableLessonKey": "shared-geo001-l06",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-geo001-l07-p059",
+      "stableLessonKey": "shared-geo001-l07",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-geo001-l08-p043",
+      "stableLessonKey": "shared-geo001-l08",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-geo001-l09-p040",
+      "stableLessonKey": "shared-geo001-l09",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-geo001-l10-p038",
+      "stableLessonKey": "shared-geo001-l10",
+      "inactiveFeedbackDomainCount": 1,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-geo001-l11-p048",
+      "stableLessonKey": "shared-geo001-l11",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-geo001-l12-p035",
+      "stableLessonKey": "shared-geo001-l12",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-nms002-l02-p060",
+      "stableLessonKey": "shared-nms002-l02",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-nms002-l03-p052",
+      "stableLessonKey": "shared-nms002-l03",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-nms002-l04-p041",
+      "stableLessonKey": "shared-nms002-l04",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-nms002-l05-p045",
+      "stableLessonKey": "shared-nms002-l05",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-nms002-l06-p047",
+      "stableLessonKey": "shared-nms002-l06",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-nms002-l07-p048",
+      "stableLessonKey": "shared-nms002-l07",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-nms002-l08-p056",
+      "stableLessonKey": "shared-nms002-l08",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-nms002-l09-p049",
+      "stableLessonKey": "shared-nms002-l09",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-nms002-l10-p045",
+      "stableLessonKey": "shared-nms002-l10",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-nms002-l11-p043",
+      "stableLessonKey": "shared-nms002-l11",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    },
+    {
+      "animationId": "shared-nms002-l12-p061",
+      "stableLessonKey": "shared-nms002-l12",
+      "inactiveFeedbackDomainCount": 0,
+      "blocker": "required-key-term-xml-or-exact-screen-key-entry-unresolved"
+    }
+  ],
+  "implementationAuthorizedPlacementCount": 1,
+  "generatedCandidatePlacementCount": 0,
+  "registrationAuthorizedPlacementCount": 0,
+  "productCalibrationPassed": false,
+  "scaleOutAuthorized": false,
+  "acceptanceEffects": {
+    "currentJavaScriptRegistered": false,
+    "authoritativeOriginalRuntime": false,
+    "behaviorAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "released": false,
+    "published": false
+  }
+}

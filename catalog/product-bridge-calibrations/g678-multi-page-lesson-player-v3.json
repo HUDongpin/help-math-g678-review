@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "scope": "Private modern host with exact page runtime dispatch and unchanged production/candidate/reviewer gates",
+  "inputs": [
+    {
+      "path": "apps/web/components/descriptor-driven-whole-lesson-player.tsx",
+      "bytes": 52078,
+      "sha256": "494cadc14b5b42dbde7e61733a8245dc05209b69d0a47db6dcec568a4eec4f78"
+    },
+    {
+      "path": "scripts/build-g678-multi-page-lesson-player-v3.mjs",
+      "bytes": 5845,
+      "sha256": "6334b4f51e224a2fa9c7ef83acc8915f3d0b53cda61751a51e4cddc62685a709"
+    },
+    {
+      "path": "apps/web/lib/g678-private-runtime-adapters-v1.ts",
+      "bytes": 743,
+      "sha256": "10d8cd1dac993688f789603bf3b34782971474836fbc136d5e16581cbe15a100"
+    },
+    {
+      "path": "apps/web/lib/g678-preview-entry-v1.ts",
+      "bytes": 571,
+      "sha256": "95a6a67cc685cfb8c140b46f1d8ff16897c46d52e2d4a0fd71eaf7c35309d0b5"
+    }
+  ],
+  "output": {
+    "path": "apps/web/components/g678-multi-page-lesson-player-v3.generated.tsx",
+    "bytes": 53663,
+    "sha256": "6ce7fa830208f76ac40c3c81a289e2c92dc587e13aa172e354a6fe5399f33522"
+  },
+  "edits": [
+    {
+      "before": "import type {PrivateLessonRuntimeAdapter,LessonRuntimeAdapterControls,LessonRuntimeAdapterProps} from '@/lib/lesson-runtime-adapter';",
+      "after": "import type {PrivateLessonRuntimeAdapter,LessonRuntimeAdapterControls,LessonRuntimeAdapterProps} from '@/lib/lesson-runtime-adapter';\nimport {selectG678PrivateRuntimeAdapter} from '@/lib/g678-private-runtime-adapters-v1';"
+    },
+    {
+      "before": "export function DescriptorDrivenWholeLessonPlayer({",
+      "after": "export function G678MultiPageLessonPlayer({"
+    },
+    {
+      "before": "  privateRuntimeAdapter,",
+      "after": "  privateRuntimeAdapter,\n  privateRuntimeAdapters,"
+    },
+    {
+      "before": "  privateRuntimeAdapter?: PrivateLessonRuntimeAdapter;",
+      "after": "  privateRuntimeAdapter?: PrivateLessonRuntimeAdapter;\n  privateRuntimeAdapters?: readonly PrivateLessonRuntimeAdapter[];"
+    },
+    {
+      "before": "    runtimeAvailable && privateRuntimeAdapter?.animationId === currentPage.animationId ? privateRuntimeAdapter : undefined;",
+      "after": "    runtimeAvailable ? selectG678PrivateRuntimeAdapter(currentPage.animationId, privateRuntimeAdapter, privateRuntimeAdapters) : undefined;"
+    },
+    {
+      "before": "  useEffect(() => {\n    let active = true;\n    let serialized: string | null = null;",
+      "after": "  const progressInitializationIdentity = useMemo(() => JSON.stringify({descriptor, initialPlacementId, locale}), [descriptor, initialPlacementId, locale]);\n  const initializedProgressIdentity = useRef<string | null>(null);\n  useEffect(() => {\n    if (initializedProgressIdentity.current === progressInitializationIdentity) return;\n    let active = true;\n    let serialized: string | null = null;"
+    },
+    {
+      "before": "      setProgress(initialProgress);\n      setHydrated(true);",
+      "after": "      initializedProgressIdentity.current = progressInitializationIdentity;\n      setProgress(initialProgress);\n      setHydrated(true);"
+    },
+    {
+      "before": "  }, [descriptor, initialPlacementId, locale]);",
+      "after": "  }, [descriptor, initialPlacementId, locale, progressInitializationIdentity]);"
+    },
+    {
+      "before": "import {selectG678PrivateRuntimeAdapter} from '@/lib/g678-private-runtime-adapters-v1';",
+      "after": "import {selectG678PrivateRuntimeAdapter} from '@/lib/g678-private-runtime-adapters-v1';\nimport {encodeG678PreviewEntry,isSameG678PreviewEntry} from '@/lib/g678-preview-entry-v1';"
+    },
+    {
+      "before": "    const initialProgress = initialPlacementId\n      ? visitWholeLessonPage(",
+      "after": "    const previewEntryKey = `${descriptor.persistence.storageKey}:g678-preview-entry-v1`;\n    const previewEntryIdentity = JSON.stringify([descriptor.persistence.storageKey, descriptor.source.sourceXmlSha256, descriptor.schemaVersion === 2 ? descriptor.source.candidateFreezeManifestSha256 : null, initialPlacementId ?? null, locale]);\n    let restoreCurrentPlacement = false;\n    try { restoreCurrentPlacement = isSameG678PreviewEntry(window.sessionStorage.getItem(previewEntryKey), previewEntryIdentity, window.location.pathname); } catch { /* Browser storage can be unavailable. */ }\n    const initialProgress = initialPlacementId && !restoreCurrentPlacement\n      ? visitWholeLessonPage("
+    },
+    {
+      "before": "      initializedProgressIdentity.current = progressInitializationIdentity;",
+      "after": "      try { window.sessionStorage.setItem(previewEntryKey, encodeG678PreviewEntry(previewEntryIdentity, window.location.pathname)); } catch { /* In-memory navigation remains available. */ }\n      initializedProgressIdentity.current = progressInitializationIdentity;"
+    }
+  ],
+  "sourceBaseChanged": false,
+  "originalRuntimeAccepted": false,
+  "scaleOutAuthorized": false
+}

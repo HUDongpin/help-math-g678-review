@@ -1,0 +1,575 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-ts03-l1-current-js-fragment-v1",
+  "runId": "g678-ts03-l1-current-js-15-v1",
+  "compilerRun": {
+    "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/run-manifest.json",
+    "bytes": 68243,
+    "sha256": "28a614fe7ed0b9a4a5fad66cda1291bb24a86f623292565ba34830dbc34ad4b3"
+  },
+  "deploymentScope": "local-only",
+  "reviewedAudit": {
+    "path": "catalog/g678-ts03-family-audit-v1.json",
+    "bytes": 333425,
+    "sha256": "f707cce06d4bac82e99f1b5c6a36256b95d1a8e87dc7a83f5dd1690314fa32a1"
+  },
+  "keyTermRecovery": {
+    "path": "catalog/g678-ts03-l1-keyterm-recovery-v1.json",
+    "bytes": 24586,
+    "sha256": "bbdaeac52ba12f6de8cd5672aa3b8a50d276fc0579246155dc58b692200085ae"
+  },
+  "predecessorFreeze": {
+    "path": "catalog/product-bridge-calibrations/g678-current-js-216-page-registration-v1.json",
+    "bytes": 479578,
+    "sha256": "d44fa54791f71884771a7cf64922b53ebdb9a085ceeb177e3a0ac2f9d660d024"
+  },
+  "auditedPlacementCount": 44,
+  "recoveredEligiblePlacementCount": 15,
+  "blockedPlacementCount": 29,
+  "generatedPlacementCount": 15,
+  "entries": [
+    {
+      "key": "shared-alg001-l01-p048",
+      "module": "./modules/shared-alg001-l01-p048",
+      "maturity": "private-current-js",
+      "complexityLane": "interactive-understood",
+      "deploymentScope": "local-only",
+      "adapterFamily": "ts03-l1-glossary-source-static",
+      "timeline": {
+        "path": "packages/demos/src/timelines/shared-alg001-l01-p048.ts",
+        "bytes": 2048,
+        "sha256": "517fd60968b31b88b7e60afc392572a2a4b9dc7ff9f5d7d30c2bb59af3e4a423"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/shared-alg001-l01-p048.tsx",
+        "bytes": 1508,
+        "sha256": "0b3cef5c3e0737a8ce52fbc4c481e74d20abe0b3ad54c26b83e618bb104e2ba5"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l01-p048/member-manifest.json",
+        "bytes": 6207,
+        "sha256": "693113363d76c47041ac0c38070ca6f87639ec81f79f1279055f62f5775dc8e6"
+      },
+      "runtime": {
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l01-p048/canvas-renderer.js",
+          "bytes": 507367,
+          "sha256": "1ec720d80ff0ff5e616b4f29ca6183a87f5a0eb284a32245b52d9ea5429d03c7",
+          "url": "/flash-assets/g678-local/shared-alg001-l01-p048/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "frameDomain": "sprite-24",
+        "frameCount": 234,
+        "livePlaybackEndFrame": 234
+      }
+    },
+    {
+      "key": "shared-alg001-l02-p050",
+      "module": "./modules/shared-alg001-l02-p050",
+      "maturity": "private-current-js",
+      "complexityLane": "interactive-understood",
+      "deploymentScope": "local-only",
+      "adapterFamily": "ts03-l1-glossary-source-static",
+      "timeline": {
+        "path": "packages/demos/src/timelines/shared-alg001-l02-p050.ts",
+        "bytes": 2048,
+        "sha256": "8426767dc734a2dfadd9fb565802897245ce17dcecdb4e97b676f0453a5f762e"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/shared-alg001-l02-p050.tsx",
+        "bytes": 1508,
+        "sha256": "8220291b279bbe154664b7ae44b41380f1935d81da6cb3698be21c2c3bb95c6d"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l02-p050/member-manifest.json",
+        "bytes": 6205,
+        "sha256": "c8144b2c6908e7ee2883f047e48bab8b16ebfdeaf7db7f75fd0149caec97ca50"
+      },
+      "runtime": {
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l02-p050/canvas-renderer.js",
+          "bytes": 461245,
+          "sha256": "3315ecf2e7da0733d50068470ca3f5a663e74acfc375693f31e6a5316a2a0b55",
+          "url": "/flash-assets/g678-local/shared-alg001-l02-p050/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "frameDomain": "sprite-25",
+        "frameCount": 223,
+        "livePlaybackEndFrame": 223
+      }
+    },
+    {
+      "key": "shared-alg001-l03-p048",
+      "module": "./modules/shared-alg001-l03-p048",
+      "maturity": "private-current-js",
+      "complexityLane": "interactive-understood",
+      "deploymentScope": "local-only",
+      "adapterFamily": "ts03-l1-glossary-source-static",
+      "timeline": {
+        "path": "packages/demos/src/timelines/shared-alg001-l03-p048.ts",
+        "bytes": 2048,
+        "sha256": "df24beabc4f0c403a93325ff71cd0a6defed18affdb281f0655eff4ae1267c15"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/shared-alg001-l03-p048.tsx",
+        "bytes": 1508,
+        "sha256": "fb2290a752c30bf666620d6e2a50c7e29abe8cac724256a147922c914e6cdc82"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l03-p048/member-manifest.json",
+        "bytes": 6205,
+        "sha256": "97d4903446a0798fa69ab85a0a9a289299dc82e9c1ee61d7671468ff88bf3b9b"
+      },
+      "runtime": {
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l03-p048/canvas-renderer.js",
+          "bytes": 461245,
+          "sha256": "366db986d5332a46c724d1a691da886435af3b788150e3951ace85edf16ea0ea",
+          "url": "/flash-assets/g678-local/shared-alg001-l03-p048/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "frameDomain": "sprite-25",
+        "frameCount": 223,
+        "livePlaybackEndFrame": 223
+      }
+    },
+    {
+      "key": "shared-alg001-l04-p045",
+      "module": "./modules/shared-alg001-l04-p045",
+      "maturity": "private-current-js",
+      "complexityLane": "interactive-understood",
+      "deploymentScope": "local-only",
+      "adapterFamily": "ts03-l1-glossary-source-static",
+      "timeline": {
+        "path": "packages/demos/src/timelines/shared-alg001-l04-p045.ts",
+        "bytes": 2048,
+        "sha256": "8c145bfaa15a8b15b15dc9fd79638e2541a4e02a78998e5fb74ce909fc77172d"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/shared-alg001-l04-p045.tsx",
+        "bytes": 1508,
+        "sha256": "429be3f36d73587270ab13b73416bb1f89d13be17fda654203cd20f87b8a8c96"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l04-p045/member-manifest.json",
+        "bytes": 6205,
+        "sha256": "9dd2c3f4c1fddcddb2b89f7ab89c7f9a39ab186de9f7a2303e00fe8832940a76"
+      },
+      "runtime": {
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l04-p045/canvas-renderer.js",
+          "bytes": 461245,
+          "sha256": "8a12df9eb8346bbcfa9a092b27b63d8bc38fd98fb106aa8273955dc53f5bc18e",
+          "url": "/flash-assets/g678-local/shared-alg001-l04-p045/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "frameDomain": "sprite-25",
+        "frameCount": 223,
+        "livePlaybackEndFrame": 223
+      }
+    },
+    {
+      "key": "shared-alg001-l05-p055",
+      "module": "./modules/shared-alg001-l05-p055",
+      "maturity": "private-current-js",
+      "complexityLane": "interactive-understood",
+      "deploymentScope": "local-only",
+      "adapterFamily": "ts03-l1-glossary-source-static",
+      "timeline": {
+        "path": "packages/demos/src/timelines/shared-alg001-l05-p055.ts",
+        "bytes": 2048,
+        "sha256": "47848d53ee517531c9fb92daacf51dc6510b25618e3215dbfabefcef5ed9f79e"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/shared-alg001-l05-p055.tsx",
+        "bytes": 1508,
+        "sha256": "e64ae5f46d22f01ab6d3a71ffd2d01a577e89aa685ce189f6cbd498c19f2fed1"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l05-p055/member-manifest.json",
+        "bytes": 6205,
+        "sha256": "2bfc1ac02c7919006508ef22dd09788151856fecafa5d928bef59638f821d3c6"
+      },
+      "runtime": {
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l05-p055/canvas-renderer.js",
+          "bytes": 461245,
+          "sha256": "ae52e122b3fbecc39da565b27f3ed4db54954d8140ea0e6e35f6be941cc952e6",
+          "url": "/flash-assets/g678-local/shared-alg001-l05-p055/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "frameDomain": "sprite-25",
+        "frameCount": 223,
+        "livePlaybackEndFrame": 223
+      }
+    },
+    {
+      "key": "shared-alg001-l06-p052",
+      "module": "./modules/shared-alg001-l06-p052",
+      "maturity": "private-current-js",
+      "complexityLane": "interactive-understood",
+      "deploymentScope": "local-only",
+      "adapterFamily": "ts03-l1-glossary-source-static",
+      "timeline": {
+        "path": "packages/demos/src/timelines/shared-alg001-l06-p052.ts",
+        "bytes": 2048,
+        "sha256": "5bbbc5284c6dfd3d3e79325386af810801fc05760820e9e4d9d96dfa60c80f54"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/shared-alg001-l06-p052.tsx",
+        "bytes": 1508,
+        "sha256": "7685a639b3817d344660fc82ac1d76f2d4516005a8cf9c5c030459f2b4b58ce1"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l06-p052/member-manifest.json",
+        "bytes": 6205,
+        "sha256": "cbf65324a7ac1e981427be0be3b1f667cba7d3edc7727c4810bc802c32620614"
+      },
+      "runtime": {
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l06-p052/canvas-renderer.js",
+          "bytes": 461245,
+          "sha256": "d5a3592ce5306405e9893a30b24b222ca84a0a8ac5e1b03e1236d57bda133eee",
+          "url": "/flash-assets/g678-local/shared-alg001-l06-p052/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "frameDomain": "sprite-25",
+        "frameCount": 223,
+        "livePlaybackEndFrame": 223
+      }
+    },
+    {
+      "key": "shared-alg001-l07-p054",
+      "module": "./modules/shared-alg001-l07-p054",
+      "maturity": "private-current-js",
+      "complexityLane": "interactive-understood",
+      "deploymentScope": "local-only",
+      "adapterFamily": "ts03-l1-glossary-source-static",
+      "timeline": {
+        "path": "packages/demos/src/timelines/shared-alg001-l07-p054.ts",
+        "bytes": 2048,
+        "sha256": "2f021440b8f65e23d381e8bc819807e4bdfa26fb8d8ef6b9c6ed5f7b6a4ade92"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/shared-alg001-l07-p054.tsx",
+        "bytes": 1508,
+        "sha256": "8f3ed44575fe25578b3f1dba642293841f1a293c5e0edf8abec67135c32b5ab3"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l07-p054/member-manifest.json",
+        "bytes": 6205,
+        "sha256": "a62aa14a4d3caf1b40cc0e973c783fdecfc30b48bf2ae14386230e3ce61f348c"
+      },
+      "runtime": {
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l07-p054/canvas-renderer.js",
+          "bytes": 461245,
+          "sha256": "3d2ea7e0147906bbdff497be494d46584879942666b8fa3ed399495481a852cb",
+          "url": "/flash-assets/g678-local/shared-alg001-l07-p054/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "frameDomain": "sprite-25",
+        "frameCount": 223,
+        "livePlaybackEndFrame": 223
+      }
+    },
+    {
+      "key": "shared-alg001-l08-p042",
+      "module": "./modules/shared-alg001-l08-p042",
+      "maturity": "private-current-js",
+      "complexityLane": "interactive-understood",
+      "deploymentScope": "local-only",
+      "adapterFamily": "ts03-l1-glossary-source-static",
+      "timeline": {
+        "path": "packages/demos/src/timelines/shared-alg001-l08-p042.ts",
+        "bytes": 2048,
+        "sha256": "108b675a9c0deccc9d684b4cfb2a6118e0ee8f5b315d4492e2f1b98d1ef1bebb"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/shared-alg001-l08-p042.tsx",
+        "bytes": 1508,
+        "sha256": "a231d9bb810a56d1b4dc87f496e23b8024166e97c22c2bfdbef300fd594b899b"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l08-p042/member-manifest.json",
+        "bytes": 6205,
+        "sha256": "668829a20f3e7b9ee8053e76d451342fcc77195b97d70cbb839af82463cf3cca"
+      },
+      "runtime": {
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l08-p042/canvas-renderer.js",
+          "bytes": 461245,
+          "sha256": "0f78fbfdba117b6a65168122c7b3effa53f99be152a7edde3a97ccd1bd95a8a2",
+          "url": "/flash-assets/g678-local/shared-alg001-l08-p042/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "frameDomain": "sprite-25",
+        "frameCount": 223,
+        "livePlaybackEndFrame": 223
+      }
+    },
+    {
+      "key": "shared-alg001-l09-p033",
+      "module": "./modules/shared-alg001-l09-p033",
+      "maturity": "private-current-js",
+      "complexityLane": "interactive-understood",
+      "deploymentScope": "local-only",
+      "adapterFamily": "ts03-l1-glossary-source-static",
+      "timeline": {
+        "path": "packages/demos/src/timelines/shared-alg001-l09-p033.ts",
+        "bytes": 2048,
+        "sha256": "92b12b56fe6243baefc168d734274baf0911c896efb4759a9fd70a68f9955bf5"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/shared-alg001-l09-p033.tsx",
+        "bytes": 1508,
+        "sha256": "85056f599857d2cd63e86f47f98e5dda374ea43dce7a5a26ebaeab3ec7399e83"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l09-p033/member-manifest.json",
+        "bytes": 6205,
+        "sha256": "5cba0bbcc2709bbc6eb43810a59e70bbe193da23756d6c35ea1619b87c48bd85"
+      },
+      "runtime": {
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l09-p033/canvas-renderer.js",
+          "bytes": 461245,
+          "sha256": "2a9ccd714ab53dd02ef98e766d1c538898327c69b3f1211c4cceb797888f33ba",
+          "url": "/flash-assets/g678-local/shared-alg001-l09-p033/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "frameDomain": "sprite-25",
+        "frameCount": 223,
+        "livePlaybackEndFrame": 223
+      }
+    },
+    {
+      "key": "shared-alg001-l10-p044",
+      "module": "./modules/shared-alg001-l10-p044",
+      "maturity": "private-current-js",
+      "complexityLane": "interactive-understood",
+      "deploymentScope": "local-only",
+      "adapterFamily": "ts03-l1-glossary-source-static",
+      "timeline": {
+        "path": "packages/demos/src/timelines/shared-alg001-l10-p044.ts",
+        "bytes": 2050,
+        "sha256": "dc8f397e5cd39e0b06be21e5e15389d894e3c5a315766d63e977b98483a3b552"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/shared-alg001-l10-p044.tsx",
+        "bytes": 1508,
+        "sha256": "c4c2c792a1062995d6d079bd7bc652026baef6153a83a99c289522d1bad04e87"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l10-p044/member-manifest.json",
+        "bytes": 6209,
+        "sha256": "6fdf7b3eb9dd6ea535a31d251a5e699af53ec193242d9f560e75f781bd0e5572"
+      },
+      "runtime": {
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l10-p044/canvas-renderer.js",
+          "bytes": 461245,
+          "sha256": "94a2bb6566eb901d56e7686d3add66466bb2c3d7c58abf05e3d63824d5258d7c",
+          "url": "/flash-assets/g678-local/shared-alg001-l10-p044/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "frameDomain": "sprite-25",
+        "frameCount": 223,
+        "livePlaybackEndFrame": 223
+      }
+    },
+    {
+      "key": "shared-alg001-l11-p036",
+      "module": "./modules/shared-alg001-l11-p036",
+      "maturity": "private-current-js",
+      "complexityLane": "interactive-understood",
+      "deploymentScope": "local-only",
+      "adapterFamily": "ts03-l1-glossary-source-static",
+      "timeline": {
+        "path": "packages/demos/src/timelines/shared-alg001-l11-p036.ts",
+        "bytes": 2050,
+        "sha256": "27a08ba46a5d89f70ab34107ece61a515f1a1c9f0e3e8eb232e1cb2ea03892d5"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/shared-alg001-l11-p036.tsx",
+        "bytes": 1508,
+        "sha256": "5cc2d7b9fce487bb46d3b47a1970eeb93c0d5fab013b69451dd184ee4fd8b8f1"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l11-p036/member-manifest.json",
+        "bytes": 6209,
+        "sha256": "860f04131a159015acba42dd12851017753a6baf135f6e74319db6da0bd2703c"
+      },
+      "runtime": {
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l11-p036/canvas-renderer.js",
+          "bytes": 461245,
+          "sha256": "6e4f529e90d27d9aa02f2bfd57002923bd72a0612b03b2f525a1f3dbb1f5ab61",
+          "url": "/flash-assets/g678-local/shared-alg001-l11-p036/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "frameDomain": "sprite-25",
+        "frameCount": 223,
+        "livePlaybackEndFrame": 223
+      }
+    },
+    {
+      "key": "shared-alg001-l12-p044",
+      "module": "./modules/shared-alg001-l12-p044",
+      "maturity": "private-current-js",
+      "complexityLane": "interactive-understood",
+      "deploymentScope": "local-only",
+      "adapterFamily": "ts03-l1-glossary-source-static",
+      "timeline": {
+        "path": "packages/demos/src/timelines/shared-alg001-l12-p044.ts",
+        "bytes": 2050,
+        "sha256": "1fc267832e3f27e59c8cb7a9ce09401ad0a9853de02fe9367be9797e970c2a2e"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/shared-alg001-l12-p044.tsx",
+        "bytes": 1508,
+        "sha256": "d595360d2dd869996c5ac03f2f617631d45ed2c2c0fa5e57942bda858d00115a"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l12-p044/member-manifest.json",
+        "bytes": 6209,
+        "sha256": "7419a8be300fc6dd68bedfc1ab41d9209546d9f7dbc638c05f39f552ea69482d"
+      },
+      "runtime": {
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-alg001-l12-p044/canvas-renderer.js",
+          "bytes": 461245,
+          "sha256": "d97ca306f936af675e87b2ef74ad0d3d23d52647b39ffbc4ea97a1ed05638429",
+          "url": "/flash-assets/g678-local/shared-alg001-l12-p044/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "frameDomain": "sprite-25",
+        "frameCount": 223,
+        "livePlaybackEndFrame": 223
+      }
+    },
+    {
+      "key": "shared-dat001-l01-p048",
+      "module": "./modules/shared-dat001-l01-p048",
+      "maturity": "private-current-js",
+      "complexityLane": "interactive-understood",
+      "deploymentScope": "local-only",
+      "adapterFamily": "ts03-l1-glossary-source-static",
+      "timeline": {
+        "path": "packages/demos/src/timelines/shared-dat001-l01-p048.ts",
+        "bytes": 2048,
+        "sha256": "71c1c54009d116e3234e2ebd55f8590da7009cfdf4bd52a2f28888717874f96e"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/shared-dat001-l01-p048.tsx",
+        "bytes": 1508,
+        "sha256": "6a41cdfa97fef03907467e80971115e95e2a22fd1ce4d09b0fb0f5c9c26c8d61"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-dat001-l01-p048/member-manifest.json",
+        "bytes": 6205,
+        "sha256": "ec21e77742dce276d47253f76fe1f8ccb1f9acbf3e6a7cffd8bbd4fac93e6ce7"
+      },
+      "runtime": {
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-dat001-l01-p048/canvas-renderer.js",
+          "bytes": 461245,
+          "sha256": "f93c07222634f36768aafbdd2a7ab7a460017fc59778a799b241d9dc78081cfe",
+          "url": "/flash-assets/g678-local/shared-dat001-l01-p048/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "frameDomain": "sprite-25",
+        "frameCount": 223,
+        "livePlaybackEndFrame": 223
+      }
+    },
+    {
+      "key": "shared-geo001-l01-p051",
+      "module": "./modules/shared-geo001-l01-p051",
+      "maturity": "private-current-js",
+      "complexityLane": "interactive-understood",
+      "deploymentScope": "local-only",
+      "adapterFamily": "ts03-l1-glossary-source-static",
+      "timeline": {
+        "path": "packages/demos/src/timelines/shared-geo001-l01-p051.ts",
+        "bytes": 2048,
+        "sha256": "2f100bb863ed73a03c536d40bbd0ce6c3caa2264276844df5e1064fbd8763e3f"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/shared-geo001-l01-p051.tsx",
+        "bytes": 1508,
+        "sha256": "cf680ccd63ce17d3690cb3dbaeef413943f7acc575f2cf81f6283af79719d245"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-geo001-l01-p051/member-manifest.json",
+        "bytes": 6205,
+        "sha256": "4993237c487c30daab665d0e5d419cb8840d0d200e49f7f99b56e943f453717f"
+      },
+      "runtime": {
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-geo001-l01-p051/canvas-renderer.js",
+          "bytes": 461245,
+          "sha256": "6d1514215183e4874d24a7a1cc55cdcc09c428beb210f26d50cae7853077b9fa",
+          "url": "/flash-assets/g678-local/shared-geo001-l01-p051/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "frameDomain": "sprite-25",
+        "frameCount": 223,
+        "livePlaybackEndFrame": 223
+      }
+    },
+    {
+      "key": "shared-nms002-l01-p039",
+      "module": "./modules/shared-nms002-l01-p039",
+      "maturity": "private-current-js",
+      "complexityLane": "interactive-understood",
+      "deploymentScope": "local-only",
+      "adapterFamily": "ts03-l1-glossary-source-static",
+      "timeline": {
+        "path": "packages/demos/src/timelines/shared-nms002-l01-p039.ts",
+        "bytes": 2048,
+        "sha256": "108e9f5838318951ad090ba01eb1dac83ad8ab6cacfb8fbcac157c46ac2f7952"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/shared-nms002-l01-p039.tsx",
+        "bytes": 1506,
+        "sha256": "675d3130a8d6105422a01dd1a3d1c45c6a66b6dfc1bdbc399169d95071eaa551"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-nms002-l01-p039/member-manifest.json",
+        "bytes": 6395,
+        "sha256": "f2c1c0b34908ba92930220ddc6c13abf4043a0e60bad96318f837e2b418361c7"
+      },
+      "runtime": {
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-ts03-l1-current-js-15-v1/members/shared-nms002-l01-p039/canvas-renderer.js",
+          "bytes": 527825,
+          "sha256": "d2a8fa886b46f688e265ad15bf5479871ed11eb2ac003ea51392b3c5a6993101",
+          "url": "/flash-assets/g678-local/shared-nms002-l01-p039/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "frameDomain": "sprite-25",
+        "frameCount": 234,
+        "livePlaybackEndFrame": 234
+      }
+    }
+  ],
+  "currentJavaScriptRegisteredCount": 0,
+  "overallProductCalibrationPassed": false,
+  "wholeLessonEngineeringPreviewCount": 0,
+  "productBlockers": [
+    "ts03-l1-browser-product-calibration-pending"
+  ],
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "behaviorAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseEligible": false,
+    "released": false,
+    "published": false
+  }
+}

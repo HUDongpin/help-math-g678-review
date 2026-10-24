@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-shared-adapter-family-calibration-v1",
+  "calibrationId": "g678-pure-linear-family-calibration-v1",
+  "adapterFamily": "pure-linear-source-static",
+  "status": "family-current-js-visual-playback-calibrated-audio-independent",
+  "representative": {
+    "animationId": "shared-alg001-l06-p040",
+    "sourceSha256": "cb4b046089166eef2dd0407a921b91c89d33fe6d99071915325de3439b3b2653",
+    "frameDomain": "sprite-86",
+    "frameCount": 189,
+    "fps": 12,
+    "runtimeSha256": "a6568ba88450bf9ec258942dc2efa516889caea4b9dd6304a8e38b47f4e90a7b"
+  },
+  "inputs": {
+    "ir": {
+      "path": "catalog/product-bridge-calibrations/g678-16-page-product-calibration-v1.ir.json",
+      "bytes": 13795,
+      "sha256": "ecad2ced7eeb6aa2d3f86991efd0585adc3c281e4e8c02a3cb7183d92bbd5544"
+    },
+    "structuralReport": {
+      "path": "work/g678-shared-page-factory/calibration-structure-final-20260901-155359-v2/report.json",
+      "bytes": 274459,
+      "sha256": "af830040388dd502ca193f482f084a9db49da2176e26ed39ebe7e01f5e706b97"
+    },
+    "sharedRun": {
+      "path": "work/g678-shared-page-factory/g678-shared-current-js-calibration-13-v1/run-manifest.json",
+      "bytes": 29288,
+      "sha256": "6d0e8167170926028011cd9da501b8b2b20af32d099e4875d4cb3090decee1a2"
+    },
+    "member": {
+      "path": "work/g678-shared-page-factory/g678-shared-current-js-calibration-13-v1/members/shared-alg001-l06-p040/member-manifest.json",
+      "bytes": 7135,
+      "sha256": "444ed8b2c7c6f2c2efb32beab7a31607be9e210c4313b47c1a2e342cfe2b36db"
+    },
+    "registeredFreeze": {
+      "path": "catalog/product-bridge-calibrations/g678-16-page-product-calibration-v1.registered.json",
+      "bytes": 41875,
+      "sha256": "80aa6b0b3000ef834c6b2cd40a72560d4353707a7c29ae0006118d4d04289bcb"
+    },
+    "browser": {
+      "path": "output/playwright/g678-pure-linear-calibration/evidence.json",
+      "bytes": 982,
+      "sha256": "3f074fe4e3b1020f30dcc29e598db5fc520962d3fcc55c3abdfb4ca946150598"
+    },
+    "productionIsolation": {
+      "path": "output/g678-production-bundle-isolation-multipage-20260902.json",
+      "bytes": 514,
+      "sha256": "975326b8a9729d4b7bed8fe57c5b796cd5a3d6d16e490edee500b9aa96b93a28"
+    },
+    "builder": {
+      "path": "scripts/build-g678-pure-linear-family-calibration.mjs",
+      "bytes": 11171,
+      "sha256": "4dac6841d9d9e1dde9834778e5db53414b8c0edb196b61074f5503ca9bb6723d"
+    }
+  },
+  "exactStructuralClassifier": {
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "buttonCount": 0,
+    "childActionScriptCount": 0,
+    "rootActionScripts": [
+      {
+        "role": "internal-preloader-handoff",
+        "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19"
+      },
+      {
+        "role": "root-stop-after-main-child-placement",
+        "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+      }
+    ],
+    "mainChildRequirement": "one reviewed animation instance with positive frame count and no child scripts",
+    "audioDisposition": "embedded sound stream inventoried but omitted from Current-JS visual family; audio remains independently blocked"
+  },
+  "productCalibration": {
+    "canvasReady": true,
+    "naturalOneToEndPlayback": true,
+    "completionOnlyAtAuthoredEnd": true,
+    "replayResetsAndRestarts": true,
+    "localAssetIntegrityAndCorp": true,
+    "productionBundleIsolation": true,
+    "familyCurrentJsVisualPlaybackPassed": true,
+    "overallSixteenPageProductCalibrationPassed": false
+  },
+  "scaleOutAuthorization": {
+    "authorized": true,
+    "scope": "exact-structural-classifier-matches-only",
+    "requiresCompleteReviewedInventoryBeforeGeneration": true,
+    "permitsGlossaryPages": false,
+    "permitsHoverPages": false,
+    "permitsIntroFuiPages": false,
+    "permitsInteractiveStops": false,
+    "permitsAudioAcceptanceClaim": false,
+    "permitsWholeLessonPreviewClaimBeforeNNRegistration": false
+  },
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "behaviorAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseEligible": false,
+    "released": false,
+    "published": false
+  },
+  "limitations": [
+    "This family receipt authorizes silent visual Current-JS generation only for exact reviewed structural matches.",
+    "It does not authorize another adapter family or a broad G6-G8 factory run.",
+    "It does not establish Adobe runtime parity, visual fidelity, audio correctness, human or Owner acceptance, strict completion, release, or publication."
+  ]
+}

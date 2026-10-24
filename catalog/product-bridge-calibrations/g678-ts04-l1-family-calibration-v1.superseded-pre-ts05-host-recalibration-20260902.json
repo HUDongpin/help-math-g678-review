@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-ts04-l1-family-calibration-v1",
+  "calibrationId": "g678-ts04-l1-family-calibration-v1",
+  "adapterFamily": "ts04-l1-glossary-source-static",
+  "status": "exact-15-current-js-visual-glossary-product-host-calibrated",
+  "inputs": {
+    "audit": {
+      "path": "catalog/g678-ts04-family-audit-v1.json",
+      "bytes": 464032,
+      "sha256": "b870f9738cdc1089b72c7506116204871c38f52906b1f0126b9f5f4761a75821"
+    },
+    "recovery": {
+      "path": "catalog/g678-ts04-l1-keyterm-recovery-v1.json",
+      "bytes": 31597,
+      "sha256": "a19497a5b1080989c92861004aee03334b615ccaba51db0860c3535c494d2eaf"
+    },
+    "generator": {
+      "path": "scripts/build-g678-ts04-l1-current-js.mjs",
+      "bytes": 49132,
+      "sha256": "230d6f3a48295a1976795ba8cafc4367b8400d3ed2548ee3a2c54d9295d7565f"
+    },
+    "generatorRun": {
+      "path": "work/g678-shared-page-factory/g678-ts04-l1-current-js-15-v1/run-manifest.json",
+      "bytes": 68286,
+      "sha256": "3ca974be8dac50e172b4f46be5e4a9073d4a8d0a59d023678e2d8a4308cb9cec"
+    },
+    "generatorFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-ts04-l1-current-js-15-v1.fragment.json",
+      "bytes": 24769,
+      "sha256": "a5072a14851012844b8468b750a960180038a40674863dfc9e47d2ce227912e4"
+    },
+    "registrationFreeze": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-261-page-registration-v1.json",
+      "bytes": 828006,
+      "sha256": "860a283e634138a7e02a8e010f9dfa9617c72ff9ad479159aed9203f542b8045"
+    },
+    "registrationFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-261-page-registration-v1.fragment.json",
+      "bytes": 137461,
+      "sha256": "32f788667078b4cb5ad9d84c26f47709567dee37499a5f930123991396b5aac6"
+    },
+    "browser": {
+      "path": "output/playwright/g678-current-js-261-v2/evidence.json",
+      "bytes": 52020,
+      "sha256": "1c2f6fd9911b85660dfe624a96df59de3c022f9702c659675ab49693e379aa96"
+    },
+    "browserVerifier": {
+      "path": "scripts/qa-g678-current-js-261-browser.mjs",
+      "bytes": 32285,
+      "sha256": "8e6c838aa8d862e1ca42a1aa760ccf390001426b06a5e28f86e0ba374d3760a7"
+    },
+    "sourceStaticHost": {
+      "path": "packages/demos/src/source-static-canvas-candidate.tsx",
+      "bytes": 56583,
+      "sha256": "68e4ba0254de7c48dc048146b32c3beb15f287efa9dbd59c23b698720cd5eb72"
+    },
+    "glossaryHost": {
+      "path": "packages/demos/src/private-source-static-glossary-candidate.tsx",
+      "bytes": 9928,
+      "sha256": "9514724b1a7807ab8b04e08bcf7e86a814b62a573bc4cfe493da6f2164c9c4c1"
+    },
+    "productBridge": {
+      "path": "apps/web/lib/g678-calibration-product-bridge.server.ts",
+      "bytes": 48016,
+      "sha256": "f0d88a375bc522c4846fa94ba891cfdf3a4cfe85f22be0a899f3d7a27a5e2eaa"
+    },
+    "builder": {
+      "path": "scripts/build-g678-ts04-l1-family-calibration.mjs",
+      "bytes": 18901,
+      "sha256": "c1472b20947b069a4dfd69ef2f30d4cda9098c6c8fe70b98b45a22295601c0a8"
+    }
+  },
+  "auditedPlacementCount": 44,
+  "authorizedPlacementIds": [
+    "shared-alg001-l01-p049",
+    "shared-alg001-l02-p051",
+    "shared-alg001-l03-p049",
+    "shared-alg001-l04-p046",
+    "shared-alg001-l05-p056",
+    "shared-alg001-l06-p053",
+    "shared-alg001-l07-p055",
+    "shared-alg001-l08-p043",
+    "shared-alg001-l09-p034",
+    "shared-alg001-l10-p045",
+    "shared-alg001-l11-p037",
+    "shared-alg001-l12-p045",
+    "shared-dat001-l01-p049",
+    "shared-geo001-l01-p052",
+    "shared-nms002-l01-p040"
+  ],
+  "blockedPlacementCount": 29,
+  "browserSamples": [
+    {
+      "animationId": "shared-alg001-l01-p049",
+      "frameDomain": "sprite-68",
+      "frameCount": 328,
+      "runtimeSha256": "81f53076cf53a6d70e9e9888f62c4f33066928e22934535d6b4524e2cdedd56c"
+    },
+    {
+      "animationId": "shared-alg001-l04-p046",
+      "frameDomain": "sprite-36",
+      "frameCount": 282,
+      "runtimeSha256": "3fafa8b6ab3532e0c8709a0f5a2a0a4fc111566ee4c7eac68b6d73cb53a490a0"
+    },
+    {
+      "animationId": "shared-alg001-l10-p045",
+      "frameDomain": "sprite-36",
+      "frameCount": 349,
+      "runtimeSha256": "1328d3f298576e46955a3236b567178f3174ee7ae66777c47da9a3686c7f06f0"
+    },
+    {
+      "animationId": "shared-dat001-l01-p049",
+      "frameDomain": "sprite-36",
+      "frameCount": 282,
+      "runtimeSha256": "a21b17628b61abf9f1cc536ea958e87f8eae279c22e0b8cbd140ce688f2dd5d1"
+    },
+    {
+      "animationId": "shared-geo001-l01-p052",
+      "frameDomain": "sprite-36",
+      "frameCount": 282,
+      "runtimeSha256": "605eeb9817c2e2c42288a23a5156d61ac40aea4aa7a5f581a6ebef30e91cc957"
+    },
+    {
+      "animationId": "shared-nms002-l01-p040",
+      "frameDomain": "sprite-67",
+      "frameCount": 328,
+      "runtimeSha256": "bd258968b9bd7aa3329a4d905d62ce282bfeb8f5eb4bac499161c45c0e5528ce"
+    }
+  ],
+  "productHostCalibration": {
+    "canvasReadyAndProgressing": true,
+    "exactEnglishGlossaryDefinitions": true,
+    "exactSpanishGlossaryDefinitions": true,
+    "playbackPausesWhileGlossaryOpen": true,
+    "playbackResumesAfterGlossaryClose": true,
+    "localAssetIntegrityAndCrossOriginIsolation": true,
+    "allLessonsPartialRegistrationTruthful": true,
+    "familyCurrentJsVisualGlossaryCalibrationPassed": true,
+    "overallG678ProductCalibrationPassed": false
+  },
+  "authorization": {
+    "authorized": true,
+    "scope": "exact-15-recovered-l1-glossary-placement-set-only",
+    "permitsRemaining29Ts04Placements": false,
+    "permitsCanonicalSourcePromotion": false,
+    "permitsAudioAcceptance": false,
+    "permitsOriginalRuntimeOrVisualFidelityClaim": false,
+    "permitsWholeLessonEngineeringPreviewClaim": false,
+    "permitsReleaseOrPublication": false
+  },
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "behaviorAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseEligible": false,
+    "released": false,
+    "published": false
+  },
+  "limitations": [
+    "This authority calibrates maintained Current-JS visual playback and typed bilingual glossary behavior for the exact 15 recovered-L1 TS04 placements only.",
+    "The other 29 TS04 placements remain blocked because their lesson-referenced L2-L12 key-term XML was not recovered.",
+    "Legacy key-term sublinks/example SWFs, embedded audio lifecycle, authoritative original runtime, fidelity, human, Owner, strict-completion, release, and publication remain unaccepted.",
+    "All 44 lessons remain partial; this authority creates no N/N whole-lesson engineering preview or learner route."
+  ]
+}

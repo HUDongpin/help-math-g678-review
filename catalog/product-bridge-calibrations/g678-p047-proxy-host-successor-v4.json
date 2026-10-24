@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "kind": "p047-quiz-proxy-host-successor-v1",
+  "phase": "frozen16-continuous-audio-provisional-browser-qa",
+  "scope": "local-only-p047-audio-route",
+  "original": {
+    "path": "apps/web/proxy.ts",
+    "bytes": 12925,
+    "sha256": "4a969febd1d80ff852e28cc49aaf04f8975d4c043413cc686966eafa35cd71ad"
+  },
+  "witness": {
+    "path": "work/g678-shared-host-successors/p047-quiz-proxy-v1/predecessor/apps/web/proxy.ts",
+    "bytes": 12925,
+    "sha256": "4a969febd1d80ff852e28cc49aaf04f8975d4c043413cc686966eafa35cd71ad"
+  },
+  "currentFiles": [
+    {
+      "path": "apps/web/proxy.ts",
+      "bytes": 13151,
+      "sha256": "8c295f89c038b25729e8e549a9b243334e06aed9f999f3dbe50c3398708fd55f"
+    },
+    {
+      "path": "apps/web/lib/nms-l01-p047-audio-access.ts",
+      "bytes": 1546,
+      "sha256": "211291064fa1ff12042223ad9fa04ceab31855188dfdaac9827ceac4e90ed69d"
+    },
+    {
+      "path": "apps/web/lib/g678-nms-l01-p047.server.ts",
+      "bytes": 7718,
+      "sha256": "a608fa0f7bede7e9b29c09628b4575290043d7c5825544676bfc3719cb07a0f2"
+    },
+    {
+      "path": "apps/web/app/flash-assets/g678-local/shared-nms002-l01-p047/quiz-audio/[assetId]/route.ts",
+      "bytes": 931,
+      "sha256": "a5bfee075b7180e4b7025c2186b7c6a867d272e333428017418f7b3b3f21cdc3"
+    }
+  ],
+  "delta": "One exact edge-policy import and one quiz-audio-prefix branch; all prior proxy bytes retained.",
+  "acceptanceEffects": {
+    "originalRuntime": false,
+    "audio": false,
+    "human": false,
+    "owner": false,
+    "strict": false,
+    "publication": false
+  },
+  "revision": 4,
+  "predecessor": {
+    "path": "catalog/product-bridge-calibrations/g678-p047-proxy-host-successor-v3.json",
+    "bytes": 1807,
+    "sha256": "45d8cc2037e5d317ba34974454877fa84b6dc2eedcbb2894605714db8d88c614"
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-vb02-l1-family-calibration-v1",
+  "calibrationId": "g678-vb02-l1-family-calibration-v1",
+  "adapterFamily": "vb02-l1-glossary-source-static",
+  "status": "exact-11-current-js-visual-glossary-product-host-calibrated",
+  "inputs": {
+    "audit": {
+      "path": "catalog/g678-vb02-l1-family-audit-v1.json",
+      "bytes": 230498,
+      "sha256": "e5ff597b123c3097f2784d497b5f9ba1be0a750ffbd36b36e8038ea6bcd36763"
+    },
+    "auditBuilder": {
+      "path": "scripts/audit-g678-vb02-l1-family.mjs",
+      "bytes": 41642,
+      "sha256": "a0b2d4e5e3652ebc19e333d762efaeebea8418ff3ab0d0bff49a09b22c74d8d0"
+    },
+    "generator": {
+      "path": "scripts/build-g678-vb02-l1-current-js.mjs",
+      "bytes": 49250,
+      "sha256": "59b161b22430a58b68af22d93444c06a5d25336a4bcf73b021702baf31ea28ac"
+    },
+    "generatorRun": {
+      "path": "work/g678-shared-page-factory/g678-vb02-l1-current-js-11-v1/run-manifest.json",
+      "bytes": 57676,
+      "sha256": "45e98a1b79b03412090ea5834a6005857b0c2c19d235691eeca5441b2114bbd2"
+    },
+    "generatorFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-vb02-l1-current-js-11-v1.fragment.json",
+      "bytes": 18636,
+      "sha256": "2fb3ab482755f13004ddb34381cc7a042d3e10e1b6252b4372413903577329be"
+    },
+    "registrationFinalizer": {
+      "path": "scripts/finalize-g678-vb02-l1-registration.mjs",
+      "bytes": 18064,
+      "sha256": "d1e130e31531fc102dbe19d595681a38070ffb5d28a78b573f2d36fa2f5158bd"
+    },
+    "registrationFreeze": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-301-page-registration-v1.json",
+      "bytes": 1381136,
+      "sha256": "d34282a9ac69e825d0770dc72bd3299cdc76e71f11c2a456c8f4d803b6680882"
+    },
+    "registrationFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-301-page-registration-v1.fragment.json",
+      "bytes": 182693,
+      "sha256": "f308c67ff710a6f751649fe699e44bbcc39ad551cb1409437e4ea7019ccc2fc6"
+    },
+    "browser": {
+      "path": "output/playwright/g678-current-js-301-v1/evidence.json",
+      "bytes": 198009,
+      "sha256": "c9e5c6c877c8bc40e54064d9ae1789ac4b30c30ec50f8f9d51aef33c5fa475ad"
+    },
+    "browserVerifier": {
+      "path": "scripts/qa-g678-current-js-301-browser.mjs",
+      "bytes": 54657,
+      "sha256": "64cabe0463dc4242a86c07738bba1b26c01851e7d4ec4bf53679e4b41937fc09"
+    },
+    "sourceStaticHost": {
+      "path": "packages/demos/src/source-static-canvas-candidate.tsx",
+      "bytes": 56583,
+      "sha256": "68e4ba0254de7c48dc048146b32c3beb15f287efa9dbd59c23b698720cd5eb72"
+    },
+    "vocabularyGlossaryHost": {
+      "path": "packages/demos/src/private-source-static-vocabulary-glossary-candidate.tsx",
+      "bytes": 9922,
+      "sha256": "e08e74b6906f625d65258186252f8a668214650204862b2c1b6b94aa27e7bb89"
+    },
+    "productBridge": {
+      "path": "apps/web/lib/g678-calibration-product-bridge.server.ts",
+      "bytes": 65958,
+      "sha256": "541b3063c1994c46c4434b02b3d69d656ff1d45081b90ce511cd9e3fddbcb557"
+    },
+    "builder": {
+      "path": "scripts/build-g678-vb02-l1-family-calibration.mjs",
+      "bytes": 16823,
+      "sha256": "a24006ddb4e808f2bb7cef460389794a1fcff5617d0d36cac913914a0bbf2a43"
+    }
+  },
+  "auditedPlacementCount": 11,
+  "authorizedPlacementIds": [
+    "shared-alg001-l01-p007",
+    "shared-alg001-l02-p008",
+    "shared-alg001-l03-p006",
+    "shared-alg001-l04-p006",
+    "shared-alg001-l05-p005",
+    "shared-alg001-l06-p011",
+    "shared-alg001-l10-p007",
+    "shared-alg001-l11-p005",
+    "shared-alg001-l12-p007",
+    "shared-dat001-l01-p008",
+    "shared-nms002-l01-p006"
+  ],
+  "blockedPlacementCount": 0,
+  "sourceButtonCount": 80,
+  "uniqueGlossaryTermCount": 65,
+  "browserSamples": [
+    {
+      "animationId": "shared-alg001-l01-p007",
+      "frameDomain": "sprite-91",
+      "frameCount": 210,
+      "runtimeSha256": "d724ca0ad17ea7009a382cc4d838d50011144755d9a90d014d1b1d4aaf04352b",
+      "glossaryTermCount": 5
+    },
+    {
+      "animationId": "shared-alg001-l02-p008",
+      "frameDomain": "sprite-30",
+      "frameCount": 340,
+      "runtimeSha256": "273ff8b8f97942812ca54b7b52f36b50bafb71ebfa2df684daeba69d5422ebb9",
+      "glossaryTermCount": 4
+    },
+    {
+      "animationId": "shared-alg001-l03-p006",
+      "frameDomain": "sprite-51",
+      "frameCount": 520,
+      "runtimeSha256": "f59d00c8ee12ff40488ddc5299a5e7b3fa722b0cf02a31d1091f3f5f04eb2aba",
+      "glossaryTermCount": 13
+    },
+    {
+      "animationId": "shared-alg001-l04-p006",
+      "frameDomain": "sprite-41",
+      "frameCount": 581,
+      "runtimeSha256": "646d97419f0a813c3e07c1eccdaaf71bbbb4857a960545edc6a7bca5e04b0cab",
+      "glossaryTermCount": 4
+    },
+    {
+      "animationId": "shared-alg001-l05-p005",
+      "frameDomain": "sprite-30",
+      "frameCount": 636,
+      "runtimeSha256": "b0776aa411fe205b54d145a5042ca96b74d92e772b3c19a965ff97ccdfc10fc1",
+      "glossaryTermCount": 8
+    },
+    {
+      "animationId": "shared-alg001-l06-p011",
+      "frameDomain": "sprite-36",
+      "frameCount": 584,
+      "runtimeSha256": "e85755d53036224192ec842387b944b2663c792a14672b26bed9371fb9add351",
+      "glossaryTermCount": 8
+    },
+    {
+      "animationId": "shared-alg001-l10-p007",
+      "frameDomain": "sprite-29",
+      "frameCount": 326,
+      "runtimeSha256": "9bdcf42a7f5f6f7980c725f96290b810823739a36e99d974d19367840331e0db",
+      "glossaryTermCount": 4
+    },
+    {
+      "animationId": "shared-alg001-l11-p005",
+      "frameDomain": "sprite-43",
+      "frameCount": 602,
+      "runtimeSha256": "eec86fccd659a53387442fdf352a58a146a21e4b302446828b9f78ed13ba5c94",
+      "glossaryTermCount": 8
+    },
+    {
+      "animationId": "shared-alg001-l12-p007",
+      "frameDomain": "sprite-55",
+      "frameCount": 268,
+      "runtimeSha256": "891f1329daed97a9399e2439ddf06ff7f52c65c7694292b636cb2da63317393d",
+      "glossaryTermCount": 11
+    },
+    {
+      "animationId": "shared-dat001-l01-p008",
+      "frameDomain": "sprite-68",
+      "frameCount": 551,
+      "runtimeSha256": "969ca0c06d72d7014a8e2b51535d559e37c8a2adaeb19458bea891088b44ee80",
+      "glossaryTermCount": 9
+    },
+    {
+      "animationId": "shared-nms002-l01-p006",
+      "frameDomain": "sprite-89",
+      "frameCount": 714,
+      "runtimeSha256": "a5cfc6b1229783e4f26c76361e85c6b2c9e306f64d8aac1b9fab8641cd3cc6b9",
+      "glossaryTermCount": 6
+    }
+  ],
+  "productHostCalibration": {
+    "canvasReadyAndProgressing": true,
+    "sourceFrameBoundGlossaryControls": true,
+    "sourceCharacterIdentityBound": true,
+    "exactEnglishGlossaryDefinitions": true,
+    "exactSpanishGlossaryDefinitions": true,
+    "playbackPausesWhileGlossaryOpen": true,
+    "playbackResumesAfterGlossaryClose": true,
+    "localAssetIntegrityAndCrossOriginIsolation": true,
+    "allLessonsPartialRegistrationTruthful": true,
+    "familyCurrentJsVisualGlossaryCalibrationPassed": true,
+    "overallG678ProductCalibrationPassed": false
+  },
+  "authorization": {
+    "authorized": true,
+    "scope": "exact-11-vb02-l1-glossary-placement-set-only",
+    "permitsOtherVb02Placements": false,
+    "permitsCanonicalSourcePromotion": false,
+    "permitsAudioAcceptance": false,
+    "permitsOriginalRuntimeOrVisualFidelityClaim": false,
+    "permitsWholeLessonEngineeringPreviewClaim": false,
+    "permitsReleaseOrPublication": false
+  },
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "behaviorAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseEligible": false,
+    "released": false,
+    "published": false
+  },
+  "limitations": [
+    "This authority calibrates maintained Current-JS visual playback and source-frame/source-character-bound bilingual glossary behavior for the exact 11 VB-2 placements only.",
+    "Two Spanish source-label collisions are preserved and separately bound by SWF character identity; no translation was invented or rewritten.",
+    "Legacy key-term sublinks/example SWFs, embedded audio lifecycle, authoritative original runtime, fidelity, human, Owner, strict-completion, release, and publication remain unaccepted.",
+    "All 44 lessons remain partial; this authority creates no N/N whole-lesson engineering preview or learner route."
+  ]
+}

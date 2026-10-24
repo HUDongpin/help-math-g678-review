@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "kind": "g678-typography-shared-host-css-gap-successor-v1",
+  "scope": "local-only-current-js-host",
+  "predecessorManifest": {
+    "path": "catalog/product-bridge-calibrations/g678-typography-shared-host-successor-v3.json",
+    "bytes": 9211,
+    "sha256": "eb5fb37a2defc57db45fa9ec421e09533fc2a2d398263321fb0c9446803fe16e"
+  },
+  "predecessorStylesheet": {
+    "path": "apps/web/app/globals.css",
+    "bytes": 292983,
+    "sha256": "684d8ed58d7aa44a05f589cde6144b78eada800b5f172f843ef1135453e83332"
+  },
+  "currentStylesheet": {
+    "path": "apps/web/app/globals.css",
+    "bytes": 293001,
+    "sha256": "faa54056875409e4c283f89b4af4579ac050a38f8bcd419764ce18f582f32cbc"
+  },
+  "delta": {
+    "selector": "@media (max-width: 720px) .site-header__inner",
+    "declaration": "gap: 0.75rem",
+    "effect": "mobile header spacing only"
+  },
+  "sourceMathOrPageRendererChanged": false,
+  "registrationChanges": 0,
+  "acceptanceEffects": {
+    "originalRuntime": false,
+    "fidelity": false,
+    "audio": false,
+    "responsiveAcceptance": false,
+    "human": false,
+    "owner": false,
+    "strict": false,
+    "release": false,
+    "publication": false
+  }
+}

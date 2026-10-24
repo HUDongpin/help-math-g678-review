@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-fq01-family-calibration-v1",
+  "calibrationId": "g678-fq01-family-calibration-v1",
+  "adapterFamily": "final-quiz-intro-source-static",
+  "status": "family-current-js-visual-playback-calibrated",
+  "representative": {
+    "animationId": "shared-alg001-l01-p055",
+    "sourceSha256": "b2fc65a0db946e1c261dd4a5622e05e1b9fd5466f0fc1a32144b92537350b3d5",
+    "frameDomain": "sprite-26",
+    "frameCount": 52,
+    "fps": 12,
+    "runtimeSha256": "3f6df7ccd066b2cc932464e90fccaf78c024eb4b85bf264b00fa3d3706d69f13"
+  },
+  "inputs": {
+    "audit": {
+      "path": "catalog/g678-final-quiz-intro-family-audit-v1.json",
+      "bytes": 32763,
+      "sha256": "8e12b0fb54214732264bd4544677ad37038467780c4e0da65a7678143bf18737"
+    },
+    "generator": {
+      "path": "scripts/build-g678-fq01-current-js.mjs",
+      "bytes": 59398,
+      "sha256": "82532a1f9907432119e55e9d8f4fedcb969695d754f0f9bbc521a231f66cbfbc"
+    },
+    "generatorRun": {
+      "path": "work/g678-shared-page-factory/g678-fq01-current-js-calibration-1-v1/run-manifest.json",
+      "bytes": 24040,
+      "sha256": "cfb24b1e372cc8186b819214a90dd1030e22b22d33276432629d6b72e878c6cc"
+    },
+    "generatorFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-fq01-current-js-calibration-1-v1.fragment.json",
+      "bytes": 2766,
+      "sha256": "b3140dd6e3d6c851f9bc2ecbc782a1011244cf0f7614060134c90afd6fc07c69"
+    },
+    "interimFreeze": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-173-page-fq01-calibration-v1.json",
+      "bytes": 386552,
+      "sha256": "10358ee94e079f25136d796101bd74db535924a75da40b5739c2130ff38ba431"
+    },
+    "interimFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-173-page-fq01-calibration-v1.fragment.json",
+      "bytes": 37753,
+      "sha256": "3610c43187e65a40ad1b2b1fe2ca1cb4fc36daabdc47ff2f95a435dd12c48bcf"
+    },
+    "browser": {
+      "path": "output/playwright/g678-fq01-family-calibration/evidence.json",
+      "bytes": 4289,
+      "sha256": "3efbfc26f3dd045cf1128c0d084d38c93a13e28c25debf9b3eab99755463907b"
+    },
+    "browserVerifier": {
+      "path": "scripts/check-g678-fq01-browser-calibration-receipt.mjs",
+      "bytes": 6776,
+      "sha256": "16d9a91d3904404c1f50edb4cfd61b62f14e3666058ad782686c0f6eef819f9d"
+    },
+    "snapshotPrivateRegistry": {
+      "path": "work/g678-shared-page-factory/g678-fq01-calibration-173-registry-snapshot-v1/private-current-js-registry.json",
+      "bytes": 210484,
+      "sha256": "85b70fd6bb67c38e697394c08d74c533de5eeaae618ea73d4c4590350db680b7"
+    },
+    "snapshotLocalRegistry": {
+      "path": "work/g678-shared-page-factory/g678-fq01-calibration-173-registry-snapshot-v1/registry.local-only.metadata.generated.ts",
+      "bytes": 98605,
+      "sha256": "30410789d3cc50727ececc706bcec062b36aa5c1289711455373db26c74cfe2c"
+    },
+    "snapshotLauncher": {
+      "path": "work/g678-shared-page-factory/g678-fq01-calibration-173-registry-snapshot-v1/local-preview-launcher.mjs",
+      "bytes": 6318,
+      "sha256": "c27f63323e4cdde41a2548741ed2b9d0e95b52decbe058521235d8904db884c5"
+    },
+    "snapshotBrowserQa": {
+      "path": "work/g678-shared-page-factory/g678-fq01-calibration-173-registry-snapshot-v1/browser-qa-script.mjs",
+      "bytes": 14140,
+      "sha256": "88617086724a92b8b5c5da171a9e5a7be2e715677ef8fba8c021f37a51e614aa"
+    },
+    "sourceStaticHost": {
+      "path": "packages/demos/src/source-static-canvas-candidate.tsx",
+      "bytes": 56583,
+      "sha256": "68e4ba0254de7c48dc048146b32c3beb15f287efa9dbd59c23b698720cd5eb72"
+    },
+    "safeAdapter": {
+      "path": "scripts/build-safe-ffdec-canvas-adapter.mjs",
+      "bytes": 115553,
+      "sha256": "1d1dd117dd59a6b7191f2fa8488249ece09bfb1da8837be146677f88a01315dd"
+    },
+    "productBridge": {
+      "path": "work/g678-shared-page-factory/g678-fq01-calibration-173-registry-snapshot-v1/product-bridge.server.ts",
+      "bytes": 32497,
+      "sha256": "c4f14beb6eea88c90f1a733bc90f9421bd0ea716df1059ee66b292308e619867"
+    },
+    "builder": {
+      "path": "scripts/build-g678-fq01-family-calibration.mjs",
+      "bytes": 12994,
+      "sha256": "2b3d64d0f03ec02ba6a2be476d04c8b35e6f52ad9f42c2f2ce8f20ae5f0c07e8"
+    }
+  },
+  "authorizedPlacementIds": [
+    "shared-alg001-l01-p055",
+    "shared-alg001-l02-p057",
+    "shared-alg001-l03-p055",
+    "shared-alg001-l04-p052",
+    "shared-alg001-l05-p062",
+    "shared-alg001-l06-p059",
+    "shared-alg001-l07-p061",
+    "shared-alg001-l08-p049",
+    "shared-alg001-l09-p040",
+    "shared-alg001-l10-p051",
+    "shared-alg001-l11-p043",
+    "shared-alg001-l12-p051",
+    "shared-dat001-l01-p055",
+    "shared-dat001-l02-p052",
+    "shared-dat001-l03-p062",
+    "shared-dat001-l04-p038",
+    "shared-dat001-l05-p060",
+    "shared-dat001-l06-p045",
+    "shared-dat001-l07-p049",
+    "shared-dat001-l08-p033",
+    "shared-geo001-l01-p058",
+    "shared-geo001-l02-p050",
+    "shared-geo001-l03-p048",
+    "shared-geo001-l04-p043",
+    "shared-geo001-l05-p050",
+    "shared-geo001-l06-p053",
+    "shared-geo001-l07-p062",
+    "shared-geo001-l08-p046",
+    "shared-geo001-l09-p043",
+    "shared-geo001-l10-p041",
+    "shared-geo001-l11-p051",
+    "shared-geo001-l12-p038",
+    "shared-nms002-l01-p046",
+    "shared-nms002-l02-p063",
+    "shared-nms002-l03-p055",
+    "shared-nms002-l04-p044",
+    "shared-nms002-l05-p048",
+    "shared-nms002-l06-p050",
+    "shared-nms002-l07-p051",
+    "shared-nms002-l08-p059",
+    "shared-nms002-l09-p052",
+    "shared-nms002-l10-p048",
+    "shared-nms002-l11-p046",
+    "shared-nms002-l12-p064"
+  ],
+  "exactStructuralClassifier": {
+    "stage": "800x600",
+    "fps": 12,
+    "rootFrameCount": 10,
+    "rootBeginFrame": 6,
+    "mainFrameCount": 52,
+    "exactTerminalStop": true,
+    "buttonCount": 0,
+    "audioStreamCount": 0,
+    "normalizedExactScriptSetSha256": "d22a552c88ee9f1e49b2e66779a3b1bf5260edb7555e160823e93965e3fd2165"
+  },
+  "productCalibration": {
+    "canvasReady": true,
+    "naturalOneToEndPlayback": true,
+    "completionOnlyAtAuthoredEnd": true,
+    "replayResetsAndRestarts": true,
+    "localAssetIntegrityAndCorp": true,
+    "familyCurrentJsVisualPlaybackPassed": true,
+    "overallG678ProductCalibrationPassed": false
+  },
+  "scaleOutAuthorization": {
+    "authorized": true,
+    "scope": "exact-44-audited-fq01-placement-set-only",
+    "requiresExactAuditAndGeneratorBindings": true,
+    "requiresCreateExclusiveGeneration": true,
+    "permitsAnotherFinalQuizPageType": false,
+    "permitsInteractiveQuestions": false,
+    "permitsOriginalRuntimeOrFidelityClaim": false,
+    "permitsWholeLessonPreviewClaimBeforeNNRegistration": false
+  },
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "behaviorAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseEligible": false,
+    "released": false,
+    "published": false
+  },
+  "limitations": [
+    "This receipt calibrates maintained Current-JS playback for the exact audited FQ01 intro family only.",
+    "It does not establish Adobe runtime parity, visual fidelity acceptance, human or Owner acceptance, strict completion, release, or publication.",
+    "One representative was exercised in the browser; all 44 admissions still require exact source/artifact hashes and finalizer membership checks."
+  ]
+}
