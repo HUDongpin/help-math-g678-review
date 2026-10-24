@@ -1,0 +1,7 @@
+# NMS L1 page34: raisins left
+
+Source TI/L1TI09.swf asks how many raisins Katrina has left after starting with65 and eating10,15,12,10,16 on five days. A2 via AnsBtn1/id33 is correct. B3,C4,D5 are distractors. Main231 has625 frames, enters at root6, holds290. Correct or second-wrong feedback continues main291..625. Actual indexMI end observer stops625.
+
+Use compiler-assisted source Canvas with a maintained four-choice controller. Preserve46 morphs,13 images,2 mask characters with4 placements,8 active native MP3 streams and source glyphs. Restore4 device-font captions using explicit Arial fallback. The source labels its total eaten63 as a daily amount and labels remaining2 as the Sunday starting count. Replace only those two label prefixes with mathematically correct statements, using original font3 glyphs and advances. Keep equations, coordinates, source masks, entry frames and narration. This deliberate content correction is not an original-runtime or pixel-parity claim.
+
+Dormant wrong126 MP3 measured; dormant right178 ADPCM preserved without decoding. Help uses Samuel50 trading cards minus5,6,9 cards=30 left, with addition/Subtraction/Solve glossary. EN/ES companions preserve daily quantities and support keyboard/touch access. Replay resets all choice, retry, outcome, Help and native audio states. Original runtime, fidelity, audio listening, human/Owner, strict completion, release and publication remain independent and unaccepted.

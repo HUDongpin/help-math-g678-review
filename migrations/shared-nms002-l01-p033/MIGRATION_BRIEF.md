@@ -1,0 +1,7 @@
+# NMS L1 page33: earnings after expenses
+
+Source TI/L1TI08.swf asks how much Tyler earns after mowing6 lawns at$15 each and paying$4 for gas. B$86 is correct; A$84/C$90/D$94 are distractors. Main257 has511 frames, enters at root6 and waits253. First error permits retry after its popup closes; second error resumes main254..511. Correct feedback also resumes the teaching sequence. Actual indexMI end observer stops511.
+
+Use compiler-assisted source Canvas with a maintained finite controller. Preserve48 morphs,1 image,2 filled masks,8 active native MP3 streams and source glyphs. Restore4 device captions with Arial fallback. The source reveals an invalid chained equality:6 x $15 = $90 - $4 = $86. The maintained arithmetic adapter splits this into6 x $15 = $90 and$90 - $4 = $86, using the same glyphs and authored moving-mask progression. No original bytes change and no pixel or original runtime parity is claimed for this correction.
+
+Active right-feedback183 ends at its31 authored frames. Its386-byte post-End tail is preserved but unexecuted. Dormant right157 and wrong228 MP3s are measured. Help retains its distinct Gerald example25 x5 -15=110, number line and Multiplication/Solve glossary. Bilingual companion controls and keyboard focus support narrow touch screens. Replay resets choices, attempts, outcome, Help/glossary and every native audio node. Original runtime, fidelity, audio listening, human/Owner, strict completion, release and publication remain separate and unaccepted.

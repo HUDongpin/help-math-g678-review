@@ -1,0 +1,9 @@
+# shared-nms002-l01-p020
+
+NMS002 Lesson1 active page20/47, Instruction9, Subtracting Integers. SWF175044bytes SHA256 `03af79673e7b4cc21b2d9fce30ac856234e32a565c1fd15eed2816ad05753952`; no FLA. Root800x600,12fps,10frames; root6 places main114/570 at412.4,280.3.
+
+Retain original narration and authored subtraction examples, then source569 hold with ten literal questions. Subtract immediately shows the numerical result, sets selected answer clip to2, and disables itself. First jump is visible2..18; second jump appears19; all ten answer clips stop20. New problem remains available even mid-answer: reset all visible answers/result/minus and choose from the exact ten-question pool. No input grading, score or completion branch exists. Six source DoHyperLinks map to exact EN/ES definitions, with readable companion controls and original-coordinate image hotspots.
+
+Three native runs10/223/464 follow cumulative samples plus own seek, separated by original empty-negative markers212/443. Frame11 zero-sample/zero-seek is NOT an audio-run terminator. Main holds569 at568/12s and sample967443.5. Full970560-sample payload retained/decoded; tail3116.5 not claimed audible. Frame570 is inspector-only. Answer clips silently play2..20 then hold. No fabricated completion.
+
+Compiler-assisted advanced-manual lane: extracted source Canvas, source-bound pure subtraction state and native clock; no generated output hand edits. Preserve source device text field geometry/right alignment and negative-result x shifts; document bold Arial fallback. Verify all570 main frames, all20frames of ten answer children and ten equation results, New during answer/pause, full Replay, six glossary controls/focus, natural segmented narration, mobile/reduced-motion My Lesson and production exclusion. These tests do not establish original Flash runtime, audio listening, human/Owner acceptance, strict completion, release or publication.

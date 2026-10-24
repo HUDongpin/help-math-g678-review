@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-nms002-l01-p004",
+  "animationId": "shared-nms002-l01-p004",
+  "assetId": "swf-3c35af96419daf09d110ed722a861248dd10d57677135c4ef23f0b4b28249c1d",
+  "status": "validating",
+  "created": "2026-09-09",
+  "confidence": "source-verified",
+  "classification": {
+    "collection": "HELP_COURSES",
+    "grade": "G6-G8-shared",
+    "lesson": 1,
+    "section": "RW",
+    "page": 3,
+    "domain": "NMS002",
+    "knowledgePoint": {
+      "en": "Adding positive gains",
+      "es": ""
+    },
+    "titleRaw": "Page 3",
+    "titleDisplay": "Positive and Negative Numbers: Real World Activity",
+    "status": "resolved",
+    "evidence": [
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/catalog/g678-shared-catalog.v1.json",
+      "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p004-behavior-source-v1/extraction.json"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L1/RW/L1RW04.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L1/RW/L1RW04.swf",
+    "flaSha256": "",
+    "swfSha256": "3c35af96419daf09d110ed722a861248dd10d57677135c4ef23f0b4b28249c1d",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 1386608,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#b8d8f7",
+    "actionScriptVersion": "AS1/AS2",
+    "complexity": "interactive-understood",
+    "fonts": [],
+    "scripts": [
+      "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p004-behavior-source-v1/source/audit/scripts/DefineSprite_302/frame_341/DoAction.as",
+      "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p004-behavior-source-v1/source/audit/scripts/frame_1/DoAction.as",
+      "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p004-behavior-source-v1/source/audit/scripts/frame_6/DoAction.as"
+    ],
+    "externalDependencies": [
+      "InternalPreloader jump_check; replaced by modern already-loaded entry"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      {
+        "characterId": 1,
+        "functionKind": "shape",
+        "placements": [
+          {
+            "depth": 1,
+            "clipDepth": 872
+          }
+        ],
+        "rawFill": "ctx.fillStyle=tocolor(ctrans.apply([0,0,255,0.2]));"
+      }
+    ],
+    "morphs": [
+      "5 source morph definitions retained"
+    ],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "default",
+      "kind": "linear",
+      "description": "Original root preloader and source entry at frame6; original trace pending",
+      "reachable": true
+    },
+    {
+      "id": "source-static-frame",
+      "kind": "linear",
+      "description": "Source football narrative, two separately entered finite child instances, final touchdown text and source terminal stop",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "en"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "main-embedded-stream",
+        "language": "en",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p004-behavior-source-v1/audio/unsegmented-source-payload.mp3",
+        "sha256": "73e3cefed659ae8e1e790a28452e525bd6a6e39f5f342bb8892e8bb13e9663ae",
+        "frameDomain": "sprite-302",
+        "startFrame": 1,
+        "endFrame": 341,
+        "plan": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p004-behavior-source-v1/audio/plan.json",
+        "accepted": false
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "source audio measurement.json",
+    "ffdec": "26.2.1 hash-bound extraction",
+    "swfmill": "0.3.6_1 hash-bound extraction",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "Canvas plus maintained native source clock and modern My Lesson",
+    "route": "/migration-status/g678-calibration/shared-nms002-l01-p004",
+    "routeFile": "apps/web/app/[locale]/migration-status/g678-calibration/shared-nms002-l01-p004/page.tsx",
+    "component": "apps/web/components/g678-nms-l01-story-lesson.tsx",
+    "registryModule": "packages/demos/src/modules/g678-nms-l01-p004.tsx",
+    "timelineModule": "packages/demos/src/timelines/shared-nms002-l01-p004.ts",
+    "testFile": "packages/demos/tests/nms-l01-followup-story.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-302",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-302",
+        "kind": "sprite",
+        "sourceTimelineId": "sprite-302",
+        "parentFrameDomainId": "root",
+        "frameCount": 341,
+        "scenarioIds": [
+          "source-static-frame"
+        ]
+      },
+      {
+        "id": "sprite-307",
+        "kind": "sprite",
+        "sourceTimelineId": "sprite-307",
+        "parentFrameDomainId": "root",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-static-frame"
+        ]
+      },
+      {
+        "id": "sprite-51",
+        "kind": "sprite",
+        "sourceTimelineId": "sprite-51",
+        "parentFrameDomainId": "sprite-302",
+        "frameCount": 40,
+        "scenarioIds": [
+          "source-static-frame"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": [
+      "Source FLA is not cataloged.",
+      "Declared implementation paths are targets pending product verification; status validating covers source audit and subsequent engineering checks.",
+      "Source-English media remains English on the Spanish modern host; exact Spanish glossary is independently sourced.",
+      "Machine transcription is an audit hypothesis and not approved captions or human listening.",
+      "Original-runtime, audio/visual/human/Owner acceptance, canonical strict adoption, strict completion, release and publication remain pending.",
+      "The terminal empty negative MP3 marker has no audio payload. Natural decoder EOF precedes the main visual stop; original Flash negative-marker alignment remains unaccepted."
+    ]
+  }
+}

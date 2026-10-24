@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-09T09:36:08.263530+00:00",
+  "animationId": "shared-nms002-l01-p011",
+  "actuallyRegistered": false,
+  "source": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L1/VB/L1VB07.swf",
+    "bytes": 785655,
+    "sha256": "47d582e2d97b6ad33cdf5588a4894fde7ceeef80703fe1862f625cacb4fea481"
+  },
+  "sourceFlaPresent": false,
+  "extraction": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p011-behavior-source-v1/extraction.json",
+    "bytes": 22187,
+    "sha256": "64fed322c8b2cde9b6cad29d9f2c76cd7943f6911a312f3686de8db77e70bfea"
+  },
+  "sourceFacts": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p011-behavior-source-v1/source/source-facts.json",
+    "bytes": 62230,
+    "sha256": "c9f7b7d10f9dea95bf46f5bb5508a225badbbd3e4ef3dd51b91e0810d85416e3"
+  },
+  "sourceXml": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p011-behavior-source-v1/source/source.xml",
+    "bytes": 1998707,
+    "sha256": "0970f6f51c139accc2c9d4bb91e384886b20a2d9a479c6623184eb5d1d6c3ef0"
+  },
+  "rootFrameCount": 10,
+  "fps": 12,
+  "main": {
+    "frameDomain": "sprite-214",
+    "frameCount": 145,
+    "questionStop": 102,
+    "correctContinuation": 103,
+    "hostStop": 145
+  },
+  "sourceHostBinding": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-source-host-binding-v1.json",
+    "bytes": 3064,
+    "sha256": "beb92189c1c2d81e035322de426c8f0f07ae02ba03127942236a2a1ca78311f1"
+  },
+  "answerPlacements": [
+    {
+      "frame": 102,
+      "replace": "0",
+      "depth": "21",
+      "objectID": "25",
+      "morph": "101",
+      "name": "AnsBtn1",
+      "transform": {
+        "scaleX": "3.064926147460938",
+        "scaleY": "1.238845825195312",
+        "transX": "2302",
+        "transY": "259"
+      }
+    },
+    {
+      "frame": 102,
+      "replace": "0",
+      "depth": "23",
+      "objectID": "26",
+      "morph": "101",
+      "name": "AnsBtn3",
+      "transform": {
+        "scaleX": "2.342239379882812",
+        "scaleY": "0.7848815917968750",
+        "transX": "-2737",
+        "transY": "254"
+      }
+    },
+    {
+      "frame": 102,
+      "replace": "0",
+      "depth": "25",
+      "objectID": "25",
+      "morph": "101",
+      "name": "AnsBtn1",
+      "transform": {
+        "scaleX": "1.755340576171875",
+        "scaleY": "1.239501953125000",
+        "transX": "-334",
+        "transY": "251"
+      }
+    }
+  ],
+  "correctSourceButton": {
+    "characterId": 26,
+    "instanceName": "AnsBtn3",
+    "depth": 23
+  },
+  "duplicateSourceAnswerName": {
+    "name": "AnsBtn1",
+    "depths": [
+      21,
+      25
+    ],
+    "disposition": "Retain both source placements; original duplicate-name lookup semantics unobserved. Modern controls need explicit depth-bound identities and recorded host adaptation before implementation."
+  },
+  "activeFeedback": [
+    {
+      "kind": "wrong",
+      "index": 1,
+      "instanceName": "Mc_Wrong_Feed1",
+      "sourceCharacterId": 92,
+      "frameDomain": "sprite-92",
+      "frameCount": 30,
+      "entryFrame": 2
+    },
+    {
+      "kind": "wrong",
+      "index": 2,
+      "instanceName": "Mc_Wrong_Feed2",
+      "sourceCharacterId": 68,
+      "frameDomain": "sprite-68",
+      "frameCount": 28,
+      "entryFrame": 2
+    },
+    {
+      "kind": "wrong",
+      "index": 3,
+      "instanceName": "Mc_Wrong_Feed3",
+      "sourceCharacterId": 80,
+      "frameDomain": "sprite-80",
+      "frameCount": 29,
+      "entryFrame": 2
+    },
+    {
+      "kind": "right",
+      "index": 1,
+      "instanceName": "Mc_Right_Feed1",
+      "sourceCharacterId": 155,
+      "frameDomain": "sprite-155",
+      "frameCount": 27,
+      "entryFrame": 2
+    },
+    {
+      "kind": "right",
+      "index": 2,
+      "instanceName": "Mc_Right_Feed2",
+      "sourceCharacterId": 183,
+      "frameDomain": "sprite-183",
+      "frameCount": 28,
+      "entryFrame": 2
+    },
+    {
+      "kind": "right",
+      "index": 3,
+      "instanceName": "Mc_Right_Feed3",
+      "sourceCharacterId": 207,
+      "frameDomain": "sprite-207",
+      "frameCount": 28,
+      "entryFrame": 2
+    },
+    {
+      "kind": "right",
+      "index": 4,
+      "instanceName": "Mc_Right_Feed4",
+      "sourceCharacterId": 143,
+      "frameDomain": "sprite-143",
+      "frameCount": 27,
+      "entryFrame": 2
+    }
+  ],
+  "dormantFeedback": [
+    {
+      "instanceName": "Mc_Wrong_Feed4",
+      "frameDomain": "sprite-109",
+      "format": "MP3"
+    },
+    {
+      "instanceName": "Mc_Right_Feed5",
+      "frameDomain": "sprite-195",
+      "format": "ADPCM"
+    }
+  ],
+  "audio": {
+    "measurement": {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p011-behavior-source-v1/audio/measured-source-v1/measurement.json",
+      "bytes": 30370,
+      "sha256": "0b9315210e3b0a224a0572e1bf029f9715a732fc8b1b985e0b199c1a1f2b53da"
+    },
+    "allSourceStreams": 10,
+    "activeStreams": 8,
+    "allActiveStreamsAreMp3": true,
+    "dormantAdpcmReuse": {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p011-behavior-source-v1/audio/sprite-195/decoded-source-reuse-v1.json",
+      "bytes": 2819,
+      "sha256": "7895208e82512c1ff173595840abd30bea32fecca71a3f21dd27b5340baaaafd"
+    },
+    "activeDecoderSamples": {
+      "sprite-68": 48960,
+      "sprite-80": 51264,
+      "sprite-92": 52992,
+      "sprite-143": 48960,
+      "sprite-155": 47232,
+      "sprite-183": 48960,
+      "sprite-207": 51264,
+      "sprite-214": 256896
+    }
+  },
+  "glossary": {
+    "binding": {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p011-behavior-source-v1/source-glossary-v1.json",
+      "bytes": 8929,
+      "sha256": "2ea9ef37fd53ce38e584f1a3e89c359bf3326a94b0588546eebefcf0b0499057"
+    },
+    "primaryKeys": [
+      "Absolute value",
+      "Represent"
+    ],
+    "wrongFeedbackKeys": [
+      "Absolute value",
+      "Distance",
+      "Number line"
+    ],
+    "entries": 4,
+    "newTermOnFutureRegistration": "represent",
+    "currentLessonTerms": 30
+  },
+  "sourcePostEndTails": [],
+  "requiredNextSteps": [
+    "Audit exact answer glyph composition/hit regions, duplicate AnsBtn1 host behavior and both glossary hotspot ranges.",
+    "Specify eight active MP3 intervals through main102 wait, wrong22/Close23, four actual right branches and parent103 to host145; keep ADPCM right5 dormant.",
+    "Build the depth-bound three-choice renderer, source popup and modern My Lesson integration, then test every actual branch, audio lifecycle, glossary focus, Replay, touch/reduced motion and production exclusion."
+  ],
+  "implementationRegistered": false,
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false,
+  "humanAccepted": false,
+  "ownerAccepted": false,
+  "strictComplete": false,
+  "published": false,
+  "scaleOutAuthorized": false
+}

@@ -1,0 +1,11 @@
+# shared-nms002-l01-p003
+
+Bounded advanced-manual source audit for active placement3 of47 in NMS002 Lesson1; RW Page2. Source SWF SHA-256 `6486970403a56712ad47bd50f504b8a6209226517016b6fedc70bf1de481643c`. No source FLA is cataloged. Root800×600 at12fps has10 frames and enters main sprite82/892 at root6; static title sprite86 has1 frame. Source main892 stops.
+
+The number line maps positive gains to rightward motion and negative gains to leftward motion. The source example gains20 yards and loses5, ending with the literal20 – 5 = 15 yards gained. Source rules finish revealing at143 and262; equation parts become fully opaque at438,669,708,768. Three glossary terms are present from main1; all resolve to the same source bilingual XML already bound for the preceding page.
+
+Choose source Canvas with a maintained native audio clock, source-derived readable text and the modern My Lesson host. Preserve source dimensions, exact root scale and translation, display depths, glyphs, masks, morphs and child phases. The terminal-only factory does not admit these exact button/nested/negative-marker inputs; use this bounded source-evidenced lane and preserve global NO-GO-scale-out. No whole legacy course shell is rebuilt. No source score, quiz, random branch, drag or external network request appears in these source actions.
+
+Audio remains exact English source media. The local transcript is only a machine audit hypothesis; original audio alignment and named listening remain unaccepted. The source root preloader is replaced by already-loaded modern entry. Glossary example SWFs and secondary links, if any, remain separate support assets. EN/ES modern host controls do not create missing Spanish source media.
+
+Before counting this page, verify its actual local registry, source-ordered47-page descriptor, native playback/Replay/pause/mute/navigation and desktop/mobile/reduced-motion My Lesson behavior. Check all892 main drawing states and every source beat. This file declares the intended implementation and pending validation; it does not assert product registration. Original runtime, fidelity, audio/human/Owner acceptance, canonical strict adoption, strict completion, release and publication remain separate pending gates.

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l01-p002",
+  "status": "draft-structural-enumeration",
+  "sourceFacts": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p002-behavior-source-v1/source/source-facts.json",
+    "bytes": 219411,
+    "sha256": "c3e1092598c4e487f95384185f17ef4c5bfd1e620344ff7f40dface05938c70f"
+  },
+  "sourceSwfSha256": "8a7ecf75e3dc95dc4e9d7a35b52b97df02f5e93f5f7fa1e22b8e4472fe4fd6c4",
+  "timelines": [
+    {
+      "timelineId": "root",
+      "sourceFrameCount": 10,
+      "parentTimelineIds": [],
+      "staticallyRootReachable": true,
+      "declaredFrameDomainId": "root",
+      "disposition": "declared-frame-domain",
+      "originalRuntimeEstablished": false
+    },
+    {
+      "timelineId": "sprite-722",
+      "sourceFrameCount": 985,
+      "parentTimelineIds": [
+        "root"
+      ],
+      "staticallyRootReachable": true,
+      "declaredFrameDomainId": "sprite-722",
+      "disposition": "declared-frame-domain",
+      "originalRuntimeEstablished": false
+    },
+    {
+      "timelineId": "sprite-213",
+      "sourceFrameCount": 22,
+      "parentTimelineIds": [
+        "sprite-722"
+      ],
+      "staticallyRootReachable": true,
+      "declaredFrameDomainId": "sprite-213",
+      "disposition": "declared-frame-domain",
+      "originalRuntimeEstablished": false
+    },
+    {
+      "timelineId": "sprite-726",
+      "sourceFrameCount": 1,
+      "parentTimelineIds": [
+        "root"
+      ],
+      "staticallyRootReachable": true,
+      "declaredFrameDomainId": "sprite-726",
+      "disposition": "declared-frame-domain",
+      "originalRuntimeEstablished": false
+    }
+  ],
+  "nestedEntry": {
+    "domain": "sprite-213",
+    "parentPlacementDepth": 111,
+    "firstParentFrame": 116,
+    "removedAtParentFrame": 133,
+    "childLocalFrameFormula": "mainFrame - 115",
+    "reachableChildFrames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "otherDeclaredFramesDisposition": "18-22 not reached by the source main timeline before removal; no authored branch or child action changes this."
+  },
+  "strictAdoptionStatus": "pending-canonical-scenario-inventory-and-adopter"
+}

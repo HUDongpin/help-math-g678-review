@@ -1,0 +1,693 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-10T08:37:59.120454+00:00",
+  "animationId": "shared-nms002-l01-p045",
+  "source": {
+    "path": "G6-G8-shared/NMS002/L1/TS/L1TS09.swf",
+    "bytes": 541218,
+    "sha256": "dce152af93c1bb221d02f1c09fd7265a3ebde88f47d0e39381d6f978bc3e1651"
+  },
+  "freeze": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/catalog/product-bridge-calibrations/g678-nms-l01-p045-current-js-v1.json",
+    "bytes": 363392,
+    "sha256": "7f1a3a1915c966692b7b26a7746780770b4ae4914692a8b52f9429a508e5ae1b"
+  },
+  "registry": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/private-current-js-registry.json",
+    "bytes": 493738,
+    "sha256": "284a18dcb7accf4d729778a1aed77b99dbc1b66e20d5b873b2d02deb7568c9ac"
+  },
+  "implementationRegistered": true,
+  "currentJsProductQaPassed": true,
+  "activePlacement": {
+    "lessonPageOrdinal": 45,
+    "section": "TS",
+    "sectionPageOrdinal": 8,
+    "sourceFilenameIndex": 9
+  },
+  "sourceRuntime": {
+    "rootFrameCount": 10,
+    "rootEntryFrame": 6,
+    "rootPixels": [
+      412.35,
+      282.9
+    ],
+    "mainFrameDomain": "sprite-290",
+    "mainFrameCount": 835,
+    "teachingHoldFrames": [
+      388,
+      525,
+      651,
+      773
+    ],
+    "questionFrame": 813,
+    "outroFirstFrame": 814,
+    "livePlaybackEndFrame": 832,
+    "declaredOnlyFrames": [
+      833,
+      834,
+      835
+    ]
+  },
+  "sourceSemantics": {
+    "choices": [
+      {
+        "letter": "A",
+        "id": "AnsBtn1",
+        "value": 65,
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "id": "AnsBtn4",
+        "value": 85,
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "id": "AnsBtn3",
+        "value": 90,
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "id": "AnsBtn2",
+        "value": 100,
+        "correct": false
+      }
+    ],
+    "strategyWaits": [
+      15,
+      55
+    ],
+    "strategyCloseMainFrames": [
+      652,
+      774
+    ],
+    "teachingFlowGuard": {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p045-behavior-source-v1/teaching-flow-product-guard-v1.json",
+      "bytes": 14114,
+      "sha256": "9116c270054ff60a811c9b523578e5ddbf9fbec2ce858a46d215c9f30c6ab4b9"
+    },
+    "hostTerminal": {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p045-behavior-source-v1/host-terminal-qualification-v1.json",
+      "bytes": 8734,
+      "sha256": "fdfa76adc916930b9a27ded297865939269dbe377b13b5bac32f3fcabd480cef"
+    },
+    "sourceMasks": 8,
+    "maskPlacements": 11,
+    "sourceImages": 1,
+    "sourceMorphs": 27,
+    "deviceFields": 0,
+    "emptySource45NoInventedHitGeometry": true,
+    "dormantAudioDomains": [
+      "sprite-88"
+    ]
+  },
+  "audio": {
+    "plan": {
+      "version": 1,
+      "animationId": "shared-nms002-l01-p045",
+      "sourceSwfSha256": "dce152af93c1bb221d02f1c09fd7265a3ebde88f47d0e39381d6f978bc3e1651",
+      "fps": 12,
+      "mainFrameDomain": "sprite-290",
+      "mainFrameCount": 835,
+      "livePlaybackEndFrame": 832,
+      "mainAudioFirstFrame": 9,
+      "mainStops": [
+        388,
+        525,
+        651,
+        773,
+        813,
+        832
+      ],
+      "questionFrame": 813,
+      "outroFirstFrame": 814,
+      "clips": [
+        {
+          "frameDomain": "sprite-290",
+          "frameCount": 835,
+          "rawAudioFirstFrame": 9,
+          "latencySamples": 1673,
+          "source": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p045-behavior-source-v1/audio/sprite-290/source-stream.mp3",
+            "bytes": 339820,
+            "sha256": "96d76139cfec32045fe2650bb704bd03bdb669d96b5c1f9025b7ca93d81eb77f"
+          },
+          "decoder": {
+            "sourceSha256": "96d76139cfec32045fe2650bb704bd03bdb669d96b5c1f9025b7ca93d81eb77f",
+            "sourceBytes": 339820,
+            "sampleRate": 22050,
+            "channels": 1,
+            "decodedSamples": 1505664,
+            "pcmSha256": "968e27ba1bf34b43d5c045aeeca4ce4f52363c2b62f17e6eb5ca23c6b1deea1c"
+          },
+          "normalization": "unchanged-embedded-MP3",
+          "emptyNegativeBlocks": [
+            {
+              "frame": 829,
+              "samples": 0,
+              "seek": -2348,
+              "mp3Bytes": 0
+            }
+          ]
+        },
+        {
+          "frameDomain": "sprite-185",
+          "frameCount": 31,
+          "rawAudioFirstFrame": 3,
+          "latencySamples": 1673,
+          "source": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p045-behavior-source-v1/audio/sprite-185/source-stream.mp3",
+            "bytes": 11960,
+            "sha256": "2f88e5ee5c496df615af35c8a53582961becbb4978948a48662cfb4a56485e77"
+          },
+          "decoder": {
+            "sourceSha256": "2f88e5ee5c496df615af35c8a53582961becbb4978948a48662cfb4a56485e77",
+            "sourceBytes": 11960,
+            "sampleRate": 22050,
+            "channels": 1,
+            "decodedSamples": 52992,
+            "pcmSha256": "e72c5279d615f9e669043fbe77a1514564eda43a13440e53200a8f8f163c5aa2"
+          },
+          "normalization": "unchanged-embedded-MP3",
+          "emptyNegativeBlocks": []
+        },
+        {
+          "frameDomain": "sprite-171",
+          "frameCount": 28,
+          "rawAudioFirstFrame": 2,
+          "latencySamples": 1673,
+          "source": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p045-behavior-source-v1/audio/sprite-171/source-stream.mp3",
+            "bytes": 11050,
+            "sha256": "1c3e481dcaa018b19c5b24eaa05b11d88e7cb75a640acd8a06133ccf3ff0c7e5"
+          },
+          "decoder": {
+            "sourceSha256": "1c3e481dcaa018b19c5b24eaa05b11d88e7cb75a640acd8a06133ccf3ff0c7e5",
+            "sourceBytes": 11050,
+            "sampleRate": 22050,
+            "channels": 1,
+            "decodedSamples": 48960,
+            "pcmSha256": "813b460ba22a92b3382e2c82fa309b4436f8f3defdbf1e02b2a62ccbabff4b3d"
+          },
+          "normalization": "unchanged-embedded-MP3",
+          "emptyNegativeBlocks": []
+        },
+        {
+          "frameDomain": "sprite-196",
+          "frameCount": 29,
+          "rawAudioFirstFrame": 2,
+          "latencySamples": 1673,
+          "source": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p045-behavior-source-v1/audio/sprite-196/source-stream.mp3",
+            "bytes": 11570,
+            "sha256": "5bfd44f657eb1ee276cbae924e79bf448bfb0e6d7bef7515164118f295726f4d"
+          },
+          "decoder": {
+            "sourceSha256": "5bfd44f657eb1ee276cbae924e79bf448bfb0e6d7bef7515164118f295726f4d",
+            "sourceBytes": 11570,
+            "sampleRate": 22050,
+            "channels": 1,
+            "decodedSamples": 51264,
+            "pcmSha256": "84b0d3e14da37efe419f52235dfdc85ca1718115be699e934b4f36c5bd424464"
+          },
+          "normalization": "unchanged-embedded-MP3",
+          "emptyNegativeBlocks": []
+        },
+        {
+          "frameDomain": "sprite-270",
+          "frameCount": 33,
+          "rawAudioFirstFrame": 3,
+          "latencySamples": 1673,
+          "source": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p045-behavior-source-v1/audio/sprite-270/source-stream.mp3",
+            "bytes": 12740,
+            "sha256": "c9502f3d979684587046242dc9022b8aa89e89c72688dfa4bc027858badd9e6e"
+          },
+          "decoder": {
+            "sourceSha256": "c9502f3d979684587046242dc9022b8aa89e89c72688dfa4bc027858badd9e6e",
+            "sourceBytes": 12740,
+            "sampleRate": 22050,
+            "channels": 1,
+            "decodedSamples": 56448,
+            "pcmSha256": "cd3bf5881a1e13b2a552734afa36aa8d8325bd8d3b5f8801711b02d73fbc7443"
+          },
+          "normalization": "unchanged-embedded-MP3",
+          "emptyNegativeBlocks": []
+        },
+        {
+          "frameDomain": "sprite-249",
+          "frameCount": 32,
+          "rawAudioFirstFrame": 3,
+          "latencySamples": 1673,
+          "source": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p045-behavior-source-v1/audio/sprite-249/source-stream.mp3",
+            "bytes": 12350,
+            "sha256": "7e9810de5390cdc982dac2795e046343157a6ad9fe4a2ab13e1020b401b2ad11"
+          },
+          "decoder": {
+            "sourceSha256": "7e9810de5390cdc982dac2795e046343157a6ad9fe4a2ab13e1020b401b2ad11",
+            "sourceBytes": 12350,
+            "sampleRate": 22050,
+            "channels": 1,
+            "decodedSamples": 54720,
+            "pcmSha256": "3544a23006102d93047a4ab90beb166df53d2c677f16d95eab0d9d5ed45d086c"
+          },
+          "normalization": "unchanged-embedded-MP3",
+          "emptyNegativeBlocks": []
+        },
+        {
+          "frameDomain": "sprite-235",
+          "frameCount": 31,
+          "rawAudioFirstFrame": 2,
+          "latencySamples": 1673,
+          "source": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p045-behavior-source-v1/audio/sprite-235/source-stream.mp3",
+            "bytes": 11960,
+            "sha256": "70f9eeb16521b9fe8c12f243af3c99482c185a39dab38b226eb3801ed204290b"
+          },
+          "decoder": {
+            "sourceSha256": "70f9eeb16521b9fe8c12f243af3c99482c185a39dab38b226eb3801ed204290b",
+            "sourceBytes": 11960,
+            "sampleRate": 22050,
+            "channels": 1,
+            "decodedSamples": 52992,
+            "pcmSha256": "01213ab1f39c1b38ae2916551c63a5c81aaefaeb85e2b35b443abdbc0187fa3a"
+          },
+          "normalization": "unchanged-embedded-MP3",
+          "emptyNegativeBlocks": [
+            {
+              "frame": 31,
+              "samples": 0,
+              "seek": -1953,
+              "mp3Bytes": 0
+            }
+          ]
+        },
+        {
+          "frameDomain": "sprite-209",
+          "frameCount": 28,
+          "rawAudioFirstFrame": 1,
+          "latencySamples": 1673,
+          "source": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p045-behavior-source-v1/audio/sprite-209/source-stream.mp3",
+            "bytes": 11570,
+            "sha256": "ede0affb88cb9c7d0378514ff027a74e843f5f1cbac3f751820392dd9420d9e8"
+          },
+          "decoder": {
+            "sourceSha256": "ede0affb88cb9c7d0378514ff027a74e843f5f1cbac3f751820392dd9420d9e8",
+            "sourceBytes": 11570,
+            "sampleRate": 22050,
+            "channels": 1,
+            "decodedSamples": 51264,
+            "pcmSha256": "b0ed5174408bf7f9121371afd7ebf1f4c20cae4e3c82fe9dafb1fcef131b4c09"
+          },
+          "normalization": "unchanged-embedded-MP3",
+          "emptyNegativeBlocks": []
+        }
+      ],
+      "branches": [
+        {
+          "kind": "wrong",
+          "index": 1,
+          "sourceCharacterId": 185,
+          "frameDomain": "sprite-185",
+          "frameCount": 31,
+          "entryFrame": 2,
+          "instanceName": "Mc_Wrong_Feed1",
+          "sourcePlacement": {
+            "frame": 813,
+            "tag": "PlaceObject2",
+            "replace": "0",
+            "depth": "234",
+            "objectID": "185",
+            "morph": "812",
+            "name": "Mc_Wrong_Feed1",
+            "transform": {
+              "transX": "-216",
+              "transY": "-1477"
+            }
+          },
+          "hostXOverridePixels": 5
+        },
+        {
+          "kind": "wrong",
+          "index": 2,
+          "sourceCharacterId": 171,
+          "frameDomain": "sprite-171",
+          "frameCount": 28,
+          "entryFrame": 2,
+          "instanceName": "Mc_Wrong_Feed2",
+          "sourcePlacement": {
+            "frame": 813,
+            "tag": "PlaceObject2",
+            "replace": "0",
+            "depth": "228",
+            "objectID": "171",
+            "morph": "812",
+            "name": "Mc_Wrong_Feed2",
+            "transform": {
+              "transX": "-224",
+              "transY": "-988"
+            }
+          },
+          "hostXOverridePixels": 5
+        },
+        {
+          "kind": "wrong",
+          "index": 3,
+          "sourceCharacterId": 196,
+          "frameDomain": "sprite-196",
+          "frameCount": 29,
+          "entryFrame": 2,
+          "instanceName": "Mc_Wrong_Feed3",
+          "sourcePlacement": {
+            "frame": 813,
+            "tag": "PlaceObject2",
+            "replace": "0",
+            "depth": "245",
+            "objectID": "196",
+            "morph": "812",
+            "name": "Mc_Wrong_Feed3",
+            "transform": {
+              "scaleX": "1.044097900390625",
+              "scaleY": "1.044097900390625",
+              "transX": "-221",
+              "transY": "-661"
+            }
+          },
+          "hostXOverridePixels": 5
+        },
+        {
+          "kind": "right",
+          "index": 1,
+          "sourceCharacterId": 270,
+          "frameDomain": "sprite-270",
+          "frameCount": 33,
+          "entryFrame": 2,
+          "instanceName": "Mc_Right_Feed1",
+          "sourcePlacement": {
+            "frame": 813,
+            "tag": "PlaceObject2",
+            "replace": "0",
+            "depth": "313",
+            "objectID": "270",
+            "morph": "812",
+            "name": "Mc_Right_Feed1",
+            "transform": {
+              "transX": "-217",
+              "transY": "-740"
+            }
+          },
+          "hostXOverridePixels": 5
+        },
+        {
+          "kind": "right",
+          "index": 2,
+          "sourceCharacterId": 249,
+          "frameDomain": "sprite-249",
+          "frameCount": 32,
+          "entryFrame": 2,
+          "instanceName": "Mc_Right_Feed2",
+          "sourcePlacement": {
+            "frame": 813,
+            "tag": "PlaceObject2",
+            "replace": "0",
+            "depth": "274",
+            "objectID": "249",
+            "morph": "812",
+            "name": "Mc_Right_Feed2",
+            "transform": {
+              "transX": "-216",
+              "transY": "-400"
+            }
+          },
+          "hostXOverridePixels": 5
+        },
+        {
+          "kind": "right",
+          "index": 3,
+          "sourceCharacterId": 235,
+          "frameDomain": "sprite-235",
+          "frameCount": 31,
+          "entryFrame": 2,
+          "instanceName": "Mc_Right_Feed3",
+          "sourcePlacement": {
+            "frame": 813,
+            "tag": "PlaceObject2",
+            "replace": "0",
+            "depth": "263",
+            "objectID": "235",
+            "morph": "812",
+            "name": "Mc_Right_Feed3",
+            "transform": {
+              "transX": "-226",
+              "transY": "191"
+            }
+          },
+          "hostXOverridePixels": 5
+        },
+        {
+          "kind": "right",
+          "index": 4,
+          "sourceCharacterId": 209,
+          "frameDomain": "sprite-209",
+          "frameCount": 28,
+          "entryFrame": 2,
+          "instanceName": "Mc_Right_Feed4",
+          "sourcePlacement": {
+            "frame": 813,
+            "tag": "PlaceObject2",
+            "replace": "0",
+            "depth": "257",
+            "objectID": "209",
+            "morph": "812",
+            "name": "Mc_Right_Feed4",
+            "transform": {
+              "transX": "-226",
+              "transY": "251"
+            }
+          },
+          "hostXOverridePixels": 5
+        }
+      ],
+      "strategies": [
+        {
+          "index": 2,
+          "sourceCharacterId": 110,
+          "frameDomain": "sprite-110",
+          "mainFrame": 651,
+          "entryFrame": 1,
+          "waitFrame": 15,
+          "frameCount": 20,
+          "sourcePlacement": {
+            "frame": 651,
+            "tag": "PlaceObject2",
+            "replace": "0",
+            "depth": "124",
+            "objectID": "110",
+            "morph": "650",
+            "name": "Mc_box1",
+            "transform": {
+              "scaleX": "1.000000000000000",
+              "scaleY": "0.8999938964843750",
+              "transX": "14136",
+              "transY": "-2679"
+            }
+          },
+          "closeCharacterId": 109,
+          "closeBounds": {
+            "x": 440.7,
+            "y": 124.51516571044922,
+            "width": 89.80000000000001,
+            "height": 25.1998291015625
+          },
+          "closeScript": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p045-behavior-source-v1/source/audit/scripts/DefineButton2_109/BUTTONCONDACTION on(release).as",
+            "bytes": 105,
+            "sha256": "7a44bcb1c4c173e297e6102e0ccabc4df333cde3f7a236802332a001b0e97af5"
+          },
+          "firstFrameStopDisposition": "At initial placement,hold1 and hide. The explicit release47 gotoAndPlay1 is represented as a user-started1..waitFrame child operation; no original same-frame-action precedence claim.",
+          "hostCloseDisposition": "Close clears quizSection; bounded host observer resumes main652 and source removes child110 at that frame. Child tail16..20 remains static evidence, not an invented separate visible closing animation."
+        },
+        {
+          "index": 3,
+          "sourceCharacterId": 146,
+          "frameDomain": "sprite-146",
+          "mainFrame": 773,
+          "entryFrame": 1,
+          "waitFrame": 55,
+          "frameCount": 61,
+          "sourcePlacement": {
+            "frame": 773,
+            "tag": "PlaceObject2",
+            "replace": "0",
+            "depth": "131",
+            "objectID": "146",
+            "morph": "772",
+            "name": "Mc_box2",
+            "transform": {
+              "scaleX": "1.000000000000000",
+              "scaleY": "1.060012817382812",
+              "transX": "14065",
+              "transY": "428"
+            }
+          },
+          "closeCharacterId": 137,
+          "closeBounds": {
+            "x": 438.6,
+            "y": 118.53275375366218,
+            "width": 89.79999999999995,
+            "height": 29.68035888671875
+          },
+          "closeScript": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p045-behavior-source-v1/source/audit/scripts/DefineButton2_137/BUTTONCONDACTION on(release).as",
+            "bytes": 105,
+            "sha256": "7a44bcb1c4c173e297e6102e0ccabc4df333cde3f7a236802332a001b0e97af5"
+          },
+          "firstFrameStopDisposition": "At initial placement,hold1 and hide. The explicit release47 gotoAndPlay1 is represented as a user-started1..waitFrame child operation; no original same-frame-action precedence claim.",
+          "hostCloseDisposition": "Close clears quizSection; bounded host observer resumes main774 and source removes child146 at that frame. Child tail56..61 remains static evidence, not an invented separate visible closing animation."
+        }
+      ],
+      "sourceAlignment": "Native22050monoMP3/1673latency. Main holds388/525/651/773/813; strategy110/146silent independent timelines. Eight active clips,88dormant. Seven feedback streams beginhostframe2andreset1; firstwrongretry,secondwrong/correctmain814..832. Clip at real PCM EOF, no padding/resampling/loop. Pause/replay/navigation retire all active and scheduled native nodes.",
+      "seedPolicy": "Bounded host random3/4 mapping implemented using reproducible uint32seed andattemptordinal,notoriginalAdobeRNGstate."
+    },
+    "measuredMp3Streams": 9,
+    "activeMp3Streams": 8,
+    "sourceAndFullPcmHashesVerified": true,
+    "insertedSamples": 0,
+    "originalAlignmentAccepted": false
+  },
+  "glossary": {
+    "pageSourceTerms": [
+      "multiplication",
+      "subtraction"
+    ],
+    "lessonTermCount": 46,
+    "preservedTerms": 46,
+    "addedSourceTerms": []
+  },
+  "descriptor": {
+    "activePages": 47,
+    "registeredPages": 46
+  },
+  "sourceCanvas": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p045-canvas-v1/receipt.json",
+    "bytes": 205329,
+    "sha256": "602a01009556d9a7637be70f6beef119d3128d975164e16867f4ad121e0e7e95"
+  },
+  "productQa": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p045-product-qa-final-v1.json",
+    "bytes": 703720,
+    "sha256": "b1838ee6c8e7639dcab2161385e83750f76853d5600e941a951dbd0c9edd9e53"
+  },
+  "productionClosure": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation37-production-closure-v1.json",
+    "bytes": 24871,
+    "sha256": "76cd53515cdbfda2433263788ebd7c3c7cdaf64b6c142b18a85066afd14f0894"
+  },
+  "validation": {
+    "pureTests": 13,
+    "initialDescriptorTests": 206,
+    "initialDescriptorPasses": 164,
+    "initialDescriptorFailures": 42,
+    "descriptorRepairRerunTests": 5,
+    "descriptorRepairRerunPasses": 5,
+    "fullDescriptorSuiteRerunAfterRepair": false,
+    "productionAssetTests": 11,
+    "productionBoundaryTests": 3,
+    "previewBoundaryTests": 4,
+    "canvasStates": 1109,
+    "invalidDisplayStatesRejected": 19,
+    "productMetrics": {
+      "observations": 48,
+      "screenshots": 36,
+      "pixelComparisons": 88,
+      "stageGeometry": 40,
+      "guardChecks": 20,
+      "branches": 12,
+      "pointerChecks": 24,
+      "sourceHotspotGeometry": 80,
+      "strategyChecks": 8,
+      "nativeMainChecks": 32,
+      "glossaryChecks": 16,
+      "fullRuns": 8,
+      "nativeSourceStarts": 97,
+      "nativeDecodeChecks": 96
+    },
+    "logs": {
+      "descriptorsInitial": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation37-descriptors-v1.log",
+        "bytes": 60976,
+        "sha256": "c49dd6d34c6459e0cba5c688e1def660fa044c21a77117fa9ae4b3145011de35"
+      },
+      "descriptorRepair": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation37-descriptor-repair-v2.log",
+        "bytes": 657,
+        "sha256": "080af41e02ddf6b042a3c2b71576b36c2a94333f70edc7c33e1ac343f5203c0d"
+      },
+      "pure": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p045-clock-integrated-v1.log",
+        "bytes": 1460,
+        "sha256": "e7105de0ba6facd96942c43af342dbb13a41d4c470365892c2954e7ef0da8c28"
+      },
+      "demosTypes": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p045-demos-typecheck-v2.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "webTypes": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation37-web-types-v2.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "build": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation37-web-build-v2.log",
+        "bytes": 10154,
+        "sha256": "698241274f7760e9192b1ebbdfb9317ae8fbbe36fb6db2cf3d5ef45591140854"
+      },
+      "portableDraft": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p045-draft-implemented-v1.log",
+        "bytes": 229,
+        "sha256": "cd48675d5fc469de1e3496ad5fa68bc0dd2988955d317006dce19ed10b227280"
+      },
+      "registration": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation37-activation-v1.log",
+        "bytes": 71,
+        "sha256": "e99dd53937adb0fb559a2066b1b225b054f106ee728760e3e2f0ea4118c488c1"
+      },
+      "productionPolicies": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p045-production-boundary-v1.log",
+        "bytes": 363,
+        "sha256": "75313baa51e8e54546b1ff52d68f49bd79440b8493ae3812e401fb26649897d8"
+      },
+      "previewPolicies": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p045-preview-policy-v1.log",
+        "bytes": 449,
+        "sha256": "a79f89277d971f47bc050273a7292cb1c928070fee3e7dd4e9fe66b3e20795d5"
+      },
+      "nextDraft": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p047-draft-v1.log",
+        "bytes": 229,
+        "sha256": "5cf4f83054d6dcf52bce6741743391c0feaebb9b56a20e441413d56f640df486"
+      },
+      "snapshotExport": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation37-export-snapshot-v3.log",
+        "bytes": 100,
+        "sha256": "92758554621bf6390d4e7533876d1088cf22a65c61f6f6d0e3e7c17d74274624"
+      }
+    }
+  },
+  "productCalibrationPassed": false,
+  "scaleOutAuthorized": false,
+  "originalRuntimeAccepted": false,
+  "fidelityAccepted": false,
+  "audioAccepted": false,
+  "humanAccepted": false,
+  "ownerAccepted": false,
+  "strictComplete": false,
+  "released": false,
+  "published": false
+}

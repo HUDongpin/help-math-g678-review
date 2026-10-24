@@ -1,0 +1,5 @@
+# NMS L1 page27 source-bound matching question
+
+Compiler-assisted advanced manual lane. Preserve the exact SWF, all extracted editable drawings and scripts. Main344 waits330; four terms map by source suffix to rows4/3/1/2. Per correct: coach3432..20. Fourth correct: silent correct3392..25 then main331..357. Wrong3352..15 waits for Close. Four source pictures expand on release and collapse on rollOut; keyboard and touch use equivalent explicit controls. Eight glossary entries bind exact bilingual XML. The source private-use Symbol glyph is a525x50 horizontal minus rectangle; readable companions normalize it to U+2212 without editing source geometry.
+
+All eight MP3 domains are fully measured. Only main344, wrong335 and coach343 have identified active paths. Export need7 is unplaced. Four stopped right-feed clips and coach1 are preserved without adding a Help control; their static inspections do not establish original runtime reachability. Source zero masks, fifteen morph definitions, six fonts, no bitmap or editable text. No scale-out, Flash fidelity, audio/human/Owner acceptance, strict completion, release or publication claim.

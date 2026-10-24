@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l01-p008",
+  "status": "source-host-terminal-candidate-prepared",
+  "sourceHostBinding": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-source-host-binding-v1.json",
+    "bytes": 3064,
+    "sha256": "beb92189c1c2d81e035322de426c8f0f07ae02ba03127942236a2a1ca78311f1"
+  },
+  "supersededInterpretation": "The earlier bare-MovieClip candidate looped because it omitted the source host terminal observer.",
+  "correctedBehavior": "Play from source frame1 through330, then hold330. Replay starts a new run. Source audio finishes before the terminal frame, and no future cycle is scheduled.",
+  "sourceMainHasStopAction": false,
+  "sourceHostStopsMainAtLastFrame": true,
+  "terminalFrame": 330,
+  "nominalTerminalSeconds": 27.416666666666668,
+  "sourceAudioEndSeconds": 27.387460317460317,
+  "sourceArtChanged": false,
+  "sourceAudioBytesChanged": false,
+  "target": {
+    "module": "packages/demos/src/modules/g678-nms-l01-p008-host-terminal-v1.tsx",
+    "timeline": "packages/demos/src/timelines/shared-nms002-l01-p008-host-terminal-v1.ts",
+    "runtime": "apps/web/components/nms-l01-p008-host-terminal-runtime-v1.tsx",
+    "tests": "packages/demos/tests/nms-l01-p008-host-terminal-v1.test.ts"
+  },
+  "frozenMetadataDisposition": "The original source-only migration spec and brief remain retained as dated inputs. This additive source-host correction supersedes their hosted-loop interpretation and binds the current successor targets.",
+  "registrationDelta": 0,
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false,
+  "humanAccepted": false,
+  "ownerAccepted": false,
+  "strictComplete": false,
+  "published": false
+}

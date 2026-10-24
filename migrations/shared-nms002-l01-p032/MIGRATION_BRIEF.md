@@ -1,0 +1,7 @@
+# NMS L1 page32: mountain descent
+
+Source TI/L1TI07.swf is a four-choice question: Bob descends from12000ft to7500ft. B4500 is correct; A4000/C5000/D5500 are distractors. Main239 has346 frames, enters at root6 and waits230. First error permits retry after its popup closes; second error resumes main231..346 and reveals the vertical subtraction. Correct feedback also resumes that teaching sequence. Actual indexMI end observer stops346. Do not invent a loop or source main346 own stop.
+
+Use compiler-assisted source Canvas with a maintained finite controller; preserve46 morphs,13 images,2 masks,8 active native MP3 streams and source glyphs. This avoids flattening required interactions into video or redrawing authored paths. The fourth wrong and fifth right have no bounded caller. Dormant wrong132 MP3 is measured; right184 ADPCM stays preserved without decode. Four device captions use explicit Arial fallback because FFDec omits device-font text. Source233 mask ignores its outline and uses filled geometry, per Adobe mask semantics: https://helpx.adobe.com/animate/desktop/animation/using-mask-layers.html .
+
+Help explains integer subtraction via adding the opposite; its distinct example is10000-3500=6500 with a number line. Keep both source glossary actions inside Help. Bilingual companion controls and keyboard focus make this usable on narrow touch screens. Replay resets choices, attempts, outcome, Help/glossary and every native audio node. Original runtime, visual/audio acceptance, human/Owner, strict completion, release and publication remain independent.

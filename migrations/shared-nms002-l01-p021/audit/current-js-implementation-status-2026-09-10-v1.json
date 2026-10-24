@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-09T17:39:32.177947+00:00",
+  "animationId": "shared-nms002-l01-p021",
+  "source": {
+    "path": "G6-G8-shared/NMS002/L1/IN/L1IN11.swf",
+    "bytes": 225642,
+    "sha256": "0d1c2ea937365b40403eb7584b3133fd1820fb959d23cdd76e18f02fb0b8a1b1"
+  },
+  "freeze": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/catalog/product-bridge-calibrations/g678-nms-l01-p021-current-js-v1.json",
+    "bytes": 221948,
+    "sha256": "68becd99a3854968b8454a3850b72eb4f2a3a2e44ce7532725cea3a0962d7b66"
+  },
+  "registry": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/private-current-js-registry.json",
+    "bytes": 470104,
+    "sha256": "8306aba50994dd93ad76279777102b84af6bdedefdcbfa5a6ed16b81ae4eeb63"
+  },
+  "implementationRegistered": true,
+  "currentJsProductQaPassed": true,
+  "activePlacement": {
+    "lessonPageOrdinal": 21,
+    "section": "IN",
+    "sectionPageOrdinal": 10,
+    "sourceFilenameIndex": 11
+  },
+  "sourceRuntime": {
+    "rootFrameCount": 10,
+    "rootEntryFrame": 6,
+    "mainFrameDomain": "sprite-160",
+    "mainFrameCount": 572,
+    "questionStopFrame": 571,
+    "actualJumpClips": 30,
+    "questions": 10,
+    "automaticPageCompletion": false
+  },
+  "sourceSemantics": {
+    "actualOrderedOperands": [
+      [
+        4,
+        -6
+      ],
+      [
+        -4,
+        -6
+      ],
+      [
+        -1,
+        5
+      ],
+      [
+        -5,
+        -3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        -3,
+        4
+      ],
+      [
+        -4,
+        -3
+      ],
+      [
+        -5,
+        7
+      ],
+      [
+        7,
+        -5
+      ],
+      [
+        -10,
+        5
+      ]
+    ],
+    "results": [
+      -2,
+      -10,
+      4,
+      -8,
+      7,
+      1,
+      -7,
+      2,
+      2,
+      -5
+    ],
+    "wrongResetUsesSourceCardReset": true,
+    "correctChildFrameCount": 25,
+    "sourceOutsideDifferences": [
+      {
+        "problem": 1,
+        "name": "Mc_P_4",
+        "outsideLine": 84,
+        "normalEventPresent": true,
+        "normalBody": "\n      if(drag)\n      {\n         drag = false;\n         stopDrag();\n         if(eval(this._droptarget) == McNumLine)\n         {\n            this._x = -63.05;\n            this._y = -111.45;\n            txtQuestion.text = \"4 -  = -2\";\n            tempArrSplit = _global.arrayQuestion[0].split(\"~\");\n            if(tempArrSplit[0].indexOf(\"-\") == -1)\n            {\n               Mc_Minus_1._visible = false;\n               txtQuestion_1.text = tempArrSplit[0];\n            }\n            else\n            {\n               Mc_Minus_1._visible = true;\n               txtQuestion_1.text = tempArrSplit[0].substring(1,tempArrSplit[0].length);\n            }\n         }\n         else\n         {\n            Coach_audio_1.gotoAndPlay(2);\n            this._x = -293;\n            this._y = 93.55;\n         }\n      }\n   ",
+        "outsideBody": "\n      if(drag)\n      {\n         drag = false;\n         stopDrag();\n         if(eval(this._droptarget) == McNumLine)\n         {\n            this._x = -63.05;\n            this._y = -111.45;\n            txtQuestion.text = \"4 -  = -2\";\n         }\n         else\n         {\n            Coach_audio_1.gotoAndPlay(2);\n            this._x = -293;\n            this._y = 93.55;\n         }\n      }\n   "
+      },
+      {
+        "problem": 1,
+        "name": "Mc_N_6",
+        "outsideLine": 142,
+        "normalEventPresent": true,
+        "normalBody": "\n      drag = false;\n      stopDrag();\n      if(eval(this._droptarget) == McNumLine)\n      {\n         if(Mc_P_4._x == -293)\n         {\n            BtnNew.enabled = false;\n            doDisableOBJ();\n            Coach_audio_1.gotoAndPlay(2);\n            this._x = -180.5;\n            this._y = 96.05;\n            Mc_Wrong_Feed.txtFeed.text = \"Drag and drop the Jump Positive 4 first and then Negative 6.\";\n            Mc_Wrong_Feed._visible = true;\n         }\n         else\n         {\n            this._x = -81.5;\n            this._y = -107.95;\n            txtQuestion.text = \"4 - 6 = -2\";\n            BtnNew.enabled = false;\n            doDisableOBJ();\n            Mc_Correct_Feed.gotoAndPlay(2);\n         }\n      }\n      else\n      {\n         Coach_audio_1.gotoAndPlay(2);\n         this._x = -180.5;\n         this._y = 96.05;\n      }\n   ",
+        "outsideBody": "\n      drag = false;\n      stopDrag();\n      if(eval(this._droptarget) == McNumLine)\n      {\n         if(Mc_P_4._x == -293)\n         {\n            BtnNew.enabled = false;\n            doDisableOBJ();\n            Coach_audio_1.gotoAndPlay(2);\n            this._x = -180.5;\n            this._y = 96.05;\n            Mc_Wrong_Feed.txtFeed.text = \"Drag and drop the Jump Positive 4 first and then Negative 6.\";\n            Mc_Wrong_Feed._visible = true;\n         }\n         else\n         {\n            this._x = -81.5;\n            this._y = -107.95;\n            txtQuestion.text = \"4 - 6 = -2\";\n            Mc_Correct_Feed.gotoAndPlay(2);\n         }\n      }\n      else\n      {\n         Coach_audio_1.gotoAndPlay(2);\n         this._x = -180.5;\n         this._y = 96.05;\n      }\n   "
+      },
+      {
+        "problem": 2,
+        "name": "Mc_N_6",
+        "outsideLine": 368,
+        "normalEventPresent": true,
+        "normalBody": "\n      drag = false;\n      stopDrag();\n      if(eval(this._droptarget) == McNumLine)\n      {\n         if(Mc_N_4._x == -293)\n         {\n            BtnNew.enabled = false;\n            doDisableOBJ();\n            Coach_audio_1.gotoAndPlay(2);\n            this._x = -180.5;\n            this._y = 96.05;\n            Mc_Wrong_Feed.txtFeed.text = \"Drag and drop the Jump Negative 4 first and then Negative 6.\";\n            Mc_Wrong_Feed._visible = true;\n         }\n         else\n         {\n            this._x = -235.5;\n            this._y = -107.95;\n            txtQuestion.text = \"-4 - 6 = -10\";\n            BtnNew.enabled = false;\n            doDisableOBJ();\n            Mc_Correct_Feed.gotoAndPlay(2);\n         }\n      }\n      else\n      {\n         Coach_audio_1.gotoAndPlay(2);\n         this._x = -180.5;\n         this._y = 96.05;\n      }\n   ",
+        "outsideBody": "\n      drag = false;\n      stopDrag();\n      if(eval(this._droptarget) == McNumLine)\n      {\n         if(Mc_N_4._x == -293)\n         {\n            BtnNew.enabled = false;\n            doDisableOBJ();\n            Coach_audio_1.gotoAndPlay(2);\n            this._x = -180.5;\n            this._y = 96.05;\n            Mc_Wrong_Feed.txtFeed.text = \"Drag and drop the Jump Negative 4 first and then Negative 6.\";\n            Mc_Wrong_Feed._visible = true;\n         }\n         else\n         {\n            this._x = -81.5;\n            this._y = -107.95;\n            txtQuestion.text = \"4 - 6 = -2\";\n            Mc_Correct_Feed.gotoAndPlay(2);\n         }\n      }\n      else\n      {\n         Coach_audio_1.gotoAndPlay(2);\n         this._x = -180.5;\n         this._y = 96.05;\n      }\n   "
+      },
+      {
+        "problem": 4,
+        "name": "Mc_P_3",
+        "outsideLine": 822,
+        "normalEventPresent": false,
+        "normalBody": null,
+        "outsideBody": "\n      drag = false;\n      stopDrag();\n      if(eval(this._droptarget) == McNumLine)\n      {\n         if(Mc_N_5._x == -284.85)\n         {\n            BtnNew.enabled = false;\n            doDisableOBJ();\n            Coach_audio_1.gotoAndPlay(2);\n            this._x = -187.9;\n            this._y = 96.05;\n            Mc_Wrong_Feed.txtFeed.text = \"Drag and drop the Jump Negative 5 first and then Negative 3.\";\n            Mc_Wrong_Feed._visible = true;\n         }\n         else\n         {\n            this._x = -224.9;\n            this._y = -107.95;\n            txtQuestion.text = \"-5 - 3 = -8\";\n            BtnNew.enabled = false;\n            doDisableOBJ();\n            Mc_Correct_Feed.gotoAndPlay(2);\n         }\n      }\n      else\n      {\n         Coach_audio_1.gotoAndPlay(2);\n         this._x = -187.9;\n         this._y = 96.05;\n      }\n   "
+      },
+      {
+        "problem": 4,
+        "name": "Mc_P_4",
+        "outsideLine": 928,
+        "normalEventPresent": true,
+        "normalBody": "\n      drag = false;\n      stopDrag();\n      if(eval(this._droptarget) == McNumLine)\n      {\n         BtnNew.enabled = false;\n         doDisableOBJ();\n         Coach_audio_1.gotoAndPlay(2);\n         this._x = 71.95;\n         this._y = 93.55;\n         Mc_Wrong_Feed.txtFeed.text = \"Drag and drop the Jump Negative 5 first and then Negative 3.\";\n         Mc_Wrong_Feed._visible = true;\n      }\n      else\n      {\n         Coach_audio_1.gotoAndPlay(2);\n         this._x = 71.95;\n         this._y = 93.55;\n      }\n   ",
+        "outsideBody": "\n      drag = false;\n      stopDrag();\n      if(eval(this._droptarget) == McNumLine)\n      {\n         BtnNew.enabled = false;\n         doDisableOBJ();\n         Coach_audio_1.gotoAndPlay(2);\n         this._x = 71.95;\n         this._y = 93.55;\n         Mc_Wrong_Feed.txtFeed.text = \"Drag and drop the Jump Negative 5 first.\";\n         Mc_Wrong_Feed._visible = true;\n      }\n      else\n      {\n         Coach_audio_1.gotoAndPlay(2);\n         this._x = 71.95;\n         this._y = 93.55;\n      }\n   "
+      },
+      {
+        "problem": 6,
+        "name": "Mc_P_4",
+        "outsideLine": 1278,
+        "normalEventPresent": true,
+        "normalBody": "\n      drag = false;\n      stopDrag();\n      if(eval(this._droptarget) == McNumLine)\n      {\n         if(Mc_N_3._x == -303.35)\n         {\n            BtnNew.enabled = false;\n            doDisableOBJ();\n            Coach_audio_1.gotoAndPlay(2);\n            this._x = 51.95;\n            this._y = 93.55;\n            Mc_Wrong_Feed.txtFeed.text = \"Drag and drop the Jump Negative 3 first and then Positive 4.\";\n            Mc_Wrong_Feed._visible = true;\n         }\n         else\n         {\n            this._x = -120.7;\n            this._y = -111.85;\n            txtQuestion.text = \"-3 + 4 = 1\";\n            BtnNew.enabled = false;\n            doDisableOBJ();\n            Mc_Correct_Feed.gotoAndPlay(2);\n         }\n      }\n      else\n      {\n         Coach_audio_1.gotoAndPlay(2);\n         this._x = 51.95;\n         this._y = 93.55;\n      }\n   ",
+        "outsideBody": "\n      drag = false;\n      stopDrag();\n      if(eval(this._droptarget) == McNumLine)\n      {\n         if(Mc_P_3._x == -303.35)\n         {\n            BtnNew.enabled = false;\n            doDisableOBJ();\n            Coach_audio_1.gotoAndPlay(2);\n            this._x = 51.95;\n            this._y = 93.55;\n            Mc_Wrong_Feed.txtFeed.text = \"Drag and drop the Jump Negative 3 first and then Positive 4.\";\n            Mc_Wrong_Feed._visible = true;\n         }\n         else\n         {\n            this._x = -120.7;\n            this._y = -111.85;\n            txtQuestion.text = \"-3 + 4 = 1\";\n            BtnNew.enabled = false;\n            doDisableOBJ();\n            Mc_Correct_Feed.gotoAndPlay(2);\n         }\n      }\n      else\n      {\n         Coach_audio_1.gotoAndPlay(2);\n         this._x = 51.95;\n         this._y = 93.55;\n      }\n   "
+      },
+      {
+        "problem": 10,
+        "name": "Mc_P_7",
+        "outsideLine": 2132,
+        "normalEventPresent": false,
+        "normalBody": null,
+        "outsideBody": "\n      if(drag)\n      {\n         drag = false;\n         stopDrag();\n         if(eval(this._droptarget) == McNumLine)\n         {\n            this._x = -196.9;\n            this._y = -108.95;\n            txtQuestion.text = \"-10 +  = -5\";\n         }\n         else\n         {\n            Coach_audio_1.gotoAndPlay(2);\n            this._x = -236.9;\n            this._y = 97.05;\n         }\n      }\n   "
+      }
+    ],
+    "sourceCorrections": [
+      {
+        "id": "case2-outside-copy-error",
+        "source": "showDragOBJ_2 Mc_N_6.onReleaseOutside writes4−6=−2 andx−81.5.",
+        "product": "Use same problem normal release −4−6=−10 andx−235.5 for all successful release paths."
+      },
+      {
+        "id": "case4-outside-wrong-instance",
+        "source": "showDragOBJ_4 second negative3 outside handler is assigned to Mc_P_3.",
+        "product": "Keep Mc_N_3 second action from its normal release; capture cleanup prevents stale handlers."
+      },
+      {
+        "id": "case6-outside-wrong-prerequisite",
+        "source": "showDragOBJ_6 second outside handler checks hidden Mc_P_3 instead of Mc_N_3.",
+        "product": "Require correct first Mc_N_3 as the normal release does."
+      },
+      {
+        "id": "case10-outside-wrong-instance",
+        "source": "showDragOBJ_10 first outside handler is assigned to Mc_P_7 instead of Mc_N_10.",
+        "product": "Keep Mc_N_10 first action from its normal release."
+      },
+      {
+        "id": "case7-source-order-conflict",
+        "source": "Array says−3~−4 but all actual showDragOBJ_7 handlers, destinations and feedback require−4 then−3.",
+        "product": "Follow actual source drag workflow−4 then−3; preserve unchanged raw array and both sum to−7."
+      },
+      {
+        "id": "stale-outside-handlers-and-enable-omissions",
+        "source": "Handlers are repeatedly attached and not cleared between random questions; case1/2 outside success omits normal release disabling.",
+        "product": "Fresh bounded pure state per question and normal release authority for source lock/unlock transitions."
+      },
+      {
+        "id": "nonexistent-source-fields",
+        "source": "Only txtQuestion44 and wrong153.txtFeed152 exist; main references absent txtQuestion_1/_2/_3 and Mc_Minus_1.",
+        "product": "Render only actual source fields and keep exact txtQuestion source equation; do not invent absent display objects."
+      },
+      {
+        "id": "offstage-close-hit-shape",
+        "source": "Close150 down-state sound marker148 adds an offstage hit rectangle aroundx−1700.",
+        "product": "Use actual visible close rectangle142 for modern pointer target; retain source full bounds and down-state audio evidence."
+      }
+    ],
+    "deviations": {
+      "deviceFont": "Source useOutlines0 fields use disclosed Arial fallback: bold24px equation,20px wrapped feedback; source font parity unaccepted.",
+      "release": "Pointer capture maps successful releases to source normal-release branches; explicit cancellation restores drag origin without creating feedback. Retained outside-handler discrepancies are documented repairs.",
+      "random": "Deterministic product seeded choice among exact source problems and four source coach labels; no Adobe RNG sequence parity.",
+      "glossary": "Source-key modal pauses native tracks, retains card state and restores prior playback/focus on close."
+    }
+  },
+  "audio": {
+    "plan": {
+      "version": 1,
+      "animationId": "shared-nms002-l01-p021",
+      "sourceSwfSha256": "0d1c2ea937365b40403eb7584b3133fd1820fb959d23cdd76e18f02fb0b8a1b1",
+      "fps": 12,
+      "mainFrameDomain": "sprite-160",
+      "mainFrameCount": 572,
+      "questionFrame": 571,
+      "clips": [
+        {
+          "frameDomain": "sprite-46",
+          "frameCount": 55,
+          "rawAudioFirstFrame": 3,
+          "latencySamples": 1673,
+          "playable": true,
+          "decoder": {
+            "sourceSha256": "e551e71005de2df6e95d44ca10fba65b6ae0131032336e67b2609c71b798e8cf",
+            "sourceBytes": 21840,
+            "sampleRate": 22050,
+            "channels": 1,
+            "decodedSamples": 96768,
+            "pcmSha256": "6233e14384b01225fa07450a95c369f369be029ec4e175c9bcd80cb293bc9118"
+          },
+          "source": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p021-behavior-source-v1/audio/sprite-46/source-stream.mp3",
+            "bytes": 21840,
+            "sha256": "e551e71005de2df6e95d44ca10fba65b6ae0131032336e67b2609c71b798e8cf"
+          }
+        },
+        {
+          "frameDomain": "sprite-149",
+          "frameCount": 5,
+          "rawAudioFirstFrame": 1,
+          "latencySamples": 1673,
+          "playable": true,
+          "decoder": {
+            "sourceSha256": "ad4a86a727b8d4b5379655258cdffc62f85f89cb460a96565fad27d975a2aa38",
+            "sourceBytes": 1950,
+            "sampleRate": 22050,
+            "channels": 1,
+            "decodedSamples": 8640,
+            "pcmSha256": "59f9e516707876c29033e2b75bca84dd687667e6037b8a05aa8eb190d11926da"
+          },
+          "source": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p021-behavior-source-v1/audio/sprite-149/source-stream.mp3",
+            "bytes": 1950,
+            "sha256": "ad4a86a727b8d4b5379655258cdffc62f85f89cb460a96565fad27d975a2aa38"
+          }
+        },
+        {
+          "frameDomain": "sprite-157",
+          "frameCount": 25,
+          "rawAudioFirstFrame": 2,
+          "latencySamples": 1673,
+          "playable": true,
+          "decoder": {
+            "sourceSha256": "b2c63dbaf7304c2c1042dda5e0ee305284f5136c275d6bc8e3e1fcdb552c99a5",
+            "sourceBytes": 9880,
+            "sampleRate": 22050,
+            "channels": 1,
+            "decodedSamples": 43776,
+            "pcmSha256": "e5bc06d666015bb08b8faa4d9fd5a060b9dd920313467df98dff9649a9a8ffb0"
+          },
+          "source": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p021-behavior-source-v1/audio/sprite-157/source-stream.mp3",
+            "bytes": 9880,
+            "sha256": "b2c63dbaf7304c2c1042dda5e0ee305284f5136c275d6bc8e3e1fcdb552c99a5"
+          }
+        },
+        {
+          "frameDomain": "sprite-159",
+          "frameCount": 20,
+          "rawAudioFirstFrame": 2,
+          "latencySamples": 1673,
+          "playable": false,
+          "decoder": {
+            "sourceSha256": "8b843d72ae1de52bef4e2b22e65f6356f97dd115d8795bf9b3df69d87c3d16e7",
+            "sourceBytes": 7800,
+            "sampleRate": 22050,
+            "channels": 1,
+            "decodedSamples": 34560,
+            "pcmSha256": "0febd3a878f4a5d21d3735b8a2428d9f6eab70d56bb69d492fa038fdc9478b5c"
+          },
+          "source": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p021-behavior-source-v1/audio/sprite-159/source-stream.mp3",
+            "bytes": 7800,
+            "sha256": "8b843d72ae1de52bef4e2b22e65f6356f97dd115d8795bf9b3df69d87c3d16e7"
+          }
+        },
+        {
+          "frameDomain": "sprite-160",
+          "frameCount": 572,
+          "rawAudioFirstFrame": 9,
+          "latencySamples": 1673,
+          "playable": true,
+          "decoder": {
+            "sourceSha256": "e614b4ee87a573fc6072bf933867432ed979d013bf94f2f2cbbd5171ed07fe0b",
+            "sourceBytes": 233740,
+            "sampleRate": 22050,
+            "channels": 1,
+            "decodedSamples": 1035648,
+            "pcmSha256": "ee4fee012f9dca42d1f7f66ab16e83f377199974a9b43f58005a37ac170d2707"
+          },
+          "source": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p021-behavior-source-v1/audio/sprite-160/source-stream.mp3",
+            "bytes": 233740,
+            "sha256": "e614b4ee87a573fc6072bf933867432ed979d013bf94f2f2cbbd5171ed07fe0b"
+          }
+        }
+      ],
+      "coachVariants": [
+        {
+          "label": "S1",
+          "firstFrame": 3,
+          "stopFrame": 16,
+          "firstDecodedSample": 1673,
+          "durationSeconds": 1.0833333333333333,
+          "endDecodedSample": 25560.5
+        },
+        {
+          "label": "S2",
+          "firstFrame": 18,
+          "stopFrame": 27,
+          "firstDecodedSample": 27391,
+          "durationSeconds": 0.75,
+          "endDecodedSample": 43928.5
+        },
+        {
+          "label": "S3",
+          "firstFrame": 31,
+          "stopFrame": 36,
+          "firstDecodedSample": 51272,
+          "durationSeconds": 0.4166666666666667,
+          "endDecodedSample": 60459.5
+        },
+        {
+          "label": "S4",
+          "firstFrame": 40,
+          "stopFrame": 54,
+          "firstDecodedSample": 67805,
+          "durationSeconds": 1.1666666666666667,
+          "endDecodedSample": 93530
+        }
+      ],
+      "sourceAlignment": "source-candidate-not-original-runtime-accepted",
+      "sourceBoundary": {
+        "seconds": 47.5,
+        "decodedSample": 1034348,
+        "unplayedPreservedTailSamples": 1300
+      },
+      "terminalFramePolicy": "Main160 starts audio9 from1673 and holds571 at570/12s;1300samples after hold remain preserved. Coach46 restarts one of exact source labels3/18/31/40 and returns1 at16/27/36/54; each source branch begins cumulative sample plus its own seek. Correct157 plays2..24, at25 returns1 and enablesNew. Button149 exists only during close150 down-state, plays1..5 then holds5, and is removed/stopped on release/cancel. Coach46 remains independent across Close/New and can overlap Correct157. Source159 stops1 with no caller; full stream retained and decoded but no user playback. No invented page completion."
+    },
+    "nativeMp3Streams": 5,
+    "actuallyTriggeredStreams": 4,
+    "dormantStream": "sprite-159",
+    "independentTracks": [
+      "main",
+      "coach",
+      "correct",
+      "button-down"
+    ],
+    "mp3Unchanged": true,
+    "sourceAndPcmHashesVerified": true,
+    "originalAlignmentAccepted": false
+  },
+  "glossary": {
+    "sourceKeys": [
+      "Set",
+      "Number line"
+    ],
+    "newSourceTerms": [],
+    "lessonTermCount": 34
+  },
+  "descriptor": {
+    "activePages": 47,
+    "registeredPages": 29
+  },
+  "fixtureCorrections": {
+    "canvasReferencePreservesTwoSourceTransforms": true,
+    "distractorReferenceUsesSourceResetPosition": true,
+    "touchDispatchWaitsForStablePostCancelGeometry": true,
+    "retainedFailedReceipts": true,
+    "productSourceUnchangedByFixtureCorrections": true
+  },
+  "sourceCanvas": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p021-canvas-v3/receipt.json",
+    "bytes": 221517,
+    "sha256": "1c8d84a6c540996574cd9709b130c99553116ba58dc00b97407f89941a3f02d2"
+  },
+  "productQa": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p021-my-lesson-v3/receipt.json",
+    "bytes": 319790,
+    "sha256": "3e8ba0813b218702caf1257fe851c8e7132f911e354d0bc05a2c5358fd20c091"
+  },
+  "productionClosure": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation20-production-closure-v1.json",
+    "bytes": 15192,
+    "sha256": "1cf0be26505d3591c51eb37f5e02296b5b534d4cf50de4f8663a69ef786ffc76"
+  },
+  "validation": {
+    "uniqueBehaviorDescriptorTests": 131,
+    "descriptorTests": 119,
+    "pureTests": 12,
+    "productionAssetTests": 11,
+    "productMetrics": {
+      "observations": 124,
+      "screenshots": 44,
+      "pixelComparisons": 76,
+      "stageGeometry": 36,
+      "glossaryChecks": 24,
+      "fullRuns": 8,
+      "nativeDecodeChecks": 60
+    },
+    "logs": {
+      "descriptors": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation20-descriptor-tests-v1.log",
+        "bytes": 12577,
+        "sha256": "723f0b856bc8d6cefe0f5a33954d780fcc632097273a97c2a8c7faac455e5638"
+      },
+      "pure": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p021-pure-tests-v2.log",
+        "bytes": 1587,
+        "sha256": "d9a4b8f01d3ba06e6ea162791e2b0371247d4f1d7c49b8f95ec7d775916fb67c"
+      },
+      "demosTypes": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p021-demos-types-v1.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "webTypes": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p021-web-types-v2.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "build": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation20-web-build-v1.log",
+        "bytes": 7631,
+        "sha256": "85dbe06f9fa03407b34fdac08a14cfaa87f430d5b99379841de4bd3db19a0ed2"
+      },
+      "canonicalStrict": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/shared-nms002-l01-p021-canonical-domain-check-v1.log",
+        "bytes": 1213,
+        "sha256": "24aca6b536481fa3d7cdee09a06b2d4346fdbaa2d02a8261d64db61760df65b9"
+      },
+      "registration": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p021-activation-check-v1.log",
+        "bytes": 71,
+        "sha256": "a3461c97c5e18309f89c1304cb0fc0ddc6bfca92efe6981571d444e0c91a9821"
+      }
+    }
+  },
+  "scaleOutAuthorized": false,
+  "originalRuntimeAccepted": false,
+  "fidelityAccepted": false,
+  "audioAccepted": false,
+  "humanAccepted": false,
+  "ownerAccepted": false,
+  "strictComplete": false,
+  "released": false,
+  "published": false
+}

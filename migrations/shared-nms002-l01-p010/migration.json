@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-nms002-l01-p010",
+  "animationId": "shared-nms002-l01-p010",
+  "assetId": "swf-a83b82a60a68ef3bbe03af6defa18a34b8751318845ae40f2507b6af96900bba",
+  "status": "validating",
+  "created": "2026-09-09",
+  "confidence": "source-verified",
+  "classification": {
+    "collection": "HELP_COURSES",
+    "grade": "G6-G8-shared",
+    "lesson": 1,
+    "section": "VB",
+    "page": 5,
+    "domain": "NMS002",
+    "knowledgePoint": {
+      "en": "Absolute value as distance from zero",
+      "es": "Valor absoluto como distancia desde cero"
+    },
+    "titleRaw": "Absolute Value",
+    "titleDisplay": "Absolute Value",
+    "status": "resolved",
+    "evidence": [
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/catalog/g678-shared-catalog.v1.json",
+      "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p010-behavior-source-v1/extraction.json",
+      "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p010-behavior-source-v1/semantic-source-audit-v1.json"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L1/VB/L1VB06.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L1/VB/L1VB06.swf",
+    "flaSha256": "",
+    "swfSha256": "a83b82a60a68ef3bbe03af6defa18a34b8751318845ae40f2507b6af96900bba",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 144315,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#b8d8f7",
+    "actionScriptVersion": "AS1/AS2",
+    "complexity": "interactive-understood",
+    "fonts": [],
+    "scripts": [
+      "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p010-behavior-source-v1/source/audit/scripts/DefineButton2_11/BUTTONCONDACTION on(release).as",
+      "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p010-behavior-source-v1/source/audit/scripts/DefineButton2_12/BUTTONCONDACTION on(release).as",
+      "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p010-behavior-source-v1/source/audit/scripts/DefineButton2_15/BUTTONCONDACTION on(release).as",
+      "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p010-behavior-source-v1/source/audit/scripts/frame_1/DoAction.as",
+      "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p010-behavior-source-v1/source/audit/scripts/frame_6/DoAction.as"
+    ],
+    "externalDependencies": [
+      "InternalPreloader jump_check replaced by modern already-loaded entry",
+      "DoHyperLinks for three exact bilingual source glossary definitions",
+      "Source indexMI host doCheckPrevAndNext stops the main at its total frame315"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      {
+        "characterId": 7,
+        "functionKind": "shape",
+        "placements": [
+          {
+            "depth": 2,
+            "clipDepth": 9
+          },
+          {
+            "depth": 10,
+            "clipDepth": 15
+          },
+          {
+            "depth": 72,
+            "clipDepth": 77
+          },
+          {
+            "depth": 78,
+            "clipDepth": 80
+          },
+          {
+            "depth": 82,
+            "clipDepth": 84
+          }
+        ],
+        "rawFill": "ctx.fillStyle=tocolor(ctrans.apply([44,44,254,0.5921569]));"
+      }
+    ],
+    "morphs": [],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "default",
+      "kind": "linear",
+      "description": "Root preloader and root6 main entry; original runtime pending",
+      "reachable": true
+    },
+    {
+      "id": "source-static-frame",
+      "kind": "interactive",
+      "description": "315-frame source definition, number line and absolute-value example; three glossary controls; finite source host stop and Replay",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "en"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "main-embedded-stream",
+        "language": "en",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p010-behavior-source-v1/audio/sprite-49/source-stream.mp3",
+        "sha256": "6c8ecc17d9418e1f6ae11ba3825aa9f3431f0f0e9ab3c9f5b39310f59387ef6f",
+        "frameDomain": "sprite-49",
+        "startFrame": 7,
+        "endFrame": 315,
+        "plan": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p010-behavior-source-v1/audio/plan-v1.json",
+        "accepted": false
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "native Chromium PCM measurement.json",
+    "ffdec": "26.2.1 hash-bound extraction",
+    "swfmill": "0.3.6_1 hash-bound extraction",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "Source Canvas plus finite native source clock, source-host terminal policy and modern My Lesson",
+    "route": "/migration-status/g678-calibration/shared-nms002-l01-p010",
+    "routeFile": "apps/web/app/[locale]/migration-status/g678-calibration/shared-nms002-l01-p010/page.tsx",
+    "component": "apps/web/components/g678-nms-l01-p010-lesson.tsx",
+    "registryModule": "packages/demos/src/modules/g678-nms-l01-p010.tsx",
+    "timelineModule": "packages/demos/src/timelines/shared-nms002-l01-p010.ts",
+    "testFile": "packages/demos/tests/nms-l01-p010.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-49",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-5",
+        "kind": "sprite",
+        "sourceTimelineId": "sprite-5",
+        "parentFrameDomainId": "root",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-static-frame"
+        ]
+      },
+      {
+        "id": "sprite-49",
+        "kind": "sprite",
+        "sourceTimelineId": "sprite-49",
+        "parentFrameDomainId": "root",
+        "frameCount": 315,
+        "scenarioIds": [
+          "source-static-frame"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": [
+      "No cataloged source FLA.",
+      "Implementation paths are targets until actual registration and My Lesson verification.",
+      "English source media stays English on the Spanish host; exact source glossary and modern controls are bilingual.",
+      "Source-host stop315 is inferred from the bound original indexMI function and its actual NMS/animation path; no natural original Flash run occurred.",
+      "Native source alignment and complete source PCM remain engineering evidence; original-runtime playback and human listening are pending.",
+      "Source title5 is represented by the modern title; duplicate text2 has its complete bounds above the stage.",
+      "Accessible diagram descriptions are source-derived prose, not verbatim narration transcripts.",
+      "Canonical strict adoption, original-runtime, visual, human, Owner, strict completion, release and publication remain pending."
+    ]
+  }
+}

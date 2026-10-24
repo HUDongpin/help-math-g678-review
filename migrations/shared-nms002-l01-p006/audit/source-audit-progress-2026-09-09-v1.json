@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-09-09T03:17:06.734174+00:00",
+  "animationId": "shared-nms002-l01-p006",
+  "status": "source-audit-in-progress-no-implementation-or-registration",
+  "source": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L1/VB/L1VB02.swf",
+    "bytes": 243166,
+    "sha256": "4ad5f233a2625d2d795cd585278abfa232055f36f92906568621698d72c3cedc"
+  },
+  "facts": {
+    "rootFrameCount": 10,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "mainFrameDomain": "sprite-89",
+    "mainFrameCount": 714,
+    "mainActions": [],
+    "mainNestedSprites": [],
+    "titleDomain": "sprite-5",
+    "titleFrameCount": 1,
+    "buttonCount": 6
+  },
+  "glossary": {
+    "entries": [
+      "counting-numbers",
+      "natural-number",
+      "negative-integers",
+      "opposite",
+      "positive-integers",
+      "set"
+    ],
+    "existingTermCount": 24,
+    "newTerms": []
+  },
+  "audio": {
+    "sourceSwfSha256": "4ad5f233a2625d2d795cd585278abfa232055f36f92906568621698d72c3cedc",
+    "frameDomain": "sprite-89",
+    "firstFrame": 1,
+    "lastFrame": 714,
+    "fps": 12,
+    "decoder": {
+      "sourceSha256": "29930deec73932ebb81b1570336587e8841db2023463c9d48fb896cc3b4f161c",
+      "sourceBytes": 289250,
+      "sampleRate": 22050,
+      "channels": 1,
+      "decodedSamples": 1281600,
+      "pcmSha256": "1a4f52c5d884cdcd63619fcac5ed6021b52c132fa90a9e5c3e677e2286e8aa48"
+    },
+    "status": "raw-audio-measured-not-product-play-plan",
+    "sourceMainStopAction": false,
+    "sourceCycleSeconds": 59.5,
+    "lastSourceFrameBeginsSeconds": 59.416666666666664,
+    "sourceRuns": [
+      {
+        "firstFrame": 8,
+        "firstDecodedSample": 1673,
+        "endDecodedSample": 1026432
+      },
+      {
+        "firstFrame": 576,
+        "firstDecodedSample": 1026548,
+        "endDecodedSample": 1281600
+      }
+    ],
+    "emptyNegativeBlocks": [
+      {
+        "frame": 567,
+        "samples": 0,
+        "seek": -2123,
+        "mp3Bytes": 0
+      }
+    ],
+    "productClockRequired": "Preserve both source runs, the intervening gap and the complete714-frame cycle; the existing terminal clock ends one frame-period too early for this unstopped source loop."
+  },
+  "nextImplementationRequirements": [
+    "Finish exact placement, mask, readable glyph and source-semantic audit before renderer generation.",
+    "Use an explicit714-frame loop clock; no source main stop exists. Keep driver boundary coordinates separate from the714-frame source domain.",
+    "Preserve run1 at main8, the source gap following the empty negative marker567, run2 at576, and native audio through59.483650793650796s.",
+    "The existing terminal clock ends at713/12 seconds and must not be reused unchanged; verify natural loop, pause/resume, Replay, page navigation and audio closure.",
+    "Preserve exact source glossary, including the source convention that0 is often included in natural numbers; never infer source authoring names or new math content."
+  ],
+  "inputs": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p006-behavior-source-v1/extraction.json",
+      "bytes": 21828,
+      "sha256": "b88ae76f2bd3ee17668e6f08fd9bc09e57eef006f48e069ffe6236a92529378e"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p006-behavior-source-v1/source/source-facts.json",
+      "bytes": 29370,
+      "sha256": "88949672406396371371a56bc88c96bd6a4d3d1c79015415494d7b0fedfb7484"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p006-behavior-source-v1/source/source.xml",
+      "bytes": 943431,
+      "sha256": "8d29f42552c5aa4c9d18963f3929e174b770378ac7be95e9038d6d3cf316522f"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p006-behavior-source-v1/audio/raw-stream-audit.json",
+      "bytes": 68618,
+      "sha256": "8f77ac6632fdb65a7d14dba56bd357bb1c4c55e3eb06adf78b68510c11e0054f"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p006-behavior-source-v1/audio/measurement.json",
+      "bytes": 3696,
+      "sha256": "6d6180d0df986998354d5b0be140f8b46e19bd38ef801533ebe773c43ef3d685"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p006-behavior-source-v1/audio/measured-run-candidate.json",
+      "bytes": 1202,
+      "sha256": "bef6ee5f5c496b4560db58fc3fffb127426fbd3a99e6485cbf2b9de34eeac354"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p006-behavior-source-v1/source-glossary.json",
+      "bytes": 12295,
+      "sha256": "27e8e3cb0412e192b518c0afb541cef42ebe647b8db252412be3ff9a41a2fa1f"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p006-behavior-source-v1/source/audit/scripts/DefineButton2_11/BUTTONCONDACTION on(release).as",
+      "bytes": 129,
+      "sha256": "15803648e891564ae4ab4f78cd3f26a5230b53bcd50c7cb16855c1a0e90c9c25"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p006-behavior-source-v1/source/audit/scripts/DefineButton2_50/BUTTONCONDACTION on(release).as",
+      "bytes": 123,
+      "sha256": "b1b55f72901124df3b436b4f77a335fa7920a08816d0ef2222699ac6666de48e"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p006-behavior-source-v1/source/audit/scripts/DefineButton2_51/BUTTONCONDACTION on(release).as",
+      "bytes": 132,
+      "sha256": "ba7b90908d3d895f35cdc3383f04c4cf8de06bc9b779e17eeb9fbcd3d73fdedd"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p006-behavior-source-v1/source/audit/scripts/frame_6/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p006-behavior-source-v1/source/audit/scripts/frame_1/DoAction.as",
+      "bytes": 63,
+      "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p006-behavior-source-v1/source/audit/scripts/DefineButton2_12/BUTTONCONDACTION on(release).as",
+      "bytes": 118,
+      "sha256": "bf6ddb6c2620b5c22b58818ee2de460b1feae903d133a3342b924f80e5ebe64e"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p006-behavior-source-v1/source/audit/scripts/DefineButton2_15/BUTTONCONDACTION on(release).as",
+      "bytes": 131,
+      "sha256": "3e20839713f65c402da4b0acc8574e5b36ed0b672b7ddcce1d1850bd53ec72ac"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p006-behavior-source-v1/source/audit/scripts/DefineButton2_52/BUTTONCONDACTION on(release).as",
+      "bytes": 132,
+      "sha256": "be7f4f6b8030c0b0056835f51f7e23905a3597be3969be1f409d2c6c1a4b937d"
+    }
+  ],
+  "registeredCurrentJs": false,
+  "scaleOutAuthorized": false,
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false,
+  "strictComplete": false,
+  "published": false
+}

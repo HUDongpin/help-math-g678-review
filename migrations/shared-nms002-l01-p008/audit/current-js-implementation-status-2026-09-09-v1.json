@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-09T06:35:58.130348+00:00",
+  "animationId": "shared-nms002-l01-p008",
+  "implementationRegistered": true,
+  "registration": {
+    "calibrationId": "g678-nms-l01-p008-current-js-v3",
+    "deploymentScope": "local-only",
+    "freezeManifest": "catalog/product-bridge-calibrations/g678-nms-l01-p008-current-js-v3.json",
+    "freezeManifestBytes": 48158,
+    "freezeManifestSha256": "05de3181bc2b4c5928c2ab351d147ddc04cf30d3f2cf5f0bf4b66d6ee16d65d9",
+    "entries": [
+      {
+        "key": "shared-nms002-l01-p008",
+        "module": "./modules/g678-nms-l01-p008",
+        "maturity": "private-current-js",
+        "complexityLane": "interactive-understood",
+        "artifacts": {
+          "module": {
+            "path": "packages/demos/src/modules/g678-nms-l01-p008.tsx",
+            "bytes": 193305,
+            "sha256": "5c495b8efdf937538c2468f2a184a95cfbb232cf0546225f8c77037e5adf402e"
+          },
+          "timeline": {
+            "path": "packages/demos/src/timelines/shared-nms002-l01-p008.ts",
+            "bytes": 2097,
+            "sha256": "48f338561012cfc96ca6aa459e0e8dac7512ddbc310d923d699394a902e639c7"
+          },
+          "runtime": {
+            "path": "work/g678-shared-page-factory/g678-nms-l01-p008-current-js-v1/members/shared-nms002-l01-p008/canvas-renderer.js",
+            "bytes": 3117699,
+            "sha256": "76ed075f66ffaf75ee3d3f96c23ac07c879a36e73086f3ef4e284244bbef1840"
+          }
+        }
+      }
+    ]
+  },
+  "registry": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/private-current-js-registry.json",
+    "bytes": 454768,
+    "sha256": "ceef7e8a7e53ff9954102bb32eb92dc64a2f5f4e718edfb206cd06374911dd6d"
+  },
+  "sourceDrawing": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p008-candidate-drawing-v1/receipt.json",
+    "bytes": 126097,
+    "sha256": "bf51372731c23669df1d67dba754effa737dd223ee8fbb7715723e03340965a3"
+  },
+  "currentBrowserReceipt": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p008-my-lesson-v3/receipt.json",
+    "bytes": 355065,
+    "sha256": "09b3924e009111bdd050cb19c9f35bce45b2f24fe465b85f55224c9cbeeb89f9"
+  },
+  "actualTestFile": "packages/demos/tests/nms-l01-p008.test.ts",
+  "currentMaintainedRuntime": "apps/web/components/nms-l01-p008-source-runtime-v1.tsx",
+  "metadataBoundary": "The frozen migration manifest records implementation targets at source specification time. This append-only current status binds their actual registered implementation.",
+  "humanListening": false,
+  "originalRuntimeAccepted": false,
+  "humanAccepted": false,
+  "ownerAccepted": false,
+  "strictComplete": false,
+  "published": false,
+  "scaleOutAuthorized": false
+}

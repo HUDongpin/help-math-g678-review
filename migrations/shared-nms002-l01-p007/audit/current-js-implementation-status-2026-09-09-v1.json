@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-09T05:46:38.541639+00:00",
+  "animationId": "shared-nms002-l01-p007",
+  "status": "registered-private-current-js-my-lesson-verified",
+  "currentRegistration": {
+    "calibrationId": "g678-nms-l01-p007-current-js-v5",
+    "deploymentScope": "local-only",
+    "freezeManifest": "catalog/product-bridge-calibrations/g678-nms-l01-p007-current-js-v5.json",
+    "freezeManifestBytes": 68709,
+    "freezeManifestSha256": "83d7d13f800e749d4631064367e5633fc3e50587d1e1aebe4248b6f6942942f1",
+    "entries": [
+      {
+        "key": "shared-nms002-l01-p007",
+        "module": "./modules/g678-nms-l01-p007",
+        "maturity": "private-current-js",
+        "complexityLane": "behavior-heavy",
+        "artifacts": {
+          "module": {
+            "path": "packages/demos/src/modules/g678-nms-l01-p007.tsx",
+            "bytes": 136938,
+            "sha256": "d6117dc494c1f7f40940b6bb952229b07832ef71106cb32ea04d34ff24c9ba09"
+          },
+          "timeline": {
+            "path": "packages/demos/src/timelines/shared-nms002-l01-p007.ts",
+            "bytes": 15033,
+            "sha256": "b68e8a36f73c5437b4b3c9eb149c554f87e10dc54805c43caca6fee040f2854d"
+          },
+          "runtime": {
+            "path": "work/g678-shared-page-factory/g678-nms-l01-p007-current-js-v1/members/shared-nms002-l01-p007/canvas-renderer.js",
+            "bytes": 1722845,
+            "sha256": "54200e30aa6a1887c34b9f29c3d995bb12670e6a220932dbfd8b72ef5674e0ef"
+          }
+        }
+      }
+    ]
+  },
+  "sourceAuditManifest": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l01-p007/migration.json",
+    "bytes": 21119,
+    "sha256": "fe5905cc18cf94ada20e947db71dd8d12090611daca522a7ef6460a68a4e8590"
+  },
+  "sourceAuditDisposition": "The source audit manifest is immutable as an input of the source candidate; its target-only implementation note is dated preparation. This receipt records the later actual registration without rewriting that source audit.",
+  "actualTestFile": "packages/demos/tests/nms-l01-p007-practice-v1.test.ts",
+  "currentBrowserEvidence": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p007-my-lesson-v7/receipt.json",
+    "bytes": 130743,
+    "sha256": "8b3e12a03733002334531ac3a0615bcea54f7185d3d6412f6a492203e74ada91"
+  },
+  "canonicalStrictDomainStatus": "not-adopted-prototype-runtime-is-missing",
+  "canonicalStrictDomainProbe": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/shared-nms002-l01-p007-canonical-domain-check.log",
+    "bytes": 1448,
+    "sha256": "17bf2df3ae405d5936144ae641cef9c62bb3f62c26ceeb8effc08bce88df9190"
+  },
+  "fullFrameSourceDrawing": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p007-candidate-drawing-v1/receipt.json",
+    "bytes": 84917,
+    "sha256": "37a3d1159c37f4e065eb409aa6d1fce4eec69982b8a7c3b96e21d05e2ab1c234"
+  },
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false,
+  "humanAccepted": false,
+  "ownerAccepted": false,
+  "strictComplete": false,
+  "published": false
+}

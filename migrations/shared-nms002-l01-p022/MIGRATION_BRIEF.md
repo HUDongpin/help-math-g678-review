@@ -1,0 +1,11 @@
+# shared-nms002-l01-p022
+
+NMS002 Lesson1 active page22/47, Instruction11. Source1232694bytes SHA256 `0c634b34f16b55f42d954dec64f1aa353b22053d93ab6137cadf48e7cc3bb5e2`; no FLA. Root800x600,12fps,10frames; root6 enters main342/523 at412.4,280.3.
+
+Six source rows2-8,15-6,5+2,8-4,0-3,3+5 admit results-6,9,7,4,-3,8. All16 cards from-6 to9 are source-bound; Scr1..6 are the correct values, Scr7..16 are unconditional distractors. Main480 stops. Correct drop matches target suffix, reveals alpha100, hides source card, increments once and disables input while Coach341 runs2-to20. At sixth correct,341/20 starts Correct337 at2;337/25 clears quizSection and resumes main. Main481 removes cards/feedback; source host stops at523.
+
+Wrong resets source origin, disables inputs and starts Pop333 at2; source330 Close hides the parent popup and enables actual16 cards without a stop/goto, so remaining wrong audio persists. Subsequent correct may overlap; repeated wrong restarts it. UP/OVER/DOWN source Button330 records must replace the UP-only FFDec drawing before comparison. Missing NMHBtn and txtFeed are not invented. Five long feedback sprites129/169/210/256/320 plus random coach339 have no local caller; their latent >=5 code is not this page's completion path. All35 frame domains,79 scripts,13 dormant morphs and9 complete MP3s remain bound.
+
+Main native945792samples starts atframe9/latency1673, parks atsample867135.5 during480, then finishes at43.483854875s before held finalframe523=43.5s. Correct341 duration18/12, silent337 reveal23/12, outro43/12 are one pre-scheduled native chain. Wrong333 has independent finite source audio; source seek/listening remains unaccepted.
+
+Four source glossary keysExpression,Solution,Integers,Column have exact bilingual definitions and masked source hotspots. Source English art/audio remain English on Spanish host. Native outlines supply all source text. Verify all523 mainframes, all720 successful placement orders, every96 card/target pair and16 outside drops, cancel/duplicate/locked behavior, raw Button states, wrong-tail overlap and reset, pause/Replay/inspection/navigation, responsive My Lesson and production isolation. Original-runtime/fidelity/audio/human/Owner/strict/release/publication remain separate pending gates.
