@@ -1,0 +1,33 @@
+{
+  "schemaVersion":1,
+  "scope":"Literal source questions and choices only; no answer key or solved-question explanations.",
+  "questions":[
+    {"number":1,"prompt":"Translate the sentence into a mathematical sentence. You must be at least 16 years old to go to a movie.","choices":["y < 16","y ≤ 16","y > 16","y ≥ 16"]},
+    {"number":2,"prompt":"Translate the sentence into a mathematical sentence. You must be less than 5 years old to get a free ticket to the game.","choices":["y < 5","y ≤ 5","y = 5","y ≥ 5"]},
+    {"number":3,"prompt":"Translate the sentence into a mathematical sentence. You must be 65 years old or older to get a discount.","choices":["y < 65","y ≤ 65","y = 65","y ≥ 65"]},
+    {"number":4,"prompt":"Translate the sentence into a mathematical sentence. The solution set is all the numbers greater than zero and less than 10.","choices":["n > 0","n < 10","0 < n < 10","0 ≤ n ≤ 10"]},
+    {"number":5,"prompt":"Translate the sentence into a mathematical sentence. The solution set is all the numbers less than zero and greater than −5.","choices":["n < 0","n < −5","−5 < n < 0","−5 ≤ n ≤ 0"]},
+    {"number":6,"prompt":"Translate the sentence into a mathematical sentence. The solution set is all the numbers less than or equal to 4 and greater than −2.","choices":["n < 4","n < −2","−2 < n < 4","−2 < n ≤ 4"]},
+    {"number":7,"prompt":"Select the graph that represents the inequality: 3x + 5x − 4 > 20","choices":[{"kind":"ray","endpoint":4,"closed":false,"direction":"right"},{"kind":"ray","endpoint":3,"closed":false,"direction":"right"},{"kind":"ray","endpoint":2,"closed":false,"direction":"right"},{"kind":"ray","endpoint":0,"closed":false,"direction":"right"}]},
+    {"number":8,"prompt":"Select the graph that represents the inequality: 10y + 5y − 40 ≥ 20","choices":[{"kind":"ray","endpoint":4,"closed":true,"direction":"right"},{"kind":"ray","endpoint":3,"closed":true,"direction":"right"},{"kind":"ray","endpoint":2,"closed":true,"direction":"right"},{"kind":"ray","endpoint":0,"closed":true,"direction":"right"}]},
+    {"number":9,"prompt":"Select the graph that represents the inequality: 10y + 5y − 40 ≤ 20","choices":[{"kind":"ray","endpoint":4,"closed":false,"direction":"right"},{"kind":"ray","endpoint":4,"closed":true,"direction":"right"},{"kind":"ray","endpoint":2,"closed":false,"direction":"left"},{"kind":"ray","endpoint":4,"closed":true,"direction":"left"}]},
+    {"number":10,"prompt":"Which inequality represents the graph shown?","promptGraph":{"kind":"segment","left":-8,"right":5,"leftClosed":false,"rightClosed":false},"choices":["−8 < x ≤ 5","−8 < x < 5","−8 < x ≥ 5","−8 > x ≤ 5"]},
+    {"number":11,"prompt":"Which inequality represents the graph shown?","promptGraph":{"kind":"segment","left":-7,"right":0,"leftClosed":true,"rightClosed":false},"choices":["−7 < x ≤ 0","−7 < x < 0","−7 < x ≥ 0","−7 ≤ x < 0"]},
+    {"number":12,"prompt":"Which inequality represents the graph shown?","promptGraph":{"kind":"segment","left":0,"right":6,"leftClosed":true,"rightClosed":false},"choices":["0 ≤ x < 6","0 < x < 6","0 < x ≥ 6","0 ≤ x ≤ 6"]},
+    {"number":13,"prompt":"Which inequality represents the graph shown?","promptGraph":{"kind":"segment","left":-8,"right":8,"leftClosed":false,"rightClosed":false},"choices":["−8 < x ≤ 8","x > −8","|x| < 8","|x| > 8"]},
+    {"number":14,"prompt":"Which inequality represents the graph shown?","promptGraph":{"kind":"segment","left":-2,"right":2,"leftClosed":false,"rightClosed":false},"choices":["−2 < x ≤ 2","x > −2","|x| ≤ 2","|x| < 2"]},
+    {"number":15,"prompt":"Which inequality represents the graph shown?","promptGraph":{"kind":"segment","left":-5,"right":5,"leftClosed":false,"rightClosed":false},"choices":["−5 < x ≤ 5","−5 < x < 5","|x| ≥ 5","|x| > 5"]},
+    {"number":16,"prompt":"Simplify the inequality 5x − 10x + 5 ≤ −20","choices":["x ≤ −5","x ≤ −4","x ≥ 3","x ≥ 5"]},
+    {"number":17,"prompt":"Simplify the inequality −6x + 3x + 9 ≤ −27","choices":["x ≤ −12","x ≤ −6","x ≥ 12","x ≥ 27"]},
+    {"number":18,"prompt":"Simplify the inequality −3x + 2x + 5 ≥ 10","choices":["x ≤ −15","x ≤ −5","x ≥ 5","x ≥ 15"]},
+    {"number":19,"prompt":"Which inequality represents this sentence? A car can travel more than 500 miles on a tank of gas.","choices":["miles < 500","miles ≤ 500","miles > 500","miles ≥ 500"]},
+    {"number":20,"prompt":"Which inequality represents this sentence? A car can travel less than 800 miles on a tank of gas.","choices":["miles < 800","miles ≤ 800","miles > 800","miles ≥ 800"]},
+    {"number":21,"prompt":"Which inequality represents this sentence? A car can travel at least 600 miles on a tank of gas.","choices":["miles < 600","miles ≤ 600","miles > 600","miles ≥ 600"]},
+    {"number":22,"prompt":"With no possibility of the painting decreasing in value the painting can increase by as much as 10% of its current value from one month to the next. In January, a painting is valued at $600.00. Which of the inequalities below represents the painting’s possible values (v) in February?","choices":["600 ≥ v ≥ 660","600 ≤ v ≥ 660","600 ≤ v ≤ 660","660 ≥ v ≥ 660"]},
+    {"number":23,"prompt":"With no possibility of the painting decreasing in value the painting can increase by as much as 20% of its current value from one year to the next. In 2006, a painting is valued at $1,000.00. Which of the inequalities below represents the painting’s possible values (v) in 2007?","choices":["1000 ≥ v ≥ 1200","1000 ≤ v ≤ 1200","1200 ≤ v ≤ 1200","1200 ≥ v ≥ 1200"]},
+    {"number":24,"prompt":"With no possibility of the painting decreasing in value the painting can increase by as much as 15% of its current value from one year to the next. In 2007, a painting is valued at $1,000.00. Which of the inequalities below represents the painting’s possible values (v) in 2008?","choices":["1000 ≤ v ≤ 1150","1000 ≥ v ≤ 1150","1150 ≤ v ≤ 1000","1000 ≥ v ≥ 1150"]}
+  ],
+  "sourceTranscriptionNotes":["Drawn bars in source vectors complete ≤/≥ signs omitted by text export, including Q8,Q9,Q16,Q17,Q18 prompts.","Repeated source glyph placements complete multi-digit values; Q22D and Q23C/D retain their authored distractor values without correction.","Graph descriptions report labeled source endpoints and open/filled markers plus segment/ray direction; they do not solve the question.","Q17 duplicated extracted Simplify token is not duplicated in the visible prompt."],
+  "ambiguities":[],
+  "acceptance":false
+}
