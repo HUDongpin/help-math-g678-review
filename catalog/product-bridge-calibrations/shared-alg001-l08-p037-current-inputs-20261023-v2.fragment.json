@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "private-current-js-calibration-fragment-v1",
+  "freeze": {
+    "path": "catalog/product-bridge-calibrations/shared-alg001-l08-p037-current-inputs-20261023-v2.json",
+    "bytes": 9692705,
+    "sha256": "e62466180362ffff286d61de89f059e2ce28ca751ebc6c25c3b4ac20bab40a0b"
+  },
+  "calibration": {
+    "calibrationId": "g678-alg-l08-p037-current-js-20261007-v1",
+    "deploymentScope": "local-only",
+    "freezeManifest": "catalog/product-bridge-calibrations/shared-alg001-l08-p037-current-inputs-20261023-v2.json",
+    "freezeManifestBytes": 9692705,
+    "freezeManifestSha256": "e62466180362ffff286d61de89f059e2ce28ca751ebc6c25c3b4ac20bab40a0b",
+    "entries": [
+      {
+        "key": "shared-alg001-l08-p037",
+        "module": "./modules/shared-alg001-l08-p037",
+        "maturity": "private-current-js",
+        "complexityLane": "behavior-heavy",
+        "artifacts": {
+          "kind": "maintained-dom-module-v1",
+          "module": {
+            "path": "packages/demos/src/modules/shared-alg001-l08-p037.tsx",
+            "bytes": 1167,
+            "sha256": "7d35b972a8411711418c396a84d2e96e9580ad1441ec1899672682c7bdf8f50e"
+          },
+          "timeline": {
+            "path": "packages/demos/src/timelines/shared-alg001-l08-p037.ts",
+            "bytes": 173,
+            "sha256": "e4c5b90ec4ee3de1c4f498770465523eb7897b54e4ed79a31fcd09432f7dab5e"
+          },
+          "memberManifest": {
+            "path": "work/g678-shared-page-factory/alg-l08-p037-maintained-terminal-quiz-20261007-final-v2/members/shared-alg001-l08-p037/member-manifest.json",
+            "bytes": 4071,
+            "sha256": "08168a207f0d77660709d8d57fe9d227fc0ea0a224a94e3f0b1faabc748e4fb2"
+          },
+          "sourceRun": {
+            "path": "work/g678-shared-page-factory/alg-l08-p037-maintained-terminal-quiz-20261007-final-v2/run-manifest.json",
+            "bytes": 3606,
+            "sha256": "50d9369508bac43008bd92beffa0bfeb0c19ead04ca1d40882e078fbdb8d28be"
+          }
+        }
+      }
+    ]
+  }
+}

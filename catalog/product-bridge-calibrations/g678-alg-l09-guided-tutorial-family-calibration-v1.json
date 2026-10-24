@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-alg-l09-guided-tutorial-family-calibration-v1",
+  "calibrationId": "g678-alg-l09-guided-tutorial-family-calibration-v1",
+  "adapterFamily": "advanced-manual-alg-l09-guided-tutorial-source-static",
+  "status": "exact-3-guided-tutorial-product-host-calibrated",
+  "inputs": {
+    "audit": {
+      "path": "catalog/g678-alg-l09-residual-routing-audit-v1.json",
+      "bytes": 25146,
+      "sha256": "adacdeaa88800125b2a4a7b6d053345f419cdb966b55807b1864ce524c308183"
+    },
+    "generator": {
+      "path": "scripts/build-g678-alg-l09-guided-tutorial-current-js.mjs",
+      "bytes": 68548,
+      "sha256": "0dd1ec401773d547a2d98a22b771f04ca4fb4ebb60c017cdb1dd4b10db04d6f3"
+    },
+    "generatorRun": {
+      "path": "work/g678-shared-page-factory/g678-alg-l09-guided-tutorial-current-js-3-v1/run-manifest.json",
+      "bytes": 32508,
+      "sha256": "b7d50c87f79c39312a821472a0e381bea30e8e37fa7a58aeb0b8f5e7a05b10ca"
+    },
+    "generatorFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-alg-l09-guided-tutorial-current-js-3-v1.fragment.json",
+      "bytes": 6598,
+      "sha256": "19981dfcd5522d672d2df077e273e2a75ba19ea64b65b02b30d6de42117a5fcf"
+    },
+    "registrationFinalizer": {
+      "path": "scripts/finalize-g678-alg-l09-guided-tutorial-registration.mjs",
+      "bytes": 24990,
+      "sha256": "d10ed524bb3b04b4e43f4a143c4b5f4ba32d96dd8c73db4e985a6d4d0193bd0c"
+    },
+    "registrationFreeze": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-339-page-registration-v1.json",
+      "bytes": 1928485,
+      "sha256": "18d3893d3a1858f742362d3e06941abf105fd001f0c6a070dbb9e511c28bf1c0"
+    },
+    "registrationFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-339-page-registration-v1.fragment.json",
+      "bytes": 226022,
+      "sha256": "d75d049a274693dfbdb85e13f6d19d19bb3a401649aca1da30e2f87df506332d"
+    },
+    "browser": {
+      "path": "output/playwright/g678-current-js-339-v1/evidence.json",
+      "bytes": 373884,
+      "sha256": "85c8b9cda2c5ecc236a633e5f4d21cd4d8ab544bf1e700e01b89b508fdac20b8"
+    },
+    "browserVerifier": {
+      "path": "scripts/qa-g678-current-js-339-browser.mjs",
+      "bytes": 136336,
+      "sha256": "a788f4996cb5a6e5bd6a671d29e71fb1187b7841282bdc3b3589826681345819"
+    },
+    "sourceStaticHost": {
+      "path": "packages/demos/src/source-static-canvas-candidate.tsx",
+      "bytes": 56583,
+      "sha256": "68e4ba0254de7c48dc048146b32c3beb15f287efa9dbd59c23b698720cd5eb72"
+    },
+    "guidedHost": {
+      "path": "packages/demos/src/private-source-static-alg-l09-guided-tutorial-candidate.tsx",
+      "bytes": 14721,
+      "sha256": "7485c04a4bcb57ad772007e76377ada35f9fdd84339794f5f93596015756a5cc"
+    },
+    "guidedBehavior": {
+      "path": "packages/demos/src/g678-alg-l09-guided-tutorial.ts",
+      "bytes": 9013,
+      "sha256": "d7a59a5173c7427d64735097d2bcbc96cf38d4f067c0034fa629c6d8a609ff13"
+    },
+    "animationContract": {
+      "path": "packages/demos/src/contract.ts",
+      "bytes": 16026,
+      "sha256": "de02dcd9c9f71d3c4557b744ad4ef355bd8cd5b07751ee5a5c50c3e6f7f68e96"
+    },
+    "productBridge": {
+      "path": "apps/web/lib/g678-calibration-product-bridge.server.ts",
+      "bytes": 132044,
+      "sha256": "294dc74dff7b48340355d0ed0f9d375d7cf2fb2b46c50397debd5ad83f90bfb9"
+    },
+    "builder": {
+      "path": "scripts/build-g678-alg-l09-guided-tutorial-family-calibration.mjs",
+      "bytes": 18366,
+      "sha256": "9f3257aee7fd75daaa1257b43b70a4c415267c034e65c5d81ab70137dded3d11"
+    }
+  },
+  "auditedPlacementCount": 3,
+  "authorizedPlacementIds": [
+    "shared-alg001-l09-p037",
+    "shared-alg001-l09-p038",
+    "shared-alg001-l09-p039"
+  ],
+  "blockedPlacementCount": 0,
+  "sourceStopCount": 18,
+  "interactiveHostStopCount": 15,
+  "choiceCount": 10,
+  "browserSamples": [
+    {
+      "animationId": "shared-alg001-l09-p037",
+      "frameDomain": "sprite-307",
+      "frameCount": 942,
+      "runtimeSha256": "8c6c9fdf53b7fbc17bc5a28ce5873c943cabe1defdec4a0c88a2357698db6ffc",
+      "sourceStopFrames": [
+        396,
+        564,
+        712,
+        869,
+        925,
+        942
+      ],
+      "sourceResumeFrame": 926,
+      "glossaryTermCount": 15,
+      "choiceCount": 4,
+      "needMoreHelpBranchCount": 2,
+      "maximumWrongAttempts": 2
+    },
+    {
+      "animationId": "shared-alg001-l09-p038",
+      "frameDomain": "sprite-329",
+      "frameCount": 934,
+      "runtimeSha256": "883c40b7c74db8f433e7184b03c2c69bd6e3a18b21ec6eeb260312cc6a6e63ab",
+      "sourceStopFrames": [
+        391,
+        560,
+        708,
+        865,
+        917,
+        934
+      ],
+      "sourceResumeFrame": 918,
+      "glossaryTermCount": 17,
+      "choiceCount": 4,
+      "needMoreHelpBranchCount": 2,
+      "maximumWrongAttempts": 2
+    },
+    {
+      "animationId": "shared-alg001-l09-p039",
+      "frameDomain": "sprite-342",
+      "frameCount": 1111,
+      "runtimeSha256": "db8922721b43bcdaf0a50c2b3ed5d1ff9a58929f38c1dd17baab2151f1c9bbf2",
+      "sourceStopFrames": [
+        534,
+        704,
+        852,
+        1008,
+        1094,
+        1111
+      ],
+      "sourceResumeFrame": 1095,
+      "glossaryTermCount": 18,
+      "choiceCount": 2,
+      "needMoreHelpBranchCount": 2,
+      "maximumWrongAttempts": 2
+    }
+  ],
+  "productHostCalibration": {
+    "canvasReadyAndProgressing": true,
+    "sourceSpecificStopSequencesBound": true,
+    "needMoreHelpBranchesBound": true,
+    "finalChoiceSetsBound": true,
+    "twoWrongAttemptsAndFeedbackResumePassed": true,
+    "sourceFrameBoundGlossaryControls": true,
+    "sourceCharacterIdentityBound": true,
+    "replayResetsInteractionAndReplaysPreludeStops": true,
+    "localAssetIntegrityAndCrossOriginIsolation": true,
+    "allLessonsPartialRegistrationTruthful": true,
+    "familyCurrentJsGuidedTutorialCalibrationPassed": true,
+    "overallG678ProductCalibrationPassed": false
+  },
+  "authorization": {
+    "authorized": true,
+    "scope": "exact-3-alg-l09-guided-tutorial-placements-only",
+    "permitsOtherAlgL09Placements": false,
+    "permitsCanonicalSourcePromotion": false,
+    "permitsAudioAcceptance": false,
+    "permitsOriginalRuntimeOrVisualFidelityClaim": false,
+    "permitsWholeLessonEngineeringPreviewClaim": false,
+    "permitsReleaseOrPublication": false
+  },
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "behaviorAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseEligible": false,
+    "released": false,
+    "published": false
+  },
+  "limitations": [
+    "This authority calibrates the exact three ALG L9 guided tutorial pages through the maintained Current-JS product host.",
+    "Four prelude stops, two source Need More Help branches, the source-specific final choice set, two-attempt feedback, glossary intents, and Replay reset were exercised in the browser.",
+    "Choice-feedback and narration audio, authoritative original runtime, fidelity, human, Owner, strict-completion, release, and publication remain unaccepted.",
+    "All 44 lessons remain partial; this authority creates no N/N whole-lesson engineering preview or learner route."
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-alg-l09-game-assessment-family-calibration-v1",
+  "calibrationId": "g678-alg-l09-game-assessment-family-calibration-v1",
+  "status": "exact-3-game-assessment-product-host-calibrated",
+  "adapterFamilies": [
+    "advanced-manual-alg-l09-game-controller-source-static",
+    "advanced-manual-alg-l09-matching-game-source-static",
+    "advanced-manual-alg-l09-final-assessment-source-static"
+  ],
+  "inputs": {
+    "audit": {
+      "path": "catalog/g678-alg-l09-game-assessment-family-audit-v1.json",
+      "bytes": 102129,
+      "sha256": "5e91d8ea302d3685f690d172e5185527dfb08af07f5a6a7df80e40a778fcfc6f"
+    },
+    "generator": {
+      "path": "scripts/build-g678-alg-l09-game-assessment-current-js.mjs",
+      "bytes": 65596,
+      "sha256": "9da52f4539b53a3f28a086a00d3fa976e0f315ba411106367db4a3cc97dc3942"
+    },
+    "generatorRun": {
+      "path": "work/g678-shared-page-factory/g678-alg-l09-game-assessment-current-js-3-v1/run-manifest.json",
+      "bytes": 31901,
+      "sha256": "17c463bac74e49669e544844fd8c85f1ccf897dbdeb2c0a95cf7cbf040db6ad4"
+    },
+    "generatorFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-alg-l09-game-assessment-current-js-3-v1.fragment.json",
+      "bytes": 6400,
+      "sha256": "9a4567c8e69b9f5b2dcbe919c31eb7696c1159d68a476ab58590f31d90eefb5e"
+    },
+    "registrationFinalizer": {
+      "path": "scripts/finalize-g678-alg-l09-game-assessment-registration.mjs",
+      "bytes": 18703,
+      "sha256": "57a9f59d3fab60d91c076dd0156d951285141ceb4b8207bbcfe282eda723b986"
+    },
+    "registrationFreeze": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-342-page-registration-v1.json",
+      "bytes": 2036453,
+      "sha256": "ae4b7620ca9812423b966ae3fb0a160248e6eaa6f03855ae42982a1bf4d1939a"
+    },
+    "registrationFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-342-page-registration-v1.fragment.json",
+      "bytes": 229444,
+      "sha256": "44f33c22249aef338a50ff805cedad1944b1c8f774b684161c0587cbb0fa4028"
+    },
+    "browser": {
+      "path": "output/playwright/g678-alg-l09-game-assessment-342-v1/evidence.json",
+      "bytes": 24819,
+      "sha256": "1ddefdc8c15c35f2b2eea2d9688154af78ef0e283b6ead5bec3bb9810fe3b583"
+    },
+    "browserVerifier": {
+      "path": "scripts/qa-g678-alg-l09-game-assessment-browser.mjs",
+      "bytes": 37913,
+      "sha256": "87be857da5f12a307fb5888dfed0ccbb630a25f2560d909363325f3399c332d0"
+    },
+    "sourceStaticHost": {
+      "path": "packages/demos/src/source-static-canvas-candidate.tsx",
+      "bytes": 56583,
+      "sha256": "68e4ba0254de7c48dc048146b32c3beb15f287efa9dbd59c23b698720cd5eb72"
+    },
+    "gameAssessmentHost": {
+      "path": "packages/demos/src/private-source-static-alg-l09-game-assessment-candidate.tsx",
+      "bytes": 23659,
+      "sha256": "92ab2bb9c4bbd12ae5a27ae63eb44c227fbbec63ffbe8ebb7a708414a2f5fb8b"
+    },
+    "gameAssessmentBehavior": {
+      "path": "packages/demos/src/g678-alg-l09-game-assessment.ts",
+      "bytes": 10636,
+      "sha256": "bb57078f0cad36ca36e9c76d548088f0321665966c401447ae7bcf226f6bc440"
+    },
+    "animationContract": {
+      "path": "packages/demos/src/contract.ts",
+      "bytes": 16328,
+      "sha256": "e1cbfd477647d3bd6680ce7a79d9ab0f14f258a0bd061ab74c8b94b75d74c254"
+    },
+    "animationRuntime": {
+      "path": "apps/web/components/animation-runtime.tsx",
+      "bytes": 54715,
+      "sha256": "091b9dd08c8ef0e103fe12b72bb2f255c271bd826fb914c70d3d1cc49eaf099a"
+    },
+    "descriptorPlayer": {
+      "path": "apps/web/components/descriptor-driven-whole-lesson-player.tsx",
+      "bytes": 47564,
+      "sha256": "531a6af5504f7b7dbdf9ced742a730ad270308c7595efd68a66710cc31ab2b06"
+    },
+    "productBridge": {
+      "path": "apps/web/lib/g678-calibration-product-bridge.server.ts",
+      "bytes": 146389,
+      "sha256": "dcde1345c14742265165c683b4990fe0a4955d125d0ddd4df214f80caed464df"
+    },
+    "builder": {
+      "path": "scripts/build-g678-alg-l09-game-assessment-family-calibration.mjs",
+      "bytes": 16740,
+      "sha256": "aad77349bb99f413dd15059a0d8937aba7b63e954e2bb131379d7ada03358978"
+    }
+  },
+  "auditedPlacementCount": 3,
+  "authorizedPlacementIds": [
+    "shared-alg001-l09-p030",
+    "shared-alg001-l09-p031",
+    "shared-alg001-l09-p041"
+  ],
+  "blockedPlacementCount": 0,
+  "sourceLevelCount": 2,
+  "matchingPairCountPerLevel": 6,
+  "answerReleaseCount": 24,
+  "correctScoreDelta": 10,
+  "wrongScoreDelta": -2,
+  "finalAssessmentQuestionPoolSize": 24,
+  "finalAssessmentPresentedQuestionCount": 10,
+  "finalAssessmentCorrectResponseCount": 9,
+  "finalAssessmentWrongResponseCount": 1,
+  "finalAssessmentHostScore": {
+    "attempted": 10,
+    "correct": 9,
+    "pointsAwarded": 9,
+    "pointsPossible": 10
+  },
+  "focusedBrowserScreenshotCount": 6,
+  "level1VisibleCardCount": 12,
+  "level2VisibleCardCount": 12,
+  "observedRequestCount": 31,
+  "productHostCalibration": {
+    "typedCrossPageNavigationPassed": true,
+    "levelHandoffInherited": true,
+    "controllerReplayResetPassed": true,
+    "matchingGameTwoLevelsAndScoringPassed": true,
+    "matchingReplayResetPassed": true,
+    "level1ScoringAndResetPassed": true,
+    "levelSwitchHeldDuringFeedback": true,
+    "sourceLevel1AndLevel2LabelsVisible": true,
+    "finalAssessmentRandomTenScoringAndReviewPassed": true,
+    "exactlyOneTwoChoiceWrongReviewPassed": true,
+    "sourceQuestionContentVisible": true,
+    "typedFinalAssessmentHostScorePassed": true,
+    "finalAssessmentReplayResetPassed": true,
+    "finalAssessmentHostScoreReplayResetPassed": true,
+    "allObservedRequestsLoopback": true,
+    "allObservedRequestsExplicitlyAllowed": true,
+    "allLegacyNetworkOperationsBlocked": true,
+    "localAssetIntegrityAndCrossOriginIsolation": true,
+    "allLessonsOneCompleteRegistrationTruthful": true,
+    "familyCurrentJsGameAssessmentCalibrationPassed": true,
+    "overallG678ProductCalibrationPassed": false
+  },
+  "authorization": {
+    "authorized": true,
+    "scope": "exact-3-alg-l09-game-assessment-placements-only",
+    "permitsOtherG678Placements": false,
+    "permitsAudioAcceptance": false,
+    "permitsOriginalRuntimeOrVisualFidelityClaim": false,
+    "permitsReleaseOrPublication": false
+  },
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "behaviorAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseEligible": false,
+    "released": false,
+    "published": false
+  },
+  "limitations": [
+    "This authority calibrates only ALG L9 GS02, GS03, and FQ02 through the maintained modern My Lesson host.",
+    "The source game scoring and ten-of-twenty-four assessment behavior are maintained; original-runtime parity remains independently unaccepted.",
+    "Game/assessment audio, fidelity, human, Owner, strict, release, and publication gates remain false."
+  ]
+}

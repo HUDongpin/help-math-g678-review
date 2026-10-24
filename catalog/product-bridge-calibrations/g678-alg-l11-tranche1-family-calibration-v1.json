@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-alg-l11-tranche1-family-calibration-v1",
+  "calibrationId": "g678-alg-l11-tranche1-family-calibration-v1",
+  "status": "exact-12-alg-l11-intro-terminal-simple-glossary-product-host-calibrated",
+  "adapterFamilies": [
+    "alg-l11-intro-terminal-tranche1-source-static",
+    "alg-l11-simple-glossary-tranche1-source-static"
+  ],
+  "inputs": {
+    "residualAudit": {
+      "path": "catalog/g678-alg-l11-residual-routing-audit-v1.json",
+      "bytes": 654262,
+      "sha256": "3d9f30ca17554b9c3cd0e8c0f51273affad3584eb4795a59359ee68fb783891c"
+    },
+    "introAudit": {
+      "path": "catalog/g678-alg-l11-intro-terminal-tranche1-v1.json",
+      "bytes": 68577,
+      "sha256": "2870f14b1faf0da15a4051c8bb3ba1ad1c3b5d1e637efe9c4ce5de78b6034399"
+    },
+    "introAuditRun": {
+      "path": "work/g678-shared-page-factory/g678-alg-l11-intro-terminal-tranche1-v1/run-manifest.json",
+      "bytes": 68951,
+      "sha256": "05220a011f3fec29e50ca274626686a3af957e538754ad97cf213843e711d971"
+    },
+    "introAuditVerifier": {
+      "path": "scripts/audit-g678-alg-l11-intro-terminal-tranche1.mjs",
+      "bytes": 51972,
+      "sha256": "c0e7091d33f83a75bded3e92a006a7293dcd141b262b63d8ebdcc6c6e46f2c3d"
+    },
+    "introGenerator": {
+      "path": "scripts/build-g678-alg-l11-intro-terminal-tranche1-current-js.mjs",
+      "bytes": 50741,
+      "sha256": "ad704879f2b74535d7266ad35bf74af28411aa52d88017d858fd9a004cf6f466"
+    },
+    "introGeneratorRun": {
+      "path": "work/g678-shared-page-factory/g678-alg-l11-intro-terminal-tranche1-current-js-4-v1/run-manifest.json",
+      "bytes": 34954,
+      "sha256": "72c21561f2b38f40d3d3b5c0b06bc0e6cc4666b1708ec3af5d892433c7eab2bb"
+    },
+    "introGeneratedFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-alg-l11-intro-terminal-tranche1-current-js-4-v1.fragment.json",
+      "bytes": 7999,
+      "sha256": "4ae9fb907405355b0d1e9439a306969b4ddedca7fb9f8ab683c5f55830d005e5"
+    },
+    "simpleAudit": {
+      "path": "catalog/g678-alg-l11-simple-glossary-tranche1-audit-v1.json",
+      "bytes": 173916,
+      "sha256": "1f3eef83660ec8cd554a8954223a3a6f06eda1729c4c14da1541dfc081f9ec9d"
+    },
+    "simpleAuditRun": {
+      "path": "work/g678-shared-page-factory/g678-alg-l11-simple-glossary-tranche1-audit-v1/run-manifest.json",
+      "bytes": 173464,
+      "sha256": "d18794073ab9c219cd2911963e444b8b2b9110c40ef5ed96554cd0de94ad3a46"
+    },
+    "simpleAuditVerifier": {
+      "path": "scripts/audit-g678-alg-l11-simple-glossary-tranche1.mjs",
+      "bytes": 41545,
+      "sha256": "5c7349d60c16453704dc488e2a0c9e8c3e0da8d5bde7df2037bb02a973a92dd1"
+    },
+    "simpleGenerator": {
+      "path": "scripts/build-g678-alg-l11-simple-glossary-tranche1-current-js.mjs",
+      "bytes": 46530,
+      "sha256": "53897767b5323dad46ad14898fbb28a291a2316f1e1ee52b42c292e6501b7e15"
+    },
+    "simpleGeneratorRun": {
+      "path": "work/g678-shared-page-factory/g678-alg-l11-simple-glossary-tranche1-current-js-8-v1/run-manifest.json",
+      "bytes": 48195,
+      "sha256": "08759a0b4d1fc9998e2cde25230a17aa4a7086bd0c7efe9193ba466c643300d6"
+    },
+    "simpleGeneratedFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-alg-l11-simple-glossary-tranche1-current-js-8-v1.fragment.json",
+      "bytes": 14371,
+      "sha256": "849901faf67a0d4ff6018761f0da799f60ccc72954ce50d3665bec669879b10f"
+    },
+    "registrationFinalizer": {
+      "path": "scripts/finalize-g678-alg-l11-tranche1-registration.mjs",
+      "bytes": 28018,
+      "sha256": "dd9e9658e7a78adb64364586546362240e1041413010c51004e74232369131d2"
+    },
+    "registrationFreeze": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-354-page-registration-v1.json",
+      "bytes": 2150663,
+      "sha256": "f17969295b87889c2e150ab259ad153f6fb8a0a3a890dd94582b3cc06e70ad3b"
+    },
+    "registrationFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-354-page-registration-v1.fragment.json",
+      "bytes": 243488,
+      "sha256": "ee988a349187688c664323ae0886f590dfe42f71ad7e30744050343c7013b76f"
+    },
+    "focusedBrowser": {
+      "path": "output/playwright/g678-alg-l11-tranche1-354-v1/evidence.json",
+      "bytes": 960315,
+      "sha256": "9be0fc2b2e5ce9e03e1eeb6ede42b6a8f6cc42e22d35eb998dc095b63391d6ec"
+    },
+    "focusedBrowserVerifier": {
+      "path": "scripts/qa-g678-alg-l11-tranche1-browser.mjs",
+      "bytes": 120662,
+      "sha256": "d04012065d90762b88a8069c5fc039d578849849244b3f9edec1f31ee46637ab"
+    },
+    "aggregateBrowser": {
+      "path": "output/playwright/g678-current-js-354-v1/evidence.json",
+      "bytes": 86640,
+      "sha256": "6e8a3beab7433a662d38b263e43749a1ee146a54558b47d698b742521cd7571e"
+    },
+    "aggregateBrowserBuilder": {
+      "path": "scripts/build-g678-current-js-354-browser-aggregate.mjs",
+      "bytes": 16457,
+      "sha256": "e83457950abaab312e318b90d78b5c3afe07971509db7c805705376fe96c1946"
+    },
+    "successorCompatibilityAudit": {
+      "path": "catalog/g678-final342-current-bridge-successor-compatibility-v1.json",
+      "bytes": 211039,
+      "sha256": "fbe4fb77634a6fa84fbc7f6a2d486c78e20a0f5641332267f436dd78df81aeb8"
+    },
+    "successorCompatibilityVerifier": {
+      "path": "scripts/audit-g678-final342-current-bridge-successor-compatibility.mjs",
+      "bytes": 25608,
+      "sha256": "55fd9cbb28de3b97510a0f163bc983f2b3171dfc70830f0ec6dfea382c4508ff"
+    },
+    "introHost": {
+      "path": "packages/demos/src/private-source-static-alg-l11-intro-terminal-candidate.tsx",
+      "bytes": 11812,
+      "sha256": "c5f7204dc1cd26038af57b12367d4e806000f4e26de5d69a8efcf04c0c80b9bd"
+    },
+    "simpleHost": {
+      "path": "packages/demos/src/private-source-static-alg-l11-simple-glossary-candidate.tsx",
+      "bytes": 9110,
+      "sha256": "150eeacab379eff44ab1dda598e2b7ffcb862bf6e44ce5d7a852746b20013beb"
+    },
+    "lessonHostContract": {
+      "path": "packages/demos/src/lesson-host-contract.ts",
+      "bytes": 17528,
+      "sha256": "183fc9ec36c99797147ba1fb8a5132cde60254b40279ca5fc76302806098200b"
+    },
+    "animationRuntime": {
+      "path": "apps/web/components/animation-runtime.tsx",
+      "bytes": 54715,
+      "sha256": "091b9dd08c8ef0e103fe12b72bb2f255c271bd826fb914c70d3d1cc49eaf099a"
+    },
+    "descriptorPlayer": {
+      "path": "apps/web/components/descriptor-driven-whole-lesson-player.tsx",
+      "bytes": 48473,
+      "sha256": "3f7abe7329f0f9fb1a0563fa43101f387b562b0a8e5575f48ca75a3973960141"
+    },
+    "glossaryPauseHelper": {
+      "path": "apps/web/lib/descriptor-driven-glossary-pause.ts",
+      "bytes": 1876,
+      "sha256": "d97ad79c6e98d3ce960bd51d2103ee76761e363ca328295723d21dd7f9836aa4"
+    },
+    "descriptorPlayerTest": {
+      "path": "apps/web/tests/descriptor-driven-whole-lesson-player.test.ts",
+      "bytes": 23490,
+      "sha256": "289b05137bdcb466dbc2d346114973f8f9dc00deac9484956c1a77888772f93b"
+    },
+    "glossaryPauseHelperTest": {
+      "path": "apps/web/tests/descriptor-driven-glossary-pause.test.ts",
+      "bytes": 4134,
+      "sha256": "a15b9c53e0dbdff7322402b2e8c6f6925eda477de260f5b23319581418a2ff02"
+    },
+    "productBridge": {
+      "path": "apps/web/lib/g678-calibration-product-bridge.server.ts",
+      "bytes": 153620,
+      "sha256": "00b14152cce3b84293fbd14ebe6390b254cfd22c208857c1c6618dcae8630166"
+    },
+    "builder": {
+      "path": "scripts/build-g678-alg-l11-tranche1-family-calibration.mjs",
+      "bytes": 29760,
+      "sha256": "6bed6b1dc676e3ea18b649af782a937ac5fdfa2d94c371f5f29b312f5d93094a"
+    }
+  },
+  "auditedPlacementCount": 12,
+  "authorizedPlacementIds": [
+    "shared-alg001-l11-p001",
+    "shared-alg001-l11-p002",
+    "shared-alg001-l11-p003",
+    "shared-alg001-l11-p004",
+    "shared-alg001-l11-p007",
+    "shared-alg001-l11-p013",
+    "shared-alg001-l11-p016",
+    "shared-alg001-l11-p017",
+    "shared-alg001-l11-p018",
+    "shared-alg001-l11-p022",
+    "shared-alg001-l11-p023",
+    "shared-alg001-l11-p024"
+  ],
+  "blockedPlacementCount": 0,
+  "introTerminalPlacementCount": 4,
+  "simpleGlossaryPlacementCount": 8,
+  "introTerminalExactButtonCount": 8,
+  "simpleGlossaryExactButtonCount": 40,
+  "introTerminalRecoveredTermCount": 6,
+  "simpleGlossaryRecoveredTermCount": 17,
+  "focusedBrowserScreenshotCount": 15,
+  "priorCurrentHostGlossaryRegressionCount": 2,
+  "currentHostPredecessorSampleReplayCount": 92,
+  "currentHostHistoricalInitialProgressedReplayCount": 89,
+  "currentHostHistoricalSpecialReadyCount": 3,
+  "fullHistoricalSpecialInteractionReplay": false,
+  "aggregateCurrentHostLiveSampleRecordCount": 104,
+  "aggregateCurrentHostUniqueSampledModuleCount": 104,
+  "aggregateBrowserScreenshotCount": 111,
+  "productHostCalibration": {
+    "allTwelveCanvasFirstMiddleLastReady": true,
+    "introFrameAdvancePassed": true,
+    "terminalAndAbsenceWindowsPassed": true,
+    "exactFortyEightGlossaryButtonsPassed": true,
+    "exactUnicodeInequalityAndReverseDefinitionsPassed": true,
+    "absoluteValueCollisionResolutionPassed": true,
+    "typedGlossaryHostOpenPauseCloseFocusPassed": true,
+    "runningGlossaryOpenCloseResumeLivePassed": true,
+    "inspectedGlossaryOpenClosePausePreservedLivePassed": true,
+    "inspectedSeekFrameAndInspectionIdentityLivePassed": true,
+    "inspectedNextSeekWithoutNormalizationLivePassed": true,
+    "seekRequestObjectIdentityHashBoundStaticTest": true,
+    "blockedAndNestedSnapshotHashBoundStaticContract": true,
+    "navigationAndResetHashBoundStaticContract": true,
+    "fullBlockedAndNestedBrowserCoverageClaimed": false,
+    "fullNavigationResetBrowserCoverageClaimed": false,
+    "companionPortalPassed": true,
+    "replayResetPassed": true,
+    "priorP005AndP012CurrentHostGlossaryRegressionPassed": true,
+    "priorP005AndP012InlineLegacyPresentation": true,
+    "priorP005AndP012CompanionPresentationClaimed": false,
+    "predecessorCompatibilityRebound": true,
+    "changedSurfaceBrowserRevalidated": true,
+    "currentHostBrowserRevalidated": true,
+    "predecessorHistoricalFramePairsReplayed": 89,
+    "predecessorHistoricalSpecialReadyOnly": 3,
+    "fullHistoricalSpecialInteractionReplay": false,
+    "fullPrior126Replay": false,
+    "allObservedRequestsLoopback": true,
+    "allObservedRequestsExplicitlyAllowed": true,
+    "allLegacyNetworkOperationsBlocked": true,
+    "localAssetIntegrityAndCrossOriginIsolation": true,
+    "allLessonsOneCompleteRegistrationTruthful": true,
+    "algL09Complete41Of41": true,
+    "algL11Partial21Of44": true,
+    "familyCurrentJsCalibrationPassed": true,
+    "overallG678ProductCalibrationPassed": false
+  },
+  "authorization": {
+    "authorized": true,
+    "scope": "exact-12-alg-l11-tranche1-placements-only",
+    "permitsOtherG678Placements": false,
+    "permitsOriginalRuntimeOrVisualFidelityClaim": false,
+    "permitsAudioAcceptance": false,
+    "permitsHumanOrOwnerAcceptance": false,
+    "permitsStrictCompletion": false,
+    "permitsReleaseOrPublication": false
+  },
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "behaviorAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseEligible": false,
+    "released": false,
+    "published": false
+  },
+  "limitations": [
+    "This authority calibrates only the exact twelve ALG001 L11 tranche1 placements through the private modern My Lesson host.",
+    "Canvas execution and typed glossary behavior are current-JS product evidence, not authoritative original-runtime or visual-fidelity evidence.",
+    "Embedded and external narration audio remains unaccepted; no browser audio silence or asset integrity result is listening acceptance.",
+    "Legacy glossary sublinks and example SWFs remain intentionally unimplemented and do not gain authority from this family calibration.",
+    "Blocked, nested, navigation, and reset glossary-session paths remain hash-bound static helper-test contracts; this artifact does not claim full live-browser coverage of those paths.",
+    "The three historical ALG L9 p030, p031, and p041 records receive fresh current-host Canvas-ready smoke only; their complete game or assessment interactions are not replayed or newly claimed.",
+    "Human, Owner, strict completion, release, and publication gates remain false."
+  ]
+}

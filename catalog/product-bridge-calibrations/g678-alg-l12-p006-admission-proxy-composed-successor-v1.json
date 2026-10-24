@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "kind": "g678-alg-l12-p006-admission-proxy-composed-successor-v1",
+  "deploymentScope": "local-only",
+  "admittedPath": "/migration-status/g678-calibration/shared-alg001-l12-p006-admission",
+  "predecessorManifest": {
+    "path": "catalog/product-bridge-calibrations/g678-p047-dat-l02-p002-proxy-composed-successor-v1.json",
+    "bytes": 1216,
+    "sha256": "999537d438007cb49c9ed9076fecca3a8c8d3764c07bd15c13459ee268cefec3"
+  },
+  "predecessorProxy": {
+    "path": "apps/web/proxy.ts",
+    "bytes": 13745,
+    "sha256": "b28295af0e8e3ec04431ca0b560ffa66e98ac8a661d316279c6afa22a84f7b21"
+  },
+  "predecessorWitness": {
+    "path": "work/g678-shared-host-successors/p006-admission-proxy-v1/predecessor/apps/web/proxy.ts",
+    "bytes": 13745,
+    "sha256": "b28295af0e8e3ec04431ca0b560ffa66e98ac8a661d316279c6afa22a84f7b21"
+  },
+  "currentProxy": {
+    "path": "apps/web/proxy.ts",
+    "bytes": 14057,
+    "sha256": "74f44ae3b2d7298ff3201709f12dd64a4eacb2352abb6e7a7b241f750b62dbd2"
+  },
+  "newGuardModule": {
+    "path": "apps/web/lib/g678-alg-l12-p006-admission-access.ts",
+    "bytes": 789,
+    "sha256": "99780050d6811c45519b9890eba03e6558a51bb3b05907f3d3c01cabbf5f0675"
+  },
+  "delta": "One exact engineering route helper import, guarded archive-path entry, and noindex/no-store classification; all existing route and asset conditions remain byte-identical.",
+  "sourceMathOrPageRendererChanged": false,
+  "registrationChanges": 0,
+  "technicalRevalidation": "required-on-this-proxy-version",
+  "acceptanceEffects": {
+    "originalRuntime": false,
+    "audio": false,
+    "human": false,
+    "owner": false,
+    "strict": false,
+    "publication": false
+  }
+}

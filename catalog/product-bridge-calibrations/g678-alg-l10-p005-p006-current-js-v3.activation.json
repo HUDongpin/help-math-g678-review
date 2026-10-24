@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-09-08T23:29:52.484Z",
+  "status": "local-registered-paired-tab-restoration-repair-qa-pending",
+  "beforeRegistry": {
+    "path": "packages/demos/private-current-js-registry.json",
+    "bytes": 446745,
+    "sha256": "caa454958db514fc02b65d3a07fafaf193abb2cb3392241734cb4f0d647d49d8"
+  },
+  "after": [
+    {
+      "path": "packages/demos/private-current-js-registry.json",
+      "bytes": 446745,
+      "sha256": "bd35f501fdf32d3170f53c0967acefa2e7cf97bf447268011a1a11ae59632224"
+    },
+    {
+      "path": "packages/demos/src/registry.generated.ts",
+      "bytes": 130310,
+      "sha256": "88c107cd2ed96eae29734cda07aad1d4d5d5ace87d52b218981866845f51fa76"
+    },
+    {
+      "path": "packages/demos/src/registry.metadata.generated.ts",
+      "bytes": 75696,
+      "sha256": "da599a2f4d466d581abacf1f6d774e2995034c622cf01d17941f56c518cbe785"
+    },
+    {
+      "path": "packages/demos/src/registry.local-only.generated.ts",
+      "bytes": 288816,
+      "sha256": "4a2847c626578cbe317bf033276e274baf6512ad4cca3d0dfb2d58893879f83d"
+    },
+    {
+      "path": "packages/demos/src/registry.local-only.metadata.generated.ts",
+      "bytes": 224009,
+      "sha256": "a1816a3e2b1471ffa3423065c7132b905e94ba66a002711c42b1704d8c0112ce"
+    }
+  ],
+  "replacedIds": [
+    "shared-alg001-l10-p005",
+    "shared-alg001-l10-p006"
+  ],
+  "preservedOtherG678Placements": 386,
+  "registered": 388,
+  "sourcePayloadChanged": false,
+  "publicFilesWritten": 0,
+  "transaction": {
+    "backups": [
+      {
+        "target": "packages/demos/private-current-js-registry.json",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-alg-l10-p005-p006-current-js-v3-activation/before-private-current-js-registry.json",
+          "bytes": 446745,
+          "sha256": "caa454958db514fc02b65d3a07fafaf193abb2cb3392241734cb4f0d647d49d8"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-alg-l10-p005-p006-current-js-v3-activation/before-registry.generated.ts",
+          "bytes": 130310,
+          "sha256": "88c107cd2ed96eae29734cda07aad1d4d5d5ace87d52b218981866845f51fa76"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.metadata.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-alg-l10-p005-p006-current-js-v3-activation/before-registry.metadata.generated.ts",
+          "bytes": 75696,
+          "sha256": "da599a2f4d466d581abacf1f6d774e2995034c622cf01d17941f56c518cbe785"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.local-only.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-alg-l10-p005-p006-current-js-v3-activation/before-registry.local-only.generated.ts",
+          "bytes": 288816,
+          "sha256": "f8cfef3aedf792b9e57024373c6070d4232d30f9cbf218ae7d05a4ea5fc19bec"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.local-only.metadata.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-alg-l10-p005-p006-current-js-v3-activation/before-registry.local-only.metadata.generated.ts",
+          "bytes": 224009,
+          "sha256": "3b8ec9a54717183242d1bdb14196e91958d95807181dd89dac23711e69168ded"
+        }
+      }
+    ],
+    "completed": [
+      "packages/demos/private-current-js-registry.json",
+      "packages/demos/src/registry.local-only.generated.ts",
+      "packages/demos/src/registry.local-only.metadata.generated.ts"
+    ],
+    "rollback": false
+  },
+  "freeze": {
+    "path": "catalog/product-bridge-calibrations/g678-alg-l10-p005-p006-current-js-v3.json",
+    "bytes": 68806,
+    "sha256": "5aa5a358aed5f2bd427b3471b7f6318222d22d51f1af3a8a22e9a337bbc4a41b"
+  },
+  "priorCalibration": "g678-alg-l10-p005-p006-current-js-v2",
+  "priorQa": "Retained failed v1 and v2 receipts; no source or original-runtime acceptance inferred.",
+  "productCalibrationPassed": false,
+  "scaleOutAuthorized": false
+}

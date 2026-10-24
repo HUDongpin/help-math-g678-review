@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-alg-l09-in10-choice-family-calibration-v1",
+  "calibrationId": "g678-alg-l09-in10-choice-family-calibration-v1",
+  "adapterFamily": "alg-l09-in10-choice-source-static",
+  "status": "exact-1-in10-choice-quiz-product-host-calibrated",
+  "inputs": {
+    "audit": {
+      "path": "catalog/g678-alg-l09-in10-choice-family-audit-v1.json",
+      "bytes": 38901,
+      "sha256": "149df6cc33c33903bdec1f9facfca5b959928db1dfe75d53e21ab5fe1c2c110e"
+    },
+    "auditBuilder": {
+      "path": "scripts/audit-g678-alg-l09-in10-choice-family.mjs",
+      "bytes": 48618,
+      "sha256": "86fcddbc70f5a3b5399773415e652cfa6cadbc7ed2d946ae0e9090a05cd25686"
+    },
+    "generator": {
+      "path": "scripts/build-g678-alg-l09-in10-choice-current-js.mjs",
+      "bytes": 56376,
+      "sha256": "20dc3a8706a17749ccd067afb6fc0daf559a3b160f8d0303498e5e6bb76571e5"
+    },
+    "generatorRun": {
+      "path": "work/g678-shared-page-factory/g678-alg-l09-in10-choice-current-js-1-v1/run-manifest.json",
+      "bytes": 25152,
+      "sha256": "37fb159c79f98f11419920cc2507a1d4747e641e4d97a0857dd7645e7d6a1cd6"
+    },
+    "generatorFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-alg-l09-in10-choice-current-js-1-v1.fragment.json",
+      "bytes": 3395,
+      "sha256": "f6aba49eb3bb6fa363d5dc19f9b393331b2abd55cd0c96811ead359d1b84ee8d"
+    },
+    "registrationFinalizer": {
+      "path": "scripts/finalize-g678-alg-l09-in10-choice-registration.mjs",
+      "bytes": 20930,
+      "sha256": "cca685a1078ae6cc85fe58dace1afc6d1aa68b526619121b01b2f631eb6de574"
+    },
+    "registrationFreeze": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-330-page-registration-v1.json",
+      "bytes": 1694693,
+      "sha256": "736ff9d49cddbba745212664b704618e57cb43857076be0b28f94a85758c770b"
+    },
+    "registrationFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-330-page-registration-v1.fragment.json",
+      "bytes": 215765,
+      "sha256": "918b545feaed991e507f9c6f07d379a48e87dc3bf6f7f3303253ba80fe2779da"
+    },
+    "browser": {
+      "path": "output/playwright/g678-current-js-330-v1/evidence.json",
+      "bytes": 318356,
+      "sha256": "d1e8c3180904cf0624367de5652aedd394bca4a273f81698dcdda5fe6904843e"
+    },
+    "browserVerifier": {
+      "path": "scripts/qa-g678-current-js-330-browser.mjs",
+      "bytes": 114728,
+      "sha256": "a4f2b22358c7c06f46e29054f3db030a2402b5cb5a25194fd6a55c98bcc912d7"
+    },
+    "sourceStaticHost": {
+      "path": "packages/demos/src/source-static-canvas-candidate.tsx",
+      "bytes": 56583,
+      "sha256": "68e4ba0254de7c48dc048146b32c3beb15f287efa9dbd59c23b698720cd5eb72"
+    },
+    "algL09In10ChoiceHost": {
+      "path": "packages/demos/src/private-source-static-alg-l09-in10-choice-candidate.tsx",
+      "bytes": 11472,
+      "sha256": "7fbb69554e0df6a4ed0406f2d1fab520e1e368d32801c34f13601d3e058df581"
+    },
+    "algL09In10ChoiceBehavior": {
+      "path": "packages/demos/src/g678-alg-l09-in10-choice.ts",
+      "bytes": 6960,
+      "sha256": "655f6c11778ee207bda560c6d64a27806b7ce304fa889805d5aa65ae7823ea10"
+    },
+    "productBridge": {
+      "path": "apps/web/lib/g678-calibration-product-bridge.server.ts",
+      "bytes": 117528,
+      "sha256": "98c95129e205dc9eb3f057d3b81340928caf2eb24cb10d1d71f9443d9e24bc00"
+    },
+    "builder": {
+      "path": "scripts/build-g678-alg-l09-in10-choice-family-calibration.mjs",
+      "bytes": 18581,
+      "sha256": "29a15dc747812301b51804b012abea10cd847e837487384f08d9a39fad56a8e9"
+    }
+  },
+  "auditedPlacementCount": 1,
+  "authorizedPlacementIds": [
+    "shared-alg001-l09-p022"
+  ],
+  "blockedPlacementCount": 0,
+  "sourceButtonCount": 3,
+  "uniqueGlossaryTermCount": 3,
+  "choiceCount": 2,
+  "browserSamples": [
+    {
+      "animationId": "shared-alg001-l09-p022",
+      "frameDomain": "sprite-190",
+      "frameCount": 436,
+      "runtimeSha256": "ff86ece7e3ac6f50be042e1a9e8d1ee1cafa8a2dc1485048420d570118e1c7c1",
+      "glossaryTermCount": 3,
+      "sourceStopFrame": 93,
+      "sourceResumeFrame": 94,
+      "choiceCount": 2,
+      "maximumWrongAttempts": 2
+    }
+  ],
+  "productHostCalibration": {
+    "canvasReadyAndProgressing": true,
+    "mainTimelineAdvancedPastInteractiveStop": true,
+    "frame93InteractiveStopBound": true,
+    "twoSourceRelationshipChoicesBound": true,
+    "twoWrongAttemptsAndChoiceFeedbackResumePassed": true,
+    "sourceFrameBoundGlossaryControls": true,
+    "sourceCharacterIdentityBound": true,
+    "localAssetIntegrityAndCrossOriginIsolation": true,
+    "allLessonsPartialRegistrationTruthful": true,
+    "familyCurrentJsIn10ChoiceCalibrationPassed": true,
+    "overallG678ProductCalibrationPassed": false
+  },
+  "authorization": {
+    "authorized": true,
+    "scope": "exact-1-alg-l09-in10-choice-quiz-placement-only",
+    "permitsOtherAlgL09Placements": false,
+    "permitsCanonicalSourcePromotion": false,
+    "permitsAudioAcceptance": false,
+    "permitsOriginalRuntimeOrVisualFidelityClaim": false,
+    "permitsWholeLessonEngineeringPreviewClaim": false,
+    "permitsReleaseOrPublication": false
+  },
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "behaviorAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseEligible": false,
+    "released": false,
+    "published": false
+  },
+  "limitations": [
+    "This authority calibrates the exact frame-93 two-choice proportional/non-proportional stop and frame-94 resume through the maintained Current-JS product host.",
+    "The product controls preserve the exact A/B relationship options, B=non-proportional answer, source-authored proportional-relationship feedback path, typed right-feedback request, keyboard button semantics, and Replay reset.",
+    "Choice-feedback audio, external narration, authoritative original runtime, fidelity, human, Owner, strict-completion, release, and publication remain unaccepted.",
+    "All 44 lessons remain partial; this authority creates no N/N whole-lesson engineering preview or learner route."
+  ]
+}

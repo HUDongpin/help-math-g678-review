@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "private-current-js-calibration-fragment-v1",
+  "freeze": {
+    "path": "catalog/product-bridge-calibrations/shared-alg001-l12-p012-current-inputs-20261023-v3.json",
+    "bytes": 64723,
+    "sha256": "006b8a7ac3785326f22c15caa0023e883849d518ba718f4719b537305be666db"
+  },
+  "calibration": {
+    "calibrationId": "g678-alg-l12-p012-current-js-v1",
+    "deploymentScope": "local-only",
+    "freezeManifest": "catalog/product-bridge-calibrations/shared-alg001-l12-p012-current-inputs-20261023-v3.json",
+    "freezeManifestBytes": 64723,
+    "freezeManifestSha256": "006b8a7ac3785326f22c15caa0023e883849d518ba718f4719b537305be666db",
+    "entries": [
+      {
+        "key": "shared-alg001-l12-p012",
+        "module": "./modules/shared-alg001-l12-p012",
+        "maturity": "private-current-js",
+        "complexityLane": "behavior-heavy",
+        "artifacts": {
+          "module": {
+            "path": "packages/demos/src/modules/shared-alg001-l12-p012.tsx",
+            "bytes": 5770,
+            "sha256": "f5a7f239cd01945591d0e993de78dc93bebbe742a77fa7e41fad23b63bc1c9b2"
+          },
+          "timeline": {
+            "path": "packages/demos/src/timelines/shared-alg001-l12-p012.ts",
+            "bytes": 2878,
+            "sha256": "1ff0eaed1e3da86db3d63a79f2241a5fa036bf08e1f44bca3fc0da4c24075c25"
+          },
+          "runtime": {
+            "path": "work/g678-shared-page-factory/g678-alg-l12-p012-current-js-v1/members/shared-alg001-l12-p012/canvas-renderer.js",
+            "bytes": 1253326,
+            "sha256": "eee27611df58685bad502c7ceb54eb745a0407cd7fbb93cadd93e326e95491f1"
+          }
+        }
+      }
+    ]
+  }
+}

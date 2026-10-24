@@ -1,0 +1,660 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-alg-l11-behavior10-tranche-b-unregistered-current-js-fragment-v1",
+  "runId": "g678-alg-l11-behavior10-tranche-b-current-js-v1",
+  "compilerRun": {
+    "path": "work/g678-shared-page-factory/g678-alg-l11-behavior10-tranche-b-current-js-v1/run-manifest.json",
+    "bytes": 27779,
+    "sha256": "9f56c482167a42f9917d7bf4d62a7510817bb3d5567d5685d0e9ea960b52806c"
+  },
+  "deploymentScope": "local-only",
+  "reviewedAudit": {
+    "path": "catalog/g678-alg-l11-behavior10-tranche-b-audit-v1.json",
+    "bytes": 139507,
+    "sha256": "2b45cee5d1503d9e98521b5ca0518500a29f8bc43a0b1c84145016dccc5289b8"
+  },
+  "sourceDivergenceDecision": {
+    "path": "catalog/g678-alg-l11-behavior10-tranche-b-source-divergence-v1.json",
+    "bytes": 23448,
+    "sha256": "e4214120ddff6b052487dd339efb4421bdba88cd0532cf448c8200cf1969a89e"
+  },
+  "maintainedState": {
+    "path": "packages/demos/src/g678-alg-l11-behavior10-tranche-b-state.ts",
+    "bytes": 34143,
+    "sha256": "664b790258ff06c6a18189acd3153954accfdd138135282a7557190654f3a492"
+  },
+  "candidateCore": {
+    "path": "packages/demos/src/g678-alg-l11-behavior10-tranche-b-candidate-core.tsx",
+    "bytes": 15825,
+    "sha256": "1e87c5320cde77bc06e81c7f28d9d3a58e6e58a425a5e346f43530141d75be57"
+  },
+  "tutorialWrapper": {
+    "path": "packages/demos/src/g678-alg-l11-behavior10-tranche-b-tutorial-candidate.tsx",
+    "bytes": 606,
+    "sha256": "0d980da48db1b2a3d82079d99bc67b2a33067e657b175b3a2d95b78a255c1d98"
+  },
+  "guidedWrapper": {
+    "path": "packages/demos/src/g678-alg-l11-behavior10-tranche-b-guided-candidate.tsx",
+    "bytes": 662,
+    "sha256": "102a2969a749a36ed8784cf6c7d389c994427257e703a250372db2b0bb11be19"
+  },
+  "maintainedCandidates": {
+    "path": "packages/demos/src/g678-alg-l11-behavior10-tranche-b-candidates.tsx",
+    "bytes": 2494,
+    "sha256": "165580c6eb79458ef5c9cdab20db64b859d3a97b882a821ba5fdd6d6bdb1f29c"
+  },
+  "exactPlacementCount": 10,
+  "generatedPlacementCount": 10,
+  "currentJavaScriptImplementedCount": 10,
+  "domRendererImplementedCount": 10,
+  "staleAngleOverlaySuppressedPlacementCount": 3,
+  "entries": [
+    {
+      "key": "shared-alg001-l11-p026",
+      "module": "./modules/g678-alg-l11-behavior10-tranche-b-p026",
+      "maturity": "private-current-js",
+      "deploymentScope": "local-only",
+      "currentJavaScriptImplemented": true,
+      "domRendererImplemented": true,
+      "registrationCandidate": false,
+      "currentJavaScriptRegistered": false,
+      "source": {
+        "path": "G6-G8-shared/ALG001/L11/TI/L11TI02.swf",
+        "bytes": 216291,
+        "sha256": "32b9dc25fbedfaa35bacfdf1a69836cbe63526a6de601c4b65cce3fa87dcc033",
+        "physicalReadOnlyIdentityVerified": true
+      },
+      "familyId": "l11-tutorial-multi-question-choice",
+      "mainTimeline": {
+        "objectId": 228,
+        "frameDomain": "sprite-228",
+        "frameCount": 294,
+        "quizFrame": 180,
+        "resumeFrame": 181,
+        "terminalFrame": 294,
+        "placementDepth": 4,
+        "rootFrame": 6
+      },
+      "timeline": {
+        "path": "packages/demos/src/timelines/g678-alg-l11-behavior10-tranche-b-p026.ts",
+        "bytes": 11861,
+        "sha256": "f09bdbe486fb8a6952065730ed412ee5df40cb0faf5f511b0c7724b839de9d96"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/g678-alg-l11-behavior10-tranche-b-p026.tsx",
+        "bytes": 1212,
+        "sha256": "3727f555c72e23917422fb11caed142e72679f1f3d9cd5fc7ee20016716c3023"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-alg-l11-behavior10-tranche-b-current-js-v1/members/shared-alg001-l11-p026/member-manifest.json",
+        "bytes": 2093,
+        "sha256": "1371167515d97010955404a276bb32df2603beba7bff7d81004ee294702074cb"
+      },
+      "staleAngleOverlaySuppressedByDecision": false,
+      "productCalibrationPassed": false,
+      "browserProductCalibrationPassed": false,
+      "wholeLessonEngineeringPreviewReady": false,
+      "acceptanceEffects": {
+        "currentJavaScriptRegistered": false,
+        "behaviorAccepted": false,
+        "authoritativeOriginalRuntime": false,
+        "visualFidelityAccepted": false,
+        "audioAccepted": false,
+        "humanVisualAccepted": false,
+        "ownerAccepted": false,
+        "strictComplete": false,
+        "released": false,
+        "published": false
+      }
+    },
+    {
+      "key": "shared-alg001-l11-p027",
+      "module": "./modules/g678-alg-l11-behavior10-tranche-b-p027",
+      "maturity": "private-current-js",
+      "deploymentScope": "local-only",
+      "currentJavaScriptImplemented": true,
+      "domRendererImplemented": true,
+      "registrationCandidate": false,
+      "currentJavaScriptRegistered": false,
+      "source": {
+        "path": "G6-G8-shared/ALG001/L11/TI/L11TI03.swf",
+        "bytes": 203669,
+        "sha256": "fca648195f2eb81ed8bce7ec86baa03c764e60e2c12bb76e3d3d79c85bc2ba74",
+        "physicalReadOnlyIdentityVerified": true
+      },
+      "familyId": "l11-tutorial-multi-question-choice",
+      "mainTimeline": {
+        "objectId": 230,
+        "frameDomain": "sprite-230",
+        "frameCount": 265,
+        "quizFrame": 133,
+        "resumeFrame": 134,
+        "terminalFrame": 265,
+        "placementDepth": 4,
+        "rootFrame": 6
+      },
+      "timeline": {
+        "path": "packages/demos/src/timelines/g678-alg-l11-behavior10-tranche-b-p027.ts",
+        "bytes": 11872,
+        "sha256": "9b9ba8de7d7eeda3c9865005b9acd105d05435544c2f7a419a4d6054e54a17af"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/g678-alg-l11-behavior10-tranche-b-p027.tsx",
+        "bytes": 1212,
+        "sha256": "e7598179e572d8761931b4c9b85f2275bac87212d4a8382d899d6583e1e0740d"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-alg-l11-behavior10-tranche-b-current-js-v1/members/shared-alg001-l11-p027/member-manifest.json",
+        "bytes": 2093,
+        "sha256": "fec4ce8962bb95ec50e990f31c2eb50777dfede13cc4d7d5f54ff850cf0feab2"
+      },
+      "staleAngleOverlaySuppressedByDecision": false,
+      "productCalibrationPassed": false,
+      "browserProductCalibrationPassed": false,
+      "wholeLessonEngineeringPreviewReady": false,
+      "acceptanceEffects": {
+        "currentJavaScriptRegistered": false,
+        "behaviorAccepted": false,
+        "authoritativeOriginalRuntime": false,
+        "visualFidelityAccepted": false,
+        "audioAccepted": false,
+        "humanVisualAccepted": false,
+        "ownerAccepted": false,
+        "strictComplete": false,
+        "released": false,
+        "published": false
+      }
+    },
+    {
+      "key": "shared-alg001-l11-p028",
+      "module": "./modules/g678-alg-l11-behavior10-tranche-b-p028",
+      "maturity": "private-current-js",
+      "deploymentScope": "local-only",
+      "currentJavaScriptImplemented": true,
+      "domRendererImplemented": true,
+      "registrationCandidate": false,
+      "currentJavaScriptRegistered": false,
+      "source": {
+        "path": "G6-G8-shared/ALG001/L11/TI/L11TI04.swf",
+        "bytes": 254986,
+        "sha256": "3548b5531d147762bd7577116fd9258eb4cff0703bf9721e608047ec2ee6492a",
+        "physicalReadOnlyIdentityVerified": true
+      },
+      "familyId": "l11-tutorial-multi-question-choice",
+      "mainTimeline": {
+        "objectId": 259,
+        "frameDomain": "sprite-259",
+        "frameCount": 397,
+        "quizFrame": 127,
+        "resumeFrame": 128,
+        "terminalFrame": 397,
+        "placementDepth": 4,
+        "rootFrame": 6
+      },
+      "timeline": {
+        "path": "packages/demos/src/timelines/g678-alg-l11-behavior10-tranche-b-p028.ts",
+        "bytes": 11949,
+        "sha256": "6e3c65c738b0753d5419c393afdf9ad21aa09738870ee38ef6a49bc5028bc556"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/g678-alg-l11-behavior10-tranche-b-p028.tsx",
+        "bytes": 1212,
+        "sha256": "c6335c77efe7fc69f6a1cb532273107268c81fca30694486a26ad0d3ece52248"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-alg-l11-behavior10-tranche-b-current-js-v1/members/shared-alg001-l11-p028/member-manifest.json",
+        "bytes": 2093,
+        "sha256": "cd351f82b31e4d95617b3b474d96c7c03a61a5c06301afa7edb941be46d036d5"
+      },
+      "staleAngleOverlaySuppressedByDecision": false,
+      "productCalibrationPassed": false,
+      "browserProductCalibrationPassed": false,
+      "wholeLessonEngineeringPreviewReady": false,
+      "acceptanceEffects": {
+        "currentJavaScriptRegistered": false,
+        "behaviorAccepted": false,
+        "authoritativeOriginalRuntime": false,
+        "visualFidelityAccepted": false,
+        "audioAccepted": false,
+        "humanVisualAccepted": false,
+        "ownerAccepted": false,
+        "strictComplete": false,
+        "released": false,
+        "published": false
+      }
+    },
+    {
+      "key": "shared-alg001-l11-p029",
+      "module": "./modules/g678-alg-l11-behavior10-tranche-b-p029",
+      "maturity": "private-current-js",
+      "deploymentScope": "local-only",
+      "currentJavaScriptImplemented": true,
+      "domRendererImplemented": true,
+      "registrationCandidate": false,
+      "currentJavaScriptRegistered": false,
+      "source": {
+        "path": "G6-G8-shared/ALG001/L11/TI/L11TI05.swf",
+        "bytes": 173640,
+        "sha256": "863cc41d0308cacbb4b0657f8034a7ec3a1f148abf5651d619ddfc1fcfc41bf8",
+        "physicalReadOnlyIdentityVerified": true
+      },
+      "familyId": "l11-tutorial-multi-question-choice",
+      "mainTimeline": {
+        "objectId": 242,
+        "frameDomain": "sprite-242",
+        "frameCount": 190,
+        "quizFrame": 61,
+        "resumeFrame": 62,
+        "terminalFrame": 190,
+        "placementDepth": 4,
+        "rootFrame": 6
+      },
+      "timeline": {
+        "path": "packages/demos/src/timelines/g678-alg-l11-behavior10-tranche-b-p029.ts",
+        "bytes": 12378,
+        "sha256": "c2d649ee274f815708858b44a32fc6485bbfccfa47ba19dcd7d19dc0687c52e8"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/g678-alg-l11-behavior10-tranche-b-p029.tsx",
+        "bytes": 1212,
+        "sha256": "5c85b2d3c94ba7e86ad23018a4a98f3f36d41dc537b2a2c69eb3303b6d20ef8c"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-alg-l11-behavior10-tranche-b-current-js-v1/members/shared-alg001-l11-p029/member-manifest.json",
+        "bytes": 2091,
+        "sha256": "b3afc3dd95a4fe17e09cb9a390218a8f00746bc6957442aac2d04953b0f60972"
+      },
+      "staleAngleOverlaySuppressedByDecision": false,
+      "productCalibrationPassed": false,
+      "browserProductCalibrationPassed": false,
+      "wholeLessonEngineeringPreviewReady": false,
+      "acceptanceEffects": {
+        "currentJavaScriptRegistered": false,
+        "behaviorAccepted": false,
+        "authoritativeOriginalRuntime": false,
+        "visualFidelityAccepted": false,
+        "audioAccepted": false,
+        "humanVisualAccepted": false,
+        "ownerAccepted": false,
+        "strictComplete": false,
+        "released": false,
+        "published": false
+      }
+    },
+    {
+      "key": "shared-alg001-l11-p030",
+      "module": "./modules/g678-alg-l11-behavior10-tranche-b-p030",
+      "maturity": "private-current-js",
+      "deploymentScope": "local-only",
+      "currentJavaScriptImplemented": true,
+      "domRendererImplemented": true,
+      "registrationCandidate": false,
+      "currentJavaScriptRegistered": false,
+      "source": {
+        "path": "G6-G8-shared/ALG001/L11/TI/L11TI06.swf",
+        "bytes": 174380,
+        "sha256": "619232660ad85c779fc4e50d0d8245275ed3a791d09f5cb560b479c5fbfc8a37",
+        "physicalReadOnlyIdentityVerified": true
+      },
+      "familyId": "l11-tutorial-multi-question-choice",
+      "mainTimeline": {
+        "objectId": 236,
+        "frameDomain": "sprite-236",
+        "frameCount": 195,
+        "quizFrame": 63,
+        "resumeFrame": 64,
+        "terminalFrame": 195,
+        "placementDepth": 4,
+        "rootFrame": 6
+      },
+      "timeline": {
+        "path": "packages/demos/src/timelines/g678-alg-l11-behavior10-tranche-b-p030.ts",
+        "bytes": 12066,
+        "sha256": "20e852bf43e5c81ff597cc3b5c3c05de8a896e283d623708cd7b70fce8ed18cc"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/g678-alg-l11-behavior10-tranche-b-p030.tsx",
+        "bytes": 1212,
+        "sha256": "91176d8356e2e530b27ba4c7d0515426292e005da188ee4686ba8014ad7b7cef"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-alg-l11-behavior10-tranche-b-current-js-v1/members/shared-alg001-l11-p030/member-manifest.json",
+        "bytes": 2091,
+        "sha256": "806b896a991525232e18fcc294b58d3abd9c822bb2554537cda6c4877446002b"
+      },
+      "staleAngleOverlaySuppressedByDecision": false,
+      "productCalibrationPassed": false,
+      "browserProductCalibrationPassed": false,
+      "wholeLessonEngineeringPreviewReady": false,
+      "acceptanceEffects": {
+        "currentJavaScriptRegistered": false,
+        "behaviorAccepted": false,
+        "authoritativeOriginalRuntime": false,
+        "visualFidelityAccepted": false,
+        "audioAccepted": false,
+        "humanVisualAccepted": false,
+        "ownerAccepted": false,
+        "strictComplete": false,
+        "released": false,
+        "published": false
+      }
+    },
+    {
+      "key": "shared-alg001-l11-p031",
+      "module": "./modules/g678-alg-l11-behavior10-tranche-b-p031",
+      "maturity": "private-current-js",
+      "deploymentScope": "local-only",
+      "currentJavaScriptImplemented": true,
+      "domRendererImplemented": true,
+      "registrationCandidate": false,
+      "currentJavaScriptRegistered": false,
+      "source": {
+        "path": "G6-G8-shared/ALG001/L11/TI/L11TI07.swf",
+        "bytes": 264862,
+        "sha256": "2dc3eca3d8241ebde8dd4a7233d816a7e8b32ddb07d098ab25874f9b82b712d8",
+        "physicalReadOnlyIdentityVerified": true
+      },
+      "familyId": "l11-tutorial-multi-question-choice",
+      "mainTimeline": {
+        "objectId": 230,
+        "frameDomain": "sprite-230",
+        "frameCount": 478,
+        "quizFrame": 131,
+        "resumeFrame": 132,
+        "terminalFrame": 478,
+        "placementDepth": 4,
+        "rootFrame": 6
+      },
+      "timeline": {
+        "path": "packages/demos/src/timelines/g678-alg-l11-behavior10-tranche-b-p031.ts",
+        "bytes": 11901,
+        "sha256": "15efa8b25af425f9b5f63f647915a303f90458ed2d4b687a758ed4dc044010d0"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/g678-alg-l11-behavior10-tranche-b-p031.tsx",
+        "bytes": 1212,
+        "sha256": "5176da1ca8cbff1a736a77d70ec9cc92c24556c9d0773f8461c61097fa24c571"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-alg-l11-behavior10-tranche-b-current-js-v1/members/shared-alg001-l11-p031/member-manifest.json",
+        "bytes": 2093,
+        "sha256": "dbcc74ac9bfed908e1da81aea07503011f85f5129efb15a5d34ba4d88e93dc7e"
+      },
+      "staleAngleOverlaySuppressedByDecision": false,
+      "productCalibrationPassed": false,
+      "browserProductCalibrationPassed": false,
+      "wholeLessonEngineeringPreviewReady": false,
+      "acceptanceEffects": {
+        "currentJavaScriptRegistered": false,
+        "behaviorAccepted": false,
+        "authoritativeOriginalRuntime": false,
+        "visualFidelityAccepted": false,
+        "audioAccepted": false,
+        "humanVisualAccepted": false,
+        "ownerAccepted": false,
+        "strictComplete": false,
+        "released": false,
+        "published": false
+      }
+    },
+    {
+      "key": "shared-alg001-l11-p032",
+      "module": "./modules/g678-alg-l11-behavior10-tranche-b-p032",
+      "maturity": "private-current-js",
+      "deploymentScope": "local-only",
+      "currentJavaScriptImplemented": true,
+      "domRendererImplemented": true,
+      "registrationCandidate": false,
+      "currentJavaScriptRegistered": false,
+      "source": {
+        "path": "G6-G8-shared/ALG001/L11/TI/L11TI08.swf",
+        "bytes": 190556,
+        "sha256": "79f9cd6033c59329e4fd91f1fa9d54ce6bb4bc63e8d3250f1822b0f79452b0fb",
+        "physicalReadOnlyIdentityVerified": true
+      },
+      "familyId": "l11-tutorial-multi-question-choice",
+      "mainTimeline": {
+        "objectId": 220,
+        "frameDomain": "sprite-220",
+        "frameCount": 239,
+        "quizFrame": 128,
+        "resumeFrame": 129,
+        "terminalFrame": 239,
+        "placementDepth": 4,
+        "rootFrame": 6
+      },
+      "timeline": {
+        "path": "packages/demos/src/timelines/g678-alg-l11-behavior10-tranche-b-p032.ts",
+        "bytes": 11659,
+        "sha256": "09aca9d2817e35b118c7702ce5d104eafafff62f4da5bb6b0cb5aabf5212becc"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/g678-alg-l11-behavior10-tranche-b-p032.tsx",
+        "bytes": 1212,
+        "sha256": "0ea478580d74dbd89cbcef6ce2da49ef0a04617099620ec516a4fc9f0420e935"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-alg-l11-behavior10-tranche-b-current-js-v1/members/shared-alg001-l11-p032/member-manifest.json",
+        "bytes": 2093,
+        "sha256": "5c97aa0d1c301abf6bd8823fff87177616094332c8747b4e167055e894fe3c2c"
+      },
+      "staleAngleOverlaySuppressedByDecision": false,
+      "productCalibrationPassed": false,
+      "browserProductCalibrationPassed": false,
+      "wholeLessonEngineeringPreviewReady": false,
+      "acceptanceEffects": {
+        "currentJavaScriptRegistered": false,
+        "behaviorAccepted": false,
+        "authoritativeOriginalRuntime": false,
+        "visualFidelityAccepted": false,
+        "audioAccepted": false,
+        "humanVisualAccepted": false,
+        "ownerAccepted": false,
+        "strictComplete": false,
+        "released": false,
+        "published": false
+      }
+    },
+    {
+      "key": "shared-alg001-l11-p040",
+      "module": "./modules/g678-alg-l11-behavior10-tranche-b-p040",
+      "maturity": "private-current-js",
+      "deploymentScope": "local-only",
+      "currentJavaScriptImplemented": true,
+      "domRendererImplemented": true,
+      "registrationCandidate": false,
+      "currentJavaScriptRegistered": false,
+      "source": {
+        "path": "G6-G8-shared/ALG001/L11/TS/L11TS07.swf",
+        "bytes": 543508,
+        "sha256": "d6f115a52d6778b04891bb4b9f991a60718f17553a947536eb813ed10d0375b5",
+        "physicalReadOnlyIdentityVerified": true
+      },
+      "familyId": "l11-guided-tutorial-choice",
+      "mainTimeline": {
+        "objectId": 351,
+        "frameDomain": "sprite-351",
+        "frameCount": 829,
+        "quizFrame": 812,
+        "resumeFrame": 813,
+        "terminalFrame": 829,
+        "placementDepth": 4,
+        "rootFrame": 6
+      },
+      "timeline": {
+        "path": "packages/demos/src/timelines/g678-alg-l11-behavior10-tranche-b-p040.ts",
+        "bytes": 19342,
+        "sha256": "15f9af6561f4bd02b63eb18a508df97b18063eecaac34e06f75331f097e06ddf"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/g678-alg-l11-behavior10-tranche-b-p040.tsx",
+        "bytes": 1212,
+        "sha256": "10df84ebffcb3ec8ff5e4954dd020f2d6c5b306e84017bdb6a3740b3cdce3152"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-alg-l11-behavior10-tranche-b-current-js-v1/members/shared-alg001-l11-p040/member-manifest.json",
+        "bytes": 2085,
+        "sha256": "b774225dc8d9ff7115d193ff2ab548bb55fb3d326b0a0d12fac752d3006e2cdf"
+      },
+      "staleAngleOverlaySuppressedByDecision": true,
+      "productCalibrationPassed": false,
+      "browserProductCalibrationPassed": false,
+      "wholeLessonEngineeringPreviewReady": false,
+      "acceptanceEffects": {
+        "currentJavaScriptRegistered": false,
+        "behaviorAccepted": false,
+        "authoritativeOriginalRuntime": false,
+        "visualFidelityAccepted": false,
+        "audioAccepted": false,
+        "humanVisualAccepted": false,
+        "ownerAccepted": false,
+        "strictComplete": false,
+        "released": false,
+        "published": false
+      }
+    },
+    {
+      "key": "shared-alg001-l11-p041",
+      "module": "./modules/g678-alg-l11-behavior10-tranche-b-p041",
+      "maturity": "private-current-js",
+      "deploymentScope": "local-only",
+      "currentJavaScriptImplemented": true,
+      "domRendererImplemented": true,
+      "registrationCandidate": false,
+      "currentJavaScriptRegistered": false,
+      "source": {
+        "path": "G6-G8-shared/ALG001/L11/TS/L11TS08.swf",
+        "bytes": 566092,
+        "sha256": "3bfac12aec4982064c1041ce296c185299f7fc0247b46144f1144a10ab812e6c",
+        "physicalReadOnlyIdentityVerified": true
+      },
+      "familyId": "l11-guided-tutorial-choice",
+      "mainTimeline": {
+        "objectId": 338,
+        "frameDomain": "sprite-338",
+        "frameCount": 901,
+        "quizFrame": 884,
+        "resumeFrame": 885,
+        "terminalFrame": 901,
+        "placementDepth": 4,
+        "rootFrame": 6
+      },
+      "timeline": {
+        "path": "packages/demos/src/timelines/g678-alg-l11-behavior10-tranche-b-p041.ts",
+        "bytes": 19261,
+        "sha256": "d84a3f9ec2e7ef53ee8752b630690515ed5fa033c7eff97a4a7863f629f8e626"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/g678-alg-l11-behavior10-tranche-b-p041.tsx",
+        "bytes": 1212,
+        "sha256": "f80507052cbbcf94f5d62705ad32a6b74eca57bbe9e58855c1f208bbe37a5eb6"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-alg-l11-behavior10-tranche-b-current-js-v1/members/shared-alg001-l11-p041/member-manifest.json",
+        "bytes": 2085,
+        "sha256": "cfd457b3d7c9f384908183e7fb3239af291254dd5b0a2e28529a3466d516b49a"
+      },
+      "staleAngleOverlaySuppressedByDecision": true,
+      "productCalibrationPassed": false,
+      "browserProductCalibrationPassed": false,
+      "wholeLessonEngineeringPreviewReady": false,
+      "acceptanceEffects": {
+        "currentJavaScriptRegistered": false,
+        "behaviorAccepted": false,
+        "authoritativeOriginalRuntime": false,
+        "visualFidelityAccepted": false,
+        "audioAccepted": false,
+        "humanVisualAccepted": false,
+        "ownerAccepted": false,
+        "strictComplete": false,
+        "released": false,
+        "published": false
+      }
+    },
+    {
+      "key": "shared-alg001-l11-p042",
+      "module": "./modules/g678-alg-l11-behavior10-tranche-b-p042",
+      "maturity": "private-current-js",
+      "deploymentScope": "local-only",
+      "currentJavaScriptImplemented": true,
+      "domRendererImplemented": true,
+      "registrationCandidate": false,
+      "currentJavaScriptRegistered": false,
+      "source": {
+        "path": "G6-G8-shared/ALG001/L11/TS/L11TS09.swf",
+        "bytes": 605797,
+        "sha256": "58b8366ea544632a77d1903b7f5a654ddf91311ef9a8dfcca9a7ca8528f6669e",
+        "physicalReadOnlyIdentityVerified": true
+      },
+      "familyId": "l11-guided-tutorial-choice",
+      "mainTimeline": {
+        "objectId": 303,
+        "frameDomain": "sprite-303",
+        "frameCount": 999,
+        "quizFrame": 982,
+        "resumeFrame": 983,
+        "terminalFrame": 999,
+        "placementDepth": 4,
+        "rootFrame": 6
+      },
+      "timeline": {
+        "path": "packages/demos/src/timelines/g678-alg-l11-behavior10-tranche-b-p042.ts",
+        "bytes": 19274,
+        "sha256": "ee5353752da6b5f06fa67a80e5b2c56603742cac0abdfa7ee5ec8dbdebe86404"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/g678-alg-l11-behavior10-tranche-b-p042.tsx",
+        "bytes": 1212,
+        "sha256": "333c7a7e0e32fadbc948b41e2e668ce1c8d4df57095bde01ff6dfaf163c12489"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-alg-l11-behavior10-tranche-b-current-js-v1/members/shared-alg001-l11-p042/member-manifest.json",
+        "bytes": 2085,
+        "sha256": "feaae299c71910290d6d3bedceba1e328c2ab52ea80f8379d3adf9f323adc3ea"
+      },
+      "staleAngleOverlaySuppressedByDecision": true,
+      "productCalibrationPassed": false,
+      "browserProductCalibrationPassed": false,
+      "wholeLessonEngineeringPreviewReady": false,
+      "acceptanceEffects": {
+        "currentJavaScriptRegistered": false,
+        "behaviorAccepted": false,
+        "authoritativeOriginalRuntime": false,
+        "visualFidelityAccepted": false,
+        "audioAccepted": false,
+        "humanVisualAccepted": false,
+        "ownerAccepted": false,
+        "strictComplete": false,
+        "released": false,
+        "published": false
+      }
+    }
+  ],
+  "registryEntriesWritten": 0,
+  "registrationCandidatePlacementCount": 0,
+  "currentJavaScriptRegisteredCount": 0,
+  "productCalibrationPassed": false,
+  "browserProductCalibrationPassed": false,
+  "wholeLessonEngineeringPreviewCount": 0,
+  "scaleOutAuthorized": false,
+  "acceptancePassed": false,
+  "releaseAuthorized": false,
+  "published": false,
+  "acceptanceEffects": {
+    "currentJavaScriptRegistered": false,
+    "behaviorAccepted": false,
+    "authoritativeOriginalRuntime": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "released": false,
+    "published": false
+  },
+  "limitations": [
+    "These exact10 private-current-js DOM modules are unregistered maintained engineering candidates.",
+    "Only p040-p042 suppress the separately audited stale Mc_PopUp overlay; correct Mc_Popup help remains required.",
+    "No source audio is requested and no original-runtime, fidelity, human, Owner, product, release, or publication gate is closed."
+  ]
+}

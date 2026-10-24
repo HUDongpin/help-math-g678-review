@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-alg-l09-terminal-stop-family-calibration-v1",
+  "calibrationId": "g678-alg-l09-terminal-stop-family-calibration-v1",
+  "adapterFamily": "alg-l09-terminal-stop-source-static",
+  "status": "exact-3-current-js-terminal-stop-product-host-calibrated",
+  "inputs": {
+    "audit": {
+      "path": "catalog/g678-alg-l09-terminal-stop-family-audit-v1.json",
+      "bytes": 18918,
+      "sha256": "6839190f5cedbd0dbf7a3a1e834d80daa6cf43375941b9a8e2fc2012d7123e6e"
+    },
+    "auditBuilder": {
+      "path": "scripts/audit-g678-alg-l09-terminal-stop-family.mjs",
+      "bytes": 40791,
+      "sha256": "e5fd8525017ea696129c4bd7ec52370e5056ed20bf9e9dfef2386817ff1b48af"
+    },
+    "generator": {
+      "path": "scripts/build-g678-alg-l09-terminal-stop-current-js.mjs",
+      "bytes": 50016,
+      "sha256": "bdf13d0fbc5a024b7cd70f961a53cfacf049ab3458bb78fec57cd76a02041417"
+    },
+    "generatorRun": {
+      "path": "work/g678-shared-page-factory/g678-alg-l09-terminal-stop-current-js-3-v1/run-manifest.json",
+      "bytes": 31604,
+      "sha256": "7a64c5380c45c9cd7dd9c036ec89cc2c94482ec6067fb41b1182d985eb40acf8"
+    },
+    "generatorFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-alg-l09-terminal-stop-current-js-3-v1.fragment.json",
+      "bytes": 6491,
+      "sha256": "57896c5b81c9f6a226760a1fc99f55188459300744dc10ac319c1dca0c2290b8"
+    },
+    "registrationFinalizer": {
+      "path": "scripts/finalize-g678-alg-l09-terminal-stop-registration.mjs",
+      "bytes": 19299,
+      "sha256": "15b70d74718d2a7b8188571b2c14ade7f75aeac2c4cdf7982f1f381151363745"
+    },
+    "registrationFreeze": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-322-page-registration-v1.json",
+      "bytes": 1613285,
+      "sha256": "0b1a364d8fb584e78fe778e8b9bb1331d77805268b1e4d0e6744b46a7a5e4f41"
+    },
+    "registrationFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-322-page-registration-v1.fragment.json",
+      "bytes": 206617,
+      "sha256": "a9c352b82a34074be76819718de8bdea913cafdfc4ed2fb2442680cc652a2d6c"
+    },
+    "browser": {
+      "path": "output/playwright/g678-current-js-322-v1/evidence.json",
+      "bytes": 277120,
+      "sha256": "36befb926859be46a1d858113a690ca572bfe0531b0ebee0e0ef0e28433241f0"
+    },
+    "browserVerifier": {
+      "path": "scripts/qa-g678-current-js-322-browser.mjs",
+      "bytes": 66367,
+      "sha256": "807129432b3bed738a4757bdc8a03e44ef43d68f2577f04635ea3ca025cb9b0b"
+    },
+    "sourceStaticHost": {
+      "path": "packages/demos/src/source-static-canvas-candidate.tsx",
+      "bytes": 56583,
+      "sha256": "68e4ba0254de7c48dc048146b32c3beb15f287efa9dbd59c23b698720cd5eb72"
+    },
+    "algL09TerminalStopHost": {
+      "path": "packages/demos/src/private-source-static-alg-l09-terminal-stop-candidate.tsx",
+      "bytes": 9921,
+      "sha256": "b9cd7281e0a1d6835e86bacc8f4ae02c25ba361541a820e2a3271119fde4f44a"
+    },
+    "productBridge": {
+      "path": "apps/web/lib/g678-calibration-product-bridge.server.ts",
+      "bytes": 78683,
+      "sha256": "c62c04c42f77d9719161352ac0d152d8294ddec2457cc47a1533ac28dbfa4eea"
+    },
+    "builder": {
+      "path": "scripts/build-g678-alg-l09-terminal-stop-family-calibration.mjs",
+      "bytes": 17694,
+      "sha256": "b75d5055c136bdd66b44adb0ec2c99061b7c80b3f3eb88e3e84c4da1f908cb95"
+    }
+  },
+  "auditedPlacementCount": 3,
+  "authorizedPlacementIds": [
+    "shared-alg001-l09-p003",
+    "shared-alg001-l09-p006",
+    "shared-alg001-l09-p007"
+  ],
+  "blockedPlacementCount": 0,
+  "sourceButtonCount": 2,
+  "uniqueGlossaryTermCount": 2,
+  "browserSamples": [
+    {
+      "animationId": "shared-alg001-l09-p003",
+      "frameDomain": "sprite-398",
+      "frameCount": 1053,
+      "runtimeSha256": "330f43bb9cc10876e25f24d3d8011d2eac62ac13c58ba208df70ff9dc8eb8d85",
+      "glossaryTermCount": 0,
+      "sourceTerminalStopBound": true
+    },
+    {
+      "animationId": "shared-alg001-l09-p006",
+      "frameDomain": "sprite-137",
+      "frameCount": 721,
+      "runtimeSha256": "a219a95ebd7781ede1017e0a98557e20e5418f1bf0b616e8c91679f3c1e71fcc",
+      "glossaryTermCount": 0,
+      "sourceTerminalStopBound": true
+    },
+    {
+      "animationId": "shared-alg001-l09-p007",
+      "frameDomain": "sprite-38",
+      "frameCount": 485,
+      "runtimeSha256": "565e849c8ecb5c016c9f758447ae3b01ab32f5a233793563fbe8c87afef7507b",
+      "glossaryTermCount": 2,
+      "sourceTerminalStopBound": true
+    }
+  ],
+  "productHostCalibration": {
+    "canvasReadyAndProgressing": true,
+    "sourceFrameBoundGlossaryControls": true,
+    "sourceCharacterIdentityBound": true,
+    "exactEnglishGlossaryDefinitions": true,
+    "exactSpanishGlossaryDefinitions": true,
+    "playbackPausesWhileGlossaryOpen": true,
+    "playbackResumesAfterGlossaryClose": true,
+    "localAssetIntegrityAndCrossOriginIsolation": true,
+    "allLessonsPartialRegistrationTruthful": true,
+    "familyCurrentJsTerminalStopCalibrationPassed": true,
+    "overallG678ProductCalibrationPassed": false
+  },
+  "authorization": {
+    "authorized": true,
+    "scope": "exact-3-alg-l09-terminal-stop-placement-set-only",
+    "permitsOtherAlgL09Placements": false,
+    "permitsCanonicalSourcePromotion": false,
+    "permitsAudioAcceptance": false,
+    "permitsOriginalRuntimeOrVisualFidelityClaim": false,
+    "permitsWholeLessonEngineeringPreviewClaim": false,
+    "permitsReleaseOrPublication": false
+  },
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "behaviorAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseEligible": false,
+    "released": false,
+    "published": false
+  },
+  "limitations": [
+    "This authority calibrates maintained Current-JS visual playback through the exact authored terminal stop for three ALG L9 placements, plus source-frame/source-character-bound bilingual glossary behavior only on the one page that contains those controls.",
+    "The two pages without KeyAttribute handlers expose no invented glossary controls; the two source terms on the third page retain their exact recovered bilingual definitions.",
+    "Legacy key-term sublinks/example SWFs, embedded audio lifecycle, authoritative original runtime, fidelity, human, Owner, strict-completion, release, and publication remain unaccepted.",
+    "All 44 lessons remain partial; this authority creates no N/N whole-lesson engineering preview or learner route."
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-alg-l09-vb06-drag-family-calibration-v1",
+  "calibrationId": "g678-alg-l09-vb06-drag-family-calibration-v1",
+  "adapterFamily": "alg-l09-vb06-drag-source-static",
+  "status": "exact-1-vb06-grouped-drag-product-host-calibrated",
+  "inputs": {
+    "audit": {
+      "path": "catalog/g678-alg-l09-vb06-drag-family-audit-v1.json",
+      "bytes": 33487,
+      "sha256": "3e47b4dd3fb77018ac696d832ced266964562d44d8d56ad59df03a48c0b30c23"
+    },
+    "auditBuilder": {
+      "path": "scripts/audit-g678-alg-l09-vb06-drag-family.mjs",
+      "bytes": 49689,
+      "sha256": "5dbf0010d0010518ba4adbaca3bb4def4410bac747ff102632854703ab5e3608"
+    },
+    "generator": {
+      "path": "scripts/build-g678-alg-l09-vb06-drag-current-js.mjs",
+      "bytes": 51504,
+      "sha256": "1393527274cf69da80feaeba22cca241c848e97a81d95730cc2cadc93eb98714"
+    },
+    "generatorRun": {
+      "path": "work/g678-shared-page-factory/g678-alg-l09-vb06-drag-current-js-1-v1/run-manifest.json",
+      "bytes": 25123,
+      "sha256": "23ec5858880702567659c6e5e64cfdd9451fee0752d403af90776cee56a1225d"
+    },
+    "generatorFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-alg-l09-vb06-drag-current-js-1-v1.fragment.json",
+      "bytes": 3379,
+      "sha256": "de98cae5c6ead7943e7c2522169eabb01f3898088b1a4ae8ffde5983de20456f"
+    },
+    "registrationFinalizer": {
+      "path": "scripts/finalize-g678-alg-l09-vb06-drag-registration.mjs",
+      "bytes": 20036,
+      "sha256": "d8f71507271a40a9271923be074c564ea4ac29cd0b7df128870015a8119473c1"
+    },
+    "registrationFreeze": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-325-page-registration-v1.json",
+      "bytes": 1640811,
+      "sha256": "0306a5848c6a45349d1ebbc711114fba3458eadf81d2fe1f2477d61495fd1513"
+    },
+    "registrationFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-325-page-registration-v1.fragment.json",
+      "bytes": 210049,
+      "sha256": "b704859e2a27e33caaf193a91a5ec5c416b31e8dfbfe21bdc00be638cd1a5edc"
+    },
+    "browser": {
+      "path": "output/playwright/g678-current-js-325-v1/evidence.json",
+      "bytes": 289384,
+      "sha256": "9f332c5bd204bcc5808dabb080b9268a97b1f6d242feaeabb859837dbd68b8a7"
+    },
+    "browserVerifier": {
+      "path": "scripts/qa-g678-current-js-325-browser.mjs",
+      "bytes": 79009,
+      "sha256": "694d1763731dfd44d341034745f0e4177c8a8e85c3392d691384e3b55859040b"
+    },
+    "sourceStaticHost": {
+      "path": "packages/demos/src/source-static-canvas-candidate.tsx",
+      "bytes": 56583,
+      "sha256": "68e4ba0254de7c48dc048146b32c3beb15f287efa9dbd59c23b698720cd5eb72"
+    },
+    "algL09Vb06DragHost": {
+      "path": "packages/demos/src/private-source-static-alg-l09-vb06-drag-candidate.tsx",
+      "bytes": 10803,
+      "sha256": "1474d7d524cfb29530825feb3805daba2606ca641db1d9110e94da60d78e2c0d"
+    },
+    "algL09Vb06DragBehavior": {
+      "path": "packages/demos/src/g678-alg-l09-vb06-drag.ts",
+      "bytes": 6670,
+      "sha256": "c6b70ee6d412abcbf811ff6f9d98c43255aeaa02769560756cf89ef92ab6eccb"
+    },
+    "productBridge": {
+      "path": "apps/web/lib/g678-calibration-product-bridge.server.ts",
+      "bytes": 92517,
+      "sha256": "71e6a05f1c56e2fc654707bc8702edbddc9e3a0e7926b0c762872bfa391a2baf"
+    },
+    "builder": {
+      "path": "scripts/build-g678-alg-l09-vb06-drag-family-calibration.mjs",
+      "bytes": 17324,
+      "sha256": "7ce49415c2fe14cec800ab5fd1eb8e1681db016446b2e931c459968d11c36b30"
+    }
+  },
+  "auditedPlacementCount": 1,
+  "authorizedPlacementIds": [
+    "shared-alg001-l09-p012"
+  ],
+  "blockedPlacementCount": 0,
+  "sourceButtonCount": 4,
+  "uniqueGlossaryTermCount": 3,
+  "maintainedDragSourceCount": 4,
+  "browserSamples": [
+    {
+      "animationId": "shared-alg001-l09-p012",
+      "frameDomain": "sprite-78",
+      "frameCount": 188,
+      "runtimeSha256": "ad5a9dd70bde382fe85ed3fbb01f09f0d7972f82616580928244eb8de0d4cd42",
+      "glossaryTermCount": 3,
+      "sourceStopFrame": 129,
+      "sourceResumeFrame": 130,
+      "maintainedDragSourceCount": 4
+    }
+  ],
+  "productHostCalibration": {
+    "canvasReadyAndProgressing": true,
+    "mainTimelineAdvancedPastInteractiveStop": true,
+    "frame129InteractiveStopBound": true,
+    "fourSourceGroupingBound": true,
+    "pointerKeyboardCompletionAndResumePassed": true,
+    "sourceFrameBoundGlossaryControls": true,
+    "sourceCharacterIdentityBound": true,
+    "localAssetIntegrityAndCrossOriginIsolation": true,
+    "allLessonsPartialRegistrationTruthful": true,
+    "familyCurrentJsVb06DragCalibrationPassed": true,
+    "overallG678ProductCalibrationPassed": false
+  },
+  "authorization": {
+    "authorized": true,
+    "scope": "exact-1-alg-l09-vb06-grouped-drag-placement-only",
+    "permitsOtherAlgL09Placements": false,
+    "permitsCanonicalSourcePromotion": false,
+    "permitsAudioAcceptance": false,
+    "permitsOriginalRuntimeOrVisualFidelityClaim": false,
+    "permitsWholeLessonEngineeringPreviewClaim": false,
+    "permitsReleaseOrPublication": false
+  },
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "behaviorAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseEligible": false,
+    "released": false,
+    "published": false
+  },
+  "limitations": [
+    "This authority calibrates the exact frame-129 four-item grouped-drag stop and frame-130 resume through the maintained Current-JS product host.",
+    "The pointer and keyboard product controls preserve the exact two source groups, two target columns, wrong-feedback classes, completion threshold four, and Replay reset.",
+    "Random feedback audio, external narration, authoritative original runtime, fidelity, human, Owner, strict-completion, release, and publication remain unaccepted.",
+    "All 44 lessons remain partial; this authority creates no N/N whole-lesson engineering preview or learner route."
+  ]
+}

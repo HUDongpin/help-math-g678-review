@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-alg-l09-ti-choice-family-calibration-v1",
+  "calibrationId": "g678-alg-l09-ti-choice-family-calibration-v1",
+  "adapterFamily": "alg-l09-ti-choice-source-static",
+  "status": "exact-6-ti-choice-quiz-product-host-calibrated",
+  "inputs": {
+    "audit": {
+      "path": "catalog/g678-alg-l09-ti-choice-family-audit-v1.json",
+      "bytes": 369233,
+      "sha256": "290443936b42b65f96eb567935215f5f1714b289a03519b8a03830a3c7f67f3d"
+    },
+    "auditBuilder": {
+      "path": "scripts/audit-g678-alg-l09-ti-choice-family.mjs",
+      "bytes": 72519,
+      "sha256": "09bb740b07edf9d33a439de5372f665838e02b5b6f4ba513a7438e4c78492aca"
+    },
+    "generator": {
+      "path": "scripts/build-g678-alg-l09-ti-choice-current-js.mjs",
+      "bytes": 64132,
+      "sha256": "39f634d58d9a5a3c254ca7176aa72ace17a436b013e1e5d53e9fb40b2142fca3"
+    },
+    "generatorRun": {
+      "path": "work/g678-shared-page-factory/g678-alg-l09-ti-choice-current-js-6-v1/run-manifest.json",
+      "bytes": 41789,
+      "sha256": "3bcfee8906a8ee8ee50efd270cdc80623c94dc9a468a1353e0ae30196af29124"
+    },
+    "generatorFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-alg-l09-ti-choice-current-js-6-v1.fragment.json",
+      "bytes": 11184,
+      "sha256": "00910fd6117cc9a89025b564ed7f88515e70c35922daacf5fd895146f7f30b19"
+    },
+    "registrationFinalizer": {
+      "path": "scripts/finalize-g678-alg-l09-ti-choice-registration.mjs",
+      "bytes": 30180,
+      "sha256": "cd969025f123b0b721d12a54296830bff5b5128b425dec8df1f6a9962d86c74d"
+    },
+    "registrationFreeze": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-336-page-registration-v1.json",
+      "bytes": 1808062,
+      "sha256": "6305fc3f05a6a46e8057f7295fe5aba90de978730554403f377a5c2a00f5373a"
+    },
+    "registrationFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-336-page-registration-v1.fragment.json",
+      "bytes": 222603,
+      "sha256": "799e4fab1781ac3f96ccd6177ac0bad0b9ca210db84c060d1ac67bb01b232e5f"
+    },
+    "browser": {
+      "path": "output/playwright/g678-current-js-336-v1/evidence.json",
+      "bytes": 360491,
+      "sha256": "ac0b6ed740090ef470341f4a215c3bccd2b638acf6d395ca4228cb2884373e61"
+    },
+    "browserVerifier": {
+      "path": "scripts/qa-g678-current-js-336-browser.mjs",
+      "bytes": 120718,
+      "sha256": "a3ad6007b40d043264f2d8b5875b4eb59a4c6f3d4fa8ca1e6f1ab7f22a254ba5"
+    },
+    "sourceStaticHost": {
+      "path": "packages/demos/src/source-static-canvas-candidate.tsx",
+      "bytes": 56583,
+      "sha256": "68e4ba0254de7c48dc048146b32c3beb15f287efa9dbd59c23b698720cd5eb72"
+    },
+    "algL09TiChoiceHost": {
+      "path": "packages/demos/src/private-source-static-alg-l09-ti-choice-candidate.tsx",
+      "bytes": 12229,
+      "sha256": "65fd0cd2bbcb8f5ec28a80dee8e0cacff68630463ae86dea0e7e74a20f574faf"
+    },
+    "algL09TiChoiceBehavior": {
+      "path": "packages/demos/src/g678-alg-l09-ti-choice.ts",
+      "bytes": 6680,
+      "sha256": "690fde447f6ad9bba0e7a6b092608eda11bf1660e1470242664df59d09d7bcef"
+    },
+    "productBridge": {
+      "path": "apps/web/lib/g678-calibration-product-bridge.server.ts",
+      "bytes": 124077,
+      "sha256": "3d0749def3835d18a3708a664d7fcc181fb79d3aee41c93e809d60b88f86cb99"
+    },
+    "builder": {
+      "path": "scripts/build-g678-alg-l09-ti-choice-family-calibration.mjs",
+      "bytes": 23326,
+      "sha256": "a5f5f9ecd7bef8ca4cd5cce23ac84d228d25a1937ecb54277c8d737c3cb55cc3"
+    }
+  },
+  "auditedPlacementCount": 6,
+  "authorizedPlacementIds": [
+    "shared-alg001-l09-p024",
+    "shared-alg001-l09-p025",
+    "shared-alg001-l09-p026",
+    "shared-alg001-l09-p027",
+    "shared-alg001-l09-p028",
+    "shared-alg001-l09-p029"
+  ],
+  "blockedPlacementCount": 0,
+  "sourceButtonCount": 48,
+  "uniqueGlossaryTermCount": 22,
+  "choiceCount": 20,
+  "browserSamples": [
+    {
+      "animationId": "shared-alg001-l09-p024",
+      "frameDomain": "sprite-345",
+      "frameCount": 352,
+      "runtimeSha256": "4cefb50b888b12ae0a1c169d84cb1be6381afab36881e4b5f0eb3e53d8bf368d",
+      "glossaryTermCount": 8,
+      "sourceStopFrame": 132,
+      "sourceResumeFrame": 133,
+      "choiceCount": 4,
+      "maximumWrongAttempts": 2,
+      "sourceDefectNormalized": false
+    },
+    {
+      "animationId": "shared-alg001-l09-p025",
+      "frameDomain": "sprite-362",
+      "frameCount": 288,
+      "runtimeSha256": "7787b35d740b961226693ca8141ebcdb259cbf57864a7eaa720b94fbc57d8aec",
+      "glossaryTermCount": 6,
+      "sourceStopFrame": 68,
+      "sourceResumeFrame": 69,
+      "choiceCount": 4,
+      "maximumWrongAttempts": 2,
+      "sourceDefectNormalized": true
+    },
+    {
+      "animationId": "shared-alg001-l09-p026",
+      "frameDomain": "sprite-336",
+      "frameCount": 731,
+      "runtimeSha256": "953916ef6d3e5550bf815fa76a0c3c195e8ad9c39cf7ff85fa4483cbd16db120",
+      "glossaryTermCount": 6,
+      "sourceStopFrame": 84,
+      "sourceResumeFrame": 85,
+      "choiceCount": 4,
+      "maximumWrongAttempts": 2,
+      "sourceDefectNormalized": false
+    },
+    {
+      "animationId": "shared-alg001-l09-p027",
+      "frameDomain": "sprite-383",
+      "frameCount": 548,
+      "runtimeSha256": "51ef137cec6ebe6717431c6abc22a607232f707e88998cc91f52733d6a5d33bd",
+      "glossaryTermCount": 8,
+      "sourceStopFrame": 134,
+      "sourceResumeFrame": 135,
+      "choiceCount": 2,
+      "maximumWrongAttempts": 2,
+      "sourceDefectNormalized": true
+    },
+    {
+      "animationId": "shared-alg001-l09-p028",
+      "frameDomain": "sprite-345",
+      "frameCount": 588,
+      "runtimeSha256": "51cddf3d6c4224e0460fa2e0ad7e41ac39d36d757e5b1abb0c342b78e7091526",
+      "glossaryTermCount": 6,
+      "sourceStopFrame": 177,
+      "sourceResumeFrame": 178,
+      "choiceCount": 2,
+      "maximumWrongAttempts": 2,
+      "sourceDefectNormalized": false
+    },
+    {
+      "animationId": "shared-alg001-l09-p029",
+      "frameDomain": "sprite-383",
+      "frameCount": 511,
+      "runtimeSha256": "3f886626e83c4d17bc369a982283f08e1dddf6b6f4fae2dbe92523167ed7e9bb",
+      "glossaryTermCount": 9,
+      "sourceStopFrame": 231,
+      "sourceResumeFrame": 232,
+      "choiceCount": 4,
+      "maximumWrongAttempts": 2,
+      "sourceDefectNormalized": true
+    }
+  ],
+  "productHostCalibration": {
+    "canvasReadyAndProgressing": true,
+    "mainTimelineAdvancedPastInteractiveStop": true,
+    "sourceSpecificStopsAndResumesBound": true,
+    "sourceSpecificChoiceSetsBound": true,
+    "twoWrongAttemptsAndChoiceFeedbackResumePassed": true,
+    "threeSourceAttemptIncrementDefectsRecordedAndNormalized": true,
+    "sourceFrameBoundGlossaryControls": true,
+    "sourceCharacterIdentityBound": true,
+    "localAssetIntegrityAndCrossOriginIsolation": true,
+    "allLessonsPartialRegistrationTruthful": true,
+    "familyCurrentJsTiChoiceCalibrationPassed": true,
+    "overallG678ProductCalibrationPassed": false
+  },
+  "authorization": {
+    "authorized": true,
+    "scope": "exact-6-alg-l09-ti-choice-quiz-placements-only",
+    "permitsOtherAlgL09Placements": false,
+    "permitsCanonicalSourcePromotion": false,
+    "permitsAudioAcceptance": false,
+    "permitsOriginalRuntimeOrVisualFidelityClaim": false,
+    "permitsWholeLessonEngineeringPreviewClaim": false,
+    "permitsReleaseOrPublication": false
+  },
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "behaviorAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseEligible": false,
+    "released": false,
+    "published": false
+  },
+  "limitations": [
+    "This authority calibrates the exact six TI choice stops and resumes through the maintained Current-JS product host.",
+    "The product controls preserve each source-specific A-D or A-B option set, one correct answer, per-choice hint path, typed right-feedback request, keyboard button semantics, and Replay reset.",
+    "TI03, TI05, and TI07 each contain one source wrong-feedback visual variant that omits quizTryCount increment; the maintained state normalizes the explicit two-attempt policy and records original-runtime parity as unaccepted.",
+    "Choice-feedback audio, external narration, authoritative original runtime, fidelity, human, Owner, strict-completion, release, and publication remain unaccepted.",
+    "All 44 lessons remain partial; this authority creates no N/N whole-lesson engineering preview or learner route."
+  ]
+}

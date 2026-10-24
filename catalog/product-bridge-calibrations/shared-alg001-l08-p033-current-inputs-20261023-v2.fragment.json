@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "private-current-js-calibration-fragment-v1",
+  "freeze": {
+    "path": "catalog/product-bridge-calibrations/shared-alg001-l08-p033-current-inputs-20261023-v2.json",
+    "bytes": 9691749,
+    "sha256": "41868a75c3d2feb668ee97ed50e3d25f16ea5b5a10f14a0de4ed01dcb78357bf"
+  },
+  "calibration": {
+    "calibrationId": "g678-alg-l08-p033-current-js-20261007-v1",
+    "deploymentScope": "local-only",
+    "freezeManifest": "catalog/product-bridge-calibrations/shared-alg001-l08-p033-current-inputs-20261023-v2.json",
+    "freezeManifestBytes": 9691749,
+    "freezeManifestSha256": "41868a75c3d2feb668ee97ed50e3d25f16ea5b5a10f14a0de4ed01dcb78357bf",
+    "entries": [
+      {
+        "key": "shared-alg001-l08-p033",
+        "module": "./modules/shared-alg001-l08-p033",
+        "maturity": "private-current-js",
+        "complexityLane": "behavior-heavy",
+        "artifacts": {
+          "kind": "maintained-dom-module-v1",
+          "module": {
+            "path": "packages/demos/src/modules/shared-alg001-l08-p033.tsx",
+            "bytes": 1147,
+            "sha256": "cd3803be5903add3ae8c45b5f828284acde2964709afa49e368023fd0b589f9f"
+          },
+          "timeline": {
+            "path": "packages/demos/src/timelines/shared-alg001-l08-p033.ts",
+            "bytes": 173,
+            "sha256": "f599d29c355fd35817c02fe49f98d3bf8fbeff25c38a7a82fe57a16e93367101"
+          },
+          "memberManifest": {
+            "path": "work/g678-shared-page-factory/alg-l08-p033-maintained-terminal-quiz-20261007-final-v2/members/shared-alg001-l08-p033/member-manifest.json",
+            "bytes": 3886,
+            "sha256": "7e2ac7b86644c5a74268028314a0d51f1a07eb8c8521d876240cc3754d827d29"
+          },
+          "sourceRun": {
+            "path": "work/g678-shared-page-factory/alg-l08-p033-maintained-terminal-quiz-20261007-final-v2/run-manifest.json",
+            "bytes": 3401,
+            "sha256": "5151b2a3beb50cf7526307bd806538b62bb6b69018495164f83187d74cac4ef0"
+          }
+        }
+      }
+    ]
+  }
+}

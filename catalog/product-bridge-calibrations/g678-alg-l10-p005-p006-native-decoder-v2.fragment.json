@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "calibration": {
+    "calibrationId": "g678-alg-l10-p005-p006-native-decoder-v2",
+    "deploymentScope": "local-only",
+    "freezeManifest": "catalog/product-bridge-calibrations/g678-alg-l10-p005-p006-native-decoder-v2.json",
+    "freezeManifestBytes": 78244,
+    "freezeManifestSha256": "a23c8e318e4dc9ca05479b6559fd389887e1f764caaeae761d6dc9238d25b6af",
+    "entries": [
+      {
+        "key": "shared-alg001-l10-p005",
+        "module": "./modules/g678-alg-l10-p005",
+        "maturity": "private-current-js",
+        "complexityLane": "interactive-understood",
+        "artifacts": {
+          "module": {
+            "path": "packages/demos/src/modules/g678-alg-l10-p005.tsx",
+            "bytes": 728304,
+            "sha256": "cb7f3662b54becf7c48c2e535c0b0f78812c28ece45a7a091397117bae8d4a83"
+          },
+          "timeline": {
+            "path": "packages/demos/src/timelines/shared-alg001-l10-p005.ts",
+            "bytes": 2002,
+            "sha256": "54f45304fdc12ebd661139b62a2661eea561df982c4cb066520941420fb73073"
+          },
+          "runtime": {
+            "path": "work/g678-shared-page-factory/g678-alg-l10-p005-source-candidate-v1/members/shared-alg001-l10-p005/canvas-renderer.js",
+            "bytes": 13643973,
+            "sha256": "cc31fbe6b705f3995ee1c70a0f3e96c5a4374e1b18bc0d2821908302c3525a7e"
+          }
+        }
+      },
+      {
+        "key": "shared-alg001-l10-p006",
+        "module": "./modules/g678-alg-l10-p006",
+        "maturity": "private-current-js",
+        "complexityLane": "interactive-understood",
+        "artifacts": {
+          "module": {
+            "path": "packages/demos/src/modules/g678-alg-l10-p006.tsx",
+            "bytes": 610139,
+            "sha256": "ca22aeb9082cd33d79f6f1157567f4b3dcaaef84826f37aeac0dcbaea59201d9"
+          },
+          "timeline": {
+            "path": "packages/demos/src/timelines/shared-alg001-l10-p006.ts",
+            "bytes": 1999,
+            "sha256": "21e5794219ae45775e86eb59a5758ca150f7dfd2c8cb02c2b93d77375b4c61dc"
+          },
+          "runtime": {
+            "path": "work/g678-shared-page-factory/g678-alg-l10-p006-source-candidate-v1/members/shared-alg001-l10-p006/canvas-renderer.js",
+            "bytes": 13225965,
+            "sha256": "e2c19acd7bb107ce2a6febe6079f6e33a476bd254ed98393310218fc72320995"
+          }
+        }
+      }
+    ]
+  }
+}

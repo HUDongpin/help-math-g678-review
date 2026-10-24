@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "private-current-js-calibration-fragment-v1",
+  "freeze": {
+    "path": "catalog/product-bridge-calibrations/shared-alg001-l08-p035-current-inputs-20261023-v2.json",
+    "bytes": 9691745,
+    "sha256": "e125c2893c3d35f6d6bd75b68a4cf64971bcec3822eedba2261c497b6ebf4a57"
+  },
+  "calibration": {
+    "calibrationId": "g678-alg-l08-p035-current-js-20261007-v1",
+    "deploymentScope": "local-only",
+    "freezeManifest": "catalog/product-bridge-calibrations/shared-alg001-l08-p035-current-inputs-20261023-v2.json",
+    "freezeManifestBytes": 9691745,
+    "freezeManifestSha256": "e125c2893c3d35f6d6bd75b68a4cf64971bcec3822eedba2261c497b6ebf4a57",
+    "entries": [
+      {
+        "key": "shared-alg001-l08-p035",
+        "module": "./modules/shared-alg001-l08-p035",
+        "maturity": "private-current-js",
+        "complexityLane": "behavior-heavy",
+        "artifacts": {
+          "kind": "maintained-dom-module-v1",
+          "module": {
+            "path": "packages/demos/src/modules/shared-alg001-l08-p035.tsx",
+            "bytes": 1159,
+            "sha256": "bc6a8ff5070a94a0ff13f47393de76cef9a6c6333fbd4c5e74403c995be44401"
+          },
+          "timeline": {
+            "path": "packages/demos/src/timelines/shared-alg001-l08-p035.ts",
+            "bytes": 173,
+            "sha256": "af681f3eeadc3392faa462f0ea713998391cbbc4eb7243301ef7a7434752873f"
+          },
+          "memberManifest": {
+            "path": "work/g678-shared-page-factory/alg-l08-p035-maintained-terminal-quiz-20261007-final-v2/members/shared-alg001-l08-p035/member-manifest.json",
+            "bytes": 4067,
+            "sha256": "6efdedee69b8af647618d4287ee41309364247228f8ab4b8446da4a0aa6243e0"
+          },
+          "sourceRun": {
+            "path": "work/g678-shared-page-factory/alg-l08-p035-maintained-terminal-quiz-20261007-final-v2/run-manifest.json",
+            "bytes": 3603,
+            "sha256": "1d1206d649cd6e4609666e982b43039a5faae5a262392b9c998df960918abb43"
+          }
+        }
+      }
+    ]
+  }
+}

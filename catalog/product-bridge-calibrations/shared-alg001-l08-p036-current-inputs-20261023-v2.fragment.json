@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "private-current-js-calibration-fragment-v1",
+  "freeze": {
+    "path": "catalog/product-bridge-calibrations/shared-alg001-l08-p036-current-inputs-20261023-v2.json",
+    "bytes": 9692379,
+    "sha256": "0531fb13e61e5d434968cc6b3c4aecabbd1284c47dad8bf2ec8178881d38dc9b"
+  },
+  "calibration": {
+    "calibrationId": "g678-alg-l08-p036-current-js-20261007-v1",
+    "deploymentScope": "local-only",
+    "freezeManifest": "catalog/product-bridge-calibrations/shared-alg001-l08-p036-current-inputs-20261023-v2.json",
+    "freezeManifestBytes": 9692379,
+    "freezeManifestSha256": "0531fb13e61e5d434968cc6b3c4aecabbd1284c47dad8bf2ec8178881d38dc9b",
+    "entries": [
+      {
+        "key": "shared-alg001-l08-p036",
+        "module": "./modules/shared-alg001-l08-p036",
+        "maturity": "private-current-js",
+        "complexityLane": "behavior-heavy",
+        "artifacts": {
+          "kind": "maintained-dom-module-v1",
+          "module": {
+            "path": "packages/demos/src/modules/shared-alg001-l08-p036.tsx",
+            "bytes": 1173,
+            "sha256": "31da8bc3e6a0e2b78603099eb76f164d8389ff14c429c4ac078dfa8536bc4223"
+          },
+          "timeline": {
+            "path": "packages/demos/src/timelines/shared-alg001-l08-p036.ts",
+            "bytes": 173,
+            "sha256": "fbd1c8b0cab25d2075776a369795b38051567a453dbe6acfcff1fac52aba1f51"
+          },
+          "memberManifest": {
+            "path": "work/g678-shared-page-factory/alg-l08-p036-maintained-terminal-quiz-20261007-final-v2/members/shared-alg001-l08-p036/member-manifest.json",
+            "bytes": 4069,
+            "sha256": "f5752b707c3d5d69a817422d24a1980d72c729a959bfc53e786714904f636f8d"
+          },
+          "sourceRun": {
+            "path": "work/g678-shared-page-factory/alg-l08-p036-maintained-terminal-quiz-20261007-final-v2/run-manifest.json",
+            "bytes": 3606,
+            "sha256": "52146a1aaa38f117e1f6c8e6d7169dfd0719f7df7c6936a709612fbc3be7eacb"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "private-current-js-calibration-fragment-v1",
+  "freeze": {
+    "path": "catalog/product-bridge-calibrations/shared-alg001-l08-p034-current-inputs-20261023-v3.json",
+    "bytes": 9695721,
+    "sha256": "5110f17e6de042d9b716f9d2345001a83451008adedd188b5c2e4cb4136d1729"
+  },
+  "calibration": {
+    "calibrationId": "g678-alg-l08-p034-current-js-20261007-v1",
+    "deploymentScope": "local-only",
+    "freezeManifest": "catalog/product-bridge-calibrations/shared-alg001-l08-p034-current-inputs-20261023-v3.json",
+    "freezeManifestBytes": 9695721,
+    "freezeManifestSha256": "5110f17e6de042d9b716f9d2345001a83451008adedd188b5c2e4cb4136d1729",
+    "entries": [
+      {
+        "key": "shared-alg001-l08-p034",
+        "module": "./modules/shared-alg001-l08-p034",
+        "maturity": "private-current-js",
+        "complexityLane": "behavior-heavy",
+        "artifacts": {
+          "kind": "maintained-dom-module-v1",
+          "module": {
+            "path": "packages/demos/src/modules/shared-alg001-l08-p034.tsx",
+            "bytes": 1147,
+            "sha256": "f0a1bce2bece2666d3d40cb85005503ba707bd259d2065fe6dc508c314fcfa89"
+          },
+          "timeline": {
+            "path": "packages/demos/src/timelines/shared-alg001-l08-p034.ts",
+            "bytes": 173,
+            "sha256": "f5c2c6625e3241da328b4c644d0a6aaf52d7e54eeba53eda0796e3c1289b309d"
+          },
+          "memberManifest": {
+            "path": "work/g678-shared-page-factory/alg-l08-p034-maintained-terminal-quiz-20261007-final-v2/members/shared-alg001-l08-p034/member-manifest.json",
+            "bytes": 4069,
+            "sha256": "362446956b99a9be09337d5a5cc5c9947152772a93de2a074efe7071fb5b1ae4"
+          },
+          "sourceRun": {
+            "path": "work/g678-shared-page-factory/alg-l08-p034-maintained-terminal-quiz-20261007-final-v2/run-manifest.json",
+            "bytes": 3603,
+            "sha256": "6375616fa7a2d975f9c116b01bb9938f0914a4041edee2abfc291eabb02ae6d0"
+          }
+        }
+      }
+    ]
+  }
+}

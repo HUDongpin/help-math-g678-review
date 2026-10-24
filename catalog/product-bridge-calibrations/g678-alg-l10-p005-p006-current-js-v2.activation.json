@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-09-08T23:15:27.771Z",
+  "status": "local-registered-paired-host-hydration-repair-qa-pending",
+  "beforeRegistry": {
+    "path": "packages/demos/private-current-js-registry.json",
+    "bytes": 446745,
+    "sha256": "901eb5cd9aefaf777a8743709b3b1d8319731961c37b3c1e8a54d11d9ac257e6"
+  },
+  "after": [
+    {
+      "path": "packages/demos/private-current-js-registry.json",
+      "bytes": 446745,
+      "sha256": "caa454958db514fc02b65d3a07fafaf193abb2cb3392241734cb4f0d647d49d8"
+    },
+    {
+      "path": "packages/demos/src/registry.generated.ts",
+      "bytes": 130310,
+      "sha256": "88c107cd2ed96eae29734cda07aad1d4d5d5ace87d52b218981866845f51fa76"
+    },
+    {
+      "path": "packages/demos/src/registry.metadata.generated.ts",
+      "bytes": 75696,
+      "sha256": "da599a2f4d466d581abacf1f6d774e2995034c622cf01d17941f56c518cbe785"
+    },
+    {
+      "path": "packages/demos/src/registry.local-only.generated.ts",
+      "bytes": 288816,
+      "sha256": "f8cfef3aedf792b9e57024373c6070d4232d30f9cbf218ae7d05a4ea5fc19bec"
+    },
+    {
+      "path": "packages/demos/src/registry.local-only.metadata.generated.ts",
+      "bytes": 224009,
+      "sha256": "3b8ec9a54717183242d1bdb14196e91958d95807181dd89dac23711e69168ded"
+    }
+  ],
+  "replacedIds": [
+    "shared-alg001-l10-p005",
+    "shared-alg001-l10-p006"
+  ],
+  "preservedOtherG678Placements": 386,
+  "registered": 388,
+  "sourcePayloadChanged": false,
+  "publicFilesWritten": 0,
+  "transaction": {
+    "backups": [
+      {
+        "target": "packages/demos/private-current-js-registry.json",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-alg-l10-p005-p006-current-js-v2-activation/before-private-current-js-registry.json",
+          "bytes": 446745,
+          "sha256": "901eb5cd9aefaf777a8743709b3b1d8319731961c37b3c1e8a54d11d9ac257e6"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-alg-l10-p005-p006-current-js-v2-activation/before-registry.generated.ts",
+          "bytes": 130310,
+          "sha256": "88c107cd2ed96eae29734cda07aad1d4d5d5ace87d52b218981866845f51fa76"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.metadata.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-alg-l10-p005-p006-current-js-v2-activation/before-registry.metadata.generated.ts",
+          "bytes": 75696,
+          "sha256": "da599a2f4d466d581abacf1f6d774e2995034c622cf01d17941f56c518cbe785"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.local-only.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-alg-l10-p005-p006-current-js-v2-activation/before-registry.local-only.generated.ts",
+          "bytes": 288816,
+          "sha256": "bf62cb8fe5eb2912549550b2f1f698e9428eb4d7e8c7f7152444bfafe0c8bea4"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.local-only.metadata.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-alg-l10-p005-p006-current-js-v2-activation/before-registry.local-only.metadata.generated.ts",
+          "bytes": 224009,
+          "sha256": "819c8b37fa8351abceec2c18f220f49360ba270b098aeec3a611c9825608e9da"
+        }
+      }
+    ],
+    "completed": [
+      "packages/demos/private-current-js-registry.json",
+      "packages/demos/src/registry.local-only.generated.ts",
+      "packages/demos/src/registry.local-only.metadata.generated.ts"
+    ],
+    "rollback": false
+  },
+  "freeze": {
+    "path": "catalog/product-bridge-calibrations/g678-alg-l10-p005-p006-current-js-v2.json",
+    "bytes": 68635,
+    "sha256": "874a1a763b29e83678a9138e4f5132874871a6dcb61e7778b82952c201755c57"
+  },
+  "priorCalibration": "g678-alg-l10-p005-p006-current-js-v1",
+  "priorQa": "Retained failed v1 receipt; no source or original-runtime acceptance inferred.",
+  "productCalibrationPassed": false,
+  "scaleOutAuthorized": false
+}

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-alg-l09-vb06-drag-current-js-fragment-v1",
+  "runId": "g678-alg-l09-vb06-drag-current-js-1-v1",
+  "compilerRun": {
+    "path": "work/g678-shared-page-factory/g678-alg-l09-vb06-drag-current-js-1-v1/run-manifest.json",
+    "bytes": 25123,
+    "sha256": "23ec5858880702567659c6e5e64cfdd9451fee0752d403af90776cee56a1225d"
+  },
+  "deploymentScope": "local-only",
+  "reviewedAudit": {
+    "path": "catalog/g678-alg-l09-vb06-drag-family-audit-v1.json",
+    "bytes": 33487,
+    "sha256": "3e47b4dd3fb77018ac696d832ced266964562d44d8d56ad59df03a48c0b30c23"
+  },
+  "keyTermRecovery": {
+    "path": "catalog/g678-alg-l09-vb06-drag-family-audit-v1.json",
+    "bytes": 33487,
+    "sha256": "3e47b4dd3fb77018ac696d832ced266964562d44d8d56ad59df03a48c0b30c23"
+  },
+  "predecessorFreeze": {
+    "path": "catalog/product-bridge-calibrations/g678-current-js-324-page-product-calibrated-registration-v1.json",
+    "bytes": 1643620,
+    "sha256": "b58befbb86329c94977f89017051a890a2cb0b2ef2ea6e5ac3f97ffca27d574b"
+  },
+  "auditedPlacementCount": 1,
+  "recoveredEligiblePlacementCount": 1,
+  "blockedPlacementCount": 0,
+  "generatedPlacementCount": 1,
+  "entries": [
+    {
+      "key": "shared-alg001-l09-p012",
+      "module": "./modules/shared-alg001-l09-p012",
+      "maturity": "private-current-js",
+      "complexityLane": "interactive-understood",
+      "deploymentScope": "local-only",
+      "adapterFamily": "alg-l09-vb06-drag-source-static",
+      "timeline": {
+        "path": "packages/demos/src/timelines/shared-alg001-l09-p012.ts",
+        "bytes": 2130,
+        "sha256": "58d65715b3caf5c9b97652759fa7f9b7effd546273aff1e7a6955f566d48e46e"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/shared-alg001-l09-p012.tsx",
+        "bytes": 1798,
+        "sha256": "c517ecebfce9b839e0bb2b086e79294e7f1c3d72274d27e0136b21062a1187ac"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-alg-l09-vb06-drag-current-js-1-v1/members/shared-alg001-l09-p012/member-manifest.json",
+        "bytes": 17243,
+        "sha256": "de58b1212ce53d3fc2db660bac90f1ea030271c68faf5c34c9598ea77dcfd1cb"
+      },
+      "runtime": {
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-alg-l09-vb06-drag-current-js-1-v1/members/shared-alg001-l09-p012/canvas-renderer.js",
+          "bytes": 1902876,
+          "sha256": "ad5a9dd70bde382fe85ed3fbb01f09f0d7972f82616580928244eb8de0d4cd42",
+          "url": "/flash-assets/g678-local/shared-alg001-l09-p012/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "frameDomain": "sprite-78",
+        "frameCount": 188,
+        "livePlaybackEndFrame": 188
+      }
+    }
+  ],
+  "currentJavaScriptRegisteredCount": 0,
+  "overallProductCalibrationPassed": false,
+  "wholeLessonEngineeringPreviewCount": 0,
+  "productBlockers": [
+    "alg-l09-vb06-drag-browser-product-calibration-pending",
+    "random-feedback-audio-runtime-and-listening-acceptance-pending"
+  ],
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "behaviorAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseEligible": false,
+    "released": false,
+    "published": false
+  }
+}

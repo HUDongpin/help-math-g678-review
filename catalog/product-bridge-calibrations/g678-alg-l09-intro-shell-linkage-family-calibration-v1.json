@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-alg-l09-intro-shell-linkage-family-calibration-v1",
+  "calibrationId": "g678-alg-l09-intro-shell-linkage-family-calibration-v1",
+  "adapterFamily": "alg-l09-intro-shell-linkage-source-static",
+  "status": "exact-1-intro-shell-linkage-product-host-calibrated",
+  "inputs": {
+    "audit": {
+      "path": "catalog/g678-alg-l09-intro-shell-linkage-family-audit-v1.json",
+      "bytes": 13855,
+      "sha256": "f0fdeba09f95c87506725102bb0c84b990aae50b7ac3b2fad98d015a95a8e6f0"
+    },
+    "auditBuilder": {
+      "path": "scripts/audit-g678-alg-l09-intro-shell-linkage-family.mjs",
+      "bytes": 41061,
+      "sha256": "c472970cd10f8bcc40328e5957add0e89f36167504621b426ca5463ab02091b9"
+    },
+    "generator": {
+      "path": "scripts/build-g678-alg-l09-intro-shell-linkage-current-js.mjs",
+      "bytes": 49460,
+      "sha256": "21fbbd5df3e6c54b04295c2829e21cf2abd4b96407ea5e1a0373faa67ca1823f"
+    },
+    "generatorRun": {
+      "path": "work/g678-shared-page-factory/g678-alg-l09-intro-shell-linkage-current-js-1-v1/run-manifest.json",
+      "bytes": 24743,
+      "sha256": "9465148c84306c968f32926a85f9504b8e3a44733392822f671fd657050cd4a4"
+    },
+    "generatorFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-alg-l09-intro-shell-linkage-current-js-1-v1.fragment.json",
+      "bytes": 3398,
+      "sha256": "bef566439a9f86f7e7360073a2884c7dd3859f0ec8e2fef7d861ed12a459416e"
+    },
+    "registrationFinalizer": {
+      "path": "scripts/finalize-g678-alg-l09-intro-shell-linkage-registration.mjs",
+      "bytes": 18155,
+      "sha256": "a1ff86939ea2757499c112c94f701ebb358f5e40655725e44999e9a20237e82d"
+    },
+    "registrationFreeze": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-324-page-registration-v1.json",
+      "bytes": 1631466,
+      "sha256": "bb16cae181997e8544aeeb089e2caa13f51df71578eda9bfe34a32d5839c02af"
+    },
+    "registrationFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-324-page-registration-v1.fragment.json",
+      "bytes": 208918,
+      "sha256": "985e45e972f9cf4e32e5642ab23e6d3c334042a2d799783472480ee362d89082"
+    },
+    "browser": {
+      "path": "output/playwright/g678-current-js-324-v1/evidence.json",
+      "bytes": 282731,
+      "sha256": "58652ea6584f39dbc70a32cd24822c46b21f1ad233d3c9d5f8a0bec02d7a3de7"
+    },
+    "browserVerifier": {
+      "path": "scripts/qa-g678-current-js-324-browser.mjs",
+      "bytes": 70628,
+      "sha256": "71ce59b691c8d3620670296fc7207e964d24648f2ed8717cd6f1a6901200d241"
+    },
+    "sourceStaticHost": {
+      "path": "packages/demos/src/source-static-canvas-candidate.tsx",
+      "bytes": 56583,
+      "sha256": "68e4ba0254de7c48dc048146b32c3beb15f287efa9dbd59c23b698720cd5eb72"
+    },
+    "algL09TerminalStopHost": {
+      "path": "packages/demos/src/private-source-static-alg-l09-terminal-stop-candidate.tsx",
+      "bytes": 9921,
+      "sha256": "b9cd7281e0a1d6835e86bacc8f4ae02c25ba361541a820e2a3271119fde4f44a"
+    },
+    "productBridge": {
+      "path": "apps/web/lib/g678-calibration-product-bridge.server.ts",
+      "bytes": 87593,
+      "sha256": "35cd8b9e4389e94130f5609c24afaa4ac37646d768926ef26246550280e59d4d"
+    },
+    "builder": {
+      "path": "scripts/build-g678-alg-l09-intro-shell-linkage-family-calibration.mjs",
+      "bytes": 16071,
+      "sha256": "a909b80391bd5a7dfb6b35a56c127bfc5091b85387c130652bb75881e42ce0d0"
+    }
+  },
+  "auditedPlacementCount": 1,
+  "authorizedPlacementIds": [
+    "shared-alg001-l09-p001"
+  ],
+  "blockedPlacementCount": 0,
+  "rootReachableMainTimelineScriptCount": 0,
+  "exportedShellLinkageCount": 7,
+  "browserSamples": [
+    {
+      "animationId": "shared-alg001-l09-p001",
+      "frameDomain": "sprite-142",
+      "frameCount": 134,
+      "runtimeSha256": "48c8934576f9925def9d0f35727d290be823548c62305c8e7837b0159bff139a",
+      "glossaryTermCount": 0,
+      "rootReachableMainTimelineScriptCount": 0,
+      "exportedShellLinkagesExcludedFromPageScope": true
+    }
+  ],
+  "productHostCalibration": {
+    "canvasReadyAndProgressing": true,
+    "mainTimelineAdvancedToEnd": true,
+    "noInventedPageControls": true,
+    "exportedShellLinkagesExcludedFromPageScope": true,
+    "localAssetIntegrityAndCrossOriginIsolation": true,
+    "allLessonsPartialRegistrationTruthful": true,
+    "familyCurrentJsIntroShellLinkageCalibrationPassed": true,
+    "overallG678ProductCalibrationPassed": false
+  },
+  "authorization": {
+    "authorized": true,
+    "scope": "exact-1-alg-l09-intro-shell-linkage-placement-only",
+    "permitsOtherAlgL09Placements": false,
+    "permitsCanonicalSourcePromotion": false,
+    "permitsAudioAcceptance": false,
+    "permitsOriginalRuntimeOrVisualFidelityClaim": false,
+    "permitsWholeLessonEngineeringPreviewClaim": false,
+    "permitsReleaseOrPublication": false
+  },
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "behaviorAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseEligible": false,
+    "released": false,
+    "published": false
+  },
+  "limitations": [
+    "This authority calibrates the exact 134-frame root-reachable ALG L9 introduction child timeline through the maintained Current-JS product host.",
+    "The exported progress-bar, media-controls, FUI, and FScrollBar linkages are not placed in the root-reachable page graph and remain excluded as legacy shell controls.",
+    "Embedded audio lifecycle, authoritative original runtime, fidelity, human, Owner, strict-completion, release, and publication remain unaccepted.",
+    "All 44 lessons remain partial; this authority creates no N/N whole-lesson engineering preview or learner route."
+  ]
+}

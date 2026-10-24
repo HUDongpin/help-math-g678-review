@@ -1,0 +1,32 @@
+{
+  "calibrationId": "g678-alg-l12-p015-current-js-v1",
+  "deploymentScope": "local-only",
+  "freezeManifest": "catalog/product-bridge-calibrations/g678-alg-l12-p015-current-js-v1.json",
+  "freezeManifestBytes": 37133,
+  "freezeManifestSha256": "4795efcc7e3e86278408b206a4e5feae47b5db8ccdcf1adba286214a826bdab9",
+  "entries": [
+    {
+      "key": "shared-alg001-l12-p015",
+      "module": "./modules/shared-alg001-l12-p015",
+      "maturity": "private-current-js",
+      "complexityLane": "interactive-understood",
+      "artifacts": {
+        "module": {
+          "path": "packages/demos/src/modules/shared-alg001-l12-p015.tsx",
+          "bytes": 155,
+          "sha256": "b1751285bf15bffcfa51128d5e1f2eeb5cef3d9b98968a14b8121400fb672d4d"
+        },
+        "timeline": {
+          "path": "packages/demos/src/timelines/shared-alg001-l12-p015.ts",
+          "bytes": 159,
+          "sha256": "daecb8c3283834279eed0857e5926a0879841f1f0c55be7dd1fd0c72787e959d"
+        },
+        "runtime": {
+          "path": "work/g678-shared-page-factory/alg-l12-glossary-pair-20260927-p015/members/shared-alg001-l12-p015/canvas-renderer.js",
+          "bytes": 5955891,
+          "sha256": "53256a9b116823b1113e50972a3aa1ecee86891b9d2b4f87bbf2902ebb37b917"
+        }
+      }
+    }
+  ]
+}

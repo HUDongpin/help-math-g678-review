@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-alg-l09-vb02-glossary-current-js-fragment-v1",
+  "runId": "g678-alg-l09-vb02-glossary-current-js-1-v1",
+  "compilerRun": {
+    "path": "work/g678-shared-page-factory/g678-alg-l09-vb02-glossary-current-js-1-v1/run-manifest.json",
+    "bytes": 24998,
+    "sha256": "1e5d7adc3554e17b51a5b1db124dbd13c5de194696d07bfc1d79e1aa02f513ba"
+  },
+  "deploymentScope": "local-only",
+  "reviewedAudit": {
+    "path": "catalog/g678-alg-l09-vb02-glossary-family-audit-v1.json",
+    "bytes": 19328,
+    "sha256": "03af7675b5e579b1307251b1c027eef069ffa837752d68c76934b8d7ef6fc286"
+  },
+  "keyTermRecovery": {
+    "path": "catalog/g678-alg-l09-vb02-glossary-family-audit-v1.json",
+    "bytes": 19328,
+    "sha256": "03af7675b5e579b1307251b1c027eef069ffa837752d68c76934b8d7ef6fc286"
+  },
+  "predecessorFreeze": {
+    "path": "catalog/product-bridge-calibrations/g678-current-js-325-page-product-calibrated-registration-v1.json",
+    "bytes": 1654117,
+    "sha256": "3053fb15fb6a156298e9b068ba0a784f7bb9a1efdb33e6ee495f481cfa174bab"
+  },
+  "auditedPlacementCount": 1,
+  "recoveredEligiblePlacementCount": 1,
+  "blockedPlacementCount": 0,
+  "generatedPlacementCount": 1,
+  "entries": [
+    {
+      "key": "shared-alg001-l09-p008",
+      "module": "./modules/shared-alg001-l09-p008",
+      "maturity": "private-current-js",
+      "complexityLane": "interactive-understood",
+      "deploymentScope": "local-only",
+      "adapterFamily": "alg-l09-vb02-glossary-source-static",
+      "timeline": {
+        "path": "packages/demos/src/timelines/shared-alg001-l09-p008.ts",
+        "bytes": 2221,
+        "sha256": "89c2187222b7af7e37e1dd9f5036396cfff0b0ade1b992c51d95816dff15bdd2"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/shared-alg001-l09-p008.tsx",
+        "bytes": 1734,
+        "sha256": "ab4be5c4beb7173c6c59b2ac97dcb123e59317b8fb1bf77d7fbd0986c788694a"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-alg-l09-vb02-glossary-current-js-1-v1/members/shared-alg001-l09-p008/member-manifest.json",
+        "bytes": 8371,
+        "sha256": "405ef3e3142c720aa4774f0c51376cd490025290020549632526c4c561f1a6da"
+      },
+      "runtime": {
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-alg-l09-vb02-glossary-current-js-1-v1/members/shared-alg001-l09-p008/canvas-renderer.js",
+          "bytes": 16973809,
+          "sha256": "ff73b4f24b0abb9f5becb83ed781b04fcb91768f8a7a998e5e4f8c9b21126f59",
+          "url": "/flash-assets/g678-local/shared-alg001-l09-p008/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "frameDomain": "sprite-187",
+        "frameCount": 505,
+        "livePlaybackEndFrame": 505
+      }
+    }
+  ],
+  "currentJavaScriptRegisteredCount": 0,
+  "overallProductCalibrationPassed": false,
+  "wholeLessonEngineeringPreviewCount": 0,
+  "productBlockers": [
+    "alg-l09-vb02-glossary-browser-product-calibration-pending",
+    "dormant-child-random-feedback-audio-runtime-and-listening-acceptance-pending"
+  ],
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "behaviorAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseEligible": false,
+    "released": false,
+    "published": false
+  }
+}
