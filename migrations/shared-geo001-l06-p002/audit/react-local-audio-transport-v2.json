@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "kind": "g678-geo001-l06-p002-react-local-audio-transport-v2",
+  "recordedAtUtc": "2026-09-24T16:56:33Z",
+  "animationId": "shared-geo001-l06-p002",
+  "sourceSwfSha256": "3f340d0201e0f4eed1c8e73d364641d5de4b625e64c33680059842b523002c44",
+  "intactEmbeddedMp3": {
+    "path": "migrations/shared-geo001-l06-p002/audit/sprite-230-source-stream-v1.mp3",
+    "bytes": 496600,
+    "sha256": "2109aaa85e801d9a5bddbf2c0f30184e078a9eab75785580f477d51147fe325e",
+    "decodedSampleRate": 22050,
+    "decodedSampleCount": 2200320,
+    "encodedStreamSplit": false
+  },
+  "candidateScope": "loopback-only, user-started React/WebAudio engineering candidate; not Current-JS or audio acceptance",
+  "implementation": {
+    "transport": "packages/demos/src/geo-l06-p002-source-audio-transport-v1.ts",
+    "localCandidate": "packages/demos/src/geo-l06-p002-local-candidate.tsx",
+    "assetRoute": "apps/web/app/flash-assets/g678-local/shared-geo001-l06-p002/source-stream.mp3/route.ts",
+    "assetPolicy": "apps/web/lib/g678-geo-l06-p002-asset-access.ts"
+  },
+  "checks": {
+    "focusedP002AndAssetPolicyTests": "22 passed, 0 failed",
+    "scopedStrictTypeScript": "passed for candidate and transport test",
+    "sourceStreamSha256AndSize": "passed",
+    "localBrowserEnglish": "Play requested exact MP3, HTTP 200, frame advanced; Pause stopped frame; glossary click opened dialog and stopped transport; Replay returned to frame 1 and stopped transport",
+    "localBrowserSpanish": "Spanish candidate loaded; Play requested exact MP3, HTTP 200, frame advanced",
+    "sourceMp3ResponseHeaders": "audio/mpeg, Content-Length 496600, private no-store, same-origin CORP, noindex",
+    "sourceScheduling": "three native-rate decoded-buffer runs; restart at frame 423 schedules the two remaining runs",
+    "cancelDuringFetch": "stale request cannot schedule playback",
+    "localRequestPolicy": "exact loopback origin, hash, same-origin fetch metadata and candidate referer; production, remote, range and mismatched hash rejected",
+    "productionBundleRebuiltForV2": false
+  },
+  "remainingGates": [
+    "original-runtime audible synchronization, root/preloader and glossary host causality not verified",
+    "separate catalog MP3 relation, Spanish spoken-language decision and human listening not accepted",
+    "source scene palette and opacity differ from forensic view; full-frame visual comparison open",
+    "real My Lesson host admission and source-ordered GEO001 L6 integration open",
+    "private Current-JS registration, human/Owner review, strict completion, release and publication open"
+  ],
+  "currentJsCoverageAfter": {
+    "registeredSharedPlacements": 473,
+    "requiredSharedPlacements": 2282,
+    "thisPlacementRegistered": false
+  }
+}

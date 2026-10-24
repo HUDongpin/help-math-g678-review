@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "kind": "g678-source-stream-browser-decode-v1",
+  "recordedAtUtc": "2026-09-24T11:59:50Z",
+  "animationId": "shared-geo001-l06-p002",
+  "sourceSwfSha256": "3f340d0201e0f4eed1c8e73d364641d5de4b625e64c33680059842b523002c44",
+  "sourceMp3Path": "migrations/shared-geo001-l06-p002/audit/sprite-230-source-stream-v1.mp3",
+  "sourceMp3Sha256": "2109aaa85e801d9a5bddbf2c0f30184e078a9eab75785580f477d51147fe325e",
+  "sourceMp3Bytes": 496600,
+  "sourceBlockCount": 1200,
+  "sourceDeclaredSamples": 2200320,
+  "sourceSampleRateHz": 22050,
+  "sourceFrameDomain": "sprite-230",
+  "sourceFrameCount": 1216,
+  "sourceFps": 12,
+  "firstSoundBlockFrame": 7,
+  "soundBlockGaps": [[418, 422], [464, 468]],
+  "sourceSeekSamplesRange": [-2010, 1673],
+  "ffprobeDurationSecondsEstimate": 99.32,
+  "ffmpegNativeDecode": {
+    "command": "ffmpeg -v error -i <sourceMp3Path> -f s16le -ac 1 -ar 22050 - | wc -c",
+    "decodedPcmBytes": 4400640,
+    "decodedSamples": 2200320,
+    "matchesSourceDeclaredSamples": true
+  },
+  "browserDecode": {
+    "browser": "Chromium 153.0.8010.54 via playwright-cli",
+    "method": "Local loopback fetch of the exact extracted MP3, followed by OfflineAudioContext.decodeAudioData at each requested rate. No AudioContext was started and no audio was played. Each profile was decoded twice and its Float32 channel bytes hashed with Web Crypto SHA-256.",
+    "encodedHttpStatus": 200,
+    "encodedBytes": 496600,
+    "profiles": [
+      {
+        "requestedRateHz": 22050,
+        "actualRateHz": 22050,
+        "channels": 1,
+        "decodedSamples": 2200320,
+        "durationSeconds": 99.78775510204082,
+        "pcmFloat32Sha256": "b22843376ae7db82adafddcbb3716bcccc540f3f776e861ba8ad1f3173bbc191",
+        "repeatMatched": true
+      },
+      {
+        "requestedRateHz": 48000,
+        "actualRateHz": 48000,
+        "channels": 1,
+        "decodedSamples": 4789812,
+        "durationSeconds": 99.78775,
+        "pcmFloat32Sha256": "5fb1eb2ca6d56e4d4c23c0c2a7555ed43eff6f8e514565279e9e67f1bda42aed",
+        "repeatMatched": true
+      }
+    ]
+  },
+  "findings": [
+    "The native-rate whole-stream decoder length matches the sum of the 1200 SWF SoundStreamBlock sample counts exactly; ffprobe's 99.32-second value is not the decoded sample duration.",
+    "The MP3 remains a continuous extracted stream. Ten missing SoundStreamBlock frames are source timeline facts, not authorization to split encoded MP3 or insert silent PCM.",
+    "The source seekSamples headers include negative values. A source-frame to browser-decoder sample mapping and original-host start/stop behavior are not established by this decode."
+  ],
+  "claimBoundary": {
+    "sourceFrameSynchronizationEstablished": false,
+    "originalRuntimeListeningAccepted": false,
+    "spokenLanguageEstablished": false,
+    "sourceAudioAccepted": false,
+    "productPlaybackIntegrated": false,
+    "currentJsRegisteredByThisReceipt": false
+  }
+}

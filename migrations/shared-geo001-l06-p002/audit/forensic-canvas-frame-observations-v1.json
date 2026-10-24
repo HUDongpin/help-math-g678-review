@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "g678-ffdec-canvas-forensic-observations-v1",
+  "animationId": "shared-geo001-l06-p002",
+  "sourceSwfSha256": "3f340d0201e0f4eed1c8e73d364641d5de4b625e64c33680059842b523002c44",
+  "ffdecVersion": "26.2.1",
+  "framesHtmlSha256": "ce21e1222c253fe754c770e21d2fa8b970bc981fe4694795d0cffe5962e7b362",
+  "captureMethod": "Local loopback-only HTTP serving of the hash-bound FFDec sprite-230 Canvas export; Playwright Chromium direct-seeked its zero-based frame variable and paused the exporter timer before each screenshot. These are forensic candidate images, not authorized original-runtime frames.",
+  "exportCanvas": {"width": 629, "height": 528},
+  "screenshotPixels": {"width": 631, "height": 530},
+  "observations": [
+    {"mainFrame": 1, "path": "output/playwright/geo-l06-p002-forensic-sprite230-f0001.png", "sha256": "cd51c3986f747521a83dc4c7fa7f2cef9821ad0848e1ce63a412831fda16a3b4", "observation": "Kitchen scene, two chefs and ingredient props; no teaching sentence yet."},
+    {"mainFrame": 400, "path": "output/playwright/geo-l06-p002-forensic-sprite230-f0400.png", "sha256": "969738038c24e511196520da4079cacc2579f0534d3dc6e658687067026e337b", "observation": "Kitchen scene persists; chef hand and prop poses differ from frame 1."},
+    {"mainFrame": 700, "path": "output/playwright/geo-l06-p002-forensic-sprite230-f0700.png", "sha256": "9beee7ec9003239dfc81df05c5808a32ed6cb9ffabcca3dad3dfdf5a9e493856", "observation": "Kitchen scene persists before the source instructional sentence."},
+    {"mainFrame": 987, "path": "output/playwright/geo-l06-p002-forensic-sprite230-f0987.png", "sha256": "f696a10bd92ed3b757df76f79992b2f1a598ff1581d58075e82ca8c945a02c7c", "observation": "Source sentence about area occupies a light panel along the lower scene; glossary buttons are source-present from this frame."},
+    {"mainFrame": 1125, "path": "output/playwright/geo-l06-p002-forensic-sprite230-f1125.png", "sha256": "d584a03b9aad20b748f83409c01f71c8b1d378b4b63b17a38873501a4c68fa7d", "observation": "Area sentence remains; source radius/diameter text definitions enter the display list at this frame."},
+    {"mainFrame": 1216, "path": "output/playwright/geo-l06-p002-forensic-sprite230-f1216.png", "sha256": "d9fd1dd716ee559b87cac33d3beef1bbb48fa54fc2845c28129564d2f36fa3ec", "observation": "Terminal direct-seek image displays the area sentence and radius/diameter term panel."}
+  ],
+  "claimBoundary": {
+    "originalRuntimeEstablished": false,
+    "visualFidelityEstablished": false,
+    "audioRendered": false,
+    "humanReviewEstablished": false,
+    "currentJsRegistered": false
+  }
+}

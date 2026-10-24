@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "kind": "g678-geo001-l06-p002-react-local-candidate-v1",
+  "recordedAtUtc": "2026-09-24T16:34:03Z",
+  "animationId": "shared-geo001-l06-p002",
+  "sourceSwfSha256": "3f340d0201e0f4eed1c8e73d364641d5de4b625e64c33680059842b523002c44",
+  "sourceSymbolSheetSha256": "ae5c6fb9ba4e7c5b4acb1ee1187739a2bf6c1c81ff6d0c9129c428a1f9094c7c",
+  "candidateRoute": "/en/migration-status/g678-calibration/shared-geo001-l06-p002",
+  "candidateScope": "loopback-only development, not private Current-JS registration or My Lesson admission",
+  "implementation": {
+    "sceneProjection": "packages/demos/src/geo-l06-p002-scene-v1.ts",
+    "renderer": "packages/demos/src/geo-l06-p002-renderer-v1.tsx",
+    "localCandidate": "packages/demos/src/geo-l06-p002-local-candidate.tsx",
+    "assetRoute": "apps/web/app/flash-assets/g678-local/shared-geo001-l06-p002/symbol-sheet.svg/route.ts",
+    "productionSubstitution": "apps/web/lib/g678-geo-p002-candidate.production-stub.tsx"
+  },
+  "checks": {
+    "all1216FrameSceneProjection": "passed",
+    "targetedUnitAndSsrTests": "20 passed, 0 failed",
+    "scopedStrictTypeScript": "passed",
+    "loopbackEnFrame1Graphics": "loaded, source vectors visible",
+    "loopbackEnFrame987TeachingAndFourTerms": "passed",
+    "loopbackSurfaceDialogAndFocusReturn": "passed; English source-index conflict disclosed",
+    "loopbackReplay": "frame 1, replay counter incremented, teaching and glossary cleared",
+    "loopbackEs320": "source-English fallback and Spanish glossary visible; no horizontal overflow; dialog readable",
+    "browserConsoleErrors": 0,
+    "isolatedProductionBuild": "passed with NODE_OPTIONS=--max-old-space-size=8192; first default-heap attempt failed during TypeScript at 4 GB",
+    "productionCandidateRouteHttpStatus": 404,
+    "productionSymbolSheetHttpStatus": 404,
+    "productionClientChunkSourceSentenceScan": "no exact source sentence match"
+  },
+  "visualArtifacts": [
+    {
+      "path": "output/playwright/geo-l06-p002-react-f0001-20260925.png",
+      "sha256": "a800115e33641e2af7e9e91acbb49b6185ad9a3653aa4c2b1105a707ab8a36d2"
+    },
+    {
+      "path": "output/playwright/geo-l06-p002-react-es-dialog-320-20260925.png",
+      "sha256": "9bb5d6d435aa598ee40548b1ecc3ea209f19bbe1dd055da6a9ec040b3a9ac275"
+    }
+  ],
+  "remainingGates": [
+    "source scene palette and opacity differ from FFDec forensic view",
+    "original root preloader and host glossary lookup/stop trace not verified",
+    "embedded MP3 source clock not integrated with real My Lesson playback",
+    "separate catalog MP3 relation and human listening not accepted",
+    "no maintained AnimationModule freeze, private registry or source-ordered GEO001 L6 descriptor admission",
+    "no real My Lesson EN/ES host, original-runtime full-frame, human, Owner, strict or publication acceptance"
+  ],
+  "currentJsCoverageAfter": {
+    "registeredSharedPlacements": 473,
+    "requiredSharedPlacements": 2282,
+    "thisPlacementRegistered": false
+  }
+}

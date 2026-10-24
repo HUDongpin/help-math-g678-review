@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "kind": "g678-source-stream-clock-and-local-transport-probe-v5",
+  "recordedAtUtc": "2026-09-24T15:50:26Z",
+  "animationId": "shared-geo001-l06-p002",
+  "sourceSwfSha256": "3f340d0201e0f4eed1c8e73d364641d5de4b625e64c33680059842b523002c44",
+  "sourceXmlSha256": "241debfeeb1def99d6eebc5f7b8b3cc2d0a8966ca50fa6dc627b7c0bdd491a73",
+  "sourceIrSha256": "246882213eb272296b844db0f6ef0e8c968a12b4c8185dc63aa9eabde5504923",
+  "sourceMp3Sha256": "2109aaa85e801d9a5bddbf2c0f30184e078a9eab75785580f477d51147fe325e",
+  "sourceMp3Bytes": 496600,
+  "sourceSpec": {
+    "title": "SWF File Format Specification Version 19, Streaming sound and Frame subdivision for streaming sound",
+    "url": "https://open-flash.github.io/mirrors/swf-spec-19.pdf",
+    "interpretationBoundary": "The specification explains block SampleCount, first-block latency, and SeekSamples after a frame seek. It does not prove this page's original host playback or human listening result."
+  },
+  "sourceClock": {
+    "module": "packages/demos/src/geo-l06-p002-audio-clock-v1.ts",
+    "moduleSha256": "a1bbc12ee1c67199833a983e4041a6a021cb36fa6073b19090063bf357746d96",
+    "test": "packages/demos/tests/geo-l06-p002-audio-clock-v1.test.ts",
+    "testSha256": "e0fb5d3269c5cffaf2d7186f83f1f3a04d0c88afb6b0189900f56dcee1b17fd1",
+    "sampleRateHz": 22050,
+    "headSamplesPerFrame": 1837,
+    "firstBlockLatencySamples": 1673,
+    "decodedSamples": 2200320,
+    "segments": [
+      {"firstFrame": 8, "endFrameExclusive": 417, "firstDecodedSample": 1673, "endDecodedSampleExclusive": 752832},
+      {"firstFrame": 423, "endFrameExclusive": 463, "firstDecodedSample": 753084, "endDecodedSampleExclusive": 826560},
+      {"firstFrame": 469, "endFrameExclusive": 1217, "firstDecodedSample": 826642, "endDecodedSampleExclusive": 2200320}
+    ],
+    "zeroPayloadBlocks": [8, 417, 463],
+    "noBlockGaps": [[418, 422], [464, 468]],
+    "candidateSilentFrameRanges": [[1, 7], [417, 422], [463, 468]],
+    "allActiveBlockSeekRelationsMatch": true,
+    "inference": "Frame 8 candidate audible entry is inferred from first-block latency and the exact 1837-sample seek relation on frames 9-416; original-runtime entry timing is unverified."
+  },
+  "transport": {
+    "client": "scripts/geo-l06-p002-dynamic-probe-client.ts",
+    "clientSha256": "2f2b07976296f627e853389e6ad2bb01fba4a35636a4e4a5f3dca4a62b681d2d",
+    "generator": "scripts/build-g678-geo-l06-p002-dynamic-probe.mjs",
+    "generatorSha256": "3d5d63d0024cd37e8031936da48793915ad15259012331516995a78e7c28b9a9",
+    "html": "output/playwright/geo-l06-p002-dynamic-probe-v5.html",
+    "htmlBytes": 675202,
+    "htmlSha256": "838f07c9315d9174d1eebdedaf85a2aa5f11d3ddedc365e5bba4678b6681171c",
+    "method": "User-initiated AudioContext at native 22050 Hz; fetch and SHA-256 check the complete original extracted MP3; decode complete buffer once; schedule three non-overlapping AudioBufferSourceNode offsets from source block relationships. Stop nodes on pause, frame seek, Replay, glossary click, locale change, or pagehide. No encoded MP3 split or synthesized silence.",
+    "browser": "Chromium via playwright-cli, local loopback HTTP only",
+    "checks": [
+      "Play from frame 1 fetched, hash-checked, decoded and scheduled the source MP3; visual frame advanced without application script errors.",
+      "Pause stopped the source schedule and froze visual frame 329 across two browser observations.",
+      "Play from frame 417 scheduled exactly the later two runs: source offsets 34.1534693877551 and 37.489433106575966 seconds, with scheduled starts 3.83333333333334 seconds apart.",
+      "Play from frame 987 scheduled only the final run at source offset 80.6443537414966 seconds; clicking Surface stopped the audio schedule and opened the glossary modal.",
+      "Replay during playback returned to 1/1216, stopped the audio schedule, closed the glossary modal, and incremented the replay counter to 1.",
+      "The only v5 browser console error was a missing local favicon.ico."
+    ]
+  },
+  "retainedFailure": {
+    "path": "output/playwright/geo-l06-p002-dynamic-probe-v4.html",
+    "sha256": "30286143061b3287c65756bbcbfd038089b797641d2d545188f132e96c19aeea",
+    "finding": "The first requestAnimationFrame after async decode could have a timestamp slightly before performance.now, producing frame 0 and GEO_L06_P002_INVALID_FRAME_IDENTITY. V5 clamps the frame to its playback start; v4 remains retained as failed evidence."
+  },
+  "verification": {
+    "sourceSwfHashAndMp3ExactExtractorCheck": "pass",
+    "nodeGeneratorAndSourceTests": "4 passed",
+    "tsxAudioAndPageStateTests": "13 passed",
+    "strictScopedTypeScript": "pass",
+    "exclusiveWriteRaceAndHtmlExactRebuild": "pass",
+    "productBuild": "not run; local-only candidate",
+    "myLesson": "not run; no product admission"
+  },
+  "claimBoundary": {
+    "catalogMatchedRegistryCount": 473,
+    "activePagePlacementDenominator": 2282,
+    "thisPlacementRegistered": false,
+    "originalRuntimeSynchronizationAccepted": false,
+    "audioListeningAccepted": false,
+    "spokenLanguageEstablished": false,
+    "productAudioIntegrated": false,
+    "currentJsRegistered": false,
+    "fidelityAccepted": false,
+    "strictComplete": false,
+    "released": false,
+    "published": false
+  }
+}

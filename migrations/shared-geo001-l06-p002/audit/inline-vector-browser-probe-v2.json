@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "kind": "g678-inline-source-vector-browser-probe-v2",
+  "recordedAtUtc": "2026-09-24T11:40:49Z",
+  "animationId": "shared-geo001-l06-p002",
+  "sourceSwfSha256": "3f340d0201e0f4eed1c8e73d364641d5de4b625e64c33680059842b523002c44",
+  "frameDomain": "sprite-230",
+  "sourceFrameCount": 1216,
+  "vectorManifestSha256": "8652fa4164c1c2a11e12684ac9ee9485e33fd67523aab21942f6707eada8725a",
+  "probeScriptSha256": "59000d4bcde9d95df541f1ec8a98e217f5a7a09fbe6ef4ed9e5a09badafb8602",
+  "browser": "Chromium 153.0.8010.54 via playwright-cli",
+  "viewport": {"width": 800, "height": 600},
+  "captureMethod": "Local loopback-only HTTP serving of separately generated SVG files. Navigation used waitUntil=commit because SVG load-event navigation timed out; Chromium screenshots were captured after rendering at an 800x600 viewport. No source file, registered module, or public bundle was changed.",
+  "frames": [
+    {
+      "mainFrame": 1,
+      "svg": "output/playwright/geo-l06-p002-inline-vector-probe-v2-f0001.svg",
+      "svgSha256": "ceaa63c39418c8ccf92ab97e62a7874ccfb55ee78dede052650f4ad08f9cddaa",
+      "browserPng": "output/playwright/geo-l06-p002-inline-vector-probe-v2-browser-f0001.png",
+      "browserPngSha256": "55ddc989a568849df7661c4461823af511683d68fb1478545284c1dc81041fbb"
+    },
+    {
+      "mainFrame": 987,
+      "svg": "output/playwright/geo-l06-p002-inline-vector-probe-v2-f0987.svg",
+      "svgSha256": "902c18ef2b6ea8261bf75bfde5b8b1adcb2a5b4450cd392569b2ebdc8dbc0504",
+      "browserPng": "output/playwright/geo-l06-p002-inline-vector-probe-v2-browser-f0987.png",
+      "browserPngSha256": "91b41b96df784da6acf948669952c9fb870e629c1c8410fdcc53ebcb8291cccd"
+    },
+    {
+      "mainFrame": 1216,
+      "svg": "output/playwright/geo-l06-p002-inline-vector-probe-v2-f1216.svg",
+      "svgSha256": "7017cbf6e2961a9347f3a50124343ef1224206a18835e152f5311085121980da",
+      "browserPng": "output/playwright/geo-l06-p002-inline-vector-probe-v2-browser-f1216.png",
+      "browserPngSha256": "a7d10826cad2c3d40415e6a037f63047402bcb7c338a5b85dbdbe8ebc70fe4fc"
+    }
+  ],
+  "observations": [
+    "The browser renders the source-derived kitchen bitmap, chefs, ingredient props, and lower scene panels at each checked frame; the prior nested-SVG data-URI probe omitted large scene regions.",
+    "The probe excludes native teaching text, four source glossary buttons, root preloader, audio, and host behavior by design.",
+    "Palette and apparent opacity differ visibly from FFDec Canvas forensic screenshots. The browser screenshots are spot checks, not a full 1216-frame comparison or authorized original-runtime baselines.",
+    "Standalone SVG navigation timed out at the load event even though Chromium later rendered and captured the page; the browser loading/lifecycle cause is not established.",
+    "ImageMagick does not render the nested PNG pattern equivalently in this composite, so its raster result cannot replace browser inspection."
+  ],
+  "checks": {
+    "exclusiveOutputAndDeterminismTest": "pass: node --test scripts/render-g678-geo-l06-p002-svg-probe.test.mjs",
+    "scopedTypeScript": "pass: strict tsc on scripts/render-g678-geo-l06-p002-svg-probe.ts",
+    "fullDemosTypeScript": "not passed: npx tsc --noEmit -p packages/demos/tsconfig.json exhausted the default 4 GB Node heap in this dirty worktree",
+    "xmlWellFormed": "pass: xmllint --noout on all three v2 SVGs",
+    "browserSpotChecks": "pass: frames 1, 987, 1216 visually inspected",
+    "fullFrameCoverage": false,
+    "sourceFidelityAccepted": false,
+    "productRendererIntegrated": false,
+    "currentJsRegistered": false
+  }
+}

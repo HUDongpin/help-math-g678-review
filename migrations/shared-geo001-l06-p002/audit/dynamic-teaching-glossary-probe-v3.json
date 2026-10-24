@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "kind": "g678-dynamic-teaching-glossary-local-probe-v3",
+  "recordedAtUtc": "2026-09-24T15:19:24Z",
+  "animationId": "shared-geo001-l06-p002",
+  "sourceSwfSha256": "3f340d0201e0f4eed1c8e73d364641d5de4b625e64c33680059842b523002c44",
+  "sourceIrSha256": "246882213eb272296b844db0f6ef0e8c968a12b4c8185dc63aa9eabde5504923",
+  "symbolSheetSha256": "ae5c6fb9ba4e7c5b4acb1ee1187739a2bf6c1c81ff6d0c9129c428a1f9094c7c",
+  "clientScriptSha256": "fea3283612bf8eb2273dac25a5803ebfede2d2a2329fe4113aa20ebedb2fe2e5",
+  "generatorScriptSha256": "af2656d4995a27ab869ecf34734a1f4b3faa3aed62389ce6c5820eb8bff3493b",
+  "html": {
+    "path": "output/playwright/geo-l06-p002-dynamic-probe-v3.html",
+    "bytes": 668866,
+    "sha256": "8eed6567ec4981c6a543250174549788ec9a834d58d04358b0b7361e76a6207f"
+  },
+  "browser": "Chromium via playwright-cli on loopback HTTP",
+  "checks": {
+    "firstDefinitionFrame": "frame 983 shows the exact English source sentence at 0.25 opacity; frame 1 has no teaching text",
+    "firstGlossaryFrame": "frame 987 exposes four source-index buttons: Figure, Area, Surface, Two dimensional",
+    "secondTermLineBoundary": "frame 1125 has no radius/diameter line; frame 1126 shows radius, diameter; frame 1216 retains it",
+    "englishGlossary": "Surface opens the source-index English definition and discloses its two-index English conflict; Escape returns focus to the opener; Enter reopens; Close returns focus",
+    "spanishFallback": "Spanish UI discloses that the animation teaching text remains English; four buttons and the Surface definition use the Spanish source index",
+    "replay": "from frame 1216 back to frame 1, teaching sentence, term line, and glossary controls disappear",
+    "responsive": "at 320 px viewport, document scrollWidth equals innerWidth and visible teaching/glossary bounds stay within the viewport; both page and open modal were visually inspected",
+    "console": "only observed browser error was local favicon.ico 404; no application-script error",
+    "generator": "exact --check and exclusive-write/concurrent-overwrite regression pass",
+    "focusedTests": "4 node source/generator tests and 11 tsx source-state/text/glossary tests pass",
+    "scopedTypeScript": "strict check of scripts/geo-l06-p002-dynamic-probe-client.ts passes",
+    "productBuild": "not run; local probe only",
+    "myLessonHost": "not run; no product descriptor or registry entry"
+  },
+  "screenshots": [
+    {
+      "path": "output/playwright/geo-l06-p002-teaching-v3-es-320.png",
+      "sha256": "670a5a35261aff94c32631e6839cbdd939f1c05bb1b5818136bc358d6c29065f"
+    },
+    {
+      "path": "output/playwright/geo-l06-p002-glossary-v3-es-320.png",
+      "sha256": "2f7f902f28050c7a1b8e1031a90b6dc3bd85fb5523667bac8870b7e237fe5f2c"
+    }
+  ],
+  "limitations": [
+    "The glossary modal is a modern source-index interaction. Its original Flash host lookup, companion media, and lifecycle have not been verified.",
+    "Spanish teaching text is an explicitly disclosed English-source fallback. Probe-level controls and the Surface conflict note remain in English, so this is not complete Spanish product QA.",
+    "Source stream audio is not connected or played; transport, synchronization, listening, and audio acceptance remain open.",
+    "The SVG palette and apparent opacity differ visibly from FFDec forensic views; no original-runtime baseline or visual fidelity acceptance has been established.",
+    "Root preloader, source asset distribution review, full-frame visual/performance checks, maintained renderer, My Lesson, human and Owner review, strict completion, release, and publication remain open."
+  ],
+  "claimBoundary": {
+    "currentJsRegistered": false,
+    "fidelityAccepted": false,
+    "audioAccepted": false,
+    "humanAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "released": false,
+    "published": false
+  }
+}

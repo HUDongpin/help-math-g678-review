@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "kind": "g678-p002-unregistered-my-lesson-reduced-motion-probe-v5",
+  "date": "2026-09-25",
+  "animationId": "shared-geo001-l06-p002",
+  "predecessorReceiptSha256": "035664df47a6388603699a17e8643f6e912ea855c0b1a2003a4393cdada9f32b",
+  "sourceSwfSha256": "3f340d0201e0f4eed1c8e73d364641d5de4b625e64c33680059842b523002c44",
+  "codeSha256": {
+    "displayState": "e624655ca3844e971984ba8fbcb4f2496d88d3cc61bc0fc1f3e4a9d3da087481",
+    "candidateModule": "5d2998dd24b09c72d204c73fedac6b046fbfbe5e8b6cfc0b32cdfad89d6a8e07",
+    "hostRuntime": "ec26407121405520b4e39261a40f4375ca653b91c37b4bcd4020e2a5b09c0bf4",
+    "hostProbeDescriptor": "8bf264251b574f7fb7ee0ee74d63ba141ebea7bd90c8da225da7b1b6e85aba7f"
+  },
+  "officialRegistry": {
+    "registered": 473,
+    "activePlacements": 2282,
+    "percent": 20.73,
+    "p002Registered": false
+  },
+  "checks": {
+    "focusedP002Tests": "29 passed, 0 failed; one server-only import required the separate react-server test invocation",
+    "hostProbeServerTest": "1 passed, 0 failed with --conditions=react-server",
+    "scopedWebTypeScript": "passed with Node 8 GB heap",
+    "targetedWebEslint": "passed",
+    "isolatedWebpackProductionBuild": "passed, including TypeScript and static-page generation",
+    "tsconfigAfterBuild": "restored to pre-build SHA-256 a30da8dae42b4a295efa85401b100f9e2fd4aec40a9eec5649292f4d7a8192e2",
+    "productionStaticSignatureSearch": "no P002 host runtime, source scene, or source MP3 digest in static output",
+    "productionHttp": {
+      "enHostProbe": 404,
+      "esHostProbe": 404,
+      "symbolSheet": 404,
+      "sourceStreamMp3": 404
+    }
+  },
+  "localBrowserObservations": {
+    "engine": "Chromium through Playwright CLI; loopback dev host only",
+    "reducedMotionAtStart": "visual frame 987, source audio frame 1, paused",
+    "reducedMotionAfterUserAudioStart": "visual frame 987, source audio frame 127, playing",
+    "sourceGlossaryClick": "Surface opened My Lesson modal and paused source audio at frame 363; closing did not resume",
+    "frameInspection": "visual and source audio frames 500, paused",
+    "continueFromInspectedFrame": "visual frame 987, source audio frame 509, playing",
+    "ordinaryMotion": "visual and source audio frames 680, playing",
+    "esReducedMotionViewport320": "visual frame 987, source audio frame 1; document had no horizontal overflow",
+    "consoleErrors": 0
+  },
+  "notProved": [
+    "official Current-JS registry/descriptor admission",
+    "lesson-named L6 English and Spanish key-term indexes; L1 definitions are provisional",
+    "original-host behavior and original-runtime visual fidelity",
+    "source audio synchronization or named-human listening",
+    "companion MP3 relationship",
+    "human visual review, Owner acceptance, strict completion, release, publication"
+  ]
+}

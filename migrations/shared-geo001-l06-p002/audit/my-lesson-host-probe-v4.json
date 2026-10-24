@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "kind": "g678-p002-unregistered-my-lesson-host-probe-v4",
+  "date": "2026-09-25",
+  "animationId": "shared-geo001-l06-p002",
+  "sourceSwfSha256": "3f340d0201e0f4eed1c8e73d364641d5de4b625e64c33680059842b523002c44",
+  "sourceSymbolSheetSha256": "ae5c6fb9ba4e7c5b4acb1ee1187739a2bf6c1c81ff6d0c9129c428a1f9094c7c",
+  "sourceSymbolSheetTechnicalAuditSha256": "9d98c3bff1024d2c7d87c87cce3c0a27f4d60ceb6ae4e481705b69a0d686fdc1",
+  "sourceStreamMp3Sha256": "2109aaa85e801d9a5bddbf2c0f30184e078a9eab75785580f477d51147fe325e",
+  "moduleSha256": "0736eceb1fa85f814bc337ca1b564aa5d8dc8c3f2f217749697cb25fa29c34f5",
+  "hostRuntimeSha256": "6901e6daebe7e17d40337528456b033c5c63318b221f0a82258b16ccdc62971e",
+  "hostProbeDescriptorSha256": "8bf264251b574f7fb7ee0ee74d63ba141ebea7bd90c8da225da7b1b6e85aba7f",
+  "hostProbeRouteSha256": "ab986c8a12912c502828ad03f68057e5cbafb55b944bd4d6dc614615c9b02e94",
+  "officialRegistry": {
+    "registered": 473,
+    "activePlacements": 2282,
+    "geoL06Registered": 8,
+    "geoL06Active": 54,
+    "p002Registered": false
+  },
+  "hostFixture": {
+    "deploymentScope": "local-only",
+    "route": "/[locale]/migration-status/g678-calibration/shared-geo001-l06-p002/host",
+    "simulatedRegisteredPages": 9,
+    "label": "unregistered My Lesson host probe",
+    "productionEnabled": false,
+    "sourceSheetAndAudioAccessibleOnlyFromExactLoopbackCandidateOrHostProbe": true,
+    "glossaryBasis": "provisional L1 indexes; lesson XML names missing L6 indexes"
+  },
+  "checks": {
+    "p002AndPreviewPolicyFocusedTests": "33 passed, 0 failed",
+    "sourceBoundHostDescriptorTest": "1 passed, 0 failed",
+    "scopedWebTypeScript": "passed with Node 8 GB heap",
+    "targetedWebEslint": "passed",
+    "productionAssetProfileTests": "11 passed, 0 failed",
+    "isolatedWebpackProductionBuild": "passed, including TypeScript and static-page generation",
+    "productionStaticP002SignatureSearch": "no matches for renderer sheet error, source scene class, or MP3 digest",
+    "productionHttp": {
+      "enHostProbe": 404,
+      "esHostProbe": 404,
+      "symbolSheet": 404,
+      "sourceStreamMp3": 404
+    }
+  },
+  "localBrowserObservations": {
+    "engine": "Chromium through Playwright CLI",
+    "hostRouteEn": 200,
+    "hostRouteEs": 200,
+    "symbolSheet": 200,
+    "sourceStreamMp3": 200,
+    "graphicsStatus": "loaded",
+    "playFromFrameOne": "playing; later observed frame 158",
+    "hostPause": "paused at frame 612",
+    "frameInspector": "seek to frame 987 exposed the four source glossary buttons",
+    "glossary": "Surface/Superficie opened the My Lesson modal; closing kept frame 987 paused",
+    "continueFromInspectedFrame": "playing; later observed frame 1100",
+    "replay": "from terminal frame 1216 to source start; later observed frame 129, replay 1, no glossary buttons",
+    "esSourceFallback": "English source sentence disclosed; four Spanish source-index button labels",
+    "provisionalGlossaryDisclosure": "EN and ES notes explicitly say the lesson-named L6 indexes are missing and the L1 definitions are provisional",
+    "viewport320": "document scrollWidth 320 for innerWidth 320; Spanish glossary dialog readable",
+    "viewport320AfterDisclosure": "document scrollWidth 320 for innerWidth 320; Spanish note and source graphics loaded",
+    "consoleErrorsAfterDisclosure": 0,
+    "viewport320Screenshot": {
+      "path": ".playwright-cli/page-2026-09-24T17-54-36-060Z.png",
+      "bytes": 53140,
+      "sha256": "732dd3dfdf5845c49a22d3c43853c68781bccd1333338eb10ef0c132eaec4c0b"
+    }
+  },
+  "notProved": [
+    "official Current-JS registry/descriptor admission",
+    "natural original-host preloader-to-sprite trace",
+    "original-runtime visual fidelity or full-frame comparison",
+    "source audio synchronization or named-human listening",
+    "catalog companion MP3 relationship and spoken-language decision",
+    "original host glossary lookup or the Surface conflict resolution",
+    "lesson-named L6 English and Spanish key-term XML files; current L1 glossary definitions are provisional",
+    "human visual review, Owner acceptance, strict completion, release, publication"
+  ]
+}

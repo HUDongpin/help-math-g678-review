@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-geo001-l06-p002",
+  "animationId": "shared-geo001-l06-p002",
+  "assetId": "swf-3f340d0201e0f4eed1c8e73d364641d5de4b625e64c33680059842b523002c44",
+  "status": "preserved",
+  "created": "2026-09-24",
+  "confidence": "medium",
+  "classification": {
+    "collection": "HELP_COURSES",
+    "grade": "G6-G8-shared",
+    "lesson": 6,
+    "section": "RW",
+    "page": 2,
+    "domain": "GEO001",
+    "knowledgePoint": {
+      "en": "Area as surface in a two-dimensional figure",
+      "es": ""
+    },
+    "titleRaw": "Page 1",
+    "titleDisplay": "Real World Activity — Page 1",
+    "status": "resolved",
+    "evidence": [
+      "catalog/g678-page-only-release-manifest.v1.json",
+      "catalog/g678-shared-catalog.v1.json",
+      "audit/movie.xml",
+      "audit/ffdec-26.2.1/texts/209.txt"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/GEO001/L6/RW/L6RW02.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/GEO001/L6/RW/L6RW02.swf",
+    "flaSha256": "",
+    "swfSha256": "3f340d0201e0f4eed1c8e73d364641d5de4b625e64c33680059842b523002c44",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 1356028,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#b8d8f7",
+    "actionScriptVersion": "AS1/2",
+    "complexity": "high",
+    "fonts": ["Bergell LET", "Bobcat", "Agency FB", "Arial", "Bauhaus Md BT"],
+    "scripts": [
+      "audit/ffdec-26.2.1/scripts/frame_1/DoAction.as",
+      "audit/ffdec-26.2.1/scripts/frame_6/DoAction.as",
+      "audit/ffdec-26.2.1/scripts/DefineButton2_211/BUTTONCONDACTION on(release).as",
+      "audit/ffdec-26.2.1/scripts/DefineButton2_212/BUTTONCONDACTION on(release).as",
+      "audit/ffdec-26.2.1/scripts/DefineButton2_213/BUTTONCONDACTION on(release).as",
+      "audit/ffdec-26.2.1/scripts/DefineButton2_214/BUTTONCONDACTION on(release).as"
+    ],
+    "externalDependencies": [
+      "Root frame 1 calls _level0.InternalPreloader.gotoAndPlay(jump_check); the original host entry is not yet executed.",
+      "Four source buttons call _root.DoHyperLinks and then stop the animation; host glossary behavior remains unresolved.",
+      "The bilingual middle-school glossary differs on the English Surface definition across EN and ES index files; both variants are retained in audit/source-glossary-v1.json.",
+      "Lesson catalog references SA/L6RW02.mp3; host trigger and relation to embedded stream remain unresolved."
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": ["sprite-230 frame 1 places character 4 at depth 1 with clipDepth 668; exact mask visual behavior remains to be reviewed"],
+    "morphs": [],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "default",
+      "kind": "interactive",
+      "description": "Main sprite-230 has 1216 source frames and four glossary buttons appearing at frame 987; original host trace and Replay remain unresolved.",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": []
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "undecided",
+    "route": "",
+    "routeFile": "",
+    "component": "",
+    "registryModule": "",
+    "timelineModule": "",
+    "testFile": "",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-230",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-230",
+        "kind": "sprite",
+        "sourceTimelineId": "sprite-230",
+        "parentFrameDomainId": "root",
+        "frameCount": 1216,
+        "scenarioIds": ["default"]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

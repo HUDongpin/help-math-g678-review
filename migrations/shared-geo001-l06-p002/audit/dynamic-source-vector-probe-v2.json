@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "kind": "g678-dynamic-source-vector-local-probe-v2",
+  "recordedAtUtc": "2026-09-24T12:38:30Z",
+  "animationId": "shared-geo001-l06-p002",
+  "sourceSwfSha256": "3f340d0201e0f4eed1c8e73d364641d5de4b625e64c33680059842b523002c44",
+  "sourceIrSha256": "246882213eb272296b844db0f6ef0e8c968a12b4c8185dc63aa9eabde5504923",
+  "symbolSheet": {
+    "path": "migrations/shared-geo001-l06-p002/audit/source-symbol-sheet-v1.svg",
+    "bytes": 8122158,
+    "sha256": "ae5c6fb9ba4e7c5b4acb1ee1187739a2bf6c1c81ff6d0c9129c428a1f9094c7c",
+    "characterDefinitions": 207
+  },
+  "clientScriptSha256": "4155623f78b1185731b41f2d9980be7fddcf4ed83439046cd277c984d9d42f7a",
+  "html": {
+    "path": "output/playwright/geo-l06-p002-dynamic-probe-v2.html",
+    "bytes": 634365,
+    "sha256": "f16b5dbf142b66d6eec593e111ee8d622ff05815c32e2caeef7d18dc11cfdd75"
+  },
+  "browser": "Chromium 153.0.8010.54 via playwright-cli on loopback HTTP",
+  "checks": {
+    "all1216SourceFramesDrawnWithoutThrow": true,
+    "sourceFrameMin": 1,
+    "sourceFrameMax": 1216,
+    "displayedSourceVectorObjectCountMin": 23,
+    "displayedSourceVectorObjectCountMax": 36,
+    "directSeek987": "24 displayed source-vector objects; source glossary identities 211,212,213,214 exposed as metadata only",
+    "directSeek1216": "25 displayed source-vector objects; term text identities are source-present but not rendered",
+    "replay": "from 1216 to 1, replay counter incremented to 1",
+    "playPause": "Play advanced from frame 1; Pause held a later frame, confirmed stable by another browser snapshot",
+    "responsiveSpotChecks": "320 px and 390 px local viewports had no horizontal document overflow; actual My Lesson and typography QA not run",
+    "console": "only observed error was missing local favicon.ico; no application script exception was reported",
+    "generatorChecks": "both symbol-sheet and dynamic-probe exclusive-write/race checks passed",
+    "scopedTypeScript": "strict check of dynamic-probe-client.ts passed",
+    "productBuild": "not run",
+    "myLessonHost": "not run"
+  },
+  "screenshots": [
+    {"frame": 1, "path": "output/playwright/geo-l06-p002-dynamic-v2-browser-f0001.png", "sha256": "c59cc3ac576826fda30e2f17c9a40fee7f474c77893b1263b741280543340c00"},
+    {"frame": 987, "path": "output/playwright/geo-l06-p002-dynamic-v2-browser-f0987.png", "sha256": "7c2d22e1fb49ecfdaa666ffbe7653f085f847c2b31a78cd873e52df3d12cf69e"},
+    {"frame": 1216, "path": "output/playwright/geo-l06-p002-dynamic-v2-browser-f1216.png", "sha256": "9cfcb6a73c8a91b46414c74eda0514bb5b5139f1948e54f3829c7888cca14ef3"}
+  ],
+  "limitations": [
+    "This is an unregistered local graphics candidate, not the maintained My Lesson page renderer.",
+    "Source teaching text and four glossary buttons are not visibly or interactively integrated. No audio plays.",
+    "One successful DOM draw per source frame is not full-frame visual QA or real-time 12 fps performance acceptance.",
+    "FFDec reference images and this source-vector probe differ visibly in palette and apparent opacity; no fidelity conclusion is made.",
+    "Original root preloader, host entry, glossary modal lifecycle, source-frame/MP3 sync, audio listening, asset distribution review, EN/ES product checks, human and Owner acceptance, strict completion, release and publication remain open."
+  ],
+  "claimBoundary": {"currentJsRegistered": false, "fidelityAccepted": false, "audioAccepted": false, "released": false}
+}

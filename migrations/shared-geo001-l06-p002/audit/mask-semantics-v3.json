@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "kind": "g678-geo001-l06-p002-mask-semantics-diagnostic-v3",
+  "recordedAtUtc": "2026-09-24T17:05:43Z",
+  "animationId": "shared-geo001-l06-p002",
+  "sourceSwfSha256": "3f340d0201e0f4eed1c8e73d364641d5de4b625e64c33680059842b523002c44",
+  "sourceFacts": {
+    "maskPlacement": "sprite-230 frame 1: PlaceObject2 depth 1, character 4, clipDepth 668; retained across checked main frames",
+    "maskShapePath": "migrations/shared-geo001-l06-p002/audit/vector-assets-v1/shapes/4.svg",
+    "maskShapeSha256": "674cc6c3cca5f30a85363474343676c4597b0745b03844f2de01f55c232fca54",
+    "maskShapeFill": "#2685e3 at fill-opacity 0.6",
+    "sourceRuntime": "CWS v6; PlaceObject2 mask, no PlaceObject3 in swfmill movie.xml"
+  },
+  "referenceFacts": {
+    "adobeMaskDocumentation": "https://helpx.adobe.com/uk/animate/desktop/animation/using-mask-layers.html",
+    "adobeRule": "Ordinary mask layers ignore transparency, colors and line styles; filled geometry defines the window.",
+    "ffdecCanvasFramesHtmlSha256": "ce21e1222c253fe754c770e21d2fa8b970bc981fe4694795d0cffe5962e7b362",
+    "ffdecExportBehavior": "The standalone sprite Canvas export draws shape4 at 0.6 alpha and applies destination-in to the clipped scene, producing a washed-out forensic image.",
+    "viewportDifference": "Standalone FFDec Canvas is 629x528 over white; the source SWF root stage and maintained candidate are 800x600 with #b8d8f7 background."
+  },
+  "engineeringDisposition": {
+    "rendererMaskMode": "binary-fill SVG clipPath, not 0.6 group opacity",
+    "reason": "Preserve source clipDepth mask semantics instead of matching the FFDec exporter's alpha compositing artifact.",
+    "originalRuntimeVisualAuthority": false,
+    "fullFrameVisualComparisonAccepted": false
+  },
+  "checks": {
+    "p002AndAssetPolicyTests": "23 passed, 0 failed",
+    "strictScopedTypeScript": "passed",
+    "all1216MainFrames": "binary-fill mode and source depth boundary checked",
+    "ssrIdentity": "data-source-mask-mode=binary-fill",
+    "swfAndMaskShapeHashes": "reverified",
+    "currentJsCoverageAfter": "473/2282; P002 not registered"
+  },
+  "nextAction": "Obtain authorized original-runtime root-to-main visual trace and compare aligned native-stage frames; do not treat the FFDec Canvas export as fidelity authority."
+}
