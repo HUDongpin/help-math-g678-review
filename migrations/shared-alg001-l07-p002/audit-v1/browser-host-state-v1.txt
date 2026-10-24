@@ -1,0 +1,12 @@
+### Result
+{"probe":1,"data":{"l07P002HostProbe":"shared-alg001-l07-p002","l07P002HostReady":"false","l07P002HostError":"none","p002SaSelected":"false","p002SaPhase":"idle","runtimePlaybackComplete":"false","lessonPresentation":"modern-text-v1"},"buttons":["","Hide","👋Introduction","🌍Real World Activity","💬Vocabulary","💡Instruction","✏️Try It","🎲Game or Scenario","📋Test Taking Skills!","🏆Final Quiz","🧮Calculator","Play Spanish Audio","← Previous","Play animation","Next →","NarrationPlay the audio","Replay","Open volume control","Map","Help","Exit","Key Terms","−12 frames","+12 frames","Restart tour"]}
+### Ran Playwright code
+```js
+await (async page=>({probe:await page.locator('[data-l07-p002-host-probe]').count(),data:await page.locator('[data-l07-p002-host-probe]').evaluate(e=>({...e.dataset})),buttons:await page.getByRole('button').allTextContents()}))(page);
+```
+### Page
+- Page URL: http://127.0.0.1:3331/en/migration-status/g678-calibration/shared-alg001-l07-p002/candidate-v1
+- Page Title: ALG001 L7 P002 — local source candidate · HELP Math
+- Console: 2 errors, 0 warnings
+### Events
+- New console entries: .playwright-cli/console-2026-10-03T08-15-36-450Z.log#L3-L12

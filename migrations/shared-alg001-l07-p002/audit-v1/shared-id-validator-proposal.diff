@@ -1,0 +1,5 @@
+--- a/scripts/build-safe-ffdec-canvas-adapter.mjs
++++ b/scripts/build-safe-ffdec-canvas-adapter.mjs
+@@
+-  assert(/^course-[a-z0-9-]+$/.test(spec.animationId || ""), "adapter spec: invalid animationId");
++  assert(/^(?:course|shared)-[a-z0-9-]+$/.test(spec.animationId || ""), "adapter spec: invalid animationId");

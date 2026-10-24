@@ -1,0 +1,11 @@
+### Result
+{"pass":true,"url":"http://127.0.0.1:4389/runtime-harness-v1/?lang=es","frame":"600","root":"20px","inputs":3}
+### Ran Playwright code
+```js
+await (async page=>{await page.goto('http://127.0.0.1:4389/runtime-harness-v1/?lang=es');await page.setViewportSize({width:390,height:900});await page.evaluate(()=>document.documentElement.style.fontSize='20px');await page.getByRole('button',{name:'Reanudar',exact:true}).click();await page.waitForFunction(()=>document.querySelector('[data-p009-state]')?.getAttribute('data-p009-state')==='form',null,{timeout:65000});await page.screenshot({path:"/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p009/audit-v1/browser-form-mobile-v2.png",fullPage:true});return {pass:true,url:page.url(),frame:await page.locator('[data-p009-frame]').getAttribute('data-p009-frame'),root:await page.evaluate(()=>getComputedStyle(document.documentElement).fontSize),inputs:await page.locator('[data-p009-input]').count()};})(page);
+```
+### Page
+- Page URL: http://127.0.0.1:4389/runtime-harness-v1/?lang=es
+- Console: 1 errors, 0 warnings
+### Events
+- New console entries: .playwright-cli/console-2026-10-03T12-42-35-071Z.log#L4-L5

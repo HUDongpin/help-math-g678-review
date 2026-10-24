@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l07-p003",
+  "animationId": "shared-alg001-l07-p003",
+  "assetId": "swf-947ca0854281ead821f62270e4199044861404562be249b121eefbe410b2ef86",
+  "status": "implemented-standalone-verified-unregistered",
+  "created": "2026-10-03",
+  "confidence": "source-structural-verified-original-runtime-unverified",
+  "classification": {
+    "collection": "G6-G8-shared",
+    "grade": "shared",
+    "lesson": 7,
+    "section": "RW",
+    "page": 2,
+    "domain": "ALG001",
+    "knowledgePoint": {
+      "en": "",
+      "es": ""
+    },
+    "titleRaw": "Page 2",
+    "titleDisplay": "Linear and Nonlinear Functions: Real World Activity",
+    "status": "verified-canonical-source-catalog",
+    "evidence": [
+      "catalog/g678-shared-catalog.v1.json",
+      "source-v1/index.xml"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/RW/L7RW03.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/RW/L7RW03.swf",
+    "flaSha256": "",
+    "swfSha256": "947ca0854281ead821f62270e4199044861404562be249b121eefbe410b2ef86",
+    "pairedFlaStatus": "missing",
+    "provenance": "physical canonical AWS grade-classified source; byte-identical read-only working copy",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 1968349,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#b8d8f7",
+    "actionScriptVersion": "AS1/2",
+    "complexity": "behavior-heavy",
+    "fonts": [
+      "Arial",
+      "Bauhaus Md BT"
+    ],
+    "scripts": [
+      "source-v1/ffdec/scripts"
+    ],
+    "externalDependencies": [
+      "InternalPreloader.jump_check",
+      "DoHyperLinks"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      {
+        "characterId": 1,
+        "depth": 1,
+        "clipDepth": 133
+      }
+    ],
+    "morphs": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "source-real-world",
+      "kind": "linear-with-glossary",
+      "description": "Source cell phone plans, staged function definition, x/y meaning, substitution and numerical result; 3 source glossary release actions",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "undetermined"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "main-stream-401",
+        "frameDomain": "sprite-401",
+        "frame": 5,
+        "source": "source-v1/source-stream-401.mp3",
+        "sha256": "a7a6c1bbb552868f5b1e0aac28cefbdf4970f0887d41ff6f5656449ef0b00364",
+        "accepted": false
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "Chrome154 native decoder",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "maintained-source-canvas-plus-native-semantic-text",
+    "route": "",
+    "routeFile": "",
+    "component": "packages/demos/src/alg-l07-p003-player-v1.tsx",
+    "registryModule": "packages/demos/src/modules/shared-alg001-l07-p003.tsx",
+    "timelineModule": "packages/demos/src/timelines/shared-alg001-l07-p003.ts",
+    "testFile": "migrations/shared-alg001-l07-p003/tests-v1/session.test.ts",
+    "standalonePackage": "migrations/shared-alg001-l07-p003/standalone-v1",
+    "defaultFrameDomainId": "sprite-401",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "source-real-world"
+        ]
+      },
+      {
+        "id": "sprite-401",
+        "kind": "sprite",
+        "sourceTimelineId": "sprite-401",
+        "parentFrameDomainId": "root",
+        "rootFrame": 6,
+        "frameCount": 2141,
+        "scenarioIds": [
+          "source-real-world"
+        ]
+      },
+      {
+        "id": "sprite-404",
+        "kind": "sprite",
+        "sourceTimelineId": "sprite-404",
+        "parentFrameDomainId": "root",
+        "rootFrame": 6,
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-real-world"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": true,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": true,
+    "responsiveOverflowReviewed": true,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "page": "p015",
+  "sourceSha256": "5113f324a6e91620a3a6a52f7c0da8bbd0bf3e7180960e0f25dacce530296be7",
+  "sourceModel": "migrations/shared-alg001-l07-p015/native-v1/source-model-v1.json",
+  "sourceModelSha256": "503302c3a4153792e15c806331c5b438e652538e3e93e068a7ed3f75a0880181",
+  "values": {
+    "AFTER_LAST": 338,
+    "LAST": 337,
+    "FORCED": 113,
+    "QUIZ": 110,
+    "FEEDBACK_LAST": 19,
+    "INITIAL": "-1",
+    "CORRECT": "0",
+    "MAIN_ID": 77,
+    "FEEDBACK_ID": 64,
+    "TERM_UNION": "'Equation'|'Slope'|'Line'",
+    "PAGE_UPPER": "P015",
+    "PAGE_LOWER": "p015",
+    "SEGMENT_WINDOW_FILTER": "",
+    "MARKER_WINDOW_FILTER": "",
+    "DRAW_PHASE": "(s.phase==='quiz-held'||s.phase==='postquiz'&&s.mainFrame>=111&&s.mainFrame<=112)",
+    "POST_DRAW_FLAG": "s.phase==='postquiz'&&e.frame<=112&&s.drawEnabled",
+    "POST_SUBMIT": "  // Source Draw51 remains only111..112 after popup removal. Extra release\n  // increments/disables without creating feedback or restarting narration.\n  if(s.phase==='postquiz')return{...s,attempts:s.attempts+1,drawEnabled:false,sliderEnabled:false,wrongText:S.behavior.wrongLater};\n",
+    "POST_SUBMIT_SESSION": "if(old.phase==='postquiz'){this.emit();return true;}"
+  }
+}

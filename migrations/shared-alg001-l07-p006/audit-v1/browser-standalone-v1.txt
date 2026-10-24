@@ -1,0 +1,27 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
++ [
++   {
++     scroll: 84,
++     tag: 'TH',
++     text: 'Monthly Bill',
++     width: 68
++   }
++ ]
+- []
+
+    at file:///Volumes/WestWorld/HELP%20MATH%202.0-g678-implementation/migrations/shared-alg001-l07-p006/generator-v1/browser-standalone-v1.mjs:9:635 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: [ { tag: 'TH', text: 'Monthly Bill', scroll: 84, width: 68 } ],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.18.0

@@ -1,0 +1,41 @@
+[
+  {
+    "at": "2026-10-03T18:34:16.695270+00:00",
+    "args": [
+      "/opt/homebrew/bin/swfmill",
+      "swf2xml",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p014/source-v1/L7VB09.swf",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p014/source-v1/movie.xml"
+    ],
+    "exitCode": 0,
+    "log": "migrations/shared-alg001-l07-p014/audit-v1/swfmill-v1.txt"
+  },
+  {
+    "at": "2026-10-03T18:34:19.189119+00:00",
+    "args": [
+      "/opt/homebrew/bin/ffdec",
+      "-export",
+      "script,text,shape,morphshape,image",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p014/source-v1/ffdec",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p014/source-v1/L7VB09.swf"
+    ],
+    "exitCode": 0,
+    "log": "migrations/shared-alg001-l07-p014/audit-v1/ffdec-assets-v1.txt"
+  },
+  {
+    "at": "2026-10-03T18:34:24.226571+00:00",
+    "args": [
+      "/opt/homebrew/bin/ffdec",
+      "-selectid",
+      "78",
+      "-format",
+      "sprite:canvas",
+      "-export",
+      "sprite",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p014/source-v1/ffdec-child-canvas",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p014/source-v1/L7VB09.swf"
+    ],
+    "exitCode": 0,
+    "log": "migrations/shared-alg001-l07-p014/audit-v1/ffdec-child-v1.txt"
+  }
+]

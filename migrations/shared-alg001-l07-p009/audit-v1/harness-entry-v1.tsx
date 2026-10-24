@@ -1,0 +1,2 @@
+import React from'react';import{createRoot}from'react-dom/client';import{AlgL07P009Player}from'../../../packages/demos/src/alg-l07-p009-player-v1';
+const lang=new URLSearchParams(location.search).get('lang')==='es'?'es':'en';createRoot(document.getElementById('root')!).render(<AlgL07P009Player seed={0} uiLanguage={lang} readAudio={async(id,signal)=>{const r=await fetch(id==='sa'?'/sa.mp3':'/stream-80.mp3',{signal});if(!r.ok)throw Error('audio fetch');return r.arrayBuffer();}}/>);

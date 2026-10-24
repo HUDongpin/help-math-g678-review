@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l07-p011",
+  "animationId": "shared-alg001-l07-p011",
+  "assetId": "swf-c8299a5548c85734fc87e64cdc7ef0b7e03cce9ae765b33c8a4eb230f06f24ea",
+  "status": "preserved",
+  "created": "2026-10-03",
+  "confidence": "verified",
+  "classification": {
+    "collection": "course",
+    "grade": "shared",
+    "lesson": 7,
+    "section": "VB",
+    "page": 5,
+    "domain": "algebra",
+    "knowledgePoint": {
+      "en": "Change slope with a slider and draw the line y = 2x",
+      "es": "Cambiar la pendiente y trazar la recta y = 2x"
+    },
+    "titleRaw": "Slope",
+    "titleDisplay": "Slope",
+    "status": "confirmed",
+    "evidence": [
+      "source-v1/index.xml",
+      "native-v1/source-model-v1.json"
+    ],
+    "sectionPageOrdinal": 5,
+    "globalPageOrdinal": 11,
+    "sourceOccurrence": 11,
+    "moduleCode": "ALG001"
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/VB/L7VB06.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/VB/L7VB06.swf",
+    "flaSha256": "",
+    "swfSha256": "c8299a5548c85734fc87e64cdc7ef0b7e03cce9ae765b33c8a4eb230f06f24ea",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 126006,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#ffffff",
+    "actionScriptVersion": "AS1/2",
+    "complexity": "interactive-understood",
+    "fonts": [
+      "Bauhaus Md BT",
+      "Bauhaus Md BT"
+    ],
+    "scripts": [
+      "migrations/shared-alg001-l07-p011/source-v1/ffdec/scripts/DefineButton2_43/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p011/source-v1/ffdec/scripts/DefineButton2_44/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p011/source-v1/ffdec/scripts/DefineButton2_51/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p011/source-v1/ffdec/scripts/DefineButton2_52/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p011/source-v1/ffdec/scripts/DefineButton2_61/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p011/source-v1/ffdec/scripts/DefineButton2_71/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p011/source-v1/ffdec/scripts/DefineSprite_74/frame_1/DoAction.as",
+      "migrations/shared-alg001-l07-p011/source-v1/ffdec/scripts/DefineSprite_74/frame_19/DoAction.as",
+      "migrations/shared-alg001-l07-p011/source-v1/ffdec/scripts/DefineSprite_74/frame_2/DoAction.as",
+      "migrations/shared-alg001-l07-p011/source-v1/ffdec/scripts/DefineSprite_78/frame_1/DoAction.as",
+      "migrations/shared-alg001-l07-p011/source-v1/ffdec/scripts/DefineSprite_78/frame_153/DoAction.as",
+      "migrations/shared-alg001-l07-p011/source-v1/ffdec/scripts/DefineSprite_78/frame_153/PlaceObject2_56_20/CLIPACTIONRECORD on(press).as",
+      "migrations/shared-alg001-l07-p011/source-v1/ffdec/scripts/DefineSprite_78/frame_153/PlaceObject2_56_20/CLIPACTIONRECORD on(releaseOutside,release).as",
+      "migrations/shared-alg001-l07-p011/source-v1/ffdec/scripts/DefineSprite_78/frame_153/PlaceObject2_56_20/CLIPACTIONRECORD onClipEvent(enterFrame).as",
+      "migrations/shared-alg001-l07-p011/source-v1/ffdec/scripts/DefineSprite_78/frame_155/DoAction.as",
+      "migrations/shared-alg001-l07-p011/source-v1/ffdec/scripts/frame_1/DoAction.as",
+      "migrations/shared-alg001-l07-p011/source-v1/ffdec/scripts/frame_6/DoAction.as"
+    ],
+    "externalDependencies": [
+      "InternalPreloader.jump_check",
+      "DoHyperLinks",
+      "optional old-host SA button"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      {
+        "sourceShape": 39,
+        "instances": 2,
+        "disposition": "source rectangle and glyph bounds generate complete-word native instruction reveal"
+      }
+    ],
+    "morphs": [],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "source-slope",
+      "kind": "interactive",
+      "description": "232-frame source sequence, slider153, direct correct submission,155 answer line,232to1 loop.",
+      "reachable": true
+    },
+    {
+      "id": "source-second-wrong",
+      "kind": "interactive",
+      "description": "Two wrong submissions then close resumes parent; wrong value retained at154 and forced2 at155.",
+      "reachable": true
+    },
+    {
+      "id": "wrong-first",
+      "kind": "interactive",
+      "description": "Popup74 starts2, stops19; Close immediately stops/hides at2 and retains slider/attempt1.",
+      "reachable": true
+    },
+    {
+      "id": "wrong-second",
+      "kind": "interactive",
+      "description": "Popup74 second text; Close immediately stops/hides and resumes main without resetting attempts.",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "en",
+      "es"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "source-stream-74",
+        "language": "en",
+        "source": "source-v1/stream-74.mp3",
+        "sourceSha256": "399b925dc7b2a06027954e8ef45f8c739a1a8d601fa41b121846bdc5b367a39b",
+        "frameDomain": "sprite-74",
+        "startSemantics": "wrong submit gotoAndPlay2; native stop19; immediate Close stops this popup",
+        "replayBehavior": "retire pending decoder/nodes and reset main1"
+      },
+      {
+        "id": "source-stream-78",
+        "language": "en",
+        "source": "source-v1/stream-78.mp3",
+        "sourceSha256": "4c7cb74735bd294393af5d247b635b1a3e22ea05b7e28fe419eb1a227ef84eb0",
+        "frameDomain": "sprite-78",
+        "startSemantics": "explicit Play; held153 and loop232→1",
+        "replayBehavior": "retire pending decoder/nodes and reset main1"
+      },
+      {
+        "id": "optional-spanish-audio",
+        "language": "es",
+        "source": "source-v1/sa.mp3",
+        "sourceSha256": "d32be3c981e8db6f3594d0997e12a5da52b15f337f2ef6a16b03a0edfd81fcca",
+        "frameDomain": "held-active-domain",
+        "startSemantics": "explicit Spanish Audio only; no locale autoplay or splice",
+        "replayBehavior": "close decoder and reset main1"
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "React native range/read-only output and readable text; source SVG graph; source-driven demo cue; local immediate-close popup state",
+    "route": "/en/migration-status/g678-calibration/shared-alg001-l07-p011/registered-v1",
+    "routeFile": "apps/web/app/[locale]/migration-status/g678-calibration/shared-alg001-l07-p011/registered-v1/page.tsx",
+    "component": "packages/demos/src/alg-l07-p011-presentation-v1.tsx",
+    "registryModule": "./modules/shared-alg001-l07-p011",
+    "timelineModule": "packages/demos/src/timelines/shared-alg001-l07-p011.ts",
+    "testFile": "packages/demos/src/alg-l07-p011-frame-v1.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-78",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "source-slope"
+        ]
+      },
+      {
+        "id": "sprite-54",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-54",
+        "parentFrameDomainId": "sprite-78",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-slope"
+        ]
+      },
+      {
+        "id": "sprite-56",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-56",
+        "parentFrameDomainId": "sprite-78",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-slope"
+        ]
+      },
+      {
+        "id": "sprite-58",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-58",
+        "parentFrameDomainId": "sprite-78",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-slope"
+        ]
+      },
+      {
+        "id": "sprite-74",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-74",
+        "parentFrameDomainId": "sprite-78",
+        "frameCount": 19,
+        "scenarioIds": [
+          "wrong-first",
+          "wrong-second"
+        ]
+      },
+      {
+        "id": "sprite-77",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-77",
+        "parentFrameDomainId": "sprite-78",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-slope"
+        ]
+      },
+      {
+        "id": "sprite-78",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-78",
+        "parentFrameDomainId": "root",
+        "frameCount": 232,
+        "scenarioIds": [
+          "source-slope",
+          "source-second-wrong"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

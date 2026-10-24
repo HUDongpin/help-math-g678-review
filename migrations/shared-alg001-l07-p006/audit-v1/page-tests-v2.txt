@@ -1,0 +1,38 @@
+✔ monthly bills obey source alpha, each result boundary and blink (1.756333ms)
+✖ question and term gates follow source morph clipping, never placement alone (1.425625ms)
+✔ every frame suppresses exactly the binary-source text instance set, with English content in ES UI (60.866625ms)
+✔ inspection survives preparation and all glossary actions pause/close without resume (0.603833ms)
+✔ pending resource read is aborted and cannot create a late clock (0.099458ms)
+✔ Replay resets held frame, glossary, cycle and retires old clock (0.167958ms)
+✔ unmount during decode ignores the late result and rejects further actions (0.116292ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 6
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 193.511375
+
+✖ failing tests:
+
+test at packages/demos/tests/alg-l07-p006-v1.test.tsx:1:2378
+✖ question and term gates follow source morph clipping, never placement alone (1.425625ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/tests/alg-l07-p006-v1.test.tsx:7:225)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

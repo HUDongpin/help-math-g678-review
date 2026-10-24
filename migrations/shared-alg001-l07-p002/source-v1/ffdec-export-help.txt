@@ -1,0 +1,221 @@
+JPEXS Free Flash Decompiler v.26.2.1
+------------------------------------
+Export sources.
+[1;4mUsage[m: <executable> [PRE-OPTIONS] [1m-export[m \
+       [3m<itemtypes>[m [3m<outdirectory>[m [3m<infile_or_directory>[m
+
+[1;4mExecutable[m:
+       Linux: ffdec or ffdec.sh
+      Mac OS: ffdec.sh
+     Windows: ffdec-cli.exe or ffdec.bat
+        Java: java -jar ffdec.jar
+
+[1;4mDescription[m:
+    Export [3m<infile_or_directory>[m sources to [3m<outdirectory>[m.
+    Exports all files from [3m<infile_or_directory>[m when it is a folder.
+    Values for [3m<itemtypes>[m parameter:
+        script - Scripts (Default format: ActionScript source)
+        image - Images (Default format: PNG/JPEG)
+        shape - Shapes (Default format: SVG)
+    morphshape - MorphShapes (Default format: SVG)
+        movie - Movies (Default format: FLV without sound)
+        font - Fonts (Default format: TTF)
+        font4 - DefineFont4 (Default format: CFF)
+        frame - Frames (Default format: PNG)
+        sprite - Sprites (Default format: PNG)
+        button - Buttons (Default format: PNG)
+        sound - Sounds (Default format: MP3/WAV/FLV only sound)
+        binaryData - Binary data (Default format:  Raw data)
+        symbolClass - Symbol-Class mapping (Default format: CSV)
+        text - Texts (Default format: Plain text)
+        all - Every resource (but not FLA and XFL)
+        fla - Everything to FLA compressed format
+        xfl - Everything to uncompressed FLA format (XFL)
+    You can export multiple types of items by using colon ",".
+    DO NOT PUT space between comma (,) and next value.
+
+[1;4mPre-options[m:
+[33m-format[m [3m<formats>[m
+    Set output formats for export.
+    Values for [3m<formats>[m parameter:
+        script:as - ActionScript source
+        script:pcode - ActionScript P-code
+        script:pcodehex - ActionScript P-code with hex
+        script:hex - ActionScript Hex only
+        shape:svg - SVG format for Shapes
+        shape:png - PNG format for Shapes
+        shape:canvas - HTML5 Canvas format for Shapes
+        shape:bmp - BMP format for Shapes
+        shape:webp - WEBP format for Shapes
+        morphshape:svg - SVG format for MorphShapes
+        morphshape:canvas - HTML5 Canvas  format for MorphShapes
+        morphshape:png_start_end - PNG start-end format for MorphShapes
+        morphshape:bmp_start_end - BMP start-end format for MorphShapes
+        morphshape:webp_start_end - WEBP start-end format for MorphShapes
+        morphshape:png_frames - PNG frames format for MorphShapes
+        morphshape:bmp_frames - BMP frames format for MorphShapes
+        morphshape:webp_frames - WEBP frames format for MorphShapes
+        morphshape:webp - WEBP format for MorphShapes
+        morphshape:apng - APNG format for MorphShapes
+        frame:png - PNG format for Frames
+        frame:apng - APNG format for Frames
+        frame:gif - GIF format for Frames
+        frame:avi - AVI format for Frames
+        frame:svg - SVG format for Frames
+        frame:canvas - HTML5 Canvas format for Frames
+        frame:pdf - PDF format for Frames
+        frame:bmp - BMP format for Frames
+        frame:webp - WEBP format for Frames
+        frame:webp_animated - WEBP animated format for Frames
+        sprite:png - PNG format for Sprites
+        sprite:apng - APNG format for Sprites
+        sprite:gif - GIF format for Sprites
+        sprite:avi - AVI format for Sprites
+        sprite:svg - SVG format for Sprites
+        sprite:canvas - HTML5 Canvas format for Sprites
+        sprite:pdf - PDF format for Sprites
+        sprite:bmp - BMP format for Sprites
+        sprite:webp - WEBP format for Sprites
+        sprite:webp_animated - WEBP animated format for Sprites
+        button:png - PNG format for Buttons
+        button:svg - SVG format for Buttons
+        button:svg_combined - SVG combined format for Buttons
+        button:bmp - BMP format for Buttons
+        button:webp - WEBP format for Buttons
+        image:png_gif_jpeg - PNG/GIF/JPEG format for Images
+        image:png - PNG format for Images
+        image:jpeg - JPEG format for Images
+        image:bmp - BMP format for Images
+        image:png_gif_jpeg_alpha - PNG/GIF/JPEG+ALPHA format for Images
+        image:webp - WEBP format for Images
+        text:plain - Plain text format for Texts
+        text:formatted - Formatted text format for Texts
+        text:svg - SVG format for Texts
+        sound:mp3_wav_flv - MP3/WAV/FLV format for Sounds
+        sound:mp3_wav - MP3/WAV format for Sounds
+        sound:wav - WAV format for Sounds
+        sound:flv - FLV format for Sounds
+        font:ttf - TTF format for Fonts
+        font:woff - WOFF format for Fonts
+        font4:cff - CFF format for DefineFont4
+        fla:[3m<flaversion>[m or xfl:[3m<flaversion>[m - Specify FLA format version
+    Values for [3m<flaversion>[m:
+        f1,f2,f3,f4,f5,mx,mx2004,f8,cs3,cs4,cs5,cs5.5,cs6,cc
+    You can set multiple formats at once using comma (,)
+    DO NOT PUT space between comma (,) and next value.
+    The prefix with colon (:) is necessary.
+
+[33m-select[m [3m<ranges>[m
+    Select frames/pages for export.
+    Comma separated ranges in format [3m<min>[m-[3m<max>[m ([3m<max>[m is optional) or [3m<num>[m.
+    If it has prefix "[3m<characterId>[m:" then all following ranges apply
+    to the character with specific id.
+    Use "all" as characterId to apply for every character.
+    Use "0" (default) as characterId to apply for main timeline.
+    Example [3m<ranges>[m formats:
+                1-5              ... exports frames 1,2,3,4,5
+                2,3              ... exports frames 2 and 3
+                2-5,7,9-         ... exports frames 2,3,4,5,7,9 and all after
+                57:5-10,12,62:5  ... exports frames 5,6,7,8,9,10,12
+                                     of character 57 and frame 5 of character 62
+                all:12-29        ... exports frames 12 to 29 of all characters
+                12:3,4,0:1-12    ... exports frames 3 and 4 of character 12
+                                     and first 12 frames of main timeline
+    DO NOT PUT space between comma (,) and next range.
+
+[33m-selectid[m [3m<charRanges>[m
+    Select characters for export by character id.
+    Comma separated ranges in format [3m<min>[m-[3m<max>[m ([3m<max>[m is optional) or [3m<characterId>[m.
+    Example [3m<charRanges>[m formats:
+                1-5          ... exports characters 1,2,3,4,5
+                2,3          ... exports characters 2 and 3
+                2-5,7,9-     ... exports characters 2,3,4,5,7,9 and all ids after
+
+[33m-selectclass[m [3m<classnames>[m
+    Select scripts to export by class name (AS 3 ONLY).
+    [3m<classnames>[m format:
+        com.example.MyClass
+        com.example.+   (all classes in package "com.example")
+        com.++,net.company.MyClass  (all classes in package "com" and all
+                                    subpackages, class net.company.MyClass)
+        DO NOT PUT space between comma (,) and next class.
+
+[33m-sublength[m [3m<length>[m
+    Export subsprite animation of length [3m<length>[m.
+    [3m<length>[m is measured in number of subframes. Must be >= 1.
+
+[33m-exportembed[m 
+    Allow exporting embedded assets via [Embed tag].
+
+[33m-config[m key=value[,key2=value2][,key3=value3...]
+    Set configuration values.
+    Use [1m-listconfigs[m command to list the available configuration settings.
+    Values are boolean, you can use 0/1, true/false, on/off or yes/no.
+    If no other parameters passed, configuration is saved.
+    Otherwise it is used only once.
+    DO NOT PUT space between comma (,) and next value.
+
+[33m-configFile[m [3m<file>[m
+    Use configuration from a file [3m<file>[m. TOML file format is expected.
+    When it has .bin extension, legacy storage is used.
+
+[33m-onerror[m (abort|retry [3m<N>[m|ignore)
+    Error handling mode.
+    "abort" stops the exporting
+    "retry" tries the exporting N times
+    "ignore" ignores the current file
+
+[33m-timeout[m [3m<N>[m
+    Decompilation timeout for a single method in AS3 or single action in AS1/2
+    in seconds.
+
+[33m-exportTimeout[m [3m<N>[m
+    Total export timeout in seconds.
+
+[33m-exportFileTimeout[m [3m<N>[m
+    Export timeout for a single AS3 class in seconds.
+
+[33m-stat[m 
+    Show export performance statistics.
+
+[33m-zoom[m [3m<N>[m
+    Apply zoom during export.
+
+[33m-charset[m [3m<charsetName>[m
+    Set desired character set for reading/writing SWF files with
+    SWF version <= 5.
+
+[33m-ignorebackground[m 
+    Ignores SWF background color when exporting frames
+    and thus make background transparent.
+
+[33m-importAssets[m [3m<importOptions>[m
+    Specifies options for importAssets tag - using external SWFs.
+    [3m<importOptions>[m format: (combination of yes,ask,local)
+            yes = use external SWFs when available
+            ask = ask whether to use external SWFs
+            yes,ask = use external SWFs, ask for alternatives when not available
+            yes,local = ignores URLs - SWFs starting with http/s:// prefix
+
+[33m-changeImport[m [3m<source>[m [3m<target>[m
+    Replaces [3m<source>[m URL in importAssets tag with [3m<target>[m
+    for purposes of export. Can be used multiple times.
+
+[33m-morphDuration[m [3m<duration>[m
+    Specifies duration in seconds (float value) for morphshape exporting.
+
+[33m-morphNumFrames[m [3m<numberOfFrames>[m
+    Specifies number of frames for morphshape exporting.
+
+
+[4;1mExamples[m:
+ffdec -export script "C:\decompiled" myfile.swf
+ffdec -selectclass com.example.MyClass,com.example.SecondClass -export script "C:\decompiled" myfile.swf
+ffdec -format script:pcode -export script "C:\decompiled" myfile.swf
+ffdec -format script:pcode,text:plain -export script,text,image "C:\decompiled" myfile.swf
+ffdec -format fla:cs5.5 -export fla "C:\sources\myfile.fla" myfile.swf
+ffdec -onerror ignore -export script "C:\decompiled" myfile.swf
+ffdec -onerror retry 5 -export script "C:\decompiled" myfile.swf
+
+You can use special value "/dev/stdin" for input files to read data 
+from standard input (even on Windows)

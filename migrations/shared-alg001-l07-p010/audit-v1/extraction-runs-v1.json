@@ -1,0 +1,69 @@
+[
+  {
+    "args": [
+      "/opt/homebrew/bin/ffdec",
+      "-version"
+    ],
+    "exitCode": 1,
+    "log": "migrations/shared-alg001-l07-p010/audit-v1/ffdec-version-v1.txt",
+    "cause": "Unsupported -version option; usage retained, exports not started."
+  },
+  {
+    "at": "2026-10-03T14:25:35.296916+00:00",
+    "args": [
+      "/opt/homebrew/bin/ffdec",
+      "-help",
+      "export"
+    ],
+    "exitCode": 0,
+    "log": "migrations/shared-alg001-l07-p010/audit-v1/ffdec-help-v1.txt"
+  },
+  {
+    "at": "2026-10-03T14:25:35.320383+00:00",
+    "args": [
+      "/opt/homebrew/bin/swfmill",
+      "--version"
+    ],
+    "exitCode": 0,
+    "log": "migrations/shared-alg001-l07-p010/audit-v1/swfmill-version-v1.txt"
+  },
+  {
+    "at": "2026-10-03T14:25:35.334382+00:00",
+    "args": [
+      "/opt/homebrew/bin/swfmill",
+      "swf2xml",
+      "migrations/shared-alg001-l07-p010/source-v1/L7VB05.swf",
+      "migrations/shared-alg001-l07-p010/source-v1/movie.xml"
+    ],
+    "exitCode": 0,
+    "log": "migrations/shared-alg001-l07-p010/audit-v1/swfmill-v1.txt"
+  },
+  {
+    "at": "2026-10-03T14:25:36.124522+00:00",
+    "args": [
+      "/opt/homebrew/bin/ffdec",
+      "-export",
+      "script,text,shape,morphshape",
+      "migrations/shared-alg001-l07-p010/source-v1/ffdec",
+      "migrations/shared-alg001-l07-p010/source-v1/L7VB05.swf"
+    ],
+    "exitCode": 0,
+    "log": "migrations/shared-alg001-l07-p010/audit-v1/ffdec-assets-v1.txt"
+  },
+  {
+    "at": "2026-10-03T14:25:36.886763+00:00",
+    "args": [
+      "/opt/homebrew/bin/ffdec",
+      "-selectid",
+      "47",
+      "-format",
+      "sprite:canvas",
+      "-export",
+      "sprite",
+      "migrations/shared-alg001-l07-p010/source-v1/ffdec-child-canvas",
+      "migrations/shared-alg001-l07-p010/source-v1/L7VB05.swf"
+    ],
+    "exitCode": 0,
+    "log": "migrations/shared-alg001-l07-p010/audit-v1/ffdec-child-v1.txt"
+  }
+]

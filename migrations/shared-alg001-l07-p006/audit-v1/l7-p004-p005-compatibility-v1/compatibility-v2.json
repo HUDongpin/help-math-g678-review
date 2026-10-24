@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 2,
+  "at": "2026-10-03T08:34:40.300284+00:00",
+  "scope": "Read-only source compatibility for alreadyregistered P004/P005; no repair/selection/registration",
+  "pages": [
+    {
+      "identity": {
+        "animationId": "shared-alg001-l07-p004",
+        "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/RW/L7RW04.swf",
+        "bytes": 749461,
+        "sha256": "898090c32ab920a5425d021df7fe2fc5b34b6472ef9c6e46d79566e0cfde3bec",
+        "flaPresent": false,
+        "readOnlyCopy": "migrations/shared-alg001-l07-p006/audit-v1/l7-p004-p005-compatibility-v1/p004/L7RW04.swf",
+        "canonicalMigrationPresent": false
+      },
+      "currentRegistryMembership": [
+        "g678-16-page-product-calibration-v1"
+      ],
+      "sourceRoot": {
+        "frames": 10,
+        "fps": 12,
+        "entryFrame": 6,
+        "scripts": [
+          {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p004-p005-compatibility-v1/p004/ffdec/scripts/frame_6/DoAction.as",
+            "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+            "text": "stop();\n"
+          },
+          {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p004-p005-compatibility-v1/p004/ffdec/scripts/frame_1/DoAction.as",
+            "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19",
+            "text": "_level0.InternalPreloader.gotoAndPlay(\"jump_check\");\nstop();\n"
+          }
+        ]
+      },
+      "main": {
+        "id": 145,
+        "frameDomain": "sprite-145",
+        "frames": 847,
+        "actions": [],
+        "playback": "ordinary sprite loop; no child stop; original shell termination unverified"
+      },
+      "buttons": 0,
+      "stream": {
+        "sampleRate": 22050,
+        "channels": 1,
+        "latencySeek": 1673,
+        "blockCount": 835,
+        "firstBlockFrame": 8,
+        "lastBlockFrame": 847,
+        "declaredSamples": 1531584,
+        "assembledMp3Bytes": 345670,
+        "assembledMp3Sha256": "7ea874b3336be69d7634bb578826d7582dcebd1173c22fce1ad94938d827c356",
+        "binaryXmlPayloadEquivalent": true,
+        "sampleSizePerSourceFrame": 1837,
+        "physicalSamplesPerFrame": 1837.5,
+        "sourceCoordinateRunCandidates": [
+          {
+            "firstFrame": 8,
+            "firstDecodedSample": 1673,
+            "residual2Min": 3346,
+            "residual2Max": 3346,
+            "endDecodedSample": 3456
+          },
+          {
+            "firstFrame": 10,
+            "firstDecodedSample": 3510,
+            "residual2Min": -328,
+            "residual2Max": -328,
+            "endDecodedSample": 1320192
+          },
+          {
+            "firstFrame": 733,
+            "firstDecodedSample": 1320717,
+            "residual2Min": -22216,
+            "residual2Max": -22216,
+            "endDecodedSample": 1531584
+          }
+        ],
+        "physicalRateResidualRangeSamples": {
+          "min": -11527.5,
+          "max": 1673.0
+        },
+        "runInterpretation": "Groups use exact source SoundStreamHead sampleSize=1837, not physical sampleRate/fps=1837.5. Segmentation is source structure only; native PCM and scheduling correspondence are not measured.",
+        "emptyBlocks": [
+          {
+            "frame": 9,
+            "samples": 0,
+            "seek": 0,
+            "mp3Bytes": 0,
+            "samplesBefore": 3456,
+            "targetSample": 3456
+          },
+          {
+            "frame": 727,
+            "samples": 0,
+            "seek": -2283,
+            "mp3Bytes": 0,
+            "samplesBefore": 1320192,
+            "targetSample": 1317909
+          }
+        ],
+        "absentBlockFrames": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          728,
+          729,
+          730,
+          731,
+          732
+        ],
+        "nativePcmBinding": "not measured in read-only compatibility audit; no playback acceptance"
+      },
+      "existingProduct": {
+        "moduleSha256": "6de2291d8801293e5b6b4e0751d48b788bcdb5585ba5f6a62e329ad736066cdf",
+        "timelineSha256": "6b558c3de945b837c003c8ca88667bf354f6446f5f7a8bd41438beca7dbc5ba0",
+        "playbackMode": "once",
+        "blocker": "embedded-audio-lifecycle-not-implemented"
+      },
+      "compatibleClockCandidate": "Not selected. Rate is supported by cycle-clock v1/v2, but source sampleSize1837 differs from sampleRate/fps1837.5; own native PCM/source-run and scheduling correspondence must be measured before a clock plan is accepted. Neither source is the stopped-family P002/P003.",
+      "batchSelectionMade": false,
+      "productOrRegistryModified": false,
+      "newCurrentJsPlacements": 0
+    },
+    {
+      "identity": {
+        "animationId": "shared-alg001-l07-p005",
+        "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/RW/L7RW05.swf",
+        "bytes": 718406,
+        "sha256": "e04b2cda0d1d67b213e7db0bd167c51589b7de6138ec07d4bec6670ab3f69ad3",
+        "flaPresent": false,
+        "readOnlyCopy": "migrations/shared-alg001-l07-p006/audit-v1/l7-p004-p005-compatibility-v1/p005/L7RW05.swf",
+        "canonicalMigrationPresent": false
+      },
+      "currentRegistryMembership": [
+        "g678-16-page-product-calibration-v1"
+      ],
+      "sourceRoot": {
+        "frames": 10,
+        "fps": 12,
+        "entryFrame": 6,
+        "scripts": [
+          {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p004-p005-compatibility-v1/p005/ffdec/scripts/frame_6/DoAction.as",
+            "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+            "text": "stop();\n"
+          },
+          {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p004-p005-compatibility-v1/p005/ffdec/scripts/frame_1/DoAction.as",
+            "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19",
+            "text": "_level0.InternalPreloader.gotoAndPlay(\"jump_check\");\nstop();\n"
+          }
+        ]
+      },
+      "main": {
+        "id": 129,
+        "frameDomain": "sprite-129",
+        "frames": 899,
+        "actions": [],
+        "playback": "ordinary sprite loop; no child stop; original shell termination unverified"
+      },
+      "buttons": 0,
+      "stream": {
+        "sampleRate": 22050,
+        "channels": 1,
+        "latencySeek": 1673,
+        "blockCount": 897,
+        "firstBlockFrame": 3,
+        "lastBlockFrame": 899,
+        "declaredSamples": 1647360,
+        "assembledMp3Bytes": 371800,
+        "assembledMp3Sha256": "773b4041508b797ff0a8f8ed03451ee8aff32ffbfe4a2021ff180a44ba48d096",
+        "binaryXmlPayloadEquivalent": true,
+        "sampleSizePerSourceFrame": 1837,
+        "physicalSamplesPerFrame": 1837.5,
+        "sourceCoordinateRunCandidates": [
+          {
+            "firstFrame": 3,
+            "firstDecodedSample": 1673,
+            "residual2Min": 3346,
+            "residual2Max": 3346,
+            "endDecodedSample": 3456
+          },
+          {
+            "firstFrame": 5,
+            "firstDecodedSample": 3510,
+            "residual2Min": -328,
+            "residual2Max": -328,
+            "endDecodedSample": 1647360
+          }
+        ],
+        "physicalRateResidualRangeSamples": {
+          "min": -612.0,
+          "max": 1673.0
+        },
+        "runInterpretation": "Groups use exact source SoundStreamHead sampleSize=1837, not physical sampleRate/fps=1837.5. Segmentation is source structure only; native PCM and scheduling correspondence are not measured.",
+        "emptyBlocks": [
+          {
+            "frame": 4,
+            "samples": 0,
+            "seek": 0,
+            "mp3Bytes": 0,
+            "samplesBefore": 3456,
+            "targetSample": 3456
+          }
+        ],
+        "absentBlockFrames": [
+          1,
+          2
+        ],
+        "nativePcmBinding": "not measured in read-only compatibility audit; no playback acceptance"
+      },
+      "existingProduct": {
+        "moduleSha256": "272b841dc8e5d08d6c3125c366d7873a39356e8de161ab5e5e406ce154bbfd7c",
+        "timelineSha256": "94a019024aa08f4a39700bfe4505cf0f2e80f0197149e7237ed38ac0c76824db",
+        "playbackMode": "once",
+        "blocker": "embedded-audio-lifecycle-not-implemented"
+      },
+      "compatibleClockCandidate": "Not selected. Rate is supported by cycle-clock v1/v2, but source sampleSize1837 differs from sampleRate/fps1837.5; own native PCM/source-run and scheduling correspondence must be measured before a clock plan is accepted. Neither source is the stopped-family P002/P003.",
+      "batchSelectionMade": false,
+      "productOrRegistryModified": false,
+      "newCurrentJsPlacements": 0
+    }
+  ],
+  "supersedes": {
+    "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p004-p005-compatibility-v1/compatibility-v1.json",
+    "sha256": "8088075301d97925b86cb4744f32076e2f168cc11854338ababb51583a5eb712",
+    "reason": "The v1 diagnostic incorrectly grouped source coordinates by physical 22050/12 samples per frame, producing spurious runs. Retained as failed diagnostic evidence; v2 uses the declared source sampleSize1837 and separately records physical-rate drift."
+  },
+  "differencesFromStoppedPair": "Both sources loop and have no glossary/buttons; historical once flag contradicts main source wrap. They do not prove stopped-family scale-out.",
+  "differencesFromP006": "P00644100Hzloop withtwo glossary actions; these22050Hzloops withno glossary; rate/gates must stay page-owned."
+}

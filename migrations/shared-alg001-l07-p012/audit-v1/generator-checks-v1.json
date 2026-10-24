@@ -1,0 +1,60 @@
+{
+  "at": "2026-10-03T17:19:53.174210+00:00",
+  "pass_": true,
+  "rows": [
+    {
+      "args": [
+        "node",
+        "migrations/shared-alg001-l07-p012/generator-v1/derive-source-v1.mjs",
+        "--check"
+      ],
+      "exitCode": 0,
+      "output": "{\n  \"pass\": true,\n  \"timelines\": [\n    {\n      \"id\": \"root\",\n      \"frames\": 10\n    },\n    {\n      \"id\": \"sprite-2\",\n      \"frames\": 1\n    },\n    {\n      \"id\": \"sprite-45\",\n      \"frames\": 1\n    },\n    {\n      \"id\": \"sprite-58\",\n      \"frames\": 1\n    },\n    {\n      \"id\": \"sprite-60\",\n      \"frames\": 1\n    },\n    {\n      \"id\": \"sprite-75\",\n      \"frames\": 8\n    },\n    {\n      \"id\": \"sprite-78\",\n      \"frames\": 1\n    },\n    {\n      \"id\": \"sprite-93\",\n      \"frames\": 385\n    }\n  ],\n  \"scripts\": 15,\n  \"glossary\": [\n    {\n      \"term\": \"Slope\",\n      \"ranges\": [\n        [\n          1,\n          385\n        ]\n      ]\n    },\n    {\n      \"term\": \"Equation\",\n      \"ranges\": [\n        [\n          1,\n          385\n        ]\n      ]\n    }\n  ],\n  \"quiz\": 90,\n  \"slider\": {\n    \"spriteId\": 60,\n    \"sourceInstance\": \"Mc_Drag\",\n    \"minimumX\": -150,\n    \"maximumX\": 50,\n    \"y\": 169,\n    \"placedX\": -30.45,\n    \"placedY\": 168.95,\n    \"initialText\": \"2\",\n    \"minimumValue\": -10,\n    \"maximumValue\": 10,\n    \"step\": 0.1,\n    \"formula\": \"Math.round((this._x / 10 + 5) * 10) / 10\",\n    \"readOnlySlope\": true,\n    \"sourceReleaseOutside\": true\n  },\n  \"sourceMode\": \"SWF-only\",\n  \"originalRuntimeAccepted\": false\n}\n"
+    },
+    {
+      "args": [
+        "python3",
+        "migrations/shared-alg001-l07-p012/generator-v1/derive-streams-v1.py",
+        "--check"
+      ],
+      "exitCode": 0,
+      "output": "[{\"sprite\": 75, \"bytes\": 2860, \"segments\": [{\"firstFrame\": 2, \"firstDecodedSample\": 1673, \"endDecodedSample\": 3456}, {\"firstFrame\": 4, \"firstDecodedSample\": 3510, \"endDecodedSample\": 12672}]}, {\"sprite\": 93, \"bytes\": 135460, \"segments\": [{\"firstFrame\": 1, \"firstDecodedSample\": 1673, \"endDecodedSample\": 3456}, {\"firstFrame\": 3, \"firstDecodedSample\": 3510, \"endDecodedSample\": 445824}, {\"firstFrame\": 302, \"firstDecodedSample\": 446213, \"endDecodedSample\": 600192}]}]\n"
+    },
+    {
+      "args": [
+        "node",
+        "migrations/shared-alg001-l07-p012/generator-v1/derive-glossary-v1.mjs",
+        "--check"
+      ],
+      "exitCode": 0,
+      "output": "[{\"key\":\"Equation\",\"id\":\"equation\",\"keys\":[\"id\",\"sourceKeyAttribute\",\"labels\",\"definitions\",\"source\",\"sourceEntrySha256\",\"extractionLfNormalizedEntrySha256\"],\"labels\":{\"en\":\"Equation\",\"es\":\"Ecuaci\u00f3n\"}},{\"key\":\"Slope\",\"id\":\"slope\",\"keys\":[\"id\",\"sourceKeyAttribute\",\"labels\",\"definitions\",\"source\",\"sourceEntrySha256\",\"extractionLfNormalizedEntrySha256\"],\"labels\":{\"en\":\"Slope\",\"es\":\"Pendiente\"}}]\n"
+    },
+    {
+      "args": [
+        "python3",
+        "migrations/shared-alg001-l07-p012/generator-v1/derive-visual-v1.py",
+        "--check"
+      ],
+      "exitCode": 0,
+      "output": "{\"status\": \"pass\", \"spans\": 135, \"shapes\": 19, \"morphs\": 2, \"labels\": 43, \"completeTextFrames\": {\"6\": 2, \"11\": 2}, \"graphViewBox\": [-4082, -3396, 6514.998779296875, 6487], \"clocks\": [75, 93]}\n"
+    },
+    {
+      "args": [
+        "node",
+        "migrations/shared-alg001-l07-p012/generator-v1/derive-product-source-v1.mjs",
+        "--check"
+      ],
+      "exitCode": 0,
+      "output": "{\"pass\":true,\"bytes\":789431,\"sha256\":\"6650ae7642479c478d408919a46220ef3410d73feb4e904dd6f908873ca8ba12\"}\n"
+    },
+    {
+      "args": [
+        "node",
+        "tools/shared-page-factory/source-slider-feedback-v1/generate.mjs",
+        "--check"
+      ],
+      "exitCode": 0,
+      "output": "{\n  \"pass\": true,\n  \"consumers\": [\n    \"p011\",\n    \"p012\"\n  ],\n  \"rows\": [\n    {\n      \"page\": \"p011\",\n      \"path\": \"packages/demos/src/alg-l07-p011-state-v1.ts\",\n      \"bytes\": 4358,\n      \"sha256\": \"8ea4bde19b3b04a3c1a1212b346c78fa6a7ed2ec4f381ea8599b9dc861fb6304\",\n      \"templateSha256\": \"455d30e60a906f5f3c40c48fda7c206f65b5365cf67fdbe8a4ffbb538e40f01e\"\n    },\n    {\n      \"page\": \"p011\",\n      \"path\": \"packages/demos/src/alg-l07-p011-session-v1.ts\",\n      \"bytes\": 11058,\n      \"sha256\": \"eab4e89e8bb49dbf9308537cd135856a99079c7e806935cca5091d106e6ba956\",\n      \"templateSha256\": \"779744fce5164fc82e76f2c2ddfa3a6486f9ecc596f0f354023072e184bb81b3\"\n    },\n    {\n      \"page\": \"p011\",\n      \"path\": \"packages/demos/src/alg-l07-p011-player-v1.tsx\",\n      \"bytes\": 7620,\n      \"sha256\": \"c410c04aceac34984c156d401e80bb83089f0882209acb116315dce9b3bb49a9\",\n      \"templateSha256\": \"aa5298a920a16fbda7204b5dea2bb7f15b61682349c4735f07166f5c027f68e2\"\n    },\n    {\n      \"page\": \"p012\",\n      \"path\": \"packages/demos/src/alg-l07-p012-state-v1.ts\",\n      \"bytes\": 4337,\n      \"sha256\": \"f2de5e3aca8b487f130b3a0b2320ca2128065f726c0b4effba48fbe275967c06\",\n      \"templateSha256\": \"455d30e60a906f5f3c40c48fda7c206f65b5365cf67fdbe8a4ffbb538e40f01e\"\n    },\n    {\n      \"page\": \"p012\",\n      \"path\": \"packages/demos/src/alg-l07-p012-session-v1.ts\",\n      \"bytes\": 11055,\n      \"sha256\": \"a6750d23eaceae57224529d63146d0f1152c087ddbb9734140ee1b622d7630db\",\n      \"templateSha256\": \"779744fce5164fc82e76f2c2ddfa3a6486f9ecc596f0f354023072e184bb81b3\"\n    },\n    {\n      \"page\": \"p012\",\n      \"path\": \"packages/demos/src/alg-l07-p012-player-v1.tsx\",\n      \"bytes\": 7620,\n      \"sha256\": \"9dfa41da1e205830d5823a8b22139e2c6e7515447ca31222782e97320524a5c7\",\n      \"templateSha256\": \"aa5298a920a16fbda7204b5dea2bb7f15b61682349c4735f07166f5c027f68e2\"\n    }\n  ]\n}\n"
+    }
+  ]
+}

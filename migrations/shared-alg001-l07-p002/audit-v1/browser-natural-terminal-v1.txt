@@ -1,0 +1,6 @@
+### Result
+{"at":"2026-10-03T07:29:52.710Z","state":{"phase":"timeline-ended","frame":1195,"terminalHeld":true,"replay":0,"volume":0.1,"audioPhase":"boundary-held","decodedSample":2156256.5,"failure":null,"lessonCompleted":false},"diagnostics":{"contexts":1,"closed":0,"activeNodes":0,"startedNodes":3},"tableVisible":"true","rows":["Smooth Talk\t0\t$.20/minute","Easy Talk\t$50\t$.05/minute","Super Talk\t$60\t$.03/minute"]}
+### Ran Playwright code
+```js
+await (async (page) => { await page.waitForFunction(()=>window.p002Harness.state?.phase==="timeline-ended",{},{timeout:120000}); return await page.evaluate(()=>({at:new Date().toISOString(),state:window.p002Harness.state,diagnostics:window.p002Harness.diagnostics,tableVisible:document.querySelector("[data-table-visible]")?.getAttribute("data-table-visible"),rows:Array.from(document.querySelectorAll("tbody tr")).map(r=>r.innerText)})); })(page);
+```

@@ -1,0 +1,25 @@
+[
+  {
+    "at": "2026-10-03T08:36:29.065870+00:00",
+    "args": [
+      "/opt/homebrew/bin/swfmill",
+      "swf2xml",
+      "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/L7VB04.swf",
+      "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/movie.xml"
+    ],
+    "log": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/swfmill-v1.txt",
+    "exitCode": 0
+  },
+  {
+    "at": "2026-10-03T08:36:29.098675+00:00",
+    "args": [
+      "/opt/homebrew/bin/ffdec",
+      "-export",
+      "script,text",
+      "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec",
+      "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/L7VB04.swf"
+    ],
+    "log": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec-assets-v1.txt",
+    "exitCode": 0
+  }
+]

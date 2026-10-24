@@ -1,0 +1,12 @@
+### Result
+{"state":{"phase":"playing","frame":16,"terminalHeld":false,"replay":0,"volume":0.1,"audioPhase":"playing","decodedSample":28635.5,"failure":null,"lessonCompleted":false},"diagnostics":{"contexts":1,"closed":0,"activeNodes":3,"startedNodes":3},"canvasStatus":"ready","fonts":{"body":true,"heading":true}}
+### Ran Playwright code
+```js
+await (async (page) => { await page.getByRole("button",{name:"Play",exact:true}).click(); await page.waitForTimeout(1500); return await page.evaluate(()=>({state:window.p002Harness.state,diagnostics:window.p002Harness.diagnostics,canvasStatus:document.querySelector("[data-canvas-status]")?.getAttribute("data-canvas-status"),fonts:{body:document.fonts.check("16px \"HELP Math Nunito Sans\""),heading:document.fonts.check("24px \"HELP Math Fredoka\"")}})); })(page);
+```
+### Page
+- Page URL: http://127.0.0.1:4383/
+- Page Title: P002 local validation
+- Console: 1 errors, 0 warnings
+### Events
+- New console entries: .playwright-cli/console-2026-10-03T07-27-53-070Z.log#L4

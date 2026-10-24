@@ -1,0 +1,59 @@
+{
+  "scope": "SWF scripts, glyphs/positions and viewed FFDec frames/SVGs; source geometry is not an original-runtime baseline",
+  "title": {
+    "shape": 1,
+    "text": "Linear and Nonlinear Functions: Vocabulary",
+    "inspection": "audit-v1/source-shapes-v1.png"
+  },
+  "sourceRisks": [
+    {
+      "kind": "shape-text-unclassified",
+      "definitionCount": 28,
+      "meaning": "Shapes may include outlined text or mathematical symbols; presence is not confirmation of text."
+    },
+    {
+      "kind": "button-runtime-state-and-actions-not-interpreted",
+      "definitionCount": 6
+    },
+    {
+      "kind": "dynamic-text-runtime-value-unresolved",
+      "fieldCount": 3
+    },
+    {
+      "kind": "actionscript-visibility-and-values-not-interpreted"
+    },
+    {
+      "kind": "mask-filter-blend-semantics-unresolved"
+    }
+  ],
+  "nativeDecisions": {
+    "shapes": {
+      "1": "outlined source title -> native title",
+      "2,45,46,47,55": "authored slider strip/knob -> source-position demo and native range at153",
+      "6": "native read-only slope/intercept fields",
+      "9,33": "exact coordinate plane/grid/arrow paths",
+      "34,76": "exact source line paths and transforms before/after155",
+      "35,59": "native Draw button faces",
+      "38": "source tutorial pointer -> semantic native slider/Draw target cue; source matrix retained",
+      "39": "two source instruction reveal masks",
+      "40,49": "source underlines -> native glossary terms",
+      "42": "glossary invisible hit area -> native buttons",
+      "53": "native Draw emphasis during source button-press cue",
+      "62,63,64,65,67,68,69,70": "close button decoration/cross -> native Close with source text66",
+      "72": "local readable feedback region"
+    },
+    "text": "English source instructions/equation/read-only values retained; EN/ES glossary from original MI XML; UI localized only",
+    "slider": "source x-150..50 gives -10..10,step0.1; source txtSlope is read-only. Pointer releaseOutside becomes native pointer handling; keyboard supported. Demo knob geometry does not numerically drive demo equation; source timings retained independently.",
+    "graph": "43 native label instances; exact source lines; does not react to arbitrary slider values before Draw/155",
+    "feedback": "local popup74; every submit increments TryCount, immediate Close; no random helper or automatic advance on popup audio end",
+    "modernTransition": "postquiz widgets disabled as continuation begins; source transient re-enabled flags are recorded separately and do not create another native quiz turn",
+    "audio": "binary/XML identical payloads; source22050Hz/1837 samples vs1837.5 physical per frame discrepancy retained; neutral0-sample blocks are not negative-seek markers",
+    "reuse": "unchanged source-stream-runs clock, decoded source transport and modern host bridge; local state differs from choice-feedback and form helpers"
+  },
+  "unresolved": [
+    "authoritative original-runtime visual/interaction/audio timing",
+    "full frame rendered comparison",
+    "listening, human and Owner review"
+  ],
+  "registryModified": false
+}

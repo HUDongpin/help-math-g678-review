@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l07-p006",
+  "animationId": "shared-alg001-l07-p006",
+  "assetId": "swf-72c7f3e0d0fd0a5251214c3511262bf164d983837a5c52e9f1e56d4de96df155",
+  "status": "validating",
+  "created": "2026-10-03",
+  "confidence": "source-structural-verified-original-runtime-unverified",
+  "classification": {
+    "collection": "course",
+    "grade": "shared",
+    "lesson": 7,
+    "section": "RW",
+    "page": 5,
+    "domain": "expressions-equations-number-theory",
+    "knowledgePoint": {
+      "en": "",
+      "es": ""
+    },
+    "titleRaw": "Page 5",
+    "titleDisplay": "Linear and Nonlinear Functions: Real World Activity",
+    "status": "confirmed",
+    "evidence": [
+      "source-v1/index.xml",
+      "audit-v1/source-identity-v1.json"
+    ],
+    "moduleCode": "ALG001",
+    "sourceScope": "G6-G8-shared",
+    "globalPageOrdinal": 6
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/RW/L7RW06.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/RW/L7RW06.swf",
+    "flaSha256": "",
+    "swfSha256": "72c7f3e0d0fd0a5251214c3511262bf164d983837a5c52e9f1e56d4de96df155",
+    "pairedFlaStatus": "missing",
+    "provenance": "physical canonical AWS source; exact read-only working copy",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 2189723,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#b8d8f7",
+    "actionScriptVersion": "AS1/2",
+    "complexity": "behavior-heavy",
+    "fonts": [
+      "Bauhaus Md BT",
+      "Impact",
+      "Elephant"
+    ],
+    "scripts": [
+      "source-v1/ffdec/scripts"
+    ],
+    "externalDependencies": [
+      "InternalPreloader.jump_check",
+      "DoHyperLinks"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      {
+        "characterId": 1,
+        "frame": 1,
+        "depth": 1,
+        "clipDepth": 108,
+        "matrix": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "characterId": 216,
+        "frame": 1760,
+        "depth": 81,
+        "clipDepth": 88,
+        "matrix": [
+          1,
+          0,
+          0,
+          1,
+          96,
+          -3589
+        ]
+      },
+      {
+        "characterId": 222,
+        "frame": 1836,
+        "depth": 81,
+        "clipDepth": 88,
+        "matrix": [
+          1,
+          0,
+          0,
+          1,
+          96,
+          -3589
+        ]
+      }
+    ],
+    "morphs": [
+      216
+    ],
+    "filters": [],
+    "networkCalls": [],
+    "teachingVisibility": "audit-v1/teaching-visibility-v4.json",
+    "nativeOutlinedGlyphReplacement": {
+      "sourceShapeId": 113,
+      "sourceTextId": "character-114",
+      "sourceValue": "$90",
+      "decision": "same-source-frame native Super Talk bill emphasis; raw source mode unchanged"
+    }
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "source-real-world",
+      "kind": "interactive",
+      "description": "Cell phone monthly bills at500 and1000 minutes; two glossary buttons; natural1845 frame loop",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "en-source"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "main-stream-223",
+        "source": "source-v1/source-stream-223.mp3",
+        "startFrame": 6,
+        "frameDomain": "sprite-223",
+        "trigger": "explicit Play/Replay",
+        "sampleRate": 44100
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "HeadlessChrome/154.0.0.0",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "derived-candidate",
+    "renderer": "source FFDec diagnostic only; no authoritative original runtime",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "source Canvas graphics plus native React table/math/question",
+    "route": "http://127.0.0.1:4387/standalone-v1/",
+    "routeFile": "standalone-v1/index.html",
+    "component": "packages/demos/src/alg-l07-p006-presentation-v1.tsx",
+    "registryModule": "./modules/shared-alg001-l07-p006",
+    "timelineModule": "packages/demos/src/timelines/shared-alg001-l07-p006.ts",
+    "testFile": "packages/demos/tests/alg-l07-p006-v1.test.tsx",
+    "standalonePackage": "standalone-v1/",
+    "defaultFrameDomainId": "sprite-223",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "source-real-world"
+        ]
+      },
+      {
+        "id": "sprite-223",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-223",
+        "parentFrameDomainId": "root",
+        "frameCount": 1845,
+        "scenarioIds": [
+          "source-real-world"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": true,
+    "reducedMotionReviewed": true,
+    "accessibleNameReviewed": true,
+    "responsiveOverflowReviewed": true,
+    "localizationReviewed": true
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": [
+      "Source-only EN main visual content with explicit ES UI English fallback",
+      "Authoritative original runtime, fidelity, listening, human, Owner, strict and publication remain unverified",
+      "Current-JS registration/real My Lesson not yet run"
+    ]
+  },
+  "currentJsEngineeringStatus": "source-native-standalone-verified-unregistered"
+}

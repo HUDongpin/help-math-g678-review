@@ -1,0 +1,77 @@
+{
+  "pass": true,
+  "timelines": [
+    {
+      "id": "root",
+      "frames": 10
+    },
+    {
+      "id": "sprite-2",
+      "frames": 1
+    },
+    {
+      "id": "sprite-45",
+      "frames": 1
+    },
+    {
+      "id": "sprite-58",
+      "frames": 1
+    },
+    {
+      "id": "sprite-60",
+      "frames": 1
+    },
+    {
+      "id": "sprite-75",
+      "frames": 8
+    },
+    {
+      "id": "sprite-78",
+      "frames": 1
+    },
+    {
+      "id": "sprite-93",
+      "frames": 385
+    }
+  ],
+  "scripts": 15,
+  "glossary": [
+    {
+      "term": "Slope",
+      "ranges": [
+        [
+          1,
+          385
+        ]
+      ]
+    },
+    {
+      "term": "Equation",
+      "ranges": [
+        [
+          1,
+          385
+        ]
+      ]
+    }
+  ],
+  "quiz": 90,
+  "slider": {
+    "spriteId": 60,
+    "sourceInstance": "Mc_Drag",
+    "minimumX": -150,
+    "maximumX": 50,
+    "y": 169,
+    "placedX": -30.45,
+    "placedY": 168.95,
+    "initialText": "2",
+    "minimumValue": -10,
+    "maximumValue": 10,
+    "step": 0.1,
+    "formula": "Math.round((this._x / 10 + 5) * 10) / 10",
+    "readOnlySlope": true,
+    "sourceReleaseOutside": true
+  },
+  "sourceMode": "SWF-only",
+  "originalRuntimeAccepted": false
+}

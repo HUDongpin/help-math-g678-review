@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l07-p013",
+  "animationId": "shared-alg001-l07-p013",
+  "assetId": "swf-ccd8386911351c7100ed218359034907b2150398f7267039abefb733079c5e6b",
+  "status": "preserved",
+  "created": "2026-10-03",
+  "confidence": "verified",
+  "classification": {
+    "collection": "course",
+    "grade": "shared",
+    "lesson": 7,
+    "section": "VB",
+    "page": 7,
+    "domain": "algebra",
+    "knowledgePoint": {
+      "en": "Positive slope and an uphill line from left to right",
+      "es": "Pendiente positiva: una línea sube de izquierda a derecha"
+    },
+    "titleRaw": "Slope",
+    "titleDisplay": "Slope",
+    "status": "confirmed",
+    "evidence": [
+      "source-v1/index.xml",
+      "native-v1/source-model-v1.json"
+    ],
+    "sectionPageOrdinal": 7,
+    "globalPageOrdinal": 13,
+    "sourceOccurrence": 13,
+    "moduleCode": "ALG001"
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/VB/L7VB08.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/VB/L7VB08.swf",
+    "flaSha256": "",
+    "swfSha256": "ccd8386911351c7100ed218359034907b2150398f7267039abefb733079c5e6b",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 102739,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#ffffff",
+    "actionScriptVersion": "AS1/2",
+    "complexity": "interactive-understood",
+    "fonts": [
+      "Bauhaus Md BT"
+    ],
+    "scripts": [
+      "migrations/shared-alg001-l07-p013/source-v1/ffdec/scripts/frame_1/DoAction.as",
+      "migrations/shared-alg001-l07-p013/source-v1/ffdec/scripts/frame_6/DoAction.as",
+      "migrations/shared-alg001-l07-p013/source-v1/ffdec/scripts/DefineButton2_53/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p013/source-v1/ffdec/scripts/DefineButton2_54/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p013/source-v1/ffdec/scripts/DefineButton2_55/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p013/source-v1/ffdec/scripts/DefineButton2_56/BUTTONCONDACTION on(release).as"
+    ],
+    "externalDependencies": [
+      "InternalPreloader.jump_check",
+      "DoHyperLinks",
+      "optional old-host SA button"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      {
+        "sourceShape": 49,
+        "instances": 1,
+        "disposition": "exact source mask rectangle and glyph advances generate complete-word native text and term reveal"
+      }
+    ],
+    "morphs": [
+      {
+        "sourceShape": 47,
+        "replacementAtFrame": 121,
+        "replacementShape": 48,
+        "removedAtFrame": 136,
+        "disposition": "exact source endpoints and authored ratio; source second blue line instance retained96..135"
+      }
+    ],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "source-slope",
+      "kind": "interactive",
+      "description": "Source213-frame ordinary loop with coefficient/marker demonstration and masked glossary. Root and static blue-line child remain queryable.",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "en",
+      "es"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "source-stream",
+        "language": "en",
+        "source": "source-v1/stream-57.mp3",
+        "sourceSha256": "6104640ddf2acde490677e99b6e8b39c36729400a33bf36ed7523709e0bbb214",
+        "frameDomain": "sprite-57",
+        "startSemantics": "explicit Play; source segments at6/8;213-frame cycle",
+        "replayBehavior": "retire pending decoder/nodes and reset main1"
+      },
+      {
+        "id": "optional-spanish-audio",
+        "language": "es",
+        "source": "source-v1/sa.mp3",
+        "sourceSha256": "1ef54e04793a9cfa97a0be952fa11f5e9d9821615b486ad11aa15457ce703d3c",
+        "frameDomain": "held-main",
+        "startSemantics": "explicit Spanish Audio only; no locale autoplay or splice",
+        "replayBehavior": "close decoder and reset main1"
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "React native text; exact source grid/line SVG and43 HTML axis labels; noninteractive coefficient/marker cycle and source-ratio green emphasis",
+    "route": "/en/migration-status/g678-calibration/shared-alg001-l07-p013/registered-v1",
+    "routeFile": "apps/web/app/[locale]/migration-status/g678-calibration/shared-alg001-l07-p013/registered-v1/page.tsx",
+    "component": "packages/demos/src/alg-l07-p013-presentation-v1.tsx",
+    "registryModule": "./modules/shared-alg001-l07-p013",
+    "timelineModule": "packages/demos/src/timelines/shared-alg001-l07-p013.ts",
+    "testFile": "packages/demos/src/alg-l07-p013-frame-v1.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-57",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "source-slope"
+        ]
+      },
+      {
+        "id": "sprite-35",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-35",
+        "parentFrameDomainId": "sprite-57",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-slope"
+        ]
+      },
+      {
+        "id": "sprite-57",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-57",
+        "parentFrameDomainId": "root",
+        "frameCount": 213,
+        "scenarioIds": [
+          "source-slope"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

@@ -1,0 +1,13 @@
+async (page) => {
+ const streams = [{"spriteId": 74, "sampleRate": 22050, "url": "http://127.0.0.1:4390/stream-74.mp3", "bytes": 7410, "sha256": "399b925dc7b2a06027954e8ef45f8c739a1a8d601fa41b121846bdc5b367a39b", "expectedSamples": 32832}, {"spriteId": 78, "sampleRate": 22050, "url": "http://127.0.0.1:4390/stream-78.mp3", "bytes": 96070, "sha256": "4c7cb74735bd294393af5d247b635b1a3e22ea05b7e28fe419eb1a227ef84eb0", "expectedSamples": 425664}, {"spriteId": "SA", "sampleRate": 48000, "url": "http://127.0.0.1:4390/sa.mp3", "bytes": 166992, "sha256": "d32be3c981e8db6f3594d0997e12a5da52b15f337f2ef6a16b03a0edfd81fcca"}];
+ const result = await page.evaluate(async streams => {
+  const hash=async b=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',b))].map(x=>x.toString(16).padStart(2,'0')).join('');
+  const measured=[];
+  for(const s of streams){const c=new AudioContext({sampleRate:s.sampleRate});try{const r=await fetch(s.url),bytes=await r.arrayBuffer();if(r.status!==200||bytes.byteLength!==s.bytes||await hash(bytes)!==s.sha256)throw Error('source mismatch');const b=await c.decodeAudioData(bytes.slice(0));if(b.numberOfChannels!==1||b.sampleRate!==s.sampleRate||s.expectedSamples&&b.length!==s.expectedSamples)throw Error('decoder mismatch');const out=new ArrayBuffer(b.length*4),v=new DataView(out);let peak=0;for(let i=0;i<b.length;i++){const n=b.getChannelData(0)[i];if(!Number.isFinite(n))throw Error('nonfinite');v.setFloat32(i*4,n,true);peak=Math.max(peak,Math.abs(n));}if(!peak)throw Error('silent');await c.close();measured.push({spriteId:s.spriteId,sourceBytes:bytes.byteLength,sourceSha256:s.sha256,sampleRate:b.sampleRate,channels:b.numberOfChannels,decodedSamples:b.length,pcmSha256:await hash(out),peak,contextClosed:c.state==='closed',userAgent:navigator.userAgent});}finally{if(c.state!=='closed')await c.close();}}
+  return{pass:true,streams:measured,sourceAlignmentAccepted:false,listeningAccepted:false};
+ },streams);
+ await page.setViewportSize({width:1050,height:950});
+ await page.setContent('<!DOCTYPE html><body style="font:18px sans-serif;background:white;display:grid;grid-template-columns:1fr 1fr;gap:20px">'+[1,2,6,9,33,34,35,38,40,42,45,46,47,49,53,55,59,62,63,64,65,67,68,69,70,72,76].map(id=>'<section style="border:1px solid #aaa;padding:12px"><h2>Source shape '+id+'</h2><img style="max-width:100%;min-height:45px;max-height:200px" src="http://127.0.0.1:4390/ffdec/shapes/'+id+'.svg"></section>').join('')+'</body>');
+ await page.locator('img').evaluateAll(xs=>Promise.all(xs.map(x=>x.decode())));
+ await page.screenshot({path:"/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p011/audit-v1/source-shapes-v1.png",fullPage:true});return result;
+}

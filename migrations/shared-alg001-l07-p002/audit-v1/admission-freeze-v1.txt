@@ -1,0 +1,22 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: ordinary bounded file: migrations/shared-alg001-l07-p002/generator-v1/__pycache__
+    at readOrdinary (file:///Volumes/WestWorld/HELP%20MATH%202.0-g678-implementation/lib/g678-admission-proof.mjs:19:3)
+    at pinFile (file:///Volumes/WestWorld/HELP%20MATH%202.0-g678-implementation/lib/g678-admission-proof.mjs:25:17)
+    at pin (file:///Volumes/WestWorld/HELP%20MATH%202.0-g678-implementation/migrations/shared-alg001-l07-p002/generator-v1/prepare-admission-draft-v1.mjs:5:159)
+    at Array.map (<anonymous>)
+    at file:///Volumes/WestWorld/HELP%20MATH%202.0-g678-implementation/migrations/shared-alg001-l07-p002/generator-v1/prepare-admission-draft-v1.mjs:17:102
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.18.0

@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-03T12:40:37.415989+00:00",
+  "runs": [
+    {
+      "args": [
+        "python3",
+        "migrations/shared-alg001-l07-p009/generator-v1/derive-streams-v1.py"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l07-p009/audit-v1/derive-streams-v1.txt"
+    },
+    {
+      "args": [
+        "node",
+        "migrations/shared-alg001-l07-p009/generator-v1/derive-glossary-v1.mjs"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l07-p009/audit-v1/derive-glossary-v1.txt"
+    },
+    {
+      "args": [
+        "/opt/homebrew/bin/ffdec",
+        "-help",
+        "export"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l07-p009/audit-v1/ffdec-help-v1.txt"
+    },
+    {
+      "args": [
+        "/opt/homebrew/bin/ffdec",
+        "-selectid",
+        "79,80",
+        "-format",
+        "sprite:canvas",
+        "-export",
+        "sprite",
+        "migrations/shared-alg001-l07-p009/source-v1/ffdec-child-canvas",
+        "migrations/shared-alg001-l07-p009/source-v1/L7VB04.swf"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l07-p009/audit-v1/ffdec-child-canvas-v1.txt"
+    },
+    {
+      "args": [
+        "/opt/homebrew/bin/ffdec",
+        "-export",
+        "shape,morphshape",
+        "migrations/shared-alg001-l07-p009/source-v1/ffdec-shapes",
+        "migrations/shared-alg001-l07-p009/source-v1/L7VB04.swf"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l07-p009/audit-v1/ffdec-shapes-v1.txt"
+    }
+  ]
+}

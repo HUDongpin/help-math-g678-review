@@ -1,0 +1,19 @@
+file:///Volumes/WestWorld/HELP%20MATH%202.0-g678-implementation/scripts/build-renderer-frame-domain-support.mjs:267
+        if (code !== 0) reject(new Error(`${animationId}: renderer probe failed (${code}): ${stderr.trim()}`));
+                               ^
+
+Error: shared-alg001-l07-p007: renderer probe failed (1): /Volumes/WestWorld/HELP MATH 2.0-g678-implementation/scripts/probe-renderer-frame-domain-support.ts:36
+  if (!prototype) throw new Error(`${input.animationId}: prototype runtime is missing`);
+                        ^
+
+Error: shared-alg001-l07-p007: prototype runtime is missing
+    at main (/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/scripts/probe-renderer-frame-domain-support.ts:36:25)
+    at async <anonymous> (/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/scripts/probe-renderer-frame-domain-support.ts:98:1)
+
+Node.js v24.18.0
+    at ChildProcess.<anonymous> (file:///Volumes/WestWorld/HELP%20MATH%202.0-g678-implementation/scripts/build-renderer-frame-domain-support.mjs:267:32)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:306:5)
+
+Node.js v24.18.0

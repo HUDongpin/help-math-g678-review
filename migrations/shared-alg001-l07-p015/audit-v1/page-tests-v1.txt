@@ -1,0 +1,59 @@
+✔ all1448 source frame/domain/scenario/language states preserve source identities and child scope (113.508792ms)
+✔ authored masks reveal complete words and each actual term before its native button appears (0.273875ms)
+✔ source111/112 student value and Draw are replaced113; zero highlight and late annotation stay distinct (1.918291ms)
+✔ source graph depth, fixed horizontal child and transformed yellow morph remain authored geometry (42.514541ms)
+✔ source delayed embedded audio runs and independently decoded Spanish stay separate (0.118125ms)
+✔ source clock stops at84; first wrong uses popup65 and can close before15 (2.027708ms)
+✔ second Close switches bounded main clock and preserves full final interval before wrap (3.340416ms)
+✔ correct zero Draw counts every submission and never loads feedback (0.379458ms)
+✔ feedback Close cancels pending fetch and decode without stale playback (2.338041ms)
+✔ pause and revealed glossary retain fractional clock cursor; resume does not reseek (0.381958ms)
+✔ Spanish is explicit, holds popup domain and returns paused; pending decode can cancel (0.617541ms)
+✔ Replay retires all domains and rejects late restart when explicitly paused (0.379417ms)
+✔ retained Draw changes count without clock restart or popup in playing and held postquiz (0.321042ms)
+✔ authored110 stop resets minus1 and refuses transport beyond the exercise (0.988667ms)
+✖ range uses original clamp and tenth-step formula including zero at x minus50 (1.859084ms)
+✔ direct popup text assignment is available at first frame2 and immediate Close retains slope (0.144292ms)
+✔ second wrong holds popup19 until Close;113 selects authored zero and removes active Draw (0.123167ms)
+✔ correct zero counts every submission and next quiz entry alone resets the counter (0.130875ms)
+✔ mask-bound glossary pauses; Replay retires feedback and stale epochs; leave is terminal (0.136667ms)
+✔ retained111/112 Draw accepts once without popup or narration restart; no late replacement handler (0.096416ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 19
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 338.323916
+
+✖ failing tests:
+
+test at packages/demos/src/alg-l07-p015-state-v1.test.ts:1:830
+✖ range uses original clamp and tenth-step formula including zero at x minus50 (1.859084ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+      '-10',
+      '10',
+      '-1',
+      '0',
+  +   '0'
+  -   '0.1'
+    ]
+  
+      at TestContext.<anonymous> (/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/alg-l07-p015-state-v1.test.ts:4:97)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ '-10', '10', '-1', '0', '0' ],
+    expected: [ '-10', '10', '-1', '0', '0.1' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,46 @@
+{
+  "scope": "SWF tags, scripts, glyph coordinates and viewed FFDec frames/shapes; no original runtime",
+  "title": {
+    "shape": 1,
+    "text": "Linear and Nonlinear Functions: Vocabulary",
+    "inspection": "audit-v1/source-shapes-v1.png"
+  },
+  "sourceRisks": [
+    {
+      "kind": "shape-text-unclassified",
+      "definitionCount": 10,
+      "meaning": "Shapes may include outlined text or mathematical symbols; presence is not confirmation of text."
+    },
+    {
+      "kind": "button-runtime-state-and-actions-not-interpreted",
+      "definitionCount": 9
+    },
+    {
+      "kind": "actionscript-visibility-and-values-not-interpreted"
+    },
+    {
+      "kind": "mask-filter-blend-semantics-unresolved"
+    }
+  ],
+  "nativeDecisions": {
+    "text": "three exact English authored statements; complete-word mask reveals; Spanish UI uses source EN text",
+    "shapes": {
+      "1": "outlined title becomes native title",
+      "2": "three source reveal masks",
+      "3,11,15": "glossary underlines represented by corresponding native term buttons",
+      "6": "invisible glossary hit areas become native focusable buttons",
+      "22,26": "exact grid and axis paths retained",
+      "45,46": "exact line endpoints and authored ratios retained"
+    },
+    "coordinates": "all43 source instances retained; x-negative literals end with minus, lower y-axis numbers have no minus in source; no mathematical correction implied",
+    "layout": "source geometry proportion retained; native labels stay1rem; bounded keyboard-scrollable plot on small screens",
+    "audio": "binary/XML identical payload;22050Hz native479232 samples; source sampleSize1837 versus physical1837.5 remains explicit",
+    "neutralBlock": "frame4 samples0 seek0 retained in model; not a negative-seek clock marker"
+  },
+  "unresolved": [
+    "authoritative-runtime visual and audio timing",
+    "full glyph/shape pixel fidelity",
+    "listening, human and Owner review"
+  ],
+  "registryModified": false
+}

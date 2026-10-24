@@ -1,0 +1,466 @@
+{
+  "schemaVersion": 1,
+  "placementId": "shared-alg001-l07-p003",
+  "animationId": "shared-alg001-l07-p003",
+  "sourceSwfSha256": "947ca0854281ead821f62270e4199044861404562be249b121eefbe410b2ef86",
+  "sourceRelativePath": "G6-G8-shared/ALG001/L7/RW/L7RW03.swf",
+  "sourceCatalogContentSha256": "19943f06155ba81201772c5e5bb2864fb8aab9e92b0ca4c6d04d3d0492ade66d",
+  "blocks": [
+    {
+      "id": "course-title",
+      "sourceTextIds": [
+        "character-402"
+      ],
+      "role": "heading",
+      "language": "en",
+      "readingOrder": 0,
+      "valueSource": "source-static"
+    },
+    {
+      "id": "activity-title",
+      "sourceTextIds": [
+        "character-402"
+      ],
+      "role": "title",
+      "language": "en",
+      "readingOrder": 1,
+      "valueSource": "source-static"
+    },
+    {
+      "id": "plans",
+      "sourceTextIds": [
+        "character-7",
+        "character-8",
+        "character-9",
+        "character-10",
+        "character-12"
+      ],
+      "role": "body",
+      "language": "en",
+      "readingOrder": 2,
+      "valueSource": "maintained-page-state"
+    },
+    {
+      "id": "definition",
+      "sourceTextIds": [
+        "character-258",
+        "character-268",
+        "character-301",
+        "character-306"
+      ],
+      "role": "body",
+      "language": "en",
+      "readingOrder": 3,
+      "valueSource": "maintained-page-state"
+    },
+    {
+      "id": "variables",
+      "sourceTextIds": [
+        "character-331",
+        "character-336"
+      ],
+      "role": "body",
+      "language": "en",
+      "readingOrder": 4,
+      "valueSource": "maintained-page-state"
+    },
+    {
+      "id": "equation",
+      "sourceTextIds": [
+        "character-339"
+      ],
+      "role": "body",
+      "language": "en",
+      "readingOrder": 5,
+      "valueSource": "maintained-page-state"
+    },
+    {
+      "id": "substitution",
+      "sourceTextIds": [
+        "character-342",
+        "character-355"
+      ],
+      "role": "body",
+      "language": "en",
+      "readingOrder": 6,
+      "valueSource": "maintained-page-state"
+    },
+    {
+      "id": "result",
+      "sourceTextIds": [
+        "character-368"
+      ],
+      "role": "body",
+      "language": "en",
+      "readingOrder": 7,
+      "valueSource": "maintained-page-state"
+    },
+    {
+      "id": "summary",
+      "sourceTextIds": [
+        "character-375"
+      ],
+      "role": "body",
+      "language": "en",
+      "readingOrder": 8,
+      "valueSource": "maintained-page-state"
+    },
+    {
+      "id": "expanded-summary",
+      "sourceTextIds": [
+        "character-379"
+      ],
+      "role": "body",
+      "language": "en",
+      "readingOrder": 9,
+      "valueSource": "maintained-page-state"
+    },
+    {
+      "id": "smooth-talk-row-association",
+      "sourceTextIds": [
+        "character-379"
+      ],
+      "role": "label",
+      "language": "en",
+      "readingOrder": 10,
+      "valueSource": "maintained-page-state"
+    }
+  ],
+  "sourceRoleDecisions": [
+    {
+      "kind": "duplicate-highlight",
+      "characterIds": [
+        258,
+        268
+      ],
+      "semanticValue": "A function",
+      "role": "body",
+      "decision": "native single phrase and source reveal; duplicated prefix/highlight does not duplicate prose"
+    },
+    {
+      "kind": "mathematical-fragment",
+      "characterIds": [
+        355
+      ],
+      "semanticValue": "0.20 in y=0.20(500)",
+      "role": "body",
+      "decision": "source decimal fragment participates in displayed substitution, no disconnected 0. native glyph"
+    },
+    {
+      "kind": "outlined-title-duplicate",
+      "characterIds": [
+        402
+      ],
+      "sourceShapeIds": [
+        403
+      ],
+      "semanticValue": "Linear and Nonlinear Functions: Real World Activity",
+      "role": "title",
+      "decision": "native exact text402; decorative outlined title403 omitted in native presentation"
+    },
+    {
+      "kind": "native-semantic-association",
+      "sourceShapeIds": [
+        380,
+        381
+      ],
+      "sourceTextIds": [
+        "character-379"
+      ],
+      "role": "label",
+      "decision": "source row backing380 alpha2058–2134 and pointer381 alpha2062–2134 mapped to native Smooth Talk row highlight and described inline500minutes=$100; rawsource renderer keeps graphics"
+    },
+    {
+      "kind": "retained-source-graphics",
+      "sourceShapeIds": "all except outlined-title403 and native row-association380/381",
+      "decision": "all remaining source shapes/morphs/images retained source-bound, mask1 opaque normalized; no inferred teaching glyph replacements"
+    }
+  ],
+  "unresolved": [
+    "Modern My Lesson host integration and host-specific responsive/keyboard/resource flow pending parent slot."
+  ],
+  "implementation": {
+    "files": [
+      {
+        "path": "packages/demos/src/alg-l07-p003-source-v1.ts",
+        "sha256": "cc3f17bbd32846ee7695ffdee46bdb23adc0324d30a2625a9ac05d3389552429",
+        "bytes": 686809
+      },
+      {
+        "path": "packages/demos/src/alg-l07-p003-session-v1.ts",
+        "sha256": "8f0bdb04c3906d559a3a64983fbf11576f592840fab0c7bc11265a836bba2ad2",
+        "bytes": 4565
+      },
+      {
+        "path": "packages/demos/src/alg-l07-p003-state-v1.ts",
+        "sha256": "b234b85b6b9d2665627f15f22ae99832cb4bd1f377f088a4535004dae0e2505f",
+        "bytes": 4777
+      },
+      {
+        "path": "packages/demos/src/alg-l07-p003-presentation-v1.tsx",
+        "sha256": "174f42d1cdb9fba05532aa41081df39f8d7dec29ddc492547222e60ac7c02311",
+        "bytes": 6192
+      },
+      {
+        "path": "packages/demos/src/alg-l07-p003-player-v1.tsx",
+        "sha256": "1a95af971bf5a147610341086af0f692f546f9bd041656cf91ae7117293f33d9",
+        "bytes": 6416
+      },
+      {
+        "path": "packages/demos/src/alg-l07-p003-v1.css",
+        "sha256": "e5b5c245d209bc74eaaed5488bf3aa7a30c9442eebd3f619ce655e7a62144d5d",
+        "bytes": 2080
+      },
+      {
+        "path": "packages/demos/src/alg-l07-p003-v1.css.d.ts",
+        "sha256": "ac07f34a378c2dbc606571e739ecde3bb62987b2c8fb14f46d86820417ab4aaf",
+        "bytes": 67
+      },
+      {
+        "path": "packages/demos/src/modules/shared-alg001-l07-p003.tsx",
+        "sha256": "d7b9ebaa9f20659d7089f500f04eeef79f17b32d05cef34ccc127417599eaec9",
+        "bytes": 991
+      },
+      {
+        "path": "packages/demos/src/timelines/shared-alg001-l07-p003.ts",
+        "sha256": "767154e831bcc3ac89ec62594415bef4a3a5f1ffbe799175931d5fac43f288fc",
+        "bytes": 145
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p003/native-v1/source-model-v1.json",
+        "sha256": "d5fba5c72cb9d1a1ddbcf09b2cf59762057cba7c8a532e9b6b19fdb963b575c3",
+        "bytes": 17528904
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p003/native-v1/stream-model-v1.json",
+        "sha256": "0dc7b50bc6db6331402013995a458bd2e095ba7e58f9e076b2a704f650a421cd",
+        "bytes": 503328
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p003/native-v1/glossary-model-v1.json",
+        "sha256": "5ef56b7b063c349e32dbc9027f631f77fc79c670666f4d16bbd9daa9f6f56d3f",
+        "bytes": 5723
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p003/native-v1/canvas-adapter-spec-v2.json",
+        "sha256": "00cedc98bed8705458b58cc9cb3c00984af96df5c96f2c858956770a43a36109",
+        "bytes": 3137
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p003/native-v1/canvas-manifest-v2.json",
+        "sha256": "5bd774615e56346ba9b2b2696c9f3a028db176a244922f573d909ad2ec9c7383",
+        "bytes": 719558
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p003/native-v1/canvas-renderer-v2.js",
+        "sha256": "720d6ec9ff0afde13602a2b6ee118838ce9916bccfb5ee5530bf16e4cf32af2d",
+        "bytes": 21284621
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p003/source-v1/source-stream-401.mp3",
+        "sha256": "a7a6c1bbb552868f5b1e0aac28cefbdf4970f0887d41ff6f5656449ef0b00364",
+        "bytes": 885430
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p003/audit-v1/decode-v1.json",
+        "sha256": "add9ee551180be6966dcaa66f13814e21bf632bed95c2e3ee81fa1f909e0fa0c",
+        "bytes": 611
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p003/generator-v1/derive-source-v1.mjs",
+        "sha256": "932db428087a0accbcf0dcb836960f6ac66a9876b964c53d919827055e1b440c",
+        "bytes": 4059
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p003/generator-v1/derive-stream-v1.py",
+        "sha256": "016370a6d36b7497f4b6f471b0803381abbc36e82d129cadd6eadc1a1c3fc669",
+        "bytes": 2341
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p003/generator-v1/derive-glossary-v1.mjs",
+        "sha256": "a25caba46a28c6eea0e2743ac9b1a6ffa5718463e419697e36e1f1f83720b609",
+        "bytes": 2008
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p003/generator-v1/derive-product-v1.mjs",
+        "sha256": "8709b87f23018ddc7a4233b8be0e07c0580a169f2cc6134cf8e8ea2bb7010ac2",
+        "bytes": 2520
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p003/generator-v1/derive-canvas-v2.mjs",
+        "sha256": "7b3039de1c674e4784b87f87f5615d07de3e1e0e9eded7d4c35836fb8f89bb0b",
+        "bytes": 9371
+      },
+      {
+        "path": "packages/demos/src/source-stream-runs-clock-v1.ts",
+        "sha256": "925f18964b2efbed0aeac5df02112fd9b58cac9d2c1c8e4a36b73e0b9b8d9e5f",
+        "bytes": 14853
+      },
+      {
+        "path": "packages/demos/src/decoded-source-stream-transport.ts",
+        "sha256": "9b831901b741f83d02465696d1149544ae82283cace0eb86ae087d2252ae824c",
+        "bytes": 13365
+      },
+      {
+        "path": "packages/demos/src/lesson-animation-title-v1.tsx",
+        "sha256": "0f20beef78a9fcf6843913e93bb2983b21b8761f2677660f0e5caeb13fb7ca2a",
+        "bytes": 714
+      },
+      {
+        "path": "packages/demos/src/lesson-animation-title-v1.css",
+        "sha256": "6af645d585866b1ecb95e4658d858e6e077de0b6f20d60a05dbcccf94fe7b7e1",
+        "bytes": 418
+      },
+      {
+        "path": "scripts/build-safe-ffdec-canvas-adapter.mjs",
+        "sha256": "22fc00187e15c34883905423f4be3a837832fd060287d8b6b25e9ddab660f8c1",
+        "bytes": 115564
+      },
+      {
+        "path": "scripts/lib/g678-source-clip-masks-v1.mjs",
+        "sha256": "e064fb7cb98e66f08e5173bdfc756641b6a8ddae86f7e4dab02e90fdb3bbd70e",
+        "bytes": 1604
+      },
+      {
+        "path": "apps/web/app/[locale]/layout.tsx",
+        "sha256": "1f74e3c6478fba95eaef92c9b4c2a460458afa6be956689f5cdfa0e53b8c5095",
+        "bytes": 2926
+      },
+      {
+        "path": "apps/web/app/lesson-fonts.css",
+        "sha256": "03dd49cce36180d3ab64ab14bbb3e45442234856c456998c00a642763d8fd538",
+        "bytes": 952
+      },
+      {
+        "path": "apps/web/app/lesson-typography-host.css",
+        "sha256": "f7d7164239fbbbc61c265d198a76138a32b0e5eebadf8b32e58751da3537ede8",
+        "bytes": 3431
+      },
+      {
+        "path": "apps/web/app/lesson-typography.css",
+        "sha256": "8062a331a72437d8d204a716173ef92b37cc9a05f3e2b5574560dc5110a1bd64",
+        "bytes": 5752
+      },
+      {
+        "path": "apps/web/components/animation-runtime.tsx",
+        "sha256": "c21101c76c36cc8d062f832b2392491434c8e5c1ca0dc77edd24e233e0b74829",
+        "bytes": 57458
+      },
+      {
+        "path": "apps/web/lib/g678-lesson-typography-presentation.ts",
+        "sha256": "2fb9de912c82967337f9e88d848fe45745ac5d6b89287f07c73163ae96c3ec8a",
+        "bytes": 1635
+      },
+      {
+        "path": "apps/web/lib/lesson-typography-policy.ts",
+        "sha256": "6503d9c0aac0542801ba6454fd332a4735881a5cda7d0d4a2df1f506f4984301",
+        "bytes": 1313
+      },
+      {
+        "path": "apps/web/public/fonts/lesson-v1/fredoka-OFL.txt",
+        "sha256": "5c9e7eee5c6b25f4b05b8d53b2e470ea4962f9ced742d044a98f7d95d1375bab",
+        "bytes": 4388
+      },
+      {
+        "path": "apps/web/public/fonts/lesson-v1/fredoka-variable.ttf",
+        "sha256": "2ba02e68b152868aef9ba28e24b3648c7d457fe6f25c761f2c2c53fb61a73fc8",
+        "bytes": 159184
+      },
+      {
+        "path": "apps/web/public/fonts/lesson-v1/nunito-sans-variable.ttf",
+        "sha256": "f934d7142fb4784bf828da485b7dcbd90c0c80d514e9d49a5da0ed3a1ae2491d",
+        "bytes": 571240
+      },
+      {
+        "path": "apps/web/public/fonts/lesson-v1/nunitosans-OFL.txt",
+        "sha256": "efbb0c9e864cef973982d9a17567e6be5c3d1759695574586f3f18c7ecca064b",
+        "bytes": 4393
+      },
+      {
+        "path": "catalog/typography-v1/fonts.json",
+        "sha256": "1cd7ad71bb21b9002b365323fe4f03c2e785b0637741f8965d199cf466f14fa5",
+        "bytes": 1829
+      },
+      {
+        "path": "docs/LESSON_TYPOGRAPHY_DEVELOPMENT.md",
+        "sha256": "086ac047c61b569822e4e7bd8988457a4fd0c74baf87156463a4a39b06b97bf1",
+        "bytes": 17773
+      },
+      {
+        "path": "packages/demos/package.json",
+        "sha256": "78c9bbdf672267a9772e496cd9b5640c1da77b9f4f59048eabd13cebbf121921",
+        "bytes": 1784
+      },
+      {
+        "path": "packages/demos/src/contract.ts",
+        "sha256": "56e5fc3c1dbde872646ebbc519f8c7d8a9d6dd0d55e37e1c44f4ad1a47798180",
+        "bytes": 17646
+      },
+      {
+        "path": "packages/demos/src/lesson-canvas-plane.tsx",
+        "sha256": "5c99bad8143f3f8502dc632dc404b081e638ebdc50375dd62ade2b3d7178b903",
+        "bytes": 9584
+      },
+      {
+        "path": "packages/demos/src/lesson-canvas-resolution.ts",
+        "sha256": "d5901fb121136b52f34fa5af8c999087207df41de6ba741f2899624f1bbdda78",
+        "bytes": 7154
+      },
+      {
+        "path": "packages/demos/src/lesson-text-contract.ts",
+        "sha256": "e796b04501425b29200d6bf527aae71deac86769894e2f642efa1e36502a56d9",
+        "bytes": 6749
+      },
+      {
+        "path": "packages/demos/src/lesson-text-presentation.tsx",
+        "sha256": "892bf80f52f964612b7139a5b78334600ba1f9e77c376cb2e9ef938b8916048f",
+        "bytes": 10213
+      },
+      {
+        "path": "packages/demos/src/lesson-text-snapshot.ts",
+        "sha256": "0fcb076645392914fc2ad3df9f2062037c8ed5d31730903342ecd5e98bd2e95f",
+        "bytes": 5999
+      },
+      {
+        "path": "packages/demos/src/lesson-text.ts",
+        "sha256": "f856988b0d5ae8b980ab8a56b824ef50426ee8bb6d729446d0024278d74c66e6",
+        "bytes": 513
+      },
+      {
+        "path": "packages/demos/src/use-lesson-canvas-resolution.ts",
+        "sha256": "98324a52de61f1469c16bed71a1df38d2ef44af84cd959141e2b9e9e7a67963f",
+        "bytes": 3383
+      },
+      {
+        "path": "scripts/build-lesson-canvas-resolution-adapter-v1.mjs",
+        "sha256": "dcd6ed9fb2ab159461af7e0b129412d3992b56daf8dd87c3ed6ef75be0f2b251",
+        "bytes": 13157
+      },
+      {
+        "path": "scripts/build-lesson-text-canvas-adapter-v1.mjs",
+        "sha256": "36d247a0998afbad5c2c39c519e9220eab0291f9aec137f9a433007ebbf60690",
+        "bytes": 24525
+      },
+      {
+        "path": "scripts/build-lesson-text-source-catalog-v1.mjs",
+        "sha256": "b62681621beed053ba886219e3e26a969c28d17e37eda1764e59c720124cb2b4",
+        "bytes": 9365
+      },
+      {
+        "path": "scripts/check-g678-lesson-typography-v1.mjs",
+        "sha256": "4810a44f3d40b36c92abf813c82f837e84b53f56ecdf47e3c96b97fb5ed59256",
+        "bytes": 9774
+      },
+      {
+        "path": "scripts/lib/lesson-text-canvas-runtime-v1.mjs",
+        "sha256": "0829b7c5a17e8c659f6f6ab8b541ba269bff466827b8f67de542b3d74c6da3cc",
+        "bytes": 8297
+      },
+      {
+        "path": "scripts/lib/swf-text-source-catalog.mjs",
+        "sha256": "5a65075738bcdd62a9fb79cca0aaf7fe7ab59857bd3852fdf5063d6c1fe8a3dc",
+        "bytes": 22928
+      }
+    ]
+  }
+}

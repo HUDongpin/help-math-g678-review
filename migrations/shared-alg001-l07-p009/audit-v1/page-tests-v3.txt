@@ -1,0 +1,22 @@
+✔ all633 source frames in both languages and all form scenarios have consistent queryable native text (26.164416ms)
+✔ static hint and calculated/reset scenarios report the actual source-bound input/output values (0.296917ms)
+✔ native narration clips at600 and form/hint operations never schedule a feedback stream (1.513291ms)
+✔ active glossary holds main and then form values without restarting audio on Close (0.508333ms)
+✔ cancelled network and pending decoder cannot commit or play after leave (3.007833ms)
+✔ Spanish is explicit and preserves input/result; return holds main and Replay clears every field (0.60875ms)
+✔ Spanish decode cancellation retires its transport and retry creates a fresh decoder (0.640791ms)
+✔ Replay waits for retiring audio and an explicit pause cancels pending restart (0.320459ms)
+✔ source timeline holds600 and exposes initially blank fields and both buttons (0.819958ms)
+✔ authored demonstrations, fades and complete-word reveals retain boundaries (0.152708ms)
+✔ calculated result disables submit but leaves editing available until reset (0.182875ms)
+✔ missing input hint is visibility-only; reset does not hide it; Close restores both buttons (0.090417ms)
+✔ fraction, negative, malformed, zero denominator and whitespace source arithmetic (0.12675ms)
+✔ glossary preserves form values; Replay and leave invalidate previous epochs (0.091917ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 116.019583

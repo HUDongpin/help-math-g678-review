@@ -1,0 +1,72 @@
+{
+  "scope": "source static scripts, glyphs and viewed public-tool PNG/SVG extractions; not original runtime",
+  "title": {
+    "shape": 1,
+    "text": "Linear and Nonlinear Functions: Vocabulary",
+    "inspection": "audit-v1/source-shapes-v1.png"
+  },
+  "sourceRisks": [
+    {
+      "kind": "shape-text-unclassified",
+      "definitionCount": 27,
+      "meaning": "Shapes may include outlined text or mathematical symbols; presence is not confirmation of text."
+    },
+    {
+      "kind": "button-runtime-state-and-actions-not-interpreted",
+      "definitionCount": 7
+    },
+    {
+      "kind": "dynamic-text-runtime-value-unresolved",
+      "fieldCount": 3
+    },
+    {
+      "kind": "actionscript-visibility-and-values-not-interpreted"
+    },
+    {
+      "kind": "mask-filter-blend-semantics-unresolved"
+    }
+  ],
+  "nativeDecisions": {
+    "shapes": {
+      "1": "outlined title to native text",
+      "42": "source clip rectangles to complete-word reveal",
+      "72": "source clip rectangles to complete-word reveal",
+      "7": "source glossary underline/hitbox to native term buttons",
+      "43": "source glossary underline/hitbox to native term buttons",
+      "45": "source glossary underline/hitbox to native term buttons",
+      "73": "source glossary underline/hitbox to native term buttons",
+      "2": "source slider track/knob/cue to source-position demo and native range at84",
+      "3": "source slider track/knob/cue to source-position demo and native range at84",
+      "40": "source slider track/knob/cue to source-position demo and native range at84",
+      "10": "source graph/grid exact vectors plus43 HTML axis labels",
+      "34": "source graph/grid exact vectors plus43 HTML axis labels",
+      "35": "authored source line/highlight vectors",
+      "39": "authored source line/highlight vectors",
+      "67": "authored source line/highlight vectors",
+      "71": "authored source line/highlight vectors",
+      "36": "native Draw button",
+      "53": "Close decoration to native Close with source text57",
+      "54": "Close decoration to native Close with source text57",
+      "55": "Close decoration to native Close with source text57",
+      "56": "Close decoration to native Close with source text57",
+      "58": "Close decoration to native Close with source text57",
+      "59": "Close decoration to native Close with source text57",
+      "60": "Close decoration to native Close with source text57",
+      "61": "Close decoration to native Close with source text57",
+      "63": "native readable feedback region"
+    },
+    "morphs": "70 exact exported endpoints, color/width and authored ratio; static replacement71",
+    "text": "English source body and equation; original EN/ES dictionaries for five glossary terms; native localized UI",
+    "sourceStateVsDisplay": "Initial txtSlope0.5 at84; no later assignment. Named field51 persists84..86, unnamed field66 displays en-dash minus1 from87. Wrong student slope remains internally unchanged through264.",
+    "graph": "authored line67 at87 has x flip; does not calculate from slider values. Exact vectors and43 readable native labels in scrollable graph.",
+    "feedback": "Every submit increments; immediate Close; first retry retains value; second proceeds without count reset. Draw52 retained85..264; after second Close one more release increments/disables without recreating removed popup or restarting main.",
+    "audio": "Two embedded original MP3 streams plus explicitly triggered original SA. Source1837 vs physical1837.5 samples/frame discrepancy retained.",
+    "reuse": "Shared slider-feedback-v2 uses exact v1 templates and proves P011/P012 byte-identical. P014 preserves slope after advance because no assignment exists; same unchanged native clock and decoded transport."
+  },
+  "unresolved": [
+    "original-runtime visual/interaction/audio timing",
+    "full-frame rendered comparison",
+    "listening, human, Owner, strict and publication acceptance"
+  ],
+  "registryModified": false
+}

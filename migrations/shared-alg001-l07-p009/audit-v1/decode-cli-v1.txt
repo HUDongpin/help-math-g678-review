@@ -1,0 +1,22 @@
+### Result
+{"pass":true,"streams":[{"spriteId":79,"sourceBytes":7410,"sourceSha256":"399b925dc7b2a06027954e8ef45f8c739a1a8d601fa41b121846bdc5b367a39b","sampleRate":22050,"channels":1,"decodedSamples":32832,"pcmSha256":"6dfb9edf5cbd5f346da29b19889a517f79dea4f7f4892ac24d02be60288d9461","peak":0.4777791202068329,"contextClosed":true,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36"},{"spriteId":80,"sourceBytes":249860,"sourceSha256":"6019c14d3f23d01fbe7e98f401d59fdc419b2391398627c0f3ed4b7c2db2316e","sampleRate":22050,"channels":1,"decodedSamples":1107072,"pcmSha256":"2738ea65780a975e17cd565a4d1cd623ad15ab73483ba001be053501b87422b7","peak":0.6417839527130127,"contextClosed":true,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36"},{"spriteId":"sa","sourceBytes":366912,"sourceSha256":"63d4939b89bb53f4940ed07e11548f91dae5b7a279c3c163055d562978d90067","sampleRate":48000,"channels":1,"decodedSamples":1257984,"pcmSha256":"01f202d8df3ccf75296e3ddd0c28b5de51f5474f08b1ba77f0d361214c516b41","peak":0.5017921328544617,"contextClosed":true,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36"}],"sourceAlignmentAccepted":false,"listeningAccepted":false}
+### Ran Playwright code
+```js
+await (async (page) => {
+ const streams = [{"spriteId": 79, "url": "/stream-79.mp3", "sampleRate": 22050, "bytes": 7410, "sha256": "399b925dc7b2a06027954e8ef45f8c739a1a8d601fa41b121846bdc5b367a39b", "expectedSamples": 32832}, {"spriteId": 80, "url": "/stream-80.mp3", "sampleRate": 22050, "bytes": 249860, "sha256": "6019c14d3f23d01fbe7e98f401d59fdc419b2391398627c0f3ed4b7c2db2316e", "expectedSamples": 1107072}, {"spriteId": "sa", "url": "/sa.mp3", "sampleRate": 48000, "bytes": 366912, "sha256": "63d4939b89bb53f4940ed07e11548f91dae5b7a279c3c163055d562978d90067"}];
+ const result = await page.evaluate(async streams => {
+  const hash=async b=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',b))].map(x=>x.toString(16).padStart(2,'0')).join('');
+  const measured=[];
+  for(const s of streams){const c=new AudioContext({sampleRate:s.sampleRate});try{const r=await fetch(s.url),bytes=await r.arrayBuffer();if(r.status!==200||bytes.byteLength!==s.bytes||await hash(bytes)!==s.sha256)throw Error('source mismatch');const b=await c.decodeAudioData(bytes.slice(0));if(b.numberOfChannels!==1||b.sampleRate!==s.sampleRate||s.expectedSamples&&b.length!==s.expectedSamples)throw Error('decoder mismatch');const out=new ArrayBuffer(b.length*4),v=new DataView(out);let peak=0;for(let i=0;i<b.length;i++){const n=b.getChannelData(0)[i];if(!Number.isFinite(n))throw Error('nonfinite');v.setFloat32(i*4,n,true);peak=Math.max(peak,Math.abs(n));}if(!peak)throw Error('silent');await c.close();measured.push({spriteId:s.spriteId,sourceBytes:bytes.byteLength,sourceSha256:s.sha256,sampleRate:b.sampleRate,channels:b.numberOfChannels,decodedSamples:b.length,pcmSha256:await hash(out),peak,contextClosed:c.state==='closed',userAgent:navigator.userAgent});}finally{if(c.state!=='closed')await c.close();}}
+  return{pass:true,streams:measured,sourceAlignmentAccepted:false,listeningAccepted:false};
+ },streams);
+ await page.setViewportSize({width:1050,height:950});
+ await page.setContent('<!DOCTYPE html><body style="font:18px sans-serif;background:white;display:grid;grid-template-columns:1fr 1fr;gap:20px">'+[9,17,53,24,30,31,49,52].map(id=>'<section style="border:1px solid #aaa;padding:12px"><h2>Source shape '+id+'</h2><img style="max-width:100%;min-height:45px;max-height:180px" src="http://127.0.0.1:4389/ffdec-shapes/shapes/'+id+'.svg"></section>').join('')+'</body>');
+ await page.locator('img').evaluateAll(xs=>Promise.all(xs.map(x=>x.decode())));
+ await page.screenshot({path:"/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p009/audit-v1/source-shapes-v1.png",fullPage:true});return result;
+}
+)(page);
+```
+### Page
+- Page URL: http://127.0.0.1:4389/
+- Console: 1 errors, 0 warnings

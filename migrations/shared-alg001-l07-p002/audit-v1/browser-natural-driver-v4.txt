@@ -1,0 +1,14 @@
+async (page) => {
+ const take=async label=>page.evaluate(label=>({label,at:new Date().toISOString(),state:window.p002Harness.state,diagnostics:{...window.p002Harness.diagnostics},tableVisible:document.querySelector('[data-table-visible]')?.getAttribute('data-table-visible'),canvasFrame:document.querySelector('canvas')?.getAttribute('data-flash-frame'),alert:document.querySelector('[role="alert"]')?.textContent??null}),label);
+ await page.setViewportSize({width:1360,height:900});await page.evaluate(()=>document.documentElement.style.fontSize='16px');
+ await page.getByRole('checkbox',{name:'Reduced motion',exact:true}).uncheck();await page.getByRole('combobox',{name:'Interface'}).selectOption('en');
+ await page.getByRole('button',{name:'Return page',exact:true}).click();await page.waitForFunction(()=>document.querySelector('[data-canvas-status]')?.getAttribute('data-canvas-status')==='ready');
+ const receipts=[await take('fresh-return-no-autoplay')];await page.getByRole('button',{name:'Play',exact:true}).click();
+ await page.waitForFunction(()=>window.p002Harness.state?.phase==='playing');receipts.push(await take('explicit-user-start'));
+ await page.waitForFunction(()=>window.p002Harness.state?.phase==='timeline-ended',{},{timeout:120000});receipts.push(await take('natural-terminal'));
+ await page.screenshot({path:'output/alg-l07-p002-standalone-v4/natural-terminal-desktop.png',fullPage:true});
+ await page.getByRole('button',{name:'Play',exact:true}).click();await page.waitForTimeout(500);receipts.push(await take('Play-at-terminal-holds'));
+ await page.getByRole('button',{name:'Replay',exact:true}).click();await page.waitForFunction(()=>window.p002Harness.state?.phase==='playing'&&window.p002Harness.state?.frame<30);receipts.push(await take('Replay-resets-terminal'));
+ await page.getByRole('button',{name:'Pause',exact:true}).click();await page.getByRole('button',{name:'Leave page',exact:true}).click();await page.waitForTimeout(200);receipts.push(await take('leave-closes-all'));
+ return {kind:'p002-current-js-natural-stop-v4',receipts};
+}

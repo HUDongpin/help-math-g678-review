@@ -1,0 +1,6 @@
+### Result
+{"state":{"phase":"playing","frame":39,"terminalHeld":false,"replay":0,"volume":0.1,"audioPhase":"playing","decodedSample":70875.5,"failure":null,"lessonCompleted":false},"diagnostics":{"contexts":1,"closed":0,"activeNodes":3,"startedNodes":3},"canvasStatus":"ready"}
+### Ran Playwright code
+```js
+await (async (page) => { await page.getByRole("button",{name:"Play",exact:true}).click(); await page.waitForTimeout(1200); return await page.evaluate(()=>({state:window.p002Harness.state,diagnostics:window.p002Harness.diagnostics,canvasStatus:document.querySelector("[data-canvas-status]")?.getAttribute("data-canvas-status")})); })(page);
+```

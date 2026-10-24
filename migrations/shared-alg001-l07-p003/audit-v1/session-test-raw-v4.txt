@@ -1,0 +1,17 @@
+✔ source states reveal the defined teaching beats without the final answer early (2.028125ms)
+✔ page run boundaries own exact PCM samples and silent gaps (0.559917ms)
+✔ inspection before first audio decode survives preparation commit (0.4035ms)
+✔ all source glossary actions pause before open and close stays paused (0.257083ms)
+✔ pause during resource loading aborts and never creates a stale clock (0.107209ms)
+✔ Replay cancels old decode and resets frame, glossary and replay identity (0.186625ms)
+✔ unmount closes pending prepare, ignores late activation and rejects further actions (0.415709ms)
+✔ Smooth Talk association follows source380/381 alpha, not static highlighting (0.372416ms)
+✔ terminal source frame rejects Play without resetting or reading audio, Replay still starts at1 (0.147667ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 206.416208

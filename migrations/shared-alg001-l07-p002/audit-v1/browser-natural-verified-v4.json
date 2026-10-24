@@ -1,0 +1,213 @@
+{
+  "kind": "p002-current-js-natural-stop-v4",
+  "receipts": [
+    {
+      "label": "fresh-return-no-autoplay",
+      "at": "2026-10-03T07:53:46.312Z",
+      "state": {
+        "phase": "paused",
+        "frame": 1,
+        "terminalHeld": false,
+        "replay": 0,
+        "volume": 0.1,
+        "audioPhase": "idle",
+        "decodedSample": 1673,
+        "failure": null,
+        "lessonCompleted": false
+      },
+      "diagnostics": {
+        "contexts": 3,
+        "closed": 3,
+        "activeNodes": 0,
+        "startedNodes": 9
+      },
+      "tableVisible": "false",
+      "canvasFrame": "1",
+      "alert": null
+    },
+    {
+      "label": "explicit-user-start",
+      "at": "2026-10-03T07:53:46.435Z",
+      "state": {
+        "phase": "playing",
+        "frame": 1,
+        "terminalHeld": false,
+        "replay": 0,
+        "volume": 0.1,
+        "audioPhase": "playing",
+        "decodedSample": 1673,
+        "failure": null,
+        "lessonCompleted": false
+      },
+      "diagnostics": {
+        "contexts": 4,
+        "closed": 3,
+        "activeNodes": 3,
+        "startedNodes": 12
+      },
+      "tableVisible": "false",
+      "canvasFrame": "1",
+      "alert": null
+    },
+    {
+      "label": "natural-terminal",
+      "at": "2026-10-03T07:55:25.968Z",
+      "state": {
+        "phase": "timeline-ended",
+        "frame": 1195,
+        "terminalHeld": true,
+        "replay": 0,
+        "volume": 0.1,
+        "audioPhase": "boundary-held",
+        "decodedSample": 2156256.5,
+        "failure": null,
+        "lessonCompleted": false
+      },
+      "diagnostics": {
+        "contexts": 4,
+        "closed": 3,
+        "activeNodes": 0,
+        "startedNodes": 12
+      },
+      "tableVisible": "true",
+      "canvasFrame": "1195",
+      "alert": null
+    },
+    {
+      "label": "Play-at-terminal-holds",
+      "at": "2026-10-03T07:55:26.585Z",
+      "state": {
+        "phase": "timeline-ended",
+        "frame": 1195,
+        "terminalHeld": true,
+        "replay": 0,
+        "volume": 0.1,
+        "audioPhase": "boundary-held",
+        "decodedSample": 2156256.5,
+        "failure": null,
+        "lessonCompleted": false
+      },
+      "diagnostics": {
+        "contexts": 4,
+        "closed": 3,
+        "activeNodes": 0,
+        "startedNodes": 12
+      },
+      "tableVisible": "true",
+      "canvasFrame": "1195",
+      "alert": null
+    },
+    {
+      "label": "Replay-resets-terminal",
+      "at": "2026-10-03T07:55:26.665Z",
+      "state": {
+        "phase": "playing",
+        "frame": 1,
+        "terminalHeld": false,
+        "replay": 1,
+        "volume": 0.1,
+        "audioPhase": "playing",
+        "decodedSample": 1673,
+        "failure": null,
+        "lessonCompleted": false
+      },
+      "diagnostics": {
+        "contexts": 5,
+        "closed": 4,
+        "activeNodes": 3,
+        "startedNodes": 15
+      },
+      "tableVisible": "false",
+      "canvasFrame": "1",
+      "alert": null
+    },
+    {
+      "label": "leave-closes-all",
+      "at": "2026-10-03T07:55:26.935Z",
+      "state": {
+        "phase": "paused",
+        "frame": 1,
+        "terminalHeld": false,
+        "replay": 1,
+        "volume": 0.1,
+        "audioPhase": "paused",
+        "decodedSample": 1673,
+        "failure": null,
+        "lessonCompleted": false
+      },
+      "diagnostics": {
+        "contexts": 5,
+        "closed": 5,
+        "activeNodes": 0,
+        "startedNodes": 15
+      },
+      "alert": null
+    }
+  ],
+  "pass": true,
+  "checksPassed": {
+    "natural1195Stop": true,
+    "terminalPlayNoNewAudio": true,
+    "ReplayResetsAndClosesPriorContext": true,
+    "leaveClosesAllContexts": true,
+    "noAutoplayOrLessonCompletion": true
+  },
+  "artifactBinding": [
+    {
+      "path": "output/alg-l07-p002-standalone-v4/app.js",
+      "bytes": 1442744,
+      "sha256": "7be20cd48bd57ff9409e67b43b5cd46ea95914a2585d4edee9035891c6ff862f"
+    },
+    {
+      "path": "output/alg-l07-p002-standalone-v4/app.css",
+      "bytes": 2852,
+      "sha256": "851a51516ad1df38f515d460864f8018a2bf7592c8eb96229999c9be4b5b761a"
+    },
+    {
+      "path": "output/alg-l07-p002-standalone-v4/index.html",
+      "bytes": 949,
+      "sha256": "543b41c74b58950cc004363fd2b2c002b4de3e6d697f9c6581498b1f526104b6"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p002/canvas-v1/native-canvas-renderer-v2.js",
+      "bytes": 14208476,
+      "sha256": "d02d235aadd0e0a258adc2de7e4526d8b329908f8db302c70ab14c031e2c7a2e"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p002/source-v1/source-stream-452.mp3",
+      "bytes": 486980,
+      "sha256": "e016378323f1bec789386fccb3ddd723ddd857394249752a12114d7b15434b97"
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p002-player-v1.tsx",
+      "bytes": 4839,
+      "sha256": "1dc6c6a6b56ebe69aa94e703507640de6a7e45d61db71913b8616a0d46d5d2e8"
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p002-session-v1.ts",
+      "bytes": 3772,
+      "sha256": "d3668349b2e03b38f194613851366ef17ea7b543feb13cef5f3a4dbdc6d45d27"
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p002-state-v1.ts",
+      "bytes": 1709,
+      "sha256": "4dab722813d02fc9aefb49ecf1c66cf766428ea1512023b6e0e439cf4de11df3"
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p002-presentation-v1.tsx",
+      "bytes": 3675,
+      "sha256": "c8ca6c761e80be6576f611056f308b766a0e715d3b5c5388833869ce5e91bf96"
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p002-v1.css",
+      "bytes": 1894,
+      "sha256": "44eed119f0cecd99ee6ad4f0188ea239d1c0f100dbd69be46c022f5a141f6bd0"
+    },
+    {
+      "path": "packages/demos/src/generated/alg-l07-p002-source-v1.ts",
+      "bytes": 82141,
+      "sha256": "444115517c1081eb3a8acb7471962b4df46ddd2911c05559069ec4bc23a8d9d7"
+    }
+  ],
+  "scope": "Current-JS standalone; original Flash runtime, listening, fidelity, human/Owner acceptance, strict completion, release and publication not established"
+}

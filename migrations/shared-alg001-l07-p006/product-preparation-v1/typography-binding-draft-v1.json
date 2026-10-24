@@ -1,0 +1,410 @@
+{
+  "schemaVersion": 1,
+  "placementId": "shared-alg001-l07-p006",
+  "animationId": "shared-alg001-l07-p006",
+  "sourceSwfSha256": "72c7f3e0d0fd0a5251214c3511262bf164d983837a5c52e9f1e56d4de96df155",
+  "sourceRelativePath": "G6-G8-shared/ALG001/L7/RW/L7RW06.swf",
+  "sourceCatalogContentSha256": "3f317954d453448b62301cf33aebd88defe576aba9d7f4be5bcb9fb998f3a884",
+  "blocks": [
+    {
+      "id": "course-title",
+      "sourceTextIds": [
+        "character-224"
+      ],
+      "role": "heading",
+      "language": "en",
+      "readingOrder": 0,
+      "valueSource": "source-static"
+    },
+    {
+      "id": "activity-title",
+      "sourceTextIds": [
+        "character-224"
+      ],
+      "role": "title",
+      "language": "en",
+      "readingOrder": 1,
+      "valueSource": "source-static"
+    },
+    {
+      "id": "plans",
+      "sourceTextIds": [
+        "character-8",
+        "character-9",
+        "character-10",
+        "character-11",
+        "character-13"
+      ],
+      "role": "body",
+      "language": "en",
+      "readingOrder": 2,
+      "valueSource": "maintained-page-state"
+    },
+    {
+      "id": "bill-heading",
+      "sourceTextIds": [
+        "character-43"
+      ],
+      "role": "heading",
+      "language": "en",
+      "readingOrder": 3,
+      "valueSource": "maintained-page-state"
+    },
+    {
+      "id": "bills-500",
+      "sourceTextIds": [
+        "character-44"
+      ],
+      "role": "body",
+      "language": "en",
+      "readingOrder": 4,
+      "valueSource": "maintained-page-state"
+    },
+    {
+      "id": "bills-1000-labels",
+      "sourceTextIds": [
+        "character-45"
+      ],
+      "role": "label",
+      "language": "en",
+      "readingOrder": 5,
+      "valueSource": "maintained-page-state"
+    },
+    {
+      "id": "calculation-83",
+      "sourceTextIds": [
+        "character-83"
+      ],
+      "role": "body",
+      "language": "en",
+      "readingOrder": 6,
+      "valueSource": "maintained-page-state"
+    },
+    {
+      "id": "calculation-85",
+      "sourceTextIds": [
+        "character-85"
+      ],
+      "role": "body",
+      "language": "en",
+      "readingOrder": 7,
+      "valueSource": "maintained-page-state"
+    },
+    {
+      "id": "calculation-92",
+      "sourceTextIds": [
+        "character-92"
+      ],
+      "role": "body",
+      "language": "en",
+      "readingOrder": 8,
+      "valueSource": "maintained-page-state"
+    },
+    {
+      "id": "emphasis-90",
+      "sourceTextIds": [
+        "character-114"
+      ],
+      "sourceShapeIds": [
+        113
+      ],
+      "role": "label",
+      "language": "en",
+      "readingOrder": 9,
+      "valueSource": "maintained-page-state"
+    },
+    {
+      "id": "question",
+      "sourceTextIds": [
+        "character-218"
+      ],
+      "role": "question",
+      "language": "en",
+      "readingOrder": 10,
+      "valueSource": "maintained-page-state"
+    }
+  ],
+  "sourceRoleDecisions": [
+    {
+      "kind": "outlined-title-duplicate",
+      "sourceTextIds": [
+        "character-224"
+      ],
+      "sourceShapeIds": [
+        225
+      ],
+      "semanticValue": "Linear and Nonlinear Functions: Real World Activity",
+      "role": "title",
+      "decision": "exact native title224; offstage root outlined-title225 omitted from native composition"
+    },
+    {
+      "kind": "outlined-highlight-duplicate",
+      "sourceTextIds": [
+        "character-114"
+      ],
+      "sourceShapeIds": [
+        113
+      ],
+      "semanticValue": "$90",
+      "role": "label",
+      "decision": "pair source113/114 is present in exactly the same56frames; native-only suppression maps to explicit SuperTalk monthly bill90 emphasis and preserves raw graphics"
+    },
+    {
+      "kind": "mathematical-fragments",
+      "sourceTextIds": [
+        "character-44",
+        "character-45",
+        "character-83",
+        "character-85",
+        "character-92"
+      ],
+      "role": "body",
+      "decision": "source500minute bills100/75/75;1000minute labels and staged200/100/90; exact per-frame alpha; native table/card/MathML preserves plan-to-rate/result relationships"
+    },
+    {
+      "kind": "source-clip-question",
+      "sourceTextIds": [
+        "character-218"
+      ],
+      "role": "question",
+      "decision": "complete-word prefix follows source glyph advances under exact morph216/shape222 bounds; fullquestion1836; two glossary controls follow corresponding source phrase visibility; no invented exercise"
+    },
+    {
+      "kind": "retained-source-graphics",
+      "sourceShapeIds": "all except root-title225 and source113 paired duplicate in native mode",
+      "decision": "source graphics preserved; strict exclusive masks1/216/222; rawsource render unchanged"
+    }
+  ],
+  "unresolved": [
+    "Actual MyLesson/formal registration/production-negative and canonical registered-domain audit pending shared integration slot."
+  ],
+  "implementation": {
+    "files": [
+      {
+        "path": "lib/g678-admission-proof.mjs",
+        "sha256": "37fe62984a84a5ef0b907350ea922659f4389b21a319a13483e25dd3993eadf1",
+        "bytes": 11278
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p006/audit-v1/teaching-visibility-v4.json",
+        "sha256": "9f3d2b1aa52520a49b89dfc57dcd6c28e9d1b0ea3f60e5677b681303ffae33b5",
+        "bytes": 21714
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p006/generator-v1/derive-canvas-v2.mjs",
+        "sha256": "5b3b17958afafcb93c5d8eb7ea485d133978a9fa57720be467d95f55496d0e17",
+        "bytes": 9743
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p006/generator-v1/derive-glossary-v1.mjs",
+        "sha256": "a198f0f6fdf08d09505988da584ee048dbb20f4e4a1fc153afa9f797d49389df",
+        "bytes": 2017
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p006/generator-v1/derive-product-provenance-v1.mjs",
+        "sha256": "6a1513433fbdf72e0bcde66b30572e5656842058791819e510e374b766be83e6",
+        "bytes": 3612
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p006/generator-v1/derive-product-v1.mjs",
+        "sha256": "00cc480b223d8e55d2a6426027c7dabcf753b077fb1724a9bbe87d393b3686f7",
+        "bytes": 6531
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p006/generator-v1/derive-source-v1.mjs",
+        "sha256": "ac04730a113b7931cf8584981489d4e668db829da2226672004aff0642deab26",
+        "bytes": 4424
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p006/generator-v1/derive-stream-v2.py",
+        "sha256": "9af4f255f5182c96ca5fd3439a28f75986cfef2368ee256a616f778b5cfed455",
+        "bytes": 3940
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p006/generator-v1/prepare-readiness-v1.ts",
+        "sha256": "d7fdf607bd77cadce975c95eddcc6df815aac068f124094669fa01e91410a79c",
+        "bytes": 10652
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p006/native-v1/canvas-adapter-spec-v2.json",
+        "sha256": "44686ea2420d8afa9fd44c306f69095b547e223ab406589bce7d7faf3b0c4cfd",
+        "bytes": 3132
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p006/native-v1/canvas-manifest-v2.json",
+        "sha256": "c56d9ecc567e07b8455f6e8cf1c28952c8b2c530e60f2c334d8ce4242b682f00",
+        "bytes": 783510
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p006/native-v1/canvas-renderer-v2.js",
+        "sha256": "bacd876b5cfb20fbe2bf5690df603c29b3e7b1bdd5c0d14ec8a2baf6c6bbbc25",
+        "bytes": 16721307
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p006/native-v1/decode-native-v1.json",
+        "sha256": "980121bac6f29e5d43750a5602ae3414e0aa0184616f32df34e19c4d12766cd7",
+        "bytes": 694
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p006/native-v1/glossary-model-v1.json",
+        "sha256": "15400d874e9045fb2b066cf85cfc77128d91fa10a03d0a5c3d6a698e7f0a5706",
+        "bytes": 3966
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p006/native-v1/source-model-v1.json",
+        "sha256": "5b1106dbace1af7fb6ae808ff05956e7626274fa7838ad9b3bee447ecc4fde3f",
+        "bytes": 14846598
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p006/native-v1/stream-model-v1.json",
+        "sha256": "17d78245a821b19576b9ba5b99605c76a25e05905df7fa84cfe3b30f1c72276c",
+        "bytes": 307640
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p006/source-v1/L7RW06.swf",
+        "sha256": "72c7f3e0d0fd0a5251214c3511262bf164d983837a5c52e9f1e56d4de96df155",
+        "bytes": 1808006
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p006/source-v1/index.xml",
+        "sha256": "5eac052615476e688afc1e69391c17bb0c20db8200e7be3f7ea1f9bb778d85f6",
+        "bytes": 13727
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p006/source-v1/movie.xml",
+        "sha256": "a435c74a365a78063d39b86ef5dfc3fb2da252130e49bf5666346163b74339ea",
+        "bytes": 14599031
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p006/source-v1/source-stream-223.mp3",
+        "sha256": "eca77ae751726a8b10efb9ef5a33359a810ae089d658346a3253a92ced424b2a",
+        "bytes": 1219712
+      },
+      {
+        "path": "migrations/shared-alg001-l07-p006/source-v1/source-text-catalog-v1.json",
+        "sha256": "1e438432e9b12b8098239aaf3dce95799cc6c57a6758e73b7d6e3e704738498f",
+        "bytes": 2807501
+      },
+      {
+        "path": "packages/demos/scripts/generate-registry.mjs",
+        "sha256": "1aaf7154606469522eb1c3fd25d0c7c18b6933503a43d45ef4d6c64b82753c8a",
+        "bytes": 22656
+      },
+      {
+        "path": "packages/demos/src/alg-l07-p006-player-v1.tsx",
+        "sha256": "429f99c5134cad6c3ea6620a5a8223c6149f5fcc632eac73171a6cfd811816dc",
+        "bytes": 6417
+      },
+      {
+        "path": "packages/demos/src/alg-l07-p006-presentation-v1.tsx",
+        "sha256": "7f138d4faf7f3a7c225e6b2420c6aaa2749b34181743674d3a446b0be8611546",
+        "bytes": 7188
+      },
+      {
+        "path": "packages/demos/src/alg-l07-p006-session-v1.ts",
+        "sha256": "219d689c10f3dcb68f9af612b8236b9672d10ac44d43c7eb0ac8503ead3cf07d",
+        "bytes": 4654
+      },
+      {
+        "path": "packages/demos/src/alg-l07-p006-source-v1.ts",
+        "sha256": "d2b987bffcb215ae7aa729cd02bfac167416327b0e2c9cd998691033971756a1",
+        "bytes": 24150
+      },
+      {
+        "path": "packages/demos/src/alg-l07-p006-state-v1.ts",
+        "sha256": "1e843205e9a39cb90fdcc79a0b7023fd86833c11638e6840cd61b3e7dfeaaebe",
+        "bytes": 4349
+      },
+      {
+        "path": "packages/demos/src/alg-l07-p006-v1.css",
+        "sha256": "bcfad10cc2ca6f98b0b4e0d0fba3d2cde53758f9dc469525a9cf8d415cafaedd",
+        "bytes": 2601
+      },
+      {
+        "path": "packages/demos/src/alg-l07-p006-v1.css.d.ts",
+        "sha256": "eb535fac219e74dd30aba5d0a230d9605a12d11ef734b0c6e6d77d688b066630",
+        "bytes": 39
+      },
+      {
+        "path": "packages/demos/src/contract.ts",
+        "sha256": "56e5fc3c1dbde872646ebbc519f8c7d8a9d6dd0d55e37e1c44f4ad1a47798180",
+        "bytes": 17646
+      },
+      {
+        "path": "packages/demos/src/decoded-source-stream-transport.ts",
+        "sha256": "9b831901b741f83d02465696d1149544ae82283cace0eb86ae087d2252ae824c",
+        "bytes": 13365
+      },
+      {
+        "path": "packages/demos/src/lesson-animation-title-v1.css",
+        "sha256": "6af645d585866b1ecb95e4658d858e6e077de0b6f20d60a05dbcccf94fe7b7e1",
+        "bytes": 418
+      },
+      {
+        "path": "packages/demos/src/lesson-animation-title-v1.tsx",
+        "sha256": "0f20beef78a9fcf6843913e93bb2983b21b8761f2677660f0e5caeb13fb7ca2a",
+        "bytes": 714
+      },
+      {
+        "path": "packages/demos/src/lesson-host-contract.ts",
+        "sha256": "183fc9ec36c99797147ba1fb8a5132cde60254b40279ca5fc76302806098200b",
+        "bytes": 17528
+      },
+      {
+        "path": "packages/demos/src/lesson-text-contract.ts",
+        "sha256": "e796b04501425b29200d6bf527aae71deac86769894e2f642efa1e36502a56d9",
+        "bytes": 6749
+      },
+      {
+        "path": "packages/demos/src/lesson-text-snapshot.ts",
+        "sha256": "0fcb076645392914fc2ad3df9f2062037c8ed5d31730903342ecd5e98bd2e95f",
+        "bytes": 5999
+      },
+      {
+        "path": "packages/demos/src/modules/shared-alg001-l07-p006.tsx",
+        "sha256": "b81df91cdbc5c9b27000055671df87f12ac805a001d9b5e42cb53c1b394f8a28",
+        "bytes": 991
+      },
+      {
+        "path": "packages/demos/src/source-stream-cycle-clock-v1.ts",
+        "sha256": "5ba2cf7ce3456f90c0cdf219194d4f63b090710a4388b7db5a77c697c62484d7",
+        "bytes": 16240
+      },
+      {
+        "path": "packages/demos/src/source-stream-cycle-clock-v2.ts",
+        "sha256": "2034d72ed57aedc9e7bbeaa8957df239ab6c4170aea83116d7c52b020280cb01",
+        "bytes": 14611
+      },
+      {
+        "path": "packages/demos/src/timelines/shared-alg001-l07-p006.ts",
+        "sha256": "ee322577f1484366678719b0e2c9de97172883ec6e0d2b4fc235774fcd74f453",
+        "bytes": 145
+      },
+      {
+        "path": "scripts/build-g678-alg-l11-instructional-successor-glossary.mjs",
+        "sha256": "25c9aa4c25a4bc84539b080cebb8dfcbaee5f57189531c6798be14e87ac09d59",
+        "bytes": 12493
+      },
+      {
+        "path": "scripts/build-safe-ffdec-canvas-adapter.mjs",
+        "sha256": "22fc00187e15c34883905423f4be3a837832fd060287d8b6b25e9ddab660f8c1",
+        "bytes": 115564
+      },
+      {
+        "path": "scripts/lib/g678-source-clip-masks-v2.mjs",
+        "sha256": "e59876dc6bf37a0befc08f227d69e708109ac31e453e1bfbf755a199e296d355",
+        "bytes": 2182
+      },
+      {
+        "path": "scripts/lib/swf-text-source-catalog.mjs",
+        "sha256": "5a65075738bcdd62a9fb79cca0aaf7fe7ab59857bd3852fdf5063d6c1fe8a3dc",
+        "bytes": 22928
+      },
+      {
+        "path": "scripts/private-current-js-registry.mjs",
+        "sha256": "6b61308caca87a41c707b83072b010ec51631cd5b65726e948137f523ef83201",
+        "bytes": 7326
+      }
+    ]
+  }
+}

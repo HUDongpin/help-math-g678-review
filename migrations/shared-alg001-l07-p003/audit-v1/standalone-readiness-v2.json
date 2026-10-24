@@ -1,0 +1,410 @@
+{
+  "schemaVersion": 1,
+  "kind": "p003-source-native-standalone-readiness-v2",
+  "animationId": "shared-alg001-l07-p003",
+  "measuredAt": "2026-10-03T07:35:39.472Z",
+  "workflowUnitStartedAt": "2026-10-03T06:49:49Z",
+  "unitElapsedSeconds": 2750.472,
+  "preparationSeconds": 250,
+  "source": {
+    "path": "G6-G8-shared/ALG001/L7/RW/L7RW03.swf",
+    "bytes": 1521565,
+    "sha256": "947ca0854281ead821f62270e4199044861404562be249b121eefbe410b2ef86"
+  },
+  "sourceClassification": "behavior-heavy bounded advanced-manual within source-locked compiler-assisted hybrid",
+  "root": {
+    "frameCount": 10,
+    "entryFrame": 6
+  },
+  "main": {
+    "frameDomain": "sprite-401",
+    "frameCount": 2141,
+    "terminalAction": "stop()"
+  },
+  "sourceAudio": {
+    "sourceSha256": "a7a6c1bbb552868f5b1e0aac28cefbdf4970f0887d41ff6f5656449ef0b00364",
+    "decoder": {
+      "pass": true,
+      "at": "2026-10-03T06:54:47.036Z",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "sourceBytes": 885430,
+      "sourceSha256": "a7a6c1bbb552868f5b1e0aac28cefbdf4970f0887d41ff6f5656449ef0b00364",
+      "sampleRate": 22050,
+      "channels": 1,
+      "decodedSamples": 3923136,
+      "pcmSha256": "bfc4a71cf78e5f3a2bb13fc02c6e89348109c0cd9be8cb25a4752775cddc3b13",
+      "peak": 0.7928258776664734,
+      "rms": 0.08286675676384474,
+      "contextClosed": true,
+      "listeningAccepted": false,
+      "originalRuntimeAccepted": false
+    },
+    "plan": "three source runs5/7/1844; no padding or PCM edit; continuous clock rejected by exact block audit"
+  },
+  "behaviorOwnership": [
+    {
+      "source": "Button259/302/307 release KeyAttribute+DoHyperLinks+main.stop",
+      "maintained": "alg-l07-p003-session-v1 pause then open key + player onGlossary callback",
+      "result": "Function/Relation/Value native nodes paused before term; close holds/focus restores"
+    },
+    {
+      "source": "Main2141stop()",
+      "maintained": "shared SourceStreamRunsClockV1 page terminal plan",
+      "result": "inspect2140 then real natural boundary2141 held; not full178second uninterrupted run"
+    },
+    {
+      "source": "Shape380row box + shape381 pointer + text379",
+      "maintained": "source-generatedalpha +native row annotation, strict native-only instance suppression",
+      "result": "exact2058/2062/2134/2135sourcevisibility/aria relation; rawsource graphics retained"
+    },
+    {
+      "source": "Frame1610/1709/1969 formulas",
+      "maintained": "native MathML exact source numeric values",
+      "result": "no initial y=100; equation/substitution/result revealed in source order"
+    },
+    {
+      "source": "Modern host Replay/navigation",
+      "maintained": "page session abort/epoch + sharedclock nodes/contextretirement",
+      "result": "Replay frame1 new3run schedule oldcontextclosed; Return nodesdisconnected andcontextsclosed"
+    }
+  ],
+  "rework": [
+    {
+      "cause": "Continuous clock contradicted by source empty SoundStreamBlock6/1843",
+      "action": "exact3run source plan"
+    },
+    {
+      "cause": "Parent review native2070 orphan pointer detached from Smooth Talk row",
+      "action": "native-only380/381replace with source-alpha row highlight and inline accessible relation"
+    },
+    {
+      "cause": "Browser raw-v2 double probe due reused addInitScript session",
+      "action": "fresh uniquely named product browsers and versioned driver/screenshot paths; failedraw preserved"
+    }
+  ],
+  "checks": {
+    "sourceGenerators": "passed",
+    "focusedUnitCases": 8,
+    "isolatedPageTypecheck": "passed",
+    "standaloneBrowser": "passed",
+    "actualMyLessonHost": "pending"
+  },
+  "gates": {
+    "originalRuntime": false,
+    "fidelity": false,
+    "listening": false,
+    "human": false,
+    "owner": false,
+    "strict": false,
+    "publication": false,
+    "deployment": false
+  },
+  "implementation": [
+    {
+      "path": "packages/demos/src/alg-l07-p003-source-v1.ts",
+      "sha256": "cc3f17bbd32846ee7695ffdee46bdb23adc0324d30a2625a9ac05d3389552429",
+      "bytes": 686809
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p003-session-v1.ts",
+      "sha256": "8f0bdb04c3906d559a3a64983fbf11576f592840fab0c7bc11265a836bba2ad2",
+      "bytes": 4565
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p003-state-v1.ts",
+      "sha256": "b234b85b6b9d2665627f15f22ae99832cb4bd1f377f088a4535004dae0e2505f",
+      "bytes": 4777
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p003-presentation-v1.tsx",
+      "sha256": "174f42d1cdb9fba05532aa41081df39f8d7dec29ddc492547222e60ac7c02311",
+      "bytes": 6192
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p003-player-v1.tsx",
+      "sha256": "1a95af971bf5a147610341086af0f692f546f9bd041656cf91ae7117293f33d9",
+      "bytes": 6416
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p003-v1.css",
+      "sha256": "e5b5c245d209bc74eaaed5488bf3aa7a30c9442eebd3f619ce655e7a62144d5d",
+      "bytes": 2080
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p003-v1.css.d.ts",
+      "sha256": "ac07f34a378c2dbc606571e739ecde3bb62987b2c8fb14f46d86820417ab4aaf",
+      "bytes": 67
+    },
+    {
+      "path": "packages/demos/src/modules/shared-alg001-l07-p003.tsx",
+      "sha256": "d7b9ebaa9f20659d7089f500f04eeef79f17b32d05cef34ccc127417599eaec9",
+      "bytes": 991
+    },
+    {
+      "path": "packages/demos/src/timelines/shared-alg001-l07-p003.ts",
+      "sha256": "767154e831bcc3ac89ec62594415bef4a3a5f1ffbe799175931d5fac43f288fc",
+      "bytes": 145
+    }
+  ],
+  "sourceAndGenerated": [
+    {
+      "path": "migrations/shared-alg001-l07-p003/native-v1/source-model-v1.json",
+      "sha256": "d5fba5c72cb9d1a1ddbcf09b2cf59762057cba7c8a532e9b6b19fdb963b575c3",
+      "bytes": 17528904
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/native-v1/stream-model-v1.json",
+      "sha256": "0dc7b50bc6db6331402013995a458bd2e095ba7e58f9e076b2a704f650a421cd",
+      "bytes": 503328
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/native-v1/glossary-model-v1.json",
+      "sha256": "5ef56b7b063c349e32dbc9027f631f77fc79c670666f4d16bbd9daa9f6f56d3f",
+      "bytes": 5723
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/native-v1/canvas-adapter-spec-v2.json",
+      "sha256": "00cedc98bed8705458b58cc9cb3c00984af96df5c96f2c858956770a43a36109",
+      "bytes": 3137
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/native-v1/canvas-manifest-v2.json",
+      "sha256": "5bd774615e56346ba9b2b2696c9f3a028db176a244922f573d909ad2ec9c7383",
+      "bytes": 719558
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/native-v1/canvas-renderer-v2.js",
+      "sha256": "720d6ec9ff0afde13602a2b6ee118838ce9916bccfb5ee5530bf16e4cf32af2d",
+      "bytes": 21284621
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/source-v1/source-stream-401.mp3",
+      "sha256": "a7a6c1bbb552868f5b1e0aac28cefbdf4970f0887d41ff6f5656449ef0b00364",
+      "bytes": 885430
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/decode-v1.json",
+      "sha256": "add9ee551180be6966dcaa66f13814e21bf632bed95c2e3ee81fa1f909e0fa0c",
+      "bytes": 611
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/generator-v1/derive-source-v1.mjs",
+      "sha256": "932db428087a0accbcf0dcb836960f6ac66a9876b964c53d919827055e1b440c",
+      "bytes": 4059
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/generator-v1/derive-stream-v1.py",
+      "sha256": "016370a6d36b7497f4b6f471b0803381abbc36e82d129cadd6eadc1a1c3fc669",
+      "bytes": 2341
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/generator-v1/derive-glossary-v1.mjs",
+      "sha256": "a25caba46a28c6eea0e2743ac9b1a6ffa5718463e419697e36e1f1f83720b609",
+      "bytes": 2008
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/generator-v1/derive-product-v1.mjs",
+      "sha256": "8709b87f23018ddc7a4233b8be0e07c0580a169f2cc6134cf8e8ea2bb7010ac2",
+      "bytes": 2520
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/generator-v1/derive-canvas-v2.mjs",
+      "sha256": "7b3039de1c674e4784b87f87f5615d07de3e1e0e9eded7d4c35836fb8f89bb0b",
+      "bytes": 9371
+    }
+  ],
+  "sharedDependencies": [
+    {
+      "path": "packages/demos/src/source-stream-runs-clock-v1.ts",
+      "sha256": "925f18964b2efbed0aeac5df02112fd9b58cac9d2c1c8e4a36b73e0b9b8d9e5f",
+      "bytes": 14853
+    },
+    {
+      "path": "packages/demos/src/decoded-source-stream-transport.ts",
+      "sha256": "9b831901b741f83d02465696d1149544ae82283cace0eb86ae087d2252ae824c",
+      "bytes": 13365
+    },
+    {
+      "path": "packages/demos/src/lesson-animation-title-v1.tsx",
+      "sha256": "0f20beef78a9fcf6843913e93bb2983b21b8761f2677660f0e5caeb13fb7ca2a",
+      "bytes": 714
+    },
+    {
+      "path": "packages/demos/src/lesson-animation-title-v1.css",
+      "sha256": "6af645d585866b1ecb95e4658d858e6e077de0b6f20d60a05dbcccf94fe7b7e1",
+      "bytes": 418
+    },
+    {
+      "path": "scripts/build-safe-ffdec-canvas-adapter.mjs",
+      "sha256": "22fc00187e15c34883905423f4be3a837832fd060287d8b6b25e9ddab660f8c1",
+      "bytes": 115564
+    },
+    {
+      "path": "scripts/lib/g678-source-clip-masks-v1.mjs",
+      "sha256": "e064fb7cb98e66f08e5173bdfc756641b6a8ddae86f7e4dab02e90fdb3bbd70e",
+      "bytes": 1604
+    }
+  ],
+  "evidence": [
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/browser-driver-v3.js",
+      "sha256": "a6bb8087d38737399ffb6698cb5d2ba47cc6d9d466662cab49150fa95ddfdb65",
+      "bytes": 9644
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/browser-result-v3.json",
+      "sha256": "752aaf12810eef4c39f59274285508d392a3e2b5356661079b9056d516827d09",
+      "bytes": 17368
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/browser-raw-v4.txt",
+      "sha256": "108200725c596c2fb9c87e0aaff470bead443836541984bc1f45d9a338b109b7",
+      "bytes": 22638
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/tests-v1/session.test.ts",
+      "sha256": "a07bb985bb9f85edc2afd372e9cfea55958ffdff54584c7512d946d71ba18488",
+      "bytes": 5993
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/session-test-raw-v3.txt",
+      "sha256": "3a3aef8ffc87f69621ec772a101e72a0bc3e7b07a5fbd0e682d37b7da5259b18",
+      "bytes": 824
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/typecheck-raw-v4.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/native-frame-1-v3.png",
+      "sha256": "1d27edfb2efed1e27899d710142604de8a3d39f66b7e177655ebf81236fdcff3",
+      "bytes": 134007
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/native-frame-887-v3.png",
+      "sha256": "17490cb0ccf7e1dc4a15ec789e294ff87432dac5f23e5e7caf458c373e6b0430",
+      "bytes": 118535
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/native-frame-1176-v3.png",
+      "sha256": "d8d4d8601b1165964ee2162f3adbef0b6590f97c16d2c0d6634b51f14ac9e76e",
+      "bytes": 122719
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/native-frame-1205-v3.png",
+      "sha256": "a52dfded8057a61c79355d204db231b75bd06492b1fc14e7fbaa1ded3b57acbb",
+      "bytes": 126745
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/native-frame-1533-v3.png",
+      "sha256": "f9e803a598bf68992a9061016805f2e9e2c0b7b0d5e230f6b18b17e8c39a5a73",
+      "bytes": 130945
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/native-frame-1610-v3.png",
+      "sha256": "aa99466d1051296cf8b1e342fa18ed7b646efb041e13c09e28682eea4a4b26ed",
+      "bytes": 133223
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/native-frame-1709-v3.png",
+      "sha256": "bda613d40a56b47916464f0a3004338b50aa8e430948de44650484a10c9547a1",
+      "bytes": 136888
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/native-frame-1969-v3.png",
+      "sha256": "0a6c8639d987e3846a73f28cee83aa455bc31fefc24ebb0801e76d4216e32df9",
+      "bytes": 137366
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/native-frame-2010-v3.png",
+      "sha256": "0d4c03ee10bcbc36a1c56faf210882e1e5e655e3885ada3ce09b2c04ac154359",
+      "bytes": 141017
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/native-frame-2070-v3.png",
+      "sha256": "2ec2d183d29a27c51467d44be78c58c9e7fb35584463032ca0ba36e7ae7d6528",
+      "bytes": 152699
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/native-frame-2141-v3.png",
+      "sha256": "6b7b75a030aca86c8d8b6b034758ec00b14d61f6804cc1d78f7c35820807a147",
+      "bytes": 142050
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/source-glyph-frame-887-v3.png",
+      "sha256": "3507ee1187304ca21d6b5c7241d29150ff05efe5b46ab09bed6decd3b1cf7f94",
+      "bytes": 214832
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/source-glyph-frame-1205-v3.png",
+      "sha256": "2fa330a0569830a24f8567c5c0b5c86fdb07e45d2088eacf38d0ac90865fc677",
+      "bytes": 213958
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/source-glyph-frame-1610-v3.png",
+      "sha256": "54f87df806f1318614e12a4d042dd4116d7ded575c8015f1b42d6fe77be9516d",
+      "bytes": 207269
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/source-glyph-frame-1709-v3.png",
+      "sha256": "5fb6ed40a0c0fea22f5bd1132f765aa78e7ed678008f9ce1d6a52f30e426b352",
+      "bytes": 209656
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/source-glyph-frame-1969-v3.png",
+      "sha256": "28fe0aceeaac7fc05339b06d4384151433bb102bc3594e3bd04a24bbd9bd420d",
+      "bytes": 206787
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/source-glyph-frame-2070-v3.png",
+      "sha256": "0665c9dfe422cea8f9d864d07389dc611c23336fbe34ec0fa2fc817fc930164a",
+      "bytes": 207504
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/mobile-es-20px-v3.png",
+      "sha256": "35f43107148aa86c1ff7255c75ba209b4a2a780cb853f93caf9b398129cca4ce",
+      "bytes": 110690
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/terminal-held-v3.png",
+      "sha256": "b78c943e85a7ef1591d1384712eba6a7b7fd07cd6f1c271d7ac6742146bbc3d0",
+      "bytes": 153116
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/association-frame-2057-v3.png",
+      "sha256": "69f1b182d04f841c74cba7e3b8e387255437161eb16868c26d6d86148f827c61",
+      "bytes": 146287
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/association-frame-2058-v3.png",
+      "sha256": "2eaa90c72883a0e2646b89510729c87fbc0e8d8a9afbbbe5125b25305e4ed2da",
+      "bytes": 146536
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/association-frame-2061-v3.png",
+      "sha256": "3c75bacb7a46f3e17931b32465386fb43ffe9a4755d20a7140e17ec7ef38a380",
+      "bytes": 146892
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/association-frame-2062-v3.png",
+      "sha256": "35396e5cdb99b74ce7da366fd52a731fede8963e50dfc32b13f2f9568562509d",
+      "bytes": 152595
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/association-frame-2134-v3.png",
+      "sha256": "3922ade789e45d63bc4d71dae64e88ba40d1d599a1cb97d46f08123717371515",
+      "bytes": 151939
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p003/audit-v1/association-frame-2135-v3.png",
+      "sha256": "8fce4b0d5d0a7b4a042fa0c00621fc4c35454b373f0e9b1997bb65a8001333e6",
+      "bytes": 142199
+    }
+  ],
+  "bindingDraft": {
+    "path": "migrations/shared-alg001-l07-p003/product-preparation-v1/typography-binding-draft-v1.json",
+    "sha256": "f33669ae75a636710e29bd8766af9a105ac57e595969b7747a80fd9b93630783",
+    "bytes": 15641
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l07-p002",
+  "classification": "engineering-source-static-current-js-candidate",
+  "source": {
+    "swf": "migrations/shared-alg001-l07-p002/source-v1/L7RW02.swf",
+    "swfSha256": "be4379b92c4a214b6a00d655cee930dbdba0a018c0b1dcb89be855e4a8c8f996"
+  },
+  "evidence": {
+    "scenarioInventory": "migrations/shared-alg001-l07-p002/canvas-v1/scenario-inventory-v1.json",
+    "scenarioInventorySha256": "5aebbaebe26266e859fb8a3a5ff02c9fe1398fde2e561b397b078569cc916a84",
+    "audioAudit": "migrations/shared-alg001-l07-p002/canvas-v1/audio-audit-v1.json",
+    "audioAuditSha256": "e3e2e314016ecc775781a01dbab3e3a6ae215d1f3b1d74928936280b64387d52"
+  },
+  "ffdecExport": {
+    "tool": "JPEXS Free Flash Decompiler v.26.2.1",
+    "helper": "migrations/shared-alg001-l07-p002/source-v1/canvas-export/sprites/DefineSprite_452/canvas.js",
+    "helperSha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93",
+    "framesHtml": "migrations/shared-alg001-l07-p002/source-v1/canvas-export/sprites/DefineSprite_452/frames.html",
+    "framesHtmlSha256": "cb2bc46739991517923a5a3b0854d6c2b87479bdbea6df4beb00f8d6e12e46e4",
+    "targetSpriteObjectId": 452,
+    "targetSpriteFunction": "sprite452",
+    "exportCanvas": {
+      "width": 1946,
+      "height": 912
+    },
+    "exportInternalTranslation": {
+      "x": 1152.2,
+      "y": 383.2
+    },
+    "expectedPlacedFunctionCount": 442,
+    "expectedPlacedFunctionsSha256": "999b62356dfdabd3418c53c0fb5b587c24a77c374ff2ffe5411aeda4e93ecf3d",
+    "embeddedImageVariableCount": 7,
+    "embeddedImageVariablesSha256": "4757971ff2dc16768152f462fad5906a7a8952152bfc85bce2d8bfe30fae040e"
+  },
+  "timeline": {
+    "fps": 12,
+    "stage": {
+      "width": 800,
+      "height": 600,
+      "backgroundColor": "#b8d8f7"
+    },
+    "root": {
+      "frameCount": 10,
+      "preloaderStopFrame": 1,
+      "beginFrame": 6,
+      "beginLabel": "begin",
+      "placementName": "animation",
+      "placementTwips": {
+        "x": 8149,
+        "y": 5630
+      },
+      "placementPixels": {
+        "x": 407.45,
+        "y": 281.5
+      }
+    },
+    "local": {
+      "timelineId": "sprite-452",
+      "frameCount": 1195,
+      "terminalStopFrame": 1195,
+      "playbackMode": "once",
+      "exportFrameIndexing": "zero-indexed",
+      "publicFrameIndexing": "one-indexed"
+    },
+    "stageRenderOffset": {
+      "x": -744.75,
+      "y": -101.69999999999999
+    }
+  },
+  "runtimeContract": {
+    "kind": "structural-local-frame",
+    "defaultScenario": "source-static-frame",
+    "scenarios": [
+      "source-static-frame"
+    ],
+    "supportedLanguages": [
+      "en"
+    ],
+    "visualLocalization": "source-en-fallback; no source language branch or Spanish translation accepted",
+    "seedMapping": "recorded-but-unused-by-this-static-source-drawing-candidate",
+    "unresolved": [
+      "Source root preloader and original-host execution unverified",
+      "Source-run alignment and audible listening unaccepted",
+      "Native semantic table and preserved Canvas source clip masking require fresh product browser evidence"
+    ]
+  },
+  "output": {
+    "script": "migrations/shared-alg001-l07-p002/canvas-v1/canvas-renderer-draft.js",
+    "manifest": "migrations/shared-alg001-l07-p002/canvas-v1/canvas-metadata-v1.json",
+    "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+  }
+}

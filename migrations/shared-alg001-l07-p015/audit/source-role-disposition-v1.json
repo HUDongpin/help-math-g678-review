@@ -1,0 +1,73 @@
+{
+  "scope": "source static scripts, glyphs and viewed public-tool PNG/SVG extractions; not original runtime",
+  "title": {
+    "shape": 1,
+    "text": "Linear and Nonlinear Functions: Vocabulary",
+    "inspection": "audit-v1/source-shapes-v1.png"
+  },
+  "sourceRisks": [
+    {
+      "kind": "shape-text-unclassified",
+      "definitionCount": 28,
+      "meaning": "Shapes may include outlined text or mathematical symbols; presence is not confirmation of text."
+    },
+    {
+      "kind": "button-runtime-state-and-actions-not-interpreted",
+      "definitionCount": 5
+    },
+    {
+      "kind": "dynamic-text-runtime-value-unresolved",
+      "fieldCount": 3
+    },
+    {
+      "kind": "actionscript-visibility-and-values-not-interpreted"
+    },
+    {
+      "kind": "mask-filter-blend-semantics-unresolved"
+    }
+  ],
+  "nativeDecisions": {
+    "shapes": {
+      "1": "outlined title to native text",
+      "40": "source clip rectangles to complete-word reveal",
+      "69": "source clip rectangles to complete-word reveal",
+      "41": "source glossary underline/hitbox to native term buttons",
+      "43": "source glossary underline/hitbox to native term buttons",
+      "70": "source glossary underline/hitbox to native term buttons",
+      "2": "source slider track/knob/cue to source-position demo and native range at110",
+      "3": "source slider track/knob/cue to source-position demo and native range at110",
+      "39": "source slider track/knob/cue to source-position demo and native range at110",
+      "7": "equation field background to native readable output",
+      "10": "source graph/grid exact vectors plus43 HTML axis labels",
+      "34": "source graph/grid exact vectors plus43 HTML axis labels",
+      "35": "authored source line/highlight vectors",
+      "66": "authored source line/highlight vectors",
+      "74": "authored source line/highlight vectors",
+      "75": "authored source line/highlight vectors",
+      "36": "native Draw button and source cue",
+      "48": "native Draw button and source cue",
+      "52": "Close decoration to native Close with source text56",
+      "53": "Close decoration to native Close with source text56",
+      "54": "Close decoration to native Close with source text56",
+      "55": "Close decoration to native Close with source text56",
+      "57": "Close decoration to native Close with source text56",
+      "58": "Close decoration to native Close with source text56",
+      "59": "Close decoration to native Close with source text56",
+      "60": "Close decoration to native Close with source text56",
+      "62": "native readable feedback region"
+    },
+    "morphs": "73 exact exported endpoints and authored ratio; static replacement75",
+    "text": "English source body/equation; original EN/ES dictionaries for three glossary terms; native localized UI",
+    "sourceStateVsDisplay": "111 removes popup and named drag, replaces drag by unnamed static49 with empty clips. Named slope50 and Draw51 persist111..112; after second Close one extra wrong release increments/disables without recreating removed popup.113 removes both, places unnamed field65 prefilled0 and static Draw art36/38; timeline script txtSlope.text=0 is present but original AVM1 target behavior after removal is unverified. Modern display is source65=0; internal query models the authored assignment. Sprite67 contains authored horizontal line66. Text68 blinks157/159/161. Explanation71 begins176. Morph73+outline74 start268, static75 replaces morph294, all highlight removed310, y=0 label76 appears312.",
+    "graph": "Authored horizontal line66 in child67 from113; no calculation from arbitrary slider values. Exact vectors and43 readable labels.",
+    "feedback": "Every accepted release increments TryCount. Exact string0 resumes main; wrong sets popup64.txtFeed before goto2. Popup has no frame2 assignment. No random or host feedback. Close exists1..19 and accepts immediately from2; hides/stops popup at2 and enables controls. First wrong holds110 with slope retained; second wrong continues with attempts2.",
+    "audio": "Two embedded MP3 streams and explicit original SA; source1837 versus physical1837.5 samples/frame discrepancy retained.",
+    "reuse": "Fourth source-proven local-slider consumer. Reuse immutable state/session/player templates; P015 narrows retained Draw to source111..112 and models explicit113 assignment. Source popup text ownership differs at assignment location but all native start/close effects match. Preserve earlier consumers byte-for-byte."
+  },
+  "unresolved": [
+    "original-runtime visual/interaction/audio timing",
+    "full-frame rendered comparison",
+    "listening, human, Owner, strict and publication acceptance"
+  ],
+  "registryModified": false
+}

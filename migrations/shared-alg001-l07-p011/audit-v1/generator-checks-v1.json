@@ -1,0 +1,55 @@
+{
+  "at": "2026-10-03T16:14:30.397970+00:00",
+  "runs": [
+    {
+      "command": [
+        "node",
+        "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p011/generator-v1/derive-source-v1.mjs",
+        "--check"
+      ],
+      "exit": 0,
+      "stdout": "{\n  \"pass\": true,\n  \"timelines\": [\n    {\n      \"id\": \"root\",\n      \"frames\": 10\n    },\n    {\n      \"id\": \"sprite-54\",\n      \"frames\": 1\n    },\n    {\n      \"id\": \"sprite-56\",\n      \"frames\": 1\n    },\n    {\n      \"id\": \"sprite-58\",\n      \"frames\": 1\n    },\n    {\n      \"id\": \"sprite-74\",\n      \"frames\": 19\n    },\n    {\n      \"id\": \"sprite-77\",\n      \"frames\": 1\n    },\n    {\n      \"id\": \"sprite-78\",\n      \"frames\": 232\n    }\n  ],\n  \"scripts\": 17,\n  \"glossary\": [\n    {\n      \"term\": \"Value\",\n      \"ranges\": [\n        [\n          25,\n          232\n        ]\n      ]\n    },\n    {\n      \"term\": \"Integers\",\n      \"ranges\": [\n        [\n          25,\n          232\n        ]\n      ]\n    },\n    {\n      \"term\": \"Slope\",\n      \"ranges\": [\n        [\n          82,\n          232\n        ]\n      ]\n    },\n    {\n      \"term\": \"Equation\",\n      \"ranges\": [\n        [\n          82,\n          232\n        ]\n      ]\n    }\n  ],\n  \"quiz\": 153,\n  \"slider\": {\n    \"spriteId\": 56,\n    \"sourceInstance\": \"Mc_Drag\",\n    \"minimumX\": -150,\n    \"maximumX\": 50,\n    \"y\": 169,\n    \"placedX\": -40.5,\n    \"placedY\": 168.9,\n    \"initialText\": \"1\",\n    \"minimumValue\": -10,\n    \"maximumValue\": 10,\n    \"step\": 0.1,\n    \"formula\": \"Math.round((this._x / 10 + 5) * 10) / 10\",\n    \"readOnlySlope\": true,\n    \"sourceReleaseOutside\": true\n  },\n  \"sourceMode\": \"SWF-only\",\n  \"originalRuntimeAccepted\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p011/generator-v1/derive-streams-v1.py",
+        "--check"
+      ],
+      "exit": 0,
+      "stdout": "[{\"sprite\": 74, \"bytes\": 7410, \"segments\": [{\"firstFrame\": 2, \"firstDecodedSample\": 1673, \"endDecodedSample\": 3456}, {\"firstFrame\": 4, \"firstDecodedSample\": 3510, \"endDecodedSample\": 32832}]}, {\"sprite\": 78, \"bytes\": 96070, \"segments\": [{\"firstFrame\": 1, \"firstDecodedSample\": 1673, \"endDecodedSample\": 3456}, {\"firstFrame\": 3, \"firstDecodedSample\": 3510, \"endDecodedSample\": 425664}]}]\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p011/generator-v1/derive-glossary-v1.mjs",
+        "--check"
+      ],
+      "exit": 0,
+      "stdout": "[{\"key\":\"Equation\",\"id\":\"equation\",\"keys\":[\"id\",\"sourceKeyAttribute\",\"labels\",\"definitions\",\"source\",\"sourceEntrySha256\",\"extractionLfNormalizedEntrySha256\"],\"labels\":{\"en\":\"Equation\",\"es\":\"Ecuaci\u00f3n\"}},{\"key\":\"Integers\",\"id\":\"integers\",\"keys\":[\"id\",\"sourceKeyAttribute\",\"labels\",\"definitions\",\"source\",\"sourceEntrySha256\",\"extractionLfNormalizedEntrySha256\"],\"labels\":{\"en\":\"Integers\",\"es\":\"Enteros\"}},{\"key\":\"Slope\",\"id\":\"slope\",\"keys\":[\"id\",\"sourceKeyAttribute\",\"labels\",\"definitions\",\"source\",\"sourceEntrySha256\",\"extractionLfNormalizedEntrySha256\"],\"labels\":{\"en\":\"Slope\",\"es\":\"Pendiente\"}},{\"key\":\"Value\",\"id\":\"value\",\"keys\":[\"id\",\"sourceKeyAttribute\",\"labels\",\"definitions\",\"source\",\"sourceEntrySha256\",\"extractionLfNormalizedEntrySha256\"],\"labels\":{\"en\":\"Value\",\"es\":\"Valor\"}}]\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p011/generator-v1/derive-visual-v1.py",
+        "--check"
+      ],
+      "exit": 0,
+      "stdout": "{\"status\": \"pass\", \"spans\": 70, \"labels\": 43, \"completeTextFrames\": {\"41\": 81, \"50\": 136}, \"graphViewBox\": [-4082, -3396, 6514.998779296875, 6487], \"clocks\": [74, 78]}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p011/generator-v1/derive-product-source-v1.mjs",
+        "--check"
+      ],
+      "exit": 0,
+      "stdout": "{\"pass\":true,\"bytes\":49457,\"sha256\":\"096d2d4ce7dcc240130aba8a7b66b88c703a27799c5fbd9b9d98ae3c152f0b13\"}\n",
+      "stderr": ""
+    }
+  ]
+}

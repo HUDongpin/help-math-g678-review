@@ -1,0 +1,49 @@
+{
+  "scope": "SWF tags, scripts, glyph coordinates and viewed FFDec frames/shapes; no authoritative original runtime",
+  "title": {
+    "shape": 1,
+    "text": "Linear and Nonlinear Functions: Vocabulary",
+    "inspection": "audit-v1/source-shapes-v1.png"
+  },
+  "sourceRisks": [
+    {
+      "kind": "shape-text-unclassified",
+      "definitionCount": 13,
+      "meaning": "Shapes may include outlined text or mathematical symbols; presence is not confirmation of text."
+    },
+    {
+      "kind": "button-runtime-state-and-actions-not-interpreted",
+      "definitionCount": 4
+    },
+    {
+      "kind": "actionscript-visibility-and-values-not-interpreted"
+    },
+    {
+      "kind": "mask-filter-blend-semantics-unresolved"
+    }
+  ],
+  "nativeDecisions": {
+    "text": "source English equation and statement retained; complete-word mask reveal; Spanish UI and glossary use original dictionary",
+    "shapes": {
+      "1": "outlined title becomes native title",
+      "5": "equation boxes become native HTML numeric spans",
+      "8,31,33": "exact graph/axis geometry",
+      "34,35": "line shape in static child; both main instances preserved with source transforms",
+      "36,37": "exact track and gradient marker; no source actions, so no slider input",
+      "47,48": "exact green highlight endpoints and authored ratios96..135",
+      "49": "exact mask used for complete-word reveal",
+      "50": "underlines represented by revealed glossary controls",
+      "52": "hit area becomes native focusable glossary controls"
+    },
+    "sourceQuirk": "Authored coefficient and marker change; no line35 transform/clip action exists after6. Do not synthesize graph rotation. Runtime fidelity remains unproven.",
+    "layout": "native labels stay1rem with bounded keyboard-scrollable graph; source ratio retained",
+    "audio": "binary/XML identical payload;22050Hz381888 samples. Source sampleSize1837 versus physical1837.5 remains explicit",
+    "neutralBlock": "frame7 samples0 seek0 is not a negative marker"
+  },
+  "unresolved": [
+    "authoritative-runtime visual/audio timing",
+    "full glyph/shape pixel fidelity",
+    "listening, human and Owner review"
+  ],
+  "registryModified": false
+}

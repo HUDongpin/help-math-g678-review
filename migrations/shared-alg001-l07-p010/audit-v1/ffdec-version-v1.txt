@@ -1,0 +1,84 @@
+Error: Bad Commandline Arguments!
+[1;4mUsage[m: <executable> [PRE-OPTIONS] [COMMAND]
+
+[1;4mExecutable[m:
+       Linux: ffdec or ffdec.sh
+      Mac OS: ffdec.sh
+     Windows: ffdec-cli.exe or ffdec.bat
+        Java: java -jar ffdec.jar
+
+[1;4mGlobal pre-options[m:
+[33m-config[m key=value[,key2=value2][,key3=value3...]
+    Set configuration values.
+    Use [1m-listconfigs[m command to list the available configuration settings.
+    Values are boolean, you can use 0/1, true/false, on/off or yes/no.
+    If no other parameters passed, configuration is saved.
+    Otherwise it is used only once.
+    DO NOT PUT space between comma (,) and next value.
+[33m-configFile[m [3m<file>[m
+    Use configuration from a file [3m<file>[m. TOML file format is expected.
+    When it has .bin extension, legacy storage is used.
+[33m-charset[m [3m<charsetName>[m
+    Set desired character set for reading/writing SWF files with
+    SWF version <= 5.
+
+[1;4mCommands:[m
+[1m-help[m | [1m--help[m | [1m/?[m  
+                    Show help options about a command.
+[1m-export[m             Export sources.
+[1m-dumpSWF[m            Dump list of SWF tags to console.
+[1m-dumpAS2[m            Dump list of AS1/2 scripts to console.
+[1m-dumpAS3[m            Dump list of AS3 scripts to console.
+[1m-compress[m           Compress SWF file.
+[1m-decompress[m         Decompress SWF file.
+[1m-encrypt[m            Encrypt SWF file with HARMAN Air encryption.
+[1m-decrypt[m            Decrypt HARMAN Air encrypted file.
+[1m-swf2xml[m            Convert SWF to XML.
+[1m-xml2swf[m            Convert XML to SWF.
+[1m-extract[m            Extract SWF files from ZIP or other binary files.
+[1m-memorySearch[m       Search SWF files in the memory.
+[1m-renameInvalidIdentifiers[m  
+                    Rename invalid identifiers.
+[1m-flashpaper2pdf[m     Convert FlashPaper SWF file to PDF.
+[1m-replace[m            Replace data.
+[1m-replace[m            Replace data using argsfile.
+[1m-replaceAlpha[m       Replace the alpha channel of the specified JPEG3/4 tag.
+[1m-replaceCharacter[m   Replace a character tag with another from the same SWF.
+[1m-replaceCharacterId[m  
+                    Replace character ids.
+[1m-replaceCharacterId[m  
+                    Replace character ids bulk operation.
+[1m-remove[m             Remove a tag from the SWF.
+[1m-removeCharacter[m    Remove a character tag from the SWF.
+[1m-removeCharacterWithDependencies[m  
+                    Remove a character tag from the SWF with dependencies.
+[1m-importSymbolClass[m  Import Symbol-Class mapping.
+[1m-importMovies[m       Bulk import movies.
+[1m-importSounds[m       Bulk import sounds.
+[1m-importShapes[m       Bulk import shapes.
+[1m-importImages[m       Bulk import images.
+[1m-importSprites[m      Bulk import sprites.
+[1m-importText[m         Bulk import texts.
+[1m-importScript[m       Bulk import scripts.
+[1m-deobfuscate[m        Deobfuscate AS3 P-code.
+[1m-enabledebugging[m    Enable debugging in SWF file.
+[1m-doc[m                Generate documentation.
+[1m-getInstanceMetadata[m  
+                    Read instance metadata.
+[1m-setInstanceMetadata[m  
+                    Add metadata to instance.
+[1m-removeInstanceMetadata[m  
+                    Remove metadata from instance.
+[1m-linkReport[m         Generate linker report for the swffile.
+[1m-swf2swc[m            Generate SWC file from SWF.
+[1m-abcmerge[m           Merge all ABC tags in SWF file to one.
+[1m-abcclean[m           Cleans specified ABC file by removing all unused items from the ABC.
+[1m-swf2exe[m            Export SWF to executable file.
+[1m-header[m             Print or set SWF header values.
+[1m-listconfigs[m        List all available configuration keys and current values.
+[1m-storeConfigFile[m    Stores current configuration to a file <file>.
+[1m-translator[m         Runs the Translator app for FFDec localization
+[1m-soleditor[m          Runs the Sol cookie editor as standalone application
+
+You can use special value "/dev/stdin" for input files to read data 
+from standard input (even on Windows)

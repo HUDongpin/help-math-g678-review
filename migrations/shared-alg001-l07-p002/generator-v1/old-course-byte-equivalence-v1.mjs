@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {buildSafeRuntime as before} from '../audit-v1/builder-preimage-v1.mjs';
+import {buildSafeRuntime as after} from '../../../scripts/build-safe-ffdec-canvas-adapter.mjs';
+const sha=b=>createHash('sha256').update(b).digest('hex');
+const root='/Volumes/WestWorld/HELP MATH 2.0';
+const spec=JSON.parse(readFileSync(new URL('../../course-g03-l06-ti-001/audit/canvas-adapter-spec.json',import.meta.url)));
+const helper=readFileSync(root+'/'+spec.ffdecExport.helper),frames=readFileSync(root+'/'+spec.ffdecExport.framesHtml);
+assert.equal(sha(helper),spec.ffdecExport.helperSha256);assert.equal(sha(frames),spec.ffdecExport.framesHtmlSha256);
+const inputs={spec,helperSource:helper.toString(),framesHtml:frames.toString()};
+const pre=before(inputs),post=after(inputs);assert.equal(post.runtime,pre.runtime);assert.deepEqual(post.metadata,pre.metadata);
+const receipt={schemaVersion:1,pass:true,animationId:spec.animationId,fixtureRoot:root,helperSha256:sha(helper),framesHtmlSha256:sha(frames),runtimeBytes:Buffer.byteLength(post.runtime),runtimeSha256:sha(post.runtime),runtimeByteEquivalent:true,metadataEquivalent:true,coverage:'one actual old-course source export; not full adapter suite'};
+const file=new URL('../audit-v1/old-course-byte-equivalence-v1.json',import.meta.url);writeFileSync(file,JSON.stringify(receipt,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify(receipt));

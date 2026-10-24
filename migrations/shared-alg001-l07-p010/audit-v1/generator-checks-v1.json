@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-03T15:01:35.744875+00:00",
+  "pass_": true,
+  "checks": [
+    {
+      "name": "source",
+      "args": [
+        "node",
+        "migrations/shared-alg001-l07-p010/generator-v1/derive-source-v1.mjs",
+        "--check"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l07-p010/audit-v1/source-check-v1.txt"
+    },
+    {
+      "name": "streams",
+      "args": [
+        "python3",
+        "migrations/shared-alg001-l07-p010/generator-v1/derive-streams-v1.py",
+        "--check"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l07-p010/audit-v1/streams-check-v1.txt"
+    },
+    {
+      "name": "glossary",
+      "args": [
+        "node",
+        "migrations/shared-alg001-l07-p010/generator-v1/derive-glossary-v1.mjs",
+        "--check"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l07-p010/audit-v1/glossary-check-v1.txt"
+    },
+    {
+      "name": "visual",
+      "args": [
+        "python3",
+        "migrations/shared-alg001-l07-p010/generator-v1/derive-visual-v1.py",
+        "--check"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l07-p010/audit-v1/visual-check-v1.txt"
+    },
+    {
+      "name": "product",
+      "args": [
+        "node",
+        "migrations/shared-alg001-l07-p010/generator-v1/derive-product-source-v1.mjs",
+        "--check"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l07-p010/audit-v1/product-check-v1.txt"
+    }
+  ]
+}

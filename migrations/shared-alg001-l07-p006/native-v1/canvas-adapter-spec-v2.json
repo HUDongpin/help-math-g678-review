@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l07-p006",
+  "classification": "behavior-heavy-maintained-source-graphics-and-native-teaching-text",
+  "source": {
+    "swf": "G6-G8-shared/ALG001/L7/RW/L7RW06.swf",
+    "swfSha256": "72c7f3e0d0fd0a5251214c3511262bf164d983837a5c52e9f1e56d4de96df155"
+  },
+  "evidence": {
+    "scenarioInventorySha256": "5b1106dbace1af7fb6ae808ff05956e7626274fa7838ad9b3bee447ecc4fde3f",
+    "audioAuditSha256": "17d78245a821b19576b9ba5b99605c76a25e05905df7fa84cfe3b30f1c72276c"
+  },
+  "ffdecExport": {
+    "tool": "JPEXS Free Flash Decompiler 26.2.1",
+    "helperSha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93",
+    "framesHtmlSha256": "deffb2e22e63c161ef7c35dff82c993e3249ea575592e6a706a9cd4b7749cbaf",
+    "targetSpriteObjectId": 223,
+    "targetSpriteFunction": "sprite223",
+    "exportCanvas": {
+      "width": 1305,
+      "height": 403
+    },
+    "exportInternalTranslation": {
+      "x": 627.85,
+      "y": 198.75
+    },
+    "expectedPlacedFunctionCount": 213,
+    "expectedPlacedFunctionsSha256": "adc3724e2f97ffdf27696cacff3f74d816450e3a3573ebeda0d2cf2f10421f99",
+    "expectedFontFunctionCount": 3,
+    "expectedFontFunctionsSha256": "f791ca87f5c47ca20211214bf9b566d549ece09455830f9b2a23499937e1f544",
+    "embeddedImageVariableCount": 5,
+    "embeddedImageVariablesSha256": "aa18cb94815d82b2ff06ffeb5510013d7dd8b93bfe2f1a1988d608ed2f8600a6"
+  },
+  "timeline": {
+    "fps": 12,
+    "stage": {
+      "width": 800,
+      "height": 600,
+      "backgroundColor": "#b8d8f7"
+    },
+    "root": {
+      "frameCount": 10,
+      "preloaderStopFrame": 1,
+      "beginFrame": 6,
+      "beginLabel": "begin",
+      "placementName": "animation",
+      "placementTwips": {
+        "x": 8149,
+        "y": 5630
+      },
+      "placementPixels": {
+        "x": 407.45,
+        "y": 281.5
+      }
+    },
+    "local": {
+      "timelineId": "sprite-223",
+      "frameCount": 1845,
+      "livePlaybackEndFrame": 1845,
+      "playbackMode": "loop",
+      "publicFrameIndexing": "one-indexed"
+    },
+    "stageRenderOffset": {
+      "x": -220.40000000000003,
+      "y": 82.75
+    }
+  },
+  "runtimeContract": {
+    "kind": "structural-local-frame",
+    "scenarios": [
+      "source-static-frame"
+    ],
+    "defaultScenario": "source-static-frame",
+    "supportedLanguages": [
+      "en"
+    ],
+    "visualLocalization": "Exact source-English teaching content; ES UI explicit English fallback",
+    "seedMapping": "uint32 metadata; source has no random behavior",
+    "blockedLocalFrameRanges": [],
+    "currentCanonicalFrameDomainDispositionAsserted": false,
+    "unresolved": [
+      "Original runtime appearance and timing remain unverified.",
+      "Teaching text uses a source-bound native presentation; source outlined page title omitted.",
+      "Audio/listening/fidelity/human/Owner/strict/publication gates independent."
+    ]
+  },
+  "output": {
+    "script": "migrations/shared-alg001-l07-p006/native-v1/canvas-renderer-v2.js",
+    "manifest": "migrations/shared-alg001-l07-p006/native-v1/canvas-manifest-v2.json",
+    "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+  }
+}

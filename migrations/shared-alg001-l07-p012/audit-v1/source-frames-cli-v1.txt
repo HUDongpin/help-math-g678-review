@@ -1,0 +1,6 @@
+### Result
+{"pass":true}
+### Ran Playwright code
+```js
+await (async page=>{await page.setViewportSize({width:1400,height:1000});await page.setContent('<body style="background:#fff;font:20px sans-serif;display:grid;grid-template-columns:1fr 1fr;gap:20px">'+[6,90,96,180,260,385].map(f=>'<section><h2>Source frame '+f+'</h2><img style="width:100%" src="http://127.0.0.1:4390/ffdec-child-png/DefineSprite_93/'+f+'.png"></section>').join('')+'</body>');await page.locator('img').evaluateAll(xs=>Promise.all(xs.map(x=>x.decode())));await page.screenshot({path:'/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p012/audit-v1/source-frames-v1.png',fullPage:true});return {pass:true};})(page);
+```

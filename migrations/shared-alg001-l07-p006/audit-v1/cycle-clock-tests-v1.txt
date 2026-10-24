@@ -1,0 +1,22 @@
+✔ the complete last frame and all native audio remain before the59.5s cycle boundary (0.874583ms)
+✔ native scheduling contains three exact cycles with no renderer-triggered restart (10.956ms)
+✔ native ended events replenish future cycles without any drawing callback (6.784917ms)
+✔ pause in the source gap retires all current/future nodes and resumes its remaining native delay (7.134625ms)
+✔ fractional pause in the second cycle retains that cycle and the exact sample coordinate (6.569125ms)
+✔ Replay and inspection reset the cycle origin and never introduce a715th source frame (6.715833ms)
+✔ interruption and pending activation cannot leak future source nodes (25.615792ms)
+✔ source hashes, decoded PCM, reduced motion and failed paint prevent playback (17.715084ms)
+✔ invalid loops, overlaps and a run extending beyond the complete cycle are rejected (0.393583ms)
+✔ native replenishment failure is retained as failed state and retires all scheduled sounds (7.477125ms)
+✔ real P006 binary/XML stream and browser PCM binding admit only the exact 44100 plan (1.541417ms)
+✔ modeled 44100 scheduling, source gaps, last-frame wrap, seek, Replay and cleanup retain exact sample units (53.839708ms)
+✔ the same modeled 22050 fixture yields identical v1/v2 states and native scheduling (22.785667ms)
+✔ 44100 interruption and late pending activation retire native sources without automatic resume (90.784666ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 303.875333

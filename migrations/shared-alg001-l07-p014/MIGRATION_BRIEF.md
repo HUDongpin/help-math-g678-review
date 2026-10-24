@@ -1,0 +1,11 @@
+# ALG001 L7 P014 — Slope
+
+Canonical placement is global14 / VB8, SWF L7VB09.swf SHA256 5f6a19f56cf61ea1c95750a945cf489db718249ef18ae2e4d4200f80c3cbfe1f. The physical AWS archive is preserved; no same-path FLA exists. Filename09 does not define source order.
+
+Root10 enters main78 at6. Main264 stops at84 with slope0.5 and attempts0. Every accepted Draw increments attempts; exact string -1 proceeds. Wrong opens local popup65 at2 and stops15. Immediate Close stops/hides at2; first wrong retains slope and holds84, second resumes with attempts2. At85 the popup is removed and named drag replaced by an unnamed static child. The input value is never reassigned after84; field66 separately displays en-dash minus1 at87. The retained Draw52 accepts one further release after second-wrong continuation, incrementing/disabling without reopening the removed popup or restarting audio. Main264 loops to1; no automatic next or completion.
+
+Compiler-assisted maintained-native advanced lane: source extraction generates exact diagram vectors,43 HTML axis labels, complete-word masked text, five original bilingual glossary entries and native audio plans. React uses an accessible range and readable output, source-authored negative line87, emphasis114/116/118 and yellow highlight144..187. The line is not computed from arbitrary student slider values. Horizontal graph scrolling avoids shrinking labels. Source English teaching copy is retained in both UI languages; source dictionaries and product controls provide Spanish.
+
+Shared source-slider-feedback-v2 references pinned v1 templates, reproduces P011/P012 byte-identically and adds the source-proven no-assignment variation for P014. Native stream clock and decoded transport remain unchanged. Source MP3s decode25344 and475200 mono samples at22050Hz; independent original SA decodes661248 at48000Hz. Spanish Audio is user-triggered, pauses the timeline and returns held; never locale autoplay or splice. Source1837 vs physical1837.5 samples/frame remains explicitly unaccepted alignment.
+
+Four domains and12 coverage requirements produce1138 deterministic frame/language/scenario queries. Original-runtime capture, full-frame comparison, listening, human/Owner, strict completion and publication remain pending. Registration and real My Lesson validation are required before Current-JS coverage increases.

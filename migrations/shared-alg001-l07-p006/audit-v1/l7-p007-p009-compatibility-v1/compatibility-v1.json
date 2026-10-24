@@ -1,0 +1,2565 @@
+{
+  "schemaVersion": 1,
+  "kind": "l7-p007-p009-read-only-source-compatibility",
+  "at": "2026-10-03T08:41:06.962150+00:00",
+  "scope": "Read-only exact source audit under P006 audit area; no scaffold/renderer/host/registry changes or batch selection.",
+  "identityReceipt": {
+    "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/source-identity-v1.json",
+    "bytes": 4628,
+    "sha256": "0f16e35cb04518af9aaebe3b09d7ee8f8f7e835f4b54c3fa76432d47790ef180"
+  },
+  "registrySnapshot": {
+    "path": "packages/demos/private-current-js-registry.json",
+    "bytes": 683085,
+    "sha256": "b7e650caae35e6b18f4e9eb7c1d59cf91388eecaa7addbc094dc1d03fef2caa5"
+  },
+  "producer": {
+    "path": "migrations/shared-alg001-l07-p006/generator-v1/audit-l7-p007-p009-compatibility-v1.py",
+    "bytes": 13687,
+    "sha256": "53500cc91809a9c1ccf1e74fbdf2c334270011c0f19464b1841218df8f833657"
+  },
+  "pages": [
+    {
+      "identity": {
+        "animationId": "shared-alg001-l07-p007",
+        "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/VB/L7VB02.swf",
+        "bytes": 207942,
+        "sha256": "db951557b1fa5f0c2a4d0b6b196a0a4228b0012fd1b2bbb383a672e8521ee6cd",
+        "flaPresent": false,
+        "readOnlyCopy": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/L7VB02.swf",
+        "canonicalMigrationPresent": false,
+        "alternativeWorkspaceMatches": [],
+        "currentRegistryMembership": [],
+        "catalog": {
+          "animationId": "shared-alg001-l07-p007",
+          "stableLessonKey": "shared-alg001-l07",
+          "reference": "VB/L7VB02.swf",
+          "titleEnglish": "Linear Function",
+          "titleSpanish": "Funci\u00f3n lineal",
+          "sourceSha256": "db951557b1fa5f0c2a4d0b6b196a0a4228b0012fd1b2bbb383a672e8521ee6cd",
+          "sourceBytes": 207942,
+          "viewPath": "G6-G8-shared/ALG001/L7/VB/L7VB02.swf",
+          "slideSpace": false,
+          "audioStatus": "candidate-index-only",
+          "audioCueCandidates": [
+            {
+              "acceptance": "candidate-index-only",
+              "binding": "lesson-SA",
+              "bindingKind": "lesson-SA-candidate",
+              "bytes": 113904,
+              "classificationStatus": "resolved-canonical",
+              "durationMs": null,
+              "frameDomain": null,
+              "hostTrigger": "pending-authorized-original-runtime",
+              "id": "shared-alg001-l07-p007-audio-001",
+              "language": "undetermined",
+              "replayBehavior": "pending-authorized-original-runtime",
+              "required": null,
+              "sha256": "9dd46745257b6746e605b2f9e5f04cce13ab1546bd7c5a4f9e101aa9900c5877",
+              "source": "HELP_COURSES/ALG001/L7/SA/L7VB02.mp3",
+              "sourcePath": "HELP_COURSES/ALG001/L7/SA/L7VB02.mp3",
+              "sourceRootKind": "canonical",
+              "startSemantics": "pending-authorized-original-runtime",
+              "stopOrCompleteSemantics": "pending-authorized-original-runtime",
+              "viewPath": "G6-G8-shared/ALG001/L7/SA/L7VB02.mp3"
+            }
+          ]
+        }
+      },
+      "currentRegistryMembership": [],
+      "sourceRoot": {
+        "fps": 12,
+        "frames": 10,
+        "entryFrame": 6
+      },
+      "main": {
+        "objectId": 228,
+        "frames": 173,
+        "actionTagFrames": [
+          109
+        ],
+        "namedPlacements": [
+          {
+            "frame": 109,
+            "replace": "0",
+            "depth": "128",
+            "objectID": "40",
+            "morph": "108",
+            "name": "AnsBtn2"
+          },
+          {
+            "frame": 109,
+            "replace": "0",
+            "depth": "130",
+            "objectID": "41",
+            "morph": "108",
+            "name": "AnsBtn1"
+          },
+          {
+            "frame": 109,
+            "replace": "0",
+            "depth": "132",
+            "objectID": "41",
+            "morph": "108",
+            "name": "AnsBtn4"
+          },
+          {
+            "frame": 109,
+            "replace": "0",
+            "depth": "134",
+            "objectID": "41",
+            "morph": "108",
+            "name": "AnsBtn3"
+          },
+          {
+            "frame": 109,
+            "replace": "0",
+            "depth": "136",
+            "objectID": "67",
+            "morph": "108",
+            "name": "Mc_Wrong_Feed3"
+          },
+          {
+            "frame": 109,
+            "replace": "0",
+            "depth": "142",
+            "objectID": "98",
+            "morph": "108",
+            "name": "Mc_Wrong_Feed2"
+          },
+          {
+            "frame": 109,
+            "replace": "0",
+            "depth": "152",
+            "objectID": "119",
+            "morph": "108",
+            "name": "Mc_Wrong_Feed1"
+          },
+          {
+            "frame": 109,
+            "replace": "0",
+            "depth": "158",
+            "objectID": "145",
+            "morph": "108",
+            "name": "Mc_Right_Feed1"
+          },
+          {
+            "frame": 109,
+            "replace": "0",
+            "depth": "169",
+            "objectID": "177",
+            "morph": "108",
+            "name": "Mc_Right_Feed2"
+          },
+          {
+            "frame": 109,
+            "replace": "0",
+            "depth": "181",
+            "objectID": "145",
+            "morph": "108",
+            "name": "Mc_Right_Feed5"
+          },
+          {
+            "frame": 109,
+            "replace": "0",
+            "depth": "192",
+            "objectID": "210",
+            "morph": "108",
+            "name": "Mc_Right_Feed4"
+          },
+          {
+            "frame": 109,
+            "replace": "0",
+            "depth": "201",
+            "objectID": "224",
+            "morph": "108",
+            "name": "Mc_Right_Feed3"
+          }
+        ]
+      },
+      "allTimelines": [
+        {
+          "objectId": 9,
+          "frames": 1,
+          "actionTagFrames": [],
+          "namedPlacements": []
+        },
+        {
+          "objectId": 66,
+          "frames": 1,
+          "actionTagFrames": [
+            1
+          ],
+          "namedPlacements": [
+            {
+              "frame": 1,
+              "replace": "0",
+              "depth": "1",
+              "objectID": "62",
+              "name": "BtnClose"
+            },
+            {
+              "frame": 1,
+              "replace": "0",
+              "depth": "10",
+              "objectID": "65",
+              "name": "txtFeed"
+            }
+          ]
+        },
+        {
+          "objectId": 67,
+          "frames": 29,
+          "actionTagFrames": [
+            1,
+            20,
+            29
+          ],
+          "namedPlacements": [
+            {
+              "frame": 13,
+              "replace": "0",
+              "depth": "4",
+              "objectID": "66",
+              "morph": "12",
+              "name": "Mc_Feed_Popup"
+            }
+          ]
+        },
+        {
+          "objectId": 89,
+          "frames": 1,
+          "actionTagFrames": [
+            1
+          ],
+          "namedPlacements": [
+            {
+              "frame": 1,
+              "replace": "0",
+              "depth": "1",
+              "objectID": "87",
+              "name": "BtnClose"
+            },
+            {
+              "frame": 1,
+              "replace": "0",
+              "depth": "10",
+              "objectID": "88",
+              "name": "txtFeed"
+            }
+          ]
+        },
+        {
+          "objectId": 98,
+          "frames": 28,
+          "actionTagFrames": [
+            1,
+            22,
+            28
+          ],
+          "namedPlacements": [
+            {
+              "frame": 15,
+              "replace": "0",
+              "depth": "9",
+              "objectID": "89",
+              "morph": "14",
+              "name": "Mc_Feed_Popup"
+            }
+          ]
+        },
+        {
+          "objectId": 118,
+          "frames": 1,
+          "actionTagFrames": [
+            1
+          ],
+          "namedPlacements": [
+            {
+              "frame": 1,
+              "replace": "0",
+              "depth": "1",
+              "objectID": "116",
+              "name": "BtnClose"
+            },
+            {
+              "frame": 1,
+              "replace": "0",
+              "depth": "10",
+              "objectID": "117",
+              "name": "txtFeed"
+            }
+          ]
+        },
+        {
+          "objectId": 119,
+          "frames": 28,
+          "actionTagFrames": [
+            1,
+            23,
+            28
+          ],
+          "namedPlacements": [
+            {
+              "frame": 17,
+              "replace": "0",
+              "depth": "5",
+              "objectID": "118",
+              "morph": "16",
+              "name": "Mc_Feed_Popup"
+            }
+          ]
+        },
+        {
+          "objectId": 145,
+          "frames": 31,
+          "actionTagFrames": [
+            1,
+            1,
+            31,
+            31
+          ],
+          "namedPlacements": []
+        },
+        {
+          "objectId": 177,
+          "frames": 25,
+          "actionTagFrames": [
+            1,
+            1,
+            25,
+            25
+          ],
+          "namedPlacements": []
+        },
+        {
+          "objectId": 210,
+          "frames": 27,
+          "actionTagFrames": [
+            1,
+            1,
+            27,
+            27
+          ],
+          "namedPlacements": []
+        },
+        {
+          "objectId": 224,
+          "frames": 32,
+          "actionTagFrames": [
+            1,
+            1,
+            32,
+            32
+          ],
+          "namedPlacements": []
+        },
+        {
+          "objectId": 228,
+          "frames": 173,
+          "actionTagFrames": [
+            109
+          ],
+          "namedPlacements": [
+            {
+              "frame": 109,
+              "replace": "0",
+              "depth": "128",
+              "objectID": "40",
+              "morph": "108",
+              "name": "AnsBtn2"
+            },
+            {
+              "frame": 109,
+              "replace": "0",
+              "depth": "130",
+              "objectID": "41",
+              "morph": "108",
+              "name": "AnsBtn1"
+            },
+            {
+              "frame": 109,
+              "replace": "0",
+              "depth": "132",
+              "objectID": "41",
+              "morph": "108",
+              "name": "AnsBtn4"
+            },
+            {
+              "frame": 109,
+              "replace": "0",
+              "depth": "134",
+              "objectID": "41",
+              "morph": "108",
+              "name": "AnsBtn3"
+            },
+            {
+              "frame": 109,
+              "replace": "0",
+              "depth": "136",
+              "objectID": "67",
+              "morph": "108",
+              "name": "Mc_Wrong_Feed3"
+            },
+            {
+              "frame": 109,
+              "replace": "0",
+              "depth": "142",
+              "objectID": "98",
+              "morph": "108",
+              "name": "Mc_Wrong_Feed2"
+            },
+            {
+              "frame": 109,
+              "replace": "0",
+              "depth": "152",
+              "objectID": "119",
+              "morph": "108",
+              "name": "Mc_Wrong_Feed1"
+            },
+            {
+              "frame": 109,
+              "replace": "0",
+              "depth": "158",
+              "objectID": "145",
+              "morph": "108",
+              "name": "Mc_Right_Feed1"
+            },
+            {
+              "frame": 109,
+              "replace": "0",
+              "depth": "169",
+              "objectID": "177",
+              "morph": "108",
+              "name": "Mc_Right_Feed2"
+            },
+            {
+              "frame": 109,
+              "replace": "0",
+              "depth": "181",
+              "objectID": "145",
+              "morph": "108",
+              "name": "Mc_Right_Feed5"
+            },
+            {
+              "frame": 109,
+              "replace": "0",
+              "depth": "192",
+              "objectID": "210",
+              "morph": "108",
+              "name": "Mc_Right_Feed4"
+            },
+            {
+              "frame": 109,
+              "replace": "0",
+              "depth": "201",
+              "objectID": "224",
+              "morph": "108",
+              "name": "Mc_Right_Feed3"
+            }
+          ]
+        }
+      ],
+      "buttonDefinitions": 10,
+      "releaseHandlers": 9,
+      "glossary": [
+        {
+          "term": "Linear function",
+          "script": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineButton2_14/BUTTONCONDACTION on(release).as",
+            "bytes": 130,
+            "sha256": "169f8cafc520f88fdfa78737eccf7e9bb8e6d726a05a25c9b70ce99002cafc7a"
+          },
+          "callsDoHyperLinks": true,
+          "pausesHostAnimation": true
+        },
+        {
+          "term": "Function",
+          "script": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineButton2_15/BUTTONCONDACTION on(release).as",
+            "bytes": 123,
+            "sha256": "bf18a4b6722a58696805f4dd043c6b04a1b1c3cc9a605ef84301790c08bb4cfa"
+          },
+          "callsDoHyperLinks": true,
+          "pausesHostAnimation": true
+        },
+        {
+          "term": "Graph",
+          "script": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineButton2_16/BUTTONCONDACTION on(release).as",
+            "bytes": 120,
+            "sha256": "5f789f785f961f26fba79d3dd3167089fc8251e9da0e0cff9852831b2f890788"
+          },
+          "callsDoHyperLinks": true,
+          "pausesHostAnimation": true
+        },
+        {
+          "term": "Line",
+          "script": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineButton2_17/BUTTONCONDACTION on(release).as",
+            "bytes": 119,
+            "sha256": "18dd0ec3354b991431f7fa2890e1cbe1e65068430596bc4d3f81bbf4a50f9bdb"
+          },
+          "callsDoHyperLinks": true,
+          "pausesHostAnimation": true
+        }
+      ],
+      "behavior": {
+        "kind": "Graph-choice quiz with branch-owned feedback timelines",
+        "mainPauseFrame": 109,
+        "terminalStop": false,
+        "mainEndSemantics": "No stop at173; frame109 gates progress. Feedback can resume parent. Final source wrap is conditional on resolving the quiz; original host behavior unverified.",
+        "correctHandler": "DefineButton2_40 calls disableQuizButton then showRightFeed",
+        "wrongHandler": "DefineButton2_41 sets first/retry WrongFeed then disables quiz and calls showWrongFeed",
+        "wrongFeedback": {
+          "sprite67": {
+            "entryStop": 1,
+            "closeStop": 20,
+            "exit": 29
+          },
+          "sprite98": {
+            "entryStop": 1,
+            "closeStop": 22,
+            "exit": 28
+          },
+          "sprite119": {
+            "entryStop": 1,
+            "closeStop": 23,
+            "exit": 28
+          }
+        },
+        "wrongAttemptExit": "Resets feedback to1, increments quizTryCount, re-enables NMH. At>=2 resets count, clears quizSection and resumes parent.",
+        "correctFeedbackSprites": [
+          145,
+          177,
+          210,
+          224
+        ],
+        "correctFeedbackExit": "Stops, disables quiz, clears quizSection, resets feedback to1 and resumes parent.",
+        "unresolvedHostCalls": [
+          "enableButton",
+          "enableQuizButton",
+          "disableQuizButton",
+          "showRightFeed",
+          "showWrongFeed",
+          "DoHyperLinks"
+        ],
+        "notSelectedForStoppedFamily": "Main pause is a quiz gate, with branching child domains and attempt state; it is not a terminal automatic animation stop."
+      },
+      "streams": [
+        {
+          "frameDomain": "sprite-67",
+          "sampleRate": 22050,
+          "channels": 1,
+          "sourceSampleSize": 1837,
+          "physicalSamplesPerFrame": 1837.5,
+          "latencySeek": 1673,
+          "blockCount": 28,
+          "declaredSamples": 51264,
+          "assembledMp3Bytes": 11570,
+          "assembledMp3Sha256": "770ce8a109fb78c238d218e479047529e8cb39f006f8c70747be376556e2a541",
+          "sourceCoordinateRunCandidates": [
+            {
+              "firstFrame": 2,
+              "lastPositiveFrame": 2,
+              "firstDecodedSample": 1673,
+              "sourceResidualSamples": 1673,
+              "endDecodedSample": 3456
+            },
+            {
+              "firstFrame": 4,
+              "lastPositiveFrame": 29,
+              "firstDecodedSample": 3510,
+              "sourceResidualSamples": -164,
+              "endDecodedSample": 51264
+            }
+          ],
+          "emptyBlocks": [
+            {
+              "frame": 3,
+              "samples": 0,
+              "seek": 0,
+              "samplesBefore": 3456,
+              "targetSample": 3456,
+              "mp3Bytes": 0
+            }
+          ],
+          "absentBlockFrames": [
+            1
+          ],
+          "physicalRateResidualRangeSamples": {
+            "min": -177.5,
+            "max": 1673.0
+          },
+          "binaryXmlSamplesSeekAndPayloadEquivalent": true,
+          "runInterpretation": "Exact source sampleSize1837 groups only; native PCM and scheduling correspondence not measured."
+        },
+        {
+          "frameDomain": "sprite-98",
+          "sampleRate": 22050,
+          "channels": 1,
+          "sourceSampleSize": 1837,
+          "physicalSamplesPerFrame": 1837.5,
+          "latencySeek": 1673,
+          "blockCount": 27,
+          "declaredSamples": 48960,
+          "assembledMp3Bytes": 11050,
+          "assembledMp3Sha256": "f87ec03bf9163390a117b6ad1ea7c47dab7ea7e729219acff0e0617f6100a9f1",
+          "sourceCoordinateRunCandidates": [
+            {
+              "firstFrame": 2,
+              "lastPositiveFrame": 2,
+              "firstDecodedSample": 1673,
+              "sourceResidualSamples": 1673,
+              "endDecodedSample": 3456
+            },
+            {
+              "firstFrame": 4,
+              "lastPositiveFrame": 28,
+              "firstDecodedSample": 3510,
+              "sourceResidualSamples": -164,
+              "endDecodedSample": 48960
+            }
+          ],
+          "emptyBlocks": [
+            {
+              "frame": 3,
+              "samples": 0,
+              "seek": 0,
+              "samplesBefore": 3456,
+              "targetSample": 3456,
+              "mp3Bytes": 0
+            }
+          ],
+          "absentBlockFrames": [
+            1
+          ],
+          "physicalRateResidualRangeSamples": {
+            "min": -177.0,
+            "max": 1673.0
+          },
+          "binaryXmlSamplesSeekAndPayloadEquivalent": true,
+          "runInterpretation": "Exact source sampleSize1837 groups only; native PCM and scheduling correspondence not measured."
+        },
+        {
+          "frameDomain": "sprite-119",
+          "sampleRate": 22050,
+          "channels": 1,
+          "sourceSampleSize": 1837,
+          "physicalSamplesPerFrame": 1837.5,
+          "latencySeek": 1673,
+          "blockCount": 27,
+          "declaredSamples": 48960,
+          "assembledMp3Bytes": 11050,
+          "assembledMp3Sha256": "1c3e481dcaa018b19c5b24eaa05b11d88e7cb75a640acd8a06133ccf3ff0c7e5",
+          "sourceCoordinateRunCandidates": [
+            {
+              "firstFrame": 2,
+              "lastPositiveFrame": 2,
+              "firstDecodedSample": 1673,
+              "sourceResidualSamples": 1673,
+              "endDecodedSample": 3456
+            },
+            {
+              "firstFrame": 4,
+              "lastPositiveFrame": 28,
+              "firstDecodedSample": 3510,
+              "sourceResidualSamples": -164,
+              "endDecodedSample": 48960
+            }
+          ],
+          "emptyBlocks": [
+            {
+              "frame": 3,
+              "samples": 0,
+              "seek": 0,
+              "samplesBefore": 3456,
+              "targetSample": 3456,
+              "mp3Bytes": 0
+            }
+          ],
+          "absentBlockFrames": [
+            1
+          ],
+          "physicalRateResidualRangeSamples": {
+            "min": -177.0,
+            "max": 1673.0
+          },
+          "binaryXmlSamplesSeekAndPayloadEquivalent": true,
+          "runInterpretation": "Exact source sampleSize1837 groups only; native PCM and scheduling correspondence not measured."
+        },
+        {
+          "frameDomain": "sprite-145",
+          "sampleRate": 22050,
+          "channels": 1,
+          "sourceSampleSize": 1837,
+          "physicalSamplesPerFrame": 1837.5,
+          "latencySeek": 1673,
+          "blockCount": 30,
+          "declaredSamples": 52992,
+          "assembledMp3Bytes": 11960,
+          "assembledMp3Sha256": "70f9eeb16521b9fe8c12f243af3c99482c185a39dab38b226eb3801ed204290b",
+          "sourceCoordinateRunCandidates": [
+            {
+              "firstFrame": 2,
+              "lastPositiveFrame": 2,
+              "firstDecodedSample": 1673,
+              "sourceResidualSamples": 1673,
+              "endDecodedSample": 3456
+            },
+            {
+              "firstFrame": 4,
+              "lastPositiveFrame": 30,
+              "firstDecodedSample": 3510,
+              "sourceResidualSamples": -164,
+              "endDecodedSample": 52992
+            }
+          ],
+          "emptyBlocks": [
+            {
+              "frame": 3,
+              "samples": 0,
+              "seek": 0,
+              "samplesBefore": 3456,
+              "targetSample": 3456,
+              "mp3Bytes": 0
+            },
+            {
+              "frame": 31,
+              "samples": 0,
+              "seek": -1953,
+              "samplesBefore": 52992,
+              "targetSample": 51039,
+              "mp3Bytes": 0
+            }
+          ],
+          "absentBlockFrames": [
+            1
+          ],
+          "physicalRateResidualRangeSamples": {
+            "min": -178.0,
+            "max": 1673.0
+          },
+          "binaryXmlSamplesSeekAndPayloadEquivalent": true,
+          "runInterpretation": "Exact source sampleSize1837 groups only; native PCM and scheduling correspondence not measured."
+        },
+        {
+          "frameDomain": "sprite-177",
+          "sampleRate": 22050,
+          "channels": 1,
+          "sourceSampleSize": 1837,
+          "physicalSamplesPerFrame": 1837.5,
+          "latencySeek": 1673,
+          "blockCount": 24,
+          "declaredSamples": 43776,
+          "assembledMp3Bytes": 9880,
+          "assembledMp3Sha256": "105da94835aa6ae9fa8c8f149fdb28167ba1a2de31e842c7997e1a8557dc981d",
+          "sourceCoordinateRunCandidates": [
+            {
+              "firstFrame": 2,
+              "lastPositiveFrame": 2,
+              "firstDecodedSample": 1673,
+              "sourceResidualSamples": 1673,
+              "endDecodedSample": 3456
+            },
+            {
+              "firstFrame": 4,
+              "lastPositiveFrame": 25,
+              "firstDecodedSample": 3510,
+              "sourceResidualSamples": -164,
+              "endDecodedSample": 43776
+            }
+          ],
+          "emptyBlocks": [
+            {
+              "frame": 3,
+              "samples": 0,
+              "seek": 0,
+              "samplesBefore": 3456,
+              "targetSample": 3456,
+              "mp3Bytes": 0
+            }
+          ],
+          "absentBlockFrames": [
+            1
+          ],
+          "physicalRateResidualRangeSamples": {
+            "min": -175.5,
+            "max": 1673.0
+          },
+          "binaryXmlSamplesSeekAndPayloadEquivalent": true,
+          "runInterpretation": "Exact source sampleSize1837 groups only; native PCM and scheduling correspondence not measured."
+        },
+        {
+          "frameDomain": "sprite-210",
+          "sampleRate": 22050,
+          "channels": 1,
+          "sourceSampleSize": 1837,
+          "physicalSamplesPerFrame": 1837.5,
+          "latencySeek": 1673,
+          "blockCount": 27,
+          "declaredSamples": 48960,
+          "assembledMp3Bytes": 11050,
+          "assembledMp3Sha256": "b08449fd7fb0c0288fc90f56473e10d3f10494c1a9747e20481ec7dd50bdfe19",
+          "sourceCoordinateRunCandidates": [
+            {
+              "firstFrame": 1,
+              "lastPositiveFrame": 1,
+              "firstDecodedSample": 1673,
+              "sourceResidualSamples": 1673,
+              "endDecodedSample": 3456
+            },
+            {
+              "firstFrame": 3,
+              "lastPositiveFrame": 27,
+              "firstDecodedSample": 3510,
+              "sourceResidualSamples": -164,
+              "endDecodedSample": 48960
+            }
+          ],
+          "emptyBlocks": [
+            {
+              "frame": 2,
+              "samples": 0,
+              "seek": 0,
+              "samplesBefore": 3456,
+              "targetSample": 3456,
+              "mp3Bytes": 0
+            }
+          ],
+          "absentBlockFrames": [],
+          "physicalRateResidualRangeSamples": {
+            "min": -177.0,
+            "max": 1673.0
+          },
+          "binaryXmlSamplesSeekAndPayloadEquivalent": true,
+          "runInterpretation": "Exact source sampleSize1837 groups only; native PCM and scheduling correspondence not measured."
+        },
+        {
+          "frameDomain": "sprite-224",
+          "sampleRate": 22050,
+          "channels": 1,
+          "sourceSampleSize": 1837,
+          "physicalSamplesPerFrame": 1837.5,
+          "latencySeek": 1673,
+          "blockCount": 30,
+          "declaredSamples": 54720,
+          "assembledMp3Bytes": 12350,
+          "assembledMp3Sha256": "7e9810de5390cdc982dac2795e046343157a6ad9fe4a2ab13e1020b401b2ad11",
+          "sourceCoordinateRunCandidates": [
+            {
+              "firstFrame": 3,
+              "lastPositiveFrame": 3,
+              "firstDecodedSample": 1673,
+              "sourceResidualSamples": 1673,
+              "endDecodedSample": 3456
+            },
+            {
+              "firstFrame": 5,
+              "lastPositiveFrame": 32,
+              "firstDecodedSample": 3510,
+              "sourceResidualSamples": -164,
+              "endDecodedSample": 54720
+            }
+          ],
+          "emptyBlocks": [
+            {
+              "frame": 4,
+              "samples": 0,
+              "seek": 0,
+              "samplesBefore": 3456,
+              "targetSample": 3456,
+              "mp3Bytes": 0
+            }
+          ],
+          "absentBlockFrames": [
+            1,
+            2
+          ],
+          "physicalRateResidualRangeSamples": {
+            "min": -178.5,
+            "max": 1673.0
+          },
+          "binaryXmlSamplesSeekAndPayloadEquivalent": true,
+          "runInterpretation": "Exact source sampleSize1837 groups only; native PCM and scheduling correspondence not measured."
+        },
+        {
+          "frameDomain": "sprite-228",
+          "sampleRate": 22050,
+          "channels": 1,
+          "sourceSampleSize": 1837,
+          "physicalSamplesPerFrame": 1837.5,
+          "latencySeek": 1673,
+          "blockCount": 172,
+          "declaredSamples": 315648,
+          "assembledMp3Bytes": 71240,
+          "assembledMp3Sha256": "487307edf4c7be5f2cb07539bec074e1f3123b9a85728e1737218f88d949693d",
+          "sourceCoordinateRunCandidates": [
+            {
+              "firstFrame": 2,
+              "lastPositiveFrame": 2,
+              "firstDecodedSample": 1673,
+              "sourceResidualSamples": 1673,
+              "endDecodedSample": 3456
+            },
+            {
+              "firstFrame": 4,
+              "lastPositiveFrame": 173,
+              "firstDecodedSample": 3510,
+              "sourceResidualSamples": -164,
+              "endDecodedSample": 315648
+            }
+          ],
+          "emptyBlocks": [
+            {
+              "frame": 3,
+              "samples": 0,
+              "seek": 0,
+              "samplesBefore": 3456,
+              "targetSample": 3456,
+              "mp3Bytes": 0
+            }
+          ],
+          "absentBlockFrames": [
+            1
+          ],
+          "physicalRateResidualRangeSamples": {
+            "min": -249.5,
+            "max": 1673.0
+          },
+          "binaryXmlSamplesSeekAndPayloadEquivalent": true,
+          "runInterpretation": "Exact source sampleSize1837 groups only; native PCM and scheduling correspondence not measured."
+        }
+      ],
+      "externalLessonSaCandidate": [
+        {
+          "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/SA/L7VB02.mp3",
+          "bytes": 113904,
+          "sha256": "9dd46745257b6746e605b2f9e5f04cce13ab1546bd7c5a4f9e101aa9900c5877",
+          "hostTrigger": "unverified catalog candidate; not part of embedded source stream",
+          "language": "not determined by this structural audit"
+        }
+      ],
+      "sourceScripts": [
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineButton2_116/BUTTONCONDACTION on(release).as",
+            "bytes": 141,
+            "sha256": "05d0d4cada21c5184875b38ea202d5eece7fee9a04fa96284868fd2f1338772d"
+          },
+          "source": "on(release){\n   _parent.gotoAndPlay(24);\n   i = 1;\n   while(i <= 4)\n   {\n      eval(\"AnsBtn\" + i).gotoAndStop(1);\n      i++;\n   }\n}\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineButton2_14/BUTTONCONDACTION on(release).as",
+            "bytes": 130,
+            "sha256": "169f8cafc520f88fdfa78737eccf7e9bb8e6d726a05a25c9b70ce99002cafc7a"
+          },
+          "source": "on(release){\n   _global.KeyAttribute = \"Linear function\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineButton2_15/BUTTONCONDACTION on(release).as",
+            "bytes": 123,
+            "sha256": "bf18a4b6722a58696805f4dd043c6b04a1b1c3cc9a605ef84301790c08bb4cfa"
+          },
+          "source": "on(release){\n   _global.KeyAttribute = \"Function\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineButton2_16/BUTTONCONDACTION on(release).as",
+            "bytes": 120,
+            "sha256": "5f789f785f961f26fba79d3dd3167089fc8251e9da0e0cff9852831b2f890788"
+          },
+          "source": "on(release){\n   _global.KeyAttribute = \"Graph\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineButton2_17/BUTTONCONDACTION on(release).as",
+            "bytes": 119,
+            "sha256": "18dd0ec3354b991431f7fa2890e1cbe1e65068430596bc4d3f81bbf4a50f9bdb"
+          },
+          "source": "on(release){\n   _global.KeyAttribute = \"Line\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineButton2_40/BUTTONCONDACTION on(release).as",
+            "bytes": 75,
+            "sha256": "91fddc130bddd9456227b9bbd9139c44ebcf7e51db046176f2f810e5e073db02"
+          },
+          "source": "on(release){\n   _root.disableQuizButton();\n   _root.showRightFeed();\n}\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineButton2_41/BUTTONCONDACTION on(release).as",
+            "bytes": 316,
+            "sha256": "445697acad1c4aeb6137d8f848e4d10b7e42a35b2fdab3165f06e108dfaa528f"
+          },
+          "source": "on(release){\n   if(_global.quizTryCount == 1)\n   {\n      _global.WrongFeed = \"The graph of a linear function is a straight line. \";\n   }\n   else\n   {\n      _global.WrongFeed = \"The graph of a linear function is a straight line. Try again.\";\n   }\n   _root.disableQuizButton();\n   _root.showWrongFeed();\n}\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineButton2_62/BUTTONCONDACTION on(release).as",
+            "bytes": 141,
+            "sha256": "3fe79f85ee919b2d07dc6e3ea32f67fe78ab058772ea4197375d1063d7be8a7c"
+          },
+          "source": "on(release){\n   _parent.gotoAndPlay(21);\n   i = 1;\n   while(i <= 4)\n   {\n      eval(\"AnsBtn\" + i).gotoAndStop(1);\n      i++;\n   }\n}\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineButton2_87/BUTTONCONDACTION on(release).as",
+            "bytes": 141,
+            "sha256": "4057c3c6552def15f1e846f96fbf4df07b5166f278dad82eec3eea19b09b3394"
+          },
+          "source": "on(release){\n   _parent.gotoAndPlay(23);\n   i = 1;\n   while(i <= 4)\n   {\n      eval(\"AnsBtn\" + i).gotoAndStop(1);\n      i++;\n   }\n}\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_118/frame_1/DoAction.as",
+            "bytes": 35,
+            "sha256": "339da0ae92e066910d2af19a170d12305f2780609209769be00e48aa35d91bbc"
+          },
+          "source": "txtFeed.text = _global.WrongFeed;\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_119/frame_1/DoAction.as",
+            "bytes": 34,
+            "sha256": "866009b2529df4394bd88608e50f5beb1bd91ec61e7e70c19da131b917e1803c"
+          },
+          "source": "stop();\n_parent.enableButton();\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_119/frame_23/DoAction.as",
+            "bytes": 9,
+            "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+          },
+          "source": "stop();\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_119/frame_28/DoAction.as",
+            "bytes": 235,
+            "sha256": "806e16c9b17ac8872b22282973f851e58129094f13d83e56f7b0098102b908ce"
+          },
+          "source": "stop();\n_root.enableQuizButton();\nthis.gotoAndStop(1);\n_global.quizTryCount++;\n_parent.NMHBtn.enabled = true;\nif(_global.quizTryCount >= 2)\n{\n   _global.quizTryCount = 0;\n   _global.quizSection = false;\n   _parent.play();\n}\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_145/frame_1/DoAction.as",
+            "bytes": 9,
+            "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+          },
+          "source": "stop();\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_145/frame_1/DoAction_2.as",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "source": ""
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_145/frame_31/DoAction.as",
+            "bytes": 106,
+            "sha256": "5bc24178f890e478f8b0dc8085e80c07a74ae6e4f721ee01452daf12efe70911"
+          },
+          "source": "stop();\n_root.disableQuizButton();\n_global.quizSection = false;\nthis.gotoAndStop(1);\n_parent.play();\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_145/frame_31/DoAction_2.as",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "source": ""
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_177/frame_1/DoAction.as",
+            "bytes": 9,
+            "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+          },
+          "source": "stop();\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_177/frame_1/DoAction_2.as",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "source": ""
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_177/frame_25/DoAction.as",
+            "bytes": 106,
+            "sha256": "5bc24178f890e478f8b0dc8085e80c07a74ae6e4f721ee01452daf12efe70911"
+          },
+          "source": "stop();\n_root.disableQuizButton();\n_global.quizSection = false;\nthis.gotoAndStop(1);\n_parent.play();\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_177/frame_25/DoAction_2.as",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "source": ""
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_210/frame_1/DoAction.as",
+            "bytes": 9,
+            "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+          },
+          "source": "stop();\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_210/frame_1/DoAction_2.as",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "source": ""
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_210/frame_27/DoAction.as",
+            "bytes": 106,
+            "sha256": "5bc24178f890e478f8b0dc8085e80c07a74ae6e4f721ee01452daf12efe70911"
+          },
+          "source": "stop();\n_root.disableQuizButton();\n_global.quizSection = false;\nthis.gotoAndStop(1);\n_parent.play();\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_210/frame_27/DoAction_2.as",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "source": ""
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_224/frame_1/DoAction.as",
+            "bytes": 9,
+            "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+          },
+          "source": "stop();\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_224/frame_1/DoAction_2.as",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "source": ""
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_224/frame_32/DoAction.as",
+            "bytes": 106,
+            "sha256": "5bc24178f890e478f8b0dc8085e80c07a74ae6e4f721ee01452daf12efe70911"
+          },
+          "source": "stop();\n_root.disableQuizButton();\n_global.quizSection = false;\nthis.gotoAndStop(1);\n_parent.play();\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_224/frame_32/DoAction_2.as",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "source": ""
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_228/frame_109/DoAction.as",
+            "bytes": 65,
+            "sha256": "1c5ee973c2576fdd6e33a3a2cf1acd334b9fddb906b45d7b2e4d0a7874fd546f"
+          },
+          "source": "stop();\n_global.quizSection = true;\n_global.quizTryCount = 0;\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_66/frame_1/DoAction.as",
+            "bytes": 35,
+            "sha256": "339da0ae92e066910d2af19a170d12305f2780609209769be00e48aa35d91bbc"
+          },
+          "source": "txtFeed.text = _global.WrongFeed;\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_67/frame_1/DoAction.as",
+            "bytes": 34,
+            "sha256": "866009b2529df4394bd88608e50f5beb1bd91ec61e7e70c19da131b917e1803c"
+          },
+          "source": "stop();\n_parent.enableButton();\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_67/frame_20/DoAction.as",
+            "bytes": 9,
+            "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+          },
+          "source": "stop();\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_67/frame_29/DoAction.as",
+            "bytes": 235,
+            "sha256": "806e16c9b17ac8872b22282973f851e58129094f13d83e56f7b0098102b908ce"
+          },
+          "source": "stop();\n_root.enableQuizButton();\nthis.gotoAndStop(1);\n_global.quizTryCount++;\n_parent.NMHBtn.enabled = true;\nif(_global.quizTryCount >= 2)\n{\n   _global.quizTryCount = 0;\n   _global.quizSection = false;\n   _parent.play();\n}\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_89/frame_1/DoAction.as",
+            "bytes": 35,
+            "sha256": "339da0ae92e066910d2af19a170d12305f2780609209769be00e48aa35d91bbc"
+          },
+          "source": "txtFeed.text = _global.WrongFeed;\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_98/frame_1/DoAction.as",
+            "bytes": 34,
+            "sha256": "866009b2529df4394bd88608e50f5beb1bd91ec61e7e70c19da131b917e1803c"
+          },
+          "source": "stop();\n_parent.enableButton();\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_98/frame_22/DoAction.as",
+            "bytes": 9,
+            "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+          },
+          "source": "stop();\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/DefineSprite_98/frame_28/DoAction.as",
+            "bytes": 235,
+            "sha256": "806e16c9b17ac8872b22282973f851e58129094f13d83e56f7b0098102b908ce"
+          },
+          "source": "stop();\n_root.enableQuizButton();\nthis.gotoAndStop(1);\n_global.quizTryCount++;\n_parent.NMHBtn.enabled = true;\nif(_global.quizTryCount >= 2)\n{\n   _global.quizTryCount = 0;\n   _global.quizSection = false;\n   _parent.play();\n}\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/frame_1/DoAction.as",
+            "bytes": 63,
+            "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19"
+          },
+          "source": "_level0.InternalPreloader.gotoAndPlay(\"jump_check\");\nstop();\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/scripts/frame_6/DoAction.as",
+            "bytes": 9,
+            "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+          },
+          "source": "stop();\n"
+        }
+      ],
+      "sourceTexts": [
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/102.txt",
+            "bytes": 6,
+            "sha256": "2a153d72d1aab16ba6d8eeb168015d352598c9ab432701d052fd294b6aa75c9f"
+          },
+          "source": "OH! NO"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/103.txt",
+            "bytes": 6,
+            "sha256": "2a153d72d1aab16ba6d8eeb168015d352598c9ab432701d052fd294b6aa75c9f"
+          },
+          "source": "OH! NO"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/117.txt",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "source": ""
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/12.txt",
+            "bytes": 289,
+            "sha256": "0a87abc6a9df30cc692892802755a004beb989f42cab3cc7b749ba5d64cd4a9f"
+          },
+          "source": "A\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\nlinear function\n--- RECORDSEPARATOR ---\n is a \n--- RECORDSEPARATOR ---\nfunction\n--- RECORDSEPARATOR ---\n whose \n--- RECORDSEPARATOR ---\ngraph\n--- RECORDSEPARATOR ---\n is a straight \n--- RECORDSEPARATOR ---\nline\n--- RECORDSEPARATOR ---\n. "
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/134.txt",
+            "bytes": 11,
+            "sha256": "6c1d7253efc00b37fb220871d54de6b843cdd0241ab65f8de25f4387aad99f10"
+          },
+          "source": "YOU GOT IT!"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/135.txt",
+            "bytes": 11,
+            "sha256": "6c1d7253efc00b37fb220871d54de6b843cdd0241ab65f8de25f4387aad99f10"
+          },
+          "source": "YOU GOT IT!"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/174.txt",
+            "bytes": 10,
+            "sha256": "1e5b9c4d7c7853fae9d842e99ecbbac4aabe8f620e6c26de706fa569efe7fa07"
+          },
+          "source": "Excellent!"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/175.txt",
+            "bytes": 10,
+            "sha256": "1e5b9c4d7c7853fae9d842e99ecbbac4aabe8f620e6c26de706fa569efe7fa07"
+          },
+          "source": "Excellent!"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/18.txt",
+            "bytes": 57,
+            "sha256": "6dffd7421a67b52eabe21376095c3614c0e1054dd16e23f0e451e33eb7fb7a65"
+          },
+          "source": "Which of the following is the graph of a linear function?"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/20.txt",
+            "bytes": 1,
+            "sha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          },
+          "source": "2"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/204.txt",
+            "bytes": 8,
+            "sha256": "67f68a72462bca9b1642747164bcc1fac7a3d5340059f4ce99dc77ee9829bb6c"
+          },
+          "source": "Awesome!"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/205.txt",
+            "bytes": 8,
+            "sha256": "67f68a72462bca9b1642747164bcc1fac7a3d5340059f4ce99dc77ee9829bb6c"
+          },
+          "source": "Awesome!"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/206.txt",
+            "bytes": 8,
+            "sha256": "67f68a72462bca9b1642747164bcc1fac7a3d5340059f4ce99dc77ee9829bb6c"
+          },
+          "source": "Awesome!"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/21.txt",
+            "bytes": 1,
+            "sha256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+          },
+          "source": "4"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/217.txt",
+            "bytes": 10,
+            "sha256": "1e5b9c4d7c7853fae9d842e99ecbbac4aabe8f620e6c26de706fa569efe7fa07"
+          },
+          "source": "Excellent!"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/218.txt",
+            "bytes": 10,
+            "sha256": "1e5b9c4d7c7853fae9d842e99ecbbac4aabe8f620e6c26de706fa569efe7fa07"
+          },
+          "source": "Excellent!"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/22.txt",
+            "bytes": 1,
+            "sha256": "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
+          },
+          "source": "6"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/222.txt",
+            "bytes": 10,
+            "sha256": "1e5b9c4d7c7853fae9d842e99ecbbac4aabe8f620e6c26de706fa569efe7fa07"
+          },
+          "source": "Excellent!"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/23.txt",
+            "bytes": 2,
+            "sha256": "03b26944890929ff751653acb2f2af795cee38f937f379f52ed654a68ce91216"
+          },
+          "source": "-6"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/24.txt",
+            "bytes": 2,
+            "sha256": "e5e0093f285a4fb94c3fcc2ad7fd04edd10d429ccda87a9aa5e4718efadf182e"
+          },
+          "source": "-4"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/25.txt",
+            "bytes": 2,
+            "sha256": "cf3bae39dd692048a8bf961182e6a34dfd323eeb0748e162eaf055107f1cb873"
+          },
+          "source": "-2"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/26.txt",
+            "bytes": 1,
+            "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881"
+          },
+          "source": "x"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/27.txt",
+            "bytes": 1,
+            "sha256": "a1fce4363854ff888cff4b8e7875d600c2682390412a8cf79b37d0b11148b0fa"
+          },
+          "source": "y"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/30.txt",
+            "bytes": 1,
+            "sha256": "3f39d5c348e5b79d06e842c114e6cc571583bbf44e4b0ebfda1a01ec05745d43"
+          },
+          "source": "D"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/32.txt",
+            "bytes": 1,
+            "sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d"
+          },
+          "source": "C"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/35.txt",
+            "bytes": 1,
+            "sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd"
+          },
+          "source": "A"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/38.txt",
+            "bytes": 1,
+            "sha256": "df7e70e5021544f4834bbee64a9e3789febc4be81470df629cad6ddb03320a5c"
+          },
+          "source": "B"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/4.txt",
+            "bytes": 14,
+            "sha256": "d2bbc0cc288de5262094fc2792913610a084a1bd292d015172a5dc79c44d744e"
+          },
+          "source": "Need More Help"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/46.txt",
+            "bytes": 10,
+            "sha256": "0ba6233cde3c08d3952795942758862cc9ce4a322bb27b8659bf27961addc1bf"
+          },
+          "source": "Incorrect!"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/47.txt",
+            "bytes": 10,
+            "sha256": "0ba6233cde3c08d3952795942758862cc9ce4a322bb27b8659bf27961addc1bf"
+          },
+          "source": "Incorrect!"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/5.txt",
+            "bytes": 14,
+            "sha256": "d2bbc0cc288de5262094fc2792913610a084a1bd292d015172a5dc79c44d744e"
+          },
+          "source": "Need More Help"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/57.txt",
+            "bytes": 5,
+            "sha256": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed"
+          },
+          "source": "Close"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/65.txt",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "source": ""
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/73.txt",
+            "bytes": 17,
+            "sha256": "bcdb0e8b7179fa114914e21ee9c044ef4e896e61de61ed18dc1376c701c3bab8"
+          },
+          "source": "That's incorrect!"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec/texts/88.txt",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "source": ""
+        }
+      ],
+      "editableTextDefinitions": [
+        {
+          "objectID": "65",
+          "wordWrap": "1",
+          "multiLine": "1",
+          "password": "0",
+          "readOnly": "1",
+          "autoSize": "0",
+          "hasLayout": "1",
+          "notSelectable": "1",
+          "hasBorder": "0",
+          "isHTML": "0",
+          "useOutlines": "0",
+          "fontRef": "64",
+          "fontHeight": "300",
+          "align": "0",
+          "leftMargin": "0",
+          "rightMargin": "0",
+          "indent": "0",
+          "leading": "40",
+          "variableName": ""
+        },
+        {
+          "objectID": "88",
+          "wordWrap": "1",
+          "multiLine": "1",
+          "password": "0",
+          "readOnly": "1",
+          "autoSize": "0",
+          "hasLayout": "1",
+          "notSelectable": "1",
+          "hasBorder": "0",
+          "isHTML": "0",
+          "useOutlines": "0",
+          "fontRef": "64",
+          "fontHeight": "300",
+          "align": "0",
+          "leftMargin": "0",
+          "rightMargin": "0",
+          "indent": "0",
+          "leading": "40",
+          "variableName": ""
+        },
+        {
+          "objectID": "117",
+          "wordWrap": "1",
+          "multiLine": "1",
+          "password": "0",
+          "readOnly": "1",
+          "autoSize": "0",
+          "hasLayout": "1",
+          "notSelectable": "1",
+          "hasBorder": "0",
+          "isHTML": "0",
+          "useOutlines": "0",
+          "fontRef": "64",
+          "fontHeight": "300",
+          "align": "0",
+          "leftMargin": "0",
+          "rightMargin": "0",
+          "indent": "0",
+          "leading": "40",
+          "variableName": ""
+        }
+      ],
+      "sourceEvidence": [
+        {
+          "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/movie.xml",
+          "bytes": 1839834,
+          "sha256": "7354410176fc4927c5c21fffcd1d6038f4fe836eb0340847417917d2b287e804"
+        },
+        {
+          "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/extraction-receipt-v1.json",
+          "bytes": 917,
+          "sha256": "8d20b74b48d0597a161e6c5445568f08ae8b046f8367e166991fcd8a2b144be5"
+        },
+        {
+          "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/swfmill-v1.txt",
+          "bytes": 165,
+          "sha256": "24655ec7a0bdaece80ffb833c21a68ecc52431773a2a77a45e021a6759e85151"
+        },
+        {
+          "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p007/ffdec-assets-v1.txt",
+          "bytes": 10337,
+          "sha256": "c6065be84eeab5f2a4810043297d4ddd75c6968abf2cddd307fdf8f495ea0bfb"
+        }
+      ],
+      "originalBytesUnchangedAtReadback": true,
+      "complexityInference": "behavior-heavy based on exact scripts; no product lane/batch selected",
+      "clockPlanAccepted": false,
+      "nativePcmMeasured": false,
+      "onscreenVisibilityMeasured": false,
+      "originalRuntimeMeasured": false,
+      "productOrRegistryModified": false,
+      "newCurrentJsPlacements": 0
+    },
+    {
+      "identity": {
+        "animationId": "shared-alg001-l07-p009",
+        "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/VB/L7VB04.swf",
+        "bytes": 219898,
+        "sha256": "2c0858e617f4bf2a26d412523417f3a5cbee78e378de35847fe9e9d0555003b1",
+        "flaPresent": false,
+        "readOnlyCopy": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/L7VB04.swf",
+        "canonicalMigrationPresent": false,
+        "alternativeWorkspaceMatches": [],
+        "currentRegistryMembership": [],
+        "catalog": {
+          "animationId": "shared-alg001-l07-p009",
+          "stableLessonKey": "shared-alg001-l07",
+          "reference": "VB/L7VB04.swf",
+          "titleEnglish": "Linear Equation",
+          "titleSpanish": "Ecuaci\u00f3n lineal",
+          "sourceSha256": "2c0858e617f4bf2a26d412523417f3a5cbee78e378de35847fe9e9d0555003b1",
+          "sourceBytes": 219898,
+          "viewPath": "G6-G8-shared/ALG001/L7/VB/L7VB04.swf",
+          "slideSpace": true,
+          "audioStatus": "candidate-index-only",
+          "audioCueCandidates": [
+            {
+              "acceptance": "candidate-index-only",
+              "binding": "lesson-SA",
+              "bindingKind": "lesson-SA-candidate",
+              "bytes": 366912,
+              "classificationStatus": "resolved-canonical",
+              "durationMs": null,
+              "frameDomain": null,
+              "hostTrigger": "pending-authorized-original-runtime",
+              "id": "shared-alg001-l07-p009-audio-001",
+              "language": "undetermined",
+              "replayBehavior": "pending-authorized-original-runtime",
+              "required": null,
+              "sha256": "63d4939b89bb53f4940ed07e11548f91dae5b7a279c3c163055d562978d90067",
+              "source": "HELP_COURSES/ALG001/L7/SA/L7VB04.mp3",
+              "sourcePath": "HELP_COURSES/ALG001/L7/SA/L7VB04.mp3",
+              "sourceRootKind": "canonical",
+              "startSemantics": "pending-authorized-original-runtime",
+              "stopOrCompleteSemantics": "pending-authorized-original-runtime",
+              "viewPath": "G6-G8-shared/ALG001/L7/SA/L7VB04.mp3"
+            }
+          ]
+        }
+      },
+      "currentRegistryMembership": [],
+      "sourceRoot": {
+        "fps": 12,
+        "frames": 10,
+        "entryFrame": 6
+      },
+      "main": {
+        "objectId": 80,
+        "frames": 604,
+        "actionTagFrames": [
+          1,
+          600
+        ],
+        "namedPlacements": [
+          {
+            "frame": 40,
+            "replace": "0",
+            "depth": "15",
+            "objectID": "8",
+            "morph": "39",
+            "name": "NMHBtn"
+          },
+          {
+            "frame": 600,
+            "replace": "0",
+            "depth": "18",
+            "objectID": "57",
+            "morph": "599",
+            "name": "IP2_txt"
+          },
+          {
+            "frame": 600,
+            "replace": "0",
+            "depth": "19",
+            "objectID": "58",
+            "morph": "599",
+            "name": "IP3_txt"
+          },
+          {
+            "frame": 600,
+            "replace": "0",
+            "depth": "20",
+            "objectID": "59",
+            "morph": "599",
+            "name": "IP1_txt"
+          },
+          {
+            "frame": 600,
+            "replace": "0",
+            "depth": "21",
+            "objectID": "60",
+            "morph": "599",
+            "name": "OP_txt"
+          },
+          {
+            "frame": 600,
+            "replace": "0",
+            "depth": "22",
+            "objectID": "64",
+            "morph": "599",
+            "name": "New_fn"
+          },
+          {
+            "frame": 600,
+            "replace": "0",
+            "depth": "37",
+            "objectID": "7",
+            "morph": "599",
+            "name": "Entry_Btn"
+          },
+          {
+            "frame": 600,
+            "replace": "0",
+            "depth": "43",
+            "objectID": "79",
+            "morph": "599",
+            "name": "Hint"
+          }
+        ]
+      },
+      "allTimelines": [
+        {
+          "objectId": 79,
+          "frames": 19,
+          "actionTagFrames": [
+            1,
+            19
+          ],
+          "namedPlacements": [
+            {
+              "frame": 1,
+              "replace": "0",
+              "depth": "1",
+              "objectID": "75",
+              "name": "BtnClose"
+            }
+          ]
+        },
+        {
+          "objectId": 80,
+          "frames": 604,
+          "actionTagFrames": [
+            1,
+            600
+          ],
+          "namedPlacements": [
+            {
+              "frame": 40,
+              "replace": "0",
+              "depth": "15",
+              "objectID": "8",
+              "morph": "39",
+              "name": "NMHBtn"
+            },
+            {
+              "frame": 600,
+              "replace": "0",
+              "depth": "18",
+              "objectID": "57",
+              "morph": "599",
+              "name": "IP2_txt"
+            },
+            {
+              "frame": 600,
+              "replace": "0",
+              "depth": "19",
+              "objectID": "58",
+              "morph": "599",
+              "name": "IP3_txt"
+            },
+            {
+              "frame": 600,
+              "replace": "0",
+              "depth": "20",
+              "objectID": "59",
+              "morph": "599",
+              "name": "IP1_txt"
+            },
+            {
+              "frame": 600,
+              "replace": "0",
+              "depth": "21",
+              "objectID": "60",
+              "morph": "599",
+              "name": "OP_txt"
+            },
+            {
+              "frame": 600,
+              "replace": "0",
+              "depth": "22",
+              "objectID": "64",
+              "morph": "599",
+              "name": "New_fn"
+            },
+            {
+              "frame": 600,
+              "replace": "0",
+              "depth": "37",
+              "objectID": "7",
+              "morph": "599",
+              "name": "Entry_Btn"
+            },
+            {
+              "frame": 600,
+              "replace": "0",
+              "depth": "43",
+              "objectID": "79",
+              "morph": "599",
+              "name": "Hint"
+            }
+          ]
+        }
+      ],
+      "buttonDefinitions": 9,
+      "releaseHandlers": 8,
+      "glossary": [
+        {
+          "term": "Input",
+          "script": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/scripts/DefineButton2_14/BUTTONCONDACTION on(release).as",
+            "bytes": 120,
+            "sha256": "fc18c1b076872ddbff22a6de05a0929210cfcb8d065a27a37c654e3eb33c496a"
+          },
+          "callsDoHyperLinks": true,
+          "pausesHostAnimation": true
+        },
+        {
+          "term": "Output",
+          "script": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/scripts/DefineButton2_15/BUTTONCONDACTION on(release).as",
+            "bytes": 121,
+            "sha256": "573534c3578af9119df87b9a8e2c4751ca88e451a2e1dde1896a9ad77acd746e"
+          },
+          "callsDoHyperLinks": true,
+          "pausesHostAnimation": true
+        },
+        {
+          "term": "Slope",
+          "script": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/scripts/DefineButton2_43/BUTTONCONDACTION on(release).as",
+            "bytes": 120,
+            "sha256": "55908f1d7494dedf091df20277da98bb4118e2160c2b2d99e3a2a1d7652ac4b6"
+          },
+          "callsDoHyperLinks": true,
+          "pausesHostAnimation": true
+        },
+        {
+          "term": "Y-intercept",
+          "script": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/scripts/DefineButton2_44/BUTTONCONDACTION on(release).as",
+            "bytes": 126,
+            "sha256": "b543a02417fccbf69a3b17e950fe208f6cf3f86b32b9eb200a1c4f56bee3c4c1"
+          },
+          "callsDoHyperLinks": true,
+          "pausesHostAnimation": true
+        },
+        {
+          "term": "Value",
+          "script": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/scripts/DefineButton2_45/BUTTONCONDACTION on(release).as",
+            "bytes": 120,
+            "sha256": "b68cfecf6b594886cdc6d73c8c530ed1716f3be74501a3b16de93613da2c3254"
+          },
+          "callsDoHyperLinks": true,
+          "pausesHostAnimation": true
+        }
+      ],
+      "behavior": {
+        "kind": "Editable linear-equation calculator",
+        "mainPauseFrame": 600,
+        "terminalStop": false,
+        "mainEndSemantics": "Source has604frames but stops600 to expose form; no terminalstop604. Normal source interaction stays at the form.",
+        "editableInputNames": [
+          "IP1_txt",
+          "IP2_txt",
+          "IP3_txt"
+        ],
+        "readOnlyOutputName": "OP_txt",
+        "inputRestrictionSource": "0-9 / . \\-",
+        "entryHandler": "Disable Entry_Btn; read x,slope,intercept. Empty field clears output and shows Hint. Otherwise slash fractions use parseFloat numerator/denominator; assign slope*x+Number(intercept), then enable New_fn.",
+        "legacyNumericCheck": "Literal == NaN comparison in source is retained as audit evidence; no numeric semantics repair or acceptance claimed.",
+        "newFunctionHandler": "Disable New_fn, clear three inputs/output, enable Entry_Btn.",
+        "hintCloseHandler": "Enable Entry_Btn/New_fn and hide Hint.",
+        "feedbackSprite79": {
+          "entryStop": 1,
+          "terminalStop": 19,
+          "audioDomain": "sprite-79"
+        },
+        "unresolvedHostCalls": [
+          "DoHyperLinks"
+        ],
+        "notSelectedForStoppedFamily": "Three editable input roles, formula evaluation, empty-input feedback, reset and a separate hint audio domain require their own behavior adapter."
+      },
+      "streams": [
+        {
+          "frameDomain": "sprite-79",
+          "sampleRate": 22050,
+          "channels": 1,
+          "sourceSampleSize": 1837,
+          "physicalSamplesPerFrame": 1837.5,
+          "latencySeek": 1673,
+          "blockCount": 18,
+          "declaredSamples": 32832,
+          "assembledMp3Bytes": 7410,
+          "assembledMp3Sha256": "399b925dc7b2a06027954e8ef45f8c739a1a8d601fa41b121846bdc5b367a39b",
+          "sourceCoordinateRunCandidates": [
+            {
+              "firstFrame": 2,
+              "lastPositiveFrame": 2,
+              "firstDecodedSample": 1673,
+              "sourceResidualSamples": 1673,
+              "endDecodedSample": 3456
+            },
+            {
+              "firstFrame": 4,
+              "lastPositiveFrame": 19,
+              "firstDecodedSample": 3510,
+              "sourceResidualSamples": -164,
+              "endDecodedSample": 32832
+            }
+          ],
+          "emptyBlocks": [
+            {
+              "frame": 3,
+              "samples": 0,
+              "seek": 0,
+              "samplesBefore": 3456,
+              "targetSample": 3456,
+              "mp3Bytes": 0
+            }
+          ],
+          "absentBlockFrames": [
+            1
+          ],
+          "physicalRateResidualRangeSamples": {
+            "min": -172.5,
+            "max": 1673.0
+          },
+          "binaryXmlSamplesSeekAndPayloadEquivalent": true,
+          "runInterpretation": "Exact source sampleSize1837 groups only; native PCM and scheduling correspondence not measured."
+        },
+        {
+          "frameDomain": "sprite-80",
+          "sampleRate": 22050,
+          "channels": 1,
+          "sourceSampleSize": 1837,
+          "physicalSamplesPerFrame": 1837.5,
+          "latencySeek": 1673,
+          "blockCount": 603,
+          "declaredSamples": 1107072,
+          "assembledMp3Bytes": 249860,
+          "assembledMp3Sha256": "6019c14d3f23d01fbe7e98f401d59fdc419b2391398627c0f3ed4b7c2db2316e",
+          "sourceCoordinateRunCandidates": [
+            {
+              "firstFrame": 2,
+              "lastPositiveFrame": 2,
+              "firstDecodedSample": 1673,
+              "sourceResidualSamples": 1673,
+              "endDecodedSample": 3456
+            },
+            {
+              "firstFrame": 4,
+              "lastPositiveFrame": 604,
+              "firstDecodedSample": 3510,
+              "sourceResidualSamples": -164,
+              "endDecodedSample": 1107072
+            }
+          ],
+          "emptyBlocks": [
+            {
+              "frame": 3,
+              "samples": 0,
+              "seek": 0,
+              "samplesBefore": 3456,
+              "targetSample": 3456,
+              "mp3Bytes": 0
+            }
+          ],
+          "absentBlockFrames": [
+            1
+          ],
+          "physicalRateResidualRangeSamples": {
+            "min": -465.0,
+            "max": 1673.0
+          },
+          "binaryXmlSamplesSeekAndPayloadEquivalent": true,
+          "runInterpretation": "Exact source sampleSize1837 groups only; native PCM and scheduling correspondence not measured."
+        }
+      ],
+      "externalLessonSaCandidate": [
+        {
+          "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/SA/L7VB04.mp3",
+          "bytes": 366912,
+          "sha256": "63d4939b89bb53f4940ed07e11548f91dae5b7a279c3c163055d562978d90067",
+          "hostTrigger": "unverified catalog candidate; not part of embedded source stream",
+          "language": "not determined by this structural audit"
+        }
+      ],
+      "sourceScripts": [
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/scripts/DefineButton2_14/BUTTONCONDACTION on(release).as",
+            "bytes": 120,
+            "sha256": "fc18c1b076872ddbff22a6de05a0929210cfcb8d065a27a37c654e3eb33c496a"
+          },
+          "source": "on(release){\n   _global.KeyAttribute = \"Input\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/scripts/DefineButton2_15/BUTTONCONDACTION on(release).as",
+            "bytes": 121,
+            "sha256": "573534c3578af9119df87b9a8e2c4751ca88e451a2e1dde1896a9ad77acd746e"
+          },
+          "source": "on(release){\n   _global.KeyAttribute = \"Output\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/scripts/DefineButton2_43/BUTTONCONDACTION on(release).as",
+            "bytes": 120,
+            "sha256": "55908f1d7494dedf091df20277da98bb4118e2160c2b2d99e3a2a1d7652ac4b6"
+          },
+          "source": "on(release){\n   _global.KeyAttribute = \"Slope\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/scripts/DefineButton2_44/BUTTONCONDACTION on(release).as",
+            "bytes": 126,
+            "sha256": "b543a02417fccbf69a3b17e950fe208f6cf3f86b32b9eb200a1c4f56bee3c4c1"
+          },
+          "source": "on(release){\n   _global.KeyAttribute = \"Y-intercept\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/scripts/DefineButton2_45/BUTTONCONDACTION on(release).as",
+            "bytes": 120,
+            "sha256": "b68cfecf6b594886cdc6d73c8c530ed1716f3be74501a3b16de93613da2c3254"
+          },
+          "source": "on(release){\n   _global.KeyAttribute = \"Value\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/scripts/DefineButton2_64/BUTTONCONDACTION on(release).as",
+            "bytes": 166,
+            "sha256": "d396b9d8949e9179af367880a9dfa80e3024c38d7d24020c41fac02346c874a9"
+          },
+          "source": "on(release){\n   New_fn.enabled = false;\n   IP1_txt.text = \"\";\n   IP2_txt.text = \"\";\n   IP3_txt.text = \"\";\n   OP_txt.text = \"\";\n   Entry_Btn.enabled = true;\n}\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/scripts/DefineButton2_75/BUTTONCONDACTION on(release).as",
+            "bytes": 117,
+            "sha256": "61336d59f4badf6ad0d8344dd32fbc892acfde63cf93ebbd803b98746cfde308"
+          },
+          "source": "on(release){\n   _parent.Entry_Btn.enabled = true;\n   _parent.New_fn.enabled = true;\n   this._visible = false;\n}\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/scripts/DefineButton2_7_need/BUTTONCONDACTION on(release).as",
+            "bytes": 958,
+            "sha256": "afa89722e1fa2fec4c7d35564b076b95f5a8aa9f8afa55d192b63ddfa410fc23"
+          },
+          "source": "on(release){\n   Entry_Btn.enabled = false;\n   Xinput = IP1_txt.text;\n   Yinput = IP2_txt.text;\n   AddCon = IP3_txt.text;\n   if(Xinput == \"\" || Yinput == \"\" || AddCon == \"\")\n   {\n      OP_txt.text = \"\";\n      Hint._visible = true;\n   }\n   else\n   {\n      if(Xinput.indexOf(\"/\") != -1)\n      {\n         splX = Xinput.split(\"/\");\n         Xinput = parseFloat(splX[0]) / parseFloat(splX[1]);\n      }\n      if(Yinput.indexOf(\"/\") != -1)\n      {\n         splY = Yinput.split(\"/\");\n         Yinput = parseFloat(splY[0]) / parseFloat(splY[1]);\n      }\n      if(AddCon.indexOf(\"/\") != -1)\n      {\n         splAddcon = AddCon.split(\"/\");\n         AddCon = parseFloat(splAddcon[0]) / parseFloat(splAddcon[1]);\n      }\n      if(Yinput * Xinput + Number(AddCon) == NaN)\n      {\n         OP_txt.text = \"\";\n      }\n      else\n      {\n         OP_txt.text = Yinput * Xinput + Number(AddCon);\n      }\n      New_fn.enabled = true;\n   }\n}\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/scripts/DefineSprite_79/frame_1/DoAction.as",
+            "bytes": 44,
+            "sha256": "225ce70da8c7289a00833009b73b66f22586f234d40bfa2a68cfc9d8609551ae"
+          },
+          "source": "stop();\ntxtFeed.text = _global.WrongFeed;\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/scripts/DefineSprite_79/frame_19/DoAction.as",
+            "bytes": 9,
+            "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+          },
+          "source": "stop();\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/scripts/DefineSprite_80/frame_1/DoAction.as",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "source": ""
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/scripts/DefineSprite_80/frame_600/DoAction.as",
+            "bytes": 167,
+            "sha256": "d92507b7b9160df4d79e1fb574b2260e8e74e06ee7408ebdab6b3dcb2a86bd92"
+          },
+          "source": "stop();\n_global.quizSection = true;\nHint._visible = false;\nIP1_txt.restrict = \"0-9 / . \\\\-\";\nIP2_txt.restrict = \"0-9 / . \\\\-\";\nIP3_txt.restrict = \"0-9 / . \\\\-\";\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/scripts/frame_1/DoAction.as",
+            "bytes": 63,
+            "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19"
+          },
+          "source": "_level0.InternalPreloader.gotoAndPlay(\"jump_check\");\nstop();\n"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/scripts/frame_6/DoAction.as",
+            "bytes": 9,
+            "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+          },
+          "source": "stop();\n"
+        }
+      ],
+      "sourceTexts": [
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/12.txt",
+            "bytes": 136,
+            "sha256": "df1d42d11d448e69637ec9a9013e58b18f96120755c6636685772188152fd34d"
+          },
+          "source": "Every \n--- RECORDSEPARATOR ---\ninput\n--- RECORDSEPARATOR ---\n has exactly one \n--- RECORDSEPARATOR ---\noutput\n--- RECORDSEPARATOR ---\n. "
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/18.txt",
+            "bytes": 30,
+            "sha256": "cd0b08cfc6bbe397431c9ac571f4892e137afbf3f510e1da21243bb254581458"
+          },
+          "source": "x = [     ]                   "
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/20.txt",
+            "bytes": 16,
+            "sha256": "e47f34c0303e48bef5eaba84402a40cd52f91aa9e462f1da8a58bcc7b0c10b54"
+          },
+          "source": "y = [     ]     "
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/21.txt",
+            "bytes": 2,
+            "sha256": "e41a1433ee741e8723617893ec254c744c4d8c87afeed6ace2130553d1ceb28f"
+          },
+          "source": "y="
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/23.txt",
+            "bytes": 20,
+            "sha256": "c6d128185a7d7c1cc80d2354afef15592645b92bc3ca6db4eb2004791d0387e4"
+          },
+          "source": "[ Set new function ]"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/25.txt",
+            "bytes": 2,
+            "sha256": "1c7f3fd2bf873fd679ae3a4d30e7857174101cddce1bfa73848f5f10ccc533b2"
+          },
+          "source": "x+"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/26.txt",
+            "bytes": 3,
+            "sha256": "5132a20379415fe98f3a0700afc2a901e9b01af839b5454a8659152f0782c223"
+          },
+          "source": "3/4"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/27.txt",
+            "bytes": 8,
+            "sha256": "f48c4092ff3392e4eb906f8832c1630efa65e3b99c4f7283c213e57ec0474366"
+          },
+          "source": "\u2013 2   "
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/28.txt",
+            "bytes": 6,
+            "sha256": "7e9c6279990e847d647e0cf11c392a54ebe4cc4ecab839ae9355e473df98687f"
+          },
+          "source": "Slope "
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/29.txt",
+            "bytes": 11,
+            "sha256": "e24930af3a114dc39680781fe19d76161b98a1c97299c8721c21b57b8f60819d"
+          },
+          "source": "y-intercept"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/34.txt",
+            "bytes": 1,
+            "sha256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+          },
+          "source": "4"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/35.txt",
+            "bytes": 1,
+            "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+          },
+          "source": "1"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/36.txt",
+            "bytes": 1,
+            "sha256": "a1fce4363854ff888cff4b8e7875d600c2682390412a8cf79b37d0b11148b0fa"
+          },
+          "source": "y"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/37.txt",
+            "bytes": 1,
+            "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+          },
+          "source": "1"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/38.txt",
+            "bytes": 1,
+            "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881"
+          },
+          "source": "x"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/39.txt",
+            "bytes": 1,
+            "sha256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+          },
+          "source": "4"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/4.txt",
+            "bytes": 5,
+            "sha256": "dc8659db6d416dc32fcad510cc921af3c7eaf1176ddedfbe050ecf708fbac087"
+          },
+          "source": "Enter"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/40.txt",
+            "bytes": 1,
+            "sha256": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3"
+          },
+          "source": "8"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/42.txt",
+            "bytes": 232,
+            "sha256": "45d25dfa8c34c330f2a41455d810e8f07993dec134c47dcf1d3498083b1a9734"
+          },
+          "source": "Click input, \n--- RECORDSEPARATOR ---\nslope\n--- RECORDSEPARATOR ---\n, and \n--- RECORDSEPARATOR ---\ny-intercept\n--- RECORDSEPARATOR ---\n, type a new \n--- RECORDSEPARATOR ---\nvalue\n--- RECORDSEPARATOR ---\n, and then click \u201cEnter\u201d "
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/46.txt",
+            "bytes": 1,
+            "sha256": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3"
+          },
+          "source": "8"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/47.txt",
+            "bytes": 5,
+            "sha256": "b6df79f81a02f5088c1f2939bd99fb1bce4f57d0e93f943a2340614b249372df"
+          },
+          "source": "Slope"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/48.txt",
+            "bytes": 11,
+            "sha256": "e24930af3a114dc39680781fe19d76161b98a1c97299c8721c21b57b8f60819d"
+          },
+          "source": "y-intercept"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/5.txt",
+            "bytes": 5,
+            "sha256": "dc8659db6d416dc32fcad510cc921af3c7eaf1176ddedfbe050ecf708fbac087"
+          },
+          "source": "Enter"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/51.txt",
+            "bytes": 86,
+            "sha256": "a17bf2bf7130bebf557f1173e8fd638409f652a7998193710e322b37fe4f772b"
+          },
+          "source": "to see the output. You can also click \u201cSet new function\u201d to start a new function. "
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/54.txt",
+            "bytes": 23,
+            "sha256": "a8290188eeb6be8d5a2a3b6d85dec3a32a5afe4b792ebf17a2140bd740a58623"
+          },
+          "source": "x =                    "
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/55.txt",
+            "bytes": 1,
+            "sha256": "380918b946a526640a40df5dced6516794f3d97bbd9e6bb553d037c4439f31c3"
+          },
+          "source": "="
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/56.txt",
+            "bytes": 1,
+            "sha256": "a1fce4363854ff888cff4b8e7875d600c2682390412a8cf79b37d0b11148b0fa"
+          },
+          "source": "y"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/57.txt",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "source": ""
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/58.txt",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "source": ""
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/59.txt",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "source": ""
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/60.txt",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "source": ""
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/62.txt",
+            "bytes": 18,
+            "sha256": "5bb26c042d583bf484d95b32dd59258a9ed8ab29c96f5e77e66fd087625fb81c"
+          },
+          "source": " Set new function "
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/63.txt",
+            "bytes": 18,
+            "sha256": "5bb26c042d583bf484d95b32dd59258a9ed8ab29c96f5e77e66fd087625fb81c"
+          },
+          "source": " Set new function "
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/70.txt",
+            "bytes": 5,
+            "sha256": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed"
+          },
+          "source": "Close"
+        },
+        {
+          "file": {
+            "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec/texts/78.txt",
+            "bytes": 48,
+            "sha256": "4e750f089c2ce9859b051b4967226bdc7e9348d3c4fec4580d3631b03619b019"
+          },
+          "source": "Please enter the slope, y-intercept and x value."
+        }
+      ],
+      "editableTextDefinitions": [
+        {
+          "objectID": "57",
+          "wordWrap": "0",
+          "multiLine": "0",
+          "password": "0",
+          "readOnly": "0",
+          "autoSize": "0",
+          "hasLayout": "1",
+          "notSelectable": "0",
+          "hasBorder": "0",
+          "isHTML": "0",
+          "useOutlines": "0",
+          "fontRef": "3",
+          "fontHeight": "400",
+          "align": "0",
+          "leftMargin": "0",
+          "rightMargin": "0",
+          "indent": "0",
+          "leading": "40",
+          "variableName": ""
+        },
+        {
+          "objectID": "58",
+          "wordWrap": "0",
+          "multiLine": "0",
+          "password": "0",
+          "readOnly": "0",
+          "autoSize": "0",
+          "hasLayout": "1",
+          "notSelectable": "0",
+          "hasBorder": "0",
+          "isHTML": "0",
+          "useOutlines": "0",
+          "fontRef": "3",
+          "fontHeight": "400",
+          "align": "0",
+          "leftMargin": "0",
+          "rightMargin": "0",
+          "indent": "0",
+          "leading": "40",
+          "variableName": ""
+        },
+        {
+          "objectID": "59",
+          "wordWrap": "0",
+          "multiLine": "0",
+          "password": "0",
+          "readOnly": "0",
+          "autoSize": "0",
+          "hasLayout": "1",
+          "notSelectable": "0",
+          "hasBorder": "1",
+          "isHTML": "0",
+          "useOutlines": "0",
+          "fontRef": "3",
+          "fontHeight": "400",
+          "align": "0",
+          "leftMargin": "0",
+          "rightMargin": "0",
+          "indent": "0",
+          "leading": "40",
+          "variableName": ""
+        },
+        {
+          "objectID": "60",
+          "wordWrap": "0",
+          "multiLine": "0",
+          "password": "0",
+          "readOnly": "1",
+          "autoSize": "0",
+          "hasLayout": "1",
+          "notSelectable": "0",
+          "hasBorder": "0",
+          "isHTML": "0",
+          "useOutlines": "0",
+          "fontRef": "3",
+          "fontHeight": "400",
+          "align": "0",
+          "leftMargin": "0",
+          "rightMargin": "0",
+          "indent": "0",
+          "leading": "40",
+          "variableName": ""
+        }
+      ],
+      "sourceEvidence": [
+        {
+          "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/movie.xml",
+          "bytes": 897225,
+          "sha256": "6eeb7340249008f5d172e7587302b66330f91b432f863d00c5ba15c5e6f237b2"
+        },
+        {
+          "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/extraction-receipt-v1.json",
+          "bytes": 917,
+          "sha256": "31a51ebc10cde53dd723a8e059cc8535440e5f176e9e2473d9fc6cacbb7c8f9a"
+        },
+        {
+          "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/swfmill-v1.txt",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/p009/ffdec-assets-v1.txt",
+          "bytes": 4704,
+          "sha256": "c638cf7c2bc2e7c22d8bc2661da02789c1dff75b096d5b92b62cba3fa98b047a"
+        }
+      ],
+      "originalBytesUnchangedAtReadback": true,
+      "complexityInference": "behavior-heavy based on exact scripts; no product lane/batch selected",
+      "clockPlanAccepted": false,
+      "nativePcmMeasured": false,
+      "onscreenVisibilityMeasured": false,
+      "originalRuntimeMeasured": false,
+      "productOrRegistryModified": false,
+      "newCurrentJsPlacements": 0
+    }
+  ],
+  "comparison": "Both are interactive vocabulary pages. They differ from stopped-family P002/P003 and from P00644100Hz looping real-world table. Shared audio sample rate alone does not prove behavior compatibility.",
+  "batchSelected": false,
+  "currentJsAdded": 0
+}

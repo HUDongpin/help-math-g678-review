@@ -1,0 +1,6 @@
+### Result
+{"runtime":{"top":"116.709px","bottom":"-116.709px","inset":"116.709px 0px -116.709px","position":"relative","rect":{"top":221.828125,"bottom":702.4296875,"height":480.6015625}},"stage":{"maxHeight":"none","paddingTop":"32px","rect":{"top":73.125,"bottom":629.7265625,"height":556.6015625}},"ruleApplies":true}
+### Ran Playwright code
+```js
+await (async(page)=>await page.evaluate(()=>{const e=document.querySelector("[data-l07-p002-host-probe]"),s=getComputedStyle(e),p=e.parentElement,r=e.getBoundingClientRect(),pr=p.getBoundingClientRect();return{runtime:{top:s.top,bottom:s.bottom,inset:s.inset,position:s.position,rect:{top:r.top,bottom:r.bottom,height:r.height}},stage:{maxHeight:getComputedStyle(p).maxHeight,paddingTop:getComputedStyle(p).paddingTop,rect:{top:pr.top,bottom:pr.bottom,height:pr.height}},ruleApplies:!!e.closest(".lesson-shell2[data-host-presentation=modern-wide] .lesson-shell2__legacy-stage:has(canvas[data-course-canvas])")};}))(page);
+```

@@ -1,0 +1,8 @@
+### Result
+{"url":"http://127.0.0.1:3331/en/migration-status/g678-calibration/shared-alg001-l07-p002/registered-v1","state":{"p003Ready":"true","alerts":[],"QA":{"contexts":0,"closed":0,"activeNodes":0,"startedNodes":0},"viewport":{"innerWidth":390,"innerHeight":844},"buttons":[{"name":"Narration: Play the audio","disabled":false},{"name":"Play animation","disabled":false},{"name":"Next page","disabled":false},{"name":"Narration: Play the audio","disabled":false}]}}
+### Ran Playwright code
+```js
+await (async(page)=>({url:page.url(),state:await page.evaluate(()=>({p002Ready:document.querySelector("[data-l07-p002-host-ready]")?.dataset.l07P002HostReady,p002Phase:document.querySelector("[data-p002-phase]")?.dataset.p002Phase,p002Frame:document.querySelector("[data-p002-phase]")?.dataset.p002Frame,p003Ready:document.querySelector("[data-l07-p003-host-ready]")?.dataset.l07P003HostReady,sourceStatus:document.querySelector("[data-canvas-status]")?.dataset.canvasStatus,alerts:Array.from(document.querySelectorAll("[role=alert]")).map(e=>e.textContent),QA:window.p002FormalQA,viewport:{innerWidth,innerHeight},buttons:Array.from(document.querySelectorAll("button")).map(e=>({name:e.getAttribute("aria-label")||e.textContent,disabled:e.disabled})).filter(e=>/animation|animación|Spanish|español|audio|siguiente|Next/.test(e.name))}))}))(page);
+```
+### Events
+- New console entries: .playwright-cli/console-2026-10-03T09-28-08-516Z.log#L3-L8

@@ -1,0 +1,62 @@
+✖ all633 source frames in both languages and all form scenarios have consistent queryable native text (4.241083ms)
+✔ static hint and calculated/reset scenarios report the actual source-bound input/output values (0.480542ms)
+✖ native narration clips at600 and form/hint operations never schedule a feedback stream (2.34575ms)
+✔ active glossary holds main and then form values without restarting audio on Close (0.451584ms)
+✔ cancelled network and pending decoder cannot commit or play after leave (3.391375ms)
+✔ Spanish is explicit and preserves input/result; return holds main and Replay clears every field (0.617167ms)
+✔ Spanish decode cancellation retires its transport and retry creates a fresh decoder (1.323041ms)
+✔ Replay waits for retiring audio and an explicit pause cancels pending restart (0.299958ms)
+✔ source timeline holds600 and exposes initially blank fields and both buttons (0.829375ms)
+✔ authored demonstrations, fades and complete-word reveals retain boundaries (0.150292ms)
+✔ calculated result disables submit but leaves editing available until reset (0.210375ms)
+✔ missing input hint is visibility-only; reset does not hide it; Close restores both buttons (0.092375ms)
+✔ fraction, negative, malformed, zero denominator and whitespace source arithmetic (0.138583ms)
+✔ glossary preserves form values; Replay and leave invalidate previous epochs (0.090958ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 12
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 136.808458
+
+✖ failing tests:
+
+test at packages/demos/src/alg-l07-p009-frame-v1.test.tsx:1:291
+✖ all633 source frames in both languages and all form scenarios have consistent queryable native text (4.241083ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'blocked' !== 'ready'
+  
+      at TestContext.<anonymous> (/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/alg-l07-p009-frame-v1.test.tsx:3:473)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.start (node:internal/test_runner/test:1191:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'blocked',
+    expected: 'ready',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at packages/demos/src/alg-l07-p009-session-v1.test.ts:1:2409
+✖ native narration clips at600 and form/hint operations never schedule a feedback stream (2.34575ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + undefined
+  - 1673
+  
+      at TestContext.<anonymous> (/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/alg-l07-p009-session-v1.test.ts:22:320)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 1673,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

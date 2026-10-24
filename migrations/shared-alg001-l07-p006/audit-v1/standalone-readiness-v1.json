@@ -1,0 +1,741 @@
+{
+  "schemaVersion": 1,
+  "kind": "p006-source-native-standalone-readiness-v1",
+  "animationId": "shared-alg001-l07-p006",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "xhigh",
+  "measuredAt": "2026-10-03T08:20:34.604Z",
+  "workflowUnit": "alg-l07-p006-source-and-maintained-20261003-v1",
+  "workflowUnitStartedAt": "2026-10-03T07:25:42.657Z",
+  "elapsedWallSecondsAtReadiness": 3291.947,
+  "unitFinished": false,
+  "currentJsAdded": 0,
+  "currentJsRegistered": false,
+  "source": {
+    "path": "G6-G8-shared/ALG001/L7/RW/L7RW06.swf",
+    "bytes": 1808006,
+    "sha256": "72c7f3e0d0fd0a5251214c3511262bf164d983837a5c52e9f1e56d4de96df155"
+  },
+  "classification": "behavior-heavy bounded compiler-assisted advanced manual;44.1k loop family",
+  "runtime": {
+    "rootFrames": 10,
+    "mainFrameDomain": "sprite-223",
+    "mainFrames": 1845,
+    "fps": 12,
+    "playbackMode": "loop"
+  },
+  "sourceAudio": {
+    "model": {
+      "path": "migrations/shared-alg001-l07-p006/native-v1/stream-model-v1.json",
+      "sha256": "17d78245a821b19576b9ba5b99605c76a25e05905df7fa84cfe3b30f1c72276c",
+      "bytes": 307640
+    },
+    "decoder": {
+      "path": "migrations/shared-alg001-l07-p006/native-v1/decode-native-v1.json",
+      "sha256": "980121bac6f29e5d43750a5602ae3414e0aa0184616f32df34e19c4d12766cd7",
+      "bytes": 694
+    },
+    "clock": {
+      "path": "packages/demos/src/source-stream-cycle-clock-v2.ts",
+      "sha256": "2034d72ed57aedc9e7bbeaa8957df239ab6c4170aea83116d7c52b020280cb01",
+      "bytes": 14611
+    },
+    "v1Unchanged": {
+      "path": "packages/demos/src/source-stream-cycle-clock-v1.ts",
+      "sha256": "5ba2cf7ce3456f90c0cdf219194d4f63b090710a4388b7db5a77c697c62484d7",
+      "bytes": 16240
+    }
+  },
+  "checks": {
+    "sourceGenerators": "pass",
+    "pageUnitTests": 9,
+    "sharedCycleClockTests": 14,
+    "isolatedTypecheck": "pass",
+    "portableDraftValidator": "pass; schema only",
+    "standaloneBrowser": "pass4cases20images",
+    "canonicalRegisteredFrameDomainAudit": "pending parentintegration",
+    "actualMyLesson": "pending",
+    "formalRegistration": "pending",
+    "productionNegative": "pending"
+  },
+  "evidenceScope": {
+    "loop": "real playback1845to1 aftercandidate inspect1844; not uninterrupted153.75second fullcycle",
+    "nativeVisibilityVerified": false,
+    "noindex": "observed actual standalone response only; formal MyLesson unobserved",
+    "language": "source-English main content; ESUI/glossary source dictionary; no locale audio autoplay",
+    "listening": false,
+    "originalRuntime": false,
+    "humanOwnerStrictPublication": false
+  },
+  "rework": [
+    {
+      "cause": "Initial swfmill block data treated ashex",
+      "evidence": "audit-v1/source-probe-failure-v1.json"
+    },
+    {
+      "cause": "FFDec old SoundStreamHead sound export absent",
+      "evidence": "audit-v1/derive-stream-v1.txt",
+      "repair": "independent binary/XML exact source payload assembly"
+    },
+    {
+      "cause": "Initial source Canvas generator quote typo",
+      "evidence": "audit-v1/derive-canvas-failed-script-v1.mjs"
+    },
+    {
+      "cause": "Test boundary expectations omitted exact alpha and complete-word boundary",
+      "evidence": "audit-v1/page-tests-v1.txt;page-tests-v2.txt"
+    },
+    {
+      "cause": "Initial mobile formula and then header overflow",
+      "evidence": "audit-v1/browser-probe-initial-v1.txt;browser-standalone-failure-v1.json",
+      "repair": "maintained30/25/45columns; no font reduction; final perexpressioncell bounds"
+    },
+    {
+      "cause": "Outlined shape113 becameorphan after text114 suppression",
+      "evidence": "audit-v1/native-frame-1128-initial-v1.png",
+      "repair": "v2native-only exactpaired instance suppression;raw-vs-nativepixel check"
+    }
+  ],
+  "implementation": [
+    {
+      "path": "packages/demos/src/alg-l07-p006-source-v1.ts",
+      "sha256": "d2b987bffcb215ae7aa729cd02bfac167416327b0e2c9cd998691033971756a1",
+      "bytes": 24150
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p006-state-v1.ts",
+      "sha256": "1e843205e9a39cb90fdcc79a0b7023fd86833c11638e6840cd61b3e7dfeaaebe",
+      "bytes": 4349
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p006-session-v1.ts",
+      "sha256": "219d689c10f3dcb68f9af612b8236b9672d10ac44d43c7eb0ac8503ead3cf07d",
+      "bytes": 4654
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p006-presentation-v1.tsx",
+      "sha256": "7f138d4faf7f3a7c225e6b2420c6aaa2749b34181743674d3a446b0be8611546",
+      "bytes": 7188
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p006-player-v1.tsx",
+      "sha256": "429f99c5134cad6c3ea6620a5a8223c6149f5fcc632eac73171a6cfd811816dc",
+      "bytes": 6417
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p006-v1.css",
+      "sha256": "bcfad10cc2ca6f98b0b4e0d0fba3d2cde53758f9dc469525a9cf8d415cafaedd",
+      "bytes": 2601
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p006-v1.css.d.ts",
+      "sha256": "eb535fac219e74dd30aba5d0a230d9605a12d11ef734b0c6e6d77d688b066630",
+      "bytes": 39
+    },
+    {
+      "path": "packages/demos/src/modules/shared-alg001-l07-p006.tsx",
+      "sha256": "b81df91cdbc5c9b27000055671df87f12ac805a001d9b5e42cb53c1b394f8a28",
+      "bytes": 991
+    },
+    {
+      "path": "packages/demos/src/timelines/shared-alg001-l07-p006.ts",
+      "sha256": "ee322577f1484366678719b0e2c9de97172883ec6e0d2b4fc235774fcd74f453",
+      "bytes": 145
+    }
+  ],
+  "sourceAndGenerated": [
+    {
+      "path": "migrations/shared-alg001-l07-p006/source-v1/L7RW06.swf",
+      "sha256": "72c7f3e0d0fd0a5251214c3511262bf164d983837a5c52e9f1e56d4de96df155",
+      "bytes": 1808006
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/source-v1/index.xml",
+      "sha256": "5eac052615476e688afc1e69391c17bb0c20db8200e7be3f7ea1f9bb778d85f6",
+      "bytes": 13727
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/source-v1/source-text-catalog-v1.json",
+      "sha256": "1e438432e9b12b8098239aaf3dce95799cc6c57a6758e73b7d6e3e704738498f",
+      "bytes": 2807501
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/source-v1/movie.xml",
+      "sha256": "a435c74a365a78063d39b86ef5dfc3fb2da252130e49bf5666346163b74339ea",
+      "bytes": 14599031
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/source-v1/source-stream-223.mp3",
+      "sha256": "eca77ae751726a8b10efb9ef5a33359a810ae089d658346a3253a92ced424b2a",
+      "bytes": 1219712
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/native-v1/source-model-v1.json",
+      "sha256": "5b1106dbace1af7fb6ae808ff05956e7626274fa7838ad9b3bee447ecc4fde3f",
+      "bytes": 14846598
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/native-v1/stream-model-v1.json",
+      "sha256": "17d78245a821b19576b9ba5b99605c76a25e05905df7fa84cfe3b30f1c72276c",
+      "bytes": 307640
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/native-v1/glossary-model-v1.json",
+      "sha256": "15400d874e9045fb2b066cf85cfc77128d91fa10a03d0a5c3d6a698e7f0a5706",
+      "bytes": 3966
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/native-v1/decode-native-v1.json",
+      "sha256": "980121bac6f29e5d43750a5602ae3414e0aa0184616f32df34e19c4d12766cd7",
+      "bytes": 694
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/native-v1/canvas-adapter-spec-v2.json",
+      "sha256": "44686ea2420d8afa9fd44c306f69095b547e223ab406589bce7d7faf3b0c4cfd",
+      "bytes": 3132
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/native-v1/canvas-manifest-v2.json",
+      "sha256": "c56d9ecc567e07b8455f6e8cf1c28952c8b2c530e60f2c334d8ce4242b682f00",
+      "bytes": 783510
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/native-v1/canvas-renderer-v2.js",
+      "sha256": "bacd876b5cfb20fbe2bf5690df603c29b3e7b1bdd5c0d14ec8a2baf6c6bbbc25",
+      "bytes": 16721307
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/teaching-visibility-v4.json",
+      "sha256": "9f3d2b1aa52520a49b89dfc57dcd6c28e9d1b0ea3f60e5677b681303ffae33b5",
+      "bytes": 21714
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/generator-v1/derive-source-v1.mjs",
+      "sha256": "ac04730a113b7931cf8584981489d4e668db829da2226672004aff0642deab26",
+      "bytes": 4424
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/generator-v1/derive-stream-v2.py",
+      "sha256": "9af4f255f5182c96ca5fd3439a28f75986cfef2368ee256a616f778b5cfed455",
+      "bytes": 3940
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/generator-v1/derive-product-v1.mjs",
+      "sha256": "00cc480b223d8e55d2a6426027c7dabcf753b077fb1724a9bbe87d393b3686f7",
+      "bytes": 6531
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/generator-v1/derive-glossary-v1.mjs",
+      "sha256": "a198f0f6fdf08d09505988da584ee048dbb20f4e4a1fc153afa9f797d49389df",
+      "bytes": 2017
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/generator-v1/derive-canvas-v2.mjs",
+      "sha256": "5b3b17958afafcb93c5d8eb7ea485d133978a9fa57720be467d95f55496d0e17",
+      "bytes": 9743
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/generator-v1/derive-product-provenance-v1.mjs",
+      "sha256": "6a1513433fbdf72e0bcde66b30572e5656842058791819e510e374b766be83e6",
+      "bytes": 3612
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/generator-v1/prepare-readiness-v1.ts",
+      "sha256": "d7fdf607bd77cadce975c95eddcc6df815aac068f124094669fa01e91410a79c",
+      "bytes": 10652
+    }
+  ],
+  "sharedDependencies": [
+    {
+      "path": "packages/demos/src/source-stream-cycle-clock-v2.ts",
+      "sha256": "2034d72ed57aedc9e7bbeaa8957df239ab6c4170aea83116d7c52b020280cb01",
+      "bytes": 14611
+    },
+    {
+      "path": "packages/demos/src/source-stream-cycle-clock-v1.ts",
+      "sha256": "5ba2cf7ce3456f90c0cdf219194d4f63b090710a4388b7db5a77c697c62484d7",
+      "bytes": 16240
+    },
+    {
+      "path": "packages/demos/src/decoded-source-stream-transport.ts",
+      "sha256": "9b831901b741f83d02465696d1149544ae82283cace0eb86ae087d2252ae824c",
+      "bytes": 13365
+    },
+    {
+      "path": "packages/demos/src/lesson-animation-title-v1.tsx",
+      "sha256": "0f20beef78a9fcf6843913e93bb2983b21b8761f2677660f0e5caeb13fb7ca2a",
+      "bytes": 714
+    },
+    {
+      "path": "packages/demos/src/lesson-animation-title-v1.css",
+      "sha256": "6af645d585866b1ecb95e4658d858e6e077de0b6f20d60a05dbcccf94fe7b7e1",
+      "bytes": 418
+    },
+    {
+      "path": "scripts/build-safe-ffdec-canvas-adapter.mjs",
+      "sha256": "22fc00187e15c34883905423f4be3a837832fd060287d8b6b25e9ddab660f8c1",
+      "bytes": 115564
+    },
+    {
+      "path": "scripts/lib/g678-source-clip-masks-v2.mjs",
+      "sha256": "e59876dc6bf37a0befc08f227d69e708109ac31e453e1bfbf755a199e296d355",
+      "bytes": 2182
+    }
+  ],
+  "transitiveExplicitInputs": [
+    {
+      "path": "lib/g678-admission-proof.mjs",
+      "sha256": "37fe62984a84a5ef0b907350ea922659f4389b21a319a13483e25dd3993eadf1",
+      "bytes": 11278
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/teaching-visibility-v4.json",
+      "sha256": "9f3d2b1aa52520a49b89dfc57dcd6c28e9d1b0ea3f60e5677b681303ffae33b5",
+      "bytes": 21714
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/generator-v1/derive-canvas-v2.mjs",
+      "sha256": "5b3b17958afafcb93c5d8eb7ea485d133978a9fa57720be467d95f55496d0e17",
+      "bytes": 9743
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/generator-v1/derive-glossary-v1.mjs",
+      "sha256": "a198f0f6fdf08d09505988da584ee048dbb20f4e4a1fc153afa9f797d49389df",
+      "bytes": 2017
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/generator-v1/derive-product-provenance-v1.mjs",
+      "sha256": "6a1513433fbdf72e0bcde66b30572e5656842058791819e510e374b766be83e6",
+      "bytes": 3612
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/generator-v1/derive-product-v1.mjs",
+      "sha256": "00cc480b223d8e55d2a6426027c7dabcf753b077fb1724a9bbe87d393b3686f7",
+      "bytes": 6531
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/generator-v1/derive-source-v1.mjs",
+      "sha256": "ac04730a113b7931cf8584981489d4e668db829da2226672004aff0642deab26",
+      "bytes": 4424
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/generator-v1/derive-stream-v2.py",
+      "sha256": "9af4f255f5182c96ca5fd3439a28f75986cfef2368ee256a616f778b5cfed455",
+      "bytes": 3940
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/generator-v1/prepare-readiness-v1.ts",
+      "sha256": "d7fdf607bd77cadce975c95eddcc6df815aac068f124094669fa01e91410a79c",
+      "bytes": 10652
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/native-v1/canvas-adapter-spec-v2.json",
+      "sha256": "44686ea2420d8afa9fd44c306f69095b547e223ab406589bce7d7faf3b0c4cfd",
+      "bytes": 3132
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/native-v1/canvas-manifest-v2.json",
+      "sha256": "c56d9ecc567e07b8455f6e8cf1c28952c8b2c530e60f2c334d8ce4242b682f00",
+      "bytes": 783510
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/native-v1/canvas-renderer-v2.js",
+      "sha256": "bacd876b5cfb20fbe2bf5690df603c29b3e7b1bdd5c0d14ec8a2baf6c6bbbc25",
+      "bytes": 16721307
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/native-v1/decode-native-v1.json",
+      "sha256": "980121bac6f29e5d43750a5602ae3414e0aa0184616f32df34e19c4d12766cd7",
+      "bytes": 694
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/native-v1/glossary-model-v1.json",
+      "sha256": "15400d874e9045fb2b066cf85cfc77128d91fa10a03d0a5c3d6a698e7f0a5706",
+      "bytes": 3966
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/native-v1/source-model-v1.json",
+      "sha256": "5b1106dbace1af7fb6ae808ff05956e7626274fa7838ad9b3bee447ecc4fde3f",
+      "bytes": 14846598
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/native-v1/stream-model-v1.json",
+      "sha256": "17d78245a821b19576b9ba5b99605c76a25e05905df7fa84cfe3b30f1c72276c",
+      "bytes": 307640
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/source-v1/L7RW06.swf",
+      "sha256": "72c7f3e0d0fd0a5251214c3511262bf164d983837a5c52e9f1e56d4de96df155",
+      "bytes": 1808006
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/source-v1/index.xml",
+      "sha256": "5eac052615476e688afc1e69391c17bb0c20db8200e7be3f7ea1f9bb778d85f6",
+      "bytes": 13727
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/source-v1/movie.xml",
+      "sha256": "a435c74a365a78063d39b86ef5dfc3fb2da252130e49bf5666346163b74339ea",
+      "bytes": 14599031
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/source-v1/source-stream-223.mp3",
+      "sha256": "eca77ae751726a8b10efb9ef5a33359a810ae089d658346a3253a92ced424b2a",
+      "bytes": 1219712
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/source-v1/source-text-catalog-v1.json",
+      "sha256": "1e438432e9b12b8098239aaf3dce95799cc6c57a6758e73b7d6e3e704738498f",
+      "bytes": 2807501
+    },
+    {
+      "path": "packages/demos/scripts/generate-registry.mjs",
+      "sha256": "1aaf7154606469522eb1c3fd25d0c7c18b6933503a43d45ef4d6c64b82753c8a",
+      "bytes": 22656
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p006-player-v1.tsx",
+      "sha256": "429f99c5134cad6c3ea6620a5a8223c6149f5fcc632eac73171a6cfd811816dc",
+      "bytes": 6417
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p006-presentation-v1.tsx",
+      "sha256": "7f138d4faf7f3a7c225e6b2420c6aaa2749b34181743674d3a446b0be8611546",
+      "bytes": 7188
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p006-session-v1.ts",
+      "sha256": "219d689c10f3dcb68f9af612b8236b9672d10ac44d43c7eb0ac8503ead3cf07d",
+      "bytes": 4654
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p006-source-v1.ts",
+      "sha256": "d2b987bffcb215ae7aa729cd02bfac167416327b0e2c9cd998691033971756a1",
+      "bytes": 24150
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p006-state-v1.ts",
+      "sha256": "1e843205e9a39cb90fdcc79a0b7023fd86833c11638e6840cd61b3e7dfeaaebe",
+      "bytes": 4349
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p006-v1.css",
+      "sha256": "bcfad10cc2ca6f98b0b4e0d0fba3d2cde53758f9dc469525a9cf8d415cafaedd",
+      "bytes": 2601
+    },
+    {
+      "path": "packages/demos/src/alg-l07-p006-v1.css.d.ts",
+      "sha256": "eb535fac219e74dd30aba5d0a230d9605a12d11ef734b0c6e6d77d688b066630",
+      "bytes": 39
+    },
+    {
+      "path": "packages/demos/src/contract.ts",
+      "sha256": "56e5fc3c1dbde872646ebbc519f8c7d8a9d6dd0d55e37e1c44f4ad1a47798180",
+      "bytes": 17646
+    },
+    {
+      "path": "packages/demos/src/decoded-source-stream-transport.ts",
+      "sha256": "9b831901b741f83d02465696d1149544ae82283cace0eb86ae087d2252ae824c",
+      "bytes": 13365
+    },
+    {
+      "path": "packages/demos/src/lesson-animation-title-v1.css",
+      "sha256": "6af645d585866b1ecb95e4658d858e6e077de0b6f20d60a05dbcccf94fe7b7e1",
+      "bytes": 418
+    },
+    {
+      "path": "packages/demos/src/lesson-animation-title-v1.tsx",
+      "sha256": "0f20beef78a9fcf6843913e93bb2983b21b8761f2677660f0e5caeb13fb7ca2a",
+      "bytes": 714
+    },
+    {
+      "path": "packages/demos/src/lesson-host-contract.ts",
+      "sha256": "183fc9ec36c99797147ba1fb8a5132cde60254b40279ca5fc76302806098200b",
+      "bytes": 17528
+    },
+    {
+      "path": "packages/demos/src/lesson-text-contract.ts",
+      "sha256": "e796b04501425b29200d6bf527aae71deac86769894e2f642efa1e36502a56d9",
+      "bytes": 6749
+    },
+    {
+      "path": "packages/demos/src/lesson-text-snapshot.ts",
+      "sha256": "0fcb076645392914fc2ad3df9f2062037c8ed5d31730903342ecd5e98bd2e95f",
+      "bytes": 5999
+    },
+    {
+      "path": "packages/demos/src/modules/shared-alg001-l07-p006.tsx",
+      "sha256": "b81df91cdbc5c9b27000055671df87f12ac805a001d9b5e42cb53c1b394f8a28",
+      "bytes": 991
+    },
+    {
+      "path": "packages/demos/src/source-stream-cycle-clock-v1.ts",
+      "sha256": "5ba2cf7ce3456f90c0cdf219194d4f63b090710a4388b7db5a77c697c62484d7",
+      "bytes": 16240
+    },
+    {
+      "path": "packages/demos/src/source-stream-cycle-clock-v2.ts",
+      "sha256": "2034d72ed57aedc9e7bbeaa8957df239ab6c4170aea83116d7c52b020280cb01",
+      "bytes": 14611
+    },
+    {
+      "path": "packages/demos/src/timelines/shared-alg001-l07-p006.ts",
+      "sha256": "ee322577f1484366678719b0e2c9de97172883ec6e0d2b4fc235774fcd74f453",
+      "bytes": 145
+    },
+    {
+      "path": "scripts/build-g678-alg-l11-instructional-successor-glossary.mjs",
+      "sha256": "25c9aa4c25a4bc84539b080cebb8dfcbaee5f57189531c6798be14e87ac09d59",
+      "bytes": 12493
+    },
+    {
+      "path": "scripts/build-safe-ffdec-canvas-adapter.mjs",
+      "sha256": "22fc00187e15c34883905423f4be3a837832fd060287d8b6b25e9ddab660f8c1",
+      "bytes": 115564
+    },
+    {
+      "path": "scripts/lib/g678-source-clip-masks-v2.mjs",
+      "sha256": "e59876dc6bf37a0befc08f227d69e708109ac31e453e1bfbf755a199e296d355",
+      "bytes": 2182
+    },
+    {
+      "path": "scripts/lib/swf-text-source-catalog.mjs",
+      "sha256": "5a65075738bcdd62a9fb79cca0aaf7fe7ab59857bd3852fdf5063d6c1fe8a3dc",
+      "bytes": 22928
+    },
+    {
+      "path": "scripts/private-current-js-registry.mjs",
+      "sha256": "6b61308caca87a41c707b83072b010ec51631cd5b65726e948137f523ef83201",
+      "bytes": 7326
+    }
+  ],
+  "evidence": [
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-standalone-v4.json",
+      "sha256": "e50289bcf45562b1cd1b7eeb3145d3d498702631494c29b43c9bec0fc2633c4c",
+      "bytes": 224240
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-standalone-v4.txt",
+      "sha256": "3a37d4b26e2da24ed9b0ec4ec16a66e21c800097303824d453daeb3b75cf7676",
+      "bytes": 39
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/page-tests-v5.txt",
+      "sha256": "9bf245a47c1194af8311fe13a6fc77d658019c919a7773eb0307fc6b30f7546d",
+      "bytes": 943
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/page-typecheck-v4.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/cycle-clock-tests-v1.txt",
+      "sha256": "e5cae93f9eb618729180ebde3647aa2d868991147bbab285c29cd18d821dee38",
+      "bytes": 1550
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/draft-validator-v1.json",
+      "sha256": "fbc735c77534ed35aeb7ba43780febc661cf315e946bc292f0d20fe0f2021bb2",
+      "bytes": 313
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/source-check-v1.txt",
+      "sha256": "bc165aed9911d497dd10c8d6d38e5cc44367e6d2b347c791e06ff6055a9a1135",
+      "bytes": 2117
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/stream-check-v1.txt",
+      "sha256": "c6f0029108f85f41c8ced9d23ed79868c4918b154d1e408887c14ef2669c41e4",
+      "bytes": 658
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/product-check-v1.txt",
+      "sha256": "34604f033e2b3145d11797c172b7db9add5a54cd7444734f2b7e0372f6f6cf0d",
+      "bytes": 1234
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/canvas-check-v1.txt",
+      "sha256": "a20a9901ee110e61a18888f4474b19a64bccbee8ef7324fcbc38cb027225e9f2",
+      "bytes": 128
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/glossary-check-v1.txt",
+      "sha256": "12808445592672dcd07eed7c71ef2c90a88133b6c5037fbf0d24e94757ce91d9",
+      "bytes": 472
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/product-provenance-check-v1.txt",
+      "sha256": "bbd445490e2fe6a0209a00e7f066697126afed2772201bca73080c2d9225ea08",
+      "bytes": 430
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/cleanup-owned-v1.json",
+      "sha256": "9e90c716b0f97228247e8ad8ead67c9dbd6559a386e195c3e45c2491e8ec439c",
+      "bytes": 1338
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/cleanup-process-readback-v1.json",
+      "sha256": "57c8badb1de45b93a7d2f493f4f5376785bbf2c94124c6001f96c4f97e3ac1f4",
+      "bytes": 241
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/generator-v1/browser-standalone-v4.mjs",
+      "sha256": "f2562fb4494fb764e678bcc421c41e4b32265c62e7aef42baa64c21ba0229046",
+      "bytes": 11274
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/standalone-v1/index.html",
+      "sha256": "af224b8ca1024927918e8f863691d9cdaaee3976d4573433fbf1495505763ee3",
+      "bytes": 731
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/standalone-v1/main.js",
+      "sha256": "b964de9dea5d1ed705696c46b684215316600fe327d95f085a898ea76b6dc4ba",
+      "bytes": 1161347
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/standalone-v1/main.css",
+      "sha256": "fb0b6be837ba4b6470ab03cf97ae15bdf19e3f69219031468d259ddc1c59fb78",
+      "bytes": 3719
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/native-v1/canvas-renderer-v2.js",
+      "sha256": "bacd876b5cfb20fbe2bf5690df603c29b3e7b1bdd5c0d14ec8a2baf6c6bbbc25",
+      "bytes": 16721307
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/source-v1/source-stream-223.mp3",
+      "sha256": "eca77ae751726a8b10efb9ef5a33359a810ae089d658346a3253a92ced424b2a",
+      "bytes": 1219712
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-en-1360-no-preference-frame139-v4.png",
+      "sha256": "76660c2b4503c233f7b16f629a6e46478c4661accdca768f05a9ca70058371d1",
+      "bytes": 167011
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-en-1360-no-preference-frame862-v4.png",
+      "sha256": "1235fb8c739e201eb2d95b105d564f9dec9379bdae6797185dcce21087a5471d",
+      "bytes": 181704
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-en-1360-no-preference-frame1128-v4.png",
+      "sha256": "4813fe899797935359b2472a1e423a282b5ec953b2ff7d1231e0d9be5ddd5f0f",
+      "bytes": 186024
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-en-1360-no-preference-frame1780-v4.png",
+      "sha256": "c7616aa5def6dfdcaacd5efa3612bd048c2cd4282cb30047baa56c1145aa53c9",
+      "bytes": 183895
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-en-1360-no-preference-frame1836-v4.png",
+      "sha256": "2b2abbd56f06fba5cf116e3a0767309c0fae7089e49e652e7965bb360ae1f954",
+      "bytes": 191755
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-en-390-no-preference-frame139-v4.png",
+      "sha256": "f793d5730cb65f0606c5ff93545dd7b6e3e07b8131b86324f770938b1d9694c1",
+      "bytes": 162847
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-en-390-no-preference-frame862-v4.png",
+      "sha256": "d03910dc876275d5601592608d9802916ac7ce0d1b731b250cc1d7c6b875b648",
+      "bytes": 181321
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-en-390-no-preference-frame1128-v4.png",
+      "sha256": "997bbfc107e8d83cb87e7db7f20dd83a565253993677710d72b4efcf6260dc4b",
+      "bytes": 184772
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-en-390-no-preference-frame1780-v4.png",
+      "sha256": "0fda84b948886b772183a35d46040a19779aaa8a46ad33489d5f729aaf2b9a5d",
+      "bytes": 185377
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-en-390-no-preference-frame1836-v4.png",
+      "sha256": "5f65b0bcfbef320d2531a70973b269330f9e9150e78a66906440a5ce8aa8b665",
+      "bytes": 197894
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-es-390-no-preference-frame139-v4.png",
+      "sha256": "f793d5730cb65f0606c5ff93545dd7b6e3e07b8131b86324f770938b1d9694c1",
+      "bytes": 162847
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-es-390-no-preference-frame862-v4.png",
+      "sha256": "d03910dc876275d5601592608d9802916ac7ce0d1b731b250cc1d7c6b875b648",
+      "bytes": 181321
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-es-390-no-preference-frame1128-v4.png",
+      "sha256": "997bbfc107e8d83cb87e7db7f20dd83a565253993677710d72b4efcf6260dc4b",
+      "bytes": 184772
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-es-390-no-preference-frame1780-v4.png",
+      "sha256": "8a6a83debbfb5bfc8a2e15fb6abfd063b905b4e407435f33cd982177894e7dc5",
+      "bytes": 185253
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-es-390-no-preference-frame1836-v4.png",
+      "sha256": "395f85a85389e0f6eb2670fb8c8f3fec9b2d3fa7fe4dd28d34cf40254cc81bfd",
+      "bytes": 197335
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-es-390-reduce-frame139-v4.png",
+      "sha256": "f793d5730cb65f0606c5ff93545dd7b6e3e07b8131b86324f770938b1d9694c1",
+      "bytes": 162847
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-es-390-reduce-frame862-v4.png",
+      "sha256": "d03910dc876275d5601592608d9802916ac7ce0d1b731b250cc1d7c6b875b648",
+      "bytes": 181321
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-es-390-reduce-frame1128-v4.png",
+      "sha256": "997bbfc107e8d83cb87e7db7f20dd83a565253993677710d72b4efcf6260dc4b",
+      "bytes": 184772
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-es-390-reduce-frame1780-v4.png",
+      "sha256": "8a6a83debbfb5bfc8a2e15fb6abfd063b905b4e407435f33cd982177894e7dc5",
+      "bytes": 185253
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/browser-es-390-reduce-frame1836-v4.png",
+      "sha256": "395f85a85389e0f6eb2670fb8c8f3fec9b2d3fa7fe4dd28d34cf40254cc81bfd",
+      "bytes": 197335
+    },
+    {
+      "path": "packages/demos/tests/alg-l07-p006-v1.test.tsx",
+      "sha256": "8e997d8b04728654138ac3a1756842b996f342cd513a3d91cc7233852b638b3a",
+      "bytes": 6793
+    },
+    {
+      "path": "packages/demos/tests/source-stream-cycle-clock-v2.test.ts",
+      "sha256": "0320100c2de50a59595715abb1a007a2244e7305d4aada5a2f13af89c8835d3d",
+      "bytes": 7836
+    }
+  ],
+  "provenance": {
+    "member": {
+      "path": "output/g678-alg-l07-p006-standalone-20261003-v1/provenance-v1/members/shared-alg001-l07-p006/member-manifest.json",
+      "sha256": "9b6099e600253af5097f53aff875b7ba45b62a4f657613a6ba40d82695b3c142",
+      "bytes": 3495
+    },
+    "run": {
+      "path": "output/g678-alg-l07-p006-standalone-20261003-v1/provenance-v1/run-manifest.json",
+      "sha256": "0a4b9f8e89562cbc9211fbdfb311e65ae35d853947fb2ef63f76d4647ccc284d",
+      "bytes": 2996
+    }
+  },
+  "bindingDraft": {
+    "path": "migrations/shared-alg001-l07-p006/product-preparation-v1/typography-binding-draft-v1.json",
+    "sha256": "975439b26c18fd4c2807d56734e23f8811c88d4ab3cb28915289fa7bf1a352dd",
+    "bytes": 13890
+  }
+}

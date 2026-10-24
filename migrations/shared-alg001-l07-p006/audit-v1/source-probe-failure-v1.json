@@ -1,0 +1,7 @@
+{
+  "kind": "alg-l07-p006-source-probe-failure-v1",
+  "atUtc": "2026-10-03T07:32:22.860773+00:00",
+  "failure": "Initial read-only inline stream probe assumed hex data; swfmill encodes SoundStreamBlock data as base64. ValueError preserved in tool output.",
+  "repair": "Base64 decode, signed little-endian seek, block concat and exact FFDec stream byte comparison used next.",
+  "originalModified": false
+}

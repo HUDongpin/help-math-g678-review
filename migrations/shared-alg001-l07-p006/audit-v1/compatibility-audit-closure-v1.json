@@ -1,0 +1,69 @@
+{
+  "kind": "readonly-source-compatibility-audit-closure-v1",
+  "at": "2026-10-03T08:52:33.411718+00:00",
+  "reports": [
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p004-p005-compatibility-v1/compatibility-v2.json",
+      "bytes": 9574,
+      "sha256": "e2cd2bdc681d4a9b0123f8c3e995930412ba2a7accd9c8c88003137064b49429"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/l7-p007-p009-compatibility-v1/compatibility-v1.json",
+      "bytes": 96740,
+      "sha256": "ad3e90276840ae45d34f7ba0d49b84064d72d64f9364dbcd8d7324c441256311"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p006/audit-v1/alg-l01-p002-p004-compatibility-v1/compatibility-v1.json",
+      "bytes": 69210,
+      "sha256": "c2e71dd10c483fb50449d31b276049acc1e2794226139a50d6ab1487aa88d9b1"
+    }
+  ],
+  "sourceAndEvidencePinsRehashed": 295,
+  "registrySnapshotDrift": [
+    {
+      "snapshot": {
+        "path": "packages/demos/private-current-js-registry.json",
+        "bytes": 683085,
+        "sha256": "b7e650caae35e6b18f4e9eb7c1d59cf91388eecaa7addbc094dc1d03fef2caa5"
+      },
+      "current": {
+        "path": "packages/demos/private-current-js-registry.json",
+        "bytes": 684855,
+        "sha256": "49f341da5d04bea291a7cc02207bfbf5766ea0e37dcd2fa8781775a9763ccc9b"
+      },
+      "meaning": "Contemporary shared registry snapshot changed; source audit is not overall registry acceptance"
+    },
+    {
+      "snapshot": {
+        "path": "packages/demos/private-current-js-registry.json",
+        "bytes": 683085,
+        "sha256": "b7e650caae35e6b18f4e9eb7c1d59cf91388eecaa7addbc094dc1d03fef2caa5"
+      },
+      "current": {
+        "path": "packages/demos/private-current-js-registry.json",
+        "bytes": 684855,
+        "sha256": "49f341da5d04bea291a7cc02207bfbf5766ea0e37dcd2fa8781775a9763ccc9b"
+      },
+      "meaning": "Contemporary shared registry snapshot changed; source audit is not overall registry acceptance"
+    }
+  ],
+  "ownedPorts": [
+    {
+      "port": 4386,
+      "exitCode": 1,
+      "output": "",
+      "noListener": true
+    },
+    {
+      "port": 4387,
+      "exitCode": 1,
+      "output": "",
+      "noListener": true
+    }
+  ],
+  "publicToolCommands": "Every source extraction returned exit0; no browser/server created for compatibility intake",
+  "currentJsAdded": 0,
+  "productOrRegistryModifiedByIntake": false,
+  "batchSelected": false,
+  "sourceBytePinsPass": true
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-10-03T08:18:33.976190+00:00",
+  "ownedProcesses": [
+    {
+      "pid": 68408,
+      "port": 4386,
+      "script": "source-server-v1.py",
+      "command": "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python migrations/shared-alg001-l07-p006/audit-v1/source-server-v1.py",
+      "listenerBefore": "COMMAND   PID  USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME\nPython  68408 peter    3u  IPv4 0xe3e26616164b9af7      0t0  TCP 127.0.0.1:4386 (LISTEN)\n",
+      "action": "SIGTERM verified own process"
+    },
+    {
+      "pid": 28300,
+      "port": 4387,
+      "script": "standalone-server-v2.py",
+      "command": "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python migrations/shared-alg001-l07-p006/audit-v1/standalone-server-v2.py",
+      "listenerBefore": "COMMAND   PID  USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME\nPython  28300 peter    3u  IPv4 0x1e3dd06c35915222      0t0  TCP 127.0.0.1:4387 (LISTEN)\n",
+      "action": "SIGTERM verified own process"
+    }
+  ],
+  "scope": "P006-owned source/standalone only; other lanes untouched",
+  "allPlaywrightContextsAndBrowsersClosedByFinally": true,
+  "configOrCacheChanged": false
+}

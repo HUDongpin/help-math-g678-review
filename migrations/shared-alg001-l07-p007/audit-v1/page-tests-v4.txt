@@ -1,0 +1,21 @@
+✔ native main schedule cuts audio at source stop109; Resume cannot bypass the quiz (1.09675ms)
+✔ all wrong feedback clocks hold and close, increment at exit, resume only after second attempt (4.37675ms)
+✔ every right branch returns to main and main173 finishes before wrap to1 (0.819416ms)
+✔ cancelled network load and pending decode cannot play or replace Replay state (0.433291ms)
+✔ Spanish Audio is explicit, pause/resume still emits, repeat starts again and return leaves main held (0.400291ms)
+✔ Spanish decode cancellation retires its transport; retry creates a fresh decoder (0.429167ms)
+✔ Replay reports pending playback while old audio closes, and an explicit pause cancels the pending replay (0.39875ms)
+✔ source script increments only on terminal, and every wrong branch gives retry then continues after second (1.846167ms)
+✔ all source right branches return automatically and preserve one prior wrong count (0.163375ms)
+✔ Close is valid during nested popup intro; duplicate answer/Close and stale callbacks do not mutate state (0.106ms)
+✔ postquiz last frame remains queryable, wraps after a full frame, then re-enters quiz; no auto completion (0.074375ms)
+✔ Replay and leave discard selected branch, attempt, glossary and old callbacks (0.126958ms)
+✔ native definition/question and graph reveal follow independent source mask and alpha boundaries (0.064834ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 151.564458

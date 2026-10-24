@@ -1,0 +1,57 @@
+✖ monthly bills obey source alpha, each result boundary and blink (2.3305ms)
+✖ question and term gates follow source morph clipping, never placement alone (0.330458ms)
+✔ every frame suppresses exactly the binary-source text instance set, with English content in ES UI (65.595958ms)
+✔ inspection survives preparation and all glossary actions pause/close without resume (0.653709ms)
+✔ pending resource read is aborted and cannot create a late clock (0.095833ms)
+✔ Replay resets held frame, glossary, cycle and retires old clock (0.162583ms)
+✔ unmount during decode ignores the late result and rejects further actions (0.122708ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 5
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 243.604291
+
+✖ failing tests:
+
+test at packages/demos/tests/alg-l07-p006-v1.test.tsx:1:1723
+✖ monthly bills obey source alpha, each result boundary and blink (2.3305ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0.75 !== 1
+  
+      at TestContext.<anonymous> (/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/tests/alg-l07-p006-v1.test.tsx:8:184)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.start (node:internal/test_runner/test:1191:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0.75,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at packages/demos/tests/alg-l07-p006-v1.test.tsx:1:2378
+✖ question and term gates follow source morph clipping, never placement alone (0.330458ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  '' !== 'How'
+  
+      at TestContext.<anonymous> (/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/tests/alg-l07-p006-v1.test.tsx:9:188)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '',
+    expected: 'How',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

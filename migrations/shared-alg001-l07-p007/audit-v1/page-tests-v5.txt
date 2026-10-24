@@ -1,0 +1,24 @@
+✔ root remains10 while every source domain and applicable feedback scenario has complete queryable native text (113.17475ms)
+✔ visible feedback text binds only its selected source branch and keeps first/second wording distinct (0.970958ms)
+✔ native graph label binding retains every source instance, including authored negative upper-axis labels (0.446584ms)
+✔ native main schedule cuts audio at source stop109; Resume cannot bypass the quiz (1.078875ms)
+✔ all wrong feedback clocks hold and close, increment at exit, resume only after second attempt (3.735ms)
+✔ every right branch returns to main and main173 finishes before wrap to1 (1.298667ms)
+✔ cancelled network load and pending decode cannot play or replace Replay state (0.50575ms)
+✔ Spanish Audio is explicit, pause/resume still emits, repeat starts again and return leaves main held (0.430917ms)
+✔ Spanish decode cancellation retires its transport; retry creates a fresh decoder (0.527083ms)
+✔ Replay reports pending playback while old audio closes, and an explicit pause cancels the pending replay (0.301916ms)
+✔ source script increments only on terminal, and every wrong branch gives retry then continues after second (1.558375ms)
+✔ all source right branches return automatically and preserve one prior wrong count (0.156959ms)
+✔ Close is valid during nested popup intro; duplicate answer/Close and stale callbacks do not mutate state (0.107208ms)
+✔ postquiz last frame remains queryable, wraps after a full frame, then re-enters quiz; no auto completion (0.083667ms)
+✔ Replay and leave discard selected branch, attempt, glossary and old callbacks (0.126541ms)
+✔ native definition/question and graph reveal follow independent source mask and alpha boundaries (0.071458ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 226.603458

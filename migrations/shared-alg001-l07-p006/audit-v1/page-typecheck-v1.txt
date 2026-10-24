@@ -1,0 +1,13 @@
+packages/demos/src/alg-l07-p006-presentation-v1.tsx(6,8): error TS2882: Cannot find module or type declarations for side-effect import of './alg-l07-p006-v1.css'.
+packages/demos/src/alg-l07-p006-presentation-v1.tsx(16,227): error TS2322: Type 'string[][]' is not assignable to type 'readonly (readonly [string, string])[]'.
+  Type 'string[]' is not assignable to type 'readonly [string, string]'.
+    Target requires 2 element(s) but source may have fewer.
+packages/demos/src/alg-l07-p006-presentation-v1.tsx(16,480): error TS2322: Type 'string[][]' is not assignable to type 'readonly (readonly [string, string])[]'.
+  Type 'string[]' is not assignable to type 'readonly [string, string]'.
+    Target requires 2 element(s) but source may have fewer.
+packages/demos/src/alg-l07-p006-state-v1.ts(7,14): error TS2322: Type 'Readonly<{ schemaVersion: 1; version: "alg-l07-p006-native-source-v1"; animationId: "shared-alg001-l07-p006"; placementId: "shared-alg001-l07-p006"; sourceSwfSha256: "72c7f3e0d0fd0a5251214c3511262bf164d983837a5c52e9f1e56d4de96df155"; template: "complex-figure"; blocks: readonly { ...; }[]; }>' is not assignable to type 'LessonTextBinding'.
+  Types of property 'blocks' are incompatible.
+    Type 'readonly { id: string; sourceTextIds: string[]; role: string; language: string; readingOrder: number; valueSource: string; }[]' is not assignable to type 'readonly LessonTextBlockBinding[]'.
+      Type '{ id: string; sourceTextIds: string[]; role: string; language: string; readingOrder: number; valueSource: string; }' is not assignable to type 'LessonTextBlockBinding'.
+        Types of property 'role' are incompatible.
+          Type 'string' is not assignable to type 'LessonTextRole'.

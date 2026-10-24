@@ -1,0 +1,36 @@
+JPEXS Free Flash Decompiler v.26.2.1
+------------------------------------
+[1;4mUsage[m: <executable> [PRE-OPTIONS] [COMMAND]
+
+[1;4mExecutable[m:
+       Linux: ffdec or ffdec.sh
+      Mac OS: ffdec.sh
+     Windows: ffdec-cli.exe or ffdec.bat
+        Java: java -jar ffdec.jar
+
+[1;4mPre-option[m:
+[33m-select[m [3m<ranges>[m
+    Applies to: [1m-export[m
+    Select frames/pages for export.
+    Comma separated ranges in format [3m<min>[m-[3m<max>[m ([3m<max>[m is optional) or [3m<num>[m.
+    If it has prefix "[3m<characterId>[m:" then all following ranges apply
+    to the character with specific id.
+    Use "all" as characterId to apply for every character.
+    Use "0" (default) as characterId to apply for main timeline.
+    Example [3m<ranges>[m formats:
+                1-5              ... exports frames 1,2,3,4,5
+                2,3              ... exports frames 2 and 3
+                2-5,7,9-         ... exports frames 2,3,4,5,7,9 and all after
+                57:5-10,12,62:5  ... exports frames 5,6,7,8,9,10,12
+                                     of character 57 and frame 5 of character 62
+                all:12-29        ... exports frames 12 to 29 of all characters
+                12:3,4,0:1-12    ... exports frames 3 and 4 of character 12
+                                     and first 12 frames of main timeline
+    DO NOT PUT space between comma (,) and next range.
+
+[4;1mExamples[m:
+Sorry, no example found for command select,
+Let us know in issue tracker when you need it.
+
+You can use special value "/dev/stdin" for input files to read data 
+from standard input (even on Windows)

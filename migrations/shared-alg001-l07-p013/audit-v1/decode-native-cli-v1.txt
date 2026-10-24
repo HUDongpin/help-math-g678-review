@@ -1,0 +1,25 @@
+### Result
+{"pass":true,"streams":[{"spriteId":57,"sourceBytes":86190,"sourceSha256":"6104640ddf2acde490677e99b6e8b39c36729400a33bf36ed7523709e0bbb214","sampleRate":22050,"channels":1,"decodedSamples":381888,"pcmSha256":"1d95e445f3d1c484f8cdbe92c07079edf363efa951d03f3fda7e48793feeabc8","peak":0.581267774105072,"contextClosed":true,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36"},{"spriteId":"SA","sourceBytes":135072,"sourceSha256":"1ef54e04793a9cfa97a0be952fa11f5e9d9821615b486ad11aa15457ce703d3c","sampleRate":48000,"channels":1,"decodedSamples":463104,"pcmSha256":"b6d4eebf4dc83d8297258ccfd7372c7c74578daff798ff09ce14a449340b6dfe","peak":0.5488389134407043,"contextClosed":true,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36"}],"sourceAlignmentAccepted":false,"listeningAccepted":false}
+### Ran Playwright code
+```js
+await (async (page) => {
+ await page.goto('http://127.0.0.1:4391/');
+ const streams = [{"spriteId": 57, "sampleRate": 22050, "url": "http://127.0.0.1:4391/stream-57.mp3", "bytes": 86190, "sha256": "6104640ddf2acde490677e99b6e8b39c36729400a33bf36ed7523709e0bbb214", "expectedSamples": 381888}, {"spriteId": "SA", "sampleRate": 48000, "url": "http://127.0.0.1:4391/sa.mp3", "bytes": 135072, "sha256": "1ef54e04793a9cfa97a0be952fa11f5e9d9821615b486ad11aa15457ce703d3c"}];
+ const result = await page.evaluate(async streams => {
+  const hash=async b=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',b))].map(x=>x.toString(16).padStart(2,'0')).join('');
+  const measured=[];
+  for(const s of streams){const c=new AudioContext({sampleRate:s.sampleRate});try{const r=await fetch(s.url),bytes=await r.arrayBuffer();if(r.status!==200||bytes.byteLength!==s.bytes||await hash(bytes)!==s.sha256)throw Error('source mismatch');const b=await c.decodeAudioData(bytes.slice(0));if(b.numberOfChannels!==1||b.sampleRate!==s.sampleRate||s.expectedSamples&&b.length!==s.expectedSamples)throw Error('decoder mismatch');const out=new ArrayBuffer(b.length*4),v=new DataView(out);let peak=0;for(let i=0;i<b.length;i++){const n=b.getChannelData(0)[i];if(!Number.isFinite(n))throw Error('nonfinite');v.setFloat32(i*4,n,true);peak=Math.max(peak,Math.abs(n));}if(!peak)throw Error('silent');await c.close();measured.push({spriteId:s.spriteId,sourceBytes:bytes.byteLength,sourceSha256:s.sha256,sampleRate:b.sampleRate,channels:b.numberOfChannels,decodedSamples:b.length,pcmSha256:await hash(out),peak,contextClosed:c.state==='closed',userAgent:navigator.userAgent});}finally{if(c.state!=='closed')await c.close();}}
+  return{pass:true,streams:measured,sourceAlignmentAccepted:false,listeningAccepted:false};
+ },streams);
+ await page.setViewportSize({width:1050,height:950});
+ await page.setContent('<!DOCTYPE html><body style="font:18px sans-serif;background:white;display:grid;grid-template-columns:1fr 1fr;gap:20px">'+[1,5,8,31,33,34,36,37,48,49,50,52].map(id=>'<section style="border:1px solid #aaa;padding:12px"><h2>Source shape '+id+'</h2><img style="max-width:100%;min-height:45px;max-height:180px" src="http://127.0.0.1:4391/ffdec/shapes/'+id+'.svg"></section>').join('')+'</body>');
+ await page.locator('img').evaluateAll(xs=>Promise.all(xs.map(x=>x.decode())));
+ await page.screenshot({path:"/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p013/audit-v1/source-shapes-v1.png",fullPage:true});await page.setContent('<!DOCTYPE html><body style="background:white;display:grid;grid-template-columns:repeat(2,1fr);gap:16px">'+[1,6,30,60,90,110,130,160,190,213].map(n=>'<section><h3>Extracted source frame '+n+'</h3><img width="450" src="http://127.0.0.1:4391/ffdec-child-png/DefineSprite_57/'+n+'.png"></section>').join('')+'</body>');await page.locator('img').evaluateAll(xs=>Promise.all(xs.map(x=>x.decode())));await page.screenshot({path:"/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p013/audit-v1/source-frames-v1.png",fullPage:true});return result;
+}
+)(page);
+```
+### Page
+- Page URL: http://127.0.0.1:4391/
+- Console: 1 errors, 0 warnings
+### Events
+- New console entries: .playwright-cli/console-2026-10-03T17-03-23-841Z.log#L2

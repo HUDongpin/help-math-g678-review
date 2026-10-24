@@ -1,0 +1,36 @@
+✔ native main schedule cuts audio at source stop109; Resume cannot bypass the quiz (1.290708ms)
+✔ all wrong feedback clocks hold and close, increment at exit, resume only after second attempt (4.364792ms)
+✔ every right branch returns to main and main173 finishes before wrap to1 (0.84175ms)
+✔ cancelled network load and pending decode cannot play or replace Replay state (0.474709ms)
+✔ Spanish Audio is explicit, pause/resume still emits, repeat starts again and return leaves main held (0.428292ms)
+✔ Spanish decode cancellation retires its transport; retry creates a fresh decoder (0.334792ms)
+✖ Replay reports pending playback while old audio closes, and an explicit pause cancels the pending replay (1.719875ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 6
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 187.153583
+
+✖ failing tests:
+
+test at packages/demos/src/alg-l07-p007-session-v1.test.ts:1:7055
+✖ Replay reports pending playback while old audio closes, and an explicit pause cancels the pending replay (1.719875ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'paused'
+  - 'loading'
+  
+      at TestContext.<anonymous> (/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/alg-l07-p007-session-v1.test.ts:30:410)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'paused',
+    expected: 'loading',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
