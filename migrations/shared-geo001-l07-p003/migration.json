@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-geo001-l07-p003",
+  "animationId": "shared-geo001-l07-p003",
+  "assetId": "swf-d0e3c429a5cf15de8f89c0e627a51d990b2bfed8d532af3a84f559531b9a4deb",
+  "status": "preserved",
+  "created": "2026-09-24",
+  "confidence": "medium",
+  "classification": {
+    "collection": "HELP_COURSES",
+    "grade": "G6-G8-shared",
+    "lesson": 7,
+    "section": "RW",
+    "page": 2,
+    "domain": "GEO001",
+    "knowledgePoint": {
+      "en": "Volume as cubic units and measurement of a solid figure",
+      "es": ""
+    },
+    "titleRaw": "Page 2",
+    "titleDisplay": "Real World Activity — Page 2",
+    "status": "resolved",
+    "evidence": [
+      "catalog/g678-page-only-release-manifest.v1.json",
+      "audit/movie.xml",
+      "audit/source-text-residency-v1.json",
+      "audit/ffdec-26.2.1/texts/42.txt"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/GEO001/L7/RW/L7RW03.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/GEO001/L7/RW/L7RW03.swf",
+    "flaSha256": "",
+    "swfSha256": "d0e3c429a5cf15de8f89c0e627a51d990b2bfed8d532af3a84f559531b9a4deb",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 719644,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#b8d8f7",
+    "actionScriptVersion": "AS1/2",
+    "complexity": "high",
+    "fonts": ["Bauhaus Md BT", "Arial"],
+    "scripts": [
+      "audit/ffdec-26.2.1/scripts/frame_1/DoAction.pcode",
+      "audit/ffdec-26.2.1/scripts/frame_6/DoAction.pcode",
+      "audit/ffdec-26.2.1/scripts/DefineButton2_46/BUTTONCONDACTION on(release).pcode",
+      "audit/ffdec-26.2.1/scripts/DefineButton2_47/BUTTONCONDACTION on(release).pcode",
+      "audit/ffdec-26.2.1/scripts/DefineButton2_48/BUTTONCONDACTION on(release).pcode",
+      "audit/ffdec-26.2.1/scripts/DefineButton2_120/BUTTONCONDACTION on(release).pcode",
+      "audit/ffdec-26.2.1/scripts/DefineButton2_134/BUTTONCONDACTION on(release).pcode",
+      "audit/ffdec-26.2.1/scripts/DefineButton2_135/BUTTONCONDACTION on(release).pcode",
+      "audit/ffdec-26.2.1/scripts/DefineButton2_136/BUTTONCONDACTION on(release).pcode"
+    ],
+    "externalDependencies": [
+      "Root frame 1 calls _level0.InternalPreloader.gotoAndPlay(jump_check); original-host entry remains unexecuted.",
+      "Seven buttons set _global.KeyAttribute, call _root.DoHyperLinks, and stop animation; lesson-linked L7KTE01/L7KTS01 XML is missing and the Cubic foot entry is unresolved.",
+      "A source-embedded sprite-140 MP3 stream and separate SA/L7RW03.mp3 exist; host trigger, language, and synchronization are unresolved."
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": ["sprite-140 frame 1 places character 4 at depth 1 with clipDepth 3; mask behavior remains to be reviewed"],
+    "morphs": [],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "default",
+      "kind": "interactive",
+      "description": "Root frame 6 enters sprite-140 with 1274 frames, embedded audio and seven legacy glossary release handlers; original host trace and Replay remain unresolved.",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": []
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "undecided",
+    "route": "",
+    "routeFile": "",
+    "component": "",
+    "registryModule": "",
+    "timelineModule": "packages/demos/src/geo-l07-p003-display-state-v1.ts",
+    "testFile": "packages/demos/tests/geo-l07-p003-display-state-v1.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-140",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-2",
+        "kind": "sprite",
+        "sourceTimelineId": "sprite-2",
+        "parentFrameDomainId": "root",
+        "frameCount": 1,
+        "scenarioIds": ["default"]
+      },
+      {
+        "id": "sprite-140",
+        "kind": "sprite",
+        "sourceTimelineId": "sprite-140",
+        "parentFrameDomainId": "root",
+        "frameCount": 1274,
+        "scenarioIds": ["default"]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

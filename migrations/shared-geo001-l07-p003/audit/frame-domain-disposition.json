@@ -1,0 +1,33 @@
+{
+  "animationId": "shared-geo001-l07-p003",
+  "sourceSha256": "d0e3c429a5cf15de8f89c0e627a51d990b2bfed8d532af3a84f559531b9a4deb",
+  "sourceIr": {
+    "path": "audit/display-list-events-v2.json",
+    "bytes": 360830,
+    "sha256": "b77c5d9248479e72fa794ba02b8e8db12a181e93371fb309a57cd7c3f8c9b1a9"
+  },
+  "domains": [
+    {
+      "frameDomainId": "root",
+      "sourceFrames": 10,
+      "disposition": "Frame 1 calls the original host preloader; frame 6 stops and places both source child sprites. Original-host entry is unverified."
+    },
+    {
+      "frameDomainId": "sprite-2",
+      "sourceFrames": 1,
+      "parent": "root",
+      "entryFrame": 6,
+      "placementName": "Mc_page_Title",
+      "disposition": "One-frame title/background child. Static structure known; no authoritative original-runtime capture."
+    },
+    {
+      "frameDomainId": "sprite-140",
+      "sourceFrames": 1274,
+      "parent": "root",
+      "entryFrame": 6,
+      "placementName": "animation",
+      "disposition": "Main teaching and MP3-stream domain with seven legacy glossary releases. Display events and audio blocks are source-extracted; mask visibility, hit-testing, natural traces, synchronization and Replay remain unresolved."
+    }
+  ],
+  "strictAcceptance": false
+}

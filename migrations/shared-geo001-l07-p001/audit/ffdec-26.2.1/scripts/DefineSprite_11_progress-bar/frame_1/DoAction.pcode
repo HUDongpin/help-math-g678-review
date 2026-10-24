@@ -1,0 +1,132 @@
+ConstantPool "_parent", "_framesloaded", "_totalframes", "progressBar", "_width", "_visible", "_currentframe", "drag_But", "_x", "_y", "play", "gotoAndStop"
+DefineFunction "setProgressBar", 0 {
+Push 110, "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "_framesloaded"
+GetMember
+Multiply
+Push "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "_totalframes"
+GetMember
+Divide
+StoreRegister 1
+Pop
+Push "progressBar"
+GetVariable
+Push "_width", register1
+SetMember
+Push "progressBar"
+GetVariable
+Push "_visible", false
+SetMember
+}
+DefineFunction "setDraggerPosition", 0 {
+Push 110, "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "_currentframe"
+GetMember
+Multiply
+Push "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "_totalframes"
+GetMember
+Divide
+StoreRegister 1
+Pop
+Push "drag_But"
+GetVariable
+Push "_x", register1
+SetMember
+}
+DefineFunction "startDragger", 0 {
+GotoFrame 1
+Push "progressBar"
+GetVariable
+Push "_x"
+GetMember
+StoreRegister 1
+Pop
+Push "progressBar"
+GetVariable
+Push "_width"
+GetMember
+Push "progressBar"
+GetVariable
+Push "_x"
+GetMember
+Add2
+StoreRegister 2
+Pop
+Push register1, "progressBar"
+GetVariable
+Push "_y"
+GetMember
+Push register2, "progressBar"
+GetVariable
+Push "_y"
+GetMember
+Push 1, 0.0, "drag_But"
+StartDrag
+}
+DefineFunction "stopDragger", 0 {
+Push "_parent"
+GetVariable
+StoreRegister 1
+Pop
+GotoFrame 0
+EndDrag
+Push register1, "_parent"
+GetMember
+Push "_currentframe"
+GetMember
+Push register1, "_parent"
+GetMember
+Push "_totalframes"
+GetMember
+Equals2
+Not
+Not
+If loc0204
+Push 0.0, register1, "_parent"
+GetMember
+Push "play"
+CallMethod
+Pop
+}
+loc0204:DefineFunction "setMediaFrame", 0 {
+Push "drag_But"
+GetVariable
+Push "_x"
+GetMember
+Push 110
+Divide
+Push "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "_totalframes"
+GetMember
+Multiply
+ToInteger
+Push 1
+Add2
+StoreRegister 1
+Pop
+Push register1, 1, "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+Stop

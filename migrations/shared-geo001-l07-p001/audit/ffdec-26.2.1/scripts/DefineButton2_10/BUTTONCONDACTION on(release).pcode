@@ -1,0 +1,11 @@
+Push "drag_But"
+GetVariable
+Push "_x", "", 20
+GetProperty
+SetMember
+Push 0.0, "setMediaFrame"
+CallFunction
+Pop
+Push 0.0, "stopDragger"
+CallFunction
+Pop
