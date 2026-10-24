@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  // Versioned test inputs: preserve P042's frozen base config byte-for-byte.
+  // Every assertion is retained in the strictly checked v2 successors;
+  // both frozen v1 files still run in the runtime-test glob.
+  "exclude": [
+    "tests/nms-l02-p044-audio-pcm-v1.test.ts",
+    "tests/nms-l02-p046-module-v1.test.ts"
+  ]
+}

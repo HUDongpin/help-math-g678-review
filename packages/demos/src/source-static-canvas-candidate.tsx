@@ -211,6 +211,8 @@ interface CanvasAsset {
 
 interface BehaviorAwareCanvasAsset extends CanvasAsset {
   readonly metadata?: Readonly<{
+    animationId?: string;
+    sourceSwfSha256?: string;
     sourceBehaviorComposite?: Readonly<{
       contractId: string;
       stateIds: readonly string[];
@@ -223,6 +225,47 @@ interface BehaviorAwareCanvasAsset extends CanvasAsset {
       "behaviorCompositeContractId" | "behaviorCompositeState"
     >>,
   ) => unknown;
+}
+
+function verifiedCanvasAssetRegistration(
+  config: ResolvedSourceStaticCanvasCandidateConfig,
+  asset: unknown,
+): BehaviorAwareCanvasAsset {
+  const candidate = asset as BehaviorAwareCanvasAsset | undefined;
+  if (
+    !candidate || typeof candidate.ready !== "function" ||
+    typeof candidate.render !== "function" ||
+    candidate.metadata?.animationId !== config.animationId ||
+    candidate.metadata?.sourceSwfSha256 !== config.sourceSwfSha256
+  ) {
+    throw new Error("Canvas asset metadata does not match the source-bound candidate");
+  }
+  const registry = window.HELP_MATH_CANVAS_ASSETS;
+  const descriptor = registry
+    ? Object.getOwnPropertyDescriptor(registry, config.animationId)
+    : undefined;
+  if (!registry || descriptor?.value !== candidate) {
+    throw new Error("Canvas asset registry entry changed during loading");
+  }
+  if (descriptor.configurable) {
+    Object.defineProperty(registry, config.animationId, {
+      configurable: false,
+      enumerable: descriptor.enumerable,
+      value: candidate,
+      writable: false,
+    });
+  }
+  const hardened = Object.getOwnPropertyDescriptor(
+    registry,
+    config.animationId,
+  );
+  if (
+    hardened?.value !== candidate || hardened.configurable ||
+    hardened.writable
+  ) {
+    throw new Error("Canvas asset registry entry is not immutable");
+  }
+  return candidate;
 }
 
 export interface LatestCanvasRenderRun<TRequest> {
@@ -487,7 +530,7 @@ function validateConfig(
   config: SourceStaticCanvasCandidateConfig,
 ): ResolvedSourceStaticCanvasCandidateConfig {
   invariant(
-    /^course-[a-z0-9-]+$/.test(config.animationId),
+    /^(?:course|shared)-[a-z0-9-]+$/.test(config.animationId),
     "source-static candidate animationId is invalid",
   );
   invariant(
@@ -692,20 +735,46 @@ function loadCanvasAsset(
     );
   }
   const registered = window.HELP_MATH_CANVAS_ASSETS?.[config.animationId];
-  if (registered && (!config.assetSha256 || exactExisting)) {
-    return Promise.resolve(registered as BehaviorAwareCanvasAsset);
+  if (registered) {
+    if (!exactExisting) {
+      return Promise.reject(
+        new Error("Stale Canvas registration has no exact script integrity binding"),
+      );
+    }
+    try {
+      return Promise.resolve(verifiedCanvasAssetRegistration(
+        config,
+        registered,
+      ));
+    } catch (error) {
+      return Promise.reject(error);
+    }
   }
   const existingPromise = assetPromises.get(request.key);
   if (existingPromise) return existingPromise;
   const promise = new Promise<BehaviorAwareCanvasAsset>((resolve, reject) => {
     const script = existing ?? document.createElement("script");
     const finish = () => {
+      script.onload = null;
+      script.onerror = null;
       const asset = window.HELP_MATH_CANVAS_ASSETS?.[config.animationId];
-      if (asset) resolve(asset as BehaviorAwareCanvasAsset);
-      else reject(new Error("Canvas asset did not register the expected animation"));
+      try {
+        if (!asset) {
+          throw new Error("Canvas asset did not register the expected animation");
+        }
+        resolve(verifiedCanvasAssetRegistration(config, asset));
+      } catch (error) {
+        if (!existing) script.remove();
+        reject(error);
+      }
     };
     script.onload = finish;
-    script.onerror = () => reject(new Error("Local Canvas asset could not load"));
+    script.onerror = () => {
+      script.onload = null;
+      script.onerror = null;
+      if (!existing) script.remove();
+      reject(new Error("Local Canvas asset could not load"));
+    };
     if (!existing) {
       script.async = true;
       script.dataset.helpMathCanvasAsset = config.animationId;

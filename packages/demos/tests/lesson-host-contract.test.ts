@@ -265,6 +265,33 @@ test('navigation and FQ scoring fail closed for nonmembers, malformed data, and 
   if (duplicate.status === 'blocked') assert.equal(duplicate.code, 'duplicate-question-score');
 });
 
+test('navigation handoff is exact, bounded, and source/target bound', () => {
+  const session = host({enabledCapabilities: ['navigation']});
+  const request = {
+    type: 'navigate' as const,
+    targetAnimationId: memberIds[1],
+    handoff: {
+      kind: 'game-level' as const,
+      sourceAnimationId: memberIds[0],
+      targetAnimationId: memberIds[1],
+      level: 2 as const,
+    },
+  };
+  assert.equal(session.dispatch(request).status, 'allowed');
+
+  for (const malformed of [
+    {...request, handoff: {...request.handoff, level: 3}},
+    {...request, handoff: {...request.handoff, sourceAnimationId: memberIds[2]}},
+    {...request, handoff: {...request.handoff, targetAnimationId: memberIds[2]}},
+  ]) {
+    const fresh = host({enabledCapabilities: ['navigation']});
+    const decision = fresh.dispatch(malformed);
+    assert.equal(decision.status, 'blocked');
+    if (decision.status === 'blocked') assert.equal(decision.code, 'invalid-request');
+    assert.equal(fresh.snapshot().currentAnimationId, memberIds[0]);
+  }
+});
+
 test('every known legacy endpoint remains inert even with all modern capabilities enabled', () => {
   const session = host({
     mode: 'published',

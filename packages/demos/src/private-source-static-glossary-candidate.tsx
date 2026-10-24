@@ -117,7 +117,10 @@ export function createPrivateSourceStaticGlossaryCandidate(
   options: PrivateSourceStaticGlossaryCandidateOptions,
 ) {
   invariant(
-    /^g4-l10-candidate-to-product-v\d+$/.test(options.calibrationId),
+    /^g4-l10-candidate-to-product-v\d+$/.test(options.calibrationId) ||
+      /^g678-ts\d{2}-l1-product-calibration-v1$/.test(
+        options.calibrationId,
+      ),
     `${config.animationId} has an invalid calibration ID`,
   );
   invariant(

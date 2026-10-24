@@ -17,6 +17,7 @@ test('IN010 is admitted only to the frozen private Current-JS factory registry',
   assert.deepEqual(animationModuleRegistration(module.key), {
     maturity: 'private-current-js',
     scope: 'private-engineering',
+    deploymentScope: 'bundled',
     calibrationId: 'g4-l11-page-only-current-js-43-v1',
   });
   assert.equal(
@@ -63,6 +64,7 @@ test('private registry supports independent lesson calibrations without widening
     'g4-l5-page-only-current-js-53-v1',
     'g4-l10-page-only-current-js-46-v1',
     'g4-l11-page-only-current-js-43-v1',
+    'g678-16-page-product-calibration-v1',
   ]);
   const l11 = document.calibrations.find(
     (calibration: {calibrationId: string}) =>
@@ -72,4 +74,10 @@ test('private registry supports independent lesson calibrations without widening
   assert.ok(l11.entries.some(
     (entry: {key: string}) => entry.key === 'course-g04-l11-in-010',
   ));
+  const g678 = document.calibrations.find(
+    (calibration: {calibrationId: string}) =>
+      calibration.calibrationId === 'g678-16-page-product-calibration-v1',
+  );
+  assert.equal(g678.deploymentScope, 'local-only');
+  assert.equal(g678.entries.length, 354);
 });

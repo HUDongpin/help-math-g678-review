@@ -1,5 +1,11 @@
 import type {
   AnimationLanguage,
+  AnimationInteractiveStop,
+  AnimationInteractiveStopResolutionIntent,
+  AnimationInteractiveSeekCapability,
+  AnimationSeekIntent,
+  AnimationAuthoredTimelineControl,
+  AnimationAuthoredTimelineControlIntent,
   AudioCue,
   AnimationPlaybackMode,
   AnimationRuntimeMetadata,
@@ -25,6 +31,7 @@ export type {
   LessonHostDecision,
   LessonHostLanguage,
   LessonHostMode,
+  LessonHostNavigationHandoff,
   LessonHostRequest,
   LessonHostState,
   MemoryOnlyLessonHost,
@@ -217,6 +224,178 @@ export function resolvePlaybackEndFrame(
   return requestedFrame === undefined
     ? clampFrame(movie.frameCount, movie.frameCount)
     : clampFrame(requestedFrame, movie.frameCount);
+}
+
+export interface InteractivePlaybackPolicy {
+  readonly frame: number;
+  readonly held: boolean;
+  readonly completionAllowed: boolean;
+  readonly requiresHostInteractiveStop: boolean;
+  readonly activeStopId: string | null;
+  readonly resumeFrame: number | null;
+}
+
+/**
+ * Resolve the fail-closed product policy for source-authored interaction
+ * stops. This helper is deliberately pure: a host must own the explicit set
+ * of resolved stop IDs and must not infer resolution from elapsed time.
+ */
+export function resolveInteractivePlaybackPolicy(
+  stops: readonly AnimationInteractiveStop[],
+  options: Readonly<{
+    frameDomain: string;
+    requestedFrame: number;
+    resolvedStopIds?: readonly string[];
+  }>,
+): InteractivePlaybackPolicy {
+  const requestedFrame = Math.max(1, Math.trunc(options.requestedFrame));
+  const resolved = new Set(options.resolvedStopIds ?? []);
+  const unresolved = stops
+    .filter((stop) => stop.frameDomain === options.frameDomain &&
+      !resolved.has(stop.id))
+    .sort((left, right) => left.stopFrame - right.stopFrame)
+    .at(0);
+  if (!unresolved) {
+    return Object.freeze({
+      frame: requestedFrame,
+      held: false,
+      completionAllowed: true,
+      requiresHostInteractiveStop: false,
+      activeStopId: null,
+      resumeFrame: null,
+    });
+  }
+  return Object.freeze({
+    frame: Math.min(requestedFrame, unresolved.stopFrame),
+    held: requestedFrame >= unresolved.stopFrame,
+    completionAllowed: false,
+    requiresHostInteractiveStop: true,
+    activeStopId: unresolved.id,
+    resumeFrame: unresolved.resumeFrame,
+  });
+}
+
+export interface InteractiveSeekPolicy {
+  readonly accepted: boolean;
+  readonly frame: number | null;
+  readonly resume: boolean;
+  readonly blocker:
+    | 'host-seek-consumer-unavailable'
+    | 'seek-intent-contract-mismatch'
+    | null;
+}
+
+export interface InteractiveStopResolutionPolicy {
+  readonly accepted: boolean;
+  readonly stopId: string | null;
+  readonly resumeFrame: number | null;
+  readonly rendererStateOnResume?: 'preserve';
+  readonly blocker:
+    | 'interactive-stop-not-active'
+    | 'interactive-stop-resolution-contract-mismatch'
+    | 'interactive-stop-already-resolved'
+    | null;
+}
+
+/**
+ * Validate a renderer-published stop resolution without mutating playback.
+ * The host must pass the currently active stop ID; this prevents a renderer
+ * from releasing a future stop or bypassing a different frame domain.
+ */
+export function resolveInteractiveStopResolutionPolicy(
+  stops: readonly AnimationInteractiveStop[],
+  intent: AnimationInteractiveStopResolutionIntent,
+  options: Readonly<{
+    activeStopId: string | null;
+    resolvedStopIds?: readonly string[];
+  }>,
+): InteractiveStopResolutionPolicy {
+  const stop = stops.find((candidate) => candidate.id === intent.stopId);
+  if (!stop || options.activeStopId !== stop.id) {
+    return Object.freeze({accepted: false, stopId: null, resumeFrame: null,
+      blocker: 'interactive-stop-not-active'});
+  }
+  if ((options.resolvedStopIds ?? []).includes(stop.id)) {
+    return Object.freeze({accepted: false, stopId: null, resumeFrame: null,
+      blocker: 'interactive-stop-already-resolved'});
+  }
+  if (intent.frameDomain !== stop.frameDomain ||
+    intent.resolution !== stop.resolution ||
+    intent.source !== 'maintained-source-derived-interaction' ||
+    (stop.rendererStateOnResume !== undefined && stop.rendererStateOnResume !== 'preserve')) {
+    return Object.freeze({accepted: false, stopId: null, resumeFrame: null,
+      blocker: 'interactive-stop-resolution-contract-mismatch'});
+  }
+  return Object.freeze({accepted: true, stopId: stop.id,
+    resumeFrame: stop.resumeFrame, blocker: null,
+    ...(stop.rendererStateOnResume === 'preserve' ? {rendererStateOnResume: 'preserve' as const} : {})});
+}
+
+/**
+ * Validate one renderer seek intent without mutating a playhead. The generic
+ * host must opt in explicitly; elapsed time or a local Canvas frame is never
+ * treated as proof that the outer product playhead moved.
+ */
+export function resolveInteractiveSeekPolicy(
+  capability: AnimationInteractiveSeekCapability,
+  intent: AnimationSeekIntent,
+  options: Readonly<{hostSeekConsumerImplemented: boolean}>,
+): InteractiveSeekPolicy {
+  const valid = intent.capabilityId === capability.id &&
+    intent.frameDomain === capability.frameDomain &&
+    intent.source === 'maintained-source-derived-range' &&
+    Number.isSafeInteger(intent.targetFrame) &&
+    intent.targetFrame >= capability.minimumFrame &&
+    intent.targetFrame <= capability.maximumFrame;
+  if (!valid) {
+    return Object.freeze({accepted: false, frame: null, resume: false,
+      blocker: 'seek-intent-contract-mismatch'});
+  }
+  if (!options.hostSeekConsumerImplemented) {
+    return Object.freeze({accepted: false, frame: null, resume: false,
+      blocker: 'host-seek-consumer-unavailable'});
+  }
+  return Object.freeze({accepted: true, frame: intent.targetFrame,
+    resume: intent.targetFrame !== capability.terminalFrame, blocker: null});
+}
+
+export function resolveAuthoredTimelineControlPolicy(
+  controls: readonly AnimationAuthoredTimelineControl[],
+  intent: AnimationAuthoredTimelineControlIntent,
+  context: Readonly<{frameDomain: string; frame: number; frameCount: number;
+    paused: boolean; capture: boolean}>,
+) {
+  const deny = (reason: string) => Object.freeze({accepted: false,
+    reason, frame: null, resume: false});
+  if (context.paused || context.capture) return deny('authored-control-playback-held');
+  if (!intent || Object.keys(intent).sort().join(',') !==
+      'controlId,frameDomain,input,source' ||
+    intent.source !== 'maintained-source-authored-control' ||
+    !['mouse', 'keyboard'].includes(intent.input) ||
+    intent.frameDomain !== context.frameDomain) {
+    return deny('authored-control-intent-mismatch');
+  }
+  const matches = controls.filter((control) => control.id === intent.controlId);
+  if (matches.length !== 1) return deny('authored-control-not-declared');
+  const control = matches[0];
+  if (control.frameDomain !== context.frameDomain || !control.sourceLabel ||
+    !['play', 'stop'].includes(control.playback) ||
+    !Number.isSafeInteger(context.frameCount) || context.frameCount < 1 ||
+    !Number.isSafeInteger(context.frame) || context.frame < 1 ||
+    context.frame > context.frameCount ||
+    !Number.isSafeInteger(control.targetFrame) || control.targetFrame < 1 ||
+    control.targetFrame > context.frameCount ||
+    !Array.isArray(control.sourceFrameRanges) ||
+    !control.sourceFrameRanges.every((range) =>
+      Number.isSafeInteger(range.first) && Number.isSafeInteger(range.last) &&
+      range.first >= 1 && range.last >= range.first &&
+      range.last <= context.frameCount) ||
+    !control.sourceFrameRanges.some((range) =>
+      context.frame >= range.first && context.frame <= range.last)) {
+    return deny('authored-control-source-state-mismatch');
+  }
+  return Object.freeze({accepted: true, reason: 'authored-control-accepted',
+    frame: control.targetFrame, resume: control.playback === 'play'});
 }
 
 /**

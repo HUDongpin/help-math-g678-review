@@ -42,6 +42,19 @@ export interface LessonHostCapabilityDescriptor {
   readonly storesPersonalData: false;
 }
 
+/**
+ * A deliberately tiny, memory-only payload for source-authored transitions
+ * whose destination reads one value that the source page selected. The
+ * duplicated source/target identities prevent this from becoming general
+ * cross-page storage or an unscoped parameter channel.
+ */
+export type LessonHostNavigationHandoff = Readonly<{
+  kind: 'game-level';
+  sourceAnimationId: string;
+  targetAnimationId: string;
+  level: 1 | 2;
+}>;
+
 export const FAIL_CLOSED_LESSON_HOST_DEFAULTS: LessonHostCapabilityDescriptor = Object.freeze({
   capabilities: Object.freeze([]),
   legacyOperations: 'blocked',
@@ -50,9 +63,13 @@ export const FAIL_CLOSED_LESSON_HOST_DEFAULTS: LessonHostCapabilityDescriptor = 
 });
 
 export type LessonHostRequest =
-  | Readonly<{type: 'navigate'; targetAnimationId: string}>
+  | Readonly<{
+      type: 'navigate';
+      targetAnimationId: string;
+      handoff?: LessonHostNavigationHandoff;
+    }>
   | Readonly<{type: 'set-language'; language: LessonHostLanguage}>
-  | Readonly<{type: 'open-glossary'; entryId: string}>
+  | Readonly<{type: 'open-glossary'; entryId: string; playbackDisposition?: KeytermPlaybackDisposition; sourceAnimationId?: string}>
   | Readonly<{type: 'close-glossary'}>
   | Readonly<{
       type: 'open-keyterm';
@@ -294,6 +311,16 @@ export function createMemoryOnlyLessonHost(config: MemoryOnlyLessonHostConfig): 
         if (!validId(request.targetAnimationId) || !members.has(request.targetAnimationId)) {
           return blocked('navigation-target-not-admitted', 'Navigation targets must be exact members of this lesson release.');
         }
+        if (request.handoff !== undefined &&
+          (!isRecord(request.handoff) ||
+            request.handoff.kind !== 'game-level' ||
+            !validId(request.handoff.sourceAnimationId) ||
+            request.handoff.sourceAnimationId !== state.currentAnimationId ||
+            !validId(request.handoff.targetAnimationId) ||
+            request.handoff.targetAnimationId !== request.targetAnimationId ||
+            (request.handoff.level !== 1 && request.handoff.level !== 2))) {
+          return blocked('invalid-request', 'Navigation handoff must be source-bound, target-bound, and use an admitted game level.');
+        }
         state = freezeState({...state, currentAnimationId: request.targetAnimationId});
       } else if (request.type === 'set-language') {
         if (request.language !== 'en' && request.language !== 'es') {
@@ -302,6 +329,16 @@ export function createMemoryOnlyLessonHost(config: MemoryOnlyLessonHostConfig): 
         state = freezeState({...state, language: request.language});
       } else if (request.type === 'open-glossary') {
         if (!validId(request.entryId)) return blocked('invalid-request', 'Glossary entryId is invalid.');
+        if (request.playbackDisposition !== undefined &&
+          (typeof request.playbackDisposition !== 'string' || !keytermPlaybackDispositionSet.has(request.playbackDisposition))) {
+          return blocked('invalid-request', 'Glossary playbackDisposition is invalid.');
+        }
+        if ((request.sourceAnimationId !== undefined &&
+          (!validId(request.sourceAnimationId) || request.sourceAnimationId !== state.currentAnimationId)) ||
+          (request.playbackDisposition === 'source-stop-timeline-and-audio-until-explicit-resume' &&
+            request.sourceAnimationId !== state.currentAnimationId)) {
+          return blocked('invalid-request', 'Glossary sourceAnimationId must match the active animation.');
+        }
         state = freezeState({...state, glossaryEntryId: request.entryId});
       } else if (request.type === 'close-glossary') {
         state = freezeState({...state, glossaryEntryId: null});

@@ -18,6 +18,7 @@ test('G4 L5 exposes 53 unique runnable private Current-JS page modules', async (
     assert.deepEqual(animationModuleRegistration(key), {
       maturity: 'private-current-js',
       scope: 'private-engineering',
+      deploymentScope: 'bundled',
       calibrationId: 'g4-l5-page-only-current-js-53-v1',
     });
     const module = await loadAnimationModule(key);

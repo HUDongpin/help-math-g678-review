@@ -27,6 +27,7 @@ test('six preserved G4 L5 product modules remain private Current-JS registration
     assert.deepEqual(animationModuleRegistration(key), {
       maturity: 'private-current-js',
       scope: 'private-engineering',
+      deploymentScope: 'bundled',
       calibrationId: 'g4-l5-page-only-current-js-53-v1',
     });
     const module = await loadAnimationModule(key);

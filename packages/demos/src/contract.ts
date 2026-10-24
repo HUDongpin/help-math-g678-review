@@ -2,6 +2,7 @@ import type {ComponentType} from 'react';
 import type {
   LessonHostCapabilityDescriptor,
   LessonHostDecision,
+  LessonHostNavigationHandoff,
   LessonHostRequest,
 } from './lesson-host-contract';
 
@@ -198,6 +199,100 @@ export interface AnimationTransportCapability {
   readonly strictAcceptanceEffect: 'none';
 }
 
+/**
+ * A source-authored child-timeline stop whose continuation depends on an
+ * interaction result that the outer product runtime must resolve explicitly.
+ * Merely reaching `stopFrame` is never page completion. A host that does not
+ * consume this contract must fail closed and keep the module unregistered.
+ */
+export interface AnimationInteractiveStop {
+  readonly id: string;
+  readonly frameDomain: string;
+  readonly stopFrame: number;
+  readonly resumeFrame: number;
+  readonly resolution:
+    | 'explicit-source-feedback-finished'
+    | 'explicit-source-drag-set-finished'
+    | 'explicit-source-control-finished';
+  readonly completionDisposition: 'blocked-while-unresolved';
+  /** Preserve a completed source interaction's score/review state when its
+   * declared stop resumes. Omission retains the established renderer reset. */
+  readonly rendererStateOnResume?: 'preserve';
+  readonly requiresHostInteractiveStop: true;
+  readonly strictAcceptanceEffect: 'none';
+}
+
+export interface AnimationInteractiveSeekCapability {
+  readonly id: string;
+  readonly frameDomain: string;
+  readonly minimumFrame: number;
+  readonly maximumFrame: number;
+  readonly terminalFrame: number;
+  readonly resumeDisposition: 'resume-only-when-nonterminal';
+  readonly requiresHostSeekConsumer: true;
+  readonly strictAcceptanceEffect: 'none';
+}
+
+export interface AnimationSeekIntent {
+  readonly capabilityId: string;
+  readonly frameDomain: string;
+  readonly targetFrame: number;
+  readonly input: 'native-range-change';
+  readonly source: 'maintained-source-derived-range';
+}
+
+/** Exact authored buttons such as Repeat Directions and Skip Directions.
+ * Targets belong to the module declaration, never to the incoming intent. */
+export interface AnimationAuthoredTimelineControl {
+  readonly id: string;
+  readonly frameDomain: string;
+  readonly sourceFrameRanges: readonly Readonly<{first: number; last: number}>[];
+  readonly targetFrame: number;
+  readonly playback: 'play' | 'stop';
+  readonly sourceLabel: string;
+}
+
+export interface AnimationAuthoredTimelineControlIntent {
+  readonly controlId: string;
+  readonly frameDomain: string;
+  readonly input: 'mouse' | 'keyboard';
+  readonly source: 'maintained-source-authored-control';
+}
+
+export interface AnimationAuthoredTimelineControlDecision {
+  readonly accepted: boolean;
+  readonly reason: string;
+}
+
+/**
+ * A maintained renderer may publish this intent only after its source-bound
+ * interaction reducer reaches the exact resolution named by the matching
+ * {@link AnimationInteractiveStop}. The outer runtime remains authoritative:
+ * it validates the active stop and owns both the resolved-stop ledger and the
+ * playhead resume.
+ */
+export interface AnimationInteractiveStopResolutionIntent {
+  readonly stopId: string;
+  readonly frameDomain: string;
+  readonly resolution: AnimationInteractiveStop['resolution'];
+  readonly source: 'maintained-source-derived-interaction';
+}
+
+/** Identity of one mounted lesson host; shared by its pages, isolated from other hosts. */
+export interface RendererLessonSessionScope {readonly id: string}
+
+/** Renderer-owned clock state; a report never grants admission or fidelity. */
+export interface RendererPlaybackReport {
+  readonly frame: number;
+  readonly frameCount: number;
+  readonly frameDomain: string;
+  readonly fps: number;
+  readonly settled: boolean;
+  readonly complete: boolean;
+  readonly lessonFinished: boolean;
+  readonly narration: 'unavailable' | 'idle' | 'playing' | 'blocked';
+}
+
 export interface AnimationRendererProps {
   /** Product publication gate; false/absent means no audio may be advertised or requested. */
   readonly audioEnabled?: boolean;
@@ -226,6 +321,23 @@ export interface AnimationRendererProps {
   readonly activeInteractiveAudioId?: string | null;
   readonly onReplay?: () => void;
   /**
+   * Typed playhead intent for maintained source-derived seek controls. Absence
+   * means the outer host has not implemented seeking; the renderer may show a
+   * local engineering preview but must not claim playhead seek/resume.
+   */
+  readonly onSeekIntent?: (intent: AnimationSeekIntent) => void;
+  readonly onAuthoredTimelineControl?: (
+    intent: AnimationAuthoredTimelineControlIntent,
+  ) => AnimationAuthoredTimelineControlDecision;
+  /**
+   * Typed source-interaction resolution intent. Absence means the outer host
+   * cannot release an authored interactive stop, so the renderer must remain
+   * held and page completion must stay blocked.
+   */
+  readonly onInteractiveStopResolved?: (
+    intent: AnimationInteractiveStopResolutionIntent,
+  ) => void;
+  /**
    * Typed modern host intent. The optional trigger stays outside the serializable
    * request so the product shell can restore focus after closing a support tool.
    * No legacy global, URL, storage, or ActionScript operation is executed here.
@@ -234,8 +346,16 @@ export interface AnimationRendererProps {
     request: LessonHostRequest,
     context?: Readonly<{trigger?: HTMLElement}>,
   ) => LessonHostDecision | void;
+  /**
+   * Exact memory-only state carried by a reviewed typed navigation request.
+   * It is neither persisted nor exposed to a renderer whose animationId is
+   * not the handoff target.
+   */
+  readonly lessonHostNavigationHandoff?: LessonHostNavigationHandoff | null;
   /** Modern host pause state; this is not evidence of a legacy pause control. */
   readonly paused?: boolean;
+  /** Raw modern host pause before hidden/reduced-motion clock holds; absent keeps the effective pause. */
+  readonly hostPaused?: boolean;
   /** Device motion preference for functional overlays owned by the renderer. */
   readonly reducedMotion?: boolean;
   /**
@@ -250,10 +370,20 @@ export interface AnimationRendererProps {
    * animation rectangle; it is separate from the below-stage companion host.
    */
   readonly pageInteractionStageTargetId?: string;
+  /** Renderer clocks only: playback volume, independent from visual language. */
+  readonly volume?: number;
+  readonly audioLanguage?: AnimationLanguage;
+  readonly rendererLessonSession?: RendererLessonSessionScope;
+  readonly narrationRequest?: Readonly<{action: 'play' | 'stop'; requestId: number}> | null;
+  /** Source-owned progress; the host never advances this clock with frame props. */
+  readonly onRendererPlayback?: (report: RendererPlaybackReport) => void;
 }
 
 export interface AnimationModule<State = unknown> {
   readonly key: string;
+  /** Host-clocked unless explicitly declared; renderer clocks report progress. */
+  readonly clock?: 'host' | 'renderer';
+  readonly textPresentation?: import('./lesson-text-contract').LessonTextPresentationCapability<State>;
   /**
    * Legacy playback metadata. New multi-domain modules should also declare
    * `runtime`, whose frameCount remains the source root SWF frame count.
@@ -288,6 +418,14 @@ export interface AnimationModule<State = unknown> {
   readonly pageAudioCandidates?: readonly PageAudioCandidate[];
   /** Explicit, fail-closed modern transport capability. Absence disables seeking. */
   readonly transport?: AnimationTransportCapability;
+  /**
+   * Fail-closed authored stops. The generic host must clamp playback and block
+   * page completion until the matching stop ID has been explicitly resolved.
+   */
+  readonly interactiveStops?: readonly AnimationInteractiveStop[];
+  /** Fail-closed source-derived seek contract requiring an outer host consumer. */
+  readonly interactiveSeek?: AnimationInteractiveSeekCapability;
+  readonly authoredTimelineControls?: readonly AnimationAuthoredTimelineControl[];
   /**
    * Explicit modern host capabilities. Absence means no lesson-host action is
    * enabled; it never implies permission to execute legacy ActionScript host

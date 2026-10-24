@@ -33,6 +33,7 @@ test('G4 L11 loads all 43 private Current-JS page modules in frozen order', asyn
     assert.deepEqual(animationModuleRegistration(key), {
       maturity: 'private-current-js',
       scope: 'private-engineering',
+      deploymentScope: 'bundled',
       calibrationId: calibration.calibrationId,
     });
   }
