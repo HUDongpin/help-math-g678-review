@@ -1,0 +1,27 @@
+[
+  {
+    "generator": "derive-source-model-v1.py",
+    "exitCode": 0,
+    "output": "{\"output\": {\"path\": \"migrations/shared-alg001-l06-p060/native-v1/source-model-v1.json\", \"bytes\": 4780567, \"sha256\": \"6e5422eb24aeac0d76138d1733b3d1fd22650cfba51f14ecf0e7258ab4f373a1\"}, \"questions\": 24, \"texts\": 500, \"domains\": 197, \"scripts\": 115}\n"
+  },
+  {
+    "generator": "derive-audio-v1.py",
+    "exitCode": 0,
+    "output": "{\"output\": {\"path\": \"migrations/shared-alg001-l06-p060/audio-v1/source-role-inventory-v1.json\", \"bytes\": 155920, \"sha256\": \"011e17afadb1449610b3ca208ba0a4a8c2b74a37e7667fd04f7dc825b3a4c7e6\"}, \"counts\": {\"questions\": 24, \"rolesPerQuestion\": 5, \"languages\": 2, \"files\": 240, \"bytes\": 17681904}}\n"
+  },
+  {
+    "generator": "derive-native-v1.py",
+    "exitCode": 0,
+    "output": "{\"output\": {\"path\": \"packages/demos/src/generated/alg-l06-p060-native-v1.ts\", \"bytes\": 157505, \"sha256\": \"2350743fde3a6b75f9e7ea94cac480609210f79446aede5495500c9c1df90709\"}, \"questions\": 24, \"graphs\": 8, \"crosschecks\": 16}\n"
+  },
+  {
+    "generator": "derive-measured-bindings-v1.py",
+    "exitCode": 0,
+    "output": "{\"file\": \"packages/demos/src/generated/alg-l06-p060-measured-v1.ts\", \"bytes\": 110415, \"sha256\": \"4d2f3f555d15e23c56dde101a44e147dd6ccd5a20cdeef6cfe0744bac749782c\", \"assets\": 240}\n"
+  },
+  {
+    "generator": "derive-product-provenance-v1.mjs",
+    "exitCode": 0,
+    "output": "{\"member\":{\"path\":\"work/g678-shared-page-factory/alg-l06-p060-maintained-native-v1-20261003-v1/members/shared-alg001-l06-p060/member-manifest.json\",\"bytes\":3814,\"sha256\":\"0a38fb49e747e06337619fdd5c8d234c2e9f26a768aef04af45c9186f251232f\"},\"run\":{\"path\":\"work/g678-shared-page-factory/alg-l06-p060-maintained-native-v1-20261003-v1/run-manifest.json\",\"bytes\":1751,\"sha256\":\"397d9e65ab9730fdc437145f894c7c69095c2ad742f1660fb153ce7ba5b8164d\"},\"registered\":false}\n"
+  }
+]

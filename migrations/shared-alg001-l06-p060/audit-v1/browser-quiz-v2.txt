@@ -1,0 +1,48 @@
+### Result
+{"pass":true,"rows":[{"locale":"en","step":"answer","id":21,"ordinal":1,"choice":"B","phase":"question","responses":1},{"locale":"en","step":"answer","id":17,"ordinal":2,"choice":"C","phase":"question","responses":2},{"locale":"en","step":"answer","id":2,"ordinal":3,"choice":"D","phase":"question","responses":3},{"locale":"en","step":"answer","id":8,"ordinal":4,"choice":"D","phase":"question","responses":4},{"locale":"en","step":"answer","id":18,"ordinal":5,"choice":"A","phase":"question","responses":5},{"locale":"en","step":"answer","id":14,"ordinal":6,"choice":"C","phase":"question","responses":6},{"locale":"en","step":"answer","id":13,"ordinal":7,"choice":"A","phase":"question","responses":7},{"locale":"en","step":"answer","id":16,"ordinal":8,"choice":"B","phase":"question","responses":8},{"locale":"en","step":"answer","id":5,"ordinal":9,"choice":"A","phase":"question","responses":9},{"locale":"en","step":"answer","id":15,"ordinal":10,"choice":"A","phase":"result","responses":10},{"locale":"en","step":"review-ten-and-Replay","selection":[21,17,2,8,18,14,13,16,5,15],"score":"6 / 10","replay":1},{"locale":"es","step":"answer","id":2,"ordinal":1,"choice":"D","phase":"question","responses":1},{"locale":"es","step":"answer","id":4,"ordinal":2,"choice":"A","phase":"question","responses":2},{"locale":"es","step":"answer","id":14,"ordinal":3,"choice":"C","phase":"question","responses":3},{"locale":"es","step":"answer","id":8,"ordinal":4,"choice":"D","phase":"question","responses":4},{"locale":"es","step":"answer","id":6,"ordinal":5,"choice":"A","phase":"question","responses":5},{"locale":"es","step":"answer","id":15,"ordinal":6,"choice":"D","phase":"question","responses":6},{"locale":"es","step":"answer","id":7,"ordinal":7,"choice":"A","phase":"question","responses":7},{"locale":"es","step":"answer","id":10,"ordinal":8,"choice":"B","phase":"question","responses":8},{"locale":"es","step":"answer","id":20,"ordinal":9,"choice":"A","phase":"question","responses":9},{"locale":"es","step":"answer","id":12,"ordinal":10,"choice":"A","phase":"result","responses":10},{"locale":"es","step":"review-ten-and-Replay","selection":[2,4,14,8,6,15,7,10,20,12],"score":"6 / 10","replay":1}],"errors":[],"requests":0,"contexts":0}
+### Ran Playwright code
+```js
+await (async page => {
+ await page.goto('http://127.0.0.1:4361/');await page.waitForFunction(()=>window.snap?.quiz?.phase==='question');
+ await page.setViewportSize({width:1360,height:1000});const rows=[],errors=[];page.on('pageerror',e=>errors.push(String(e)));
+ const X='/Volumes/American Dream/hudongpin/g678-p060-native-browser-20261003-v1';
+ const get=()=>page.evaluate(()=>({snap:window.snap,focused:document.activeElement?.tagName,requests:window.requests.length,contexts:window.contexts.map(c=>c.state)}));
+ for(const locale of ['en','es']){
+  await page.evaluate(locale=>{window.setLocale(locale);window.setSeed(locale==='en'?39:17);window.controls.replay();},locale);
+  await page.waitForFunction(locale=>window.snap.language===locale&&window.snap.quiz.phase==='question',locale);
+  const started=await get();if(started.requests||started.contexts.length)throw Error('autoplay at start');
+  const selection=started.snap.quiz.selection.slice();
+  for(let i=0;i<10;i++){
+   const id=await page.locator('[data-p060-question]').getAttribute('data-p060-question');if(Number(id)!==selection[i])throw Error('order');
+   const choice=await page.evaluate(({id,i})=>window.questions.find(q=>q.id===Number(id)).options.find(o=>o.correct===(i<6)).letter,{id,i});
+   // Save an actual old DOM button and deliver its release after the new question mounted.
+   await page.evaluate(choice=>{window.oldButton=document.querySelector(`[data-choice="${choice}"]`);},choice);
+   if(i===0){await page.locator(`[data-choice="${choice}"]`).focus();await page.keyboard.press('Enter');}
+   else await page.locator(`[data-choice="${choice}"]`).click();
+   await page.waitForFunction(n=>window.snap.quiz.responses.length===n,i+1);
+   await page.evaluate(()=>window.oldButton.click());const state=await get();if(state.snap.quiz.responses.length!==i+1)throw Error('double answer');
+   if(state.focused!=='H2')throw Error('question focus');
+   rows.push({locale,step:'answer',id:Number(id),ordinal:i+1,choice,phase:state.snap.quiz.phase,responses:state.snap.quiz.responses.length});
+  }
+  const result=await page.locator('[data-p060-score]').textContent();if(result.trim()!=='6 / 10')throw Error('score '+result);
+  if(await page.locator('[data-p060-grade]').textContent()!=='Partially Proficient')throw Error('grade');
+  await page.locator('.p060-quiz').screenshot({path:`${X}/${locale}-results-v1.png`});
+  await page.getByRole('button',{name:locale==='en'?'Review answers':'Repasar respuestas',exact:true}).click();
+  for(let i=0;i<10;i++){
+   await page.waitForFunction(i=>window.snap.quiz.phase==='review'&&window.snap.quiz.reviewIndex===i,i);
+   if(Number(await page.locator('[data-p060-question]').getAttribute('data-p060-question'))!==selection[i])throw Error('review order');
+   if(await page.locator('[data-review-feedback="Correct"]').count()!==1)throw Error('correct marker');
+   if(await page.locator('[data-review-feedback="Incorrect"]').count()!==(i<6?0:1))throw Error('wrong marker');
+   if(await page.locator('[data-audio-choice]').count())throw Error('review invented audio widgets');
+   if(i===6)await page.locator('.p060-quiz').screenshot({path:`${X}/${locale}-review-wrong-v1.png`});
+   await page.getByRole('button',{name:i===9?(locale==='en'?'Back to results':'Volver a los resultados'):(locale==='en'?'Next answer':'Siguiente respuesta'),exact:true}).click();
+  }
+  await page.waitForFunction(()=>window.snap.quiz.phase==='result');const before=await get();
+  await page.getByRole('button',{name:locale==='en'?'Replay quiz':'Repetir cuestionario',exact:true}).click();await page.waitForFunction(()=>window.snap.quiz.phase==='question');
+  const after=await get();if(after.snap.quiz.responses.length||after.snap.quiz.replay!==before.snap.quiz.replay+1||JSON.stringify(after.snap.quiz.selection)!==JSON.stringify(selection))throw Error('Replay');
+  rows.push({locale,step:'review-ten-and-Replay',selection,score:result,replay:after.snap.quiz.replay});
+ }
+ if(errors.length)throw Error(errors.join('\n'));return {pass:true,rows,errors,requests:await page.evaluate(()=>window.requests.length),contexts:await page.evaluate(()=>window.contexts.length)};
+}
+)(page);
+```

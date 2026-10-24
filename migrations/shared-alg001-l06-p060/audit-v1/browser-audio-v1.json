@@ -1,0 +1,301 @@
+{
+  "pass": true,
+  "rows": [
+    {
+      "language": "en",
+      "choice": "question",
+      "id": "en-Q9",
+      "phase": "playing",
+      "transport": "playing",
+      "contexts": [
+        "running"
+      ]
+    },
+    {
+      "language": "en",
+      "choice": "A",
+      "id": "en-Q9A",
+      "phase": "playing",
+      "transport": "playing",
+      "contexts": [
+        "closed",
+        "running"
+      ]
+    },
+    {
+      "language": "en",
+      "choice": "B",
+      "id": "en-Q9B",
+      "phase": "playing",
+      "transport": "playing",
+      "contexts": [
+        "closed",
+        "closed",
+        "running"
+      ]
+    },
+    {
+      "language": "en",
+      "choice": "C",
+      "id": "en-Q9C",
+      "phase": "playing",
+      "transport": "playing",
+      "contexts": [
+        "closed",
+        "closed",
+        "closed",
+        "running"
+      ]
+    },
+    {
+      "language": "en",
+      "choice": "D",
+      "id": "en-Q9D",
+      "phase": "playing",
+      "transport": "playing",
+      "contexts": [
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "running"
+      ]
+    },
+    {
+      "language": "es",
+      "choice": "question",
+      "id": "es-Q9",
+      "phase": "playing",
+      "transport": "playing",
+      "contexts": [
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "running"
+      ]
+    },
+    {
+      "language": "es",
+      "choice": "A",
+      "id": "es-Q9A",
+      "phase": "playing",
+      "transport": "playing",
+      "contexts": [
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "running"
+      ]
+    },
+    {
+      "language": "es",
+      "choice": "B",
+      "id": "es-Q9B",
+      "phase": "playing",
+      "transport": "playing",
+      "contexts": [
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "running"
+      ]
+    },
+    {
+      "language": "es",
+      "choice": "C",
+      "id": "es-Q9C",
+      "phase": "playing",
+      "transport": "playing",
+      "contexts": [
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "running"
+      ]
+    },
+    {
+      "language": "es",
+      "choice": "D",
+      "id": "es-Q9D",
+      "phase": "playing",
+      "transport": "playing",
+      "contexts": [
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "running"
+      ]
+    },
+    {
+      "step": "natural-EOF",
+      "state": {
+        "snap": {
+          "quiz": {
+            "seed": 0,
+            "replay": 0,
+            "epoch": 0,
+            "phase": "question",
+            "selection": [
+              9,
+              10,
+              7,
+              18,
+              1,
+              13,
+              19,
+              16,
+              17,
+              22
+            ],
+            "responses": [],
+            "reviewIndex": null,
+            "finishedElapsedMs": null
+          },
+          "audio": {
+            "assetId": "es-Q9D",
+            "phase": "idle",
+            "failure": null,
+            "transport": {
+              "phase": "buffer-ended",
+              "epoch": 2,
+              "decodedSample": 334080,
+              "contextTime": 7.616145124716553,
+              "heldContextTime": null,
+              "playbackAnchor": null,
+              "elapsedMs": 7575.510204081633,
+              "volume": 0.7,
+              "failure": null,
+              "sourceAlignment": "unresolved",
+              "lessonCompleted": false
+            }
+          },
+          "language": "es",
+          "paused": false,
+          "closed": false
+        },
+        "requests": [
+          "en-Q9",
+          "en-Q9A",
+          "en-Q9B",
+          "en-Q9C",
+          "en-Q9D",
+          "es-Q9",
+          "es-Q9A",
+          "es-Q9B",
+          "es-Q9C",
+          "es-Q9D",
+          "es-Q9D"
+        ],
+        "contexts": [
+          "closed",
+          "closed",
+          "closed",
+          "closed",
+          "closed",
+          "closed",
+          "closed",
+          "closed",
+          "closed",
+          "closed",
+          "running"
+        ]
+      }
+    },
+    {
+      "step": "answer-closes-recording",
+      "state": {
+        "snap": {
+          "quiz": {
+            "seed": 0,
+            "replay": 0,
+            "epoch": 1,
+            "phase": "question",
+            "selection": [
+              9,
+              10,
+              7,
+              18,
+              1,
+              13,
+              19,
+              16,
+              17,
+              22
+            ],
+            "responses": [
+              {
+                "questionId": 9,
+                "choice": "A",
+                "sourceInstance": "A9Opt1",
+                "correct": false,
+                "elapsedMs": 8658.5
+              }
+            ],
+            "reviewIndex": null,
+            "finishedElapsedMs": null
+          },
+          "audio": {
+            "assetId": null,
+            "phase": "idle",
+            "failure": null,
+            "transport": null
+          },
+          "language": "es",
+          "paused": false,
+          "closed": false
+        },
+        "requests": [
+          "en-Q9",
+          "en-Q9A",
+          "en-Q9B",
+          "en-Q9C",
+          "en-Q9D",
+          "es-Q9",
+          "es-Q9A",
+          "es-Q9B",
+          "es-Q9C",
+          "es-Q9D",
+          "es-Q9D",
+          "es-Q9"
+        ],
+        "contexts": [
+          "closed",
+          "closed",
+          "closed",
+          "closed",
+          "closed",
+          "closed",
+          "closed",
+          "closed",
+          "closed",
+          "closed",
+          "closed",
+          "closed"
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "requests": 12,
+  "contexts": 12
+}

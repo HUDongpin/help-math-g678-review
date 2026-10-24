@@ -1,0 +1,30 @@
+{
+  "kind": "p060-first-browser-rework-v1",
+  "failedQuizCheck": "An old button DOM node was reused for the next question. Its new click handler correctly answered the new question, exposing a stale element reference hazard. Key option rows by source question identity.",
+  "visualFinding": "At 390px and root 20px, centered graph numeric labels touched the coordinate axes. Retain native 1rem text and source curves, align y labels by their right edge and x labels by their top edge.",
+  "files": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/g678-p060-native-browser-20261003-v1/fixture-pre-key-and-label-adjustment-v1.js",
+      "bytes": 928937,
+      "sha256": "ef4826252e95e121ab228f977693e92b8a64a7c5b127cd3a20f8ce3c9c3e84d8"
+    },
+    {
+      "path": "packages/demos/src/alg-l06-p060-content-v1.tsx",
+      "bytes": 4120,
+      "sha256": "f23a62c8e53c7e245f94c9d3fd1077f19e481a8447930afab22a1c2a40a20835"
+    },
+    {
+      "path": "packages/demos/src/alg-l06-p060-player-v1.tsx",
+      "bytes": 11652,
+      "sha256": "fdb3df760fbb95a35874590f7ddda576049442a22ef11beaadd3af98a7d45bd4"
+    },
+    {
+      "path": "packages/demos/src/generated/alg-l06-p060-native-v1.ts",
+      "bytes": 144939,
+      "sha256": "4b023422723815812daa48f9ec5527f5d16e7baf38d13114f65a007e0f726b1e"
+    }
+  ],
+  "failedQuizReceipt": "migrations/shared-alg001-l06-p060/audit-v1/browser-quiz-v1.txt",
+  "priorGalleryReceipt": "migrations/shared-alg001-l06-p060/audit-v1/browser-gallery-v1.json",
+  "acceptance": false
+}

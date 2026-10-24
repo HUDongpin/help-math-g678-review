@@ -1,0 +1,144 @@
+{
+  "pass": true,
+  "rows": [
+    {
+      "action": "answer",
+      "held": {
+        "status": 200,
+        "bytes": 53397
+      },
+      "before": {
+        "replay": 1,
+        "responses": 0,
+        "contexts": 1,
+        "requests": 1
+      },
+      "after": {
+        "phase": "idle",
+        "id": null,
+        "replay": 1,
+        "responses": 1,
+        "contexts": [
+          "closed"
+        ],
+        "requests": 1
+      }
+    },
+    {
+      "action": "replay",
+      "held": {
+        "status": 200,
+        "bytes": 53397
+      },
+      "before": {
+        "replay": 2,
+        "responses": 0,
+        "contexts": 2,
+        "requests": 2
+      },
+      "after": {
+        "phase": "idle",
+        "id": null,
+        "replay": 3,
+        "responses": 0,
+        "contexts": [
+          "closed",
+          "closed"
+        ],
+        "requests": 2
+      }
+    },
+    {
+      "action": "pause",
+      "held": {
+        "status": 200,
+        "bytes": 53397
+      },
+      "before": {
+        "replay": 4,
+        "responses": 0,
+        "contexts": 3,
+        "requests": 3
+      },
+      "after": {
+        "phase": "idle",
+        "id": null,
+        "replay": 4,
+        "responses": 0,
+        "contexts": [
+          "closed",
+          "closed",
+          "closed"
+        ],
+        "requests": 3
+      }
+    },
+    {
+      "action": "language",
+      "held": {
+        "status": 200,
+        "bytes": 53397
+      },
+      "before": {
+        "replay": 5,
+        "responses": 0,
+        "contexts": 4,
+        "requests": 4
+      },
+      "after": {
+        "phase": "idle",
+        "id": null,
+        "replay": 5,
+        "responses": 0,
+        "contexts": [
+          "closed",
+          "closed",
+          "closed",
+          "closed"
+        ],
+        "requests": 4
+      }
+    },
+    {
+      "action": "leave",
+      "held": {
+        "status": 200,
+        "bytes": 53397
+      },
+      "before": {
+        "replay": 6,
+        "responses": 0,
+        "contexts": 5,
+        "requests": 5
+      },
+      "after": {
+        "phase": "loading",
+        "id": "es-Q9",
+        "replay": 6,
+        "responses": 0,
+        "contexts": [
+          "closed",
+          "closed",
+          "closed",
+          "closed",
+          "closed"
+        ],
+        "requests": 5
+      }
+    },
+    {
+      "action": "return-and-playing-dispose",
+      "contexts": [
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "closed",
+        "closed"
+      ]
+    }
+  ],
+  "errors": [],
+  "requests": 6,
+  "contexts": 6
+}
