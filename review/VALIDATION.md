@@ -1,5 +1,7 @@
 # Validation results
 
+This is the initial snapshot record. The subsequent [registry and tellTarget repairs](REPAIRS-20261024.md) supersede those two findings and document their exact scope; the other failures remain reported.
+
 The snapshot is ready for code review. It is **not an all-green product build or a completed lesson acceptance result**. All checks ran in the isolated review checkout using existing local dependency packages, with workspace package aliases resolving to this checkout. The active conversion checkout was not modified.
 
 | Check | Result | Interpretation |

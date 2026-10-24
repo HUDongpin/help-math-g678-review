@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "baseCommit": "9143d33a7a98c7bd613f1bb07cfa8099be76b805",
+  "scope": "Isolated review checkout repairs: registered artifact identity and sample tellTarget semantics. No active conversion-tree writes, validator relaxation, page acceptance or release.",
+  "registry": {
+    "rootCause": "Seven maintained module/timeline files changed in the 2026-10-22 host-compatibility candidate while their own six placements retained exact older registration pins. The later retained-input transitions did not re-register these six placements.",
+    "method": "Restore independently verified exact registered preimages; keep registry, freeze manifests and checker bytes unchanged. Preserve the divergent candidate in the base commit and dated evidence.",
+    "restored": [
+      {
+        "path": "packages/demos/src/modules/g678-alg-l06-source-title-p001.tsx",
+        "before": {
+          "bytes": 3810,
+          "sha256": "3df7b40431e87909f3e184880557102e50ae1887873c65b6afc52c76e6974e2f"
+        },
+        "registered": {
+          "path": "packages/demos/src/modules/g678-alg-l06-source-title-p001.tsx",
+          "bytes": 3792,
+          "sha256": "511ad1c0a9f1758a45bd2c22747eaea19bce68db4ddd27c69836fe8bf1a66fca"
+        }
+      },
+      {
+        "path": "packages/demos/src/modules/g678-geo-l06-native-introduction-p001.tsx",
+        "before": {
+          "bytes": 1701,
+          "sha256": "b4977ca4946601e5ea07441b7f9e92fdcff474ac9a29aa4f965567a8aeff124d"
+        },
+        "registered": {
+          "path": "packages/demos/src/modules/g678-geo-l06-native-introduction-p001.tsx",
+          "bytes": 1789,
+          "sha256": "1394fc58a95484bfab229590713b0b5786dac134ebbc36f5c26f04a90ee6191f"
+        }
+      },
+      {
+        "path": "packages/demos/src/modules/g678-geo-l07-native-introduction-p001.tsx",
+        "before": {
+          "bytes": 1779,
+          "sha256": "319d9a8875920c07e15f43b25957880ce867c3f941c02f6938cc309397acafcb"
+        },
+        "registered": {
+          "path": "packages/demos/src/modules/g678-geo-l07-native-introduction-p001.tsx",
+          "bytes": 1817,
+          "sha256": "89383713019bc20709bb34915ce8cf0e3a989b1759d3a8a6c3bf2e5e04c78e71"
+        }
+      },
+      {
+        "path": "packages/demos/src/modules/g678-nms-l02-native-real-world-p002.tsx",
+        "before": {
+          "bytes": 2078,
+          "sha256": "cf46bd5712b7d62ab0ef0f6341af1224d48c97e814c100aa31a9d002ecf0000d"
+        },
+        "registered": {
+          "path": "packages/demos/src/modules/g678-nms-l02-native-real-world-p002.tsx",
+          "bytes": 2388,
+          "sha256": "24b272ec9bd005abf4f8d90e5265239587280cceb06ac650efda53305dc9fb0c"
+        }
+      },
+      {
+        "path": "packages/demos/src/modules/g678-nms-l02-percent-practice-p052.tsx",
+        "before": {
+          "bytes": 2372,
+          "sha256": "0640f331329aca43bc81cb7000d6cb2c5edcc1a2db865abbcce9565c9dac39cf"
+        },
+        "registered": {
+          "path": "packages/demos/src/modules/g678-nms-l02-percent-practice-p052.tsx",
+          "bytes": 2284,
+          "sha256": "5864b9cdc247e6052ec9496fcf05ac7370f37474240cdcc15f194df444e13d43"
+        }
+      },
+      {
+        "path": "packages/demos/src/modules/shared-nms002-l02-p053.tsx",
+        "before": {
+          "bytes": 2342,
+          "sha256": "99c318cd8aa47d3fbe6ed89b8fc4d67170f21c8ed6aa88e70f867e84edeead0e"
+        },
+        "registered": {
+          "path": "packages/demos/src/modules/shared-nms002-l02-p053.tsx",
+          "bytes": 2204,
+          "sha256": "fe44cc220a6b47687b134c9672189a25bb10ea9837abe059b758abfab8f1b55a"
+        }
+      },
+      {
+        "path": "packages/demos/src/timelines/g678-nms-l02-percent-practice-p052.ts",
+        "before": {
+          "bytes": 2103,
+          "sha256": "c89d7b735c2e06984bced110b7fdf388f95f55626da69f27277854f4c32f0af5"
+        },
+        "registered": {
+          "path": "packages/demos/src/timelines/g678-nms-l02-percent-practice-p052.ts",
+          "bytes": 1052,
+          "sha256": "c27b33bf95ed50d0899a00dcc66b5f0595860c2232ed623f07a5ac32409d83e0"
+        }
+      }
+    ],
+    "allDirectRegisteredArtifacts": {
+      "counts": {
+        "module": 2282,
+        "timeline": 624,
+        "runtime": 448,
+        "memberManifest": 176,
+        "sourceRun": 176,
+        "generated": 1658,
+        "data": 1658,
+        "closure": 1658
+      },
+      "uniquePaths": 8659,
+      "mismatches": []
+    },
+    "fullChecker": {
+      "exitCode": 0,
+      "entries": 2723,
+      "privateEntries": 2424,
+      "outputs": 4,
+      "countsScope": "Whole review repository, including other baseline entries; not a G6-G8 completion count."
+    }
+  },
+  "tellTarget": {
+    "rootCause": "Sample findScopeVar omitted the target fallback already present in the product AVM; unbound assignments went to ctx.target but subsequent reads searched captured scope only.",
+    "change": "Synchronize the six-line getWithHolder fallback after captured/local/global lookup; retain precedence, receiver, undefined shadow and error guards.",
+    "originalVerificationStateTestUnchanged": true,
+    "sampleAndProductAvmByteIdentical": true,
+    "before": {
+      "originalAndNewCases": 17,
+      "passed": 8,
+      "failed": 9,
+      "allEightNewCasesFailed": true
+    },
+    "after": {
+      "verificationStatePassed": 9,
+      "newDualExecutorCasesPassed": 8,
+      "productRetargetCasesPassed": 7,
+      "compilerObservableCasesPassed": 40
+    }
+  },
+  "emptyMediaDirectories": {
+    "cause": "Git does not retain empty directories, while the unchanged artifact validator requires physical media directory membership.",
+    "restored": 28,
+    "helper": "review/prepare-empty-media.mjs",
+    "operations": "Read exact closure/data pins, reject drift, symlinks, undeclared references and existing content, then mkdir only the verified empty media paths.",
+    "regressionCasesPassed": 6
+  },
+  "validation": {
+    "registryNegativeAndContractTests": {
+      "passed": 71,
+      "failed": 0
+    },
+    "strictPageContractTests": {
+      "passed": 27,
+      "failed": 0
+    },
+    "tellTargetSuite": {
+      "passed": 24,
+      "failed": 0
+    },
+    "compilerObservable": {
+      "passed": 40,
+      "failed": 0
+    },
+    "emptyDirectoryTool": {
+      "passed": 6,
+      "failed": 0
+    },
+    "lessonHostContextDiagnostic": {
+      "passed": 0,
+      "failed": 3,
+      "beforeFailed": 1,
+      "note": "P001/P052 compatibility assertions conflict with the restored registered contract; P060 already failed before these changes. None of these tests was edited or suppressed."
+    }
+  },
+  "evidenceApplicability": {
+    "affectedSuccessorConsumers": [
+      "shared-alg001-l08-p033",
+      "shared-alg001-l08-p034",
+      "shared-alg001-l08-p035",
+      "shared-alg001-l08-p036",
+      "shared-alg001-l08-p037"
+    ],
+    "disposition": "Their current-input successor claims bind the divergent candidate bytes and are not applicable to restored input versions. Historical records are unchanged; playback and technical closure were not renewed."
+  },
+  "remainingHostIntegration": [
+    {
+      "page": "shared-alg001-l06-p001",
+      "gap": "Registered source requires EN and no admitted audio; generic route-locale and lesson audio inputs need an explicit valid host adapter."
+    },
+    {
+      "page": "shared-nms002-l02-p052",
+      "gap": "Registered capture module requires complete exact capture identity; a generic host cannot synthesize identity or clamp capture frames inside this strict module."
+    },
+    {
+      "page": "shared-nms002-l02-p002",
+      "gap": "Restored keyTerms source metadata is rejected by the current generic typography projection; integration must validate the metadata rather than deleting it."
+    },
+    {
+      "page": "shared-nms002-l02-p053",
+      "gap": "Restored source state lacks a frameDomain field; the generic multi-domain host needs a source-bound adapter before it can infer a drawable domain."
+    }
+  ],
+  "sourceExecutionTreeModified": false,
+  "existingFailuresAndHistoricalSnapshotsPreserved": true
+}

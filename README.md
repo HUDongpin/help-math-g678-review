@@ -4,6 +4,8 @@ This repository stores a reviewable snapshot of the G6–G8 execution tree captu
 
 The import baseline is `0111cf5a9d0f0e1bf16de23b51d3a300a14a95f2` from `HUDongpin/help-math-2-0-workbench`. A new root commit contains a filtered baseline without importing the original Git history. Subsequent commits separate maintained implementation, generated page modules, product integration, source-derived evidence and exact runtime artifacts.
 
+The follow-up [registry and tellTarget repair report](review/REPAIRS-20261024.md) records the resolved defects, reproducible empty-directory setup and remaining host integration limits.
+
 See [the commit list](review/COMMITS.md), [validation results](review/VALIDATION.md), and [snapshot scope](review/SNAPSHOT.md). Apply the complete series in order. Intermediate commits are review boundaries, not independently certified releases.
 
 ## Included
