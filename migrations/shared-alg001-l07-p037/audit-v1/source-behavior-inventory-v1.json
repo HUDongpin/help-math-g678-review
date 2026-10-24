@@ -1,0 +1,197 @@
+{
+  "kind": "P037-source-behavior-inventory-v1",
+  "at": "2026-10-04T20:49:27.614483+00:00",
+  "source": {
+    "source": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/IN/L7IN18.swf",
+    "copy": "migrations/shared-alg001-l07-p037/source-v1/L7IN18.swf",
+    "bytes": 186444,
+    "sha256": "153f74f637e433d4f2c8707bc7f8e7012040c0d02ee279572f990265b3e9447a"
+  },
+  "sourceCatalog": {
+    "path": "migrations/shared-alg001-l07-p037/source-v1/source-text-catalog-v1.json",
+    "bytes": 669509,
+    "sha256": "1fe9e299026f64a2aca2a060ff3ef66a6454b860f5b9aa93f39b04694eeaf6d3"
+  },
+  "domains": [
+    [
+      "root",
+      10
+    ],
+    [
+      "sprite-28",
+      1
+    ],
+    [
+      "sprite-30",
+      1
+    ],
+    [
+      "sprite-32",
+      1
+    ],
+    [
+      "sprite-34",
+      1
+    ],
+    [
+      "sprite-53",
+      1
+    ],
+    [
+      "sprite-55",
+      20
+    ],
+    [
+      "sprite-57",
+      20
+    ],
+    [
+      "sprite-85",
+      474
+    ]
+  ],
+  "scripts": [
+    {
+      "file": {
+        "path": "migrations/shared-alg001-l07-p037/source-v1/ffdec/scripts/DefineButton2_24/BUTTONCONDACTION on(release).as",
+        "bytes": 120,
+        "sha256": "ebe5121cf5eee9349a2921629ad89ffa40819e4e6ee707d9bea8a07142282dbd"
+      },
+      "source": "on(release){\n   _global.KeyAttribute = \"Table\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+    },
+    {
+      "file": {
+        "path": "migrations/shared-alg001-l07-p037/source-v1/ffdec/scripts/DefineButton2_26/BUTTONCONDACTION on(release).as",
+        "bytes": 121,
+        "sha256": "573534c3578af9119df87b9a8e2c4751ca88e451a2e1dde1896a9ad77acd746e"
+      },
+      "source": "on(release){\n   _global.KeyAttribute = \"Output\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+    },
+    {
+      "file": {
+        "path": "migrations/shared-alg001-l07-p037/source-v1/ffdec/scripts/DefineButton2_39/BUTTONCONDACTION on(release).as",
+        "bytes": 1323,
+        "sha256": "d7f4f4a4997710ff86decd9288f2fb2269802b9fea56633e1aa0b29832bcf039"
+      },
+      "source": "on(release){\n   i = 0;\n   while(i < 4)\n   {\n      eval(\"Ans_mc\" + i).ans1.type = \"dynamic\";\n      eval(\"Ans_mc\" + i).ans1.selectable = false;\n      i++;\n   }\n   Done_btn.enabled = false;\n   _global.wrong = false;\n   _global.empty = false;\n   i = 0;\n   while(i < 4)\n   {\n      if(eval(\"Ans_mc\" + i).ans1.text == \"\")\n      {\n         _global.empty = true;\n      }\n      i++;\n   }\n   i = 0;\n   while(i < 4)\n   {\n      if(eval(\"Ans_mc\" + i).ans1.text != \"\" && eval(\"Ans_mc\" + i).ans1.text != _global.myAnswers[i])\n      {\n         _global.wrong = true;\n         eval(\"Ans_mc\" + i).ans1.text = \"\";\n      }\n      i++;\n   }\n   if(_global.wrong)\n   {\n      _global.quizTryCount++;\n      if(_global.quizTryCount == 1)\n      {\n         Popfeed_mc.txtFeed.text = \"Multiply each input by itself. A negative number times a negative number is a positive number. Try again.\";\n      }\n      else\n      {\n         Popfeed_mc.txtFeed.text = \"Multiply each input by itself. A negative number times a negative number is a positive number.\";\n      }\n      Popfeed_mc._visible = true;\n   }\n   else if(_global.empty)\n   {\n      Popfeed_mc.txtFeed.text = \"Please fill in all empty boxes and click Done\";\n      Popfeed_mc._visible = true;\n   }\n   else\n   {\n      Audio_FB.gotoAndPlay(2);\n   }\n}\n"
+    },
+    {
+      "file": {
+        "path": "migrations/shared-alg001-l07-p037/source-v1/ffdec/scripts/DefineButton2_49/BUTTONCONDACTION on(release).as",
+        "bytes": 341,
+        "sha256": "0330f369cc77c65921db5ee5f4f726b9741d6bbde621eee0e0c949636718113f"
+      },
+      "source": "on(release){\n   this._visible = false;\n   i = 0;\n   while(i < 4)\n   {\n      _parent[\"Ans_mc\" + i].ans1.type = \"input\";\n      _parent[\"Ans_mc\" + i].ans1.selectable = true;\n      i++;\n   }\n   _parent.Done_btn.enabled = true;\n   if(_global.quizTryCount >= 2)\n   {\n      _global.quizSection = false;\n      _parent.play();\n   }\n}\n"
+    },
+    {
+      "file": {
+        "path": "migrations/shared-alg001-l07-p037/source-v1/ffdec/scripts/DefineSprite_55/frame_1/DoAction.as",
+        "bytes": 9,
+        "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+      },
+      "source": "stop();\n"
+    },
+    {
+      "file": {
+        "path": "migrations/shared-alg001-l07-p037/source-v1/ffdec/scripts/DefineSprite_55/frame_20/DoAction.as",
+        "bytes": 25,
+        "sha256": "f1e6309c49749c3bcf64092c245dc44f282b505161772c0c9c732050fb6d6045"
+      },
+      "source": "_parent.enableButton();\n"
+    },
+    {
+      "file": {
+        "path": "migrations/shared-alg001-l07-p037/source-v1/ffdec/scripts/DefineSprite_57/frame_1/DoAction.as",
+        "bytes": 9,
+        "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+      },
+      "source": "stop();\n"
+    },
+    {
+      "file": {
+        "path": "migrations/shared-alg001-l07-p037/source-v1/ffdec/scripts/DefineSprite_57/frame_20/DoAction.as",
+        "bytes": 72,
+        "sha256": "bb88aa864f0e79851dc62b769a68faac48ae68113719799b8d28ff1949e916c5"
+      },
+      "source": "_parent.enableButton();\n_global.quizSection = false;\n_parent.play();\n"
+    },
+    {
+      "file": {
+        "path": "migrations/shared-alg001-l07-p037/source-v1/ffdec/scripts/DefineSprite_85/frame_215/DoAction.as",
+        "bytes": 246,
+        "sha256": "0d8632a46a8af0df600ddf12d0046f4820ea5b01083d4d83e7a7a15827cf64df"
+      },
+      "source": "stop();\n_global.myAnswers = new Array();\n_global.myAnswers[0] = \"-1\";\n_global.myAnswers[1] = \"0\";\n_global.myAnswers[2] = \"1\";\n_global.myAnswers[3] = \"8\";\n_global.quizSection = true;\n_global.quizTryCount = 0;\nPopfeed_mc._visible = false;\n"
+    },
+    {
+      "file": {
+        "path": "migrations/shared-alg001-l07-p037/source-v1/ffdec/scripts/DefineSprite_85/frame_474/DoAction.as",
+        "bytes": 9,
+        "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+      },
+      "source": "stop();\n"
+    },
+    {
+      "file": {
+        "path": "migrations/shared-alg001-l07-p037/source-v1/ffdec/scripts/frame_1/DoAction.as",
+        "bytes": 63,
+        "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19"
+      },
+      "source": "_level0.InternalPreloader.gotoAndPlay(\"jump_check\");\nstop();\n"
+    },
+    {
+      "file": {
+        "path": "migrations/shared-alg001-l07-p037/source-v1/ffdec/scripts/frame_6/DoAction.as",
+        "bytes": 9,
+        "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+      },
+      "source": "stop();\n"
+    }
+  ],
+  "sourceFacts": {
+    "mainSpriteId": 85,
+    "mainFrames": 474,
+    "fps": 12,
+    "rootEntryFrame": 6,
+    "quizFrame": 215,
+    "terminalStop": 474,
+    "answers": [
+      "-1",
+      "0",
+      "1",
+      "8"
+    ],
+    "inputNames": [
+      "Ans_mc0",
+      "Ans_mc1",
+      "Ans_mc2",
+      "Ans_mc3"
+    ],
+    "doneButtonId": 39,
+    "glossary": {
+      "24": "Table",
+      "26": "Output"
+    },
+    "closeButtonId": 49,
+    "disableAllInputsBeforeCheck": true,
+    "wrongNonemptyFieldsCleared": true,
+    "correctFieldsRetained": true,
+    "wrongTakesPrecedenceOverEmpty": true,
+    "emptyOnlyDoesNotIncrementAttempts": true,
+    "wrongIncrementsOnDone": true,
+    "secondWrongCloseResumesMain": true,
+    "allCorrectStartsNamedAudio": "Audio_FB",
+    "rightFeedback57Terminal20ResumesMain": true,
+    "sourceHintMismatch": "Source cubic page repeats square-style hint: Multiply each input by itself. A negative number times a negative number is a positive number. Preserve exact source wording unless separately reviewed; do not silently repair it."
+  },
+  "pending": [
+    "Map actual main display-list names at215, dynamic text properties/limits and Done/Close ownership. Determine whether coach55 is invoked or unused.",
+    "Audit strict string comparison versus numeric input/whitespace/minus behavior from source; do not invent permissive numeric acceptance.",
+    "Verify all source glyph prefixes, source raised exponents, table cells, output reveals and worked-step timings.",
+    "Source stream extraction/native decode and explicit SA; source shape/static frame review.",
+    "Maintained input/keyboard/focus semantics and actual My Lesson validation, exact admission and production-negative checks.",
+    "Original-runtime/fidelity/listening/human/Owner/strict/publication gates remain independent."
+  ],
+  "productImplemented": false,
+  "registered": false
+}

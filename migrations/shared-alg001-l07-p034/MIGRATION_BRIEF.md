@@ -1,0 +1,23 @@
+# ALG001 L7 P034 — Making Table of Values for y = x squared
+
+This local Current-JS implementation preserves source placement 34, IN occurrence 14, from `IN/L7IN15.swf`. The physical source is the AWS Grade-Classified Courseware collection. The original SWF is 176406 bytes, SHA-256 `f46c9d99df171d468b6c05f8ff9e6afa2908072e955a895fb36144e54003d8d2`; the optional source Spanish MP3 is 144480 bytes, SHA-256 `d38a75ee48dbfae2766fdb37c4860c29d7980963d8d434b9d0ae79cb90a6ecf1`. Source copies, public-tool extraction, native models and script hashes are retained in this workspace.
+
+## Source and behavior
+
+The stage is 800 by 600 at 12 fps. Root has 10 frames, enters at 6; main sprite 86 has 484 frames and stops at 166 for four distinct drag sources. The 13 source domains contain 543 frames, and the extraction retains 22 scripts. Main frame 484 stops without a next-page call. The input rows are -2, -1, 0, 1, 2; input 1 already has output 1. The draggable outputs are 0, 1, 4, 4. Either distinct 4 tile can fill the -2 or 2 target. Each valid release increments the source count immediately; only the fourth correct coach reaching frame 20 resumes main and resets that count. Accepted tiles remain placed. Wrong or outside releases return the tile and never bypass the quiz.
+
+Source press hides the popup and interrupts either coach. Coach 60 is wrong feedback and 62 is right feedback; both enter at 2. Nonfinal coaches naturally reach the wrap boundary after source frame 20 and return to their frame-1 stop. Close hides the popup without interrupting its coach. The static hint is source text 57; the unresolved global WrongFeed assignment does not justify inventing extra text. The absent enableButton function is adapted minimally to keep unplaced tiles usable. The unplaced Need More Help button and offstage coach labels are excluded.
+
+Source shape 8 supplies the title, shape 23 is a rectangular mask, and source text 35 demonstrates moving output 1 from bank to input -1 and returning at frames 128/145/165. Native measurement follows that movement. Two masked paragraphs, three glossary terms, all table inputs/outputs, sixteen worked steps in four columns and eight input/output emphasis roles are retained. Source square glyph sizes and raised positions become native superscripts. Separate source glyph 71 is multiplication and becomes semantic multiplication, with wrapping only between complete factors.
+
+## Maintained implementation
+
+Compiler-assisted extraction and versioned visual configuration feed `derive-product-source-v2.mjs`; generated source is not hand edited. Behavior-heavy placement uses maintained `alg-l07-p034` state, session, frame, presentation and player modules. The shared SourceStreamRunsClock and DecodedSourceStreamTransport remain unchanged. Pointer, touch and keyboard operate the same four-target state machine, with native buttons, keyboard focus and glossary return. The source English teaching text stays English in both routes; the three existing source-backed glossary entries and surrounding host UI support EN/ES.
+
+Three original MP3 clocks (60, 62, 86) use exact source bytes and independently measured native PCM. The main stream resumes from its continuous source position at the quiz. Fractional positions survive pause/resume. Optional Spanish Audio is explicitly triggered and can pause/play and return to the preserved main state; Spanish locale never autoplays it. Replay resets placements, count, popup, feedback and source clock. Navigation closes contexts, detaches source nodes and starts a fresh state on return.
+
+## Validation and boundaries
+
+The maintained state/session suite checks 48 valid tile orders, the two distinct 4 tiles, wrong/outside releases, stale epochs, interrupted loads/coaches, final-coach continuation, fractional source resume, Spanish controls, glossary, Replay and cleanup. Deterministic module queries cover 1086 domain/frame/language combinations. Browser verification must independently exercise actual My Lesson routes, source-audio delivery, EN/ES desktop/mobile pointer/touch/keyboard flows, mathematical layout, font fallback, root-font scaling and source terminal stop. Candidate and registered evidence remain separate; final registered production build and negative-route validation are required for local closure.
+
+No authoritative original Flash runtime comparison, timing alignment, fidelity, listening acceptance, human/Owner signature, strict completion, release or publication is asserted. Static full-frame requirements describe inspection coverage, not original-runtime acceptance. Only local routes and local resource adapters are in scope. Existing whole-site host crowding at large root-font sizes remains separately reported when observed.

@@ -1,0 +1,36 @@
+JPEXS Free Flash Decompiler v.26.2.1
+------------------------------------
+Exporting shapes...
+Exported shape 1/20 DefineShape2 (chid: 1)
+Exported shape 2/20 DefineShape3 (chid: 2)
+Exported shape 3/20 DefineShape3 (chid: 6)
+Exported shape 4/20 DefineShape (chid: 8)
+Exported shape 5/20 DefineShape (chid: 9)
+Exported shape 6/20 DefineShape3 (chid: 20)
+Oct 05, 2026 5:11:57 AM com.jpexs.decompiler.flash.console.ConsoleAbortRetryIgnoreHandler handle
+SEVERE: Error occurred
+java.lang.IllegalArgumentException: Width (62) and height (0) cannot be <= 0
+	at java.desktop/java.awt.image.DirectColorModel.createCompatibleWritableRaster(Unknown Source)
+	at java.desktop/java.awt.image.BufferedImage.<init>(Unknown Source)
+	at com.jpexs.helpers.SerializableImage.<init>(SerializableImage.java:65)
+	at com.jpexs.decompiler.flash.exporters.ShapeExporter.lambda$exportShapes$0(ShapeExporter.java:139)
+	at com.jpexs.decompiler.flash.RetryTask.run(RetryTask.java:60)
+	at com.jpexs.decompiler.flash.exporters.ShapeExporter.exportShapes(ShapeExporter.java:196)
+	at com.jpexs.decompiler.flash.console.CommandLineArgumentParser.parseExport(CommandLineArgumentParser.java:2351)
+	at com.jpexs.decompiler.flash.console.CommandLineArgumentParser.parseArgumentsInternal(CommandLineArgumentParser.java:690)
+	at com.jpexs.decompiler.flash.console.CommandLineArgumentParser.parseArguments(CommandLineArgumentParser.java:476)
+	at com.jpexs.decompiler.flash.gui.Main.main(Main.java:3633)
+
+Error occurred: Width (62) and height (0) cannot be <= 0
+Select action: (A)bort, (R)Retry, (I)Ignore:FAIL: Exporting Failed on Exception - Oct 05, 2026 5:11:57 AM com.jpexs.decompiler.flash.console.CommandLineArgumentParser parseExport
+SEVERE: null
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Unknown Source)
+	at com.jpexs.decompiler.flash.console.ConsoleAbortRetryIgnoreHandler.handle(ConsoleAbortRetryIgnoreHandler.java:64)
+	at com.jpexs.decompiler.flash.RetryTask.run(RetryTask.java:68)
+	at com.jpexs.decompiler.flash.exporters.ShapeExporter.exportShapes(ShapeExporter.java:196)
+	at com.jpexs.decompiler.flash.console.CommandLineArgumentParser.parseExport(CommandLineArgumentParser.java:2351)
+	at com.jpexs.decompiler.flash.console.CommandLineArgumentParser.parseArgumentsInternal(CommandLineArgumentParser.java:690)
+	at com.jpexs.decompiler.flash.console.CommandLineArgumentParser.parseArguments(CommandLineArgumentParser.java:476)
+	at com.jpexs.decompiler.flash.gui.Main.main(Main.java:3633)
+

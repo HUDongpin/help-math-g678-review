@@ -1,0 +1,50 @@
+{
+  "at": "2026-10-04T20:55:21.734680+00:00",
+  "reviewer": "Codex source-tool engineering inspection in current session",
+  "sourceStaticReceipt": {
+    "path": "migrations/shared-alg001-l07-p037/audit-v1/source-static-render-v1.json",
+    "bytes": 3134,
+    "sha256": "73491db982676571efa31a9d8e581c991ca937e2dd6b93b045eea1df898b9362"
+  },
+  "reviewedImages": [
+    {
+      "path": "migrations/shared-alg001-l07-p037/audit-v1/source-static-v1/DefineSprite_85/215-white.png",
+      "bytes": 27611,
+      "sha256": "5d3e49704c1a14ca4ee3a265e52aabb70b5be30556e6f9650d1101cc12937059"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p037/audit-v1/source-static-v1/DefineSprite_85/270-white.png",
+      "bytes": 28547,
+      "sha256": "95a111cd4438caccc993b8ecfc6433885e34c3a5a93e764c186720ef980682d6"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p037/audit-v1/source-static-v1/DefineSprite_85/320-white.png",
+      "bytes": 29092,
+      "sha256": "216946ad7af8ea9179cc6ce5308cad3d82aec89fe86c6e721cda435da81022c5"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p037/audit-v1/source-static-v1/DefineSprite_85/380-white.png",
+      "bytes": 26938,
+      "sha256": "e1a9aa8ddf2c799ebd04e90428147d65a6e01f72e0d2189f25ebc1fc64c1079a"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p037/audit-v1/source-static-v1/DefineSprite_85/430-white.png",
+      "bytes": 25900,
+      "sha256": "c74b26ea134eb82b54d5578764bcbd437aa334d76be8cc08828c90bcc832b2d6"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p037/audit-v1/source-static-v1/DefineSprite_85/474-white.png",
+      "bytes": 29064,
+      "sha256": "78d257a36daf495564fd76749dda3198e2f6fa0edfa2406bee957bde4526fb9f"
+    }
+  ],
+  "observations": [
+    "All six exported white-background source images were visually inspected: main85 frames215,270,320,380,430,474.",
+    "Frame215 contains source table with prefilled -2 to -8 and four blank answer cells; static popup and coach labels appear because ActionScript visibility changes are not executed by this export.",
+    "Later frames show worked cubic substitutions and final table values -2:-8, -1:-1, 0:0, 1:1, 2:8. Exact text role, glyph prefix and reveal timings still require display-list/model derivation.",
+    "The source ActionScript hint uses square-style reasoning on a cubic page; exact script text is retained in source-behavior-inventory-v1.json. This finding is not permission to silently rewrite authored content."
+  ],
+  "scope": "Static JPEXS rendering only; not original-runtime, fidelity, listening, human or Owner acceptance.",
+  "productImplemented": false,
+  "registered": false
+}

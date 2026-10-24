@@ -1,0 +1,20 @@
+.alg-l07-p028{box-sizing:border-box;max-width:100%;padding:1rem;color:#142b4a;background:#f8fbff;font-family:var(--lesson-font-body,Arial,sans-serif);font-size:1.1rem;line-height:1.5}
+.alg-l07-p028__problem{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1rem;align-items:start}
+.alg-l07-p028__graph-scroll{min-width:0;max-width:100%;overflow:auto;border-radius:.4rem;background:#fff;scroll-margin-block:1rem}
+.alg-l07-p028__graph{position:relative;min-width:24rem;width:100%;aspect-ratio:1}
+.alg-l07-p028__graph svg{display:block;position:absolute;inset:0;width:100%;height:100%}
+.alg-l07-p028__graph-label,.alg-l07-p028__annotation{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;font-size:.75rem;line-height:1.1;color:#000}
+.alg-l07-p028__annotation{font-size:.8rem;background:#ffe2c5;border:1px solid #dbab7f;padding:.05rem .1rem}
+.alg-l07-p028__cyan{background:#00ccff;border-radius:.15rem;box-shadow:0 0 0 .08rem #00ccff}
+.alg-l07-p028__magenta{background:#ff75c8;border-radius:.15rem;box-shadow:0 0 0 .08rem #ff75c8}
+.alg-l07-p028__calculations{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,10rem),1fr));gap:1rem;min-width:0;padding-block:1.5rem}
+.alg-l07-p028__calculation{min-width:0;font-size:1.15rem;line-height:1.65}
+.alg-l07-p028__calculation p{white-space:nowrap;margin:0}
+.alg-l07-p028__equation-emphasis{color:#000;background:#fff;border-radius:.12rem;box-shadow:0 0 0 .1rem #fff}
+.alg-l07-p028-player{max-width:100%}
+.alg-l07-p028-player__controls{display:flex;flex-wrap:wrap;gap:.6rem;margin:.75rem 0}
+.alg-l07-p028-player button{font:inherit;min-height:2.75rem;padding:.45rem .8rem;border:1px solid #234f86;border-radius:.35rem;color:#143f70;background:#fff;cursor:pointer}
+.alg-l07-p028-player button:disabled{color:#536b83;border-color:#b4c8df;cursor:default}
+.alg-l07-p028-player button:focus-visible,.alg-l07-p028__graph-scroll:focus-visible{outline:3px solid #ffb900;outline-offset:3px}
+@media(max-width:65rem){.alg-l07-p028__problem{grid-template-columns:minmax(0,1fr)}.alg-l07-p028__graph-scroll{max-width:34rem}.alg-l07-p028__calculations{max-width:34rem;padding-block:.5rem}}
+@media(max-width:680px){.lesson-shell2[data-host-presentation='modern-wide'] .lesson-shell2__learning-column:has(.alg-l07-p028){padding-inline:min(.5rem,2vw)}.lesson-shell2[data-host-presentation='modern-wide'] .lesson-shell2__legacy-stage:has(.alg-l07-p028[data-animation-id='shared-alg001-l07-p028'])>.lesson-shell2__stage{padding-inline:0}.alg-l07-p028,.alg-l07-p028 .lesson-animation-title-v1{padding-inline:min(.6rem,2vw)}}
