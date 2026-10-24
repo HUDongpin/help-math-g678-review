@@ -1,0 +1,9 @@
+# shared-alg001-l10-p006
+
+Source occurrence6, RW Page5 in Algebraic Expressions Involving Powers52-page lesson. Source `3843394c1ebfd124c72fb191e71a5568fe6673db2d8250f32ac0b1f74667c0fa` is SWF-only. Main sprite78/1106 frames, static title sprite80/1, root10 at12fps, beginroot6. Main terminalstop only, no child main sprites, navigation scripts, scoring, buttons or randomness. Modern host provides readiness and playback/navigation.
+
+Bounded advanced-manual two-page task. Keep source vector table, glyph exponents/minus signs and exact timeline drawing with Canvas. Add a maintained semantic table and formula companion for mobile and assistive reading. No video flattening or extra answers. The companion preserves blank cells and follows full source reveal/settled states. A naive geometry-only table draft was rejected because overlapping highlight glyphs duplicated values and scaled digits were missed; it remains retained. The admitted source reading audit binds original texts, placements, masks, source reference screenshots and manual semantic interpretation.
+
+New students are2^n; cumulative students are2^(n+1)-1. P005 shows power equivalences and substitutionsn1=>3,n4=>31 plus new count16. P006 continues withn8=>511 and the essential question. Values not shown by the source remain blank. Exact authored day labels are retained; modern column headings shorten the long source headers without changing meaning.
+
+Exclusive vector/morph masks receive opaque fills only, retaining source geometry and zero-width transparent strokes. Main root scale0.9793701171875, translation407.45,281.5. Native source audio starts10 and runs through1106, latency1673; source English in both UI locales. Named listening, original runtime/fidelity, human/Owner decisions, strict completion, release and publication remain pending. Product registration, derived multi-page host validation, native Replay and across-page audio cleanup still require QA.
