@@ -56,6 +56,40 @@ test("adapter CLI is explicit and rejects unknown arguments", () => {
   assert.throws(() => parseArguments(["--unknown"], {root: ROOT}), /Unknown argument/);
 });
 
+test("adapter accepts canonical shared IDs without changing its frame mapping", async () => {
+  const courseSpec = JSON.parse(await readFile(STRUCTURAL_SPEC_PATH, "utf8"));
+  const sharedSpec = structuredClone(courseSpec);
+  sharedSpec.animationId = "shared-alg001-l07-p002";
+  assert.deepEqual(
+    resolveAdapterFrameState({frame: 1}, sharedSpec),
+    resolveAdapterFrameState({frame: 1}, courseSpec)
+  );
+});
+
+test("adapter rejects invalid IDs in both supported namespaces", async () => {
+  const baseSpec = JSON.parse(await readFile(STRUCTURAL_SPEC_PATH, "utf8"));
+  for (const animationId of [
+    "",
+    "shared-",
+    "course-",
+    "alg001-l07-p002",
+    "shared-ALG001-l07-p002",
+    "shared-alg001_l07_p002",
+    "shared-alg001-l07-p002/../other",
+    "course-g03-l06-fq-002/../other",
+    "shared-alg001-l07-p002 ",
+    "other-alg001-l07-p002"
+  ]) {
+    const spec = structuredClone(baseSpec);
+    spec.animationId = animationId;
+    assert.throws(
+      () => resolveAdapterFrameState({frame: 1}, spec),
+      /adapter spec: invalid animationId/,
+      animationId
+    );
+  }
+});
+
 test("TI local timeline maps to root frame 6 and explicit deterministic sound branches", async () => {
   const {spec} = await loadInputs();
   assert.deepEqual(resolveAdapterFrameState({frame: 1, scenario: "sound-from-seed", seed: 0}, spec), {

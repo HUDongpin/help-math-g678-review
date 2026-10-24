@@ -1,0 +1,5 @@
+import React,{useState}from'react';import{createRoot}from'react-dom/client';
+import{P047IntroView}from'../packages/demos/src/nms-l02-p047-intro-view-v1';
+import'../packages/demos/src/nms-l02-p047-view-v1.css';
+function App(){const[frame,setFrame]=useState(1),[language,setLanguage]=useState<'en'|'es'>('en'),[reduced,setReduced]=useState(false);return <><aside><label>Frame <input id="frame" type="number" min="1" max="140" value={frame} onChange={e=>{const f=Number(e.target.value);if(Number.isInteger(f)&&f>=1&&f<=140)setFrame(f)}}/></label><label>Language <select id="language" value={language} onChange={e=>setLanguage(e.target.value as 'en'|'es')}><option value="en">English</option><option value="es">Español</option></select></label><label><input id="reduced" type="checkbox" checked={reduced} onChange={e=>setReduced(e.target.checked)}/>Reduced motion</label></aside><P047IntroView frame={frame} language={language} reducedMotion={reduced}/></>}
+createRoot(document.getElementById('root')!).render(<App/>);

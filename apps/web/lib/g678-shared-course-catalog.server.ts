@@ -5,6 +5,7 @@ import {existsSync, readFileSync, statSync} from 'node:fs';
 import path from 'node:path';
 
 import {getWorkspaceRoot} from './catalog';
+import {isG678CompiledLocalQaEnabled} from './g678-preview-policy';
 export {
   isG678LocalPreviewEnabled,
   isG678ModuleCode,
@@ -724,7 +725,7 @@ function readSnapshot(): SharedMiddleSchoolCatalogSnapshot {
   // empty snapshot before touching the checked-in catalog in production so a
   // production build cannot accidentally trace or expose private G6-G8 source
   // metadata, even if the local preview flag is misconfigured.
-  if (process.env.NODE_ENV === 'production') {
+  if (process.env.NODE_ENV === 'production' && !isG678CompiledLocalQaEnabled()) {
     return Object.freeze({
       schemaVersion: 1,
       profileId: 'g678-shared-production-closed',
@@ -862,7 +863,7 @@ function currentSnapshotFingerprint(root: string): string {
 
 /** Returns the immutable source-backed (or explicitly marked fallback) view. */
 export function sharedMiddleSchoolCatalog(): SharedMiddleSchoolCatalogSnapshot {
-  if (process.env.NODE_ENV === 'production') {
+  if (process.env.NODE_ENV === 'production' && !isG678CompiledLocalQaEnabled()) {
     return readSnapshot();
   }
   const root = getWorkspaceRoot();

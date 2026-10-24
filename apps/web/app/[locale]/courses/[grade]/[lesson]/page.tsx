@@ -120,7 +120,8 @@ export default async function CoursePage({
 
   const spanish = locale === 'es';
   const lessonNumber = Number(lesson);
-  const developmentAuditPreview = process.env.NODE_ENV !== 'production';
+  const developmentAuditPreview = process.env.NODE_ENV !== 'production' ||
+    (sharedRoute && isG678LocalPreviewEnabled());
   const catalog = getCatalog();
   const complete = completeAnimations(catalog);
   const published = publishedAnimations(catalog);

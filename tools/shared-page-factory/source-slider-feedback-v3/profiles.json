@@ -1,0 +1,54 @@
+[
+  {
+    "page": "p017",
+    "sourceSha256": "b91a145594b557fdb3ae90138aee1d44e0ef614382bd10372f1b1c049e1ad6c5",
+    "sourceModel": "migrations/shared-alg001-l07-p017/native-v1/source-model-v1.json",
+    "sourceModelSha256": "8868175d3c9ac0f86e52b8bd69519adb231cb59f4d151a5cc1851d2f065d6b4d",
+    "values": {
+      "AFTER_LAST": 255,
+      "LAST": 254,
+      "FORCED": null,
+      "QUIZ": 137,
+      "FEEDBACK_LAST": 8,
+      "INITIAL": "0",
+      "CORRECT": "3",
+      "MAIN_ID": 99,
+      "FEEDBACK_ID": 94,
+      "TERM_UNION": "'Equation'|'Y-intercept'",
+      "PAGE_UPPER": "P017",
+      "PAGE_LOWER": "p017",
+      "SEGMENT_WINDOW_FILTER": "",
+      "MARKER_WINDOW_FILTER": "",
+      "DRAW_PHASE": "(s.phase==='quiz-held'||s.phase==='postquiz'&&s.mainFrame>=138&&s.mainFrame<=140)",
+      "POST_DRAW_FLAG": "s.phase==='postquiz'&&e.frame<=140&&s.drawEnabled",
+      "POST_SUBMIT": "  // Source Draw81 remains138..140 after popup94 removal.\n  if(s.phase==='postquiz')return{...s,attempts:s.attempts+1,drawEnabled:false,sliderEnabled:false,wrongText:S.behavior.wrongLater};\n",
+      "POST_SUBMIT_SESSION": "if(old.phase==='postquiz'){this.emit();return true;}"
+    }
+  },
+  {
+    "page": "p018",
+    "sourceSha256": "6d279948c0670391d81d384cc1e17abe962a4623eb3fedc56864de27e02dee6f",
+    "sourceModel": "migrations/shared-alg001-l07-p018/native-v1/source-model-v1.json",
+    "sourceModelSha256": "eb8e4a07203cb9af16886e73926985342bc1500ac2de3419f28e431eadc2625d",
+    "values": {
+      "AFTER_LAST": 362,
+      "LAST": 361,
+      "FORCED": null,
+      "QUIZ": 122,
+      "FEEDBACK_LAST": 15,
+      "INITIAL": "3",
+      "CORRECT": "-2",
+      "MAIN_ID": 76,
+      "FEEDBACK_ID": 66,
+      "TERM_UNION": "'Equation'|'Y-intercept'",
+      "PAGE_UPPER": "P018",
+      "PAGE_LOWER": "p018",
+      "SEGMENT_WINDOW_FILTER": "",
+      "MARKER_WINDOW_FILTER": "",
+      "DRAW_PHASE": "(s.phase==='quiz-held'||s.phase==='postquiz'&&s.mainFrame>=123&&s.mainFrame<=361)",
+      "POST_DRAW_FLAG": "s.phase==='postquiz'&&e.frame<=361&&s.drawEnabled",
+      "POST_SUBMIT": "  // Source Draw67 remains123..361 after popup66 removal; input53 ends124.\n  if(s.phase==='postquiz')return{...s,attempts:s.attempts+1,drawEnabled:false,sliderEnabled:false,wrongText:S.behavior.wrongLater};\n",
+      "POST_SUBMIT_SESSION": "if(old.phase==='postquiz'){this.emit();return true;}"
+    }
+  }
+]

@@ -1,0 +1,3 @@
+import React from'react';import{createRoot}from'react-dom/client';import{flushSync}from'react-dom';import animationModule from'../packages/demos/src/modules/g678-nms-l02-native-equivalent-percents-p040';
+const root=createRoot(document.getElementById('root')!);
+Object.assign(window,{p040Render:(frame:number,lang:'en'|'es'='en',scenario='source-explanation',frameDomain='sprite-43')=>{const props={frame,frameDomain,lang,uiLanguage:lang,scenario,seed:0,replay:0};const state=animationModule.getFrameState(frame,props);flushSync(()=>root.render(<animationModule.Renderer {...props}/>));return animationModule.textPresentation!.getSnapshot(state);}});

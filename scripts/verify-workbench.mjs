@@ -4,6 +4,8 @@ import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { spawnSync } from "node:child_process";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import {checkCompletionLedger} from './build-completion-ledger.mjs';
+import {checkLessonReleaseLedger} from './build-lesson-release-ledger.mjs';
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const errors = [];
@@ -224,12 +226,11 @@ if (!errors.length) {
   if (ledger.schemaVersion !== 1 || !Array.isArray(ledger.entries) || !Number.isInteger(ledger.summary?.strictComplete)) {
     errors.push("catalog/completion-ledger.json is malformed");
   }
-  const ledgerCheck = spawnSync(process.execPath, [path.join(projectRoot, "scripts", "build-completion-ledger.mjs"), "--check"], {
-    cwd: projectRoot,
-    encoding: "utf8",
-  });
-  if (ledgerCheck.status !== 0) {
-    errors.push((ledgerCheck.stdout || ledgerCheck.stderr || "Completion ledger check failed").trim());
+  // Keep both complete strict scans in this process so content-keyed parser
+  // results can be reused. Each checker still reads and verifies current files.
+  const ledgerCheck = await checkCompletionLedger();
+  if (!ledgerCheck.ok) {
+    errors.push(`Completion ledger is ${ledgerCheck.reason}`);
   } else notes.push("strict completion ledger is current");
 
   const lessonReleases = JSON.parse(read("catalog/lesson-releases.json"));
@@ -244,14 +245,13 @@ if (!errors.length) {
   ) {
     errors.push("catalog/lesson-release-ledger.json is malformed");
   }
-  const releaseLedgerCheck = spawnSync(
-    process.execPath,
-    [path.join(projectRoot, "scripts", "build-lesson-release-ledger.mjs"), "--check"],
-    {cwd: projectRoot, encoding: "utf8"},
-  );
-  if (releaseLedgerCheck.status !== 0) {
-    errors.push((releaseLedgerCheck.stdout || releaseLedgerCheck.stderr || "Lesson release ledger check failed").trim());
-  } else notes.push("atomic lesson release ledger is current");
+  try {
+    const releaseLedgerCheck = await checkLessonReleaseLedger();
+    if (!releaseLedgerCheck.ok) errors.push(`Lesson release ledger is ${releaseLedgerCheck.reason}`);
+    else notes.push("atomic lesson release ledger is current");
+  } catch (error) {
+    errors.push(`Lesson release ledger check failed: ${error.message}`);
+  }
 }
 
 if (errors.length) {

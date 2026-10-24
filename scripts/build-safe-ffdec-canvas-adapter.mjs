@@ -350,7 +350,7 @@ function validateBehaviorCompositeContract(spec) {
 
 function validateSpec(spec) {
   assert(spec?.schemaVersion === 1, "adapter spec: schemaVersion must be 1");
-  assert(/^course-[a-z0-9-]+$/.test(spec.animationId || ""), "adapter spec: invalid animationId");
+  assert(/^(?:course|shared)-[a-z0-9-]+$/.test(spec.animationId || ""), "adapter spec: invalid animationId");
   assert(/^[a-f0-9]{64}$/.test(spec.source?.swfSha256 || ""), "adapter spec: invalid SWF SHA-256");
   for (const key of ["helperSha256", "framesHtmlSha256"]) {
     assert(/^[a-f0-9]{64}$/.test(spec.ffdecExport?.[key] || ""), `adapter spec: invalid ${key}`);

@@ -1,0 +1,5 @@
+import {P042SourceAudio}from'../packages/demos/src/nms-l02-p042-audio-v1';
+import {P042_AUDIO_SOURCE as source}from'../packages/demos/src/generated/nms-l02-p042-audio-plan-v1';
+const contexts:AudioContext[]=[];const output=document.querySelector('pre')!;
+const session=new P042SourceAudio({createContext:()=>{const c=new AudioContext({sampleRate:22050});contexts.push(c);return c;},read:async signal=>{const r=await fetch('/source.mp3',{signal});const b=await r.arrayBuffer();const hash=[...new Uint8Array(await crypto.subtle.digest('SHA-256',b))].map(x=>x.toString(16).padStart(2,'0')).join('');if(b.byteLength!==source.sourceBytes||hash!==source.sourceSha256)throw Error('FIXTURE_SOURCE');return b;},changed:()=>{output.textContent=JSON.stringify(session.snapshot());}});
+session.setVolume(0);Object.assign(window,{p042:session,p042Contexts:contexts});document.querySelector('#play')!.addEventListener('click',()=>void session.play());setInterval(()=>{output.textContent=JSON.stringify(session.snapshot());},50);

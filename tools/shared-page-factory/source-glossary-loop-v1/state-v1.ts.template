@@ -1,0 +1,5 @@
+import{ALG_L07_{{CLASS}}_SOURCE as S}from'./alg-l07-{{PAGE}}-source-v1';export{ALG_L07_{{CLASS}}_SOURCE}from'./alg-l07-{{PAGE}}-source-v1';
+export type {{CLASS}}Term=typeof S.terms[number]['sourceKeyAttribute'];
+export const {{PAGE}}Visual=(frame:number)=>{if(!Number.isSafeInteger(frame)||frame<1||frame>{{LAST}})throw Error('invalid-{{PAGE}}-source-frame');return S.visualStates.find(s=>frame>=s.first&&frame<=s.last)!.value;};
+export interface {{CLASS}}State{mainFrame:number;cycle:number;replay:number;glossary:{{CLASS}}Term|null;}
+export const {{PAGE}}InitialState=():{{CLASS}}State=>({mainFrame:1,cycle:0,replay:0,glossary:null});

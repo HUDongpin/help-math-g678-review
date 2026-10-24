@@ -1,0 +1,6 @@
+import React,{useState,useRef}from'react';import{createRoot}from'react-dom/client';
+import{NmsL2P043Player,type P043PlayerControls}from'../packages/demos/src/nms-l02-p043-player-v1';
+import type{P043AudioDomain}from'../packages/demos/src/nms-l02-p043-audio-pcm-v1';
+async function read(domain:P043AudioDomain,signal:AbortSignal){const r=await fetch('/'+domain+(domain==='183'?'.wav':'.mp3'),{signal});return r.arrayBuffer();}
+function App(){const[mounted,setMounted]=useState(true),[paused,setPaused]=useState(true),[complete,setComplete]=useState(0);const controls=useRef<P043PlayerControls|null>(null);return <><aside><button onClick={()=>controls.current?.setPaused(false)}>Play</button><button onClick={()=>controls.current?.setPaused(true)}>Pause</button><button onClick={()=>controls.current?.replay()}>Replay</button><button onClick={()=>setMounted(false)}>Unmount</button><output data-completed={complete}>{complete}</output></aside>{mounted&&<NmsL2P043Player seed={2} uiLanguage="en" paused={paused} volume={0} readAudio={read} connectControls={c=>{controls.current=c;return()=>{controls.current=null}}} onPaused={setPaused} onComplete={()=>setComplete(n=>n+1)}/>}</>}
+createRoot(document.getElementById('root')!).render(<App/>);

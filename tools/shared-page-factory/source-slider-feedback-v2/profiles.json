@@ -1,0 +1,29 @@
+[
+  {
+    "page": "p014",
+    "sourceSha256": "5f6a19f56cf61ea1c95750a945cf489db718249ef18ae2e4d4200f80c3cbfe1f",
+    "sourceModel": "migrations/shared-alg001-l07-p014/native-v1/source-model-v1.json",
+    "sourceModelSha256": "5bd67b6e2514c31a01f3e692e8cb6dd141fa7a8e41d059798fe3456d764ecf6c",
+    "values": {
+      "AFTER_LAST": 265,
+      "LAST": 264,
+      "FORCED": null,
+      "QUIZ": 84,
+      "FEEDBACK_LAST": 15,
+      "INITIAL": "0.5",
+      "CORRECT": "-1",
+      "MAIN_ID": 78,
+      "FEEDBACK_ID": 65,
+      "TERM_UNION": "'Equation'|'Slope'|'Negative number'|'Downhill'|'Line'",
+      "PAGE_UPPER": "P014",
+      "PAGE_LOWER": "p014",
+      "SEGMENT_WINDOW_FILTER": "",
+      "MARKER_WINDOW_FILTER": "",
+      "DRAW_PHASE": "(s.phase==='quiz-held'||s.phase==='postquiz'&&s.mainFrame>=85)",
+      "POST_DRAW_FLAG": "s.phase==='postquiz'&&s.drawEnabled",
+      "POST_SUBMIT": "  // Retained button52 has no popup instance after85. Its extra release\n  // increments/disables only; it neither creates feedback nor restarts main.\n  if(s.phase==='postquiz')return{...s,attempts:s.attempts+1,drawEnabled:false,sliderEnabled:false,wrongText:S.behavior.wrongLater};\n",
+      "POST_SUBMIT_SESSION": "if(old.phase==='postquiz'){this.emit();return true;}",
+      "SLOPE_AFTER_ADVANCE": "s.slope"
+    }
+  }
+]
