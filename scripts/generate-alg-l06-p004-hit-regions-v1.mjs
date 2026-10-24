@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+const file='migrations/shared-alg001-l06-p004/audit/button-geometry-v1.json';
+const bytes=fs.readFileSync(file);assert.equal(createHash('sha256').update(bytes).digest('hex'),'9c0828219194322961a118fbe44274ef70a78335edc036d17e518ccbb77eee49');
+const data=JSON.parse(bytes);assert.equal(data.occurrences.length,9);
+const rows=data.occurrences.map(row=>{assert.equal(row.ranges.length,1);return {...row,...row.ranges[0],ranges:undefined};});
+const output='packages/demos/src/alg-l06-p004-hit-regions.generated.ts';
+const source='// Generated from hash-bound P004 source geometry; edit the maintained producer.\nexport const P004_HIT_REGIONS = '+JSON.stringify(rows,null,2)+' as const;\n';
+if(fs.existsSync(output))assert.equal(fs.readFileSync(output,'utf8'),source);else fs.writeFileSync(output,source,{flag:'wx'});
+console.log(JSON.stringify({output,occurrences:rows.length}));
