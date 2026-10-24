@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "draft-registered-module-frame-domain-probe",
+  "animationId": "shared-nms002-l03-p002",
+  "status": "strict-frame-domain-support-incomplete",
+  "inputs": [
+    {
+      "path": "packages/demos/src/modules/g678-nms-l03-p002.tsx",
+      "bytes": 380727,
+      "sha256": "7f7e56f495f6765ddb10af73761187f2bc90bc0011aeb754f1ba34d90823c68e"
+    },
+    {
+      "path": "packages/demos/src/timelines/shared-nms002-l03-p002.ts",
+      "bytes": 1975,
+      "sha256": "d116dfea225191550c1dc75e91bebacd448d8d60362be13e698fc9a6abeb3f30"
+    },
+    {
+      "path": "apps/web/components/g678-nms-l03-p002-runtime.tsx",
+      "bytes": 14108,
+      "sha256": "b3966f7593ba3ef0552e235418e8d4cdb4d7ca65dcece90f61d85a84a48d9315"
+    },
+    {
+      "path": "packages/demos/src/timelines/g678-nms-l03-p002-equation.ts",
+      "bytes": 1550,
+      "sha256": "a8d59b9e776ffe2e2bb2d855c9a38721b82f0a6998534a3ac6f7efc8785f8db1"
+    }
+  ],
+  "records": [
+    {
+      "request": {
+        "frame": 1,
+        "frameDomain": "root",
+        "scenario": "default",
+        "lang": "en",
+        "seed": 0
+      },
+      "returned": {
+        "frame": 1,
+        "frameDomain": "root",
+        "language": "en",
+        "status": "blocked",
+        "blocker": "unsupported-runtime-request"
+      },
+      "sourceDrawingReady": false
+    },
+    {
+      "request": {
+        "frame": 10,
+        "frameDomain": "root",
+        "scenario": "default",
+        "lang": "en",
+        "seed": 0
+      },
+      "returned": {
+        "frame": 10,
+        "frameDomain": "root",
+        "language": "en",
+        "status": "blocked",
+        "blocker": "unsupported-runtime-request"
+      },
+      "sourceDrawingReady": false
+    },
+    {
+      "request": {
+        "frame": 1,
+        "frameDomain": "root",
+        "scenario": "default",
+        "lang": "es",
+        "seed": 0
+      },
+      "returned": {
+        "frame": 1,
+        "frameDomain": "root",
+        "language": "es",
+        "status": "blocked",
+        "blocker": "unsupported-runtime-request"
+      },
+      "sourceDrawingReady": false
+    },
+    {
+      "request": {
+        "frame": 10,
+        "frameDomain": "root",
+        "scenario": "default",
+        "lang": "es",
+        "seed": 0
+      },
+      "returned": {
+        "frame": 10,
+        "frameDomain": "root",
+        "language": "es",
+        "status": "blocked",
+        "blocker": "unsupported-runtime-request"
+      },
+      "sourceDrawingReady": false
+    },
+    {
+      "request": {
+        "frame": 1,
+        "frameDomain": "sprite-237",
+        "scenario": "source-static-frame",
+        "lang": "en",
+        "seed": 0
+      },
+      "returned": {
+        "frame": 1,
+        "frameDomain": "sprite-237",
+        "language": "en",
+        "status": "ready",
+        "blocker": null
+      },
+      "sourceDrawingReady": true
+    },
+    {
+      "request": {
+        "frame": 688,
+        "frameDomain": "sprite-237",
+        "scenario": "source-static-frame",
+        "lang": "en",
+        "seed": 0
+      },
+      "returned": {
+        "frame": 688,
+        "frameDomain": "sprite-237",
+        "language": "en",
+        "status": "ready",
+        "blocker": null
+      },
+      "sourceDrawingReady": true
+    },
+    {
+      "request": {
+        "frame": 1,
+        "frameDomain": "sprite-237",
+        "scenario": "source-static-frame",
+        "lang": "es",
+        "seed": 0
+      },
+      "returned": {
+        "frame": 1,
+        "frameDomain": "sprite-237",
+        "language": "es",
+        "status": "blocked",
+        "blocker": "spanish-visual-and-audio-unvalidated"
+      },
+      "sourceDrawingReady": false
+    },
+    {
+      "request": {
+        "frame": 688,
+        "frameDomain": "sprite-237",
+        "scenario": "source-static-frame",
+        "lang": "es",
+        "seed": 0
+      },
+      "returned": {
+        "frame": 688,
+        "frameDomain": "sprite-237",
+        "language": "es",
+        "status": "blocked",
+        "blocker": "spanish-visual-and-audio-unvalidated"
+      },
+      "sourceDrawingReady": false
+    },
+    {
+      "request": {
+        "frame": 1,
+        "frameDomain": "sprite-240",
+        "scenario": "default",
+        "lang": "en",
+        "seed": 0
+      },
+      "returned": {
+        "frame": 1,
+        "frameDomain": "sprite-237",
+        "language": "en",
+        "status": "blocked",
+        "blocker": "unsupported-runtime-request"
+      },
+      "sourceDrawingReady": false
+    },
+    {
+      "request": {
+        "frame": 1,
+        "frameDomain": "sprite-240",
+        "scenario": "default",
+        "lang": "es",
+        "seed": 0
+      },
+      "returned": {
+        "frame": 1,
+        "frameDomain": "sprite-237",
+        "language": "es",
+        "status": "blocked",
+        "blocker": "unsupported-runtime-request"
+      },
+      "sourceDrawingReady": false
+    }
+  ],
+  "mainEnglishSourceFramesReady": 688,
+  "mainEnglishSourceFramesRequired": 688,
+  "scope": "Registered module pure state only. Actual My Lesson audio, modern equation drawing and companion are separately checked by the bound browser receipt.",
+  "strictAdoptionStatus": "pending-canonical-renderer-audit-adopter",
+  "authoritativeOriginalRuntime": false,
+  "audioAccepted": false,
+  "strictComplete": false
+}
