@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l04-p004",
+  "animationId": "shared-alg001-l04-p004",
+  "assetId": "swf-552bbc4f4b5a51101ad9a029a6952963c2cc141c6ac776a92d16b234bc635ab4",
+  "status": "validating",
+  "created": "2026-09-09",
+  "confidence": "medium",
+  "classification": {
+    "collection": "course",
+    "grade": "G6-G8-shared",
+    "lesson": 4,
+    "section": "RW",
+    "page": 4,
+    "domain": "algebra",
+    "knowledgePoint": {
+      "en": "Ratios of drivers or riders to wheels",
+      "es": "Razones entre conductores o ciclistas y ruedas"
+    },
+    "titleRaw": "Page 3",
+    "titleDisplay": "Relationships: Real World Activity",
+    "status": "confirmed",
+    "evidence": [
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/catalog/g678-shared-catalog.v1.json",
+      "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/alg-l04-p004-preparation-v1/source/audit/texts/39.txt"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L4/RW/L4RW04.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L4/RW/L4RW04.swf",
+    "flaSha256": "",
+    "swfSha256": "552bbc4f4b5a51101ad9a029a6952963c2cc141c6ac776a92d16b234bc635ab4",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 938325,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#b8d8f7",
+    "actionScriptVersion": "AS1/2",
+    "complexity": "interactive-understood",
+    "fonts": [
+      "Source embedded glyphs retained through FFDec export"
+    ],
+    "scripts": [
+      "root:1 known preloader host call and stop",
+      "root:6 stop",
+      "sprite-38:1006 stop"
+    ],
+    "externalDependencies": [
+      "Legacy _level0.InternalPreloader is replaced by modern asset readiness; not executed"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      "Shape1 exclusively clips depths1-149; raw fill alpha64/255 normalized only for clipping."
+    ],
+    "morphs": [],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "default",
+      "kind": "linear",
+      "description": "Root and static page title source inventory; authoritative runtime evidence pending",
+      "reachable": true
+    },
+    {
+      "id": "source-static-frame",
+      "kind": "linear",
+      "description": "One exact English authored main timeline, with source-terminal stop and complete modern Replay reset",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "en"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "main-embedded-stream",
+        "language": "en",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/alg-l04-p004-preparation-v1/audio/source-stream.mp3",
+        "sha256": "339eae5e3cf60c9f0b519917b5a9ed29bb62470752c11c6d3676fcc71fd7e413",
+        "frameDomainId": "sprite-38",
+        "startFrame": 15,
+        "notes": "Frames1-14 contain no stream. Native decoded stream15-1006, no invented padding; listening pending."
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "not-used",
+    "browser": "149.0.7827.55",
+    "ffdec": "26.2.1",
+    "swfmill": "Pinned binary in source extraction receipt",
+    "adobeAnimate": "not-used-swf-only"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 800,
+      "height": 600,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "Source Canvas with native decoded-stream clock and source-audited changing ratio reading",
+    "route": "/en/migration-status/g678-calibration/shared-alg001-l04-p004",
+    "routeFile": "apps/web/app/[locale]/migration-status/g678-calibration/shared-alg001-l04-p004/page.tsx",
+    "component": "apps/web/components/g678-terminal-source-runtime-v1.tsx",
+    "registryModule": "./modules/g678-alg-l04-p004",
+    "timelineModule": "packages/demos/src/timelines/shared-alg001-l04-p004.ts",
+    "testFile": "scripts/g678-alg-l04-p004.test.mjs",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-38",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-38",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-38",
+        "parentFrameDomainId": "root",
+        "frameCount": 1006,
+        "scenarioIds": [
+          "source-static-frame"
+        ]
+      },
+      {
+        "id": "sprite-41",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-41",
+        "parentFrameDomainId": "root",
+        "frameCount": 1,
+        "scenarioIds": [
+          "default"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": true,
+    "reducedMotionReviewed": true,
+    "accessibleNameReviewed": true,
+    "responsiveOverflowReviewed": true,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": [
+      "SWF only; original runtime, listening, human and Owner decisions pending.",
+      "English source in both UI locales.",
+      "Current local My Lesson product QA passed in3 browser contexts, including both source ratios and scene transition.",
+      "Canonical private-registry domain adoption pending."
+    ]
+  }
+}
