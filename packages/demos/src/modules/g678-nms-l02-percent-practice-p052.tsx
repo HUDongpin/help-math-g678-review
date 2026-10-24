@@ -11,9 +11,8 @@ import {P052_AUDIO_PLANS} from '../generated/nms-l02-p052-runtime-audio-v1';
  * is not the interactive player's reset operation. Never register this as an
  * autoplay substitute for the owned P052Controller/MyLesson adapter. */
 function Renderer(props:AnimationRendererProps){
- const lang=props.uiLanguage==='es'?'es':props.lang;
- if(props.uiLanguage!==undefined&&props.uiLanguage!==lang&&props.uiLanguage!==props.lang)throw Error('P052_CAPTURE_UI_LANGUAGE');
- return <P052CaptureRenderer request={p052ModuleCapture(props.frame,{...props,lang}).request}/>;
+ if(props.uiLanguage!==undefined&&props.uiLanguage!==props.lang)throw Error('P052_CAPTURE_UI_LANGUAGE');
+ return <P052CaptureRenderer request={p052ModuleCapture(props.frame,props).request}/>;
 }
 const movie={stage:{width:800,height:600},fps:12,frameCount:10,durationMs:10000/12};
 /** Structural root metadata is preserved, but only sprite350 inspection is

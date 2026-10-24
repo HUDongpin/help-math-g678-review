@@ -19,7 +19,8 @@ const animationModule: AnimationModule<GeoL06P001FrameState> & {privateGeoL06Int
     reducedMotionFrameByDomain: Object.freeze({'sprite-142': 129}),
     async prepare() {
       if (typeof document === 'undefined') return;
-      await document.fonts.load('28px "HELP Math Fredoka"');
+      const font = await document.fonts.load('28px "HELP Math Fredoka"');
+      if (font.length === 0) throw Error('GEO_L06_P001_FONT_UNAVAILABLE');
       await document.fonts.ready;
     },
   }),

@@ -23,7 +23,7 @@ const animationModule: AnimationModule<GeoL07P001FrameState> &
     async prepare() {
       if (typeof document === 'undefined') return;
       const font = await document.fonts.load('28px "HELP Math Fredoka"');
-      if (font.length === 0) return;
+      if (font.length === 0) throw Error('GEO_L07_P001_FONT_UNAVAILABLE');
       await document.fonts.ready;
     },
   }),

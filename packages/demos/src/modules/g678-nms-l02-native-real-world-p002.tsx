@@ -18,9 +18,11 @@ const animationModule:AnimationModule<P002FrameState>&{privateP002RealWorld:type
   audioCues:Object.freeze([]),Renderer:NmsL2P002Renderer,getFrameState:p002ModuleFrame,
   lessonHost:Object.freeze({capabilities:Object.freeze(['keyterm'] as const),legacyOperations:'blocked',auditStorage:'memory-only',storesPersonalData:false}),
   textPresentation:Object.freeze({schemaVersion:1,binding:P002_TEXT_BINDING,Renderer:NmsL2P002Renderer,getSnapshot:p002TextSnapshot,
+    keyTerms:Object.freeze({indexLanguage:'en',sourceAssetId:'G678L1KTE01.xml',sourceSha256:'14d454f4c1c1a6f0939fb80b454fd3e22890eabb4a730c6bfa7efa1d9a2e5e5b',entryIds:Object.freeze(['fraction','whole','group'])}),
     async prepare(){
       if(typeof document==='undefined')return;
-      await Promise.all([document.fonts.load('18px "HELP Math Nunito Sans"'),document.fonts.load('28px "HELP Math Fredoka"')]);
+      const faces=await Promise.all([document.fonts.load('18px "HELP Math Nunito Sans"'),document.fonts.load('28px "HELP Math Fredoka"')]);
+      if(faces.some(group=>group.length===0))throw Error('P002_FONT_UNAVAILABLE');
       await document.fonts.ready;
     },
   }),

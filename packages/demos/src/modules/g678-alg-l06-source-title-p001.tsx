@@ -13,7 +13,7 @@ type Glyphs = readonly [string, string];
 function exact(frame: number, context: RuntimeContext) {
   if (context.frame !== frame || context.frameDomain !== DOMAIN ||
       context.rootFrame !== ALG_L06_P001_SOURCE.rootEntryFrame ||
-      context.scenario !== SCENARIO || (context.lang !== 'en' && context.lang !== 'es') || context.seed !== 0) {
+      context.scenario !== SCENARIO || context.lang !== 'en' || context.seed !== 0) {
     throw new Error('P001 requires the exact nested source context');
   }
 }
@@ -43,7 +43,7 @@ function Renderer(props: AnimationRendererProps) {
   exact(props.frame, {frame: props.frame, frameDomain: props.frameDomain,
     rootFrame: props.rootFrame, scenario: props.scenario, lang: props.lang,
     seed: props.seed});
-  // The course host enables audio for the lesson. This page has no admitted stream.
+  if (props.audioEnabled) throw new Error('P001 source audio is not admitted in the module');
   const [glyphs, setGlyphs] = useState<Glyphs | null>(null);
   const [failed, setFailed] = useState(false);
   useEffect(() => {

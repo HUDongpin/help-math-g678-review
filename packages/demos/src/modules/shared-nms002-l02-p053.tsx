@@ -11,8 +11,6 @@ export function p053ProductFrameState(frame:number,context:RuntimeContext){
   context.lang==='en'&&context.seed===0;
  return Object.freeze({animationId:P053_SOURCE.animationId,sourceSwfSha256:P053_SOURCE.sha256,
   status:supported?'source-static-candidate' as const:'blocked' as const,frame,
-  frameDomain:context.frameDomain==='sprite-187'?'sprite-187':'root',
-  scenario:context.scenario,language:context.lang==='es'?'es':'en',
   originalRuntimeParityEstablished:false as const,audioSynchronizationEstablished:false as const,
   hostCompletion:false as const});
 }
