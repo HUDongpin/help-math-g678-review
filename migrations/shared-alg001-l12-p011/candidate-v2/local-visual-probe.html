@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><link rel="icon" href="data:,">
+<title>Origin — source candidate v2</title>
+<style>body{margin:16px;font:16px system-ui}canvas{display:block;width:min(800px,100%);height:auto}button,input{font:inherit;margin:8px}pre{white-space:pre-wrap}</style>
+<p>Local source drawing candidate. My Lesson glossary and audio integration pending.</p>
+<label>Frame <input id="frame" type="number" min="1" max="118" value="1"></label>
+<button id="replay">Replay</button><button id="verify">Check all frames and Replay</button>
+<canvas width="800" height="600" id="stage"></canvas><pre id="status"></pre>
+<script src="canvas-renderer.js"></script><script>
+const asset=HELP_MATH_CANVAS_ASSETS['shared-alg001-l12-p011'];
+const stage=document.getElementById('stage'), input=document.getElementById('frame');
+async function render(frame){
+  await asset.ready();
+  const state=asset.render(stage,{frame,scenario:'source-static-frame',language:'en',seed:0});
+  input.value=String(frame);
+  return state;
+}
+async function pixelHash(){
+  const pixels=stage.getContext('2d').getImageData(0,0,800,600).data;
+  return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',pixels)),n=>n.toString(16).padStart(2,'0')).join('');
+}
+async function verify(){
+  const hashes=[];
+  for(let frame=1;frame<=118;frame++){await render(frame);hashes.push(await pixelHash());}
+  await render(1);const replay=await pixelHash();
+  let rejected=0;
+  for(const frame of [0,119,1.5]){try{await render(frame);}catch{rejected++;}}
+  await render(118);const terminal=await pixelHash();
+  const result={frames:hashes.length,uniqueFrames:new Set(hashes).size,
+    first:hashes[0],last:hashes[117],replayMatchesFirst:replay===hashes[0],
+    terminalRepeatMatches:terminal===hashes[117],invalidFramesRejected:rejected};
+  document.getElementById('status').textContent=JSON.stringify(result,null,2);
+  if(!result.replayMatchesFirst||!result.terminalRepeatMatches||rejected!==3)throw Error('render regression');
+  return result;
+}
+input.addEventListener('change',()=>render(Number(input.value)));
+document.getElementById('replay').addEventListener('click',()=>render(1));
+document.getElementById('verify').addEventListener('click',verify);
+render(1);
+</script></html>

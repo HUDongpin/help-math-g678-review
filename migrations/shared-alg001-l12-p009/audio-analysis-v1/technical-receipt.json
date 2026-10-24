@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "kind": "p009-embedded-stream-analysis-technical-receipt",
+  "timestampUtc": "2026-09-26T22:32:35.164567+00:00",
+  "animationId": "shared-alg001-l12-p009",
+  "worktree": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation",
+  "inputs": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/VB/L12VB04.swf",
+      "bytes": 165405,
+      "sha256": "d8bb6bfb4632fc528a0e14092277d95b2d96998aaeab2f0c1252a0233f35f533"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p009/audit/source-stream-blocks.json",
+      "bytes": 236488,
+      "sha256": "cc20000fdef998ecd62aac8454f8f1edf0e9ad8c5595140e9899354256036c4a"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p009/audit/source-stream.mp3",
+      "bytes": 162890,
+      "sha256": "15e60f13aad0e2187db0b32f6bcfe65151001a1ded336abd4fb4eb59b3014f2e"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/SA/L12VB04.mp3",
+      "bytes": 325584,
+      "sha256": "3ccbe37ecfabff0506ef3daafc7db4b9fd8b770f0baefd6a70efeaaa27ca6fd4"
+    },
+    {
+      "path": "scripts/analyze-g678-alg-l12-p009-stream.mjs",
+      "bytes": 27022,
+      "sha256": "c24abfe44f9d4c508e0b2bef6c4d80240e658ae6a68b7d4f91ddb4baddba89ba"
+    }
+  ],
+  "p006ComparisonInputPins": [
+    {
+      "path": "migrations/shared-alg001-l12-p006/audio-source-v1/stream-source-receipt.json",
+      "bytes": 142839,
+      "sha256": "c3f1c26102fb9b7e0cb41a60a0de764b8cc68da559a7d20be7ccb42f557f4f78"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p006/audio-pcm-v1/receipt.json",
+      "bytes": 100637,
+      "sha256": "9f7c7fdc5b4bc60c95cd7e3a58aabdbab2dd96ce00bda9357a4da5cfa9dffd2e"
+    },
+    {
+      "path": "packages/demos/src/alg-l12-p006-audio-schedule.ts",
+      "bytes": 2642,
+      "sha256": "2ac06a5fde0873b2b4e3e22eab65457f5bdb0bf26f9defafb3aa8f2710596add"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p006/evidence/AUDIO_CONTINUOUS_CORRECTION_2026-09-27.md",
+      "bytes": 6732,
+      "sha256": "782cda2f40239e392903d4ac9a2ad1aa8ad9c79af979d49abe45f0b6092ad8b1"
+    }
+  ],
+  "ownedArtifacts": [
+    {
+      "path": "scripts/analyze-g678-alg-l12-p009-stream.mjs",
+      "bytes": 27022,
+      "sha256": "c24abfe44f9d4c508e0b2bef6c4d80240e658ae6a68b7d4f91ddb4baddba89ba"
+    },
+    {
+      "path": "scripts/analyze-g678-alg-l12-p009-stream.test.mjs",
+      "bytes": 5937,
+      "sha256": "fca2f6dc2dcc9ef479805584454b849617334f368871bf74ef31d303b1e27236"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p009/evidence/AUDIO_STREAM_ANALYSIS_2026-09-27.md",
+      "bytes": 11621,
+      "sha256": "1bad7da9e5a91bc5778fa19726b062b02f9a8d69ab67a91fdf0762d07b0f918a"
+    }
+  ],
+  "decoderAndProbeToolPins": [
+    {
+      "path": "/opt/homebrew/Cellar/ffmpeg/8.1.2_1/bin/ffmpeg",
+      "bytes": 426224,
+      "sha256": "dad4b30b36a1a999bfa4b6ffbde138bd17ee496c69e12eef638227dff2c6415c"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/ffmpeg/8.1.2_1/lib/libavutil.60.26.102.dylib",
+      "bytes": 626784,
+      "sha256": "367d15a2453235a7a42c7ac40fab116fdc0fce8514b17f9244749ed814cbb945"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/ffmpeg/8.1.2_1/lib/libavcodec.62.28.102.dylib",
+      "bytes": 9682432,
+      "sha256": "ebd3bf33b2a77e20956afb20746bc6ac072a38d335c9569f064df187df622c6c"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/ffmpeg/8.1.2_1/lib/libavformat.62.12.102.dylib",
+      "bytes": 2322672,
+      "sha256": "be544c848c089a48f911df13f139e3a5bb6c669bd140e7bda37c049a313a00e1"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/ffmpeg/8.1.2_1/lib/libavdevice.62.3.102.dylib",
+      "bytes": 131632,
+      "sha256": "638723866e3aaf80908fc713bbe2d6cd52f5fa82954b5b699e4dea8c260c128b"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/ffmpeg/8.1.2_1/lib/libavfilter.11.14.102.dylib",
+      "bytes": 2947456,
+      "sha256": "c1ed8d2fa94ece36293ae27808bb62d126bad85ae455ce839af5cca46f65f413"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/ffmpeg/8.1.2_1/lib/libswscale.9.5.102.dylib",
+      "bytes": 587600,
+      "sha256": "585ecd19451f258cba1acddef53b71ebcfa01797d7811b74e6461e4b717e37b3"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/ffmpeg/8.1.2_1/lib/libswresample.6.3.102.dylib",
+      "bytes": 87104,
+      "sha256": "ecf2dddd8b1f8fc4555a148ab3e67a7081b09bbd9d5f40a158395a10fb08ae96"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/ffmpeg/8.1.2_1/bin/ffprobe",
+      "bytes": 236912,
+      "sha256": "cfeefcc9207eb3fa424679228fe3848db2921b15537d26c1ccc4a7a61de95d00"
+    }
+  ],
+  "nodeRuntime": {
+    "version": "v24.18.0",
+    "execPath": "/Users/peter/.local/share/node-v24.18.0-darwin-arm64/bin/node",
+    "versions": {
+      "node": "24.18.0",
+      "acorn": "8.16.0",
+      "ada": "3.4.4",
+      "amaro": "1.1.9",
+      "ares": "1.34.6",
+      "brotli": "1.2.0",
+      "cldr": "48.0",
+      "icu": "78.3",
+      "llhttp": "9.4.2",
+      "merve": "1.2.2",
+      "modules": "137",
+      "napi": "10",
+      "nbytes": "0.1.4",
+      "ncrypto": "0.0.1",
+      "nghttp2": "1.69.0",
+      "nghttp3": "",
+      "ngtcp2": "",
+      "openssl": "3.5.7",
+      "simdjson": "4.6.4",
+      "simdutf": "6.4.0",
+      "sqlite": "3.53.1",
+      "tz": "2026b",
+      "undici": "7.28.0",
+      "unicode": "17.0",
+      "uv": "1.52.1",
+      "uvwasi": "0.0.23",
+      "v8": "13.6.233.17-node.50",
+      "zlib": "1.3.1-e00f703",
+      "zstd": "1.5.7"
+    },
+    "executable": {
+      "path": "/Users/peter/.local/share/node-v24.18.0-darwin-arm64/bin/node",
+      "bytes": 120965360,
+      "sha256": "ee6fb0e015284d83a91e8ec5213f43a157f8a392b58555301682892ba928c04a"
+    }
+  },
+  "dedicatedOutput": {
+    "path": "migrations/shared-alg001-l12-p009/audio-analysis-v1",
+    "receiptExcludedFromMembership": true,
+    "files": 9,
+    "bytes": 4198962,
+    "inventorySha256": "07479dbc275bec53297431888eeef45ac0e39661d02cd7269403655dee615e40",
+    "inventoryAlgorithm": "SHA-256 of UTF-8 compact JSON outputFiles array, key and list order as written",
+    "outputFiles": [
+      {
+        "path": "migrations/shared-alg001-l12-p009/audio-analysis-v1/analysis.json",
+        "bytes": 11426,
+        "sha256": "6547b52ae7e12e7ff7b2bb0ff190ab233a552dc68eda056869df015d26c883fd"
+      },
+      {
+        "path": "migrations/shared-alg001-l12-p009/audio-analysis-v1/block-timing-analysis.json",
+        "bytes": 155183,
+        "sha256": "3ffab1569072c71e9f58f07d7d33c3acf9ef2b389a1f685f942d3f6526e908ae"
+      },
+      {
+        "path": "migrations/shared-alg001-l12-p009/audio-analysis-v1/mp3-frame-catalog.json",
+        "bytes": 528914,
+        "sha256": "cc3fa868f36b982159dee1d8766925547926ef1372ee8513955ff2eed4fc347b"
+      },
+      {
+        "path": "migrations/shared-alg001-l12-p009/audio-analysis-v1/pcm-analysis.json",
+        "bytes": 2571,
+        "sha256": "0479c38c8c8f5b67de8be85b9408091dfadd397dc9297dd835a348f78a99ffd1"
+      },
+      {
+        "path": "migrations/shared-alg001-l12-p009/audio-analysis-v1/probe-frames.json",
+        "bytes": 302485,
+        "sha256": "7d1008f03a699b2d51c0294953aa9eb7a5c282fbf45ab5ce71eaf9258938a81d"
+      },
+      {
+        "path": "migrations/shared-alg001-l12-p009/audio-analysis-v1/probe-metadata.json",
+        "bytes": 1981,
+        "sha256": "ddb60f1b7c7230cf07fa15198b28adadc295473f628ac5e02131e7a191d57e68"
+      },
+      {
+        "path": "migrations/shared-alg001-l12-p009/audio-analysis-v1/probe-packets.json",
+        "bytes": 304210,
+        "sha256": "d707a8817dab3c36eaa0d06d079a0279cd5c119f2d7266c1e0bb67ca0fdb0673"
+      },
+      {
+        "path": "migrations/shared-alg001-l12-p009/audio-analysis-v1/sprite-62-untrimmed.f32le",
+        "bytes": 2886912,
+        "sha256": "cb2025b6d5364dcc54bedd573bf51ae64489d9e377c5b94d5df96d1c0b204a2c"
+      },
+      {
+        "path": "migrations/shared-alg001-l12-p009/audio-analysis-v1/tool-versions.json",
+        "bytes": 5280,
+        "sha256": "9c0b72a8e26c99bd83d432128c6aeff2784d3b5ea571abcd382f170315488364"
+      }
+    ]
+  },
+  "verification": {
+    "sourceInputsCurrentByteHashAndStableStat": "PASS",
+    "393BlocksReconstructedDirectlyFromPhysicalCws": "PASS",
+    "1253WholeMp3FrameHeadersSamplesAndBytes": "PASS",
+    "1253FfprobePacketPositionsAndSizes": "PASS",
+    "1253FfprobeDecodedFrameSamples": "PASS",
+    "721728FiniteUntrimmedNativeRatePcmSamples": "PASS",
+    "sourceEmptyFrame3NotConvertedToGap": true,
+    "formatDurationEstimateSeparatedFromPcmDuration": true,
+    "rawSeekArithmeticSeparatedFromContinuousCandidate": true,
+    "allNineAnalysisOutputsReproducedReadOnlyByActualTools": "PASS",
+    "toolBinariesAndSevenCoreLibrariesCurrentByteHash": "PASS",
+    "scriptsSyntaxAndFinalNewlineWhitespace": "PASS",
+    "tests": {
+      "command": "node --test scripts/analyze-g678-alg-l12-p009-stream.test.mjs",
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0,
+      "includesActualToolReadOnlyReproduction": true
+    }
+  },
+  "pcm": {
+    "bytes": 2886912,
+    "sha256": "cb2025b6d5364dcc54bedd573bf51ae64489d9e377c5b94d5df96d1c0b204a2c",
+    "samples": 721728,
+    "seconds": 32.73142857142857
+  },
+  "continuousHypothesis": {
+    "status": "explicit-modern-candidate-arithmetic-only; no playback schedule admitted",
+    "firstFrame": 2,
+    "sourceStartSample": 1673,
+    "sourceEndSample": 721728,
+    "timelineStartSample": 1837.5,
+    "audioEndTimelineSample": 721892.5,
+    "terminalStartTimelineSample": 722137.5,
+    "postrollSamplesIfTerminalHeldAtFrameStart": 245,
+    "postrollMillisecondsIfTerminalHeldAtFrameStart": 11.11111111111111,
+    "terminalSourceSample": 721973,
+    "noInsertedEmptyBlockGap": true,
+    "noNominalRateStretch": true,
+    "terminalHoldIsModernPolicy": true,
+    "sourceHasTerminalStopAction": false
+  },
+  "unresolved": [
+    "Natural root/host-to-main audio onset and latency implementation",
+    "Original Flash seek decoder priming and per-block SeekSamples interpretation",
+    "Main looping/host end policy; P009 has no main terminal action",
+    "Actual browser decoder sample count/hash and complete transport lifecycle",
+    "Audio language, semantic timing, original-runtime listening, human/Owner acceptance"
+  ],
+  "claimBoundary": {
+    "technicalDecodeOnly": true,
+    "productAudioEnabled": false,
+    "registered": false,
+    "originalRuntime": false,
+    "synchronizationAccepted": false,
+    "languageAccepted": false,
+    "listeningAccepted": false,
+    "humanReview": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "published": false,
+    "providerAccess": false,
+    "speakersOrPlaybackOpened": false,
+    "publicAdobeFormatReferenceInspected": true,
+    "sourceAssetsModified": false,
+    "productHostOrRegistryModified": false,
+    "saDecodedOrConcatenated": false
+  }
+}

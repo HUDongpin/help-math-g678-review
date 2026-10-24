@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l12-p006",
+  "sourceSwfSha256": "933f1f6db59435e882c1bf6e9392259fc1d28c0974a0a4c6cebc9bcc7a5d46b6",
+  "status": "structurally-enumerated-runtime-unverified",
+  "timelines": [
+    {
+      "timelineId": "root",
+      "frameCount": 10,
+      "structuralReachability": "initial load; frame1 preloader Stop; frame6 begin Stop",
+      "disposition": "declared-frame-domain",
+      "frameDomainId": "root",
+      "control": "initial load; frame1 preloader Stop; frame6 begin Stop"
+    },
+    {
+      "timelineId": "sprite-53",
+      "frameCount": 342,
+      "structuralReachability": "root frame6 depth1, independent main playhead; terminal Stop at342",
+      "disposition": "declared-frame-domain",
+      "frameDomainId": "sprite-53",
+      "control": "root frame6 depth1, independent main playhead; terminal Stop at342"
+    },
+    {
+      "timelineId": "sprite-56",
+      "frameCount": 1,
+      "structuralReachability": "root frame6 depth65, static title",
+      "disposition": "declared-frame-domain",
+      "frameDomainId": "sprite-56",
+      "control": "root frame6 depth65, static title"
+    }
+  ],
+  "definedSpriteCount": 2,
+  "rootReachableTimelineCount": 3,
+  "excludedTimelineCount": 0,
+  "undeclaredReachableTimelineCount": 0,
+  "unresolved": [
+    "Original host preloader continuation",
+    "Natural stream timing and terminal audio behavior",
+    "Glossary source definitions, pause/resume/replay trace specifications",
+    "Spanish source-content/language disposition and human review"
+  ],
+  "acceptanceEffect": "none; interaction trace requirements remain to be specified before acceptance"
+}

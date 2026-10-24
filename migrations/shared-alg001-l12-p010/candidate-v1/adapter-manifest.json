@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l12-p010",
+  "status": "unregistered-source-only-canvas-candidate",
+  "scope": "local source-vector engineering inspection",
+  "source": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/VB/L12VB05.swf",
+    "bytes": 183770,
+    "sha256": "a846950547f7c3ab7b0445dfc2118d534565ffd352b6e9687ba8211e5d4a3fcd"
+  },
+  "sourceIndex": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/index.xml",
+    "bytes": 11927,
+    "sha256": "0755afb5645d3179fb1105641b0d1f1b06d8c803c02484bfbdc703ba5bb6f325"
+  },
+  "inputs": {
+    "xml": {
+      "path": "migrations/shared-alg001-l12-p010/audit/movie.xml",
+      "bytes": 1633927,
+      "sha256": "94c06c842ebd821d5d239666e3e00e4d639f47d4861149438a0a6a1cc02912da"
+    },
+    "sourceAuditReceipt": {
+      "path": "migrations/shared-alg001-l12-p010/audit/extraction-receipt.json",
+      "bytes": 6981,
+      "sha256": "d42a9b58831223bf9be5825586c31d74232dda6965e7458eca7dd3c73fa91385"
+    },
+    "sourceToolchain": {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-toolchain.json",
+      "bytes": 14091,
+      "sha256": "c601fb6740c7eab88cec6a107113ec95eff5cc87d311d5a9bbb9e6942ee19832"
+    },
+    "canvasReceipt": {
+      "path": "migrations/shared-alg001-l12-p010/audit/ffdec-26.2.1-canvas-v1/extraction-receipt.json",
+      "bytes": 42628,
+      "sha256": "e75250b0f7243cc239a08eba89097c2dfe97d0bc89d8b2fa53e2d2f8b85cd64c"
+    },
+    "helper": {
+      "path": "migrations/shared-alg001-l12-p010/audit/ffdec-26.2.1-canvas-v1/sprites/DefineSprite_96/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "main": {
+      "path": "migrations/shared-alg001-l12-p010/audit/ffdec-26.2.1-canvas-v1/sprites/DefineSprite_96/frames.html",
+      "bytes": 5021503,
+      "sha256": "16927e17b0b72925efc292a74226e01266ee3c5398b0a56c25f7a95e8e93cdb8"
+    },
+    "root": {
+      "path": "migrations/shared-alg001-l12-p010/audit/ffdec-26.2.1-canvas-v1/frames/frames.html",
+      "bytes": 5033500,
+      "sha256": "2ad911f5b80fde5ea83e683cb8c20f9ba7c428d069527553077d9dcc940e0ffc"
+    },
+    "catalog": {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-text-catalog.json",
+      "bytes": 1322051,
+      "sha256": "0926104d8e08a517807e389ccdd4a13cef5081c9229afed4900f424f8fe561d1"
+    },
+    "behavior": {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-behavior.json",
+      "bytes": 293983,
+      "sha256": "c584ad267cbca359c3196e7e5ca5cb54426124b864f45261ca4286c804d2cbd3"
+    },
+    "audioAudit": {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-stream-blocks.json",
+      "bytes": 274267,
+      "sha256": "656ccb77ccea9737b88c946d4101a759c2441f93522cfd34c3d872fff8080d2e"
+    },
+    "sharedBuilder": {
+      "path": "scripts/build-safe-ffdec-canvas-adapter.mjs",
+      "bytes": 115553,
+      "sha256": "1d1dd117dd59a6b7191f2fa8488249ece09bfb1da8837be146677f88a01315dd"
+    }
+  },
+  "generatorDependencies": [
+    {
+      "path": "scripts/build-g678-alg-l12-p010-source-canvas.mjs",
+      "bytes": 32789,
+      "sha256": "8812268b8ef5b84d34908d87cce6aa6523147931e47f3fa503fc7ec901d3f520"
+    },
+    {
+      "path": "scripts/build-g678-alg-l12-p010-source-canvas.test.mjs",
+      "bytes": 9571,
+      "sha256": "9c8d8381450b08a703bb1aa52c21d1e08c975a7466ce3913ee7deda26f353cb4"
+    },
+    {
+      "path": "scripts/export-g678-alg-l12-p010-canvas.mjs",
+      "bytes": 19250,
+      "sha256": "6ccfecfba8712059acfef4876d83afeac34d0466d502ff545885e5f97e00dc32"
+    },
+    {
+      "path": "scripts/export-g678-alg-l12-p010-canvas.test.mjs",
+      "bytes": 3816,
+      "sha256": "ee2619d1c215f121a593138b98569e34daa90e1b0b34413b9da3688ab56273ed"
+    },
+    {
+      "path": "scripts/build-safe-ffdec-canvas-adapter.mjs",
+      "bytes": 115553,
+      "sha256": "1d1dd117dd59a6b7191f2fa8488249ece09bfb1da8837be146677f88a01315dd"
+    }
+  ],
+  "upstreamChecks": [
+    {
+      "script": "migrations/shared-alg001-l12-p010/audit/extract-source.mjs",
+      "args": [
+        "--check"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "af4d1b3fc806d8d7d1b9a1937328d27c69af530164c1b192ca498dd339ebf314",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "script": "migrations/shared-alg001-l12-p010/audit/build-source-audit.mjs",
+      "args": [
+        "--check"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "a72b472aeb97fd05b09979b908640f6a27d7b2a812f7708837c1725dca0517c4",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "script": "scripts/export-g678-alg-l12-p010-canvas.mjs",
+      "args": [
+        "--check"
+      ],
+      "exitCode": 0,
+      "outputChecksumSetSha256": "89f84f6f7743756e65dd28f8502e9b95f9b704aab8b85ddabf2c75a46520b456"
+    }
+  ],
+  "output": {
+    "path": "migrations/shared-alg001-l12-p010/candidate-v1/canvas-renderer.js",
+    "bytes": 5031877,
+    "sha256": "ec49392f16dba87cbe8c7d807849fedd75cbbc2e85c7421a9cbf08255e1a5239",
+    "globalAssetRegistry": "HELP_MATH_CANVAS_ASSETS",
+    "assetId": "shared-alg001-l12-p010"
+  },
+  "runtimeBytes": 5031877,
+  "runtimeSha256": "ec49392f16dba87cbe8c7d807849fedd75cbbc2e85c7421a9cbf08255e1a5239",
+  "compositionSha256": "7f84b7689c04f2c37172c91fff1d2bfdd1c852ddc724a1dfa03a84a7bc0f58db",
+  "renderScale": 2,
+  "view": {
+    "width": 800,
+    "height": 600
+  },
+  "requiredCanvas": {
+    "width": 1600,
+    "height": 1200
+  },
+  "rootInspectionFrame": 6,
+  "mainTimelineId": "sprite-96",
+  "mainFrameCount": 465,
+  "sourceTextDefinitions": 28,
+  "sourceTextRuns": 52,
+  "sourceTextMainInstances": 53,
+  "sourceShapeDefinitions": 58,
+  "sourceButtonDefinitions": 9,
+  "sourceButtonMainInstances": 10,
+  "sourceMaskInstances": 4,
+  "sourceMaskCompositeBlockCount": 1499,
+  "sourceGraphic97Classification": "unclassified-retained",
+  "maskAudit": {
+    "definitions": [
+      {
+        "characterId": 18,
+        "rgba": [
+          102,
+          153,
+          0,
+          164
+        ],
+        "lineStyleCount": 0,
+        "fillStyleCount": 1
+      },
+      {
+        "characterId": 30,
+        "rgba": [
+          153,
+          204,
+          0,
+          184
+        ],
+        "lineStyleCount": 0,
+        "fillStyleCount": 1
+      }
+    ],
+    "uses": [
+      {
+        "characterId": 18,
+        "depth": 1,
+        "clipDepth": 10
+      },
+      {
+        "characterId": 18,
+        "depth": 11,
+        "clipDepth": 20
+      },
+      {
+        "characterId": 30,
+        "depth": 21,
+        "clipDepth": 28
+      },
+      {
+        "characterId": 30,
+        "depth": 29,
+        "clipDepth": 36
+      }
+    ],
+    "exclusiveClipDepthUsage": true,
+    "instanceIds": [
+      "sprite-96/depth-1/generation-1",
+      "sprite-96/depth-11/generation-1",
+      "sprite-96/depth-21/generation-1",
+      "sprite-96/depth-29/generation-1"
+    ],
+    "sourcePathsAndColorsRetained": true,
+    "opacityCorrectionApplied": false,
+    "geometryRetained": true,
+    "mechanism": "Original FFDec clipCanvas plus destination-in raster mask compositing",
+    "claimBoundary": "Source drawing candidate retains raw mask alpha; actual Flash mask opacity, reveal and activation parity remain pending source/native review",
+    "acceptanceEffect": "none"
+  },
+  "strictDirectiveAudit": {
+    "currentStrict": true,
+    "strictIifeCount": 1,
+    "strictDirectiveFunctionCount": 1,
+    "iifeParameter": "global",
+    "simpleParameterBoundary": true,
+    "nonSimpleParameterStrictDirectiveCount": 0,
+    "syntaxChecks": [
+      "Acorn ecmaVersion2020 script",
+      "vm.Script"
+    ],
+    "claimBoundary": "JavaScript strict-directive validity only; not strict migration completion"
+  },
+  "sourceTextFunctionsRetained": [
+    "text4",
+    "text6",
+    "text9",
+    "text10",
+    "text11",
+    "text12",
+    "text13",
+    "text14",
+    "text15",
+    "text20",
+    "text26",
+    "text32",
+    "text36",
+    "text38",
+    "text50",
+    "text55",
+    "text56",
+    "text57",
+    "text64",
+    "text69",
+    "text70",
+    "text71",
+    "text75",
+    "text84",
+    "text85",
+    "text86",
+    "text94",
+    "text95"
+  ],
+  "sourceShapeFunctionsRetained": [
+    "shape1",
+    "shape2",
+    "shape5",
+    "shape7",
+    "shape8",
+    "shape16",
+    "shape17",
+    "shape18",
+    "shape19",
+    "shape21",
+    "shape25",
+    "shape30",
+    "shape31",
+    "shape35",
+    "shape39",
+    "shape40",
+    "shape41",
+    "shape42",
+    "shape43",
+    "shape44",
+    "shape45",
+    "shape46",
+    "shape47",
+    "shape48",
+    "shape49",
+    "shape51",
+    "shape52",
+    "shape53",
+    "shape54",
+    "shape58",
+    "shape59",
+    "shape60",
+    "shape61",
+    "shape62",
+    "shape63",
+    "shape65",
+    "shape66",
+    "shape67",
+    "shape68",
+    "shape72",
+    "shape73",
+    "shape74",
+    "shape76",
+    "shape77",
+    "shape78",
+    "shape79",
+    "shape80",
+    "shape81",
+    "shape82",
+    "shape83",
+    "shape87",
+    "shape88",
+    "shape89",
+    "shape90",
+    "shape91",
+    "shape92",
+    "shape93",
+    "shape97"
+  ],
+  "originalSourceColorsRetained": true,
+  "textSuppressionApplied": false,
+  "maskOpacityCorrectionApplied": false,
+  "noLegacyActionScriptExecuted": true,
+  "noAudioNetworkTimersOrAutoplay": true,
+  "originalTerminalPolicyEstablished": false,
+  "rawExportsUnchanged": true,
+  "acceptanceEffects": {
+    "registered": false,
+    "browserValidated": false,
+    "interactiveStateResolved": false,
+    "originalRuntimeVerified": false,
+    "flashFidelityAccepted": false,
+    "nativeTypographyComplete": false,
+    "audioEnabled": false,
+    "audioDecoded": false,
+    "audioSynchronizationAccepted": false,
+    "audioListeningAccepted": false,
+    "humanAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseAccepted": false,
+    "published": false
+  },
+  "strictAcceptanceEffect": "none"
+}

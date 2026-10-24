@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l12-p010",
+  "animationId": "shared-alg001-l12-p010",
+  "assetId": "swf-a846950547f7c3ab7b0445dfc2118d534565ffd352b6e9687ba8211e5d4a3fcd",
+  "status": "audited",
+  "created": "2026-09-27",
+  "confidence": "source-structural-locked-runtime-pending",
+  "classification": {
+    "collection": "course",
+    "grade": "G6-G8 shared",
+    "lesson": 12,
+    "section": "VB",
+    "page": 10,
+    "domain": "geometry-coordinates",
+    "knowledgePoint": {
+      "en": "Plotting Points",
+      "es": "Trazado de puntos"
+    },
+    "titleRaw": "Plotting Points",
+    "titleDisplay": "Plotting Points",
+    "status": "confirmed",
+    "evidence": [
+      {
+        "path": "audit/source-placement.json",
+        "kind": "exact source XML/catalog ordinal and source hash"
+      },
+      {
+        "path": "audit/source-behavior.json",
+        "kind": "FFDec AS/p-code/source byte agreement"
+      }
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/VB/L12VB05.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/VB/L12VB05.swf",
+    "flaSha256": "",
+    "swfSha256": "a846950547f7c3ab7b0445dfc2118d534565ffd352b6e9687ba8211e5d4a3fcd",
+    "pairedFlaStatus": "missing",
+    "provenance": "Owner-preserved real AWS Grade-Classified Courseware; physical source plus byte-identical audit/source-input.swf",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 228634,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#b8d8f7",
+    "actionScriptVersion": "AS1/2",
+    "complexity": "interactive-understood",
+    "fonts": [
+      {
+        "characterId": 3,
+        "name": "Bauhaus Md BT",
+        "glyphCount": 41,
+        "sourceTagSha256": "5d61c4d5df1899a911d58e81586b981ab684012969a4628982df2cbe1bed3514"
+      }
+    ],
+    "scripts": [
+      {
+        "timelineId": "root",
+        "frame": 1,
+        "path": "audit/actionscript/as/scripts/frame_1/DoAction.as",
+        "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19"
+      },
+      {
+        "timelineId": "root",
+        "frame": 6,
+        "path": "audit/actionscript/as/scripts/frame_6/DoAction.as",
+        "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+      }
+    ],
+    "externalDependencies": [
+      "_level0.InternalPreloader.gotoAndPlay(\"jump_check\")",
+      "_global.KeyAttribute + _root.DoHyperLinks()",
+      "_root.animation_mc.animation.stop()"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      {
+        "timelineId": "sprite-96",
+        "characterId": 18,
+        "depth": 1,
+        "clipDepth": 10,
+        "firstFrame": 10,
+        "evidence": "audit/source-behavior.json",
+        "runtimeEstablished": false
+      },
+      {
+        "timelineId": "sprite-96",
+        "characterId": 18,
+        "depth": 11,
+        "clipDepth": 20,
+        "firstFrame": 69,
+        "evidence": "audit/source-behavior.json",
+        "runtimeEstablished": false
+      },
+      {
+        "timelineId": "sprite-96",
+        "characterId": 30,
+        "depth": 21,
+        "clipDepth": 28,
+        "firstFrame": 113,
+        "evidence": "audit/source-behavior.json",
+        "runtimeEstablished": false
+      },
+      {
+        "timelineId": "sprite-96",
+        "characterId": 30,
+        "depth": 29,
+        "clipDepth": 36,
+        "firstFrame": 173,
+        "evidence": "audit/source-behavior.json",
+        "runtimeEstablished": false
+      }
+    ],
+    "morphs": [],
+    "filters": [],
+    "networkCalls": [],
+    "sourceAudit": {
+      "path": "evidence/SOURCE_AUDIT_2026-09-27.md",
+      "sourceSha256": "a846950547f7c3ab7b0445dfc2118d534565ffd352b6e9687ba8211e5d4a3fcd",
+      "sourceTextCatalogContentSha256": "6e79191570fcb30d21907d3b541710a9bec4d85e5bc4a966d615e0d5e48d8942",
+      "rootFrameCount": 10,
+      "mainFrameCount": 465,
+      "extractionOnly": true
+    }
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "default",
+      "kind": "linear",
+      "description": "Source content with nine glossary release handlers, ten button instances including two Position instances, four masks and 465 child frames. Runtime traces, modal close/resume and Replay policies remain pending.",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "shared-alg001-l12-p010-embedded-stream",
+        "status": "source-stream-extracted-only",
+        "evidence": "audit/source-stream-blocks.json"
+      },
+      {
+        "id": "shared-alg001-l12-p010-lesson-SA-candidate",
+        "status": "catalog-association-only",
+        "evidence": "audio-inventory.csv"
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "",
+    "ffdec": "26.2.1",
+    "swfmill": "available; see source-toolchain receipt",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "undecided",
+    "route": "",
+    "routeFile": "",
+    "component": "",
+    "registryModule": "",
+    "timelineModule": "",
+    "testFile": "",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "main",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "main",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-96",
+        "parentFrameDomainId": "root",
+        "frameCount": 465,
+        "scenarioIds": [
+          "default"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": "",
+    "sourceAudit": "evidence/SOURCE_AUDIT_2026-09-27.md",
+    "sourceExtractionReceipt": "audit/extraction-receipt.json",
+    "sourceTimeline": "timeline.csv"
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": [
+      "Source audit only; no maintained renderer, registration, runtime baseline or acceptance",
+      "Physical paired FLA absent; SWF is exact source",
+      "Scaffold root-only keyframes and full-frame-coverage remain byte-exact pending records; later main/glossary traces require explicit coverage expansion",
+      "All 58 shapes including root shape97 remain visually unclassified; no inferred title/border, redraw or suppression",
+      "Nine literal keys / ten hit placements require masked activation, repeated Position handling, keyboard, close/resume and Replay review",
+      "Root preloader and animation_mc host chain remain unverified in original runtime",
+      "Embedded stream decoded duration, frame sample schedule, empty-block semantics, language, sidecar trigger, synchronization and listening remain pending"
+    ]
+  }
+}

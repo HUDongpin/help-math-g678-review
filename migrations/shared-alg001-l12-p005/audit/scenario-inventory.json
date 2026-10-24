@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l12-p005",
+  "inventoryStatus": "static-exhaustive-runtime-unverified",
+  "source": {
+    "swfSha256": "b411401131b484ee693063b46fdbbbdbc45f81fc265512a17ae0a379dbad2dfe",
+    "ffdecXml": "audit/movie.xml",
+    "ffdecXmlSha256": "944585dd7b3b53e2d65dc268fffcb1f5c81bde71de5f79c5d2c9c158a142f128",
+    "structure": "audit/source-structure.json"
+  },
+  "reachableTimelines": [
+    {"id": "root", "frames": 10, "entry": "initial load; preloader jump_check then host begin transition", "stopFrames": [1, 6]},
+    {"id": "sprite-391", "frames": 968, "parent": "root", "parentEntryFrame": 6, "parentDepth": 1, "name": "animation", "stopFrames": [968]},
+    {"id": "sprite-395", "frames": 1, "parent": "root", "parentEntryFrame": 6, "parentDepth": 135, "name": "Mc_Page_Title", "stopFrames": []},
+    {"id": "sprite-78", "frames": 36, "parent": "sprite-391", "placements": [{"frame": 266, "depth": 19, "throughFrame": 276}, {"frame": 283, "depth": 17, "throughFrame": 288}], "stopFrames": []},
+    {"id": "sprite-147", "frames": 22, "parent": "sprite-391", "placements": [{"frame": 398, "depth": 55, "throughFrame": 464}], "stopFrames": []},
+    {"id": "sprite-258", "frames": 63, "parent": "sprite-391", "placements": [{"frame": 507, "depth": 78, "throughFrame": 507}], "stopFrames": []},
+    {"id": "sprite-289", "frames": 63, "parent": "sprite-391", "placements": [{"frame": 508, "depth": 123, "throughFrame": 543}], "stopFrames": []},
+    {"id": "sprite-306", "frames": 54, "parent": "sprite-391", "placements": [{"frame": 546, "depth": 90, "throughFrame": 570}], "stopFrames": []},
+    {"id": "sprite-346", "frames": 20, "parent": "sprite-391", "placements": [{"frame": 582, "depth": 80, "throughFrame": 659}], "stopFrames": []}
+  ],
+  "scenarios": [
+    {"id": "default", "domains": ["root", "sprite-395"], "languages": ["en", "es"], "traceAuthority": "unresolved", "description": "Root preloader and static title composition; Spanish title fallback is catalog only."},
+    {"id": "source-main-natural", "domains": ["sprite-391"], "languages": ["en", "es"], "traceAuthority": "unresolved", "description": "Main 1-968 source timeline with two MP3 block spans and terminal stop."},
+    {"id": "nested-animation-entry", "domains": ["sprite-78", "sprite-147", "sprite-258", "sprite-289", "sprite-306", "sprite-346"], "languages": ["en", "es"], "traceAuthority": "unresolved", "description": "Seven placements of six animated sprite definitions; two separate sprite-78 entry states. Full local-frame reachability depends on original host playback."}
+  ],
+  "buttons": {"defined": 0, "clipActions": 0, "sourceKeyboardHandlers": 0},
+  "unresolved": ["Original host preloader continuation", "Natural child clock and loop schedule", "Embedded stream audible timing and SA cue relation", "Replay reset", "Spanish source content", "Mask and morph visual appearance"]
+}

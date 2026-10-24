@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l12-p005",
+  "evidenceKind": "bounded FFDec Canvas extraction; no runtime authority",
+  "source": {
+    "physicalPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/RW/L12RW05.swf",
+    "bytes": 1950595,
+    "sha256": "b411401131b484ee693063b46fdbbbdbc45f81fc265512a17ae0a379dbad2dfe"
+  },
+  "sourceStructureSha256": "3292f24e124d9160356701b50cc458f0bf8e5f3e717953e6db50edb7aef4b26d",
+  "toolchainSha256": "07484eaf52751128f91b429b7ce1b7bb46259365c545d17c360b5d0c74c3b41f",
+  "generatorSha256": "bf4b8980f941b30915bcddddba28da88791e9b2d0cf56ee1497de7c5566f3121",
+  "tool": {
+    "version": "26.2.1",
+    "launcher": "/opt/homebrew/bin/ffdec",
+    "launcherRealPath": "/Users/peter/Applications/FFDec.app/Contents/Resources/ffdec.sh",
+    "launcherSha256": "1a242c6333aa8dba0f18f635f9ea2585a988f4131aa5164b70eb00ad9e662bab",
+    "jar": "/Users/peter/Applications/FFDec.app/Contents/Resources/ffdec.jar",
+    "jarSha256": "090ab695053ad94cba6408574c7d7eea20ec60b6ae789ee6056a23f45106762f",
+    "helpCommand": [
+      "/opt/homebrew/bin/ffdec",
+      "-help",
+      "export"
+    ],
+    "helpSha256": "65ca1419d097e5125bfe06fcf3f66a83546a3d278b8a64975b4e486a06af95b7"
+  },
+  "command": [
+    "/opt/homebrew/bin/ffdec",
+    "-config",
+    "packJavaScripts=false",
+    "-onerror",
+    "abort",
+    "-selectid",
+    "78,391,395",
+    "-format",
+    "frame:canvas,sprite:canvas",
+    "-export",
+    "frame,sprite",
+    "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l12-p005/audit/ffdec-26.2.1-canvas-v1",
+    "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/RW/L12RW05.swf"
+  ],
+  "selectedDomains": {
+    "root": 10,
+    "sprite-391": 968,
+    "sprite-395": 1,
+    "sprite-78": 36
+  },
+  "files": [
+    {
+      "path": "export.log",
+      "bytes": 354,
+      "sha256": "43685ee172fd8127e6a450fd4bc46afd2829325c0a97bba01b29f5c0ef2a4e4e"
+    },
+    {
+      "path": "frames/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    {
+      "path": "frames/frames.html",
+      "bytes": 19465614,
+      "sha256": "34b776d8472722b53e339566cd6d5fe56c24107de5889007bb796d43a2ff9043"
+    },
+    {
+      "path": "help-export.txt",
+      "bytes": 10376,
+      "sha256": "65ca1419d097e5125bfe06fcf3f66a83546a3d278b8a64975b4e486a06af95b7"
+    },
+    {
+      "path": "sprites/DefineSprite_391/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    {
+      "path": "sprites/DefineSprite_391/frames.html",
+      "bytes": 19463382,
+      "sha256": "09073f31465eae137d4e8305a61d3d7b03d896dae9407d499e0a7c0dd0273fa5"
+    },
+    {
+      "path": "sprites/DefineSprite_395/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    {
+      "path": "sprites/DefineSprite_395/frames.html",
+      "bytes": 47537,
+      "sha256": "1e0e8a1f40e381d7fe6c9dcfee11ca86978e2f71af57503aa80b673a23077e28"
+    },
+    {
+      "path": "sprites/DefineSprite_78/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    {
+      "path": "sprites/DefineSprite_78/frames.html",
+      "bytes": 39684,
+      "sha256": "3d610bac39ffba685f753d4474d5cb7e3aad5bd3c1e80e5e5adb31a5bdf91f88"
+    }
+  ],
+  "outputChecksumSetSha256": "bd3ea4113f1fa8cb86b82e1decfa906859d70e28426cce85ff3225707c797835",
+  "totalBytes": 39238435,
+  "under100MiB": true,
+  "acceptanceEffect": "none"
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="icon" href="data:,">
+<title>ALG001 L12 P001 — local Canvas inspection only</title>
+<style>
+  body {font: 16px system-ui, sans-serif; margin: 1rem; color: #123;}
+  canvas {display: block; width: min(100%, 800px); height: auto; border: 1px solid #789;}
+  .controls {display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; margin: 1rem 0;}
+</style>
+<h1>Local drawing inspection — not My Lesson or admission</h1>
+<p>Source visual is English. This probe renders no embedded audio.</p>
+<canvas id="stage" width="800" height="600" aria-label="Source-derived Introduction drawing"></canvas>
+<div class="controls">
+  <label for="frame">Frame</label><input id="frame" type="range" min="1" max="130" value="1">
+  <output id="frame-value">1</output><button id="replay" type="button">Replay drawing</button>
+</div>
+<p id="status" role="status">Loading…</p>
+<script src="./canvas-renderer.js"></script>
+<script>
+  const asset = globalThis.HELP_MATH_CANVAS_ASSETS?.['shared-alg001-l12-p001'];
+  const stage = document.getElementById('stage');
+  const slider = document.getElementById('frame');
+  const value = document.getElementById('frame-value');
+  const status = document.getElementById('status');
+  const draw = () => {
+    const frame = Number(slider.value);
+    asset.render(stage, {frame, scenario: 'source-static-frame', lang: 'en', seed: 0});
+    value.value = String(frame);
+    status.textContent = `Drawing frame ${frame}/130; audio and original-runtime fidelity untested.`;
+    stage.dataset.flashFrame = String(frame);
+  };
+  if (!asset) status.textContent = 'Source-bound runtime missing';
+  else asset.ready().then(() => {
+    slider.addEventListener('input', draw);
+    document.getElementById('replay').addEventListener('click', () => {
+      slider.value = '1'; draw();
+    });
+    draw();
+  }).catch(error => {status.textContent = `Canvas load failed: ${error.message}`;});
+</script>
+</html>

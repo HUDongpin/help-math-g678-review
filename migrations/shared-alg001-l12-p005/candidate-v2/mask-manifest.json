@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l12-p005",
+  "status": "unregistered-mask-corrected-drawing-candidate",
+  "sourceSha256": "b411401131b484ee693063b46fdbbbdbc45f81fc265512a17ae0a379dbad2dfe",
+  "xmlSha256": "944585dd7b3b53e2d65dc268fffcb1f5c81bde71de5f79c5d2c9c158a142f128",
+  "predecessorRuntimeSha256": "3dbbe2b2448530f9c531b3de9609e6f3167e0803a7c1e7d38899fd422d51713c",
+  "runtimeSha256": "48efbca3ddebf218565cdd635ffa130ae3a402c5693dd1ebcf359b2c30d500dd",
+  "runtimeBytes": 19449678,
+  "maskAudit": {
+    "uses": [
+      {
+        "characterId": "1",
+        "depth": "1",
+        "clipDepth": "132"
+      },
+      {
+        "characterId": "203",
+        "depth": "2",
+        "clipDepth": "56"
+      }
+    ],
+    "definitions": [
+      {
+        "id": "1",
+        "alpha": "90"
+      },
+      {
+        "id": "203",
+        "alpha": "118"
+      }
+    ]
+  },
+  "rule": "Opaque geometry coverage for the two exclusive clipDepth shapes; preserve paths, placement and all non-mask alpha.",
+  "reference": "https://helpx.adobe.com/uk/animate/desktop/animation/using-mask-layers.html",
+  "acceptanceEffects": {
+    "currentJavaScriptRegistered": false,
+    "originalRuntimeVerified": false,
+    "fidelityAccepted": false,
+    "audioAccepted": false,
+    "strictComplete": false
+  }
+}

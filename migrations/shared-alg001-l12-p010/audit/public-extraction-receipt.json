@@ -1,0 +1,825 @@
+{
+  "schemaVersion": 1,
+  "kind": "p010-public-source-extraction-receipt-v1",
+  "animationId": "shared-alg001-l12-p010",
+  "checkedAt": "2026-09-27T00:15:51.040Z",
+  "source": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/VB/L12VB05.swf",
+    "bytes": 183770,
+    "sha256": "a846950547f7c3ab7b0445dfc2118d534565ffd352b6e9687ba8211e5d4a3fcd"
+  },
+  "generator": {
+    "path": "migrations/shared-alg001-l12-p010/audit/extract-source.mjs",
+    "bytes": 7394,
+    "sha256": "c662a4b0499d507f48bc0f8477033c288c6495244181c7e7c4a1183cf51f4a42"
+  },
+  "toolchainInputs": [
+    {
+      "path": "/Users/peter/Library/Application Support/HELP Math Flash Workbench/temurin-jre-21.0.11+10/Contents/Home/bin/java",
+      "bytes": 70432,
+      "sha256": "afb8ed976e06d85c89192312923301959535169abe087d70166cd00fb96de2e5"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/ffdec.jar",
+      "bytes": 5075015,
+      "sha256": "090ab695053ad94cba6408574c7d7eea20ec60b6ae789ee6056a23f45106762f"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/LZMA.jar",
+      "bytes": 91320,
+      "sha256": "2604dab00935023b183d82d9a5c5198ae34d40112c7524e75be20e4528798e95"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/antlr-runtime-4.11.1.jar",
+      "bytes": 324039,
+      "sha256": "e06c6553c1ccc14d36052ec4b0fc6f13b808cf957b5b1dc3f61bf401996ada59"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/avi.jar",
+      "bytes": 215818,
+      "sha256": "7b8da48be20447ca3a840ae1136541841e1a44915a6edf924d83529362bd40ff"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/cmykjpeg.jar",
+      "bytes": 90166,
+      "sha256": "0ae56cee0cca3f2c54593b08dd2f450f6f8fea5dd9054b9949b9f08f34e98b5a"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/ddsreader.jar",
+      "bytes": 8058,
+      "sha256": "b64bd5bbb4bad9092c4f4109795c41ce513b24f1fad9f6886492d976482b1603"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/decimal.jar",
+      "bytes": 43030,
+      "sha256": "feeb9f89f44cd6a921a9a4701358c8c63e3e677424fb2953ddba6e15872c0e91"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/ffdec_lib.jar",
+      "bytes": 5657965,
+      "sha256": "2a9dfd3d47cec97b1ac13ae2e0aac1f118a901c7e696cb3ad650548af864b4f2"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/flacomdoc.jar",
+      "bytes": 318704,
+      "sha256": "fc0d7e4be9591c6e187258f1b2be6f798ce78831d22cb990ffbf95e99c8f85cf"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/flamingo-6.2.jar",
+      "bytes": 1291349,
+      "sha256": "5baee0ef62342a53952116548aa3434db5b629af76c9a267d8c23b34db3a479c"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/flashdebugger.jar",
+      "bytes": 261421,
+      "sha256": "86bb7f0fba4aa7b217f9a276dfa94d1c38dc07e4a69b5cd5f389e29a2e8cf1ba"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/gif.jar",
+      "bytes": 25871,
+      "sha256": "e81c505f104689d4e8d4da2cba09db0a7a8c02c7f8d19de6ed194d8d2cff09bd"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/gifreader.jar",
+      "bytes": 25666,
+      "sha256": "2afdcb18d174476ef1e8550acb902ad0e998d6d6bbfb493bba4e7e6c5817f45b"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/gnujpdf.jar",
+      "bytes": 210969,
+      "sha256": "0bf30d0461399cc20225918aac02a6454970192caa850dabc317519008e9be5f"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/jansi-2.4.0.jar",
+      "bytes": 221009,
+      "sha256": "6cd91991323dd7b2fb28ca93d7ac12af5a86a2f53279e2b35827b30313fd0b9f"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/jargs.jar",
+      "bytes": 11406,
+      "sha256": "d488f6c10690597b93767af3b1c35018f02770790e5e3822871ac09f332386c7"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/jlayer-1.0.2.jar",
+      "bytes": 147964,
+      "sha256": "bf6286c69dabeadab49ba2b5e9322243c23722585faf52452c15593a14d20e36"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/jna-3.5.1.jar",
+      "bytes": 692603,
+      "sha256": "3f8889f51d570a26f3ac2c1323e6be828bb73eb5e66cf25e979eb5b109d92021"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/jna-platform-3.5.1.jar",
+      "bytes": 952411,
+      "sha256": "b0b30404f6a9e29d4d9a7b53fd47322e7137cab3846fd5f149d5589fc68c2126"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/jpacker.jar",
+      "bytes": 53685,
+      "sha256": "4eaba3e39d3e8d0eb242534d56bda72b1bbca6599aa949a7876ff6fc2cbfce52"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/jpexs-apng.jar",
+      "bytes": 41017,
+      "sha256": "4062e281730f841ff936f7c4f6587dee8024afadde7fe1e849960a2c039c6d50"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/jsyntaxpane-0.9.5.jar",
+      "bytes": 630226,
+      "sha256": "388aa1f63617c83460d46f4635d3e609e58b77c14ceb06b7f08c19f66875d48c"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/minimal-json-0.9.5.jar",
+      "bytes": 34221,
+      "sha256": "69ff84463d1d7cc5cfdb8baf2b6e5f7af153d351bf0dbee3bbc8916247afac74"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/miterstroke.jar",
+      "bytes": 46206,
+      "sha256": "becca6da411463f872f69f48de2dc50d53974b888da09bae0b27096b9d4d1663"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/nellymoser.jar",
+      "bytes": 24911,
+      "sha256": "bf12eb3a4c793e66b4e0c917aaa4091a6bd2b9da446c357f600f2da36f3c36e0"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/sfntly.jar",
+      "bytes": 342808,
+      "sha256": "40c9a46afc02479096e68275eb9f40f72ca3e9944d687856b600684dc9acbef7"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/substance-6.2.jar",
+      "bytes": 1852224,
+      "sha256": "376b6ccb53860a78934c92fc732d5c7dc7964aa5dbd8616dba1dead3493cb362"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/substance-fix.jar",
+      "bytes": 179234,
+      "sha256": "845d08c790bb82712c7b179fbdd3cb39bd608ae2765b854e424405b90c7944b3"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/substance-flamingo-6.2.jar",
+      "bytes": 164374,
+      "sha256": "1c4b4427bef2943ac81ed35fd475736287bce53120274f6ac353f5c0e48c7549"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/tablelayout.jar",
+      "bytes": 11962,
+      "sha256": "133759470163a1abc3e0b6bbba6c5e6037eac785d313dd229c6adac3a5f013fe"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/tga.jar",
+      "bytes": 12995,
+      "sha256": "43d6c7b688953ddc8a7c513b31c63b1597154e917d4e8222581fb7952c5af463"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/tomlj-1.1.1.jar",
+      "bytes": 179432,
+      "sha256": "383b7c66966c42ee4913ec977a7b6573631866bddc5318ec4a6215b688dd0d6c"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/treetable.jar",
+      "bytes": 26528,
+      "sha256": "bfdcb1e2c0947f947fa750780fbd8c137b0a2cdc1439632200f815bf44ea2d5a"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/trident-6.2.jar",
+      "bytes": 105569,
+      "sha256": "b4726f518ccdb40b8da1fac4d78a741b736afd433d903c76f62b7a01090a63f9"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/ttf.jar",
+      "bytes": 142030,
+      "sha256": "25cb6f0bf447edd29c70bb061bf2d7d72e376cda5050252aac949546d3bbd0f4"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/vlcj-4.7.3.jar",
+      "bytes": 391844,
+      "sha256": "3f8e3233809932e9a02e0f0de79a34e0544f8a3c4b779bdcca1e3ce13eee3cea"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/vlcj-natives-4.7.0.jar",
+      "bytes": 90694,
+      "sha256": "47c300792c248f8708095430136a3aeb7def4695e8d7527d21651973049ea36f"
+    },
+    {
+      "path": "/Users/peter/Applications/FFDec.app/Contents/Resources/lib/webp4j-core-2.1.1.jar",
+      "bytes": 2159570,
+      "sha256": "46d2c3561fce9838cf56881580c954db5ff07df0ca1543b40cf8fb4b93accfcd"
+    }
+  ],
+  "commands": [
+    {
+      "schemaVersion": 1,
+      "kind": "p010-public-source-extraction-command-v1",
+      "label": "xml",
+      "startedAt": "2026-09-27T00:15:47.143Z",
+      "finishedAt": "2026-09-27T00:15:48.058Z",
+      "command": "/Users/peter/Library/Application Support/HELP Math Flash Workbench/temurin-jre-21.0.11+10/Contents/Home/bin/java",
+      "args": [
+        "-Djava.net.preferIPv4Stack=true",
+        "-Djna.nosys=true",
+        "-Djava.util.Arrays.useLegacyMergeSort=true",
+        "-Xmx512m",
+        "-Djava.awt.headless=true",
+        "-jar",
+        "/Users/peter/Applications/FFDec.app/Contents/Resources/ffdec.jar",
+        "-swf2xml",
+        "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l12-p010/audit/source-input.swf",
+        "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l12-p010/audit/movie.xml"
+      ],
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "stdout": {
+        "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-xml.stdout.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-xml.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "p010-public-source-extraction-command-v1",
+      "label": "as",
+      "startedAt": "2026-09-27T00:15:48.058Z",
+      "finishedAt": "2026-09-27T00:15:48.905Z",
+      "command": "/Users/peter/Library/Application Support/HELP Math Flash Workbench/temurin-jre-21.0.11+10/Contents/Home/bin/java",
+      "args": [
+        "-Djava.net.preferIPv4Stack=true",
+        "-Djna.nosys=true",
+        "-Djava.util.Arrays.useLegacyMergeSort=true",
+        "-Xmx512m",
+        "-Djava.awt.headless=true",
+        "-jar",
+        "/Users/peter/Applications/FFDec.app/Contents/Resources/ffdec.jar",
+        "-config",
+        "packJavaScripts=false",
+        "-onerror",
+        "abort",
+        "-timeout",
+        "45",
+        "-exportTimeout",
+        "45",
+        "-format",
+        "script:as",
+        "-export",
+        "script",
+        "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l12-p010/audit/actionscript/as",
+        "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l12-p010/audit/source-input.swf"
+      ],
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "stdout": {
+        "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-as.stdout.txt",
+        "bytes": 2302,
+        "sha256": "d408f42084c43a63ab5a1c5dbf2f8bf8f8e53e45413b01049936a0d76a252274"
+      },
+      "stderr": {
+        "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-as.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "p010-public-source-extraction-command-v1",
+      "label": "pcode",
+      "startedAt": "2026-09-27T00:15:48.905Z",
+      "finishedAt": "2026-09-27T00:15:49.731Z",
+      "command": "/Users/peter/Library/Application Support/HELP Math Flash Workbench/temurin-jre-21.0.11+10/Contents/Home/bin/java",
+      "args": [
+        "-Djava.net.preferIPv4Stack=true",
+        "-Djna.nosys=true",
+        "-Djava.util.Arrays.useLegacyMergeSort=true",
+        "-Xmx512m",
+        "-Djava.awt.headless=true",
+        "-jar",
+        "/Users/peter/Applications/FFDec.app/Contents/Resources/ffdec.jar",
+        "-config",
+        "packJavaScripts=false",
+        "-onerror",
+        "abort",
+        "-timeout",
+        "45",
+        "-exportTimeout",
+        "45",
+        "-format",
+        "script:pcodehex",
+        "-export",
+        "script",
+        "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l12-p010/audit/actionscript/pcode",
+        "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l12-p010/audit/source-input.swf"
+      ],
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "stdout": {
+        "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-pcode.stdout.txt",
+        "bytes": 2368,
+        "sha256": "566ccbaf79b6985d6879fbf71a10305b4148c13c19d13add28bf06c43f7e2170"
+      },
+      "stderr": {
+        "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-pcode.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "p010-public-source-extraction-command-v1",
+      "label": "text",
+      "startedAt": "2026-09-27T00:15:49.731Z",
+      "finishedAt": "2026-09-27T00:15:50.538Z",
+      "command": "/Users/peter/Library/Application Support/HELP Math Flash Workbench/temurin-jre-21.0.11+10/Contents/Home/bin/java",
+      "args": [
+        "-Djava.net.preferIPv4Stack=true",
+        "-Djna.nosys=true",
+        "-Djava.util.Arrays.useLegacyMergeSort=true",
+        "-Xmx512m",
+        "-Djava.awt.headless=true",
+        "-jar",
+        "/Users/peter/Applications/FFDec.app/Contents/Resources/ffdec.jar",
+        "-config",
+        "packJavaScripts=false",
+        "-onerror",
+        "abort",
+        "-timeout",
+        "45",
+        "-exportTimeout",
+        "45",
+        "-format",
+        "text:plain",
+        "-export",
+        "text",
+        "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l12-p010/audit/text",
+        "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l12-p010/audit/source-input.swf"
+      ],
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "stdout": {
+        "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-text.stdout.txt",
+        "bytes": 1342,
+        "sha256": "b5a042184bfded2371463045f5cb252b83bd2764aea46a392b3d65f945318ffc"
+      },
+      "stderr": {
+        "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-text.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "p010-public-source-extraction-command-v1",
+      "label": "tags",
+      "startedAt": "2026-09-27T00:15:50.538Z",
+      "finishedAt": "2026-09-27T00:15:51.026Z",
+      "command": "/Users/peter/Library/Application Support/HELP Math Flash Workbench/temurin-jre-21.0.11+10/Contents/Home/bin/java",
+      "args": [
+        "-Djava.net.preferIPv4Stack=true",
+        "-Djna.nosys=true",
+        "-Djava.util.Arrays.useLegacyMergeSort=true",
+        "-Xmx512m",
+        "-Djava.awt.headless=true",
+        "-jar",
+        "/Users/peter/Applications/FFDec.app/Contents/Resources/ffdec.jar",
+        "-dumpSWF",
+        "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l12-p010/audit/source-input.swf"
+      ],
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "stdout": {
+        "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-tags.stdout.txt",
+        "bytes": 263010,
+        "sha256": "c98129f3c8cdde82c62d9580cf3cec25dbd89ab30d156eed9dd20affd2e94cd1"
+      },
+      "stderr": {
+        "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-tags.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/as/scripts/DefineButton2_22/BUTTONCONDACTION on(release).as",
+      "bytes": 120,
+      "sha256": "e1cbc74be93eb22dfa565a20f6944ff8b1cbe375319b8a4a0ba492953d456139"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/as/scripts/DefineButton2_23/BUTTONCONDACTION on(release).as",
+      "bytes": 132,
+      "sha256": "6f5f48061b0bfb1ba2742ab43561c65fd41a75fe66d713b330edbe24433e2e6c"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/as/scripts/DefineButton2_24/BUTTONCONDACTION on(release).as",
+      "bytes": 123,
+      "sha256": "7c526915f8908f4fc738013368e54538921d6951351cbaf3816f8199c3233661"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/as/scripts/DefineButton2_27/BUTTONCONDACTION on(release).as",
+      "bytes": 121,
+      "sha256": "d82ad956ac78faf7e5bfd733b95daa893801e5ae6f694967a6de342357842eca"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/as/scripts/DefineButton2_28/BUTTONCONDACTION on(release).as",
+      "bytes": 120,
+      "sha256": "25a7fed54fcc41efa6ec1295f0ddb516b8c56e861ca34ed9eacb569dd89809ac"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/as/scripts/DefineButton2_29/BUTTONCONDACTION on(release).as",
+      "bytes": 121,
+      "sha256": "bc84468db52b8af3dd3f8fcdee1d77a5d33dc6f24490b64e8048007449da65b0"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/as/scripts/DefineButton2_33/BUTTONCONDACTION on(release).as",
+      "bytes": 147,
+      "sha256": "db76e41e2a37d163c2194252523289b5685712d9b89be86ed81f2ff3e30fae04"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/as/scripts/DefineButton2_34/BUTTONCONDACTION on(release).as",
+      "bytes": 125,
+      "sha256": "32ffdb4bf2b7fea093715cd18b93ae43225d16e32dbbb58c5bfa1ee132e4d47e"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/as/scripts/DefineButton2_37/BUTTONCONDACTION on(release).as",
+      "bytes": 127,
+      "sha256": "063e245c5e7152430464984944a92577bca38e5716c8297df4f2fd240d8e0c02"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/as/scripts/frame_1/DoAction.as",
+      "bytes": 63,
+      "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/as/scripts/frame_6/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/pcode/scripts/DefineButton2_22/BUTTONCONDACTION on(release).pcode",
+      "bytes": 884,
+      "sha256": "51c5f53ddbe41a41092af0aba4898ba1783017c1e2ac2591ba0cb9d02b6da6d6"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/pcode/scripts/DefineButton2_23/BUTTONCONDACTION on(release).pcode",
+      "bytes": 944,
+      "sha256": "c3121378dc4fbb77d389d16df57915af337c1e424ac8304d7deabefd8afadbf3"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/pcode/scripts/DefineButton2_24/BUTTONCONDACTION on(release).pcode",
+      "bytes": 899,
+      "sha256": "191663a469800e55bdf1e89a8e90ba87be4f518dc346cdcf551d19ce380d06cc"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/pcode/scripts/DefineButton2_27/BUTTONCONDACTION on(release).pcode",
+      "bytes": 889,
+      "sha256": "b25313db3fadf1c8fcd913c928cf56c0050dc836a10f369524519082cf2bed4c"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/pcode/scripts/DefineButton2_28/BUTTONCONDACTION on(release).pcode",
+      "bytes": 884,
+      "sha256": "447ed967b5ea65217c40c590956a23c63babbb214986abdb0046c6c0d84e4637"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/pcode/scripts/DefineButton2_29/BUTTONCONDACTION on(release).pcode",
+      "bytes": 889,
+      "sha256": "35d1c51007a69ea02c0b7dac64eba6b7c9c445ccfbaa325d2a9b270f4b212939"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/pcode/scripts/DefineButton2_33/BUTTONCONDACTION on(release).pcode",
+      "bytes": 1019,
+      "sha256": "0f2717b1635de771e1ccbf91b038c8fefdfaa57a8f8f36102a879aca70a5a68a"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/pcode/scripts/DefineButton2_34/BUTTONCONDACTION on(release).pcode",
+      "bytes": 909,
+      "sha256": "f5d1b267337ccc446ac51b649df86b29f06530829d650ceac474cc19f23e1a9f"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/pcode/scripts/DefineButton2_37/BUTTONCONDACTION on(release).pcode",
+      "bytes": 919,
+      "sha256": "38bac6fc8b7cd352e06924682b06a5634684edfd4d08ac0cb854aa7e872ad4ee"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/pcode/scripts/frame_1/DoAction.pcode",
+      "bytes": 372,
+      "sha256": "ea5701745c8ae0c46b7c5ff2828bd4779f7628a5a2015444750a01f3c2c60b24"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/actionscript/pcode/scripts/frame_6/DoAction.pcode",
+      "bytes": 18,
+      "sha256": "64a3dad99b0082b923b2225848f8eafa5e8270ee0ea71931b5cc641c50593238"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/movie.xml",
+      "bytes": 1633927,
+      "sha256": "94c06c842ebd821d5d239666e3e00e4d639f47d4861149438a0a6a1cc02912da"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-extraction-as.json",
+      "bytes": 1449,
+      "sha256": "e48ee4bf3fd639309872a251e5fb003d440bb95b978b970f25156672d8e42b8c"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-extraction-help-export.json",
+      "bytes": 1080,
+      "sha256": "b22f8232a4f54238c4347f81addf142f16bcfb96eeae53ff5dc2a23180caa322"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-extraction-help-xml.json",
+      "bytes": 1071,
+      "sha256": "ca236cb2b46abf7db0c698a039b0b4772628b983b67d11fd7baafdb65ad5f657"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-extraction-help.json",
+      "bytes": 1043,
+      "sha256": "925e1a02e0f70329da04c54f123d75dd7533d657c70fa683b04c5aea387ea2a6"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-extraction-java-version.json",
+      "bytes": 824,
+      "sha256": "224bdef16a6500f099e2fe78eca8392429314af8aef325c6913e93cfd72abff4"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-extraction-pcode.json",
+      "bytes": 1467,
+      "sha256": "52b2629a70ff016cc49288cb54e6b8e1389792bc803ba3d479c385d772f7030a"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-extraction-tags.json",
+      "bytes": 1165,
+      "sha256": "64f14d2806e61c03f0bcaeb5d3f5a4f18e6db7e255434ab3bc6b61f71d1df7c1"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-extraction-text.json",
+      "bytes": 1443,
+      "sha256": "19525432859638fad32d64f21f1404c3af2e7fc6acb11e5dddb8f09834fd3c46"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-extraction-xml.json",
+      "bytes": 1267,
+      "sha256": "961da8a72daaeb341cfd9a1a178a0c3f850fb398f1818bc502fc1b8a95861233"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-as.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-as.stdout.txt",
+      "bytes": 2302,
+      "sha256": "d408f42084c43a63ab5a1c5dbf2f8bf8f8e53e45413b01049936a0d76a252274"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-help-export.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-help-export.stdout.txt",
+      "bytes": 10376,
+      "sha256": "65ca1419d097e5125bfe06fcf3f66a83546a3d278b8a64975b4e486a06af95b7"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-help-xml.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-help-xml.stdout.txt",
+      "bytes": 2104,
+      "sha256": "41e1affa185fe236dd556602173492e621a562cf1cde730f4c6ed5220e2d9b38"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-help.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-help.stdout.txt",
+      "bytes": 4232,
+      "sha256": "0ffb414e08fdf3dd4b314aaffc03ebb67390e01ac7b138a13a6ef38f28f9ee0d"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-java-version.stderr.txt",
+      "bytes": 199,
+      "sha256": "e5203250be03bb77d7977e9ab4a3115297821d1b24bd1e481e5cde0776d5b9d2"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-java-version.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-pcode.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-pcode.stdout.txt",
+      "bytes": 2368,
+      "sha256": "566ccbaf79b6985d6879fbf71a10305b4148c13c19d13add28bf06c43f7e2170"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-tags.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-tags.stdout.txt",
+      "bytes": 263010,
+      "sha256": "c98129f3c8cdde82c62d9580cf3cec25dbd89ab30d156eed9dd20affd2e94cd1"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-text.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-text.stdout.txt",
+      "bytes": 1342,
+      "sha256": "b5a042184bfded2371463045f5cb252b83bd2764aea46a392b3d65f945318ffc"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-xml.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-xml.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-input.swf",
+      "bytes": 183770,
+      "sha256": "a846950547f7c3ab7b0445dfc2118d534565ffd352b6e9687ba8211e5d4a3fcd"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-tags.txt",
+      "bytes": 263010,
+      "sha256": "c98129f3c8cdde82c62d9580cf3cec25dbd89ab30d156eed9dd20affd2e94cd1"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/source-toolchain.json",
+      "bytes": 14091,
+      "sha256": "c601fb6740c7eab88cec6a107113ec95eff5cc87d311d5a9bbb9e6942ee19832"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/10.txt",
+      "bytes": 1,
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/11.txt",
+      "bytes": 1,
+      "sha256": "3973e022e93220f9212c18d0d0c543ae7c309e46640da93a4a0314de999f5112"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/12.txt",
+      "bytes": 1,
+      "sha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/13.txt",
+      "bytes": 1,
+      "sha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/14.txt",
+      "bytes": 1,
+      "sha256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/15.txt",
+      "bytes": 1,
+      "sha256": "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/20.txt",
+      "bytes": 213,
+      "sha256": "8ee97eb64e5dbb8e7115e818444bc642922da4ab45cf70e1f1a607c24b5377d9"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/26.txt",
+      "bytes": 100,
+      "sha256": "49f26f8e79f8642743f92e0fd5d61cc885c788de7e1e3315e7ea670309c29212"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/32.txt",
+      "bytes": 169,
+      "sha256": "223965cb3e5498010e86131e0fcf8fc1be106d62229f2368ba3c1577eaf3f31e"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/36.txt",
+      "bytes": 112,
+      "sha256": "624ab24ca98ee12c1520f2ef3d59ab4931a1656ba14595685ff8b4daea56b35c"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/38.txt",
+      "bytes": 1,
+      "sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/4.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/50.txt",
+      "bytes": 3,
+      "sha256": "6565dcd05d06293e90658b90995cd9bd55fca4248674ab789026ab63df29e3ef"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/55.txt",
+      "bytes": 2,
+      "sha256": "6180669a9fb9d0e8d30055aa57b3ba6c43646a98d88caf1b2f906b8119f7a55b"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/56.txt",
+      "bytes": 83,
+      "sha256": "b07d68a9dcd1ac1b47b4f3dfce448b14c3ab5de1aead5304f04885f1a12c7356"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/57.txt",
+      "bytes": 1,
+      "sha256": "df7e70e5021544f4834bbee64a9e3789febc4be81470df629cad6ddb03320a5c"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/6.txt",
+      "bytes": 6,
+      "sha256": "ff3cbf6febc7136011ef8fea527bf05dcd7fd5ac71eea8d1ba419effad519021"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/64.txt",
+      "bytes": 4,
+      "sha256": "3d225b83612429f1f52840f5feb22d7f75ac9c4cb9c419ac1fad94241f4f36a5"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/69.txt",
+      "bytes": 2,
+      "sha256": "4ddcdc3195dacd1e53e11029a707abeb4d797912220af1b51f5c2af6e6eb925b"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/70.txt",
+      "bytes": 87,
+      "sha256": "889ef28658ee4fa3e9b3184edb695650a3043bb1cad910349aeb59d7278bcbd4"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/71.txt",
+      "bytes": 1,
+      "sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/75.txt",
+      "bytes": 4,
+      "sha256": "2a224dc79bbb89335b759e9024ea998bae5e58c64ce4d4378a09df37b5b9d1d4"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/84.txt",
+      "bytes": 3,
+      "sha256": "b91c85a3718dce76800330aa5d075e8c5a4ff0b769adf6db70c6b1ea5f316b06"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/85.txt",
+      "bytes": 85,
+      "sha256": "63e1819345c526e7c192ac98cf9ca897b65aad487f710cde589a675f61c835dd"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/86.txt",
+      "bytes": 1,
+      "sha256": "3f39d5c348e5b79d06e842c114e6cc571583bbf44e4b0ebfda1a01ec05745d43"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/9.txt",
+      "bytes": 6,
+      "sha256": "287863927d7362651a57fc83962cda23f3a1dfbc5441e4f664fd8e52724293b4"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/94.txt",
+      "bytes": 3,
+      "sha256": "824b93124bf6741256d469969db790b5519034e75cc8e96847572a97e7af9f5d"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p010/audit/text/95.txt",
+      "bytes": 84,
+      "sha256": "a1b82c7ea200e3d4665678d5e8f269948886506c92143c693b847871df8bd8e2"
+    }
+  ],
+  "claimBoundary": "Public extraction and byte custody only; no AVM1 execution, rendering, registration, source-runtime, audio decoding/listening or acceptance"
+}

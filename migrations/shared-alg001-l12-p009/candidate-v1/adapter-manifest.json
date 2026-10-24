@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l12-p009",
+  "status": "unregistered-mask-corrected-source-drawing-candidate",
+  "authority": "Hash-bound deterministic visual engineering candidate; original-runtime, Flash, audio, native typography, human/Owner, strict/release/publication acceptance remains independent",
+  "source": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/VB/L12VB04.swf",
+    "bytes": 165405,
+    "sha256": "d8bb6bfb4632fc528a0e14092277d95b2d96998aaeab2f0c1252a0233f35f533"
+  },
+  "inputs": {
+    "sourceAuditReceipt": {
+      "path": "migrations/shared-alg001-l12-p009/audit/extraction-receipt.json",
+      "bytes": 25954,
+      "sha256": "d1826e66cbaddb816813a4d911a37088406de524fe3ea31a1d203d0fa5e0c15d"
+    },
+    "canvasExportReceipt": {
+      "path": "migrations/shared-alg001-l12-p009/audit/ffdec-26.2.1-canvas-v1/extraction-receipt.json",
+      "bytes": 30276,
+      "sha256": "0da97b5038c5d2e17244cb9e747a06881ac009f176a7ad97cd3db78dfe6194a1"
+    },
+    "xml": {
+      "path": "migrations/shared-alg001-l12-p009/audit/movie.xml",
+      "bytes": 1167103,
+      "sha256": "cba1ba1f5ee73ed6f9c33f96d5288dd4aa56e9f51612eda0d49996a68b81c77f"
+    },
+    "sourceToolchain": {
+      "path": "migrations/shared-alg001-l12-p009/audit/source-toolchain.json",
+      "bytes": 10487,
+      "sha256": "a5cd5da56844cf163484d39118b81270532e50f78f96c626fdb64008d0b3b9e4"
+    },
+    "helper": {
+      "path": "migrations/shared-alg001-l12-p009/audit/ffdec-26.2.1-canvas-v1/sprites/DefineSprite_62/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "main": {
+      "path": "migrations/shared-alg001-l12-p009/audit/ffdec-26.2.1-canvas-v1/sprites/DefineSprite_62/frames.html",
+      "bytes": 3648639,
+      "sha256": "c916a2aa88b345b4d1db3767f171aeba486252cca8c4c393e0ee89433e88dff6"
+    },
+    "root": {
+      "path": "migrations/shared-alg001-l12-p009/audit/ffdec-26.2.1-canvas-v1/frames/frames.html",
+      "bytes": 3660577,
+      "sha256": "0c33c9fc857c83172ea813f33d5f6e88af4e8d29cd1ac1d97007cb9d2b10dbcb"
+    },
+    "sourceTextCatalog": {
+      "path": "migrations/shared-alg001-l12-p009/audit/source-text-catalog.json",
+      "bytes": 1072225,
+      "sha256": "9c396b5db8a73742ee871b842ba79125db451023870f65956c8f45dd2cd0277b"
+    },
+    "behavior": {
+      "path": "migrations/shared-alg001-l12-p009/audit/source-behavior.json",
+      "bytes": 252838,
+      "sha256": "2b6f65b03f027eee9a6c1fe03fd4ac88e2d438ae479698704a44c45e9855aeb8"
+    }
+  },
+  "generatorDependencies": [
+    {
+      "path": "scripts/build-g678-alg-l12-p009-candidate.mjs",
+      "bytes": 23937,
+      "sha256": "51c5e7cd8f04dbc7512a4ea704ca73bd7366cf9d3d5a6ba922f3b89c6c4d35b3"
+    },
+    {
+      "path": "scripts/build-safe-ffdec-canvas-adapter.mjs",
+      "bytes": 115553,
+      "sha256": "1d1dd117dd59a6b7191f2fa8488249ece09bfb1da8837be146677f88a01315dd"
+    },
+    {
+      "path": "scripts/export-g678-alg-l12-p009-canvas.mjs",
+      "bytes": 21275,
+      "sha256": "f60f123faecaf796903f3c75f51a2adb06997a1e596a285f1df70f17dfbea283"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p009/audit/build-source-audit.mjs",
+      "bytes": 52965,
+      "sha256": "c77da5f641ce93da278c3d71c4c5d250d3c98d4f74c4bc4eb14c509815d6a44c"
+    }
+  ],
+  "upstreamChecks": [
+    {
+      "script": "migrations/shared-alg001-l12-p009/audit/build-source-audit.mjs",
+      "args": [
+        "--check"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "8116928165dae765a8e0f1af6ae409ccaedba9b2c722c3ba4307c18bd4b1cee0",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "script": "scripts/export-g678-alg-l12-p009-canvas.mjs",
+      "args": [
+        "--check"
+      ],
+      "exitCode": 0,
+      "stdoutSha256": "e6a3ffe24f9eb383ea8f215225c75dd884e86b7b1bf595d43e3544c59010875f",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "output": {
+    "script": "migrations/shared-alg001-l12-p009/candidate-v1/canvas-renderer.js",
+    "bytes": 3671120,
+    "sha256": "57ee43de0a87a1d2d76c926fe63df037352389cea2349726b16f70509fc685c3",
+    "globalRegistry": "HELP_MATH_CANVAS_ASSETS",
+    "assetId": "shared-alg001-l12-p009"
+  },
+  "runtimeSha256": "57ee43de0a87a1d2d76c926fe63df037352389cea2349726b16f70509fc685c3",
+  "runtimeBytes": 3671120,
+  "uncorrectedRuntimeSha256": "e674d0b1afc0eeff65fbae0ac9c758e3ee4f4aad286abb5cfd482642e4f0598c",
+  "compositionSha256": "7beeabb2a9bfe8f745303d38fc9ae266a9b7b40378c003959df0a803294bd82d",
+  "stage": {
+    "width": 800,
+    "height": 600
+  },
+  "renderScale": 2,
+  "requiredCanvas": {
+    "width": 1600,
+    "height": 1200
+  },
+  "fps": 12,
+  "rootFrameCount": 10,
+  "rootInspectionFrame": 6,
+  "mainTimelineId": "sprite-62",
+  "mainFrameCount": 394,
+  "maskAudit": {
+    "definitions": [
+      {
+        "characterId": 1,
+        "rgba": [
+          102,
+          153,
+          0,
+          164
+        ],
+        "lineStyleCount": 0,
+        "fillStyleCount": 1
+      },
+      {
+        "characterId": 29,
+        "rgba": [
+          153,
+          204,
+          0,
+          184
+        ],
+        "lineStyleCount": 0,
+        "fillStyleCount": 1
+      }
+    ],
+    "uses": [
+      {
+        "characterId": 1,
+        "depth": 1,
+        "clipDepth": 12
+      },
+      {
+        "characterId": 1,
+        "depth": 13,
+        "clipDepth": 20
+      },
+      {
+        "characterId": 29,
+        "depth": 21,
+        "clipDepth": 28
+      },
+      {
+        "characterId": 29,
+        "depth": 29,
+        "clipDepth": 31
+      }
+    ],
+    "exclusiveClipDepthGeometry": true,
+    "instanceIds": [
+      "sprite-62/depth-1/generation-1",
+      "sprite-62/depth-13/generation-1",
+      "sprite-62/depth-21/generation-1",
+      "sprite-62/depth-29/generation-1"
+    ],
+    "rule": "Opaque fill geometry only for the two definitions exclusively used by four source clipDepth instances; preserve path, placement and all nonmask drawing",
+    "acceptanceEffect": "none"
+  },
+  "sourceTextFunctionsRetained": [
+    "text4",
+    "text11",
+    "text13",
+    "text16",
+    "text17",
+    "text18",
+    "text19",
+    "text20",
+    "text21",
+    "text22",
+    "text26",
+    "text31",
+    "text43",
+    "text59",
+    "text60",
+    "text61"
+  ],
+  "sourceOutlinedTitleRetained": true,
+  "textSuppressionApplied": false,
+  "bitmapCount": 0,
+  "nestedSpriteCount": 0,
+  "noLegacyActionScriptExecuted": true,
+  "noAudioNetworkTimersOrAutoplay": true,
+  "rawExportsUnchanged": true,
+  "acceptanceEffects": {
+    "registered": false,
+    "browserValidated": false,
+    "interactiveStateResolved": false,
+    "originalRuntimeVerified": false,
+    "flashFidelityAccepted": false,
+    "audioEnabled": false,
+    "audioDecoded": false,
+    "audioSynchronizationAccepted": false,
+    "audioListeningAccepted": false,
+    "humanAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseAccepted": false,
+    "published": false
+  },
+  "strictAcceptanceEffect": "none"
+}

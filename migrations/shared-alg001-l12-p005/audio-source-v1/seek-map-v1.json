@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l12-p005",
+  "status": "structural-seek-coordinates-not-playback-clock",
+  "sourceSha256": "b411401131b484ee693063b46fdbbbdbc45f81fc265512a17ae0a379dbad2dfe",
+  "receiptSha256": "c193f9856de277227e8ee6dbe3c97d714863c701398bc98854276e94baa4b639",
+  "payloadSha256": "988a60d21db50f1b70babf7cd9503311c4635be8e46654c8bc6b27fbb26f50af",
+  "domain": "sprite-391",
+  "frameCount": 968,
+  "sampleRate": 44100,
+  "samplesPerVisualFrame": 3675,
+  "headerLatencySeek": 1695,
+  "decodedSampleCount": 3309696,
+  "coordinateRule": "sum of preceding SampleCount fields + signed SeekSamples; no added latency, trim, silence or playback policy",
+  "positiveBlockRuns": [
+    {
+      "firstFrame": 23,
+      "lastFrame": 23,
+      "blockCount": 1,
+      "interceptSamples": -79155
+    },
+    {
+      "firstFrame": 25,
+      "lastFrame": 338,
+      "blockCount": 314,
+      "interceptSamples": -82830
+    },
+    {
+      "firstFrame": 384,
+      "lastFrame": 968,
+      "blockCount": 585,
+      "interceptSamples": -247566
+    }
+  ],
+  "zeroBlocks": [
+    {
+      "frame": 24,
+      "decodedBefore": 4608,
+      "signedSeekSamples": 0,
+      "rawSeekCoordinate": 4608,
+      "payloadOffset": 832
+    },
+    {
+      "frame": 339,
+      "decodedBefore": 1158912,
+      "signedSeekSamples": -4080,
+      "rawSeekCoordinate": 1154832,
+      "payloadOffset": 209248
+    }
+  ],
+  "absentFrameIntervals": [
+    {
+      "firstFrame": 1,
+      "lastFrame": 22
+    },
+    {
+      "firstFrame": 340,
+      "lastFrame": 383
+    }
+  ],
+  "playbackEnabled": false,
+  "synchronizationAccepted": false
+}

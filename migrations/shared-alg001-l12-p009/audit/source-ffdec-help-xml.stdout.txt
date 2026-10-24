@@ -1,0 +1,55 @@
+JPEXS Free Flash Decompiler v.26.2.1
+------------------------------------
+Convert SWF to XML.
+[1;4mUsage[m: <executable> [PRE-OPTIONS] [1m-swf2xml[m \
+       [[33m-external[m [3m<formats>[m] [3m<infile>[m [3m<outfile>[m
+
+[1;4mExecutable[m:
+       Linux: ffdec or ffdec.sh
+      Mac OS: ffdec.sh
+     Windows: ffdec-cli.exe or ffdec.bat
+        Java: java -jar ffdec.jar
+
+[1;4mDescription[m:
+    Convert the [3m<infile>[m SWF to [3m<outfile>[m XML file.
+    [33m-external[m parameter sets which items will be available externally
+    Values for [3m<formats>[m: Use comma separated list of following:
+        as12script:as
+        as12script (same as "as12script:as")
+        image:png_gif_jpeg
+        image:png_gif_jpeg_alpha
+        image (same as "image:png_gif_jpeg_alpha")
+        definesound:mp3_wav_flv
+        definesound (same as "definesound:mp3_wav_flv")
+        all (same as "as12script,image,definesound")
+
+[1;4mPre-options[m:
+[33m-config[m key=value[,key2=value2][,key3=value3...]
+    Set configuration values.
+    Use [1m-listconfigs[m command to list the available configuration settings.
+    Values are boolean, you can use 0/1, true/false, on/off or yes/no.
+    If no other parameters passed, configuration is saved.
+    Otherwise it is used only once.
+    DO NOT PUT space between comma (,) and next value.
+
+[33m-configFile[m [3m<file>[m
+    Use configuration from a file [3m<file>[m. TOML file format is expected.
+    When it has .bin extension, legacy storage is used.
+
+[33m-onerror[m (abort|retry [3m<N>[m|ignore)
+    Error handling mode.
+    "abort" stops the exporting
+    "retry" tries the exporting N times
+    "ignore" ignores the current file
+
+[33m-charset[m [3m<charsetName>[m
+    Set desired character set for reading/writing SWF files with
+    SWF version <= 5.
+
+
+[4;1mExamples[m:
+Sorry, no example found for command swf2xml,
+Let us know in issue tracker when you need it.
+
+You can use special value "/dev/stdin" for input files to read data 
+from standard input (even on Windows)

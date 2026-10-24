@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l12-p005",
+  "date": "2026-09-26",
+  "source": {
+    "physicalPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/RW/L12RW05.swf",
+    "bytes": 1950595,
+    "sha256": "b411401131b484ee693063b46fdbbbdbc45f81fc265512a17ae0a379dbad2dfe",
+    "catalogPath": "catalog/g678-shared-catalog.v1.json",
+    "signature": "CWS",
+    "version": 6,
+    "declaredUncompressedBytes": 2262082
+  },
+  "tool": {
+    "name": "JPEXS Free Flash Decompiler",
+    "version": "26.2.1",
+    "launcher": "/opt/homebrew/bin/ffdec",
+    "helpCheckedBeforeExport": ["ffdec -help", "ffdec -help -export", "ffdec -help -swf2xml"],
+    "helpOptionsUsed": ["-swf2xml <infile> <outfile>", "-export script <outdirectory> <infile>", "-export text <outdirectory> <infile>", "-config packJavaScripts=false", "-onerror abort"],
+    "guiUsed": false
+  },
+  "exports": [
+    {"command": "ffdec -onerror abort -swf2xml <physical-source> migrations/shared-alg001-l12-p005/audit/movie.xml", "path": "audit/movie.xml", "bytes": 36296747, "sha256": "944585dd7b3b53e2d65dc268fffcb1f5c81bde71de5f79c5d2c9c158a142f128"},
+    {"command": "ffdec -config packJavaScripts=false -onerror abort -export script migrations/shared-alg001-l12-p005/audit/source-scripts <physical-source>", "path": "audit/source-scripts", "fileCount": 4, "files": [
+      {"path": "audit/source-scripts/scripts/frame_1/DoAction.as", "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19"},
+      {"path": "audit/source-scripts/scripts/frame_6/DoAction.as", "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"},
+      {"path": "audit/source-scripts/scripts/DefineSprite_391/frame_1/DoAction.as", "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},
+      {"path": "audit/source-scripts/scripts/DefineSprite_391/frame_968/DoAction.as", "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"}
+    ]},
+    {"command": "ffdec -onerror abort -export text migrations/shared-alg001-l12-p005/audit/source-texts <physical-source>", "path": "audit/source-texts/393.txt", "sha256": "ddbc63afeb9217cb1a9008ac3ddd24b41c7eb90b4c001bee63ecd2f2fb0575e7"}
+  ],
+  "excludedExports": ["canvas", "PNG frames", "sprite raster frames", "sound extraction", "font conversion", "bitmap extraction"],
+  "evidenceBoundary": "Static FFDec extraction only; no original-runtime captures, visual comparison, audible playback, or acceptance"
+}

@@ -1,0 +1,87 @@
+{
+  "kind": "p009-local-implementation-checkpoint-v1",
+  "implementation": {
+    "rendering": "source-vector-canvas-with-native-text",
+    "route": "/en/migration-status/g678-calibration/shared-alg001-l12-p009",
+    "routeFile": "apps/web/app/[locale]/migration-status/g678-calibration/shared-alg001-l12-p009/page.tsx",
+    "component": "apps/web/components/g678-alg-l12-p009-host-lesson.tsx",
+    "registryModule": "packages/demos/src/modules/shared-alg001-l12-p009.tsx",
+    "timelineModule": "packages/demos/src/timelines/shared-alg001-l12-p009.ts",
+    "testFile": "apps/web/tests/g678-alg-l12-p009-host-probe.server-test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-62",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-62",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-62",
+        "parentFrameDomainId": "root",
+        "frameCount": 394,
+        "scenarioIds": [
+          "source-static-frame"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    },
+    "registrationState": "unregistered-host-probe",
+    "lane": "compiler-assisted-source-native-state-machine",
+    "nativeTypography": {
+      "binding": "catalog/typography-v1/g678-page-bindings/shared-alg001-l12-p009.json",
+      "check": "catalog/typography-v1/g678-checks/shared-alg001-l12-p009.json",
+      "status": "initial-local-technical-check-complete-admission-successor-pending"
+    },
+    "embeddedAudio": {
+      "controller": "packages/demos/src/alg-l12-p009-embedded-audio.ts",
+      "schedule": "continuous-stream-v1-modern-terminal-hold",
+      "sourceTerminalStop": false,
+      "listeningAccepted": false,
+      "optionalSpanishAudio": "not-implemented"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": "",
+    "sourceAudit": "evidence/SOURCE_AUDIT_2026-09-27.md",
+    "sourceExtractionReceipt": "audit/extraction-receipt.json",
+    "sourceTimeline": "timeline.csv",
+    "nativeHostImplementation": "evidence/NATIVE_HOST_IMPLEMENTATION_2026-09-27.md"
+  },
+  "knownExceptions": [
+    "Local maintained native text/vector and embedded audio host implemented; formal Current-JS registration not yet made",
+    "Source-only FLA absent",
+    "Original-runtime and source-host ownership trace pending; root-only scaffold keyframes/full-frame coverage remain untouched pending records",
+    "Complete-run text reveal and frame394 terminal hold are explicit modern choices; no Flash pixel/timing equivalence claimed",
+    "Spanish page translation and optional SA integration remain pending; source English fallback disclosed",
+    "Listening, synchronization acceptance, human/Owner acceptance, strict completion and publication remain pending"
+  ],
+  "registrationEffect": "none"
+}

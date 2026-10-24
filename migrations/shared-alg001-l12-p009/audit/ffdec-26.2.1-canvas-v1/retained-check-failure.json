@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "kind": "p009-retained-post-extraction-check-failure",
+  "ffdecExitCode": 0,
+  "exporterExitCode": 1,
+  "extractionGeneratorSha256": "d41b0afd696b7290cb12aca477430aa395b0494aa4abde0e72bbcd5b48a5d59f",
+  "failure": "mask clipping was omitted",
+  "finding": "Checker incorrectly required ctx.clip(); the original tool output uses clipCanvas and destination-in raster mask compositing.",
+  "rawOutputsPreserved": true,
+  "acceptanceEffect": "none"
+}

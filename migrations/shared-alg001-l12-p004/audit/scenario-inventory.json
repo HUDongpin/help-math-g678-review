@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l12-p004",
+  "inventoryStatus": "static-exhaustive-runtime-unverified",
+  "source": {
+    "swfSha256": "4d7aa78bd955aa52d476f31548c97135da989daf9d106986ff06a954c6d8b334",
+    "swfmillXml": "audit/movie.xml",
+    "swfmillXmlSha256": "7d6a9145ad1aa3df704e440cce62301845971eb044e225db7017a451f73d4f19",
+    "structure": "audit/source-structure.json",
+    "structureSha256": "83bd5a4f60a19e66751b933eded0b51536f04e98ee0d2a79b825a3c3ba543f71"
+  },
+  "reachableTimelines": [
+    {"id": "root", "frames": 10, "entry": "initial load; preloader jump_check then begin frame 6", "stopFrames": [1, 6]},
+    {"id": "sprite-90", "frames": 969, "parent": "root", "parentEntryFrame": 6, "parentDepth": 1, "name": "animation", "stopFrames": [969]},
+    {"id": "sprite-92", "frames": 1, "parent": "root", "parentEntryFrame": 6, "parentDepth": 171, "name": "Mc_Page_Title", "stopFrames": []}
+  ],
+  "scenarios": [
+    {"id": "default", "domain": "root", "language": "en/es pending source localization", "traceAuthority": "unresolved", "description": "Root preloader and stopped begin placement."},
+    {"id": "source-main-natural", "domain": "sprite-90", "language": "en/es pending source localization", "traceAuthority": "unresolved", "description": "Natural child-clock timeline 1-969 with embedded stream blocks."},
+    {"id": "glossary-request", "domain": "sprite-90", "traceAuthority": "unresolved", "description": "Release of any of five source buttons sets KeyAttribute, requests DoHyperLinks and stops animation; host dialog response and close behavior are not in this SWF.",
+      "buttons": [
+        {"characterId": 63, "term": "Vertical-line test", "depth": 151, "firstFrame": 19, "lastFrame": 969},
+        {"characterId": 66, "term": "Vertical", "depth": 157, "firstFrame": 29, "lastFrame": 969},
+        {"characterId": 67, "term": "Graph", "depth": 159, "firstFrame": 29, "lastFrame": 969},
+        {"characterId": 71, "term": "Point", "depth": 165, "firstFrame": 203, "lastFrame": 969},
+        {"characterId": 72, "term": "Function", "depth": 167, "firstFrame": 203, "lastFrame": 969}
+      ]}
+  ],
+  "unresolved": ["Actual original host preloader transition", "Natural audio timing and stream gap audibility", "Glossary close/resume and nested host dialog state", "Spanish source text", "Original-runtime hit testing and button occlusion", "Authoritative Replay behavior"]
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "p010-public-source-extraction-command-v1",
+  "label": "help-export",
+  "startedAt": "2026-09-27T00:15:45.062Z",
+  "finishedAt": "2026-09-27T00:15:45.822Z",
+  "command": "/Users/peter/Library/Application Support/HELP Math Flash Workbench/temurin-jre-21.0.11+10/Contents/Home/bin/java",
+  "args": [
+    "-Djava.net.preferIPv4Stack=true",
+    "-Djna.nosys=true",
+    "-Djava.util.Arrays.useLegacyMergeSort=true",
+    "-Xmx512m",
+    "-Djava.awt.headless=true",
+    "-jar",
+    "/Users/peter/Applications/FFDec.app/Contents/Resources/ffdec.jar",
+    "-help",
+    "-export"
+  ],
+  "exitCode": 0,
+  "signal": null,
+  "error": null,
+  "stdout": {
+    "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-help-export.stdout.txt",
+    "bytes": 10376,
+    "sha256": "65ca1419d097e5125bfe06fcf3f66a83546a3d278b8a64975b4e486a06af95b7"
+  },
+  "stderr": {
+    "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-help-export.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

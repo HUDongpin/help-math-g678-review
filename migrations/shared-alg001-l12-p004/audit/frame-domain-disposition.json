@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l12-p004",
+  "status": "structurally-enumerated-runtime-unverified",
+  "basis": "Exact SWF root placement graph from audit/source-structure.json and the three declared source timeline domains in migration.json.",
+  "sourceSwfSha256": "4d7aa78bd955aa52d476f31548c97135da989daf9d106986ff06a954c6d8b334",
+  "timelines": [
+    {"timelineId": "root", "frameCount": 10, "structuralReachability": "root", "disposition": "declared-frame-domain", "frameDomainId": "root", "control": "preloader jump_check and Stop at 1; begin label and Stop at 6"},
+    {"timelineId": "sprite-90", "frameCount": 969, "structuralReachability": "root frame 6 depth 1", "disposition": "declared-frame-domain", "frameDomainId": "sprite-90", "control": "terminal Stop at 969; five source glossary releases may stop earlier"},
+    {"timelineId": "sprite-92", "frameCount": 1, "structuralReachability": "root frame 6 depth 171", "disposition": "declared-frame-domain", "frameDomainId": "sprite-92", "control": "single-frame title layer"}
+  ],
+  "excludedTimelineCount": 0,
+  "undeclaredReachableTimelineCount": 0,
+  "acceptanceEffect": "none; static enumeration and domain declarations do not establish original-runtime or interaction authority"
+}

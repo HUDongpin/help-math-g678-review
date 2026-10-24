@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l12-p006",
+  "status": "unregistered-mask-corrected-drawing-candidate",
+  "predecessorRuntimeSha256": "95e0f487767fce6364c7e120b75caa81d541cfd96a0f09294be82a488bfc5df6",
+  "sourceSha256": "933f1f6db59435e882c1bf6e9392259fc1d28c0974a0a4c6cebc9bcc7a5d46b6",
+  "xmlSha256": "60c835b77135803e0699aa6580650413ec9591d14f17dbe70d01365cea28a77a",
+  "runtimeSha256": "b2fd1788ce5bab5efab167bf303608da66621ead66f6d276979fb09558b39ddc",
+  "runtimeBytes": 11507597,
+  "maskAudit": {
+    "uses": [
+      {
+        "characterId": "1",
+        "depth": "1",
+        "clipDepth": "62"
+      },
+      {
+        "characterId": "43",
+        "depth": "18",
+        "clipDepth": "29"
+      },
+      {
+        "characterId": "52",
+        "depth": "18",
+        "clipDepth": "29"
+      }
+    ],
+    "definitions": [
+      {
+        "id": "1",
+        "alpha": "90"
+      },
+      {
+        "id": "43",
+        "alpha": "51",
+        "stroke": "zero-width-zero-alpha"
+      },
+      {
+        "id": "52",
+        "alpha": "51"
+      }
+    ]
+  },
+  "rule": "Fill geometry only for exclusively used clipDepth shapes; preserve all other source paths, colors and placement.",
+  "reference": "https://helpx.adobe.com/uk/animate/desktop/animation/using-mask-layers.html",
+  "browserValidated": false,
+  "registered": false,
+  "originalRuntimeVerified": false,
+  "audioAccepted": false,
+  "strictComplete": false
+}

@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 1,
+  "kind": "p009-embedded-stream-technical-analysis-v1",
+  "animationId": "shared-alg001-l12-p009",
+  "inputs": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/VB/L12VB04.swf",
+      "bytes": 165405,
+      "sha256": "d8bb6bfb4632fc528a0e14092277d95b2d96998aaeab2f0c1252a0233f35f533"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p009/audit/source-stream-blocks.json",
+      "bytes": 236488,
+      "sha256": "cc20000fdef998ecd62aac8454f8f1edf0e9ad8c5595140e9899354256036c4a"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p009/audit/source-stream.mp3",
+      "bytes": 162890,
+      "sha256": "15e60f13aad0e2187db0b32f6bcfe65151001a1ded336abd4fb4eb59b3014f2e"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/SA/L12VB04.mp3",
+      "bytes": 325584,
+      "sha256": "3ccbe37ecfabff0506ef3daafc7db4b9fd8b770f0baefd6a70efeaaa27ca6fd4"
+    },
+    {
+      "path": "scripts/analyze-g678-alg-l12-p009-stream.mjs",
+      "bytes": 27022,
+      "sha256": "c24abfe44f9d4c508e0b2bef6c4d80240e658ae6a68b7d4f91ddb4baddba89ba"
+    }
+  ],
+  "specification": {
+    "title": "Adobe SWF File Format Specification v19",
+    "url": "https://open-flash.github.io/mirrors/swf-spec-19.pdf",
+    "printedPages": [
+      185,
+      186,
+      190,
+      191
+    ],
+    "accessedOn": "2026-09-27",
+    "boundary": "Original Adobe document on a public mirror; format rules, not P009 runtime evidence"
+  },
+  "source": {
+    "sha256": "d8bb6bfb4632fc528a0e14092277d95b2d96998aaeab2f0c1252a0233f35f533",
+    "fps": 12,
+    "rootFrameCount": 10,
+    "mainFrameCount": 394,
+    "mainActionTags": [],
+    "streamHead": {
+      "timelineId": "sprite-62",
+      "frame": 1,
+      "type": 18,
+      "sourceTagOffset": 9942,
+      "payloadOffset": 9944,
+      "rawHex": "0a2a2d078906",
+      "bytes": 6,
+      "sha256": "4c4351ff3b18bbe65b55c8122865fd3f463de09ca08da56bce17530ee89a9b4c",
+      "compression": 2,
+      "playbackSampleRateHz": 22050,
+      "streamSampleRateHz": 22050,
+      "playbackChannels": 1,
+      "streamChannels": 1,
+      "playbackSampleSizeBits": 16,
+      "streamSampleSizeBits": 16,
+      "nominalSamplesPerFrame": 1837,
+      "latencySeekSamples": 1673
+    },
+    "blockCount": 393,
+    "uncompressedFwsView": {
+      "bytes": 189365,
+      "sha256": "45e9723e19cb487bd02f3a9079e3f68e33d567667454767888fadb91d87c873d"
+    }
+  },
+  "encoded": {
+    "sha256": "15e60f13aad0e2187db0b32f6bcfe65151001a1ded336abd4fb4eb59b3014f2e",
+    "bytes": 162890,
+    "mp3Frames": 1253,
+    "formats": [
+      "2/III/40/22050/1/130"
+    ],
+    "mainDataBeginNonzeroFrames": 1252,
+    "mainDataBeginMaximum": 255,
+    "byteMarkerSearch": [
+      {
+        "marker": "ID3",
+        "byteOffset": -1
+      },
+      {
+        "marker": "Xing",
+        "byteOffset": -1
+      },
+      {
+        "marker": "Info",
+        "byteOffset": -1
+      },
+      {
+        "marker": "LAME",
+        "byteOffset": -1
+      },
+      {
+        "marker": "VBRI",
+        "byteOffset": -1
+      }
+    ],
+    "markerBoundary": "Byte search plus probe metadata, not a general proof that every possible encoder metadata scheme is absent."
+  },
+  "probe": {
+    "args": [
+      "-v",
+      "error",
+      "-f",
+      "mp3",
+      "-count_frames",
+      "-count_packets",
+      "-show_streams",
+      "-show_format",
+      "-of",
+      "json",
+      "migrations/shared-alg001-l12-p009/audit/source-stream.mp3"
+    ],
+    "packetArgs": [
+      "-v",
+      "error",
+      "-f",
+      "mp3",
+      "-show_packets",
+      "-show_entries",
+      "packet=pts,pts_time,duration,duration_time,size,pos,flags:packet_side_data",
+      "-of",
+      "json",
+      "migrations/shared-alg001-l12-p009/audit/source-stream.mp3"
+    ],
+    "frameArgs": [
+      "-v",
+      "error",
+      "-f",
+      "mp3",
+      "-show_frames",
+      "-show_entries",
+      "frame=nb_samples,sample_fmt,sample_rate,channels,channel_layout,pts_time,best_effort_timestamp_time:frame_side_data",
+      "-of",
+      "json",
+      "migrations/shared-alg001-l12-p009/audit/source-stream.mp3"
+    ],
+    "ffprobeReportedFormatDuration": 32.578,
+    "frameSamplesDuration": 32.73142857142857,
+    "reportedDurationEqualsByteRateEstimate": true,
+    "durationEstimateShorterThanDecodedMilliseconds": 153.42857142857014,
+    "reportedInitialPadding": 0,
+    "packetSideDataEntries": 0,
+    "frameSideDataEntries": 0
+  },
+  "decode": {
+    "tool": "/opt/homebrew/Cellar/ffmpeg/8.1.2_1/bin/ffmpeg",
+    "args": [
+      "-v",
+      "error",
+      "-nostdin",
+      "-xerror",
+      "-f",
+      "mp3",
+      "-i",
+      "pipe:0",
+      "-map",
+      "0:a:0",
+      "-c:a",
+      "pcm_f32le",
+      "-f",
+      "f32le",
+      "pipe:1"
+    ],
+    "stderr": "",
+    "retainedAllSamples": true,
+    "trimmed": false,
+    "resampled": false,
+    "normalized": false,
+    "retimed": false,
+    "silenceInserted": false,
+    "pcm": {
+      "bytes": 2886912,
+      "sha256": "cb2025b6d5364dcc54bedd573bf51ae64489d9e377c5b94d5df96d1c0b204a2c",
+      "samples": 721728,
+      "seconds": 32.73142857142857
+    }
+  },
+  "timingSummary": {
+    "fps": 12,
+    "sampleRateHz": 22050,
+    "nominalSamplesPerFrame": 1837,
+    "exactSamplesPerFrame": 1837.5,
+    "latencySeekSamples": 1673,
+    "firstBlockFrame": 2,
+    "terminalFrame": 394,
+    "emptyPayloadFrames": [
+      3
+    ],
+    "declaredSampleCountSum": 721728,
+    "ordinarySeekRecurrence": {
+      "firstFrame": 4,
+      "lastFrame": 394,
+      "incrementsChecked": 390,
+      "everyIncrementMatchesNominal": true,
+      "mismatches": []
+    },
+    "nonemptyBlockOrdinalEquation": {
+      "nonemptyBlocks": 392,
+      "equation": "rawPrefixPlusSeek = latencySeekSamples + (nonemptyBlockOrdinal - 1) * nominalSamplesPerFrame",
+      "everyRowMatches": true,
+      "boundary": "Observed authored arithmetic over nonempty blocks; not a playback clock or a Flash seek algorithm."
+    },
+    "initialNonemptyDelta": {
+      "fromFrame": 2,
+      "toFrame": 4,
+      "rawSamples": 1837,
+      "timelineSamples": 3675
+    },
+    "continuousHypothesis": {
+      "status": "explicit-modern-candidate-arithmetic-only; no playback schedule admitted",
+      "firstFrame": 2,
+      "sourceStartSample": 1673,
+      "sourceEndSample": 721728,
+      "timelineStartSample": 1837.5,
+      "audioEndTimelineSample": 721892.5,
+      "terminalStartTimelineSample": 722137.5,
+      "postrollSamplesIfTerminalHeldAtFrameStart": 245,
+      "postrollMillisecondsIfTerminalHeldAtFrameStart": 11.11111111111111,
+      "terminalSourceSample": 721973,
+      "noInsertedEmptyBlockGap": true,
+      "noNominalRateStretch": true,
+      "terminalHoldIsModernPolicy": true,
+      "sourceHasTerminalStopAction": false
+    },
+    "terminalArithmetic": {
+      "rawPrefixPlusSeek": 719940,
+      "decodedSamplesAfterRawCoordinate": 1788,
+      "rawPlusExtraHeadLatencyArithmetic": 721613,
+      "decodedSamplesAfterExtraLatencyArithmetic": 115,
+      "continuousMinusRaw": 2033,
+      "boundary": "These are distinct arithmetic models. Neither raw nor extra-latency arithmetic is a validated full-buffer Flash seek algorithm."
+    }
+  },
+  "sidecar": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/SA/L12VB04.mp3",
+    "bytes": 325584,
+    "sha256": "3ccbe37ecfabff0506ef3daafc7db4b9fd8b770f0baefd6a70efeaaa27ca6fd4",
+    "differentFromEmbedded": true,
+    "decoded": false,
+    "concatenated": false,
+    "language": "undetermined",
+    "runtimeTriggerEstablishedByThisAnalysis": false
+  },
+  "p006Comparison": {
+    "inputPins": [
+      {
+        "path": "migrations/shared-alg001-l12-p006/audio-source-v1/stream-source-receipt.json",
+        "bytes": 142839,
+        "sha256": "c3f1c26102fb9b7e0cb41a60a0de764b8cc68da559a7d20be7ccb42f557f4f78"
+      },
+      {
+        "path": "migrations/shared-alg001-l12-p006/audio-pcm-v1/receipt.json",
+        "bytes": 100637,
+        "sha256": "9f7c7fdc5b4bc60c95cd7e3a58aabdbab2dd96ce00bda9357a4da5cfa9dffd2e"
+      },
+      {
+        "path": "packages/demos/src/alg-l12-p006-audio-schedule.ts",
+        "bytes": 2642,
+        "sha256": "2ac06a5fde0873b2b4e3e22eab65457f5bdb0bf26f9defafb3aa8f2710596add"
+      },
+      {
+        "path": "migrations/shared-alg001-l12-p006/evidence/AUDIO_CONTINUOUS_CORRECTION_2026-09-27.md",
+        "bytes": 6732,
+        "sha256": "782cda2f40239e392903d4ac9a2ad1aa8ad9c79af979d49abe45f0b6092ad8b1"
+      }
+    ],
+    "firstBlockFrame": 3,
+    "mainFrameCount": 342,
+    "decodedSamples": 624384,
+    "ruleReused": "Continuous natural-rate decode; empty source block alone is not a silence command.",
+    "sourceSpecificDifferences": "P009 first block is frame2, empty frame3, 721728 decoded samples, main394 without terminal DoAction; no P006 schedule or stop handler copied."
+  },
+  "outputs": [
+    {
+      "path": "migrations/shared-alg001-l12-p009/audio-analysis-v1/probe-metadata.json",
+      "bytes": 1981,
+      "sha256": "ddb60f1b7c7230cf07fa15198b28adadc295473f628ac5e02131e7a191d57e68"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p009/audio-analysis-v1/probe-packets.json",
+      "bytes": 304210,
+      "sha256": "d707a8817dab3c36eaa0d06d079a0279cd5c119f2d7266c1e0bb67ca0fdb0673"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p009/audio-analysis-v1/probe-frames.json",
+      "bytes": 302485,
+      "sha256": "7d1008f03a699b2d51c0294953aa9eb7a5c282fbf45ab5ce71eaf9258938a81d"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p009/audio-analysis-v1/tool-versions.json",
+      "bytes": 5280,
+      "sha256": "9c0b72a8e26c99bd83d432128c6aeff2784d3b5ea571abcd382f170315488364"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p009/audio-analysis-v1/mp3-frame-catalog.json",
+      "bytes": 528914,
+      "sha256": "cc3fa868f36b982159dee1d8766925547926ef1372ee8513955ff2eed4fc347b"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p009/audio-analysis-v1/block-timing-analysis.json",
+      "bytes": 155183,
+      "sha256": "3ffab1569072c71e9f58f07d7d33c3acf9ef2b389a1f685f942d3f6526e908ae"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p009/audio-analysis-v1/pcm-analysis.json",
+      "bytes": 2571,
+      "sha256": "0479c38c8c8f5b67de8be85b9408091dfadd397dc9297dd835a348f78a99ffd1"
+    },
+    {
+      "path": "migrations/shared-alg001-l12-p009/audio-analysis-v1/sprite-62-untrimmed.f32le",
+      "bytes": 2886912,
+      "sha256": "cb2025b6d5364dcc54bedd573bf51ae64489d9e377c5b94d5df96d1c0b204a2c"
+    }
+  ],
+  "unresolved": [
+    "Natural root/host-to-main audio onset and latency implementation",
+    "Original Flash seek decoder priming and per-block SeekSamples interpretation",
+    "Main looping/host end policy; P009 has no main terminal action",
+    "Actual browser decoder sample count/hash and complete transport lifecycle",
+    "Audio language, semantic timing, original-runtime listening, human/Owner acceptance"
+  ],
+  "claimBoundary": {
+    "technicalDecodeOnly": true,
+    "productAudioEnabled": false,
+    "registered": false,
+    "originalRuntime": false,
+    "synchronizationAccepted": false,
+    "languageAccepted": false,
+    "listeningAccepted": false,
+    "humanReview": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "published": false,
+    "providerAccess": false
+  }
+}

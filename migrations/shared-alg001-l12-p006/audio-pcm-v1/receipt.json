@@ -1,0 +1,3470 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l12-p006",
+  "source": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/RW/L12RW06.swf",
+    "bytes": 708053,
+    "sha256": "933f1f6db59435e882c1bf6e9392259fc1d28c0974a0a4c6cebc9bcc7a5d46b6"
+  },
+  "sourceReceiptSha256": "c3f1c26102fb9b7e0cb41a60a0de764b8cc68da559a7d20be7ccb42f557f4f78",
+  "encoded": {
+    "method": "source-order concatenation of MP3 bytes after each four-byte count/seek wrapper",
+    "file": "sprite-53-source-stream.mp3",
+    "bytes": 140920,
+    "sha256": "801d34dc684341a2644a7fcc3373bea98cbc14bdf91f4364db0e37c30e7c1803"
+  },
+  "decoder": {
+    "path": "/opt/homebrew/Cellar/ffmpeg/8.1.2_1/bin/ffmpeg",
+    "sha256": "dad4b30b36a1a999bfa4b6ffbde138bd17ee496c69e12eef638227dff2c6415c",
+    "args": [
+      "-v",
+      "error",
+      "-nostdin",
+      "-xerror",
+      "-f",
+      "mp3",
+      "-i",
+      "pipe:0",
+      "-map",
+      "0:a:0",
+      "-c:a",
+      "pcm_f32le",
+      "-f",
+      "f32le",
+      "pipe:1"
+    ]
+  },
+  "pcm": {
+    "file": "sprite-53-untrimmed.f32le",
+    "bytes": 2497536,
+    "sha256": "9a654d4f943435147639c57ce65dc524204a84d99d04580c3b9491138acbc1bd",
+    "sampleRate": 22050,
+    "channels": 1,
+    "samples": 624384,
+    "seconds": 28.31673469387755,
+    "peak": 0.713891863822937,
+    "rms": 0.06613773859906548,
+    "nonzero": 623230
+  },
+  "timing": {
+    "fps": 12,
+    "nominalSourceSamplesPerFrame": 1837,
+    "exactSamplesPerFrame": 1837.5,
+    "latencySamples": 1673,
+    "emptyBlockFrame": 4,
+    "frame3To5SourceCoordinateDelta": 1837,
+    "frame3To5TimelineSampleDelta": 3675,
+    "terminalFrame": 342,
+    "terminalSourceSeek": 622579,
+    "terminalContinuousCoordinate": 622747.5,
+    "sourceSamplesAfterTerminalSeek": 1805,
+    "sourceSamplesAfterContinuousTerminal": 1636.5,
+    "maximumContinuousMinusSeekSamples": 168.5,
+    "frames": [
+      {
+        "frame": 3,
+        "sampleCount": 3456,
+        "signedSeek": 1673,
+        "decodedPrefix": 0,
+        "sourceSeekCoordinate": 1673,
+        "exactTimelineSample": 3675,
+        "continuousFromFrame5": null,
+        "continuousMinusSourceSeek": null
+      },
+      {
+        "frame": 4,
+        "sampleCount": 0,
+        "signedSeek": 0,
+        "decodedPrefix": 3456,
+        "sourceSeekCoordinate": null,
+        "exactTimelineSample": 5512.5,
+        "continuousFromFrame5": null,
+        "continuousMinusSourceSeek": null
+      },
+      {
+        "frame": 5,
+        "sampleCount": 1728,
+        "signedSeek": 54,
+        "decodedPrefix": 3456,
+        "sourceSeekCoordinate": 3510,
+        "exactTimelineSample": 7350,
+        "continuousFromFrame5": 3510,
+        "continuousMinusSourceSeek": 0
+      },
+      {
+        "frame": 6,
+        "sampleCount": 1728,
+        "signedSeek": 163,
+        "decodedPrefix": 5184,
+        "sourceSeekCoordinate": 5347,
+        "exactTimelineSample": 9187.5,
+        "continuousFromFrame5": 5347.5,
+        "continuousMinusSourceSeek": 0.5
+      },
+      {
+        "frame": 7,
+        "sampleCount": 1728,
+        "signedSeek": 272,
+        "decodedPrefix": 6912,
+        "sourceSeekCoordinate": 7184,
+        "exactTimelineSample": 11025,
+        "continuousFromFrame5": 7185,
+        "continuousMinusSourceSeek": 1
+      },
+      {
+        "frame": 8,
+        "sampleCount": 1728,
+        "signedSeek": 381,
+        "decodedPrefix": 8640,
+        "sourceSeekCoordinate": 9021,
+        "exactTimelineSample": 12862.5,
+        "continuousFromFrame5": 9022.5,
+        "continuousMinusSourceSeek": 1.5
+      },
+      {
+        "frame": 9,
+        "sampleCount": 2304,
+        "signedSeek": 490,
+        "decodedPrefix": 10368,
+        "sourceSeekCoordinate": 10858,
+        "exactTimelineSample": 14700,
+        "continuousFromFrame5": 10860,
+        "continuousMinusSourceSeek": 2
+      },
+      {
+        "frame": 10,
+        "sampleCount": 1728,
+        "signedSeek": 23,
+        "decodedPrefix": 12672,
+        "sourceSeekCoordinate": 12695,
+        "exactTimelineSample": 16537.5,
+        "continuousFromFrame5": 12697.5,
+        "continuousMinusSourceSeek": 2.5
+      },
+      {
+        "frame": 11,
+        "sampleCount": 1728,
+        "signedSeek": 132,
+        "decodedPrefix": 14400,
+        "sourceSeekCoordinate": 14532,
+        "exactTimelineSample": 18375,
+        "continuousFromFrame5": 14535,
+        "continuousMinusSourceSeek": 3
+      },
+      {
+        "frame": 12,
+        "sampleCount": 1728,
+        "signedSeek": 241,
+        "decodedPrefix": 16128,
+        "sourceSeekCoordinate": 16369,
+        "exactTimelineSample": 20212.5,
+        "continuousFromFrame5": 16372.5,
+        "continuousMinusSourceSeek": 3.5
+      },
+      {
+        "frame": 13,
+        "sampleCount": 1728,
+        "signedSeek": 350,
+        "decodedPrefix": 17856,
+        "sourceSeekCoordinate": 18206,
+        "exactTimelineSample": 22050,
+        "continuousFromFrame5": 18210,
+        "continuousMinusSourceSeek": 4
+      },
+      {
+        "frame": 14,
+        "sampleCount": 1728,
+        "signedSeek": 459,
+        "decodedPrefix": 19584,
+        "sourceSeekCoordinate": 20043,
+        "exactTimelineSample": 23887.5,
+        "continuousFromFrame5": 20047.5,
+        "continuousMinusSourceSeek": 4.5
+      },
+      {
+        "frame": 15,
+        "sampleCount": 2304,
+        "signedSeek": 568,
+        "decodedPrefix": 21312,
+        "sourceSeekCoordinate": 21880,
+        "exactTimelineSample": 25725,
+        "continuousFromFrame5": 21885,
+        "continuousMinusSourceSeek": 5
+      },
+      {
+        "frame": 16,
+        "sampleCount": 1728,
+        "signedSeek": 101,
+        "decodedPrefix": 23616,
+        "sourceSeekCoordinate": 23717,
+        "exactTimelineSample": 27562.5,
+        "continuousFromFrame5": 23722.5,
+        "continuousMinusSourceSeek": 5.5
+      },
+      {
+        "frame": 17,
+        "sampleCount": 1728,
+        "signedSeek": 210,
+        "decodedPrefix": 25344,
+        "sourceSeekCoordinate": 25554,
+        "exactTimelineSample": 29400,
+        "continuousFromFrame5": 25560,
+        "continuousMinusSourceSeek": 6
+      },
+      {
+        "frame": 18,
+        "sampleCount": 1728,
+        "signedSeek": 319,
+        "decodedPrefix": 27072,
+        "sourceSeekCoordinate": 27391,
+        "exactTimelineSample": 31237.5,
+        "continuousFromFrame5": 27397.5,
+        "continuousMinusSourceSeek": 6.5
+      },
+      {
+        "frame": 19,
+        "sampleCount": 1728,
+        "signedSeek": 428,
+        "decodedPrefix": 28800,
+        "sourceSeekCoordinate": 29228,
+        "exactTimelineSample": 33075,
+        "continuousFromFrame5": 29235,
+        "continuousMinusSourceSeek": 7
+      },
+      {
+        "frame": 20,
+        "sampleCount": 2304,
+        "signedSeek": 537,
+        "decodedPrefix": 30528,
+        "sourceSeekCoordinate": 31065,
+        "exactTimelineSample": 34912.5,
+        "continuousFromFrame5": 31072.5,
+        "continuousMinusSourceSeek": 7.5
+      },
+      {
+        "frame": 21,
+        "sampleCount": 1728,
+        "signedSeek": 70,
+        "decodedPrefix": 32832,
+        "sourceSeekCoordinate": 32902,
+        "exactTimelineSample": 36750,
+        "continuousFromFrame5": 32910,
+        "continuousMinusSourceSeek": 8
+      },
+      {
+        "frame": 22,
+        "sampleCount": 1728,
+        "signedSeek": 179,
+        "decodedPrefix": 34560,
+        "sourceSeekCoordinate": 34739,
+        "exactTimelineSample": 38587.5,
+        "continuousFromFrame5": 34747.5,
+        "continuousMinusSourceSeek": 8.5
+      },
+      {
+        "frame": 23,
+        "sampleCount": 1728,
+        "signedSeek": 288,
+        "decodedPrefix": 36288,
+        "sourceSeekCoordinate": 36576,
+        "exactTimelineSample": 40425,
+        "continuousFromFrame5": 36585,
+        "continuousMinusSourceSeek": 9
+      },
+      {
+        "frame": 24,
+        "sampleCount": 1728,
+        "signedSeek": 397,
+        "decodedPrefix": 38016,
+        "sourceSeekCoordinate": 38413,
+        "exactTimelineSample": 42262.5,
+        "continuousFromFrame5": 38422.5,
+        "continuousMinusSourceSeek": 9.5
+      },
+      {
+        "frame": 25,
+        "sampleCount": 2304,
+        "signedSeek": 506,
+        "decodedPrefix": 39744,
+        "sourceSeekCoordinate": 40250,
+        "exactTimelineSample": 44100,
+        "continuousFromFrame5": 40260,
+        "continuousMinusSourceSeek": 10
+      },
+      {
+        "frame": 26,
+        "sampleCount": 1728,
+        "signedSeek": 39,
+        "decodedPrefix": 42048,
+        "sourceSeekCoordinate": 42087,
+        "exactTimelineSample": 45937.5,
+        "continuousFromFrame5": 42097.5,
+        "continuousMinusSourceSeek": 10.5
+      },
+      {
+        "frame": 27,
+        "sampleCount": 1728,
+        "signedSeek": 148,
+        "decodedPrefix": 43776,
+        "sourceSeekCoordinate": 43924,
+        "exactTimelineSample": 47775,
+        "continuousFromFrame5": 43935,
+        "continuousMinusSourceSeek": 11
+      },
+      {
+        "frame": 28,
+        "sampleCount": 1728,
+        "signedSeek": 257,
+        "decodedPrefix": 45504,
+        "sourceSeekCoordinate": 45761,
+        "exactTimelineSample": 49612.5,
+        "continuousFromFrame5": 45772.5,
+        "continuousMinusSourceSeek": 11.5
+      },
+      {
+        "frame": 29,
+        "sampleCount": 1728,
+        "signedSeek": 366,
+        "decodedPrefix": 47232,
+        "sourceSeekCoordinate": 47598,
+        "exactTimelineSample": 51450,
+        "continuousFromFrame5": 47610,
+        "continuousMinusSourceSeek": 12
+      },
+      {
+        "frame": 30,
+        "sampleCount": 2304,
+        "signedSeek": 475,
+        "decodedPrefix": 48960,
+        "sourceSeekCoordinate": 49435,
+        "exactTimelineSample": 53287.5,
+        "continuousFromFrame5": 49447.5,
+        "continuousMinusSourceSeek": 12.5
+      },
+      {
+        "frame": 31,
+        "sampleCount": 1728,
+        "signedSeek": 8,
+        "decodedPrefix": 51264,
+        "sourceSeekCoordinate": 51272,
+        "exactTimelineSample": 55125,
+        "continuousFromFrame5": 51285,
+        "continuousMinusSourceSeek": 13
+      },
+      {
+        "frame": 32,
+        "sampleCount": 1728,
+        "signedSeek": 117,
+        "decodedPrefix": 52992,
+        "sourceSeekCoordinate": 53109,
+        "exactTimelineSample": 56962.5,
+        "continuousFromFrame5": 53122.5,
+        "continuousMinusSourceSeek": 13.5
+      },
+      {
+        "frame": 33,
+        "sampleCount": 1728,
+        "signedSeek": 226,
+        "decodedPrefix": 54720,
+        "sourceSeekCoordinate": 54946,
+        "exactTimelineSample": 58800,
+        "continuousFromFrame5": 54960,
+        "continuousMinusSourceSeek": 14
+      },
+      {
+        "frame": 34,
+        "sampleCount": 1728,
+        "signedSeek": 335,
+        "decodedPrefix": 56448,
+        "sourceSeekCoordinate": 56783,
+        "exactTimelineSample": 60637.5,
+        "continuousFromFrame5": 56797.5,
+        "continuousMinusSourceSeek": 14.5
+      },
+      {
+        "frame": 35,
+        "sampleCount": 1728,
+        "signedSeek": 444,
+        "decodedPrefix": 58176,
+        "sourceSeekCoordinate": 58620,
+        "exactTimelineSample": 62475,
+        "continuousFromFrame5": 58635,
+        "continuousMinusSourceSeek": 15
+      },
+      {
+        "frame": 36,
+        "sampleCount": 2304,
+        "signedSeek": 553,
+        "decodedPrefix": 59904,
+        "sourceSeekCoordinate": 60457,
+        "exactTimelineSample": 64312.5,
+        "continuousFromFrame5": 60472.5,
+        "continuousMinusSourceSeek": 15.5
+      },
+      {
+        "frame": 37,
+        "sampleCount": 1728,
+        "signedSeek": 86,
+        "decodedPrefix": 62208,
+        "sourceSeekCoordinate": 62294,
+        "exactTimelineSample": 66150,
+        "continuousFromFrame5": 62310,
+        "continuousMinusSourceSeek": 16
+      },
+      {
+        "frame": 38,
+        "sampleCount": 1728,
+        "signedSeek": 195,
+        "decodedPrefix": 63936,
+        "sourceSeekCoordinate": 64131,
+        "exactTimelineSample": 67987.5,
+        "continuousFromFrame5": 64147.5,
+        "continuousMinusSourceSeek": 16.5
+      },
+      {
+        "frame": 39,
+        "sampleCount": 1728,
+        "signedSeek": 304,
+        "decodedPrefix": 65664,
+        "sourceSeekCoordinate": 65968,
+        "exactTimelineSample": 69825,
+        "continuousFromFrame5": 65985,
+        "continuousMinusSourceSeek": 17
+      },
+      {
+        "frame": 40,
+        "sampleCount": 1728,
+        "signedSeek": 413,
+        "decodedPrefix": 67392,
+        "sourceSeekCoordinate": 67805,
+        "exactTimelineSample": 71662.5,
+        "continuousFromFrame5": 67822.5,
+        "continuousMinusSourceSeek": 17.5
+      },
+      {
+        "frame": 41,
+        "sampleCount": 2304,
+        "signedSeek": 522,
+        "decodedPrefix": 69120,
+        "sourceSeekCoordinate": 69642,
+        "exactTimelineSample": 73500,
+        "continuousFromFrame5": 69660,
+        "continuousMinusSourceSeek": 18
+      },
+      {
+        "frame": 42,
+        "sampleCount": 1728,
+        "signedSeek": 55,
+        "decodedPrefix": 71424,
+        "sourceSeekCoordinate": 71479,
+        "exactTimelineSample": 75337.5,
+        "continuousFromFrame5": 71497.5,
+        "continuousMinusSourceSeek": 18.5
+      },
+      {
+        "frame": 43,
+        "sampleCount": 1728,
+        "signedSeek": 164,
+        "decodedPrefix": 73152,
+        "sourceSeekCoordinate": 73316,
+        "exactTimelineSample": 77175,
+        "continuousFromFrame5": 73335,
+        "continuousMinusSourceSeek": 19
+      },
+      {
+        "frame": 44,
+        "sampleCount": 1728,
+        "signedSeek": 273,
+        "decodedPrefix": 74880,
+        "sourceSeekCoordinate": 75153,
+        "exactTimelineSample": 79012.5,
+        "continuousFromFrame5": 75172.5,
+        "continuousMinusSourceSeek": 19.5
+      },
+      {
+        "frame": 45,
+        "sampleCount": 1728,
+        "signedSeek": 382,
+        "decodedPrefix": 76608,
+        "sourceSeekCoordinate": 76990,
+        "exactTimelineSample": 80850,
+        "continuousFromFrame5": 77010,
+        "continuousMinusSourceSeek": 20
+      },
+      {
+        "frame": 46,
+        "sampleCount": 2304,
+        "signedSeek": 491,
+        "decodedPrefix": 78336,
+        "sourceSeekCoordinate": 78827,
+        "exactTimelineSample": 82687.5,
+        "continuousFromFrame5": 78847.5,
+        "continuousMinusSourceSeek": 20.5
+      },
+      {
+        "frame": 47,
+        "sampleCount": 1728,
+        "signedSeek": 24,
+        "decodedPrefix": 80640,
+        "sourceSeekCoordinate": 80664,
+        "exactTimelineSample": 84525,
+        "continuousFromFrame5": 80685,
+        "continuousMinusSourceSeek": 21
+      },
+      {
+        "frame": 48,
+        "sampleCount": 1728,
+        "signedSeek": 133,
+        "decodedPrefix": 82368,
+        "sourceSeekCoordinate": 82501,
+        "exactTimelineSample": 86362.5,
+        "continuousFromFrame5": 82522.5,
+        "continuousMinusSourceSeek": 21.5
+      },
+      {
+        "frame": 49,
+        "sampleCount": 1728,
+        "signedSeek": 242,
+        "decodedPrefix": 84096,
+        "sourceSeekCoordinate": 84338,
+        "exactTimelineSample": 88200,
+        "continuousFromFrame5": 84360,
+        "continuousMinusSourceSeek": 22
+      },
+      {
+        "frame": 50,
+        "sampleCount": 1728,
+        "signedSeek": 351,
+        "decodedPrefix": 85824,
+        "sourceSeekCoordinate": 86175,
+        "exactTimelineSample": 90037.5,
+        "continuousFromFrame5": 86197.5,
+        "continuousMinusSourceSeek": 22.5
+      },
+      {
+        "frame": 51,
+        "sampleCount": 1728,
+        "signedSeek": 460,
+        "decodedPrefix": 87552,
+        "sourceSeekCoordinate": 88012,
+        "exactTimelineSample": 91875,
+        "continuousFromFrame5": 88035,
+        "continuousMinusSourceSeek": 23
+      },
+      {
+        "frame": 52,
+        "sampleCount": 2304,
+        "signedSeek": 569,
+        "decodedPrefix": 89280,
+        "sourceSeekCoordinate": 89849,
+        "exactTimelineSample": 93712.5,
+        "continuousFromFrame5": 89872.5,
+        "continuousMinusSourceSeek": 23.5
+      },
+      {
+        "frame": 53,
+        "sampleCount": 1728,
+        "signedSeek": 102,
+        "decodedPrefix": 91584,
+        "sourceSeekCoordinate": 91686,
+        "exactTimelineSample": 95550,
+        "continuousFromFrame5": 91710,
+        "continuousMinusSourceSeek": 24
+      },
+      {
+        "frame": 54,
+        "sampleCount": 1728,
+        "signedSeek": 211,
+        "decodedPrefix": 93312,
+        "sourceSeekCoordinate": 93523,
+        "exactTimelineSample": 97387.5,
+        "continuousFromFrame5": 93547.5,
+        "continuousMinusSourceSeek": 24.5
+      },
+      {
+        "frame": 55,
+        "sampleCount": 1728,
+        "signedSeek": 320,
+        "decodedPrefix": 95040,
+        "sourceSeekCoordinate": 95360,
+        "exactTimelineSample": 99225,
+        "continuousFromFrame5": 95385,
+        "continuousMinusSourceSeek": 25
+      },
+      {
+        "frame": 56,
+        "sampleCount": 1728,
+        "signedSeek": 429,
+        "decodedPrefix": 96768,
+        "sourceSeekCoordinate": 97197,
+        "exactTimelineSample": 101062.5,
+        "continuousFromFrame5": 97222.5,
+        "continuousMinusSourceSeek": 25.5
+      },
+      {
+        "frame": 57,
+        "sampleCount": 2304,
+        "signedSeek": 538,
+        "decodedPrefix": 98496,
+        "sourceSeekCoordinate": 99034,
+        "exactTimelineSample": 102900,
+        "continuousFromFrame5": 99060,
+        "continuousMinusSourceSeek": 26
+      },
+      {
+        "frame": 58,
+        "sampleCount": 1728,
+        "signedSeek": 71,
+        "decodedPrefix": 100800,
+        "sourceSeekCoordinate": 100871,
+        "exactTimelineSample": 104737.5,
+        "continuousFromFrame5": 100897.5,
+        "continuousMinusSourceSeek": 26.5
+      },
+      {
+        "frame": 59,
+        "sampleCount": 1728,
+        "signedSeek": 180,
+        "decodedPrefix": 102528,
+        "sourceSeekCoordinate": 102708,
+        "exactTimelineSample": 106575,
+        "continuousFromFrame5": 102735,
+        "continuousMinusSourceSeek": 27
+      },
+      {
+        "frame": 60,
+        "sampleCount": 1728,
+        "signedSeek": 289,
+        "decodedPrefix": 104256,
+        "sourceSeekCoordinate": 104545,
+        "exactTimelineSample": 108412.5,
+        "continuousFromFrame5": 104572.5,
+        "continuousMinusSourceSeek": 27.5
+      },
+      {
+        "frame": 61,
+        "sampleCount": 1728,
+        "signedSeek": 398,
+        "decodedPrefix": 105984,
+        "sourceSeekCoordinate": 106382,
+        "exactTimelineSample": 110250,
+        "continuousFromFrame5": 106410,
+        "continuousMinusSourceSeek": 28
+      },
+      {
+        "frame": 62,
+        "sampleCount": 2304,
+        "signedSeek": 507,
+        "decodedPrefix": 107712,
+        "sourceSeekCoordinate": 108219,
+        "exactTimelineSample": 112087.5,
+        "continuousFromFrame5": 108247.5,
+        "continuousMinusSourceSeek": 28.5
+      },
+      {
+        "frame": 63,
+        "sampleCount": 1728,
+        "signedSeek": 40,
+        "decodedPrefix": 110016,
+        "sourceSeekCoordinate": 110056,
+        "exactTimelineSample": 113925,
+        "continuousFromFrame5": 110085,
+        "continuousMinusSourceSeek": 29
+      },
+      {
+        "frame": 64,
+        "sampleCount": 1728,
+        "signedSeek": 149,
+        "decodedPrefix": 111744,
+        "sourceSeekCoordinate": 111893,
+        "exactTimelineSample": 115762.5,
+        "continuousFromFrame5": 111922.5,
+        "continuousMinusSourceSeek": 29.5
+      },
+      {
+        "frame": 65,
+        "sampleCount": 1728,
+        "signedSeek": 258,
+        "decodedPrefix": 113472,
+        "sourceSeekCoordinate": 113730,
+        "exactTimelineSample": 117600,
+        "continuousFromFrame5": 113760,
+        "continuousMinusSourceSeek": 30
+      },
+      {
+        "frame": 66,
+        "sampleCount": 1728,
+        "signedSeek": 367,
+        "decodedPrefix": 115200,
+        "sourceSeekCoordinate": 115567,
+        "exactTimelineSample": 119437.5,
+        "continuousFromFrame5": 115597.5,
+        "continuousMinusSourceSeek": 30.5
+      },
+      {
+        "frame": 67,
+        "sampleCount": 2304,
+        "signedSeek": 476,
+        "decodedPrefix": 116928,
+        "sourceSeekCoordinate": 117404,
+        "exactTimelineSample": 121275,
+        "continuousFromFrame5": 117435,
+        "continuousMinusSourceSeek": 31
+      },
+      {
+        "frame": 68,
+        "sampleCount": 1728,
+        "signedSeek": 9,
+        "decodedPrefix": 119232,
+        "sourceSeekCoordinate": 119241,
+        "exactTimelineSample": 123112.5,
+        "continuousFromFrame5": 119272.5,
+        "continuousMinusSourceSeek": 31.5
+      },
+      {
+        "frame": 69,
+        "sampleCount": 1728,
+        "signedSeek": 118,
+        "decodedPrefix": 120960,
+        "sourceSeekCoordinate": 121078,
+        "exactTimelineSample": 124950,
+        "continuousFromFrame5": 121110,
+        "continuousMinusSourceSeek": 32
+      },
+      {
+        "frame": 70,
+        "sampleCount": 1728,
+        "signedSeek": 227,
+        "decodedPrefix": 122688,
+        "sourceSeekCoordinate": 122915,
+        "exactTimelineSample": 126787.5,
+        "continuousFromFrame5": 122947.5,
+        "continuousMinusSourceSeek": 32.5
+      },
+      {
+        "frame": 71,
+        "sampleCount": 1728,
+        "signedSeek": 336,
+        "decodedPrefix": 124416,
+        "sourceSeekCoordinate": 124752,
+        "exactTimelineSample": 128625,
+        "continuousFromFrame5": 124785,
+        "continuousMinusSourceSeek": 33
+      },
+      {
+        "frame": 72,
+        "sampleCount": 1728,
+        "signedSeek": 445,
+        "decodedPrefix": 126144,
+        "sourceSeekCoordinate": 126589,
+        "exactTimelineSample": 130462.5,
+        "continuousFromFrame5": 126622.5,
+        "continuousMinusSourceSeek": 33.5
+      },
+      {
+        "frame": 73,
+        "sampleCount": 2304,
+        "signedSeek": 554,
+        "decodedPrefix": 127872,
+        "sourceSeekCoordinate": 128426,
+        "exactTimelineSample": 132300,
+        "continuousFromFrame5": 128460,
+        "continuousMinusSourceSeek": 34
+      },
+      {
+        "frame": 74,
+        "sampleCount": 1728,
+        "signedSeek": 87,
+        "decodedPrefix": 130176,
+        "sourceSeekCoordinate": 130263,
+        "exactTimelineSample": 134137.5,
+        "continuousFromFrame5": 130297.5,
+        "continuousMinusSourceSeek": 34.5
+      },
+      {
+        "frame": 75,
+        "sampleCount": 1728,
+        "signedSeek": 196,
+        "decodedPrefix": 131904,
+        "sourceSeekCoordinate": 132100,
+        "exactTimelineSample": 135975,
+        "continuousFromFrame5": 132135,
+        "continuousMinusSourceSeek": 35
+      },
+      {
+        "frame": 76,
+        "sampleCount": 1728,
+        "signedSeek": 305,
+        "decodedPrefix": 133632,
+        "sourceSeekCoordinate": 133937,
+        "exactTimelineSample": 137812.5,
+        "continuousFromFrame5": 133972.5,
+        "continuousMinusSourceSeek": 35.5
+      },
+      {
+        "frame": 77,
+        "sampleCount": 1728,
+        "signedSeek": 414,
+        "decodedPrefix": 135360,
+        "sourceSeekCoordinate": 135774,
+        "exactTimelineSample": 139650,
+        "continuousFromFrame5": 135810,
+        "continuousMinusSourceSeek": 36
+      },
+      {
+        "frame": 78,
+        "sampleCount": 2304,
+        "signedSeek": 523,
+        "decodedPrefix": 137088,
+        "sourceSeekCoordinate": 137611,
+        "exactTimelineSample": 141487.5,
+        "continuousFromFrame5": 137647.5,
+        "continuousMinusSourceSeek": 36.5
+      },
+      {
+        "frame": 79,
+        "sampleCount": 1728,
+        "signedSeek": 56,
+        "decodedPrefix": 139392,
+        "sourceSeekCoordinate": 139448,
+        "exactTimelineSample": 143325,
+        "continuousFromFrame5": 139485,
+        "continuousMinusSourceSeek": 37
+      },
+      {
+        "frame": 80,
+        "sampleCount": 1728,
+        "signedSeek": 165,
+        "decodedPrefix": 141120,
+        "sourceSeekCoordinate": 141285,
+        "exactTimelineSample": 145162.5,
+        "continuousFromFrame5": 141322.5,
+        "continuousMinusSourceSeek": 37.5
+      },
+      {
+        "frame": 81,
+        "sampleCount": 1728,
+        "signedSeek": 274,
+        "decodedPrefix": 142848,
+        "sourceSeekCoordinate": 143122,
+        "exactTimelineSample": 147000,
+        "continuousFromFrame5": 143160,
+        "continuousMinusSourceSeek": 38
+      },
+      {
+        "frame": 82,
+        "sampleCount": 1728,
+        "signedSeek": 383,
+        "decodedPrefix": 144576,
+        "sourceSeekCoordinate": 144959,
+        "exactTimelineSample": 148837.5,
+        "continuousFromFrame5": 144997.5,
+        "continuousMinusSourceSeek": 38.5
+      },
+      {
+        "frame": 83,
+        "sampleCount": 2304,
+        "signedSeek": 492,
+        "decodedPrefix": 146304,
+        "sourceSeekCoordinate": 146796,
+        "exactTimelineSample": 150675,
+        "continuousFromFrame5": 146835,
+        "continuousMinusSourceSeek": 39
+      },
+      {
+        "frame": 84,
+        "sampleCount": 1728,
+        "signedSeek": 25,
+        "decodedPrefix": 148608,
+        "sourceSeekCoordinate": 148633,
+        "exactTimelineSample": 152512.5,
+        "continuousFromFrame5": 148672.5,
+        "continuousMinusSourceSeek": 39.5
+      },
+      {
+        "frame": 85,
+        "sampleCount": 1728,
+        "signedSeek": 134,
+        "decodedPrefix": 150336,
+        "sourceSeekCoordinate": 150470,
+        "exactTimelineSample": 154350,
+        "continuousFromFrame5": 150510,
+        "continuousMinusSourceSeek": 40
+      },
+      {
+        "frame": 86,
+        "sampleCount": 1728,
+        "signedSeek": 243,
+        "decodedPrefix": 152064,
+        "sourceSeekCoordinate": 152307,
+        "exactTimelineSample": 156187.5,
+        "continuousFromFrame5": 152347.5,
+        "continuousMinusSourceSeek": 40.5
+      },
+      {
+        "frame": 87,
+        "sampleCount": 1728,
+        "signedSeek": 352,
+        "decodedPrefix": 153792,
+        "sourceSeekCoordinate": 154144,
+        "exactTimelineSample": 158025,
+        "continuousFromFrame5": 154185,
+        "continuousMinusSourceSeek": 41
+      },
+      {
+        "frame": 88,
+        "sampleCount": 1728,
+        "signedSeek": 461,
+        "decodedPrefix": 155520,
+        "sourceSeekCoordinate": 155981,
+        "exactTimelineSample": 159862.5,
+        "continuousFromFrame5": 156022.5,
+        "continuousMinusSourceSeek": 41.5
+      },
+      {
+        "frame": 89,
+        "sampleCount": 2304,
+        "signedSeek": 570,
+        "decodedPrefix": 157248,
+        "sourceSeekCoordinate": 157818,
+        "exactTimelineSample": 161700,
+        "continuousFromFrame5": 157860,
+        "continuousMinusSourceSeek": 42
+      },
+      {
+        "frame": 90,
+        "sampleCount": 1728,
+        "signedSeek": 103,
+        "decodedPrefix": 159552,
+        "sourceSeekCoordinate": 159655,
+        "exactTimelineSample": 163537.5,
+        "continuousFromFrame5": 159697.5,
+        "continuousMinusSourceSeek": 42.5
+      },
+      {
+        "frame": 91,
+        "sampleCount": 1728,
+        "signedSeek": 212,
+        "decodedPrefix": 161280,
+        "sourceSeekCoordinate": 161492,
+        "exactTimelineSample": 165375,
+        "continuousFromFrame5": 161535,
+        "continuousMinusSourceSeek": 43
+      },
+      {
+        "frame": 92,
+        "sampleCount": 1728,
+        "signedSeek": 321,
+        "decodedPrefix": 163008,
+        "sourceSeekCoordinate": 163329,
+        "exactTimelineSample": 167212.5,
+        "continuousFromFrame5": 163372.5,
+        "continuousMinusSourceSeek": 43.5
+      },
+      {
+        "frame": 93,
+        "sampleCount": 1728,
+        "signedSeek": 430,
+        "decodedPrefix": 164736,
+        "sourceSeekCoordinate": 165166,
+        "exactTimelineSample": 169050,
+        "continuousFromFrame5": 165210,
+        "continuousMinusSourceSeek": 44
+      },
+      {
+        "frame": 94,
+        "sampleCount": 2304,
+        "signedSeek": 539,
+        "decodedPrefix": 166464,
+        "sourceSeekCoordinate": 167003,
+        "exactTimelineSample": 170887.5,
+        "continuousFromFrame5": 167047.5,
+        "continuousMinusSourceSeek": 44.5
+      },
+      {
+        "frame": 95,
+        "sampleCount": 1728,
+        "signedSeek": 72,
+        "decodedPrefix": 168768,
+        "sourceSeekCoordinate": 168840,
+        "exactTimelineSample": 172725,
+        "continuousFromFrame5": 168885,
+        "continuousMinusSourceSeek": 45
+      },
+      {
+        "frame": 96,
+        "sampleCount": 1728,
+        "signedSeek": 181,
+        "decodedPrefix": 170496,
+        "sourceSeekCoordinate": 170677,
+        "exactTimelineSample": 174562.5,
+        "continuousFromFrame5": 170722.5,
+        "continuousMinusSourceSeek": 45.5
+      },
+      {
+        "frame": 97,
+        "sampleCount": 1728,
+        "signedSeek": 290,
+        "decodedPrefix": 172224,
+        "sourceSeekCoordinate": 172514,
+        "exactTimelineSample": 176400,
+        "continuousFromFrame5": 172560,
+        "continuousMinusSourceSeek": 46
+      },
+      {
+        "frame": 98,
+        "sampleCount": 1728,
+        "signedSeek": 399,
+        "decodedPrefix": 173952,
+        "sourceSeekCoordinate": 174351,
+        "exactTimelineSample": 178237.5,
+        "continuousFromFrame5": 174397.5,
+        "continuousMinusSourceSeek": 46.5
+      },
+      {
+        "frame": 99,
+        "sampleCount": 2304,
+        "signedSeek": 508,
+        "decodedPrefix": 175680,
+        "sourceSeekCoordinate": 176188,
+        "exactTimelineSample": 180075,
+        "continuousFromFrame5": 176235,
+        "continuousMinusSourceSeek": 47
+      },
+      {
+        "frame": 100,
+        "sampleCount": 1728,
+        "signedSeek": 41,
+        "decodedPrefix": 177984,
+        "sourceSeekCoordinate": 178025,
+        "exactTimelineSample": 181912.5,
+        "continuousFromFrame5": 178072.5,
+        "continuousMinusSourceSeek": 47.5
+      },
+      {
+        "frame": 101,
+        "sampleCount": 1728,
+        "signedSeek": 150,
+        "decodedPrefix": 179712,
+        "sourceSeekCoordinate": 179862,
+        "exactTimelineSample": 183750,
+        "continuousFromFrame5": 179910,
+        "continuousMinusSourceSeek": 48
+      },
+      {
+        "frame": 102,
+        "sampleCount": 1728,
+        "signedSeek": 259,
+        "decodedPrefix": 181440,
+        "sourceSeekCoordinate": 181699,
+        "exactTimelineSample": 185587.5,
+        "continuousFromFrame5": 181747.5,
+        "continuousMinusSourceSeek": 48.5
+      },
+      {
+        "frame": 103,
+        "sampleCount": 1728,
+        "signedSeek": 368,
+        "decodedPrefix": 183168,
+        "sourceSeekCoordinate": 183536,
+        "exactTimelineSample": 187425,
+        "continuousFromFrame5": 183585,
+        "continuousMinusSourceSeek": 49
+      },
+      {
+        "frame": 104,
+        "sampleCount": 2304,
+        "signedSeek": 477,
+        "decodedPrefix": 184896,
+        "sourceSeekCoordinate": 185373,
+        "exactTimelineSample": 189262.5,
+        "continuousFromFrame5": 185422.5,
+        "continuousMinusSourceSeek": 49.5
+      },
+      {
+        "frame": 105,
+        "sampleCount": 1728,
+        "signedSeek": 10,
+        "decodedPrefix": 187200,
+        "sourceSeekCoordinate": 187210,
+        "exactTimelineSample": 191100,
+        "continuousFromFrame5": 187260,
+        "continuousMinusSourceSeek": 50
+      },
+      {
+        "frame": 106,
+        "sampleCount": 1728,
+        "signedSeek": 119,
+        "decodedPrefix": 188928,
+        "sourceSeekCoordinate": 189047,
+        "exactTimelineSample": 192937.5,
+        "continuousFromFrame5": 189097.5,
+        "continuousMinusSourceSeek": 50.5
+      },
+      {
+        "frame": 107,
+        "sampleCount": 1728,
+        "signedSeek": 228,
+        "decodedPrefix": 190656,
+        "sourceSeekCoordinate": 190884,
+        "exactTimelineSample": 194775,
+        "continuousFromFrame5": 190935,
+        "continuousMinusSourceSeek": 51
+      },
+      {
+        "frame": 108,
+        "sampleCount": 1728,
+        "signedSeek": 337,
+        "decodedPrefix": 192384,
+        "sourceSeekCoordinate": 192721,
+        "exactTimelineSample": 196612.5,
+        "continuousFromFrame5": 192772.5,
+        "continuousMinusSourceSeek": 51.5
+      },
+      {
+        "frame": 109,
+        "sampleCount": 1728,
+        "signedSeek": 446,
+        "decodedPrefix": 194112,
+        "sourceSeekCoordinate": 194558,
+        "exactTimelineSample": 198450,
+        "continuousFromFrame5": 194610,
+        "continuousMinusSourceSeek": 52
+      },
+      {
+        "frame": 110,
+        "sampleCount": 2304,
+        "signedSeek": 555,
+        "decodedPrefix": 195840,
+        "sourceSeekCoordinate": 196395,
+        "exactTimelineSample": 200287.5,
+        "continuousFromFrame5": 196447.5,
+        "continuousMinusSourceSeek": 52.5
+      },
+      {
+        "frame": 111,
+        "sampleCount": 1728,
+        "signedSeek": 88,
+        "decodedPrefix": 198144,
+        "sourceSeekCoordinate": 198232,
+        "exactTimelineSample": 202125,
+        "continuousFromFrame5": 198285,
+        "continuousMinusSourceSeek": 53
+      },
+      {
+        "frame": 112,
+        "sampleCount": 1728,
+        "signedSeek": 197,
+        "decodedPrefix": 199872,
+        "sourceSeekCoordinate": 200069,
+        "exactTimelineSample": 203962.5,
+        "continuousFromFrame5": 200122.5,
+        "continuousMinusSourceSeek": 53.5
+      },
+      {
+        "frame": 113,
+        "sampleCount": 1728,
+        "signedSeek": 306,
+        "decodedPrefix": 201600,
+        "sourceSeekCoordinate": 201906,
+        "exactTimelineSample": 205800,
+        "continuousFromFrame5": 201960,
+        "continuousMinusSourceSeek": 54
+      },
+      {
+        "frame": 114,
+        "sampleCount": 1728,
+        "signedSeek": 415,
+        "decodedPrefix": 203328,
+        "sourceSeekCoordinate": 203743,
+        "exactTimelineSample": 207637.5,
+        "continuousFromFrame5": 203797.5,
+        "continuousMinusSourceSeek": 54.5
+      },
+      {
+        "frame": 115,
+        "sampleCount": 2304,
+        "signedSeek": 524,
+        "decodedPrefix": 205056,
+        "sourceSeekCoordinate": 205580,
+        "exactTimelineSample": 209475,
+        "continuousFromFrame5": 205635,
+        "continuousMinusSourceSeek": 55
+      },
+      {
+        "frame": 116,
+        "sampleCount": 1728,
+        "signedSeek": 57,
+        "decodedPrefix": 207360,
+        "sourceSeekCoordinate": 207417,
+        "exactTimelineSample": 211312.5,
+        "continuousFromFrame5": 207472.5,
+        "continuousMinusSourceSeek": 55.5
+      },
+      {
+        "frame": 117,
+        "sampleCount": 1728,
+        "signedSeek": 166,
+        "decodedPrefix": 209088,
+        "sourceSeekCoordinate": 209254,
+        "exactTimelineSample": 213150,
+        "continuousFromFrame5": 209310,
+        "continuousMinusSourceSeek": 56
+      },
+      {
+        "frame": 118,
+        "sampleCount": 1728,
+        "signedSeek": 275,
+        "decodedPrefix": 210816,
+        "sourceSeekCoordinate": 211091,
+        "exactTimelineSample": 214987.5,
+        "continuousFromFrame5": 211147.5,
+        "continuousMinusSourceSeek": 56.5
+      },
+      {
+        "frame": 119,
+        "sampleCount": 1728,
+        "signedSeek": 384,
+        "decodedPrefix": 212544,
+        "sourceSeekCoordinate": 212928,
+        "exactTimelineSample": 216825,
+        "continuousFromFrame5": 212985,
+        "continuousMinusSourceSeek": 57
+      },
+      {
+        "frame": 120,
+        "sampleCount": 2304,
+        "signedSeek": 493,
+        "decodedPrefix": 214272,
+        "sourceSeekCoordinate": 214765,
+        "exactTimelineSample": 218662.5,
+        "continuousFromFrame5": 214822.5,
+        "continuousMinusSourceSeek": 57.5
+      },
+      {
+        "frame": 121,
+        "sampleCount": 1728,
+        "signedSeek": 26,
+        "decodedPrefix": 216576,
+        "sourceSeekCoordinate": 216602,
+        "exactTimelineSample": 220500,
+        "continuousFromFrame5": 216660,
+        "continuousMinusSourceSeek": 58
+      },
+      {
+        "frame": 122,
+        "sampleCount": 1728,
+        "signedSeek": 135,
+        "decodedPrefix": 218304,
+        "sourceSeekCoordinate": 218439,
+        "exactTimelineSample": 222337.5,
+        "continuousFromFrame5": 218497.5,
+        "continuousMinusSourceSeek": 58.5
+      },
+      {
+        "frame": 123,
+        "sampleCount": 1728,
+        "signedSeek": 244,
+        "decodedPrefix": 220032,
+        "sourceSeekCoordinate": 220276,
+        "exactTimelineSample": 224175,
+        "continuousFromFrame5": 220335,
+        "continuousMinusSourceSeek": 59
+      },
+      {
+        "frame": 124,
+        "sampleCount": 1728,
+        "signedSeek": 353,
+        "decodedPrefix": 221760,
+        "sourceSeekCoordinate": 222113,
+        "exactTimelineSample": 226012.5,
+        "continuousFromFrame5": 222172.5,
+        "continuousMinusSourceSeek": 59.5
+      },
+      {
+        "frame": 125,
+        "sampleCount": 1728,
+        "signedSeek": 462,
+        "decodedPrefix": 223488,
+        "sourceSeekCoordinate": 223950,
+        "exactTimelineSample": 227850,
+        "continuousFromFrame5": 224010,
+        "continuousMinusSourceSeek": 60
+      },
+      {
+        "frame": 126,
+        "sampleCount": 2304,
+        "signedSeek": 571,
+        "decodedPrefix": 225216,
+        "sourceSeekCoordinate": 225787,
+        "exactTimelineSample": 229687.5,
+        "continuousFromFrame5": 225847.5,
+        "continuousMinusSourceSeek": 60.5
+      },
+      {
+        "frame": 127,
+        "sampleCount": 1728,
+        "signedSeek": 104,
+        "decodedPrefix": 227520,
+        "sourceSeekCoordinate": 227624,
+        "exactTimelineSample": 231525,
+        "continuousFromFrame5": 227685,
+        "continuousMinusSourceSeek": 61
+      },
+      {
+        "frame": 128,
+        "sampleCount": 1728,
+        "signedSeek": 213,
+        "decodedPrefix": 229248,
+        "sourceSeekCoordinate": 229461,
+        "exactTimelineSample": 233362.5,
+        "continuousFromFrame5": 229522.5,
+        "continuousMinusSourceSeek": 61.5
+      },
+      {
+        "frame": 129,
+        "sampleCount": 1728,
+        "signedSeek": 322,
+        "decodedPrefix": 230976,
+        "sourceSeekCoordinate": 231298,
+        "exactTimelineSample": 235200,
+        "continuousFromFrame5": 231360,
+        "continuousMinusSourceSeek": 62
+      },
+      {
+        "frame": 130,
+        "sampleCount": 1728,
+        "signedSeek": 431,
+        "decodedPrefix": 232704,
+        "sourceSeekCoordinate": 233135,
+        "exactTimelineSample": 237037.5,
+        "continuousFromFrame5": 233197.5,
+        "continuousMinusSourceSeek": 62.5
+      },
+      {
+        "frame": 131,
+        "sampleCount": 2304,
+        "signedSeek": 540,
+        "decodedPrefix": 234432,
+        "sourceSeekCoordinate": 234972,
+        "exactTimelineSample": 238875,
+        "continuousFromFrame5": 235035,
+        "continuousMinusSourceSeek": 63
+      },
+      {
+        "frame": 132,
+        "sampleCount": 1728,
+        "signedSeek": 73,
+        "decodedPrefix": 236736,
+        "sourceSeekCoordinate": 236809,
+        "exactTimelineSample": 240712.5,
+        "continuousFromFrame5": 236872.5,
+        "continuousMinusSourceSeek": 63.5
+      },
+      {
+        "frame": 133,
+        "sampleCount": 1728,
+        "signedSeek": 182,
+        "decodedPrefix": 238464,
+        "sourceSeekCoordinate": 238646,
+        "exactTimelineSample": 242550,
+        "continuousFromFrame5": 238710,
+        "continuousMinusSourceSeek": 64
+      },
+      {
+        "frame": 134,
+        "sampleCount": 1728,
+        "signedSeek": 291,
+        "decodedPrefix": 240192,
+        "sourceSeekCoordinate": 240483,
+        "exactTimelineSample": 244387.5,
+        "continuousFromFrame5": 240547.5,
+        "continuousMinusSourceSeek": 64.5
+      },
+      {
+        "frame": 135,
+        "sampleCount": 1728,
+        "signedSeek": 400,
+        "decodedPrefix": 241920,
+        "sourceSeekCoordinate": 242320,
+        "exactTimelineSample": 246225,
+        "continuousFromFrame5": 242385,
+        "continuousMinusSourceSeek": 65
+      },
+      {
+        "frame": 136,
+        "sampleCount": 2304,
+        "signedSeek": 509,
+        "decodedPrefix": 243648,
+        "sourceSeekCoordinate": 244157,
+        "exactTimelineSample": 248062.5,
+        "continuousFromFrame5": 244222.5,
+        "continuousMinusSourceSeek": 65.5
+      },
+      {
+        "frame": 137,
+        "sampleCount": 1728,
+        "signedSeek": 42,
+        "decodedPrefix": 245952,
+        "sourceSeekCoordinate": 245994,
+        "exactTimelineSample": 249900,
+        "continuousFromFrame5": 246060,
+        "continuousMinusSourceSeek": 66
+      },
+      {
+        "frame": 138,
+        "sampleCount": 1728,
+        "signedSeek": 151,
+        "decodedPrefix": 247680,
+        "sourceSeekCoordinate": 247831,
+        "exactTimelineSample": 251737.5,
+        "continuousFromFrame5": 247897.5,
+        "continuousMinusSourceSeek": 66.5
+      },
+      {
+        "frame": 139,
+        "sampleCount": 1728,
+        "signedSeek": 260,
+        "decodedPrefix": 249408,
+        "sourceSeekCoordinate": 249668,
+        "exactTimelineSample": 253575,
+        "continuousFromFrame5": 249735,
+        "continuousMinusSourceSeek": 67
+      },
+      {
+        "frame": 140,
+        "sampleCount": 1728,
+        "signedSeek": 369,
+        "decodedPrefix": 251136,
+        "sourceSeekCoordinate": 251505,
+        "exactTimelineSample": 255412.5,
+        "continuousFromFrame5": 251572.5,
+        "continuousMinusSourceSeek": 67.5
+      },
+      {
+        "frame": 141,
+        "sampleCount": 2304,
+        "signedSeek": 478,
+        "decodedPrefix": 252864,
+        "sourceSeekCoordinate": 253342,
+        "exactTimelineSample": 257250,
+        "continuousFromFrame5": 253410,
+        "continuousMinusSourceSeek": 68
+      },
+      {
+        "frame": 142,
+        "sampleCount": 1728,
+        "signedSeek": 11,
+        "decodedPrefix": 255168,
+        "sourceSeekCoordinate": 255179,
+        "exactTimelineSample": 259087.5,
+        "continuousFromFrame5": 255247.5,
+        "continuousMinusSourceSeek": 68.5
+      },
+      {
+        "frame": 143,
+        "sampleCount": 1728,
+        "signedSeek": 120,
+        "decodedPrefix": 256896,
+        "sourceSeekCoordinate": 257016,
+        "exactTimelineSample": 260925,
+        "continuousFromFrame5": 257085,
+        "continuousMinusSourceSeek": 69
+      },
+      {
+        "frame": 144,
+        "sampleCount": 1728,
+        "signedSeek": 229,
+        "decodedPrefix": 258624,
+        "sourceSeekCoordinate": 258853,
+        "exactTimelineSample": 262762.5,
+        "continuousFromFrame5": 258922.5,
+        "continuousMinusSourceSeek": 69.5
+      },
+      {
+        "frame": 145,
+        "sampleCount": 1728,
+        "signedSeek": 338,
+        "decodedPrefix": 260352,
+        "sourceSeekCoordinate": 260690,
+        "exactTimelineSample": 264600,
+        "continuousFromFrame5": 260760,
+        "continuousMinusSourceSeek": 70
+      },
+      {
+        "frame": 146,
+        "sampleCount": 1728,
+        "signedSeek": 447,
+        "decodedPrefix": 262080,
+        "sourceSeekCoordinate": 262527,
+        "exactTimelineSample": 266437.5,
+        "continuousFromFrame5": 262597.5,
+        "continuousMinusSourceSeek": 70.5
+      },
+      {
+        "frame": 147,
+        "sampleCount": 2304,
+        "signedSeek": 556,
+        "decodedPrefix": 263808,
+        "sourceSeekCoordinate": 264364,
+        "exactTimelineSample": 268275,
+        "continuousFromFrame5": 264435,
+        "continuousMinusSourceSeek": 71
+      },
+      {
+        "frame": 148,
+        "sampleCount": 1728,
+        "signedSeek": 89,
+        "decodedPrefix": 266112,
+        "sourceSeekCoordinate": 266201,
+        "exactTimelineSample": 270112.5,
+        "continuousFromFrame5": 266272.5,
+        "continuousMinusSourceSeek": 71.5
+      },
+      {
+        "frame": 149,
+        "sampleCount": 1728,
+        "signedSeek": 198,
+        "decodedPrefix": 267840,
+        "sourceSeekCoordinate": 268038,
+        "exactTimelineSample": 271950,
+        "continuousFromFrame5": 268110,
+        "continuousMinusSourceSeek": 72
+      },
+      {
+        "frame": 150,
+        "sampleCount": 1728,
+        "signedSeek": 307,
+        "decodedPrefix": 269568,
+        "sourceSeekCoordinate": 269875,
+        "exactTimelineSample": 273787.5,
+        "continuousFromFrame5": 269947.5,
+        "continuousMinusSourceSeek": 72.5
+      },
+      {
+        "frame": 151,
+        "sampleCount": 1728,
+        "signedSeek": 416,
+        "decodedPrefix": 271296,
+        "sourceSeekCoordinate": 271712,
+        "exactTimelineSample": 275625,
+        "continuousFromFrame5": 271785,
+        "continuousMinusSourceSeek": 73
+      },
+      {
+        "frame": 152,
+        "sampleCount": 2304,
+        "signedSeek": 525,
+        "decodedPrefix": 273024,
+        "sourceSeekCoordinate": 273549,
+        "exactTimelineSample": 277462.5,
+        "continuousFromFrame5": 273622.5,
+        "continuousMinusSourceSeek": 73.5
+      },
+      {
+        "frame": 153,
+        "sampleCount": 1728,
+        "signedSeek": 58,
+        "decodedPrefix": 275328,
+        "sourceSeekCoordinate": 275386,
+        "exactTimelineSample": 279300,
+        "continuousFromFrame5": 275460,
+        "continuousMinusSourceSeek": 74
+      },
+      {
+        "frame": 154,
+        "sampleCount": 1728,
+        "signedSeek": 167,
+        "decodedPrefix": 277056,
+        "sourceSeekCoordinate": 277223,
+        "exactTimelineSample": 281137.5,
+        "continuousFromFrame5": 277297.5,
+        "continuousMinusSourceSeek": 74.5
+      },
+      {
+        "frame": 155,
+        "sampleCount": 1728,
+        "signedSeek": 276,
+        "decodedPrefix": 278784,
+        "sourceSeekCoordinate": 279060,
+        "exactTimelineSample": 282975,
+        "continuousFromFrame5": 279135,
+        "continuousMinusSourceSeek": 75
+      },
+      {
+        "frame": 156,
+        "sampleCount": 1728,
+        "signedSeek": 385,
+        "decodedPrefix": 280512,
+        "sourceSeekCoordinate": 280897,
+        "exactTimelineSample": 284812.5,
+        "continuousFromFrame5": 280972.5,
+        "continuousMinusSourceSeek": 75.5
+      },
+      {
+        "frame": 157,
+        "sampleCount": 2304,
+        "signedSeek": 494,
+        "decodedPrefix": 282240,
+        "sourceSeekCoordinate": 282734,
+        "exactTimelineSample": 286650,
+        "continuousFromFrame5": 282810,
+        "continuousMinusSourceSeek": 76
+      },
+      {
+        "frame": 158,
+        "sampleCount": 1728,
+        "signedSeek": 27,
+        "decodedPrefix": 284544,
+        "sourceSeekCoordinate": 284571,
+        "exactTimelineSample": 288487.5,
+        "continuousFromFrame5": 284647.5,
+        "continuousMinusSourceSeek": 76.5
+      },
+      {
+        "frame": 159,
+        "sampleCount": 1728,
+        "signedSeek": 136,
+        "decodedPrefix": 286272,
+        "sourceSeekCoordinate": 286408,
+        "exactTimelineSample": 290325,
+        "continuousFromFrame5": 286485,
+        "continuousMinusSourceSeek": 77
+      },
+      {
+        "frame": 160,
+        "sampleCount": 1728,
+        "signedSeek": 245,
+        "decodedPrefix": 288000,
+        "sourceSeekCoordinate": 288245,
+        "exactTimelineSample": 292162.5,
+        "continuousFromFrame5": 288322.5,
+        "continuousMinusSourceSeek": 77.5
+      },
+      {
+        "frame": 161,
+        "sampleCount": 1728,
+        "signedSeek": 354,
+        "decodedPrefix": 289728,
+        "sourceSeekCoordinate": 290082,
+        "exactTimelineSample": 294000,
+        "continuousFromFrame5": 290160,
+        "continuousMinusSourceSeek": 78
+      },
+      {
+        "frame": 162,
+        "sampleCount": 1728,
+        "signedSeek": 463,
+        "decodedPrefix": 291456,
+        "sourceSeekCoordinate": 291919,
+        "exactTimelineSample": 295837.5,
+        "continuousFromFrame5": 291997.5,
+        "continuousMinusSourceSeek": 78.5
+      },
+      {
+        "frame": 163,
+        "sampleCount": 2304,
+        "signedSeek": 572,
+        "decodedPrefix": 293184,
+        "sourceSeekCoordinate": 293756,
+        "exactTimelineSample": 297675,
+        "continuousFromFrame5": 293835,
+        "continuousMinusSourceSeek": 79
+      },
+      {
+        "frame": 164,
+        "sampleCount": 1728,
+        "signedSeek": 105,
+        "decodedPrefix": 295488,
+        "sourceSeekCoordinate": 295593,
+        "exactTimelineSample": 299512.5,
+        "continuousFromFrame5": 295672.5,
+        "continuousMinusSourceSeek": 79.5
+      },
+      {
+        "frame": 165,
+        "sampleCount": 1728,
+        "signedSeek": 214,
+        "decodedPrefix": 297216,
+        "sourceSeekCoordinate": 297430,
+        "exactTimelineSample": 301350,
+        "continuousFromFrame5": 297510,
+        "continuousMinusSourceSeek": 80
+      },
+      {
+        "frame": 166,
+        "sampleCount": 1728,
+        "signedSeek": 323,
+        "decodedPrefix": 298944,
+        "sourceSeekCoordinate": 299267,
+        "exactTimelineSample": 303187.5,
+        "continuousFromFrame5": 299347.5,
+        "continuousMinusSourceSeek": 80.5
+      },
+      {
+        "frame": 167,
+        "sampleCount": 1728,
+        "signedSeek": 432,
+        "decodedPrefix": 300672,
+        "sourceSeekCoordinate": 301104,
+        "exactTimelineSample": 305025,
+        "continuousFromFrame5": 301185,
+        "continuousMinusSourceSeek": 81
+      },
+      {
+        "frame": 168,
+        "sampleCount": 2304,
+        "signedSeek": 541,
+        "decodedPrefix": 302400,
+        "sourceSeekCoordinate": 302941,
+        "exactTimelineSample": 306862.5,
+        "continuousFromFrame5": 303022.5,
+        "continuousMinusSourceSeek": 81.5
+      },
+      {
+        "frame": 169,
+        "sampleCount": 1728,
+        "signedSeek": 74,
+        "decodedPrefix": 304704,
+        "sourceSeekCoordinate": 304778,
+        "exactTimelineSample": 308700,
+        "continuousFromFrame5": 304860,
+        "continuousMinusSourceSeek": 82
+      },
+      {
+        "frame": 170,
+        "sampleCount": 1728,
+        "signedSeek": 183,
+        "decodedPrefix": 306432,
+        "sourceSeekCoordinate": 306615,
+        "exactTimelineSample": 310537.5,
+        "continuousFromFrame5": 306697.5,
+        "continuousMinusSourceSeek": 82.5
+      },
+      {
+        "frame": 171,
+        "sampleCount": 1728,
+        "signedSeek": 292,
+        "decodedPrefix": 308160,
+        "sourceSeekCoordinate": 308452,
+        "exactTimelineSample": 312375,
+        "continuousFromFrame5": 308535,
+        "continuousMinusSourceSeek": 83
+      },
+      {
+        "frame": 172,
+        "sampleCount": 1728,
+        "signedSeek": 401,
+        "decodedPrefix": 309888,
+        "sourceSeekCoordinate": 310289,
+        "exactTimelineSample": 314212.5,
+        "continuousFromFrame5": 310372.5,
+        "continuousMinusSourceSeek": 83.5
+      },
+      {
+        "frame": 173,
+        "sampleCount": 2304,
+        "signedSeek": 510,
+        "decodedPrefix": 311616,
+        "sourceSeekCoordinate": 312126,
+        "exactTimelineSample": 316050,
+        "continuousFromFrame5": 312210,
+        "continuousMinusSourceSeek": 84
+      },
+      {
+        "frame": 174,
+        "sampleCount": 1728,
+        "signedSeek": 43,
+        "decodedPrefix": 313920,
+        "sourceSeekCoordinate": 313963,
+        "exactTimelineSample": 317887.5,
+        "continuousFromFrame5": 314047.5,
+        "continuousMinusSourceSeek": 84.5
+      },
+      {
+        "frame": 175,
+        "sampleCount": 1728,
+        "signedSeek": 152,
+        "decodedPrefix": 315648,
+        "sourceSeekCoordinate": 315800,
+        "exactTimelineSample": 319725,
+        "continuousFromFrame5": 315885,
+        "continuousMinusSourceSeek": 85
+      },
+      {
+        "frame": 176,
+        "sampleCount": 1728,
+        "signedSeek": 261,
+        "decodedPrefix": 317376,
+        "sourceSeekCoordinate": 317637,
+        "exactTimelineSample": 321562.5,
+        "continuousFromFrame5": 317722.5,
+        "continuousMinusSourceSeek": 85.5
+      },
+      {
+        "frame": 177,
+        "sampleCount": 1728,
+        "signedSeek": 370,
+        "decodedPrefix": 319104,
+        "sourceSeekCoordinate": 319474,
+        "exactTimelineSample": 323400,
+        "continuousFromFrame5": 319560,
+        "continuousMinusSourceSeek": 86
+      },
+      {
+        "frame": 178,
+        "sampleCount": 2304,
+        "signedSeek": 479,
+        "decodedPrefix": 320832,
+        "sourceSeekCoordinate": 321311,
+        "exactTimelineSample": 325237.5,
+        "continuousFromFrame5": 321397.5,
+        "continuousMinusSourceSeek": 86.5
+      },
+      {
+        "frame": 179,
+        "sampleCount": 1728,
+        "signedSeek": 12,
+        "decodedPrefix": 323136,
+        "sourceSeekCoordinate": 323148,
+        "exactTimelineSample": 327075,
+        "continuousFromFrame5": 323235,
+        "continuousMinusSourceSeek": 87
+      },
+      {
+        "frame": 180,
+        "sampleCount": 1728,
+        "signedSeek": 121,
+        "decodedPrefix": 324864,
+        "sourceSeekCoordinate": 324985,
+        "exactTimelineSample": 328912.5,
+        "continuousFromFrame5": 325072.5,
+        "continuousMinusSourceSeek": 87.5
+      },
+      {
+        "frame": 181,
+        "sampleCount": 1728,
+        "signedSeek": 230,
+        "decodedPrefix": 326592,
+        "sourceSeekCoordinate": 326822,
+        "exactTimelineSample": 330750,
+        "continuousFromFrame5": 326910,
+        "continuousMinusSourceSeek": 88
+      },
+      {
+        "frame": 182,
+        "sampleCount": 1728,
+        "signedSeek": 339,
+        "decodedPrefix": 328320,
+        "sourceSeekCoordinate": 328659,
+        "exactTimelineSample": 332587.5,
+        "continuousFromFrame5": 328747.5,
+        "continuousMinusSourceSeek": 88.5
+      },
+      {
+        "frame": 183,
+        "sampleCount": 1728,
+        "signedSeek": 448,
+        "decodedPrefix": 330048,
+        "sourceSeekCoordinate": 330496,
+        "exactTimelineSample": 334425,
+        "continuousFromFrame5": 330585,
+        "continuousMinusSourceSeek": 89
+      },
+      {
+        "frame": 184,
+        "sampleCount": 2304,
+        "signedSeek": 557,
+        "decodedPrefix": 331776,
+        "sourceSeekCoordinate": 332333,
+        "exactTimelineSample": 336262.5,
+        "continuousFromFrame5": 332422.5,
+        "continuousMinusSourceSeek": 89.5
+      },
+      {
+        "frame": 185,
+        "sampleCount": 1728,
+        "signedSeek": 90,
+        "decodedPrefix": 334080,
+        "sourceSeekCoordinate": 334170,
+        "exactTimelineSample": 338100,
+        "continuousFromFrame5": 334260,
+        "continuousMinusSourceSeek": 90
+      },
+      {
+        "frame": 186,
+        "sampleCount": 1728,
+        "signedSeek": 199,
+        "decodedPrefix": 335808,
+        "sourceSeekCoordinate": 336007,
+        "exactTimelineSample": 339937.5,
+        "continuousFromFrame5": 336097.5,
+        "continuousMinusSourceSeek": 90.5
+      },
+      {
+        "frame": 187,
+        "sampleCount": 1728,
+        "signedSeek": 308,
+        "decodedPrefix": 337536,
+        "sourceSeekCoordinate": 337844,
+        "exactTimelineSample": 341775,
+        "continuousFromFrame5": 337935,
+        "continuousMinusSourceSeek": 91
+      },
+      {
+        "frame": 188,
+        "sampleCount": 1728,
+        "signedSeek": 417,
+        "decodedPrefix": 339264,
+        "sourceSeekCoordinate": 339681,
+        "exactTimelineSample": 343612.5,
+        "continuousFromFrame5": 339772.5,
+        "continuousMinusSourceSeek": 91.5
+      },
+      {
+        "frame": 189,
+        "sampleCount": 2304,
+        "signedSeek": 526,
+        "decodedPrefix": 340992,
+        "sourceSeekCoordinate": 341518,
+        "exactTimelineSample": 345450,
+        "continuousFromFrame5": 341610,
+        "continuousMinusSourceSeek": 92
+      },
+      {
+        "frame": 190,
+        "sampleCount": 1728,
+        "signedSeek": 59,
+        "decodedPrefix": 343296,
+        "sourceSeekCoordinate": 343355,
+        "exactTimelineSample": 347287.5,
+        "continuousFromFrame5": 343447.5,
+        "continuousMinusSourceSeek": 92.5
+      },
+      {
+        "frame": 191,
+        "sampleCount": 1728,
+        "signedSeek": 168,
+        "decodedPrefix": 345024,
+        "sourceSeekCoordinate": 345192,
+        "exactTimelineSample": 349125,
+        "continuousFromFrame5": 345285,
+        "continuousMinusSourceSeek": 93
+      },
+      {
+        "frame": 192,
+        "sampleCount": 1728,
+        "signedSeek": 277,
+        "decodedPrefix": 346752,
+        "sourceSeekCoordinate": 347029,
+        "exactTimelineSample": 350962.5,
+        "continuousFromFrame5": 347122.5,
+        "continuousMinusSourceSeek": 93.5
+      },
+      {
+        "frame": 193,
+        "sampleCount": 1728,
+        "signedSeek": 386,
+        "decodedPrefix": 348480,
+        "sourceSeekCoordinate": 348866,
+        "exactTimelineSample": 352800,
+        "continuousFromFrame5": 348960,
+        "continuousMinusSourceSeek": 94
+      },
+      {
+        "frame": 194,
+        "sampleCount": 2304,
+        "signedSeek": 495,
+        "decodedPrefix": 350208,
+        "sourceSeekCoordinate": 350703,
+        "exactTimelineSample": 354637.5,
+        "continuousFromFrame5": 350797.5,
+        "continuousMinusSourceSeek": 94.5
+      },
+      {
+        "frame": 195,
+        "sampleCount": 1728,
+        "signedSeek": 28,
+        "decodedPrefix": 352512,
+        "sourceSeekCoordinate": 352540,
+        "exactTimelineSample": 356475,
+        "continuousFromFrame5": 352635,
+        "continuousMinusSourceSeek": 95
+      },
+      {
+        "frame": 196,
+        "sampleCount": 1728,
+        "signedSeek": 137,
+        "decodedPrefix": 354240,
+        "sourceSeekCoordinate": 354377,
+        "exactTimelineSample": 358312.5,
+        "continuousFromFrame5": 354472.5,
+        "continuousMinusSourceSeek": 95.5
+      },
+      {
+        "frame": 197,
+        "sampleCount": 1728,
+        "signedSeek": 246,
+        "decodedPrefix": 355968,
+        "sourceSeekCoordinate": 356214,
+        "exactTimelineSample": 360150,
+        "continuousFromFrame5": 356310,
+        "continuousMinusSourceSeek": 96
+      },
+      {
+        "frame": 198,
+        "sampleCount": 1728,
+        "signedSeek": 355,
+        "decodedPrefix": 357696,
+        "sourceSeekCoordinate": 358051,
+        "exactTimelineSample": 361987.5,
+        "continuousFromFrame5": 358147.5,
+        "continuousMinusSourceSeek": 96.5
+      },
+      {
+        "frame": 199,
+        "sampleCount": 1728,
+        "signedSeek": 464,
+        "decodedPrefix": 359424,
+        "sourceSeekCoordinate": 359888,
+        "exactTimelineSample": 363825,
+        "continuousFromFrame5": 359985,
+        "continuousMinusSourceSeek": 97
+      },
+      {
+        "frame": 200,
+        "sampleCount": 2304,
+        "signedSeek": 573,
+        "decodedPrefix": 361152,
+        "sourceSeekCoordinate": 361725,
+        "exactTimelineSample": 365662.5,
+        "continuousFromFrame5": 361822.5,
+        "continuousMinusSourceSeek": 97.5
+      },
+      {
+        "frame": 201,
+        "sampleCount": 1728,
+        "signedSeek": 106,
+        "decodedPrefix": 363456,
+        "sourceSeekCoordinate": 363562,
+        "exactTimelineSample": 367500,
+        "continuousFromFrame5": 363660,
+        "continuousMinusSourceSeek": 98
+      },
+      {
+        "frame": 202,
+        "sampleCount": 1728,
+        "signedSeek": 215,
+        "decodedPrefix": 365184,
+        "sourceSeekCoordinate": 365399,
+        "exactTimelineSample": 369337.5,
+        "continuousFromFrame5": 365497.5,
+        "continuousMinusSourceSeek": 98.5
+      },
+      {
+        "frame": 203,
+        "sampleCount": 1728,
+        "signedSeek": 324,
+        "decodedPrefix": 366912,
+        "sourceSeekCoordinate": 367236,
+        "exactTimelineSample": 371175,
+        "continuousFromFrame5": 367335,
+        "continuousMinusSourceSeek": 99
+      },
+      {
+        "frame": 204,
+        "sampleCount": 1728,
+        "signedSeek": 433,
+        "decodedPrefix": 368640,
+        "sourceSeekCoordinate": 369073,
+        "exactTimelineSample": 373012.5,
+        "continuousFromFrame5": 369172.5,
+        "continuousMinusSourceSeek": 99.5
+      },
+      {
+        "frame": 205,
+        "sampleCount": 2304,
+        "signedSeek": 542,
+        "decodedPrefix": 370368,
+        "sourceSeekCoordinate": 370910,
+        "exactTimelineSample": 374850,
+        "continuousFromFrame5": 371010,
+        "continuousMinusSourceSeek": 100
+      },
+      {
+        "frame": 206,
+        "sampleCount": 1728,
+        "signedSeek": 75,
+        "decodedPrefix": 372672,
+        "sourceSeekCoordinate": 372747,
+        "exactTimelineSample": 376687.5,
+        "continuousFromFrame5": 372847.5,
+        "continuousMinusSourceSeek": 100.5
+      },
+      {
+        "frame": 207,
+        "sampleCount": 1728,
+        "signedSeek": 184,
+        "decodedPrefix": 374400,
+        "sourceSeekCoordinate": 374584,
+        "exactTimelineSample": 378525,
+        "continuousFromFrame5": 374685,
+        "continuousMinusSourceSeek": 101
+      },
+      {
+        "frame": 208,
+        "sampleCount": 1728,
+        "signedSeek": 293,
+        "decodedPrefix": 376128,
+        "sourceSeekCoordinate": 376421,
+        "exactTimelineSample": 380362.5,
+        "continuousFromFrame5": 376522.5,
+        "continuousMinusSourceSeek": 101.5
+      },
+      {
+        "frame": 209,
+        "sampleCount": 1728,
+        "signedSeek": 402,
+        "decodedPrefix": 377856,
+        "sourceSeekCoordinate": 378258,
+        "exactTimelineSample": 382200,
+        "continuousFromFrame5": 378360,
+        "continuousMinusSourceSeek": 102
+      },
+      {
+        "frame": 210,
+        "sampleCount": 2304,
+        "signedSeek": 511,
+        "decodedPrefix": 379584,
+        "sourceSeekCoordinate": 380095,
+        "exactTimelineSample": 384037.5,
+        "continuousFromFrame5": 380197.5,
+        "continuousMinusSourceSeek": 102.5
+      },
+      {
+        "frame": 211,
+        "sampleCount": 1728,
+        "signedSeek": 44,
+        "decodedPrefix": 381888,
+        "sourceSeekCoordinate": 381932,
+        "exactTimelineSample": 385875,
+        "continuousFromFrame5": 382035,
+        "continuousMinusSourceSeek": 103
+      },
+      {
+        "frame": 212,
+        "sampleCount": 1728,
+        "signedSeek": 153,
+        "decodedPrefix": 383616,
+        "sourceSeekCoordinate": 383769,
+        "exactTimelineSample": 387712.5,
+        "continuousFromFrame5": 383872.5,
+        "continuousMinusSourceSeek": 103.5
+      },
+      {
+        "frame": 213,
+        "sampleCount": 1728,
+        "signedSeek": 262,
+        "decodedPrefix": 385344,
+        "sourceSeekCoordinate": 385606,
+        "exactTimelineSample": 389550,
+        "continuousFromFrame5": 385710,
+        "continuousMinusSourceSeek": 104
+      },
+      {
+        "frame": 214,
+        "sampleCount": 1728,
+        "signedSeek": 371,
+        "decodedPrefix": 387072,
+        "sourceSeekCoordinate": 387443,
+        "exactTimelineSample": 391387.5,
+        "continuousFromFrame5": 387547.5,
+        "continuousMinusSourceSeek": 104.5
+      },
+      {
+        "frame": 215,
+        "sampleCount": 2304,
+        "signedSeek": 480,
+        "decodedPrefix": 388800,
+        "sourceSeekCoordinate": 389280,
+        "exactTimelineSample": 393225,
+        "continuousFromFrame5": 389385,
+        "continuousMinusSourceSeek": 105
+      },
+      {
+        "frame": 216,
+        "sampleCount": 1728,
+        "signedSeek": 13,
+        "decodedPrefix": 391104,
+        "sourceSeekCoordinate": 391117,
+        "exactTimelineSample": 395062.5,
+        "continuousFromFrame5": 391222.5,
+        "continuousMinusSourceSeek": 105.5
+      },
+      {
+        "frame": 217,
+        "sampleCount": 1728,
+        "signedSeek": 122,
+        "decodedPrefix": 392832,
+        "sourceSeekCoordinate": 392954,
+        "exactTimelineSample": 396900,
+        "continuousFromFrame5": 393060,
+        "continuousMinusSourceSeek": 106
+      },
+      {
+        "frame": 218,
+        "sampleCount": 1728,
+        "signedSeek": 231,
+        "decodedPrefix": 394560,
+        "sourceSeekCoordinate": 394791,
+        "exactTimelineSample": 398737.5,
+        "continuousFromFrame5": 394897.5,
+        "continuousMinusSourceSeek": 106.5
+      },
+      {
+        "frame": 219,
+        "sampleCount": 1728,
+        "signedSeek": 340,
+        "decodedPrefix": 396288,
+        "sourceSeekCoordinate": 396628,
+        "exactTimelineSample": 400575,
+        "continuousFromFrame5": 396735,
+        "continuousMinusSourceSeek": 107
+      },
+      {
+        "frame": 220,
+        "sampleCount": 1728,
+        "signedSeek": 449,
+        "decodedPrefix": 398016,
+        "sourceSeekCoordinate": 398465,
+        "exactTimelineSample": 402412.5,
+        "continuousFromFrame5": 398572.5,
+        "continuousMinusSourceSeek": 107.5
+      },
+      {
+        "frame": 221,
+        "sampleCount": 2304,
+        "signedSeek": 558,
+        "decodedPrefix": 399744,
+        "sourceSeekCoordinate": 400302,
+        "exactTimelineSample": 404250,
+        "continuousFromFrame5": 400410,
+        "continuousMinusSourceSeek": 108
+      },
+      {
+        "frame": 222,
+        "sampleCount": 1728,
+        "signedSeek": 91,
+        "decodedPrefix": 402048,
+        "sourceSeekCoordinate": 402139,
+        "exactTimelineSample": 406087.5,
+        "continuousFromFrame5": 402247.5,
+        "continuousMinusSourceSeek": 108.5
+      },
+      {
+        "frame": 223,
+        "sampleCount": 1728,
+        "signedSeek": 200,
+        "decodedPrefix": 403776,
+        "sourceSeekCoordinate": 403976,
+        "exactTimelineSample": 407925,
+        "continuousFromFrame5": 404085,
+        "continuousMinusSourceSeek": 109
+      },
+      {
+        "frame": 224,
+        "sampleCount": 1728,
+        "signedSeek": 309,
+        "decodedPrefix": 405504,
+        "sourceSeekCoordinate": 405813,
+        "exactTimelineSample": 409762.5,
+        "continuousFromFrame5": 405922.5,
+        "continuousMinusSourceSeek": 109.5
+      },
+      {
+        "frame": 225,
+        "sampleCount": 1728,
+        "signedSeek": 418,
+        "decodedPrefix": 407232,
+        "sourceSeekCoordinate": 407650,
+        "exactTimelineSample": 411600,
+        "continuousFromFrame5": 407760,
+        "continuousMinusSourceSeek": 110
+      },
+      {
+        "frame": 226,
+        "sampleCount": 2304,
+        "signedSeek": 527,
+        "decodedPrefix": 408960,
+        "sourceSeekCoordinate": 409487,
+        "exactTimelineSample": 413437.5,
+        "continuousFromFrame5": 409597.5,
+        "continuousMinusSourceSeek": 110.5
+      },
+      {
+        "frame": 227,
+        "sampleCount": 1728,
+        "signedSeek": 60,
+        "decodedPrefix": 411264,
+        "sourceSeekCoordinate": 411324,
+        "exactTimelineSample": 415275,
+        "continuousFromFrame5": 411435,
+        "continuousMinusSourceSeek": 111
+      },
+      {
+        "frame": 228,
+        "sampleCount": 1728,
+        "signedSeek": 169,
+        "decodedPrefix": 412992,
+        "sourceSeekCoordinate": 413161,
+        "exactTimelineSample": 417112.5,
+        "continuousFromFrame5": 413272.5,
+        "continuousMinusSourceSeek": 111.5
+      },
+      {
+        "frame": 229,
+        "sampleCount": 1728,
+        "signedSeek": 278,
+        "decodedPrefix": 414720,
+        "sourceSeekCoordinate": 414998,
+        "exactTimelineSample": 418950,
+        "continuousFromFrame5": 415110,
+        "continuousMinusSourceSeek": 112
+      },
+      {
+        "frame": 230,
+        "sampleCount": 1728,
+        "signedSeek": 387,
+        "decodedPrefix": 416448,
+        "sourceSeekCoordinate": 416835,
+        "exactTimelineSample": 420787.5,
+        "continuousFromFrame5": 416947.5,
+        "continuousMinusSourceSeek": 112.5
+      },
+      {
+        "frame": 231,
+        "sampleCount": 2304,
+        "signedSeek": 496,
+        "decodedPrefix": 418176,
+        "sourceSeekCoordinate": 418672,
+        "exactTimelineSample": 422625,
+        "continuousFromFrame5": 418785,
+        "continuousMinusSourceSeek": 113
+      },
+      {
+        "frame": 232,
+        "sampleCount": 1728,
+        "signedSeek": 29,
+        "decodedPrefix": 420480,
+        "sourceSeekCoordinate": 420509,
+        "exactTimelineSample": 424462.5,
+        "continuousFromFrame5": 420622.5,
+        "continuousMinusSourceSeek": 113.5
+      },
+      {
+        "frame": 233,
+        "sampleCount": 1728,
+        "signedSeek": 138,
+        "decodedPrefix": 422208,
+        "sourceSeekCoordinate": 422346,
+        "exactTimelineSample": 426300,
+        "continuousFromFrame5": 422460,
+        "continuousMinusSourceSeek": 114
+      },
+      {
+        "frame": 234,
+        "sampleCount": 1728,
+        "signedSeek": 247,
+        "decodedPrefix": 423936,
+        "sourceSeekCoordinate": 424183,
+        "exactTimelineSample": 428137.5,
+        "continuousFromFrame5": 424297.5,
+        "continuousMinusSourceSeek": 114.5
+      },
+      {
+        "frame": 235,
+        "sampleCount": 1728,
+        "signedSeek": 356,
+        "decodedPrefix": 425664,
+        "sourceSeekCoordinate": 426020,
+        "exactTimelineSample": 429975,
+        "continuousFromFrame5": 426135,
+        "continuousMinusSourceSeek": 115
+      },
+      {
+        "frame": 236,
+        "sampleCount": 1728,
+        "signedSeek": 465,
+        "decodedPrefix": 427392,
+        "sourceSeekCoordinate": 427857,
+        "exactTimelineSample": 431812.5,
+        "continuousFromFrame5": 427972.5,
+        "continuousMinusSourceSeek": 115.5
+      },
+      {
+        "frame": 237,
+        "sampleCount": 2304,
+        "signedSeek": 574,
+        "decodedPrefix": 429120,
+        "sourceSeekCoordinate": 429694,
+        "exactTimelineSample": 433650,
+        "continuousFromFrame5": 429810,
+        "continuousMinusSourceSeek": 116
+      },
+      {
+        "frame": 238,
+        "sampleCount": 1728,
+        "signedSeek": 107,
+        "decodedPrefix": 431424,
+        "sourceSeekCoordinate": 431531,
+        "exactTimelineSample": 435487.5,
+        "continuousFromFrame5": 431647.5,
+        "continuousMinusSourceSeek": 116.5
+      },
+      {
+        "frame": 239,
+        "sampleCount": 1728,
+        "signedSeek": 216,
+        "decodedPrefix": 433152,
+        "sourceSeekCoordinate": 433368,
+        "exactTimelineSample": 437325,
+        "continuousFromFrame5": 433485,
+        "continuousMinusSourceSeek": 117
+      },
+      {
+        "frame": 240,
+        "sampleCount": 1728,
+        "signedSeek": 325,
+        "decodedPrefix": 434880,
+        "sourceSeekCoordinate": 435205,
+        "exactTimelineSample": 439162.5,
+        "continuousFromFrame5": 435322.5,
+        "continuousMinusSourceSeek": 117.5
+      },
+      {
+        "frame": 241,
+        "sampleCount": 1728,
+        "signedSeek": 434,
+        "decodedPrefix": 436608,
+        "sourceSeekCoordinate": 437042,
+        "exactTimelineSample": 441000,
+        "continuousFromFrame5": 437160,
+        "continuousMinusSourceSeek": 118
+      },
+      {
+        "frame": 242,
+        "sampleCount": 2304,
+        "signedSeek": 543,
+        "decodedPrefix": 438336,
+        "sourceSeekCoordinate": 438879,
+        "exactTimelineSample": 442837.5,
+        "continuousFromFrame5": 438997.5,
+        "continuousMinusSourceSeek": 118.5
+      },
+      {
+        "frame": 243,
+        "sampleCount": 1728,
+        "signedSeek": 76,
+        "decodedPrefix": 440640,
+        "sourceSeekCoordinate": 440716,
+        "exactTimelineSample": 444675,
+        "continuousFromFrame5": 440835,
+        "continuousMinusSourceSeek": 119
+      },
+      {
+        "frame": 244,
+        "sampleCount": 1728,
+        "signedSeek": 185,
+        "decodedPrefix": 442368,
+        "sourceSeekCoordinate": 442553,
+        "exactTimelineSample": 446512.5,
+        "continuousFromFrame5": 442672.5,
+        "continuousMinusSourceSeek": 119.5
+      },
+      {
+        "frame": 245,
+        "sampleCount": 1728,
+        "signedSeek": 294,
+        "decodedPrefix": 444096,
+        "sourceSeekCoordinate": 444390,
+        "exactTimelineSample": 448350,
+        "continuousFromFrame5": 444510,
+        "continuousMinusSourceSeek": 120
+      },
+      {
+        "frame": 246,
+        "sampleCount": 1728,
+        "signedSeek": 403,
+        "decodedPrefix": 445824,
+        "sourceSeekCoordinate": 446227,
+        "exactTimelineSample": 450187.5,
+        "continuousFromFrame5": 446347.5,
+        "continuousMinusSourceSeek": 120.5
+      },
+      {
+        "frame": 247,
+        "sampleCount": 2304,
+        "signedSeek": 512,
+        "decodedPrefix": 447552,
+        "sourceSeekCoordinate": 448064,
+        "exactTimelineSample": 452025,
+        "continuousFromFrame5": 448185,
+        "continuousMinusSourceSeek": 121
+      },
+      {
+        "frame": 248,
+        "sampleCount": 1728,
+        "signedSeek": 45,
+        "decodedPrefix": 449856,
+        "sourceSeekCoordinate": 449901,
+        "exactTimelineSample": 453862.5,
+        "continuousFromFrame5": 450022.5,
+        "continuousMinusSourceSeek": 121.5
+      },
+      {
+        "frame": 249,
+        "sampleCount": 1728,
+        "signedSeek": 154,
+        "decodedPrefix": 451584,
+        "sourceSeekCoordinate": 451738,
+        "exactTimelineSample": 455700,
+        "continuousFromFrame5": 451860,
+        "continuousMinusSourceSeek": 122
+      },
+      {
+        "frame": 250,
+        "sampleCount": 1728,
+        "signedSeek": 263,
+        "decodedPrefix": 453312,
+        "sourceSeekCoordinate": 453575,
+        "exactTimelineSample": 457537.5,
+        "continuousFromFrame5": 453697.5,
+        "continuousMinusSourceSeek": 122.5
+      },
+      {
+        "frame": 251,
+        "sampleCount": 1728,
+        "signedSeek": 372,
+        "decodedPrefix": 455040,
+        "sourceSeekCoordinate": 455412,
+        "exactTimelineSample": 459375,
+        "continuousFromFrame5": 455535,
+        "continuousMinusSourceSeek": 123
+      },
+      {
+        "frame": 252,
+        "sampleCount": 2304,
+        "signedSeek": 481,
+        "decodedPrefix": 456768,
+        "sourceSeekCoordinate": 457249,
+        "exactTimelineSample": 461212.5,
+        "continuousFromFrame5": 457372.5,
+        "continuousMinusSourceSeek": 123.5
+      },
+      {
+        "frame": 253,
+        "sampleCount": 1728,
+        "signedSeek": 14,
+        "decodedPrefix": 459072,
+        "sourceSeekCoordinate": 459086,
+        "exactTimelineSample": 463050,
+        "continuousFromFrame5": 459210,
+        "continuousMinusSourceSeek": 124
+      },
+      {
+        "frame": 254,
+        "sampleCount": 1728,
+        "signedSeek": 123,
+        "decodedPrefix": 460800,
+        "sourceSeekCoordinate": 460923,
+        "exactTimelineSample": 464887.5,
+        "continuousFromFrame5": 461047.5,
+        "continuousMinusSourceSeek": 124.5
+      },
+      {
+        "frame": 255,
+        "sampleCount": 1728,
+        "signedSeek": 232,
+        "decodedPrefix": 462528,
+        "sourceSeekCoordinate": 462760,
+        "exactTimelineSample": 466725,
+        "continuousFromFrame5": 462885,
+        "continuousMinusSourceSeek": 125
+      },
+      {
+        "frame": 256,
+        "sampleCount": 1728,
+        "signedSeek": 341,
+        "decodedPrefix": 464256,
+        "sourceSeekCoordinate": 464597,
+        "exactTimelineSample": 468562.5,
+        "continuousFromFrame5": 464722.5,
+        "continuousMinusSourceSeek": 125.5
+      },
+      {
+        "frame": 257,
+        "sampleCount": 1728,
+        "signedSeek": 450,
+        "decodedPrefix": 465984,
+        "sourceSeekCoordinate": 466434,
+        "exactTimelineSample": 470400,
+        "continuousFromFrame5": 466560,
+        "continuousMinusSourceSeek": 126
+      },
+      {
+        "frame": 258,
+        "sampleCount": 2304,
+        "signedSeek": 559,
+        "decodedPrefix": 467712,
+        "sourceSeekCoordinate": 468271,
+        "exactTimelineSample": 472237.5,
+        "continuousFromFrame5": 468397.5,
+        "continuousMinusSourceSeek": 126.5
+      },
+      {
+        "frame": 259,
+        "sampleCount": 1728,
+        "signedSeek": 92,
+        "decodedPrefix": 470016,
+        "sourceSeekCoordinate": 470108,
+        "exactTimelineSample": 474075,
+        "continuousFromFrame5": 470235,
+        "continuousMinusSourceSeek": 127
+      },
+      {
+        "frame": 260,
+        "sampleCount": 1728,
+        "signedSeek": 201,
+        "decodedPrefix": 471744,
+        "sourceSeekCoordinate": 471945,
+        "exactTimelineSample": 475912.5,
+        "continuousFromFrame5": 472072.5,
+        "continuousMinusSourceSeek": 127.5
+      },
+      {
+        "frame": 261,
+        "sampleCount": 1728,
+        "signedSeek": 310,
+        "decodedPrefix": 473472,
+        "sourceSeekCoordinate": 473782,
+        "exactTimelineSample": 477750,
+        "continuousFromFrame5": 473910,
+        "continuousMinusSourceSeek": 128
+      },
+      {
+        "frame": 262,
+        "sampleCount": 1728,
+        "signedSeek": 419,
+        "decodedPrefix": 475200,
+        "sourceSeekCoordinate": 475619,
+        "exactTimelineSample": 479587.5,
+        "continuousFromFrame5": 475747.5,
+        "continuousMinusSourceSeek": 128.5
+      },
+      {
+        "frame": 263,
+        "sampleCount": 2304,
+        "signedSeek": 528,
+        "decodedPrefix": 476928,
+        "sourceSeekCoordinate": 477456,
+        "exactTimelineSample": 481425,
+        "continuousFromFrame5": 477585,
+        "continuousMinusSourceSeek": 129
+      },
+      {
+        "frame": 264,
+        "sampleCount": 1728,
+        "signedSeek": 61,
+        "decodedPrefix": 479232,
+        "sourceSeekCoordinate": 479293,
+        "exactTimelineSample": 483262.5,
+        "continuousFromFrame5": 479422.5,
+        "continuousMinusSourceSeek": 129.5
+      },
+      {
+        "frame": 265,
+        "sampleCount": 1728,
+        "signedSeek": 170,
+        "decodedPrefix": 480960,
+        "sourceSeekCoordinate": 481130,
+        "exactTimelineSample": 485100,
+        "continuousFromFrame5": 481260,
+        "continuousMinusSourceSeek": 130
+      },
+      {
+        "frame": 266,
+        "sampleCount": 1728,
+        "signedSeek": 279,
+        "decodedPrefix": 482688,
+        "sourceSeekCoordinate": 482967,
+        "exactTimelineSample": 486937.5,
+        "continuousFromFrame5": 483097.5,
+        "continuousMinusSourceSeek": 130.5
+      },
+      {
+        "frame": 267,
+        "sampleCount": 1728,
+        "signedSeek": 388,
+        "decodedPrefix": 484416,
+        "sourceSeekCoordinate": 484804,
+        "exactTimelineSample": 488775,
+        "continuousFromFrame5": 484935,
+        "continuousMinusSourceSeek": 131
+      },
+      {
+        "frame": 268,
+        "sampleCount": 2304,
+        "signedSeek": 497,
+        "decodedPrefix": 486144,
+        "sourceSeekCoordinate": 486641,
+        "exactTimelineSample": 490612.5,
+        "continuousFromFrame5": 486772.5,
+        "continuousMinusSourceSeek": 131.5
+      },
+      {
+        "frame": 269,
+        "sampleCount": 1728,
+        "signedSeek": 30,
+        "decodedPrefix": 488448,
+        "sourceSeekCoordinate": 488478,
+        "exactTimelineSample": 492450,
+        "continuousFromFrame5": 488610,
+        "continuousMinusSourceSeek": 132
+      },
+      {
+        "frame": 270,
+        "sampleCount": 1728,
+        "signedSeek": 139,
+        "decodedPrefix": 490176,
+        "sourceSeekCoordinate": 490315,
+        "exactTimelineSample": 494287.5,
+        "continuousFromFrame5": 490447.5,
+        "continuousMinusSourceSeek": 132.5
+      },
+      {
+        "frame": 271,
+        "sampleCount": 1728,
+        "signedSeek": 248,
+        "decodedPrefix": 491904,
+        "sourceSeekCoordinate": 492152,
+        "exactTimelineSample": 496125,
+        "continuousFromFrame5": 492285,
+        "continuousMinusSourceSeek": 133
+      },
+      {
+        "frame": 272,
+        "sampleCount": 1728,
+        "signedSeek": 357,
+        "decodedPrefix": 493632,
+        "sourceSeekCoordinate": 493989,
+        "exactTimelineSample": 497962.5,
+        "continuousFromFrame5": 494122.5,
+        "continuousMinusSourceSeek": 133.5
+      },
+      {
+        "frame": 273,
+        "sampleCount": 1728,
+        "signedSeek": 466,
+        "decodedPrefix": 495360,
+        "sourceSeekCoordinate": 495826,
+        "exactTimelineSample": 499800,
+        "continuousFromFrame5": 495960,
+        "continuousMinusSourceSeek": 134
+      },
+      {
+        "frame": 274,
+        "sampleCount": 2304,
+        "signedSeek": 575,
+        "decodedPrefix": 497088,
+        "sourceSeekCoordinate": 497663,
+        "exactTimelineSample": 501637.5,
+        "continuousFromFrame5": 497797.5,
+        "continuousMinusSourceSeek": 134.5
+      },
+      {
+        "frame": 275,
+        "sampleCount": 1728,
+        "signedSeek": 108,
+        "decodedPrefix": 499392,
+        "sourceSeekCoordinate": 499500,
+        "exactTimelineSample": 503475,
+        "continuousFromFrame5": 499635,
+        "continuousMinusSourceSeek": 135
+      },
+      {
+        "frame": 276,
+        "sampleCount": 1728,
+        "signedSeek": 217,
+        "decodedPrefix": 501120,
+        "sourceSeekCoordinate": 501337,
+        "exactTimelineSample": 505312.5,
+        "continuousFromFrame5": 501472.5,
+        "continuousMinusSourceSeek": 135.5
+      },
+      {
+        "frame": 277,
+        "sampleCount": 1728,
+        "signedSeek": 326,
+        "decodedPrefix": 502848,
+        "sourceSeekCoordinate": 503174,
+        "exactTimelineSample": 507150,
+        "continuousFromFrame5": 503310,
+        "continuousMinusSourceSeek": 136
+      },
+      {
+        "frame": 278,
+        "sampleCount": 1728,
+        "signedSeek": 435,
+        "decodedPrefix": 504576,
+        "sourceSeekCoordinate": 505011,
+        "exactTimelineSample": 508987.5,
+        "continuousFromFrame5": 505147.5,
+        "continuousMinusSourceSeek": 136.5
+      },
+      {
+        "frame": 279,
+        "sampleCount": 2304,
+        "signedSeek": 544,
+        "decodedPrefix": 506304,
+        "sourceSeekCoordinate": 506848,
+        "exactTimelineSample": 510825,
+        "continuousFromFrame5": 506985,
+        "continuousMinusSourceSeek": 137
+      },
+      {
+        "frame": 280,
+        "sampleCount": 1728,
+        "signedSeek": 77,
+        "decodedPrefix": 508608,
+        "sourceSeekCoordinate": 508685,
+        "exactTimelineSample": 512662.5,
+        "continuousFromFrame5": 508822.5,
+        "continuousMinusSourceSeek": 137.5
+      },
+      {
+        "frame": 281,
+        "sampleCount": 1728,
+        "signedSeek": 186,
+        "decodedPrefix": 510336,
+        "sourceSeekCoordinate": 510522,
+        "exactTimelineSample": 514500,
+        "continuousFromFrame5": 510660,
+        "continuousMinusSourceSeek": 138
+      },
+      {
+        "frame": 282,
+        "sampleCount": 1728,
+        "signedSeek": 295,
+        "decodedPrefix": 512064,
+        "sourceSeekCoordinate": 512359,
+        "exactTimelineSample": 516337.5,
+        "continuousFromFrame5": 512497.5,
+        "continuousMinusSourceSeek": 138.5
+      },
+      {
+        "frame": 283,
+        "sampleCount": 1728,
+        "signedSeek": 404,
+        "decodedPrefix": 513792,
+        "sourceSeekCoordinate": 514196,
+        "exactTimelineSample": 518175,
+        "continuousFromFrame5": 514335,
+        "continuousMinusSourceSeek": 139
+      },
+      {
+        "frame": 284,
+        "sampleCount": 2304,
+        "signedSeek": 513,
+        "decodedPrefix": 515520,
+        "sourceSeekCoordinate": 516033,
+        "exactTimelineSample": 520012.5,
+        "continuousFromFrame5": 516172.5,
+        "continuousMinusSourceSeek": 139.5
+      },
+      {
+        "frame": 285,
+        "sampleCount": 1728,
+        "signedSeek": 46,
+        "decodedPrefix": 517824,
+        "sourceSeekCoordinate": 517870,
+        "exactTimelineSample": 521850,
+        "continuousFromFrame5": 518010,
+        "continuousMinusSourceSeek": 140
+      },
+      {
+        "frame": 286,
+        "sampleCount": 1728,
+        "signedSeek": 155,
+        "decodedPrefix": 519552,
+        "sourceSeekCoordinate": 519707,
+        "exactTimelineSample": 523687.5,
+        "continuousFromFrame5": 519847.5,
+        "continuousMinusSourceSeek": 140.5
+      },
+      {
+        "frame": 287,
+        "sampleCount": 1728,
+        "signedSeek": 264,
+        "decodedPrefix": 521280,
+        "sourceSeekCoordinate": 521544,
+        "exactTimelineSample": 525525,
+        "continuousFromFrame5": 521685,
+        "continuousMinusSourceSeek": 141
+      },
+      {
+        "frame": 288,
+        "sampleCount": 1728,
+        "signedSeek": 373,
+        "decodedPrefix": 523008,
+        "sourceSeekCoordinate": 523381,
+        "exactTimelineSample": 527362.5,
+        "continuousFromFrame5": 523522.5,
+        "continuousMinusSourceSeek": 141.5
+      },
+      {
+        "frame": 289,
+        "sampleCount": 2304,
+        "signedSeek": 482,
+        "decodedPrefix": 524736,
+        "sourceSeekCoordinate": 525218,
+        "exactTimelineSample": 529200,
+        "continuousFromFrame5": 525360,
+        "continuousMinusSourceSeek": 142
+      },
+      {
+        "frame": 290,
+        "sampleCount": 1728,
+        "signedSeek": 15,
+        "decodedPrefix": 527040,
+        "sourceSeekCoordinate": 527055,
+        "exactTimelineSample": 531037.5,
+        "continuousFromFrame5": 527197.5,
+        "continuousMinusSourceSeek": 142.5
+      },
+      {
+        "frame": 291,
+        "sampleCount": 1728,
+        "signedSeek": 124,
+        "decodedPrefix": 528768,
+        "sourceSeekCoordinate": 528892,
+        "exactTimelineSample": 532875,
+        "continuousFromFrame5": 529035,
+        "continuousMinusSourceSeek": 143
+      },
+      {
+        "frame": 292,
+        "sampleCount": 1728,
+        "signedSeek": 233,
+        "decodedPrefix": 530496,
+        "sourceSeekCoordinate": 530729,
+        "exactTimelineSample": 534712.5,
+        "continuousFromFrame5": 530872.5,
+        "continuousMinusSourceSeek": 143.5
+      },
+      {
+        "frame": 293,
+        "sampleCount": 1728,
+        "signedSeek": 342,
+        "decodedPrefix": 532224,
+        "sourceSeekCoordinate": 532566,
+        "exactTimelineSample": 536550,
+        "continuousFromFrame5": 532710,
+        "continuousMinusSourceSeek": 144
+      },
+      {
+        "frame": 294,
+        "sampleCount": 1728,
+        "signedSeek": 451,
+        "decodedPrefix": 533952,
+        "sourceSeekCoordinate": 534403,
+        "exactTimelineSample": 538387.5,
+        "continuousFromFrame5": 534547.5,
+        "continuousMinusSourceSeek": 144.5
+      },
+      {
+        "frame": 295,
+        "sampleCount": 2304,
+        "signedSeek": 560,
+        "decodedPrefix": 535680,
+        "sourceSeekCoordinate": 536240,
+        "exactTimelineSample": 540225,
+        "continuousFromFrame5": 536385,
+        "continuousMinusSourceSeek": 145
+      },
+      {
+        "frame": 296,
+        "sampleCount": 1728,
+        "signedSeek": 93,
+        "decodedPrefix": 537984,
+        "sourceSeekCoordinate": 538077,
+        "exactTimelineSample": 542062.5,
+        "continuousFromFrame5": 538222.5,
+        "continuousMinusSourceSeek": 145.5
+      },
+      {
+        "frame": 297,
+        "sampleCount": 1728,
+        "signedSeek": 202,
+        "decodedPrefix": 539712,
+        "sourceSeekCoordinate": 539914,
+        "exactTimelineSample": 543900,
+        "continuousFromFrame5": 540060,
+        "continuousMinusSourceSeek": 146
+      },
+      {
+        "frame": 298,
+        "sampleCount": 1728,
+        "signedSeek": 311,
+        "decodedPrefix": 541440,
+        "sourceSeekCoordinate": 541751,
+        "exactTimelineSample": 545737.5,
+        "continuousFromFrame5": 541897.5,
+        "continuousMinusSourceSeek": 146.5
+      },
+      {
+        "frame": 299,
+        "sampleCount": 1728,
+        "signedSeek": 420,
+        "decodedPrefix": 543168,
+        "sourceSeekCoordinate": 543588,
+        "exactTimelineSample": 547575,
+        "continuousFromFrame5": 543735,
+        "continuousMinusSourceSeek": 147
+      },
+      {
+        "frame": 300,
+        "sampleCount": 2304,
+        "signedSeek": 529,
+        "decodedPrefix": 544896,
+        "sourceSeekCoordinate": 545425,
+        "exactTimelineSample": 549412.5,
+        "continuousFromFrame5": 545572.5,
+        "continuousMinusSourceSeek": 147.5
+      },
+      {
+        "frame": 301,
+        "sampleCount": 1728,
+        "signedSeek": 62,
+        "decodedPrefix": 547200,
+        "sourceSeekCoordinate": 547262,
+        "exactTimelineSample": 551250,
+        "continuousFromFrame5": 547410,
+        "continuousMinusSourceSeek": 148
+      },
+      {
+        "frame": 302,
+        "sampleCount": 1728,
+        "signedSeek": 171,
+        "decodedPrefix": 548928,
+        "sourceSeekCoordinate": 549099,
+        "exactTimelineSample": 553087.5,
+        "continuousFromFrame5": 549247.5,
+        "continuousMinusSourceSeek": 148.5
+      },
+      {
+        "frame": 303,
+        "sampleCount": 1728,
+        "signedSeek": 280,
+        "decodedPrefix": 550656,
+        "sourceSeekCoordinate": 550936,
+        "exactTimelineSample": 554925,
+        "continuousFromFrame5": 551085,
+        "continuousMinusSourceSeek": 149
+      },
+      {
+        "frame": 304,
+        "sampleCount": 1728,
+        "signedSeek": 389,
+        "decodedPrefix": 552384,
+        "sourceSeekCoordinate": 552773,
+        "exactTimelineSample": 556762.5,
+        "continuousFromFrame5": 552922.5,
+        "continuousMinusSourceSeek": 149.5
+      },
+      {
+        "frame": 305,
+        "sampleCount": 2304,
+        "signedSeek": 498,
+        "decodedPrefix": 554112,
+        "sourceSeekCoordinate": 554610,
+        "exactTimelineSample": 558600,
+        "continuousFromFrame5": 554760,
+        "continuousMinusSourceSeek": 150
+      },
+      {
+        "frame": 306,
+        "sampleCount": 1728,
+        "signedSeek": 31,
+        "decodedPrefix": 556416,
+        "sourceSeekCoordinate": 556447,
+        "exactTimelineSample": 560437.5,
+        "continuousFromFrame5": 556597.5,
+        "continuousMinusSourceSeek": 150.5
+      },
+      {
+        "frame": 307,
+        "sampleCount": 1728,
+        "signedSeek": 140,
+        "decodedPrefix": 558144,
+        "sourceSeekCoordinate": 558284,
+        "exactTimelineSample": 562275,
+        "continuousFromFrame5": 558435,
+        "continuousMinusSourceSeek": 151
+      },
+      {
+        "frame": 308,
+        "sampleCount": 1728,
+        "signedSeek": 249,
+        "decodedPrefix": 559872,
+        "sourceSeekCoordinate": 560121,
+        "exactTimelineSample": 564112.5,
+        "continuousFromFrame5": 560272.5,
+        "continuousMinusSourceSeek": 151.5
+      },
+      {
+        "frame": 309,
+        "sampleCount": 1728,
+        "signedSeek": 358,
+        "decodedPrefix": 561600,
+        "sourceSeekCoordinate": 561958,
+        "exactTimelineSample": 565950,
+        "continuousFromFrame5": 562110,
+        "continuousMinusSourceSeek": 152
+      },
+      {
+        "frame": 310,
+        "sampleCount": 1728,
+        "signedSeek": 467,
+        "decodedPrefix": 563328,
+        "sourceSeekCoordinate": 563795,
+        "exactTimelineSample": 567787.5,
+        "continuousFromFrame5": 563947.5,
+        "continuousMinusSourceSeek": 152.5
+      },
+      {
+        "frame": 311,
+        "sampleCount": 2304,
+        "signedSeek": 576,
+        "decodedPrefix": 565056,
+        "sourceSeekCoordinate": 565632,
+        "exactTimelineSample": 569625,
+        "continuousFromFrame5": 565785,
+        "continuousMinusSourceSeek": 153
+      },
+      {
+        "frame": 312,
+        "sampleCount": 1728,
+        "signedSeek": 109,
+        "decodedPrefix": 567360,
+        "sourceSeekCoordinate": 567469,
+        "exactTimelineSample": 571462.5,
+        "continuousFromFrame5": 567622.5,
+        "continuousMinusSourceSeek": 153.5
+      },
+      {
+        "frame": 313,
+        "sampleCount": 1728,
+        "signedSeek": 218,
+        "decodedPrefix": 569088,
+        "sourceSeekCoordinate": 569306,
+        "exactTimelineSample": 573300,
+        "continuousFromFrame5": 569460,
+        "continuousMinusSourceSeek": 154
+      },
+      {
+        "frame": 314,
+        "sampleCount": 1728,
+        "signedSeek": 327,
+        "decodedPrefix": 570816,
+        "sourceSeekCoordinate": 571143,
+        "exactTimelineSample": 575137.5,
+        "continuousFromFrame5": 571297.5,
+        "continuousMinusSourceSeek": 154.5
+      },
+      {
+        "frame": 315,
+        "sampleCount": 1728,
+        "signedSeek": 436,
+        "decodedPrefix": 572544,
+        "sourceSeekCoordinate": 572980,
+        "exactTimelineSample": 576975,
+        "continuousFromFrame5": 573135,
+        "continuousMinusSourceSeek": 155
+      },
+      {
+        "frame": 316,
+        "sampleCount": 2304,
+        "signedSeek": 545,
+        "decodedPrefix": 574272,
+        "sourceSeekCoordinate": 574817,
+        "exactTimelineSample": 578812.5,
+        "continuousFromFrame5": 574972.5,
+        "continuousMinusSourceSeek": 155.5
+      },
+      {
+        "frame": 317,
+        "sampleCount": 1728,
+        "signedSeek": 78,
+        "decodedPrefix": 576576,
+        "sourceSeekCoordinate": 576654,
+        "exactTimelineSample": 580650,
+        "continuousFromFrame5": 576810,
+        "continuousMinusSourceSeek": 156
+      },
+      {
+        "frame": 318,
+        "sampleCount": 1728,
+        "signedSeek": 187,
+        "decodedPrefix": 578304,
+        "sourceSeekCoordinate": 578491,
+        "exactTimelineSample": 582487.5,
+        "continuousFromFrame5": 578647.5,
+        "continuousMinusSourceSeek": 156.5
+      },
+      {
+        "frame": 319,
+        "sampleCount": 1728,
+        "signedSeek": 296,
+        "decodedPrefix": 580032,
+        "sourceSeekCoordinate": 580328,
+        "exactTimelineSample": 584325,
+        "continuousFromFrame5": 580485,
+        "continuousMinusSourceSeek": 157
+      },
+      {
+        "frame": 320,
+        "sampleCount": 1728,
+        "signedSeek": 405,
+        "decodedPrefix": 581760,
+        "sourceSeekCoordinate": 582165,
+        "exactTimelineSample": 586162.5,
+        "continuousFromFrame5": 582322.5,
+        "continuousMinusSourceSeek": 157.5
+      },
+      {
+        "frame": 321,
+        "sampleCount": 2304,
+        "signedSeek": 514,
+        "decodedPrefix": 583488,
+        "sourceSeekCoordinate": 584002,
+        "exactTimelineSample": 588000,
+        "continuousFromFrame5": 584160,
+        "continuousMinusSourceSeek": 158
+      },
+      {
+        "frame": 322,
+        "sampleCount": 1728,
+        "signedSeek": 47,
+        "decodedPrefix": 585792,
+        "sourceSeekCoordinate": 585839,
+        "exactTimelineSample": 589837.5,
+        "continuousFromFrame5": 585997.5,
+        "continuousMinusSourceSeek": 158.5
+      },
+      {
+        "frame": 323,
+        "sampleCount": 1728,
+        "signedSeek": 156,
+        "decodedPrefix": 587520,
+        "sourceSeekCoordinate": 587676,
+        "exactTimelineSample": 591675,
+        "continuousFromFrame5": 587835,
+        "continuousMinusSourceSeek": 159
+      },
+      {
+        "frame": 324,
+        "sampleCount": 1728,
+        "signedSeek": 265,
+        "decodedPrefix": 589248,
+        "sourceSeekCoordinate": 589513,
+        "exactTimelineSample": 593512.5,
+        "continuousFromFrame5": 589672.5,
+        "continuousMinusSourceSeek": 159.5
+      },
+      {
+        "frame": 325,
+        "sampleCount": 1728,
+        "signedSeek": 374,
+        "decodedPrefix": 590976,
+        "sourceSeekCoordinate": 591350,
+        "exactTimelineSample": 595350,
+        "continuousFromFrame5": 591510,
+        "continuousMinusSourceSeek": 160
+      },
+      {
+        "frame": 326,
+        "sampleCount": 2304,
+        "signedSeek": 483,
+        "decodedPrefix": 592704,
+        "sourceSeekCoordinate": 593187,
+        "exactTimelineSample": 597187.5,
+        "continuousFromFrame5": 593347.5,
+        "continuousMinusSourceSeek": 160.5
+      },
+      {
+        "frame": 327,
+        "sampleCount": 1728,
+        "signedSeek": 16,
+        "decodedPrefix": 595008,
+        "sourceSeekCoordinate": 595024,
+        "exactTimelineSample": 599025,
+        "continuousFromFrame5": 595185,
+        "continuousMinusSourceSeek": 161
+      },
+      {
+        "frame": 328,
+        "sampleCount": 1728,
+        "signedSeek": 125,
+        "decodedPrefix": 596736,
+        "sourceSeekCoordinate": 596861,
+        "exactTimelineSample": 600862.5,
+        "continuousFromFrame5": 597022.5,
+        "continuousMinusSourceSeek": 161.5
+      },
+      {
+        "frame": 329,
+        "sampleCount": 1728,
+        "signedSeek": 234,
+        "decodedPrefix": 598464,
+        "sourceSeekCoordinate": 598698,
+        "exactTimelineSample": 602700,
+        "continuousFromFrame5": 598860,
+        "continuousMinusSourceSeek": 162
+      },
+      {
+        "frame": 330,
+        "sampleCount": 1728,
+        "signedSeek": 343,
+        "decodedPrefix": 600192,
+        "sourceSeekCoordinate": 600535,
+        "exactTimelineSample": 604537.5,
+        "continuousFromFrame5": 600697.5,
+        "continuousMinusSourceSeek": 162.5
+      },
+      {
+        "frame": 331,
+        "sampleCount": 1728,
+        "signedSeek": 452,
+        "decodedPrefix": 601920,
+        "sourceSeekCoordinate": 602372,
+        "exactTimelineSample": 606375,
+        "continuousFromFrame5": 602535,
+        "continuousMinusSourceSeek": 163
+      },
+      {
+        "frame": 332,
+        "sampleCount": 2304,
+        "signedSeek": 561,
+        "decodedPrefix": 603648,
+        "sourceSeekCoordinate": 604209,
+        "exactTimelineSample": 608212.5,
+        "continuousFromFrame5": 604372.5,
+        "continuousMinusSourceSeek": 163.5
+      },
+      {
+        "frame": 333,
+        "sampleCount": 1728,
+        "signedSeek": 94,
+        "decodedPrefix": 605952,
+        "sourceSeekCoordinate": 606046,
+        "exactTimelineSample": 610050,
+        "continuousFromFrame5": 606210,
+        "continuousMinusSourceSeek": 164
+      },
+      {
+        "frame": 334,
+        "sampleCount": 1728,
+        "signedSeek": 203,
+        "decodedPrefix": 607680,
+        "sourceSeekCoordinate": 607883,
+        "exactTimelineSample": 611887.5,
+        "continuousFromFrame5": 608047.5,
+        "continuousMinusSourceSeek": 164.5
+      },
+      {
+        "frame": 335,
+        "sampleCount": 1728,
+        "signedSeek": 312,
+        "decodedPrefix": 609408,
+        "sourceSeekCoordinate": 609720,
+        "exactTimelineSample": 613725,
+        "continuousFromFrame5": 609885,
+        "continuousMinusSourceSeek": 165
+      },
+      {
+        "frame": 336,
+        "sampleCount": 1728,
+        "signedSeek": 421,
+        "decodedPrefix": 611136,
+        "sourceSeekCoordinate": 611557,
+        "exactTimelineSample": 615562.5,
+        "continuousFromFrame5": 611722.5,
+        "continuousMinusSourceSeek": 165.5
+      },
+      {
+        "frame": 337,
+        "sampleCount": 2304,
+        "signedSeek": 530,
+        "decodedPrefix": 612864,
+        "sourceSeekCoordinate": 613394,
+        "exactTimelineSample": 617400,
+        "continuousFromFrame5": 613560,
+        "continuousMinusSourceSeek": 166
+      },
+      {
+        "frame": 338,
+        "sampleCount": 1728,
+        "signedSeek": 63,
+        "decodedPrefix": 615168,
+        "sourceSeekCoordinate": 615231,
+        "exactTimelineSample": 619237.5,
+        "continuousFromFrame5": 615397.5,
+        "continuousMinusSourceSeek": 166.5
+      },
+      {
+        "frame": 339,
+        "sampleCount": 1728,
+        "signedSeek": 172,
+        "decodedPrefix": 616896,
+        "sourceSeekCoordinate": 617068,
+        "exactTimelineSample": 621075,
+        "continuousFromFrame5": 617235,
+        "continuousMinusSourceSeek": 167
+      },
+      {
+        "frame": 340,
+        "sampleCount": 1728,
+        "signedSeek": 281,
+        "decodedPrefix": 618624,
+        "sourceSeekCoordinate": 618905,
+        "exactTimelineSample": 622912.5,
+        "continuousFromFrame5": 619072.5,
+        "continuousMinusSourceSeek": 167.5
+      },
+      {
+        "frame": 341,
+        "sampleCount": 1728,
+        "signedSeek": 390,
+        "decodedPrefix": 620352,
+        "sourceSeekCoordinate": 620742,
+        "exactTimelineSample": 624750,
+        "continuousFromFrame5": 620910,
+        "continuousMinusSourceSeek": 168
+      },
+      {
+        "frame": 342,
+        "sampleCount": 2304,
+        "signedSeek": 499,
+        "decodedPrefix": 622080,
+        "sourceSeekCoordinate": 622579,
+        "exactTimelineSample": 626587.5,
+        "continuousFromFrame5": 622747.5,
+        "continuousMinusSourceSeek": 168.5
+      }
+    ]
+  },
+  "policy": "Full decoded PCM retained without trim, silence insertion, resampling, normalization or frame-rate stretching. Empty block is not independently proven silence. Source seek coordinates and continuous-clock coordinates are separate hypotheses; no playback schedule is admitted here.",
+  "audioAccepted": false,
+  "originalRuntimeAccepted": false,
+  "registered": false
+}

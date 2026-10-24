@@ -1,0 +1,76 @@
+{
+  "animationId": "shared-alg001-l12-p006",
+  "sourceSha256": "933f1f6db59435e882c1bf6e9392259fc1d28c0974a0a4c6cebc9bcc7a5d46b6",
+  "generatorSha256": "ce2fcd09722c0f75efd459498adeaa58428fc62f522c93cf947ec5bf47cc75c2",
+  "tool": {
+    "version": "26.2.1",
+    "launcher": "/Users/peter/Applications/FFDec.app/Contents/Resources/ffdec.sh",
+    "launcherSha256": "1a242c6333aa8dba0f18f635f9ea2585a988f4131aa5164b70eb00ad9e662bab",
+    "jar": "/Users/peter/Applications/FFDec.app/Contents/Resources/ffdec.jar",
+    "jarSha256": "090ab695053ad94cba6408574c7d7eea20ec60b6ae789ee6056a23f45106762f"
+  },
+  "command": [
+    "/opt/homebrew/bin/ffdec",
+    "-config",
+    "packJavaScripts=false",
+    "-onerror",
+    "abort",
+    "-selectid",
+    "53,56",
+    "-format",
+    "frame:canvas,sprite:canvas",
+    "-export",
+    "frame,sprite",
+    "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l12-p006/audit/ffdec-26.2.1-canvas-v1",
+    "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/RW/L12RW06.swf"
+  ],
+  "domains": {
+    "root": 10,
+    "sprite-53": 342,
+    "sprite-56": 1
+  },
+  "files": [
+    {
+      "path": "export.log",
+      "bytes": 309,
+      "sha256": "aaeee02369dab854ad098eeaa55c78646154d2bfcb20893d4870c2f1f6617f0c"
+    },
+    {
+      "path": "frames/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    {
+      "path": "frames/frames.html",
+      "bytes": 11470892,
+      "sha256": "0e272a6a05a315a7a6b2ccace6d86f2e5112b01d57592ffdc1bc0a38197008be"
+    },
+    {
+      "path": "help-export.txt",
+      "bytes": 10376,
+      "sha256": "65ca1419d097e5125bfe06fcf3f66a83546a3d278b8a64975b4e486a06af95b7"
+    },
+    {
+      "path": "sprites/DefineSprite_53/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    {
+      "path": "sprites/DefineSprite_53/frames.html",
+      "bytes": 11448158,
+      "sha256": "0aac6a584bc2fb8145eb6e03a835c9204d94f3750201c5b309d3dffffcc07fc4"
+    },
+    {
+      "path": "sprites/DefineSprite_56/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    {
+      "path": "sprites/DefineSprite_56/frames.html",
+      "bytes": 28098,
+      "sha256": "5037f08ab4dcd62b4a1433f3be222ddb5785ed227410fb3d6af536a3ee882b31"
+    }
+  ],
+  "evidence": "static Canvas extraction; not a product renderer or runtime authority",
+  "registered": false
+}

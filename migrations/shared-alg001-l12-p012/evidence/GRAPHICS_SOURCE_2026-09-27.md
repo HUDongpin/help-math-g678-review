@@ -1,0 +1,13 @@
+# P012 source graphics extraction — 2026-09-27
+
+The physical source `/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/VB/L12VB07.swf` is 81069 bytes, SHA-256 `b322949a960acef3fee6018a65785b29cd3693717ca3ba33d0d930d7866320aa`. The pinned Java/FFDec 26.2.1 toolchain generated raw root-frame and sprite 57/76/86 Canvas exports, selected SVGs and PNG inspection files. A fresh export reproduces every generated raw byte.
+
+The usable browser bundle is `migrations/shared-alg001-l12-p012/graphics-source-v1/source-drawings.js`. After loading it, call `await globalThis.HELP_MATH_P012_SOURCE_DRAWINGS.ready()`, then `.renderRootFrame6(canvas800x600,{mainFrame:1})` for source root frame 6 with the outlined title, or `.renderMainFrame(canvas800x600,{mainFrame:119})` for the main sprite alone. Frames are one-indexed 1–119. The bundle replaces FFDec's two string-eval dispatches with a frozen source-function table, removes its timer loop and standalone resize-demo DOM binding, and retains the actual source drawing functions. It does not execute ActionScript.
+
+The maintained interactive drawing entry is `.renderInteractive(canvas800x600,state,{nativeCoordinate:true})`. It matches the reducer's absolute source-local spider/dot/bubble positions and source rotations, popup visibility/frame and coach frame, then checks that each of six exact frame-119/nested placements was consumed once. Only the nested dynamic text34 drawing can be skipped, and only through the explicit native-coordinate option. FFDec's text34 function draws no glyphs; the caller must draw the current coordinate string in a native layer. The static `renderRootFrame6` remains available for source comparison.
+
+I visually inspected the FFDec PNGs: shape 1 is the outlined English title “Graphing in the Coordinate Plane: Vocabulary”; bitmap 47 is a small pointer, shape 48 is its vector wrapper, and sprite 57's shape 56 is the spider. The title sits at root depth 1; sprite 86 sits above it at depth 2 with a source placement of (8248,5666) twips = (412.4,283.3) pixels. The selected visual hashes, source tag offsets, placement events and mask-related source events are retained in `composition.json`.
+
+No shape or text is suppressed. Source text, title, graphics, masks and interactive controls remain in the raw drawing; native replacement requires a later exact-instance review. FFDec static frame rendering does not establish stopped AVM1 behavior, original-runtime fidelity, coach playback or audio synchronization. This extraction creates no registry or acceptance claim.
+
+Reproduce with `node scripts/build-g678-alg-l12-p012-graphics-source.mjs --check`.

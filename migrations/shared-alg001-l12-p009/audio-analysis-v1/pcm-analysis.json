@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "format": "untrimmed mono f32le at native 22050 Hz",
+  "bytes": 2886912,
+  "sha256": "cb2025b6d5364dcc54bedd573bf51ae64489d9e377c5b94d5df96d1c0b204a2c",
+  "sampleRateHz": 22050,
+  "channels": 1,
+  "samples": 721728,
+  "seconds": 32.73142857142857,
+  "full": {
+    "firstSampleInclusive": 0,
+    "lastSampleExclusive": 721728,
+    "samples": 721728,
+    "peak": 0.6026901006698608,
+    "rms": 0.07085266568381486,
+    "nonzero": 690426,
+    "firstNonzero": 1729,
+    "lastNonzero": 721727
+  },
+  "ranges": [
+    {
+      "name": "source-annotated-initial-latency",
+      "firstSampleInclusive": 0,
+      "lastSampleExclusive": 1673,
+      "samples": 1673,
+      "peak": 0,
+      "rms": 0,
+      "nonzero": 0,
+      "firstNonzero": null,
+      "lastNonzero": null
+    },
+    {
+      "name": "first-MP3-stream-block",
+      "firstSampleInclusive": 0,
+      "lastSampleExclusive": 3456,
+      "samples": 3456,
+      "peak": 0.0014271807158365846,
+      "rms": 0.00010314746103971723,
+      "nonzero": 1726,
+      "firstNonzero": 1729,
+      "lastNonzero": 3455
+    },
+    {
+      "name": "candidate-empty-block-frame3-integer-sample-window",
+      "fractionalBoundaries": [
+        3510.5,
+        5348
+      ],
+      "firstSampleInclusive": 3511,
+      "lastSampleExclusive": 5348,
+      "samples": 1837,
+      "peak": 0.383594810962677,
+      "rms": 0.08233169924774322,
+      "nonzero": 1837,
+      "firstNonzero": 3511,
+      "lastNonzero": 5347
+    },
+    {
+      "name": "last-MP3-stream-block",
+      "firstSampleInclusive": 719424,
+      "lastSampleExclusive": 721728,
+      "samples": 2304,
+      "peak": 0.001824606559239328,
+      "rms": 0.0005760738882772388,
+      "nonzero": 2304,
+      "firstNonzero": 719424,
+      "lastNonzero": 721727
+    },
+    {
+      "name": "after-raw-terminal-arithmetic-coordinate",
+      "firstSampleInclusive": 719940,
+      "lastSampleExclusive": 721728,
+      "samples": 1788,
+      "peak": 0.001824606559239328,
+      "rms": 0.000564592207112335,
+      "nonzero": 1788,
+      "firstNonzero": 719940,
+      "lastNonzero": 721727
+    },
+    {
+      "name": "after-extra-latency-terminal-arithmetic-coordinate",
+      "firstSampleInclusive": 721613,
+      "lastSampleExclusive": 721728,
+      "samples": 115,
+      "peak": 0.00008710032852832228,
+      "rms": 0.00003682278835615308,
+      "nonzero": 115,
+      "firstNonzero": 721613,
+      "lastNonzero": 721727
+    }
+  ],
+  "boundary": "Numerical energy and zero boundaries are not speech, language, encoder-delay measurement or listening acceptance."
+}

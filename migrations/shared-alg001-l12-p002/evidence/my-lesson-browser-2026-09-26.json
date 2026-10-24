@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l12-p002",
+  "date": "2026-09-26",
+  "kind": "local-current-js-host-verification",
+  "origin": "http://127.0.0.1:3000",
+  "route": "/en/migration-status/g678-calibration/shared-alg001-l12-p002",
+  "runtimeSha256": "993722d3cf0c30601805005fe8b750cecf50620a9b6692f5628f342184b4a3e4",
+  "freezeSha256": "94a0ee624f434c465ed071a79e3824b183fb779410b642b65828c5c56e9c4f3d",
+  "lessonRegisteredPages": 17,
+  "lessonActivePages": 52,
+  "canvas": {"width": 800, "height": 600, "frameDomain": "sprite-454", "rootFrame": 6, "renderState": "ready"},
+  "checks": {
+    "englishRoute": true,
+    "spanishRoute": true,
+    "englishPauseStable": true,
+    "englishMouseEnterSpaceReplay": true,
+    "naturalCurrentJsTerminalFrame": 1951,
+    "terminalFrameStableAfter800ms": true,
+    "replayAfterTerminalObservedFrame": 5,
+    "spanishPauseStableFrame": 375,
+    "spanishReplayObservedFrame": 6,
+    "nextUnavailableP003AndReturnP002": true,
+    "languageLinksBothDirections": true,
+    "spanishRouteSourceLanguage": "en",
+    "p011RetainedWithinSuccessorDescriptor": true,
+    "p011CloseAndContinueEnterRestoresOriginFocus": true,
+    "audioPlaybackEnabled": false,
+    "browserConsoleErrors": 0,
+    "browserConsoleWarnings": 0
+  },
+  "responsive": [
+    {"locale": "en", "width": 390, "documentOverflow": false, "canvasX": 8, "canvasWidth": 374},
+    {"locale": "en", "width": 320, "documentOverflow": false, "canvasX": 8, "canvasWidth": 304},
+    {"locale": "es", "width": 390, "documentOverflow": false},
+    {"locale": "es", "width": 320, "documentOverflow": false}
+  ],
+  "assetPolicy": {
+    "correctHashAndSameOriginScriptHeaders": 200,
+    "bytes": 23587892,
+    "sha256MatchesCanonical": true,
+    "missingHash": 404,
+    "wrongHash": 404,
+    "extraQuery": 404,
+    "crossSite": 404,
+    "nonScriptRequest": 404,
+    "cacheControl": "private, no-store, max-age=0",
+    "xRobotsTag": "noindex, nofollow, noarchive, noimageindex"
+  },
+  "screenshots": [
+    "output/playwright/p002-my-lesson-desktop-2026-09-26.png",
+    "output/playwright/p002-my-lesson-terminal-2026-09-26.png",
+    "output/playwright/p002-my-lesson-en-390-2026-09-26.png",
+    "output/playwright/p002-my-lesson-en-320-2026-09-26.png",
+    "output/playwright/p002-my-lesson-es-390-2026-09-26.png",
+    "output/playwright/p002-my-lesson-es-320-2026-09-26.png"
+  ],
+  "knownLimitations": [
+    "At the clamped final frame the shared host still labels its transport button Pause animation; drawing stops and completion is announced, but end-button semantics are not accepted.",
+    "At 320px the Spanish reviewer-only minus/plus 20-frame labels crowd their button boxes despite no document overflow. This is not full responsive visual acceptance.",
+    "Escape did not dismiss the existing P011 glossary dialog. Its explicit Close and continue button works with Enter and restores focus; Escape support remains an accessibility gap.",
+    "A first 55-second terminal wait timed out before the long animation ended. The subsequent bounded observation reached frame 1951 naturally, without seeking.",
+    "Spanish UI does not translate the source-English animation. Original ActionScript, original natural trace, audio, human/Owner acceptance and publication remain unestablished."
+  ],
+  "acceptanceEffects": {"fidelity": false, "audio": false, "human": false, "owner": false, "strictCompletion": false, "publication": false}
+}

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "animationId": "course-shared-alg001-l12-p001",
+  "builderAnimationId": "course-shared-alg001-l12-p001",
+  "finalAnimationId": "shared-alg001-l12-p001",
+  "classification": "private-g678-alg-l12-intro-source-static-local-candidate",
+  "title": "shared-alg001-l12-p001 source-bound local candidate",
+  "source": {
+    "swf": "$HELP_MATH_G678_SOURCE_ROOT/G6-G8-shared/ALG001/L12/IR/L12IR01.swf",
+    "swfBytes": 71457,
+    "swfSha256": "393da0d6755e706bf849a2cff0796823e129fa6bc7f438b93d09c05547679b67"
+  },
+  "evidence": {
+    "scenarioInventory": "migrations/shared-alg001-l12-p001/SOURCE_AUDIT_2026-09-25.md",
+    "scenarioInventorySha256": "51fbe188d54ef02b274c2caf0d6834cdf0715d98c766baf22058c02d6816e3aa",
+    "audioAudit": "migrations/shared-alg001-l12-p001/SOURCE_AUDIT_2026-09-25.md",
+    "audioAuditSha256": "51fbe188d54ef02b274c2caf0d6834cdf0715d98c766baf22058c02d6816e3aa"
+  },
+  "ffdecExport": {
+    "tool": "JPEXS Free Flash Decompiler 26.2.1 Canvas export",
+    "helper": "migrations/shared-alg001-l12-p001/audit/ffdec-26.2.1-canvas-v1/sprites/DefineSprite_142/canvas.js",
+    "helperSha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93",
+    "helperBytes": 52872,
+    "framesHtml": "migrations/shared-alg001-l12-p001/audit/ffdec-26.2.1-canvas-v1/sprites/DefineSprite_142/frames.html",
+    "framesHtmlSha256": "fcf1c289026488b0e7ec921f250ecc3e5081cef6e7fb2de018ccbc8b5c6f9818",
+    "framesHtmlBytes": 65035,
+    "targetSpriteObjectId": 142,
+    "targetSpriteFunction": "sprite142",
+    "exportCanvas": {
+      "width": 506,
+      "height": 24
+    },
+    "exportInternalTranslation": {
+      "x": 242.1,
+      "y": 15.05
+    },
+    "expectedPlacedFunctionCount": 2,
+    "expectedPlacedFunctionsSha256": "6ae21eeeb025d42d78610ccba4c57bc20780469d01eb25a7e0a56d42919c358e",
+    "expectedFontFunctionCount": 1,
+    "expectedFontFunctionsSha256": "530467a92b9551ad1995bca4f74e503a9eea7aabd3524804e27ac9e845817b06",
+    "embeddedImageVariableCount": 0,
+    "embeddedImageVariablesSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "timeline": {
+    "fps": 12,
+    "stage": {
+      "width": 800,
+      "height": 600,
+      "backgroundColor": "#b8d8f7"
+    },
+    "root": {
+      "frameCount": 10,
+      "preloaderStopFrame": 1,
+      "beginFrame": 6,
+      "beginLabel": "begin",
+      "placementName": "animation",
+      "placementDepth": "1",
+      "placementTwips": {
+        "x": 8248,
+        "y": 5666
+      },
+      "placementPixels": {
+        "x": 412.4,
+        "y": 283.3
+      }
+    },
+    "local": {
+      "timelineId": "sprite-142",
+      "frameCount": 130,
+      "livePlaybackEndFrame": 130,
+      "playbackMode": "once",
+      "publicFrameIndexing": "one-indexed"
+    },
+    "stageRenderOffset": {
+      "x": 170.3,
+      "y": 268.25
+    }
+  },
+  "runtimeContract": {
+    "kind": "structural-local-frame",
+    "scenarios": [
+      "source-static-frame"
+    ],
+    "defaultScenario": "source-static-frame",
+    "supportedLanguages": [
+      "en"
+    ],
+    "seedMapping": "fixed-zero-no-source-randomness-executed",
+    "blockedLocalFrameRanges": [],
+    "unresolved": [
+      "Local Canvas drawing candidate only; source audit is not a complete scenario or audio acceptance inventory.",
+      "Embedded audio is not rendered or accepted; language, synchronization and listening remain open.",
+      "My Lesson, registration, original runtime, fidelity, human, Owner, strict, release and publication gates remain open."
+    ],
+    "currentCanonicalFrameDomainDispositionAsserted": false
+  },
+  "output": {
+    "script": "migrations/shared-alg001-l12-p001/candidate/canvas-renderer.js",
+    "manifest": "migrations/shared-alg001-l12-p001/candidate/adapter-manifest.json",
+    "spec": "migrations/shared-alg001-l12-p001/candidate/adapter-spec.json",
+    "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+  },
+  "strictAcceptanceEffect": "none"
+}

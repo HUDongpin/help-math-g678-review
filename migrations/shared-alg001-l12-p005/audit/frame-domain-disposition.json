@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l12-p005",
+  "status": "structurally-enumerated-runtime-unverified",
+  "sourceSwfSha256": "b411401131b484ee693063b46fdbbbdbc45f81fc265512a17ae0a379dbad2dfe",
+  "basis": "FFDec 26.2.1 audit/movie.xml root placement graph and all DefineSprite timelines, reproduced in audit/source-structure.json",
+  "timelines": [
+    {"timelineId": "root", "frameCount": 10, "structuralReachability": "initial load", "disposition": "declared-frame-domain", "frameDomainId": "root", "control": "frame 1 preloader jump_check and stop; frame 6 begin label and stop; host transition unverified"},
+    {"timelineId": "sprite-391", "frameCount": 968, "structuralReachability": "root frame 6 depth 1, retained through root frame 10", "disposition": "declared-frame-domain", "frameDomainId": "sprite-391", "control": "frame 1 empty action; frame 968 stop; natural root/child clock and audio synchronization unverified"},
+    {"timelineId": "sprite-395", "frameCount": 1, "structuralReachability": "root frame 6 depth 135, retained through root frame 10", "disposition": "declared-frame-domain", "frameDomainId": "sprite-395", "control": "single-frame title; original host visibility unverified"},
+    {"timelineId": "sprite-78", "frameCount": 36, "structuralReachability": "sprite-391 frame 266 depth 19 through 276; second placement frame 283 depth 17 through 288", "disposition": "declared-frame-domain", "frameDomainId": "sprite-78", "control": "two separate entry states; source placement lifetimes 11 and 6 parent frames, complete child cycling unverified"},
+    {"timelineId": "sprite-147", "frameCount": 22, "structuralReachability": "sprite-391 frame 398 depth 55 through 464", "disposition": "declared-frame-domain", "frameDomainId": "sprite-147", "control": "67-parent-frame placement; looping and reset behavior unverified"},
+    {"timelineId": "sprite-258", "frameCount": 63, "structuralReachability": "sprite-391 frame 507 depth 78 only", "disposition": "declared-frame-domain", "frameDomainId": "sprite-258", "control": "only one naturally retained parent frame; remaining local-frame reachability requires original-runtime evidence"},
+    {"timelineId": "sprite-289", "frameCount": 63, "structuralReachability": "sprite-391 frame 508 depth 123 through 543", "disposition": "declared-frame-domain", "frameDomainId": "sprite-289", "control": "36-parent-frame placement; complete local-frame reachability unverified"},
+    {"timelineId": "sprite-306", "frameCount": 54, "structuralReachability": "sprite-391 frame 546 depth 90 through 570", "disposition": "declared-frame-domain", "frameDomainId": "sprite-306", "control": "25-parent-frame placement; complete local-frame reachability unverified"},
+    {"timelineId": "sprite-346", "frameCount": 20, "structuralReachability": "sprite-391 frame 582 depth 80 through 659", "disposition": "declared-frame-domain", "frameDomainId": "sprite-346", "control": "78-parent-frame placement; looping and reset behavior unverified"}
+  ],
+  "definedSpriteCount": 8,
+  "rootReachableTimelineCount": 9,
+  "excludedTimelineCount": 0,
+  "undeclaredReachableTimelineCount": 0,
+  "unresolved": [
+    "Original host transition from root frame 1 to begin frame 6",
+    "Natural child clocks, looping, visibility and composition under two clip-depth masks",
+    "Original-runtime reachability of local frames beyond short parent placement lifetimes",
+    "Stream audibility, host SA cue binding, Replay reset and English/Spanish behavior"
+  ],
+  "acceptanceEffect": "none; static domain enumeration does not establish original-runtime frame or trace authority"
+}

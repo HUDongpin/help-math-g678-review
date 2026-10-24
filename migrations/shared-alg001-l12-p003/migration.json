@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l12-p003",
+  "animationId": "shared-alg001-l12-p003",
+  "assetId": "swf-384f7e8e269768063d8e6ca410350ccbd5c321596fd6f55d68903cc1b6d2bccb",
+  "status": "preserved",
+  "created": "2026-09-26",
+  "confidence": "inferred",
+  "classification": {
+    "collection": "course",
+    "grade": "G6-G8-shared",
+    "lesson": 12,
+    "section": "RW",
+    "page": 3,
+    "domain": "algebra-functions",
+    "knowledgePoint": {
+      "en": "",
+      "es": ""
+    },
+    "titleRaw": "Page 2",
+    "titleDisplay": "Page 2",
+    "status": "confirmed",
+    "evidence": ["catalog/g678-page-only-release-manifest.v1.json", "audit/source-structure.json"]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/RW/L12RW03.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/RW/L12RW03.swf",
+    "flaSha256": "",
+    "swfSha256": "384f7e8e269768063d8e6ca410350ccbd5c321596fd6f55d68903cc1b6d2bccb",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 489201,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#b8d8f7",
+    "actionScriptVersion": "AVM1",
+    "complexity": "behavior-heavy",
+    "fonts": ["Bauhaus Md BT regular character 1", "Bauhaus Md BT bold character 4", "Arial bold character 23"],
+    "scripts": ["root frame 1 preloader jump_check and stop", "root frame 6 begin stop", "sprite 164 terminal stop at 1008", "six glossary release actions request host then stop"],
+    "externalDependencies": ["_level0.InternalPreloader", "_root.DoHyperLinks", "lesson-SA candidate binding unverified"]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [],
+    "morphs": ["DefineMorphShape 146, 153, 158, 163"],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "default",
+      "kind": "linear",
+      "description": "Root preloader and begin entry, original host trace unverified.",
+      "reachable": true
+    },
+    {"id": "source-main-natural", "kind": "linear", "description": "Main sprite 164 frames 1-1008 with nested sprite 22, audio and original timing pending.", "reachable": true},
+    {"id": "glossary-request", "kind": "interactive", "description": "Six glossary releases; original host response and resume pending.", "reachable": true}
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [{"id": "sprite-164-embedded-stream", "disposition": "1008 source blocks; audible timing and language unresolved"}]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "undecided",
+    "route": "",
+    "routeFile": "",
+    "component": "",
+    "registryModule": "",
+    "timelineModule": "",
+    "testFile": "",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "root",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {"id": "sprite-164", "kind": "sprite", "sourceTimelineId": "sprite-164", "parentFrameDomainId": "root", "frameCount": 1008, "scenarioIds": ["source-main-natural", "glossary-request"]},
+      {"id": "sprite-22", "kind": "sprite", "sourceTimelineId": "sprite-22", "parentFrameDomainId": "sprite-164", "frameCount": 1, "scenarioIds": ["source-main-natural"]},
+      {"id": "sprite-166", "kind": "sprite", "sourceTimelineId": "sprite-166", "parentFrameDomainId": "root", "frameCount": 1, "scenarioIds": ["default"]}
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

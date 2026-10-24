@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript" src="canvas.js"></script><style type="text/css">#resizable {position:relative; display:inline-block; margin:0; padding:0;font-size:0px;} #width_size {width:10px; position:absolute; right:-5px; top:0px; bottom:0px; cursor:e-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #height_size {height:10px; position:absolute; bottom:-5px; left:0px; right:0px; cursor:n-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #myCanvas {margin:0; padding:0;} </style></head><body>
+
+<div id="resizable"><canvas id="myCanvas" width="506" height="24" style="border:1px solid #c3c3c3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas><div id="width_size">&nbsp;</div><div id="height_size">&nbsp;</div></div>
+
+<script>var canvas=document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+enhanceContext(ctx);
+var ctrans = new cxform(0,0,0,0,255,255,255,255);
+
+var scalingGrids = {};
+var boundRects = {};
+function font118(ctx,ch,textColor){
+	defaultFill = textColor;
+	switch(ch){
+		case " ":
+			break;
+		case ":":
+			var pathData="M 92 -346 L 92 -346 Q 92 -321 110 -304 127 -286 152 -286 176 -286 194 -304 211 -321 211 -346 211 -371 194 -388 177 -405 152 -405 127 -405 110 -388 92 -371 92 -346 M 92 -51 L 92 -51 Q 92 -27 110 -10 127 7 152 7 177 7 194 -10 211 -27 211 -51 211 -76 194 -93 177 -110 152 -110 127 -110 110 -93 92 -76 92 -51";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "A":
+			var pathData="M 461 0 L 556 0 556 -449 Q 556 -577 488 -652 420 -728 307 -728 194 -728 127 -652 59 -577 59 -449 L 59 0 154 0 154 -447 Q 154 -541 193 -590 233 -640 307 -640 382 -640 422 -590 461 -541 461 -447 L 461 -419 183 -419 183 -328 461 -328 461 0";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "B":
+			var pathData="M 59 0 L 153 0 153 -480 Q 153 -556 190 -598 227 -641 292 -641 347 -641 382 -608 417 -576 417 -525 417 -475 378 -446 339 -417 273 -417 L 189 -417 189 -331 307 -331 Q 372 -331 409 -298 447 -266 447 -212 447 -155 410 -122 372 -90 307 -90 L 189 -90 189 0 306 0 Q 415 0 481 -58 547 -116 547 -210 547 -268 517 -314 487 -360 432 -384 473 -411 493 -448 513 -485 513 -530 513 -613 449 -670 384 -728 289 -728 181 -728 120 -655 59 -583 59 -454 L 59 0";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "C":
+			var pathData="M 479 -631 L 479 -716 452 -716 312 -703 Q 251 -690 210 -665 124 -613 79 -535 34 -456 34 -358 34 -260 79 -181 124 -102 210 -50 251 -25 312 -12 L 452 0 479 0 479 -86 466 -85 445 -85 Q 299 -85 215 -158 131 -232 131 -358 131 -484 215 -558 299 -632 445 -632 L 466 -631 479 -631";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "D":
+			var pathData="M 193 -87 L 193 0 201 0 330 -12 Q 387 -24 427 -48 514 -99 562 -180 609 -260 609 -358 609 -456 564 -535 519 -613 432 -665 390 -691 331 -703 L 189 -716 66 -716 66 0 160 0 160 -631 188 -632 205 -633 Q 346 -633 429 -559 511 -485 511 -359 511 -236 431 -161 350 -86 216 -86 L 205 -86 193 -87";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "G":
+			var pathData="M 415 -408 L 415 -318 657 -318 Q 642 -209 571 -143 500 -78 397 -78 344 -78 295 -99 246 -120 209 -159 171 -200 151 -251 130 -302 130 -359 130 -435 164 -498 198 -561 260 -601 291 -621 327 -631 L 404 -641 Q 465 -641 520 -615 574 -589 628 -534 L 691 -599 Q 626 -665 557 -696 487 -728 407 -728 328 -728 260 -700 192 -673 141 -620 88 -567 61 -500 33 -433 33 -358 33 -284 61 -216 88 -149 141 -96 192 -43 258 -15 324 13 397 13 500 13 585 -39 669 -91 716 -183 737 -226 748 -275 758 -325 758 -384 L 758 -408 415 -408";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "I":
+			var pathData="M 69 0 L 164 0 164 -716 69 -716 69 0";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "P":
+			var pathData="M 59 0 L 154 0 154 -477 Q 154 -552 192 -595 229 -639 294 -639 353 -639 394 -598 434 -558 434 -498 434 -434 392 -395 350 -356 279 -356 L 190 -356 190 -266 291 -266 Q 395 -266 464 -331 532 -397 532 -496 532 -592 463 -660 394 -729 296 -729 231 -729 179 -699 126 -669 93 -614 75 -583 67 -543 59 -503 59 -433 L 59 0";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "a":
+			var pathData="M 435 0 L 524 0 524 -206 518 -305 497 -366 Q 465 -428 407 -464 348 -499 278 -499 171 -499 101 -427 32 -356 32 -246 32 -179 60 -124 88 -69 141 -33 169 -13 203 -2 L 273 8 343 0 Q 376 -8 406 -25 L 406 -120 Q 375 -97 345 -86 315 -75 283 -75 212 -75 167 -123 121 -172 121 -248 121 -322 166 -369 210 -417 279 -417 348 -417 392 -369 435 -321 435 -244 L 435 0";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "c":
+			var pathData="M 363 -406 L 363 -490 319 -490 215 -480 Q 174 -469 138 -445 87 -410 59 -358 31 -306 31 -246 31 -134 109 -67 187 0 319 0 L 363 0 363 -83 325 -83 Q 233 -83 178 -127 122 -171 122 -244 122 -318 177 -362 232 -406 325 -406 L 363 -406";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "d":
+			var pathData="M 526 -716 L 437 -716 437 -246 Q 437 -169 394 -121 350 -73 281 -73 212 -73 168 -120 123 -168 123 -242 123 -318 169 -367 214 -415 285 -415 L 347 -404 408 -370 408 -465 Q 378 -482 345 -490 L 275 -498 Q 225 -498 179 -478 133 -458 100 -421 67 -385 50 -340 33 -295 33 -246 33 -135 103 -63 173 9 280 9 351 9 409 -26 468 -62 499 -125 513 -152 520 -185 L 526 -284 526 -716";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "e":
+			var pathData="M 526 -217 L 436 -230 Q 426 -158 384 -117 341 -76 279 -76 213 -76 168 -125 122 -175 122 -247 122 -319 168 -368 213 -418 279 -418 311 -418 339 -405 L 388 -368 150 -235 187 -169 508 -347 Q 472 -422 413 -461 354 -500 280 -500 230 -500 185 -481 139 -462 104 -426 68 -389 50 -343 31 -297 31 -246 31 -176 63 -118 96 -60 155 -24 183 -7 215 2 L 279 10 Q 374 10 441 -51 507 -112 526 -217";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "g":
+			var pathData="M 524 -28 L 524 -206 518 -305 497 -366 Q 465 -428 407 -464 348 -499 278 -499 171 -499 101 -427 32 -356 32 -246 32 -179 60 -124 88 -69 141 -33 169 -13 203 -2 L 273 8 343 0 Q 376 -8 406 -25 L 406 -120 Q 375 -97 345 -86 315 -75 283 -75 212 -75 167 -123 121 -172 121 -248 121 -322 166 -369 210 -417 279 -417 348 -417 392 -369 435 -321 435 -244 L 435 -20 Q 435 57 393 101 350 145 275 145 L 215 138 137 117 118 201 199 222 273 229 Q 389 229 457 160 524 91 524 -28";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "h":
+			var pathData="M 61 0 L 149 0 149 -265 Q 149 -332 183 -373 218 -414 273 -414 329 -414 359 -380 389 -346 389 -283 L 389 0 477 0 477 -269 Q 477 -379 427 -440 376 -500 285 -500 L 213 -486 Q 179 -472 149 -443 L 149 -716 61 -716 61 0";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "i":
+			var pathData="M 51 -630 L 51 -630 Q 51 -607 67 -591 83 -575 105 -575 127 -575 143 -591 158 -607 158 -630 158 -652 143 -667 127 -683 105 -683 82 -683 67 -667 51 -652 51 -630 M 61 0 L 149 0 149 -490 61 -490 61 0";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "l":
+			var pathData="M 61 0 L 149 0 149 -716 61 -716 61 0";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "n":
+			var pathData="M 53 0 L 141 0 141 -283 Q 141 -341 175 -378 209 -414 262 -414 316 -414 350 -378 383 -341 383 -283 L 383 0 470 0 470 -267 Q 470 -374 414 -437 357 -499 262 -499 167 -499 110 -437 53 -374 53 -267 L 53 0";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "o":
+			var pathData="M 31 -246 L 31 -246 Q 31 -194 50 -147 69 -101 105 -64 140 -28 185 -9 229 9 279 9 329 9 374 -9 419 -28 454 -64 489 -100 508 -147 527 -194 527 -246 527 -297 508 -343 489 -390 454 -426 419 -462 374 -480 329 -499 279 -499 229 -499 185 -480 140 -462 105 -426 69 -389 50 -343 31 -297 31 -246 M 122 -247 L 122 -247 Q 122 -318 168 -367 214 -417 279 -417 344 -417 390 -367 435 -318 435 -247 435 -175 390 -125 344 -76 279 -76 214 -76 168 -125 122 -175 122 -247";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "p":
+			var pathData="M 52 218 L 141 218 141 -244 Q 141 -321 184 -369 228 -417 297 -417 367 -417 411 -369 456 -322 456 -248 456 -172 410 -123 365 -75 294 -75 262 -75 231 -86 200 -97 170 -120 L 170 -25 Q 200 -8 234 0 L 303 8 Q 353 8 399 -12 445 -32 478 -69 511 -105 528 -150 545 -196 545 -246 545 -356 476 -427 406 -499 299 -499 227 -499 169 -464 110 -429 79 -366 65 -337 59 -303 52 -268 52 -206 L 52 218";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "r":
+			var pathData="M 60 0 L 148 0 148 -231 Q 148 -328 188 -371 228 -414 319 -414 L 332 -414 332 -499 309 -499 Q 242 -499 203 -480 163 -461 141 -418 L 141 -490 60 -490 60 0";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "t":
+			var pathData="M 55 -620 L 55 -182 Q 55 -91 107 -45 158 0 262 0 L 291 0 291 -84 263 -84 Q 200 -84 172 -111 143 -138 143 -197 L 143 -407 291 -407 291 -490 143 -490 143 -620 55 -620";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "u":
+			var pathData="M 470 -490 L 383 -490 383 -207 Q 383 -149 350 -112 316 -76 262 -76 209 -76 175 -112 141 -149 141 -207 L 141 -490 53 -490 53 -223 Q 53 -116 110 -53 166 9 261 9 357 9 414 -53 470 -116 470 -223 L 470 -490";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+	}
+}
+
+function text140(ctx,ctrans,frame,ratio,time){
+	var textColor = tocolor(ctrans.apply([255,255,255,1]));
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-2337.0,480.0);
+	font118(ctx,"G",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-1951.0,480.0);
+	font118(ctx,"r",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-1789.0,480.0);
+	font118(ctx,"a",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-1508.0,480.0);
+	font118(ctx,"p",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-1227.0,480.0);
+	font118(ctx,"h",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-967.0,480.0);
+	font118(ctx,"i",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-865.0,480.0);
+	font118(ctx,"n",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-609.0,480.0);
+	font118(ctx,"g",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-328.0,480.0);
+	font118(ctx," ",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-192.0,480.0);
+	font118(ctx,"i",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-90.0,480.0);
+	font118(ctx,"n",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,166.0,480.0);
+	font118(ctx," ",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,302.0,480.0);
+	font118(ctx,"t",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,459.0,480.0);
+	font118(ctx,"h",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,719.0,480.0);
+	font118(ctx,"e",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,990.0,480.0);
+	font118(ctx," ",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,1126.0,480.0);
+	font118(ctx,"C",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,1375.0,480.0);
+	font118(ctx,"o",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,1647.0,480.0);
+	font118(ctx,"o",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,1919.0,480.0);
+	font118(ctx,"r",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,2081.0,480.0);
+	font118(ctx,"d",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,2362.0,480.0);
+	font118(ctx,"i",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,2464.0,480.0);
+	font118(ctx,"n",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,2720.0,480.0);
+	font118(ctx,"a",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,3001.0,480.0);
+	font118(ctx,"t",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,3158.0,480.0);
+	font118(ctx,"e",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,3429.0,480.0);
+	font118(ctx," ",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,3565.0,480.0);
+	font118(ctx,"P",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,3836.0,480.0);
+	font118(ctx,"l",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,3938.0,480.0);
+	font118(ctx,"a",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,4219.0,480.0);
+	font118(ctx,"n",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,4475.0,480.0);
+	font118(ctx,"e",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,4746.0,480.0);
+	font118(ctx,":",textColor);
+	ctx.restore();
+	var textColor = tocolor(ctrans.apply([255,255,255,1]));
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,4894.0,480.0);
+	font118(ctx," ",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,5030.0,480.0);
+	font118(ctx,"I",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,5144.0,480.0);
+	font118(ctx,"n",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,5400.0,480.0);
+	font118(ctx,"t",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,5557.0,480.0);
+	font118(ctx,"r",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,5719.0,480.0);
+	font118(ctx,"o",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,5991.0,480.0);
+	font118(ctx,"d",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,6272.0,480.0);
+	font118(ctx,"u",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,6528.0,480.0);
+	font118(ctx,"c",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,6720.0,480.0);
+	font118(ctx,"t",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,6877.0,480.0);
+	font118(ctx,"i",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,6979.0,480.0);
+	font118(ctx,"o",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,7251.0,480.0);
+	font118(ctx,"n",textColor);
+	ctx.restore();
+}
+
+function text141(ctx,ctrans,frame,ratio,time){
+	var textColor = tocolor(ctrans.apply([16,60,156,1]));
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-2337.0,480.0);
+	font118(ctx,"G",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-1951.0,480.0);
+	font118(ctx,"r",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-1789.0,480.0);
+	font118(ctx,"a",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-1508.0,480.0);
+	font118(ctx,"p",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-1227.0,480.0);
+	font118(ctx,"h",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-967.0,480.0);
+	font118(ctx,"i",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-865.0,480.0);
+	font118(ctx,"n",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-609.0,480.0);
+	font118(ctx,"g",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-328.0,480.0);
+	font118(ctx," ",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-192.0,480.0);
+	font118(ctx,"i",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,-90.0,480.0);
+	font118(ctx,"n",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,166.0,480.0);
+	font118(ctx," ",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,302.0,480.0);
+	font118(ctx,"t",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,459.0,480.0);
+	font118(ctx,"h",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,719.0,480.0);
+	font118(ctx,"e",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,990.0,480.0);
+	font118(ctx," ",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,1126.0,480.0);
+	font118(ctx,"C",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,1375.0,480.0);
+	font118(ctx,"o",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,1647.0,480.0);
+	font118(ctx,"o",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,1919.0,480.0);
+	font118(ctx,"r",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,2081.0,480.0);
+	font118(ctx,"d",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,2362.0,480.0);
+	font118(ctx,"i",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,2464.0,480.0);
+	font118(ctx,"n",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,2720.0,480.0);
+	font118(ctx,"a",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,3001.0,480.0);
+	font118(ctx,"t",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,3158.0,480.0);
+	font118(ctx,"e",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,3429.0,480.0);
+	font118(ctx," ",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,3565.0,480.0);
+	font118(ctx,"P",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,3836.0,480.0);
+	font118(ctx,"l",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,3938.0,480.0);
+	font118(ctx,"a",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,4219.0,480.0);
+	font118(ctx,"n",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,4475.0,480.0);
+	font118(ctx,"e",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,4746.0,480.0);
+	font118(ctx,":",textColor);
+	ctx.restore();
+	var textColor = tocolor(ctrans.apply([255,255,255,1]));
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,4894.0,480.0);
+	font118(ctx," ",textColor);
+	ctx.restore();
+	var textColor = tocolor(ctrans.apply([16,60,156,1]));
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,5030.0,480.0);
+	font118(ctx,"I",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,5144.0,480.0);
+	font118(ctx,"n",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,5400.0,480.0);
+	font118(ctx,"t",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,5557.0,480.0);
+	font118(ctx,"r",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,5719.0,480.0);
+	font118(ctx,"o",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,5991.0,480.0);
+	font118(ctx,"d",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,6272.0,480.0);
+	font118(ctx,"u",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,6528.0,480.0);
+	font118(ctx,"c",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,6720.0,480.0);
+	font118(ctx,"t",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,6877.0,480.0);
+	font118(ctx,"i",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,6979.0,480.0);
+	font118(ctx,"o",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.48828125,0.0,0.0,0.48828125,7251.0,480.0);
+	font118(ctx,"n",textColor);
+	ctx.restore();
+}
+
+function sprite142(ctx,ctrans,frame,ratio,time){
+	ctx.save();
+	ctx.transform(1,0,0,1,242.1,15.05);
+	var clips = [];
+	var frame_cnt = 130;
+	frame = frame % frame_cnt;
+	switch(frame){
+		case 0:
+			place("text140",canvas,ctx,[0.025,0.0,0.0,0.025,-86.15,-10.65],ctrans.merge(new cxform(0,0,0,0,256,256,256,0)),1,0,0,time);
+			place("text141",canvas,ctx,[0.025,0.0,0.0,0.025,-85.25,-10.35],ctrans.merge(new cxform(0,0,0,0,256,256,256,0)),1,0,0,time);
+			break;
+		case 1:
+			place("text140",canvas,ctx,[0.0251953125,0.0,0.0,0.0251953125,-86.45,-10.75],ctrans.merge(new cxform(0,0,0,0,256,256,256,2)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0251953125,0.0,0.0,0.0251953125,-85.6,-10.45],ctrans.merge(new cxform(0,0,0,0,256,256,256,2)),1,0,0,time);
+			break;
+		case 2:
+			place("text140",canvas,ctx,[0.025390625,0.0,0.0,0.025390625,-86.75,-10.85],ctrans.merge(new cxform(0,0,0,0,256,256,256,4)),1,0,0,time);
+			place("text141",canvas,ctx,[0.025390625,0.0,0.0,0.025390625,-85.9,-10.55],ctrans.merge(new cxform(0,0,0,0,256,256,256,4)),1,0,0,time);
+			break;
+		case 3:
+			place("text140",canvas,ctx,[0.0255859375,0.0,0.0,0.0255859375,-87.1,-10.95],ctrans.merge(new cxform(0,0,0,0,256,256,256,6)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0255859375,0.0,0.0,0.0255859375,-86.2,-10.6],ctrans.merge(new cxform(0,0,0,0,256,256,256,6)),1,0,0,time);
+			break;
+		case 4:
+			place("text140",canvas,ctx,[0.02578125,0.0,0.0,0.02578125,-87.4,-11.0],ctrans.merge(new cxform(0,0,0,0,256,256,256,8)),1,0,0,time);
+			place("text141",canvas,ctx,[0.02578125,0.0,0.0,0.02578125,-86.5,-10.7],ctrans.merge(new cxform(0,0,0,0,256,256,256,8)),1,0,0,time);
+			break;
+		case 5:
+			place("text140",canvas,ctx,[0.0259765625,0.0,0.0,0.0259765625,-87.7,-11.1],ctrans.merge(new cxform(0,0,0,0,256,256,256,10)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0259765625,0.0,0.0,0.0259765625,-86.8,-10.8],ctrans.merge(new cxform(0,0,0,0,256,256,256,10)),1,0,0,time);
+			break;
+		case 6:
+			place("text140",canvas,ctx,[0.026171875,0.0,0.0,0.026171875,-88.0,-11.2],ctrans.merge(new cxform(0,0,0,0,256,256,256,12)),1,0,0,time);
+			place("text141",canvas,ctx,[0.026171875,0.0,0.0,0.026171875,-87.1,-10.85],ctrans.merge(new cxform(0,0,0,0,256,256,256,12)),1,0,0,time);
+			break;
+		case 7:
+			place("text140",canvas,ctx,[0.0263671875,0.0,0.0,0.0263671875,-88.35,-11.25],ctrans.merge(new cxform(0,0,0,0,256,256,256,14)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0263671875,0.0,0.0,0.0263671875,-87.45,-10.95],ctrans.merge(new cxform(0,0,0,0,256,256,256,14)),1,0,0,time);
+			break;
+		case 8:
+			place("text140",canvas,ctx,[0.0265625,0.0,0.0,0.0265625,-88.65,-11.35],ctrans.merge(new cxform(0,0,0,0,256,256,256,16)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0265625,0.0,0.0,0.0265625,-87.75,-11.05],ctrans.merge(new cxform(0,0,0,0,256,256,256,16)),1,0,0,time);
+			break;
+		case 9:
+			place("text140",canvas,ctx,[0.0267578125,0.0,0.0,0.0267578125,-89.0,-11.45],ctrans.merge(new cxform(0,0,0,0,256,256,256,18)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0267578125,0.0,0.0,0.0267578125,-88.05,-11.1],ctrans.merge(new cxform(0,0,0,0,256,256,256,18)),1,0,0,time);
+			break;
+		case 10:
+			place("text140",canvas,ctx,[0.026953125,0.0,0.0,0.026953125,-89.3,-11.5],ctrans.merge(new cxform(0,0,0,0,256,256,256,20)),1,0,0,time);
+			place("text141",canvas,ctx,[0.026953125,0.0,0.0,0.026953125,-88.35,-11.15],ctrans.merge(new cxform(0,0,0,0,256,256,256,20)),1,0,0,time);
+			break;
+		case 11:
+			place("text140",canvas,ctx,[0.0271484375,0.0,0.0,0.0271484375,-89.6,-11.6],ctrans.merge(new cxform(0,0,0,0,256,256,256,22)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0271484375,0.0,0.0,0.0271484375,-88.65,-11.3],ctrans.merge(new cxform(0,0,0,0,256,256,256,22)),1,0,0,time);
+			break;
+		case 12:
+			place("text140",canvas,ctx,[0.02734375,0.0,0.0,0.02734375,-89.9,-11.7],ctrans.merge(new cxform(0,0,0,0,256,256,256,24)),1,0,0,time);
+			place("text141",canvas,ctx,[0.02734375,0.0,0.0,0.02734375,-88.95,-11.35],ctrans.merge(new cxform(0,0,0,0,256,256,256,24)),1,0,0,time);
+			break;
+		case 13:
+			place("text140",canvas,ctx,[0.0275390625,0.0,0.0,0.0275390625,-90.2,-11.75],ctrans.merge(new cxform(0,0,0,0,256,256,256,26)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0275390625,0.0,0.0,0.0275390625,-89.25,-11.4],ctrans.merge(new cxform(0,0,0,0,256,256,256,26)),1,0,0,time);
+			break;
+		case 14:
+			place("text140",canvas,ctx,[0.027734375,0.0,0.0,0.027734375,-90.5,-11.8],ctrans.merge(new cxform(0,0,0,0,256,256,256,28)),1,0,0,time);
+			place("text141",canvas,ctx,[0.027734375,0.0,0.0,0.027734375,-89.55,-11.5],ctrans.merge(new cxform(0,0,0,0,256,256,256,28)),1,0,0,time);
+			break;
+		case 15:
+			place("text140",canvas,ctx,[0.0279296875,0.0,0.0,0.0279296875,-90.85,-11.95],ctrans.merge(new cxform(0,0,0,0,256,256,256,30)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0279296875,0.0,0.0,0.0279296875,-89.85,-11.6],ctrans.merge(new cxform(0,0,0,0,256,256,256,30)),1,0,0,time);
+			break;
+		case 16:
+			place("text140",canvas,ctx,[0.028125,0.0,0.0,0.028125,-91.15,-12.0],ctrans.merge(new cxform(0,0,0,0,256,256,256,32)),1,0,0,time);
+			place("text141",canvas,ctx,[0.028125,0.0,0.0,0.028125,-90.15,-11.65],ctrans.merge(new cxform(0,0,0,0,256,256,256,32)),1,0,0,time);
+			break;
+		case 17:
+			place("text140",canvas,ctx,[0.0283203125,0.0,0.0,0.0283203125,-91.45,-12.05],ctrans.merge(new cxform(0,0,0,0,256,256,256,34)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0283203125,0.0,0.0,0.0283203125,-90.45,-11.7],ctrans.merge(new cxform(0,0,0,0,256,256,256,34)),1,0,0,time);
+			break;
+		case 18:
+			place("text140",canvas,ctx,[0.028515625,0.0,0.0,0.028515625,-91.75,-12.2],ctrans.merge(new cxform(0,0,0,0,256,256,256,36)),1,0,0,time);
+			place("text141",canvas,ctx,[0.028515625,0.0,0.0,0.028515625,-90.75,-11.85],ctrans.merge(new cxform(0,0,0,0,256,256,256,36)),1,0,0,time);
+			break;
+		case 19:
+			place("text140",canvas,ctx,[0.0287109375,0.0,0.0,0.0287109375,-92.05,-12.25],ctrans.merge(new cxform(0,0,0,0,256,256,256,38)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0287109375,0.0,0.0,0.0287109375,-91.05,-11.9],ctrans.merge(new cxform(0,0,0,0,256,256,256,38)),1,0,0,time);
+			break;
+		case 20:
+			place("text140",canvas,ctx,[0.02890625,0.0,0.0,0.02890625,-92.4,-12.3],ctrans.merge(new cxform(0,0,0,0,256,256,256,40)),1,0,0,time);
+			place("text141",canvas,ctx,[0.02890625,0.0,0.0,0.02890625,-91.4,-11.95],ctrans.merge(new cxform(0,0,0,0,256,256,256,40)),1,0,0,time);
+			break;
+		case 21:
+			place("text140",canvas,ctx,[0.0291015625,0.0,0.0,0.0291015625,-92.75,-12.45],ctrans.merge(new cxform(0,0,0,0,256,256,256,42)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0291015625,0.0,0.0,0.0291015625,-91.7,-12.1],ctrans.merge(new cxform(0,0,0,0,256,256,256,42)),1,0,0,time);
+			break;
+		case 22:
+			place("text140",canvas,ctx,[0.029296875,0.0,0.0,0.029296875,-93.05,-12.5],ctrans.merge(new cxform(0,0,0,0,256,256,256,44)),1,0,0,time);
+			place("text141",canvas,ctx,[0.029296875,0.0,0.0,0.029296875,-92.0,-12.15],ctrans.merge(new cxform(0,0,0,0,256,256,256,44)),1,0,0,time);
+			break;
+		case 23:
+			place("text140",canvas,ctx,[0.0294921875,0.0,0.0,0.0294921875,-93.35,-12.55],ctrans.merge(new cxform(0,0,0,0,256,256,256,46)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0294921875,0.0,0.0,0.0294921875,-92.3,-12.2],ctrans.merge(new cxform(0,0,0,0,256,256,256,46)),1,0,0,time);
+			break;
+		case 24:
+			place("text140",canvas,ctx,[0.0296875,0.0,0.0,0.0296875,-93.65,-12.7],ctrans.merge(new cxform(0,0,0,0,256,256,256,48)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0296875,0.0,0.0,0.0296875,-92.6,-12.35],ctrans.merge(new cxform(0,0,0,0,256,256,256,48)),1,0,0,time);
+			break;
+		case 25:
+			place("text140",canvas,ctx,[0.0298828125,0.0,0.0,0.0298828125,-93.95,-12.75],ctrans.merge(new cxform(0,0,0,0,256,256,256,50)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0298828125,0.0,0.0,0.0298828125,-92.9,-12.4],ctrans.merge(new cxform(0,0,0,0,256,256,256,50)),1,0,0,time);
+			break;
+		case 26:
+			place("text140",canvas,ctx,[0.030078125,0.0,0.0,0.030078125,-94.25,-12.8],ctrans.merge(new cxform(0,0,0,0,256,256,256,52)),1,0,0,time);
+			place("text141",canvas,ctx,[0.030078125,0.0,0.0,0.030078125,-93.2,-12.45],ctrans.merge(new cxform(0,0,0,0,256,256,256,52)),1,0,0,time);
+			break;
+		case 27:
+			place("text140",canvas,ctx,[0.0302734375,0.0,0.0,0.0302734375,-94.6,-12.95],ctrans.merge(new cxform(0,0,0,0,256,256,256,54)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0302734375,0.0,0.0,0.0302734375,-93.5,-12.55],ctrans.merge(new cxform(0,0,0,0,256,256,256,54)),1,0,0,time);
+			break;
+		case 28:
+			place("text140",canvas,ctx,[0.03046875,0.0,0.0,0.03046875,-94.9,-13.0],ctrans.merge(new cxform(0,0,0,0,256,256,256,56)),1,0,0,time);
+			place("text141",canvas,ctx,[0.03046875,0.0,0.0,0.03046875,-93.8,-12.65],ctrans.merge(new cxform(0,0,0,0,256,256,256,56)),1,0,0,time);
+			break;
+		case 29:
+			place("text140",canvas,ctx,[0.0306640625,0.0,0.0,0.0306640625,-95.2,-13.05],ctrans.merge(new cxform(0,0,0,0,256,256,256,58)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0306640625,0.0,0.0,0.0306640625,-94.15,-12.7],ctrans.merge(new cxform(0,0,0,0,256,256,256,58)),1,0,0,time);
+			break;
+		case 30:
+			place("text140",canvas,ctx,[0.030859375,0.0,0.0,0.030859375,-95.5,-13.2],ctrans.merge(new cxform(0,0,0,0,256,256,256,60)),1,0,0,time);
+			place("text141",canvas,ctx,[0.030859375,0.0,0.0,0.030859375,-94.45,-12.8],ctrans.merge(new cxform(0,0,0,0,256,256,256,60)),1,0,0,time);
+			break;
+		case 31:
+			place("text140",canvas,ctx,[0.0310546875,0.0,0.0,0.0310546875,-95.8,-13.25],ctrans.merge(new cxform(0,0,0,0,256,256,256,62)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0310546875,0.0,0.0,0.0310546875,-94.75,-12.9],ctrans.merge(new cxform(0,0,0,0,256,256,256,62)),1,0,0,time);
+			break;
+		case 32:
+			place("text140",canvas,ctx,[0.03125,0.0,0.0,0.03125,-96.1,-13.25],ctrans.merge(new cxform(0,0,0,0,256,256,256,64)),1,0,0,time);
+			place("text141",canvas,ctx,[0.03125,0.0,0.0,0.03125,-95.05,-12.9],ctrans.merge(new cxform(0,0,0,0,256,256,256,64)),1,0,0,time);
+			break;
+		case 33:
+			place("text140",canvas,ctx,[0.0314453125,0.0,0.0,0.0314453125,-96.5,-13.45],ctrans.merge(new cxform(0,0,0,0,256,256,256,66)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0314453125,0.0,0.0,0.0314453125,-95.4,-13.05],ctrans.merge(new cxform(0,0,0,0,256,256,256,66)),1,0,0,time);
+			break;
+		case 34:
+			place("text140",canvas,ctx,[0.031640625,0.0,0.0,0.031640625,-96.8,-13.5],ctrans.merge(new cxform(0,0,0,0,256,256,256,68)),1,0,0,time);
+			place("text141",canvas,ctx,[0.031640625,0.0,0.0,0.031640625,-95.7,-13.1],ctrans.merge(new cxform(0,0,0,0,256,256,256,68)),1,0,0,time);
+			break;
+		case 35:
+			place("text140",canvas,ctx,[0.0318359375,0.0,0.0,0.0318359375,-97.1,-13.55],ctrans.merge(new cxform(0,0,0,0,256,256,256,70)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0318359375,0.0,0.0,0.0318359375,-96.0,-13.2],ctrans.merge(new cxform(0,0,0,0,256,256,256,70)),1,0,0,time);
+			break;
+		case 36:
+			place("text140",canvas,ctx,[0.03203125,0.0,0.0,0.03203125,-97.4,-13.7],ctrans.merge(new cxform(0,0,0,0,256,256,256,72)),1,0,0,time);
+			place("text141",canvas,ctx,[0.03203125,0.0,0.0,0.03203125,-96.3,-13.3],ctrans.merge(new cxform(0,0,0,0,256,256,256,72)),1,0,0,time);
+			break;
+		case 37:
+			place("text140",canvas,ctx,[0.0322265625,0.0,0.0,0.0322265625,-97.7,-13.75],ctrans.merge(new cxform(0,0,0,0,256,256,256,74)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0322265625,0.0,0.0,0.0322265625,-96.6,-13.35],ctrans.merge(new cxform(0,0,0,0,256,256,256,74)),1,0,0,time);
+			break;
+		case 38:
+			place("text140",canvas,ctx,[0.032421875,0.0,0.0,0.032421875,-98.05,-13.8],ctrans.merge(new cxform(0,0,0,0,256,256,256,76)),1,0,0,time);
+			place("text141",canvas,ctx,[0.032421875,0.0,0.0,0.032421875,-96.9,-13.45],ctrans.merge(new cxform(0,0,0,0,256,256,256,76)),1,0,0,time);
+			break;
+		case 39:
+			place("text140",canvas,ctx,[0.0326171875,0.0,0.0,0.0326171875,-98.35,-13.9],ctrans.merge(new cxform(0,0,0,0,256,256,256,78)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0326171875,0.0,0.0,0.0326171875,-97.2,-13.5],ctrans.merge(new cxform(0,0,0,0,256,256,256,78)),1,0,0,time);
+			break;
+		case 40:
+			place("text140",canvas,ctx,[0.0328125,0.0,0.0,0.0328125,-98.65,-14.0],ctrans.merge(new cxform(0,0,0,0,256,256,256,80)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0328125,0.0,0.0,0.0328125,-97.5,-13.6],ctrans.merge(new cxform(0,0,0,0,256,256,256,80)),1,0,0,time);
+			break;
+		case 41:
+			place("text140",canvas,ctx,[0.0330078125,0.0,0.0,0.0330078125,-98.95,-14.05],ctrans.merge(new cxform(0,0,0,0,256,256,256,82)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0330078125,0.0,0.0,0.0330078125,-97.8,-13.7],ctrans.merge(new cxform(0,0,0,0,256,256,256,82)),1,0,0,time);
+			break;
+		case 42:
+			place("text140",canvas,ctx,[0.033203125,0.0,0.0,0.033203125,-99.25,-14.15],ctrans.merge(new cxform(0,0,0,0,256,256,256,84)),1,0,0,time);
+			place("text141",canvas,ctx,[0.033203125,0.0,0.0,0.033203125,-98.1,-13.75],ctrans.merge(new cxform(0,0,0,0,256,256,256,84)),1,0,0,time);
+			break;
+		case 43:
+			place("text140",canvas,ctx,[0.0333984375,0.0,0.0,0.0333984375,-99.55,-14.25],ctrans.merge(new cxform(0,0,0,0,256,256,256,86)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0333984375,0.0,0.0,0.0333984375,-98.4,-13.85],ctrans.merge(new cxform(0,0,0,0,256,256,256,86)),1,0,0,time);
+			break;
+		case 44:
+			place("text140",canvas,ctx,[0.03359375,0.0,0.0,0.03359375,-99.9,-14.3],ctrans.merge(new cxform(0,0,0,0,256,256,256,88)),1,0,0,time);
+			place("text141",canvas,ctx,[0.03359375,0.0,0.0,0.03359375,-98.7,-13.9],ctrans.merge(new cxform(0,0,0,0,256,256,256,88)),1,0,0,time);
+			break;
+		case 45:
+			place("text140",canvas,ctx,[0.0337890625,0.0,0.0,0.0337890625,-100.25,-14.4],ctrans.merge(new cxform(0,0,0,0,256,256,256,90)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0337890625,0.0,0.0,0.0337890625,-99.05,-14.0],ctrans.merge(new cxform(0,0,0,0,256,256,256,90)),1,0,0,time);
+			break;
+		case 46:
+			place("text140",canvas,ctx,[0.033984375,0.0,0.0,0.033984375,-100.55,-14.5],ctrans.merge(new cxform(0,0,0,0,256,256,256,92)),1,0,0,time);
+			place("text141",canvas,ctx,[0.033984375,0.0,0.0,0.033984375,-99.35,-14.1],ctrans.merge(new cxform(0,0,0,0,256,256,256,92)),1,0,0,time);
+			break;
+		case 47:
+			place("text140",canvas,ctx,[0.0341796875,0.0,0.0,0.0341796875,-100.85,-14.55],ctrans.merge(new cxform(0,0,0,0,256,256,256,94)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0341796875,0.0,0.0,0.0341796875,-99.65,-14.15],ctrans.merge(new cxform(0,0,0,0,256,256,256,94)),1,0,0,time);
+			break;
+		case 48:
+			place("text140",canvas,ctx,[0.034375,0.0,0.0,0.034375,-101.15,-14.65],ctrans.merge(new cxform(0,0,0,0,256,256,256,96)),1,0,0,time);
+			place("text141",canvas,ctx,[0.034375,0.0,0.0,0.034375,-99.95,-14.25],ctrans.merge(new cxform(0,0,0,0,256,256,256,96)),1,0,0,time);
+			break;
+		case 49:
+			place("text140",canvas,ctx,[0.0345703125,0.0,0.0,0.0345703125,-101.45,-14.75],ctrans.merge(new cxform(0,0,0,0,256,256,256,98)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0345703125,0.0,0.0,0.0345703125,-100.25,-14.35],ctrans.merge(new cxform(0,0,0,0,256,256,256,98)),1,0,0,time);
+			break;
+		case 50:
+			place("text140",canvas,ctx,[0.034765625,0.0,0.0,0.034765625,-101.8,-14.8],ctrans.merge(new cxform(0,0,0,0,256,256,256,100)),1,0,0,time);
+			place("text141",canvas,ctx,[0.034765625,0.0,0.0,0.034765625,-100.55,-14.4],ctrans.merge(new cxform(0,0,0,0,256,256,256,100)),1,0,0,time);
+			break;
+		case 51:
+			place("text140",canvas,ctx,[0.0349609375,0.0,0.0,0.0349609375,-102.1,-14.9],ctrans.merge(new cxform(0,0,0,0,256,256,256,102)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0349609375,0.0,0.0,0.0349609375,-100.85,-14.45],ctrans.merge(new cxform(0,0,0,0,256,256,256,102)),1,0,0,time);
+			break;
+		case 52:
+			place("text140",canvas,ctx,[0.03515625,0.0,0.0,0.03515625,-102.4,-15.0],ctrans.merge(new cxform(0,0,0,0,256,256,256,104)),1,0,0,time);
+			place("text141",canvas,ctx,[0.03515625,0.0,0.0,0.03515625,-101.15,-14.6],ctrans.merge(new cxform(0,0,0,0,256,256,256,104)),1,0,0,time);
+			break;
+		case 53:
+			place("text140",canvas,ctx,[0.0353515625,0.0,0.0,0.0353515625,-102.7,-15.1],ctrans.merge(new cxform(0,0,0,0,256,256,256,106)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0353515625,0.0,0.0,0.0353515625,-101.45,-14.65],ctrans.merge(new cxform(0,0,0,0,256,256,256,106)),1,0,0,time);
+			break;
+		case 54:
+			place("text140",canvas,ctx,[0.035546875,0.0,0.0,0.035546875,-103.0,-15.15],ctrans.merge(new cxform(0,0,0,0,256,256,256,108)),1,0,0,time);
+			place("text141",canvas,ctx,[0.035546875,0.0,0.0,0.035546875,-101.75,-14.7],ctrans.merge(new cxform(0,0,0,0,256,256,256,108)),1,0,0,time);
+			break;
+		case 55:
+			place("text140",canvas,ctx,[0.0357421875,0.0,0.0,0.0357421875,-103.3,-15.25],ctrans.merge(new cxform(0,0,0,0,256,256,256,110)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0357421875,0.0,0.0,0.0357421875,-102.05,-14.85],ctrans.merge(new cxform(0,0,0,0,256,256,256,110)),1,0,0,time);
+			break;
+		case 56:
+			place("text140",canvas,ctx,[0.0359375,0.0,0.0,0.0359375,-103.65,-15.35],ctrans.merge(new cxform(0,0,0,0,256,256,256,112)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0359375,0.0,0.0,0.0359375,-102.35,-14.9],ctrans.merge(new cxform(0,0,0,0,256,256,256,112)),1,0,0,time);
+			break;
+		case 57:
+			place("text140",canvas,ctx,[0.0361328125,0.0,0.0,0.0361328125,-103.95,-15.4],ctrans.merge(new cxform(0,0,0,0,256,256,256,114)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0361328125,0.0,0.0,0.0361328125,-102.7,-14.95],ctrans.merge(new cxform(0,0,0,0,256,256,256,114)),1,0,0,time);
+			break;
+		case 58:
+			place("text140",canvas,ctx,[0.036328125,0.0,0.0,0.036328125,-104.3,-15.5],ctrans.merge(new cxform(0,0,0,0,256,256,256,116)),1,0,0,time);
+			place("text141",canvas,ctx,[0.036328125,0.0,0.0,0.036328125,-103.05,-15.05],ctrans.merge(new cxform(0,0,0,0,256,256,256,116)),1,0,0,time);
+			break;
+		case 59:
+			place("text140",canvas,ctx,[0.0365234375,0.0,0.0,0.0365234375,-104.6,-15.6],ctrans.merge(new cxform(0,0,0,0,256,256,256,118)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0365234375,0.0,0.0,0.0365234375,-103.35,-15.15],ctrans.merge(new cxform(0,0,0,0,256,256,256,118)),1,0,0,time);
+			break;
+		case 60:
+			place("text140",canvas,ctx,[0.03671875,0.0,0.0,0.03671875,-104.9,-15.65],ctrans.merge(new cxform(0,0,0,0,256,256,256,120)),1,0,0,time);
+			place("text141",canvas,ctx,[0.03671875,0.0,0.0,0.03671875,-103.65,-15.2],ctrans.merge(new cxform(0,0,0,0,256,256,256,120)),1,0,0,time);
+			break;
+		case 61:
+			place("text140",canvas,ctx,[0.0369140625,0.0,0.0,0.0369140625,-105.2,-15.75],ctrans.merge(new cxform(0,0,0,0,256,256,256,122)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0369140625,0.0,0.0,0.0369140625,-103.95,-15.3],ctrans.merge(new cxform(0,0,0,0,256,256,256,122)),1,0,0,time);
+			break;
+		case 62:
+			place("text140",canvas,ctx,[0.037109375,0.0,0.0,0.037109375,-105.55,-15.85],ctrans.merge(new cxform(0,0,0,0,256,256,256,124)),1,0,0,time);
+			place("text141",canvas,ctx,[0.037109375,0.0,0.0,0.037109375,-104.25,-15.4],ctrans.merge(new cxform(0,0,0,0,256,256,256,124)),1,0,0,time);
+			break;
+		case 63:
+			place("text140",canvas,ctx,[0.0373046875,0.0,0.0,0.0373046875,-105.85,-15.9],ctrans.merge(new cxform(0,0,0,0,256,256,256,126)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0373046875,0.0,0.0,0.0373046875,-104.55,-15.45],ctrans.merge(new cxform(0,0,0,0,256,256,256,126)),1,0,0,time);
+			break;
+		case 64:
+			place("text140",canvas,ctx,[0.0375,0.0,0.0,0.0375,-106.1,-15.95],ctrans.merge(new cxform(0,0,0,0,256,256,256,128)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0375,0.0,0.0,0.0375,-104.8,-15.5],ctrans.merge(new cxform(0,0,0,0,256,256,256,128)),1,0,0,time);
+			break;
+		case 65:
+			place("text140",canvas,ctx,[0.0376953125,0.0,0.0,0.0376953125,-106.45,-16.1],ctrans.merge(new cxform(0,0,0,0,256,256,256,130)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0376953125,0.0,0.0,0.0376953125,-105.15,-15.65],ctrans.merge(new cxform(0,0,0,0,256,256,256,130)),1,0,0,time);
+			break;
+		case 66:
+			place("text140",canvas,ctx,[0.037890625,0.0,0.0,0.037890625,-106.75,-16.15],ctrans.merge(new cxform(0,0,0,0,256,256,256,132)),1,0,0,time);
+			place("text141",canvas,ctx,[0.037890625,0.0,0.0,0.037890625,-105.45,-15.7],ctrans.merge(new cxform(0,0,0,0,256,256,256,132)),1,0,0,time);
+			break;
+		case 67:
+			place("text140",canvas,ctx,[0.0380859375,0.0,0.0,0.0380859375,-107.1,-16.2],ctrans.merge(new cxform(0,0,0,0,256,256,256,134)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0380859375,0.0,0.0,0.0380859375,-105.75,-15.75],ctrans.merge(new cxform(0,0,0,0,256,256,256,134)),1,0,0,time);
+			break;
+		case 68:
+			place("text140",canvas,ctx,[0.03828125,0.0,0.0,0.03828125,-107.4,-16.35],ctrans.merge(new cxform(0,0,0,0,256,256,256,136)),1,0,0,time);
+			place("text141",canvas,ctx,[0.03828125,0.0,0.0,0.03828125,-106.05,-15.85],ctrans.merge(new cxform(0,0,0,0,256,256,256,136)),1,0,0,time);
+			break;
+		case 69:
+			place("text140",canvas,ctx,[0.0384765625,0.0,0.0,0.0384765625,-107.7,-16.4],ctrans.merge(new cxform(0,0,0,0,256,256,256,138)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0384765625,0.0,0.0,0.0384765625,-106.35,-15.95],ctrans.merge(new cxform(0,0,0,0,256,256,256,138)),1,0,0,time);
+			break;
+		case 70:
+			place("text140",canvas,ctx,[0.038671875,0.0,0.0,0.038671875,-108.0,-16.45],ctrans.merge(new cxform(0,0,0,0,256,256,256,140)),1,0,0,time);
+			place("text141",canvas,ctx,[0.038671875,0.0,0.0,0.038671875,-106.65,-16.0],ctrans.merge(new cxform(0,0,0,0,256,256,256,140)),1,0,0,time);
+			break;
+		case 71:
+			place("text140",canvas,ctx,[0.0388671875,0.0,0.0,0.0388671875,-108.35,-16.6],ctrans.merge(new cxform(0,0,0,0,256,256,256,142)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0388671875,0.0,0.0,0.0388671875,-107.0,-16.1],ctrans.merge(new cxform(0,0,0,0,256,256,256,142)),1,0,0,time);
+			break;
+		case 72:
+			place("text140",canvas,ctx,[0.0390625,0.0,0.0,0.0390625,-108.65,-16.65],ctrans.merge(new cxform(0,0,0,0,256,256,256,144)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0390625,0.0,0.0,0.0390625,-107.3,-16.2],ctrans.merge(new cxform(0,0,0,0,256,256,256,144)),1,0,0,time);
+			break;
+		case 73:
+			place("text140",canvas,ctx,[0.0392578125,0.0,0.0,0.0392578125,-109.0,-16.7],ctrans.merge(new cxform(0,0,0,0,256,256,256,146)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0392578125,0.0,0.0,0.0392578125,-107.6,-16.25],ctrans.merge(new cxform(0,0,0,0,256,256,256,146)),1,0,0,time);
+			break;
+		case 74:
+			place("text140",canvas,ctx,[0.039453125,0.0,0.0,0.039453125,-109.3,-16.85],ctrans.merge(new cxform(0,0,0,0,256,256,256,148)),1,0,0,time);
+			place("text141",canvas,ctx,[0.039453125,0.0,0.0,0.039453125,-107.9,-16.35],ctrans.merge(new cxform(0,0,0,0,256,256,256,148)),1,0,0,time);
+			break;
+		case 75:
+			place("text140",canvas,ctx,[0.0396484375,0.0,0.0,0.0396484375,-109.6,-16.9],ctrans.merge(new cxform(0,0,0,0,256,256,256,150)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0396484375,0.0,0.0,0.0396484375,-108.2,-16.4],ctrans.merge(new cxform(0,0,0,0,256,256,256,150)),1,0,0,time);
+			break;
+		case 76:
+			place("text140",canvas,ctx,[0.03984375,0.0,0.0,0.03984375,-109.9,-16.95],ctrans.merge(new cxform(0,0,0,0,256,256,256,152)),1,0,0,time);
+			place("text141",canvas,ctx,[0.03984375,0.0,0.0,0.03984375,-108.5,-16.5],ctrans.merge(new cxform(0,0,0,0,256,256,256,152)),1,0,0,time);
+			break;
+		case 77:
+			place("text140",canvas,ctx,[0.0400390625,0.0,0.0,0.0400390625,-110.2,-17.1],ctrans.merge(new cxform(0,0,0,0,256,256,256,154)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0400390625,0.0,0.0,0.0400390625,-108.8,-16.6],ctrans.merge(new cxform(0,0,0,0,256,256,256,154)),1,0,0,time);
+			break;
+		case 78:
+			place("text140",canvas,ctx,[0.040234375,0.0,0.0,0.040234375,-110.5,-17.15],ctrans.merge(new cxform(0,0,0,0,256,256,256,156)),1,0,0,time);
+			place("text141",canvas,ctx,[0.040234375,0.0,0.0,0.040234375,-109.1,-16.65],ctrans.merge(new cxform(0,0,0,0,256,256,256,156)),1,0,0,time);
+			break;
+		case 79:
+			place("text140",canvas,ctx,[0.0404296875,0.0,0.0,0.0404296875,-110.85,-17.2],ctrans.merge(new cxform(0,0,0,0,256,256,256,158)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0404296875,0.0,0.0,0.0404296875,-109.4,-16.75],ctrans.merge(new cxform(0,0,0,0,256,256,256,158)),1,0,0,time);
+			break;
+		case 80:
+			place("text140",canvas,ctx,[0.040625,0.0,0.0,0.040625,-111.15,-17.35],ctrans.merge(new cxform(0,0,0,0,256,256,256,160)),1,0,0,time);
+			place("text141",canvas,ctx,[0.040625,0.0,0.0,0.040625,-109.7,-16.85],ctrans.merge(new cxform(0,0,0,0,256,256,256,160)),1,0,0,time);
+			break;
+		case 81:
+			place("text140",canvas,ctx,[0.0408203125,0.0,0.0,0.0408203125,-111.45,-17.4],ctrans.merge(new cxform(0,0,0,0,256,256,256,162)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0408203125,0.0,0.0,0.0408203125,-110.0,-16.9],ctrans.merge(new cxform(0,0,0,0,256,256,256,162)),1,0,0,time);
+			break;
+		case 82:
+			place("text140",canvas,ctx,[0.041015625,0.0,0.0,0.041015625,-111.75,-17.45],ctrans.merge(new cxform(0,0,0,0,256,256,256,164)),1,0,0,time);
+			place("text141",canvas,ctx,[0.041015625,0.0,0.0,0.041015625,-110.3,-17.0],ctrans.merge(new cxform(0,0,0,0,256,256,256,164)),1,0,0,time);
+			break;
+		case 83:
+			place("text140",canvas,ctx,[0.0412109375,0.0,0.0,0.0412109375,-112.05,-17.6],ctrans.merge(new cxform(0,0,0,0,256,256,256,166)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0412109375,0.0,0.0,0.0412109375,-110.6,-17.1],ctrans.merge(new cxform(0,0,0,0,256,256,256,166)),1,0,0,time);
+			break;
+		case 84:
+			place("text140",canvas,ctx,[0.04140625,0.0,0.0,0.04140625,-112.4,-17.65],ctrans.merge(new cxform(0,0,0,0,256,256,256,168)),1,0,0,time);
+			place("text141",canvas,ctx,[0.04140625,0.0,0.0,0.04140625,-110.95,-17.15],ctrans.merge(new cxform(0,0,0,0,256,256,256,168)),1,0,0,time);
+			break;
+		case 85:
+			place("text140",canvas,ctx,[0.0416015625,0.0,0.0,0.0416015625,-112.75,-17.7],ctrans.merge(new cxform(0,0,0,0,256,256,256,170)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0416015625,0.0,0.0,0.0416015625,-111.25,-17.2],ctrans.merge(new cxform(0,0,0,0,256,256,256,170)),1,0,0,time);
+			break;
+		case 86:
+			place("text140",canvas,ctx,[0.041796875,0.0,0.0,0.041796875,-113.05,-17.85],ctrans.merge(new cxform(0,0,0,0,256,256,256,172)),1,0,0,time);
+			place("text141",canvas,ctx,[0.041796875,0.0,0.0,0.041796875,-111.6,-17.35],ctrans.merge(new cxform(0,0,0,0,256,256,256,172)),1,0,0,time);
+			break;
+		case 87:
+			place("text140",canvas,ctx,[0.0419921875,0.0,0.0,0.0419921875,-113.35,-17.9],ctrans.merge(new cxform(0,0,0,0,256,256,256,174)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0419921875,0.0,0.0,0.0419921875,-111.9,-17.4],ctrans.merge(new cxform(0,0,0,0,256,256,256,174)),1,0,0,time);
+			break;
+		case 88:
+			place("text140",canvas,ctx,[0.0421875,0.0,0.0,0.0421875,-113.65,-17.95],ctrans.merge(new cxform(0,0,0,0,256,256,256,176)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0421875,0.0,0.0,0.0421875,-112.2,-17.45],ctrans.merge(new cxform(0,0,0,0,256,256,256,176)),1,0,0,time);
+			break;
+		case 89:
+			place("text140",canvas,ctx,[0.0423828125,0.0,0.0,0.0423828125,-113.95,-18.05],ctrans.merge(new cxform(0,0,0,0,256,256,256,178)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0423828125,0.0,0.0,0.0423828125,-112.5,-17.55],ctrans.merge(new cxform(0,0,0,0,256,256,256,178)),1,0,0,time);
+			break;
+		case 90:
+			place("text140",canvas,ctx,[0.042578125,0.0,0.0,0.042578125,-114.25,-18.15],ctrans.merge(new cxform(0,0,0,0,256,256,256,180)),1,0,0,time);
+			place("text141",canvas,ctx,[0.042578125,0.0,0.0,0.042578125,-112.8,-17.65],ctrans.merge(new cxform(0,0,0,0,256,256,256,180)),1,0,0,time);
+			break;
+		case 91:
+			place("text140",canvas,ctx,[0.0427734375,0.0,0.0,0.0427734375,-114.6,-18.2],ctrans.merge(new cxform(0,0,0,0,256,256,256,182)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0427734375,0.0,0.0,0.0427734375,-113.1,-17.7],ctrans.merge(new cxform(0,0,0,0,256,256,256,182)),1,0,0,time);
+			break;
+		case 92:
+			place("text140",canvas,ctx,[0.04296875,0.0,0.0,0.04296875,-114.9,-18.3],ctrans.merge(new cxform(0,0,0,0,256,256,256,184)),1,0,0,time);
+			place("text141",canvas,ctx,[0.04296875,0.0,0.0,0.04296875,-113.4,-17.75],ctrans.merge(new cxform(0,0,0,0,256,256,256,184)),1,0,0,time);
+			break;
+		case 93:
+			place("text140",canvas,ctx,[0.0431640625,0.0,0.0,0.0431640625,-115.2,-18.4],ctrans.merge(new cxform(0,0,0,0,256,256,256,186)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0431640625,0.0,0.0,0.0431640625,-113.7,-17.9],ctrans.merge(new cxform(0,0,0,0,256,256,256,186)),1,0,0,time);
+			break;
+		case 94:
+			place("text140",canvas,ctx,[0.043359375,0.0,0.0,0.043359375,-115.5,-18.45],ctrans.merge(new cxform(0,0,0,0,256,256,256,188)),1,0,0,time);
+			place("text141",canvas,ctx,[0.043359375,0.0,0.0,0.043359375,-114.0,-17.95],ctrans.merge(new cxform(0,0,0,0,256,256,256,188)),1,0,0,time);
+			break;
+		case 95:
+			place("text140",canvas,ctx,[0.0435546875,0.0,0.0,0.0435546875,-115.8,-18.55],ctrans.merge(new cxform(0,0,0,0,256,256,256,190)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0435546875,0.0,0.0,0.0435546875,-114.3,-18.0],ctrans.merge(new cxform(0,0,0,0,256,256,256,190)),1,0,0,time);
+			break;
+		case 96:
+			place("text140",canvas,ctx,[0.04375,0.0,0.0,0.04375,-116.1,-18.6],ctrans.merge(new cxform(0,0,0,0,256,256,256,192)),1,0,0,time);
+			place("text141",canvas,ctx,[0.04375,0.0,0.0,0.04375,-114.6,-18.1],ctrans.merge(new cxform(0,0,0,0,256,256,256,192)),1,0,0,time);
+			break;
+		case 97:
+			place("text140",canvas,ctx,[0.0439453125,0.0,0.0,0.0439453125,-116.5,-18.7],ctrans.merge(new cxform(0,0,0,0,256,256,256,194)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0439453125,0.0,0.0,0.0439453125,-114.95,-18.2],ctrans.merge(new cxform(0,0,0,0,256,256,256,194)),1,0,0,time);
+			break;
+		case 98:
+			place("text140",canvas,ctx,[0.044140625,0.0,0.0,0.044140625,-116.8,-18.8],ctrans.merge(new cxform(0,0,0,0,256,256,256,196)),1,0,0,time);
+			place("text141",canvas,ctx,[0.044140625,0.0,0.0,0.044140625,-115.25,-18.25],ctrans.merge(new cxform(0,0,0,0,256,256,256,196)),1,0,0,time);
+			break;
+		case 99:
+			place("text140",canvas,ctx,[0.0443359375,0.0,0.0,0.0443359375,-117.1,-18.9],ctrans.merge(new cxform(0,0,0,0,256,256,256,198)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0443359375,0.0,0.0,0.0443359375,-115.55,-18.4],ctrans.merge(new cxform(0,0,0,0,256,256,256,198)),1,0,0,time);
+			break;
+		case 100:
+			place("text140",canvas,ctx,[0.04453125,0.0,0.0,0.04453125,-117.4,-18.95],ctrans.merge(new cxform(0,0,0,0,256,256,256,200)),1,0,0,time);
+			place("text141",canvas,ctx,[0.04453125,0.0,0.0,0.04453125,-115.85,-18.45],ctrans.merge(new cxform(0,0,0,0,256,256,256,200)),1,0,0,time);
+			break;
+		case 101:
+			place("text140",canvas,ctx,[0.0447265625,0.0,0.0,0.0447265625,-117.7,-19.05],ctrans.merge(new cxform(0,0,0,0,256,256,256,202)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0447265625,0.0,0.0,0.0447265625,-116.15,-18.5],ctrans.merge(new cxform(0,0,0,0,256,256,256,202)),1,0,0,time);
+			break;
+		case 102:
+			place("text140",canvas,ctx,[0.044921875,0.0,0.0,0.044921875,-118.05,-19.15],ctrans.merge(new cxform(0,0,0,0,256,256,256,204)),1,0,0,time);
+			place("text141",canvas,ctx,[0.044921875,0.0,0.0,0.044921875,-116.45,-18.6],ctrans.merge(new cxform(0,0,0,0,256,256,256,204)),1,0,0,time);
+			break;
+		case 103:
+			place("text140",canvas,ctx,[0.0451171875,0.0,0.0,0.0451171875,-118.35,-19.25],ctrans.merge(new cxform(0,0,0,0,256,256,256,206)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0451171875,0.0,0.0,0.0451171875,-116.75,-18.7],ctrans.merge(new cxform(0,0,0,0,256,256,256,206)),1,0,0,time);
+			break;
+		case 104:
+			place("text140",canvas,ctx,[0.0453125,0.0,0.0,0.0453125,-118.65,-19.3],ctrans.merge(new cxform(0,0,0,0,256,256,256,208)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0453125,0.0,0.0,0.0453125,-117.05,-18.75],ctrans.merge(new cxform(0,0,0,0,256,256,256,208)),1,0,0,time);
+			break;
+		case 105:
+			place("text140",canvas,ctx,[0.0455078125,0.0,0.0,0.0455078125,-118.95,-19.4],ctrans.merge(new cxform(0,0,0,0,256,256,256,210)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0455078125,0.0,0.0,0.0455078125,-117.35,-18.85],ctrans.merge(new cxform(0,0,0,0,256,256,256,210)),1,0,0,time);
+			break;
+		case 106:
+			place("text140",canvas,ctx,[0.045703125,0.0,0.0,0.045703125,-119.25,-19.5],ctrans.merge(new cxform(0,0,0,0,256,256,256,212)),1,0,0,time);
+			place("text141",canvas,ctx,[0.045703125,0.0,0.0,0.045703125,-117.65,-18.95],ctrans.merge(new cxform(0,0,0,0,256,256,256,212)),1,0,0,time);
+			break;
+		case 107:
+			place("text140",canvas,ctx,[0.0458984375,0.0,0.0,0.0458984375,-119.55,-19.55],ctrans.merge(new cxform(0,0,0,0,256,256,256,214)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0458984375,0.0,0.0,0.0458984375,-117.95,-19.0],ctrans.merge(new cxform(0,0,0,0,256,256,256,214)),1,0,0,time);
+			break;
+		case 108:
+			place("text140",canvas,ctx,[0.04609375,0.0,0.0,0.04609375,-119.9,-19.65],ctrans.merge(new cxform(0,0,0,0,256,256,256,216)),1,0,0,time);
+			place("text141",canvas,ctx,[0.04609375,0.0,0.0,0.04609375,-118.25,-19.1],ctrans.merge(new cxform(0,0,0,0,256,256,256,216)),1,0,0,time);
+			break;
+		case 109:
+			place("text140",canvas,ctx,[0.0462890625,0.0,0.0,0.0462890625,-120.25,-19.75],ctrans.merge(new cxform(0,0,0,0,256,256,256,218)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0462890625,0.0,0.0,0.0462890625,-118.6,-19.15],ctrans.merge(new cxform(0,0,0,0,256,256,256,218)),1,0,0,time);
+			break;
+		case 110:
+			place("text140",canvas,ctx,[0.046484375,0.0,0.0,0.046484375,-120.55,-19.8],ctrans.merge(new cxform(0,0,0,0,256,256,256,220)),1,0,0,time);
+			place("text141",canvas,ctx,[0.046484375,0.0,0.0,0.046484375,-118.9,-19.25],ctrans.merge(new cxform(0,0,0,0,256,256,256,220)),1,0,0,time);
+			break;
+		case 111:
+			place("text140",canvas,ctx,[0.0466796875,0.0,0.0,0.0466796875,-120.85,-19.9],ctrans.merge(new cxform(0,0,0,0,256,256,256,222)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0466796875,0.0,0.0,0.0466796875,-119.2,-19.35],ctrans.merge(new cxform(0,0,0,0,256,256,256,222)),1,0,0,time);
+			break;
+		case 112:
+			place("text140",canvas,ctx,[0.046875,0.0,0.0,0.046875,-121.15,-20.0],ctrans.merge(new cxform(0,0,0,0,256,256,256,224)),1,0,0,time);
+			place("text141",canvas,ctx,[0.046875,0.0,0.0,0.046875,-119.5,-19.4],ctrans.merge(new cxform(0,0,0,0,256,256,256,224)),1,0,0,time);
+			break;
+		case 113:
+			place("text140",canvas,ctx,[0.0470703125,0.0,0.0,0.0470703125,-121.45,-20.05],ctrans.merge(new cxform(0,0,0,0,256,256,256,226)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0470703125,0.0,0.0,0.0470703125,-119.8,-19.5],ctrans.merge(new cxform(0,0,0,0,256,256,256,226)),1,0,0,time);
+			break;
+		case 114:
+			place("text140",canvas,ctx,[0.047265625,0.0,0.0,0.047265625,-121.8,-20.1],ctrans.merge(new cxform(0,0,0,0,256,256,256,228)),1,0,0,time);
+			place("text141",canvas,ctx,[0.047265625,0.0,0.0,0.047265625,-120.15,-19.55],ctrans.merge(new cxform(0,0,0,0,256,256,256,228)),1,0,0,time);
+			break;
+		case 115:
+			place("text140",canvas,ctx,[0.0474609375,0.0,0.0,0.0474609375,-122.1,-20.25],ctrans.merge(new cxform(0,0,0,0,256,256,256,230)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0474609375,0.0,0.0,0.0474609375,-120.45,-19.65],ctrans.merge(new cxform(0,0,0,0,256,256,256,230)),1,0,0,time);
+			break;
+		case 116:
+			place("text140",canvas,ctx,[0.04765625,0.0,0.0,0.04765625,-122.4,-20.3],ctrans.merge(new cxform(0,0,0,0,256,256,256,232)),1,0,0,time);
+			place("text141",canvas,ctx,[0.04765625,0.0,0.0,0.04765625,-120.75,-19.7],ctrans.merge(new cxform(0,0,0,0,256,256,256,232)),1,0,0,time);
+			break;
+		case 117:
+			place("text140",canvas,ctx,[0.0478515625,0.0,0.0,0.0478515625,-122.7,-20.35],ctrans.merge(new cxform(0,0,0,0,256,256,256,234)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0478515625,0.0,0.0,0.0478515625,-121.05,-19.8],ctrans.merge(new cxform(0,0,0,0,256,256,256,234)),1,0,0,time);
+			break;
+		case 118:
+			place("text140",canvas,ctx,[0.048046875,0.0,0.0,0.048046875,-123.0,-20.5],ctrans.merge(new cxform(0,0,0,0,256,256,256,236)),1,0,0,time);
+			place("text141",canvas,ctx,[0.048046875,0.0,0.0,0.048046875,-121.35,-19.9],ctrans.merge(new cxform(0,0,0,0,256,256,256,236)),1,0,0,time);
+			break;
+		case 119:
+			place("text140",canvas,ctx,[0.0482421875,0.0,0.0,0.0482421875,-123.3,-20.55],ctrans.merge(new cxform(0,0,0,0,256,256,256,238)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0482421875,0.0,0.0,0.0482421875,-121.65,-19.95],ctrans.merge(new cxform(0,0,0,0,256,256,256,238)),1,0,0,time);
+			break;
+		case 120:
+			place("text140",canvas,ctx,[0.0484375,0.0,0.0,0.0484375,-123.65,-20.6],ctrans.merge(new cxform(0,0,0,0,256,256,256,240)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0484375,0.0,0.0,0.0484375,-121.95,-20.05],ctrans.merge(new cxform(0,0,0,0,256,256,256,240)),1,0,0,time);
+			break;
+		case 121:
+			place("text140",canvas,ctx,[0.0486328125,0.0,0.0,0.0486328125,-123.95,-20.75],ctrans.merge(new cxform(0,0,0,0,256,256,256,242)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0486328125,0.0,0.0,0.0486328125,-122.25,-20.15],ctrans.merge(new cxform(0,0,0,0,256,256,256,242)),1,0,0,time);
+			break;
+		case 122:
+			place("text140",canvas,ctx,[0.048828125,0.0,0.0,0.048828125,-124.3,-20.8],ctrans.merge(new cxform(0,0,0,0,256,256,256,244)),1,0,0,time);
+			place("text141",canvas,ctx,[0.048828125,0.0,0.0,0.048828125,-122.6,-20.2],ctrans.merge(new cxform(0,0,0,0,256,256,256,244)),1,0,0,time);
+			break;
+		case 123:
+			place("text140",canvas,ctx,[0.0490234375,0.0,0.0,0.0490234375,-124.6,-20.85],ctrans.merge(new cxform(0,0,0,0,256,256,256,246)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0490234375,0.0,0.0,0.0490234375,-122.9,-20.3],ctrans.merge(new cxform(0,0,0,0,256,256,256,246)),1,0,0,time);
+			break;
+		case 124:
+			place("text140",canvas,ctx,[0.04921875,0.0,0.0,0.04921875,-124.9,-21.0],ctrans.merge(new cxform(0,0,0,0,256,256,256,248)),1,0,0,time);
+			place("text141",canvas,ctx,[0.04921875,0.0,0.0,0.04921875,-123.2,-20.4],ctrans.merge(new cxform(0,0,0,0,256,256,256,248)),1,0,0,time);
+			break;
+		case 125:
+			place("text140",canvas,ctx,[0.0494140625,0.0,0.0,0.0494140625,-125.2,-21.05],ctrans.merge(new cxform(0,0,0,0,256,256,256,250)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0494140625,0.0,0.0,0.0494140625,-123.5,-20.45],ctrans.merge(new cxform(0,0,0,0,256,256,256,250)),1,0,0,time);
+			break;
+		case 126:
+			place("text140",canvas,ctx,[0.049609375,0.0,0.0,0.049609375,-125.55,-21.1],ctrans.merge(new cxform(0,0,0,0,256,256,256,252)),1,0,0,time);
+			place("text141",canvas,ctx,[0.049609375,0.0,0.0,0.049609375,-123.8,-20.5],ctrans.merge(new cxform(0,0,0,0,256,256,256,252)),1,0,0,time);
+			break;
+		case 127:
+			place("text140",canvas,ctx,[0.0498046875,0.0,0.0,0.0498046875,-125.85,-21.25],ctrans.merge(new cxform(0,0,0,0,256,256,256,254)),1,0,0,time);
+			place("text141",canvas,ctx,[0.0498046875,0.0,0.0,0.0498046875,-124.1,-20.65],ctrans.merge(new cxform(0,0,0,0,256,256,256,254)),1,0,0,time);
+			break;
+		case 128:
+			place("text140",canvas,ctx,[0.05,0.0,0.0,0.05,-126.15,-21.3],ctrans.merge(new cxform(0,0,0,0,256,256,256,256)),1,0,0,time);
+			place("text141",canvas,ctx,[0.05,0.0,0.0,0.05,-124.4,-20.7],ctrans.merge(new cxform(0,0,0,0,256,256,256,256)),1,0,0,time);
+			break;
+		case 129:
+			place("text140",canvas,ctx,[0.05,0.0,0.0,0.05,-126.15,-21.3],ctrans.merge(new cxform(0,0,0,0,256,256,256,256)),1,0,0,time);
+			place("text141",canvas,ctx,[0.05,0.0,0.0,0.05,-124.4,-20.7],ctrans.merge(new cxform(0,0,0,0,256,256,256,256)),1,0,0,time);
+			break;
+	}
+	ctx.restore();
+}
+
+var frame = -1;
+var time = 0;
+var frames = [];
+frames.push(0);
+frames.push(1);
+frames.push(2);
+frames.push(3);
+frames.push(4);
+frames.push(5);
+frames.push(6);
+frames.push(7);
+frames.push(8);
+frames.push(9);
+frames.push(10);
+frames.push(11);
+frames.push(12);
+frames.push(13);
+frames.push(14);
+frames.push(15);
+frames.push(16);
+frames.push(17);
+frames.push(18);
+frames.push(19);
+frames.push(20);
+frames.push(21);
+frames.push(22);
+frames.push(23);
+frames.push(24);
+frames.push(25);
+frames.push(26);
+frames.push(27);
+frames.push(28);
+frames.push(29);
+frames.push(30);
+frames.push(31);
+frames.push(32);
+frames.push(33);
+frames.push(34);
+frames.push(35);
+frames.push(36);
+frames.push(37);
+frames.push(38);
+frames.push(39);
+frames.push(40);
+frames.push(41);
+frames.push(42);
+frames.push(43);
+frames.push(44);
+frames.push(45);
+frames.push(46);
+frames.push(47);
+frames.push(48);
+frames.push(49);
+frames.push(50);
+frames.push(51);
+frames.push(52);
+frames.push(53);
+frames.push(54);
+frames.push(55);
+frames.push(56);
+frames.push(57);
+frames.push(58);
+frames.push(59);
+frames.push(60);
+frames.push(61);
+frames.push(62);
+frames.push(63);
+frames.push(64);
+frames.push(65);
+frames.push(66);
+frames.push(67);
+frames.push(68);
+frames.push(69);
+frames.push(70);
+frames.push(71);
+frames.push(72);
+frames.push(73);
+frames.push(74);
+frames.push(75);
+frames.push(76);
+frames.push(77);
+frames.push(78);
+frames.push(79);
+frames.push(80);
+frames.push(81);
+frames.push(82);
+frames.push(83);
+frames.push(84);
+frames.push(85);
+frames.push(86);
+frames.push(87);
+frames.push(88);
+frames.push(89);
+frames.push(90);
+frames.push(91);
+frames.push(92);
+frames.push(93);
+frames.push(94);
+frames.push(95);
+frames.push(96);
+frames.push(97);
+frames.push(98);
+frames.push(99);
+frames.push(100);
+frames.push(101);
+frames.push(102);
+frames.push(103);
+frames.push(104);
+frames.push(105);
+frames.push(106);
+frames.push(107);
+frames.push(108);
+frames.push(109);
+frames.push(110);
+frames.push(111);
+frames.push(112);
+frames.push(113);
+frames.push(114);
+frames.push(115);
+frames.push(116);
+frames.push(117);
+frames.push(118);
+frames.push(119);
+frames.push(120);
+frames.push(121);
+frames.push(122);
+frames.push(123);
+frames.push(124);
+frames.push(125);
+frames.push(126);
+frames.push(127);
+frames.push(128);
+frames.push(129);
+
+var backgroundColor = "#ffffff";
+var originalWidth = 506;
+var originalHeight= 24;
+function nextFrame(ctx,ctrans){
+	var oldframe = frame;
+	frame = (frame+1)%frames.length;
+	if(frame==oldframe){time++;}else{time=0;};
+	drawFrame();
+}
+
+function drawFrame(){
+	ctx.fillStyle = backgroundColor;
+	ctx.fillRect(0,0,canvas.width,canvas.height);
+	ctx.save();
+	ctx.transform(canvas.width/originalWidth,0,0,canvas.height/originalHeight,0,0);
+	sprite142(ctx,ctrans,frames[frame],0,time);
+	ctx.restore();
+}
+
+window.setInterval(function(){nextFrame(ctx,ctrans);},83);
+nextFrame(ctx,ctrans);
+</script>
+</body>
+</html>

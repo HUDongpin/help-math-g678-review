@@ -1,0 +1,39 @@
+; 88 4d 00 08 00 5f 67 6c 6f 62 61 6c 00 4b 65 79 41 74 74 72 69 62 75 74 65 00 6c 65 6e 67 74 68 00 5f 72 6f 6f 74 00 44 6f 48 79 70 65 72 4c 69 6e 6b 73 00 61 6e 69 6d 61 74 69 6f 6e 5f 6d 63 00 61 6e 69 6d 61 74 69 6f 6e 00 73 74 6f 70 00
+ConstantPool "_global", "KeyAttribute", "length", "_root", "DoHyperLinks", "animation_mc", "animation", "stop"
+; 96 02 00 08 00
+Push "_global"
+; 1c
+GetVariable
+; 96 04 00 08 01 08 02
+Push "KeyAttribute", "length"
+; 4f
+SetMember
+; 96 0b 00 06 00 00 00 00 00 00 00 00 08 03
+Push 0.0, "_root"
+; 1c
+GetVariable
+; 96 02 00 08 04
+Push "DoHyperLinks"
+; 52
+CallMethod
+; 17
+Pop
+; 96 0b 00 06 00 00 00 00 00 00 00 00 08 03
+Push 0.0, "_root"
+; 1c
+GetVariable
+; 96 02 00 08 05
+Push "animation_mc"
+; 4e
+GetMember
+; 96 02 00 08 06
+Push "animation"
+; 4e
+GetMember
+; 96 02 00 08 07
+Push "stop"
+; 52
+CallMethod
+; 17
+Pop
+; 00

@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l12-p006",
+  "animationId": "shared-alg001-l12-p006",
+  "assetId": "swf-933f1f6db59435e882c1bf6e9392259fc1d28c0974a0a4c6cebc9bcc7a5d46b6",
+  "status": "preserved",
+  "created": "2026-09-26",
+  "confidence": "verified",
+  "classification": {
+    "collection": "course",
+    "grade": "G6-G8-shared",
+    "lesson": 12,
+    "section": "RW",
+    "page": 6,
+    "domain": "unknown",
+    "knowledgePoint": {
+      "en": "",
+      "es": ""
+    },
+    "titleRaw": "Page 5",
+    "titleDisplay": "Page 5",
+    "status": "confirmed",
+    "evidence": ["catalog/g678-shared-catalog.v1.json", "audit/source-structure-v1.json"]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/RW/L12RW06.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/RW/L12RW06.swf",
+    "flaSha256": "",
+    "swfSha256": "933f1f6db59435e882c1bf6e9392259fc1d28c0974a0a4c6cebc9bcc7a5d46b6",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 742356,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#b8d8f7",
+    "actionScriptVersion": "AVM1",
+    "complexity": "behavior-heavy",
+    "fonts": [],
+    "scripts": ["root frame1 preloader jump_check and Stop", "root frame6 begin Stop", "sprite53 frame1 empty action and frame342 Stop", "buttons48-51 KeyAttribute, DoHyperLinks and animation Stop"],
+    "externalDependencies": ["original host preloader", "DoHyperLinks glossary definitions and lifecycle", "SA/L12RW06.mp3 explicit optional Spanish Audio role verified statically; original host launch and audible language remain unverified"]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": ["Three clip-depth placements in sprite53; exact per-frame ranges in audit/display-ir-v1.json"],
+    "morphs": ["Seven DefineMorphShape definitions; source IDs and hashes in asset-inventory.csv"],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "default",
+      "kind": "linear",
+      "description": "Source root and nested timelines; natural host entry/audio clock unresolved.",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [{"id": "sprite-53-embedded-stream", "disposition": "340 blocks at frames3-342; continuous-stream-v2 engineering playback uses one span and no frame4 gap; original-runtime timing and listening pending"}, {"id": "lesson-sa-unresolved", "disposition": "separate explicit Spanish Audio control implemented with hash verification; main clock pauses; cancel and navigation cleanup; restart from zero is a named candidate policy; original-host runtime and listening pending"}]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "",
+    "ffdec": "26.2.1",
+    "swfmill": "unavailable",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "Canvas source drawing plus maintained glossary and independent embedded/optional-SA audio host; engineering candidate",
+    "route": "/en/migration-status/g678-calibration/shared-alg001-l12-p006",
+    "routeFile": "apps/web/app/[locale]/migration-status/g678-calibration/shared-alg001-l12-p006/page.tsx",
+    "component": "apps/web/components/g678-alg-l12-p006-host-lesson.tsx",
+    "registryModule": "packages/demos/src/modules/shared-alg001-l12-p006.tsx",
+    "timelineModule": "packages/demos/src/timelines/shared-alg001-l12-p006.ts",
+    "testFile": "packages/demos/tests/alg-l12-p006-module.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-53",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": ["default"]
+      },
+      {
+        "id": "sprite-53", "kind": "sprite", "sourceTimelineId": "sprite-53",
+        "parentFrameDomainId": "root", "frameCount": 342, "scenarioIds": ["default"]
+      },
+      {
+        "id": "sprite-56", "kind": "sprite", "sourceTimelineId": "sprite-56",
+        "parentFrameDomainId": "root", "frameCount": 1, "scenarioIds": ["default"]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

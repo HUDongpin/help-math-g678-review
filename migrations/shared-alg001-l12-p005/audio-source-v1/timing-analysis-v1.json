@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l12-p005",
+  "status": "source-bound-machine-diagnostic-only",
+  "inputs": {
+    "receipt": {
+      "path": "migrations/shared-alg001-l12-p005/audio-source-v1/machine-timing-receipt.json",
+      "sha256": "c193f9856de277227e8ee6dbe3c97d714863c701398bc98854276e94baa4b639"
+    },
+    "mp3": {
+      "path": "migrations/shared-alg001-l12-p005/audio-source-v1/sprite-391-source-stream.mp3",
+      "bytes": 597584,
+      "sha256": "988a60d21db50f1b70babf7cd9503311c4635be8e46654c8bc6b27fbb26f50af"
+    }
+  },
+  "swfBlocks": {
+    "count": 902,
+    "sampleCount": 3309696,
+    "sampleCountFrequencies": {
+      "0": 2,
+      "3456": 727,
+      "4608": 173
+    }
+  },
+  "mp3Frames": {
+    "count": 2873,
+    "samplesPerFrame": 1152,
+    "sampleCount": 3309696,
+    "frameLengthBytes": {
+      "208": 2873
+    },
+    "sampleRateHz": 44100,
+    "nominalBitrateBps": 64000,
+    "decodedFrameCount": 2873,
+    "decodedSampleCount": 3309696,
+    "decodedDurationSeconds": 75.049795918
+  },
+  "ffprobeDuration": {
+    "streamSeconds": 74.698,
+    "formatSeconds": 74.698,
+    "nominalBitrateByteEstimateSeconds": 74.698,
+    "deltaFromDecodedSeconds": 0.351795918,
+    "actualAverageBitrateBps": 63700
+  },
+  "sourceGap": {
+    "firstMissingFrame": 340,
+    "lastMissingFrame": 383,
+    "missingFrameCount": 44,
+    "nominalFrameDurationSeconds": 3.666666667,
+    "precedingBlock": {
+      "localFrame": 339,
+      "sampleCount": 0,
+      "signedSeekSamples": -4080,
+      "payloadBytes": 0
+    },
+    "followingBlock": {
+      "localFrame": 384,
+      "sampleCount": 4608,
+      "payloadOffset": 209248,
+      "payloadBytes": 832
+    },
+    "groups": [
+      {
+        "firstFrame": 23,
+        "lastFrame": 339,
+        "blockCount": 317,
+        "mp3Frames": 1006,
+        "samples": 1158912,
+        "payloadBytes": 209248
+      },
+      {
+        "firstFrame": 384,
+        "lastFrame": 968,
+        "blockCount": 585,
+        "mp3Frames": 1867,
+        "samples": 2150784,
+        "payloadBytes": 388336
+      }
+    ],
+    "extractedPayloadsAreByteAdjacent": true
+  },
+  "interpretation": {
+    "duration": "ffprobe 74.698 is the 597584-byte file size at nominal 64000 bit/s; frame and decoder sample counts agree at 75.049795918 seconds",
+    "gap": "no SoundStreamBlock on sprite-391 frames 340-383; concatenated extracted MP3 has no inserted time gap; runtime stop, silence, and resumption semantics remain unverified",
+    "limits": "no persisted PCM, listening, original-runtime observation, synchronization, language, or audio acceptance"
+  }
+}

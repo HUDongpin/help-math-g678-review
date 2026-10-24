@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 1,
+  "kind": "p010-source-literal-key-glossary-crosswalk-v1",
+  "animationId": "shared-alg001-l12-p010",
+  "sourceSha256": "a846950547f7c3ab7b0445dfc2118d534565ffd352b6e9687ba8211e5d4a3fcd",
+  "uniqueLiteralKeyCount": 9,
+  "buttonInstanceCount": 10,
+  "explicitCaseCrosswalks": [
+    {
+      "from": "length",
+      "to": "Length"
+    }
+  ],
+  "displayLabelDifferences": [
+    {
+      "literalKey": "Geometric figures",
+      "screenKeyTerm": "Geometric Figures",
+      "affectsLookup": false
+    },
+    {
+      "literalKey": "length",
+      "screenKeyTerm": "Length",
+      "affectsLookup": true
+    }
+  ],
+  "sources": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH Related Files/HELP_OnlineKeyTerms_XML/MI/L1KTE01.xml",
+      "bytes": 345838,
+      "sha256": "14d454f4c1c1a6f0939fb80b454fd3e22890eabb4a730c6bfa7efa1d9a2e5e5b",
+      "records": [
+        {
+          "literalKey": "Point",
+          "firstLine": 479,
+          "lastLine": 479,
+          "sourceTagName": "Point~LNG~Punto",
+          "sourceAttributes": "EngCategory =\"p\" SpanCategory=\"p\" ScreenkeyTerm=\"Point\" SubLinkEng=\"figure,Figure~position,Position~length,Length~width,Width~height,Height\" SubLinkSpan=\"figura,Figura~posición,Posición~longitud,Longitud~altura,Altura\" ExFileName=\"Point.swf\"",
+          "sourceLabelEn": "Point",
+          "sourceLabelEs": "Punto",
+          "screenKeyTerm": "Point",
+          "displayLabelCaseExact": true,
+          "lookup": {
+            "kind": "exact-literal",
+            "from": "Point",
+            "to": "Point",
+            "genericCaseNormalizationAllowed": false
+          },
+          "definitionEn": "A point is a geometric figure that has position, but no length, width, or height.",
+          "definitionEs": "Un punto es una figura geométrica que tiene una  posición, pero no tiene dimensiones: longitud, anchura o altura.",
+          "definitionSha256": "dcc466b5201b3c91723f088a9c1f8a8f1e25d7635bcdb26835cdc84c58ab0600",
+          "markupDisposition": "Retain source legacy entities in evidence; typed rich-text sanitization required before product display"
+        },
+        {
+          "literalKey": "Geometric figures",
+          "firstLine": 242,
+          "lastLine": 242,
+          "sourceTagName": "Geometric~figures~LNG~Figuras~geométricas",
+          "sourceAttributes": "EngCategory =\"g\" SpanCategory=\"f\" ScreenkeyTerm=\"Geometric Figures\" SubLinkEng=\"shapes,Shape~geometry,Geometry~triangles,Triangle~circles,Circle,~rectangles,Rectangle~figures,Figure\" SubLinkSpan=\"Formas,Forma~geometría,Geometría~triángulos,Triángulo~círculos,Círculo~rectángulos,Rectángulo\" ExFileName=\"Geometric_figures.swf\"",
+          "sourceLabelEn": "Geometric figures",
+          "sourceLabelEs": "Figuras geométricas",
+          "screenKeyTerm": "Geometric Figures",
+          "displayLabelCaseExact": false,
+          "lookup": {
+            "kind": "exact-literal",
+            "from": "Geometric figures",
+            "to": "Geometric figures",
+            "genericCaseNormalizationAllowed": false
+          },
+          "definitionEn": "The shapes used in geometry. For example: triangles, circles, and rectangles are geometric figures.",
+          "definitionEs": "Formas o dibujos que  se usan en geometría.Por ejemplo, triángulos, círculos y rectángulos son figuras geométricas.",
+          "definitionSha256": "0e446fb5ed68ecb9bc663da9635a5e5e2e5b0a2981ca574777ee6402de6c39a1",
+          "markupDisposition": "Retain source legacy entities in evidence; typed rich-text sanitization required before product display"
+        },
+        {
+          "literalKey": "Position",
+          "firstLine": 485,
+          "lastLine": 485,
+          "sourceTagName": "Position~LNG~Posición",
+          "sourceAttributes": "EngCategory =\"p\" SpanCategory=\"p\" ScreenkeyTerm=\"Position\" SubLinkEng=\"location,Location\" SubLinkSpan=\"\" ExFileName=\"Position.swf\"",
+          "sourceLabelEn": "Position",
+          "sourceLabelEs": "Posición",
+          "screenKeyTerm": "Position",
+          "displayLabelCaseExact": true,
+          "lookup": {
+            "kind": "exact-literal",
+            "from": "Position",
+            "to": "Position",
+            "genericCaseNormalizationAllowed": false
+          },
+          "definitionEn": "A position is a place or location.",
+          "definitionEs": "Una posición es un lugar o  ubicación.",
+          "definitionSha256": "3b5aed8d2e98b40f6437bed74a041e245873807d80d7dde1d1e94fce8142d316",
+          "markupDisposition": "Retain source legacy entities in evidence; typed rich-text sanitization required before product display"
+        },
+        {
+          "literalKey": "length",
+          "firstLine": 336,
+          "lastLine": 336,
+          "sourceTagName": "Length~LNG~Longitud",
+          "sourceAttributes": "EngCategory =\"l\" SpanCategory=\"l\" ScreenkeyTerm=\"Length\" SubLinkEng=\"distance,Distance~measure,Measure~units,Unit~measurement,Measurement\" SubLinkSpan=\"distancia,Distancia~lado,Lado~medir,Medir~unidades,Unidad~medición,Medición\" ExFileName=\"Length.swf\"",
+          "sourceLabelEn": "Length",
+          "sourceLabelEs": "Longitud",
+          "screenKeyTerm": "Length",
+          "displayLabelCaseExact": false,
+          "lookup": {
+            "kind": "explicit-case-crosswalk",
+            "from": "length",
+            "to": "Length",
+            "genericCaseNormalizationAllowed": false
+          },
+          "definitionEn": "How long something is or the distance from one end to another. You can measure&nbsp;length using the “standard units of measurement”: meters, centimeters, kilometers, inches, feet and yards.",
+          "definitionEs": "Es el largo de un objeto o la distancia de un lado a otro. Se puede medir la longitud usando “unidades estándares de medición” como: metros, centímetros, kilómetros, pulgadas, pies y yardas.",
+          "definitionSha256": "71f90eb7cf008214514bb96c828b124642afda40a42d4c37472f5b0c03e58f3e",
+          "markupDisposition": "Retain source legacy entities in evidence; typed rich-text sanitization required before product display"
+        },
+        {
+          "literalKey": "Width",
+          "firstLine": 754,
+          "lastLine": 754,
+          "sourceTagName": "Width~LNG~Anchura",
+          "sourceAttributes": "EngCategory =\"w\" SpanCategory=\"a\" ScreenkeyTerm=\"Width\" SubLinkEng=\"distance,Distance~measurement,Measurement~side,Side~measure,Measure~units,Unit\" SubLinkSpan=\"distancia,Distancia~lado,Lado,figura,Figura~medir,Medir~unidades,Unidad~medición,Medición\" ExFileName=\"Width.swf\"",
+          "sourceLabelEn": "Width",
+          "sourceLabelEs": "Anchura",
+          "screenKeyTerm": "Width",
+          "displayLabelCaseExact": true,
+          "lookup": {
+            "kind": "exact-literal",
+            "from": "Width",
+            "to": "Width",
+            "genericCaseNormalizationAllowed": false
+          },
+          "definitionEn": "Distance or measurement from side to side. You can measure&nbsp;width using the “standard units of measurement”: meters, centimeters, kilometers, inches, feet and yards.",
+          "definitionEs": "Es la distancia de un lado a otro de un objeto o figura geométrica. Se puede medir el ancho usando “unidades estándares de medición” como: metros, centímetros, kilómetros, pulgadas, pies y yardas.",
+          "definitionSha256": "278b50f31030e8f5f5c21ca827b9c215e823f3b0aa28123de67f9d5455ae4df3",
+          "markupDisposition": "Retain source legacy entities in evidence; typed rich-text sanitization required before product display"
+        },
+        {
+          "literalKey": "Height",
+          "firstLine": 260,
+          "lastLine": 260,
+          "sourceTagName": "Height~LNG~Altura",
+          "sourceAttributes": "EngCategory =\"h\" SpanCategory=\"a\" ScreenkeyTerm=\"Height\" SubLinkEng=\"measurement,Measurement~measure,Measure~unit,Unit\" SubLinkSpan=\"medición,Medición~medir,Medir~unidad,Unidad\" ExFileName=\"Height.swf\"",
+          "sourceLabelEn": "Height",
+          "sourceLabelEs": "Altura",
+          "screenKeyTerm": "Height",
+          "displayLabelCaseExact": true,
+          "lookup": {
+            "kind": "exact-literal",
+            "from": "Height",
+            "to": "Height",
+            "genericCaseNormalizationAllowed": false
+          },
+          "definitionEn": "The measurement from top to bottom. You can measure&nbsp;height using any standard unit of measurement, such as meters, centimeters, inches, or feet.",
+          "definitionEs": "Es la medición desde abajo hacia arriba de algún objeto. Usted puede medir la altura usando cualquier unidad de medición, tales como metros, centímetros, pulgadas o pies.",
+          "definitionSha256": "36aa36ec1a2ca327df09e2988c886d4eac16d35188db3a2dbc8d0d13e4bba79e",
+          "markupDisposition": "Retain source legacy entities in evidence; typed rich-text sanitization required before product display"
+        },
+        {
+          "literalKey": "Coordinate plane/Cartesian Plane",
+          "firstLine": 106,
+          "lastLine": 106,
+          "sourceTagName": "Coordinate~plane/Cartesian~Plane~LNG~Plano~de~coordenadas",
+          "sourceAttributes": "EngCategory =\"c\" SpanCategory=\"c\" ScreenkeyTerm=\"Coordinate plane/Cartesian Plane\" SubLinkEng=\"grid,Grid~point,Point~ordered pair,Ordered pair~coordinates,Coordinates~represented,Represent~lines,Line~horizontal,Horizontal~x-axis,X-axis~vertical,Vertical~y-axis,y-axis\" SubLinkSpan=\"plano de coordenadas,Plano de coordenadas~cuadrícula,Cuadrícula~punto,Punto~par ordenado,Par ordenado~representa,Representa\" ExFileName=\"Coordinate_cartesian_plane.swf\"",
+          "sourceLabelEn": "Coordinate plane/Cartesian Plane",
+          "sourceLabelEs": "Plano de coordenadas",
+          "screenKeyTerm": "Coordinate plane/Cartesian Plane",
+          "displayLabelCaseExact": true,
+          "lookup": {
+            "kind": "exact-literal",
+            "from": "Coordinate plane/Cartesian Plane",
+            "to": "Coordinate plane/Cartesian Plane",
+            "genericCaseNormalizationAllowed": false
+          },
+          "definitionEn": "A coordinate plane is a grid on which any point can be identified by an ordered pair of numbers or coordinates. The coordinate plane is represented by two perpendicular number lines: the horizontal x-axis and the vertical y-axis; also called the Cartesian plane or the Cartesian coordinate system.",
+          "definitionEs": "Un plano de coordenadas es una cuadrícula en la que cada punto puede ser identificado por un par ordenado de números o coordenadas. El plano de coordenadas se representa por dos rectas graduadas y perpendiculares: el eje horizontal x y el eje vertical y; también llamado plano cartesiano o sistema cartesiano.",
+          "definitionSha256": "612928d063ee57f96ac4c952cc1b0012ec33452367dc10cfc2cdc2ea2260dfe4",
+          "markupDisposition": "Retain source legacy entities in evidence; typed rich-text sanitization required before product display"
+        },
+        {
+          "literalKey": "Coordinate",
+          "firstLine": 104,
+          "lastLine": 104,
+          "sourceTagName": "Coordinate~LNG~Coordenada",
+          "sourceAttributes": "EngCategory =\"c\" SpanCategory=\"c\" ScreenkeyTerm=\"Coordinate\" SubLinkEng=\"ordered pair,Ordered pair~correspond,Correspond~point,Point~graph,Graph\" SubLinkSpan=\"par ordenado,Par ordenado~punto,Punto~gráfico,Gráfico\" ExFileName=\"Coordinate.swf\"",
+          "sourceLabelEn": "Coordinate",
+          "sourceLabelEs": "Coordenada",
+          "screenKeyTerm": "Coordinate",
+          "displayLabelCaseExact": true,
+          "lookup": {
+            "kind": "exact-literal",
+            "from": "Coordinate",
+            "to": "Coordinate",
+            "genericCaseNormalizationAllowed": false
+          },
+          "definitionEn": "A coordinate is the ordered pair of numbers that correspond to a point on a graph.",
+          "definitionEs": "Una  coordenada es un par ordenado de números que corresponden a un punto en un gráfico.",
+          "definitionSha256": "f9fe91fd3bddac8a0ec3773b067d9edfb7fd8564b0635ad43177c722a0ec454a",
+          "markupDisposition": "Retain source legacy entities in evidence; typed rich-text sanitization required before product display"
+        },
+        {
+          "literalKey": "Ordered pair",
+          "firstLine": 429,
+          "lastLine": 429,
+          "sourceTagName": "Ordered~pair~LNG~Par~ordenado",
+          "sourceAttributes": "EngCategory =\"o\" SpanCategory=\"P\" ScreenkeyTerm=\"Ordered pair\" SubLinkEng=\"plot,Plot~graph,Graph~value,Value\" SubLinkSpan=\"ordenado,Ordenado~puntos,Punto~valor,Valor\" ExFileName=\"Ordered_pair.swf\"",
+          "sourceLabelEn": "Ordered pair",
+          "sourceLabelEs": "Par ordenado",
+          "screenKeyTerm": "Ordered pair",
+          "displayLabelCaseExact": true,
+          "lookup": {
+            "kind": "exact-literal",
+            "from": "Ordered pair",
+            "to": "Ordered pair",
+            "genericCaseNormalizationAllowed": false
+          },
+          "definitionEn": "An ordered pair of numbers in math is two numbers presented in a specific order, often used to plot&nbsp;points on a graph. For example, (1, 2)  is an ordered pair of numbers with an x-value of 1 and a y-value of 2. (2,1) refers to a different point. ",
+          "definitionEs": "Un par ordenado de números en matemáticas son dos números presentados en un orden específico, por lo general, utilizado para representar puntos en una gráfica. Por ejemplo: (1, 2) es un par ordenado de números con un valor x de 1 y un valor y de 2. El par ordenado (2,1) se refiere a un punto diferente.",
+          "definitionSha256": "17dd1f21471a1565df7ea5a691cdcaac48e5de9fbcca2b7436c3a77a76bbcc1a",
+          "markupDisposition": "Retain source legacy entities in evidence; typed rich-text sanitization required before product display"
+        }
+      ]
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH Related Files/HELP_OnlineKeyTerms_XML/MI/L1KTS01.xml",
+      "bytes": 344456,
+      "sha256": "3b437b42e75536fa8b4f110325e366c27fbe10a871439d4797650cda4238b407",
+      "records": [
+        {
+          "literalKey": "Point",
+          "firstLine": 590,
+          "lastLine": 590,
+          "sourceTagName": "Point~LNG~Punto",
+          "sourceAttributes": "EngCategory=\"p\" SpanCategory=\"p\" ScreenkeyTerm=\"Point\" SubLinkEng=\"figure,Figure~position,Position~length,Length~width,Width~height,Height\" SubLinkSpan=\"figura,Figura~posición,Posición~longitud,Longitud~altura,Altura\" ExFileName=\"Point.swf\"",
+          "sourceLabelEn": "Point",
+          "sourceLabelEs": "Punto",
+          "screenKeyTerm": "Point",
+          "displayLabelCaseExact": true,
+          "lookup": {
+            "kind": "exact-literal",
+            "from": "Point",
+            "to": "Point",
+            "genericCaseNormalizationAllowed": false
+          },
+          "definitionEn": "A point is a geometric figure that has position, but no length, width, or height.",
+          "definitionEs": "Un punto es una figura geométrica que tiene una  posición, pero no tiene dimensiones: longitud, anchura o altura.",
+          "definitionSha256": "dcc466b5201b3c91723f088a9c1f8a8f1e25d7635bcdb26835cdc84c58ab0600",
+          "markupDisposition": "Retain source legacy entities in evidence; typed rich-text sanitization required before product display"
+        },
+        {
+          "literalKey": "Geometric figures",
+          "firstLine": 314,
+          "lastLine": 314,
+          "sourceTagName": "Geometric~figures~LNG~Figuras~geométricas",
+          "sourceAttributes": "EngCategory=\"g\" SpanCategory=\"f\" ScreenkeyTerm=\"Geometric Figures\" SubLinkEng=\"shapes,Shape~geometry,Geometry~triangles,Triangle~circles,Circle,~rectangles,Rectangle~figures,Figure\" SubLinkSpan=\"Formas,Forma~geometría,Geometría~triángulos,Triángulo~círculos,Círculo~rectángulos,Rectángulo\" ExFileName=\"Geometric_figures.swf\"",
+          "sourceLabelEn": "Geometric figures",
+          "sourceLabelEs": "Figuras geométricas",
+          "screenKeyTerm": "Geometric Figures",
+          "displayLabelCaseExact": false,
+          "lookup": {
+            "kind": "exact-literal",
+            "from": "Geometric figures",
+            "to": "Geometric figures",
+            "genericCaseNormalizationAllowed": false
+          },
+          "definitionEn": "The shapes used in geometry. For example: triangles, circles, and rectangles are geometric figures.",
+          "definitionEs": "Formas o dibujos que  se usan en geometría.Por ejemplo, triángulos, círculos y rectángulos son figuras geométricas.",
+          "definitionSha256": "0e446fb5ed68ecb9bc663da9635a5e5e2e5b0a2981ca574777ee6402de6c39a1",
+          "markupDisposition": "Retain source legacy entities in evidence; typed rich-text sanitization required before product display"
+        },
+        {
+          "literalKey": "Position",
+          "firstLine": 548,
+          "lastLine": 548,
+          "sourceTagName": "Position~LNG~Posición",
+          "sourceAttributes": "EngCategory=\"p\" SpanCategory=\"p\" ScreenkeyTerm=\"Position\" SubLinkEng=\"location,Location\" SubLinkSpan=\"\" ExFileName=\"Position.swf\"",
+          "sourceLabelEn": "Position",
+          "sourceLabelEs": "Posición",
+          "screenKeyTerm": "Position",
+          "displayLabelCaseExact": true,
+          "lookup": {
+            "kind": "exact-literal",
+            "from": "Position",
+            "to": "Position",
+            "genericCaseNormalizationAllowed": false
+          },
+          "definitionEn": "A position is a place or location.",
+          "definitionEs": "Una posición es un lugar o  ubicación.",
+          "definitionSha256": "3b5aed8d2e98b40f6437bed74a041e245873807d80d7dde1d1e94fce8142d316",
+          "markupDisposition": "Retain source legacy entities in evidence; typed rich-text sanitization required before product display"
+        },
+        {
+          "literalKey": "length",
+          "firstLine": 430,
+          "lastLine": 430,
+          "sourceTagName": "Length~LNG~Longitud",
+          "sourceAttributes": "EngCategory=\"l\" SpanCategory=\"l\" ScreenkeyTerm=\"Length\" SubLinkEng=\"distance,Distance~measure,Measure~units,Unit~measurement,Measurement\" SubLinkSpan=\"distancia,Distancia~lado,Lado~medir,Medir~unidades,Unidad~medición,Medición\" ExFileName=\"Length.swf\"",
+          "sourceLabelEn": "Length",
+          "sourceLabelEs": "Longitud",
+          "screenKeyTerm": "Length",
+          "displayLabelCaseExact": false,
+          "lookup": {
+            "kind": "explicit-case-crosswalk",
+            "from": "length",
+            "to": "Length",
+            "genericCaseNormalizationAllowed": false
+          },
+          "definitionEn": "How long something is or the distance from one end to another. You can measure length using the “standard units of measurement”: meters, centimeters, kilometers, inches, feet and yards.",
+          "definitionEs": "Es el largo de un objeto o la distancia de un lado a otro. Se puede medir la longitud usando “unidades estándares de medición” como: metros, centímetros, kilómetros, pulgadas, pies y yardas.",
+          "definitionSha256": "6bdec90df2c7f2114c88173cb92fcd08eea3b180a6899272643c0d607a7a9342",
+          "markupDisposition": "Retain source legacy entities in evidence; typed rich-text sanitization required before product display"
+        },
+        {
+          "literalKey": "Width",
+          "firstLine": 16,
+          "lastLine": 16,
+          "sourceTagName": "Width~LNG~Anchura",
+          "sourceAttributes": "EngCategory=\"w\" SpanCategory=\"a\" ScreenkeyTerm=\"Width\" SubLinkEng=\"distance,Distance~measurement,Measurement~side,Side~measure,Measure~units,Unit\" SubLinkSpan=\"distancia,Distancia~lado,Lado,figura,Figura~medir,Medir~unidades,Unidad~medición,Medición\" ExFileName=\"Width.swf\"",
+          "sourceLabelEn": "Width",
+          "sourceLabelEs": "Anchura",
+          "screenKeyTerm": "Width",
+          "displayLabelCaseExact": true,
+          "lookup": {
+            "kind": "exact-literal",
+            "from": "Width",
+            "to": "Width",
+            "genericCaseNormalizationAllowed": false
+          },
+          "definitionEn": "Distance or measurement from side to side. You can measure width using the “standard units of measurement”: meters, centimeters, kilometers, inches, feet and yards.",
+          "definitionEs": "Es la distancia de un lado a otro de un objeto o figura geométrica. Se puede medir el ancho usando “unidades estándares de medición” como: metros, centímetros, kilómetros, pulgadas, pies y yardas.",
+          "definitionSha256": "cebb23a8b343716a2fdcaa69fe998f5f4a2081f1e4bc2a4b3effc0e3cb5b5826",
+          "markupDisposition": "Retain source legacy entities in evidence; typed rich-text sanitization required before product display"
+        },
+        {
+          "literalKey": "Height",
+          "firstLine": 10,
+          "lastLine": 10,
+          "sourceTagName": "Height~LNG~Altura",
+          "sourceAttributes": "EngCategory=\"h\" SpanCategory=\"a\" ScreenkeyTerm=\"Height\" SubLinkEng=\"measurement,Measurement~measure,Measure~unit,Unit\" SubLinkSpan=\"medición,Medición~medir,Medir~unidad,Unidad\" ExFileName=\"Height.swf\"",
+          "sourceLabelEn": "Height",
+          "sourceLabelEs": "Altura",
+          "screenKeyTerm": "Height",
+          "displayLabelCaseExact": true,
+          "lookup": {
+            "kind": "exact-literal",
+            "from": "Height",
+            "to": "Height",
+            "genericCaseNormalizationAllowed": false
+          },
+          "definitionEn": "The measurement from top to bottom. You can measure height using any standard unit of measurement, such as meters, centimeters, inches, or feet.",
+          "definitionEs": "Es la medición desde abajo hacia arriba de algún objeto. Usted puede medir la altura usando cualquier unidad de medición, tales como metros, centímetros, pulgadas o pies.",
+          "definitionSha256": "94828da868abed97df9144f4a07402264456171ea69e31b0fbdfc4657ec95555",
+          "markupDisposition": "Retain source legacy entities in evidence; typed rich-text sanitization required before product display"
+        },
+        {
+          "literalKey": "Coordinate plane/Cartesian Plane",
+          "firstLine": 534,
+          "lastLine": 535,
+          "sourceTagName": "Coordinate~plane/Cartesian~Plane~LNG~Plano~de~coordenadas",
+          "sourceAttributes": "EngCategory=\"c\" SpanCategory=\"p\" ScreenkeyTerm=\"Coordinate plane/Cartesian Plane\" SubLinkEng=\"grid,Grid~point,Point~ordered pair,Ordered pair~coordinates,Coordinates~represented,Represent~lines,Line~horizontal,Horizontal~x-axis,X-axis~vertical,Vertical~y-axis,y-axis\" SubLinkSpan=\"plano de coordenadas,Plano de coordenadas~cuadrícula,Cuadrícula~punto,Punto~par ordenado,Par ordenado~representa,Representa\" ExFileName=\"Coordinate_cartesian_plane.swf\"",
+          "sourceLabelEn": "Coordinate plane/Cartesian Plane",
+          "sourceLabelEs": "Plano de coordenadas",
+          "screenKeyTerm": "Coordinate plane/Cartesian Plane",
+          "displayLabelCaseExact": true,
+          "lookup": {
+            "kind": "exact-literal",
+            "from": "Coordinate plane/Cartesian Plane",
+            "to": "Coordinate plane/Cartesian Plane",
+            "genericCaseNormalizationAllowed": false
+          },
+          "definitionEn": "A coordinate plane is a grid on which any point can be identified by an ordered pair of numbers or coordinates. The coordinate plane is represented by two perpendicular number lines: the horizontal x-axis and the vertical y-axis; also called the Cartesian plane or the Cartesian coordinate system.",
+          "definitionEs": "Un plano de coordenadas es una cuadrícula en la que cada punto puede ser identificado por un par ordenado de números o coordenadas. El plano de coordenadas se representa por dos rectas graduadas y perpendiculares: el eje horizontal x y el eje vertical y; también llamado plano cartesiano o sistema cartesiano.\n",
+          "definitionSha256": "bd3a594e8a0ca9247250c4f1ef86971386f6e7468ac6f301da549745a2f62061",
+          "markupDisposition": "Retain source legacy entities in evidence; typed rich-text sanitization required before product display"
+        },
+        {
+          "literalKey": "Coordinate",
+          "firstLine": 113,
+          "lastLine": 113,
+          "sourceTagName": "Coordinate~LNG~Coordenada",
+          "sourceAttributes": "EngCategory=\"c\" SpanCategory=\"c\" ScreenkeyTerm=\"Coordinate\" SubLinkEng=\"ordered pair,Ordered pair~correspond,Correspond~point,Point~graph,Graph\" SubLinkSpan=\"par ordenado,Par ordenado~punto,Punto~gráfico,Gráfico\" ExFileName=\"Coordinate.swf\"",
+          "sourceLabelEn": "Coordinate",
+          "sourceLabelEs": "Coordenada",
+          "screenKeyTerm": "Coordinate",
+          "displayLabelCaseExact": true,
+          "lookup": {
+            "kind": "exact-literal",
+            "from": "Coordinate",
+            "to": "Coordinate",
+            "genericCaseNormalizationAllowed": false
+          },
+          "definitionEn": "A coordinate is the ordered pair of numbers that correspond to a point on a graph.",
+          "definitionEs": "Una  coordenada es un par ordenado de números que corresponden a un punto en un gráfico.",
+          "definitionSha256": "f9fe91fd3bddac8a0ec3773b067d9edfb7fd8564b0635ad43177c722a0ec454a",
+          "markupDisposition": "Retain source legacy entities in evidence; typed rich-text sanitization required before product display"
+        },
+        {
+          "literalKey": "Ordered pair",
+          "firstLine": 505,
+          "lastLine": 506,
+          "sourceTagName": "Ordered~pair~LNG~Par~ordenado",
+          "sourceAttributes": "EngCategory=\"o\" SpanCategory=\"P\" ScreenkeyTerm=\"Ordered pair\" SubLinkEng=\"plot,Plot~graph,Graph~value,Value\" SubLinkSpan=\"ordenado,Ordenado~puntos,Punto~valor,Valor\" ExFileName=\"Ordered_pair.swf\"",
+          "sourceLabelEn": "Ordered pair",
+          "sourceLabelEs": "Par ordenado",
+          "screenKeyTerm": "Ordered pair",
+          "displayLabelCaseExact": true,
+          "lookup": {
+            "kind": "exact-literal",
+            "from": "Ordered pair",
+            "to": "Ordered pair",
+            "genericCaseNormalizationAllowed": false
+          },
+          "definitionEn": "An ordered pair of numbers in math is two numbers presented in a specific order, often used to plot points on a graph. For example, (1, 2)  is an ordered pair of numbers with an x-value of 1 and a y-value of 2. (2,1) refers to a different point. ",
+          "definitionEs": "Un par ordenado de números en matemáticas son dos números presentados en un orden específico, por lo general, utilizado para representar puntos en una gráfica. Por ejemplo: (1, 2) es un par ordenado de números con un valor x de 1 y un valor y de 2. El par ordenado (2,1) se refiere a un punto diferente.\n",
+          "definitionSha256": "7cefc9828a0907322769c7c0e031e349e37cabd6f6ede323429405d7de0d188b",
+          "markupDisposition": "Retain source legacy entities in evidence; typed rich-text sanitization required before product display"
+        }
+      ]
+    }
+  ],
+  "pageLanguagePolicy": {
+    "en": "Exact source English SWF text",
+    "es": "Source English fallback until separately source-bound Spanish animation text exists",
+    "glossary": "Bilingual source dictionary labels/definitions with typed entity sanitization"
+  },
+  "claimBoundary": "Unique source dictionary records for all nine exact release literals in each dictionary. No glossary SWF/audio custody, broad normalization or original host behavior acceptance"
+}

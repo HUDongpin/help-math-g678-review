@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l12-p002",
+  "status": "unregistered-composed-canvas-drawing-candidate",
+  "source": {
+    "path": "G6-G8-shared/ALG001/L12/RW/L12RW02.swf",
+    "bytes": 1802335,
+    "sha256": "15e67732b739f0194087ded0748c2d23f9871363ed33388807c351f2aad6fb62"
+  },
+  "inputs": {
+    "xml": {
+      "path": "migrations/shared-alg001-l12-p002/audit/movie.xml",
+      "sha256": "9332ec48d2a17395e7d37c593b5336aa47bb0a821ba135fb3e350d425af19aee"
+    },
+    "mainFrames": {
+      "path": "migrations/shared-alg001-l12-p002/audit/ffdec-26.2.1-canvas-v1/DefineSprite_454/frames.html",
+      "sha256": "7936b06cd3de8afdd00c4af8631634e8bbe2bb6397137b3f2acb61f10c03cc21"
+    },
+    "titleFrames": {
+      "path": "migrations/shared-alg001-l12-p002/audit/ffdec-26.2.1-canvas-v1/DefineSprite_458/frames.html",
+      "sha256": "5aee4b201379af0c66297fd0dc010ff369fadbeb9a5ac1252f3de72fd19f7cbd"
+    },
+    "helper": {
+      "path": "migrations/shared-alg001-l12-p002/audit/ffdec-26.2.1-canvas-v1/DefineSprite_454/canvas.js",
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "peerSpec": {
+      "path": "migrations/shared-alg001-l12-p011/candidate-v2/adapter-spec.json",
+      "sha256": "bf1e93fc87b09cc967f9fa1b3dea253334141e34c7a58fb78c4f5de4b0cfaa3b"
+    },
+    "sourceAudit": {
+      "path": "migrations/shared-alg001-l12-p002/SOURCE_AUDIT_2026-09-25.md",
+      "sha256": "acbb25096a330b0e77c287be3ae5e5784936c0f83b832305fd3d49381451bedd"
+    },
+    "builder": {
+      "path": "scripts/build-g678-alg-l12-p002-candidate.mjs",
+      "sha256": "9356a57e300dbc8d97d17881b8f14ccab6d3bc0dab6937d92c8300d24dbf3e1a"
+    },
+    "sharedAdapter": {
+      "path": "scripts/build-safe-ffdec-canvas-adapter.mjs",
+      "sha256": "1d1dd117dd59a6b7191f2fa8488249ece09bfb1da8837be146677f88a01315dd"
+    },
+    "streamParser": {
+      "path": "scripts/prepare-g678-terminal-source-v1.mjs",
+      "sha256": "d621449a3b79267699e23f914ba5e3f038af9485f35d2d27db9c05e2e1a373e5"
+    }
+  },
+  "composition": {
+    "rootFrame": 6,
+    "main": {
+      "objectId": 454,
+      "depth": 1,
+      "rootPosition": {
+        "x": 278.4,
+        "y": 366.85
+      }
+    },
+    "title": {
+      "objectId": 458,
+      "depth": 147,
+      "rootPosition": {
+        "x": 403.4,
+        "y": -42.4
+      },
+      "export": "migrations/shared-alg001-l12-p002/audit/ffdec-26.2.1-canvas-v1/DefineSprite_458/frames.html",
+      "exportSha256": "5aee4b201379af0c66297fd0dc010ff369fadbeb9a5ac1252f3de72fd19f7cbd",
+      "sourceTextStageY": [
+        -131.75,
+        -108.35
+      ],
+      "sourceShapeStageY": [
+        31.25,
+        55.65
+      ]
+    },
+    "frame": {
+      "objectId": 459,
+      "depth": 150,
+      "rootPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "migrations/shared-alg001-l12-p002/audit/movie.xml",
+      "sourceSha256": "9332ec48d2a17395e7d37c593b5336aa47bb0a821ba135fb3e350d425af19aee"
+    }
+  },
+  "outputs": {
+    "spec": {
+      "sha256": "e5d91721d7ee21fb842cc99aef845892b0e42de92b2c8028cfa518e9386df59f",
+      "bytes": 5013
+    },
+    "runtime": {
+      "sha256": "993722d3cf0c30601805005fe8b750cecf50620a9b6692f5628f342184b4a3e4",
+      "bytes": 23587892
+    },
+    "audioIdentification": {
+      "sha256": "6f05919910e6c7a2d8bfc4f922b27df42beab3032639cb82fca3fa06bba6bdfc",
+      "bytes": 1490
+    },
+    "localProbe": {
+      "sha256": "d1eb1e8b40798b27b6ed17b458fd0ef5ca8e01f81ec470ad838dab5e4db35e4d",
+      "bytes": 1272
+    }
+  },
+  "acceptanceEffects": {
+    "currentJavaScriptRegistered": false,
+    "originalRuntimeAccepted": false,
+    "fidelityAccepted": false,
+    "audioAccepted": false,
+    "humanAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "published": false
+  }
+}

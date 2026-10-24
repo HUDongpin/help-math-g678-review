@@ -1,0 +1,1114 @@
+{
+  "parserVersion": 1,
+  "header": {
+    "signature": "CWS",
+    "version": 6,
+    "compressedBytes": 183770,
+    "declaredUncompressedBytes": 228634,
+    "uncompressedSha256": "b0b82bc7ae8fb1a60c6a4f46e7ddc426dc510f2cb13565c6f306447393426f33",
+    "stage": {
+      "xMinTwips": 0,
+      "xMaxTwips": 16000,
+      "yMinTwips": 0,
+      "yMaxTwips": 12000,
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "rootFrameCount": 10
+  },
+  "actionScript": {
+    "version": "AS1/2",
+    "actionScript3Flag": false,
+    "tagCounts": {
+      "DoAction": 2,
+      "DoInitAction": 0,
+      "DoABCDefine": 0,
+      "DoABC": 0
+    }
+  },
+  "frameDomains": {
+    "method": "static recursive SWF tag parse with PlaceObject/PlaceObject2/PlaceObject3 character graph",
+    "rootFrameCount": 10,
+    "definitionCount": 1,
+    "staticallyRootReachableDefinitionCount": 1,
+    "staticallyUnreachableDefinitionCount": 0,
+    "staticallyRootReachableDeclaredFrameCountSum": 475,
+    "allDeclaredFrameCountSum": 475,
+    "longestStaticallyRootReachableDomain": {
+      "domainId": "sprite-96",
+      "declaredFrameCount": 465
+    },
+    "caveat": "Static definition/placement reachability is not runtime reachability, compositing proof, scenario coverage, or a frame-domain disposition. Dynamic linkage and ActionScript state can add or suppress instances.",
+    "domains": [
+      {
+        "domainId": "root",
+        "kind": "root",
+        "spriteId": null,
+        "declaredFrameCount": 10,
+        "observedShowFrameCount": 10,
+        "definitionDepth": 0,
+        "staticallyRootReachable": true,
+        "parentDomainIds": [],
+        "placementEdges": [
+          {
+            "characterId": 96,
+            "characterType": "DefineSprite",
+            "childSpriteId": 96,
+            "placementCount": 1,
+            "firstFrame": 6,
+            "distinctFrames": [
+              6
+            ]
+          },
+          {
+            "characterId": 97,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 6,
+            "distinctFrames": [
+              6
+            ]
+          }
+        ],
+        "placedCharacterCount": 2,
+        "placedSpriteIds": [
+          96
+        ],
+        "tagCounts": {
+          "End": 1,
+          "ShowFrame": 10,
+          "DefineShape": 34,
+          "SetBackgroundColor": 1,
+          "DefineText": 28,
+          "DoAction": 2,
+          "DefineShape2": 22,
+          "Tag24": 1,
+          "PlaceObject2": 2,
+          "DefineShape3": 2,
+          "DefineButton2": 9,
+          "DefineSprite": 1,
+          "FrameLabel": 1,
+          "DefineFont2": 1
+        },
+        "scriptTagCount": 2,
+        "audioTagCount": 0,
+        "domainFingerprintSha256": "a5e71acfc2c9ada04db4e0ce45f4a9cecebc596ea9a6ca3e3c9cd09a91663c8b"
+      },
+      {
+        "domainId": "sprite-96",
+        "kind": "sprite",
+        "spriteId": 96,
+        "declaredFrameCount": 465,
+        "observedShowFrameCount": 465,
+        "definitionDepth": 1,
+        "staticallyRootReachable": true,
+        "parentDomainIds": [
+          "root"
+        ],
+        "placementEdges": [
+          {
+            "characterId": 1,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 1,
+            "distinctFrames": [
+              1
+            ]
+          },
+          {
+            "characterId": 2,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 1,
+            "distinctFrames": [
+              1
+            ]
+          },
+          {
+            "characterId": 4,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 1,
+            "distinctFrames": [
+              1
+            ]
+          },
+          {
+            "characterId": 5,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 1,
+            "distinctFrames": [
+              1
+            ]
+          },
+          {
+            "characterId": 6,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 1,
+            "distinctFrames": [
+              1
+            ]
+          },
+          {
+            "characterId": 7,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 1,
+            "distinctFrames": [
+              1
+            ]
+          },
+          {
+            "characterId": 8,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 1,
+            "distinctFrames": [
+              1
+            ]
+          },
+          {
+            "characterId": 9,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 1,
+            "distinctFrames": [
+              1
+            ]
+          },
+          {
+            "characterId": 10,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 4,
+            "firstFrame": 1,
+            "distinctFrames": [
+              1
+            ]
+          },
+          {
+            "characterId": 11,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 10,
+            "firstFrame": 1,
+            "distinctFrames": [
+              1
+            ]
+          },
+          {
+            "characterId": 12,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 4,
+            "firstFrame": 1,
+            "distinctFrames": [
+              1
+            ]
+          },
+          {
+            "characterId": 13,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 4,
+            "firstFrame": 1,
+            "distinctFrames": [
+              1
+            ]
+          },
+          {
+            "characterId": 14,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 4,
+            "firstFrame": 1,
+            "distinctFrames": [
+              1
+            ]
+          },
+          {
+            "characterId": 15,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 4,
+            "firstFrame": 1,
+            "distinctFrames": [
+              1
+            ]
+          },
+          {
+            "characterId": 16,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 1,
+            "distinctFrames": [
+              1
+            ]
+          },
+          {
+            "characterId": 17,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 1,
+            "distinctFrames": [
+              1
+            ]
+          },
+          {
+            "characterId": 18,
+            "characterType": "DefineShape3",
+            "childSpriteId": null,
+            "placementCount": 2,
+            "firstFrame": 10,
+            "distinctFrames": [
+              10,
+              69
+            ]
+          },
+          {
+            "characterId": 19,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 10,
+            "distinctFrames": [
+              10
+            ]
+          },
+          {
+            "characterId": 20,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 10,
+            "distinctFrames": [
+              10
+            ]
+          },
+          {
+            "characterId": 22,
+            "characterType": "DefineButton2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 10,
+            "distinctFrames": [
+              10
+            ]
+          },
+          {
+            "characterId": 23,
+            "characterType": "DefineButton2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 10,
+            "distinctFrames": [
+              10
+            ]
+          },
+          {
+            "characterId": 24,
+            "characterType": "DefineButton2",
+            "childSpriteId": null,
+            "placementCount": 2,
+            "firstFrame": 10,
+            "distinctFrames": [
+              10,
+              173
+            ]
+          },
+          {
+            "characterId": 25,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 69,
+            "distinctFrames": [
+              69
+            ]
+          },
+          {
+            "characterId": 26,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 69,
+            "distinctFrames": [
+              69
+            ]
+          },
+          {
+            "characterId": 27,
+            "characterType": "DefineButton2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 69,
+            "distinctFrames": [
+              69
+            ]
+          },
+          {
+            "characterId": 28,
+            "characterType": "DefineButton2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 69,
+            "distinctFrames": [
+              69
+            ]
+          },
+          {
+            "characterId": 29,
+            "characterType": "DefineButton2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 69,
+            "distinctFrames": [
+              69
+            ]
+          },
+          {
+            "characterId": 30,
+            "characterType": "DefineShape3",
+            "childSpriteId": null,
+            "placementCount": 2,
+            "firstFrame": 113,
+            "distinctFrames": [
+              113,
+              173
+            ]
+          },
+          {
+            "characterId": 31,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 113,
+            "distinctFrames": [
+              113
+            ]
+          },
+          {
+            "characterId": 32,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 113,
+            "distinctFrames": [
+              113
+            ]
+          },
+          {
+            "characterId": 33,
+            "characterType": "DefineButton2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 113,
+            "distinctFrames": [
+              113
+            ]
+          },
+          {
+            "characterId": 34,
+            "characterType": "DefineButton2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 113,
+            "distinctFrames": [
+              113
+            ]
+          },
+          {
+            "characterId": 35,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 173,
+            "distinctFrames": [
+              173
+            ]
+          },
+          {
+            "characterId": 36,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 173,
+            "distinctFrames": [
+              173
+            ]
+          },
+          {
+            "characterId": 37,
+            "characterType": "DefineButton2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 173,
+            "distinctFrames": [
+              173
+            ]
+          },
+          {
+            "characterId": 38,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 232,
+            "distinctFrames": [
+              232
+            ]
+          },
+          {
+            "characterId": 39,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 4,
+            "firstFrame": 232,
+            "distinctFrames": [
+              232,
+              290,
+              355,
+              416
+            ]
+          },
+          {
+            "characterId": 40,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 4,
+            "firstFrame": 239,
+            "distinctFrames": [
+              239,
+              296,
+              364,
+              423
+            ]
+          },
+          {
+            "characterId": 41,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 2,
+            "firstFrame": 240,
+            "distinctFrames": [
+              240,
+              424
+            ]
+          },
+          {
+            "characterId": 42,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 2,
+            "firstFrame": 241,
+            "distinctFrames": [
+              241,
+              425
+            ]
+          },
+          {
+            "characterId": 43,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 2,
+            "firstFrame": 242,
+            "distinctFrames": [
+              242,
+              426
+            ]
+          },
+          {
+            "characterId": 44,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 2,
+            "firstFrame": 243,
+            "distinctFrames": [
+              243,
+              427
+            ]
+          },
+          {
+            "characterId": 45,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 2,
+            "firstFrame": 244,
+            "distinctFrames": [
+              244,
+              428
+            ]
+          },
+          {
+            "characterId": 46,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 245,
+            "distinctFrames": [
+              245
+            ]
+          },
+          {
+            "characterId": 47,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 2,
+            "firstFrame": 246,
+            "distinctFrames": [
+              246,
+              430
+            ]
+          },
+          {
+            "characterId": 48,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 247,
+            "distinctFrames": [
+              247
+            ]
+          },
+          {
+            "characterId": 49,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 2,
+            "firstFrame": 248,
+            "distinctFrames": [
+              248,
+              323
+            ]
+          },
+          {
+            "characterId": 50,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 2,
+            "firstFrame": 248,
+            "distinctFrames": [
+              248,
+              432
+            ]
+          },
+          {
+            "characterId": 51,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 268,
+            "distinctFrames": [
+              268
+            ]
+          },
+          {
+            "characterId": 52,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 269,
+            "distinctFrames": [
+              269
+            ]
+          },
+          {
+            "characterId": 53,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 270,
+            "distinctFrames": [
+              270
+            ]
+          },
+          {
+            "characterId": 54,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 271,
+            "distinctFrames": [
+              271
+            ]
+          },
+          {
+            "characterId": 55,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 273,
+            "distinctFrames": [
+              273
+            ]
+          },
+          {
+            "characterId": 56,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 277,
+            "distinctFrames": [
+              277
+            ]
+          },
+          {
+            "characterId": 57,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 290,
+            "distinctFrames": [
+              290
+            ]
+          },
+          {
+            "characterId": 58,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 2,
+            "firstFrame": 297,
+            "distinctFrames": [
+              297,
+              365
+            ]
+          },
+          {
+            "characterId": 59,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 298,
+            "distinctFrames": [
+              298
+            ]
+          },
+          {
+            "characterId": 60,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 2,
+            "firstFrame": 299,
+            "distinctFrames": [
+              299,
+              367
+            ]
+          },
+          {
+            "characterId": 61,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 300,
+            "distinctFrames": [
+              300
+            ]
+          },
+          {
+            "characterId": 62,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 301,
+            "distinctFrames": [
+              301
+            ]
+          },
+          {
+            "characterId": 63,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 302,
+            "distinctFrames": [
+              302
+            ]
+          },
+          {
+            "characterId": 64,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 323,
+            "distinctFrames": [
+              323
+            ]
+          },
+          {
+            "characterId": 65,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 331,
+            "distinctFrames": [
+              331
+            ]
+          },
+          {
+            "characterId": 66,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 332,
+            "distinctFrames": [
+              332
+            ]
+          },
+          {
+            "characterId": 67,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 333,
+            "distinctFrames": [
+              333
+            ]
+          },
+          {
+            "characterId": 68,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 334,
+            "distinctFrames": [
+              334
+            ]
+          },
+          {
+            "characterId": 69,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 334,
+            "distinctFrames": [
+              334
+            ]
+          },
+          {
+            "characterId": 70,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 341,
+            "distinctFrames": [
+              341
+            ]
+          },
+          {
+            "characterId": 71,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 355,
+            "distinctFrames": [
+              355
+            ]
+          },
+          {
+            "characterId": 72,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 366,
+            "distinctFrames": [
+              366
+            ]
+          },
+          {
+            "characterId": 73,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 368,
+            "distinctFrames": [
+              368
+            ]
+          },
+          {
+            "characterId": 74,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 385,
+            "distinctFrames": [
+              385
+            ]
+          },
+          {
+            "characterId": 75,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 385,
+            "distinctFrames": [
+              385
+            ]
+          },
+          {
+            "characterId": 76,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 394,
+            "distinctFrames": [
+              394
+            ]
+          },
+          {
+            "characterId": 77,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 395,
+            "distinctFrames": [
+              395
+            ]
+          },
+          {
+            "characterId": 78,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 396,
+            "distinctFrames": [
+              396
+            ]
+          },
+          {
+            "characterId": 79,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 397,
+            "distinctFrames": [
+              397
+            ]
+          },
+          {
+            "characterId": 80,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 398,
+            "distinctFrames": [
+              398
+            ]
+          },
+          {
+            "characterId": 81,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 399,
+            "distinctFrames": [
+              399
+            ]
+          },
+          {
+            "characterId": 82,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 400,
+            "distinctFrames": [
+              400
+            ]
+          },
+          {
+            "characterId": 83,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 401,
+            "distinctFrames": [
+              401
+            ]
+          },
+          {
+            "characterId": 84,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 402,
+            "distinctFrames": [
+              402
+            ]
+          },
+          {
+            "characterId": 85,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 407,
+            "distinctFrames": [
+              407
+            ]
+          },
+          {
+            "characterId": 86,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 416,
+            "distinctFrames": [
+              416
+            ]
+          },
+          {
+            "characterId": 87,
+            "characterType": "DefineShape2",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 429,
+            "distinctFrames": [
+              429
+            ]
+          },
+          {
+            "characterId": 88,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 431,
+            "distinctFrames": [
+              431
+            ]
+          },
+          {
+            "characterId": 89,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 432,
+            "distinctFrames": [
+              432
+            ]
+          },
+          {
+            "characterId": 90,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 441,
+            "distinctFrames": [
+              441
+            ]
+          },
+          {
+            "characterId": 91,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 442,
+            "distinctFrames": [
+              442
+            ]
+          },
+          {
+            "characterId": 92,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 443,
+            "distinctFrames": [
+              443
+            ]
+          },
+          {
+            "characterId": 93,
+            "characterType": "DefineShape",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 444,
+            "distinctFrames": [
+              444
+            ]
+          },
+          {
+            "characterId": 94,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 445,
+            "distinctFrames": [
+              445
+            ]
+          },
+          {
+            "characterId": 95,
+            "characterType": "DefineText",
+            "childSpriteId": null,
+            "placementCount": 1,
+            "firstFrame": 453,
+            "distinctFrames": [
+              453
+            ]
+          }
+        ],
+        "placedCharacterCount": 93,
+        "placedSpriteIds": [],
+        "tagCounts": {
+          "End": 1,
+          "ShowFrame": 465,
+          "SoundStreamHead": 1,
+          "SoundStreamBlock": 456,
+          "PlaceObject2": 893,
+          "RemoveObject2": 24
+        },
+        "scriptTagCount": 0,
+        "audioTagCount": 457,
+        "domainFingerprintSha256": "f84fb1eb662674cef42c906c303a77dd0631d17312e9fbf6530186511946e953"
+      }
+    ]
+  },
+  "audio": {
+    "defineSounds": [],
+    "startSoundIds": [],
+    "tagCounts": {
+      "DefineSound": 0,
+      "StartSound": 0,
+      "SoundStreamHead": 1,
+      "SoundStreamHead2": 0,
+      "SoundStreamBlock": 456,
+      "StartSound2": 0
+    }
+  },
+  "linkageAndImports": {
+    "importedAssets": [],
+    "exportedAssets": [],
+    "symbolClasses": []
+  },
+  "tagCounts": {
+    "End": 2,
+    "ShowFrame": 475,
+    "DefineShape": 34,
+    "SetBackgroundColor": 1,
+    "DefineText": 28,
+    "DoAction": 2,
+    "SoundStreamHead": 1,
+    "SoundStreamBlock": 456,
+    "DefineShape2": 22,
+    "Tag24": 1,
+    "PlaceObject2": 895,
+    "RemoveObject2": 24,
+    "DefineShape3": 2,
+    "DefineButton2": 9,
+    "DefineSprite": 1,
+    "FrameLabel": 1,
+    "DefineFont2": 1
+  },
+  "structureFingerprintSha256": "0387b59a6e3fe36d41cee93167be0706c0c376201ae25f7ed72e7704fc1bdc0e"
+}

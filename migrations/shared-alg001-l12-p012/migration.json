@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l12-p012",
+  "animationId": "shared-alg001-l12-p012",
+  "assetId": "swf-b322949a960acef3fee6018a65785b29cd3693717ca3ba33d0d930d7866320aa",
+  "status": "preserved",
+  "created": "2026-09-27",
+  "confidence": "unknown",
+  "classification": {
+    "collection": "unknown",
+    "grade": "elementary/shared",
+    "lesson": null,
+    "section": null,
+    "page": null,
+    "domain": "unknown",
+    "knowledgePoint": {
+      "en": "",
+      "es": ""
+    },
+    "titleRaw": "",
+    "titleDisplay": "",
+    "status": "unresolved",
+    "evidence": []
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/VB/L12VB07.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L12/VB/L12VB07.swf",
+    "flaSha256": "",
+    "swfSha256": "b322949a960acef3fee6018a65785b29cd3693717ca3ba33d0d930d7866320aa",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 100964,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "",
+    "actionScriptVersion": "AVM1",
+    "complexity": "behavior-heavy",
+    "fonts": [],
+    "scripts": [],
+    "externalDependencies": []
+  },
+  "audit": {
+    "assetsRequired": false,
+    "assetsNotRequiredReason": "",
+    "masks": [],
+    "morphs": [],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "default",
+      "kind": "linear",
+      "description": "",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": []
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "",
+    "ffdec": "26.2.1",
+    "swfmill": "unavailable",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "react-native-text-canvas-source-graphics",
+    "route": "/en/migration-status/g678-calibration/shared-alg001-l12-p012",
+    "routeFile": "apps/web/app/[locale]/migration-status/g678-calibration/shared-alg001-l12-p012/page.tsx",
+    "component": "P012ModuleRenderer",
+    "registryModule": "./modules/shared-alg001-l12-p012",
+    "timelineModule": "packages/demos/src/timelines/shared-alg001-l12-p012.ts",
+    "testFile": "packages/demos/tests/alg-l12-p012-module.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-86",
+    "frameDomains": [
+      {
+        "id": "sprite-86",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-86",
+        "parentFrameDomainId": "root",
+        "frameCount": 119,
+        "scenarioIds": [
+          "ordered-pairs-interaction"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": [
+      "Root preloader is not an implemented lesson-page domain.",
+      "English source content remains the explicit Spanish UI fallback; translation and listening acceptance are pending.",
+      "Movement continues at stopped sprite-86 frame 119; interaction history requires actions, not an invented frame-only history.",
+      "Missing source enableButton implementation; bounded seeded coach selection and explicit modern close policy are qualified engineering choices, not original-runtime parity.",
+      "Original runtime, audio listening, human/Owner, strict completion and publication remain pending."
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "kind": "p010-public-source-extraction-command-v1",
+  "label": "as",
+  "startedAt": "2026-09-27T00:15:48.058Z",
+  "finishedAt": "2026-09-27T00:15:48.905Z",
+  "command": "/Users/peter/Library/Application Support/HELP Math Flash Workbench/temurin-jre-21.0.11+10/Contents/Home/bin/java",
+  "args": [
+    "-Djava.net.preferIPv4Stack=true",
+    "-Djna.nosys=true",
+    "-Djava.util.Arrays.useLegacyMergeSort=true",
+    "-Xmx512m",
+    "-Djava.awt.headless=true",
+    "-jar",
+    "/Users/peter/Applications/FFDec.app/Contents/Resources/ffdec.jar",
+    "-config",
+    "packJavaScripts=false",
+    "-onerror",
+    "abort",
+    "-timeout",
+    "45",
+    "-exportTimeout",
+    "45",
+    "-format",
+    "script:as",
+    "-export",
+    "script",
+    "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l12-p010/audit/actionscript/as",
+    "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l12-p010/audit/source-input.swf"
+  ],
+  "exitCode": 0,
+  "signal": null,
+  "error": null,
+  "stdout": {
+    "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-as.stdout.txt",
+    "bytes": 2302,
+    "sha256": "d408f42084c43a63ab5a1c5dbf2f8bf8f8e53e45413b01049936a0d76a252274"
+  },
+  "stderr": {
+    "path": "migrations/shared-alg001-l12-p010/audit/source-ffdec-as.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

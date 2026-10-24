@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l12-p002",
+  "scope": "static SWF stream structure and local decoder measurement only",
+  "source": {
+    "path": "G6-G8-shared/ALG001/L12/RW/L12RW02.swf",
+    "bytes": 1802335,
+    "sha256": "15e67732b739f0194087ded0748c2d23f9871363ed33388807c351f2aad6fb62"
+  },
+  "identification": {
+    "path": "migrations/shared-alg001-l12-p002/candidate/audio-identification.json",
+    "sha256": "6f05919910e6c7a2d8bfc4f922b27df42beab3032639cb82fca3fa06bba6bdfc"
+  },
+  "sprite": {
+    "domain": "sprite-454",
+    "frameCount": 1951,
+    "fps": 12,
+    "rootFrameCount": 10
+  },
+  "streamHead": {
+    "tagCode": 18,
+    "frame": 1,
+    "hex": "0a2a2d078906",
+    "sampleRateHz": 22050,
+    "samplesPerSwfFrame": 1837,
+    "latencySeekSamples": 1673
+  },
+  "totals": {
+    "blockCount": 1927,
+    "framesWithoutBlock": 24,
+    "payloadBytes": 797680,
+    "payloadSha256": "f59bba9bf36633b0b6d385fa12370984bdf1b854833db08bea6bb5ccf1dc1930",
+    "declaredSamples": 3534336,
+    "codecFrames": 6136,
+    "codecSampleDurationSeconds": 160.2873469387755,
+    "nominalSpriteDurationSeconds": 162.58333333333334
+  },
+  "windows": [
+    {
+      "index": 1,
+      "firstFrame": 1,
+      "lastFrame": 415,
+      "blocks": 415,
+      "mp3Bytes": 171600,
+      "payloadSha256": "d368ebb77b4a9564a857f3f34c97db581ea4c4f6c33c69e4810ee8ea54a55425",
+      "declaredSamples": 760320,
+      "codecFrames": 1320,
+      "nominalFrameSpanSeconds": 34.583333333333336,
+      "declaredSampleDurationSeconds": 34.481632653061226,
+      "firstSeekSamples": 1673,
+      "lastSeekSamples": -1870,
+      "decode": {
+        "codec": "mp3",
+        "sampleRateHz": 22050,
+        "channels": 1,
+        "ffmpegDecodedSamples": 760320,
+        "ffmpegPcmSha256": "18814db08acd0b22e6b74a286e82d42f09d1fb52cccf468c9f7845469441ee0a"
+      }
+    },
+    {
+      "index": 2,
+      "firstFrame": 435,
+      "lastFrame": 1115,
+      "blocks": 681,
+      "mp3Bytes": 281970,
+      "payloadSha256": "8ba5f61abe86dd051630acf6dba82fc3e8f3498287ab7166373d1d178ad3dec5",
+      "declaredSamples": 1249344,
+      "codecFrames": 2169,
+      "nominalFrameSpanSeconds": 56.75,
+      "declaredSampleDurationSeconds": 56.65959183673469,
+      "firstSeekSamples": 486,
+      "lastSeekSamples": -2138,
+      "decode": {
+        "codec": "mp3",
+        "sampleRateHz": 22050,
+        "channels": 1,
+        "ffmpegDecodedSamples": 1249344,
+        "ffmpegPcmSha256": "79d6879a589ff101a91706c2de20fa67259a95f0d9e6de4a488e78cd3984b9dd"
+      }
+    },
+    {
+      "index": 3,
+      "firstFrame": 1121,
+      "lastFrame": 1951,
+      "blocks": 831,
+      "mp3Bytes": 344110,
+      "payloadSha256": "d564aaf2b024d8b47b210fa6702c989d91675a378a0ecd70c46ad74479bc03fd",
+      "declaredSamples": 1524672,
+      "codecFrames": 2647,
+      "nominalFrameSpanSeconds": 69.25,
+      "declaredSampleDurationSeconds": 69.1461224489796,
+      "firstSeekSamples": 380,
+      "lastSeekSamples": 309,
+      "decode": {
+        "codec": "mp3",
+        "sampleRateHz": 22050,
+        "channels": 1,
+        "ffmpegDecodedSamples": 1524672,
+        "ffmpegPcmSha256": "a37a172bdff621ad48a50c54a9f9d5e373ada710419472439170dc027fe4732b"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "firstFrame": 416,
+      "lastFrame": 434,
+      "frames": 19,
+      "nominalDurationSeconds": 1.5833333333333333
+    },
+    {
+      "firstFrame": 1116,
+      "lastFrame": 1120,
+      "frames": 5,
+      "nominalDurationSeconds": 0.4166666666666667
+    }
+  ],
+  "emptyBlocks": [
+    {
+      "frame": 2,
+      "seekSamples": 0,
+      "declaredSamples": 0
+    },
+    {
+      "frame": 415,
+      "seekSamples": -1870,
+      "declaredSamples": 0
+    },
+    {
+      "frame": 1115,
+      "seekSamples": -2138,
+      "declaredSamples": 0
+    },
+    {
+      "frame": 1839,
+      "seekSamples": 0,
+      "declaredSamples": 0
+    }
+  ],
+  "negativeSeekMarkers": [
+    {
+      "frame": 415,
+      "seekSamples": -1870,
+      "declaredSamples": 0,
+      "mp3Bytes": 0
+    },
+    {
+      "frame": 1115,
+      "seekSamples": -2138,
+      "declaredSamples": 0,
+      "mp3Bytes": 0
+    }
+  ],
+  "separateSA": {
+    "path": "G6-G8-shared/ALG001/L12/SA/L12RW02.mp3",
+    "bytes": 478128,
+    "sha256": "cad83108fed08731582e639c0ef8c5886a5c56dab710c277c639cc0603c0fcf3",
+    "decode": {
+      "codec": "mp3",
+      "sampleRateHz": 48000,
+      "channels": 1,
+      "ffmpegDecodedSamples": 1639296,
+      "ffmpegPcmSha256": "5e1a9891493c8f6e941366e92f72afcf956c9c45e2cb33a728e58f9cc58ceead"
+    }
+  },
+  "limits": [
+    "Missing SoundStreamBlock tags are timeline gaps; they do not alone prove silence or pause semantics.",
+    "Negative SeekSamples values are preserved as signed source markers; no playback trimming rule is asserted.",
+    "ffmpeg decoding and source sample counts do not establish original Flash playback, language, cue meaning, synchronization, or listening acceptance."
+  ]
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript" src="canvas.js"></script><style type="text/css">#resizable {position:relative; display:inline-block; margin:0; padding:0;font-size:0px;} #width_size {width:10px; position:absolute; right:-5px; top:0px; bottom:0px; cursor:e-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #height_size {height:10px; position:absolute; bottom:-5px; left:0px; right:0px; cursor:n-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #myCanvas {margin:0; padding:0;} </style></head><body>
+
+<div id="resizable"><canvas id="myCanvas" width="16" height="16" style="border:1px solid #c3c3c3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas><div id="width_size">&nbsp;</div><div id="height_size">&nbsp;</div></div>
+
+<script>var canvas=document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+enhanceContext(ctx);
+var ctrans = new cxform(0,0,0,0,255,255,255,255);
+
+var scalingGrids = {};
+var boundRects = {};
+function sprite32(ctx,ctrans,frame,ratio,time){
+	var clips = [];
+	var frame_cnt = 1;
+	frame = frame % frame_cnt;
+	switch(frame){
+		case 0:
+			place("shape31",canvas,ctx,[1.0,0.0,0.0,1.0,0.0,0.0],ctrans,1,0,0,time);
+			break;
+	}
+}
+
+function sprite33(ctx,ctrans,frame,ratio,time){
+	var clips = [];
+	var frame_cnt = 1;
+	frame = frame % frame_cnt;
+	switch(frame){
+		case 0:
+			place("shape14",canvas,ctx,[1.0,0.0,0.0,1.0,0.0,0.0],ctrans,1,0,0,time);
+			break;
+	}
+}
+
+function shape34(ctx,ctrans,frame,ratio,time){
+	var pathData="M 124 78 L 5 78 0 73 1 70 1 69 61 2 Q 63 0 64 0 L 68 1 127 69 127 70 128 70 128 71 129 73 124 78";
+	ctx.fillStyle=tocolor(ctrans.apply([0,0,0,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+}
+
+function sprite35(ctx,ctrans,frame,ratio,time){
+	var clips = [];
+	var frame_cnt = 1;
+	frame = frame % frame_cnt;
+	switch(frame){
+		case 0:
+			place("shape34",canvas,ctx,[1.0,0.0,0.0,1.0,0.0,0.0],ctrans,1,0,0,time);
+			break;
+	}
+}
+
+function shape22(ctx,ctrans,frame,ratio,time){
+	var pathData="M 0 300 L 300 300 300 0 320 0 320 320 0 320 0 300";
+	ctx.fillStyle=tocolor(ctrans.apply([128,128,128,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+}
+
+function shape24(ctx,ctrans,frame,ratio,time){
+	var pathData="M 300 0 L 300 20 20 20 20 300 0 300 0 0 300 0";
+	ctx.fillStyle=tocolor(ctrans.apply([128,128,128,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+}
+
+function sprite27(ctx,ctrans,frame,ratio,time){
+	var clips = [];
+	var frame_cnt = 1;
+	frame = frame % frame_cnt;
+	switch(frame){
+		case 0:
+			place("shape24",canvas,ctx,[1.0,0.0,0.0,1.0,0.0,0.0],ctrans,1,0,0,time);
+			break;
+	}
+}
+
+function sprite28(ctx,ctrans,frame,ratio,time){
+	var clips = [];
+	var frame_cnt = 1;
+	frame = frame % frame_cnt;
+	switch(frame){
+		case 0:
+			place("shape22",canvas,ctx,[1.0,0.0,0.0,1.0,0.0,0.0],ctrans,1,0,0,time);
+			break;
+	}
+}
+
+function shape29(ctx,ctrans,frame,ratio,time){
+	var pathData="M 0 260 L 260 260 260 0 280 0 280 280 0 280 0 260";
+	ctx.fillStyle=tocolor(ctrans.apply([204,204,204,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+}
+
+function sprite30(ctx,ctrans,frame,ratio,time){
+	var clips = [];
+	var frame_cnt = 1;
+	frame = frame % frame_cnt;
+	switch(frame){
+		case 0:
+			place("shape29",canvas,ctx,[1.0,0.0,0.0,1.0,0.0,0.0],ctrans,1,0,0,time);
+			break;
+	}
+}
+
+function shape14(ctx,ctrans,frame,ratio,time){
+	var pathData="M 240 240 L 0 240 0 0 240 0 240 240";
+	ctx.fillStyle=tocolor(ctrans.apply([232,232,232,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+}
+
+function shape31(ctx,ctrans,frame,ratio,time){
+	var pathData="M 260 0 L 260 20 20 20 20 260 0 260 0 0 260 0";
+	ctx.fillStyle=tocolor(ctrans.apply([204,204,204,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+}
+
+function sprite36(ctx,ctrans,frame,ratio,time){
+	ctx.save();
+	ctx.transform(1,0,0,1,0.0,0.0);
+	var clips = [];
+	var frame_cnt = 1;
+	frame = frame % frame_cnt;
+	switch(frame){
+		case 0:
+			place("sprite27",canvas,ctx,[0.05,0.0,0.0,0.05,0.0,0.0],ctrans,1,(0+time)%1,0,time);
+			place("sprite28",canvas,ctx,[0.05,0.0,0.0,0.05,0.0,0.0],ctrans,1,(0+time)%1,0,time);
+			place("sprite30",canvas,ctx,[0.05,0.0,0.0,0.05,1.0,1.0],ctrans,1,(0+time)%1,0,time);
+			place("sprite32",canvas,ctx,[0.05,0.0,0.0,0.05,1.0,1.0],ctrans,1,(0+time)%1,0,time);
+			place("sprite33",canvas,ctx,[0.05,0.0,0.0,0.05,2.0,2.0],ctrans,1,(0+time)%1,0,time);
+			place("sprite35",canvas,ctx,[0.05,0.0,0.0,0.05,5.3,6.55],ctrans,1,(0+time)%1,0,time);
+			break;
+	}
+	ctx.restore();
+}
+
+var frame = -1;
+var time = 0;
+var frames = [];
+frames.push(0);
+
+var backgroundColor = "#ffffff";
+var originalWidth = 16;
+var originalHeight= 16;
+function nextFrame(ctx,ctrans){
+	var oldframe = frame;
+	frame = (frame+1)%frames.length;
+	if(frame==oldframe){time++;}else{time=0;};
+	drawFrame();
+}
+
+function drawFrame(){
+	ctx.fillStyle = backgroundColor;
+	ctx.fillRect(0,0,canvas.width,canvas.height);
+	ctx.save();
+	ctx.transform(canvas.width/originalWidth,0,0,canvas.height/originalHeight,0,0);
+	sprite36(ctx,ctrans,frames[frame],0,time);
+	ctx.restore();
+}
+
+window.setInterval(function(){nextFrame(ctx,ctrans);},83);
+nextFrame(ctx,ctrans);
+</script>
+</body>
+</html>

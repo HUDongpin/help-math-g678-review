@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript" src="canvas.js"></script><style type="text/css">#resizable {position:relative; display:inline-block; margin:0; padding:0;font-size:0px;} #width_size {width:10px; position:absolute; right:-5px; top:0px; bottom:0px; cursor:e-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #height_size {height:10px; position:absolute; bottom:-5px; left:0px; right:0px; cursor:n-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #myCanvas {margin:0; padding:0;} </style></head><body>
+
+<div id="resizable"><canvas id="myCanvas" width="234" height="31" style="border:1px solid #c3c3c3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas><div id="width_size">&nbsp;</div><div id="height_size">&nbsp;</div></div>
+
+<script>var canvas=document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+enhanceContext(ctx);
+var ctrans = new cxform(0,0,0,0,255,255,255,255);
+
+var scalingGrids = {};
+var boundRects = {};
+function shape1(ctx,ctrans,frame,ratio,time){
+	var pathData="M -119 -100 L 121 -100 121 160 -119 160 -119 -100";
+	var grd=ctx.createLinearGradient(-118.5,30.0,120.5,30.0);
+	grd.addColorStop(0.0,tocolor(ctrans.apply([140,140,140,1])));
+	grd.addColorStop(0.33725490196078434,tocolor(ctrans.apply([80,80,80,1])));
+	grd.addColorStop(0.8196078431372549,tocolor(ctrans.apply([114,114,114,1])));
+	grd.addColorStop(1.0,tocolor(ctrans.apply([45,45,45,1])));
+	ctx.fillStyle = grd;
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M -119 -100 L 121 -100 121 160 -119 160 -119 -100 Z";
+	var scaleMode = "NORMAL";
+	ctx.strokeStyle=tocolor(ctrans.apply([0,0,0,1]));
+	ctx.lineWidth=1.0;
+	ctx.lineCap="round";
+	ctx.lineJoin="round";
+	drawPath(ctx,pathData,true,scaleMode);
+
+}
+
+function shape2(ctx,ctrans,frame,ratio,time){
+	var pathData="M 120 -100 L 120 160 -120 160 -120 -100 120 -100";
+	ctx.fillStyle=tocolor(ctrans.apply([255,255,255,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M 120 -100 L 120 160 -120 160 -120 -100 120 -100 Z";
+	var scaleMode = "NORMAL";
+	ctx.strokeStyle=tocolor(ctrans.apply([153,153,153,1]));
+	ctx.lineWidth=1.0;
+	ctx.lineCap="round";
+	ctx.lineJoin="round";
+	drawPath(ctx,pathData,true,scaleMode);
+
+}
+
+function shape4(ctx,ctrans,frame,ratio,time){
+	var pathData="M 620 200 L 0 200 0 0 620 0 620 200";
+	ctx.fillStyle=tocolor(ctrans.apply([0,102,255,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M 620 200 L 0 200 0 0 620 0 620 200 Z";
+	var scaleMode = "NORMAL";
+	ctx.strokeStyle=tocolor(ctrans.apply([0,0,0,1]));
+	ctx.lineWidth=1.0;
+	ctx.lineCap="round";
+	ctx.lineJoin="round";
+	drawPath(ctx,pathData,true,scaleMode);
+
+}
+
+function sprite5(ctx,ctrans,frame,ratio,time){
+	var clips = [];
+	var frame_cnt = 1;
+	frame = frame % frame_cnt;
+	switch(frame){
+		case 0:
+			place("shape4",canvas,ctx,[1.0,0.0,0.0,1.0,0.0,400.0],ctrans,1,0,0,time);
+			break;
+	}
+}
+
+function button6(ctx,ctrans,frame,ratio,time){
+	var clips = [];
+	var frame_cnt = 4;
+	frame = frame % frame_cnt;
+	switch(frame){
+		case 0:
+			place("shape1",canvas,ctx,[1.0,0.0,0.0,1.0,0.0,0.0],ctrans.merge(new cxform(0,0,0,0,256,256,256,256)),1,0,0,time);
+			break;
+	}
+}
+
+function shape7(ctx,ctrans,frame,ratio,time){
+	var pathData="M 20 0 L 20 60 0 60 0 0 20 0";
+	ctx.fillStyle=tocolor(ctrans.apply([204,204,204,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+}
+
+function sprite8(ctx,ctrans,frame,ratio,time){
+	var clips = [];
+	var frame_cnt = 1;
+	frame = frame % frame_cnt;
+	switch(frame){
+		case 0:
+			place("shape7",canvas,ctx,[1.0,0.0,0.0,1.0,0.0,0.0],ctrans,1,0,0,time);
+			break;
+	}
+}
+
+function shape9(ctx,ctrans,frame,ratio,time){
+	var pathData="M 2731 130 L 2587 130 176 130 31 130 31 10 176 10 2587 10 2731 10 2731 130";
+	ctx.fillStyle=tocolor(ctrans.apply([255,255,0,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+}
+
+function button10(ctx,ctrans,frame,ratio,time){
+	var clips = [];
+	var frame_cnt = 4;
+	frame = frame % frame_cnt;
+	switch(frame){
+		case 0:
+			break;
+	}
+}
+
+function sprite11(ctx,ctrans,frame,ratio,time){
+	ctx.save();
+	ctx.transform(1,0,0,1,6.05,4.15);
+	var clips = [];
+	var frame_cnt = 2;
+	frame = frame % frame_cnt;
+	switch(frame){
+		case 0:
+			place("button10",canvas,ctx,[0.04444427490234375,0.0,0.0,0.0583343505859375,-5.15,-3.3],ctrans,1,0,0,time);
+			place("sprite8",canvas,ctx,[0.05,0.0,0.0,0.05,0.5,0.5],ctrans,1,(0+time)%1,0,time);
+			place("button6",canvas,ctx,[0.05,0.0,0.0,0.0384613037109375,0.45,0.05],ctrans,1,0,0,time);
+			place("sprite5",canvas,ctx,[0.05,0.0,0.0,0.05,197.1,-2.95],ctrans.merge(new cxform(0,0,0,0,256,256,256,0)),1,(0+time)%1,0,time);
+			break;
+		case 1:
+			place("button10",canvas,ctx,[0.04444427490234375,0.0,0.0,0.0583343505859375,-5.15,-3.3],ctrans,1,0,0,time);
+			place("sprite8",canvas,ctx,[0.05,0.0,0.0,0.05,0.5,0.5],ctrans,1,(0+time)%1,0,time);
+			place("button6",canvas,ctx,[0.05,0.0,0.0,0.0384613037109375,0.45,0.05],ctrans,1,0,0,time);
+			place("sprite5",canvas,ctx,[0.05,0.0,0.0,0.05,197.1,-2.95],ctrans.merge(new cxform(0,0,0,0,256,256,256,0)),1,(0+time)%1,1,time);
+			break;
+	}
+	ctx.restore();
+}
+
+var frame = -1;
+var time = 0;
+var frames = [];
+frames.push(0);
+frames.push(1);
+
+var backgroundColor = "#ffffff";
+var originalWidth = 234;
+var originalHeight= 31;
+function nextFrame(ctx,ctrans){
+	var oldframe = frame;
+	frame = (frame+1)%frames.length;
+	if(frame==oldframe){time++;}else{time=0;};
+	drawFrame();
+}
+
+function drawFrame(){
+	ctx.fillStyle = backgroundColor;
+	ctx.fillRect(0,0,canvas.width,canvas.height);
+	ctx.save();
+	ctx.transform(canvas.width/originalWidth,0,0,canvas.height/originalHeight,0,0);
+	sprite11(ctx,ctrans,frames[frame],0,time);
+	ctx.restore();
+}
+
+window.setInterval(function(){nextFrame(ctx,ctrans);},83);
+nextFrame(ctx,ctrans);
+</script>
+</body>
+</html>
