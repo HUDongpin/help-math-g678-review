@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l08-p034",
+  "animationId": "shared-alg001-l08-p034",
+  "assetId": "swf-794afc62ac6c5505cdcc9b28b72c56ea7d57e0d85c9eba4bd64b78c835495a5f",
+  "status": "implementing",
+  "created": "2026-10-07",
+  "confidence": "high",
+  "classification": {
+    "collection": "course",
+    "grade": "G6-G8-shared",
+    "lesson": 8,
+    "section": "TI",
+    "page": 5,
+    "domain": "expressions-equations-number-theory",
+    "knowledgePoint": {
+      "en": "Rewrite a linear equation in slope-intercept form to identify slope.",
+      "es": "Reescribir una ecuaci\u00f3n lineal en la forma pendiente-intersecci\u00f3n para identificar la pendiente."
+    },
+    "titleRaw": "Question 5",
+    "titleDisplay": "Question 5",
+    "status": "confirmed",
+    "evidence": [
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/output/g678-alg-l08-p034-source-20261007-v1/source-preflight-v1.json",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/output/g678-alg-l08-p034-source-20261007-v1/behavior-audit-v1.json"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/TI/L8TI06.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/TI/L8TI06.swf",
+    "flaSha256": "",
+    "swfSha256": "794afc62ac6c5505cdcc9b28b72c56ea7d57e0d85c9eba4bd64b78c835495a5f",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 694592,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "",
+    "actionScriptVersion": "AS1/2",
+    "complexity": "behavior-heavy",
+    "fonts": [
+      "Arial",
+      "Bauhaus Md BT",
+      "Bertram LET",
+      "Boink LET",
+      "Eras Bd BT",
+      "MicrogrammaDBolExt",
+      "Performa Black SSi"
+    ],
+    "scripts": [
+      "frame_1/DoAction.as",
+      "frame_6/DoAction.as",
+      "DefineSprite_383/frame_1/DoAction.as",
+      "DefineSprite_383/frame_98/DoAction.as",
+      "DefineSprite_383/frame_99/DoAction.as",
+      "DefineSprite_383/frame_523/DoAction.as",
+      "DefineButton2_182/BUTTONCONDACTION on(release).as",
+      "DefineButton2_183/BUTTONCONDACTION on(release).as",
+      "DefineSprite_219/frame_1/DoAction.as",
+      "DefineSprite_219/frame_31/DoAction.as",
+      "DefineSprite_351/frame_1/DoAction.as",
+      "DefineSprite_351/frame_20/DoAction.as",
+      "DefineButton2_332/BUTTONCONDACTION on(release).as",
+      "DefineSprite_351/frame_29/DoAction.as",
+      "DefineButton2_162/BUTTONCONDACTION on(release).as",
+      "DefineButton2_193/BUTTONCONDACTION on(release).as",
+      "DefineButton2_140/BUTTONCONDACTION on(release).as",
+      "DefineButton2_141/BUTTONCONDACTION on(release).as",
+      "DefineButton2_142/BUTTONCONDACTION on(release).as",
+      "DefineButton2_143/BUTTONCONDACTION on(release).as",
+      "DefineButton2_144/BUTTONCONDACTION on(release).as",
+      "DefineButton2_145/BUTTONCONDACTION on(release).as",
+      "DefineButton2_160/BUTTONCONDACTION on(release).as",
+      "DefineButton2_169/BUTTONCONDACTION on(release).as",
+      "DefineButton2_170/BUTTONCONDACTION on(release).as"
+    ],
+    "externalDependencies": [
+      "source EN/ES key-term XML; selected source MP3 streams; source Spanish MP3; minimal quiz/coach/glossary host adapter"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      "right sprite219: shape194 at depth1 clips depths2 through7"
+    ],
+    "morphs": [
+      "32 source-ratio variants among 82 shape variants, source endpoints retained"
+    ],
+    "filters": [
+      "source RGB multipliers/additions via sRGB feComponentTransfer"
+    ],
+    "networkCalls": [
+      "local-only exact source audio requests in native candidate; no provider calls"
+    ]
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "source-vocabulary",
+      "kind": "interactive",
+      "description": "Main timeline 1..523; source hold98, resume99, stop523",
+      "reachable": true
+    },
+    {
+      "id": "right-feedback",
+      "kind": "interactive",
+      "description": "Answer1/A invokes selected219 frames2..31",
+      "reachable": true
+    },
+    {
+      "id": "wrong-first",
+      "kind": "interactive",
+      "description": "Wrong3/2/4 invokes351 and holds20; Close21 exits29 back to quiz",
+      "reachable": true
+    },
+    {
+      "id": "wrong-second",
+      "kind": "interactive",
+      "description": "Second wrong has later wording; Close21 exits29 to main99",
+      "reachable": true
+    },
+    {
+      "id": "coach",
+      "kind": "interactive",
+      "description": "Explicit static coach161, locks answers, source seven key terms",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "en",
+      "es"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      "stream-219",
+      "stream-251",
+      "stream-284",
+      "stream-292",
+      "stream-309",
+      "stream-323",
+      "stream-337",
+      "stream-351",
+      "stream-383",
+      "source-spanish"
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "",
+    "ffdec": "unavailable",
+    "swfmill": "unavailable",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "React + SVG + source sample-clocked Web Audio",
+    "route": "",
+    "routeFile": "",
+    "component": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/output/g678-alg-l08-p034-integration-20261007-v1/draft-source/alg-l08-p034-presentation-v1.tsx",
+    "registryModule": "./modules/shared-alg001-l08-p034",
+    "timelineModule": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/output/g678-alg-l08-p034-integration-20261007-v1/draft-source/timelines/shared-alg001-l08-p034.ts",
+    "testFile": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/output/g678-alg-l08-p034-integration-20261007-v1/draft-source/alg-l08-p034-frame-v1.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-383",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "source-vocabulary"
+        ]
+      },
+      {
+        "id": "sprite-383",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-383",
+        "parentFrameDomainId": "root",
+        "frameCount": 523,
+        "scenarioIds": [
+          "source-vocabulary"
+        ]
+      },
+      {
+        "id": "sprite-219",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-219",
+        "parentFrameDomainId": "root",
+        "frameCount": 31,
+        "scenarioIds": [
+          "right-feedback"
+        ]
+      },
+      {
+        "id": "sprite-351",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-351",
+        "parentFrameDomainId": "root",
+        "frameCount": 29,
+        "scenarioIds": [
+          "wrong-first",
+          "wrong-second"
+        ]
+      },
+      {
+        "id": "sprite-161",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-161",
+        "parentFrameDomainId": "root",
+        "frameCount": 1,
+        "scenarioIds": [
+          "coach"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": [
+      "No paired FLA or authoritative original runtime.",
+      "Current candidate is output-only; no app, route, registry or Current-JS admission.",
+      "Source English artwork retained in Spanish UI; original seven Spanish dictionary entries retained.",
+      "219 after-End 386 bytes retained separately; no appending or synthetic padding.",
+      "Uppercase source Y and alpha251/256 retained.",
+      "Source-only unreachable decorations are preserved as source evidence, not claimed runtime behavior.",
+      "Native candidate is separate from full My Lesson, typography, listening and fidelity acceptance."
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-06T21:59:53.742601+00:00",
+  "failedGenerator": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l08-p024/generator-v1/derive-native-v1.py",
+    "bytes": 8927,
+    "sha256": "2e55a46525b7459127cd780c5e06d14d1ed9b17afa83c794d44ba2d17e4c156a"
+  },
+  "failedModel": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l08-p024/native-v1/product-model-v1.json",
+    "bytes": 1184254,
+    "sha256": "bdb87bf40c14e540a9256ec821426c9057fa4279eb109416079f97370550410a"
+  },
+  "failure": "Full-line assertion found permanently empty first and third lines because the source left mask edge clips a few twips of the first glyph even at final width.",
+  "sourceFinding": "At final width the first glyph advance starts at -6998 twips for text6 and -6996 for text16, while authored mask begins about -6988. Static FFdec frames show readable complete sentences. Zero text is not a faithful semantic result.",
+  "repair": "Use source-composed glyph trailing-edge reveal with positive mask intersection and full vertical containment, then discard incomplete trailing words. Preserve source text/glyph/matrix data; native reflow exposes complete words after their trailing advance is revealed. First-edge clipping remains an original-runtime/fidelity distinction.",
+  "sourceInputs": [
+    {
+      "path": "/Volumes/American Dream/.g6l8p24a1/source-extraction-v1/source.xml",
+      "bytes": 3839852,
+      "sha256": "75404d525118e30d489b5019fc3ae46ab7cc46f855c0e518320b4eaa0cdccbb1"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p24a1/source-extraction-v1/source-text-catalog-v1.json",
+      "bytes": 864999,
+      "sha256": "b8981df20cd66a99d7d9f171cba402bccd8ab6baa6d2bc913fc0fcb1d5547baf"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p24a1/source-extraction-v1/source-frames-v1.json",
+      "bytes": 2645743,
+      "sha256": "5a5f84c07109e87f452d0d5a8eaf940ed7bd9862ab502f15fa3193b33854c138"
+    }
+  ],
+  "repairedGenerator": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l08-p024/generator-v1/derive-native-v2.py",
+    "bytes": 8967,
+    "sha256": "0f6b393ad9a670f859caa832147bee014d18d88d7becce82389dfc990930b354"
+  },
+  "registered": false,
+  "originalRuntimeAccepted": false
+}

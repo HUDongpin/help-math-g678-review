@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l08-p018",
+  "animationId": "shared-alg001-l08-p018",
+  "assetId": "swf-843956b1edfcd2efacaf5da55496b7b496e1eb06acb5ce1dfd5d10c801df0f40",
+  "status": "preserved",
+  "created": "2026-10-06",
+  "confidence": "verified",
+  "classification": {
+    "collection": "course",
+    "grade": "shared",
+    "lesson": 8,
+    "section": "IN",
+    "page": 2,
+    "domain": "algebra",
+    "knowledgePoint": {
+      "en": "Identify linear equations through three line graphs and ordered equivalent-equation steps",
+      "es": "Identificar ecuaciones lineales mediante tres gráficas y pasos de ecuaciones equivalentes"
+    },
+    "titleRaw": "Identifying Linear Functions",
+    "titleDisplay": "Identifying Linear Equations",
+    "status": "confirmed",
+    "evidence": [
+      "source-v1/index.xml",
+      "native-v1/source-model-v1.json"
+    ],
+    "sectionPageOrdinal": 2,
+    "globalPageOrdinal": 18,
+    "sourceOccurrence": 18,
+    "moduleCode": "ALG001"
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/IN/L8IN03.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/IN/L8IN03.swf",
+    "flaSha256": "",
+    "swfSha256": "843956b1edfcd2efacaf5da55496b7b496e1eb06acb5ce1dfd5d10c801df0f40",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 110840,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#ffffff",
+    "actionScriptVersion": "AS1/2",
+    "complexity": "interactive-understood",
+    "fonts": [
+      "Bauhaus Md BT"
+    ],
+    "scripts": [
+      "/Volumes/American Dream/.g6l8p18a1/source-extraction-v1/ffdec/scripts/DefineButton2_10/BUTTONCONDACTION on(release).as",
+      "/Volumes/American Dream/.g6l8p18a1/source-extraction-v1/ffdec/scripts/DefineButton2_7/BUTTONCONDACTION on(release).as",
+      "/Volumes/American Dream/.g6l8p18a1/source-extraction-v1/ffdec/scripts/DefineButton2_8/BUTTONCONDACTION on(release).as",
+      "/Volumes/American Dream/.g6l8p18a1/source-extraction-v1/ffdec/scripts/DefineButton2_9/BUTTONCONDACTION on(release).as",
+      "/Volumes/American Dream/.g6l8p18a1/source-extraction-v1/ffdec/scripts/frame_1/DoAction.as",
+      "/Volumes/American Dream/.g6l8p18a1/source-extraction-v1/ffdec/scripts/frame_6/DoAction.as"
+    ],
+    "externalDependencies": [
+      "InternalPreloader.jump_check",
+      "DoHyperLinks",
+      "optional old-host SA button"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [],
+    "morphs": [],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "source-linear-equations",
+      "kind": "interactive",
+      "description": "Source220-frame ordinary loop: three line graphs, six magenta equation flashes, graph fade, column transition, cumulative equivalent-equation steps, two half fractions and four glossary holds.",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "en",
+      "es"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "source-stream",
+        "language": "en",
+        "source": "source-v1/stream-60.mp3",
+        "sourceSha256": "dbf0eb600ec544624ebdffec8b79ba8d05a55675d38d503016b6467776921b94",
+        "frameDomain": "sprite-60",
+        "startSemantics": "explicit Play; source runs11/13;220-frame ordinary cycle",
+        "replayBehavior": "retire decoder/nodes and reset main1"
+      },
+      {
+        "id": "optional-spanish-audio",
+        "language": "es",
+        "source": "source-v1/L8IN03.mp3",
+        "sourceSha256": "00fe36994703bac541320b7c9765074b5cd93984606787ac48bdae7ab834cb76",
+        "frameDomain": "held-main",
+        "startSemantics": "explicit Spanish Audio only; no locale autoplay or splice",
+        "replayBehavior": "close decoder and reset main1"
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "Planned maintained React native source title, definition,129 axis labels and equation steps; source SVG plots/columns and two native half fractions.",
+    "route": "/en/migration-status/g678-calibration/shared-alg001-l08-p018/registered-v1",
+    "routeFile": "apps/web/app/[locale]/migration-status/g678-calibration/shared-alg001-l08-p018/registered-v1/page.tsx",
+    "component": "packages/demos/src/alg-l08-p018-presentation-v1.tsx",
+    "registryModule": "./modules/shared-alg001-l08-p018",
+    "timelineModule": "packages/demos/src/timelines/shared-alg001-l08-p018.ts",
+    "testFile": "packages/demos/src/alg-l08-p018-frame-v1.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-60",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "source-linear-equations"
+        ]
+      },
+      {
+        "id": "sprite-60",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-60",
+        "parentFrameDomainId": "root",
+        "frameCount": 220,
+        "scenarioIds": [
+          "source-linear-equations"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

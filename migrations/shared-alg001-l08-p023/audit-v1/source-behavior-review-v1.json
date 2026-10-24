@@ -1,0 +1,1247 @@
+{
+  "at": "2026-10-06T20:38:08.957221+00:00",
+  "animationId": "shared-alg001-l08-p023",
+  "source": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l08-p023/source-v1/L8IN08.swf",
+    "bytes": 622467,
+    "sha256": "4963fe283d7c233df31306a959e6012bfaa21176b0d59d59ed008efed6511789"
+  },
+  "catalog": {
+    "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/source-text-catalog-v1.json",
+    "bytes": 843291,
+    "sha256": "6e629905ad2ebd02c1ade44d031d3c167ca3bcc8a8c9af65527daadc0190cefc"
+  },
+  "frames": {
+    "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/source-frames-v1.json",
+    "bytes": 1557036,
+    "sha256": "1da719d734e7a2c5a0c8907c6a5d8e34d88c06a6fd69cd932006e8ab41fc8a55"
+  },
+  "header": {
+    "signature": "CWS",
+    "version": 6,
+    "sourceBytes": 622467,
+    "declaredBytes": 710036,
+    "stageBoundsTwips": {
+      "left": 0,
+      "right": 16000,
+      "top": 0,
+      "bottom": 12000
+    },
+    "frameRate": 12,
+    "frameCount": 10
+  },
+  "rootEntryFrame": 6,
+  "mainSprite": 203,
+  "mainFrames": 385,
+  "quizHold": 99,
+  "releaseFrame": 100,
+  "terminal": "No terminal DoAction. Ordinary385-to1 loop; reentering99 resets quizTryCount. No page autonext or completion event.",
+  "choices": [
+    {
+      "name": "AnsBtn1",
+      "label": "A",
+      "value": "−6",
+      "correct": false,
+      "sourcePlacement": {
+        "matrix": [
+          1.038818359375,
+          0,
+          0,
+          1.3587799072265625,
+          -5151,
+          -1938
+        ],
+        "depth": 139,
+        "placedFrame": 99,
+        "characterId": 177,
+        "ratio": 98,
+        "name": {
+          "text": "AnsBtn1",
+          "decodeStatus": "exact-ascii",
+          "rawSha256": "652aabba633b4aae038e4ecb2d52b0f6b956784f610c46c58d9bcce45478912c",
+          "rawHex": null
+        },
+        "instanceId": "sprite-203/depth-139/generation-1"
+      }
+    },
+    {
+      "name": "AnsBtn2",
+      "label": "B",
+      "value": "1",
+      "correct": false,
+      "sourcePlacement": {
+        "matrix": [
+          0.9747161865234375,
+          0,
+          0,
+          1.3587799072265625,
+          -5169,
+          -638
+        ],
+        "depth": 133,
+        "placedFrame": 99,
+        "characterId": 177,
+        "ratio": 98,
+        "name": {
+          "text": "AnsBtn2",
+          "decodeStatus": "exact-ascii",
+          "rawSha256": "3a6d4397e8ec5d2b74ecc26d68bbc770a3824115fd0ec19b833dfb193604558a",
+          "rawHex": null
+        },
+        "instanceId": "sprite-203/depth-133/generation-1"
+      }
+    },
+    {
+      "name": "AnsBtn3",
+      "label": "C",
+      "value": "2",
+      "correct": true,
+      "sourcePlacement": {
+        "matrix": [
+          0.966827392578125,
+          0,
+          0,
+          1.365020751953125,
+          -5182,
+          737
+        ],
+        "depth": 135,
+        "placedFrame": 99,
+        "characterId": 178,
+        "ratio": 98,
+        "name": {
+          "text": "AnsBtn3",
+          "decodeStatus": "exact-ascii",
+          "rawSha256": "5e739eef0f671a443515b0de43d353cf3b507f7c444d887738e59c70725fac3c",
+          "rawHex": null
+        },
+        "instanceId": "sprite-203/depth-135/generation-1"
+      }
+    },
+    {
+      "name": "AnsBtn4",
+      "label": "D",
+      "value": "3",
+      "correct": false,
+      "sourcePlacement": {
+        "matrix": [
+          0.9990081787109375,
+          0,
+          0,
+          1.3587799072265625,
+          -5195,
+          1996
+        ],
+        "depth": 137,
+        "placedFrame": 99,
+        "characterId": 177,
+        "ratio": 98,
+        "name": {
+          "text": "AnsBtn4",
+          "decodeStatus": "exact-ascii",
+          "rawSha256": "a8673984a0a0cc5fb7b0d88deecc5265971ff2cb6cafb049f270a24f394bbaf7",
+          "rawHex": null
+        },
+        "instanceId": "sprite-203/depth-137/generation-1"
+      }
+    }
+  ],
+  "scripts": [
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineButton2_123/BUTTONCONDACTION on(release).as",
+      "bytes": 141,
+      "sha256": "3fe79f85ee919b2d07dc6e3ea32f67fe78ab058772ea4197375d1063d7be8a7c",
+      "body": "on(release){\n   _parent.gotoAndPlay(21);\n   i = 1;\n   while(i <= 4)\n   {\n      eval(\"AnsBtn\" + i).gotoAndStop(1);\n      i++;\n   }\n}\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineButton2_137/BUTTONCONDACTION on(release).as",
+      "bytes": 141,
+      "sha256": "347253891f997902789749e125aa4b6eed7eaad17dbd308bc9ce40651e8222d0",
+      "body": "on(release){\n   _parent.gotoAndPlay(22);\n   i = 1;\n   while(i <= 4)\n   {\n      eval(\"AnsBtn\" + i).gotoAndStop(1);\n      i++;\n   }\n}\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineButton2_164/BUTTONCONDACTION on(release).as",
+      "bytes": 141,
+      "sha256": "4057c3c6552def15f1e846f96fbf4df07b5166f278dad82eec3eea19b09b3394",
+      "body": "on(release){\n   _parent.gotoAndPlay(23);\n   i = 1;\n   while(i <= 4)\n   {\n      eval(\"AnsBtn\" + i).gotoAndStop(1);\n      i++;\n   }\n}\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineButton2_177/BUTTONCONDACTION on(release).as",
+      "bytes": 378,
+      "sha256": "ec59817bcca92ae7e57175c72fa627ed00832b3ec6b633529fab91e9f1c9b78a",
+      "body": "on(release){\n   if(_global.quizTryCount == 1)\n   {\n      _global.WrongFeed = \"Rewrite the equation in slope-intercept form (y= mx + b) to make it easy to find. \";\n   }\n   else\n   {\n      _global.WrongFeed = \"Rewrite the equation in slope-intercept form (y= mx + b) to make it easy to find. Try again.\";\n   }\n   _root.disableQuizButton();\n   _root.showWrongFeed();\n}\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineButton2_178/BUTTONCONDACTION on(release).as",
+      "bytes": 75,
+      "sha256": "91fddc130bddd9456227b9bbd9139c44ebcf7e51db046176f2f810e5e073db02",
+      "body": "on(release){\n   _root.disableQuizButton();\n   _root.showRightFeed();\n}\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineButton2_8/BUTTONCONDACTION on(release).as",
+      "bytes": 130,
+      "sha256": "d948fd97117ca73ce7b5f3b2eae8c1cca20de3106f5b5cea8e1f5912e29ab177",
+      "body": "on(release){\n   _global.KeyAttribute = \"Linear equation\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineButton2_9/BUTTONCONDACTION on(release).as",
+      "bytes": 120,
+      "sha256": "55908f1d7494dedf091df20277da98bb4118e2160c2b2d99e3a2a1d7652ac4b6",
+      "body": "on(release){\n   _global.KeyAttribute = \"Slope\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_102/frame_1/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "body": "stop();\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_102/frame_1/DoAction_2.as",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "body": ""
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_102/frame_25/DoAction.as",
+      "bytes": 106,
+      "sha256": "5bc24178f890e478f8b0dc8085e80c07a74ae6e4f721ee01452daf12efe70911",
+      "body": "stop();\n_root.disableQuizButton();\n_global.quizSection = false;\nthis.gotoAndStop(1);\n_parent.play();\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_102/frame_25/DoAction_2.as",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "body": ""
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_127/frame_1/DoAction.as",
+      "bytes": 35,
+      "sha256": "339da0ae92e066910d2af19a170d12305f2780609209769be00e48aa35d91bbc",
+      "body": "txtFeed.text = _global.WrongFeed;\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_128/frame_1/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "body": "stop();\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_128/frame_20/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "body": "stop();\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_128/frame_29/DoAction.as",
+      "bytes": 235,
+      "sha256": "806e16c9b17ac8872b22282973f851e58129094f13d83e56f7b0098102b908ce",
+      "body": "stop();\n_root.enableQuizButton();\nthis.gotoAndStop(1);\n_global.quizTryCount++;\n_parent.NMHBtn.enabled = true;\nif(_global.quizTryCount >= 2)\n{\n   _global.quizTryCount = 0;\n   _global.quizSection = false;\n   _parent.play();\n}\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_140/frame_1/DoAction.as",
+      "bytes": 35,
+      "sha256": "339da0ae92e066910d2af19a170d12305f2780609209769be00e48aa35d91bbc",
+      "body": "txtFeed.text = _global.WrongFeed;\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_144/frame_1/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "body": "stop();\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_144/frame_21/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "body": "stop();\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_144/frame_28/DoAction.as",
+      "bytes": 235,
+      "sha256": "806e16c9b17ac8872b22282973f851e58129094f13d83e56f7b0098102b908ce",
+      "body": "stop();\n_root.enableQuizButton();\nthis.gotoAndStop(1);\n_global.quizTryCount++;\n_parent.NMHBtn.enabled = true;\nif(_global.quizTryCount >= 2)\n{\n   _global.quizTryCount = 0;\n   _global.quizSection = false;\n   _parent.play();\n}\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_167/frame_1/DoAction.as",
+      "bytes": 35,
+      "sha256": "339da0ae92e066910d2af19a170d12305f2780609209769be00e48aa35d91bbc",
+      "body": "txtFeed.text = _global.WrongFeed;\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_176/frame_1/DoAction.as",
+      "bytes": 34,
+      "sha256": "866009b2529df4394bd88608e50f5beb1bd91ec61e7e70c19da131b917e1803c",
+      "body": "stop();\n_parent.enableButton();\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_176/frame_22/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "body": "stop();\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_176/frame_28/DoAction.as",
+      "bytes": 235,
+      "sha256": "806e16c9b17ac8872b22282973f851e58129094f13d83e56f7b0098102b908ce",
+      "body": "stop();\n_root.enableQuizButton();\nthis.gotoAndStop(1);\n_global.quizTryCount++;\n_parent.NMHBtn.enabled = true;\nif(_global.quizTryCount >= 2)\n{\n   _global.quizTryCount = 0;\n   _global.quizSection = false;\n   _parent.play();\n}\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_203/frame_100/DoAction.as",
+      "bytes": 30,
+      "sha256": "97f40c5a1237941dde9cb53b208b3c2a293ae7b1de706239e6fe5d60301f947e",
+      "body": "_global.quizSection = false;\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_203/frame_99/DoAction.as",
+      "bytes": 65,
+      "sha256": "1c5ee973c2576fdd6e33a3a2cf1acd334b9fddb906b45d7b2e4d0a7874fd546f",
+      "body": "stop();\n_global.quizSection = true;\n_global.quizTryCount = 0;\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_49/frame_1/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "body": "stop();\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_49/frame_1/DoAction_2.as",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "body": ""
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_49/frame_28/DoAction.as",
+      "bytes": 106,
+      "sha256": "5bc24178f890e478f8b0dc8085e80c07a74ae6e4f721ee01452daf12efe70911",
+      "body": "stop();\n_root.disableQuizButton();\n_global.quizSection = false;\nthis.gotoAndStop(1);\n_parent.play();\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_49/frame_28/DoAction_2.as",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "body": ""
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_74/frame_1/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "body": "stop();\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_74/frame_1/DoAction_2.as",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "body": ""
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_74/frame_27/DoAction.as",
+      "bytes": 106,
+      "sha256": "5bc24178f890e478f8b0dc8085e80c07a74ae6e4f721ee01452daf12efe70911",
+      "body": "stop();\n_root.disableQuizButton();\n_global.quizSection = false;\nthis.gotoAndStop(1);\n_parent.play();\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_74/frame_27/DoAction_2.as",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "body": ""
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_90/frame_1/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "body": "stop();\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_90/frame_1/DoAction_2.as",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "body": ""
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_90/frame_28/DoAction.as",
+      "bytes": 106,
+      "sha256": "5bc24178f890e478f8b0dc8085e80c07a74ae6e4f721ee01452daf12efe70911",
+      "body": "stop();\n_root.disableQuizButton();\n_global.quizSection = false;\nthis.gotoAndStop(1);\n_parent.play();\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/DefineSprite_90/frame_28/DoAction_2.as",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "body": ""
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/frame_1/DoAction.as",
+      "bytes": 63,
+      "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19",
+      "body": "_level0.InternalPreloader.gotoAndPlay(\"jump_check\");\nstop();\n"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/scripts/frame_6/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "body": "stop();\n"
+    }
+  ],
+  "feedback": {
+    "right": [
+      {
+        "id": 49,
+        "hostName": "Mc_Right_Feed4",
+        "terminal": 28
+      },
+      {
+        "id": 74,
+        "hostName": "Mc_Right_Feed1",
+        "terminal": 27
+      },
+      {
+        "id": 90,
+        "hostName": "Mc_Right_Feed2",
+        "terminal": 28
+      },
+      {
+        "id": 102,
+        "hostName": "Mc_Right_Feed3",
+        "terminal": 25,
+        "audio": "ADPCM"
+      }
+    ],
+    "wrong": [
+      {
+        "id": 128,
+        "hostName": "Mc_Wrong_Feed2",
+        "hold": 20,
+        "closeTo": 21,
+        "terminal": 29
+      },
+      {
+        "id": 144,
+        "hostName": "Mc_Wrong_Feed3",
+        "hold": 21,
+        "closeTo": 22,
+        "terminal": 28
+      },
+      {
+        "id": 176,
+        "hostName": "Mc_Wrong_Feed1",
+        "hold": 22,
+        "closeTo": 23,
+        "terminal": 28
+      }
+    ],
+    "wrongTry0": "Rewrite the equation in slope-intercept form (y= mx + b) to make it easy to find. Try again.",
+    "wrongTry1": "Rewrite the equation in slope-intercept form (y= mx + b) to make it easy to find. ",
+    "counter": "Wrong terminal increments; first returns to held quiz,second resets0/quizfalse and parent.play. Right terminal disables quiz,setsfalse and parent.play."
+  },
+  "terms": [
+    {
+      "id": 8,
+      "key": "Linear equation"
+    },
+    {
+      "id": 9,
+      "key": "Slope"
+    }
+  ],
+  "maskPlacementsAt1": [
+    {
+      "matrix": [
+        0.2201080322265625,
+        0,
+        0,
+        0.9982147216796875,
+        -7170,
+        -3786
+      ],
+      "depth": 1,
+      "placedFrame": 1,
+      "characterId": 3,
+      "clipDepth": 8,
+      "instanceId": "sprite-203/depth-1/generation-1"
+    }
+  ],
+  "textDefinitions": [
+    {
+      "id": 6,
+      "text": "What is the slope of the linear equation  3y – 6x + 1 = 0? ",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          1,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 11,
+      "text": "D",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          89,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 13,
+      "text": "A",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          89,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 14,
+      "text": "– 6",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          89,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 15,
+      "text": "3",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          89,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 17,
+      "text": "B",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          89,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 18,
+      "text": "1  ",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          89,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 20,
+      "text": "C",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          89,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 21,
+      "text": "2  ",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          89,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 45,
+      "text": "Good Job!",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        475,
+        0
+      ],
+      "mainRanges": []
+    },
+    {
+      "id": 46,
+      "text": "Good Job!",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        475,
+        0
+      ],
+      "mainRanges": []
+    },
+    {
+      "id": 67,
+      "text": "YOU GOT IT!",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -596,
+        0
+      ],
+      "mainRanges": []
+    },
+    {
+      "id": 68,
+      "text": "YOU GOT IT!",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -596,
+        0
+      ],
+      "mainRanges": []
+    },
+    {
+      "id": 85,
+      "text": "Correct!",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        10,
+        0
+      ],
+      "mainRanges": []
+    },
+    {
+      "id": 86,
+      "text": "Correct!",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        10,
+        0
+      ],
+      "mainRanges": []
+    },
+    {
+      "id": 96,
+      "text": "Great Job!",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        503,
+        0
+      ],
+      "mainRanges": []
+    },
+    {
+      "id": 97,
+      "text": "Great Job!",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        503,
+        0
+      ],
+      "mainRanges": []
+    },
+    {
+      "id": 107,
+      "text": "Incorrect!",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -86,
+        0
+      ],
+      "mainRanges": []
+    },
+    {
+      "id": 108,
+      "text": "Incorrect!",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -86,
+        0
+      ],
+      "mainRanges": []
+    },
+    {
+      "id": 118,
+      "text": "Close",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        1105,
+        0
+      ],
+      "mainRanges": []
+    },
+    {
+      "id": 126,
+      "text": null,
+      "type": "DefineEditText",
+      "mainRanges": []
+    },
+    {
+      "id": 134,
+      "text": "Try Again!",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -268,
+        0
+      ],
+      "mainRanges": []
+    },
+    {
+      "id": 139,
+      "text": null,
+      "type": "DefineEditText",
+      "mainRanges": []
+    },
+    {
+      "id": 150,
+      "text": "That's incorrect!",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": []
+    },
+    {
+      "id": 166,
+      "text": null,
+      "type": "DefineEditText",
+      "mainRanges": []
+    },
+    {
+      "id": 179,
+      "text": "3y – 6x + 1 = 0",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          238,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 180,
+      "text": "3y – 6x + 1 – 1  = 0 – 1",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          245,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 181,
+      "text": "3y – 6x = –1",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          252,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 182,
+      "text": "3y – 6x + 6x = –1 + 6x",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          259,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 183,
+      "text": "3y = –1 + 6x",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          266,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 185,
+      "text": "  =        +  ",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          323,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 186,
+      "text": "3",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          323,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 187,
+      "text": "6x",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          323,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 189,
+      "text": "–1",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          323,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 191,
+      "text": "3y",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          323,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 192,
+      "text": " =         +  ",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          330,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 193,
+      "text": "2x",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          330,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 195,
+      "text": "1",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          330,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 196,
+      "text": "y",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          330,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 197,
+      "text": "–",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          330,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 198,
+      "text": "  = ",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          337,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 200,
+      "text": "2x –",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          337,
+          385
+        ]
+      ]
+    },
+    {
+      "id": 201,
+      "text": "2x",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          355,
+          355
+        ],
+        [
+          357,
+          357
+        ],
+        [
+          359,
+          359
+        ],
+        [
+          361,
+          361
+        ],
+        [
+          363,
+          363
+        ]
+      ]
+    },
+    {
+      "id": 202,
+      "text": "2",
+      "type": "DefineText",
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "mainRanges": [
+        [
+          375,
+          375
+        ],
+        [
+          377,
+          377
+        ],
+        [
+          379,
+          379
+        ],
+        [
+          381,
+          381
+        ]
+      ]
+    }
+  ],
+  "shape4": {
+    "svg": {
+      "path": "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/ffdec/shapes/4.svg",
+      "bytes": 545,
+      "sha256": "6d7c55c086b15dc62512cd854f1c271f879dd2f0bf258ce50fd1e119502ca862"
+    },
+    "role": "Two blue underline segments; zero-height SVG explains missing PNG. Native generator must preserve source path/stroke."
+  },
+  "open": [
+    "Source-specific implementation and deterministic state/Replay tests.",
+    "Recover exact host glossary and random feedback selection from already hash-bound host evidence; do not assume host calls from names.",
+    "Audit main mask reveal against whole glossary hit rectangles; initial placements alone do not authorize active controls.",
+    "Preserve independent DefineText matrix and changed offset flags from P022 fix; do not blindly clone P020 text generation.",
+    "sprite74 nonzero bytes after End remain preserved; no original-runtime acceptance.",
+    "_parent.enableButton in wrong176 has no local definition; retain unresolved boundary and inspect host evidence.",
+    "Feedback morphs/bitmaps are decorative but source original-runtime/fidelity remains unverified.",
+    "Real My Lesson,candidate freeze,proof registration,formal browser,production isolation are all pending."
+  ],
+  "registered": false,
+  "implemented": false,
+  "originalRuntimeAccepted": false,
+  "humanReview": false
+}

@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l08-p010",
+  "source": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/VB/L8VB05.swf",
+    "bytes": 315170,
+    "sha256": "12033d4246679bd4931e08c8b28fc6a5e335cd89727b425d5ec077cb141de2c4"
+  },
+  "decision": "maintained-candidate-awaiting-host-calibration",
+  "lane": "advanced-manual with compiler-assisted source extraction and immutable shared audio/popup templates",
+  "reason": "Source held212 quiz, immediateClose branches and removal of named drag216 require maintained source-specific state; walking figures preserve all source vector paths and placements.",
+  "capabilities": [
+    {
+      "capability": "timeline/display",
+      "sourceRequirement": "8 domains,611 frames,32 shapes,1 morph,43 labels and two original walking paths",
+      "implementationRoute": "native source frame model and React SVG/text",
+      "productVerified": false
+    },
+    {
+      "capability": "slider/popup",
+      "sourceRequirement": "13 exact scripts; input tenths; answer0.2; popup2..15; original drag removed216",
+      "implementationRoute": "maintained reducer and immutable session/player templates",
+      "productVerified": false
+    },
+    {
+      "capability": "postquiz",
+      "sourceRequirement": "Draw has no bound BtnLine name; named txtSlope80 gets0.2 and repeated release resumes",
+      "implementationRoute": "keep placed Draw action and no new quiz/popup",
+      "productVerified": false
+    },
+    {
+      "capability": "audio",
+      "sourceRequirement": "main107 run starts3/5; feedback78 starts2/4; separate SA48k",
+      "implementationRoute": "source-coordinate native clocks and strict PCM bindings",
+      "productVerified": false
+    },
+    {
+      "capability": "glossary",
+      "sourceRequirement": "Value,Slope exact ENES definitions; pause and explicit resume",
+      "implementationRoute": "existing glossary host bridge",
+      "productVerified": false
+    }
+  ],
+  "automaticCompletion": false,
+  "scaleOutAuthorized": false,
+  "originalRuntime": false,
+  "unresolvedOriginalSemantics": [
+    "Raw static212 shows popup because FFDec does not execute _visible=false; native obeys the source action.",
+    "BtnLine is referenced but no placed instance has that name. The native Draw remains usable while placed; unresolved AVM1 target effects require original-runtime verification.",
+    "Source trace(tempVal) is diagnostic output; native preserves the value formula without exposing console traces as teaching content."
+  ]
+}

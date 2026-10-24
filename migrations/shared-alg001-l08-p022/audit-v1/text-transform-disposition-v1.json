@@ -1,0 +1,13 @@
+{
+  "failure": {
+    "path": "output/g678-alg-l08-p022-integration-20261006-v1/text-transform-failure-v1.json",
+    "bytes": 2584,
+    "sha256": "5c7086d0e2b89117b81e77c384fe5774ad39b00cbd13cea33fed57f9a3cfbd11"
+  },
+  "review": {
+    "path": "output/g678-alg-l08-p022-integration-20261006-v1/native-visual-review-v1.json",
+    "bytes": 3001,
+    "sha256": "8ce0f4d5002347fdf68e9f0850e0be863947e9d9d24f2d4496d40bdcdb4f5536"
+  },
+  "decision": "Preserve definition matrix separately from placement; respect changed flags when moving the DefineText glyph pen; prior P019/P021 have identity matrices and no affected pen flags and need no proof change."
+}

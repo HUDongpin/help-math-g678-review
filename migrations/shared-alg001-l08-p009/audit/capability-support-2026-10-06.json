@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l08-p009",
+  "source": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/VB/L8VB04.swf",
+    "bytes": 140217,
+    "sha256": "3dc9c1faa1e952ee16deaf96135975b3284f0a789dc64e303922d35c7fccb88c"
+  },
+  "decision": "adapter-work-required",
+  "lane": "advanced-manual with compiler-assisted source extraction and immutable shared audio/popup templates",
+  "reason": "Postquiz160 creates a fresh actively scripted slider while removing its named text target. Existing template globally disables postquiz dragging and cannot be applied unchanged.",
+  "capabilities": [
+    {
+      "capability": "timeline/display/masks/morphs",
+      "sourceRequirement": "7 exact domains,330 main frames,10 graph shapes,2 morphs,43 labels",
+      "evidence": "native-v1/source-model-v1.json;native-v1/visual-model-v1.json",
+      "implementationRoute": "native SVG and source-bound frame queries",
+      "productVerified": false
+    },
+    {
+      "capability": "slider quiz",
+      "sourceRequirement": "stop157; -150..50 x; tenths; exact string2; immediate Close; two attempts",
+      "evidence": "17 FFDec scripts bound in native source model",
+      "implementationRoute": "immutable source-slider-feedback templates plus page-specific postquiz drag variation",
+      "productVerified": false
+    },
+    {
+      "capability": "postquiz slider replacement",
+      "sourceRequirement": "fresh named drag160; fixed unnamed field75 remains2; popup removed158",
+      "evidence": "main placements157/158/160 and both clip-action triples",
+      "implementationRoute": "maintained reducer must track physical slider position separately from fixed displayed2",
+      "productVerified": false
+    },
+    {
+      "capability": "audio",
+      "sourceRequirement": "main86,popup74 and separate SA; native PCM hash/length verified",
+      "evidence": "native-v1/streams-v1.json;native-v1/decode-native-v1.json",
+      "implementationRoute": "SourceStreamRunsClockV1 and DecodedSourceStreamTransport",
+      "productVerified": false
+    },
+    {
+      "capability": "glossary",
+      "sourceRequirement": "Value,Integers,Slope; pause/open/close-focus semantics",
+      "evidence": "native-v1/glossary-model-v1.json",
+      "implementationRoute": "existing source host bridge and bilingual glossary records",
+      "productVerified": false
+    },
+    {
+      "capability": "Replay/navigation/lifecycle",
+      "sourceRequirement": "full epoch/cycle/control/audio reset; detach on route/language exit",
+      "evidence": "source model and existing maintained host contracts",
+      "implementationRoute": "real My Lesson product validation remains required",
+      "productVerified": false
+    }
+  ],
+  "automaticCompletion": false,
+  "scaleOutAuthorized": false,
+  "originalRuntime": false,
+  "unresolvedOriginalSemantics": [
+    "Raw static frame157 shows popup because FFDec does not execute the source _visible=false action. Product must obey the extracted action.",
+    "BtnLine is referenced but the placed Draw button has no matching instance name. Original AVM1 unresolved-target effects are not established by extraction.",
+    "At160 txtSlope.text assignment exists while the named field is removed; fixed display2 is independently established by newly placed unnamed field75. The replacement slider retains active clip scripts; unresolved writes must not change fixed source text or invent a new quiz."
+  ]
+}

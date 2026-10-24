@@ -1,0 +1,305 @@
+{
+  "at": "2026-10-06T19:45:54.394847+00:00",
+  "animationId": "shared-alg001-l08-p022",
+  "sources": [
+    {
+      "source": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/IN/L8IN07.swf",
+      "copy": "migrations/shared-alg001-l08-p022/source-v1/L8IN07.swf",
+      "bytes": 198629,
+      "sha256": "7c831f0e3bb42c28b5a82fa72a4cc28519cc813efe8b23bef2e0aae2c2ee35d5"
+    },
+    {
+      "source": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/SA/L8IN07.mp3",
+      "copy": "migrations/shared-alg001-l08-p022/source-v1/L8IN07.mp3",
+      "bytes": 376992,
+      "sha256": "5578cb73ec783d240ff332db6fcdaa4b93360b80aadce1643f94f132819789b1"
+    },
+    {
+      "source": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/index.xml",
+      "copy": "migrations/shared-alg001-l08-p022/source-v1/index.xml",
+      "bytes": 10734,
+      "sha256": "185aaeaf3b56a812d66fe72671941350c8ceb5db48dc2824e74980a70ebe80c7"
+    }
+  ],
+  "sourceRoot": "/Volumes/American Dream/.g6l8p22a1/source-extraction-v1",
+  "commands": [
+    [
+      "ffdec",
+      "-onerror",
+      "abort",
+      "-timeout",
+      "120",
+      "-exportTimeout",
+      "600",
+      "-swf2xml",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l08-p022/source-v1/L8IN07.swf",
+      "/Volumes/American Dream/.g6l8p22a1/source-extraction-v1/source.xml"
+    ],
+    [
+      "swfmill",
+      "-n",
+      "swf2xml",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l08-p022/source-v1/L8IN07.swf",
+      "/Volumes/American Dream/.g6l8p22a1/source-extraction-v1/movie.xml"
+    ],
+    [
+      "ffdec",
+      "-onerror",
+      "abort",
+      "-timeout",
+      "120",
+      "-exportTimeout",
+      "600",
+      "-format",
+      "shape:svg,morphshape:svg,text:plain,sound:mp3,image:png",
+      "-export",
+      "script,shape,morphshape,text,sound,image",
+      "/Volumes/American Dream/.g6l8p22a1/source-extraction-v1/ffdec",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l08-p022/source-v1/L8IN07.swf"
+    ]
+  ],
+  "files": [
+    {
+      "path": "ffdec/scripts/DefineButton2_15/BUTTONCONDACTION on(release).as",
+      "bytes": 123,
+      "sha256": "0b89848d79d735127115901984f60c2c8c2996f9561d150573068e496601ed4b"
+    },
+    {
+      "path": "ffdec/scripts/DefineButton2_16/BUTTONCONDACTION on(release).as",
+      "bytes": 119,
+      "sha256": "d447b50f461a0db952e1dfeb6919dc0589c0d60b71cdce4614bf24715bdd21aa"
+    },
+    {
+      "path": "ffdec/scripts/DefineButton2_17/BUTTONCONDACTION on(release).as",
+      "bytes": 123,
+      "sha256": "b1b55f72901124df3b436b4f77a335fa7920a08816d0ef2222699ac6666de48e"
+    },
+    {
+      "path": "ffdec/scripts/DefineButton2_18/BUTTONCONDACTION on(release).as",
+      "bytes": 134,
+      "sha256": "650f73a93aa47fbc7b2d8e9e98cfae9f36f6e7b05277d9a6ca377e63a8252353"
+    },
+    {
+      "path": "ffdec/scripts/DefineButton2_25/BUTTONCONDACTION on(release).as",
+      "bytes": 126,
+      "sha256": "6ea84ca3139fe0c08534e296ee62f98ffe95b2b44adbb2c17f3e2435f6eccfae"
+    },
+    {
+      "path": "ffdec/scripts/DefineButton2_38/BUTTONCONDACTION on(release).as",
+      "bytes": 130,
+      "sha256": "d948fd97117ca73ce7b5f3b2eae8c1cca20de3106f5b5cea8e1f5912e29ab177"
+    },
+    {
+      "path": "ffdec/scripts/DefineButton2_39/BUTTONCONDACTION on(release).as",
+      "bytes": 120,
+      "sha256": "55908f1d7494dedf091df20277da98bb4118e2160c2b2d99e3a2a1d7652ac4b6"
+    },
+    {
+      "path": "ffdec/scripts/DefineButton2_42/BUTTONCONDACTION on(release).as",
+      "bytes": 135,
+      "sha256": "46185358c5593f9a16328c59fe1ca0c5486c0d8cd18ebfbe079f6e2bb05f472f"
+    },
+    {
+      "path": "ffdec/scripts/frame_1/DoAction.as",
+      "bytes": 63,
+      "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19"
+    },
+    {
+      "path": "ffdec/scripts/frame_6/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "ffdec/shapes/1.svg",
+      "bytes": 24785,
+      "sha256": "185235cc7acfb53979533c8de487e0e184135548bc762daf2a06e4e31a67c8d2"
+    },
+    {
+      "path": "ffdec/shapes/12.svg",
+      "bytes": 1219,
+      "sha256": "f7e08aef88a1c3e909f0aa0cccdaf5fed9ea6032bb6df1b2921041aa90798a2a"
+    },
+    {
+      "path": "ffdec/shapes/14.svg",
+      "bytes": 448,
+      "sha256": "b98de1c609cd0349d77580b38507c44e04494924eaaa0e57e001bd846d67d42d"
+    },
+    {
+      "path": "ffdec/shapes/2.svg",
+      "bytes": 476,
+      "sha256": "7b20768879e742af8ba6bc3d973ba7abaaa827c78e25dd0c96189d2981ed4df9"
+    },
+    {
+      "path": "ffdec/shapes/23.svg",
+      "bytes": 1139,
+      "sha256": "3b9377a362c468b4354eb92074d4ece7db802438ddbe9a5d0e03efe1fab7c779"
+    },
+    {
+      "path": "ffdec/shapes/26.svg",
+      "bytes": 477,
+      "sha256": "8fc4b27e526dfac9df1500e2e6225483f9ad2d0e648e2321fd61dc8008504b95"
+    },
+    {
+      "path": "ffdec/shapes/30.svg",
+      "bytes": 454,
+      "sha256": "ebae77475128b6cacea5c3c72d2577afc184b2b9c82dc521d3d1bd0449c056d0"
+    },
+    {
+      "path": "ffdec/shapes/32.svg",
+      "bytes": 469,
+      "sha256": "0145dd3afcef73846a7d08ec712f8ffd1cc98474ddcafc7be516a152de6e4d29"
+    },
+    {
+      "path": "ffdec/shapes/36.svg",
+      "bytes": 591,
+      "sha256": "546a0bd644fe5fb0a856c617e4b836a53b7dce84c6ea6207a4562c5b157191ee"
+    },
+    {
+      "path": "ffdec/shapes/40.svg",
+      "bytes": 527,
+      "sha256": "0f11de34990150c3fcc1e8239957dc89d765e0a591796b380d1ef96cbbe8c907"
+    },
+    {
+      "path": "ffdec/shapes/43.svg",
+      "bytes": 1649,
+      "sha256": "8f7835c59a65b62f44aef3bfb3ab683c18bb3afe13df0ae0533245ac93f33523"
+    },
+    {
+      "path": "ffdec/shapes/44.svg",
+      "bytes": 632,
+      "sha256": "46ff480f610a3f27bde8f99fcf34a6db8dabb1c38ab098693015f71ccf5baace"
+    },
+    {
+      "path": "ffdec/shapes/46.svg",
+      "bytes": 1372,
+      "sha256": "b1d89548515358f8bbb7ee844e495a10697d128e857556ef3939dc747e5af210"
+    },
+    {
+      "path": "ffdec/texts/10.txt",
+      "bytes": 1,
+      "sha256": "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d"
+    },
+    {
+      "path": "ffdec/texts/11.txt",
+      "bytes": 1,
+      "sha256": "380918b946a526640a40df5dced6516794f3d97bbd9e6bb553d037c4439f31c3"
+    },
+    {
+      "path": "ffdec/texts/13.txt",
+      "bytes": 251,
+      "sha256": "ba8e6845b7917fe869207071119824c6199362e2ab622251ec0ede29877ff0b7"
+    },
+    {
+      "path": "ffdec/texts/19.txt",
+      "bytes": 22,
+      "sha256": "9b4549507c4ed0ba1a51a7393cd34f3f753aadef3c0a882de1209958d3aaa9f3"
+    },
+    {
+      "path": "ffdec/texts/20.txt",
+      "bytes": 25,
+      "sha256": "d2e66c74858843d9dfaf742fc8b32bdd1a1f0e64c46945d8de670b1a97f9bd61"
+    },
+    {
+      "path": "ffdec/texts/21.txt",
+      "bytes": 13,
+      "sha256": "20875b6fd9d1792b2fd4e11623b44525ba3ce916ecd71f2976b6475f82886173"
+    },
+    {
+      "path": "ffdec/texts/22.txt",
+      "bytes": 14,
+      "sha256": "5407d11140493b9842a546093671075de43b7756eb03691bf6a4beb72f7f960b"
+    },
+    {
+      "path": "ffdec/texts/24.txt",
+      "bytes": 106,
+      "sha256": "2acfb82b76d239b20d718550f0f1966ac2fb4c391f70d20b3ab60f33dcdf728b"
+    },
+    {
+      "path": "ffdec/texts/27.txt",
+      "bytes": 6,
+      "sha256": "7e66909c22b71ad7ab620d2683eb0d466f5363b658aaa826b52438b60af2d2a0"
+    },
+    {
+      "path": "ffdec/texts/28.txt",
+      "bytes": 1,
+      "sha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+    },
+    {
+      "path": "ffdec/texts/29.txt",
+      "bytes": 1,
+      "sha256": "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d"
+    },
+    {
+      "path": "ffdec/texts/31.txt",
+      "bytes": 2,
+      "sha256": "528e5b52f8af950aa50e57ca7fc0c1f13924bd65328970ce80f30e2b4bf62591"
+    },
+    {
+      "path": "ffdec/texts/33.txt",
+      "bytes": 4,
+      "sha256": "808b1e7ac082a02c543c91c8cd291565bab1b09a8e4f2e1591f4881b516dbe1b"
+    },
+    {
+      "path": "ffdec/texts/35.txt",
+      "bytes": 32,
+      "sha256": "2b96d07e4c1f77bcba67af740f7fedb2a8dc989ac9da6791011bae9d264c383f"
+    },
+    {
+      "path": "ffdec/texts/37.txt",
+      "bytes": 220,
+      "sha256": "9b85938cda4bd780ec4db0e2513893d0e14cf0a1ab8537f87d6a7b0e9f3bc4b1"
+    },
+    {
+      "path": "ffdec/texts/4.txt",
+      "bytes": 91,
+      "sha256": "bf726bc961cad814faa291d1f15374c141ce515ff42771c1ebd486bd3ea4179c"
+    },
+    {
+      "path": "ffdec/texts/41.txt",
+      "bytes": 82,
+      "sha256": "2e98d150d7d7c8a9c63a4003d12b27c00b8f6ec84feb7b93de99b4207cb928f5"
+    },
+    {
+      "path": "ffdec/texts/45.txt",
+      "bytes": 3,
+      "sha256": "d4f85d36757c12f0c6dab57721287f327efbfc46ea8c0f820301067f8627fc0f"
+    },
+    {
+      "path": "ffdec/texts/5.txt",
+      "bytes": 1,
+      "sha256": "a1fce4363854ff888cff4b8e7875d600c2682390412a8cf79b37d0b11148b0fa"
+    },
+    {
+      "path": "ffdec/texts/6.txt",
+      "bytes": 1,
+      "sha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+    },
+    {
+      "path": "ffdec/texts/7.txt",
+      "bytes": 1,
+      "sha256": "a318c24216defe206feeb73ef5be00033fa9c4a74d0b967f6532a26ca5906d3b"
+    },
+    {
+      "path": "ffdec/texts/8.txt",
+      "bytes": 1,
+      "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881"
+    },
+    {
+      "path": "ffdec/texts/9.txt",
+      "bytes": 1,
+      "sha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+    },
+    {
+      "path": "movie.xml",
+      "bytes": 659149,
+      "sha256": "b1f5162db176b52e0b21c7b089f47421fe6c96161e57b6a674006a25cd7fbf33"
+    },
+    {
+      "path": "source.xml",
+      "bytes": 1093654,
+      "sha256": "8ade7be00d3483c950d679297d6c8171c9ffa5aab82f95f2f75840661c6a8826"
+    }
+  ],
+  "readOnlySourceUntouched": true,
+  "registered": false
+}

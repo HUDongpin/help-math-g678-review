@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l08-p035",
+  "animationId": "shared-alg001-l08-p035",
+  "assetId": "swf-b8afe5101df7e70f29bd85a762745711638fe8e1152378673acc06b6e4585e09",
+  "status": "implementing",
+  "created": "2026-10-07",
+  "confidence": "high",
+  "classification": {
+    "collection": "course",
+    "grade": "G6-G8-shared",
+    "lesson": 8,
+    "section": "TI",
+    "page": 6,
+    "domain": "expressions-equations-number-theory",
+    "knowledgePoint": {
+      "en": "Identify the y-intercept from the original graph of a linear equation.",
+      "es": "Identificar la intersección con el eje y en la gráfica original de una ecuación lineal."
+    },
+    "titleRaw": "Question 6",
+    "titleDisplay": "Question 6",
+    "status": "confirmed",
+    "evidence": [
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/output/g678-alg-l08-p035-source-20261007-v1/source-preflight-v1.json",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/output/g678-alg-l08-p035-source-20261007-v1/behavior-audit-v1.json"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/TI/L8TI07.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/TI/L8TI07.swf",
+    "flaSha256": "",
+    "swfSha256": "b8afe5101df7e70f29bd85a762745711638fe8e1152378673acc06b6e4585e09",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 938091,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "",
+    "actionScriptVersion": "AS1/2",
+    "complexity": "behavior-heavy",
+    "fonts": [
+      "Bauhaus Md BT",
+      "Arial",
+      "MicrogrammaDBolExt",
+      "Performa Black SSi",
+      "Revue BT",
+      "Bertram LET",
+      "Boink LET",
+      "Eras Bd BT"
+    ],
+    "scripts": [
+      "frame_1/DoAction.as",
+      "frame_6/DoAction.as",
+      "DefineSprite_358/frame_1/DoAction.as",
+      "DefineSprite_358/frame_76/DoAction.as",
+      "DefineSprite_358/frame_77/DoAction.as",
+      "DefineSprite_358/frame_257/DoAction.as",
+      "DefineButton2_179/BUTTONCONDACTION on(release).as",
+      "DefineButton2_178/BUTTONCONDACTION on(release).as",
+      "DefineSprite_255/frame_1/DoAction.as",
+      "DefineSprite_255/frame_27/DoAction.as",
+      "DefineSprite_350/frame_1/DoAction.as",
+      "DefineSprite_350/frame_20/DoAction.as",
+      "DefineButton2_331/BUTTONCONDACTION on(release).as",
+      "DefineSprite_350/frame_29/DoAction.as",
+      "DefineButton2_146/BUTTONCONDACTION on(release).as",
+      "DefineButton2_189/BUTTONCONDACTION on(release).as",
+      "DefineButton2_139/BUTTONCONDACTION on(release).as",
+      "DefineButton2_140/BUTTONCONDACTION on(release).as",
+      "DefineButton2_141/BUTTONCONDACTION on(release).as",
+      "DefineButton2_142/BUTTONCONDACTION on(release).as",
+      "DefineButton2_143/BUTTONCONDACTION on(release).as",
+      "DefineButton2_144/BUTTONCONDACTION on(release).as",
+      "DefineButton2_153/BUTTONCONDACTION on(release).as",
+      "DefineButton2_154/BUTTONCONDACTION on(release).as",
+      "DefineButton2_155/BUTTONCONDACTION on(release).as"
+    ],
+    "externalDependencies": [
+      "exact source EN/ES key-term XML; selected source MP3 streams; source Spanish MP3; minimal quiz/coach/glossary host adapter"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [],
+    "morphs": [
+      "98 source-ratio variants among 120 shape variants; source endpoints retained"
+    ],
+    "filters": [
+      "source RGB multipliers/additions via sRGB feComponentTransfer"
+    ],
+    "networkCalls": [
+      "local-only exact source audio requests in independently scoped native candidate; no provider calls"
+    ]
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "source-vocabulary",
+      "kind": "interactive",
+      "description": "Main1..257: source hold76, resume77, stop257",
+      "reachable": true
+    },
+    {
+      "id": "right-feedback",
+      "kind": "interactive",
+      "description": "Answer3/B invokes selected255 at2, exits27",
+      "reachable": true
+    },
+    {
+      "id": "wrong-first",
+      "kind": "interactive",
+      "description": "Wrong1/2/4 invokes350 at2, holds20; Close21 exits29 back to quiz",
+      "reachable": true
+    },
+    {
+      "id": "wrong-second",
+      "kind": "interactive",
+      "description": "Second wrong has later source text; Close21 exits29 to main77",
+      "reachable": true
+    },
+    {
+      "id": "coach",
+      "kind": "interactive",
+      "description": "Explicit static coach145 locks answers; source six glossary buttons",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "en",
+      "es"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      "stream-221",
+      "stream-255",
+      "stream-263",
+      "stream-291",
+      "stream-308",
+      "stream-322",
+      "stream-336",
+      "stream-350",
+      "stream-358",
+      "source-spanish"
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "",
+    "ffdec": "unavailable",
+    "swfmill": "unavailable",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "React + SVG + source sample-clocked Web Audio",
+    "route": "",
+    "routeFile": "",
+    "component": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/output/g678-alg-l08-p035-integration-20261007-v1/draft-source/alg-l08-p035-presentation-v1.tsx",
+    "registryModule": "./modules/shared-alg001-l08-p035",
+    "timelineModule": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/output/g678-alg-l08-p035-integration-20261007-v1/draft-source/timelines/shared-alg001-l08-p035.ts",
+    "testFile": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/output/g678-alg-l08-p035-integration-20261007-v1/draft-source/alg-l08-p035-frame-v1.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-358",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "source-vocabulary"
+        ]
+      },
+      {
+        "id": "sprite-358",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-358",
+        "parentFrameDomainId": "root",
+        "frameCount": 257,
+        "scenarioIds": [
+          "source-vocabulary"
+        ]
+      },
+      {
+        "id": "sprite-255",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-255",
+        "parentFrameDomainId": "root",
+        "frameCount": 27,
+        "scenarioIds": [
+          "right-feedback"
+        ]
+      },
+      {
+        "id": "sprite-350",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-350",
+        "parentFrameDomainId": "root",
+        "frameCount": 29,
+        "scenarioIds": [
+          "wrong-first",
+          "wrong-second"
+        ]
+      },
+      {
+        "id": "sprite-145",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-145",
+        "parentFrameDomainId": "root",
+        "frameCount": 1,
+        "scenarioIds": [
+          "coach"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

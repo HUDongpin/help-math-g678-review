@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "4963fe283d7c233df31306a959e6012bfaa21176b0d59d59ed008efed6511789",
+  "domains": [
+    {
+      "id": "root",
+      "kind": "root",
+      "sourceTimelineId": "root",
+      "parentFrameDomainId": null,
+      "frameCount": 10,
+      "scenarioIds": [
+        "source-vocabulary"
+      ]
+    },
+    {
+      "id": "sprite-2",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-2",
+      "parentFrameDomainId": "root",
+      "frameCount": 1,
+      "scenarioIds": [
+        "source-vocabulary"
+      ]
+    },
+    {
+      "id": "sprite-49",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-49",
+      "parentFrameDomainId": "sprite-203",
+      "frameCount": 28,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    },
+    {
+      "id": "sprite-74",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-74",
+      "parentFrameDomainId": "sprite-203",
+      "frameCount": 27,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    },
+    {
+      "id": "sprite-80",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-80",
+      "parentFrameDomainId": "sprite-90",
+      "frameCount": 1,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    },
+    {
+      "id": "sprite-87",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-87",
+      "parentFrameDomainId": "sprite-90",
+      "frameCount": 1,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    },
+    {
+      "id": "sprite-90",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-90",
+      "parentFrameDomainId": "sprite-203",
+      "frameCount": 28,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    },
+    {
+      "id": "sprite-102",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-102",
+      "parentFrameDomainId": "sprite-203",
+      "frameCount": 25,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    },
+    {
+      "id": "sprite-127",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-127",
+      "parentFrameDomainId": "sprite-128",
+      "frameCount": 1,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-128",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-128",
+      "parentFrameDomainId": "sprite-203",
+      "frameCount": 29,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-140",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-140",
+      "parentFrameDomainId": "sprite-144",
+      "frameCount": 1,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-144",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-144",
+      "parentFrameDomainId": "sprite-203",
+      "frameCount": 28,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-167",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-167",
+      "parentFrameDomainId": "sprite-176",
+      "frameCount": 1,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-176",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-176",
+      "parentFrameDomainId": "sprite-203",
+      "frameCount": 28,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-203",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-203",
+      "parentFrameDomainId": "root",
+      "frameCount": 385,
+      "scenarioIds": [
+        "source-vocabulary"
+      ]
+    }
+  ],
+  "originalRuntimeVerified": false,
+  "notes": [
+    "Wrong1 frame1 calls undefined _parent.enableButton; NMHBtn is not placed. No invented help or host success is asserted.",
+    "A=-6,B=1,C=2,D=3. C is the sole authored right button. Main solution ends y=2x-1/3; preserve source fractions and glyph transforms.",
+    "Feedback titles and exact branch windows/audio are source-bound; decorative mascot/morph/bitmap effects are retained in extraction and remain outside native semantic presentation fidelity claims.",
+    "Nonzero bytes after End in sprite74 retained verbatim in SWF and both tool XML; no invented script or reachable frame beyond27."
+  ]
+}

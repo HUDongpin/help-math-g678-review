@@ -1,0 +1,9 @@
+# ALG001 L8 P026 — Identifying y-Intercepts from Equation
+
+Global26 / IN10 / occurrence26 uses L8IN11.swf, SHA256 0ec61f5b43779141103aeafce19e99e18264f7951fdc879a7380fb1869f92861. SWF-only. Root10 enters main196 at6. Main372 holds quiz95; AnsBtn1/A=-4 is correct; B=-1,C=2,D=8 are wrong. Seven feedback branches retain their authored stops/close exits and attempt counter; ordinary372-to1 wrap does not complete the lesson.
+
+The advanced-manual lane uses public-tool source extraction and maintained native algebra/text, exact fraction bars, one narrative mask and two glossary bindings. Shared looping-quiz lifecycle v2 is reused without changing it. Every native glyph preserves independent text matrix and inherited pen; eight equation rows, alpha fades, choice removal and minus-four highlights355/357/359/361/363/365 remain source-bound. Native narrative uses readable full glyphs at source trailing-edge whole-word gates; source first-edge clipping is disclosed in audit-v1/mask-reveal-disposition-v1.json.
+
+Eight embedded MP3 streams and separate Spanish Audio are browser-decoded with exact bytes/sample counts. Four main stream runs preserve the authored gaps223..239 and311..314. Physical 12fps timing uses1837.5samples/frame versus the source1837 schedule; the maximum measured within-run discrepancy108.5samples is not original-runtime alignment acceptance. English narrative remains English on the Spanish host. Both original bilingual glossary entries are independently bound. Spanish Audio is explicit-only and pauses/returns to held state.
+
+Current stage is a native engineering candidate, not registration or My Lesson acceptance. Exact proof writer/reader, real host, frozen journeys, formal registration and production isolation are still required. Narrow algebra diagrams need local horizontal pan. Original-runtime, fidelity, listening, human/Owner, full typography/accessibility/performance, strict, release and publication remain separate.

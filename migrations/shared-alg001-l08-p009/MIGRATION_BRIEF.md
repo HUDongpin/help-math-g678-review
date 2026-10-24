@@ -1,0 +1,11 @@
+# ALG001 L8 P009 — source-bound implementation brief
+
+Placement9 / VB3 is **Slope**, SWF-only `L8VB04.swf`. Source SHA-256: `3dc9c1faa1e952ee16deaf96135975b3284f0a789dc64e303922d35c7fccb88c`. Its lesson XML and separate SA MP3 are pinned in the source-entry preflight. The source title is “Graphing Linear Equations: Vocabulary”.
+
+The authored800×600,12fps root has10 frames and enters main sprite86 at6. Main has330 frames, holds157 for a tenths slider answer2, and loops naturally. Wrong submissions use sprite74 frames2..15; Close is immediate, first failure retries, >=2 continues. All17 source scripts are bound and checked. Native visual data contains94 state spans,10 graph shapes,2 morphs and43 axis/origin labels, with complete-word instruction reveal. Source English remains English on both hosts; three dictionary definitions are bilingual.
+
+Use React native controls/text with source SVG geometry and separate source audio clocks. Reuse the immutable slider-feedback session/player templates only after checking page differences. P009 replaces its named draggable instance at160 but removes the named text field; the new fixed text is2. Preserve draggable position independently after160, keep the original fixed source line geometry, and do not resurrect popup74 after158. The source BtnLine reference has no matching placed instance name; original AVM1 unresolved-target behavior remains an explicit original-runtime limitation.
+
+Replay must reset epoch, cycle, attempts, slope, drag identity/position, popup and all pending audio. Glossary pauses the current domain and restores focus while staying paused. Spanish Audio is explicit and holds main state; language and navigation exits close pending loads and audio nodes.
+
+Current status: source audit, native decoding and generated visual inputs only. No renderer, registered route, Current-JS admission or My Lesson pass yet. P007 is separately closed at its local registered gate. Full task remains2282 placements; no source-only preparation changes the588 registered count. Original-runtime, fidelity, listening, human/Owner, full typography/accessibility/performance, strict completion, release and publication remain independent.

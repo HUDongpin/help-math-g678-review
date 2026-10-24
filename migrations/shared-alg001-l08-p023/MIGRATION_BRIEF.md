@@ -1,0 +1,11 @@
+# ALG001 L8 P023 — Identifying Slopes from Equations
+
+Global23 / IN7 / occurrence23 is L8IN08.swf, SHA2564963fe283d7c233df31306a959e6012bfaa21176b0d59d59ed008efed6511789. SWF-only. Source shape1 reads Graphing Linear Equations: Instruction. Original files remain unchanged.
+
+Root10 mounts main203 at6. Main385 stops at99 and sets quizSection/quizTryCount0. C=2 (AnsBtn3/178) alone calls right feedback; A=-6,B=1,D=3 use177. Seven source branches enter2. Wrong feedback increments attempts only at close/exit; first retries,second resets and continues. Right terminals continue. Ordinary385→1 looping does not complete the lesson. Exact source hints,unresolved _parent.enableButton,absent NMHBtn and bytes after sprite74 End remain disclosed.
+
+The existing shared looping-quiz state/session/player and source host bridge are reused; no shared lifecycle change. Maintained SVG retains27 text definitions,all placed instances,9 shapes,fraction bars,per-frame transforms/alpha/depth,independent DefineText matrices and inherited glyph pens. C moves up; derivation shows y=2x−1/3 and exact source emphasis. Question text and glossary controls reflow; equation diagram uses horizontal pan. Whole-equation simultaneous visibility/full accessibility is not claimed. Feedback preserves source text/windows/audio; decorative bitmaps/morphs are preserved but not claimed visually equivalent.
+
+Seven MP3 streams and explicit Spanish Audio are freshly browser-decoded. Feedback102 is a source-declared ADPCM WAV. Its5967 declared samples match an independent FFmpeg decoder; FFmpeg additionally decodes13 padding-code samples,whose failed whole-output comparison remains retained. Exact WAV bytes match P007111;Chrome154 decoded samples and PCM evidence are reused. Source alignment,resampler phase and listening remain open. Main203 audio runs begin3/5/274;Spanish Audio pauses and returns to the held state,never locale autoplay.
+
+This is an unregistered engineering candidate pending the exact writer/reader,real My Lesson,freeze,registry/formal host and production-isolation checks. Original-runtime,fidelity,listening,human/Owner,full typography/accessibility/performance,strict,release and publication remain separate.

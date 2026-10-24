@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l08-p015",
+  "source": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/VB/L8VB10.swf",
+    "bytes": 205484,
+    "sha256": "93206e2e86bfd294bc875fa0aaf235c1e6bf3a99281d669a25f20a4deebe07fb"
+  },
+  "decision": "source-prepared-awaiting-maintained-native-product-and-host-calibration",
+  "lane": "advanced-manual with compiler-assisted source extraction and reuse of existing source clock/glossary host bridge",
+  "reason": "Main500 stop and parent baseline require page-specific state; isolated SWF6 diagnostic supports zero numeric base and exact parseInt translations while preserving initial authored placement.",
+  "capabilities": [
+    {
+      "capability": "timeline/display",
+      "sourceRequirement": "503 structural frames,four domains,43 labels,rounded graph mask,morph54",
+      "implementationRoute": "native source model and React SVG/text",
+      "productVerified": false
+    },
+    {
+      "capability": "slider",
+      "sourceRequirement": "main500,range[-70,130],value round(x/10-3),line offsets parseInt",
+      "implementationRoute": "bounded state machine with separate initial/dragged states",
+      "productVerified": false
+    },
+    {
+      "capability": "glossary",
+      "sourceRequirement": "five source release scripts and bilingual entries",
+      "implementationRoute": "calibrated glossary hold and host bridge",
+      "productVerified": false
+    },
+    {
+      "capability": "audio",
+      "sourceRequirement": "main66 runs3/5 and separate SA48k",
+      "implementationRoute": "existing runs clock and native PCM binding",
+      "productVerified": false
+    }
+  ],
+  "automaticCompletion": false,
+  "scaleOutAuthorized": false,
+  "originalRuntime": false
+}

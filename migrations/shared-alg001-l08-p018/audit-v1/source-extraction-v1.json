@@ -1,0 +1,375 @@
+{
+  "at": "2026-10-06T15:54:41.325977+00:00",
+  "animationId": "shared-alg001-l08-p018",
+  "sources": [
+    {
+      "source": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/IN/L8IN03.swf",
+      "copy": "migrations/shared-alg001-l08-p018/source-v1/L8IN03.swf",
+      "bytes": 71985,
+      "sha256": "843956b1edfcd2efacaf5da55496b7b496e1eb06acb5ce1dfd5d10c801df0f40"
+    },
+    {
+      "source": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/SA/L8IN03.mp3",
+      "copy": "migrations/shared-alg001-l08-p018/source-v1/L8IN03.mp3",
+      "bytes": 273504,
+      "sha256": "00fe36994703bac541320b7c9765074b5cd93984606787ac48bdae7ab834cb76"
+    },
+    {
+      "source": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/index.xml",
+      "copy": "migrations/shared-alg001-l08-p018/source-v1/index.xml",
+      "bytes": 10734,
+      "sha256": "185aaeaf3b56a812d66fe72671941350c8ceb5db48dc2824e74980a70ebe80c7"
+    }
+  ],
+  "sourceRoot": "/Volumes/American Dream/.g6l8p18a1/source-extraction-v1",
+  "commands": [
+    [
+      "ffdec",
+      "-onerror",
+      "abort",
+      "-timeout",
+      "120",
+      "-exportTimeout",
+      "600",
+      "-swf2xml",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l08-p018/source-v1/L8IN03.swf",
+      "/Volumes/American Dream/.g6l8p18a1/source-extraction-v1/source.xml"
+    ],
+    [
+      "swfmill",
+      "-n",
+      "swf2xml",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l08-p018/source-v1/L8IN03.swf",
+      "/Volumes/American Dream/.g6l8p18a1/source-extraction-v1/movie.xml"
+    ],
+    [
+      "ffdec",
+      "-onerror",
+      "abort",
+      "-timeout",
+      "120",
+      "-exportTimeout",
+      "600",
+      "-format",
+      "shape:svg,morphshape:svg,text:plain,sound:mp3,image:png",
+      "-export",
+      "script,shape,morphshape,text,sound,image",
+      "/Volumes/American Dream/.g6l8p18a1/source-extraction-v1/ffdec",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l08-p018/source-v1/L8IN03.swf"
+    ]
+  ],
+  "files": [
+    {
+      "path": "ffdec/scripts/DefineButton2_10/BUTTONCONDACTION on(release).as",
+      "bytes": 119,
+      "sha256": "18dd0ec3354b991431f7fa2890e1cbe1e65068430596bc4d3f81bbf4a50f9bdb"
+    },
+    {
+      "path": "ffdec/scripts/DefineButton2_7/BUTTONCONDACTION on(release).as",
+      "bytes": 130,
+      "sha256": "d948fd97117ca73ce7b5f3b2eae8c1cca20de3106f5b5cea8e1f5912e29ab177"
+    },
+    {
+      "path": "ffdec/scripts/DefineButton2_8/BUTTONCONDACTION on(release).as",
+      "bytes": 123,
+      "sha256": "0b89848d79d735127115901984f60c2c8c2996f9561d150573068e496601ed4b"
+    },
+    {
+      "path": "ffdec/scripts/DefineButton2_9/BUTTONCONDACTION on(release).as",
+      "bytes": 120,
+      "sha256": "5f789f785f961f26fba79d3dd3167089fc8251e9da0e0cff9852831b2f890788"
+    },
+    {
+      "path": "ffdec/scripts/frame_1/DoAction.as",
+      "bytes": 63,
+      "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19"
+    },
+    {
+      "path": "ffdec/scripts/frame_6/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "ffdec/shapes/1.svg",
+      "bytes": 24783,
+      "sha256": "caea561c4b0db567702f8728bc2921e57e21a4b48ffab31588beee5e1d037364"
+    },
+    {
+      "path": "ffdec/shapes/11.svg",
+      "bytes": 28920,
+      "sha256": "4b878d9bd1345455ad9d1642350f59fff83a41ae2c705315f74e65b4d2fd7884"
+    },
+    {
+      "path": "ffdec/shapes/2.svg",
+      "bytes": 532,
+      "sha256": "bf6d8dc088cefcaa5fec1b27c2026956e721678df24a2f1b5edf8edfb1735632"
+    },
+    {
+      "path": "ffdec/shapes/3.svg",
+      "bytes": 596,
+      "sha256": "ae0a3492f246ec8c64ca9deb8aa4d5e721edfe90890742dfaff1ad6c40fbcc6d"
+    },
+    {
+      "path": "ffdec/shapes/34.svg",
+      "bytes": 460,
+      "sha256": "eec36c128fb7b44ca7ab1cfaa71a89702b4559fc57dabd3b876e085c3097deb2"
+    },
+    {
+      "path": "ffdec/shapes/36.svg",
+      "bytes": 2897,
+      "sha256": "ae56eb56494dfd544809f1cafe555e15840172de68c60af556aeeadc19b2a37a"
+    },
+    {
+      "path": "ffdec/shapes/39.svg",
+      "bytes": 28767,
+      "sha256": "9736de60dc43c164cc681803db53522bc36aa1a0d460ff8360133cc2afc6489f"
+    },
+    {
+      "path": "ffdec/shapes/40.svg",
+      "bytes": 464,
+      "sha256": "497e38a698a7d3391134cb5cd1e7ad4397a5f545314b733d8bdd1f19beaaa277"
+    },
+    {
+      "path": "ffdec/shapes/41.svg",
+      "bytes": 3143,
+      "sha256": "17202758fe537eec144521cf12edafc0b45f4f4a145d96264735be5b63920c73"
+    },
+    {
+      "path": "ffdec/shapes/43.svg",
+      "bytes": 32438,
+      "sha256": "6297401a3996d1f9bf3c89186f9a6dde1215fb23d722cd05f450e4f58900d114"
+    },
+    {
+      "path": "ffdec/shapes/44.svg",
+      "bytes": 2062,
+      "sha256": "838f4dce9bc0079ea47075414e600fa5faee76040a8490c4288ae2874f2001e3"
+    },
+    {
+      "path": "ffdec/shapes/46.svg",
+      "bytes": 516,
+      "sha256": "f73b37dcd789324275dcbcf6e6819742788e4de9959e69a28ca660c8d4b7d924"
+    },
+    {
+      "path": "ffdec/shapes/51.svg",
+      "bytes": 483,
+      "sha256": "da978ed31b4151146da3a7a5d18f115a562692eaafcbe374a264b0271043cda5"
+    },
+    {
+      "path": "ffdec/shapes/54.svg",
+      "bytes": 482,
+      "sha256": "2805db7991873d5e090b3bde048d23737a7a547ff86b5385e0be53db8cfa6af1"
+    },
+    {
+      "path": "ffdec/shapes/6.svg",
+      "bytes": 450,
+      "sha256": "8cbcd98a75b3568beed7f885e182dc2baa61c4bcdd18dc87209959ff014fb42f"
+    },
+    {
+      "path": "ffdec/texts/12.txt",
+      "bytes": 2,
+      "sha256": "cf3bae39dd692048a8bf961182e6a34dfd323eeb0748e162eaf055107f1cb873"
+    },
+    {
+      "path": "ffdec/texts/13.txt",
+      "bytes": 2,
+      "sha256": "e5e0093f285a4fb94c3fcc2ad7fd04edd10d429ccda87a9aa5e4718efadf182e"
+    },
+    {
+      "path": "ffdec/texts/14.txt",
+      "bytes": 2,
+      "sha256": "03b26944890929ff751653acb2f2af795cee38f937f379f52ed654a68ce91216"
+    },
+    {
+      "path": "ffdec/texts/15.txt",
+      "bytes": 2,
+      "sha256": "1bad6b8cf97131fceab8543e81f7757195fbb1d36b376ee994ad1cf17699c464"
+    },
+    {
+      "path": "ffdec/texts/16.txt",
+      "bytes": 2,
+      "sha256": "615bdd17c2556f82f384392ea8557f8cc88b03501c759e23093ab0b2a9b5cd48"
+    },
+    {
+      "path": "ffdec/texts/17.txt",
+      "bytes": 3,
+      "sha256": "c171d4ec282b23db89a99880cd624e9ba2940c1d894783602edab5d7481dc1ea"
+    },
+    {
+      "path": "ffdec/texts/18.txt",
+      "bytes": 2,
+      "sha256": "37aa1ccf80e481832b2db282d4d4f895ee1e31219b7d0f6aee8dc8968828341b"
+    },
+    {
+      "path": "ffdec/texts/19.txt",
+      "bytes": 2,
+      "sha256": "d5c534fde62beb89c745a59952c8efed8b7523cbd047e682782e4367de9ea3bf"
+    },
+    {
+      "path": "ffdec/texts/20.txt",
+      "bytes": 2,
+      "sha256": "a770d3270c9dcdedf12ed9fd70444f7c8a95c26cae3cae9bd867499090a2f14b"
+    },
+    {
+      "path": "ffdec/texts/21.txt",
+      "bytes": 2,
+      "sha256": "e91592205d3881e3ea35d66973bb4898d7282126ab5afcb355c95d2fc17f3822"
+    },
+    {
+      "path": "ffdec/texts/22.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "ffdec/texts/23.txt",
+      "bytes": 1,
+      "sha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+    },
+    {
+      "path": "ffdec/texts/24.txt",
+      "bytes": 1,
+      "sha256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+    },
+    {
+      "path": "ffdec/texts/25.txt",
+      "bytes": 1,
+      "sha256": "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
+    },
+    {
+      "path": "ffdec/texts/26.txt",
+      "bytes": 1,
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "ffdec/texts/27.txt",
+      "bytes": 1,
+      "sha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+    },
+    {
+      "path": "ffdec/texts/28.txt",
+      "bytes": 2,
+      "sha256": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5"
+    },
+    {
+      "path": "ffdec/texts/29.txt",
+      "bytes": 1,
+      "sha256": "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d"
+    },
+    {
+      "path": "ffdec/texts/30.txt",
+      "bytes": 1,
+      "sha256": "19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7"
+    },
+    {
+      "path": "ffdec/texts/31.txt",
+      "bytes": 1,
+      "sha256": "7902699be42c8a8e46fbbb4501726517e86b22c56a189f7625a6da49081b2451"
+    },
+    {
+      "path": "ffdec/texts/32.txt",
+      "bytes": 1,
+      "sha256": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3"
+    },
+    {
+      "path": "ffdec/texts/33.txt",
+      "bytes": 1,
+      "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881"
+    },
+    {
+      "path": "ffdec/texts/35.txt",
+      "bytes": 1,
+      "sha256": "a1fce4363854ff888cff4b8e7875d600c2682390412a8cf79b37d0b11148b0fa"
+    },
+    {
+      "path": "ffdec/texts/37.txt",
+      "bytes": 12,
+      "sha256": "11fa3cb58b5ac072816e84552a3f8cb6058b2c74f1924f096f4cb83bb49834b5"
+    },
+    {
+      "path": "ffdec/texts/38.txt",
+      "bytes": 11,
+      "sha256": "f999bafc73a7a922478792b32f35177b427238cec9f8a491ab751266ac81e0c1"
+    },
+    {
+      "path": "ffdec/texts/42.txt",
+      "bytes": 20,
+      "sha256": "215363fef158ea3a3db3af65277956d8cf9dac41f40ac148e0b8f8987616fdc3"
+    },
+    {
+      "path": "ffdec/texts/45.txt",
+      "bytes": 12,
+      "sha256": "11fa3cb58b5ac072816e84552a3f8cb6058b2c74f1924f096f4cb83bb49834b5"
+    },
+    {
+      "path": "ffdec/texts/47.txt",
+      "bytes": 25,
+      "sha256": "ffb00eaa7ec52aef5806b6cfd9f6e1b47022349054036fcaf6462bd68681d66f"
+    },
+    {
+      "path": "ffdec/texts/48.txt",
+      "bytes": 25,
+      "sha256": "f5772063b89cf8029957e07768aa27a705b227e382d276080d5604ff029f3397"
+    },
+    {
+      "path": "ffdec/texts/49.txt",
+      "bytes": 13,
+      "sha256": "9403403e285d574dccfed8305a9ef256f5baff73f9337e38094425d04e3b619d"
+    },
+    {
+      "path": "ffdec/texts/5.txt",
+      "bytes": 265,
+      "sha256": "eb22efdd95b2da263457a2d49cf6a19ef878b23f47d9138cf1052493f4e9789b"
+    },
+    {
+      "path": "ffdec/texts/50.txt",
+      "bytes": 22,
+      "sha256": "872bb52d2186dc69b8c9968b8b2c90cf77585237276065c55a8962fc616df49d"
+    },
+    {
+      "path": "ffdec/texts/52.txt",
+      "bytes": 1,
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "ffdec/texts/53.txt",
+      "bytes": 1,
+      "sha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+    },
+    {
+      "path": "ffdec/texts/55.txt",
+      "bytes": 12,
+      "sha256": "feebd56a2762c047813dca1eba2a1b343611bd391669ef8ae4fb77f41789d22d"
+    },
+    {
+      "path": "ffdec/texts/56.txt",
+      "bytes": 14,
+      "sha256": "8d199438d3c5769a2342d2494b24dada6f5223d5e8bcfd0f34acf9efe418ca7b"
+    },
+    {
+      "path": "ffdec/texts/57.txt",
+      "bytes": 18,
+      "sha256": "12350491f485bc9f90d9bb6950022d5f51155b393d6cc36748d33f678bb8c9f7"
+    },
+    {
+      "path": "ffdec/texts/58.txt",
+      "bytes": 26,
+      "sha256": "818d2c8c9c928dbcfcccc4cc3d233435945e4df7ea29a0cd77771d999cb8f220"
+    },
+    {
+      "path": "ffdec/texts/59.txt",
+      "bytes": 12,
+      "sha256": "299d6c259ab379b3f4dcaa9e40fb53a062f737827a081567d063422ce761ef57"
+    },
+    {
+      "path": "movie.xml",
+      "bytes": 926607,
+      "sha256": "1df8d172e46b9698f230b9227a3eddeebc787f57352ebbb06eee1c34a98d86e3"
+    },
+    {
+      "path": "source.xml",
+      "bytes": 1899076,
+      "sha256": "54963cb7d99b2130df8c038212177175ae3879d11e59635d96a5623d06758de1"
+    }
+  ],
+  "readOnlySourceUntouched": true,
+  "registered": false
+}

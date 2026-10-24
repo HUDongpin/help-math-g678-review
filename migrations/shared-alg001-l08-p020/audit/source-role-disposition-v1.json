@@ -1,0 +1,46 @@
+{
+  "sourceVisualReview": [
+    {
+      "path": "/Volumes/American Dream/.g6l8p20a1/source-extraction-v1/source-inspection-contact-v1.jpg",
+      "bytes": 100688,
+      "sha256": "bf05bcad0356bed2871e672aecdd3320c12daa61652ec58c59c8eef0b09a78f7"
+    }
+  ],
+  "scope": "Source title, equation text, exponent/fraction and keyframe movement inspected; four bitmaps are feedback globe/fire effects. Native feedback preserves source text/windows/audio; decorative movieclip visuals and RGB effects stay retained extraction and are not claimed equivalent.",
+  "nativeQuestion": "whole-word source mask prefix; actual glossary availability",
+  "nativeEquations": "all source glyph positions/advances, superscript run325/312, fraction rule19, option circle gradients, per-frame matrices/alpha/depth, magenta y/x/5 text",
+  "feedback": "seven exact branch windows, title alpha and authored text, attempts after close exit",
+  "risks": [
+    {
+      "kind": "nonzero-bytes-after-end",
+      "timelineId": "sprite-50"
+    },
+    {
+      "kind": "shape-text-unclassified",
+      "definitionCount": 124,
+      "meaning": "Shapes may include outlined text or mathematical symbols; presence is not confirmation of text."
+    },
+    {
+      "kind": "bitmap-text-unclassified",
+      "definitionCount": 4,
+      "meaning": "Bitmap presence does not establish embedded text; visual/source review required."
+    },
+    {
+      "kind": "button-runtime-state-and-actions-not-interpreted",
+      "definitionCount": 7
+    },
+    {
+      "kind": "dynamic-text-runtime-value-unresolved",
+      "fieldCount": 3
+    },
+    {
+      "kind": "actionscript-visibility-and-values-not-interpreted"
+    },
+    {
+      "kind": "mask-filter-blend-semantics-unresolved"
+    }
+  ],
+  "humanReview": false,
+  "originalRuntime": false,
+  "registered": false
+}

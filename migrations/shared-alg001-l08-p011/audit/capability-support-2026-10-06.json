@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l08-p011",
+  "source": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/VB/L8VB06.swf",
+    "bytes": 106348,
+    "sha256": "f5a82f978b9c1a7608be6cc157eba00b62e53192d243e75527ab1197c75e79a6"
+  },
+  "decision": "maintained-candidate-awaiting-host-calibration",
+  "lane": "factory with compiler-assisted source extraction, compact source model and immutable calibrated glossary-loop templates",
+  "reason": "All six release scripts match calibrated glossary pause; no child action or clip action; ordinary loop. Source-specific callouts, highlight morphs, mask reveal and third audio segment remain explicit.",
+  "capabilities": [
+    {
+      "capability": "timeline/display",
+      "sourceRequirement": "3domains/288frames/13shapes/3morphs/43labels/3callouts",
+      "implementationRoute": "native source frame model and React SVG/text",
+      "productVerified": false
+    },
+    {
+      "capability": "glossary",
+      "sourceRequirement": "six exact ENES dictionary entries",
+      "implementationRoute": "immutable shared glossary-loop template and existing host bridge",
+      "productVerified": false
+    },
+    {
+      "capability": "audio",
+      "sourceRequirement": "main60 source runs2/4/149 and separate SA48k",
+      "implementationRoute": "existing cycle clock and strict native PCM binding",
+      "productVerified": false
+    }
+  ],
+  "automaticCompletion": false,
+  "scaleOutAuthorized": false,
+  "originalRuntime": false
+}

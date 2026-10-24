@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "0ec61f5b43779141103aeafce19e99e18264f7951fdc879a7380fb1869f92861",
+  "domains": [
+    {
+      "id": "root",
+      "kind": "root",
+      "sourceTimelineId": "root",
+      "parentFrameDomainId": null,
+      "frameCount": 10,
+      "scenarioIds": [
+        "source-vocabulary"
+      ]
+    },
+    {
+      "id": "sprite-2",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-2",
+      "parentFrameDomainId": "root",
+      "frameCount": 1,
+      "scenarioIds": [
+        "source-vocabulary"
+      ]
+    },
+    {
+      "id": "sprite-47",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-47",
+      "parentFrameDomainId": "sprite-196",
+      "frameCount": 31,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    },
+    {
+      "id": "sprite-79",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-79",
+      "parentFrameDomainId": "sprite-196",
+      "frameCount": 25,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    },
+    {
+      "id": "sprite-112",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-112",
+      "parentFrameDomainId": "sprite-196",
+      "frameCount": 27,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    },
+    {
+      "id": "sprite-120",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-120",
+      "parentFrameDomainId": "sprite-196",
+      "frameCount": 27,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    },
+    {
+      "id": "sprite-125",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-125",
+      "parentFrameDomainId": "sprite-148",
+      "frameCount": 1,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-144",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-144",
+      "parentFrameDomainId": "sprite-148",
+      "frameCount": 1,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-148",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-148",
+      "parentFrameDomainId": "sprite-196",
+      "frameCount": 31,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-159",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-159",
+      "parentFrameDomainId": "sprite-162",
+      "frameCount": 1,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-162",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-162",
+      "parentFrameDomainId": "sprite-196",
+      "frameCount": 29,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-173",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-173",
+      "parentFrameDomainId": "sprite-176",
+      "frameCount": 1,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-176",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-176",
+      "parentFrameDomainId": "sprite-196",
+      "frameCount": 28,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-196",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-196",
+      "parentFrameDomainId": "root",
+      "frameCount": 372,
+      "scenarioIds": [
+        "source-vocabulary"
+      ]
+    }
+  ],
+  "originalRuntimeVerified": false,
+  "notes": [
+    "Wrong1 sprite162 frame1 calls undefined _parent.enableButton; NMHBtn is not placed. No invented help or host success is asserted.",
+    "A=-4,B=-1,C=2,D=8. A is the sole authored right button. Main solution shows the authored algebra steps to y=x/2-4; preserve glyph transforms, alpha, fraction bars and minus-four flashes.",
+    "Feedback titles and exact branch windows/audio are source-bound; decorative mascot/morph/bitmap effects are retained in extraction and remain outside native semantic presentation fidelity claims.",
+    "Each right branch has an extra empty action tag at start and end. Preserve these tags without invented behavior.",
+    "Decorative one-frame sprite125 is a deterministic engineering view into parent148 at9; no mascot fidelity claim."
+  ]
+}

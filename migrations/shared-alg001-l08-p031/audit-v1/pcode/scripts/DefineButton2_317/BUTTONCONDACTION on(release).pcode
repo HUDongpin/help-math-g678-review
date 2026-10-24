@@ -1,0 +1,28 @@
+ConstantPool "_parent", "gotoAndPlay", "i", "AnsBtn", "gotoAndStop"
+Push 24, 1, "_parent"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "i", 1
+SetVariable
+loc0050:Push "i"
+GetVariable
+Push 4
+Greater
+Not
+Not
+If loc0090
+Push 1, 1, "AnsBtn", "i"
+GetVariable
+Add2
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "i", "i"
+GetVariable
+Increment
+SetVariable
+Jump loc0050
+loc0090:

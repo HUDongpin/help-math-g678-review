@@ -1,0 +1,72 @@
+✖ source clock stops at212; first wrong uses popup78 and can close before15 (3.448333ms)
+✖ second Close switches bounded main clock and preserves full final interval before wrap (0.564625ms)
+✔ correct0.2 Draw counts every submission and never loads feedback (0.356541ms)
+✔ feedback Close cancels pending fetch and decode without stale playback (4.180875ms)
+✔ pause and revealed glossary retain fractional clock cursor; resume does not reseek (0.363834ms)
+✔ Spanish is explicit, holds popup domain and returns paused; pending decode can cancel (1.114375ms)
+✔ Replay retires all domains and rejects late restart when explicitly paused (0.456458ms)
+✔ post216 static slider rejects drag; Draw restarts paused correct clock without refetch (0.2125ms)
+✔ 212 stop cannot be skipped; source initial2 and real named drag are enabled (1.033209ms)
+✔ source slider clamps and rounds to0.1, preserving exact0.2 answer text (0.214042ms)
+✔ first wrong immediateClose preserves student1.5, counts once and permits retry (0.101458ms)
+✔ second wrong holds15; Close resumes original drag through215 (0.1085ms)
+✔ 216 removes active drag and forces named0.2; every later Draw resumes and counts (0.139375ms)
+✔ 213..215 wrong Draw retains playing or paused cursor without inventing removed popup (0.125875ms)
+✔ natural611to1 retains count until212; Replay and leave reject stale effects (0.087833ms)
+✔ source terms are unavailable before reveal and glossaryClose retains held state (0.106084ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 14
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 334.992875
+
+✖ failing tests:
+
+test at packages/demos/src/alg-l08-p010-session-v1.test.ts:1:2926
+✖ source clock stops at212; first wrong uses popup78 and can close before15 (3.448333ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+  +   3,
+  +   5
+  -   2,
+  -   4
+    ]
+  
+      at TestContext.<anonymous> (/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/alg-l08-p010-session-v1.test.ts:8:175)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 3, 5 ],
+    expected: [ 2, 4 ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at packages/demos/src/alg-l08-p010-session-v1.test.ts:1:3813
+✖ second Close switches bounded main clock and preserves full final interval before wrap (0.564625ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+  +   3,
+  +   5
+  -   2,
+  -   4
+    ]
+  
+      at TestContext.<anonymous> (/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/alg-l08-p010-session-v1.test.ts:9:532)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 3, 5 ],
+    expected: [ 2, 4 ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

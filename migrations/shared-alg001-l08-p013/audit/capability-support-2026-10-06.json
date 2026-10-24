@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l08-p013",
+  "source": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/VB/L8VB08.swf",
+    "bytes": 400581,
+    "sha256": "01564a19d900d3244302b7d58e8b06a2c6b5664ceac469937693008fd79ab12b"
+  },
+  "decision": "maintained-candidate-awaiting-host-calibration",
+  "lane": "advanced-manual",
+  "reason": "Two slider formulas, asymmetric enablement, missing-target boundaries and nested masked actor graphics require maintained source-specific behavior.",
+  "capabilities": [
+    {
+      "capability": "timeline",
+      "sourceRequirement": "13domains/320main/15feedback",
+      "implementationRoute": "source frame adapter",
+      "productVerified": false
+    },
+    {
+      "capability": "interaction",
+      "sourceRequirement": "two integer sliders, named Draw, exact feedback and replacement94",
+      "implementationRoute": "deterministic page reducer",
+      "productVerified": false
+    },
+    {
+      "capability": "glossary",
+      "sourceRequirement": "Slope,Y-intercept,Line",
+      "implementationRoute": "source dictionaries and host adapter",
+      "productVerified": false
+    },
+    {
+      "capability": "audio",
+      "sourceRequirement": "main223/feedback72/SA",
+      "implementationRoute": "hash-bound native clocks",
+      "productVerified": false
+    },
+    {
+      "capability": "graphics",
+      "sourceRequirement": "143shapes,2bitmaps,43labels,source mask82",
+      "implementationRoute": "native text plus source SVG tree",
+      "productVerified": false
+    }
+  ],
+  "automaticCompletion": false,
+  "scaleOutAuthorized": false,
+  "originalRuntime": false
+}

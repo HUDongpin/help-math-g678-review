@@ -1,0 +1,32 @@
+ConstantPool "_global", "quizTryCount", "WrongFeed", "The variables in a linear function cannot be in denominators, and they cannot have exponents.", "The variables in a linear function cannot be in denominators, and they cannot have exponents. Try again.", "_root", "disableQuizButton", "Mc_Wrong_Feed4", "gotoAndPlay", "NMHBtn", "enabled"
+Push "_global"
+GetVariable
+Push "quizTryCount"
+GetMember
+Push 1
+Equals2
+Not
+If loc015b
+Push "_global"
+GetVariable
+Push "WrongFeed", "The variables in a linear function cannot be in denominators, and they cannot have exponents."
+SetMember
+Jump loc0169
+loc015b:Push "_global"
+GetVariable
+Push "WrongFeed", "The variables in a linear function cannot be in denominators, and they cannot have exponents. Try again."
+SetMember
+loc0169:Push 0.0, "_root"
+GetVariable
+Push "disableQuizButton"
+CallMethod
+Pop
+Push 2, 1, "Mc_Wrong_Feed4"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "NMHBtn"
+GetVariable
+Push "enabled", false
+SetMember

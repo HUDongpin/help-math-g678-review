@@ -1,0 +1,385 @@
+{
+  "at": "2026-10-06T11:02:57.836887+00:00",
+  "animationId": "shared-alg001-l08-p011",
+  "sources": [
+    {
+      "source": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/VB/L8VB06.swf",
+      "copy": "migrations/shared-alg001-l08-p011/source-v1/L8VB06.swf",
+      "bytes": 106348,
+      "sha256": "f5a82f978b9c1a7608be6cc157eba00b62e53192d243e75527ab1197c75e79a6"
+    },
+    {
+      "source": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/SA/L8VB06.mp3",
+      "copy": "migrations/shared-alg001-l08-p011/source-v1/L8VB06.mp3",
+      "bytes": 217392,
+      "sha256": "4da99ae2b55358657c1f349f61e91739b7c950ae30ca773043908b83d250138a"
+    },
+    {
+      "source": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/index.xml",
+      "copy": "migrations/shared-alg001-l08-p011/source-v1/index.xml",
+      "bytes": 10734,
+      "sha256": "185aaeaf3b56a812d66fe72671941350c8ceb5db48dc2824e74980a70ebe80c7"
+    }
+  ],
+  "sourceRoot": "/Volumes/American Dream/.g6l8p11a1/source-extraction-v1",
+  "commands": [
+    [
+      "ffdec",
+      "-onerror",
+      "abort",
+      "-timeout",
+      "120",
+      "-exportTimeout",
+      "600",
+      "-swf2xml",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l08-p011/source-v1/L8VB06.swf",
+      "/Volumes/American Dream/.g6l8p11a1/source-extraction-v1/source.xml"
+    ],
+    [
+      "swfmill",
+      "-n",
+      "swf2xml",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l08-p011/source-v1/L8VB06.swf",
+      "/Volumes/American Dream/.g6l8p11a1/source-extraction-v1/movie.xml"
+    ],
+    [
+      "ffdec",
+      "-onerror",
+      "abort",
+      "-timeout",
+      "120",
+      "-exportTimeout",
+      "600",
+      "-format",
+      "shape:svg,morphshape:svg,text:plain,sound:mp3,image:png",
+      "-export",
+      "script,shape,morphshape,text,sound,image",
+      "/Volumes/American Dream/.g6l8p11a1/source-extraction-v1/ffdec",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l08-p011/source-v1/L8VB06.swf"
+    ]
+  ],
+  "files": [
+    {
+      "path": "command-1-v1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "command-2-v1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "command-3-v1.txt",
+      "bytes": 3579,
+      "sha256": "237f3c8c4668d8ec3be8bddfdc764625755a3d310572e78759b9831806f3fc07"
+    },
+    {
+      "path": "ffdec/morphshapes/45.svg",
+      "bytes": 922,
+      "sha256": "a1f16d5ccfa0c21a4e52afa8b12f85e5b76c981326bc6f6bd33f2aa6f1928b0e"
+    },
+    {
+      "path": "ffdec/morphshapes/50.svg",
+      "bytes": 910,
+      "sha256": "47c362f8869aaa88f738427d136eab758c8fe375c2e401e1b94e5901fcb0fddc"
+    },
+    {
+      "path": "ffdec/morphshapes/52.svg",
+      "bytes": 913,
+      "sha256": "9d5a64c93d8f310441b1217fd1d70fd1cd008f189667b4a03cda35de22e06865"
+    },
+    {
+      "path": "ffdec/scripts/DefineButton2_34/BUTTONCONDACTION on(release).as",
+      "bytes": 120,
+      "sha256": "aff8572f686ea821840226c1e76855ca2a206154d718260b7b6f0e3eb12f34c1"
+    },
+    {
+      "path": "ffdec/scripts/DefineButton2_35/BUTTONCONDACTION on(release).as",
+      "bytes": 122,
+      "sha256": "07af204ed084e54c5f4a0c2e8db3ce2b25b9480d5ce9ce2e0dfe623a07e36be4"
+    },
+    {
+      "path": "ffdec/scripts/DefineButton2_36/BUTTONCONDACTION on(release).as",
+      "bytes": 119,
+      "sha256": "18dd0ec3354b991431f7fa2890e1cbe1e65068430596bc4d3f81bbf4a50f9bdb"
+    },
+    {
+      "path": "ffdec/scripts/DefineButton2_37/BUTTONCONDACTION on(release).as",
+      "bytes": 120,
+      "sha256": "55908f1d7494dedf091df20277da98bb4118e2160c2b2d99e3a2a1d7652ac4b6"
+    },
+    {
+      "path": "ffdec/scripts/DefineButton2_56/BUTTONCONDACTION on(release).as",
+      "bytes": 130,
+      "sha256": "b1e4da35d801f8caf83e22ade02627304920a4550a5fef149a00f2b5cfb5da12"
+    },
+    {
+      "path": "ffdec/scripts/DefineButton2_57/BUTTONCONDACTION on(release).as",
+      "bytes": 121,
+      "sha256": "e6b994f0dc559438de7579ab643259560e8c7a9bcae7c27ea57b2dd732d4d6ba"
+    },
+    {
+      "path": "ffdec/scripts/frame_1/DoAction.as",
+      "bytes": 63,
+      "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19"
+    },
+    {
+      "path": "ffdec/scripts/frame_6/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "ffdec/shapes/1.svg",
+      "bytes": 23913,
+      "sha256": "db0906cb114eabe4300134e47870a8736b316e871c7763f2d49e7d32ac98f48d"
+    },
+    {
+      "path": "ffdec/shapes/28.svg",
+      "bytes": 2715,
+      "sha256": "389a50d4ec0c2b66cdd6478111f86d303503c21f7b4e79669ca67f5b0d495ddb"
+    },
+    {
+      "path": "ffdec/shapes/29.svg",
+      "bytes": 743,
+      "sha256": "983a4cd5c9474c5d5e2d544844798f724085ae9cca7c221a0a55aa0d805a2320"
+    },
+    {
+      "path": "ffdec/shapes/3.svg",
+      "bytes": 1681,
+      "sha256": "4ab7d2bc8d8ac0fbf54c3c392d4ca13529b9a9129fa1067d96682c45b56c2f88"
+    },
+    {
+      "path": "ffdec/shapes/30.svg",
+      "bytes": 481,
+      "sha256": "e0d3c7556f341d95fc30041f2db0b7e66a8af506c1e51773720d260ac4f1344f"
+    },
+    {
+      "path": "ffdec/shapes/31.svg",
+      "bytes": 588,
+      "sha256": "e8b82657c16dd9b7f00a1882ee1aeaeb06ba6de990b7d3ec0e4235552c45ea13"
+    },
+    {
+      "path": "ffdec/shapes/33.svg",
+      "bytes": 450,
+      "sha256": "8cbcd98a75b3568beed7f885e182dc2baa61c4bcdd18dc87209959ff014fb42f"
+    },
+    {
+      "path": "ffdec/shapes/38.svg",
+      "bytes": 1074,
+      "sha256": "008a2ea248143b5d85c200c10ada18099ecdd176b83825c3500d969605c030c2"
+    },
+    {
+      "path": "ffdec/shapes/40.svg",
+      "bytes": 489,
+      "sha256": "dd29fcfc928e9c70588dac08e403fd84dc812a8df459e73ad2a0abf8e0b4e330"
+    },
+    {
+      "path": "ffdec/shapes/42.svg",
+      "bytes": 493,
+      "sha256": "7b88fff2fe36fdea58e57191c7cca84fb300b34ced89d1662497b0d7d0bfa4b5"
+    },
+    {
+      "path": "ffdec/shapes/44.svg",
+      "bytes": 493,
+      "sha256": "f70e00f352238a168c728f20deb40f9bba48d60e9ab4deeaaccf24f72833f5c0"
+    },
+    {
+      "path": "ffdec/shapes/46.svg",
+      "bytes": 465,
+      "sha256": "ccec2605e284f65bf8374c63bfa05394b65e5c1a6674ea043e5dae9b1ecb5b7a"
+    },
+    {
+      "path": "ffdec/shapes/47.svg",
+      "bytes": 463,
+      "sha256": "5d9d2e71832dd2868c2fdcac7e82cadb1f7db1e0f80e826c33fc1578638fd83c"
+    },
+    {
+      "path": "ffdec/shapes/48.svg",
+      "bytes": 462,
+      "sha256": "e223353d93f6c2e078f7aaba8b91ef2c85ab772c957819d8e779cf006b04851f"
+    },
+    {
+      "path": "ffdec/shapes/49.svg",
+      "bytes": 467,
+      "sha256": "f04b65b4acc22e39ebe786362dffc3c2be7f9229b9a5d1c46aa9f552d997e22b"
+    },
+    {
+      "path": "ffdec/shapes/51.svg",
+      "bytes": 463,
+      "sha256": "667fa194d615fa9bd54bb89ff49e32eeb2c43d0f4aa9863317c099c11cfd57a7"
+    },
+    {
+      "path": "ffdec/shapes/53.svg",
+      "bytes": 462,
+      "sha256": "d73f478dbbf264637c85149e627e7af048f2313315923d40a6a5e39694d795b2"
+    },
+    {
+      "path": "ffdec/shapes/54.svg",
+      "bytes": 609,
+      "sha256": "9b54dd0a839698ceccd9b3e5a25bb0da9c5f6d22103bdefac042f12f0ecfff5a"
+    },
+    {
+      "path": "ffdec/shapes/58.svg",
+      "bytes": 446,
+      "sha256": "3976f923748a54ed7289603c2c0c15e3531ed9fbfeded39a0f32b22a7de7ae31"
+    },
+    {
+      "path": "ffdec/texts/10.txt",
+      "bytes": 3,
+      "sha256": "c171d4ec282b23db89a99880cd624e9ba2940c1d894783602edab5d7481dc1ea"
+    },
+    {
+      "path": "ffdec/texts/11.txt",
+      "bytes": 2,
+      "sha256": "37aa1ccf80e481832b2db282d4d4f895ee1e31219b7d0f6aee8dc8968828341b"
+    },
+    {
+      "path": "ffdec/texts/12.txt",
+      "bytes": 2,
+      "sha256": "d5c534fde62beb89c745a59952c8efed8b7523cbd047e682782e4367de9ea3bf"
+    },
+    {
+      "path": "ffdec/texts/13.txt",
+      "bytes": 2,
+      "sha256": "a770d3270c9dcdedf12ed9fd70444f7c8a95c26cae3cae9bd867499090a2f14b"
+    },
+    {
+      "path": "ffdec/texts/14.txt",
+      "bytes": 2,
+      "sha256": "e91592205d3881e3ea35d66973bb4898d7282126ab5afcb355c95d2fc17f3822"
+    },
+    {
+      "path": "ffdec/texts/15.txt",
+      "bytes": 3,
+      "sha256": "7334821429a99561be94ccfc7b8d6f9b85af618fdb5e323f5fa3637c6947a349"
+    },
+    {
+      "path": "ffdec/texts/16.txt",
+      "bytes": 1,
+      "sha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+    },
+    {
+      "path": "ffdec/texts/17.txt",
+      "bytes": 1,
+      "sha256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+    },
+    {
+      "path": "ffdec/texts/18.txt",
+      "bytes": 1,
+      "sha256": "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
+    },
+    {
+      "path": "ffdec/texts/19.txt",
+      "bytes": 1,
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "ffdec/texts/20.txt",
+      "bytes": 1,
+      "sha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+    },
+    {
+      "path": "ffdec/texts/21.txt",
+      "bytes": 2,
+      "sha256": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5"
+    },
+    {
+      "path": "ffdec/texts/22.txt",
+      "bytes": 1,
+      "sha256": "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d"
+    },
+    {
+      "path": "ffdec/texts/23.txt",
+      "bytes": 1,
+      "sha256": "19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7"
+    },
+    {
+      "path": "ffdec/texts/24.txt",
+      "bytes": 1,
+      "sha256": "7902699be42c8a8e46fbbb4501726517e86b22c56a189f7625a6da49081b2451"
+    },
+    {
+      "path": "ffdec/texts/25.txt",
+      "bytes": 1,
+      "sha256": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3"
+    },
+    {
+      "path": "ffdec/texts/26.txt",
+      "bytes": 1,
+      "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881"
+    },
+    {
+      "path": "ffdec/texts/27.txt",
+      "bytes": 1,
+      "sha256": "a1fce4363854ff888cff4b8e7875d600c2682390412a8cf79b37d0b11148b0fa"
+    },
+    {
+      "path": "ffdec/texts/32.txt",
+      "bytes": 260,
+      "sha256": "3433b665e006c07a5c8b50b5c6ac1dfc9bcad2ef017124300a3aca8da40c75d9"
+    },
+    {
+      "path": "ffdec/texts/39.txt",
+      "bytes": 10,
+      "sha256": "2bdea74af1c17fe8ca6f56f8dbeef2a204ad3bd69b073054cc3cc46ac63c7e46"
+    },
+    {
+      "path": "ffdec/texts/41.txt",
+      "bytes": 9,
+      "sha256": "6f04066420d9015e3a99a292740e5cddb7b96437407eaef2d41a0c992fc71f91"
+    },
+    {
+      "path": "ffdec/texts/43.txt",
+      "bytes": 12,
+      "sha256": "b6e3ec6e832fc5da1f0cf565cd9e73b3dc4394462976de222139f9ff262bbb44"
+    },
+    {
+      "path": "ffdec/texts/5.txt",
+      "bytes": 2,
+      "sha256": "cf3bae39dd692048a8bf961182e6a34dfd323eeb0748e162eaf055107f1cb873"
+    },
+    {
+      "path": "ffdec/texts/55.txt",
+      "bytes": 268,
+      "sha256": "b14c242c5057c06cbdbd4a1e7b60972ee474124372cecebadd8263bf77a27f7a"
+    },
+    {
+      "path": "ffdec/texts/59.txt",
+      "bytes": 19,
+      "sha256": "0b8525cfca2f29980661ad85e1704db5fd4fbbe805b039e830b11c5fae3f7e92"
+    },
+    {
+      "path": "ffdec/texts/6.txt",
+      "bytes": 2,
+      "sha256": "e5e0093f285a4fb94c3fcc2ad7fd04edd10d429ccda87a9aa5e4718efadf182e"
+    },
+    {
+      "path": "ffdec/texts/7.txt",
+      "bytes": 2,
+      "sha256": "03b26944890929ff751653acb2f2af795cee38f937f379f52ed654a68ce91216"
+    },
+    {
+      "path": "ffdec/texts/8.txt",
+      "bytes": 2,
+      "sha256": "1bad6b8cf97131fceab8543e81f7757195fbb1d36b376ee994ad1cf17699c464"
+    },
+    {
+      "path": "ffdec/texts/9.txt",
+      "bytes": 2,
+      "sha256": "615bdd17c2556f82f384392ea8557f8cc88b03501c759e23093ab0b2a9b5cd48"
+    },
+    {
+      "path": "movie.xml",
+      "bytes": 466677,
+      "sha256": "2d9124741b05299ed771a48995ab35179f872b014a51e1a9a169afc6f5d5c4b6"
+    },
+    {
+      "path": "source.xml",
+      "bytes": 810548,
+      "sha256": "d4c57350ebb40226e7387367e635ec285143b7ef1aaac6f3552792703b0e0b2a"
+    }
+  ],
+  "readOnlySourceUntouched": true,
+  "registered": false
+}

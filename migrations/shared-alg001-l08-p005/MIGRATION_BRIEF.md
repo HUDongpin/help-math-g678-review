@@ -1,0 +1,11 @@
+# ALG001 L8 P005: source-driven local implementation
+
+Exact active XML placement 5/50, /Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/RW/L8RW05.swf, SHA-256 `a785b8e263d805621c21b120ee42e57b36934ebe43b82e0a275a8735aa718c84`. Same-path FLA is missing; the SWF is preserved without modification. This page remains unregistered until its maintained implementation, exact admission, and real My Lesson flow pass.
+
+Source title: **Graphing Linear Equations: Real World Activity**. The course XML title remains Graphing Linear Functions. Root frames 1 and 6 stop; the root places the main sprite at frame 6, depth 1, translation 7390/5060 twips. The main sprite has 573 frames at 12 fps and no ActionScript stop, so the source interpretation loops with the final frame's full duration.
+
+The 4 reachable source release buttons set KeyAttribute, call DoHyperLinks and stop the main animation. The maintained host uses typed dictionary entries for Slope, Line, Measure, Steep, holds the current frame/audio, and stays paused after close. Full rectangular mask inclusion conservatively determines usable intervals; this is not original-runtime hit-test acceptance. Source masks, morphs, vector art and child timelines remain in generated Canvas; native title and keyboard glossary controls surround it. Full body typography/accessibility is a separate gate.
+
+The original embedded MP3 has 228410 bytes, 22050 Hz mono, 1012032 decoded samples. Three exact source-coordinate runs retain the zero and negative block audit and the inter-run gap; no unsupported priming merge is introduced. Scheduling is a Current-JS interpretation, not original-runtime timing or listening acceptance. The separate original SA MP3 has 327936 bytes, 48 kHz mono, 1124352 decoded samples and plays only through explicit Spanish Audio. Locale does not autoplay or replace the embedded source stream.
+
+Lane: compiler-assisted factory with a maintained Canvas, source-cycle clock, glossary/SA session and typed My Lesson bridge. Both pages are independently audited; generation and tests do not authorize broad family scale-out. Original-runtime, fidelity, listening, human/Owner, full typography/accessibility/performance, strict completion, release/publication remain pending.

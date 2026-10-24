@@ -1,0 +1,31 @@
+{
+  "at": "2026-10-06T20:27:04.233155+00:00",
+  "sourceSha256": "4963fe283d7c233df31306a959e6012bfaa21176b0d59d59ed008efed6511789",
+  "spriteId": 102,
+  "originalBlocks": 13,
+  "sourceSamples": 5967,
+  "oursPcmBytes": 11934,
+  "ffmpegPcmBytes": 11960,
+  "oursPcmSha256": "2fdcd846d6b0f1b99b8d77111a4b5cb58cb1119f76c9b50147d3bf1804548a33",
+  "ffmpegPcmSha256": "aa2eb628e10a7c1b9872c59a21052dfdcb6443b947137f76955b10b069b68ec1",
+  "wrapperSha256": "09b1f323393128f3ab350771f9b90bdbb975a3c64c2eb7efcbdcb8d88b215174",
+  "command": [
+    "ffmpeg",
+    "-nostdin",
+    "-v",
+    "error",
+    "-i",
+    "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/adpcm-102-audio-only-source-wrapper-v1.swf",
+    "-map",
+    "0:a:0",
+    "-c:a",
+    "pcm_s16le",
+    "-f",
+    "s16le",
+    "/Volumes/American Dream/.g6l8p23a1/source-extraction-v1/adpcm-102-ffmpeg-v1.pcm"
+  ],
+  "scope": "Independent ffmpeg decoder consumes unmodified original SoundStreamHead/Block bytes in an audio-only FWS wrapper;derived wrapper is not original animation runtime evidence.",
+  "originalRuntimeAccepted": false,
+  "listeningAccepted": false,
+  "pass": false
+}

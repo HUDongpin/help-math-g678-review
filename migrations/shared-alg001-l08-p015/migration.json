@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l08-p015",
+  "animationId": "shared-alg001-l08-p015",
+  "assetId": "swf-93206e2e86bfd294bc875fa0aaf235c1e6bf3a99281d669a25f20a4deebe07fb",
+  "status": "preserved",
+  "created": "2026-10-06",
+  "confidence": "verified",
+  "classification": {
+    "collection": "course",
+    "grade": "shared",
+    "lesson": 8,
+    "section": "VB",
+    "page": 9,
+    "domain": "algebra",
+    "knowledgePoint": {
+      "en": "Change the y-intercept of a line while retaining slope one",
+      "es": "Cambiar la intersección con y manteniendo la pendiente uno"
+    },
+    "titleRaw": "y-Intercept",
+    "titleDisplay": "y-Intercept",
+    "status": "confirmed",
+    "evidence": [
+      "source-v1/index.xml",
+      "native-v1/source-model-v1.json"
+    ],
+    "sectionPageOrdinal": 9,
+    "globalPageOrdinal": 15,
+    "sourceOccurrence": 15,
+    "moduleCode": "ALG001"
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/VB/L8VB10.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/VB/L8VB10.swf",
+    "flaSha256": "",
+    "swfSha256": "93206e2e86bfd294bc875fa0aaf235c1e6bf3a99281d669a25f20a4deebe07fb",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 228822,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#ffffff",
+    "actionScriptVersion": "AS1/2",
+    "complexity": "behavior-heavy",
+    "fonts": [
+      "Bauhaus Md BT"
+    ],
+    "scripts": [
+      "/Volumes/American Dream/.g6l8p15a1/source-extraction-v1/ffdec/scripts/DefineButton2_10/BUTTONCONDACTION on(release).as",
+      "/Volumes/American Dream/.g6l8p15a1/source-extraction-v1/ffdec/scripts/DefineButton2_13/BUTTONCONDACTION on(release).as",
+      "/Volumes/American Dream/.g6l8p15a1/source-extraction-v1/ffdec/scripts/DefineButton2_7/BUTTONCONDACTION on(release).as",
+      "/Volumes/American Dream/.g6l8p15a1/source-extraction-v1/ffdec/scripts/DefineButton2_8/BUTTONCONDACTION on(release).as",
+      "/Volumes/American Dream/.g6l8p15a1/source-extraction-v1/ffdec/scripts/DefineButton2_9/BUTTONCONDACTION on(release).as",
+      "/Volumes/American Dream/.g6l8p15a1/source-extraction-v1/ffdec/scripts/DefineSprite_66/frame_500/DoAction.as",
+      "/Volumes/American Dream/.g6l8p15a1/source-extraction-v1/ffdec/scripts/DefineSprite_66/frame_500/PlaceObject2_62_20/CLIPACTIONRECORD on(press).as",
+      "/Volumes/American Dream/.g6l8p15a1/source-extraction-v1/ffdec/scripts/DefineSprite_66/frame_500/PlaceObject2_62_20/CLIPACTIONRECORD on(releaseOutside,release).as",
+      "/Volumes/American Dream/.g6l8p15a1/source-extraction-v1/ffdec/scripts/DefineSprite_66/frame_500/PlaceObject2_62_20/CLIPACTIONRECORD onClipEvent(enterFrame).as",
+      "/Volumes/American Dream/.g6l8p15a1/source-extraction-v1/ffdec/scripts/frame_1/DoAction.as",
+      "/Volumes/American Dream/.g6l8p15a1/source-extraction-v1/ffdec/scripts/frame_6/DoAction.as"
+    ],
+    "externalDependencies": [
+      "InternalPreloader.jump_check",
+      "DoHyperLinks",
+      "optional old-host SA button"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      {
+        "sourceShape": 2,
+        "disposition": "two paragraph masks; native whole words"
+      },
+      {
+        "sourceShape": 46,
+        "clipDepth": 83,
+        "disposition": "exact rounded source vector mask on source graph lines"
+      }
+    ],
+    "morphs": [
+      {
+        "sourceShape": 54,
+        "first": 98,
+        "last": 111,
+        "replacementAtFrame": 112,
+        "replacementShape": 56,
+        "disposition": "exact source morph paths and ratio"
+      }
+    ],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "source-intercept",
+      "kind": "interactive",
+      "description": "Source y-intercept demonstration, coordinate pulses, return to0, then main500 stop and source-bounded drag.503 structural frames;500 natural terminal.",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "en",
+      "es"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "source-stream",
+        "language": "en",
+        "source": "source-v1/stream-66.mp3",
+        "sourceSha256": "282b6789995e4d8a7294c967655b088199083a018acbcd95508fda9d8da8abec",
+        "frameDomain": "sprite-66",
+        "startSemantics": "explicit Play; source runs3/5; hold at500",
+        "replayBehavior": "retire decoder/nodes and reset main1"
+      },
+      {
+        "id": "optional-spanish-audio",
+        "language": "es",
+        "source": "source-v1/L8VB10.mp3",
+        "sourceSha256": "ecb49b03d512aaca7dbdfd7d09e52230a237647c20b3bb1c1bc133ab7ddc5854",
+        "frameDomain": "held-main",
+        "startSemantics": "explicit Spanish Audio only; no locale autoplay or splice",
+        "replayBehavior": "close decoder and reset main1"
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "Native React text/equation/slider and43 labels, exact SVG graph paths/morph and rounded mask; separate source state for initial line and first drag.",
+    "route": "/en/migration-status/g678-calibration/shared-alg001-l08-p015/registered-v1",
+    "routeFile": "apps/web/app/[locale]/migration-status/g678-calibration/shared-alg001-l08-p015/registered-v1/page.tsx",
+    "component": "packages/demos/src/alg-l08-p015-presentation-v1.tsx",
+    "registryModule": "./modules/shared-alg001-l08-p015",
+    "timelineModule": "packages/demos/src/timelines/shared-alg001-l08-p015.ts",
+    "testFile": "packages/demos/src/alg-l08-p015-frame-v1.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-66",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "source-intercept"
+        ]
+      },
+      {
+        "id": "sprite-62",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-62",
+        "parentFrameDomainId": "sprite-66",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-intercept"
+        ]
+      },
+      {
+        "id": "sprite-65",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-65",
+        "parentFrameDomainId": "sprite-66",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-intercept"
+        ]
+      },
+      {
+        "id": "sprite-66",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-66",
+        "parentFrameDomainId": "root",
+        "frameCount": 503,
+        "scenarioIds": [
+          "source-intercept"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

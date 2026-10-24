@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l08-p012",
+  "source": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L8/VB/L8VB07.swf",
+    "bytes": 122236,
+    "sha256": "ce47f961b9821924f5b4d7f3ad4af7aaff1de499d2ba41e4456bc88e38269e01"
+  },
+  "decision": "maintained-candidate-awaiting-host-calibration",
+  "lane": "advanced-manual",
+  "reason": "Named Draw enablement and one-frame blank field require source-specific reducer; reuse immutable session/player clock templates without altering past consumers.",
+  "capabilities": [
+    {
+      "capability": "timeline",
+      "sourceRequirement": "7domains/293main/15feedback",
+      "implementationRoute": "source frame adapter",
+      "productVerified": false
+    },
+    {
+      "capability": "interaction",
+      "sourceRequirement": "named Draw, slider formula and releaseOutside, exact feedback/Close and fixed replacement",
+      "implementationRoute": "maintained deterministic reducer",
+      "productVerified": false
+    },
+    {
+      "capability": "glossary",
+      "sourceRequirement": "four source KeyAttribute values",
+      "implementationRoute": "source dictionaries and existing host adapter",
+      "productVerified": false
+    },
+    {
+      "capability": "audio",
+      "sourceRequirement": "main84/feedback70 and separate SA",
+      "implementationRoute": "strict decoder hashes and source-run clocks",
+      "productVerified": false
+    }
+  ],
+  "automaticCompletion": false,
+  "scaleOutAuthorized": false,
+  "originalRuntime": false
+}

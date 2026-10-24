@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "08245230ce7bc39b2e9ee75656ba615fd244d75bc6961bba84d24e00651a4e0a",
+  "domains": [
+    {
+      "id": "root",
+      "kind": "root",
+      "sourceTimelineId": "root",
+      "parentFrameDomainId": null,
+      "frameCount": 10,
+      "scenarioIds": [
+        "source-vocabulary"
+      ]
+    },
+    {
+      "id": "sprite-2",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-2",
+      "parentFrameDomainId": "root",
+      "frameCount": 1,
+      "scenarioIds": [
+        "source-vocabulary"
+      ]
+    },
+    {
+      "id": "sprite-52",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-52",
+      "parentFrameDomainId": "sprite-171",
+      "frameCount": 32,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    },
+    {
+      "id": "sprite-73",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-73",
+      "parentFrameDomainId": "sprite-171",
+      "frameCount": 33,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    },
+    {
+      "id": "sprite-86",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-86",
+      "parentFrameDomainId": "sprite-171",
+      "frameCount": 28,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    },
+    {
+      "id": "sprite-98",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-98",
+      "parentFrameDomainId": "sprite-171",
+      "frameCount": 27,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    },
+    {
+      "id": "sprite-129",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-129",
+      "parentFrameDomainId": "sprite-130",
+      "frameCount": 1,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-130",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-130",
+      "parentFrameDomainId": "sprite-171",
+      "frameCount": 28,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-141",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-141",
+      "parentFrameDomainId": "sprite-144",
+      "frameCount": 1,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-144",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-144",
+      "parentFrameDomainId": "sprite-171",
+      "frameCount": 28,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-156",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-156",
+      "parentFrameDomainId": "sprite-160",
+      "frameCount": 1,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-160",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-160",
+      "parentFrameDomainId": "sprite-171",
+      "frameCount": 28,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-171",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-171",
+      "parentFrameDomainId": "root",
+      "frameCount": 383,
+      "scenarioIds": [
+        "source-vocabulary"
+      ]
+    }
+  ],
+  "originalRuntimeVerified": false,
+  "notes": [
+    "Wrong1 sprite130 frame1 calls undefined _parent.enableButton; NMHBtn is not placed. No invented help or host success is asserted.",
+    "A=-2,B=-1,C=0,D=1. B is the sole authored right button. Main solution identifies (0,-1); preserve source graph, growing blue line, intercept dot, glyph transforms and flash highlights.",
+    "Feedback titles and exact branch windows/audio are source-bound; decorative mascot/morph/bitmap effects are retained in extraction and remain outside native semantic presentation fidelity claims.",
+    "Each right branch has an extra empty action tag at start and end. Preserve these tags without invented behavior."
+  ]
+}

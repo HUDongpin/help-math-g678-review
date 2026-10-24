@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2f557ac43c0ec8f1f7dc2e3665cdbbd20ac5091adff5b8c44311cd2a079c12a9",
+  "domains": [
+    {
+      "id": "root",
+      "kind": "root",
+      "sourceTimelineId": "root",
+      "parentFrameDomainId": null,
+      "frameCount": 10,
+      "scenarioIds": [
+        "source-vocabulary"
+      ]
+    },
+    {
+      "id": "sprite-2",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-2",
+      "parentFrameDomainId": "root",
+      "frameCount": 1,
+      "scenarioIds": [
+        "source-vocabulary"
+      ]
+    },
+    {
+      "id": "sprite-83",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-83",
+      "parentFrameDomainId": "sprite-245",
+      "frameCount": 28,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    },
+    {
+      "id": "sprite-108",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-108",
+      "parentFrameDomainId": "sprite-245",
+      "frameCount": 27,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    },
+    {
+      "id": "sprite-114",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-114",
+      "parentFrameDomainId": "sprite-124",
+      "frameCount": 1,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    },
+    {
+      "id": "sprite-121",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-121",
+      "parentFrameDomainId": "sprite-124",
+      "frameCount": 1,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    },
+    {
+      "id": "sprite-124",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-124",
+      "parentFrameDomainId": "sprite-245",
+      "frameCount": 28,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    },
+    {
+      "id": "sprite-136",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-136",
+      "parentFrameDomainId": "sprite-245",
+      "frameCount": 25,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    },
+    {
+      "id": "sprite-161",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-161",
+      "parentFrameDomainId": "sprite-162",
+      "frameCount": 1,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-162",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-162",
+      "parentFrameDomainId": "sprite-245",
+      "frameCount": 29,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-173",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-173",
+      "parentFrameDomainId": "sprite-177",
+      "frameCount": 1,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-177",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-177",
+      "parentFrameDomainId": "sprite-245",
+      "frameCount": 28,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-199",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-199",
+      "parentFrameDomainId": "sprite-208",
+      "frameCount": 1,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-208",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-208",
+      "parentFrameDomainId": "sprite-245",
+      "frameCount": 28,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-245",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-245",
+      "parentFrameDomainId": "root",
+      "frameCount": 926,
+      "scenarioIds": [
+        "source-vocabulary"
+      ]
+    }
+  ],
+  "originalRuntimeVerified": false,
+  "notes": [
+    "No NMHBtn placement. Sprite208 undefined _parent.enableButton is preserved as a source anomaly, no invented help or host result.",
+    "Sprite108 nonzero after-End tail and empty terminal seek -1984 are preserved. Native candidate timing does not establish original-runtime alignment.",
+    "Seven feedback branches preserve semantic title/Close/attempt timing; decorative mascot/morph/bitmap motions remain extracted source only.",
+    "Question text and source glossary controls retain exact source masks; all five source term glyphs have zero permanent crop.",
+    "Main graph/grid/path and fraction/text placements use source-native SVG. FFDec records 0.05px original grid strokes with 1px display widths; retain provenance and verify visible grid."
+  ]
+}

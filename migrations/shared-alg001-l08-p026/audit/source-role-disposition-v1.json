@@ -1,0 +1,51 @@
+{
+  "sourceVisualReview": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/output/g678-next-l8-source-audit-20261007-v1/REPORT.md",
+      "bytes": 10512,
+      "sha256": "004aef8d56cb067162e3f949cbed1aedebdf94d6617ffcb8f0b2b07370484dc7"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/output/g678-next-l8-source-audit-20261007-v1/behavior-map.json",
+      "bytes": 15757,
+      "sha256": "ba1a8cae2dd80d4717d2b5ccc670afaee2354b8fd5f4b88b3f05491e18680d05"
+    }
+  ],
+  "scope": "20 native text definitions and8 static shapes preserve choice labels, algebra rows, fraction bars and emphasis. Source title is outlined shape1. Feedback decoration remains source-only.",
+  "nativeQuestion": "single source-composed glyph-trailing-edge whole-word prefix; two full hit-rectangle controls; first-edge source clipping limitation disclosed in audit-v1/mask-reveal-disposition-v1.json",
+  "nativeAlgebra": "every placed glyph, matrix, alpha and depth; exact SVG vector paths; no bitmap substitution",
+  "feedback": "seven exact branch windows, title visibility and authored hints, attempts after close exit",
+  "risks": [
+    {
+      "kind": "nonzero-bytes-after-end",
+      "timelineId": "sprite-47"
+    },
+    {
+      "kind": "shape-text-unclassified",
+      "definitionCount": 127,
+      "meaning": "Shapes may include outlined text or mathematical symbols; presence is not confirmation of text."
+    },
+    {
+      "kind": "bitmap-text-unclassified",
+      "definitionCount": 4,
+      "meaning": "Bitmap presence does not establish embedded text; visual/source review required."
+    },
+    {
+      "kind": "button-runtime-state-and-actions-not-interpreted",
+      "definitionCount": 7
+    },
+    {
+      "kind": "dynamic-text-runtime-value-unresolved",
+      "fieldCount": 3
+    },
+    {
+      "kind": "actionscript-visibility-and-values-not-interpreted"
+    },
+    {
+      "kind": "mask-filter-blend-semantics-unresolved"
+    }
+  ],
+  "humanReview": false,
+  "originalRuntime": false,
+  "registered": false
+}

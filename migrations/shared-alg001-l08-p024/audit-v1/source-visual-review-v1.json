@@ -1,0 +1,76 @@
+{
+  "at": "2026-10-06T21:54:44.204818+00:00",
+  "animationId": "shared-alg001-l08-p024",
+  "source": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l08-p024/source-v1/L8IN09.swf",
+    "bytes": 430479,
+    "sha256": "08245230ce7bc39b2e9ee75656ba615fd244d75bc6961bba84d24e00651a4e0a"
+  },
+  "extraction": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l08-p024/audit-v1/static-visual-extraction-v1.json",
+    "bytes": 23337,
+    "sha256": "36532e0f6eaa88ce10fcec95d9a436898bd52eaf505d11c51c714220ad0d1756"
+  },
+  "contacts": [
+    {
+      "path": "/Volumes/American Dream/.g6l8p24a1/source-extraction-v1/source-keyframes-contact-1-v1.png",
+      "bytes": 171547,
+      "sha256": "bf85ef0d4abc4937f35cbcc7b86601cb735d9f33c2ec8200abc1a5deaee1d773",
+      "count": 25,
+      "group": "source-keyframes"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p24a1/source-extraction-v1/source-shapes-contact-1-v1.png",
+      "bytes": 674167,
+      "sha256": "a69c6ab01e785b76cf0be456df77c48f40bc28dc82f10b946504d83a4cc24083",
+      "count": 28,
+      "group": "source-shapes"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p24a1/source-extraction-v1/source-shapes-contact-2-v1.png",
+      "bytes": 1019985,
+      "sha256": "cdf4bd6f5012202bf38c11cb39e9572f0985af3723a2a4b25fac3c4bb952cec9",
+      "count": 28,
+      "group": "source-shapes"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p24a1/source-extraction-v1/source-shapes-contact-3-v1.png",
+      "bytes": 241261,
+      "sha256": "1a53d06d610501ab2adcd36e43bff73cab091e88eaa2ba5aa812271085c78cce",
+      "count": 20,
+      "group": "source-shapes"
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p24a1/source-extraction-v1/source-frame148-white-v1.png",
+      "bytes": 40773,
+      "sha256": "7bafa01925bcc51525f2db0c1ee97eb9af6d2bbae7225cb6a5a39d4fec25aebf",
+      "frame": 148,
+      "fullFrame": true
+    },
+    {
+      "path": "/Volumes/American Dream/.g6l8p24a1/source-extraction-v1/source-frame383-white-v1.png",
+      "bytes": 34764,
+      "sha256": "b792d13faec3bd968015d0f8954a859db7af667dc6ada387af3db3b44f2fe208",
+      "frame": 383,
+      "fullFrame": true
+    }
+  ],
+  "reviewedBy": "Codex static visual inspection",
+  "staticFramesReviewed": 25,
+  "sourceShapeImagesReviewed": 76,
+  "fullFrameChecks": [
+    148,
+    383
+  ],
+  "findings": [
+    "Frame148 source question asks for y-intercept from graph; A=-2 B=-1 C=0 D=1. Graph line crosses y-axis at -1.",
+    "Frame383 retains B=-1, marks (0,-1), thick blue line and red intercept dot; source labels and fractions/negative signs must preserve independent DefineText matrices.",
+    "Three separately masked narrative lines reveal definition, continuation and question. Six hyperlink regions must become usable only when source reveal exposes their rectangles.",
+    "Shape1 is outlined title; main graph17/red line26/blue line165/red intercept166/label167 and gold answer buttons are instructional assets. Main morph164 is instructional line emphasis and requires source-derived interpolation.",
+    "Feedback decoration contains bitmap/gradient effects and outlined Try Again text; source extraction remains retained. Native semantic feedback does not establish original-runtime fidelity."
+  ],
+  "originalRuntimeAccepted": false,
+  "humanReview": false,
+  "implemented": false,
+  "registered": false
+}
