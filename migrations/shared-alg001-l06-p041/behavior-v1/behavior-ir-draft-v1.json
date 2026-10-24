@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p041-source-behavior-ir-draft",
+  "status": "preparation-only-unregistered",
+  "identity": {
+    "animationId": "shared-alg001-l06-p041",
+    "activePageOccurrence": 41,
+    "sourceReference": "IN/L6IN13.swf",
+    "sourceSwfSha256": "bb10cab8e835f2c3267e0add3774dc47fa38863fe12dab67f3199e4c0efadd85",
+    "sourceIndexXmlSha256": "9f3753a17e5e271d7bc63a1bdf8cd5237f19770bae3f5c7364cabcb62c84ce2c",
+    "sourceFactsSha256": "5512f5f65a9fd2eb3da8b22cb145c8fbf642e598eb257bc8db023dae2b14567d",
+    "sourceFactsPath": "output/alg-l06-p041-source-triage-20261001-v1/source-facts-v1.json"
+  },
+  "sourceTimeline": {
+    "rootBeginFrame": 6,
+    "rootBeginStop": true,
+    "mainSpriteId": 169,
+    "mainFrameCount": 869,
+    "quizGateFrame": 752,
+    "quizGateAction": "stop; quizSection=true; quizTryCount=0",
+    "postQuizFrame": 753,
+    "postQuizAction": "quizSection=false",
+    "endFrameHandling": "engineering-hold-only; no lesson-complete inference"
+  },
+  "quiz": {
+    "answerInstances": [
+      {"name": "AnsBtn1", "characterId": 44, "result": "wrong"},
+      {"name": "AnsBtn2", "characterId": 44, "result": "wrong"},
+      {"name": "AnsBtn3", "characterId": 45, "result": "right"},
+      {"name": "AnsBtn4", "characterId": 44, "result": "wrong"}
+    ],
+    "answerLabelToHitArea": "unverified-product-frame",
+    "wrongClick": {
+      "attemptIncrementMoment": "on-release-before-host-call",
+      "firstWrongText": "Look at the height of the ball, the value on the h-axis, when the value on the t-axis is 2.5. Try again.",
+      "laterWrongText": "Look at the height of the ball, the value on the h-axis, when the value on the t-axis is 2.5. ",
+      "hostActions": ["disableQuizButton", "showWrongFeed"],
+      "sourceScript": "DefineButton2_44/BUTTONCONDACTION on(release).as"
+    },
+    "rightClick": {
+      "hostActions": ["disableQuizButton", "showRightFeed"],
+      "sourceScript": "DefineButton2_45/BUTTONCONDACTION on(release).as"
+    },
+    "hostFeedbackVariantSelection": "unrecovered; explicit source-scoped input required; no default or random selection"
+  },
+  "feedback": {
+    "wrong": [
+      {"spriteId": 76, "name": "Mc_Wrong_Feed1", "holdFrame": 23, "closeButtonId": 72, "closeJumpsToFrame": 24, "terminalFrame": 28},
+      {"spriteId": 91, "name": "Mc_Wrong_Feed3", "holdFrame": 21, "closeButtonId": 85, "closeJumpsToFrame": 22, "terminalFrame": 28, "sourceMask": {"characterId": 79, "frame": 5, "depth": 5, "clipDepth": 9}},
+      {"spriteId": 105, "name": "Mc_Wrong_Feed2", "holdFrame": 20, "closeButtonId": 100, "closeJumpsToFrame": 21, "terminalFrame": 28}
+    ],
+    "wrongCloseAction": "jump selected feedback sprite beyond hold; reset AnsBtn1..4 clips to frame 1",
+    "wrongTerminalAction": "stop; enableQuizButton; selected feedback gotoAndStop(1); enable NMHBtn; if quizTryCount>=2 then reset count=0, clear quizSection, resume parent; otherwise parent remains at quiz frame 752",
+    "right": [
+      {"spriteId": 119, "name": "Mc_Right_Feed3", "terminalFrame": 32},
+      {"spriteId": 139, "name": "Mc_Right_Feed2", "terminalFrame": 33},
+      {"spriteId": 152, "name": "Mc_Right_Feed4", "terminalFrame": 28},
+      {"spriteId": 168, "name": "Mc_Right_Feed1", "terminalFrame": 28}
+    ],
+    "rightTerminalAction": "stop; disableQuizButton; clear quizSection; selected feedback gotoAndStop(1); resume parent toward frame 753"
+  },
+  "audio": {
+    "embeddedFormat": "eight separate 22050-Hz mono MP3 SoundStreamHead domains",
+    "streamBlockLedgerPath": "output/alg-l06-p041-source-triage-20261001-v1/stream-blocks-v1.json",
+    "streamBlockLedgerSha256": "286e85071878c21ad7adc36c99d61334c51c8f92264a96c2d4f68910cf611e49",
+    "sourceAudioPlanPath": "output/alg-l06-p041-audio-source-preparation-20261001-v1/source-audio-plan-v1.json",
+    "sourceAudioPlanSha256": "60a80bc27858e02b7c5bf4d4f04c89aecb0b0cbc27cd1b554f1b859aeb2f3dc5",
+    "totalBlockCount": 1064,
+    "mainSpriteId": 169,
+    "feedbackSpriteIds": [76, 91, 105, 119, 139, 152, 168],
+    "ownershipRule": "one selected source stream at a time; retain paused main decoded cursor during quiz and feedback; never concatenate domains",
+    "sourceExtraction": "eight exact source MP3 payloads prepared separately with no inserted bytes",
+    "measuredBindings": "pending browser technical decode and PCM hash per sprite",
+    "separateSA": {
+      "sourceReference": "SA/L6IN13.mp3",
+      "sha256": "5154170c4922f481ae3921c3ed67554c16a430daae24ec77167ecf689f264f1b",
+      "languageAndTrigger": "undetermined",
+      "candidateHandling": "only explicit user action after source binding; never locale autoplay or embed splice"
+    }
+  },
+  "proposedSessionModel": {
+    "pageOwnedPhases": ["prequiz", "quiz-held", "feedback-pending-host-selection", "feedback-playing", "wrong-feedback-held", "postquiz", "engineering-end-hold"],
+    "stateFields": ["mainFrame", "mainPlaying", "quizSection", "quizTryCount", "quizButtonsEnabled", "nMhButtonEnabled", "wrongFeedText", "pendingHostCall", "selectedFeedbackId", "feedbackFrame", "feedbackEpoch", "mainAudioEpoch", "supplementalAudioEpoch", "glossaryOpen"],
+    "sourceTransitions": [
+      {"event": "host-play", "from": "prequiz", "to": "prequiz", "effect": "advance source main from held frame 1 only after real source stream and stage are ready", "source": "root frame 6 stop; sprite 169 frame 1"},
+      {"event": "main-reaches-752", "from": "prequiz", "to": "quiz-held", "effect": "stop main at 752; quizSection=true; quizTryCount=0", "source": "DefineSprite_169/frame_752/DoAction.as"},
+      {"event": "wrong-button-release", "from": "quiz-held", "to": "feedback-pending-host-selection", "effect": "increment quizTryCount now; set exact first/later text; disable quiz; request wrong host variant", "source": "DefineButton2_44/BUTTONCONDACTION on(release).as"},
+      {"event": "right-button-release", "from": "quiz-held", "to": "feedback-pending-host-selection", "effect": "disable quiz; request right host variant", "source": "DefineButton2_45/BUTTONCONDACTION on(release).as"},
+      {"event": "explicit-host-variant", "from": "feedback-pending-host-selection", "to": "feedback-playing", "effect": "accept only a matching source-listed wrong/right sprite; start only that feedback domain", "source": "source-placed feedback sprites; host selector unrecovered"},
+      {"event": "wrong-feedback-hold", "from": "feedback-playing", "to": "wrong-feedback-held", "effect": "hold at variant-specific frame until source Close", "source": "DefineSprite_76/91/105 hold actions"},
+      {"event": "wrong-close", "from": "wrong-feedback-held", "to": "feedback-playing", "effect": "jump to variant-specific post-hold frame and reset four answer clips", "source": "DefineButton2_72/85/100 release actions"},
+      {"event": "wrong-terminal-first", "from": "feedback-playing", "to": "quiz-held", "effect": "enable quiz and NMHBtn; retain quizTryCount=1 and parent at frame 752", "source": "DefineSprite_76/91/105/frame_28/DoAction.as"},
+      {"event": "wrong-terminal-second-or-later", "from": "feedback-playing", "to": "postquiz", "effect": "enable quiz and NMHBtn; reset count to 0; clear quizSection; resume parent", "source": "DefineSprite_76/91/105/frame_28/DoAction.as"},
+      {"event": "right-terminal", "from": "feedback-playing", "to": "postquiz", "effect": "disable quiz; clear quizSection; resume parent to frame 753", "source": "DefineSprite_119/139/152/168 terminal actions"},
+      {"event": "main-reaches-869", "from": "postquiz", "to": "engineering-end-hold", "effect": "hold at audited sprite boundary; no completion claim", "source": "DefineSprite_169 frame count"}
+    ],
+    "modernHostTransitions": [
+      {"event": "pause", "effect": "hold current owner and decoded cursor; preserve page state"},
+      {"event": "replay", "effect": "retire main, feedback and supplemental source generations; reset quiz and native display to main frame 1 held"},
+      {"event": "previous-next-or-unmount", "effect": "abort pending fetch/decode, close all owned audio nodes and reject stale callbacks"},
+      {"event": "explicit-supplemental", "effect": "if source trigger is later established, suspend main or feedback owner; return to same held source frame and cursor"}
+    ]
+  },
+  "unresolved": [
+    "old host start and showWrongFeed/showRightFeed variant choice",
+    "answer label to hit-area alignment in the product frame",
+    "per-domain browser decoded PCM bindings",
+    "source stream frame/sample alignment and handoff timing",
+    "native text, morph and sprite 91 mask browser rendering",
+    "separate SA language, trigger and return semantics",
+    "original-runtime behavior, listening, human and Owner acceptance"
+  ],
+  "acceptance": {
+    "currentJsRegistration": false,
+    "originalRuntimeFidelity": false,
+    "audioListening": false,
+    "browserVisual": false,
+    "human": false,
+    "owner": false,
+    "strictCompletion": false,
+    "release": false,
+    "publication": false
+  }
+}

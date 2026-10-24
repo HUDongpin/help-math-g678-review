@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p032-source-plan-v1",
+  "status": "source-only; unregistered; no original-runtime, browser, audio-listening, or acceptance",
+  "identity": {
+    "animationId": "shared-alg001-l06-p032",
+    "assetId": "swf-e425600d0b6cfab41ae50f7512cb8e6c4e3c6ee04bbfa10c29b437459876d836",
+    "lesson": "shared-alg001-l06",
+    "ordinal": 32,
+    "lessonPages": 60,
+    "xmlReference": "IN/L6IN04.swf",
+    "xmlPageAttributes": {
+      "Title": "Testing Whether Ordered Pairs Represent a Function",
+      "RandomAudio": "",
+      "BGText": ""
+    },
+    "titleEnglish": "Testing Whether Ordered Pairs Represent a Function",
+    "titleSpanish": "Comprobación de si pares ordenados representan una función",
+    "sectionCode": "IN",
+    "sectionNumber": 4,
+    "sectionPageOrdinal": 3,
+    "neighborPlacements": [
+      "shared-alg001-l06-p031",
+      "shared-alg001-l06-p033"
+    ]
+  },
+  "physicalSource": {
+    "root": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware",
+    "swf": {
+      "path": "G6-G8-shared/ALG001/L6/IN/L6IN04.swf",
+      "bytes": 146070,
+      "sha256": "e425600d0b6cfab41ae50f7512cb8e6c4e3c6ee04bbfa10c29b437459876d836"
+    },
+    "lessonXml": {
+      "path": "G6-G8-shared/ALG001/L6/index.xml",
+      "bytes": 13926,
+      "sha256": "9f3753a17e5e271d7bc63a1bdf8cd5237f19770bae3f5c7364cabcb62c84ce2c"
+    },
+    "separateSa": {
+      "path": "G6-G8-shared/ALG001/L6/SA/L6IN04.mp3",
+      "bytes": 232176,
+      "sha256": "9cdf2402eea05caebc190680eff4b15ee3baada80e366ed4e4ac96df7f3dd478"
+    },
+    "samePathFlaExists": false
+  },
+  "catalog": {
+    "sharedCatalog": {
+      "path": "catalog/g678-shared-catalog.v1.json",
+      "bytes": 12534064,
+      "sha256": "a1692c2a86c6771dcb104f59195b5bfdd2b5281cceff0aaeb63a3aabcf4a5657"
+    },
+    "sourceStatus": "resolved-canonical",
+    "authoringEvidence": "swf-only"
+  },
+  "extraction": {
+    "swfmillXml": {
+      "path": "output/alg-l06-p032-source-planning-20261001-v1/source-structure.xml",
+      "bytes": 414655,
+      "sha256": "d1c7d5f575b5b30ef18d46a9039c1d7e04cc791a7dbd63eb8f31ec28b4baeaca"
+    },
+    "ffdecXml": {
+      "path": "output/alg-l06-p032-source-planning-20261001-v1/ffdec-structure.xml",
+      "bytes": 683592,
+      "sha256": "a05e46d6c06aaafb356b16f19d63eb9ad144d8922d86e6aa8cd9d581dbb23b3e"
+    },
+    "summary": {
+      "path": "output/alg-l06-p032-source-planning-20261001-v1/source-display-list-v1.json",
+      "bytes": 141248,
+      "sha256": "a1711a4829fda9b1cd46c40e4e8f3468e79a85bc00a4c6240ed329b399cf4e6a"
+    },
+    "priorSourceReceipt": {
+      "path": "output/alg-l06-p029-prequiz-resolution-v1/source-receipt-v1.json",
+      "bytes": 5305,
+      "sha256": "543c26134e03ba3aac8d636325b1060b81b52462ec337cd550304ab4ceecb34b"
+    },
+    "reusedPinnedExport": {
+      "path": "output/alg-l06-p029-prequiz-resolution-v1/candidate-p032/structure.xml",
+      "bytes": 683592,
+      "sha256": "a05e46d6c06aaafb356b16f19d63eb9ad144d8922d86e6aa8cd9d581dbb23b3e"
+    },
+    "crossToolTagAndFrameComparison": "passed"
+  },
+  "stage": {
+    "width": 800,
+    "height": 600,
+    "fps": 12,
+    "rootFrames": 10,
+    "rootEntryFrame": 6,
+    "mainSpriteId": 22,
+    "mainFrames": 413,
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "backgroundRgb": [
+      184,
+      216,
+      247
+    ]
+  },
+  "frameDomains": [
+    {
+      "domain": "root",
+      "frames": 10,
+      "actionFrames": [
+        1,
+        6
+      ],
+      "mainPlacement": {
+        "objectId": 22,
+        "instanceName": "animation",
+        "depth": 2,
+        "presentSpans": [
+          [
+            6,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "domain": "sprite-22",
+      "frames": 413,
+      "actionFrames": [],
+      "buttonInstances": [
+        {
+          "buttonId": 7,
+          "presentSpans": [
+            [
+              1,
+              413
+            ]
+          ]
+        },
+        {
+          "buttonId": 8,
+          "presentSpans": [
+            [
+              1,
+              413
+            ]
+          ]
+        },
+        {
+          "buttonId": 9,
+          "presentSpans": [
+            [
+              1,
+              413
+            ]
+          ]
+        },
+        {
+          "buttonId": 12,
+          "presentSpans": [
+            [
+              60,
+              413
+            ]
+          ]
+        }
+      ],
+      "audioCodec": "mp3"
+    }
+  ],
+  "actions": {
+    "root": {
+      "preloader": {
+        "path": "source-export/scripts/frame_1/DoAction.as",
+        "bytes": 63,
+        "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19",
+        "text": "_level0.InternalPreloader.gotoAndPlay(\"jump_check\");\nstop();\n"
+      },
+      "entryStop": {
+        "path": "source-export/scripts/frame_6/DoAction.as",
+        "bytes": 9,
+        "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+        "text": "stop();\n"
+      }
+    },
+    "glossary": [
+      {
+        "buttonId": 7,
+        "keyAttribute": "Set",
+        "presentSpans": [
+          [
+            1,
+            413
+          ]
+        ],
+        "action": {
+          "path": "source-export/scripts/DefineButton2_7/BUTTONCONDACTION on(release).as",
+          "bytes": 118,
+          "sha256": "bf6ddb6c2620b5c22b58818ee2de460b1feae903d133a3342b924f80e5ebe64e",
+          "text": "on(release){\n   _global.KeyAttribute = \"Set\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+        }
+      },
+      {
+        "buttonId": 8,
+        "keyAttribute": "Ordered pair",
+        "presentSpans": [
+          [
+            1,
+            413
+          ]
+        ],
+        "action": {
+          "path": "source-export/scripts/DefineButton2_8/BUTTONCONDACTION on(release).as",
+          "bytes": 127,
+          "sha256": "063e245c5e7152430464984944a92577bca38e5716c8297df4f2fd240d8e0c02",
+          "text": "on(release){\n   _global.KeyAttribute = \"Ordered pair\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+        }
+      },
+      {
+        "buttonId": 9,
+        "keyAttribute": "Function",
+        "presentSpans": [
+          [
+            1,
+            413
+          ]
+        ],
+        "action": {
+          "path": "source-export/scripts/DefineButton2_9/BUTTONCONDACTION on(release).as",
+          "bytes": 123,
+          "sha256": "bf18a4b6722a58696805f4dd043c6b04a1b1c3cc9a605ef84301790c08bb4cfa",
+          "text": "on(release){\n   _global.KeyAttribute = \"Function\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+        }
+      },
+      {
+        "buttonId": 12,
+        "keyAttribute": "X-coordinate",
+        "presentSpans": [
+          [
+            60,
+            413
+          ]
+        ],
+        "action": {
+          "path": "source-export/scripts/DefineButton2_12/BUTTONCONDACTION on(release).as",
+          "bytes": 127,
+          "sha256": "84e01270b992f4367fd71e21376b911715527119808289d3fd9380100276d212",
+          "text": "on(release){\n   _global.KeyAttribute = \"X-coordinate\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+        }
+      }
+    ],
+    "externalHostNames": [
+      "_level0.InternalPreloader",
+      "_root.DoHyperLinks",
+      "_root.animation_mc.animation.stop",
+      "_global.KeyAttribute"
+    ],
+    "hostBindingVerified": false
+  },
+  "textDefinitions": [
+    {
+      "path": "source-export/texts/11.txt",
+      "bytes": 73,
+      "sha256": "94e873a20054a0726e9d463cb0975fb5427fea5fa019b30047f28cc2e8568a96",
+      "text": "the same \n--- RECORDSEPARATOR ---\nx-coordinate\n--- RECORDSEPARATOR ---\n. "
+    },
+    {
+      "path": "source-export/texts/13.txt",
+      "bytes": 45,
+      "sha256": "83753606349ba2d55011b7f0dba25602bef8e1607b910fbf0f7aade1e1d75e73",
+      "text": "{(1, –5), (3, 4), (–2, 11), (–2, –4)}"
+    },
+    {
+      "path": "source-export/texts/15.txt",
+      "bytes": 1,
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "text": "1"
+    },
+    {
+      "path": "source-export/texts/16.txt",
+      "bytes": 1,
+      "sha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+      "text": "3"
+    },
+    {
+      "path": "source-export/texts/17.txt",
+      "bytes": 4,
+      "sha256": "28a5aa3897d66de6c31caba99a4c337e46a803786ccd9deec9626affe8807d70",
+      "text": "–2"
+    },
+    {
+      "path": "source-export/texts/18.txt",
+      "bytes": 1,
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "text": "1"
+    },
+    {
+      "path": "source-export/texts/19.txt",
+      "bytes": 1,
+      "sha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+      "text": "3"
+    },
+    {
+      "path": "source-export/texts/20.txt",
+      "bytes": 4,
+      "sha256": "28a5aa3897d66de6c31caba99a4c337e46a803786ccd9deec9626affe8807d70",
+      "text": "–2"
+    },
+    {
+      "path": "source-export/texts/5.txt",
+      "bytes": 217,
+      "sha256": "f65436c90e9fadae56e0f265c201ca874373ccad940160ac3efa219a6bb3deea",
+      "text": "A\n--- RECORDSEPARATOR ---\n set \n--- RECORDSEPARATOR ---\nof \n--- RECORDSEPARATOR ---\nordered pairs\n--- RECORDSEPARATOR ---\n is a \n--- RECORDSEPARATOR ---\nfunction\n--- RECORDSEPARATOR ---\n unless two or more pairs have "
+    }
+  ],
+  "embeddedAudio": {
+    "domain": "sprite-22",
+    "codec": "mp3",
+    "streamHead": {
+      "playbackRate": "2",
+      "playbackSize": "1",
+      "playbackStereo": "0",
+      "compression": "2",
+      "soundRate": "2",
+      "soundSize": "1",
+      "soundStereo": "0",
+      "sampleSize": "1837"
+    },
+    "firstBlockFrame": 1,
+    "lastBlockFrame": 413,
+    "blockCount": 413,
+    "declaredSamples": 758016,
+    "zeroSampleBlocks": [
+      {
+        "frame": 2,
+        "samples": 0,
+        "seek": 0,
+        "rawBytes": 4
+      }
+    ],
+    "negativeSeekBlocks": [],
+    "payload": {
+      "path": "output/alg-l06-p032-source-planning-20261001-v1/embedded-streams/sprite-22.mp3",
+      "bytes": 171080,
+      "sha256": "2584a692ee3936f02c3dc491872225f020744ce92710f890e1a31d468a75c85b"
+    },
+    "ffprobe": {
+      "codec": "mp3",
+      "sampleRate": 22050,
+      "channels": 1,
+      "durationSeconds": "34.216000",
+      "size": 171080
+    },
+    "browserPcmMeasured": false,
+    "listeningAccepted": false
+  },
+  "separateSa": {
+    "path": {
+      "path": "G6-G8-shared/ALG001/L6/SA/L6IN04.mp3",
+      "bytes": 232176,
+      "sha256": "9cdf2402eea05caebc190680eff4b15ee3baada80e366ed4e4ac96df7f3dd478"
+    },
+    "ffprobe": {
+      "codec": "mp3",
+      "sampleRate": 48000,
+      "channels": 1,
+      "durationSeconds": "16.584000",
+      "size": 232176
+    },
+    "xmlPageRandomAudio": "",
+    "triggerFromPageActions": false,
+    "hostTriggerVerified": false,
+    "policy": "user-triggered only; no locale autoplay or embedded-audio splice"
+  },
+  "sourceOnlyDecision": {
+    "provisionalLane": "interactive-understood",
+    "reason": "linear narrated sprite with four source glossary/host-stop actions; host pause and return remain unverified",
+    "generationAuthorized": false,
+    "currentJsRegistered": false,
+    "originalRuntimeFidelity": false,
+    "audioAccepted": false,
+    "humanOrOwnerAccepted": false,
+    "strictComplete": false,
+    "release": false,
+    "publication": false
+  }
+}

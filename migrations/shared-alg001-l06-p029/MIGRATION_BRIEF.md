@@ -1,0 +1,17 @@
+# ALG001 L6 P029 maintained engineering implementation
+
+This workspace is the one canonical placement `shared-alg001-l06-p029`, ordinal29 / VB19 of60, source `VB/L6VB22.swf`, SHA256 `cbfd012d0aff11544a252c9e2852dff30d408c634aa2a805eb0837933c3370d4`. It is **unregistered**. The complete G6–G8 goal remains2,282placements, current516, remaining1,766.
+
+The source is SWF-only, AVM1 version6, 800×600 at12fps, root10frames entering sprite185 atroot6. The main has234frames; source stop145 holds the typed-answer quiz. Exact string3 yields four source right-feedback variants; first wrong yields one of three wrong popups and retry afterClose; second wrong proceeds afterClose to146. Wrongfeed/WrongFeed follows the source-v6 case-insensitive reading policy. Stable seed selection reuses the maintained host selector and does not claim Adobe random-state equivalence.
+
+Canvas is selected for the source display lists, masks, morphs and eleven bitmaps; React supplies the source-backed reducer, controlled editable input, glossary/Close controls and readable companion. A hand-redrawn vector page would increase risk to the recovered drawing; video cannot provide the typed quiz or glossary. Every generated drawing retains source glyphs. One native surface supplies readable question/set, seven feedback labels and popup wording, read-only Answer3 at146, and an explicitly accumulating accessible history of the three ordered pairs after170/176/182. Nativecontrols have44px minimum sizes; actual browser layout and focus remain separate tests.
+
+The eight embedded domains and separate SA have physical byte bindings. Main/MP3 feedback cues are generated from real MPEG samples and signed SWF seek fields; initial latency1673 is applied once, fresh frame146 starts at266037, held same-domain Resume preserves its decoded cursor. ADPCM179 requires host-selected frame2/sample919 under the explicit technical target-grid policy. Separate SA never receives embedded trim, never joins main, and never starts from ES locale. Browser PCM measurements are technical decoder evidence, not listening acceptance.
+
+Maintained implementation is `packages/demos/src/alg-l06-p029/`; five `scripts/prepare-alg-l06-p029-*` producers regenerate Canvas, native geometry, audio assets/schedule, MP3 cues and ADPCM policy. Original output-only receipts remain unchanged. The canonical scaffold was created once on2026-10-01; the historical discovery producer's no-workspace guard is retained, and the maintained audio producer instead verifies that exact frozen discovery and reuses this exact source-bound workspace.
+
+Root validation:28focused tests against the maintained imports, strict TypeScript, five generator readback checks. See `output/alg-l06-p029-maintained-promotion-v1/`. Local browser engineering probe is tracked separately and is not the real My Lesson gate.
+
+Source blocker: prequiz source button17 is clickable on2–144 and refers to opt_try/corr/Wrong. These owners remain unresolved across39page and713host exports and searched source variants. Its effect is not substituted with a typed answer or assumed no-op. Registration and My Lesson integration remain open. Original-runtime capture, fidelity, listening, human/Owner acceptance, strict completion, release/publication and deployment remain open.
+
+Global ledger note: P028's431-workspace full workbench pass predates this new workspace; its receipt remains a dated pass. The current432-workspace strict ledger has not been renewed for this draft. This does not change strict-complete0 or publication0.

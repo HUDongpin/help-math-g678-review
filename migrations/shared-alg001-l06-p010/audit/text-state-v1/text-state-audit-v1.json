@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p010-text-state-audit-v1",
+  "animationId": "shared-alg001-l06-p010",
+  "sourceSwfSha256": "96552f567037f39868d01b1ba77311858caf2efcdb141ef64ed0878a6c48ce14",
+  "inputs": [
+    {
+      "path": "migrations/shared-alg001-l06-p010/audit/source-v1/source-audit-v1.json",
+      "bytes": 8394,
+      "sha256": "14a34b6527a77dc374f650ccad9f7bd9e4c1c8bc6e23198f93eb2a82e6f7de64"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p010/audit/source-v1/source-text-v1.json",
+      "bytes": 457629,
+      "sha256": "00d72eb17335d6e2b23ed89c160c7d68d203ddbfa3596c45bced0cb7d22fbaa9"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p010/audit/source-v1/source-composition-v1.json",
+      "bytes": 17065,
+      "sha256": "a208678fbb7602aea0decaa2cab110d4f687a11f685e32db8bf67a9fc55ee033"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p010/audit/source-v1/public-tool-scripts-v1.json",
+      "bytes": 948,
+      "sha256": "6ab4dbec9c878122a68865cf2bdb5a7cbbae02e98388167e1c4f08d0ae7b30e2"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p010/audit/source-v1/swfmill-v1.xml.gz",
+      "bytes": 128874,
+      "sha256": "9ab536d69faf0ce3e831a57fc91f81f0983d88434d0b42fe1af016f4f4c81e88"
+    }
+  ],
+  "sourceSwf": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/RW/L6RW09.swf",
+    "bytes": 114334,
+    "sha256": "96552f567037f39868d01b1ba77311858caf2efcdb141ef64ed0878a6c48ce14"
+  },
+  "output": {
+    "path": "packages/demos/src/generated/alg-l06-p010-text-state-v1.ts",
+    "bytes": 62023,
+    "sha256": "59f0af0f7618c25921207ed53bfd5ad9e8679a229b41619e877713a989f69afc"
+  },
+  "semanticReveal": {
+    "headingFull": 29,
+    "equationFull": 148,
+    "tableFull": 167,
+    "graphFull": 198,
+    "questionMaskStarts": 268,
+    "questionReadableFrom": 297,
+    "functionControlPlaced": 268
+  },
+  "limits": [
+    "Source placement, alpha, bounds and one authored mask only; no original-runtime parity.",
+    "Full native question sentence waits for the last mask update, a modern readability decision.",
+    "Function button was hit-test-only in the SWF; the native visible control is a modern accessible presentation.",
+    "Source language English only; Spanish route uses marked English fallback."
+  ]
+}

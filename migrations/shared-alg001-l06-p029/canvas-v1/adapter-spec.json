@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "animationId": "course-shared-alg001-l06-p029",
+  "finalAnimationId": "shared-alg001-l06-p029",
+  "classification": "behavior-heavy-unregistered-source-canvas-draft",
+  "source": {
+    "swf": "$HELP_MATH_G678_SOURCE_ROOT/G6-G8-shared/ALG001/L6/VB/L6VB22.swf",
+    "swfSha256": "cbfd012d0aff11544a252c9e2852dff30d408c634aa2a805eb0837933c3370d4"
+  },
+  "evidence": {
+    "scenarioInventory": "migrations/shared-alg001-l06-p029/audit/source-planning-v1/source-plan-v1.json",
+    "scenarioInventorySha256": "b9e4e69b74bfb3668b10d0f04553de6be066c38b6c160f72a7bc17889fbf25c4",
+    "audioAudit": "migrations/shared-alg001-l06-p029/audit/source-planning-v1/source-plan-v1.json",
+    "audioAuditSha256": "b9e4e69b74bfb3668b10d0f04553de6be066c38b6c160f72a7bc17889fbf25c4",
+    "sourceXml": "migrations/shared-alg001-l06-p029/audit/source-planning-v1/source-structure.xml",
+    "sourceXmlSha256": "a22596049a263d1fb13056714af8db143aac4c7b9aa8e9b0a5e68d0047797c07",
+    "sourceDisplayList": "migrations/shared-alg001-l06-p029/audit/source-planning-v1/source-display-list-v1.json",
+    "sourceDisplayListSha256": "d2beb5a0ad2d42025b7dbdb10b73e83c6123f74a06bae0f97969a1acbd685c32"
+  },
+  "ffdecExport": {
+    "tool": "JPEXS Free Flash Decompiler 26.2.1 Canvas export",
+    "helper": "migrations/shared-alg001-l06-p029/source-export/sprites/DefineSprite_185/canvas.js",
+    "helperSha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93",
+    "framesHtml": "migrations/shared-alg001-l06-p029/source-export/sprites/DefineSprite_185/frames.html",
+    "framesHtmlSha256": "2692ebee76c8fa7a7e271560cb48ed5752073ab62a2c0f58c92e8179a5e71bcd",
+    "targetSpriteObjectId": 185,
+    "targetSpriteFunction": "sprite185",
+    "exportCanvas": {
+      "width": 724,
+      "height": 1281
+    },
+    "exportInternalTranslation": {
+      "x": 373.55,
+      "y": 667.6
+    },
+    "expectedPlacedFunctionCount": 157,
+    "expectedPlacedFunctionsSha256": "5e7c16e40bb0a31063cee7371a3e19a91dbe1ce15a1be79a51363c03b0b47168",
+    "expectedFontFunctionCount": 8,
+    "expectedFontFunctionsSha256": "119ab2fc21fc0ce35e3cca2f5117908289daa15dde9224e6b07de3034baeb5c6",
+    "embeddedImageVariableCount": 11,
+    "embeddedImageVariablesSha256": "c33c38b3776ccbea881391871680932ac18184e75e70972d4143939e0e0fff3c"
+  },
+  "timeline": {
+    "fps": 12,
+    "stage": {
+      "width": 800,
+      "height": 600,
+      "backgroundColor": "#b8d8f7"
+    },
+    "root": {
+      "frameCount": 10,
+      "preloaderStopFrame": 1,
+      "beginFrame": 6,
+      "beginLabel": "begin",
+      "placementName": "animation",
+      "placementTwips": {
+        "x": 8248,
+        "y": 5666
+      },
+      "placementPixels": {
+        "x": 412.4,
+        "y": 283.3
+      }
+    },
+    "local": {
+      "timelineId": "sprite-185",
+      "frameCount": 234,
+      "livePlaybackEndFrame": 145,
+      "playbackMode": "state-explorer",
+      "publicFrameIndexing": "one-indexed"
+    },
+    "stageRenderOffset": {
+      "x": 38.85,
+      "y": -384.3
+    }
+  },
+  "runtimeContract": {
+    "kind": "structural-local-frame",
+    "scenarios": [
+      "source-static-frame"
+    ],
+    "defaultScenario": "source-static-frame",
+    "supportedLanguages": [
+      "en"
+    ],
+    "visualLocalization": "source-English glyphs; es fallback requires explicit product disposition",
+    "seedMapping": "fixed zero; no source random behavior is inferred",
+    "blockedLocalFrameRanges": [],
+    "currentCanonicalFrameDomainDispositionAsserted": false,
+    "unresolved": [
+      "Frame 145 stop and host-selected feedback require the staged reducer.",
+      "Source AVM1 answer coercion and popup spelling behavior require original-runtime verification.",
+      "Editable Entry_txt requires native input; FFDec Canvas omits an accessible editable field.",
+      "Audio, source-English fallback, visual fidelity and human/Owner review remain separate."
+    ]
+  },
+  "output": {
+    "script": "canvas-renderer.js",
+    "manifest": "canvas-manifest.json",
+    "spec": "adapter-spec.json",
+    "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+  },
+  "strictAcceptanceEffect": "none"
+}

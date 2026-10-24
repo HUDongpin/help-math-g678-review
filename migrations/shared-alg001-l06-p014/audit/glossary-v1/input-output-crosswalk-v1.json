@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p014-input-output-glossary-crosswalk-v1",
+  "animationId": "shared-alg001-l06-p014",
+  "source": {
+    "path": "G6-G8-shared/ALG001/L6/VB/L6VB05.swf",
+    "bytes": 566603,
+    "sha256": "aed0f7755d4f691cefcc28c815acc6b9d083fdfaae88ff385f22d3b32ba07603"
+  },
+  "lessonXml": {
+    "path": "G6-G8-shared/ALG001/L6/index.xml",
+    "bytes": 13926,
+    "sha256": "9f3753a17e5e271d7bc63a1bdf8cd5237f19770bae3f5c7364cabcb62c84ce2c"
+  },
+  "inputs": {
+    "source": {
+      "path": "migrations/shared-alg001-l06-p014/audit/source-v1/source-audit-v1.json",
+      "bytes": 10839,
+      "sha256": "008dd6f28d312f41c48ab389efce2e58452aef83c98312fa981c5aa88d69eb13"
+    },
+    "composition": {
+      "path": "migrations/shared-alg001-l06-p014/audit/source-v1/source-composition-v1.json",
+      "bytes": 523989,
+      "sha256": "a7615710e2bcf05a97f5fc2714d69be07935b5cf61d1bf6c0554126a715d8013"
+    },
+    "scripts": {
+      "path": "migrations/shared-alg001-l06-p014/audit/source-v1/public-tool-scripts-v1.json",
+      "bytes": 10604,
+      "sha256": "ca982898eaa94a1744a63c6aa1df1c2adb909446d8f50dc3e884d7e1cf37a8a5"
+    },
+    "predecessor": {
+      "path": "migrations/shared-alg001-l06-p013/audit/glossary-v1/input-output-crosswalk-v1.json",
+      "bytes": 9423,
+      "sha256": "7a6d26e663d948f77833378ee1c2c5e60130e55aa6299bc7b0eacf070b091e2e"
+    },
+    "dictionaryBanks": {
+      "en": {
+        "path": "/Volumes/WestWorld/HELP MATH Related Files/HELP_OnlineKeyTerms_XML/MI/L1KTE01.xml",
+        "bytes": 345838,
+        "sha256": "14d454f4c1c1a6f0939fb80b454fd3e22890eabb4a730c6bfa7efa1d9a2e5e5b"
+      },
+      "es": {
+        "path": "/Volumes/WestWorld/HELP MATH Related Files/HELP_OnlineKeyTerms_XML/MI/L1KTS01.xml",
+        "bytes": 344456,
+        "sha256": "3b437b42e75536fa8b4f110325e366c27fbe10a871439d4797650cda4238b407"
+      }
+    }
+  },
+  "buttons": [
+    {
+      "id": "input",
+      "key": "Input",
+      "characterId": 32,
+      "depth": 3,
+      "firstFrame": 2,
+      "lastFrameExclusive": 450,
+      "actionSha256": "2f92a394bed054aeca4ae6ed57b238a04f5b3aa261270c980d5f00a82c8f19a5",
+      "action": "on(release){\n   _global.KeyAttribute = \"Input\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}"
+    },
+    {
+      "id": "output",
+      "key": "Output",
+      "characterId": 33,
+      "depth": 5,
+      "firstFrame": 2,
+      "lastFrameExclusive": 450,
+      "actionSha256": "1262eac21bf8a718d551c8d7b046220855f8f878214783cfdfb7d0c37f5ff5c7",
+      "action": "on(release){\n   _global.KeyAttribute = \"Output\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}"
+    }
+  ],
+  "terms": [
+    {
+      "id": "input",
+      "sourceKeyAttribute": "Input",
+      "labels": {
+        "en": "Input",
+        "es": "Entrada"
+      },
+      "definitions": {
+        "en": "In mathematics, input refers to putting data into something.",
+        "es": "En matemáticas, entrada (ingreso) se refiere al acto de poner datos en en algo."
+      },
+      "source": {
+        "en": {
+          "assetId": "G678L1KTE01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTE01.xml",
+          "sha256": "14d454f4c1c1a6f0939fb80b454fd3e22890eabb4a730c6bfa7efa1d9a2e5e5b"
+        },
+        "es": {
+          "assetId": "G678L1KTS01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTS01.xml",
+          "sha256": "3b437b42e75536fa8b4f110325e366c27fbe10a871439d4797650cda4238b407"
+        }
+      }
+    },
+    {
+      "id": "output",
+      "sourceKeyAttribute": "Output",
+      "labels": {
+        "en": "Output",
+        "es": "Salida"
+      },
+      "definitions": {
+        "en": "In mathematics, output refers to the result of the action of input, putting data in.",
+        "es": "En matemáticas, salida se refiere al acto obtener datos como resultado de ejecutar ciertas operaciones en una función."
+      },
+      "source": {
+        "en": {
+          "assetId": "G678L1KTE01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTE01.xml",
+          "sha256": "14d454f4c1c1a6f0939fb80b454fd3e22890eabb4a730c6bfa7efa1d9a2e5e5b"
+        },
+        "es": {
+          "assetId": "G678L1KTS01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTS01.xml",
+          "sha256": "3b437b42e75536fa8b4f110325e366c27fbe10a871439d4797650cda4238b407"
+        }
+      }
+    }
+  ],
+  "dictionaryReference": {
+    "en": "HELP_KEYTERMS/KT/XML/L1KTE01.xml",
+    "es": "HELP_KEYTERMS/KT/XML/L1KTS01.xml"
+  },
+  "reuse": "exact P014 release actions and raw bilingual dictionary entries match P013; reuse existing input/output IDs",
+  "originalHost": {
+    "actualLaunchObserved": false,
+    "localeSelectsSpanishDefinitionObserved": false
+  },
+  "acceptanceEffects": {
+    "originalRuntime": false,
+    "fidelity": false,
+    "audio": false,
+    "human": false,
+    "owner": false,
+    "strictComplete": false,
+    "published": false
+  }
+}

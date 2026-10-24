@@ -1,0 +1,47 @@
+{
+  "animationId": "shared-alg001-l06-p021",
+  "evidence": {
+    "path": "output/alg-l06-p021-canvas-v1/source.xml",
+    "bytes": 444747,
+    "sha256": "8ccf06526db514f8a8e2c3ea769c515b6dfa4e48ce0385a143ee1121c97962b9"
+  },
+  "sourceAudit": {
+    "path": "output/alg-l06-p021-source-audit-v1/time-resolved-audit-v1.json",
+    "bytes": 227182,
+    "sha256": "e171781cdd59278fec34388b7ba8de6ed4594d6d73afb9d9a524a172c1a99c02"
+  },
+  "root": {
+    "frameCount": 10,
+    "entryFrame": 6,
+    "disposition": "modern-host-load-boundary; original root/preloader runtime unobserved"
+  },
+  "nested": [
+    {
+      "id": "sprite-43",
+      "frameCount": 377,
+      "disposition": "maintained source-timed drawing/text; six glossary pause gates and one continuous main audio stream; separate optional SA requires explicit trigger"
+    }
+  ],
+  "glossarySourceGateFrames": {
+    "Set": 12,
+    "Function": 20,
+    "Value": 25,
+    "Ordered pair": 62,
+    "Input": 69,
+    "Output": 77
+  },
+  "mainAudio": {
+    "firstBlockFrame": 7,
+    "lastBlockFrame": 377,
+    "decodedSamples": 680832,
+    "candidateNativeEndPosition": 376.6103401360544,
+    "originalAlignmentAccepted": false
+  },
+  "independentSa": {
+    "explicitUserTriggerOnly": true,
+    "localeAutoplay": false,
+    "splicedIntoMain": false
+  },
+  "originalRuntimeObserved": false,
+  "strictCoverageComplete": false
+}

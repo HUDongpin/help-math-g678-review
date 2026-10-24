@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l06-p041",
+  "animationId": "shared-alg001-l06-p041",
+  "assetId": "swf-bb10cab8e835f2c3267e0add3774dc47fa38863fe12dab67f3199e4c0efadd85",
+  "status": "preserved",
+  "created": "2026-10-02",
+  "confidence": "source-reviewed",
+  "classification": {
+    "collection": "g678-shared",
+    "grade": "G6-G8-shared",
+    "lesson": "ALG001/L6",
+    "section": "IN",
+    "page": 41,
+    "domain": "algebra",
+    "knowledgePoint": {
+      "en": "Using the Graph of a Function to Analyze Change",
+      "es": ""
+    },
+    "titleRaw": "Using the Graph of a Function to Analyze Change",
+    "titleDisplay": "Using the Graph of a Function to Analyze Change",
+    "status": "source-reviewed",
+    "evidence": [
+      "audit/source-v1/source-facts-v1.json"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/IN/L6IN13.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/IN/L6IN13.swf",
+    "flaSha256": "",
+    "swfSha256": "bb10cab8e835f2c3267e0add3774dc47fa38863fe12dab67f3199e4c0efadd85",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 530927,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#b8d8f7",
+    "actionScriptVersion": "AVM1",
+    "complexity": "behavior-heavy",
+    "fonts": [],
+    "scripts": [],
+    "externalDependencies": [
+      "_root.showWrongFeed",
+      "_root.showRightFeed",
+      "_root.disableQuizButton",
+      "_root.enableQuizButton",
+      "_global.WrongFeed",
+      "_global.quizTryCount",
+      "conditional indexMI host"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      {
+        "shapeId": 79,
+        "spriteId": 91,
+        "depth": 5,
+        "clipDepth": 9
+      }
+    ],
+    "morphs": [
+      {
+        "count": 24
+      }
+    ],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "prequiz",
+      "kind": "interactive",
+      "description": "main sprite to stop 752",
+      "reachable": true
+    },
+    {
+      "id": "wrong-first",
+      "kind": "interactive",
+      "description": "one wrong choice then Close and retry",
+      "reachable": true
+    },
+    {
+      "id": "wrong-second",
+      "kind": "interactive",
+      "description": "second wrong Close then postquiz",
+      "reachable": true
+    },
+    {
+      "id": "right",
+      "kind": "interactive",
+      "description": "right choice then postquiz",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "en"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "sprite-76",
+        "language": "en",
+        "source": "audio-source-v1/streams/sprite-76-wrong-1.mp3",
+        "frameDomain": "sprite-76",
+        "alignment": "not-established"
+      },
+      {
+        "id": "sprite-91",
+        "language": "en",
+        "source": "audio-source-v1/streams/sprite-91-wrong-3.mp3",
+        "frameDomain": "sprite-91",
+        "alignment": "not-established"
+      },
+      {
+        "id": "sprite-105",
+        "language": "en",
+        "source": "audio-source-v1/streams/sprite-105-wrong-2.mp3",
+        "frameDomain": "sprite-105",
+        "alignment": "not-established"
+      },
+      {
+        "id": "sprite-119",
+        "language": "en",
+        "source": "audio-source-v1/streams/sprite-119-right-3.mp3",
+        "frameDomain": "sprite-119",
+        "alignment": "not-established"
+      },
+      {
+        "id": "sprite-139",
+        "language": "en",
+        "source": "audio-source-v1/streams/sprite-139-right-2.mp3",
+        "frameDomain": "sprite-139",
+        "alignment": "not-established"
+      },
+      {
+        "id": "sprite-152",
+        "language": "en",
+        "source": "audio-source-v1/streams/sprite-152-right-4.mp3",
+        "frameDomain": "sprite-152",
+        "alignment": "not-established"
+      },
+      {
+        "id": "sprite-168",
+        "language": "en",
+        "source": "audio-source-v1/streams/sprite-168-right-1.mp3",
+        "frameDomain": "sprite-168",
+        "alignment": "not-established"
+      },
+      {
+        "id": "sprite-169",
+        "language": "en",
+        "source": "audio-source-v1/streams/sprite-169-main.mp3",
+        "frameDomain": "sprite-169",
+        "alignment": "not-established"
+      },
+      {
+        "id": "separate-SA",
+        "language": "undetermined",
+        "source": "audio-source-v1/separate-sa-source-v1.mp3",
+        "sha256": "5154170c4922f481ae3921c3ed67554c16a430daae24ec77167ecf689f264f1b",
+        "trigger": "explicit-user-only",
+        "localeAutoplay": false,
+        "joinedWithMain": false
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "",
+    "ffdec": "26.2.1",
+    "swfmill": "current pinned output",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "source-generated Canvas, maintained native quiz/feedback companion, page-owned reducer and separate measured audio owners",
+    "route": "/en/migration-status/g678-calibration/shared-alg001-l06-p041/candidate-v1",
+    "routeFile": "apps/web/app/[locale]/migration-status/g678-calibration/shared-alg001-l06-p041/candidate-v1/page.tsx",
+    "component": "packages/demos/src/alg-l06-p041-player-v1.tsx",
+    "registryModule": "",
+    "timelineModule": "packages/demos/src/alg-l06-p041-state-v1.ts",
+    "testFile": "packages/demos/src/alg-l06-p041-state-v1.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-169",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "prequiz",
+          "wrong-first",
+          "wrong-second",
+          "right"
+        ]
+      },
+      {
+        "id": "sprite-169",
+        "kind": "movie-clip",
+        "sourceTimelineId": "sprite-169",
+        "parentFrameDomainId": "root",
+        "frameCount": 869,
+        "scenarioIds": [
+          "prequiz",
+          "wrong-first",
+          "wrong-second",
+          "right"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

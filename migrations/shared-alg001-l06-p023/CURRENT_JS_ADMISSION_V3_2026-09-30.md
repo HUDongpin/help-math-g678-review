@@ -1,0 +1,11 @@
+# P023 admission v3 — full goal continuation
+
+Current formal Current-JS remains511/2282; ALG001 L6 remains34/60. The full goal is active with1771 placements remaining. Active index81 SHA021339d4d872f56052e80deafcb985fc1f6bac9cf96fca8e13cc399dffb5374c, host79 unchanged. Own v3 proof79897B SHAe61656198dd647c779d2a9743d7fe722892616e16cb692d75326e72938f697a5; all133 predecessor calibrations and20 proofs preserved.
+
+This supersedes only the current-admission references in CURRENT_JS_CANDIDATE_2026-09-30.md, which remains a frozen v2 checkpoint. Source packet43 product files and5 external pins unchanged. v1 production failed TS2367; v2 production compiled and passed TypeScript with966stableinputs but isolation failed on exactly one `data-p023-candidate` server-bundle marker. Both failed attempts and restorations are preserved. v3 adds an explicit compile-time production ternary excluding candidate JSX and changes only its own formal semantics import/proof; no marker whitelist or relaxed validation.
+
+Root reviewed two exact one-line maintained source changes, semantics v2→v3 constants only, common producer-reader preparation, actual own registration replacement and4formal/candidate tests. Registry checker952overall/653private. Fresh EN/ES formal receipt output/alg-l06-p023-admission-repair-v3/formal-host-v3.json6733B SHAb0603c80533d1b889f5290796a959aae3d60ce8b71f787eeef070466b5e57f2e records natural410, Function glossary framehold, Replay, explicitSA/Return, PreviousP022/NextP023, noindex andemptyerrors.
+
+Assess current production isolation only through output/alg-l06-p023-production-v3/success-v1.json and its exact build/input/negative/restoration receipts. Missing or failed success is not a pass. Fresh physical output is /Volumes/American Dream/hudongpin/g678-p023-formal-build-output-20260930/next-output-v3. Preserve existing .next, P055 logical target and P020 physical baseline.
+
+SA remains independently and explicitly triggered; es never starts it and it is never spliced into main. Original-runtime, listening, human, Owner, strict completion and publication remain pending/false. Candidate/v1/v2 browser evidence is historical with exact original bindings, not relabeledcurrent. No provider/deployment action performed.

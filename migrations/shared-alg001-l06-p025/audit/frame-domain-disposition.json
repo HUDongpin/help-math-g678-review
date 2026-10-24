@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l06-p025",
+  "sourceEvidence": [
+    {
+      "path": "output/alg-l06-p025-source-audit-v1/source-audit-v1.json",
+      "bytes": 17863,
+      "sha256": "7cf5100ab451b501b069b9d8e39e1758410a20e2febbb94d46f585bba50aa8fe"
+    },
+    {
+      "path": "output/alg-l06-p025-text-geometry-v1/text-geometry-v1.json",
+      "bytes": 342675,
+      "sha256": "5e9a99748222d8e32cd65ca27501f69094ffffbb04c932a4a158c62435f8ec9d"
+    },
+    {
+      "path": "output/alg-l06-p025-root-verification-v1/verification-v1.json",
+      "bytes": 4471,
+      "sha256": "c9dc7dd799f6958a6333cf0e6300525385be777a0222c6f68d2c7505fa5915c4"
+    }
+  ],
+  "frameDomains": [
+    {
+      "id": "root",
+      "kind": "root",
+      "sourceTimelineId": "root",
+      "parentFrameDomainId": null,
+      "frameCount": 10,
+      "disposition": "source preloader and mount; no JS implementation yet",
+      "originalRuntimeObserved": false
+    },
+    {
+      "id": "sprite-21",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-21",
+      "parentFrameDomainId": "root",
+      "sourceInstanceId": "root/depth-2/generation-1",
+      "rootMountFrame": 6,
+      "frameCount": 299,
+      "disposition": "interactive-understood maintained shared adapter candidate; unimplemented",
+      "originalRuntimeObserved": false
+    }
+  ],
+  "sourceMasks": [
+    {
+      "frame": 2,
+      "depth": 1,
+      "clipDepth": 10,
+      "characterId": 2
+    },
+    {
+      "frame": 52,
+      "depth": 11,
+      "clipDepth": 16,
+      "characterId": 2
+    }
+  ],
+  "sourceMorphCount": 0,
+  "sourceButtonCharacterIds": [
+    7,
+    8,
+    9,
+    16
+  ],
+  "sourceDeclaredAudioBlocks": 298,
+  "claimBoundary": "Source structure only; no Flash execution, original-runtime trace, renderer or registration"
+}

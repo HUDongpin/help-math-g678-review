@@ -1,0 +1,30 @@
+async page => {
+ const rows=[],errors=[],requests=[],contexts=[];const check=(ok,msg)=>{if(!ok)throw Error(msg);};
+ page.on('pageerror',e=>errors.push(String(e)));page.on('request',r=>{if(r.url().includes('/audio/'))requests.push(r.url().split('/audio/')[1]);});
+ await page.addInitScript(()=>{window.p058Contexts=[];const Base=window.AudioContext;window.AudioContext=class extends Base{constructor(...a){super(...a);window.p058Contexts.push(this);}};});
+ for(let seed=0;seed<4;seed++){
+  await page.goto('http://127.0.0.1:4358/player.html');if(seed)await page.locator('#seed').selectOption(String(seed));
+  await page.waitForSelector('[data-p058-ready=true]',{timeout:20000});await page.locator('[data-p058-play]').click();
+  for(const [i,target]of [403,571,720,878].entries()){
+   await page.waitForFunction(n=>window.p058Snapshot?.state.mainFrame===n,target,{timeout:45000});
+   await page.locator(i<2?`[data-p058-step="${i+1}"]`:'[data-p058-continue]').click();
+  }
+  await page.waitForFunction(()=>window.p058Snapshot?.state.phase==='quiz-held',null,{timeout:15000});
+  for(const kind of ['wrong','right']){
+   await page.locator(`[data-p058-choice=${kind==='wrong'?'B':'C'}]`).click();
+   await page.waitForFunction(()=>window.p058Snapshot?.audio.selected?.phase==='playing',null,{timeout:5000});
+   let s=await page.evaluate(()=>window.p058Runtime.snapshot()),id=s.state.feedback.spriteId;
+   check(id===(kind==='wrong'?[129,115,140,129]:[76,62,36,97])[seed],'source branch selection');
+   if(id===140||id===62)await page.screenshot({path:`/Volumes/American Dream/hudongpin/g678-p058-native-browser-20261003-v1/feedback-${id}-v1.png`,fullPage:false});
+   if(kind==='wrong')await page.waitForFunction(()=>window.p058Snapshot?.state.phase==='quiz-held',null,{timeout:7000});
+   else await page.waitForFunction(()=>window.p058Snapshot?.state.mainFrame>=935,null,{timeout:7000});
+   s=await page.evaluate(()=>window.p058Runtime.snapshot());check(s.state.quizTryCount===1,'wrong once then right preserves count');
+   rows.push({seed,kind,spriteId:id,phase:s.state.phase,mainFrame:s.state.mainFrame,tryCount:s.state.quizTryCount});
+  }
+  await page.locator('#mount').click();await page.waitForFunction(()=>window.p058Contexts.every(c=>c.state==='closed'));
+  contexts.push(await page.evaluate(()=>window.p058Contexts.map(c=>({rate:c.sampleRate,state:c.state}))));
+ }
+ check(!requests.includes('sa')&&!requests.includes('218'),'only active embedded streams');check(errors.length===0,'errors '+errors.join(','));
+ check(new Set(rows.map(r=>r.spriteId)).size===7,'all seven distinct feedback branches');
+ return {pass:true,kind:'p058-real-player-seven-feedback-branches-v1',rows,requests,errors,contexts,originalRuntime:false,listeningAccepted:false};
+}

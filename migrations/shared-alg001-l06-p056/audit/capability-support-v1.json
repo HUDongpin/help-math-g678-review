@@ -1,0 +1,30 @@
+{
+  "kind": "p056-capability-assessment-v1",
+  "animationId": "shared-alg001-l06-p056",
+  "sourceSha256": "ba6ba691fafbc6bbd2d0a14b4d249c59e7f1569ca8aaddaa778957c6120205d1",
+  "classification": "behavior-heavy",
+  "lane": "advanced-manual",
+  "reason": "Four step-specific clip release holds, two source help boxes and a final randomly selected feedback quiz; fixed-feedback mechanism does not cover these semantics.",
+  "requiredCapabilities": [
+    "root/main plus nested independent playheads",
+    "clip release ownership and transparent hit geometry",
+    "step box show/start/Close and glossary",
+    "final answer mapping C25 at instance AnsBtn1",
+    "exact named feedback instances including replacement lifetimes",
+    "nine independent embedded audio domains plus explicit SA",
+    "native text/geometry and legacy duplicate-case popup names",
+    "real My Lesson EN/ES, Replay/leave and production isolation"
+  ],
+  "registered": false,
+  "scaleOutAuthorized": false,
+  "acceptanceEffects": {
+    "originalRuntime": false,
+    "fidelity": false,
+    "audio": false,
+    "human": false,
+    "owner": false,
+    "strictCompletion": false,
+    "release": false,
+    "publication": false
+  }
+}

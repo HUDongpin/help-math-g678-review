@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "animationId": "course-shared-alg001-l06-p034",
+  "finalAnimationId": "shared-alg001-l06-p034",
+  "classification": "behavior-heavy-unregistered-source-canvas-v1",
+  "source": {
+    "swf": "$HELP_MATH_G678_SOURCE_ROOT/G6-G8-shared/ALG001/L6/IN/L6IN06.swf",
+    "swfSha256": "32ddbfde743b785610360f38b7030ab2dbd289438f6c4433e6699ce3004a629a"
+  },
+  "evidence": {
+    "scenarioInventory": "output/alg-l06-p034-source-planning-20261001-v1/source-plan-v1.json",
+    "scenarioInventorySha256": "85e8310dda320985e6b153364a854d73be70502db0f5861695121dc6c9af5eb9",
+    "audioAudit": "output/alg-l06-p034-source-planning-20261001-v1/source-plan-v1.json",
+    "audioAuditSha256": "85e8310dda320985e6b153364a854d73be70502db0f5861695121dc6c9af5eb9",
+    "sourceXml": "output/alg-l06-p034-source-planning-20261001-v1/source-structure.xml",
+    "sourceXmlSha256": "65666afa72cdc9bce357a9b1229743e0f32761698e3fef26ed978ee6547ae456",
+    "sourceDisplayList": "output/alg-l06-p034-source-planning-20261001-v1/source-display-list-v1.json",
+    "sourceDisplayListSha256": "6f408cb7f4abeaa2b4d9499ff0dbfcd8ad78f14307db5a8c7a056ddd67413fe5"
+  },
+  "ffdecExport": {
+    "tool": "JPEXS Free Flash Decompiler 26.2.1 Canvas export",
+    "helper": "output/alg-l06-p034-renderer-preparation-20261001-v1/source-canvas-export/sprites/DefineSprite_40/canvas.js",
+    "helperSha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93",
+    "framesHtml": "output/alg-l06-p034-renderer-preparation-20261001-v1/source-canvas-export/sprites/DefineSprite_40/frames.html",
+    "framesHtmlSha256": "e8dd54605b1170b2ca6e920384863e9f609576b086ee18bd21a4e1a715c07630",
+    "targetSpriteObjectId": 40,
+    "targetSpriteFunction": "sprite40",
+    "exportCanvas": {
+      "width": 685,
+      "height": 392
+    },
+    "exportInternalTranslation": {
+      "x": 326.35,
+      "y": 227.3
+    },
+    "expectedPlacedFunctionCount": 36,
+    "expectedPlacedFunctionsSha256": "d220d4f74985a8d31661b2dbfe11abf567349f6fc421f60f03cd92008b865fdd",
+    "expectedFontFunctionCount": 1,
+    "expectedFontFunctionsSha256": "24949198da4bf07151bb1d740d6f9629a25ec650e05cf0f8ea3d411b8a5ae3f0",
+    "embeddedImageVariableCount": 0,
+    "embeddedImageVariablesSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "timeline": {
+    "fps": 12,
+    "stage": {
+      "width": 800,
+      "height": 600,
+      "backgroundColor": "#b8d8f7"
+    },
+    "root": {
+      "frameCount": 13,
+      "preloaderStopFrame": 1,
+      "beginFrame": 6,
+      "beginLabel": "begin",
+      "placementName": "animation",
+      "placementTwips": {
+        "x": 8248,
+        "y": 6266
+      },
+      "placementPixels": {
+        "x": 412.4,
+        "y": 313.3
+      }
+    },
+    "local": {
+      "timelineId": "sprite-40",
+      "frameCount": 434,
+      "livePlaybackEndFrame": 433,
+      "playbackMode": "state-explorer",
+      "publicFrameIndexing": "one-indexed"
+    },
+    "stageRenderOffset": {
+      "x": 86.04999999999995,
+      "y": 86
+    }
+  },
+  "runtimeContract": {
+    "kind": "structural-local-frame",
+    "scenarios": [
+      "source-static-frame"
+    ],
+    "defaultScenario": "source-static-frame",
+    "supportedLanguages": [
+      "en"
+    ],
+    "visualLocalization": "source-English visuals; es requires explicit source-English fallback",
+    "seedMapping": "fixed zero; no source random behavior executed",
+    "blockedLocalFrameRanges": [],
+    "currentCanonicalFrameDomainDispositionAsserted": false,
+    "unresolved": [
+      "Mc_Line is state-owned and hidden until an explicit graph action.",
+      "Graph hit target, runtime _width and startDrag clamp remain unverified.",
+      "Audio source clock, native glyph ownership, My Lesson interaction and original runtime remain separate."
+    ]
+  },
+  "output": {
+    "script": "canvas-renderer.js",
+    "manifest": "canvas-manifest.json",
+    "spec": "adapter-spec.json",
+    "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+  },
+  "strictAcceptanceEffect": "none"
+}

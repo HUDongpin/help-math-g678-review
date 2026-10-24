@@ -1,0 +1,6033 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p032-swf-structure-summary-v1",
+  "sourceSwfSha256": "e425600d0b6cfab41ae50f7512cb8e6c4e3c6ee04bbfa10c29b437459876d836",
+  "sourceXmlSha256": "d1c7d5f575b5b30ef18d46a9039c1d7e04cc791a7dbd63eb8f31ec28b4baeaca",
+  "ffdecXmlSha256": "a05e46d6c06aaafb356b16f19d63eb9ad144d8922d86e6aa8cd9d581dbb23b3e",
+  "header": {
+    "signature": "CWS",
+    "version": 6,
+    "fps": 12,
+    "rootFrames": 10,
+    "stageTwips": {
+      "left": 0,
+      "right": 16000,
+      "top": 0,
+      "bottom": 12000
+    },
+    "backgroundRgb": [
+      184,
+      216,
+      247
+    ]
+  },
+  "root": {
+    "frameCount": 10,
+    "labels": [
+      {
+        "frame": 6,
+        "label": "begin"
+      }
+    ],
+    "actionFrames": [
+      1,
+      6
+    ],
+    "instances": [
+      {
+        "instanceId": "depth-1/generation-1",
+        "depth": 1,
+        "objectId": 1,
+        "name": null,
+        "placedFrame": 6,
+        "clipDepth": null,
+        "firstVisibleTransform": {
+          "transX": "0",
+          "transY": "0"
+        },
+        "presentSpans": [
+          [
+            6,
+            10
+          ]
+        ],
+        "visibleSpans": [
+          [
+            6,
+            10
+          ]
+        ],
+        "kind": "shape"
+      },
+      {
+        "instanceId": "depth-2/generation-1",
+        "depth": 2,
+        "objectId": 22,
+        "name": "animation",
+        "placedFrame": 6,
+        "clipDepth": null,
+        "firstVisibleTransform": {
+          "transX": "8248",
+          "transY": "6266"
+        },
+        "presentSpans": [
+          [
+            6,
+            10
+          ]
+        ],
+        "visibleSpans": [
+          [
+            6,
+            10
+          ]
+        ],
+        "kind": "sprite"
+      }
+    ],
+    "changes": [
+      {
+        "frame": 6,
+        "kind": "place",
+        "depth": 1,
+        "objectId": 1,
+        "newCharacter": true,
+        "name": null,
+        "transform": {
+          "transX": "0",
+          "transY": "0"
+        },
+        "alpha": 256,
+        "clipDepth": null,
+        "morphRatio": null
+      },
+      {
+        "frame": 6,
+        "kind": "place",
+        "depth": 2,
+        "objectId": 22,
+        "newCharacter": true,
+        "name": "animation",
+        "transform": {
+          "transX": "8248",
+          "transY": "6266"
+        },
+        "alpha": 256,
+        "clipDepth": null,
+        "morphRatio": 5
+      }
+    ],
+    "tagCounts": {
+      "SetBackgroundColor": 1,
+      "UnknownTag": 1,
+      "DoAction": 2,
+      "ShowFrame": 10,
+      "FrameLabel": 1,
+      "DefineShape": 6,
+      "PlaceObject2": 2,
+      "DefineShape3": 1,
+      "DefineFont2": 1,
+      "DefineText": 9,
+      "DefineButton2": 4,
+      "DefineSprite": 1,
+      "End": 1
+    },
+    "audio": null
+  },
+  "sprites": {
+    "22": {
+      "frameCount": 413,
+      "labels": [],
+      "actionFrames": [],
+      "instances": [
+        {
+          "instanceId": "depth-1/generation-1",
+          "depth": 1,
+          "objectId": 2,
+          "name": null,
+          "placedFrame": 1,
+          "clipDepth": 10,
+          "firstVisibleTransform": {
+            "scaleX": "0.07926940917968750",
+            "scaleY": "0.8999938964843750",
+            "transX": "-6486",
+            "transY": "-4276"
+          },
+          "presentSpans": [
+            [
+              1,
+              413
+            ]
+          ],
+          "visibleSpans": [
+            [
+              1,
+              413
+            ]
+          ],
+          "kind": "shape"
+        },
+        {
+          "instanceId": "depth-2/generation-1",
+          "depth": 2,
+          "objectId": 3,
+          "name": null,
+          "placedFrame": 1,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-97",
+            "transY": "-4300"
+          },
+          "presentSpans": [
+            [
+              1,
+              413
+            ]
+          ],
+          "visibleSpans": [
+            [
+              1,
+              413
+            ]
+          ],
+          "kind": "shape"
+        },
+        {
+          "instanceId": "depth-3/generation-1",
+          "depth": 3,
+          "objectId": 5,
+          "name": null,
+          "placedFrame": 1,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "662",
+            "transY": "-4564"
+          },
+          "presentSpans": [
+            [
+              1,
+              413
+            ]
+          ],
+          "visibleSpans": [
+            [
+              1,
+              413
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-4/generation-1",
+          "depth": 4,
+          "objectId": 7,
+          "name": null,
+          "placedFrame": 1,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "scaleX": "0.5686645507812500",
+            "scaleY": "1.072479248046875",
+            "transX": "-5552",
+            "transY": "-4280"
+          },
+          "presentSpans": [
+            [
+              1,
+              413
+            ]
+          ],
+          "visibleSpans": [
+            [
+              1,
+              413
+            ]
+          ],
+          "kind": "button"
+        },
+        {
+          "instanceId": "depth-6/generation-1",
+          "depth": 6,
+          "objectId": 8,
+          "name": null,
+          "placedFrame": 1,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "scaleX": "2.283660888671875",
+            "scaleY": "1.072479248046875",
+            "transX": "-3378",
+            "transY": "-4280"
+          },
+          "presentSpans": [
+            [
+              1,
+              413
+            ]
+          ],
+          "visibleSpans": [
+            [
+              1,
+              413
+            ]
+          ],
+          "kind": "button"
+        },
+        {
+          "instanceId": "depth-8/generation-1",
+          "depth": 8,
+          "objectId": 9,
+          "name": null,
+          "placedFrame": 1,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "scaleX": "1.396697998046875",
+            "scaleY": "1.072479248046875",
+            "transX": "-483",
+            "transY": "-4280"
+          },
+          "presentSpans": [
+            [
+              1,
+              413
+            ]
+          ],
+          "visibleSpans": [
+            [
+              1,
+              413
+            ]
+          ],
+          "kind": "button"
+        },
+        {
+          "instanceId": "depth-11/generation-1",
+          "depth": 11,
+          "objectId": 2,
+          "name": null,
+          "placedFrame": 60,
+          "clipDepth": 16,
+          "firstVisibleTransform": {
+            "scaleX": "0.06564331054687500",
+            "scaleY": "1.000000000000000",
+            "transX": "-6436",
+            "transY": "-3705"
+          },
+          "presentSpans": [
+            [
+              60,
+              413
+            ]
+          ],
+          "visibleSpans": [
+            [
+              60,
+              413
+            ]
+          ],
+          "kind": "shape"
+        },
+        {
+          "instanceId": "depth-12/generation-1",
+          "depth": 12,
+          "objectId": 10,
+          "name": null,
+          "placedFrame": 60,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-97",
+            "transY": "-4300"
+          },
+          "presentSpans": [
+            [
+              60,
+              413
+            ]
+          ],
+          "visibleSpans": [
+            [
+              60,
+              413
+            ]
+          ],
+          "kind": "shape"
+        },
+        {
+          "instanceId": "depth-13/generation-1",
+          "depth": 13,
+          "objectId": 11,
+          "name": null,
+          "placedFrame": 60,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-5454",
+            "transY": "-4004"
+          },
+          "presentSpans": [
+            [
+              60,
+              413
+            ]
+          ],
+          "visibleSpans": [
+            [
+              60,
+              413
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-14/generation-1",
+          "depth": 14,
+          "objectId": 12,
+          "name": null,
+          "placedFrame": 60,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "scaleX": "2.221466064453125",
+            "scaleY": "1.072479248046875",
+            "transX": "-3153",
+            "transY": "-3696"
+          },
+          "presentSpans": [
+            [
+              60,
+              413
+            ]
+          ],
+          "visibleSpans": [
+            [
+              60,
+              413
+            ]
+          ],
+          "kind": "button"
+        },
+        {
+          "instanceId": "depth-17/generation-1",
+          "depth": 17,
+          "objectId": 13,
+          "name": null,
+          "placedFrame": 91,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-1417",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              91,
+              413
+            ]
+          ],
+          "visibleSpans": [
+            [
+              92,
+              413
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-1",
+          "depth": 18,
+          "objectId": 14,
+          "name": null,
+          "placedFrame": 129,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "0",
+            "transY": "0"
+          },
+          "presentSpans": [
+            [
+              129,
+              194
+            ]
+          ],
+          "visibleSpans": [
+            [
+              129,
+              194
+            ]
+          ],
+          "kind": "shape"
+        },
+        {
+          "instanceId": "depth-19/generation-1",
+          "depth": 19,
+          "objectId": 15,
+          "name": null,
+          "placedFrame": 129,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-2840",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              129,
+              194
+            ]
+          ],
+          "visibleSpans": [
+            [
+              129,
+              194
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-20/generation-1",
+          "depth": 20,
+          "objectId": 16,
+          "name": null,
+          "placedFrame": 129,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-1324",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              129,
+              194
+            ]
+          ],
+          "visibleSpans": [
+            [
+              129,
+              194
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-21/generation-1",
+          "depth": 21,
+          "objectId": 17,
+          "name": null,
+          "placedFrame": 129,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-28",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              129,
+              194
+            ]
+          ],
+          "visibleSpans": [
+            [
+              129,
+              194
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-22/generation-1",
+          "depth": 22,
+          "objectId": 17,
+          "name": null,
+          "placedFrame": 129,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "1727",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              129,
+              194
+            ]
+          ],
+          "visibleSpans": [
+            [
+              129,
+              194
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-2",
+          "depth": 18,
+          "objectId": 18,
+          "name": null,
+          "placedFrame": 252,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-2840",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              252,
+              252
+            ]
+          ],
+          "visibleSpans": [
+            [
+              252,
+              252
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-3",
+          "depth": 18,
+          "objectId": 18,
+          "name": null,
+          "placedFrame": 254,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-2840",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              254,
+              254
+            ]
+          ],
+          "visibleSpans": [
+            [
+              254,
+              254
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-4",
+          "depth": 18,
+          "objectId": 18,
+          "name": null,
+          "placedFrame": 256,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-2840",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              256,
+              256
+            ]
+          ],
+          "visibleSpans": [
+            [
+              256,
+              256
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-5",
+          "depth": 18,
+          "objectId": 18,
+          "name": null,
+          "placedFrame": 258,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-2840",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              258,
+              258
+            ]
+          ],
+          "visibleSpans": [
+            [
+              258,
+              258
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-6",
+          "depth": 18,
+          "objectId": 19,
+          "name": null,
+          "placedFrame": 268,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-1324",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              268,
+              268
+            ]
+          ],
+          "visibleSpans": [
+            [
+              268,
+              268
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-7",
+          "depth": 18,
+          "objectId": 19,
+          "name": null,
+          "placedFrame": 270,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-1324",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              270,
+              270
+            ]
+          ],
+          "visibleSpans": [
+            [
+              270,
+              270
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-8",
+          "depth": 18,
+          "objectId": 19,
+          "name": null,
+          "placedFrame": 272,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-1324",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              272,
+              272
+            ]
+          ],
+          "visibleSpans": [
+            [
+              272,
+              272
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-9",
+          "depth": 18,
+          "objectId": 19,
+          "name": null,
+          "placedFrame": 274,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-1324",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              274,
+              274
+            ]
+          ],
+          "visibleSpans": [
+            [
+              274,
+              274
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-10",
+          "depth": 18,
+          "objectId": 20,
+          "name": null,
+          "placedFrame": 281,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-28",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              281,
+              281
+            ]
+          ],
+          "visibleSpans": [
+            [
+              281,
+              281
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-11",
+          "depth": 18,
+          "objectId": 20,
+          "name": null,
+          "placedFrame": 283,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-28",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              283,
+              283
+            ]
+          ],
+          "visibleSpans": [
+            [
+              283,
+              283
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-12",
+          "depth": 18,
+          "objectId": 20,
+          "name": null,
+          "placedFrame": 285,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-28",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              285,
+              285
+            ]
+          ],
+          "visibleSpans": [
+            [
+              285,
+              285
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-13",
+          "depth": 18,
+          "objectId": 20,
+          "name": null,
+          "placedFrame": 287,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-28",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              287,
+              287
+            ]
+          ],
+          "visibleSpans": [
+            [
+              287,
+              287
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-14",
+          "depth": 18,
+          "objectId": 20,
+          "name": null,
+          "placedFrame": 289,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-28",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              289,
+              289
+            ]
+          ],
+          "visibleSpans": [
+            [
+              289,
+              289
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-15",
+          "depth": 18,
+          "objectId": 20,
+          "name": null,
+          "placedFrame": 291,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-28",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              291,
+              291
+            ]
+          ],
+          "visibleSpans": [
+            [
+              291,
+              291
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-16",
+          "depth": 18,
+          "objectId": 20,
+          "name": null,
+          "placedFrame": 306,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "1727",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              306,
+              306
+            ]
+          ],
+          "visibleSpans": [
+            [
+              306,
+              306
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-17",
+          "depth": 18,
+          "objectId": 20,
+          "name": null,
+          "placedFrame": 308,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "1727",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              308,
+              308
+            ]
+          ],
+          "visibleSpans": [
+            [
+              308,
+              308
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-18",
+          "depth": 18,
+          "objectId": 20,
+          "name": null,
+          "placedFrame": 310,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "1727",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              310,
+              310
+            ]
+          ],
+          "visibleSpans": [
+            [
+              310,
+              310
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-19",
+          "depth": 18,
+          "objectId": 20,
+          "name": null,
+          "placedFrame": 312,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "1727",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              312,
+              312
+            ]
+          ],
+          "visibleSpans": [
+            [
+              312,
+              312
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-20",
+          "depth": 18,
+          "objectId": 20,
+          "name": null,
+          "placedFrame": 314,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "1727",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              314,
+              314
+            ]
+          ],
+          "visibleSpans": [
+            [
+              314,
+              314
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-18/generation-21",
+          "depth": 18,
+          "objectId": 21,
+          "name": null,
+          "placedFrame": 333,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "0",
+            "transY": "0"
+          },
+          "presentSpans": [
+            [
+              333,
+              412
+            ]
+          ],
+          "visibleSpans": [
+            [
+              333,
+              412
+            ]
+          ],
+          "kind": "shape"
+        },
+        {
+          "instanceId": "depth-19/generation-2",
+          "depth": 19,
+          "objectId": 17,
+          "name": null,
+          "placedFrame": 333,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "-28",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              333,
+              412
+            ]
+          ],
+          "visibleSpans": [
+            [
+              333,
+              412
+            ]
+          ],
+          "kind": "text"
+        },
+        {
+          "instanceId": "depth-20/generation-2",
+          "depth": 20,
+          "objectId": 17,
+          "name": null,
+          "placedFrame": 333,
+          "clipDepth": null,
+          "firstVisibleTransform": {
+            "transX": "1727",
+            "transY": "-2596"
+          },
+          "presentSpans": [
+            [
+              333,
+              412
+            ]
+          ],
+          "visibleSpans": [
+            [
+              333,
+              412
+            ]
+          ],
+          "kind": "text"
+        }
+      ],
+      "changes": [
+        {
+          "frame": 1,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "scaleX": "0.07926940917968750",
+            "scaleY": "0.8999938964843750",
+            "transX": "-6486",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 1,
+          "kind": "place",
+          "depth": 2,
+          "objectId": 3,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-97",
+            "transY": "-4300"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 1,
+          "kind": "place",
+          "depth": 3,
+          "objectId": 5,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "662",
+            "transY": "-4564"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 1,
+          "kind": "place",
+          "depth": 4,
+          "objectId": 7,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "scaleX": "0.5686645507812500",
+            "scaleY": "1.072479248046875",
+            "transX": "-5552",
+            "transY": "-4280"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 1,
+          "kind": "place",
+          "depth": 6,
+          "objectId": 8,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "scaleX": "2.283660888671875",
+            "scaleY": "1.072479248046875",
+            "transX": "-3378",
+            "transY": "-4280"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 1,
+          "kind": "place",
+          "depth": 8,
+          "objectId": 9,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "scaleX": "1.396697998046875",
+            "scaleY": "1.072479248046875",
+            "transX": "-483",
+            "transY": "-4280"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 2,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.1273345947265625",
+            "scaleY": "0.8999938964843750",
+            "transX": "-6370",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 3,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.1753997802734375",
+            "scaleY": "0.8999938964843750",
+            "transX": "-6253",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 4,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.2234649658203125",
+            "scaleY": "0.8999938964843750",
+            "transX": "-6137",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 5,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.2714843750000000",
+            "scaleY": "0.8999938964843750",
+            "transX": "-6021",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 6,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.3195800781250000",
+            "scaleY": "0.8999938964843750",
+            "transX": "-5904",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 7,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.3676147460937500",
+            "scaleY": "0.8999938964843750",
+            "transX": "-5788",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 8,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.4156799316406250",
+            "scaleY": "0.8999938964843750",
+            "transX": "-5671",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 9,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.4637451171875000",
+            "scaleY": "0.8999938964843750",
+            "transX": "-5555",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 10,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.5118103027343750",
+            "scaleY": "0.8999938964843750",
+            "transX": "-5439",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 11,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.5598754882812500",
+            "scaleY": "0.8999938964843750",
+            "transX": "-5322",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 12,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.6078948974609375",
+            "scaleY": "0.8999938964843750",
+            "transX": "-5206",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 13,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.6560058593750000",
+            "scaleY": "0.8999938964843750",
+            "transX": "-5090",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 14,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.7040252685546875",
+            "scaleY": "0.8999938964843750",
+            "transX": "-4973",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 15,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.7520904541015625",
+            "scaleY": "0.8999938964843750",
+            "transX": "-4856",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 16,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.8001556396484375",
+            "scaleY": "0.8999938964843750",
+            "transX": "-4740",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 17,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.8482208251953125",
+            "scaleY": "0.8999938964843750",
+            "transX": "-4623",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 18,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.8962860107421875",
+            "scaleY": "0.8999938964843750",
+            "transX": "-4508",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 19,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.9443511962890625",
+            "scaleY": "0.8999938964843750",
+            "transX": "-4390",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 20,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.9924163818359375",
+            "scaleY": "0.8999938964843750",
+            "transX": "-4274",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 21,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "1.040435791015625",
+            "scaleY": "0.8999938964843750",
+            "transX": "-4158",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 22,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "1.088500976562500",
+            "scaleY": "0.8999938964843750",
+            "transX": "-4041",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 23,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "1.136566162109375",
+            "scaleY": "0.8999938964843750",
+            "transX": "-3925",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 24,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "1.184631347656250",
+            "scaleY": "0.8999938964843750",
+            "transX": "-3809",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 25,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "1.232696533203125",
+            "scaleY": "0.8999938964843750",
+            "transX": "-3692",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 26,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "1.280761718750000",
+            "scaleY": "0.8999938964843750",
+            "transX": "-3576",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 27,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "1.328826904296875",
+            "scaleY": "0.8999938964843750",
+            "transX": "-3460",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 28,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "1.376846313476562",
+            "scaleY": "0.8999938964843750",
+            "transX": "-3343",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 29,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "1.424957275390625",
+            "scaleY": "0.8999938964843750",
+            "transX": "-3227",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 30,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "1.472976684570312",
+            "scaleY": "0.8999938964843750",
+            "transX": "-3110",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 35,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "1.521041870117188",
+            "scaleY": "0.8999938964843750",
+            "transX": "-2994",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 36,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "1.569107055664062",
+            "scaleY": "0.8999938964843750",
+            "transX": "-2878",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 37,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "1.617172241210938",
+            "scaleY": "0.8999938964843750",
+            "transX": "-2762",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 38,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "1.665237426757812",
+            "scaleY": "0.8999938964843750",
+            "transX": "-2645",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 39,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "1.713302612304688",
+            "scaleY": "0.8999938964843750",
+            "transX": "-2529",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 40,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "1.761367797851562",
+            "scaleY": "0.8999938964843750",
+            "transX": "-2412",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 41,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "1.809387207031250",
+            "scaleY": "0.8999938964843750",
+            "transX": "-2296",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 42,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "1.857452392578125",
+            "scaleY": "0.8999938964843750",
+            "transX": "-2181",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 43,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "1.905517578125000",
+            "scaleY": "0.8999938964843750",
+            "transX": "-2063",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 44,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "1.953582763671875",
+            "scaleY": "0.8999938964843750",
+            "transX": "-1947",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 45,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "2.001647949218750",
+            "scaleY": "0.8999938964843750",
+            "transX": "-1830",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 46,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "2.049713134765625",
+            "scaleY": "0.8999938964843750",
+            "transX": "-1714",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 47,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "2.097778320312500",
+            "scaleY": "0.8999938964843750",
+            "transX": "-1597",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 48,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "2.145797729492188",
+            "scaleY": "0.8999938964843750",
+            "transX": "-1481",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 49,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "2.193908691406250",
+            "scaleY": "0.8999938964843750",
+            "transX": "-1364",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 50,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "2.241928100585938",
+            "scaleY": "0.8999938964843750",
+            "transX": "-1248",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 51,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "2.289993286132812",
+            "scaleY": "0.8999938964843750",
+            "transX": "-1132",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 52,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "2.338058471679688",
+            "scaleY": "0.8999938964843750",
+            "transX": "-1016",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 53,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "2.386123657226562",
+            "scaleY": "0.8999938964843750",
+            "transX": "-899",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 54,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "2.434188842773438",
+            "scaleY": "0.8999938964843750",
+            "transX": "-782",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 55,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "2.482208251953125",
+            "scaleY": "0.8999938964843750",
+            "transX": "-666",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 56,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "2.530319213867188",
+            "scaleY": "0.8999938964843750",
+            "transX": "-550",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 57,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "2.578338623046875",
+            "scaleY": "0.8999938964843750",
+            "transX": "-434",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 58,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "2.626403808593750",
+            "scaleY": "0.8999938964843750",
+            "transX": "-317",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 59,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "2.674468994140625",
+            "scaleY": "0.8999938964843750",
+            "transX": "-200",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 60,
+          "kind": "place",
+          "depth": 1,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "2.722534179687500",
+            "scaleY": "0.8999938964843750",
+            "transX": "-84",
+            "transY": "-4276"
+          },
+          "alpha": 256,
+          "clipDepth": 10,
+          "morphRatio": null
+        },
+        {
+          "frame": 60,
+          "kind": "place",
+          "depth": 11,
+          "objectId": 2,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "scaleX": "0.06564331054687500",
+            "scaleY": "1.000000000000000",
+            "transX": "-6436",
+            "transY": "-3705"
+          },
+          "alpha": 256,
+          "clipDepth": 16,
+          "morphRatio": null
+        },
+        {
+          "frame": 60,
+          "kind": "place",
+          "depth": 12,
+          "objectId": 10,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-97",
+            "transY": "-4300"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 60,
+          "kind": "place",
+          "depth": 13,
+          "objectId": 11,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-5454",
+            "transY": "-4004"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 60,
+          "kind": "place",
+          "depth": 14,
+          "objectId": 12,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "scaleX": "2.221466064453125",
+            "scaleY": "1.072479248046875",
+            "transX": "-3153",
+            "transY": "-3696"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": 59
+        },
+        {
+          "frame": 61,
+          "kind": "place",
+          "depth": 11,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.1206054687500000",
+            "scaleY": "1.000000000000000",
+            "transX": "-6292",
+            "transY": "-3705"
+          },
+          "alpha": 256,
+          "clipDepth": 16,
+          "morphRatio": null
+        },
+        {
+          "frame": 62,
+          "kind": "place",
+          "depth": 11,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.1755676269531250",
+            "scaleY": "1.000000000000000",
+            "transX": "-6149",
+            "transY": "-3705"
+          },
+          "alpha": 256,
+          "clipDepth": 16,
+          "morphRatio": null
+        },
+        {
+          "frame": 63,
+          "kind": "place",
+          "depth": 11,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.2305297851562500",
+            "scaleY": "1.000000000000000",
+            "transX": "-6005",
+            "transY": "-3705"
+          },
+          "alpha": 256,
+          "clipDepth": 16,
+          "morphRatio": null
+        },
+        {
+          "frame": 64,
+          "kind": "place",
+          "depth": 11,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.2854919433593750",
+            "scaleY": "1.000000000000000",
+            "transX": "-5862",
+            "transY": "-3705"
+          },
+          "alpha": 256,
+          "clipDepth": 16,
+          "morphRatio": null
+        },
+        {
+          "frame": 65,
+          "kind": "place",
+          "depth": 11,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.3404541015625000",
+            "scaleY": "1.000000000000000",
+            "transX": "-5718",
+            "transY": "-3705"
+          },
+          "alpha": 256,
+          "clipDepth": 16,
+          "morphRatio": null
+        },
+        {
+          "frame": 66,
+          "kind": "place",
+          "depth": 11,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.3954162597656250",
+            "scaleY": "1.000000000000000",
+            "transX": "-5575",
+            "transY": "-3705"
+          },
+          "alpha": 256,
+          "clipDepth": 16,
+          "morphRatio": null
+        },
+        {
+          "frame": 67,
+          "kind": "place",
+          "depth": 11,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.4503784179687500",
+            "scaleY": "1.000000000000000",
+            "transX": "-5431",
+            "transY": "-3705"
+          },
+          "alpha": 256,
+          "clipDepth": 16,
+          "morphRatio": null
+        },
+        {
+          "frame": 68,
+          "kind": "place",
+          "depth": 11,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.5053405761718750",
+            "scaleY": "1.000000000000000",
+            "transX": "-5288",
+            "transY": "-3705"
+          },
+          "alpha": 256,
+          "clipDepth": 16,
+          "morphRatio": null
+        },
+        {
+          "frame": 69,
+          "kind": "place",
+          "depth": 11,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.5603027343750000",
+            "scaleY": "1.000000000000000",
+            "transX": "-5144",
+            "transY": "-3705"
+          },
+          "alpha": 256,
+          "clipDepth": 16,
+          "morphRatio": null
+        },
+        {
+          "frame": 70,
+          "kind": "place",
+          "depth": 11,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.6152648925781250",
+            "scaleY": "1.000000000000000",
+            "transX": "-5001",
+            "transY": "-3705"
+          },
+          "alpha": 256,
+          "clipDepth": 16,
+          "morphRatio": null
+        },
+        {
+          "frame": 71,
+          "kind": "place",
+          "depth": 11,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.6702270507812500",
+            "scaleY": "1.000000000000000",
+            "transX": "-4857",
+            "transY": "-3705"
+          },
+          "alpha": 256,
+          "clipDepth": 16,
+          "morphRatio": null
+        },
+        {
+          "frame": 72,
+          "kind": "place",
+          "depth": 11,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.7251892089843750",
+            "scaleY": "1.000000000000000",
+            "transX": "-4715",
+            "transY": "-3705"
+          },
+          "alpha": 256,
+          "clipDepth": 16,
+          "morphRatio": null
+        },
+        {
+          "frame": 73,
+          "kind": "place",
+          "depth": 11,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.7801513671875000",
+            "scaleY": "1.000000000000000",
+            "transX": "-4570",
+            "transY": "-3705"
+          },
+          "alpha": 256,
+          "clipDepth": 16,
+          "morphRatio": null
+        },
+        {
+          "frame": 74,
+          "kind": "place",
+          "depth": 11,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.8351135253906250",
+            "scaleY": "1.000000000000000",
+            "transX": "-4428",
+            "transY": "-3705"
+          },
+          "alpha": 256,
+          "clipDepth": 16,
+          "morphRatio": null
+        },
+        {
+          "frame": 75,
+          "kind": "place",
+          "depth": 11,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.8900756835937500",
+            "scaleY": "1.000000000000000",
+            "transX": "-4283",
+            "transY": "-3705"
+          },
+          "alpha": 256,
+          "clipDepth": 16,
+          "morphRatio": null
+        },
+        {
+          "frame": 76,
+          "kind": "place",
+          "depth": 11,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "scaleX": "0.9450378417968750",
+            "scaleY": "1.000000000000000",
+            "transX": "-4141",
+            "transY": "-3705"
+          },
+          "alpha": 256,
+          "clipDepth": 16,
+          "morphRatio": null
+        },
+        {
+          "frame": 77,
+          "kind": "place",
+          "depth": 11,
+          "objectId": 2,
+          "newCharacter": false,
+          "name": null,
+          "transform": {
+            "transX": "-3996",
+            "transY": "-3705"
+          },
+          "alpha": 256,
+          "clipDepth": 16,
+          "morphRatio": null
+        },
+        {
+          "frame": 91,
+          "kind": "place",
+          "depth": 17,
+          "objectId": 13,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-1417",
+            "transY": "-2596"
+          },
+          "alpha": 0,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 92,
+          "kind": "place",
+          "depth": 17,
+          "objectId": 13,
+          "newCharacter": false,
+          "name": null,
+          "transform": null,
+          "alpha": 37,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 93,
+          "kind": "place",
+          "depth": 17,
+          "objectId": 13,
+          "newCharacter": false,
+          "name": null,
+          "transform": null,
+          "alpha": 73,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 94,
+          "kind": "place",
+          "depth": 17,
+          "objectId": 13,
+          "newCharacter": false,
+          "name": null,
+          "transform": null,
+          "alpha": 110,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 95,
+          "kind": "place",
+          "depth": 17,
+          "objectId": 13,
+          "newCharacter": false,
+          "name": null,
+          "transform": null,
+          "alpha": 146,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 96,
+          "kind": "place",
+          "depth": 17,
+          "objectId": 13,
+          "newCharacter": false,
+          "name": null,
+          "transform": null,
+          "alpha": 183,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 97,
+          "kind": "place",
+          "depth": 17,
+          "objectId": 13,
+          "newCharacter": false,
+          "name": null,
+          "transform": null,
+          "alpha": 219,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 98,
+          "kind": "place",
+          "depth": 17,
+          "objectId": 13,
+          "newCharacter": false,
+          "name": null,
+          "transform": null,
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 129,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 14,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "0",
+            "transY": "0"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 129,
+          "kind": "place",
+          "depth": 19,
+          "objectId": 15,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-2840",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 129,
+          "kind": "place",
+          "depth": 20,
+          "objectId": 16,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-1324",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 129,
+          "kind": "place",
+          "depth": 21,
+          "objectId": 17,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-28",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 129,
+          "kind": "place",
+          "depth": 22,
+          "objectId": 17,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "1727",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 195,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 14
+        },
+        {
+          "frame": 195,
+          "kind": "remove",
+          "depth": 19,
+          "objectId": 15
+        },
+        {
+          "frame": 195,
+          "kind": "remove",
+          "depth": 20,
+          "objectId": 16
+        },
+        {
+          "frame": 195,
+          "kind": "remove",
+          "depth": 21,
+          "objectId": 17
+        },
+        {
+          "frame": 195,
+          "kind": "remove",
+          "depth": 22,
+          "objectId": 17
+        },
+        {
+          "frame": 252,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 18,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-2840",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 253,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 18
+        },
+        {
+          "frame": 254,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 18,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-2840",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 255,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 18
+        },
+        {
+          "frame": 256,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 18,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-2840",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 257,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 18
+        },
+        {
+          "frame": 258,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 18,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-2840",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 259,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 18
+        },
+        {
+          "frame": 268,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 19,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-1324",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 269,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 19
+        },
+        {
+          "frame": 270,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 19,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-1324",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 271,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 19
+        },
+        {
+          "frame": 272,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 19,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-1324",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 273,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 19
+        },
+        {
+          "frame": 274,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 19,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-1324",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 275,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 19
+        },
+        {
+          "frame": 281,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 20,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-28",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 282,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 20
+        },
+        {
+          "frame": 283,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 20,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-28",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 284,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 20
+        },
+        {
+          "frame": 285,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 20,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-28",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 286,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 20
+        },
+        {
+          "frame": 287,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 20,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-28",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 288,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 20
+        },
+        {
+          "frame": 289,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 20,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-28",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 290,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 20
+        },
+        {
+          "frame": 291,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 20,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-28",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 292,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 20
+        },
+        {
+          "frame": 306,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 20,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "1727",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 307,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 20
+        },
+        {
+          "frame": 308,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 20,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "1727",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 309,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 20
+        },
+        {
+          "frame": 310,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 20,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "1727",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 311,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 20
+        },
+        {
+          "frame": 312,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 20,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "1727",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 313,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 20
+        },
+        {
+          "frame": 314,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 20,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "1727",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 315,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 20
+        },
+        {
+          "frame": 333,
+          "kind": "place",
+          "depth": 18,
+          "objectId": 21,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "0",
+            "transY": "0"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 333,
+          "kind": "place",
+          "depth": 19,
+          "objectId": 17,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "-28",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 333,
+          "kind": "place",
+          "depth": 20,
+          "objectId": 17,
+          "newCharacter": true,
+          "name": null,
+          "transform": {
+            "transX": "1727",
+            "transY": "-2596"
+          },
+          "alpha": 256,
+          "clipDepth": null,
+          "morphRatio": null
+        },
+        {
+          "frame": 413,
+          "kind": "remove",
+          "depth": 18,
+          "objectId": 21
+        },
+        {
+          "frame": 413,
+          "kind": "remove",
+          "depth": 19,
+          "objectId": 17
+        },
+        {
+          "frame": 413,
+          "kind": "remove",
+          "depth": 20,
+          "objectId": 17
+        }
+      ],
+      "tagCounts": {
+        "SoundStreamHead": 1,
+        "PlaceObject2": 117,
+        "SoundStreamBlock": 413,
+        "ShowFrame": 413,
+        "RemoveObject2": 27,
+        "End": 1
+      },
+      "audio": {
+        "head": {
+          "playbackRate": "2",
+          "playbackSize": "1",
+          "playbackStereo": "0",
+          "compression": "2",
+          "soundRate": "2",
+          "soundSize": "1",
+          "soundStereo": "0",
+          "sampleSize": "1837"
+        },
+        "codec": "mp3",
+        "blockCount": 413,
+        "firstFrame": 1,
+        "lastFrame": 413,
+        "declaredSamples": 758016,
+        "payloadBytes": 171080,
+        "payloadSha256": "2584a692ee3936f02c3dc491872225f020744ce92710f890e1a31d468a75c85b",
+        "zeroSampleBlocks": [
+          {
+            "frame": 2,
+            "samples": 0,
+            "seek": 0,
+            "rawBytes": 4
+          }
+        ],
+        "negativeSeekBlocks": [],
+        "blockSchedule": [
+          {
+            "frame": 1,
+            "samples": 3456,
+            "seek": 1673,
+            "rawBytes": 784
+          },
+          {
+            "frame": 2,
+            "samples": 0,
+            "seek": 0,
+            "rawBytes": 4
+          },
+          {
+            "frame": 3,
+            "samples": 1728,
+            "seek": 54,
+            "rawBytes": 394
+          },
+          {
+            "frame": 4,
+            "samples": 1728,
+            "seek": 163,
+            "rawBytes": 394
+          },
+          {
+            "frame": 5,
+            "samples": 1728,
+            "seek": 272,
+            "rawBytes": 394
+          },
+          {
+            "frame": 6,
+            "samples": 1728,
+            "seek": 381,
+            "rawBytes": 394
+          },
+          {
+            "frame": 7,
+            "samples": 2304,
+            "seek": 490,
+            "rawBytes": 524
+          },
+          {
+            "frame": 8,
+            "samples": 1728,
+            "seek": 23,
+            "rawBytes": 394
+          },
+          {
+            "frame": 9,
+            "samples": 1728,
+            "seek": 132,
+            "rawBytes": 394
+          },
+          {
+            "frame": 10,
+            "samples": 1728,
+            "seek": 241,
+            "rawBytes": 394
+          },
+          {
+            "frame": 11,
+            "samples": 1728,
+            "seek": 350,
+            "rawBytes": 394
+          },
+          {
+            "frame": 12,
+            "samples": 1728,
+            "seek": 459,
+            "rawBytes": 394
+          },
+          {
+            "frame": 13,
+            "samples": 2304,
+            "seek": 568,
+            "rawBytes": 524
+          },
+          {
+            "frame": 14,
+            "samples": 1728,
+            "seek": 101,
+            "rawBytes": 394
+          },
+          {
+            "frame": 15,
+            "samples": 1728,
+            "seek": 210,
+            "rawBytes": 394
+          },
+          {
+            "frame": 16,
+            "samples": 1728,
+            "seek": 319,
+            "rawBytes": 394
+          },
+          {
+            "frame": 17,
+            "samples": 1728,
+            "seek": 428,
+            "rawBytes": 394
+          },
+          {
+            "frame": 18,
+            "samples": 2304,
+            "seek": 537,
+            "rawBytes": 524
+          },
+          {
+            "frame": 19,
+            "samples": 1728,
+            "seek": 70,
+            "rawBytes": 394
+          },
+          {
+            "frame": 20,
+            "samples": 1728,
+            "seek": 179,
+            "rawBytes": 394
+          },
+          {
+            "frame": 21,
+            "samples": 1728,
+            "seek": 288,
+            "rawBytes": 394
+          },
+          {
+            "frame": 22,
+            "samples": 1728,
+            "seek": 397,
+            "rawBytes": 394
+          },
+          {
+            "frame": 23,
+            "samples": 2304,
+            "seek": 506,
+            "rawBytes": 524
+          },
+          {
+            "frame": 24,
+            "samples": 1728,
+            "seek": 39,
+            "rawBytes": 394
+          },
+          {
+            "frame": 25,
+            "samples": 1728,
+            "seek": 148,
+            "rawBytes": 394
+          },
+          {
+            "frame": 26,
+            "samples": 1728,
+            "seek": 257,
+            "rawBytes": 394
+          },
+          {
+            "frame": 27,
+            "samples": 1728,
+            "seek": 366,
+            "rawBytes": 394
+          },
+          {
+            "frame": 28,
+            "samples": 2304,
+            "seek": 475,
+            "rawBytes": 524
+          },
+          {
+            "frame": 29,
+            "samples": 1728,
+            "seek": 8,
+            "rawBytes": 394
+          },
+          {
+            "frame": 30,
+            "samples": 1728,
+            "seek": 117,
+            "rawBytes": 394
+          },
+          {
+            "frame": 31,
+            "samples": 1728,
+            "seek": 226,
+            "rawBytes": 394
+          },
+          {
+            "frame": 32,
+            "samples": 1728,
+            "seek": 335,
+            "rawBytes": 394
+          },
+          {
+            "frame": 33,
+            "samples": 1728,
+            "seek": 444,
+            "rawBytes": 394
+          },
+          {
+            "frame": 34,
+            "samples": 2304,
+            "seek": 553,
+            "rawBytes": 524
+          },
+          {
+            "frame": 35,
+            "samples": 1728,
+            "seek": 86,
+            "rawBytes": 394
+          },
+          {
+            "frame": 36,
+            "samples": 1728,
+            "seek": 195,
+            "rawBytes": 394
+          },
+          {
+            "frame": 37,
+            "samples": 1728,
+            "seek": 304,
+            "rawBytes": 394
+          },
+          {
+            "frame": 38,
+            "samples": 1728,
+            "seek": 413,
+            "rawBytes": 394
+          },
+          {
+            "frame": 39,
+            "samples": 2304,
+            "seek": 522,
+            "rawBytes": 524
+          },
+          {
+            "frame": 40,
+            "samples": 1728,
+            "seek": 55,
+            "rawBytes": 394
+          },
+          {
+            "frame": 41,
+            "samples": 1728,
+            "seek": 164,
+            "rawBytes": 394
+          },
+          {
+            "frame": 42,
+            "samples": 1728,
+            "seek": 273,
+            "rawBytes": 394
+          },
+          {
+            "frame": 43,
+            "samples": 1728,
+            "seek": 382,
+            "rawBytes": 394
+          },
+          {
+            "frame": 44,
+            "samples": 2304,
+            "seek": 491,
+            "rawBytes": 524
+          },
+          {
+            "frame": 45,
+            "samples": 1728,
+            "seek": 24,
+            "rawBytes": 394
+          },
+          {
+            "frame": 46,
+            "samples": 1728,
+            "seek": 133,
+            "rawBytes": 394
+          },
+          {
+            "frame": 47,
+            "samples": 1728,
+            "seek": 242,
+            "rawBytes": 394
+          },
+          {
+            "frame": 48,
+            "samples": 1728,
+            "seek": 351,
+            "rawBytes": 394
+          },
+          {
+            "frame": 49,
+            "samples": 1728,
+            "seek": 460,
+            "rawBytes": 394
+          },
+          {
+            "frame": 50,
+            "samples": 2304,
+            "seek": 569,
+            "rawBytes": 524
+          },
+          {
+            "frame": 51,
+            "samples": 1728,
+            "seek": 102,
+            "rawBytes": 394
+          },
+          {
+            "frame": 52,
+            "samples": 1728,
+            "seek": 211,
+            "rawBytes": 394
+          },
+          {
+            "frame": 53,
+            "samples": 1728,
+            "seek": 320,
+            "rawBytes": 394
+          },
+          {
+            "frame": 54,
+            "samples": 1728,
+            "seek": 429,
+            "rawBytes": 394
+          },
+          {
+            "frame": 55,
+            "samples": 2304,
+            "seek": 538,
+            "rawBytes": 524
+          },
+          {
+            "frame": 56,
+            "samples": 1728,
+            "seek": 71,
+            "rawBytes": 394
+          },
+          {
+            "frame": 57,
+            "samples": 1728,
+            "seek": 180,
+            "rawBytes": 394
+          },
+          {
+            "frame": 58,
+            "samples": 1728,
+            "seek": 289,
+            "rawBytes": 394
+          },
+          {
+            "frame": 59,
+            "samples": 1728,
+            "seek": 398,
+            "rawBytes": 394
+          },
+          {
+            "frame": 60,
+            "samples": 2304,
+            "seek": 507,
+            "rawBytes": 524
+          },
+          {
+            "frame": 61,
+            "samples": 1728,
+            "seek": 40,
+            "rawBytes": 394
+          },
+          {
+            "frame": 62,
+            "samples": 1728,
+            "seek": 149,
+            "rawBytes": 394
+          },
+          {
+            "frame": 63,
+            "samples": 1728,
+            "seek": 258,
+            "rawBytes": 394
+          },
+          {
+            "frame": 64,
+            "samples": 1728,
+            "seek": 367,
+            "rawBytes": 394
+          },
+          {
+            "frame": 65,
+            "samples": 2304,
+            "seek": 476,
+            "rawBytes": 524
+          },
+          {
+            "frame": 66,
+            "samples": 1728,
+            "seek": 9,
+            "rawBytes": 394
+          },
+          {
+            "frame": 67,
+            "samples": 1728,
+            "seek": 118,
+            "rawBytes": 394
+          },
+          {
+            "frame": 68,
+            "samples": 1728,
+            "seek": 227,
+            "rawBytes": 394
+          },
+          {
+            "frame": 69,
+            "samples": 1728,
+            "seek": 336,
+            "rawBytes": 394
+          },
+          {
+            "frame": 70,
+            "samples": 1728,
+            "seek": 445,
+            "rawBytes": 394
+          },
+          {
+            "frame": 71,
+            "samples": 2304,
+            "seek": 554,
+            "rawBytes": 524
+          },
+          {
+            "frame": 72,
+            "samples": 1728,
+            "seek": 87,
+            "rawBytes": 394
+          },
+          {
+            "frame": 73,
+            "samples": 1728,
+            "seek": 196,
+            "rawBytes": 394
+          },
+          {
+            "frame": 74,
+            "samples": 1728,
+            "seek": 305,
+            "rawBytes": 394
+          },
+          {
+            "frame": 75,
+            "samples": 1728,
+            "seek": 414,
+            "rawBytes": 394
+          },
+          {
+            "frame": 76,
+            "samples": 2304,
+            "seek": 523,
+            "rawBytes": 524
+          },
+          {
+            "frame": 77,
+            "samples": 1728,
+            "seek": 56,
+            "rawBytes": 394
+          },
+          {
+            "frame": 78,
+            "samples": 1728,
+            "seek": 165,
+            "rawBytes": 394
+          },
+          {
+            "frame": 79,
+            "samples": 1728,
+            "seek": 274,
+            "rawBytes": 394
+          },
+          {
+            "frame": 80,
+            "samples": 1728,
+            "seek": 383,
+            "rawBytes": 394
+          },
+          {
+            "frame": 81,
+            "samples": 2304,
+            "seek": 492,
+            "rawBytes": 524
+          },
+          {
+            "frame": 82,
+            "samples": 1728,
+            "seek": 25,
+            "rawBytes": 394
+          },
+          {
+            "frame": 83,
+            "samples": 1728,
+            "seek": 134,
+            "rawBytes": 394
+          },
+          {
+            "frame": 84,
+            "samples": 1728,
+            "seek": 243,
+            "rawBytes": 394
+          },
+          {
+            "frame": 85,
+            "samples": 1728,
+            "seek": 352,
+            "rawBytes": 394
+          },
+          {
+            "frame": 86,
+            "samples": 1728,
+            "seek": 461,
+            "rawBytes": 394
+          },
+          {
+            "frame": 87,
+            "samples": 2304,
+            "seek": 570,
+            "rawBytes": 524
+          },
+          {
+            "frame": 88,
+            "samples": 1728,
+            "seek": 103,
+            "rawBytes": 394
+          },
+          {
+            "frame": 89,
+            "samples": 1728,
+            "seek": 212,
+            "rawBytes": 394
+          },
+          {
+            "frame": 90,
+            "samples": 1728,
+            "seek": 321,
+            "rawBytes": 394
+          },
+          {
+            "frame": 91,
+            "samples": 1728,
+            "seek": 430,
+            "rawBytes": 394
+          },
+          {
+            "frame": 92,
+            "samples": 2304,
+            "seek": 539,
+            "rawBytes": 524
+          },
+          {
+            "frame": 93,
+            "samples": 1728,
+            "seek": 72,
+            "rawBytes": 394
+          },
+          {
+            "frame": 94,
+            "samples": 1728,
+            "seek": 181,
+            "rawBytes": 394
+          },
+          {
+            "frame": 95,
+            "samples": 1728,
+            "seek": 290,
+            "rawBytes": 394
+          },
+          {
+            "frame": 96,
+            "samples": 1728,
+            "seek": 399,
+            "rawBytes": 394
+          },
+          {
+            "frame": 97,
+            "samples": 2304,
+            "seek": 508,
+            "rawBytes": 524
+          },
+          {
+            "frame": 98,
+            "samples": 1728,
+            "seek": 41,
+            "rawBytes": 394
+          },
+          {
+            "frame": 99,
+            "samples": 1728,
+            "seek": 150,
+            "rawBytes": 394
+          },
+          {
+            "frame": 100,
+            "samples": 1728,
+            "seek": 259,
+            "rawBytes": 394
+          },
+          {
+            "frame": 101,
+            "samples": 1728,
+            "seek": 368,
+            "rawBytes": 394
+          },
+          {
+            "frame": 102,
+            "samples": 2304,
+            "seek": 477,
+            "rawBytes": 524
+          },
+          {
+            "frame": 103,
+            "samples": 1728,
+            "seek": 10,
+            "rawBytes": 394
+          },
+          {
+            "frame": 104,
+            "samples": 1728,
+            "seek": 119,
+            "rawBytes": 394
+          },
+          {
+            "frame": 105,
+            "samples": 1728,
+            "seek": 228,
+            "rawBytes": 394
+          },
+          {
+            "frame": 106,
+            "samples": 1728,
+            "seek": 337,
+            "rawBytes": 394
+          },
+          {
+            "frame": 107,
+            "samples": 1728,
+            "seek": 446,
+            "rawBytes": 394
+          },
+          {
+            "frame": 108,
+            "samples": 2304,
+            "seek": 555,
+            "rawBytes": 524
+          },
+          {
+            "frame": 109,
+            "samples": 1728,
+            "seek": 88,
+            "rawBytes": 394
+          },
+          {
+            "frame": 110,
+            "samples": 1728,
+            "seek": 197,
+            "rawBytes": 394
+          },
+          {
+            "frame": 111,
+            "samples": 1728,
+            "seek": 306,
+            "rawBytes": 394
+          },
+          {
+            "frame": 112,
+            "samples": 1728,
+            "seek": 415,
+            "rawBytes": 394
+          },
+          {
+            "frame": 113,
+            "samples": 2304,
+            "seek": 524,
+            "rawBytes": 524
+          },
+          {
+            "frame": 114,
+            "samples": 1728,
+            "seek": 57,
+            "rawBytes": 394
+          },
+          {
+            "frame": 115,
+            "samples": 1728,
+            "seek": 166,
+            "rawBytes": 394
+          },
+          {
+            "frame": 116,
+            "samples": 1728,
+            "seek": 275,
+            "rawBytes": 394
+          },
+          {
+            "frame": 117,
+            "samples": 1728,
+            "seek": 384,
+            "rawBytes": 394
+          },
+          {
+            "frame": 118,
+            "samples": 2304,
+            "seek": 493,
+            "rawBytes": 524
+          },
+          {
+            "frame": 119,
+            "samples": 1728,
+            "seek": 26,
+            "rawBytes": 394
+          },
+          {
+            "frame": 120,
+            "samples": 1728,
+            "seek": 135,
+            "rawBytes": 394
+          },
+          {
+            "frame": 121,
+            "samples": 1728,
+            "seek": 244,
+            "rawBytes": 394
+          },
+          {
+            "frame": 122,
+            "samples": 1728,
+            "seek": 353,
+            "rawBytes": 394
+          },
+          {
+            "frame": 123,
+            "samples": 1728,
+            "seek": 462,
+            "rawBytes": 394
+          },
+          {
+            "frame": 124,
+            "samples": 2304,
+            "seek": 571,
+            "rawBytes": 524
+          },
+          {
+            "frame": 125,
+            "samples": 1728,
+            "seek": 104,
+            "rawBytes": 394
+          },
+          {
+            "frame": 126,
+            "samples": 1728,
+            "seek": 213,
+            "rawBytes": 394
+          },
+          {
+            "frame": 127,
+            "samples": 1728,
+            "seek": 322,
+            "rawBytes": 394
+          },
+          {
+            "frame": 128,
+            "samples": 1728,
+            "seek": 431,
+            "rawBytes": 394
+          },
+          {
+            "frame": 129,
+            "samples": 2304,
+            "seek": 540,
+            "rawBytes": 524
+          },
+          {
+            "frame": 130,
+            "samples": 1728,
+            "seek": 73,
+            "rawBytes": 394
+          },
+          {
+            "frame": 131,
+            "samples": 1728,
+            "seek": 182,
+            "rawBytes": 394
+          },
+          {
+            "frame": 132,
+            "samples": 1728,
+            "seek": 291,
+            "rawBytes": 394
+          },
+          {
+            "frame": 133,
+            "samples": 1728,
+            "seek": 400,
+            "rawBytes": 394
+          },
+          {
+            "frame": 134,
+            "samples": 2304,
+            "seek": 509,
+            "rawBytes": 524
+          },
+          {
+            "frame": 135,
+            "samples": 1728,
+            "seek": 42,
+            "rawBytes": 394
+          },
+          {
+            "frame": 136,
+            "samples": 1728,
+            "seek": 151,
+            "rawBytes": 394
+          },
+          {
+            "frame": 137,
+            "samples": 1728,
+            "seek": 260,
+            "rawBytes": 394
+          },
+          {
+            "frame": 138,
+            "samples": 1728,
+            "seek": 369,
+            "rawBytes": 394
+          },
+          {
+            "frame": 139,
+            "samples": 2304,
+            "seek": 478,
+            "rawBytes": 524
+          },
+          {
+            "frame": 140,
+            "samples": 1728,
+            "seek": 11,
+            "rawBytes": 394
+          },
+          {
+            "frame": 141,
+            "samples": 1728,
+            "seek": 120,
+            "rawBytes": 394
+          },
+          {
+            "frame": 142,
+            "samples": 1728,
+            "seek": 229,
+            "rawBytes": 394
+          },
+          {
+            "frame": 143,
+            "samples": 1728,
+            "seek": 338,
+            "rawBytes": 394
+          },
+          {
+            "frame": 144,
+            "samples": 1728,
+            "seek": 447,
+            "rawBytes": 394
+          },
+          {
+            "frame": 145,
+            "samples": 2304,
+            "seek": 556,
+            "rawBytes": 524
+          },
+          {
+            "frame": 146,
+            "samples": 1728,
+            "seek": 89,
+            "rawBytes": 394
+          },
+          {
+            "frame": 147,
+            "samples": 1728,
+            "seek": 198,
+            "rawBytes": 394
+          },
+          {
+            "frame": 148,
+            "samples": 1728,
+            "seek": 307,
+            "rawBytes": 394
+          },
+          {
+            "frame": 149,
+            "samples": 1728,
+            "seek": 416,
+            "rawBytes": 394
+          },
+          {
+            "frame": 150,
+            "samples": 2304,
+            "seek": 525,
+            "rawBytes": 524
+          },
+          {
+            "frame": 151,
+            "samples": 1728,
+            "seek": 58,
+            "rawBytes": 394
+          },
+          {
+            "frame": 152,
+            "samples": 1728,
+            "seek": 167,
+            "rawBytes": 394
+          },
+          {
+            "frame": 153,
+            "samples": 1728,
+            "seek": 276,
+            "rawBytes": 394
+          },
+          {
+            "frame": 154,
+            "samples": 1728,
+            "seek": 385,
+            "rawBytes": 394
+          },
+          {
+            "frame": 155,
+            "samples": 2304,
+            "seek": 494,
+            "rawBytes": 524
+          },
+          {
+            "frame": 156,
+            "samples": 1728,
+            "seek": 27,
+            "rawBytes": 394
+          },
+          {
+            "frame": 157,
+            "samples": 1728,
+            "seek": 136,
+            "rawBytes": 394
+          },
+          {
+            "frame": 158,
+            "samples": 1728,
+            "seek": 245,
+            "rawBytes": 394
+          },
+          {
+            "frame": 159,
+            "samples": 1728,
+            "seek": 354,
+            "rawBytes": 394
+          },
+          {
+            "frame": 160,
+            "samples": 1728,
+            "seek": 463,
+            "rawBytes": 394
+          },
+          {
+            "frame": 161,
+            "samples": 2304,
+            "seek": 572,
+            "rawBytes": 524
+          },
+          {
+            "frame": 162,
+            "samples": 1728,
+            "seek": 105,
+            "rawBytes": 394
+          },
+          {
+            "frame": 163,
+            "samples": 1728,
+            "seek": 214,
+            "rawBytes": 394
+          },
+          {
+            "frame": 164,
+            "samples": 1728,
+            "seek": 323,
+            "rawBytes": 394
+          },
+          {
+            "frame": 165,
+            "samples": 1728,
+            "seek": 432,
+            "rawBytes": 394
+          },
+          {
+            "frame": 166,
+            "samples": 2304,
+            "seek": 541,
+            "rawBytes": 524
+          },
+          {
+            "frame": 167,
+            "samples": 1728,
+            "seek": 74,
+            "rawBytes": 394
+          },
+          {
+            "frame": 168,
+            "samples": 1728,
+            "seek": 183,
+            "rawBytes": 394
+          },
+          {
+            "frame": 169,
+            "samples": 1728,
+            "seek": 292,
+            "rawBytes": 394
+          },
+          {
+            "frame": 170,
+            "samples": 1728,
+            "seek": 401,
+            "rawBytes": 394
+          },
+          {
+            "frame": 171,
+            "samples": 2304,
+            "seek": 510,
+            "rawBytes": 524
+          },
+          {
+            "frame": 172,
+            "samples": 1728,
+            "seek": 43,
+            "rawBytes": 394
+          },
+          {
+            "frame": 173,
+            "samples": 1728,
+            "seek": 152,
+            "rawBytes": 394
+          },
+          {
+            "frame": 174,
+            "samples": 1728,
+            "seek": 261,
+            "rawBytes": 394
+          },
+          {
+            "frame": 175,
+            "samples": 1728,
+            "seek": 370,
+            "rawBytes": 394
+          },
+          {
+            "frame": 176,
+            "samples": 2304,
+            "seek": 479,
+            "rawBytes": 524
+          },
+          {
+            "frame": 177,
+            "samples": 1728,
+            "seek": 12,
+            "rawBytes": 394
+          },
+          {
+            "frame": 178,
+            "samples": 1728,
+            "seek": 121,
+            "rawBytes": 394
+          },
+          {
+            "frame": 179,
+            "samples": 1728,
+            "seek": 230,
+            "rawBytes": 394
+          },
+          {
+            "frame": 180,
+            "samples": 1728,
+            "seek": 339,
+            "rawBytes": 394
+          },
+          {
+            "frame": 181,
+            "samples": 1728,
+            "seek": 448,
+            "rawBytes": 394
+          },
+          {
+            "frame": 182,
+            "samples": 2304,
+            "seek": 557,
+            "rawBytes": 524
+          },
+          {
+            "frame": 183,
+            "samples": 1728,
+            "seek": 90,
+            "rawBytes": 394
+          },
+          {
+            "frame": 184,
+            "samples": 1728,
+            "seek": 199,
+            "rawBytes": 394
+          },
+          {
+            "frame": 185,
+            "samples": 1728,
+            "seek": 308,
+            "rawBytes": 394
+          },
+          {
+            "frame": 186,
+            "samples": 1728,
+            "seek": 417,
+            "rawBytes": 394
+          },
+          {
+            "frame": 187,
+            "samples": 2304,
+            "seek": 526,
+            "rawBytes": 524
+          },
+          {
+            "frame": 188,
+            "samples": 1728,
+            "seek": 59,
+            "rawBytes": 394
+          },
+          {
+            "frame": 189,
+            "samples": 1728,
+            "seek": 168,
+            "rawBytes": 394
+          },
+          {
+            "frame": 190,
+            "samples": 1728,
+            "seek": 277,
+            "rawBytes": 394
+          },
+          {
+            "frame": 191,
+            "samples": 1728,
+            "seek": 386,
+            "rawBytes": 394
+          },
+          {
+            "frame": 192,
+            "samples": 2304,
+            "seek": 495,
+            "rawBytes": 524
+          },
+          {
+            "frame": 193,
+            "samples": 1728,
+            "seek": 28,
+            "rawBytes": 394
+          },
+          {
+            "frame": 194,
+            "samples": 1728,
+            "seek": 137,
+            "rawBytes": 394
+          },
+          {
+            "frame": 195,
+            "samples": 1728,
+            "seek": 246,
+            "rawBytes": 394
+          },
+          {
+            "frame": 196,
+            "samples": 1728,
+            "seek": 355,
+            "rawBytes": 394
+          },
+          {
+            "frame": 197,
+            "samples": 1728,
+            "seek": 464,
+            "rawBytes": 394
+          },
+          {
+            "frame": 198,
+            "samples": 2304,
+            "seek": 573,
+            "rawBytes": 524
+          },
+          {
+            "frame": 199,
+            "samples": 1728,
+            "seek": 106,
+            "rawBytes": 394
+          },
+          {
+            "frame": 200,
+            "samples": 1728,
+            "seek": 215,
+            "rawBytes": 394
+          },
+          {
+            "frame": 201,
+            "samples": 1728,
+            "seek": 324,
+            "rawBytes": 394
+          },
+          {
+            "frame": 202,
+            "samples": 1728,
+            "seek": 433,
+            "rawBytes": 394
+          },
+          {
+            "frame": 203,
+            "samples": 2304,
+            "seek": 542,
+            "rawBytes": 524
+          },
+          {
+            "frame": 204,
+            "samples": 1728,
+            "seek": 75,
+            "rawBytes": 394
+          },
+          {
+            "frame": 205,
+            "samples": 1728,
+            "seek": 184,
+            "rawBytes": 394
+          },
+          {
+            "frame": 206,
+            "samples": 1728,
+            "seek": 293,
+            "rawBytes": 394
+          },
+          {
+            "frame": 207,
+            "samples": 1728,
+            "seek": 402,
+            "rawBytes": 394
+          },
+          {
+            "frame": 208,
+            "samples": 2304,
+            "seek": 511,
+            "rawBytes": 524
+          },
+          {
+            "frame": 209,
+            "samples": 1728,
+            "seek": 44,
+            "rawBytes": 394
+          },
+          {
+            "frame": 210,
+            "samples": 1728,
+            "seek": 153,
+            "rawBytes": 394
+          },
+          {
+            "frame": 211,
+            "samples": 1728,
+            "seek": 262,
+            "rawBytes": 394
+          },
+          {
+            "frame": 212,
+            "samples": 1728,
+            "seek": 371,
+            "rawBytes": 394
+          },
+          {
+            "frame": 213,
+            "samples": 2304,
+            "seek": 480,
+            "rawBytes": 524
+          },
+          {
+            "frame": 214,
+            "samples": 1728,
+            "seek": 13,
+            "rawBytes": 394
+          },
+          {
+            "frame": 215,
+            "samples": 1728,
+            "seek": 122,
+            "rawBytes": 394
+          },
+          {
+            "frame": 216,
+            "samples": 1728,
+            "seek": 231,
+            "rawBytes": 394
+          },
+          {
+            "frame": 217,
+            "samples": 1728,
+            "seek": 340,
+            "rawBytes": 394
+          },
+          {
+            "frame": 218,
+            "samples": 1728,
+            "seek": 449,
+            "rawBytes": 394
+          },
+          {
+            "frame": 219,
+            "samples": 2304,
+            "seek": 558,
+            "rawBytes": 524
+          },
+          {
+            "frame": 220,
+            "samples": 1728,
+            "seek": 91,
+            "rawBytes": 394
+          },
+          {
+            "frame": 221,
+            "samples": 1728,
+            "seek": 200,
+            "rawBytes": 394
+          },
+          {
+            "frame": 222,
+            "samples": 1728,
+            "seek": 309,
+            "rawBytes": 394
+          },
+          {
+            "frame": 223,
+            "samples": 1728,
+            "seek": 418,
+            "rawBytes": 394
+          },
+          {
+            "frame": 224,
+            "samples": 2304,
+            "seek": 527,
+            "rawBytes": 524
+          },
+          {
+            "frame": 225,
+            "samples": 1728,
+            "seek": 60,
+            "rawBytes": 394
+          },
+          {
+            "frame": 226,
+            "samples": 1728,
+            "seek": 169,
+            "rawBytes": 394
+          },
+          {
+            "frame": 227,
+            "samples": 1728,
+            "seek": 278,
+            "rawBytes": 394
+          },
+          {
+            "frame": 228,
+            "samples": 1728,
+            "seek": 387,
+            "rawBytes": 394
+          },
+          {
+            "frame": 229,
+            "samples": 2304,
+            "seek": 496,
+            "rawBytes": 524
+          },
+          {
+            "frame": 230,
+            "samples": 1728,
+            "seek": 29,
+            "rawBytes": 394
+          },
+          {
+            "frame": 231,
+            "samples": 1728,
+            "seek": 138,
+            "rawBytes": 394
+          },
+          {
+            "frame": 232,
+            "samples": 1728,
+            "seek": 247,
+            "rawBytes": 394
+          },
+          {
+            "frame": 233,
+            "samples": 1728,
+            "seek": 356,
+            "rawBytes": 394
+          },
+          {
+            "frame": 234,
+            "samples": 1728,
+            "seek": 465,
+            "rawBytes": 394
+          },
+          {
+            "frame": 235,
+            "samples": 2304,
+            "seek": 574,
+            "rawBytes": 524
+          },
+          {
+            "frame": 236,
+            "samples": 1728,
+            "seek": 107,
+            "rawBytes": 394
+          },
+          {
+            "frame": 237,
+            "samples": 1728,
+            "seek": 216,
+            "rawBytes": 394
+          },
+          {
+            "frame": 238,
+            "samples": 1728,
+            "seek": 325,
+            "rawBytes": 394
+          },
+          {
+            "frame": 239,
+            "samples": 1728,
+            "seek": 434,
+            "rawBytes": 394
+          },
+          {
+            "frame": 240,
+            "samples": 2304,
+            "seek": 543,
+            "rawBytes": 524
+          },
+          {
+            "frame": 241,
+            "samples": 1728,
+            "seek": 76,
+            "rawBytes": 394
+          },
+          {
+            "frame": 242,
+            "samples": 1728,
+            "seek": 185,
+            "rawBytes": 394
+          },
+          {
+            "frame": 243,
+            "samples": 1728,
+            "seek": 294,
+            "rawBytes": 394
+          },
+          {
+            "frame": 244,
+            "samples": 1728,
+            "seek": 403,
+            "rawBytes": 394
+          },
+          {
+            "frame": 245,
+            "samples": 2304,
+            "seek": 512,
+            "rawBytes": 524
+          },
+          {
+            "frame": 246,
+            "samples": 1728,
+            "seek": 45,
+            "rawBytes": 394
+          },
+          {
+            "frame": 247,
+            "samples": 1728,
+            "seek": 154,
+            "rawBytes": 394
+          },
+          {
+            "frame": 248,
+            "samples": 1728,
+            "seek": 263,
+            "rawBytes": 394
+          },
+          {
+            "frame": 249,
+            "samples": 1728,
+            "seek": 372,
+            "rawBytes": 394
+          },
+          {
+            "frame": 250,
+            "samples": 2304,
+            "seek": 481,
+            "rawBytes": 524
+          },
+          {
+            "frame": 251,
+            "samples": 1728,
+            "seek": 14,
+            "rawBytes": 394
+          },
+          {
+            "frame": 252,
+            "samples": 1728,
+            "seek": 123,
+            "rawBytes": 394
+          },
+          {
+            "frame": 253,
+            "samples": 1728,
+            "seek": 232,
+            "rawBytes": 394
+          },
+          {
+            "frame": 254,
+            "samples": 1728,
+            "seek": 341,
+            "rawBytes": 394
+          },
+          {
+            "frame": 255,
+            "samples": 1728,
+            "seek": 450,
+            "rawBytes": 394
+          },
+          {
+            "frame": 256,
+            "samples": 2304,
+            "seek": 559,
+            "rawBytes": 524
+          },
+          {
+            "frame": 257,
+            "samples": 1728,
+            "seek": 92,
+            "rawBytes": 394
+          },
+          {
+            "frame": 258,
+            "samples": 1728,
+            "seek": 201,
+            "rawBytes": 394
+          },
+          {
+            "frame": 259,
+            "samples": 1728,
+            "seek": 310,
+            "rawBytes": 394
+          },
+          {
+            "frame": 260,
+            "samples": 1728,
+            "seek": 419,
+            "rawBytes": 394
+          },
+          {
+            "frame": 261,
+            "samples": 2304,
+            "seek": 528,
+            "rawBytes": 524
+          },
+          {
+            "frame": 262,
+            "samples": 1728,
+            "seek": 61,
+            "rawBytes": 394
+          },
+          {
+            "frame": 263,
+            "samples": 1728,
+            "seek": 170,
+            "rawBytes": 394
+          },
+          {
+            "frame": 264,
+            "samples": 1728,
+            "seek": 279,
+            "rawBytes": 394
+          },
+          {
+            "frame": 265,
+            "samples": 1728,
+            "seek": 388,
+            "rawBytes": 394
+          },
+          {
+            "frame": 266,
+            "samples": 2304,
+            "seek": 497,
+            "rawBytes": 524
+          },
+          {
+            "frame": 267,
+            "samples": 1728,
+            "seek": 30,
+            "rawBytes": 394
+          },
+          {
+            "frame": 268,
+            "samples": 1728,
+            "seek": 139,
+            "rawBytes": 394
+          },
+          {
+            "frame": 269,
+            "samples": 1728,
+            "seek": 248,
+            "rawBytes": 394
+          },
+          {
+            "frame": 270,
+            "samples": 1728,
+            "seek": 357,
+            "rawBytes": 394
+          },
+          {
+            "frame": 271,
+            "samples": 1728,
+            "seek": 466,
+            "rawBytes": 394
+          },
+          {
+            "frame": 272,
+            "samples": 2304,
+            "seek": 575,
+            "rawBytes": 524
+          },
+          {
+            "frame": 273,
+            "samples": 1728,
+            "seek": 108,
+            "rawBytes": 394
+          },
+          {
+            "frame": 274,
+            "samples": 1728,
+            "seek": 217,
+            "rawBytes": 394
+          },
+          {
+            "frame": 275,
+            "samples": 1728,
+            "seek": 326,
+            "rawBytes": 394
+          },
+          {
+            "frame": 276,
+            "samples": 1728,
+            "seek": 435,
+            "rawBytes": 394
+          },
+          {
+            "frame": 277,
+            "samples": 2304,
+            "seek": 544,
+            "rawBytes": 524
+          },
+          {
+            "frame": 278,
+            "samples": 1728,
+            "seek": 77,
+            "rawBytes": 394
+          },
+          {
+            "frame": 279,
+            "samples": 1728,
+            "seek": 186,
+            "rawBytes": 394
+          },
+          {
+            "frame": 280,
+            "samples": 1728,
+            "seek": 295,
+            "rawBytes": 394
+          },
+          {
+            "frame": 281,
+            "samples": 1728,
+            "seek": 404,
+            "rawBytes": 394
+          },
+          {
+            "frame": 282,
+            "samples": 2304,
+            "seek": 513,
+            "rawBytes": 524
+          },
+          {
+            "frame": 283,
+            "samples": 1728,
+            "seek": 46,
+            "rawBytes": 394
+          },
+          {
+            "frame": 284,
+            "samples": 1728,
+            "seek": 155,
+            "rawBytes": 394
+          },
+          {
+            "frame": 285,
+            "samples": 1728,
+            "seek": 264,
+            "rawBytes": 394
+          },
+          {
+            "frame": 286,
+            "samples": 1728,
+            "seek": 373,
+            "rawBytes": 394
+          },
+          {
+            "frame": 287,
+            "samples": 2304,
+            "seek": 482,
+            "rawBytes": 524
+          },
+          {
+            "frame": 288,
+            "samples": 1728,
+            "seek": 15,
+            "rawBytes": 394
+          },
+          {
+            "frame": 289,
+            "samples": 1728,
+            "seek": 124,
+            "rawBytes": 394
+          },
+          {
+            "frame": 290,
+            "samples": 1728,
+            "seek": 233,
+            "rawBytes": 394
+          },
+          {
+            "frame": 291,
+            "samples": 1728,
+            "seek": 342,
+            "rawBytes": 394
+          },
+          {
+            "frame": 292,
+            "samples": 1728,
+            "seek": 451,
+            "rawBytes": 394
+          },
+          {
+            "frame": 293,
+            "samples": 2304,
+            "seek": 560,
+            "rawBytes": 524
+          },
+          {
+            "frame": 294,
+            "samples": 1728,
+            "seek": 93,
+            "rawBytes": 394
+          },
+          {
+            "frame": 295,
+            "samples": 1728,
+            "seek": 202,
+            "rawBytes": 394
+          },
+          {
+            "frame": 296,
+            "samples": 1728,
+            "seek": 311,
+            "rawBytes": 394
+          },
+          {
+            "frame": 297,
+            "samples": 1728,
+            "seek": 420,
+            "rawBytes": 394
+          },
+          {
+            "frame": 298,
+            "samples": 2304,
+            "seek": 529,
+            "rawBytes": 524
+          },
+          {
+            "frame": 299,
+            "samples": 1728,
+            "seek": 62,
+            "rawBytes": 394
+          },
+          {
+            "frame": 300,
+            "samples": 1728,
+            "seek": 171,
+            "rawBytes": 394
+          },
+          {
+            "frame": 301,
+            "samples": 1728,
+            "seek": 280,
+            "rawBytes": 394
+          },
+          {
+            "frame": 302,
+            "samples": 1728,
+            "seek": 389,
+            "rawBytes": 394
+          },
+          {
+            "frame": 303,
+            "samples": 2304,
+            "seek": 498,
+            "rawBytes": 524
+          },
+          {
+            "frame": 304,
+            "samples": 1728,
+            "seek": 31,
+            "rawBytes": 394
+          },
+          {
+            "frame": 305,
+            "samples": 1728,
+            "seek": 140,
+            "rawBytes": 394
+          },
+          {
+            "frame": 306,
+            "samples": 1728,
+            "seek": 249,
+            "rawBytes": 394
+          },
+          {
+            "frame": 307,
+            "samples": 1728,
+            "seek": 358,
+            "rawBytes": 394
+          },
+          {
+            "frame": 308,
+            "samples": 1728,
+            "seek": 467,
+            "rawBytes": 394
+          },
+          {
+            "frame": 309,
+            "samples": 2304,
+            "seek": 576,
+            "rawBytes": 524
+          },
+          {
+            "frame": 310,
+            "samples": 1728,
+            "seek": 109,
+            "rawBytes": 394
+          },
+          {
+            "frame": 311,
+            "samples": 1728,
+            "seek": 218,
+            "rawBytes": 394
+          },
+          {
+            "frame": 312,
+            "samples": 1728,
+            "seek": 327,
+            "rawBytes": 394
+          },
+          {
+            "frame": 313,
+            "samples": 1728,
+            "seek": 436,
+            "rawBytes": 394
+          },
+          {
+            "frame": 314,
+            "samples": 2304,
+            "seek": 545,
+            "rawBytes": 524
+          },
+          {
+            "frame": 315,
+            "samples": 1728,
+            "seek": 78,
+            "rawBytes": 394
+          },
+          {
+            "frame": 316,
+            "samples": 1728,
+            "seek": 187,
+            "rawBytes": 394
+          },
+          {
+            "frame": 317,
+            "samples": 1728,
+            "seek": 296,
+            "rawBytes": 394
+          },
+          {
+            "frame": 318,
+            "samples": 1728,
+            "seek": 405,
+            "rawBytes": 394
+          },
+          {
+            "frame": 319,
+            "samples": 2304,
+            "seek": 514,
+            "rawBytes": 524
+          },
+          {
+            "frame": 320,
+            "samples": 1728,
+            "seek": 47,
+            "rawBytes": 394
+          },
+          {
+            "frame": 321,
+            "samples": 1728,
+            "seek": 156,
+            "rawBytes": 394
+          },
+          {
+            "frame": 322,
+            "samples": 1728,
+            "seek": 265,
+            "rawBytes": 394
+          },
+          {
+            "frame": 323,
+            "samples": 1728,
+            "seek": 374,
+            "rawBytes": 394
+          },
+          {
+            "frame": 324,
+            "samples": 2304,
+            "seek": 483,
+            "rawBytes": 524
+          },
+          {
+            "frame": 325,
+            "samples": 1728,
+            "seek": 16,
+            "rawBytes": 394
+          },
+          {
+            "frame": 326,
+            "samples": 1728,
+            "seek": 125,
+            "rawBytes": 394
+          },
+          {
+            "frame": 327,
+            "samples": 1728,
+            "seek": 234,
+            "rawBytes": 394
+          },
+          {
+            "frame": 328,
+            "samples": 1728,
+            "seek": 343,
+            "rawBytes": 394
+          },
+          {
+            "frame": 329,
+            "samples": 1728,
+            "seek": 452,
+            "rawBytes": 394
+          },
+          {
+            "frame": 330,
+            "samples": 2304,
+            "seek": 561,
+            "rawBytes": 524
+          },
+          {
+            "frame": 331,
+            "samples": 1728,
+            "seek": 94,
+            "rawBytes": 394
+          },
+          {
+            "frame": 332,
+            "samples": 1728,
+            "seek": 203,
+            "rawBytes": 394
+          },
+          {
+            "frame": 333,
+            "samples": 1728,
+            "seek": 312,
+            "rawBytes": 394
+          },
+          {
+            "frame": 334,
+            "samples": 1728,
+            "seek": 421,
+            "rawBytes": 394
+          },
+          {
+            "frame": 335,
+            "samples": 2304,
+            "seek": 530,
+            "rawBytes": 524
+          },
+          {
+            "frame": 336,
+            "samples": 1728,
+            "seek": 63,
+            "rawBytes": 394
+          },
+          {
+            "frame": 337,
+            "samples": 1728,
+            "seek": 172,
+            "rawBytes": 394
+          },
+          {
+            "frame": 338,
+            "samples": 1728,
+            "seek": 281,
+            "rawBytes": 394
+          },
+          {
+            "frame": 339,
+            "samples": 1728,
+            "seek": 390,
+            "rawBytes": 394
+          },
+          {
+            "frame": 340,
+            "samples": 2304,
+            "seek": 499,
+            "rawBytes": 524
+          },
+          {
+            "frame": 341,
+            "samples": 1728,
+            "seek": 32,
+            "rawBytes": 394
+          },
+          {
+            "frame": 342,
+            "samples": 1728,
+            "seek": 141,
+            "rawBytes": 394
+          },
+          {
+            "frame": 343,
+            "samples": 1728,
+            "seek": 250,
+            "rawBytes": 394
+          },
+          {
+            "frame": 344,
+            "samples": 1728,
+            "seek": 359,
+            "rawBytes": 394
+          },
+          {
+            "frame": 345,
+            "samples": 2304,
+            "seek": 468,
+            "rawBytes": 524
+          },
+          {
+            "frame": 346,
+            "samples": 1728,
+            "seek": 1,
+            "rawBytes": 394
+          },
+          {
+            "frame": 347,
+            "samples": 1728,
+            "seek": 110,
+            "rawBytes": 394
+          },
+          {
+            "frame": 348,
+            "samples": 1728,
+            "seek": 219,
+            "rawBytes": 394
+          },
+          {
+            "frame": 349,
+            "samples": 1728,
+            "seek": 328,
+            "rawBytes": 394
+          },
+          {
+            "frame": 350,
+            "samples": 1728,
+            "seek": 437,
+            "rawBytes": 394
+          },
+          {
+            "frame": 351,
+            "samples": 2304,
+            "seek": 546,
+            "rawBytes": 524
+          },
+          {
+            "frame": 352,
+            "samples": 1728,
+            "seek": 79,
+            "rawBytes": 394
+          },
+          {
+            "frame": 353,
+            "samples": 1728,
+            "seek": 188,
+            "rawBytes": 394
+          },
+          {
+            "frame": 354,
+            "samples": 1728,
+            "seek": 297,
+            "rawBytes": 394
+          },
+          {
+            "frame": 355,
+            "samples": 1728,
+            "seek": 406,
+            "rawBytes": 394
+          },
+          {
+            "frame": 356,
+            "samples": 2304,
+            "seek": 515,
+            "rawBytes": 524
+          },
+          {
+            "frame": 357,
+            "samples": 1728,
+            "seek": 48,
+            "rawBytes": 394
+          },
+          {
+            "frame": 358,
+            "samples": 1728,
+            "seek": 157,
+            "rawBytes": 394
+          },
+          {
+            "frame": 359,
+            "samples": 1728,
+            "seek": 266,
+            "rawBytes": 394
+          },
+          {
+            "frame": 360,
+            "samples": 1728,
+            "seek": 375,
+            "rawBytes": 394
+          },
+          {
+            "frame": 361,
+            "samples": 2304,
+            "seek": 484,
+            "rawBytes": 524
+          },
+          {
+            "frame": 362,
+            "samples": 1728,
+            "seek": 17,
+            "rawBytes": 394
+          },
+          {
+            "frame": 363,
+            "samples": 1728,
+            "seek": 126,
+            "rawBytes": 394
+          },
+          {
+            "frame": 364,
+            "samples": 1728,
+            "seek": 235,
+            "rawBytes": 394
+          },
+          {
+            "frame": 365,
+            "samples": 1728,
+            "seek": 344,
+            "rawBytes": 394
+          },
+          {
+            "frame": 366,
+            "samples": 1728,
+            "seek": 453,
+            "rawBytes": 394
+          },
+          {
+            "frame": 367,
+            "samples": 2304,
+            "seek": 562,
+            "rawBytes": 524
+          },
+          {
+            "frame": 368,
+            "samples": 1728,
+            "seek": 95,
+            "rawBytes": 394
+          },
+          {
+            "frame": 369,
+            "samples": 1728,
+            "seek": 204,
+            "rawBytes": 394
+          },
+          {
+            "frame": 370,
+            "samples": 1728,
+            "seek": 313,
+            "rawBytes": 394
+          },
+          {
+            "frame": 371,
+            "samples": 1728,
+            "seek": 422,
+            "rawBytes": 394
+          },
+          {
+            "frame": 372,
+            "samples": 2304,
+            "seek": 531,
+            "rawBytes": 524
+          },
+          {
+            "frame": 373,
+            "samples": 1728,
+            "seek": 64,
+            "rawBytes": 394
+          },
+          {
+            "frame": 374,
+            "samples": 1728,
+            "seek": 173,
+            "rawBytes": 394
+          },
+          {
+            "frame": 375,
+            "samples": 1728,
+            "seek": 282,
+            "rawBytes": 394
+          },
+          {
+            "frame": 376,
+            "samples": 1728,
+            "seek": 391,
+            "rawBytes": 394
+          },
+          {
+            "frame": 377,
+            "samples": 2304,
+            "seek": 500,
+            "rawBytes": 524
+          },
+          {
+            "frame": 378,
+            "samples": 1728,
+            "seek": 33,
+            "rawBytes": 394
+          },
+          {
+            "frame": 379,
+            "samples": 1728,
+            "seek": 142,
+            "rawBytes": 394
+          },
+          {
+            "frame": 380,
+            "samples": 1728,
+            "seek": 251,
+            "rawBytes": 394
+          },
+          {
+            "frame": 381,
+            "samples": 1728,
+            "seek": 360,
+            "rawBytes": 394
+          },
+          {
+            "frame": 382,
+            "samples": 2304,
+            "seek": 469,
+            "rawBytes": 524
+          },
+          {
+            "frame": 383,
+            "samples": 1728,
+            "seek": 2,
+            "rawBytes": 394
+          },
+          {
+            "frame": 384,
+            "samples": 1728,
+            "seek": 111,
+            "rawBytes": 394
+          },
+          {
+            "frame": 385,
+            "samples": 1728,
+            "seek": 220,
+            "rawBytes": 394
+          },
+          {
+            "frame": 386,
+            "samples": 1728,
+            "seek": 329,
+            "rawBytes": 394
+          },
+          {
+            "frame": 387,
+            "samples": 1728,
+            "seek": 438,
+            "rawBytes": 394
+          },
+          {
+            "frame": 388,
+            "samples": 2304,
+            "seek": 547,
+            "rawBytes": 524
+          },
+          {
+            "frame": 389,
+            "samples": 1728,
+            "seek": 80,
+            "rawBytes": 394
+          },
+          {
+            "frame": 390,
+            "samples": 1728,
+            "seek": 189,
+            "rawBytes": 394
+          },
+          {
+            "frame": 391,
+            "samples": 1728,
+            "seek": 298,
+            "rawBytes": 394
+          },
+          {
+            "frame": 392,
+            "samples": 1728,
+            "seek": 407,
+            "rawBytes": 394
+          },
+          {
+            "frame": 393,
+            "samples": 2304,
+            "seek": 516,
+            "rawBytes": 524
+          },
+          {
+            "frame": 394,
+            "samples": 1728,
+            "seek": 49,
+            "rawBytes": 394
+          },
+          {
+            "frame": 395,
+            "samples": 1728,
+            "seek": 158,
+            "rawBytes": 394
+          },
+          {
+            "frame": 396,
+            "samples": 1728,
+            "seek": 267,
+            "rawBytes": 394
+          },
+          {
+            "frame": 397,
+            "samples": 1728,
+            "seek": 376,
+            "rawBytes": 394
+          },
+          {
+            "frame": 398,
+            "samples": 2304,
+            "seek": 485,
+            "rawBytes": 524
+          },
+          {
+            "frame": 399,
+            "samples": 1728,
+            "seek": 18,
+            "rawBytes": 394
+          },
+          {
+            "frame": 400,
+            "samples": 1728,
+            "seek": 127,
+            "rawBytes": 394
+          },
+          {
+            "frame": 401,
+            "samples": 1728,
+            "seek": 236,
+            "rawBytes": 394
+          },
+          {
+            "frame": 402,
+            "samples": 1728,
+            "seek": 345,
+            "rawBytes": 394
+          },
+          {
+            "frame": 403,
+            "samples": 1728,
+            "seek": 454,
+            "rawBytes": 394
+          },
+          {
+            "frame": 404,
+            "samples": 2304,
+            "seek": 563,
+            "rawBytes": 524
+          },
+          {
+            "frame": 405,
+            "samples": 1728,
+            "seek": 96,
+            "rawBytes": 394
+          },
+          {
+            "frame": 406,
+            "samples": 1728,
+            "seek": 205,
+            "rawBytes": 394
+          },
+          {
+            "frame": 407,
+            "samples": 1728,
+            "seek": 314,
+            "rawBytes": 394
+          },
+          {
+            "frame": 408,
+            "samples": 1728,
+            "seek": 423,
+            "rawBytes": 394
+          },
+          {
+            "frame": 409,
+            "samples": 2304,
+            "seek": 532,
+            "rawBytes": 524
+          },
+          {
+            "frame": 410,
+            "samples": 1728,
+            "seek": 65,
+            "rawBytes": 394
+          },
+          {
+            "frame": 411,
+            "samples": 1728,
+            "seek": 174,
+            "rawBytes": 394
+          },
+          {
+            "frame": 412,
+            "samples": 1728,
+            "seek": 283,
+            "rawBytes": 394
+          },
+          {
+            "frame": 413,
+            "samples": 1728,
+            "seek": 392,
+            "rawBytes": 394
+          }
+        ]
+      }
+    }
+  },
+  "tagCounts": {
+    "SetBackgroundColor": 1,
+    "UnknownTag": 1,
+    "DoAction": 2,
+    "ShowFrame": 10,
+    "FrameLabel": 1,
+    "DefineShape": 6,
+    "PlaceObject2": 2,
+    "DefineShape3": 1,
+    "DefineFont2": 1,
+    "DefineText": 9,
+    "DefineButton2": 4,
+    "DefineSprite": 1,
+    "End": 1
+  },
+  "definitionKinds": {
+    "1": "shape",
+    "2": "shape",
+    "3": "shape",
+    "4": "other",
+    "5": "text",
+    "6": "shape",
+    "7": "button",
+    "8": "button",
+    "9": "button",
+    "10": "shape",
+    "11": "text",
+    "12": "button",
+    "13": "text",
+    "14": "shape",
+    "15": "text",
+    "16": "text",
+    "17": "text",
+    "18": "text",
+    "19": "text",
+    "20": "text",
+    "21": "shape",
+    "22": "sprite"
+  },
+  "buttonDefinitions": [
+    {
+      "id": 7,
+      "events": [
+        {
+          "next": "0",
+          "menuEnter": "0",
+          "pointerReleaseOutside": "0",
+          "pointerDragEnter": "0",
+          "pointerDragLeave": "0",
+          "pointerReleaseInside": "1",
+          "pointerPush": "0",
+          "pointerLeave": "0",
+          "pointerEnter": "0",
+          "key": "0",
+          "menuLeave": "0"
+        }
+      ],
+      "records": [
+        {
+          "hitTest": "1",
+          "down": "0",
+          "over": "0",
+          "up": "0",
+          "objectID": "6",
+          "depth": "1"
+        },
+        {
+          "hitTest": "0",
+          "down": "0",
+          "over": "0",
+          "up": "0"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "events": [
+        {
+          "next": "0",
+          "menuEnter": "0",
+          "pointerReleaseOutside": "0",
+          "pointerDragEnter": "0",
+          "pointerDragLeave": "0",
+          "pointerReleaseInside": "1",
+          "pointerPush": "0",
+          "pointerLeave": "0",
+          "pointerEnter": "0",
+          "key": "0",
+          "menuLeave": "0"
+        }
+      ],
+      "records": [
+        {
+          "hitTest": "1",
+          "down": "0",
+          "over": "0",
+          "up": "0",
+          "objectID": "6",
+          "depth": "1"
+        },
+        {
+          "hitTest": "0",
+          "down": "0",
+          "over": "0",
+          "up": "0"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "events": [
+        {
+          "next": "0",
+          "menuEnter": "0",
+          "pointerReleaseOutside": "0",
+          "pointerDragEnter": "0",
+          "pointerDragLeave": "0",
+          "pointerReleaseInside": "1",
+          "pointerPush": "0",
+          "pointerLeave": "0",
+          "pointerEnter": "0",
+          "key": "0",
+          "menuLeave": "0"
+        }
+      ],
+      "records": [
+        {
+          "hitTest": "1",
+          "down": "0",
+          "over": "0",
+          "up": "0",
+          "objectID": "6",
+          "depth": "1"
+        },
+        {
+          "hitTest": "0",
+          "down": "0",
+          "over": "0",
+          "up": "0"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "events": [
+        {
+          "next": "0",
+          "menuEnter": "0",
+          "pointerReleaseOutside": "0",
+          "pointerDragEnter": "0",
+          "pointerDragLeave": "0",
+          "pointerReleaseInside": "1",
+          "pointerPush": "0",
+          "pointerLeave": "0",
+          "pointerEnter": "0",
+          "key": "0",
+          "menuLeave": "0"
+        }
+      ],
+      "records": [
+        {
+          "hitTest": "1",
+          "down": "0",
+          "over": "0",
+          "up": "0",
+          "objectID": "6",
+          "depth": "1"
+        },
+        {
+          "hitTest": "0",
+          "down": "0",
+          "over": "0",
+          "up": "0"
+        }
+      ]
+    }
+  ],
+  "fonts": [
+    {
+      "id": 4,
+      "name": "Bauhaus Md BT",
+      "glyphCount": 34
+    }
+  ],
+  "editTexts": [],
+  "morphShapeIds": [],
+  "scripts": [
+    {
+      "path": "source-export/scripts/DefineButton2_12/BUTTONCONDACTION on(release).as",
+      "bytes": 127,
+      "sha256": "84e01270b992f4367fd71e21376b911715527119808289d3fd9380100276d212",
+      "text": "on(release){\n   _global.KeyAttribute = \"X-coordinate\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+    },
+    {
+      "path": "source-export/scripts/DefineButton2_7/BUTTONCONDACTION on(release).as",
+      "bytes": 118,
+      "sha256": "bf6ddb6c2620b5c22b58818ee2de460b1feae903d133a3342b924f80e5ebe64e",
+      "text": "on(release){\n   _global.KeyAttribute = \"Set\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+    },
+    {
+      "path": "source-export/scripts/DefineButton2_8/BUTTONCONDACTION on(release).as",
+      "bytes": 127,
+      "sha256": "063e245c5e7152430464984944a92577bca38e5716c8297df4f2fd240d8e0c02",
+      "text": "on(release){\n   _global.KeyAttribute = \"Ordered pair\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+    },
+    {
+      "path": "source-export/scripts/DefineButton2_9/BUTTONCONDACTION on(release).as",
+      "bytes": 123,
+      "sha256": "bf18a4b6722a58696805f4dd043c6b04a1b1c3cc9a605ef84301790c08bb4cfa",
+      "text": "on(release){\n   _global.KeyAttribute = \"Function\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}\n"
+    },
+    {
+      "path": "source-export/scripts/frame_1/DoAction.as",
+      "bytes": 63,
+      "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19",
+      "text": "_level0.InternalPreloader.gotoAndPlay(\"jump_check\");\nstop();\n"
+    },
+    {
+      "path": "source-export/scripts/frame_6/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "text": "stop();\n"
+    }
+  ],
+  "texts": [
+    {
+      "path": "source-export/texts/11.txt",
+      "bytes": 73,
+      "sha256": "94e873a20054a0726e9d463cb0975fb5427fea5fa019b30047f28cc2e8568a96",
+      "text": "the same \n--- RECORDSEPARATOR ---\nx-coordinate\n--- RECORDSEPARATOR ---\n. "
+    },
+    {
+      "path": "source-export/texts/13.txt",
+      "bytes": 45,
+      "sha256": "83753606349ba2d55011b7f0dba25602bef8e1607b910fbf0f7aade1e1d75e73",
+      "text": "{(1, –5), (3, 4), (–2, 11), (–2, –4)}"
+    },
+    {
+      "path": "source-export/texts/15.txt",
+      "bytes": 1,
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "text": "1"
+    },
+    {
+      "path": "source-export/texts/16.txt",
+      "bytes": 1,
+      "sha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+      "text": "3"
+    },
+    {
+      "path": "source-export/texts/17.txt",
+      "bytes": 4,
+      "sha256": "28a5aa3897d66de6c31caba99a4c337e46a803786ccd9deec9626affe8807d70",
+      "text": "–2"
+    },
+    {
+      "path": "source-export/texts/18.txt",
+      "bytes": 1,
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "text": "1"
+    },
+    {
+      "path": "source-export/texts/19.txt",
+      "bytes": 1,
+      "sha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+      "text": "3"
+    },
+    {
+      "path": "source-export/texts/20.txt",
+      "bytes": 4,
+      "sha256": "28a5aa3897d66de6c31caba99a4c337e46a803786ccd9deec9626affe8807d70",
+      "text": "–2"
+    },
+    {
+      "path": "source-export/texts/5.txt",
+      "bytes": 217,
+      "sha256": "f65436c90e9fadae56e0f265c201ca874373ccad940160ac3efa219a6bb3deea",
+      "text": "A\n--- RECORDSEPARATOR ---\n set \n--- RECORDSEPARATOR ---\nof \n--- RECORDSEPARATOR ---\nordered pairs\n--- RECORDSEPARATOR ---\n is a \n--- RECORDSEPARATOR ---\nfunction\n--- RECORDSEPARATOR ---\n unless two or more pairs have "
+    }
+  ],
+  "resourceFiles": [
+    {
+      "path": "source-export/scripts/DefineButton2_12/BUTTONCONDACTION on(release).as",
+      "bytes": 127,
+      "sha256": "84e01270b992f4367fd71e21376b911715527119808289d3fd9380100276d212"
+    },
+    {
+      "path": "source-export/scripts/DefineButton2_7/BUTTONCONDACTION on(release).as",
+      "bytes": 118,
+      "sha256": "bf6ddb6c2620b5c22b58818ee2de460b1feae903d133a3342b924f80e5ebe64e"
+    },
+    {
+      "path": "source-export/scripts/DefineButton2_8/BUTTONCONDACTION on(release).as",
+      "bytes": 127,
+      "sha256": "063e245c5e7152430464984944a92577bca38e5716c8297df4f2fd240d8e0c02"
+    },
+    {
+      "path": "source-export/scripts/DefineButton2_9/BUTTONCONDACTION on(release).as",
+      "bytes": 123,
+      "sha256": "bf18a4b6722a58696805f4dd043c6b04a1b1c3cc9a605ef84301790c08bb4cfa"
+    },
+    {
+      "path": "source-export/scripts/frame_1/DoAction.as",
+      "bytes": 63,
+      "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19"
+    },
+    {
+      "path": "source-export/scripts/frame_6/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "source-export/texts/11.txt",
+      "bytes": 73,
+      "sha256": "94e873a20054a0726e9d463cb0975fb5427fea5fa019b30047f28cc2e8568a96"
+    },
+    {
+      "path": "source-export/texts/13.txt",
+      "bytes": 45,
+      "sha256": "83753606349ba2d55011b7f0dba25602bef8e1607b910fbf0f7aade1e1d75e73"
+    },
+    {
+      "path": "source-export/texts/15.txt",
+      "bytes": 1,
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "source-export/texts/16.txt",
+      "bytes": 1,
+      "sha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+    },
+    {
+      "path": "source-export/texts/17.txt",
+      "bytes": 4,
+      "sha256": "28a5aa3897d66de6c31caba99a4c337e46a803786ccd9deec9626affe8807d70"
+    },
+    {
+      "path": "source-export/texts/18.txt",
+      "bytes": 1,
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "source-export/texts/19.txt",
+      "bytes": 1,
+      "sha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+    },
+    {
+      "path": "source-export/texts/20.txt",
+      "bytes": 4,
+      "sha256": "28a5aa3897d66de6c31caba99a4c337e46a803786ccd9deec9626affe8807d70"
+    },
+    {
+      "path": "source-export/texts/5.txt",
+      "bytes": 217,
+      "sha256": "f65436c90e9fadae56e0f265c201ca874373ccad940160ac3efa219a6bb3deea"
+    }
+  ]
+}

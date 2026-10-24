@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p013-host-glossary-disposition-v1",
+  "sourcePage": {
+    "path": "G6-G8-shared/ALG001/L6/VB/L6VB04.swf",
+    "bytes": 269912,
+    "sha256": "1be47750557385ef91c648fb87fdcde642d342caadc35da7a1f7a2d1fdb11d35"
+  },
+  "lessonXml": {
+    "path": "G6-G8-shared/ALG001/L6/index.xml",
+    "bytes": 13926,
+    "sha256": "9f3753a17e5e271d7bc63a1bdf8cd5237f19770bae3f5c7364cabcb62c84ce2c"
+  },
+  "oldHostSwf": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p009-host-source-v1/source.swf",
+    "bytes": 689006,
+    "sha256": "275499325edb24daed95952b207d2dd4ed83056ebac54cd0bc911673058086c9"
+  },
+  "oldHostFunctionScript": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p009-host-source-v1/scripts/scripts/frame_35/DoAction.as",
+    "bytes": 104008,
+    "sha256": "380cd6581859d0ba9814833f1102b08282198713cf30b5230ce2da76c3e27a74"
+  },
+  "oldHostFrameObserver": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p009-host-source-v1/scripts/scripts/frame_50/PlaceObject2_743_130/CLIPACTIONRECORD onClipEvent(enterFrame).as",
+    "bytes": 61,
+    "sha256": "0f74c16ab4c673bd21f5d82f4c7bd77f2c003198d8870bda7764b3cd7699c035"
+  },
+  "exactPageBinding": {
+    "section": "VB",
+    "reference": "VB/L6VB04.swf",
+    "globalOrdinal": 13,
+    "rootEntryFrame": 6,
+    "mainInstanceName": "animation",
+    "mainDomain": "sprite-140",
+    "mainFrameCount": 372
+  },
+  "buttons": [
+    {
+      "characterId": 131,
+      "sourceKeyAttribute": "Input",
+      "firstFrame": 258,
+      "depth": 8,
+      "actionSha256": "2f92a394bed054aeca4ae6ed57b238a04f5b3aa261270c980d5f00a82c8f19a5",
+      "event": "release",
+      "sourceEffects": [
+        "set _global.KeyAttribute",
+        "call _root.DoHyperLinks",
+        "stop _root.animation_mc.animation"
+      ]
+    },
+    {
+      "characterId": 137,
+      "sourceKeyAttribute": "Output",
+      "firstFrame": 297,
+      "depth": 14,
+      "actionSha256": "1262eac21bf8a718d551c8d7b046220855f8f878214783cfdfb7d0c37f5ff5c7",
+      "event": "release",
+      "sourceEffects": [
+        "set _global.KeyAttribute",
+        "call _root.DoHyperLinks",
+        "stop _root.animation_mc.animation"
+      ]
+    }
+  ],
+  "staticOldHost": {
+    "DoHyperLinks": [
+      "if key-term lesson not OFF",
+      "pause host playback",
+      "append ~English to KeyAttribute",
+      "call m_c.doGetSubLink"
+    ],
+    "terminal": "on enterFrame, non-FQ active animation at or past totalFrames is stopped",
+    "actualLaunchObserved": false
+  },
+  "modernDecisionBoundary": "Map Input/Output to native semantic glossary and pause/close/resume lifecycle after browser tests; do not run old host or equate a source call with product behavior."
+}

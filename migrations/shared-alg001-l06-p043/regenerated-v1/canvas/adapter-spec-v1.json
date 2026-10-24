@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "animationId": "course-shared-alg001-l06-p043",
+  "classification": "behavior-heavy-unregistered-source-canvas-draft-v1",
+  "source": {
+    "swf": "$HELP_MATH_G678_SOURCE_ROOT/G6-G8-shared/ALG001/L6/TI/L6TI03.swf",
+    "swfSha256": "8bec405895d09cc8f7dd9f0da197f67726cb45cab6cc8dec3d15b103bc04a97b"
+  },
+  "evidence": {
+    "scenarioInventory": "migrations/shared-alg001-l06-p043/audit-v1/source-intake-v1.json",
+    "scenarioInventorySha256": "1cfc2954ef13aa4bc786f52fb78752369f85f413d3713ee68217453e1749f13e",
+    "audioAudit": "migrations/shared-alg001-l06-p043/regenerated-v1/audio/source-audio-v1.json",
+    "audioAuditSha256": "80830741c550603c117eca0e5ffd1f30c8ca7a3c28d21fe520d591c8d95ab8dc",
+    "sourceXml": "migrations/shared-alg001-l06-p043/audit-v1/swfmill.xml",
+    "sourceXmlSha256": "b4a018ccd7c0b5a9b3ef89a623210a6e3da89c59e69da69c7bd353d4cc8f6597",
+    "nativeSourceContract": "migrations/shared-alg001-l06-p043/regenerated-v1/native/native-model-v1.json",
+    "nativeSourceContractSha256": "762333e5e6eb6a346801f98c9b8c322425397ec35819d000b1be7a4d5003c92d"
+  },
+  "ffdecExport": {
+    "tool": "JPEXS Free Flash Decompiler 26.2.1 Canvas export",
+    "helper": "migrations/shared-alg001-l06-p043/canvas-v1/generator-input/ffdec-export/sprites/DefineSprite_342/canvas.js",
+    "helperSha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93",
+    "framesHtml": "migrations/shared-alg001-l06-p043/canvas-v1/generator-input/ffdec-export/sprites/DefineSprite_342/frames.html",
+    "framesHtmlSha256": "4a3a09631a4d5dd9464fa7b4fbe684f65f87c7c1ec357228e2f3351d793527ad",
+    "targetSpriteObjectId": 342,
+    "targetSpriteFunction": "sprite342",
+    "exportCanvas": {
+      "width": 1181,
+      "height": 498
+    },
+    "exportInternalTranslation": {
+      "x": 600.5,
+      "y": 219.6
+    },
+    "expectedPlacedFunctionCount": 191,
+    "expectedPlacedFunctionsSha256": "0383b5d025558cdd1313e27cb3f4af003f9eb2d49c3365da8fca7545e1490835",
+    "expectedFontFunctionCount": 9,
+    "expectedFontFunctionsSha256": "18c2ad874261e578028e3b98286a5678f6a2144c13a159b81d11124c2dadd52a",
+    "embeddedImageVariableCount": 14,
+    "embeddedImageVariablesSha256": "4e99fc4f27a418f953752f827cd2c0740636ea75f01a9047581bab0349c84921"
+  },
+  "timeline": {
+    "fps": 12,
+    "stage": {
+      "width": 800,
+      "height": 600,
+      "backgroundColor": "#b8d8f7"
+    },
+    "root": {
+      "frameCount": 10,
+      "preloaderStopFrame": 1,
+      "beginFrame": 6,
+      "placementName": "animation",
+      "placementTwips": {
+        "x": 8248,
+        "y": 5666
+      },
+      "placementPixels": {
+        "x": 412.4,
+        "y": 283.3
+      }
+    },
+    "local": {
+      "timelineId": "sprite-342",
+      "frameCount": 241,
+      "livePlaybackEndFrame": 62,
+      "playbackMode": "state-explorer",
+      "publicFrameIndexing": "one-indexed"
+    },
+    "stageRenderOffset": {
+      "x": -188.10000000000002,
+      "y": 63.69999999999999
+    }
+  },
+  "runtimeContract": {
+    "kind": "structural-local-frame",
+    "scenarios": [
+      "source-explicit-frames"
+    ],
+    "defaultScenario": "source-explicit-frames",
+    "supportedLanguages": [
+      "en"
+    ],
+    "visualLocalization": "source-English visual; Spanish host falls back to source English",
+    "seedMapping": "fixed zero; no AVM1 executed",
+    "blockedLocalFrameRanges": [],
+    "currentCanonicalFrameDomainDispositionAsserted": false,
+    "unresolved": [
+      "Feedback selection and Close actions are page-owned.",
+      "Four EditText fields need a measured native companion.",
+      "Right4 mask and source image/morph pixels need browser comparison.",
+      "Audio and host behavior are separate."
+    ]
+  },
+  "output": {
+    "script": "canvas-renderer-draft.js",
+    "manifest": "canvas-candidate-manifest-v1.json",
+    "spec": "adapter-spec-v1.json",
+    "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+  },
+  "strictAcceptanceEffect": "none"
+}

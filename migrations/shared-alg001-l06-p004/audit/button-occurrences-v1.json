@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p004-button-occurrence-audit-v1",
+  "sourceXml": {
+    "path": "migrations/shared-alg001-l06-p004/audit/movie-root-verified.xml",
+    "bytes": 2570053,
+    "sha256": "e4c1ac33596cac6b97491c6d74417ddd8edfebb8197b12f680fdaa2cf8e5b187"
+  },
+  "method": "swfmill-0.3.6 direct main-sprite display-list membership; not hit-region or runtime execution proof",
+  "frameDomain": "sprite-95",
+  "frames": 831,
+  "buttons": [
+    {
+      "buttonId": 57,
+      "keyAttribute": "Input",
+      "sourceVisibleFrameRanges": [
+        [
+          127,
+          831
+        ]
+      ],
+      "onRelease": [
+        "set-global-KeyAttribute",
+        "call-root-DoHyperLinks",
+        "stop-root-animation_mc-animation"
+      ]
+    },
+    {
+      "buttonId": 59,
+      "keyAttribute": "Output",
+      "sourceVisibleFrameRanges": [
+        [
+          195,
+          831
+        ]
+      ],
+      "onRelease": [
+        "set-global-KeyAttribute",
+        "call-root-DoHyperLinks",
+        "stop-root-animation_mc-animation"
+      ]
+    },
+    {
+      "buttonId": 79,
+      "keyAttribute": "Function",
+      "sourceVisibleFrameRanges": [
+        [
+          508,
+          831
+        ]
+      ],
+      "onRelease": [
+        "set-global-KeyAttribute",
+        "call-root-DoHyperLinks",
+        "stop-root-animation_mc-animation"
+      ]
+    },
+    {
+      "buttonId": 80,
+      "keyAttribute": "Relation",
+      "sourceVisibleFrameRanges": [
+        [
+          508,
+          831
+        ]
+      ],
+      "onRelease": [
+        "set-global-KeyAttribute",
+        "call-root-DoHyperLinks",
+        "stop-root-animation_mc-animation"
+      ]
+    },
+    {
+      "buttonId": 81,
+      "keyAttribute": "Value",
+      "sourceVisibleFrameRanges": [
+        [
+          508,
+          831
+        ]
+      ],
+      "onRelease": [
+        "set-global-KeyAttribute",
+        "call-root-DoHyperLinks",
+        "stop-root-animation_mc-animation"
+      ]
+    },
+    {
+      "buttonId": 84,
+      "keyAttribute": "Rule",
+      "sourceVisibleFrameRanges": [
+        [
+          614,
+          831
+        ]
+      ],
+      "onRelease": [
+        "set-global-KeyAttribute",
+        "call-root-DoHyperLinks",
+        "stop-root-animation_mc-animation"
+      ]
+    },
+    {
+      "buttonId": 85,
+      "keyAttribute": "Input",
+      "sourceVisibleFrameRanges": [
+        [
+          614,
+          831
+        ]
+      ],
+      "onRelease": [
+        "set-global-KeyAttribute",
+        "call-root-DoHyperLinks",
+        "stop-root-animation_mc-animation"
+      ]
+    },
+    {
+      "buttonId": 86,
+      "keyAttribute": "output",
+      "sourceVisibleFrameRanges": [
+        [
+          614,
+          831
+        ]
+      ],
+      "onRelease": [
+        "set-global-KeyAttribute",
+        "call-root-DoHyperLinks",
+        "stop-root-animation_mc-animation"
+      ]
+    }
+  ],
+  "acceptanceEffect": "none"
+}

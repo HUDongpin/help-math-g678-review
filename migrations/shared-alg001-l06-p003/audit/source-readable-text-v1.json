@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "kind": "g678-alg-l06-p003-source-readable-text-candidate-v1",
+  "animationId": "shared-alg001-l06-p003",
+  "sourceSwfSha256": "c3d265b61aedccc48e679cbecfe6424a2a78f2a9cb5cfa2a33791fa124933766",
+  "sourceCatalogContentSha256": "a8c2e89ef9d10623c2174aca077caa014a93a7e2582747dae4a7a4b75e35b423",
+  "sourceCatalogSummary": {
+    "staticTextDefinitions": 16,
+    "decodedRuns": 16,
+    "dynamicFields": 0,
+    "unparsedTags": 0
+  },
+  "equationGlyphPlacementEvidence": {
+    "source": "physical SWF -> swfmill source.xml and FFDec text exports in the private P003 audit root",
+    "frameDomain": "sprite-154",
+    "glyphPlacementFrame": 520,
+    "simultaneousPlacementDepths": [82, 83, 84, 85, 86, 87, 88, 89, 90],
+    "displayOrderCharacterIds": [119, 118, 117, 114, 116, 115, 114, 121, 113],
+    "displayOrderText": "M=$0.50xC",
+    "scaleTweenFrames": [520, 530],
+    "fullTextCharacterId": 125,
+    "fullTextPlacementFrame": 531,
+    "limitation": "Source tag structure and text decoding only; no original-runtime visual or timing acceptance."
+  },
+  "bitmapVisualReview": {
+    "evidence": "The seven hash-matched FFDec exports in the private P003 audit root were inspected at their native pixel sizes; swfmill bitmap-fill references were matched to source-catalog shape placements.",
+    "frameDomain": "sprite-154",
+    "claimBoundary": "Extracted bitmap content and structural placement only; clipping, compositing, legibility in the original runtime, and human acceptance are not established.",
+    "items": [
+      {"characterId": 2, "sourceTagSha256": "cdd271eac1ff9775511567db027fc77263ba1e47ed6460a4ad052da6380824f5", "extractSha256": "c835035d9448f9388fdc65c108d4571ae15bc71d2e701f5f312ff80d8082e28d", "pixels": [987, 498], "fillShapeIds": [4, 29], "firstFrame": 1, "lastFrame": 719, "observedContent": "juice-stand cutout; no readable text in the extracted bitmap", "textRole": "no-readable-text-observed"},
+      {"characterId": 3, "sourceTagSha256": "d7e712179d420ff3fe6820814b6eaa076a7f04f584a7c729cb93e919fc8e3093", "extractSha256": "d07c82ac79b5a69a6612e7812690e49b9b3eba329420707ba10fc0d0f65f6afd", "pixels": [748, 692], "fillShapeIds": [4, 29], "firstFrame": 1, "lastFrame": 719, "observedContent": "streetscape photograph with visible business signage, including BROWN BEAR CAFE; not a source math formula or price label", "textRole": "incidental-photographic-signage", "pending": "Confirm whether any photo signage is learner-relevant in the composed original-runtime scene before omitting it from native text."},
+      {"characterId": 11, "sourceTagSha256": "75a24280bb583463ebeb540708049ebbbf77b3f6fb3d3d38d0ed508607dab056", "extractSha256": "dc3e7b56c24ed3991f612bbd02e53a5a2daba3820b3df8d62548d9f93b07490a", "pixels": [106, 170], "fillShapeIds": [16, 19, 36, 37], "firstFrame": 1, "lastFrame": 719, "observedContent": "blender photograph; no readable text in the extracted bitmap", "textRole": "no-readable-text-observed"},
+      {"characterId": 12, "sourceTagSha256": "35eddf769307038755e5649c423503bec74ff802d1fedc02eb9872dee0f606c7", "extractSha256": "86d1860315757ae5138c8ac3559e1a5646e37ffe31a9d86b49576b0cf4be23bb", "pixels": [52, 69], "fillShapeIds": [16, 19, 36, 37], "firstFrame": 1, "lastFrame": 719, "observedContent": "small illustrated beverage can with label graphics; no confidently transcribable words at native resolution", "textRole": "possible-decorative-label", "pending": "Review source composition at actual display scale before treating tiny can markings as non-instructional."},
+      {"characterId": 13, "sourceTagSha256": "aefe01c549267b26013d6bd80a7a2ef49c42f35a6f4c55df1b0d37a3c14f5fe6", "extractSha256": "77c7099af0cdac14b24defe3556b283ef1c26763b2e960e36bccb34b80880bb6", "pixels": [52, 71], "fillShapeIds": [16, 36], "firstFrame": 1, "lastFrame": 719, "observedContent": "plain cup illustration; no readable text in the extracted bitmap", "textRole": "no-readable-text-observed"},
+      {"characterId": 14, "sourceTagSha256": "5bbb21055d745bb69acdc1d29a1bddf3ef8b0405a237bb91339fe2c882ce9dbe", "extractSha256": "d9050d4028c5129bf2496c242ed19f58064d3afd05a5f5c6add5859e738b20f4", "pixels": [269, 218], "fillShapeIds": [16, 35, 124], "firstFrame": 1, "lastFrame": 719, "observedContent": "orange fruit display; no readable text in the extracted bitmap", "textRole": "no-readable-text-observed"},
+      {"characterId": 15, "sourceTagSha256": "8384f47280d27d37cc5d771507c273992788989bc5c801475ce2718c4585ffab", "extractSha256": "43d523159c9ebb9eccedf3f435c5588a3ec2e9bfb213555c03ef60ac37e8bc8f", "pixels": [269, 218], "fillShapeIds": [16, 35, 124], "firstFrame": 1, "lastFrame": 719, "observedContent": "lemon fruit display; no readable text in the extracted bitmap", "textRole": "no-readable-text-observed"}
+    ]
+  },
+  "claimBoundary": {
+    "structuralPlacementOnly": true,
+    "originalRuntimeVisibilityEstablished": false,
+    "completeNativeTextDisposition": false,
+    "currentJsAdmissionEffect": "none",
+    "typographyTechnicalPass": false
+  },
+  "blocks": [
+    {"id": "title", "sourceTextIds": ["character-156/run-0"], "timeline": "root", "firstFrame": 6, "lastFrame": 10, "text": "Understanding Functions: Real World Activity"},
+    {"id": "orange", "sourceTextIds": ["character-18/run-0"], "timeline": "sprite-154", "firstFrame": 1, "lastFrame": 719, "text": "Orange"},
+    {"id": "lemon", "sourceTextIds": ["character-20/run-0"], "timeline": "sprite-154", "firstFrame": 1, "lastFrame": 719, "text": "lemon"},
+    {"id": "lemonade-price", "sourceTextIds": ["character-24/run-0", "character-25/run-0"], "timeline": "sprite-154", "firstFrame": 1, "lastFrame": 719, "text": "Lemonade: 50¢ per cup"},
+    {"id": "orange-juice-price", "sourceTextIds": ["character-27/run-0", "character-28/run-0"], "timeline": "sprite-154", "firstFrame": 1, "lastFrame": 719, "text": "orange juice: 75¢ per cup"},
+    {"id": "equation-build", "sourceTextIds": ["character-119/run-0", "character-118/run-0", "character-117/run-0", "character-114/run-0", "character-116/run-0", "character-115/run-0", "character-121/run-0", "character-113/run-0"], "timeline": "sprite-154", "firstFrame": 520, "lastFrame": 530, "text": "M = $0.50 x C", "sourceMotion": "all glyphs placed together at 520 and scaled together through 530; their placements move at 531 as the full text object enters; native companion does not reproduce the tween"},
+    {"id": "equation", "sourceTextIds": ["character-125/run-0"], "timeline": "sprite-154", "firstFrame": 531, "lastFrame": 719, "text": "M = $0.50 ∙ C"}
+  ],
+  "sourceRiskKinds": [
+    "shape-text-unclassified",
+    "bitmap-text-unclassified",
+    "actionscript-visibility-and-values-not-interpreted",
+    "mask-filter-blend-semantics-unresolved"
+  ],
+  "unresolved": [
+    "The native companion represents all source equation glyphs placed at nested frame 520, but does not reproduce their 520-530 scale tween or establish original-runtime visual fidelity.",
+    "The bitmap extraction review found incidental business signage in image 3 and uncertain tiny label graphics in image 12; their composed-scene instructional role remains open. Shape, ActionScript and mask/filter text risks also require independent source-role disposition and a current technical check.",
+    "The private My Lesson probe is not an official registry module/descriptor admission; a formal page binding and exact implementation inventory remain pending."
+  ],
+  "languagePolicy": {"en": "source", "es": "source-fallback"}
+}

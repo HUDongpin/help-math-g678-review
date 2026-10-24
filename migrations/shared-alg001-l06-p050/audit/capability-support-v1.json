@@ -1,0 +1,99 @@
+{
+  "kind": "p050-capability-support-v1",
+  "checkedAt": "2026-10-02T17:49:03.742712+00:00",
+  "animationId": "shared-alg001-l06-p050",
+  "sourceSha256": "4353f9cbd7e60043baa8f59c7f5193fcd930778ace4b918ab56f2953f306937e",
+  "extraction": {
+    "path": "migrations/shared-alg001-l06-p050/audit-v1/source-extraction-v1.json",
+    "bytes": 84728,
+    "sha256": "dc1d39b3411e04b96ac8f331e60100105c1d0ed16c5ae5d242d806aa04b83f16"
+  },
+  "model": {
+    "path": "migrations/shared-alg001-l06-p050/native-v1/source-model-v1.json",
+    "bytes": 1682220,
+    "sha256": "928ca5042b469795ae207921638d44ffd212034e8eb33e954d943b1721c05fb7"
+  },
+  "classification": "behavior-heavy",
+  "lane": "advanced-manual",
+  "decision": "adapter-work-required; automatic completion unsupported while original calls remain unresolved",
+  "requiredCapabilities": [
+    {
+      "capability": "Root and nested timeline display; graphs, transforms, shapes, morphs and fonts",
+      "sourceLocation": "root6; sprite489 frames1–674; all13 reachable sprites; complete FFDec asset inventory",
+      "implementationRoute": "generator-v1/derive-source-model-v1.py + existing affine reader",
+      "status": "extracted-generated",
+      "remaining": "Canvas/native graph presentation, original-runtime appearance and full trace capture"
+    },
+    {
+      "capability": "Start, Skip, held begin, directions popup",
+      "sourceLocation": "buttons34/38/253/257/259/18; sprite489 frame662",
+      "implementationRoute": "packages/demos/src/alg-l06-p050-state-v1.ts",
+      "status": "maintained-and-unit-tested",
+      "remaining": "Real host controls and keyboard/touch browser assertions"
+    },
+    {
+      "capability": "Random question bank, no replacement, ten-response termination",
+      "sourceLocation": "sprite489 frame662 doGetRandomQuiz; Q1–Q10 labels",
+      "implementationRoute": "packages/demos/src/alg-l06-p050-state-v1.ts",
+      "status": "maintained-and-unit-tested",
+      "remaining": "Exact AVM1 random state unverified; browser orchestration pending"
+    },
+    {
+      "capability": "Answer rules and wrong selection",
+      "sourceLocation": "20 source button handlers; question-specific button placements and letter geometry",
+      "implementationRoute": "packages/demos/src/alg-l06-p050-state-v1.ts + generated alg-l06-p050-source-bindings-v1.ts",
+      "status": "maintained-and-unit-tested",
+      "remaining": "Native/Canvas option affordances and all-question visual cross-check"
+    },
+    {
+      "capability": "Score and100-point branch",
+      "sourceLocation": "sprite265 frames1/2/10/20 and labelB2@11; correct handlers score+=10",
+      "implementationRoute": "packages/demos/src/alg-l06-p050-state-v1.ts",
+      "status": "maintained-and-unit-tested",
+      "remaining": "Observed product nested clock and displayed score"
+    },
+    {
+      "capability": "Correct and wrong feedback; explicit Close",
+      "sourceLocation": "correct358/432/479; wrong380 hold23 tail24–28; Close376",
+      "implementationRoute": "packages/demos/src/alg-l06-p050-state-v1.ts",
+      "status": "maintained-and-unit-tested",
+      "remaining": "Canvas selected-instance suppression, real audio/playback and lifecycle"
+    },
+    {
+      "capability": "Source audio and independent Spanish recording",
+      "sourceLocation": "six embedded streams;432 ADPCM; SA/L6GS02.mp3",
+      "implementationRoute": "generator-v1/derive-source-model-v1.py; generator-v1/derive-adpcm-v1.mjs; scripts/lib/swf-adpcm.mjs",
+      "status": "extracted-and-decoded",
+      "remaining": "Browser decode/sample cues and active runtime loader; listening remains unaccepted"
+    },
+    {
+      "capability": "Pause, Replay, leave, callback ownership",
+      "sourceLocation": "Modern host adaptation around source game state",
+      "implementationRoute": "packages/demos/src/alg-l06-p050-state-v1.ts",
+      "status": "maintained-and-unit-tested",
+      "remaining": "Real My Lesson audio cleanup, stale-load/callback browser tests"
+    },
+    {
+      "capability": "Unresolved original calls",
+      "sourceLocation": "Mc_Final; _parent.enableButton; Q6 _parent.showWrongFeed; original root host/gSound",
+      "implementationRoute": "Explicit model unresolved list and reducer source:unresolvedCall effects",
+      "status": "unresolved",
+      "remaining": "Source host binding/original-runtime evidence; no fabricated final clip"
+    }
+  ],
+  "tests": {
+    "path": "packages/demos/src/alg-l06-p050-state-v1.test.ts",
+    "bytes": 13315,
+    "sha256": "3f0ba0d3c822a296cd4a93441cbe52fa100ccb65377134a4328417dddd51dfe7"
+  },
+  "testResult": {
+    "path": "migrations/shared-alg001-l06-p050/audit-v1/state-tests-v1.txt",
+    "bytes": 1206,
+    "sha256": "2fb3175c6b12ee63a83c70fe0bd690ab646ddb15f34bc0eb529755c6cf1ceb3b"
+  },
+  "automaticCandidateFamilyApproved": false,
+  "scaleOutAuthorized": false,
+  "registeredCurrentJs": false,
+  "originalRuntimeAccepted": false,
+  "listeningAccepted": false
+}

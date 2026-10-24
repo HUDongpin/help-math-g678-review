@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p008-public-tool-versions-v1",
+  "sourceSwfSha256": "6ea847e4682f9581cd72ee4a2fd8a177c9584cbf7a53ab8a2421e1ee0f012350",
+  "swfmill": {
+    "command": [
+      "swfmill",
+      "--version"
+    ],
+    "version": "swfmill 0.3.6",
+    "channel": "stderr"
+  },
+  "ffdec": {
+    "version": "JPEXS Free Flash Decompiler v.26.2.1",
+    "source": "ffdec -help first line"
+  },
+  "sourceAudit": {
+    "path": "migrations/shared-alg001-l06-p008/audit/source-v1/source-audit-v1.json",
+    "bytes": 7960,
+    "sha256": "e14303e47454761f2fc17b77b7eb6afc714354d50cfbd1bd151264a516db6de2"
+  }
+}

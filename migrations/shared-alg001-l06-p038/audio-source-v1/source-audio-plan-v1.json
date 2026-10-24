@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "kind": "p038-source-direct-audio-preparation-v1",
+  "status": "technical-source-bytes-only",
+  "animationId": "shared-alg001-l06-p038",
+  "physicalSwf": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/IN/L6IN10.swf",
+    "bytes": 125928,
+    "sha256": "bbd60a3b673fc54b3ea44a20943db33ea556532ddc14789a71aed4dadfe1e9de"
+  },
+  "physicalLessonXml": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/index.xml",
+    "bytes": 13926,
+    "sha256": "9f3753a17e5e271d7bc63a1bdf8cd5237f19770bae3f5c7364cabcb62c84ce2c"
+  },
+  "priorSourceFacts": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/output/alg-l06-p038-source-triage-20261001-v1/source-facts-v1.json",
+    "bytes": 155064,
+    "sha256": "e6df1089aaa9274d1eb3b9771d39e5e3d8cf54c6761050eff0acc00fa9a3f04e"
+  },
+  "priorSwfmillXml": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/output/alg-l06-p038-source-triage-20261001-v1/swfmill.xml",
+    "bytes": 606070,
+    "sha256": "95329a959d3fbe70f4b227ea057618a3dfa4fe7591b49f03eb833a8d1af3fd14"
+  },
+  "uncompressedFws": {
+    "bytes": 178349,
+    "sha256": "20b25c416d4ebe925e41f53a0a53fc0013b898ed293a73aaffb49049e446f3d8",
+    "representation": "decompressed-byte-image"
+  },
+  "frameDomain": "sprite-67",
+  "sourceVisualFrames": 409,
+  "fps": 12,
+  "streamHeader": {
+    "tagCode": 18,
+    "tagOffsetInUncompressedFws": 10990,
+    "dataOffsetInUncompressedFws": 10992,
+    "rawBytes": 6,
+    "rawSha256": "4c4351ff3b18bbe65b55c8122865fd3f463de09ca08da56bce17530ee89a9b4c",
+    "compression": "mp3",
+    "sampleRate": 22050,
+    "channels": 1,
+    "nominalSamplesPerFrame": 1837,
+    "latencySeekSamples": 1673
+  },
+  "blockCount": 374,
+  "blockRanges": [
+    [
+      36,
+      409
+    ]
+  ],
+  "absentBlockRanges": [
+    [
+      1,
+      35
+    ]
+  ],
+  "zeroSampleBlockFrames": [
+    37
+  ],
+  "declaredSampleCount": 686592,
+  "main": {
+    "asset": {
+      "path": "main-source-v1.mp3",
+      "bytes": 154960,
+      "sha256": "524ae7aa2cc1cb5f85bfe076b785a92c4d29470afdc813e577d93335408ff6fa"
+    },
+    "schedule": {
+      "path": "main-frame-block-schedule-v1.json",
+      "bytes": 264012,
+      "sha256": "d2c15d0c1e5c701e87e0066a12842878fb9c361e6fcb9de52d11b64b67265d5b"
+    },
+    "continuousCompressedPayload": true,
+    "insertedBytes": 0,
+    "browserPcmBinding": null,
+    "nativeEofObserved": false
+  },
+  "separateSA": {
+    "physicalSource": {
+      "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/SA/L6IN10.mp3",
+      "bytes": 152544,
+      "sha256": "86aad21a9e9dc50791bdec2ee243dcdbff05302b2f75c23564c3305ef3650fea"
+    },
+    "asset": {
+      "path": "separate-sa-source-v1.mp3",
+      "bytes": 152544,
+      "sha256": "86aad21a9e9dc50791bdec2ee243dcdbff05302b2f75c23564c3305ef3650fea"
+    },
+    "binding": "optional-explicit-user-trigger-only",
+    "localeAutoplay": false,
+    "joinedWithMain": false,
+    "languageAndOriginalTriggerVerified": false
+  },
+  "claimBoundary": {
+    "noBlockMeansAudibleSilence": null,
+    "noBlockMeansPlaybackPause": null,
+    "seekSamplesAppliedToPcm": false,
+    "sourceToBrowserAlignmentAccepted": false,
+    "browserDecodeObserved": false,
+    "originalRuntimeObserved": false,
+    "listeningAccepted": false,
+    "productRegistration": false,
+    "acceptanceEffect": "none"
+  }
+}

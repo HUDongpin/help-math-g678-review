@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p013-input-output-glossary-crosswalk-v1",
+  "scope": "static-source-and-existing-formal-descriptor-only",
+  "animationId": "shared-alg001-l06-p013",
+  "status": "source-crosswalk-only; no P013 renderer, registration, runtime or acceptance",
+  "inputs": {
+    "p013Source": {
+      "path": "migrations/shared-alg001-l06-p013/audit/source-v1/source-audit-v1.json",
+      "bytes": 12299,
+      "sha256": "ec5707528c5ebc3f0992aec542c6eace1a3eebaa8256cc3d5aebfc7f037078af"
+    },
+    "p013Host": {
+      "path": "migrations/shared-alg001-l06-p013/audit/source-v1/host-glossary-disposition-v1.json",
+      "bytes": 2848,
+      "sha256": "b7fe4460532e53fa9e2302056d99b9afc0ec49107fede9b09f9794f0c2c23d43"
+    },
+    "p013Scripts": {
+      "path": "migrations/shared-alg001-l06-p013/audit/source-v1/public-tool-scripts-v1.json",
+      "bytes": 816,
+      "sha256": "e9dc01a4017ba546017a1bbe7efeb61949cc2ecf707d2318a3dd9fc14baa6602"
+    },
+    "p013Composition": {
+      "path": "migrations/shared-alg001-l06-p013/audit/source-v1/source-composition-v1.json",
+      "bytes": 10877,
+      "sha256": "9882183b44543dfbd2615e15cd204f91e1e5e7928b3e99e0a15b298baa17b637"
+    },
+    "p013Swf": {
+      "path": "G6-G8-shared/ALG001/L6/VB/L6VB04.swf",
+      "bytes": 269912,
+      "sha256": "1be47750557385ef91c648fb87fdcde642d342caadc35da7a1f7a2d1fdb11d35"
+    },
+    "lessonXml": {
+      "path": "G6-G8-shared/ALG001/L6/index.xml",
+      "bytes": 13926,
+      "sha256": "9f3753a17e5e271d7bc63a1bdf8cd5237f19770bae3f5c7364cabcb62c84ce2c"
+    },
+    "oldHostSwf": {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p009-host-source-v1/source.swf",
+      "bytes": 689006,
+      "sha256": "275499325edb24daed95952b207d2dd4ed83056ebac54cd0bc911673058086c9"
+    },
+    "oldHostFunctionScript": {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p009-host-source-v1/scripts/scripts/frame_35/DoAction.as",
+      "bytes": 104008,
+      "sha256": "380cd6581859d0ba9814833f1102b08282198713cf30b5230ce2da76c3e27a74"
+    },
+    "oldHostFrameObserver": {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p009-host-source-v1/scripts/scripts/frame_50/PlaceObject2_743_130/CLIPACTIONRECORD onClipEvent(enterFrame).as",
+      "bytes": 61,
+      "sha256": "0f74c16ab4c673bd21f5d82f4c7bd77f2c003198d8870bda7764b3cd7699c035"
+    },
+    "p004Glossary": {
+      "path": "migrations/shared-alg001-l06-p004/audit/source-glossary-v1.json",
+      "bytes": 15869,
+      "sha256": "0cb0789f117db00855a5be1c1123121cdd64b7eba03b2f64ddce3d7f81f999e0"
+    },
+    "dictionaryBanks": {
+      "en": {
+        "path": "/Volumes/WestWorld/HELP MATH Related Files/HELP_OnlineKeyTerms_XML/MI/L1KTE01.xml",
+        "bytes": 345838,
+        "sha256": "14d454f4c1c1a6f0939fb80b454fd3e22890eabb4a730c6bfa7efa1d9a2e5e5b"
+      },
+      "es": {
+        "path": "/Volumes/WestWorld/HELP MATH Related Files/HELP_OnlineKeyTerms_XML/MI/L1KTS01.xml",
+        "bytes": 344456,
+        "sha256": "3b437b42e75536fa8b4f110325e366c27fbe10a871439d4797650cda4238b407"
+      }
+    },
+    "formalDescriptorCode": [
+      {
+        "path": "apps/web/lib/alg-l06-p004-descriptor-extension-v1.ts",
+        "bytes": 13639,
+        "sha256": "c0c5035de2907bdb1a96f7dcf0c5cd4ff01fdbf8e225392938fab564119a7bcc"
+      },
+      {
+        "path": "apps/web/lib/alg-l06-p004-formal-admission-v1.server.ts",
+        "bytes": 2221,
+        "sha256": "0e3f0d12a4dbeef958a8c4fc737a7ad2df17aa2d8a216dbb941983f590c00e10"
+      },
+      {
+        "path": "apps/web/lib/alg-l06-p008-descriptor-extension-v1.ts",
+        "bytes": 11183,
+        "sha256": "14fc5290116998b85572c4cf767b5b2b45c37ff5e7d8fb0c309ba285672c70dc"
+      },
+      {
+        "path": "apps/web/lib/alg-l06-p008-formal-admission-v1.server.ts",
+        "bytes": 2881,
+        "sha256": "c024a401b00a5a9c9e61ab0303413da5f1e25525c3d460e43b6a645b60f83c2d"
+      }
+    ]
+  },
+  "sourcePlacement": {
+    "globalOrdinal": 13,
+    "section": "VB",
+    "sectionPageOrdinal": 3,
+    "sourceReference": "VB/L6VB04.swf",
+    "mainFrameDomain": "sprite-140",
+    "mainFrameCount": 372
+  },
+  "sourceButtons": [
+    {
+      "characterId": 131,
+      "sourceKeyAttribute": "Input",
+      "firstFrame": 258,
+      "depth": 8,
+      "actionSha256": "2f92a394bed054aeca4ae6ed57b238a04f5b3aa261270c980d5f00a82c8f19a5",
+      "sourceEffects": [
+        "set _global.KeyAttribute",
+        "call _root.DoHyperLinks",
+        "stop _root.animation_mc.animation"
+      ],
+      "decompiledAction": "on(release){\n   _global.KeyAttribute = \"Input\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}",
+      "buttonWindow": {
+        "fromFrame": 258,
+        "lastFrameExclusive": 373
+      }
+    },
+    {
+      "characterId": 137,
+      "sourceKeyAttribute": "Output",
+      "firstFrame": 297,
+      "depth": 14,
+      "actionSha256": "1262eac21bf8a718d551c8d7b046220855f8f878214783cfdfb7d0c37f5ff5c7",
+      "sourceEffects": [
+        "set _global.KeyAttribute",
+        "call _root.DoHyperLinks",
+        "stop _root.animation_mc.animation"
+      ],
+      "decompiledAction": "on(release){\n   _global.KeyAttribute = \"Output\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}",
+      "buttonWindow": {
+        "fromFrame": 297,
+        "lastFrameExclusive": 373
+      }
+    }
+  ],
+  "oldHostStaticPath": {
+    "keyTermsOffSkipsDoHyperLinks": true,
+    "enabledBranchPauses": true,
+    "appendsKeySuffix": "~English",
+    "calls": "m_c.doGetSubLink",
+    "actualLaunchObserved": false
+  },
+  "dictionaryReference": {
+    "en": "HELP_KEYTERMS/KT/XML/L1KTE01.xml",
+    "es": "HELP_KEYTERMS/KT/XML/L1KTS01.xml"
+  },
+  "terms": [
+    {
+      "buttonId": 131,
+      "sourceKeyAttribute": "Input",
+      "canonicalDictionaryKey": "Input",
+      "entryId": "input",
+      "labels": {
+        "en": "Input",
+        "es": "Entrada"
+      },
+      "definitions": {
+        "en": "In mathematics, input refers to putting data into something.",
+        "es": "En matemáticas, entrada (ingreso) se refiere al acto de poner datos en en algo."
+      },
+      "source": {
+        "en": {
+          "assetId": "G678L1KTE01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTE01.xml",
+          "sha256": "14d454f4c1c1a6f0939fb80b454fd3e22890eabb4a730c6bfa7efa1d9a2e5e5b"
+        },
+        "es": {
+          "assetId": "G678L1KTS01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTS01.xml",
+          "sha256": "3b437b42e75536fa8b4f110325e366c27fbe10a871439d4797650cda4238b407"
+        }
+      },
+      "sourceEntrySha256": {
+        "en": "a2102c8ba96055a47476940db14fb3cf8d8d3749e6e4b5929ecad1a592682aa4",
+        "es": "45f23c8f3f7c3d9167378c0463666dc1692ce9f847888e4fe36590bfc8fdb603"
+      },
+      "extractionLfNormalizedEntrySha256": {
+        "en": "a2102c8ba96055a47476940db14fb3cf8d8d3749e6e4b5929ecad1a592682aa4",
+        "es": "45f23c8f3f7c3d9167378c0463666dc1692ce9f847888e4fe36590bfc8fdb603"
+      },
+      "formalP004AndP008Equal": true
+    },
+    {
+      "buttonId": 137,
+      "sourceKeyAttribute": "Output",
+      "canonicalDictionaryKey": "Output",
+      "entryId": "output",
+      "labels": {
+        "en": "Output",
+        "es": "Salida"
+      },
+      "definitions": {
+        "en": "In mathematics, output refers to the result of the action of input, putting data in.",
+        "es": "En matemáticas, salida se refiere al acto obtener datos como resultado de ejecutar ciertas operaciones en una función."
+      },
+      "source": {
+        "en": {
+          "assetId": "G678L1KTE01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTE01.xml",
+          "sha256": "14d454f4c1c1a6f0939fb80b454fd3e22890eabb4a730c6bfa7efa1d9a2e5e5b"
+        },
+        "es": {
+          "assetId": "G678L1KTS01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTS01.xml",
+          "sha256": "3b437b42e75536fa8b4f110325e366c27fbe10a871439d4797650cda4238b407"
+        }
+      },
+      "sourceEntrySha256": {
+        "en": "8f7858771155ed23e2b4f3b59818fc27ae1fc9af16220c74e328b7c11ef17810",
+        "es": "b974656b89708199a3eea9da9b4dcc2f5095ec28a67a558fee2ada1812de93d9"
+      },
+      "extractionLfNormalizedEntrySha256": {
+        "en": "8f7858771155ed23e2b4f3b59818fc27ae1fc9af16220c74e328b7c11ef17810",
+        "es": "b974656b89708199a3eea9da9b4dcc2f5095ec28a67a558fee2ada1812de93d9"
+      },
+      "formalP004AndP008Equal": true
+    }
+  ],
+  "reusable": {
+    "exactInputAndOutputTermIdsAlreadyInP004AndP008": true,
+    "bilingualLabelsDefinitionsAndRawEntryHashesMatchSource": true,
+    "newDefinitionOrConceptAliasRequired": false
+  },
+  "gaps": [
+    "P013 old-host launch, selected key-term setting and lookup result unobserved",
+    "P013 glossary close/continue, Replay, keyboard and mobile lifecycle unobserved",
+    "P013 maintained renderer, My Lesson adapter and Current-JS registration absent",
+    "No runtime evidence that Spanish UI selects a Spanish old-host definition",
+    "P004 lowercase output has an explicit alias; P013 emits uppercase Output and does not use it"
+  ],
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "fidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "published": false
+  }
+}

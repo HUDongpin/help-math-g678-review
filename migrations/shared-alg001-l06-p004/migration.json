@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l06-p004",
+  "animationId": "shared-alg001-l06-p004",
+  "assetId": "swf-514867e794dbc86059a452c5f1091cabfabf73e6f7918d0d28d9cf7ee604573e",
+  "status": "audited",
+  "created": "2026-09-28",
+  "confidence": "medium",
+  "classification": {
+    "collection": "course",
+    "grade": "G6-G8-shared",
+    "lesson": 6,
+    "section": "RW",
+    "page": 3,
+    "domain": "algebra-functions",
+    "knowledgePoint": {
+      "en": "Input-output relations and functions",
+      "es": ""
+    },
+    "titleRaw": "Page 3",
+    "titleDisplay": "Understanding Functions: Real World Activity",
+    "status": "confirmed-source-placement",
+    "evidence": [
+      "catalog/g678-shared-catalog.v1.json",
+      "G6-G8-shared/ALG001/L6/index.xml (SHA-256 9f3753a17e5e271d7bc63a1bdf8cd5237f19770bae3f5c7364cabcb62c84ce2c)",
+      "migrations/shared-alg001-l06-p004/audit/source-audit-v1.json",
+      "migrations/shared-alg001-l06-p004/audit/source-text-v1.json"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/RW/L6RW04.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/RW/L6RW04.swf",
+    "flaSha256": "",
+    "swfSha256": "514867e794dbc86059a452c5f1091cabfabf73e6f7918d0d28d9cf7ee604573e",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 1236826,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#b8d8f7",
+    "actionScriptVersion": "AVM1/AS1-2",
+    "complexity": "behavior-heavy",
+    "fonts": [
+      "5 DefineFont2 records and 5 DefineFontName records; names/glyph records in audit/source-text-v1.json; appearance and modern font mapping pending"
+    ],
+    "scripts": [
+      "root frame 1: _level0.InternalPreloader.gotoAndPlay(\"jump_check\"); stop()",
+      "root frame 6 label begin: stop(); place sprite-95 at depth 1 and sprite-98 at depth 121",
+      "sprite-95 frame 831: stop()",
+      "8 DefineButton2 release handlers, 9 display-list occurrences: set authored KeyAttribute, call _root.DoHyperLinks(), then stop _root.animation_mc.animation"
+    ],
+    "externalDependencies": [
+      "Root preloader is legacy host-owned; exact historical launch and jump_check reachability unobserved",
+      "DoHyperLinks is host-owned; conditional static function examined in audit/source-glossary-v1.json, original page/host execution unobserved",
+      "L1 English/Spanish keyterm dictionaries are conditional modern content sources, not proof of original host binding",
+      "Separate SA/L6RW04.mp3 is conditional on host Spanish controls; see audit/sa-host-disposition-v1.json"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      "Source-text structural catalog has button hit shapes and display-list depth changes; clip-mask semantics require visual/runtime validation"
+    ],
+    "morphs": [
+      "3 DefineMorphShape source tags (see audit/source-text-v1.json); animated appearance not accepted"
+    ],
+    "filters": [],
+    "networkCalls": [
+      "No page-level network tag found in static SWF parser; legacy host preloader/glossary/SA dependencies remain conditional"
+    ]
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "default",
+      "kind": "linear",
+      "description": "Static source timeline traversal for root and both nested domains; natural original runtime unverified",
+      "reachable": true
+    },
+    {
+      "id": "glossary-click",
+      "kind": "interactive",
+      "description": "Nine button occurrences, eight source buttons and seven authored keys; host popup/resume effects unverified",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "und"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "embedded-continuous-source",
+        "language": "und",
+        "source": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l06-p004/audit/continuous-source-v1.mp3",
+        "sha256": "e8f5307618bd63789f468c7a056cf80ae7828f17b665a24893fafc3ad8bb7f7e",
+        "frameDomainId": "sprite-95",
+        "startFrame": 1,
+        "notes": "796 source blocks and initial seek 1673 samples; Chrome native 22050 Hz mono decode 1457856 samples with two equal repeats, no playback; source-aligned audio end 66.040045 s before sprite frame831 at 69.166667 s, postroll needed in a modern schedule; original sync/listening unverified"
+      },
+      {
+        "id": "separate-sa-conditional",
+        "language": "und",
+        "source": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/SA/L6RW04.mp3",
+        "sha256": "08bb62e9c1d92235c2e3fb96c44d44fc16b92ca7d175274e4c809f06bcfda8a5",
+        "frameDomainId": "sprite-95",
+        "startFrame": 1,
+        "notes": "Separate SA source is conditionally derivable by identified host algorithm; Chrome native 48000 Hz mono decode 2290176 samples with two equal repeats, no playback; earlier FFmpeg 22050 Hz output was resampled; page launch/Spanish enabled/actual spoken language/timing unverified"
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "not-used",
+    "browser": "not-used-for-specification",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "not-used-swf-only"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 800,
+      "height": 600,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "source-locked safe Canvas sprite-95 plus maintained native interaction, continuous audio and separate optional SA; unregistered local candidate",
+    "route": "/en/migration-status/g678-calibration/shared-alg001-l06-p004/candidate-v1",
+    "routeFile": "apps/web/app/[locale]/migration-status/g678-calibration/shared-alg001-l06-p004/candidate-v1/page.tsx",
+    "component": "apps/web/components/g678-alg-l06-p004-runtime-v1.tsx",
+    "registryModule": "",
+    "timelineModule": "packages/demos/src/alg-l06-p004-glossary-state-v1.ts",
+    "testFile": "packages/demos/src/alg-l06-p004-glossary-state-v1.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-95",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-95",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-95",
+        "parentFrameDomainId": "root",
+        "frameCount": 831,
+        "scenarioIds": [
+          "default",
+          "glossary-click"
+        ]
+      },
+      {
+        "id": "sprite-98",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-98",
+        "parentFrameDomainId": "root",
+        "frameCount": 1,
+        "scenarioIds": [
+          "default"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

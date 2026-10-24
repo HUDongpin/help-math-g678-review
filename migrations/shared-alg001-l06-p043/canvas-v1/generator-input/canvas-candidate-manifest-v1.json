@@ -1,0 +1,114 @@
+{
+  "kind": "p043-output-only-safe-canvas-candidate-v1",
+  "status": "unregistered-engineering-drawing-draft",
+  "animationId": "shared-alg001-l06-p043",
+  "inputs": [
+    {
+      "key": "swf",
+      "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/TI/L6TI03.swf",
+      "bytes": 855977,
+      "sha256": "8bec405895d09cc8f7dd9f0da197f67726cb45cab6cc8dec3d15b103bc04a97b"
+    },
+    {
+      "key": "index",
+      "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/index.xml",
+      "bytes": 13926,
+      "sha256": "9f3753a17e5e271d7bc63a1bdf8cd5237f19770bae3f5c7364cabcb62c84ce2c"
+    },
+    {
+      "key": "sourcePacket",
+      "path": "output/g678-p043-source-intake-20261002-v1/source-intake-v1.json",
+      "bytes": 6957,
+      "sha256": "1cfc2954ef13aa4bc786f52fb78752369f85f413d3713ee68217453e1749f13e"
+    },
+    {
+      "key": "xml",
+      "path": "output/g678-p043-source-intake-20261002-v1/audit/swfmill.xml",
+      "bytes": 3444522,
+      "sha256": "b4a018ccd7c0b5a9b3ef89a623210a6e3da89c59e69da69c7bd353d4cc8f6597"
+    },
+    {
+      "key": "native",
+      "path": "output/g678-p043-maintained-preparation-20261002-v1/native/native-model-v1.json",
+      "bytes": 1639926,
+      "sha256": "158cc7f897d0d23fd55ca87536fba851080e0c26996d69a43eb9e910ce5dae9c"
+    },
+    {
+      "key": "plan",
+      "path": "output/g678-p043-maintained-preparation-20261002-v1/canvas/canvas-extraction-v1.json",
+      "bytes": 29012,
+      "sha256": "7965b03f90d5c2c659048a24d028633a354400e2e74795393d50bff3f93ce9cf"
+    },
+    {
+      "key": "frames",
+      "path": "output/g678-p043-maintained-preparation-20261002-v1/canvas/source-export/sprites/DefineSprite_342/frames.html",
+      "bytes": 3246516,
+      "sha256": "4a3a09631a4d5dd9464fa7b4fbe684f65f87c7c1ec357228e2f3351d793527ad"
+    },
+    {
+      "key": "rootFrames",
+      "path": "output/g678-p043-maintained-preparation-20261002-v1/canvas/source-export/frames/frames.html",
+      "bytes": 3255183,
+      "sha256": "3870819fe739d5eb7f1894c819dd9296632abbf065cd51d136d732cb8f7307bf"
+    },
+    {
+      "key": "helper",
+      "path": "output/g678-p043-maintained-preparation-20261002-v1/canvas/source-export/sprites/DefineSprite_342/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    {
+      "key": "adapter",
+      "path": "scripts/build-safe-ffdec-canvas-adapter.mjs",
+      "bytes": 115553,
+      "sha256": "1d1dd117dd59a6b7191f2fa8488249ece09bfb1da8837be146677f88a01315dd"
+    },
+    {
+      "key": "mask",
+      "path": "scripts/lib/g678-source-clip-masks-v1.mjs",
+      "bytes": 1604,
+      "sha256": "e064fb7cb98e66f08e5173bdfc756641b6a8ddae86f7e4dab02e90fdb3bbd70e"
+    }
+  ],
+  "sourceFrameCases": 555,
+  "mainFrames": 241,
+  "reachableFeedbackFrames": 60,
+  "feedbackSuppressedUnlessSelected": true,
+  "mask177Normalized": true,
+  "rootTitleIncluded": true,
+  "sourceRootScalePreserved": true,
+  "outputs": [
+    {
+      "path": "output/g678-p043-maintained-preparation-20261002-v1/canvas/canvas-renderer-draft.js",
+      "bytes": 3304138,
+      "sha256": "b310d4a5fb9a7ae6c7822d5d9211d4eb9e5acb33ac9149d225f04dd9c2161c14"
+    },
+    {
+      "path": "output/g678-p043-maintained-preparation-20261002-v1/canvas/adapter-spec-v1.json",
+      "bytes": 3964,
+      "sha256": "ca8951af85ef37ce8e085a1115d9601085822c7e1065ac0ab6339c69d272e1d5"
+    },
+    {
+      "path": "output/g678-p043-maintained-preparation-20261002-v1/canvas/dynamic-text-contract-v1.json",
+      "bytes": 2650,
+      "sha256": "3d8461f90a653662ccda9ff6f3dad48f3dd4aa219c37aacf916052a065841f0a"
+    }
+  ],
+  "unresolved": [
+    "Canvas pixels, JPEG and morph appearance need browser calibration.",
+    "Four EditText fields are intentionally not rendered in Canvas.",
+    "Physical right4 sprite has 386 unclassified bytes after End.",
+    "No AVM1, audio, host selection, button actions or Close effects execute."
+  ],
+  "gates": {
+    "currentJsRegistered": false,
+    "originalRuntimeAccepted": false,
+    "fidelityAccepted": false,
+    "audioAccepted": false,
+    "listeningAccepted": false,
+    "humanAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "publication": false
+  }
+}

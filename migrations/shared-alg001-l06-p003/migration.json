@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l06-p003",
+  "animationId": "shared-alg001-l06-p003",
+  "assetId": "swf-c3d265b61aedccc48e679cbecfe6424a2a78f2a9cb5cfa2a33791fa124933766",
+  "status": "implementing",
+  "created": "2026-09-25",
+  "confidence": "medium",
+  "classification": {
+    "collection": "course",
+    "grade": "G6-G8-shared",
+    "lesson": 6,
+    "section": "RW",
+    "page": 3,
+    "domain": "expressions-equations-number-theory",
+    "knowledgePoint": {
+      "en": "Lemonade revenue equation",
+      "es": ""
+    },
+    "titleRaw": "Page 2",
+    "titleDisplay": "Understanding Functions: Real World Activity",
+    "status": "confirmed",
+    "evidence": [
+      "catalog/g678-shared-catalog.v1.json",
+      "G6-G8-shared/ALG001/L6/index.xml (SHA-256 9f3753a17e5e271d7bc63a1bdf8cd5237f19770bae3f5c7364cabcb62c84ce2c)",
+      "/Volumes/American Dream/hudongpin/g678-p003-audit.11qugt/source-audit.json (SHA-256 26d5e3a113fd0268d678b8831b70deedfa913c84beb017f3c2e1b7f1a71ec35f)"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/RW/L6RW03.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/RW/L6RW03.swf",
+    "flaSha256": "",
+    "swfSha256": "c3d265b61aedccc48e679cbecfe6424a2a78f2a9cb5cfa2a33791fa124933766",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 1522280,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#b8d8f7",
+    "actionScriptVersion": "AS1/2",
+    "complexity": "interactive-understood",
+    "fonts": [
+      "Five source DefineFont2 records and five DefineFontName records; exact glyph/appearance review pending"
+    ],
+    "scripts": [
+      "root frame 1: _level0.InternalPreloader.gotoAndPlay(\"jump_check\"); stop()",
+      "root frame 6: stop() and placement of sprite-154",
+      "sprite-154 frame 719: stop()"
+    ],
+    "externalDependencies": [
+      "Legacy _level0.InternalPreloader host call is not executed by the local My Lesson candidate",
+      "Separate L6RW03 SA MP3 has an unresolved host trigger and is not substituted for the two embedded source runs"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      "DefineShape3 character 1 clips depths 1-94 at source alpha 0.2509804; maintained generator normalizes only its Canvas clip-mask alpha"
+    ],
+    "morphs": [],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "default",
+      "kind": "linear",
+      "description": "Root and page-title structural inventory; authoritative runtime evidence pending",
+      "reachable": true
+    },
+    {
+      "id": "source-static-frame",
+      "kind": "linear",
+      "description": "Source main sprite 154 with two embedded audio runs and terminal stop; exact runtime and audio alignment pending",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "embedded-run-01",
+        "language": "und",
+        "source": "/Volumes/American Dream/hudongpin/g678-p003-audit.11qugt/source-run-01.mp3",
+        "sha256": "f7e602316da5d728766a59bcbb375341beb75e904a43cd8dad051fb7f97efc70",
+        "frameDomainId": "sprite-154",
+        "startFrame": 41,
+        "notes": "Exact source tag run frames 41-501; 844416 decoded samples; original-runtime timing and listening pending"
+      },
+      {
+        "id": "embedded-run-02",
+        "language": "und",
+        "source": "/Volumes/American Dream/hudongpin/g678-p003-audit.11qugt/source-run-02.mp3",
+        "sha256": "582fbcd80677d9f58cf4ba41929dc5b57bf77aae7ef193a2a3f447ab0da459db",
+        "frameDomainId": "sprite-154",
+        "startFrame": 544,
+        "notes": "Exact source tag run frames 544-719 after a 42-frame no-block gap; 323712 decoded samples; original-runtime timing and listening pending"
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "not-used",
+    "browser": "HeadlessChrome/153.0.0.0",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "not-used-swf-only"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 800,
+      "height": 600,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "Pinned source Canvas, maintained two-run Web Audio clock and semantic source equation in a local-only My Lesson host probe; unregistered",
+    "route": "/en/migration-status/g678-calibration/shared-alg001-l06-p003",
+    "routeFile": "apps/web/app/[locale]/migration-status/g678-calibration/shared-alg001-l06-p003/page.tsx",
+    "component": "apps/web/components/g678-alg-l06-p003-host-runtime.tsx",
+    "registryModule": "",
+    "timelineModule": "packages/demos/src/alg-l06-p003-source-clock-v1.ts",
+    "testFile": "apps/web/tests/g678-alg-l06-p003-host-probe.server-test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-154",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-154",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-154",
+        "parentFrameDomainId": "root",
+        "frameCount": 719,
+        "scenarioIds": [
+          "source-static-frame"
+        ]
+      },
+      {
+        "id": "sprite-158",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-158",
+        "parentFrameDomainId": "root",
+        "frameCount": 1,
+        "scenarioIds": [
+          "default"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

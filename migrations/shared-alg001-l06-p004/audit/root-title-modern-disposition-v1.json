@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l06-p004",
+  "status": "modern-native-title-disposition-not-original-runtime-acceptance",
+  "sourceSwfSha256": "514867e794dbc86059a452c5f1091cabfabf73e6f7918d0d28d9cf7ee604573e",
+  "source": {
+    "sprite": 98,
+    "frames": 1,
+    "childShape": 97,
+    "rootDepth": 121,
+    "instanceName": "Mc_Page_Title",
+    "translationTwips": [
+      8000,
+      879
+    ],
+    "rootTextCharacter": 96,
+    "rootTextDepth": 120,
+    "rootTextTranslationTwips": [
+      2867,
+      -3700
+    ]
+  },
+  "observedExportText": "Understanding Functions: Real World Activity",
+  "observation": "Root visually inspected isolated FFDec Canvas export screenshot; no original Flash runtime execution. Shape 97 is a vector-outline rendering of the title also present in source text 96.",
+  "modernDisposition": "Keep title as native readable text through p004ReadableText and the real My Lesson companion panel. Do not duplicate outline title inside the main sprite-95 drawing. This is an explicit modern presentation decision, not pixel parity.",
+  "evidence": [
+    {
+      "path": "migrations/shared-alg001-l06-p004/audit/movie-root-verified.xml",
+      "bytes": 2570053,
+      "sha256": "e4c1ac33596cac6b97491c6d74417ddd8edfebb8197b12f680fdaa2cf8e5b187"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p004/audit/ffdec-26.2.1-canvas-v1/sprites/DefineSprite_98/frames.html",
+      "bytes": 23704,
+      "sha256": "2858fae0b17321439da92a7fddc3af51c15ed0f3c387a2755171da712a3aa2c4"
+    },
+    {
+      "path": "output/alg-l06-p004-root-title-review-v1/sprite98.png",
+      "bytes": 8638,
+      "sha256": "9a095df7a98603ecab55312fc0a21fc4fed26c962edcd49fb84d51e4a4c3ca67"
+    },
+    {
+      "path": "packages/demos/src/alg-l06-p004-text.generated.ts",
+      "bytes": 7915,
+      "sha256": "fc5dabb2069214d11e3a4c5e24bbb44bebc5e3e9389eb79dec45ac756fa72958"
+    },
+    {
+      "path": "apps/web/components/g678-alg-l06-p004-runtime-v1.tsx",
+      "bytes": 21636,
+      "sha256": "832a67cd98d1fd43bc82669714566013639e1680da368ffe336d8cdd42e7cc9e"
+    }
+  ],
+  "originalRuntimeEstablished": false,
+  "visualFidelityAccepted": false,
+  "mobileTypographyAccepted": false
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l06-p057/generator-v1/derive-source-model-v1.py", line 100, in <module>
+    assert sys.argv[1:] in [['--write'],['--check']];model,outputs=build()
+                                                                   ~~~~~^^
+  File "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l06-p057/generator-v1/derive-source-model-v1.py", line 92, in build
+    assert len(heads)==1 and heads[0][1]>>4==2
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

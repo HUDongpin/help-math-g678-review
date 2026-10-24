@@ -1,0 +1,17 @@
+# ALG001 L6 P008 source-bound implementation brief
+
+Canonical placement: shared-alg001-l06-p008, global page 8 / RW page 7, G6-G8-shared/ALG001/L6/RW/L6RW07.swf. The CWS v7 shipped source has 2,805,364 bytes and SHA-256 6ea847e4682f9581cd72ee4a2fd8a177c9584cbf7a53ab8a2421e1ee0f012350. No paired FLA is bound. External source bytes remain unchanged.
+
+The native stage is 800×600 at 12 fps. Root has 10 frames; frame 1 calls the historical internal preloader and stops, and frame 6 places sprite-507 then stops. Main has 938 frames and stops at 938. Child sprite-20 and sprite-194 each have 22 frames and separate instance lifetimes. Sprite-20 appears at main frames 1–18, 449–463 and 936–938; sprite-194 at 636–645. Root also places one-frame title sprite-510, offstage text508 and shape511. Main root translation is (369.5,253) pixels. No button definitions are present.
+
+The drawing contains a lemonade/orange-juice stand and cups-sold / money-made table. Static text includes 50 cents per lemonade cup, 75 cents per orange-juice cup, lemonade cups 20 through 110, and associated money values. Definition presence does not establish visibility: placement, clipping, alpha and transitions must determine native text state. The source has 461 shapes, 13 bitmaps and 30 text definitions. Outlined teaching content requires inspection beyond text tags.
+
+Selected implementation lane: compiler-assisted source extraction, the existing safe Canvas adapter for dense moving artwork, then maintained semantic text/table presentation. This is a bounded advanced-manual candidate, not family scale-out. Reuse established frame/audio/host contracts where source semantics match; retain P008 configuration. Video flattening is unsuitable for state/queryability. Never hand-edit generated drawings.
+
+The first embedded MP3 block occurs at main frame 19, with source seek 1673 samples. There are 911 blocks through frame938, including packet gaps and a negative seek. Packet gaps do not establish audible silence or authorize stream restarts. Exact extraction and decoder-specific scheduling belong to audit/audio-v1. The separate SA/L6RW07.mp3 must remain independently user-triggered, cannot autoplay from ES locale, and must not be spliced into the main stream.
+
+Source domain/instance facts belong to audit/source-v1. FFDec26.2.1 drawing exports are in audit/canvas-v1 and reproduced by scripts/export-alg-l06-p008-canvas-v1.mjs. Initial isolated main-domain drawings omit root title/overlay composition; they are diagnostic candidates, not full-page reference frames. Mask geometry and child entry/reentry must be verified before use.
+
+Implementation obligations: source-bound pure main/child states; correct root composition; semantic source text/table with no early result reveal; explicit main/SA audio ownership; complete Replay and navigation cleanup; modern My Lesson integration; EN/ES UI with disclosed English source fallback; responsive/keyboard/reduced-motion checks. Implementation files and concrete evidence will be recorded as produced.
+
+Current acceptance: registration and host integration pending; native text and browser technical validation pending. No authoritative original-runtime baseline, full-frame comparison/RMSE, listening record, human review or Owner signature exists. Strict completion and publication remain false. Extraction and working drawing output do not close these gates.

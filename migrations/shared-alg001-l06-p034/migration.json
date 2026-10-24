@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l06-p034",
+  "animationId": "shared-alg001-l06-p034",
+  "assetId": "swf-32ddbfde743b785610360f38b7030ab2dbd289438f6c4433e6699ce3004a629a",
+  "status": "implementing",
+  "created": "2026-10-01",
+  "confidence": "source-audit-bounded",
+  "classification": {
+    "collection": "g678-shared",
+    "grade": "G6-G8-shared",
+    "lesson": "ALG001/L6",
+    "section": "IN",
+    "page": 34,
+    "domain": "algebra",
+    "knowledgePoint": {
+      "en": "Testing Whether a Graph Represents a Function (Vertical-Line Test)",
+      "es": ""
+    },
+    "titleRaw": "Testing Whether a Graph Represents a Function (Vertical-Line Test)",
+    "titleDisplay": "Testing Whether a Graph Represents a Function (Vertical-Line Test)",
+    "status": "source-reviewed",
+    "evidence": [
+      "../../output/alg-l06-p034-source-planning-20261001-v1/source-plan-v1.json"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/IN/L6IN06.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/IN/L6IN06.swf",
+    "flaSha256": "",
+    "swfSha256": "32ddbfde743b785610360f38b7030ab2dbd289438f6c4433e6699ce3004a629a",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 192159,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 13,
+    "durationMs": 1083.3333333333333,
+    "backgroundColor": "#b8d8f7",
+    "actionScriptVersion": "AVM1",
+    "complexity": "behavior-heavy",
+    "fonts": [],
+    "scripts": [],
+    "externalDependencies": [
+      "_root.DoHyperLinks",
+      "_global.KeyAttribute",
+      "_global.quizSection",
+      "Mc_Graph/Mc_Line startDrag"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      {
+        "objectId": 2,
+        "depth": 1,
+        "clipDepth": 10,
+        "presentSpans": [
+          [
+            1,
+            194
+          ]
+        ]
+      },
+      {
+        "objectId": 10,
+        "depth": 11,
+        "clipDepth": 18,
+        "presentSpans": [
+          [
+            74,
+            194
+          ]
+        ]
+      },
+      {
+        "objectId": 10,
+        "depth": 19,
+        "clipDepth": 21,
+        "presentSpans": [
+          [
+            124,
+            194
+          ]
+        ]
+      },
+      {
+        "objectId": 2,
+        "depth": 31,
+        "clipDepth": 40,
+        "presentSpans": [
+          [
+            195,
+            434
+          ]
+        ]
+      },
+      {
+        "objectId": 10,
+        "depth": 41,
+        "clipDepth": 48,
+        "presentSpans": [
+          [
+            195,
+            434
+          ]
+        ]
+      },
+      {
+        "objectId": 10,
+        "depth": 49,
+        "clipDepth": 51,
+        "presentSpans": [
+          [
+            195,
+            434
+          ]
+        ]
+      },
+      {
+        "objectId": 30,
+        "depth": 52,
+        "clipDepth": 54,
+        "presentSpans": [
+          [
+            228,
+            434
+          ]
+        ]
+      },
+      {
+        "objectId": 30,
+        "depth": 55,
+        "clipDepth": 57,
+        "presentSpans": [
+          [
+            302,
+            434
+          ]
+        ]
+      },
+      {
+        "objectId": 30,
+        "depth": 58,
+        "clipDepth": 60,
+        "presentSpans": [
+          [
+            358,
+            434
+          ]
+        ]
+      }
+    ],
+    "morphs": [],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "default",
+      "kind": "linear",
+      "description": "Source timeline holds at authored frame433; graph drag and audio-gap ownership require explicit maintained state. No inferred completed lesson.",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "en",
+      "es"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "main-1",
+        "language": "en",
+        "source": "audio-source-v1/main-source-v1.mp3",
+        "sha256": "9f75303ceb0bd281d47f92583f1c40aa34b4974695a0c019199682b507131e2d",
+        "frameDomain": "sprite-40",
+        "startFrame": 1,
+        "alignment": "unresolved-negative-seek-and-block-gap"
+      },
+      {
+        "id": "separate-sa",
+        "language": "es",
+        "source": "audio-source-v1/separate-sa-source-v1.mp3",
+        "sha256": "2bebaa57aee0e80591e80cd542dc98f51839593820c9ec16d6a720dbfd9dab30",
+        "trigger": "explicit-user-only",
+        "localeAutoplay": false,
+        "joinedWithMain": false
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "",
+    "ffdec": "unavailable",
+    "swfmill": "unavailable",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "source-generated Canvas and native companion; maintained graph line state; source-gapped audio mapping unresolved",
+    "route": "",
+    "routeFile": "",
+    "component": "packages/demos/src/alg-l06-p034-visual-player-v1.tsx",
+    "registryModule": "",
+    "timelineModule": "packages/demos/src/alg-l06-p034-audio-clock-v1.ts",
+    "testFile": "packages/demos/src/alg-l06-p034-visual-player-v1.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-40",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 13,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-40",
+        "kind": "movie-clip",
+        "sourceTimelineId": "sprite-40",
+        "parentFrameDomainId": "root",
+        "frameCount": 434,
+        "scenarioIds": [
+          "default"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

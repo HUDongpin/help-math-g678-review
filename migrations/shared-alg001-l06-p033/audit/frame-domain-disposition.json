@@ -1,0 +1,151 @@
+{
+  "kind": "p033-domain-disposition-v1",
+  "source": {
+    "path": "migrations/shared-alg001-l06-p033/source-v1/L6IN05.swf",
+    "bytes": 472620,
+    "sha256": "fb11fd842f3f0948cf5b00bf3b7b63bde86f0af9bf41bb2f9e3a762a1daad071"
+  },
+  "planningDomains": [
+    {
+      "id": "root",
+      "kind": "root",
+      "sourceTimelineId": "root",
+      "parentFrameDomainId": null,
+      "frameCount": 10,
+      "scenarioIds": [
+        "default"
+      ]
+    },
+    {
+      "id": "sprite-2",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-2",
+      "parentFrameDomainId": "root",
+      "frameCount": 1,
+      "scenarioIds": [
+        "default"
+      ]
+    },
+    {
+      "id": "sprite-46",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-46",
+      "parentFrameDomainId": "sprite-190",
+      "frameCount": 31,
+      "scenarioIds": [
+        "default"
+      ]
+    },
+    {
+      "id": "sprite-78",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-78",
+      "parentFrameDomainId": "sprite-190",
+      "frameCount": 25,
+      "scenarioIds": [
+        "default"
+      ]
+    },
+    {
+      "id": "sprite-111",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-111",
+      "parentFrameDomainId": "sprite-190",
+      "frameCount": 27,
+      "scenarioIds": [
+        "default"
+      ]
+    },
+    {
+      "id": "sprite-119",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-119",
+      "parentFrameDomainId": "sprite-190",
+      "frameCount": 27,
+      "scenarioIds": [
+        "default"
+      ]
+    },
+    {
+      "id": "sprite-124",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-124",
+      "parentFrameDomainId": "sprite-147",
+      "frameCount": 1,
+      "scenarioIds": [
+        "default"
+      ]
+    },
+    {
+      "id": "sprite-143",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-143",
+      "parentFrameDomainId": "sprite-147",
+      "frameCount": 1,
+      "scenarioIds": [
+        "default"
+      ]
+    },
+    {
+      "id": "sprite-147",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-147",
+      "parentFrameDomainId": "sprite-190",
+      "frameCount": 31,
+      "scenarioIds": [
+        "default"
+      ]
+    },
+    {
+      "id": "sprite-158",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-158",
+      "parentFrameDomainId": "sprite-161",
+      "frameCount": 1,
+      "scenarioIds": [
+        "default"
+      ]
+    },
+    {
+      "id": "sprite-161",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-161",
+      "parentFrameDomainId": "sprite-190",
+      "frameCount": 29,
+      "scenarioIds": [
+        "default"
+      ]
+    },
+    {
+      "id": "sprite-172",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-172",
+      "parentFrameDomainId": "sprite-175",
+      "frameCount": 1,
+      "scenarioIds": [
+        "default"
+      ]
+    },
+    {
+      "id": "sprite-175",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-175",
+      "parentFrameDomainId": "sprite-190",
+      "frameCount": 28,
+      "scenarioIds": [
+        "default"
+      ]
+    },
+    {
+      "id": "sprite-190",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-190",
+      "parentFrameDomainId": "root",
+      "frameCount": 385,
+      "scenarioIds": [
+        "default"
+      ]
+    }
+  ],
+  "note": "Root reaches main190 and title2; nested domains and placements are source-display-list-v1.json. Each scenario/entry trace still requires runtime capture. No full-frame evidence yet."
+}

@@ -1,0 +1,424 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p013-source-composition-v1",
+  "coordinateUnit": "twips",
+  "pixelDivisor": 20,
+  "stage": {
+    "width": 800,
+    "height": 600,
+    "background": "#b8d8f7"
+  },
+  "root": {
+    "declaredFrames": 10,
+    "events": [
+      {
+        "eventId": "root/tag-28",
+        "frame": 1,
+        "tagName": "DoAction",
+        "sourceTagOffset": 28,
+        "sourceTagSha256": "c8ff5f7fc7f6f67b648b88640988b456140e03dd4e73a88e2d844f7bdad73b5e",
+        "kind": "action-bytes",
+        "bytes": 73,
+        "execution": "not-interpreted"
+      },
+      {
+        "eventId": "root/tag-117",
+        "frame": 6,
+        "tagName": "FrameLabel",
+        "sourceTagOffset": 117,
+        "sourceTagSha256": "1811192ce2718c9d7267f4559e37bc483c98e6345ccbdef9da063be460f94fc1",
+        "kind": "frame-label",
+        "label": {
+          "text": "begin",
+          "decodeStatus": "exact-ascii",
+          "rawSha256": "e6f07d43b5c21db0fbb9a31feac2dc599787763393dd5acbfad80e247eb02ad5",
+          "rawHex": null
+        }
+      },
+      {
+        "eventId": "root/tag-129",
+        "frame": 6,
+        "tagName": "DoAction",
+        "sourceTagOffset": 129,
+        "sourceTagSha256": "20b1d7f6e9dad53de25038aef401548bfe9a12f92d76207a7a3a027b695e15cf",
+        "kind": "action-bytes",
+        "bytes": 2,
+        "execution": "not-interpreted"
+      },
+      {
+        "eventId": "root/tag-2179",
+        "frame": 6,
+        "tagName": "PlaceObject2",
+        "sourceTagOffset": 2179,
+        "sourceTagSha256": "0c4a7d9f410689ac38db64e52680292a370cedc17ed4f806870704543808777b",
+        "kind": "place",
+        "depth": 1,
+        "move": false,
+        "flags": {
+          "hasClipActions": false,
+          "hasClipDepth": false,
+          "hasName": false,
+          "hasRatio": false,
+          "hasColorTransform": false,
+          "hasMatrix": true,
+          "hasCharacter": true,
+          "move": false,
+          "hasOpaqueBackground": false,
+          "hasVisible": false,
+          "hasImage": false,
+          "hasClassName": false,
+          "hasCacheAsBitmap": false,
+          "hasBlendMode": false,
+          "hasFilterList": false
+        },
+        "characterId": 1,
+        "matrix": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "instanceId": "root/depth-1/generation-1"
+      },
+      {
+        "eventId": "root/tag-517107",
+        "frame": 6,
+        "tagName": "PlaceObject2",
+        "sourceTagOffset": 517107,
+        "sourceTagSha256": "f436222ddfc86de98f7cca661b034e29ba6acd9b5a4c9eb46d19460246670716",
+        "kind": "place",
+        "depth": 2,
+        "move": false,
+        "flags": {
+          "hasClipActions": false,
+          "hasClipDepth": false,
+          "hasName": true,
+          "hasRatio": true,
+          "hasColorTransform": false,
+          "hasMatrix": true,
+          "hasCharacter": true,
+          "move": false,
+          "hasOpaqueBackground": false,
+          "hasVisible": false,
+          "hasImage": false,
+          "hasClassName": false,
+          "hasCacheAsBitmap": false,
+          "hasBlendMode": false,
+          "hasFilterList": false
+        },
+        "characterId": 140,
+        "matrix": [
+          1,
+          0,
+          0,
+          1,
+          8248,
+          5666
+        ],
+        "ratio": 5,
+        "name": {
+          "text": "animation",
+          "decodeStatus": "exact-ascii",
+          "rawSha256": "ec23cef03131da4f8bc0caa14b0e4719b614adc7bcc1f82e3c19a3f7577a733e",
+          "rawHex": null
+        },
+        "instanceId": "root/depth-2/generation-1"
+      }
+    ],
+    "instances": [
+      {
+        "instanceId": "root/depth-1/generation-1",
+        "timelineId": "root",
+        "depth": 1,
+        "generation": 1,
+        "characterId": 1,
+        "firstFrame": 6,
+        "lastFrameExclusive": 11,
+        "createdByEventId": "root/tag-2179",
+        "updates": [
+          "root/tag-2179"
+        ]
+      },
+      {
+        "instanceId": "root/depth-2/generation-1",
+        "timelineId": "root",
+        "depth": 2,
+        "generation": 1,
+        "characterId": 140,
+        "firstFrame": 6,
+        "lastFrameExclusive": 11,
+        "createdByEventId": "root/tag-517107",
+        "updates": [
+          "root/tag-517107"
+        ]
+      }
+    ]
+  },
+  "main": {
+    "domainId": "sprite-140",
+    "declaredFrames": 372,
+    "rootEntryFrame": 6,
+    "rootPlacement": {
+      "eventId": "root/tag-517107",
+      "frame": 6,
+      "tagName": "PlaceObject2",
+      "sourceTagOffset": 517107,
+      "sourceTagSha256": "f436222ddfc86de98f7cca661b034e29ba6acd9b5a4c9eb46d19460246670716",
+      "kind": "place",
+      "depth": 2,
+      "move": false,
+      "flags": {
+        "hasClipActions": false,
+        "hasClipDepth": false,
+        "hasName": true,
+        "hasRatio": true,
+        "hasColorTransform": false,
+        "hasMatrix": true,
+        "hasCharacter": true,
+        "move": false,
+        "hasOpaqueBackground": false,
+        "hasVisible": false,
+        "hasImage": false,
+        "hasClassName": false,
+        "hasCacheAsBitmap": false,
+        "hasBlendMode": false,
+        "hasFilterList": false
+      },
+      "characterId": 140,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        8248,
+        5666
+      ],
+      "ratio": 5,
+      "name": {
+        "text": "animation",
+        "decodeStatus": "exact-ascii",
+        "rawSha256": "ec23cef03131da4f8bc0caa14b0e4719b614adc7bcc1f82e3c19a3f7577a733e",
+        "rawHex": null
+      },
+      "instanceId": "root/depth-2/generation-1"
+    },
+    "eventCount": 1021,
+    "instanceCount": 235,
+    "masks": [
+      {
+        "frame": 258,
+        "depth": 5,
+        "clipDepth": 10,
+        "characterId": 127
+      },
+      {
+        "frame": 297,
+        "depth": 11,
+        "clipDepth": 16,
+        "characterId": 127
+      }
+    ],
+    "morphCharacterIds": [
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "buttonInstances": [
+      {
+        "characterId": 131,
+        "key": "Input",
+        "firstFrame": 258,
+        "depth": 8,
+        "actionSha256": "2f92a394bed054aeca4ae6ed57b238a04f5b3aa261270c980d5f00a82c8f19a5",
+        "sourceInstance": {
+          "instanceId": "sprite-140/depth-8/generation-1",
+          "timelineId": "sprite-140",
+          "depth": 8,
+          "generation": 1,
+          "characterId": 131,
+          "firstFrame": 258,
+          "lastFrameExclusive": 373,
+          "createdByEventId": "sprite-140/tag-466789",
+          "updates": [
+            "sprite-140/tag-466789"
+          ]
+        }
+      },
+      {
+        "characterId": 137,
+        "key": "Output",
+        "firstFrame": 297,
+        "depth": 14,
+        "actionSha256": "1262eac21bf8a718d551c8d7b046220855f8f878214783cfdfb7d0c37f5ff5c7",
+        "sourceInstance": {
+          "instanceId": "sprite-140/depth-14/generation-1",
+          "timelineId": "sprite-140",
+          "depth": 14,
+          "generation": 1,
+          "characterId": 137,
+          "firstFrame": 297,
+          "lastFrameExclusive": 373,
+          "createdByEventId": "sprite-140/tag-484041",
+          "updates": [
+            "sprite-140/tag-484041"
+          ]
+        }
+      }
+    ]
+  },
+  "text": [
+    {
+      "characterId": 4,
+      "sourceTagSha256": "df30ae572e45f7adb9177997f33ccf3c283377c88e3473f1e6f2272fd3824048",
+      "text": "F =     x C+ 32",
+      "placements": [
+        {
+          "firstFrame": 2,
+          "lastFrameExclusive": 373,
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "characterId": 5,
+      "sourceTagSha256": "d4250b539578f99fb4c0fd7be0ee128160af3c565e84cb762e4d541cdbf025ab",
+      "text": "95",
+      "placements": [
+        {
+          "firstFrame": 2,
+          "lastFrameExclusive": 373,
+          "depth": 2
+        }
+      ]
+    },
+    {
+      "characterId": 7,
+      "sourceTagSha256": "a6d146cb5afd48d1e9b17306097755dfc8b86eb9afe40ef03aee4a95829a6616",
+      "text": "A = l x w",
+      "placements": [
+        {
+          "firstFrame": 2,
+          "lastFrameExclusive": 373,
+          "depth": 4
+        }
+      ]
+    },
+    {
+      "characterId": 129,
+      "sourceTagSha256": "78def1631327b08abbaa0c7b4739920c1fbee512a1e164540faa450abce049fd",
+      "text": "The number that goes in is called the input.",
+      "placements": [
+        {
+          "firstFrame": 258,
+          "lastFrameExclusive": 373,
+          "depth": 7
+        }
+      ]
+    },
+    {
+      "characterId": 133,
+      "sourceTagSha256": "bedeb838c04b5fb213a09874d761ff69e09cd3260f932300d5ed6ec049a52bb5",
+      "text": "Input",
+      "placements": [
+        {
+          "firstFrame": 288,
+          "lastFrameExclusive": 373,
+          "depth": 67
+        }
+      ]
+    },
+    {
+      "characterId": 135,
+      "sourceTagSha256": "d0c78af0b4947f8a13616965ceffc62083b576d1164a9a31f2635b1e73694c58",
+      "text": "input",
+      "placements": [
+        {
+          "firstFrame": 296,
+          "lastFrameExclusive": 297,
+          "depth": 69
+        },
+        {
+          "firstFrame": 298,
+          "lastFrameExclusive": 299,
+          "depth": 69
+        },
+        {
+          "firstFrame": 300,
+          "lastFrameExclusive": 301,
+          "depth": 69
+        }
+      ]
+    },
+    {
+      "characterId": 136,
+      "sourceTagSha256": "3a0332fb642b4fbbadb4802c8dfe04d77286de64c7ac7cbfe2e4fa1c83810dce",
+      "text": "The number that comes out is called the output.",
+      "placements": [
+        {
+          "firstFrame": 297,
+          "lastFrameExclusive": 373,
+          "depth": 13
+        }
+      ]
+    },
+    {
+      "characterId": 138,
+      "sourceTagSha256": "306d2fdb0a9fb0d215c58628750f8198f759317b2d9e3aac6300539ec7c199cb",
+      "text": "Output",
+      "placements": [
+        {
+          "firstFrame": 360,
+          "lastFrameExclusive": 373,
+          "depth": 69
+        }
+      ]
+    },
+    {
+      "characterId": 139,
+      "sourceTagSha256": "c5f57346b11149393f2072a4ef162a54690dcc33ec86d9225a5a51862f2aabbc",
+      "text": "output",
+      "placements": [
+        {
+          "firstFrame": 365,
+          "lastFrameExclusive": 366,
+          "depth": 71
+        },
+        {
+          "firstFrame": 367,
+          "lastFrameExclusive": 368,
+          "depth": 71
+        },
+        {
+          "firstFrame": 369,
+          "lastFrameExclusive": 370,
+          "depth": 71
+        }
+      ]
+    }
+  ],
+  "tagCounts": {
+    "End": 2,
+    "ShowFrame": 382,
+    "DefineShape": 7,
+    "SetBackgroundColor": 1,
+    "DefineText": 9,
+    "DoAction": 2,
+    "SoundStreamHead": 1,
+    "SoundStreamBlock": 368,
+    "DefineBitsJPEG2": 1,
+    "DefineShape2": 6,
+    "Tag24": 1,
+    "PlaceObject2": 882,
+    "RemoveObject2": 141,
+    "DefineShape3": 106,
+    "DefineButton2": 2,
+    "DefineSprite": 1,
+    "FrameLabel": 1,
+    "DefineMorphShape": 5,
+    "DefineFont2": 3
+  }
+}

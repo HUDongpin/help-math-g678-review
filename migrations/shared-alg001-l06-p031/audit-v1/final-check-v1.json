@@ -1,0 +1,116 @@
+{
+  "kind": "p031-candidate-final-check-v1",
+  "checkedAt": "2026-10-02T20:45:21.282114+00:00",
+  "passed": true,
+  "rows": [
+    {
+      "command": [
+        "python3",
+        "migrations/shared-alg001-l06-p031/audit-v1/derive-source-audit-v1.py",
+        "--check"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l06-p031/audit-v1/final-check-1-v1.txt",
+      "sha256": "e2d5479882b1a0a8fd405fcf7536b4b4e8febb075ad5610a8a8cf556dd9c50d5"
+    },
+    {
+      "command": [
+        "python3",
+        "migrations/shared-alg001-l06-p031/generator-v1/derive-source-model-v1.py",
+        "--check"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l06-p031/audit-v1/final-check-2-v1.txt",
+      "sha256": "3d43a42aee799b65e264665601043b7fd2ac41d26b63e8d03f81ea06d4ec216a"
+    },
+    {
+      "command": [
+        "node",
+        "migrations/shared-alg001-l06-p031/generator-v1/derive-canvas-v1.mjs",
+        "--check"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l06-p031/audit-v1/final-check-3-v1.txt",
+      "sha256": "f0fbe4760c0fedc412081364a79027f01baf21736cf2dcf72e1b3f692c68614f"
+    },
+    {
+      "command": [
+        "node",
+        "migrations/shared-alg001-l06-p031/generator-v1/derive-glossary-v1.mjs",
+        "--check"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l06-p031/audit-v1/final-check-4-v1.txt",
+      "sha256": "a058508c4ff944bad8d337699987c29291abd4f0fc6f179b79c42cbfbdd3c6b9"
+    },
+    {
+      "command": [
+        "node",
+        "migrations/shared-alg001-l06-p031/generator-v1/derive-measured-bindings-v1.mjs",
+        "--check"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l06-p031/audit-v1/final-check-5-v1.txt",
+      "sha256": "a069c4ffa6a518ad238403d5321cb55ec980d74cff4c7a9382bc9f6573599e2b"
+    },
+    {
+      "command": [
+        "node",
+        "--import",
+        "tsx",
+        "--test",
+        "packages/demos/src/alg-l06-p031-source-v1.test.ts"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l06-p031/audit-v1/final-check-6-v1.txt",
+      "sha256": "c756e64f4c67393aa916af5dbe13f1cc79e1dea84e514870a059548633d36c27"
+    },
+    {
+      "command": [
+        "node",
+        "--max-old-space-size=4096",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--skipLibCheck",
+        "--module",
+        "esnext",
+        "--moduleResolution",
+        "bundler",
+        "--jsx",
+        "react-jsx",
+        "--target",
+        "es2022",
+        "--resolveJsonModule",
+        "--esModuleInterop",
+        "--strict",
+        "--types",
+        "node",
+        "packages/demos/src/alg-l06-p031-audio-player-v1.tsx",
+        "packages/demos/src/alg-l06-p031-source-v1.test.ts",
+        "migrations/shared-alg001-l06-p031/audit-v1/player-harness-v1.tsx"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l06-p031/audit-v1/final-check-7-v1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "node",
+        "skills/flash-to-js/scripts/validate_migration.mjs",
+        "migrations/shared-alg001-l06-p031",
+        "--allow-draft",
+        "--json"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l06-p031/audit-v1/final-check-8-v1.txt",
+      "sha256": "404c1af8a316b85fd51fdd6046cc68abe0e28dd0bf637342690594d387d3270f"
+    }
+  ],
+  "registered": false,
+  "actualMyLesson": false,
+  "broaderSharedAudioRegression": {
+    "tests": 35,
+    "observedPassed": true,
+    "scope": "continuous-source-stream-clock-candidate and decoded-source-stream-transport tests, earlier actual command this unit; source files unchanged"
+  }
+}

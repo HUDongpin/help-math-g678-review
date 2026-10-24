@@ -1,0 +1,34 @@
+{
+  "kind": "p057-source-adpcm-right4-technical-decode-v1",
+  "sourceModelSha256": "82d884431bcdf4d231546fa743e6f7696028422aa0ea5c3f183119e34528fdbf",
+  "sourceSwfSha256": "03782ef6ed4587d61db4476648d0d69b5ad158f84b2f6a0ba747605a6712fb31",
+  "source": {
+    "path": "migrations/shared-alg001-l06-p057/assets/source-stream-105.swf-adpcm-blocks.bin",
+    "bytes": 3770,
+    "sha256": "e5c99e029d9df7717bc7755b5f4660841ad3f453d10bb8dbc8010d69b5a653b6",
+    "spriteId": 105,
+    "blocks": 13,
+    "samplesPerBlock": 459,
+    "sampleRate": 5512
+  },
+  "decoder": {
+    "path": "scripts/lib/swf-adpcm.mjs",
+    "sha256": "bb1f449bb14b726d65b9421e409baf2932b0cebe67d43511ccdf5137e88a01ab"
+  },
+  "output": {
+    "path": "migrations/shared-alg001-l06-p057/assets/source-stream-105.wav",
+    "bytes": 11978,
+    "sha256": "f3e05365073feff502feda8779b3d3a5e3ba4ca6ee213e7a162e1ad5b3961eb8",
+    "samples": 5967,
+    "channels": 1,
+    "sampleRate": 5512
+  },
+  "entry": {
+    "firstBlockFrame": 1,
+    "basis": "Source105 ADPCM blocks1..13 each own459 samples. Maintained selected entry requires the separately reviewed source/host projection.",
+    "browserDecodedCuePending": true,
+    "selectedEntryPending": true
+  },
+  "originalRuntimeAccepted": false,
+  "listeningAccepted": false
+}

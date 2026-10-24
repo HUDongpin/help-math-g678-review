@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p014-source-behavior-audit-v1",
+  "status": "source-static-behavior-audit-only",
+  "animationId": "shared-alg001-l06-p014",
+  "source": {
+    "path": "G6-G8-shared/ALG001/L6/VB/L6VB05.swf",
+    "bytes": 566603,
+    "sha256": "aed0f7755d4f691cefcc28c815acc6b9d083fdfaae88ff385f22d3b32ba07603"
+  },
+  "lessonXml": {
+    "path": "G6-G8-shared/ALG001/L6/index.xml",
+    "bytes": 13926,
+    "sha256": "9f3753a17e5e271d7bc63a1bdf8cd5237f19770bae3f5c7364cabcb62c84ce2c"
+  },
+  "discovery": {
+    "path": "output/alg-l06-p014-discovery-v1/discovery-v1.json",
+    "bytes": 25117,
+    "sha256": "b23e6ba4d79a996dff73b43112f4caf9d67b91d67a9cd4a680ac386c2d4901f8"
+  },
+  "swfmill": {
+    "path": "output/alg-l06-p014-discovery-v1/swfmill.xml",
+    "bytes": 2253076,
+    "sha256": "f11d7ce25eb3701f3ed5ab8d58562c31be468bd7a18e1e5bf34ea09972268f10"
+  },
+  "mainQuizHold": {
+    "domain": "sprite-227",
+    "frame": 120,
+    "effects": [
+      "stop",
+      "quizSection=true",
+      "quizTryCount=0"
+    ]
+  },
+  "optionInstances": [
+    {
+      "instance": "AnsBtn1",
+      "characterId": 214,
+      "depth": 135,
+      "handler": "wrong"
+    },
+    {
+      "instance": "AnsBtn2",
+      "characterId": 213,
+      "depth": 133,
+      "handler": "right"
+    },
+    {
+      "instance": "AnsBtn3",
+      "characterId": 214,
+      "depth": 139,
+      "handler": "wrong"
+    },
+    {
+      "instance": "AnsBtn4",
+      "characterId": 214,
+      "depth": 137,
+      "handler": "wrong"
+    }
+  ],
+  "answerHandlers": {
+    "correct": {
+      "buttonCharacterId": 213,
+      "sourceInstance": "AnsBtn2",
+      "effects": [
+        "disableQuizButton",
+        "showRightFeed"
+      ]
+    },
+    "wrong": {
+      "buttonCharacterId": 214,
+      "sourceInstances": [
+        "AnsBtn1",
+        "AnsBtn3",
+        "AnsBtn4"
+      ],
+      "feedbackTextCondition": "quizTryCount==1 gets repeat text without Try again; otherwise first text includes Try again",
+      "effects": [
+        "set WrongFeed",
+        "disableQuizButton",
+        "showWrongFeed"
+      ]
+    }
+  },
+  "feedback": {
+    "right": [
+      {
+        "ordinal": 1,
+        "domain": "sprite-115",
+        "terminalFrame": 25
+      },
+      {
+        "ordinal": 2,
+        "domain": "sprite-156",
+        "terminalFrame": 27
+      },
+      {
+        "ordinal": 3,
+        "domain": "sprite-83",
+        "terminalFrame": 31
+      },
+      {
+        "ordinal": 4,
+        "domain": "sprite-148",
+        "terminalFrame": 27
+      }
+    ],
+    "wrong": [
+      {
+        "ordinal": 1,
+        "domain": "sprite-173",
+        "holdFrame": 22,
+        "resumeFrame": 23,
+        "ackButtonCharacterId": 167,
+        "terminalFrame": 31
+      },
+      {
+        "ordinal": 2,
+        "domain": "sprite-187",
+        "holdFrame": 23,
+        "resumeFrame": 24,
+        "ackButtonCharacterId": 182,
+        "terminalFrame": 29
+      },
+      {
+        "ordinal": 3,
+        "domain": "sprite-28",
+        "holdFrame": 20,
+        "resumeFrame": 21,
+        "ackButtonCharacterId": 21,
+        "terminalFrame": 28
+      }
+    ],
+    "tryLimit": 2,
+    "wrongFirstText": "Substitute 25 for the variable C, which is the input for the formula to find the output, F. Try again.",
+    "wrongRepeatText": "Substitute 25 for the variable C, which is the input for the formula to find the output, F.",
+    "rightTerminalEffects": [
+      "stop",
+      "disableQuizButton",
+      "quizSection=false",
+      "self.gotoAndStop(1)",
+      "parent.play"
+    ],
+    "wrongMidpointPolicy": "each wrong feedback stops at its own popup hold frame and requires its nested BtnClose button to gotoAndPlay next frame",
+    "wrongTerminalEffects": [
+      "stop",
+      "enableQuizButton",
+      "self.gotoAndStop(1)",
+      "quizTryCount++",
+      "NMHBtn.enabled=true",
+      "if tries>=2 reset0,quizSection=false,parent.play"
+    ]
+  },
+  "glossaryButtons": [
+    {
+      "characterId": 32,
+      "key": "Input",
+      "sourceEffects": [
+        "set KeyAttribute",
+        "DoHyperLinks",
+        "main.stop"
+      ]
+    },
+    {
+      "characterId": 33,
+      "key": "Output",
+      "sourceEffects": [
+        "set KeyAttribute",
+        "DoHyperLinks",
+        "main.stop"
+      ]
+    }
+  ],
+  "oldHost": {
+    "source": {
+      "path": "source.swf",
+      "bytes": 689006,
+      "sha256": "275499325edb24daed95952b207d2dd4ed83056ebac54cd0bc911673058086c9"
+    },
+    "extraction": {
+      "path": "extraction.json",
+      "bytes": 19619,
+      "sha256": "4f4daa77ce7a369b6635a28a3c1f0411d12c57358905a9b8c016510d9cbc7e0c"
+    },
+    "script": {
+      "path": "scripts/scripts/frame_35/DoAction.as",
+      "bytes": 104008,
+      "sha256": "380cd6581859d0ba9814833f1102b08282198713cf30b5230ce2da76c3e27a74"
+    },
+    "logicalSourcePath": "NewHelpProgram/HELP_COURSES/indexMI.swf",
+    "apis": {
+      "showRightFeed": {
+        "selector": "random(4)+1",
+        "targets": [
+          "sprite-115",
+          "sprite-156",
+          "sprite-83",
+          "sprite-148"
+        ],
+        "action": "show selected Mc_Right_FeedN at x=5 and gotoAndPlay(2)"
+      },
+      "showWrongFeed": {
+        "selector": "random(3)+1",
+        "targets": [
+          "sprite-173",
+          "sprite-187",
+          "sprite-28"
+        ],
+        "action": "show selected Mc_Wrong_FeedN at x=5 and gotoAndPlay(2)"
+      },
+      "disableQuizButton": {
+        "target": "AnsBtn1..25",
+        "enabled": false,
+        "visible": false,
+        "nmhBtnEnabled": false
+      },
+      "enableQuizButton": {
+        "target": "AnsBtn1..25",
+        "enabled": true,
+        "visible": true,
+        "nmhBtnEnabled": true
+      }
+    },
+    "exactP014LaunchObserved": false,
+    "applicability": "conditional-common-indexMI-source-not-proven-P014-launch"
+  },
+  "actionPins": {
+    "mainHold": {
+      "path": "output/alg-l06-p014-discovery-v1/ffdec-scripts/scripts/DefineSprite_227/frame_120/DoAction.as",
+      "bytes": 65,
+      "sha256": "1c5ee973c2576fdd6e33a3a2cf1acd334b9fddb906b45d7b2e4d0a7874fd546f"
+    },
+    "correct": {
+      "path": "output/alg-l06-p014-discovery-v1/ffdec-scripts/scripts/DefineButton2_213/BUTTONCONDACTION on(release).as",
+      "bytes": 75,
+      "sha256": "91fddc130bddd9456227b9bbd9139c44ebcf7e51db046176f2f810e5e073db02"
+    },
+    "wrong": {
+      "path": "output/alg-l06-p014-discovery-v1/ffdec-scripts/scripts/DefineButton2_214/BUTTONCONDACTION on(release).as",
+      "bytes": 397,
+      "sha256": "8ee989ffcb4d65a60007efe9d59cf6c889538cd1014cee3b764506514337ba3a"
+    },
+    "input": {
+      "path": "output/alg-l06-p014-discovery-v1/ffdec-scripts/scripts/DefineButton2_32/BUTTONCONDACTION on(release).as",
+      "bytes": 120,
+      "sha256": "fc18c1b076872ddbff22a6de05a0929210cfcb8d065a27a37c654e3eb33c496a"
+    },
+    "output": {
+      "path": "output/alg-l06-p014-discovery-v1/ffdec-scripts/scripts/DefineButton2_33/BUTTONCONDACTION on(release).as",
+      "bytes": 121,
+      "sha256": "573534c3578af9119df87b9a8e2c4751ca88e451a2e1dde1896a9ad77acd746e"
+    },
+    "right83": {
+      "path": "output/alg-l06-p014-discovery-v1/ffdec-scripts/scripts/DefineSprite_83/frame_31/DoAction.as",
+      "bytes": 106,
+      "sha256": "5bc24178f890e478f8b0dc8085e80c07a74ae6e4f721ee01452daf12efe70911"
+    },
+    "right115": {
+      "path": "output/alg-l06-p014-discovery-v1/ffdec-scripts/scripts/DefineSprite_115/frame_25/DoAction.as",
+      "bytes": 106,
+      "sha256": "5bc24178f890e478f8b0dc8085e80c07a74ae6e4f721ee01452daf12efe70911"
+    },
+    "right148": {
+      "path": "output/alg-l06-p014-discovery-v1/ffdec-scripts/scripts/DefineSprite_148/frame_27/DoAction.as",
+      "bytes": 106,
+      "sha256": "5bc24178f890e478f8b0dc8085e80c07a74ae6e4f721ee01452daf12efe70911"
+    },
+    "right156": {
+      "path": "output/alg-l06-p014-discovery-v1/ffdec-scripts/scripts/DefineSprite_156/frame_27/DoAction.as",
+      "bytes": 106,
+      "sha256": "5bc24178f890e478f8b0dc8085e80c07a74ae6e4f721ee01452daf12efe70911"
+    },
+    "wrong28": {
+      "path": "output/alg-l06-p014-discovery-v1/ffdec-scripts/scripts/DefineSprite_28/frame_28/DoAction.as",
+      "bytes": 235,
+      "sha256": "806e16c9b17ac8872b22282973f851e58129094f13d83e56f7b0098102b908ce"
+    },
+    "wrong173": {
+      "path": "output/alg-l06-p014-discovery-v1/ffdec-scripts/scripts/DefineSprite_173/frame_31/DoAction.as",
+      "bytes": 235,
+      "sha256": "806e16c9b17ac8872b22282973f851e58129094f13d83e56f7b0098102b908ce"
+    },
+    "wrong187": {
+      "path": "output/alg-l06-p014-discovery-v1/ffdec-scripts/scripts/DefineSprite_187/frame_29/DoAction.as",
+      "bytes": 235,
+      "sha256": "806e16c9b17ac8872b22282973f851e58129094f13d83e56f7b0098102b908ce"
+    },
+    "wrongHold28": {
+      "path": "output/alg-l06-p014-discovery-v1/ffdec-scripts/scripts/DefineSprite_28/frame_20/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    "wrongHold173": {
+      "path": "output/alg-l06-p014-discovery-v1/ffdec-scripts/scripts/DefineSprite_173/frame_22/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    "wrongHold187": {
+      "path": "output/alg-l06-p014-discovery-v1/ffdec-scripts/scripts/DefineSprite_187/frame_23/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    "wrongAck28": {
+      "path": "output/alg-l06-p014-discovery-v1/ffdec-scripts/scripts/DefineButton2_21/BUTTONCONDACTION on(release).as",
+      "bytes": 141,
+      "sha256": "3fe79f85ee919b2d07dc6e3ea32f67fe78ab058772ea4197375d1063d7be8a7c"
+    },
+    "wrongAck173": {
+      "path": "output/alg-l06-p014-discovery-v1/ffdec-scripts/scripts/DefineButton2_167/BUTTONCONDACTION on(release).as",
+      "bytes": 141,
+      "sha256": "4057c3c6552def15f1e846f96fbf4df07b5166f278dad82eec3eea19b09b3394"
+    },
+    "wrongAck187": {
+      "path": "output/alg-l06-p014-discovery-v1/ffdec-scripts/scripts/DefineButton2_182/BUTTONCONDACTION on(release).as",
+      "bytes": 141,
+      "sha256": "05d0d4cada21c5184875b38ea202d5eece7fee9a04fa96284868fd2f1338772d"
+    }
+  },
+  "limits": [
+    "Old indexMI host source is preserved and its quiz API bodies are exact, but this P014 launch against that binary was not observed.",
+    "random(4)/random(3) selects one named branch; branch choice is input to the maintained deterministic state, not invented source order.",
+    "The three wrong branches require their own popup acknowledgement before terminal effects; ordinary playback cannot pass the midpoint stop.",
+    "Answer visual label-to-instance geometry and original audio/visual timing require separate evidence.",
+    "Original runtime, listening, human and Owner acceptance remain independent."
+  ],
+  "acceptanceEffects": {
+    "originalRuntime": false,
+    "fidelity": false,
+    "audio": false,
+    "listening": false,
+    "human": false,
+    "owner": false,
+    "strictComplete": false,
+    "publication": false
+  }
+}

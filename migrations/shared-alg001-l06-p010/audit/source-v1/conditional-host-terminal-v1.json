@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p010-conditional-host-terminal-rule-v1",
+  "status": "verified-static-old-host-algorithm-and-page-eligibility; actual-launch-unobserved",
+  "hostSource": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p009-host-source-v1/source.swf",
+    "bytes": 689006,
+    "sha256": "275499325edb24daed95952b207d2dd4ed83056ebac54cd0bc911673058086c9"
+  },
+  "hostFunctionScript": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p009-host-source-v1/scripts/scripts/frame_35/DoAction.as",
+    "bytes": 104008,
+    "sha256": "380cd6581859d0ba9814833f1102b08282198713cf30b5230ce2da76c3e27a74"
+  },
+  "hostFrameObserver": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p009-host-source-v1/scripts/scripts/frame_50/PlaceObject2_743_130/CLIPACTIONRECORD onClipEvent(enterFrame).as",
+    "bytes": 61,
+    "sha256": "0f74c16ab4c673bd21f5d82f4c7bd77f2c003198d8870bda7764b3cd7699c035"
+  },
+  "lessonXml": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/index.xml",
+    "bytes": 13926,
+    "sha256": "9f3753a17e5e271d7bc63a1bdf8cd5237f19770bae3f5c7364cabcb62c84ce2c"
+  },
+  "sourcePage": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/RW/L6RW09.swf",
+    "bytes": 114334,
+    "sha256": "96552f567037f39868d01b1ba77311858caf2efcdb141ef64ed0878a6c48ce14"
+  },
+  "pageBinding": {
+    "xmlSection": "RW",
+    "xmlSectionNumber": 2,
+    "xmlPageTitle": "Page 9",
+    "xmlPageReference": "RW/L6RW09.swf",
+    "rootFrame": 6,
+    "mainInstanceName": "animation",
+    "mainDomain": "sprite-52",
+    "declaredMainFrameCount": 303,
+    "nonFq": true
+  },
+  "algorithm": {
+    "caller": "onClipEvent(enterFrame) -> _root.doCheckPrevAndNext()",
+    "branch": "playSwfFileName excludes FQ02 and FQ03",
+    "condition": "animation currentFrame > 1 and currentFrame >= totalFrames",
+    "effect": "animation.stop()",
+    "sourcePageOwnStop": false
+  },
+  "limits": [
+    "Static host/page association does not prove that the original host actually launched this page.",
+    "Conditional host stop at 303 is source-supported; standalone SWF end behavior is not established.",
+    "No original-runtime timing or terminal capture is established."
+  ]
+}

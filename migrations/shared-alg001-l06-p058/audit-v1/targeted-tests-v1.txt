@@ -1,0 +1,42 @@
+✔ runtime clocks all seven branches; attempts change at terminal, no intermediate feedback hold (5.783041ms)
+✔ silent step boxes never start narration, close resets only the box, and paused tween resumes fractional position (0.813583ms)
+✔ two wrong endings retire different owners and only second proceeds beyond the final question (0.81025ms)
+✔ pause, replay and source stop own exact main seeks; pending playback and browser rejection cannot revive old state (0.509542ms)
+✔ function help and dictionary are scoped to live owner and do not resume held narration (0.363042ms)
+✔ SA starts only on explicit request; pending load is aborted by Replay/leave and EOF returns to held source (0.993458ms)
+✔ main PCM EOF preserves a visual tail without looping audio or reporting lesson completion (1.062666ms)
+✖ raw SWF/script evidence fixes the answer and terminal-count rule independently (0.945708ms)
+✔ main clock clamps every authored step and final quiz; Play cannot bypass a source hold (0.871166ms)
+✔ first two source step clicks resume main; last two open and close only their boxes (0.33675ms)
+✔ all three wrong variants count at their actual terminal; second wrong resets and resumes (1.142416ms)
+✔ all four right variants continue while preserving a prior wrong count (0.826833ms)
+✔ help opens function popup, blocks answer input, and dictionary close preserves its parent (0.102667ms)
+✔ glossary ownership and source frame windows reject offstage angle vocabulary (0.075458ms)
+✔ pause at box entry resumes; content holds remain held, and stale box callbacks are rejected (0.0855ms)
+✔ Replay and leave invalidate delayed selection, feedback and main callbacks and reset full state (0.114917ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 15
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 163.69025
+
+✖ failing tests:
+
+test at packages/demos/src/alg-l06-p058-state-v1.test.ts:1:1432
+✖ raw SWF/script evidence fixes the answer and terminal-count rule independently (0.945708ms)
+  Error: ENOENT: no such file or directory, open '/Volumes/American Dream/hudongpin/g678-p058-source-extraction-20261003-v1/ffdec-export/scripts/DefineButton2_403/BUTTONCONDACTION on(release).as'
+      at Object.readFileSync (node:fs:441:20)
+      at action (/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/alg-l06-p058-state-v1.test.ts:8:32)
+      at TestContext.<anonymous> (/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/alg-l06-p058-state-v1.test.ts:24:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.start (node:internal/test_runner/test:1191:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Volumes/American Dream/hudongpin/g678-p058-source-extraction-20261003-v1/ffdec-export/scripts/DefineButton2_403/BUTTONCONDACTION on(release).as'
+  }

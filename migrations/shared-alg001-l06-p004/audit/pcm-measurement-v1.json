@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p004-pcm-measurement-v1",
+  "decoder": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers",
+  "format": "mono 22050Hz float32 little-endian",
+  "streams": [
+    {
+      "name": "main",
+      "source": {
+        "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l06-p004/audit/continuous-source-v1.mp3",
+        "bytes": 329030,
+        "sha256": "e8f5307618bd63789f468c7a056cf80ae7828f17b665a24893fafc3ad8bb7f7e"
+      },
+      "pcm": {
+        "samples": 1457856,
+        "sha256": "02ebae456543d8c313a311652b7e018bbb1bb567456d07f31e3e64bee7fe947d"
+      },
+      "durationSeconds": 66.11591836734694,
+      "repeatEqual": true
+    },
+    {
+      "name": "spanish",
+      "source": {
+        "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/SA/L6RW04.mp3",
+        "bytes": 667968,
+        "sha256": "08bb62e9c1d92235c2e3fb96c44d44fc16b92ca7d175274e4c809f06bcfda8a5"
+      },
+      "pcm": {
+        "samples": 1052050,
+        "sha256": "f313d295bb66f5475ce338215bf6601b920af9a731fc47c4d64852c227f5bd34"
+      },
+      "durationSeconds": 47.71201814058957,
+      "repeatEqual": true
+    }
+  ],
+  "playbackInvoked": false,
+  "audioAccepted": false,
+  "sourceAlignmentAccepted": false
+}

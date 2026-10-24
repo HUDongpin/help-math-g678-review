@@ -1,0 +1,87 @@
+{
+  "kind": "p043-output-only-canvas-visibility-v2",
+  "status": "unregistered-source-state-draft",
+  "animationId": "shared-alg001-l06-p043",
+  "input": {
+    "path": "output/g678-p043-maintained-preparation-20261002-v1/canvas/canvas-renderer-draft.js",
+    "bytes": 3304138,
+    "sha256": "b310d4a5fb9a7ae6c7822d5d9211d4eb9e5acb33ac9149d225f04dd9c2161c14"
+  },
+  "sourceActions": [
+    {
+      "key": "mainStart",
+      "path": "output/g678-p043-source-intake-20261002-v1/audit/ffdec-export/scripts/DefineSprite_342/frame_1/DoAction.as",
+      "bytes": 56,
+      "sha256": "df61201e03b5b000c977240bd381ed423cf0ade90fe7b207082ca16931251f7b"
+    },
+    {
+      "key": "quizHold",
+      "path": "output/g678-p043-source-intake-20261002-v1/audit/ffdec-export/scripts/DefineSprite_342/frame_62/DoAction.as",
+      "bytes": 121,
+      "sha256": "8c3a4cfc11c45c873ae23793fd7a086c4915be09f2a59d8bed94b68724df2c8e"
+    },
+    {
+      "key": "nmhOpen",
+      "path": "output/g678-p043-source-intake-20261002-v1/audit/ffdec-export/scripts/DefineButton2_147/BUTTONCONDACTION on(release).as",
+      "bytes": 136,
+      "sha256": "f6250a8480166278aa29a5bddb6f82a7125f46ad583b54e378b48f1dda335116"
+    },
+    {
+      "key": "nmhClose",
+      "path": "output/g678-p043-source-intake-20261002-v1/audit/ffdec-export/scripts/DefineButton2_176/BUTTONCONDACTION on(release).as",
+      "bytes": 136,
+      "sha256": "c9de0d6748b75987a4e25d7a536151e3e08da34bed790b608b92fc92af6473ec"
+    },
+    {
+      "key": "wrongRelease",
+      "path": "output/g678-p043-source-intake-20261002-v1/audit/ffdec-export/scripts/DefineButton2_165/BUTTONCONDACTION on(release).as",
+      "bytes": 323,
+      "sha256": "5ad5fc35bb93048e96d7f967b0c3ae3520550a0469360ee3ccf61eca7ed54cdc"
+    },
+    {
+      "key": "rightRelease",
+      "path": "output/g678-p043-source-intake-20261002-v1/audit/ffdec-export/scripts/DefineButton2_166/BUTTONCONDACTION on(release).as",
+      "bytes": 111,
+      "sha256": "55503224c49e9bb7cb4ad98a122b5fa894018cd29e06b39de2c5faf524079268"
+    },
+    {
+      "key": "wrongHold",
+      "path": "output/g678-p043-source-intake-20261002-v1/audit/ffdec-export/scripts/DefineSprite_307/frame_23/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "key": "wrongClose",
+      "path": "output/g678-p043-source-intake-20261002-v1/audit/ffdec-export/scripts/DefineButton2_301/BUTTONCONDACTION on(release).as",
+      "bytes": 141,
+      "sha256": "05d0d4cada21c5184875b38ea202d5eece7fee9a04fa96284868fd2f1338772d"
+    }
+  ],
+  "sourceRule": {
+    "default": "main frames 1 and 62 hide Mc_Popup and CloseBtn",
+    "open": "button147 shows both",
+    "close": "button176 hides both",
+    "feedback": "wrong165/right166 start feedback4 at 2; wrong4 holds23, Close301 jumps24"
+  },
+  "flags": {
+    "nmhOpen": "boolean default false; true only at frame62 without feedback",
+    "feedback": "source-selected right4 or wrong4 at frame62",
+    "wrongFeedbackPopup": "derived open only on wrong4 frames16..23"
+  },
+  "output": {
+    "path": "output/g678-p043-player-integration-preparation-20261002-v1/canvas-renderer-visibility-v2.js",
+    "bytes": 3304890,
+    "sha256": "4ef3fd48ec83ba97542791832682e0a14aabec52611d7a4f6f0750e5b4852de5"
+  },
+  "unresolved": [
+    "Native EditText303 geometry needs browser calibration.",
+    "Original-runtime pixel and audio alignment remain unverified.",
+    "No AVM1 or host actions are executed by the Canvas asset."
+  ],
+  "gates": {
+    "currentJsRegistered": false,
+    "fidelityAccepted": false,
+    "audioAccepted": false,
+    "strictComplete": false
+  }
+}

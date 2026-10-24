@@ -1,0 +1,1687 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p029-source-planning-v1",
+  "status": "source-structure-and-script-export-only; unregistered; no-original-runtime",
+  "identity": {
+    "animationId": "shared-alg001-l06-p029",
+    "assetId": "swf-cbfd012d0aff11544a252c9e2852dff30d408c634aa2a805eb0837933c3370d4",
+    "lesson": "shared-alg001-l06",
+    "globalActiveOrdinal": 29,
+    "activePageCountInLesson": 60,
+    "sectionCode": "VB",
+    "sectionNumber": 3,
+    "sectionPageOrdinal": 19,
+    "xmlReference": "VB/L6VB22.swf",
+    "titleEnglish": "Relation",
+    "titleSpanish": "Relación",
+    "variantStatus": "canonical-no-variant",
+    "neighborPlacements": [
+      "shared-alg001-l06-p028",
+      "shared-alg001-l06-p030"
+    ]
+  },
+  "source": {
+    "physicalRoot": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware",
+    "swf": {
+      "path": "G6-G8-shared/ALG001/L6/VB/L6VB22.swf",
+      "bytes": 567027,
+      "sha256": "cbfd012d0aff11544a252c9e2852dff30d408c634aa2a805eb0837933c3370d4"
+    },
+    "separateSa": {
+      "path": "G6-G8-shared/ALG001/L6/SA/L6VB22.mp3",
+      "bytes": 147840,
+      "sha256": "17ec6377cbcbd89ccbdc909c967dc9c3e07833cc126c44dfe1f342918344ae23"
+    },
+    "lessonXml": {
+      "path": "G6-G8-shared/ALG001/L6/index.xml",
+      "bytes": 13926,
+      "sha256": "9f3753a17e5e271d7bc63a1bdf8cd5237f19770bae3f5c7364cabcb62c84ce2c"
+    },
+    "samePathFlaExists": false,
+    "authoringEvidence": "swf-only"
+  },
+  "catalogPins": [
+    {
+      "path": "catalog/g678-shared-catalog.v1.json",
+      "bytes": 12534064,
+      "sha256": "a1692c2a86c6771dcb104f59195b5bfdd2b5281cceff0aaeb63a3aabcf4a5657"
+    },
+    {
+      "path": "catalog/g678-page-only-release-manifest.v1.json",
+      "bytes": 2029613,
+      "sha256": "3695649f3fb9d508b4d4a3c519597395c41107e978e40a903cbbcea68c8eea2f"
+    }
+  ],
+  "extraction": {
+    "swfmillXml": {
+      "path": "output/alg-l06-p029-source-planning-20261001-v1/source-structure.xml",
+      "bytes": 1695273,
+      "sha256": "a22596049a263d1fb13056714af8db143aac4c7b9aa8e9b0a5e68d0047797c07"
+    },
+    "ffdecXml": {
+      "path": "output/alg-l06-p029-source-planning-20261001-v1/ffdec-structure.xml",
+      "bytes": 3263617,
+      "sha256": "b04c23675259b53332bcc4f8f1b2c4966e36e2e5bcb7457b201205158885cf2b"
+    },
+    "displayList": {
+      "path": "output/alg-l06-p029-source-planning-20261001-v1/source-display-list-v1.json",
+      "bytes": 479680,
+      "sha256": "d2beb5a0ad2d42025b7dbdb10b73e83c6123f74a06bae0f97969a1acbd685c32"
+    },
+    "ffdecHelp": {
+      "path": "output/alg-l06-p029-source-planning-20261001-v1/ffdec-help.txt",
+      "bytes": 4232,
+      "sha256": "0ffb414e08fdf3dd4b314aaffc03ebb67390e01ac7b138a13a6ef38f28f9ee0d"
+    },
+    "tools": {
+      "swfmill": "0.3.6",
+      "ffdec": "26.2.1",
+      "ffmpeg": "8.1.2"
+    }
+  },
+  "stage": {
+    "widthPx": 800,
+    "heightPx": 600,
+    "fps": 12,
+    "backgroundRgb": [
+      184,
+      216,
+      247
+    ],
+    "swfSignature": "CWS",
+    "swfVersion": 6
+  },
+  "frameDomains": [
+    {
+      "id": "root",
+      "frames": 10,
+      "actionFrames": [
+        1,
+        6
+      ],
+      "childSprites": [
+        {
+          "characterId": 2,
+          "instanceName": "Mc_Page_Title",
+          "depth": 1,
+          "presentSpans": [
+            [
+              6,
+              10
+            ]
+          ]
+        },
+        {
+          "characterId": 185,
+          "instanceName": "animation",
+          "depth": 3,
+          "presentSpans": [
+            [
+              6,
+              10
+            ]
+          ]
+        }
+      ],
+      "masks": [],
+      "morphCharacterIds": [],
+      "morphPlacementCount": 0,
+      "textInstanceCount": 0,
+      "buttonInstances": [],
+      "audioCodec": null
+    },
+    {
+      "id": "2",
+      "frames": 1,
+      "actionFrames": [],
+      "childSprites": [],
+      "masks": [],
+      "morphCharacterIds": [],
+      "morphPlacementCount": 0,
+      "textInstanceCount": 0,
+      "buttonInstances": [],
+      "audioCodec": null
+    },
+    {
+      "id": "51",
+      "frames": 1,
+      "actionFrames": [
+        1
+      ],
+      "childSprites": [],
+      "masks": [],
+      "morphCharacterIds": [],
+      "morphPlacementCount": 0,
+      "textInstanceCount": 1,
+      "buttonInstances": [
+        {
+          "characterId": 48,
+          "instanceName": "BtnClose",
+          "presentSpans": [
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "audioCodec": null
+    },
+    {
+      "id": "52",
+      "frames": 29,
+      "actionFrames": [
+        1,
+        20,
+        29
+      ],
+      "childSprites": [
+        {
+          "characterId": 51,
+          "instanceName": "Mc_Feed_Popup",
+          "depth": 4,
+          "presentSpans": [
+            [
+              13,
+              20
+            ]
+          ]
+        }
+      ],
+      "masks": [],
+      "morphCharacterIds": [
+        28,
+        29,
+        30,
+        35,
+        36
+      ],
+      "morphPlacementCount": 19,
+      "textInstanceCount": 4,
+      "buttonInstances": [],
+      "audioCodec": "mp3"
+    },
+    {
+      "id": "63",
+      "frames": 1,
+      "actionFrames": [
+        1
+      ],
+      "childSprites": [],
+      "masks": [],
+      "morphCharacterIds": [],
+      "morphPlacementCount": 0,
+      "textInstanceCount": 1,
+      "buttonInstances": [
+        {
+          "characterId": 61,
+          "instanceName": "BtnClose",
+          "presentSpans": [
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "audioCodec": null
+    },
+    {
+      "id": "67",
+      "frames": 28,
+      "actionFrames": [
+        1,
+        21,
+        28
+      ],
+      "childSprites": [
+        {
+          "characterId": 63,
+          "instanceName": "Mc_Feed_Popup",
+          "depth": 10,
+          "presentSpans": [
+            [
+              14,
+              21
+            ]
+          ]
+        }
+      ],
+      "masks": [
+        {
+          "characterId": 55,
+          "depth": 5,
+          "clipDepth": 9,
+          "presentSpans": [
+            [
+              5,
+              27
+            ]
+          ]
+        }
+      ],
+      "morphCharacterIds": [
+        54,
+        59,
+        60,
+        64,
+        65
+      ],
+      "morphPlacementCount": 24,
+      "textInstanceCount": 1,
+      "buttonInstances": [],
+      "audioCodec": "mp3"
+    },
+    {
+      "id": "89",
+      "frames": 1,
+      "actionFrames": [
+        1
+      ],
+      "childSprites": [],
+      "masks": [],
+      "morphCharacterIds": [],
+      "morphPlacementCount": 0,
+      "textInstanceCount": 1,
+      "buttonInstances": [
+        {
+          "characterId": 87,
+          "instanceName": "BtnClose",
+          "presentSpans": [
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "audioCodec": null
+    },
+    {
+      "id": "98",
+      "frames": 28,
+      "actionFrames": [
+        1,
+        22,
+        28
+      ],
+      "childSprites": [
+        {
+          "characterId": 89,
+          "instanceName": "Mc_Feed_Popup",
+          "depth": 9,
+          "presentSpans": [
+            [
+              15,
+              22
+            ]
+          ]
+        }
+      ],
+      "masks": [
+        {
+          "characterId": 68,
+          "depth": 1,
+          "clipDepth": 8,
+          "presentSpans": [
+            [
+              2,
+              28
+            ]
+          ]
+        }
+      ],
+      "morphCharacterIds": [
+        69,
+        75,
+        76,
+        77,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        91,
+        92,
+        93,
+        94,
+        96
+      ],
+      "morphPlacementCount": 66,
+      "textInstanceCount": 1,
+      "buttonInstances": [],
+      "audioCodec": "mp3"
+    },
+    {
+      "id": "126",
+      "frames": 28,
+      "actionFrames": [
+        1,
+        1,
+        28,
+        28
+      ],
+      "childSprites": [],
+      "masks": [],
+      "morphCharacterIds": [
+        119,
+        120,
+        124
+      ],
+      "morphPlacementCount": 17,
+      "textInstanceCount": 2,
+      "buttonInstances": [],
+      "audioCodec": "mp3"
+    },
+    {
+      "id": "151",
+      "frames": 27,
+      "actionFrames": [
+        1,
+        1,
+        27,
+        27
+      ],
+      "childSprites": [],
+      "masks": [],
+      "morphCharacterIds": [
+        127,
+        129,
+        131,
+        133,
+        134,
+        135,
+        136,
+        139,
+        140,
+        141
+      ],
+      "morphPlacementCount": 25,
+      "textInstanceCount": 2,
+      "buttonInstances": [],
+      "audioCodec": "mp3"
+    },
+    {
+      "id": "157",
+      "frames": 1,
+      "actionFrames": [],
+      "childSprites": [],
+      "masks": [],
+      "morphCharacterIds": [],
+      "morphPlacementCount": 0,
+      "textInstanceCount": 0,
+      "buttonInstances": [],
+      "audioCodec": null
+    },
+    {
+      "id": "164",
+      "frames": 1,
+      "actionFrames": [],
+      "childSprites": [],
+      "masks": [],
+      "morphCharacterIds": [],
+      "morphPlacementCount": 0,
+      "textInstanceCount": 1,
+      "buttonInstances": [],
+      "audioCodec": null
+    },
+    {
+      "id": "167",
+      "frames": 28,
+      "actionFrames": [
+        1,
+        1,
+        28,
+        28
+      ],
+      "childSprites": [
+        {
+          "characterId": 157,
+          "instanceName": null,
+          "depth": 3,
+          "presentSpans": [
+            [
+              5,
+              11
+            ]
+          ]
+        },
+        {
+          "characterId": 157,
+          "instanceName": null,
+          "depth": 6,
+          "presentSpans": [
+            [
+              5,
+              11
+            ]
+          ]
+        },
+        {
+          "characterId": 164,
+          "instanceName": null,
+          "depth": 3,
+          "presentSpans": [
+            [
+              12,
+              26
+            ]
+          ]
+        }
+      ],
+      "masks": [],
+      "morphCharacterIds": [
+        153,
+        154,
+        159,
+        160,
+        161,
+        165
+      ],
+      "morphPlacementCount": 25,
+      "textInstanceCount": 1,
+      "buttonInstances": [],
+      "audioCodec": "mp3"
+    },
+    {
+      "id": "179",
+      "frames": 25,
+      "actionFrames": [
+        1,
+        1,
+        25,
+        25
+      ],
+      "childSprites": [],
+      "masks": [],
+      "morphCharacterIds": [
+        168,
+        170,
+        175,
+        176
+      ],
+      "morphPlacementCount": 12,
+      "textInstanceCount": 2,
+      "buttonInstances": [],
+      "audioCodec": "swf-adpcm"
+    },
+    {
+      "id": "185",
+      "frames": 234,
+      "actionFrames": [
+        145,
+        146
+      ],
+      "childSprites": [
+        {
+          "characterId": 52,
+          "instanceName": "Mc_Wrong_Feed1",
+          "depth": 17,
+          "presentSpans": [
+            [
+              145,
+              234
+            ]
+          ]
+        },
+        {
+          "characterId": 67,
+          "instanceName": "Mc_Wrong_Feed3",
+          "depth": 23,
+          "presentSpans": [
+            [
+              145,
+              234
+            ]
+          ]
+        },
+        {
+          "characterId": 98,
+          "instanceName": "Mc_Wrong_Feed2",
+          "depth": 34,
+          "presentSpans": [
+            [
+              145,
+              234
+            ]
+          ]
+        },
+        {
+          "characterId": 126,
+          "instanceName": "Mc_Right_Feed4",
+          "depth": 44,
+          "presentSpans": [
+            [
+              145,
+              234
+            ]
+          ]
+        },
+        {
+          "characterId": 151,
+          "instanceName": "Mc_Right_Feed1",
+          "depth": 48,
+          "presentSpans": [
+            [
+              145,
+              234
+            ]
+          ]
+        },
+        {
+          "characterId": 167,
+          "instanceName": "Mc_Right_Feed2",
+          "depth": 57,
+          "presentSpans": [
+            [
+              145,
+              234
+            ]
+          ]
+        },
+        {
+          "characterId": 179,
+          "instanceName": "Mc_Right_Feed3",
+          "depth": 67,
+          "presentSpans": [
+            [
+              145,
+              234
+            ]
+          ]
+        }
+      ],
+      "masks": [],
+      "morphCharacterIds": [],
+      "morphPlacementCount": 0,
+      "textInstanceCount": 23,
+      "buttonInstances": [
+        {
+          "characterId": 8,
+          "instanceName": null,
+          "presentSpans": [
+            [
+              2,
+              234
+            ]
+          ]
+        },
+        {
+          "characterId": 9,
+          "instanceName": null,
+          "presentSpans": [
+            [
+              2,
+              234
+            ]
+          ]
+        },
+        {
+          "characterId": 17,
+          "instanceName": null,
+          "presentSpans": [
+            [
+              2,
+              144
+            ]
+          ]
+        },
+        {
+          "characterId": 27,
+          "instanceName": "Done",
+          "presentSpans": [
+            [
+              145,
+              145
+            ]
+          ]
+        }
+      ],
+      "audioCodec": "mp3"
+    }
+  ],
+  "visualStructure": {
+    "rootEntry": {
+      "frame": 6,
+      "label": "begin",
+      "mainSpriteId": 185,
+      "mainInstanceName": "animation",
+      "rootAction": {
+        "path": "source-export/scripts/frame_6/DoAction.as",
+        "bytes": 9,
+        "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+      }
+    },
+    "definitionCounts": {
+      "SetBackgroundColor": 1,
+      "UnknownTag": 1,
+      "DoAction": 2,
+      "ShowFrame": 10,
+      "FrameLabel": 1,
+      "DefineShape": 24,
+      "DefineSprite": 14,
+      "PlaceObject2": 2,
+      "DefineShape3": 38,
+      "DefineFont2": 8,
+      "DefineFontName": 8,
+      "DefineText": 24,
+      "DefineButton2": 7,
+      "DefineShape2": 6,
+      "DefineBitsLossless2": 1,
+      "DefineMorphShape": 48,
+      "DefineEditText": 5,
+      "DefineBitsJPEG3": 10,
+      "End": 1
+    },
+    "fontDefinitions": [
+      {
+        "id": 5,
+        "name": "Bauhaus Md BT",
+        "glyphCount": 38
+      },
+      {
+        "id": 18,
+        "name": "Bauhaus Md BT",
+        "glyphCount": 6
+      },
+      {
+        "id": 31,
+        "name": "Eras Bd BT",
+        "glyphCount": 8
+      },
+      {
+        "id": 57,
+        "name": "Eras Bold ITC",
+        "glyphCount": 10
+      },
+      {
+        "id": 72,
+        "name": "Berlin Sans FB Demi",
+        "glyphCount": 14
+      },
+      {
+        "id": 121,
+        "name": "Revue BT",
+        "glyphCount": 12
+      },
+      {
+        "id": 143,
+        "name": "Boink LET",
+        "glyphCount": 8
+      },
+      {
+        "id": 172,
+        "name": "Helvetica Condensed",
+        "glyphCount": 10
+      }
+    ],
+    "staticTextDefinitions": 24,
+    "editableTextDefinitions": [
+      {
+        "id": 50,
+        "name": "",
+        "initialText": null,
+        "attributes": {
+          "objectID": "50",
+          "wordWrap": "1",
+          "multiLine": "1",
+          "password": "0",
+          "readOnly": "1",
+          "autoSize": "0",
+          "hasLayout": "1",
+          "notSelectable": "1",
+          "hasBorder": "0",
+          "isHTML": "0",
+          "useOutlines": "0",
+          "fontRef": "18",
+          "fontHeight": "300",
+          "align": "0",
+          "leftMargin": "0",
+          "rightMargin": "0",
+          "indent": "0",
+          "leading": "40",
+          "variableName": ""
+        }
+      },
+      {
+        "id": 62,
+        "name": "",
+        "initialText": null,
+        "attributes": {
+          "objectID": "62",
+          "wordWrap": "1",
+          "multiLine": "1",
+          "password": "0",
+          "readOnly": "1",
+          "autoSize": "0",
+          "hasLayout": "1",
+          "notSelectable": "1",
+          "hasBorder": "0",
+          "isHTML": "0",
+          "useOutlines": "0",
+          "fontRef": "18",
+          "fontHeight": "300",
+          "align": "0",
+          "leftMargin": "0",
+          "rightMargin": "0",
+          "indent": "0",
+          "leading": "40",
+          "variableName": ""
+        }
+      },
+      {
+        "id": 88,
+        "name": "",
+        "initialText": null,
+        "attributes": {
+          "objectID": "88",
+          "wordWrap": "1",
+          "multiLine": "1",
+          "password": "0",
+          "readOnly": "1",
+          "autoSize": "0",
+          "hasLayout": "1",
+          "notSelectable": "1",
+          "hasBorder": "0",
+          "isHTML": "0",
+          "useOutlines": "0",
+          "fontRef": "18",
+          "fontHeight": "300",
+          "align": "0",
+          "leftMargin": "0",
+          "rightMargin": "0",
+          "indent": "0",
+          "leading": "40",
+          "variableName": ""
+        }
+      },
+      {
+        "id": 180,
+        "name": "",
+        "initialText": null,
+        "attributes": {
+          "objectID": "180",
+          "wordWrap": "0",
+          "multiLine": "0",
+          "password": "0",
+          "readOnly": "0",
+          "autoSize": "0",
+          "hasLayout": "1",
+          "notSelectable": "0",
+          "hasBorder": "0",
+          "isHTML": "0",
+          "useOutlines": "0",
+          "fontRef": "18",
+          "fontHeight": "440",
+          "align": "2",
+          "leftMargin": "0",
+          "rightMargin": "0",
+          "indent": "0",
+          "leading": "0",
+          "variableName": ""
+        }
+      },
+      {
+        "id": 181,
+        "name": "",
+        "initialText": null,
+        "attributes": {
+          "objectID": "181",
+          "wordWrap": "0",
+          "multiLine": "0",
+          "password": "0",
+          "readOnly": "1",
+          "autoSize": "0",
+          "hasLayout": "1",
+          "notSelectable": "1",
+          "hasBorder": "0",
+          "isHTML": "0",
+          "useOutlines": "0",
+          "fontRef": "18",
+          "fontHeight": "440",
+          "align": "2",
+          "leftMargin": "0",
+          "rightMargin": "0",
+          "indent": "0",
+          "leading": "0",
+          "variableName": ""
+        }
+      }
+    ],
+    "morphCharacterIds": [
+      28,
+      29,
+      30,
+      35,
+      36,
+      54,
+      59,
+      60,
+      64,
+      65,
+      69,
+      75,
+      76,
+      77,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      91,
+      92,
+      93,
+      94,
+      96,
+      119,
+      120,
+      124,
+      127,
+      129,
+      131,
+      133,
+      134,
+      135,
+      136,
+      139,
+      140,
+      141,
+      153,
+      154,
+      159,
+      160,
+      161,
+      165,
+      168,
+      170,
+      175,
+      176
+    ],
+    "mainQuestionTextId": 6,
+    "mainQuestion": "How many \n--- RECORDSEPARATOR ---\nordered pairs\n--- RECORDSEPARATOR ---\n are in this \n--- RECORDSEPARATOR ---\nrelation\n--- RECORDSEPARATOR ---\n? ",
+    "relationSetTextId": 11,
+    "relationSet": "{(1, 1), (1, 2), (1, 3)}",
+    "answerLabelTextId": 19,
+    "orderedPairTextIds": [
+      182,
+      183,
+      184
+    ],
+    "mainStopAndQuizFrame": 145,
+    "postQuizDefaultAnswerFrame": 146,
+    "sourceTextLanguage": "English in SWF; Spanish title in lesson XML"
+  },
+  "actions": {
+    "selected": {
+      "rootPreloader": {
+        "path": "source-export/scripts/frame_1/DoAction.as",
+        "bytes": 63,
+        "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19"
+      },
+      "rootEntry": {
+        "path": "source-export/scripts/frame_6/DoAction.as",
+        "bytes": 9,
+        "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+      },
+      "quizGate": {
+        "path": "source-export/scripts/DefineSprite_185/frame_145/DoAction.as",
+        "bytes": 65,
+        "sha256": "1c5ee973c2576fdd6e33a3a2cf1acd334b9fddb906b45d7b2e4d0a7874fd546f"
+      },
+      "postQuizDefault": {
+        "path": "source-export/scripts/DefineSprite_185/frame_146/DoAction.as",
+        "bytes": 21,
+        "sha256": "e3e559c42284e1775b6f519cda6f2d9b644460b020a97fac9b8672307ec06b01"
+      },
+      "answerPress": {
+        "path": "source-export/scripts/DefineButton2_17/BUTTONCONDACTION on(press).as",
+        "bytes": 223,
+        "sha256": "75ce4eaa4cc8045ad0b38389cbc01cf1cbeafe6214c2c5f4bc4268b4250df9d9"
+      },
+      "answerSubmit": {
+        "path": "source-export/scripts/DefineButton2_27/BUTTONCONDACTION on(release).as",
+        "bytes": 458,
+        "sha256": "80053294a1776a3622920e2505194ba0b08e438c82a31bdc5bbc01fa3d003484"
+      },
+      "relationGlossary": {
+        "path": "source-export/scripts/DefineButton2_8/BUTTONCONDACTION on(release).as",
+        "bytes": 123,
+        "sha256": "bb9bd516b984a08cc4f3b3c85d9e4a7cc0243e1384a6f2497aa8e29990b4744e"
+      },
+      "orderedPairGlossary": {
+        "path": "source-export/scripts/DefineButton2_9/BUTTONCONDACTION on(release).as",
+        "bytes": 127,
+        "sha256": "063e245c5e7152430464984944a92577bca38e5716c8297df4f2fd240d8e0c02"
+      },
+      "wrongClose1": {
+        "path": "source-export/scripts/DefineButton2_48/BUTTONCONDACTION on(release).as",
+        "bytes": 141,
+        "sha256": "3fe79f85ee919b2d07dc6e3ea32f67fe78ab058772ea4197375d1063d7be8a7c"
+      },
+      "wrongClose3": {
+        "path": "source-export/scripts/DefineButton2_61/BUTTONCONDACTION on(release).as",
+        "bytes": 141,
+        "sha256": "347253891f997902789749e125aa4b6eed7eaad17dbd308bc9ce40651e8222d0"
+      },
+      "wrongClose2": {
+        "path": "source-export/scripts/DefineButton2_87/BUTTONCONDACTION on(release).as",
+        "bytes": 141,
+        "sha256": "4057c3c6552def15f1e846f96fbf4df07b5166f278dad82eec3eea19b09b3394"
+      }
+    },
+    "allExportedScripts": [
+      {
+        "path": "source-export/scripts/DefineButton2_17/BUTTONCONDACTION on(press).as",
+        "bytes": 223,
+        "sha256": "75ce4eaa4cc8045ad0b38389cbc01cf1cbeafe6214c2c5f4bc4268b4250df9d9"
+      },
+      {
+        "path": "source-export/scripts/DefineButton2_27/BUTTONCONDACTION on(release).as",
+        "bytes": 458,
+        "sha256": "80053294a1776a3622920e2505194ba0b08e438c82a31bdc5bbc01fa3d003484"
+      },
+      {
+        "path": "source-export/scripts/DefineButton2_48/BUTTONCONDACTION on(release).as",
+        "bytes": 141,
+        "sha256": "3fe79f85ee919b2d07dc6e3ea32f67fe78ab058772ea4197375d1063d7be8a7c"
+      },
+      {
+        "path": "source-export/scripts/DefineButton2_61/BUTTONCONDACTION on(release).as",
+        "bytes": 141,
+        "sha256": "347253891f997902789749e125aa4b6eed7eaad17dbd308bc9ce40651e8222d0"
+      },
+      {
+        "path": "source-export/scripts/DefineButton2_8/BUTTONCONDACTION on(release).as",
+        "bytes": 123,
+        "sha256": "bb9bd516b984a08cc4f3b3c85d9e4a7cc0243e1384a6f2497aa8e29990b4744e"
+      },
+      {
+        "path": "source-export/scripts/DefineButton2_87/BUTTONCONDACTION on(release).as",
+        "bytes": 141,
+        "sha256": "4057c3c6552def15f1e846f96fbf4df07b5166f278dad82eec3eea19b09b3394"
+      },
+      {
+        "path": "source-export/scripts/DefineButton2_9/BUTTONCONDACTION on(release).as",
+        "bytes": 127,
+        "sha256": "063e245c5e7152430464984944a92577bca38e5716c8297df4f2fd240d8e0c02"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_126/frame_1/DoAction.as",
+        "bytes": 9,
+        "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_126/frame_1/DoAction_2.as",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_126/frame_28/DoAction.as",
+        "bytes": 108,
+        "sha256": "fbc376b22c841cf5917c6b8406f58c3daccdca8c1e795ba45b9a07e4f615338c"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_126/frame_28/DoAction_2.as",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_151/frame_1/DoAction.as",
+        "bytes": 9,
+        "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_151/frame_1/DoAction_2.as",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_151/frame_27/DoAction.as",
+        "bytes": 108,
+        "sha256": "fbc376b22c841cf5917c6b8406f58c3daccdca8c1e795ba45b9a07e4f615338c"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_151/frame_27/DoAction_2.as",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_167/frame_1/DoAction.as",
+        "bytes": 9,
+        "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_167/frame_1/DoAction_2.as",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_167/frame_28/DoAction.as",
+        "bytes": 108,
+        "sha256": "fbc376b22c841cf5917c6b8406f58c3daccdca8c1e795ba45b9a07e4f615338c"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_167/frame_28/DoAction_2.as",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_179/frame_1/DoAction.as",
+        "bytes": 9,
+        "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_179/frame_1/DoAction_2.as",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_179/frame_25/DoAction.as",
+        "bytes": 108,
+        "sha256": "fbc376b22c841cf5917c6b8406f58c3daccdca8c1e795ba45b9a07e4f615338c"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_179/frame_25/DoAction_2.as",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_185/frame_145/DoAction.as",
+        "bytes": 65,
+        "sha256": "1c5ee973c2576fdd6e33a3a2cf1acd334b9fddb906b45d7b2e4d0a7874fd546f"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_185/frame_146/DoAction.as",
+        "bytes": 21,
+        "sha256": "e3e559c42284e1775b6f519cda6f2d9b644460b020a97fac9b8672307ec06b01"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_51/frame_1/DoAction.as",
+        "bytes": 35,
+        "sha256": "339da0ae92e066910d2af19a170d12305f2780609209769be00e48aa35d91bbc"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_52/frame_1/DoAction.as",
+        "bytes": 34,
+        "sha256": "866009b2529df4394bd88608e50f5beb1bd91ec61e7e70c19da131b917e1803c"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_52/frame_20/DoAction.as",
+        "bytes": 9,
+        "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_52/frame_29/DoAction.as",
+        "bytes": 252,
+        "sha256": "ec37864adc37ccccbd065ed86f5f4b585f403bb5e51824c40656e945eaf03913"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_63/frame_1/DoAction.as",
+        "bytes": 35,
+        "sha256": "339da0ae92e066910d2af19a170d12305f2780609209769be00e48aa35d91bbc"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_67/frame_1/DoAction.as",
+        "bytes": 9,
+        "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_67/frame_21/DoAction.as",
+        "bytes": 9,
+        "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_67/frame_28/DoAction.as",
+        "bytes": 252,
+        "sha256": "ec37864adc37ccccbd065ed86f5f4b585f403bb5e51824c40656e945eaf03913"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_89/frame_1/DoAction.as",
+        "bytes": 35,
+        "sha256": "339da0ae92e066910d2af19a170d12305f2780609209769be00e48aa35d91bbc"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_98/frame_1/DoAction.as",
+        "bytes": 9,
+        "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_98/frame_22/DoAction.as",
+        "bytes": 9,
+        "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+      },
+      {
+        "path": "source-export/scripts/DefineSprite_98/frame_28/DoAction.as",
+        "bytes": 252,
+        "sha256": "ec37864adc37ccccbd065ed86f5f4b585f403bb5e51824c40656e945eaf03913"
+      },
+      {
+        "path": "source-export/scripts/frame_1/DoAction.as",
+        "bytes": 63,
+        "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19"
+      },
+      {
+        "path": "source-export/scripts/frame_6/DoAction.as",
+        "bytes": 9,
+        "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+      }
+    ],
+    "quizSubmit": {
+      "buttonCharacterId": 27,
+      "event": "pointerReleaseInside",
+      "expectedAnswerString": "3",
+      "rightHostCall": "_root.showRightFeed()",
+      "wrongHostCall": "_root.showWrongFeed()",
+      "tryCounter": "_global.quizTryCount",
+      "wrongMessageSpellingInButton": "_global.Wrongfeed",
+      "wrongMessageSpellingInPopup": "_global.WrongFeed",
+      "messageVariableCaseMismatch": true
+    },
+    "glossaryKeys": [
+      "Relation",
+      "Ordered pair"
+    ],
+    "feedbackDomains": {
+      "wrong": [
+        52,
+        67,
+        98
+      ],
+      "right": [
+        126,
+        151,
+        167,
+        179
+      ]
+    }
+  },
+  "audio": {
+    "embeddedStreams": [
+      {
+        "frameDomain": "52",
+        "visualFrames": 29,
+        "codec": "mp3",
+        "head": {
+          "playbackRate": "2",
+          "playbackSize": "1",
+          "playbackStereo": "0",
+          "compression": "2",
+          "soundRate": "2",
+          "soundSize": "1",
+          "soundStereo": "0",
+          "sampleSize": "1837"
+        },
+        "firstBlockFrame": 2,
+        "lastBlockFrame": 29,
+        "blockCount": 28,
+        "declaredSamples": 51264,
+        "rawPayload": {
+          "path": "output/alg-l06-p029-source-planning-20261001-v1/embedded-streams/sprite-52.mp3",
+          "bytes": 11570,
+          "sha256": "770ce8a109fb78c238d218e479047529e8cb39f006f8c70747be376556e2a541"
+        },
+        "zeroSampleBlocks": [
+          {
+            "frame": 3,
+            "samples": 0,
+            "seek": 0,
+            "rawBytes": 4
+          }
+        ],
+        "negativeSeekBlocks": [],
+        "ffprobe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mp3",
+              "sample_rate": "22050",
+              "channels": 1
+            }
+          ],
+          "format": {
+            "duration": "2.314000",
+            "size": "11570"
+          }
+        },
+        "ffmpegPcmCandidate": {
+          "format": "f32le",
+          "sampleRate": 22050,
+          "channels": 1,
+          "samples": 51264,
+          "sha256": "87218bd5b413f6ce0b640bedb883d0ce5ecb5d596f19f2d4efeb0c1dbba73b7e",
+          "browserOrOriginalRuntimeProof": false
+        }
+      },
+      {
+        "frameDomain": "67",
+        "visualFrames": 28,
+        "codec": "mp3",
+        "head": {
+          "playbackRate": "2",
+          "playbackSize": "1",
+          "playbackStereo": "0",
+          "compression": "2",
+          "soundRate": "2",
+          "soundSize": "1",
+          "soundStereo": "0",
+          "sampleSize": "1837"
+        },
+        "firstBlockFrame": 2,
+        "lastBlockFrame": 28,
+        "blockCount": 27,
+        "declaredSamples": 48960,
+        "rawPayload": {
+          "path": "output/alg-l06-p029-source-planning-20261001-v1/embedded-streams/sprite-67.mp3",
+          "bytes": 11050,
+          "sha256": "3506fcffbe07e726fd4cf1c750cd2641d2aa06f4ca14379b4407ea5843e4f0f0"
+        },
+        "zeroSampleBlocks": [
+          {
+            "frame": 3,
+            "samples": 0,
+            "seek": 0,
+            "rawBytes": 4
+          }
+        ],
+        "negativeSeekBlocks": [],
+        "ffprobe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mp3",
+              "sample_rate": "22050",
+              "channels": 1
+            }
+          ],
+          "format": {
+            "duration": "2.210000",
+            "size": "11050"
+          }
+        },
+        "ffmpegPcmCandidate": {
+          "format": "f32le",
+          "sampleRate": 22050,
+          "channels": 1,
+          "samples": 48960,
+          "sha256": "3e0ae830b0bdeb9beef402a859e425b1cd829ec6013352a6c67e735feba10dfc",
+          "browserOrOriginalRuntimeProof": false
+        }
+      },
+      {
+        "frameDomain": "98",
+        "visualFrames": 28,
+        "codec": "mp3",
+        "head": {
+          "playbackRate": "2",
+          "playbackSize": "1",
+          "playbackStereo": "0",
+          "compression": "2",
+          "soundRate": "2",
+          "soundSize": "1",
+          "soundStereo": "0",
+          "sampleSize": "1837"
+        },
+        "firstBlockFrame": 2,
+        "lastBlockFrame": 28,
+        "blockCount": 27,
+        "declaredSamples": 48960,
+        "rawPayload": {
+          "path": "output/alg-l06-p029-source-planning-20261001-v1/embedded-streams/sprite-98.mp3",
+          "bytes": 11050,
+          "sha256": "f87ec03bf9163390a117b6ad1ea7c47dab7ea7e729219acff0e0617f6100a9f1"
+        },
+        "zeroSampleBlocks": [
+          {
+            "frame": 3,
+            "samples": 0,
+            "seek": 0,
+            "rawBytes": 4
+          }
+        ],
+        "negativeSeekBlocks": [],
+        "ffprobe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mp3",
+              "sample_rate": "22050",
+              "channels": 1
+            }
+          ],
+          "format": {
+            "duration": "2.210000",
+            "size": "11050"
+          }
+        },
+        "ffmpegPcmCandidate": {
+          "format": "f32le",
+          "sampleRate": 22050,
+          "channels": 1,
+          "samples": 48960,
+          "sha256": "2eb782670bb93536004744832719442bb000971f931445aab19424b24cf1dbc5",
+          "browserOrOriginalRuntimeProof": false
+        }
+      },
+      {
+        "frameDomain": "126",
+        "visualFrames": 28,
+        "codec": "mp3",
+        "head": {
+          "playbackRate": "2",
+          "playbackSize": "1",
+          "playbackStereo": "0",
+          "compression": "2",
+          "soundRate": "2",
+          "soundSize": "1",
+          "soundStereo": "0",
+          "sampleSize": "1837"
+        },
+        "firstBlockFrame": 2,
+        "lastBlockFrame": 28,
+        "blockCount": 27,
+        "declaredSamples": 48960,
+        "rawPayload": {
+          "path": "output/alg-l06-p029-source-planning-20261001-v1/embedded-streams/sprite-126.mp3",
+          "bytes": 11050,
+          "sha256": "529ef71f4768ba9c0f830a67547066e4b8b20091bc8e3cd0782e1fbdfbb64085"
+        },
+        "zeroSampleBlocks": [
+          {
+            "frame": 3,
+            "samples": 0,
+            "seek": 0,
+            "rawBytes": 4
+          }
+        ],
+        "negativeSeekBlocks": [],
+        "ffprobe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mp3",
+              "sample_rate": "22050",
+              "channels": 1
+            }
+          ],
+          "format": {
+            "duration": "2.210000",
+            "size": "11050"
+          }
+        },
+        "ffmpegPcmCandidate": {
+          "format": "f32le",
+          "sampleRate": 22050,
+          "channels": 1,
+          "samples": 48960,
+          "sha256": "3fa33912bfae6625bc1fb66793a05bccfb709afd6606f738c9fe87112b7da552",
+          "browserOrOriginalRuntimeProof": false
+        }
+      },
+      {
+        "frameDomain": "151",
+        "visualFrames": 27,
+        "codec": "mp3",
+        "head": {
+          "playbackRate": "2",
+          "playbackSize": "1",
+          "playbackStereo": "0",
+          "compression": "2",
+          "soundRate": "2",
+          "soundSize": "1",
+          "soundStereo": "0",
+          "sampleSize": "1837"
+        },
+        "firstBlockFrame": 3,
+        "lastBlockFrame": 27,
+        "blockCount": 25,
+        "declaredSamples": 43776,
+        "rawPayload": {
+          "path": "output/alg-l06-p029-source-planning-20261001-v1/embedded-streams/sprite-151.mp3",
+          "bytes": 9880,
+          "sha256": "1b7f35c62c832068bd2e0e54246c591df18f08e9ff8c77527e6f3ba03650246f"
+        },
+        "zeroSampleBlocks": [
+          {
+            "frame": 4,
+            "samples": 0,
+            "seek": 0,
+            "rawBytes": 4
+          },
+          {
+            "frame": 27,
+            "samples": 0,
+            "seek": -1984,
+            "rawBytes": 4
+          }
+        ],
+        "negativeSeekBlocks": [
+          {
+            "frame": 27,
+            "samples": 0,
+            "seek": -1984,
+            "rawBytes": 4
+          }
+        ],
+        "ffprobe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mp3",
+              "sample_rate": "22050",
+              "channels": 1
+            }
+          ],
+          "format": {
+            "duration": "1.976000",
+            "size": "9880"
+          }
+        },
+        "ffmpegPcmCandidate": {
+          "format": "f32le",
+          "sampleRate": 22050,
+          "channels": 1,
+          "samples": 43776,
+          "sha256": "d2ad38b6acda5ebf8df022330d7482263832226b5b866f1d8f2e67bd76c031e1",
+          "browserOrOriginalRuntimeProof": false
+        }
+      },
+      {
+        "frameDomain": "167",
+        "visualFrames": 28,
+        "codec": "mp3",
+        "head": {
+          "playbackRate": "2",
+          "playbackSize": "1",
+          "playbackStereo": "0",
+          "compression": "2",
+          "soundRate": "2",
+          "soundSize": "1",
+          "soundStereo": "0",
+          "sampleSize": "1837"
+        },
+        "firstBlockFrame": 2,
+        "lastBlockFrame": 28,
+        "blockCount": 27,
+        "declaredSamples": 48960,
+        "rawPayload": {
+          "path": "output/alg-l06-p029-source-planning-20261001-v1/embedded-streams/sprite-167.mp3",
+          "bytes": 11050,
+          "sha256": "3dda8c412ae366891bd7ce7f1603c70f4ec8438806191c75a25328963fdb8ee7"
+        },
+        "zeroSampleBlocks": [
+          {
+            "frame": 3,
+            "samples": 0,
+            "seek": 0,
+            "rawBytes": 4
+          }
+        ],
+        "negativeSeekBlocks": [],
+        "ffprobe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mp3",
+              "sample_rate": "22050",
+              "channels": 1
+            }
+          ],
+          "format": {
+            "duration": "2.210000",
+            "size": "11050"
+          }
+        },
+        "ffmpegPcmCandidate": {
+          "format": "f32le",
+          "sampleRate": 22050,
+          "channels": 1,
+          "samples": 48960,
+          "sha256": "ffa6d399ad00cc80f3c83e2e5d7164349980ba5299149c581917508ea1e5573e",
+          "browserOrOriginalRuntimeProof": false
+        }
+      },
+      {
+        "frameDomain": "179",
+        "visualFrames": 25,
+        "codec": "swf-adpcm",
+        "head": {
+          "playbackRate": "0",
+          "playbackSize": "0",
+          "playbackStereo": "0",
+          "compression": "1",
+          "soundRate": "0",
+          "soundSize": "1",
+          "soundStereo": "0",
+          "sampleSize": "459"
+        },
+        "firstBlockFrame": 1,
+        "lastBlockFrame": 13,
+        "blockCount": 13,
+        "declaredSamples": null,
+        "rawPayload": {
+          "path": "output/alg-l06-p029-source-planning-20261001-v1/embedded-streams/sprite-179.swf-adpcm-blocks.bin",
+          "bytes": 3770,
+          "sha256": "e5c99e029d9df7717bc7755b5f4660841ad3f453d10bb8dbc8010d69b5a653b6"
+        },
+        "zeroSampleBlocks": [],
+        "negativeSeekBlocks": [],
+        "decodeStatus": "raw SWF ADPCM blocks preserved; playback/decode unresolved"
+      },
+      {
+        "frameDomain": "185",
+        "visualFrames": 234,
+        "codec": "mp3",
+        "head": {
+          "playbackRate": "2",
+          "playbackSize": "1",
+          "playbackStereo": "0",
+          "compression": "2",
+          "soundRate": "2",
+          "soundSize": "1",
+          "soundStereo": "0",
+          "sampleSize": "1837"
+        },
+        "firstBlockFrame": 2,
+        "lastBlockFrame": 234,
+        "blockCount": 233,
+        "declaredSamples": 427392,
+        "rawPayload": {
+          "path": "output/alg-l06-p029-source-planning-20261001-v1/embedded-streams/sprite-185.mp3",
+          "bytes": 96460,
+          "sha256": "ba4e53ce1db0272a56c3ccedad35628ef2f6f17eada862ed22aaee9fd85eb3ba"
+        },
+        "zeroSampleBlocks": [
+          {
+            "frame": 3,
+            "samples": 0,
+            "seek": 0,
+            "rawBytes": 4
+          }
+        ],
+        "negativeSeekBlocks": [],
+        "ffprobe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mp3",
+              "sample_rate": "22050",
+              "channels": 1
+            }
+          ],
+          "format": {
+            "duration": "19.292000",
+            "size": "96460"
+          }
+        },
+        "ffmpegPcmCandidate": {
+          "format": "f32le",
+          "sampleRate": 22050,
+          "channels": 1,
+          "samples": 427392,
+          "sha256": "467a04dda6c99808310b64473a6d9f6676745a7b7567f69fa4916a82c7201d60",
+          "browserOrOriginalRuntimeProof": false
+        }
+      }
+    ],
+    "separateSa": {
+      "source": {
+        "path": "G6-G8-shared/ALG001/L6/SA/L6VB22.mp3",
+        "bytes": 147840,
+        "sha256": "17ec6377cbcbd89ccbdc909c967dc9c3e07833cc126c44dfe1f342918344ae23"
+      },
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "10.560000",
+          "size": "147840"
+        }
+      },
+      "trigger": "user-action-only",
+      "splicedIntoEmbeddedStream": false,
+      "spokenLanguageAndListening": "unverified"
+    }
+  },
+  "workspace": {
+    "matchingMigrationWorkspaceExists": false,
+    "registryMemberObserved": false,
+    "scaffoldPerformed": false
+  },
+  "complexityAndLane": {
+    "classification": "behavior-heavy",
+    "automaticCandidateAllowed": false,
+    "bulkScaleOutAllowed": false,
+    "reason": "234-frame main timeline pauses at a typed-answer quiz; seven feedback clips contain independent scripts, morphs, masks and audio, including an ADPCM domain; old-host scoring and glossary callbacks are unresolved",
+    "nextRoute": "bounded advanced-manual behavior-first renderer using compiler-assisted source extraction and a maintained quiz/feedback state machine; retain source-owned frame, text, glossary and audio maps"
+  },
+  "sharedBehaviorFit": {
+    "candidateHostBridge": "evaluate existing My Lesson source bridge for playback, glossary close, scoring feedback and audio cleanup against these exact scripts",
+    "pageOwned": "P029 answer 3, two glossary keys, 234-frame narration/quiz/resolution schedule, seven feedback subclips and eight embedded audio domains"
+  },
+  "unresolved": [
+    "No same-path FLA; authoring layers and tween intent unavailable.",
+    "Old-host InternalPreloader, DoHyperLinks, showRightFeed and showWrongFeed callbacks and natural return are unverified.",
+    "Button press opt_try path, editable answer, quiz timing, feedback selection and post-feedback advancement require original-runtime and real My Lesson traces.",
+    "Source spells Wrongfeed in the submit button but WrongFeed in feedback popups; actual message behavior is unverified.",
+    "Sprite 179 SWF ADPCM blocks are preserved but not decoded or listened to.",
+    "MP3 candidate decoding is structural; browser timing, original-runtime output, language and listening remain unverified.",
+    "The separate SA source is not tied to automatic locale playback or embedded audio.",
+    "No renderer, registry, My Lesson browser check, human/Owner decision, strict completion or publication."
+  ]
+}

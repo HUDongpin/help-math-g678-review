@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p010-public-tool-scripts-v1",
+  "sourceSwfSha256": "96552f567037f39868d01b1ba77311858caf2efcdb141ef64ed0878a6c48ce14",
+  "toolVersions": {
+    "swfmill": "swfmill 0.3.6",
+    "ffdec": "JPEXS Free Flash Decompiler v.26.2.1"
+  },
+  "files": {
+    "scripts/DefineButton2_51/BUTTONCONDACTION on(release).as": "on(release){\n   _global.KeyAttribute = \"Function\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}",
+    "scripts/frame_1/DoAction.as": "_level0.InternalPreloader.gotoAndPlay(\"jump_check\");\nstop();",
+    "scripts/frame_6/DoAction.as": "stop();"
+  },
+  "sourceButtonAction": {
+    "characterId": 51,
+    "actionSha256": "549555e0e21a60e887e614e7ff3b03592d8a7f577c5ec25e6601f039050f49c8",
+    "hostAPI": "DoHyperLinks",
+    "sourceKey": "Function",
+    "sourceStopTarget": "_root.animation_mc.animation",
+    "event": "release",
+    "runtimeEffectEstablished": false
+  }
+}

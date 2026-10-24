@@ -1,0 +1,3342 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p013-audio-source-audit-v1",
+  "status": "source-and-decoder-measured-modern-candidate-not-original-runtime-or-listening",
+  "source": {
+    "swf": {
+      "path": "G6-G8-shared/ALG001/L6/VB/L6VB04.swf",
+      "bytes": 269912,
+      "sha256": "1be47750557385ef91c648fb87fdcde642d342caadc35da7a1f7a2d1fdb11d35",
+      "root": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware"
+    },
+    "separateSa": {
+      "path": "G6-G8-shared/ALG001/L6/SA/L6VB04.mp3",
+      "bytes": 327936,
+      "sha256": "2db938405bd646e4bf37e0b9cdf5438cc65451a2d4f7304c93dbc2b6653e8575",
+      "root": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware"
+    }
+  },
+  "swf": {
+    "signature": "CWS",
+    "version": 6,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "rootFrames": 10,
+    "mainDomain": "sprite-140",
+    "mainFrames": 372,
+    "scriptActions": [
+      {
+        "domain": "root",
+        "frame": 1,
+        "bytes": 73,
+        "sha256": "8230b64765b935120a08654ce7e74ecfc3eaa3f00b90379acca03918e38dd9ac",
+        "hex": "961a00006a756d705f636865636b000701000000005f6c6576656c30001c96130000496e7465726e616c5072656c6f61646572004e960d0000676f746f416e64506c61790052170700"
+      },
+      {
+        "domain": "root",
+        "frame": 6,
+        "bytes": 2,
+        "sha256": "0a6361b3a802f55cd5ae06101c88a1e216320fe11cc0cfe1d791eed08a1200fd",
+        "hex": "0700"
+      }
+    ],
+    "streamHead": {
+      "domain": "sprite-140",
+      "frame": 1,
+      "hex": "0a2a2d078906",
+      "codec": "MP3",
+      "sampleRate": 22050,
+      "channels": 1,
+      "averageSamplesPerFrame": 1837,
+      "initialLatencySamples": 1673
+    }
+  },
+  "embedded": {
+    "firstBlockFrame": 2,
+    "lastBlockFrame": 372,
+    "blockCount": 368,
+    "absentBlockFrames": [
+      253,
+      254,
+      255
+    ],
+    "zeroPayloadBlocks": [
+      {
+        "frame": 3,
+        "samples": 0,
+        "seek": 0,
+        "mp3Bytes": 0
+      },
+      {
+        "frame": 161,
+        "samples": 0,
+        "seek": -2299,
+        "mp3Bytes": 0
+      },
+      {
+        "frame": 252,
+        "samples": 0,
+        "seek": -1850,
+        "mp3Bytes": 0
+      }
+    ],
+    "declaredSamples": 672192,
+    "extractedMp3": {
+      "path": "migrations/shared-alg001-l06-p013/audit/audio-v1/continuous-source-v1.mp3",
+      "bytes": 151710,
+      "sha256": "3d646619b33b9e859aff68bf331f224158916aa9f4e99b16cdc910791c7d41c1"
+    },
+    "packetGroups": [
+      {
+        "firstFrame": 2,
+        "lastFrame": 161,
+        "blockCount": 160,
+        "normalHeadAverageResidual": -164
+      },
+      {
+        "firstFrame": 162,
+        "lastFrame": 252,
+        "blockCount": 91,
+        "normalHeadAverageResidual": -1892
+      },
+      {
+        "firstFrame": 256,
+        "lastFrame": 372,
+        "blockCount": 117,
+        "normalHeadAverageResidual": -8804
+      }
+    ],
+    "boundaryPackets": [
+      {
+        "frame": 2,
+        "declaredSampleStart": 0,
+        "declaredSamples": 3456,
+        "rawSeekSamples": 1673,
+        "mp3Bytes": 780,
+        "residualToHeadAverageFromFrame2": 1673
+      },
+      {
+        "frame": 3,
+        "declaredSampleStart": 3456,
+        "declaredSamples": 0,
+        "rawSeekSamples": 0,
+        "mp3Bytes": 0,
+        "residualToHeadAverageFromFrame2": 1619
+      },
+      {
+        "frame": 4,
+        "declaredSampleStart": 3456,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 54,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 160,
+        "declaredSampleStart": 289728,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 354,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 161,
+        "declaredSampleStart": 291456,
+        "declaredSamples": 0,
+        "rawSeekSamples": -2299,
+        "mp3Bytes": 0,
+        "residualToHeadAverageFromFrame2": -2926
+      },
+      {
+        "frame": 162,
+        "declaredSampleStart": 291456,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 572,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 251,
+        "declaredSampleStart": 455040,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 481,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 252,
+        "declaredSampleStart": 457344,
+        "declaredSamples": 0,
+        "rawSeekSamples": -1850,
+        "mp3Bytes": 0,
+        "residualToHeadAverageFromFrame2": -3756
+      },
+      {
+        "frame": 256,
+        "declaredSampleStart": 457344,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 450,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 257,
+        "declaredSampleStart": 459072,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 559,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 372,
+        "declaredSampleStart": 670464,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 422,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      }
+    ],
+    "packets": [
+      {
+        "frame": 2,
+        "declaredSampleStart": 0,
+        "declaredSamples": 3456,
+        "rawSeekSamples": 1673,
+        "mp3Bytes": 780,
+        "residualToHeadAverageFromFrame2": 1673
+      },
+      {
+        "frame": 3,
+        "declaredSampleStart": 3456,
+        "declaredSamples": 0,
+        "rawSeekSamples": 0,
+        "mp3Bytes": 0,
+        "residualToHeadAverageFromFrame2": 1619
+      },
+      {
+        "frame": 4,
+        "declaredSampleStart": 3456,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 54,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 5,
+        "declaredSampleStart": 5184,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 163,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 6,
+        "declaredSampleStart": 6912,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 272,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 7,
+        "declaredSampleStart": 8640,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 381,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 8,
+        "declaredSampleStart": 10368,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 490,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 9,
+        "declaredSampleStart": 12672,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 23,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 10,
+        "declaredSampleStart": 14400,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 132,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 11,
+        "declaredSampleStart": 16128,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 241,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 12,
+        "declaredSampleStart": 17856,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 350,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 13,
+        "declaredSampleStart": 19584,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 459,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 14,
+        "declaredSampleStart": 21312,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 568,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 15,
+        "declaredSampleStart": 23616,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 101,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 16,
+        "declaredSampleStart": 25344,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 210,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 17,
+        "declaredSampleStart": 27072,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 319,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 18,
+        "declaredSampleStart": 28800,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 428,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 19,
+        "declaredSampleStart": 30528,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 537,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 20,
+        "declaredSampleStart": 32832,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 70,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 21,
+        "declaredSampleStart": 34560,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 179,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 22,
+        "declaredSampleStart": 36288,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 288,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 23,
+        "declaredSampleStart": 38016,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 397,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 24,
+        "declaredSampleStart": 39744,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 506,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 25,
+        "declaredSampleStart": 42048,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 39,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 26,
+        "declaredSampleStart": 43776,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 148,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 27,
+        "declaredSampleStart": 45504,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 257,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 28,
+        "declaredSampleStart": 47232,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 366,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 29,
+        "declaredSampleStart": 48960,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 475,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 30,
+        "declaredSampleStart": 51264,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 8,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 31,
+        "declaredSampleStart": 52992,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 117,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 32,
+        "declaredSampleStart": 54720,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 226,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 33,
+        "declaredSampleStart": 56448,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 335,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 34,
+        "declaredSampleStart": 58176,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 444,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 35,
+        "declaredSampleStart": 59904,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 553,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 36,
+        "declaredSampleStart": 62208,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 86,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 37,
+        "declaredSampleStart": 63936,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 195,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 38,
+        "declaredSampleStart": 65664,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 304,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 39,
+        "declaredSampleStart": 67392,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 413,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 40,
+        "declaredSampleStart": 69120,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 522,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 41,
+        "declaredSampleStart": 71424,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 55,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 42,
+        "declaredSampleStart": 73152,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 164,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 43,
+        "declaredSampleStart": 74880,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 273,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 44,
+        "declaredSampleStart": 76608,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 382,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 45,
+        "declaredSampleStart": 78336,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 491,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 46,
+        "declaredSampleStart": 80640,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 24,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 47,
+        "declaredSampleStart": 82368,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 133,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 48,
+        "declaredSampleStart": 84096,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 242,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 49,
+        "declaredSampleStart": 85824,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 351,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 50,
+        "declaredSampleStart": 87552,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 460,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 51,
+        "declaredSampleStart": 89280,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 569,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 52,
+        "declaredSampleStart": 91584,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 102,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 53,
+        "declaredSampleStart": 93312,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 211,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 54,
+        "declaredSampleStart": 95040,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 320,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 55,
+        "declaredSampleStart": 96768,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 429,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 56,
+        "declaredSampleStart": 98496,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 538,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 57,
+        "declaredSampleStart": 100800,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 71,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 58,
+        "declaredSampleStart": 102528,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 180,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 59,
+        "declaredSampleStart": 104256,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 289,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 60,
+        "declaredSampleStart": 105984,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 398,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 61,
+        "declaredSampleStart": 107712,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 507,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 62,
+        "declaredSampleStart": 110016,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 40,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 63,
+        "declaredSampleStart": 111744,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 149,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 64,
+        "declaredSampleStart": 113472,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 258,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 65,
+        "declaredSampleStart": 115200,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 367,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 66,
+        "declaredSampleStart": 116928,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 476,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 67,
+        "declaredSampleStart": 119232,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 9,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 68,
+        "declaredSampleStart": 120960,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 118,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 69,
+        "declaredSampleStart": 122688,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 227,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 70,
+        "declaredSampleStart": 124416,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 336,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 71,
+        "declaredSampleStart": 126144,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 445,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 72,
+        "declaredSampleStart": 127872,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 554,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 73,
+        "declaredSampleStart": 130176,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 87,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 74,
+        "declaredSampleStart": 131904,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 196,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 75,
+        "declaredSampleStart": 133632,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 305,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 76,
+        "declaredSampleStart": 135360,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 414,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 77,
+        "declaredSampleStart": 137088,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 523,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 78,
+        "declaredSampleStart": 139392,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 56,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 79,
+        "declaredSampleStart": 141120,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 165,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 80,
+        "declaredSampleStart": 142848,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 274,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 81,
+        "declaredSampleStart": 144576,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 383,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 82,
+        "declaredSampleStart": 146304,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 492,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 83,
+        "declaredSampleStart": 148608,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 25,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 84,
+        "declaredSampleStart": 150336,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 134,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 85,
+        "declaredSampleStart": 152064,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 243,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 86,
+        "declaredSampleStart": 153792,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 352,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 87,
+        "declaredSampleStart": 155520,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 461,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 88,
+        "declaredSampleStart": 157248,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 570,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 89,
+        "declaredSampleStart": 159552,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 103,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 90,
+        "declaredSampleStart": 161280,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 212,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 91,
+        "declaredSampleStart": 163008,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 321,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 92,
+        "declaredSampleStart": 164736,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 430,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 93,
+        "declaredSampleStart": 166464,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 539,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 94,
+        "declaredSampleStart": 168768,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 72,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 95,
+        "declaredSampleStart": 170496,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 181,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 96,
+        "declaredSampleStart": 172224,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 290,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 97,
+        "declaredSampleStart": 173952,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 399,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 98,
+        "declaredSampleStart": 175680,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 508,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 99,
+        "declaredSampleStart": 177984,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 41,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 100,
+        "declaredSampleStart": 179712,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 150,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 101,
+        "declaredSampleStart": 181440,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 259,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 102,
+        "declaredSampleStart": 183168,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 368,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 103,
+        "declaredSampleStart": 184896,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 477,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 104,
+        "declaredSampleStart": 187200,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 10,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 105,
+        "declaredSampleStart": 188928,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 119,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 106,
+        "declaredSampleStart": 190656,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 228,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 107,
+        "declaredSampleStart": 192384,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 337,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 108,
+        "declaredSampleStart": 194112,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 446,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 109,
+        "declaredSampleStart": 195840,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 555,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 110,
+        "declaredSampleStart": 198144,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 88,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 111,
+        "declaredSampleStart": 199872,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 197,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 112,
+        "declaredSampleStart": 201600,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 306,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 113,
+        "declaredSampleStart": 203328,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 415,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 114,
+        "declaredSampleStart": 205056,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 524,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 115,
+        "declaredSampleStart": 207360,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 57,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 116,
+        "declaredSampleStart": 209088,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 166,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 117,
+        "declaredSampleStart": 210816,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 275,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 118,
+        "declaredSampleStart": 212544,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 384,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 119,
+        "declaredSampleStart": 214272,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 493,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 120,
+        "declaredSampleStart": 216576,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 26,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 121,
+        "declaredSampleStart": 218304,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 135,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 122,
+        "declaredSampleStart": 220032,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 244,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 123,
+        "declaredSampleStart": 221760,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 353,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 124,
+        "declaredSampleStart": 223488,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 462,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 125,
+        "declaredSampleStart": 225216,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 571,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 126,
+        "declaredSampleStart": 227520,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 104,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 127,
+        "declaredSampleStart": 229248,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 213,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 128,
+        "declaredSampleStart": 230976,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 322,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 129,
+        "declaredSampleStart": 232704,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 431,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 130,
+        "declaredSampleStart": 234432,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 540,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 131,
+        "declaredSampleStart": 236736,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 73,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 132,
+        "declaredSampleStart": 238464,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 182,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 133,
+        "declaredSampleStart": 240192,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 291,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 134,
+        "declaredSampleStart": 241920,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 400,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 135,
+        "declaredSampleStart": 243648,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 509,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 136,
+        "declaredSampleStart": 245952,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 42,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 137,
+        "declaredSampleStart": 247680,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 151,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 138,
+        "declaredSampleStart": 249408,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 260,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 139,
+        "declaredSampleStart": 251136,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 369,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 140,
+        "declaredSampleStart": 252864,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 478,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 141,
+        "declaredSampleStart": 255168,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 11,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 142,
+        "declaredSampleStart": 256896,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 120,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 143,
+        "declaredSampleStart": 258624,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 229,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 144,
+        "declaredSampleStart": 260352,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 338,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 145,
+        "declaredSampleStart": 262080,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 447,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 146,
+        "declaredSampleStart": 263808,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 556,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 147,
+        "declaredSampleStart": 266112,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 89,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 148,
+        "declaredSampleStart": 267840,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 198,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 149,
+        "declaredSampleStart": 269568,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 307,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 150,
+        "declaredSampleStart": 271296,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 416,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 151,
+        "declaredSampleStart": 273024,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 525,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 152,
+        "declaredSampleStart": 275328,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 58,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 153,
+        "declaredSampleStart": 277056,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 167,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 154,
+        "declaredSampleStart": 278784,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 276,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 155,
+        "declaredSampleStart": 280512,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 385,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 156,
+        "declaredSampleStart": 282240,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 494,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 157,
+        "declaredSampleStart": 284544,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 27,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 158,
+        "declaredSampleStart": 286272,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 136,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 159,
+        "declaredSampleStart": 288000,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 245,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 160,
+        "declaredSampleStart": 289728,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 354,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -164
+      },
+      {
+        "frame": 161,
+        "declaredSampleStart": 291456,
+        "declaredSamples": 0,
+        "rawSeekSamples": -2299,
+        "mp3Bytes": 0,
+        "residualToHeadAverageFromFrame2": -2926
+      },
+      {
+        "frame": 162,
+        "declaredSampleStart": 291456,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 572,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 163,
+        "declaredSampleStart": 293760,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 105,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 164,
+        "declaredSampleStart": 295488,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 214,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 165,
+        "declaredSampleStart": 297216,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 323,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 166,
+        "declaredSampleStart": 298944,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 432,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 167,
+        "declaredSampleStart": 300672,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 541,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 168,
+        "declaredSampleStart": 302976,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 74,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 169,
+        "declaredSampleStart": 304704,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 183,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 170,
+        "declaredSampleStart": 306432,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 292,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 171,
+        "declaredSampleStart": 308160,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 401,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 172,
+        "declaredSampleStart": 309888,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 510,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 173,
+        "declaredSampleStart": 312192,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 43,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 174,
+        "declaredSampleStart": 313920,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 152,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 175,
+        "declaredSampleStart": 315648,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 261,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 176,
+        "declaredSampleStart": 317376,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 370,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 177,
+        "declaredSampleStart": 319104,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 479,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 178,
+        "declaredSampleStart": 321408,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 12,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 179,
+        "declaredSampleStart": 323136,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 121,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 180,
+        "declaredSampleStart": 324864,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 230,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 181,
+        "declaredSampleStart": 326592,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 339,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 182,
+        "declaredSampleStart": 328320,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 448,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 183,
+        "declaredSampleStart": 330048,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 557,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 184,
+        "declaredSampleStart": 332352,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 90,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 185,
+        "declaredSampleStart": 334080,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 199,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 186,
+        "declaredSampleStart": 335808,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 308,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 187,
+        "declaredSampleStart": 337536,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 417,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 188,
+        "declaredSampleStart": 339264,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 526,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 189,
+        "declaredSampleStart": 341568,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 59,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 190,
+        "declaredSampleStart": 343296,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 168,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 191,
+        "declaredSampleStart": 345024,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 277,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 192,
+        "declaredSampleStart": 346752,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 386,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 193,
+        "declaredSampleStart": 348480,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 495,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 194,
+        "declaredSampleStart": 350784,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 28,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 195,
+        "declaredSampleStart": 352512,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 137,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 196,
+        "declaredSampleStart": 354240,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 246,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 197,
+        "declaredSampleStart": 355968,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 355,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 198,
+        "declaredSampleStart": 357696,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 464,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 199,
+        "declaredSampleStart": 359424,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 573,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 200,
+        "declaredSampleStart": 361728,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 106,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 201,
+        "declaredSampleStart": 363456,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 215,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 202,
+        "declaredSampleStart": 365184,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 324,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 203,
+        "declaredSampleStart": 366912,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 433,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 204,
+        "declaredSampleStart": 368640,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 542,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 205,
+        "declaredSampleStart": 370944,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 75,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 206,
+        "declaredSampleStart": 372672,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 184,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 207,
+        "declaredSampleStart": 374400,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 293,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 208,
+        "declaredSampleStart": 376128,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 402,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 209,
+        "declaredSampleStart": 377856,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 511,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 210,
+        "declaredSampleStart": 380160,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 44,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 211,
+        "declaredSampleStart": 381888,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 153,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 212,
+        "declaredSampleStart": 383616,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 262,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 213,
+        "declaredSampleStart": 385344,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 371,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 214,
+        "declaredSampleStart": 387072,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 480,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 215,
+        "declaredSampleStart": 389376,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 13,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 216,
+        "declaredSampleStart": 391104,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 122,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 217,
+        "declaredSampleStart": 392832,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 231,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 218,
+        "declaredSampleStart": 394560,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 340,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 219,
+        "declaredSampleStart": 396288,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 449,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 220,
+        "declaredSampleStart": 398016,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 558,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 221,
+        "declaredSampleStart": 400320,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 91,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 222,
+        "declaredSampleStart": 402048,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 200,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 223,
+        "declaredSampleStart": 403776,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 309,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 224,
+        "declaredSampleStart": 405504,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 418,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 225,
+        "declaredSampleStart": 407232,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 527,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 226,
+        "declaredSampleStart": 409536,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 60,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 227,
+        "declaredSampleStart": 411264,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 169,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 228,
+        "declaredSampleStart": 412992,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 278,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 229,
+        "declaredSampleStart": 414720,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 387,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 230,
+        "declaredSampleStart": 416448,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 496,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 231,
+        "declaredSampleStart": 418752,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 29,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 232,
+        "declaredSampleStart": 420480,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 138,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 233,
+        "declaredSampleStart": 422208,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 247,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 234,
+        "declaredSampleStart": 423936,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 356,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 235,
+        "declaredSampleStart": 425664,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 465,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 236,
+        "declaredSampleStart": 427392,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 574,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 237,
+        "declaredSampleStart": 429696,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 107,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 238,
+        "declaredSampleStart": 431424,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 216,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 239,
+        "declaredSampleStart": 433152,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 325,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 240,
+        "declaredSampleStart": 434880,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 434,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 241,
+        "declaredSampleStart": 436608,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 543,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 242,
+        "declaredSampleStart": 438912,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 76,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 243,
+        "declaredSampleStart": 440640,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 185,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 244,
+        "declaredSampleStart": 442368,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 294,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 245,
+        "declaredSampleStart": 444096,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 403,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 246,
+        "declaredSampleStart": 445824,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 512,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 247,
+        "declaredSampleStart": 448128,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 45,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 248,
+        "declaredSampleStart": 449856,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 154,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 249,
+        "declaredSampleStart": 451584,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 263,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 250,
+        "declaredSampleStart": 453312,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 372,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 251,
+        "declaredSampleStart": 455040,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 481,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -1892
+      },
+      {
+        "frame": 252,
+        "declaredSampleStart": 457344,
+        "declaredSamples": 0,
+        "rawSeekSamples": -1850,
+        "mp3Bytes": 0,
+        "residualToHeadAverageFromFrame2": -3756
+      },
+      {
+        "frame": 256,
+        "declaredSampleStart": 457344,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 450,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 257,
+        "declaredSampleStart": 459072,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 559,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 258,
+        "declaredSampleStart": 461376,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 92,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 259,
+        "declaredSampleStart": 463104,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 201,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 260,
+        "declaredSampleStart": 464832,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 310,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 261,
+        "declaredSampleStart": 466560,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 419,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 262,
+        "declaredSampleStart": 468288,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 528,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 263,
+        "declaredSampleStart": 470592,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 61,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 264,
+        "declaredSampleStart": 472320,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 170,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 265,
+        "declaredSampleStart": 474048,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 279,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 266,
+        "declaredSampleStart": 475776,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 388,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 267,
+        "declaredSampleStart": 477504,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 497,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 268,
+        "declaredSampleStart": 479808,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 30,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 269,
+        "declaredSampleStart": 481536,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 139,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 270,
+        "declaredSampleStart": 483264,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 248,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 271,
+        "declaredSampleStart": 484992,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 357,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 272,
+        "declaredSampleStart": 486720,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 466,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 273,
+        "declaredSampleStart": 488448,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 575,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 274,
+        "declaredSampleStart": 490752,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 108,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 275,
+        "declaredSampleStart": 492480,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 217,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 276,
+        "declaredSampleStart": 494208,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 326,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 277,
+        "declaredSampleStart": 495936,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 435,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 278,
+        "declaredSampleStart": 497664,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 544,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 279,
+        "declaredSampleStart": 499968,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 77,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 280,
+        "declaredSampleStart": 501696,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 186,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 281,
+        "declaredSampleStart": 503424,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 295,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 282,
+        "declaredSampleStart": 505152,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 404,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 283,
+        "declaredSampleStart": 506880,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 513,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 284,
+        "declaredSampleStart": 509184,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 46,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 285,
+        "declaredSampleStart": 510912,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 155,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 286,
+        "declaredSampleStart": 512640,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 264,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 287,
+        "declaredSampleStart": 514368,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 373,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 288,
+        "declaredSampleStart": 516096,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 482,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 289,
+        "declaredSampleStart": 518400,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 15,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 290,
+        "declaredSampleStart": 520128,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 124,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 291,
+        "declaredSampleStart": 521856,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 233,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 292,
+        "declaredSampleStart": 523584,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 342,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 293,
+        "declaredSampleStart": 525312,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 451,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 294,
+        "declaredSampleStart": 527040,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 560,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 295,
+        "declaredSampleStart": 529344,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 93,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 296,
+        "declaredSampleStart": 531072,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 202,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 297,
+        "declaredSampleStart": 532800,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 311,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 298,
+        "declaredSampleStart": 534528,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 420,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 299,
+        "declaredSampleStart": 536256,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 529,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 300,
+        "declaredSampleStart": 538560,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 62,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 301,
+        "declaredSampleStart": 540288,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 171,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 302,
+        "declaredSampleStart": 542016,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 280,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 303,
+        "declaredSampleStart": 543744,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 389,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 304,
+        "declaredSampleStart": 545472,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 498,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 305,
+        "declaredSampleStart": 547776,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 31,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 306,
+        "declaredSampleStart": 549504,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 140,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 307,
+        "declaredSampleStart": 551232,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 249,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 308,
+        "declaredSampleStart": 552960,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 358,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 309,
+        "declaredSampleStart": 554688,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 467,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 310,
+        "declaredSampleStart": 556416,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 576,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 311,
+        "declaredSampleStart": 558720,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 109,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 312,
+        "declaredSampleStart": 560448,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 218,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 313,
+        "declaredSampleStart": 562176,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 327,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 314,
+        "declaredSampleStart": 563904,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 436,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 315,
+        "declaredSampleStart": 565632,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 545,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 316,
+        "declaredSampleStart": 567936,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 78,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 317,
+        "declaredSampleStart": 569664,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 187,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 318,
+        "declaredSampleStart": 571392,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 296,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 319,
+        "declaredSampleStart": 573120,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 405,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 320,
+        "declaredSampleStart": 574848,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 514,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 321,
+        "declaredSampleStart": 577152,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 47,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 322,
+        "declaredSampleStart": 578880,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 156,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 323,
+        "declaredSampleStart": 580608,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 265,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 324,
+        "declaredSampleStart": 582336,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 374,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 325,
+        "declaredSampleStart": 584064,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 483,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 326,
+        "declaredSampleStart": 586368,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 16,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 327,
+        "declaredSampleStart": 588096,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 125,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 328,
+        "declaredSampleStart": 589824,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 234,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 329,
+        "declaredSampleStart": 591552,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 343,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 330,
+        "declaredSampleStart": 593280,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 452,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 331,
+        "declaredSampleStart": 595008,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 561,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 332,
+        "declaredSampleStart": 597312,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 94,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 333,
+        "declaredSampleStart": 599040,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 203,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 334,
+        "declaredSampleStart": 600768,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 312,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 335,
+        "declaredSampleStart": 602496,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 421,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 336,
+        "declaredSampleStart": 604224,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 530,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 337,
+        "declaredSampleStart": 606528,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 63,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 338,
+        "declaredSampleStart": 608256,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 172,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 339,
+        "declaredSampleStart": 609984,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 281,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 340,
+        "declaredSampleStart": 611712,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 390,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 341,
+        "declaredSampleStart": 613440,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 499,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 342,
+        "declaredSampleStart": 615744,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 32,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 343,
+        "declaredSampleStart": 617472,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 141,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 344,
+        "declaredSampleStart": 619200,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 250,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 345,
+        "declaredSampleStart": 620928,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 359,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 346,
+        "declaredSampleStart": 622656,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 468,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 347,
+        "declaredSampleStart": 624960,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 1,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 348,
+        "declaredSampleStart": 626688,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 110,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 349,
+        "declaredSampleStart": 628416,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 219,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 350,
+        "declaredSampleStart": 630144,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 328,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 351,
+        "declaredSampleStart": 631872,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 437,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 352,
+        "declaredSampleStart": 633600,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 546,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 353,
+        "declaredSampleStart": 635904,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 79,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 354,
+        "declaredSampleStart": 637632,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 188,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 355,
+        "declaredSampleStart": 639360,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 297,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 356,
+        "declaredSampleStart": 641088,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 406,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 357,
+        "declaredSampleStart": 642816,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 515,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 358,
+        "declaredSampleStart": 645120,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 48,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 359,
+        "declaredSampleStart": 646848,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 157,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 360,
+        "declaredSampleStart": 648576,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 266,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 361,
+        "declaredSampleStart": 650304,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 375,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 362,
+        "declaredSampleStart": 652032,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 484,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 363,
+        "declaredSampleStart": 654336,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 17,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 364,
+        "declaredSampleStart": 656064,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 126,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 365,
+        "declaredSampleStart": 657792,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 235,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 366,
+        "declaredSampleStart": 659520,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 344,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 367,
+        "declaredSampleStart": 661248,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 453,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 368,
+        "declaredSampleStart": 662976,
+        "declaredSamples": 2304,
+        "rawSeekSamples": 562,
+        "mp3Bytes": 520,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 369,
+        "declaredSampleStart": 665280,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 95,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 370,
+        "declaredSampleStart": 667008,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 204,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 371,
+        "declaredSampleStart": 668736,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 313,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      },
+      {
+        "frame": 372,
+        "declaredSampleStart": 670464,
+        "declaredSamples": 1728,
+        "rawSeekSamples": 422,
+        "mp3Bytes": 390,
+        "residualToHeadAverageFromFrame2": -8804
+      }
+    ]
+  },
+  "decode": {
+    "ffmpegVersion": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers",
+    "main": {
+      "format": "mono-f32le",
+      "sampleRate": 22050,
+      "samples": 672192,
+      "durationSeconds": 30.484897959183673,
+      "sha256": "df2109f7211fc571f7cc33e639d5b063b73b84c3b5b6dc52c84bd896056f775c"
+    },
+    "separateSa": {
+      "format": "mono-f32le",
+      "sampleRate": 48000,
+      "samples": 1124352,
+      "durationSeconds": 23.424,
+      "sha256": "3fbdd9377e20c341a2dbb06fc4020eac50e128e94f2eb80ef80b0082836dce98"
+    },
+    "separateSaCopy": {
+      "path": "migrations/shared-alg001-l06-p013/audit/audio-v1/separate-sa-source-v1.mp3",
+      "bytes": 327936,
+      "sha256": "2db938405bd646e4bf37e0b9cdf5438cc65451a2d4f7304c93dbc2b6653e8575"
+    },
+    "mainWindowsByVisualFrameCandidate": [
+      {
+        "frame": 2,
+        "startSample": 1673,
+        "endSampleExclusive": 3510,
+        "nonzeroSamples": 1204,
+        "peakAbsolute": 0.000033637432352406904,
+        "rms": 0.0000022261652249309545
+      },
+      {
+        "frame": 3,
+        "startSample": 3510,
+        "endSampleExclusive": 5348,
+        "nonzeroSamples": 1838,
+        "peakAbsolute": 0.6074888706207275,
+        "rms": 0.09548674601538404
+      },
+      {
+        "frame": 4,
+        "startSample": 5348,
+        "endSampleExclusive": 7185,
+        "nonzeroSamples": 1837,
+        "peakAbsolute": 0.6519266963005066,
+        "rms": 0.15295259838039144
+      },
+      {
+        "frame": 159,
+        "startSample": 290160,
+        "endSampleExclusive": 291998,
+        "nonzeroSamples": 0,
+        "peakAbsolute": 0,
+        "rms": 0
+      },
+      {
+        "frame": 160,
+        "startSample": 291998,
+        "endSampleExclusive": 293835,
+        "nonzeroSamples": 0,
+        "peakAbsolute": 0,
+        "rms": 0
+      },
+      {
+        "frame": 161,
+        "startSample": 293835,
+        "endSampleExclusive": 295673,
+        "nonzeroSamples": 1335,
+        "peakAbsolute": 0.000050832964916480705,
+        "rms": 0.000007078072885241409
+      },
+      {
+        "frame": 162,
+        "startSample": 295673,
+        "endSampleExclusive": 297510,
+        "nonzeroSamples": 1837,
+        "peakAbsolute": 0.5080803036689758,
+        "rms": 0.1421418662602269
+      },
+      {
+        "frame": 250,
+        "startSample": 457373,
+        "endSampleExclusive": 459210,
+        "nonzeroSamples": 0,
+        "peakAbsolute": 0,
+        "rms": 0
+      },
+      {
+        "frame": 251,
+        "startSample": 459210,
+        "endSampleExclusive": 461048,
+        "nonzeroSamples": 0,
+        "peakAbsolute": 0,
+        "rms": 0
+      },
+      {
+        "frame": 252,
+        "startSample": 461048,
+        "endSampleExclusive": 462885,
+        "nonzeroSamples": 355,
+        "peakAbsolute": 9.406276105239364e-12,
+        "rms": 8.839717604487859e-13
+      },
+      {
+        "frame": 253,
+        "startSample": 462885,
+        "endSampleExclusive": 464723,
+        "nonzeroSamples": 1838,
+        "peakAbsolute": 0.00008178214920917526,
+        "rms": 0.00001097019496948959
+      },
+      {
+        "frame": 254,
+        "startSample": 464723,
+        "endSampleExclusive": 466560,
+        "nonzeroSamples": 1837,
+        "peakAbsolute": 0.3895384967327118,
+        "rms": 0.09863886799692237
+      },
+      {
+        "frame": 255,
+        "startSample": 466560,
+        "endSampleExclusive": 468398,
+        "nonzeroSamples": 1838,
+        "peakAbsolute": 0.6727439165115356,
+        "rms": 0.19685768113287158
+      },
+      {
+        "frame": 256,
+        "startSample": 468398,
+        "endSampleExclusive": 470235,
+        "nonzeroSamples": 1837,
+        "peakAbsolute": 0.3584018051624298,
+        "rms": 0.14825393523440913
+      },
+      {
+        "frame": 257,
+        "startSample": 470235,
+        "endSampleExclusive": 472073,
+        "nonzeroSamples": 1838,
+        "peakAbsolute": 0.73075270652771,
+        "rms": 0.20117000929405665
+      },
+      {
+        "frame": 370,
+        "startSample": 672192,
+        "endSampleExclusive": 672192,
+        "nonzeroSamples": 0,
+        "peakAbsolute": 0,
+        "rms": 0
+      },
+      {
+        "frame": 371,
+        "startSample": 672192,
+        "endSampleExclusive": 672192,
+        "nonzeroSamples": 0,
+        "peakAbsolute": 0,
+        "rms": 0
+      },
+      {
+        "frame": 372,
+        "startSample": 672192,
+        "endSampleExclusive": 672192,
+        "nonzeroSamples": 0,
+        "peakAbsolute": 0,
+        "rms": 0
+      }
+    ]
+  },
+  "scheduleCandidate": {
+    "kind": "continuous-main-source-v1",
+    "sourceFirstBlockFrame": 2,
+    "sourceLastFrame": 372,
+    "sourceTerminalStopActionPresent": false,
+    "startAtVisualSeconds": 0.08333333333333333,
+    "initialLatencySamples": 1673,
+    "oneConcatenatedMp3Transport": true,
+    "noSyntheticSilenceForMissingBlockFrames": true,
+    "directArbitraryFrameSeekSupported": false,
+    "replay": "restart extracted main MP3 at its initial latency on an explicit Replay",
+    "decodedEndSeconds": 30.49235827664399,
+    "lastVisualFrameStartSeconds": 30.916666666666668,
+    "decodedEndBeforeLastVisualFrameSeconds": 0.4243083900226772,
+    "separateSa": "source present; host trigger, language, and timing unverified; keep separate and user-triggered only"
+  },
+  "limits": {
+    "negativeSeekFrames161And252OperationalMeaningResolved": false,
+    "missingBlocksProveAudibleSilence": false,
+    "originalRuntimeTraceObserved": false,
+    "separateSaHostBindingVerified": false,
+    "audioAccepted": false,
+    "listeningAccepted": false,
+    "currentJsIntegrationChanged": false
+  }
+}

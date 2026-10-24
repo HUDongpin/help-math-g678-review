@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "kind": "p042-canonical-canvas-v1-chrome-smoke",
+  "animationId": "shared-alg001-l06-p042",
+  "candidate": {
+    "path": "migrations/shared-alg001-l06-p042/canvas-v1/canvas-renderer.js",
+    "bytes": 3403156,
+    "sha256": "8eebb94446a095f5219bc5b3b46f740179d92e8ee6260a6a5cfa2d9d34fae8f4"
+  },
+  "reviewedV2": {
+    "path": "output/g678-p042-canvas-visibility-v2-20261002/v2-draw-smoke.json",
+    "sha256": "dfd432c8eb229a326faa225c41cda4911312554e0d175af9e630b0af52d71f45"
+  },
+  "environment": {
+    "browser": "Google Chrome 154.0.8037.58 headless via Playwright",
+    "viewport": {
+      "width": 800,
+      "height": 600
+    },
+    "deviceScaleFactor": 1,
+    "scratch": "/Volumes/American Dream/hudongpin/g678-p042-task-tmp-20261002"
+  },
+  "cases": [
+    {
+      "id": "main-278",
+      "request": {
+        "frame": 278
+      },
+      "pixels": {
+        "frame": 278,
+        "nmhOpen": false,
+        "visibility": {
+          "nmhPopup": "hidden",
+          "wrongFeedbackPopup": "hidden"
+        },
+        "canvas": {
+          "width": 800,
+          "height": 600
+        },
+        "nonBackgroundPixels": 15823,
+        "pixelFnv1a32": "2f8e78ce",
+        "dataFrame": "278",
+        "dataNmhOpen": "false"
+      },
+      "png": {
+        "path": "smoke-v1/main-278.png",
+        "bytes": 23826,
+        "sha256": "bfc37b4d35e967d8c4fcb84977baf85c44cc32d115fd83a96c09a7c7e92e577a"
+      }
+    },
+    {
+      "id": "main-279-hidden",
+      "request": {
+        "frame": 279
+      },
+      "pixels": {
+        "frame": 279,
+        "nmhOpen": false,
+        "visibility": {
+          "nmhPopup": "hidden",
+          "wrongFeedbackPopup": "hidden"
+        },
+        "canvas": {
+          "width": 800,
+          "height": 600
+        },
+        "nonBackgroundPixels": 15823,
+        "pixelFnv1a32": "030a917a",
+        "dataFrame": "279",
+        "dataNmhOpen": "false"
+      },
+      "png": {
+        "path": "smoke-v1/main-279-hidden.png",
+        "bytes": 23868,
+        "sha256": "e48cc13a1367121aae49eb25cd5015c0744c69e5db0a277896c1f8e93fba2fd5"
+      }
+    },
+    {
+      "id": "nmh-open",
+      "request": {
+        "frame": 279,
+        "nmhOpen": true
+      },
+      "pixels": {
+        "frame": 279,
+        "nmhOpen": true,
+        "visibility": {
+          "nmhPopup": "open",
+          "wrongFeedbackPopup": "hidden"
+        },
+        "canvas": {
+          "width": 800,
+          "height": 600
+        },
+        "nonBackgroundPixels": 125361,
+        "pixelFnv1a32": "ed077088",
+        "dataFrame": "279",
+        "dataNmhOpen": "true"
+      },
+      "png": {
+        "path": "smoke-v1/nmh-open.png",
+        "bytes": 54943,
+        "sha256": "f673e28e6e929681852ee12788ab21a12cc049f16c186b4c3532d9fc1923f0e3"
+      }
+    },
+    {
+      "id": "wrong4-022",
+      "request": {
+        "frame": 279,
+        "feedback": {
+          "spriteId": 292,
+          "localFrame": 22
+        }
+      },
+      "pixels": {
+        "frame": 279,
+        "nmhOpen": false,
+        "visibility": {
+          "nmhPopup": "hidden",
+          "wrongFeedbackPopup": "open"
+        },
+        "canvas": {
+          "width": 800,
+          "height": 600
+        },
+        "nonBackgroundPixels": 89170,
+        "pixelFnv1a32": "c8d28d40",
+        "dataFrame": "279",
+        "dataNmhOpen": "false"
+      },
+      "png": {
+        "path": "smoke-v1/wrong4-022.png",
+        "bytes": 50815,
+        "sha256": "59f6a7aacd5221ef8e1ac99e50840a88b8187ba60e612725beba3e0732209b89"
+      }
+    },
+    {
+      "id": "right4-012",
+      "request": {
+        "frame": 279,
+        "feedback": {
+          "spriteId": 239,
+          "localFrame": 12
+        }
+      },
+      "pixels": {
+        "frame": 279,
+        "nmhOpen": false,
+        "visibility": {
+          "nmhPopup": "hidden",
+          "wrongFeedbackPopup": "hidden"
+        },
+        "canvas": {
+          "width": 800,
+          "height": 600
+        },
+        "nonBackgroundPixels": 35614,
+        "pixelFnv1a32": "2a0659d0",
+        "dataFrame": "279",
+        "dataNmhOpen": "false"
+      },
+      "png": {
+        "path": "smoke-v1/right4-012.png",
+        "bytes": 56021,
+        "sha256": "1e4e1f5a222e854f3999ed6c39e3641eeab62ea63061fd8aebf9b16f663ecb8a"
+      }
+    }
+  ],
+  "errors": [],
+  "requests": [],
+  "runawayCheck": {
+    "delayMs": 600,
+    "frameUnchanged": true,
+    "pixelsUnchanged": true
+  },
+  "limitations": [
+    "Dynamic txtFeed not rendered; original-runtime pixels not compared.",
+    "Mask/JPEG/morph appearance, AVM1, audio, host and My Lesson remain unverified."
+  ],
+  "acceptanceEffects": {
+    "currentJsRegistered": false,
+    "fidelity": false,
+    "audio": false,
+    "human": false,
+    "owner": false,
+    "strictComplete": false
+  }
+}

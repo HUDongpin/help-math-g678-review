@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l06-p032",
+  "animationId": "shared-alg001-l06-p032",
+  "assetId": "swf-e425600d0b6cfab41ae50f7512cb8e6c4e3c6ee04bbfa10c29b437459876d836",
+  "status": "implementing",
+  "created": "2026-09-30",
+  "confidence": "source-supported",
+  "classification": {
+    "collection": "g678-shared",
+    "grade": "G6-G8-shared",
+    "lesson": "ALG001/L6",
+    "section": "IN",
+    "page": 32,
+    "domain": "algebra",
+    "knowledgePoint": {
+      "en": "Testing Whether Ordered Pairs Represent a Function",
+      "es": "Comprobaci\u00f3n de si pares ordenados representan una funci\u00f3n"
+    },
+    "titleRaw": "Testing Whether Ordered Pairs Represent a Function",
+    "titleDisplay": "Testing Whether Ordered Pairs Represent a Function",
+    "status": "source-reviewed",
+    "evidence": [
+      "audit/source-planning-v1/source-plan-v1.json"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/IN/L6IN04.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/IN/L6IN04.swf",
+    "flaSha256": "",
+    "swfSha256": "e425600d0b6cfab41ae50f7512cb8e6c4e3c6ee04bbfa10c29b437459876d836",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 184337,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#b8d8f7",
+    "actionScriptVersion": "AVM1",
+    "complexity": "interactive-understood",
+    "fonts": [],
+    "scripts": [
+      "audit/source-planning-v1/source-export/scripts/DefineButton2_7/BUTTONCONDACTION on(release).as",
+      "audit/source-planning-v1/source-export/scripts/DefineButton2_8/BUTTONCONDACTION on(release).as",
+      "audit/source-planning-v1/source-export/scripts/DefineButton2_9/BUTTONCONDACTION on(release).as",
+      "audit/source-planning-v1/source-export/scripts/DefineButton2_12/BUTTONCONDACTION on(release).as"
+    ],
+    "externalDependencies": [
+      "_level0.InternalPreloader",
+      "_root.DoHyperLinks",
+      "_root.animation_mc.animation.stop",
+      "_global.KeyAttribute"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      {
+        "characterId": 2,
+        "depth": 1,
+        "clipDepth": 10
+      },
+      {
+        "characterId": 2,
+        "depth": 11,
+        "clipDepth": 16
+      }
+    ],
+    "morphs": [],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "default",
+      "kind": "linear",
+      "description": "Source-order sprite22 continuous main and four source-gated glossary release actions; SA independent explicit user only.",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "en",
+      "es"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "main-1",
+        "language": "en",
+        "source": "embedded sprite22 continuous stream",
+        "firstFrame": 1,
+        "lastFrame": 413,
+        "frameDomain": "sprite-22"
+      },
+      {
+        "id": "separate-sa",
+        "language": "es",
+        "source": "separate physical SA path; listening unresolved",
+        "trigger": "explicit-user-only"
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "HeadlessChrome154 source-only decode/static engineering checks",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "source-generated Canvas, native text and maintained continuous audio owner",
+    "route": "",
+    "routeFile": "",
+    "component": "../../packages/demos/src/alg-l06-p032-visual-player-v1.tsx",
+    "registryModule": "",
+    "timelineModule": "../../packages/demos/src/alg-l06-p032-timeline-v1.ts",
+    "testFile": "",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-22",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-22",
+        "kind": "movie-clip",
+        "sourceTimelineId": "sprite-22",
+        "parentFrameDomainId": "root",
+        "frameCount": 413,
+        "scenarioIds": [
+          "default"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": [
+      "Unregistered engineering candidate; real My Lesson integration not yet validated",
+      "Original runtime/stream audible alignment/listening/human/Owner/strict/publication remain open",
+      "Standalone source glossary actions require verified maintained host callback and source frame gates"
+    ]
+  }
+}

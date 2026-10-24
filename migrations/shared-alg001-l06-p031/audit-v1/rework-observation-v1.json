@@ -1,0 +1,33 @@
+{
+  "kind": "p031-rework-observation-v1",
+  "observedAt": "2026-10-02T20:48:12.313509+00:00",
+  "noRetrospectiveDurationInferred": true,
+  "items": [
+    {
+      "failure": {
+        "path": "migrations/shared-alg001-l06-p031/audit-v1/browser-decode-v1.txt",
+        "bytes": 78,
+        "sha256": "d7e0d940a783a33a2a0a94e9e9c3471890bef5a363ae067d7e4a1cbd07d39be4"
+      },
+      "cause": "Playwright runner receives page argument directly; v1 incorrectly destructured it",
+      "resolution": "v2 passed nine exact stream decodes"
+    },
+    {
+      "failure": {
+        "path": "migrations/shared-alg001-l06-p031/audit-v1/browser-layout-v2.txt",
+        "bytes": 383,
+        "sha256": "6cc378811165d51df963f4475223ff807caeddbf8dfa9655be7d1cd0dced5865"
+      },
+      "cause": "fixture body16px kept inherited playback controls at16 despite root20",
+      "resolution": "player root1rem; v3/v4 controls>=44px and20px"
+    },
+    {
+      "cause": "initial generated continuous plan included unsupported version field",
+      "resolution": "removed in generator; final typecheck passed"
+    },
+    {
+      "cause": "v3 fullPage desktop capture repeated header despite passing metrics",
+      "resolution": "v4 fresh browser context/document-height viewport; final images viewed"
+    }
+  ]
+}

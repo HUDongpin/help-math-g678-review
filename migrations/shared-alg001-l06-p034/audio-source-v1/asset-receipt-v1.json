@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "kind": "p034-maintained-source-audio-assets-v1",
+  "source": {
+    "path": "G6-G8-shared/ALG001/L6/IN/L6IN06.swf",
+    "bytes": 156186,
+    "sha256": "32ddbfde743b785610360f38b7030ab2dbd289438f6c4433e6699ce3004a629a"
+  },
+  "sourceSA": {
+    "path": "G6-G8-shared/ALG001/L6/SA/L6IN06.mp3",
+    "bytes": 438816,
+    "sha256": "2bebaa57aee0e80591e80cd542dc98f51839593820c9ec16d6a720dbfd9dab30"
+  },
+  "inputs": [
+    {
+      "path": "scripts/prepare-alg-l06-p034-audio-source-v1.mjs",
+      "bytes": 4434,
+      "sha256": "c21d8417c67eb3dcf5e1b7b3b4a80376b5955162bfa7098e350b98acd39a0060"
+    },
+    {
+      "path": "output/alg-l06-p034-audio-domain-planning-20261001-v1/audio-domain-plan-v1.json",
+      "bytes": 6600,
+      "sha256": "6313a14683f3a23e1c3e98963bb87659f8d17d38583b09c97de01a31c1c24bf5"
+    },
+    {
+      "path": "output/alg-l06-p034-audio-domain-planning-20261001-v1/main-source-v1.mp3",
+      "bytes": 167310,
+      "sha256": "9f75303ceb0bd281d47f92583f1c40aa34b4974695a0c019199682b507131e2d"
+    },
+    {
+      "path": "output/alg-l06-p034-audio-domain-planning-20261001-v1/main-block-schedule-v1.json",
+      "bytes": 132014,
+      "sha256": "0282f01ddad554f0b1d14e3eb1a9a7d8a2b3ceec91c5644aceddc9692da977b6"
+    },
+    {
+      "path": "output/alg-l06-p034-audio-domain-planning-20261001-v1/browser-decode-chromium-v1.json",
+      "bytes": 1386,
+      "sha256": "e938383da2d84012a0f87da418485a5b0d70c1badf705687ba74254b2cbfaeb2"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "migrations/shared-alg001-l06-p034/audio-source-v1/main-source-v1.mp3",
+      "bytes": 167310,
+      "sha256": "9f75303ceb0bd281d47f92583f1c40aa34b4974695a0c019199682b507131e2d"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p034/audio-source-v1/main-block-schedule-v1.json",
+      "bytes": 132014,
+      "sha256": "0282f01ddad554f0b1d14e3eb1a9a7d8a2b3ceec91c5644aceddc9692da977b6"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p034/audio-source-v1/separate-sa-source-v1.mp3",
+      "bytes": 438816,
+      "sha256": "2bebaa57aee0e80591e80cd542dc98f51839593820c9ec16d6a720dbfd9dab30"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p034/audio-source-v1/browser-decode-v1.json",
+      "bytes": 1386,
+      "sha256": "e938383da2d84012a0f87da418485a5b0d70c1badf705687ba74254b2cbfaeb2"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p034/audio-inventory.csv",
+      "bytes": 751,
+      "sha256": "f1ee95233f3709fd49d50bef79e39825cbc40c9896b6b65ed169635e8b67c161"
+    }
+  ],
+  "sourceFrameToBrowserPcmAlignmentAccepted": false,
+  "negativeSeekRuntimeEffect": "unresolved",
+  "optionalSpanishPolicy": "explicit-only-separate",
+  "acceptanceEffects": {
+    "registration": false,
+    "playback": false,
+    "listening": false,
+    "originalRuntime": false,
+    "fidelity": false,
+    "human": false,
+    "owner": false,
+    "strictCompletion": false,
+    "publication": false
+  }
+}

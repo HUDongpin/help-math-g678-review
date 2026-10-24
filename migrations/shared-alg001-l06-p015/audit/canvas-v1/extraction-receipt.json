@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p015-ffdec-canvas-export-v1",
+  "animationId": "shared-alg001-l06-p015",
+  "source": {
+    "path": "G6-G8-shared/ALG001/L6/VB/L6VB06.swf",
+    "bytes": 559546,
+    "sha256": "d0f395f5410353733b42ae29198caa86fae6b6eebd0e2a71830a203d969868b1"
+  },
+  "tool": "JPEXS Free Flash Decompiler v.26.2.1",
+  "command": [
+    "ffdec",
+    "-config",
+    "packJavaScripts=false",
+    "-onerror",
+    "abort",
+    "-format",
+    "frame:canvas,sprite:canvas",
+    "-export",
+    "frame,sprite",
+    "migrations/shared-alg001-l06-p015/audit/canvas-v1",
+    "$HELP_MATH_G678_SOURCE_ROOT/G6-G8-shared/ALG001/L6/VB/L6VB06.swf"
+  ],
+  "sourceAudit": {
+    "path": "migrations/shared-alg001-l06-p015/audit/source-v1/source-audit-v1.json",
+    "sha256": "5e474ab8e2c00be798adfb1ca39b654ace6b178c2311745f69451bba589a9824"
+  },
+  "files": [
+    {
+      "path": "migrations/shared-alg001-l06-p015/audit/canvas-v1/frames/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p015/audit/canvas-v1/frames/frames.html",
+      "bytes": 10571861,
+      "sha256": "dc97528eb30f4699535f9ea9e24ffaca58c482a0154698a7e83df3c1e431789f"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p015/audit/canvas-v1/sprites/DefineSprite_270/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p015/audit/canvas-v1/sprites/DefineSprite_270/frames.html",
+      "bytes": 10610764,
+      "sha256": "e6d1a19905167f110f38e741a059b3c3c5f4d1528ef184c34169482cf3e822dd"
+    }
+  ],
+  "status": "source extraction only; no renderer or acceptance"
+}

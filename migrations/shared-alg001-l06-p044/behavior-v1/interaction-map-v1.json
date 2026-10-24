@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "kind": "p044-source-interaction-map-v1",
+  "animationId": "shared-alg001-l06-p044",
+  "status": "source-only-unregistered",
+  "sourceIntake": {
+    "path": "output/g678-p044-source-intake-20261002-v1/source-intake-v2.json",
+    "bytes": 7391,
+    "sha256": "7b74d697f4a4e0a43adf2b6bdd5506911ed0f5fa7468a77f4705f0dbacca06e2"
+  },
+  "answerGeometry": {
+    "path": "output/g678-p044-source-intake-20261002-v1/answer-hit-geometry-v1.json",
+    "bytes": 4833,
+    "sha256": "a90e3de91e099e4701c47fc994c9ad215e05875949cbf2b85262d958af5de07f"
+  },
+  "main": {
+    "mainSprite": 354,
+    "quizHoldFrame": 53,
+    "mainResumeFrame": 54,
+    "mainEndHoldFrame": 275,
+    "wrongButton": 161,
+    "rightButton": 162,
+    "wrongFeedbackSprite": 336,
+    "wrongFeedbackHoldFrame": 20,
+    "wrongFeedbackCloseButton": 331,
+    "wrongFeedbackCloseJumpFrame": 21,
+    "wrongFeedbackTerminalFrame": 28,
+    "rightFeedbackSprite": 198,
+    "rightFeedbackTerminalFrame": 31
+  },
+  "choices": [
+    {
+      "label": "A",
+      "text": "{(0, –1), (0, 0), (0, 1)}",
+      "buttonId": 161,
+      "branch": "wrong4"
+    },
+    {
+      "label": "B",
+      "text": "{(5, 1), (10, 1), (15, 1)}",
+      "buttonId": 162,
+      "branch": "right4"
+    },
+    {
+      "label": "C",
+      "text": "{(2, –2), (2, 0), (–2, 0)}",
+      "buttonId": 161,
+      "branch": "wrong4"
+    },
+    {
+      "label": "D",
+      "text": "{(–5, –4), (–4, –3), (–5, –1)}",
+      "buttonId": 161,
+      "branch": "wrong4"
+    }
+  ],
+  "wrongFeedbackText": {
+    "beforeFirstRetry": "All the x-coordinates must be different in a function. Try again.",
+    "afterOneWrongTry": "All the x-coordinates must be different in a function."
+  },
+  "actions": {
+    "wrong": {
+      "path": "output/g678-p044-source-intake-20261002-v1/audit/ffdec-export/scripts/DefineButton2_161/BUTTONCONDACTION on(release).as",
+      "bytes": 359,
+      "sha256": "c87b79ff33eba8fc22071fbfd0573cff29b67393c59151cd0626846debe2053a"
+    },
+    "right": {
+      "path": "output/g678-p044-source-intake-20261002-v1/audit/ffdec-export/scripts/DefineButton2_162/BUTTONCONDACTION on(release).as",
+      "bytes": 111,
+      "sha256": "55503224c49e9bb7cb4ad98a122b5fa894018cd29e06b39de2c5faf524079268"
+    },
+    "wrongClose": {
+      "path": "output/g678-p044-source-intake-20261002-v1/audit/ffdec-export/scripts/DefineButton2_331/BUTTONCONDACTION on(release).as",
+      "bytes": 141,
+      "sha256": "3fe79f85ee919b2d07dc6e3ea32f67fe78ab058772ea4197375d1063d7be8a7c"
+    },
+    "nmhOpen": {
+      "path": "output/g678-p044-source-intake-20261002-v1/audit/ffdec-export/scripts/DefineButton2_143/BUTTONCONDACTION on(release).as",
+      "bytes": 136,
+      "sha256": "f6250a8480166278aa29a5bddb6f82a7125f46ad583b54e378b48f1dda335116"
+    },
+    "nmhClose": {
+      "path": "output/g678-p044-source-intake-20261002-v1/audit/ffdec-export/scripts/DefineButton2_172/BUTTONCONDACTION on(release).as",
+      "bytes": 136,
+      "sha256": "c9de0d6748b75987a4e25d7a536151e3e08da34bed790b608b92fc92af6473ec"
+    }
+  },
+  "glossary": {
+    "137": {
+      "term": "Relation",
+      "action": {
+        "path": "output/g678-p044-source-intake-20261002-v1/audit/ffdec-export/scripts/DefineButton2_137/BUTTONCONDACTION on(release).as",
+        "bytes": 130,
+        "sha256": "e53e61541809a015a06232d99eb5e7ef4218d6114e0ed11515f817830bd765aa"
+      }
+    },
+    "138": {
+      "term": "Set",
+      "action": {
+        "path": "output/g678-p044-source-intake-20261002-v1/audit/ffdec-export/scripts/DefineButton2_138/BUTTONCONDACTION on(release).as",
+        "bytes": 125,
+        "sha256": "7120d7a5321cecd5373b2a5721bffee2a6ce7e0a565bbed4660923235d32ce89"
+      }
+    },
+    "139": {
+      "term": "Ordered pair",
+      "action": {
+        "path": "output/g678-p044-source-intake-20261002-v1/audit/ffdec-export/scripts/DefineButton2_139/BUTTONCONDACTION on(release).as",
+        "bytes": 127,
+        "sha256": "063e245c5e7152430464984944a92577bca38e5716c8297df4f2fd240d8e0c02"
+      }
+    },
+    "140": {
+      "term": "X-coordinate",
+      "action": {
+        "path": "output/g678-p044-source-intake-20261002-v1/audit/ffdec-export/scripts/DefineButton2_140/BUTTONCONDACTION on(release).as",
+        "bytes": 134,
+        "sha256": "b0db9aa676a17209e61c181c83b8b44589e6a11907db4488d68039458c3f07af"
+      }
+    },
+    "141": {
+      "term": "Function",
+      "action": {
+        "path": "output/g678-p044-source-intake-20261002-v1/audit/ffdec-export/scripts/DefineButton2_141/BUTTONCONDACTION on(release).as",
+        "bytes": 130,
+        "sha256": "abb9aad9c70bdfa302746c66f8b22cfb52c5b34af5705f9e78100737b9664f63"
+      }
+    },
+    "149": {
+      "term": "Function",
+      "action": {
+        "path": "output/g678-p044-source-intake-20261002-v1/audit/ffdec-export/scripts/DefineButton2_149/BUTTONCONDACTION on(release).as",
+        "bytes": 130,
+        "sha256": "abb9aad9c70bdfa302746c66f8b22cfb52c5b34af5705f9e78100737b9664f63"
+      }
+    },
+    "150": {
+      "term": "Relation",
+      "action": {
+        "path": "output/g678-p044-source-intake-20261002-v1/audit/ffdec-export/scripts/DefineButton2_150/BUTTONCONDACTION on(release).as",
+        "bytes": 130,
+        "sha256": "e53e61541809a015a06232d99eb5e7ef4218d6114e0ed11515f817830bd765aa"
+      }
+    }
+  },
+  "sourceStageOnly": true,
+  "browserHitParityAccepted": false,
+  "registeredCurrentJs": false,
+  "audioListeningAccepted": false,
+  "deployment": false
+}

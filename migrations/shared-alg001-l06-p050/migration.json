@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l06-p050",
+  "animationId": "shared-alg001-l06-p050",
+  "assetId": "swf-4353f9cbd7e60043baa8f59c7f5193fcd930778ace4b918ab56f2953f306937e",
+  "status": "preserved",
+  "created": "2026-10-02",
+  "confidence": "inferred",
+  "classification": {
+    "collection": "G6-G8-shared",
+    "grade": "G6-G8-shared",
+    "lesson": 6,
+    "section": "GS",
+    "page": 1,
+    "domain": "algebra",
+    "knowledgePoint": {
+      "en": "Match linear functions and their graphs in the lemonade game",
+      "es": ""
+    },
+    "titleRaw": "Game 1",
+    "titleDisplay": "Game 1",
+    "status": "verified",
+    "evidence": [
+      "catalog/g678-page-only-release-manifest.v1.json",
+      "native-v1/source-model-v1.json"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/GS/L6GS02.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/GS/L6GS02.swf",
+    "flaSha256": "",
+    "swfSha256": "4353f9cbd7e60043baa8f59c7f5193fcd930778ace4b918ab56f2953f306937e",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 1251475,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#b8d8f7",
+    "actionScriptVersion": "AS2",
+    "complexity": "behavior-heavy",
+    "fonts": [
+      "Bauhaus Md BT",
+      "Berlin Sans FB Demi",
+      "GeoSlab703 MdCn BT",
+      "Helvetica Condensed",
+      "Monotype Corsiva",
+      "Revue BT"
+    ],
+    "scripts": [
+      "audit-v1/source-extraction-v1.json"
+    ],
+    "externalDependencies": [
+      "Mc_Final has no placed instance in this SWF",
+      "_parent.enableButton has no page definition",
+      "Q6 wrong button calls _parent.showWrongFeed before page-local showWrongFeed",
+      "Original host enableQuizButton/disableQuizButton and gSound binding",
+      "Original AVM1 RNG state, audible sync and unselected sprite345 runtime appearance"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [],
+    "morphs": [],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "default",
+      "kind": "interactive",
+      "description": "Source-derived ten-question game; all question/correct/wrong branches and Replay require trace coverage. Seeded JS is not AVM1 random-state parity.",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "en",
+      "es"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": []
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "planned maintained source-derived Canvas with native controls and page-local game state",
+    "route": "",
+    "routeFile": "",
+    "component": "",
+    "registryModule": "",
+    "timelineModule": "",
+    "testFile": "",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-489",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-24",
+        "kind": "sprite",
+        "sourceTimelineId": "24",
+        "parentFrameDomainId": "sprite-489",
+        "frameCount": 1,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-26",
+        "kind": "sprite",
+        "sourceTimelineId": "26",
+        "parentFrameDomainId": "root",
+        "frameCount": 1,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-51",
+        "kind": "sprite",
+        "sourceTimelineId": "51",
+        "parentFrameDomainId": "sprite-489",
+        "frameCount": 22,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-265",
+        "kind": "sprite",
+        "sourceTimelineId": "265",
+        "parentFrameDomainId": "sprite-489",
+        "frameCount": 20,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-345",
+        "kind": "sprite",
+        "sourceTimelineId": "345",
+        "parentFrameDomainId": "sprite-489",
+        "frameCount": 56,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-358",
+        "kind": "sprite",
+        "sourceTimelineId": "358",
+        "parentFrameDomainId": "sprite-489",
+        "frameCount": 28,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-379",
+        "kind": "sprite",
+        "sourceTimelineId": "379",
+        "parentFrameDomainId": "sprite-380",
+        "frameCount": 1,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-380",
+        "kind": "sprite",
+        "sourceTimelineId": "380",
+        "parentFrameDomainId": "sprite-489",
+        "frameCount": 28,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-432",
+        "kind": "sprite",
+        "sourceTimelineId": "432",
+        "parentFrameDomainId": "sprite-489",
+        "frameCount": 25,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-469",
+        "kind": "sprite",
+        "sourceTimelineId": "469",
+        "parentFrameDomainId": "sprite-479",
+        "frameCount": 1,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-476",
+        "kind": "sprite",
+        "sourceTimelineId": "476",
+        "parentFrameDomainId": "sprite-479",
+        "frameCount": 1,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-479",
+        "kind": "sprite",
+        "sourceTimelineId": "479",
+        "parentFrameDomainId": "sprite-489",
+        "frameCount": 28,
+        "scenarioIds": [
+          "default"
+        ]
+      },
+      {
+        "id": "sprite-489",
+        "kind": "sprite",
+        "sourceTimelineId": "489",
+        "parentFrameDomainId": "root",
+        "frameCount": 674,
+        "scenarioIds": [
+          "default"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

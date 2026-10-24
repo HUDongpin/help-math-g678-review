@@ -1,0 +1,9 @@
+# P020 Function Table — behavior-first migration
+
+Exact canonical global20/VB10; source L6VB13.swf SHA6d0df40af188c98b77a7419b89223c922200723ce106240a6d08e49891a5d25f,143936 bytes, SWF-only. Root10 at12fps,800x600; main sprite162/172. Source identity and all39 scripts/P-code pinned in output/alg-l06-p020-behavior-v1/source-behavior-audit-v1.json. Source text/display audit remains separately pending.
+
+Maintained advanced-manual state plus extracted Canvas drawing and native semantic controls is selected because the page stops at58 for an answer, uses7feedback timelines and dynamic text. A linear renderer or video cannot represent authored retry and Close. Main resumes at59 only after a right branch or second completed wrong branch. Correct outcome is source button158/AnsBtn2, not an arithmetic inference. First wrong completion increments tryCount; second resets and resumes. Wrong Close resumes its own tail before changing retry state. Feedback begins2 with host x=5, source y retained. Host reference is the existing hash-bound source API, not P020 original runtime.
+
+Native source-English question/table/labels in EN and ES; exact dictionary translations for glossary only. Source39text definitions and3dynamic fields need source-coordinate/time audit. Main source stream and7feedback streams remain separate; sprite94 negative seek -2093 with zero payload stays unresolved until source-grounded clock disposition. Independent SA only explicit user action, never locale autoplay/splice.
+
+All root/nested domains listed in audit/frame-domain-disposition.json. Source natural-trace coverage and full-frame evidence remain pending. No original baseline, listening, fidelity, human/Owner, strict or publication acceptance exists. Replay resets all maintained state and audio generations; this modern host behavior will need dedicated tests. No remote deployment and no new registration.

@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p010-source-audit-v1",
+  "animationId": "shared-alg001-l06-p010",
+  "source": {
+    "path": "G6-G8-shared/ALG001/L6/RW/L6RW09.swf",
+    "bytes": 114334,
+    "sha256": "96552f567037f39868d01b1ba77311858caf2efcdb141ef64ed0878a6c48ce14",
+    "authoring": "swf-only"
+  },
+  "catalog": {
+    "path": "catalog/g678-shared-catalog.v1.json",
+    "bytes": 12534064,
+    "sha256": "a1692c2a86c6771dcb104f59195b5bfdd2b5281cceff0aaeb63a3aabcf4a5657",
+    "lessonKey": "shared-alg001-l06",
+    "globalOrdinal": 10,
+    "sectionCode": "RW",
+    "sectionPageOrdinal": 9
+  },
+  "tools": {
+    "swfmill": "swfmill 0.3.6",
+    "ffdec": "JPEXS Free Flash Decompiler v.26.2.1"
+  },
+  "header": {
+    "signature": "CWS",
+    "version": 6,
+    "compressedBytes": 114334,
+    "declaredUncompressedBytes": 151466,
+    "uncompressedSha256": "76e66d81d5ca80f24c30fb166cd3ed2286d366dee20547aa6463f9cbc731daf2",
+    "stage": {
+      "xMinTwips": 0,
+      "xMaxTwips": 16000,
+      "yMinTwips": 0,
+      "yMaxTwips": 12000,
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "rootFrameCount": 10
+  },
+  "tagCounts": {
+    "End": 3,
+    "ShowFrame": 314,
+    "DefineShape": 6,
+    "SetBackgroundColor": 1,
+    "DefineText": 42,
+    "DoAction": 2,
+    "SoundStreamHead": 1,
+    "SoundStreamBlock": 300,
+    "Tag24": 1,
+    "PlaceObject2": 259,
+    "DefineShape3": 2,
+    "DefineButton2": 1,
+    "DefineSprite": 2,
+    "FrameLabel": 1,
+    "DefineFont2": 3,
+    "DefineFontName": 3
+  },
+  "frameDomains": [
+    {
+      "domainId": "root",
+      "declaredFrames": 10,
+      "observedFrames": 10,
+      "rootReachableByStaticPlacements": true,
+      "parentDomainIds": [],
+      "fingerprintSha256": "51c0a6d6d72ad64f17693efb90090a0ed581282434dd1e343bca9667a06e6c96"
+    },
+    {
+      "domainId": "sprite-52",
+      "declaredFrames": 303,
+      "observedFrames": 303,
+      "rootReachableByStaticPlacements": true,
+      "parentDomainIds": [
+        "root"
+      ],
+      "fingerprintSha256": "ade4c51c67bb57ffb8338052bb1a95ae5222cf37752a9c9ed342c9762323fec7"
+    },
+    {
+      "domainId": "sprite-55",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "rootReachableByStaticPlacements": true,
+      "parentDomainIds": [
+        "root"
+      ],
+      "fingerprintSha256": "cba71ddffe896d12e82aa2549600e22ff71c48c378f89983349bfa6fec537f1c"
+    }
+  ],
+  "rootMain": {
+    "entryFrame": 6,
+    "mainDomain": "sprite-52",
+    "rootFrame1": "preloader call and stop",
+    "rootFrame6": "begin label, main placement and root stop",
+    "mainDeclaredEndFrame": 303,
+    "mainTerminalStopDeclared": false,
+    "oldHostConditionalTerminalStop": "indexMI doCheckPrevAndNext stops main at totalFrames when active non-FQ page",
+    "originalRuntimeExecution": "unobserved"
+  },
+  "sourceText": {
+    "definitionCount": 42,
+    "decodedRuns": 44,
+    "unresolvedRuns": 0,
+    "fadeBoundaries": [
+      {
+        "role": "Functions title",
+        "characterId": 2,
+        "firstPlacedFrame": 24,
+        "firstFullAlphaFrame": 29,
+        "alphaDivisor": 256,
+        "alphaEvents": [
+          {
+            "frame": 24,
+            "alpha": 0
+          },
+          {
+            "frame": 25,
+            "alpha": 51
+          },
+          {
+            "frame": 26,
+            "alpha": 102
+          },
+          {
+            "frame": 27,
+            "alpha": 154
+          },
+          {
+            "frame": 28,
+            "alpha": 205
+          },
+          {
+            "frame": 29,
+            "alpha": 256
+          }
+        ]
+      },
+      {
+        "role": "equation",
+        "characterId": 4,
+        "firstPlacedFrame": 144,
+        "firstFullAlphaFrame": 148,
+        "alphaDivisor": 256,
+        "alphaEvents": [
+          {
+            "frame": 144,
+            "alpha": 0
+          },
+          {
+            "frame": 145,
+            "alpha": 64
+          },
+          {
+            "frame": 146,
+            "alpha": 128
+          },
+          {
+            "frame": 147,
+            "alpha": 192
+          },
+          {
+            "frame": 148,
+            "alpha": 256
+          }
+        ]
+      },
+      {
+        "role": "table",
+        "characterId": 14,
+        "firstPlacedFrame": 163,
+        "firstFullAlphaFrame": 167,
+        "alphaDivisor": 256,
+        "alphaEvents": [
+          {
+            "frame": 163,
+            "alpha": 0
+          },
+          {
+            "frame": 164,
+            "alpha": 64
+          },
+          {
+            "frame": 165,
+            "alpha": 128
+          },
+          {
+            "frame": 166,
+            "alpha": 192
+          },
+          {
+            "frame": 167,
+            "alpha": 256
+          }
+        ]
+      },
+      {
+        "role": "graph axes",
+        "characterId": 33,
+        "firstPlacedFrame": 194,
+        "firstFullAlphaFrame": 198,
+        "alphaDivisor": 256,
+        "alphaEvents": [
+          {
+            "frame": 194,
+            "alpha": 0
+          },
+          {
+            "frame": 195,
+            "alpha": 64
+          },
+          {
+            "frame": 196,
+            "alpha": 128
+          },
+          {
+            "frame": 197,
+            "alpha": 192
+          },
+          {
+            "frame": 198,
+            "alpha": 256
+          }
+        ]
+      }
+    ],
+    "closingQuestion": {
+      "characterId": 49,
+      "firstPlacedFrame": 268,
+      "maskCharacterId": 47,
+      "maskDepth": 30,
+      "clipDepth": 33
+    }
+  },
+  "button": {
+    "characterId": 51,
+    "firstFrame": 268,
+    "lastFrame": 303,
+    "actionSha256": "549555e0e21a60e887e614e7ff3b03592d8a7f577c5ec25e6601f039050f49c8",
+    "sourceKey": "Function",
+    "hostAPI": "DoHyperLinks",
+    "sourceStopTarget": "_root.animation_mc.animation",
+    "actualHostEffect": "unresolved"
+  },
+  "audio": {
+    "embedded": {
+      "blockCount": 300,
+      "firstFrame": 4,
+      "lastFrame": 303,
+      "mp3Bytes": 124280,
+      "concatenatedSha256": "f5c71e9d066a0d2ce37be7afd20c3d1f8182b5c2c7b6a06a38c131074093fa89"
+    },
+    "separateSaCandidate": {
+      "path": "G6-G8-shared/ALG001/L6/SA/L6RW09.mp3",
+      "bytes": 301056,
+      "sha256": "903c1bd16cebf9f1ceda0d9b8a47905cae20f380bb857fa33fc855a6db350275",
+      "relationship": "catalog-candidate-only; no locale autoplay or splice authority"
+    }
+  },
+  "outputPins": [
+    {
+      "path": "migrations/shared-alg001-l06-p010/audit/source-v1/source-facts-v1.json",
+      "bytes": 18231,
+      "sha256": "7f7dc83e16431152dc04ade6e685363d4e8a1ff154673d0c4464f85d30cd85b8"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p010/audit/source-v1/source-text-v1.json",
+      "bytes": 457629,
+      "sha256": "00d72eb17335d6e2b23ed89c160c7d68d203ddbfa3596c45bced0cb7d22fbaa9"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p010/audit/source-v1/source-composition-v1.json",
+      "bytes": 17065,
+      "sha256": "a208678fbb7602aea0decaa2cab110d4f687a11f685e32db8bf67a9fc55ee033"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p010/audit/source-v1/source-stream-structure-v1.json",
+      "bytes": 29946,
+      "sha256": "5b271884b6e23cb08882c33ab4fc88d67f90a1dffb6447dfa109a2fbdab4e92b"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p010/audit/source-v1/public-tool-scripts-v1.json",
+      "bytes": 948,
+      "sha256": "6ab4dbec9c878122a68865cf2bdb5a7cbbae02e98388167e1c4f08d0ae7b30e2"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p010/audit/source-v1/conditional-host-terminal-v1.json",
+      "bytes": 2440,
+      "sha256": "511103d546a061565613b5b2949ce30be86c5330ff1874cac8186eae0ab69845"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p010/audit/source-v1/swfmill-v1.xml.gz",
+      "bytes": 128874,
+      "sha256": "9ab536d69faf0ce3e831a57fc91f81f0983d88434d0b42fe1af016f4f4c81e88"
+    }
+  ],
+  "gates": {
+    "sourceStructure": "verified",
+    "oldHostTerminalAlgorithm": "verified-static-conditional",
+    "naturalHostTerminal": "unobserved",
+    "glossaryRuntime": "unresolved",
+    "authoredVisualVisibility": "unresolved",
+    "originalRuntime": false,
+    "audioListening": false,
+    "humanVisualReview": false,
+    "ownerReview": false,
+    "strictComplete": false,
+    "published": false
+  },
+  "claimBoundary": "Public-tool source structure only; no original-runtime behavior, audio listening, fidelity, human/Owner acceptance or registration."
+}

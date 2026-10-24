@@ -1,0 +1,49 @@
+# G6–G8 continuation — P015 engineering candidate, 2026-09-29
+
+Full goal remains all 2,282 active G6–G8 page placements. Current session goal is active; no previous task application-state transfer is claimed. Preserve all dirty/untracked work and physical AWS source. Current formal index-v45 remains 502/2,282, 1,780 remaining; ALG001 L6 formal 25/60. P008/P010/P013/P014 registered. P015 is unregistered; no new scaffold.
+
+## Work completed in this continuation
+
+P015 is global 15 / VB5, physical `G6-G8-shared/ALG001/L6/VB/L6VB06.swf`, SHA d0f395f5410353733b42ae29198caa86fae6b6eebd0e2a71830a203d969868b1. Source wrapper10, sprite270914frames,12fps. Fresh source and glossary audits, maintained Canvas with source glyphs/6 masks/10 morphs, native concepts after249/332/392 and six exact glossary triggers are implemented. The source machine label `function` at135 is not a page heading. Numeric3/6/9 placements are inventoried; no unverified input/output relation is added.
+
+Four main MP3 ranges preserve source intervals2–622,646–702,712–849,852–914 and source-time gaps. Chrome decoded lengths/rates match FFmpeg; floating PCM differs, maximum measured absolute difference below0.000001. Retain both receipts under output/playwright/alg-l06-p015-browser-audio-v1. No listening claim. Main clock uses one context, four independent buffers; visual914 holds through fractional audio EOF914.82993. SA remains explicit-only, separate48000Hz, no locale autoplay; selected EOF waits for Return. Glossary close remains held, Replay resets all owners.
+
+Root independently ran source/glossary/audio6, native/timeline7, text reproduction1, clock/owner/SA/player15, resource-policy4, runtime4, candidate-server2 tests successfully. Source extraction/audio-plan checks passed. Root Canvas structural/browser seek tests2 also passed. Runtime agent reported full apps/web TypeScript check exit0; root real My Lesson browser/build still pending. Root initially used incorrect test paths; those failed commands are retained and corrected tests passed. See output/alg-l06-p015-root-review-v1/progress-v1.json for file pins.
+
+## Exact next boundary
+
+New P015 candidate descriptor, candidate player generator/output, host wrapper, runtime, resource table/server, candidate page and asset route exist. Candidate reader validates current formal P014 predecessor25/60 and adds one local projection26/60; visible wording says25registered+1unregistered. Resource table is50rows:6P015+44unchanged predecessor resources. Resource reader reuses frozen P014 verifier for inherited files.
+
+**The My Lesson route is NOT yet enabled/verified.** Do not call this real host completion. Still add exact P015 proxy route/resource rule, next config rewrite and production stub substitution while creating a reviewed host successor. Do not edit old host snapshots/page proofs. The current formal descriptor revalidates host-v44/index-v45; coordinated successor is needed when shared proxy/config bytes change. New request module already has an empty production stub but next config has NOT wired it. No new production build or isolation claim.
+
+Then run real EN/ES My Lesson: ready/no auto SA, natural playback across all four ranges and gaps, six terms open/close/focus/hold, SA explicit EOF/Return, Replay, reduced motion/mobile/native text, navigation and background/context cleanup, final audio EOF. Preserve exact source/hash constraints. Freeze/admit P015 only after verified engineering proof, then continue remaining full queue. Do not stop at P015 or reduce denominator.
+
+P015 work unit `alg-l06-p015-source-implementation-20260929-v1` remains open. Do not finish it as integrated before formal EN/ES host receipt. Root helper prepare-workspace-v1.py is NOT idempotent: do not rerun (appends requirements). Candidate prep helper is preparation only, not an admission authority; inspect inputs before any regeneration.
+
+Prior P014 production success-v2 retained under output/alg-l06-p014-production-v2;3204/3204HTTP404 and exact old-asset reuse audit. This is P014 scoped technical isolation, not P015 proof/deployment. Prior logical build link and next-env/tsconfig restored. Source-audit/Canvas/native/player agents reused explicit disjoint file ownership; no old frozen producer modified. All original-runtime/fidelity/listening/human/Owner/strict/publication gates remain independently unaccepted.
+
+## 2026-09-29 host continuation — supersedes route-pending paragraph above
+
+P015 proxy route, predecessor rewrites and production request stub aliases now wired. Exact reviewed host delta only apps/web/proxy.ts and apps/web/next.config.ts, plus13 P015 host inputs. Active host-v46/index-v46; index SHA4c8beefdae967461ee08a873243348e086baf6b227909171ef8853bacff112a9;12oldpageproofsunchanged;502formal still. Do not rerunv46.
+
+Independent review found and fixed pending AudioContext.resume races in initial Play and four-range transition: interrupted context now cancels pending transport epoch. Final clock SHA46c3fbd70ce1c6b2f546fb6e0ac70afd7e5be2fc66a4165bbd436504fd7d7b21. Root8clock tests pass; rootfull apps/webtsc exit0;8resource/policy and4P014/P015server tests pass.
+
+Real Chrome MyLesson EN ready→natural395→all6glossary correct/closehold395/focusreturn→explicitSA EOF retains selection→Return resumes originalcursor→natural final914 timeline-ended→Replay1 observed. ES fresh document ready1, SAidle, SArequests0. Raw and aggregate receipt: output/alg-l06-p015-host-root-v1/partial-real-host-v2.json. English screenshots en-frame395.png/en-final914.png. This remains partial browser evidence, not formal registration or audio listening. Fullpage screenshot has fixed-header capture overlap; assess actual viewport/mobile separately.
+
+Next: complete ES interaction/mobile/reduced-motion/background/navigation cleanup. Unverified delayed onended background hypothesis in output/alg-l06-p015-player-review-v2/review.md: if JS callback delayed past next full range, clock fails rather than skips audio. Do not call it verified bug before browser evidence. Then producer closure/freeze/admission+realformal ENES host, stableproduction isolation.
+
+Initial Turbopack server failed externalnode_moduleslink; terminalexit1 preserved. webpack server launched with HELP_MATH_G678_SOURCE_ROOT physical, HELP_MATH_G678_LOCAL_PREVIEW=1, HELP_MATH_G678_LOCAL_PREVIEW_BIND=127.0.0.1, HELP_MATH_ALG_P001_LOCAL_QA=1; npm run dev -- --webpack --hostname127.0.0.1 --port3331 (insert spaces in CLI options). Initial navigationtimedout during61scompile, live server then200; no restart for timeout. HMR reset earlyflow retaineddebugonly. ES initialSPAperformancecheck wrongly counted prior explicitSA; freshdocumentreceipt supersedes. Browser p015-host and webpack server stopped after this batch; next-env/tsconfig restored from before snapshots.
+
+P016 only source intake prepared at output/alg-l06-p016-intake-review-20260929/INTAKE_CHECKPOINT.md; no workspace/no registration/no scaffold. SourceFunctionscript identical toP015, but815frame timing/audio/masks needindividual audit before reuse. Fullgoal remains2282 and active;P015unitopen.
+
+## Latest 2026-09-29 ES/mobile and candidate freeze continuation
+
+ES actual My Lesson390x844/reduced-motion: natural→396, six glossary terms activated by keyboard, exact source Spanish definitions verified, Close paused/focusreturn, explicitSA EOF/Return→natural914terminal. Document width375<=viewport390. Native AudioContext observer proved mainstop beforeSAstart; Nextpage detachedP015 and both contextsclose-resolve. Observed allfour independent mainstarts in onecontext throughterminal914. See output/alg-l06-p015-host-mobile-v1/engineering-receipt-v1.json and checkedrawrecords. Genuine background behavior NOT verified: other tab+bringToFront still yielded document.visibilityState=visible. Preserve this gap; don't simulate hidden and call it real proof.
+
+P015 module/timeline/newmemberCanvas exist, exact10,515,188byteSHA4a572881adce44d318329f8895458eed8f63e8679e41ebfd38bbb3f0ee3dcb55. Producer/semantics+5tests inspected and root-rerun. ROOT actually executed --prepare and --check againstindex-v46; candidate roundtrippassed, no registry/activationwrite. Frozen candidate paths: catalog/product-bridge-calibrations/g678-alg-l06-p015-current-js-20260929-v1.json SHA92960cf8a2fe30a905c1139198382838728c52beee0b3e997eab881a0f48b817; registration-v1 fragment SHA4423085244d53a5575d9c13378285adcf53d4af99f426cfeffff6da96e07dd9d; proof-v1 SHAdb85028bc239e88956df0c8f74fc0d58a5f5c575e5acf7aa35763adbb0f11381. 63page-ownedfiles/7externalbindings,12oldproofsunchanged. Allacceptancefalse. Do NOT modify frozenproducer/semantics/module/clock files afterthisfreeze withoutdeliberatenewcandidateversion.
+
+Root has prepared apps/web/lib/alg-l06-p015-descriptor-extension-v1.ts, formal-admission-v1.server.ts and continuous-v1/page.tsx. NOT wired/activated, not inhost-v46 yet. Next: independentlytestformaldescriptor againstrealpreparedpacket; updateP015resources reader tochooseactualformaldescriptor whenregistered (currentlyalwayscandidate); changeownCanvasresourcepin toexactmembercopy; allowexactcontinuous-v1 inP015request/proxy/nextrewrite, preservingcandidate. Updatecandidate tests forregisteredrejection, addhost-v47 exactdelta+formalfiles (v47notcreatedyet). Candidateproofsamehostcontract, preserve12oldproofs. Then exactregistrytransaction+dispatch/indexsuccessor503 onlyafteractualchecks; runrealformalENESreadyreceipt; finalproductionisolationbuild forstablecandidate. Current formal502, P015unitstillopen.
+
+Fullgoal2282active. No provideroperation. P016intake exists only, don'tscaffolduntilnextboundedimplementation.
+
+Final check: root full apps/web tsc --noEmit --incremental false (12GBheap) exit0, including newP015formalreader/extension. Browser p015-mobile closed, webpackserver stopped exit0; next-env/tsconfig restored. No runningroottoolprocess.

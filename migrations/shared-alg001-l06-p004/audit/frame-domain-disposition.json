@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l06-p004",
+  "sourceSwfSha256": "514867e794dbc86059a452c5f1091cabfabf73e6f7918d0d28d9cf7ee604573e",
+  "status": "draft-source-structural-enumeration",
+  "strictAdoptionStatus": "pending-original-runtime-reachability-and-canonical-traces",
+  "sourceFacts": {
+    "path": "migrations/shared-alg001-l06-p004/audit/source-facts-v1.json",
+    "bytes": 35778,
+    "sha256": "e555ea29848adf198cdb2835c18f1c262728d9fe1e1ae7d1562a9194d06d1228"
+  },
+  "sourceText": {
+    "path": "migrations/shared-alg001-l06-p004/audit/source-text-v1.json",
+    "bytes": 1354688,
+    "sha256": "c6f15d46da49019e359a44f407cb0577f7cfb6a7a0c1b68ab06d43084aa3adc6"
+  },
+  "timelines": [
+    {
+      "timelineId": "root",
+      "sourceFrameCount": 10,
+      "parentTimelineIds": [],
+      "staticallyRootReachable": true,
+      "declaredFrameDomainId": "root",
+      "disposition": "declared-frame-domain",
+      "sourceEntry": "initial root load; frame 1 preloader stop, frame 6 begin placement/stop",
+      "originalRuntimeEstablished": false
+    },
+    {
+      "timelineId": "sprite-95",
+      "sourceFrameCount": 831,
+      "parentTimelineIds": [
+        "root"
+      ],
+      "staticallyRootReachable": true,
+      "declaredFrameDomainId": "sprite-95",
+      "disposition": "declared-frame-domain",
+      "sourceEntry": "root frame 6 depth 1",
+      "originalRuntimeEstablished": false
+    },
+    {
+      "timelineId": "sprite-98",
+      "sourceFrameCount": 1,
+      "parentTimelineIds": [
+        "root"
+      ],
+      "staticallyRootReachable": true,
+      "declaredFrameDomainId": "sprite-98",
+      "disposition": "declared-frame-domain",
+      "sourceEntry": "root frame 6 depth 121",
+      "originalRuntimeEstablished": false
+    }
+  ],
+  "unresolved": [
+    "Root preloader frame 1 to begin frame 6 requires legacy host action",
+    "Nine button occurrence hit/interaction state and original host DoHyperLinks execution",
+    "Full visual transforms/masks/morph appearance and authored audio synchronization",
+    "Original-runtime natural traces and separate SA host launch"
+  ]
+}

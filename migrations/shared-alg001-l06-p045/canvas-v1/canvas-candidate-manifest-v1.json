@@ -1,0 +1,108 @@
+{
+  "kind": "p045-output-only-safe-canvas-candidate-v1",
+  "status": "unregistered-engineering-drawing-draft",
+  "animationId": "shared-alg001-l06-p045",
+  "inputs": [
+    {
+      "key": "swf",
+      "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/TI/L6TI05.swf",
+      "bytes": 783221,
+      "sha256": "9dfff51a15bb0010b98ca10c1fac954bee5d9451ceb649d8ac202e98f2c05b9d"
+    },
+    {
+      "key": "index",
+      "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/index.xml",
+      "bytes": 13926,
+      "sha256": "9f3753a17e5e271d7bc63a1bdf8cd5237f19770bae3f5c7364cabcb62c84ce2c"
+    },
+    {
+      "key": "sourcePacket",
+      "path": "output/g678-p045-source-intake-20261002-v1/source-intake-v2.json",
+      "bytes": 7046,
+      "sha256": "16a061cb1731af7bf6747a67125a36be8b42e78fe89789b5b0628d8dfd03aa06"
+    },
+    {
+      "key": "xml",
+      "path": "output/g678-p045-source-intake-20261002-v1/audit/swfmill.xml",
+      "bytes": 3249121,
+      "sha256": "64c59a7ac3b3306775c86d6e7f906906b0c99e4e17daf57c88e7ab64c28818d5"
+    },
+    {
+      "key": "native",
+      "path": "output/g678-p045-native-preparation-20261002-v1/native-model-v2.json",
+      "bytes": 2133255,
+      "sha256": "69915928cb0e08838a326e737da2847fb9020d39ceaae49890791a7e53f77814"
+    },
+    {
+      "key": "plan",
+      "path": "output/g678-p045-canvas-preparation-20261002-v1/canvas-extraction-v1.json",
+      "bytes": 27975,
+      "sha256": "f16b7246227696910074adf1f61e91b64a5aebfb56a69a55d73ee05b8bc6e77e"
+    },
+    {
+      "key": "frames",
+      "path": "output/g678-p045-canvas-preparation-20261002-v1/source-export/sprites/DefineSprite_350/frames.html",
+      "bytes": 3929742,
+      "sha256": "7ef435a236ed6e8b4fdd0348b1fcf881f0cd7e5112a22355a28b98a240306f85"
+    },
+    {
+      "key": "rootFrames",
+      "path": "output/g678-p045-canvas-preparation-20261002-v1/source-export/frames/frames.html",
+      "bytes": 3924466,
+      "sha256": "258b1686dad87a2ba72e6dba8d8dbdf10f7e5497c8fb96ad9b430e4758a4f8ef"
+    },
+    {
+      "key": "helper",
+      "path": "output/g678-p045-canvas-preparation-20261002-v1/source-export/sprites/DefineSprite_350/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    {
+      "key": "adapter",
+      "path": "scripts/build-safe-ffdec-canvas-adapter.mjs",
+      "bytes": 115553,
+      "sha256": "1d1dd117dd59a6b7191f2fa8488249ece09bfb1da8837be146677f88a01315dd"
+    }
+  ],
+  "sourceFrameCases": 475,
+  "mainFrames": 167,
+  "reachableFeedbackFrames": 56,
+  "feedbackSuppressedUnlessSelected": true,
+  "sourceClipMasks": 0,
+  "nativeNmhCompanion": true,
+  "rootTitleIncluded": true,
+  "sourceRootScalePreserved": true,
+  "outputs": [
+    {
+      "path": "output/g678-p045-canvas-preparation-20261002-v1/canvas/canvas-renderer-draft.js",
+      "bytes": 3986817,
+      "sha256": "4e9e318fdd503275e8d89b1b462b7e525888f0b0c14ecad3d6c114d18c7d5bc0"
+    },
+    {
+      "path": "output/g678-p045-canvas-preparation-20261002-v1/canvas/adapter-spec-v1.json",
+      "bytes": 3926,
+      "sha256": "8e877ecd806c942011d644af0d694e86e6e782e3d543b4e1048fb7d88df02662"
+    },
+    {
+      "path": "output/g678-p045-canvas-preparation-20261002-v1/canvas/dynamic-text-contract-v1.json",
+      "bytes": 2538,
+      "sha256": "d229b85977f976f4d2ec816a900bb2e06feb0351feeb4bce5d8d78f7ff049276"
+    }
+  ],
+  "unresolved": [
+    "Canvas pixels, JPEG and morph appearance need browser calibration.",
+    "Four EditText fields are intentionally not rendered in Canvas.",
+    "No AVM1, audio, host selection, button actions or Close effects execute."
+  ],
+  "gates": {
+    "currentJsRegistered": false,
+    "originalRuntimeAccepted": false,
+    "fidelityAccepted": false,
+    "audioAccepted": false,
+    "listeningAccepted": false,
+    "humanAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "publication": false
+  }
+}

@@ -1,0 +1,34 @@
+✔ runtime clocks all seven branches; attempts change at terminal, no intermediate feedback hold (5.570167ms)
+✔ silent step boxes never start narration, close resets only the box, and paused tween resumes fractional position (0.986334ms)
+✔ two wrong endings retire different owners and only second proceeds beyond the final question (1.505041ms)
+✔ pause, replay and source stop own exact main seeks; pending playback and browser rejection cannot revive old state (0.468125ms)
+✔ function help and dictionary are scoped to live owner and do not resume held narration (0.334458ms)
+✔ SA starts only on explicit request; pending load is aborted by Replay/leave and EOF returns to held source (0.868625ms)
+✔ main PCM EOF preserves a visual tail without looping audio or reporting lesson completion (0.467ms)
+✔ raw SWF/script evidence fixes the answer and terminal-count rule independently (5.149875ms)
+✔ main clock clamps every authored step and final quiz; Play cannot bypass a source hold (0.430041ms)
+✔ first two source step clicks resume main; last two open and close only their boxes (0.897666ms)
+✔ all three wrong variants count at their actual terminal; second wrong resets and resumes (0.858292ms)
+✔ all four right variants continue while preserving a prior wrong count (1.274792ms)
+✔ help opens function popup, blocks answer input, and dictionary close preserves its parent (0.116042ms)
+✔ glossary ownership and source frame windows reject offstage angle vocabulary (0.083916ms)
+✔ pause at box entry resumes; content holds remain held, and stale box callbacks are rejected (0.097166ms)
+✔ Replay and leave invalidate delayed selection, feedback and main callbacks and reset full state (0.135625ms)
+✔ runtime clocks all seven branches; attempts change at terminal, no intermediate feedback hold (5.45775ms)
+✔ silent step boxes never start narration, close resets only the box, and paused tween resumes fractional position (0.930875ms)
+✔ two wrong endings retire different owners and only second proceeds beyond the final question (0.785625ms)
+✔ pause, replay and source stop own exact main seeks; pending playback and browser rejection cannot revive old state (0.484458ms)
+✔ function help and dictionary are scoped to live owner and do not resume held narration (0.365125ms)
+✔ SA starts only on explicit request; pending load is aborted by Replay/leave and EOF returns to held source (1.528625ms)
+✔ main PCM EOF preserves a visual tail without looping audio or reporting lesson completion (0.427375ms)
+✔ shared reducer preserves frozen P056 outcomes across four stops, seven branches, overlays, pause, replay, stale callbacks and leave (7.449833ms)
+✔ P057 raw source binds answer D, terminal-count retries and reset-before-parent right order (3.948833ms)
+✔ native P057 retains its function table, two example panels and source help comparison; offstage angle content stays absent (0.444125ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 170.831708

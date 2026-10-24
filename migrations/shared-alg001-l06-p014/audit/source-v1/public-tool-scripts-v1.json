@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p014-ffdec-scripts-v1",
+  "sourceSwfSha256": "aed0f7755d4f691cefcc28c815acc6b9d083fdfaae88ff385f22d3b32ba07603",
+  "toolVersion": "JPEXS Free Flash Decompiler v.26.2.1",
+  "files": [
+    {
+      "path": "scripts/DefineButton2_167/BUTTONCONDACTION on(release).as",
+      "bytes": 141,
+      "sha256": "4057c3c6552def15f1e846f96fbf4df07b5166f278dad82eec3eea19b09b3394",
+      "text": "on(release){\r\n   _parent.gotoAndPlay(23);\r\n   i = 1;\r\n   while(i <= 4)\r\n   {\r\n      eval(\"AnsBtn\" + i).gotoAndStop(1);\r\n      i++;\r\n   }\r\n}\r\n"
+    },
+    {
+      "path": "scripts/DefineButton2_182/BUTTONCONDACTION on(release).as",
+      "bytes": 141,
+      "sha256": "05d0d4cada21c5184875b38ea202d5eece7fee9a04fa96284868fd2f1338772d",
+      "text": "on(release){\r\n   _parent.gotoAndPlay(24);\r\n   i = 1;\r\n   while(i <= 4)\r\n   {\r\n      eval(\"AnsBtn\" + i).gotoAndStop(1);\r\n      i++;\r\n   }\r\n}\r\n"
+    },
+    {
+      "path": "scripts/DefineButton2_21/BUTTONCONDACTION on(release).as",
+      "bytes": 141,
+      "sha256": "3fe79f85ee919b2d07dc6e3ea32f67fe78ab058772ea4197375d1063d7be8a7c",
+      "text": "on(release){\r\n   _parent.gotoAndPlay(21);\r\n   i = 1;\r\n   while(i <= 4)\r\n   {\r\n      eval(\"AnsBtn\" + i).gotoAndStop(1);\r\n      i++;\r\n   }\r\n}\r\n"
+    },
+    {
+      "path": "scripts/DefineButton2_213/BUTTONCONDACTION on(release).as",
+      "bytes": 75,
+      "sha256": "91fddc130bddd9456227b9bbd9139c44ebcf7e51db046176f2f810e5e073db02",
+      "text": "on(release){\r\n   _root.disableQuizButton();\r\n   _root.showRightFeed();\r\n}\r\n"
+    },
+    {
+      "path": "scripts/DefineButton2_214/BUTTONCONDACTION on(release).as",
+      "bytes": 397,
+      "sha256": "8ee989ffcb4d65a60007efe9d59cf6c889538cd1014cee3b764506514337ba3a",
+      "text": "on(release){\r\n   if(_global.quizTryCount == 1)\r\n   {\r\n      _global.WrongFeed = \"Substitute 25 for the variable C, which is the input for the formula to find the output, F.\";\r\n   }\r\n   else\r\n   {\r\n      _global.WrongFeed = \"Substitute 25 for the variable C, which is the input for the formula to find the output, F. Try again.\";\r\n   }\r\n   _root.disableQuizButton();\r\n   _root.showWrongFeed();\r\n}\r\n"
+    },
+    {
+      "path": "scripts/DefineButton2_32/BUTTONCONDACTION on(release).as",
+      "bytes": 120,
+      "sha256": "fc18c1b076872ddbff22a6de05a0929210cfcb8d065a27a37c654e3eb33c496a",
+      "text": "on(release){\r\n   _global.KeyAttribute = \"Input\";\r\n   _root.DoHyperLinks();\r\n   _root.animation_mc.animation.stop();\r\n}\r\n"
+    },
+    {
+      "path": "scripts/DefineButton2_33/BUTTONCONDACTION on(release).as",
+      "bytes": 121,
+      "sha256": "573534c3578af9119df87b9a8e2c4751ca88e451a2e1dde1896a9ad77acd746e",
+      "text": "on(release){\r\n   _global.KeyAttribute = \"Output\";\r\n   _root.DoHyperLinks();\r\n   _root.animation_mc.animation.stop();\r\n}\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_115/frame_1/DoAction_2.as",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text": ""
+    },
+    {
+      "path": "scripts/DefineSprite_115/frame_1/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "text": "stop();\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_115/frame_25/DoAction_2.as",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text": ""
+    },
+    {
+      "path": "scripts/DefineSprite_115/frame_25/DoAction.as",
+      "bytes": 106,
+      "sha256": "5bc24178f890e478f8b0dc8085e80c07a74ae6e4f721ee01452daf12efe70911",
+      "text": "stop();\r\n_root.disableQuizButton();\r\n_global.quizSection = false;\r\nthis.gotoAndStop(1);\r\n_parent.play();\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_148/frame_1/DoAction_2.as",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text": ""
+    },
+    {
+      "path": "scripts/DefineSprite_148/frame_1/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "text": "stop();\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_148/frame_27/DoAction_2.as",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text": ""
+    },
+    {
+      "path": "scripts/DefineSprite_148/frame_27/DoAction.as",
+      "bytes": 106,
+      "sha256": "5bc24178f890e478f8b0dc8085e80c07a74ae6e4f721ee01452daf12efe70911",
+      "text": "stop();\r\n_root.disableQuizButton();\r\n_global.quizSection = false;\r\nthis.gotoAndStop(1);\r\n_parent.play();\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_156/frame_1/DoAction_2.as",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text": ""
+    },
+    {
+      "path": "scripts/DefineSprite_156/frame_1/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "text": "stop();\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_156/frame_27/DoAction_2.as",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text": ""
+    },
+    {
+      "path": "scripts/DefineSprite_156/frame_27/DoAction.as",
+      "bytes": 106,
+      "sha256": "5bc24178f890e478f8b0dc8085e80c07a74ae6e4f721ee01452daf12efe70911",
+      "text": "stop();\r\n_root.disableQuizButton();\r\n_global.quizSection = false;\r\nthis.gotoAndStop(1);\r\n_parent.play();\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_169/frame_1/DoAction.as",
+      "bytes": 35,
+      "sha256": "339da0ae92e066910d2af19a170d12305f2780609209769be00e48aa35d91bbc",
+      "text": "txtFeed.text = _global.WrongFeed;\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_173/frame_1/DoAction.as",
+      "bytes": 34,
+      "sha256": "866009b2529df4394bd88608e50f5beb1bd91ec61e7e70c19da131b917e1803c",
+      "text": "stop();\r\n_parent.enableButton();\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_173/frame_22/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "text": "stop();\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_173/frame_31/DoAction.as",
+      "bytes": 235,
+      "sha256": "806e16c9b17ac8872b22282973f851e58129094f13d83e56f7b0098102b908ce",
+      "text": "stop();\r\n_root.enableQuizButton();\r\nthis.gotoAndStop(1);\r\n_global.quizTryCount++;\r\n_parent.NMHBtn.enabled = true;\r\nif(_global.quizTryCount >= 2)\r\n{\r\n   _global.quizTryCount = 0;\r\n   _global.quizSection = false;\r\n   _parent.play();\r\n}\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_184/frame_1/DoAction.as",
+      "bytes": 35,
+      "sha256": "339da0ae92e066910d2af19a170d12305f2780609209769be00e48aa35d91bbc",
+      "text": "txtFeed.text = _global.WrongFeed;\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_187/frame_1/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "text": "stop();\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_187/frame_23/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "text": "stop();\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_187/frame_29/DoAction.as",
+      "bytes": 235,
+      "sha256": "806e16c9b17ac8872b22282973f851e58129094f13d83e56f7b0098102b908ce",
+      "text": "stop();\r\n_root.enableQuizButton();\r\nthis.gotoAndStop(1);\r\n_global.quizTryCount++;\r\n_parent.NMHBtn.enabled = true;\r\nif(_global.quizTryCount >= 2)\r\n{\r\n   _global.quizTryCount = 0;\r\n   _global.quizSection = false;\r\n   _parent.play();\r\n}\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_227/frame_120/DoAction.as",
+      "bytes": 65,
+      "sha256": "1c5ee973c2576fdd6e33a3a2cf1acd334b9fddb906b45d7b2e4d0a7874fd546f",
+      "text": "stop();\r\n_global.quizSection = true;\r\n_global.quizTryCount = 0;\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_25/frame_1/DoAction.as",
+      "bytes": 35,
+      "sha256": "339da0ae92e066910d2af19a170d12305f2780609209769be00e48aa35d91bbc",
+      "text": "txtFeed.text = _global.WrongFeed;\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_28/frame_1/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "text": "stop();\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_28/frame_20/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "text": "stop();\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_28/frame_28/DoAction.as",
+      "bytes": 235,
+      "sha256": "806e16c9b17ac8872b22282973f851e58129094f13d83e56f7b0098102b908ce",
+      "text": "stop();\r\n_root.enableQuizButton();\r\nthis.gotoAndStop(1);\r\n_global.quizTryCount++;\r\n_parent.NMHBtn.enabled = true;\r\nif(_global.quizTryCount >= 2)\r\n{\r\n   _global.quizTryCount = 0;\r\n   _global.quizSection = false;\r\n   _parent.play();\r\n}\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_83/frame_1/DoAction_2.as",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text": ""
+    },
+    {
+      "path": "scripts/DefineSprite_83/frame_1/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "text": "stop();\r\n"
+    },
+    {
+      "path": "scripts/DefineSprite_83/frame_31/DoAction_2.as",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text": ""
+    },
+    {
+      "path": "scripts/DefineSprite_83/frame_31/DoAction.as",
+      "bytes": 106,
+      "sha256": "5bc24178f890e478f8b0dc8085e80c07a74ae6e4f721ee01452daf12efe70911",
+      "text": "stop();\r\n_root.disableQuizButton();\r\n_global.quizSection = false;\r\nthis.gotoAndStop(1);\r\n_parent.play();\r\n"
+    },
+    {
+      "path": "scripts/frame_1/DoAction.as",
+      "bytes": 63,
+      "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19",
+      "text": "_level0.InternalPreloader.gotoAndPlay(\"jump_check\");\r\nstop();\r\n"
+    },
+    {
+      "path": "scripts/frame_6/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "text": "stop();\r\n"
+    }
+  ]
+}

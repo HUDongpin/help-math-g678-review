@@ -1,0 +1,123 @@
+{
+  "kind": "p033-maintained-behavior-check-v1",
+  "commands": [
+    {
+      "command": [
+        "node",
+        "migrations/shared-alg001-l06-p033/generator-v1/derive-behavior-bindings-v1.mjs",
+        "--check"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l06-p033/audit-v1/behavior-check-1-v1.txt"
+    },
+    {
+      "command": [
+        "node",
+        "--import",
+        "tsx",
+        "--test",
+        "packages/demos/src/source-two-attempt-feedback-quiz-v1.test.ts",
+        "packages/demos/src/alg-l06-p033-state-v1.test.ts",
+        "packages/demos/src/alg-l06-p041-state-v1.test.ts"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l06-p033/audit-v1/behavior-check-2-v1.txt"
+    },
+    {
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--skipLibCheck",
+        "--target",
+        "ES2022",
+        "--module",
+        "ESNext",
+        "--moduleResolution",
+        "Bundler",
+        "--esModuleInterop",
+        "--strict",
+        "--types",
+        "node",
+        "packages/demos/src/source-two-attempt-feedback-quiz-v1.ts",
+        "packages/demos/src/source-two-attempt-feedback-quiz-v1.test.ts",
+        "packages/demos/src/alg-l06-p033-state-v1.ts",
+        "packages/demos/src/alg-l06-p033-state-v1.test.ts"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l06-p033/audit-v1/behavior-check-3-v1.txt"
+    },
+    {
+      "command": [
+        "node",
+        "skills/flash-to-js/scripts/validate_migration.mjs",
+        "migrations/shared-alg001-l06-p033",
+        "--allow-draft"
+      ],
+      "exitCode": 0,
+      "log": "migrations/shared-alg001-l06-p033/audit-v1/behavior-check-4-v1.txt"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "packages/demos/src/source-two-attempt-feedback-quiz-v1.ts",
+      "bytes": 9952,
+      "sha256": "a114f99a5caa64a6e7ce0a028a5875b8ebc342b27e6c43a5563511eb6c84f0c2"
+    },
+    {
+      "path": "packages/demos/src/source-two-attempt-feedback-quiz-v1.test.ts",
+      "bytes": 3420,
+      "sha256": "8639be6cb21f53acf3d1dcd615bc8b36bb9d96ba7d122909d9afa12014c8cb21"
+    },
+    {
+      "path": "packages/demos/src/alg-l06-p033-state-v1.ts",
+      "bytes": 1408,
+      "sha256": "7d6d751380e033decac6f2b84d3a34b4da8d27023942c1f825921369b6597503"
+    },
+    {
+      "path": "packages/demos/src/alg-l06-p033-state-v1.test.ts",
+      "bytes": 5745,
+      "sha256": "ad243be8f335843bfba64210a45a6874d260fe02625dac05349d20c6b2910689"
+    },
+    {
+      "path": "packages/demos/src/generated/alg-l06-p033-behavior-v1.ts",
+      "bytes": 2053,
+      "sha256": "4b2b8b44fd1a63719dc4d361710d0201e1746318f4e12114b9f846d778e40300"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p033/generator-v1/derive-behavior-bindings-v1.mjs",
+      "bytes": 3752,
+      "sha256": "cc0a41e34d514f5141775e5e7d8e4794415a4694fe739c9d2d6f0f6b7378ef3c"
+    },
+    {
+      "path": "packages/demos/src/alg-l06-p041-state-v1.ts",
+      "bytes": 13597,
+      "sha256": "d11072965ac8c47a2c58dfd48e0381542f0cd359e7bac5e80f2c273f04ebbaa9"
+    },
+    {
+      "path": "packages/demos/src/g678-advanced-manual/host-feedback-selector.ts",
+      "bytes": 2976,
+      "sha256": "f73cdb10fc9c67e2fdf35b227e3abbad20adb6e2ab38599bd4031951148500b6"
+    },
+    {
+      "path": "output/playwright/g678-avm1-button-scope-20261003-v1/root-review-v1.json",
+      "bytes": 4626,
+      "sha256": "bdf6f3d82ee41cb397a0a63fcba7c0ca0a167eabab89e6e5f5178206977c7808"
+    }
+  ],
+  "testsPassed": 20,
+  "p041DifferentialPaths": 21,
+  "registered": false,
+  "drawingAndNativeTextPending": true,
+  "audioAndHostPending": true,
+  "acceptanceEffects": {
+    "originalRuntime": false,
+    "fidelity": false,
+    "listening": false,
+    "human": false,
+    "owner": false,
+    "strictCompletion": false,
+    "release": false,
+    "publication": false
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "p049-source-adpcm-right4-technical-decode-v1",
+  "sourceModelSha256": "8faf55033928e8449c96fe3a9c1a7504b7f119119f2f90a4f81d8caf309b11ff",
+  "sourceSwfSha256": "33f90f5897fa60939fb7015f60c8789d98aad3dca65ad39cb04dac4fededb3a6",
+  "source": {
+    "path": "migrations/shared-alg001-l06-p049/assets/source-stream-192-right4.swf-adpcm-blocks.bin",
+    "bytes": 3770,
+    "sha256": "e5c99e029d9df7717bc7755b5f4660841ad3f453d10bb8dbc8010d69b5a653b6",
+    "spriteId": 192,
+    "blocks": 13,
+    "samplesPerBlock": 459,
+    "sampleRate": 5512
+  },
+  "decoder": {
+    "path": "scripts/lib/swf-adpcm.mjs",
+    "sha256": "bb1f449bb14b726d65b9421e409baf2932b0cebe67d43511ccdf5137e88a01ab"
+  },
+  "output": {
+    "path": "migrations/shared-alg001-l06-p049/assets/source-stream-192-right4.wav",
+    "bytes": 11978,
+    "sha256": "f3e05365073feff502feda8779b3d3a5e3ba4ca6ee213e7a162e1ad5b3961eb8",
+    "samples": 5967,
+    "channels": 1,
+    "sampleRate": 5512
+  },
+  "entry": {
+    "selectedFrame": 2,
+    "firstBlockFrame": 1,
+    "skipSourceSamples": 459,
+    "basis": "Page button170 directly selects Mc_Right_Feed4.gotoAndPlay(2); frame1 owns the first ADPCM block.",
+    "browserDecodedCuePending": true
+  },
+  "originalRuntimeAccepted": false,
+  "listeningAccepted": false
+}

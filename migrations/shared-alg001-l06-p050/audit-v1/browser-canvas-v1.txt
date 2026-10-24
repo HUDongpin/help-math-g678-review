@@ -1,0 +1,51 @@
+### Result
+{"kind":"p050-canvas-render-browser-v1","pass":true,"summary":"674 main frames and 1071 feedback frames rendered","main":674,"feedback":1071,"ordinary":"6d91c6630cdf4721c4cf46f8aacb8444efef161c02e05fb56a605dd529dae38a","directions":"dcfe31e85b18a0da6af6860d95ae19c7a0b0fe8cf5558e218ffaafeff96e1add","wrongBranchPixels":["e2f50927e9453a472e49f748cb8b063cb3d9b12e179f37a3685e92dbfaed7565","e2f50927e9453a472e49f748cb8b063cb3d9b12e179f37a3685e92dbfaed7565","e2f50927e9453a472e49f748cb8b063cb3d9b12e179f37a3685e92dbfaed7565"],"text":["100","10."],"originalRuntimeAccepted":false,"myLessonIntegration":false}
+### Ran Playwright code
+```js
+await (async page => {
+  await page.goto('http://127.0.0.1:4350/');
+  await page.evaluate(() => window.ready);
+  return await page.evaluate(async () => {
+    const asset = window.HELP_MATH_CANVAS_ASSETS['shared-alg001-l06-p050']; await asset.ready();
+    const canvas = document.getElementById('stage');
+    const game = (ordinal=0,score=0,scoreFrame=1,directionsOpen=false) => ({ordinal,score,scoreFrame,directionsOpen});
+    let main=0,feedback=0;
+    for(let frame=1;frame<=674;frame++) {
+      const s=asset.render(canvas,{frame,game:game(frame>=663&&frame<=672?1:0)});
+      if(s.localFrame!==frame)throw Error('main frame drift');main++;
+    }
+    for(let q=1;q<=10;q++) {
+      const spriteId=q<=4?358:q<=7?432:479,last=spriteId===432?25:28;
+      for(let frame=2;frame<=last;frame++) {
+        asset.render(canvas,{frame:662+q,game:game(q,10),feedback:{spriteId,localFrame:frame,branch:null}});feedback++;
+      }
+      for(let branch=1;branch<=3;branch++)for(let frame=2;frame<=28;frame++) {
+        asset.render(canvas,{frame:662+q,game:game(q),feedback:{spriteId:380,localFrame:frame,branch}});feedback++;
+      }
+    }
+    const hash=async()=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',
+      canvas.getContext('2d').getImageData(0,0,800,600).data)),b=>b.toString(16).padStart(2,'0')).join('');
+    asset.render(canvas,{frame:663,game:game(1)});const ordinary=await hash();
+    asset.render(canvas,{frame:663,game:game(1,0,1,true)});const directions=await hash();
+    if(ordinary===directions)throw Error('directions absent from Canvas');
+    const branches=[];
+    for(let branch=1;branch<=3;branch++) {
+      asset.render(canvas,{frame:663,game:game(1),feedback:{spriteId:380,localFrame:23,branch}});branches.push(await hash());
+    }
+    if(new Set(branches).size!==1||branches[0]===ordinary)throw Error('source-identical wrong instances diverged or were hidden');
+    const text=[];const context=canvas.getContext('2d'),original=context.fillText.bind(context);
+    context.fillText=(...args)=>{text.push(String(args[0]));return original(...args);};
+    asset.render(canvas,{frame:672,game:game(10,100)});context.fillText=original;
+    if(!text.includes('100')||!text.includes('10.'))throw Error('score or autosized ordinal missing');
+    return {kind:'p050-canvas-render-browser-v1',pass:true,summary:`${main} main frames and ${feedback} feedback frames rendered`,
+      main,feedback,ordinary,directions,wrongBranchPixels:branches,text,originalRuntimeAccepted:false,myLessonIntegration:false};
+  });
+}
+)(page);
+```
+### Page
+- Page URL: http://127.0.0.1:4350/
+- Page Title: P050 local source inspection
+- Console: 0 errors, 1 warnings
+### Events
+- New console entries: .playwright-cli/console-2026-10-02T18-38-57-952Z.log#L4

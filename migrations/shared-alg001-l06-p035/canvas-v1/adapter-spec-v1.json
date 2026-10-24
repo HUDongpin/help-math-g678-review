@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "animationId": "course-shared-alg001-l06-p035",
+  "finalAnimationId": "shared-alg001-l06-p035",
+  "classification": "behavior-heavy-unregistered-source-canvas-v1",
+  "source": {
+    "swf": "$HELP_MATH_G678_SOURCE_ROOT/G6-G8-shared/ALG001/L6/IN/L6IN07.swf",
+    "swfSha256": "9aaf16b58c32b00b056c7c5040b38f9d1391486bb025b71c95fa0326bbae33b3"
+  },
+  "evidence": {
+    "scenarioInventory": "output/alg-l06-p035-source-triage-20261001-v1/source-facts-v1.json",
+    "scenarioInventorySha256": "fa12ef05899ec5b700f26e9b8411478ea97e5a5735fefc454b6a9287c072a46e",
+    "audioAudit": "output/alg-l06-p035-source-triage-20261001-v1/source-facts-v1.json",
+    "audioAuditSha256": "fa12ef05899ec5b700f26e9b8411478ea97e5a5735fefc454b6a9287c072a46e",
+    "sourceXml": "output/alg-l06-p035-source-triage-20261001-v1/source-structure.xml",
+    "sourceXmlSha256": "29514b5ebcf07cd55d78411cd3ce1cd4538e4a46ea4b954f2d756a9f37eb74f6"
+  },
+  "ffdecExport": {
+    "tool": "JPEXS Free Flash Decompiler 26.2.1 Canvas export",
+    "helper": "output/alg-l06-p035-canvas-export-20261001-v1/source-canvas-export/sprites/DefineSprite_227/canvas.js",
+    "helperSha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93",
+    "framesHtml": "output/alg-l06-p035-canvas-export-20261001-v1/source-canvas-export/sprites/DefineSprite_227/frames.html",
+    "framesHtmlSha256": "7d853d0d42972188a8a2601b1b14d4ce23d0d2cdc5a0d9eff688712c9ed66bce",
+    "targetSpriteObjectId": 227,
+    "targetSpriteFunction": "sprite227",
+    "exportCanvas": {
+      "width": 724,
+      "height": 1281
+    },
+    "exportInternalTranslation": {
+      "x": 373.55,
+      "y": 692.1
+    },
+    "expectedPlacedFunctionCount": 200,
+    "expectedPlacedFunctionsSha256": "6c9b09e472a9584516c891fd193c9377c72d46aa41f32a4521d8f2b16a8d75b4",
+    "expectedFontFunctionCount": 8,
+    "expectedFontFunctionsSha256": "bf73388ca8f5fd83b8732249960b76431f60dd655843fe8e89f84115ea021742",
+    "embeddedImageVariableCount": 10,
+    "embeddedImageVariablesSha256": "32340e29a6527af4346ebc9ab824a2d1f9d592b898755b6c7d973000b9622c06"
+  },
+  "timeline": {
+    "fps": 12,
+    "stage": {
+      "width": 800,
+      "height": 600,
+      "backgroundColor": "#b8d8f7"
+    },
+    "root": {
+      "frameCount": 10,
+      "preloaderStopFrame": 1,
+      "beginFrame": 6,
+      "beginLabel": "begin",
+      "placementName": "animation",
+      "placementTwips": {
+        "x": 8248,
+        "y": 6466
+      },
+      "placementPixels": {
+        "x": 412.4,
+        "y": 323.3
+      }
+    },
+    "local": {
+      "timelineId": "sprite-227",
+      "frameCount": 534,
+      "livePlaybackEndFrame": 145,
+      "playbackMode": "state-explorer",
+      "publicFrameIndexing": "one-indexed"
+    },
+    "stageRenderOffset": {
+      "x": 38.85,
+      "y": -368.8
+    },
+    "mainMatrixNormalization": "root unit-scale XML matrix minus standalone sprite pixel translation; nested 0.05 twips conversion retained"
+  },
+  "runtimeContract": {
+    "kind": "structural-local-frame",
+    "scenarios": [
+      "source-explicit-frames"
+    ],
+    "defaultScenario": "source-explicit-frames",
+    "supportedLanguages": [
+      "en"
+    ],
+    "visualLocalization": "source-English visuals; es requires explicit source-English fallback",
+    "seedMapping": "fixed zero; no AVM1 or shell random selection executed",
+    "blockedLocalFrameRanges": [],
+    "currentCanonicalFrameDomainDispositionAsserted": false,
+    "unresolved": [
+      "Quiz/feedback/glossary/close actions are page-owned, not Canvas-executed.",
+      "Feedback sprite selection is shell-owned and must be supplied explicitly.",
+      "Sprite 179 source tail and audio remain held.",
+      "Original runtime, native text, audio clock and My Lesson integration are separate."
+    ]
+  },
+  "output": {
+    "script": "canvas-renderer.js",
+    "manifest": "canvas-manifest-v1.json",
+    "spec": "adapter-spec-v1.json",
+    "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+  },
+  "strictAcceptanceEffect": "none"
+}

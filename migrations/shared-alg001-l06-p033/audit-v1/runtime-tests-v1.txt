@@ -1,0 +1,14 @@
+✔ real runtime selects all seven source clocks, holds each wrong branch and supports early Close (3.687333ms)
+✔ two wrong attempts retire separate source streams and second terminal alone resumes main (0.816958ms)
+✔ pause preserves a fractional frame, replay invalidates a pending audio start, browser denial can recover (0.500542ms)
+✔ EOF visual tail resumes without replaying PCM and source stop keeps exact main boundary (0.302042ms)
+✔ explicit SA pending load, EOF return and leave never advance source or revive a stale owner (0.487917ms)
+✔ native source reading preserves alpha boundaries, answer lifetime, explanation stages and emphasized pairs (0.312ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 178.843

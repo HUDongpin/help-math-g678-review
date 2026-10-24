@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l06-p010",
+  "status": "source-structural-disposition-only",
+  "sourceSwfSha256": "96552f567037f39868d01b1ba77311858caf2efcdb141ef64ed0878a6c48ce14",
+  "evidence": {
+    "source-facts": {
+      "path": "migrations/shared-alg001-l06-p010/audit/source-v1/source-facts-v1.json",
+      "bytes": 18231,
+      "sha256": "7f7dc83e16431152dc04ade6e685363d4e8a1ff154673d0c4464f85d30cd85b8"
+    },
+    "source-text": {
+      "path": "migrations/shared-alg001-l06-p010/audit/source-v1/source-text-v1.json",
+      "bytes": 457629,
+      "sha256": "00d72eb17335d6e2b23ed89c160c7d68d203ddbfa3596c45bced0cb7d22fbaa9"
+    },
+    "source-composition": {
+      "path": "migrations/shared-alg001-l06-p010/audit/source-v1/source-composition-v1.json",
+      "bytes": 17065,
+      "sha256": "a208678fbb7602aea0decaa2cab110d4f687a11f685e32db8bf67a9fc55ee033"
+    }
+  },
+  "domains": [
+    {
+      "frameDomainId": "root",
+      "sourceFrameCount": 10,
+      "observedShowFrameCount": 10,
+      "rootReachableByStaticPlacements": true,
+      "parentFrameDomainIds": [],
+      "sourcePlacements": [],
+      "sourceEventCount": 7,
+      "disposition": "separate-declared-source-frame-domain",
+      "originalRuntimeEstablished": false
+    },
+    {
+      "frameDomainId": "sprite-52",
+      "sourceFrameCount": 303,
+      "observedShowFrameCount": 303,
+      "rootReachableByStaticPlacements": true,
+      "parentFrameDomainIds": [
+        "root"
+      ],
+      "sourcePlacements": [
+        {
+          "parentTimelineId": "root",
+          "sourceInstanceId": "root/depth-1/generation-1",
+          "firstFrame": 6,
+          "lastFrameExclusive": 11,
+          "depth": 1
+        }
+      ],
+      "sourceEventCount": 254,
+      "disposition": "separate-declared-source-frame-domain",
+      "originalRuntimeEstablished": false
+    },
+    {
+      "frameDomainId": "sprite-55",
+      "sourceFrameCount": 1,
+      "observedShowFrameCount": 1,
+      "rootReachableByStaticPlacements": true,
+      "parentFrameDomainIds": [
+        "root"
+      ],
+      "sourcePlacements": [
+        {
+          "parentTimelineId": "root",
+          "sourceInstanceId": "root/depth-52/generation-1",
+          "firstFrame": 6,
+          "lastFrameExclusive": 11,
+          "depth": 52
+        }
+      ],
+      "sourceEventCount": 1,
+      "disposition": "separate-declared-source-frame-domain",
+      "originalRuntimeEstablished": false
+    }
+  ],
+  "rootMainRelation": {
+    "rootEntryFrame": 6,
+    "mainDomainId": "sprite-52",
+    "sourceTransformTwips": [
+      1,
+      0,
+      0,
+      1,
+      7390,
+      5060
+    ],
+    "rootStopsAtFrame": 6,
+    "mainSourceStopFrame": null,
+    "mainDeclaredEndFrame": 303,
+    "endBehavior": "conditional indexMI host stop at 303 source-supported; standalone end and actual old-host execution unobserved",
+    "hostEvidence": {
+      "path": "migrations/shared-alg001-l06-p010/audit/source-v1/conditional-host-terminal-v1.json",
+      "bytes": 2440,
+      "sha256": "511103d546a061565613b5b2949ce30be86c5330ff1874cac8186eae0ab69845"
+    }
+  },
+  "limits": [
+    "Static root reachability does not prove natural playback.",
+    "The button source calls the historical DoHyperLinks host; actual dialog and pause/return need product checks.",
+    "Question is placed under a moving mask; placement alone does not prove visibility.",
+    "Original runtime, listening, human review and acceptance are separate."
+  ]
+}

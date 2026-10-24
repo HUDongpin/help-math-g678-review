@@ -1,0 +1,935 @@
+{
+  "schemaVersion": 2,
+  "kind": "alg-l06-p004-text-risk-inventory-v2",
+  "animationId": "shared-alg001-l06-p004",
+  "status": "two-source-mask-complete-sentence-thresholds-implemented-other-risks-open",
+  "predecessor": {
+    "path": "migrations/shared-alg001-l06-p004/audit/text-risks-v1.json",
+    "bytes": 27043,
+    "sha256": "e742449a874529449a7e4a7bc5233d3514795a3acf39d050765ca06e3888cd00"
+  },
+  "sourcePins": [
+    {
+      "path": "G6-G8-shared/ALG001/L6/RW/L6RW04.swf",
+      "bytes": 1115626,
+      "sha256": "514867e794dbc86059a452c5f1091cabfabf73e6f7918d0d28d9cf7ee604573e"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p004/audit/source-text-v1.json",
+      "bytes": 1354688,
+      "sha256": "c6f15d46da49019e359a44f407cb0577f7cfb6a7a0c1b68ab06d43084aa3adc6"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p004/audit/movie-root-verified.xml",
+      "bytes": 2570053,
+      "sha256": "e4c1ac33596cac6b97491c6d74417ddd8edfebb8197b12f680fdaa2cf8e5b187"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p004/audit/source-audit-v1.json",
+      "bytes": 125269,
+      "sha256": "89b22426969a3f288f1aef6043aed050d9eb6e4e8d092b45532e89a52ff37180"
+    }
+  ],
+  "sourceCatalog": {
+    "path": "migrations/shared-alg001-l06-p004/audit/source-text-v1.json",
+    "bytes": 1354688,
+    "sha256": "c6f15d46da49019e359a44f407cb0577f7cfb6a7a0c1b68ab06d43084aa3adc6"
+  },
+  "composedEvidence": [
+    {
+      "path": "output/alg-l06-p004-composed-text-v1/capture-v1.json",
+      "bytes": 28002,
+      "sha256": "f63b2a229b4efdc0ba47b4b080817b7c191f16ec8e1a76f0db80ca9a28ba9763"
+    },
+    {
+      "path": "output/alg-l06-p004-composed-text-v1/visual-review-v1.json",
+      "bytes": 6407,
+      "sha256": "38e5f097bbd031b5a67d3eb0ec8c166530e0734f15706479d76b701e2b37577e"
+    }
+  ],
+  "bitmapReviewPin": {
+    "path": "output/alg-l06-p004-text-risks-v1/bitmap-review-observations-v1.json",
+    "bytes": 2543,
+    "sha256": "7d6ad444d645585d0cb0f2705f5d64f2ef22c44412ba8ca7fc5bf758fc42d127"
+  },
+  "nativeInputPins": [
+    {
+      "path": "packages/demos/src/alg-l06-p004-text.generated.ts",
+      "bytes": 7915,
+      "sha256": "fc5dabb2069214d11e3a4c5e24bbb44bebc5e3e9389eb79dec45ac756fa72958"
+    },
+    {
+      "path": "packages/demos/src/alg-l06-p004-text-occurrences-v2.generated.ts",
+      "bytes": 403112,
+      "sha256": "93502eece3aa977c8394d75c7def87db643bab0537938788c57518f08b6dc9c4"
+    },
+    {
+      "path": "packages/demos/src/alg-l06-p004-semantic-text-v1.ts",
+      "bytes": 6117,
+      "sha256": "3ef6b76d8eea5662b9766811862252049e3b5bfbdfd98d6f1be6a734f0e5f031"
+    },
+    {
+      "path": "packages/demos/src/alg-l06-p004-semantic-text-v1.test.ts",
+      "bytes": 4665,
+      "sha256": "11a018ea2cbe556cfa075ecc2b3a4dff1f99e544ecf1a8f3c2565bf2b63a4d80"
+    },
+    {
+      "path": "packages/demos/src/alg-l06-p004-hit-regions.generated.ts",
+      "bytes": 2572,
+      "sha256": "bb05f7f83b3e51c4aa4208be5cb751829533302f0b01cb29cb31c5a0261cb6e9"
+    },
+    {
+      "path": "packages/demos/src/alg-l06-p004-text-snapshot-v1.ts",
+      "bytes": 2117,
+      "sha256": "3c0cceea92709eafb8a33289bc0b7b5657c259308c8286d69ef62f85e6fe9842"
+    },
+    {
+      "path": "packages/demos/src/alg-l06-p004-text-snapshot-v1.test.ts",
+      "bytes": 3071,
+      "sha256": "52764eb8f3e3c6f4825e7ce8bdca28a176e7f72a3c7c609039a91509e4d37a43"
+    },
+    {
+      "path": "packages/demos/src/alg-l06-p004-native-text-v1.tsx",
+      "bytes": 2487,
+      "sha256": "fce426c22504a6a0060a0e0731bf04c935a57cfa3021b54e2c3818ff8d82162c"
+    },
+    {
+      "path": "apps/web/components/g678-alg-l06-p004-runtime-v1.tsx",
+      "bytes": 21785,
+      "sha256": "ef76d89ce27d6508cbc4f4c88e211e3829228ad62bb24d5d1960a68a1a66f137"
+    },
+    {
+      "path": "apps/web/components/g678-alg-l06-p004-runtime-v1.module.css",
+      "bytes": 863,
+      "sha256": "092e541461d84bd71c87e1d7295f486755d41cc891904e22e07ea9e33e712499"
+    },
+    {
+      "path": "apps/web/app/globals.css",
+      "bytes": 293300,
+      "sha256": "333064d6d0a3fa39ab4f0d58fd25295bde27b7a7985068ff422061f2de1e75c9"
+    }
+  ],
+  "implementedNativeSemanticPin": {
+    "path": "packages/demos/src/alg-l06-p004-semantic-text-v1.ts",
+    "bytes": 6117,
+    "sha256": "3ef6b76d8eea5662b9766811862252049e3b5bfbdfd98d6f1be6a734f0e5f031"
+  },
+  "sourceMaskSentencePolicy": [
+    {
+      "textCharacterId": 78,
+      "textInstanceId": "sprite-95/depth-84/generation-3",
+      "textPlacement": {
+        "frame": 508,
+        "matrixTwips": [
+          1,
+          0,
+          0,
+          1,
+          -5261,
+          -279
+        ],
+        "sourceTagSha256": "8aadd73fac01ea3b6f0c5ab0912206cde3dd0a2b9d76fa053758cbc17390544c"
+      },
+      "maskInstanceId": "sprite-95/depth-82/generation-6",
+      "clipDepth": 91,
+      "maskFirst": {
+        "frame": 508,
+        "scaleX": 0.009765625,
+        "sourceTagSha256": "24190d2108aa3daefc57beedf61064939daed344b216d456e56b029c0d84ac1c"
+      },
+      "maskLast": {
+        "frame": 611,
+        "scaleX": 1,
+        "sourceTagSha256": "b9a7b330b65db6e1567c1243f93fc8529734b09c43c521ef9d23a6a50fe6ecf2"
+      },
+      "maskUpdateCount": 75,
+      "modernCompleteSentenceFrame": 611
+    },
+    {
+      "textCharacterId": 83,
+      "textInstanceId": "sprite-95/depth-94/generation-1",
+      "textPlacement": {
+        "frame": 614,
+        "matrixTwips": [
+          1,
+          0,
+          0,
+          1,
+          -5261,
+          321
+        ],
+        "sourceTagSha256": "c69f62cb883ce25bd6973fdcec4218094ab7d9660b71fa8e16b611540480512d"
+      },
+      "maskInstanceId": "sprite-95/depth-92/generation-1",
+      "clipDepth": 103,
+      "maskFirst": {
+        "frame": 614,
+        "scaleX": 0.01129150390625,
+        "sourceTagSha256": "20e412a659cc2601377bb72096ead241f687edfaa4ae2a4a1b90de257cfd42d0"
+      },
+      "maskLast": {
+        "frame": 684,
+        "scaleX": 0.8452606201171875,
+        "sourceTagSha256": "c1b16b4f803c79be69b9755ef5f57d0f57bd83b14a4d51abd0de666066360ab9"
+      },
+      "maskUpdateCount": 54,
+      "modernCompleteSentenceFrame": 684
+    }
+  ],
+  "sampledPixelComparisons": [
+    {
+      "before": {
+        "path": "output/alg-l06-p004-composed-text-v1/frames/frame-610.png",
+        "bytes": 264068,
+        "sha256": "842cf0561148775ff6f56ac9084f185d40979f2fe0112ebfe595c23faaa78041"
+      },
+      "atComplete": {
+        "path": "output/alg-l06-p004-composed-text-v1/frames/frame-611.png",
+        "bytes": 264096,
+        "sha256": "d51cafe20b036359a4a58cd69a6325946f156a7e686dfbc29c60090368a5593d"
+      },
+      "stableNext": {
+        "path": "output/alg-l06-p004-composed-text-v1/frames/frame-612.png",
+        "bytes": 264096,
+        "sha256": "d51cafe20b036359a4a58cd69a6325946f156a7e686dfbc29c60090368a5593d"
+      }
+    },
+    {
+      "before": {
+        "path": "output/alg-l06-p004-composed-text-v1/frames/frame-683.png",
+        "bytes": 267870,
+        "sha256": "dfb4c52dee69527b52832a3c049d1149b83a0cf418aac747a606ef2d5f21256a"
+      },
+      "atComplete": {
+        "path": "output/alg-l06-p004-composed-text-v1/frames/frame-684.png",
+        "bytes": 267899,
+        "sha256": "5e2ba076919cf9a2594c241fe9b5c8e422519c03a4d7157cc9fcec4310254d50"
+      },
+      "stableNext": {
+        "path": "output/alg-l06-p004-composed-text-v1/frames/frame-685.png",
+        "bytes": 267899,
+        "sha256": "5e2ba076919cf9a2594c241fe9b5c8e422519c03a4d7157cc9fcec4310254d50"
+      }
+    }
+  ],
+  "rows": [
+    {
+      "id": "source-static-text",
+      "sourceIds": [
+        18,
+        20,
+        24,
+        25,
+        27,
+        28,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        39,
+        52,
+        55,
+        58,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        68,
+        78,
+        83,
+        93,
+        96
+      ],
+      "evidence": {
+        "definitions": 28,
+        "decodedRuns": 42,
+        "unresolvedRuns": 0,
+        "nativeOccurrenceProjection": 100,
+        "sourceInstanceIds": [
+          "root/depth-120/generation-1",
+          "sprite-95/depth-62/generation-1",
+          "sprite-95/depth-68/generation-1",
+          "sprite-95/depth-71/generation-1",
+          "sprite-95/depth-72/generation-1",
+          "sprite-95/depth-76/generation-1",
+          "sprite-95/depth-77/generation-1",
+          "sprite-95/depth-81/generation-1",
+          "sprite-95/depth-82/generation-1",
+          "sprite-95/depth-83/generation-1",
+          "sprite-95/depth-84/generation-1",
+          "sprite-95/depth-85/generation-1",
+          "sprite-95/depth-86/generation-1",
+          "sprite-95/depth-87/generation-1",
+          "sprite-95/depth-88/generation-1",
+          "sprite-95/depth-89/generation-1",
+          "sprite-95/depth-80/generation-5",
+          "sprite-95/depth-81/generation-2",
+          "sprite-95/depth-105/generation-1",
+          "sprite-95/depth-109/generation-1",
+          "sprite-95/depth-82/generation-4",
+          "sprite-95/depth-83/generation-2",
+          "sprite-95/depth-82/generation-5",
+          "sprite-95/depth-83/generation-3",
+          "sprite-95/depth-84/generation-2",
+          "sprite-95/depth-85/generation-2",
+          "sprite-95/depth-86/generation-2",
+          "sprite-95/depth-87/generation-2",
+          "sprite-95/depth-88/generation-2",
+          "sprite-95/depth-89/generation-2",
+          "sprite-95/depth-90/generation-3",
+          "sprite-95/depth-91/generation-1",
+          "sprite-95/depth-87/generation-3",
+          "sprite-95/depth-113/generation-1",
+          "sprite-95/depth-114/generation-1",
+          "sprite-95/depth-115/generation-1",
+          "sprite-95/depth-116/generation-1",
+          "sprite-95/depth-117/generation-1",
+          "sprite-95/depth-113/generation-2",
+          "sprite-95/depth-114/generation-2",
+          "sprite-95/depth-115/generation-2",
+          "sprite-95/depth-116/generation-2",
+          "sprite-95/depth-117/generation-2",
+          "sprite-95/depth-113/generation-3",
+          "sprite-95/depth-114/generation-3",
+          "sprite-95/depth-115/generation-3",
+          "sprite-95/depth-116/generation-3",
+          "sprite-95/depth-117/generation-3",
+          "sprite-95/depth-113/generation-4",
+          "sprite-95/depth-114/generation-4",
+          "sprite-95/depth-115/generation-4",
+          "sprite-95/depth-116/generation-4",
+          "sprite-95/depth-117/generation-4",
+          "sprite-95/depth-113/generation-5",
+          "sprite-95/depth-114/generation-5",
+          "sprite-95/depth-115/generation-5",
+          "sprite-95/depth-116/generation-5",
+          "sprite-95/depth-117/generation-5",
+          "sprite-95/depth-113/generation-6",
+          "sprite-95/depth-113/generation-7",
+          "sprite-95/depth-113/generation-8",
+          "sprite-95/depth-113/generation-9",
+          "sprite-95/depth-113/generation-10",
+          "sprite-95/depth-84/generation-3",
+          "sprite-95/depth-94/generation-1",
+          "sprite-95/depth-113/generation-16",
+          "sprite-95/depth-114/generation-6",
+          "sprite-95/depth-115/generation-6",
+          "sprite-95/depth-116/generation-6",
+          "sprite-95/depth-117/generation-6",
+          "sprite-95/depth-113/generation-17",
+          "sprite-95/depth-114/generation-7",
+          "sprite-95/depth-115/generation-7",
+          "sprite-95/depth-116/generation-7",
+          "sprite-95/depth-117/generation-7",
+          "sprite-95/depth-113/generation-18",
+          "sprite-95/depth-114/generation-8",
+          "sprite-95/depth-115/generation-8",
+          "sprite-95/depth-116/generation-8",
+          "sprite-95/depth-117/generation-8",
+          "sprite-95/depth-113/generation-19",
+          "sprite-95/depth-114/generation-9",
+          "sprite-95/depth-115/generation-9",
+          "sprite-95/depth-116/generation-9",
+          "sprite-95/depth-117/generation-9",
+          "sprite-95/depth-113/generation-20",
+          "sprite-95/depth-114/generation-10",
+          "sprite-95/depth-115/generation-10",
+          "sprite-95/depth-116/generation-10",
+          "sprite-95/depth-117/generation-10",
+          "sprite-95/depth-113/generation-21",
+          "sprite-95/depth-113/generation-22",
+          "sprite-95/depth-113/generation-23",
+          "sprite-95/depth-113/generation-24",
+          "sprite-95/depth-113/generation-25",
+          "sprite-95/depth-113/generation-26",
+          "sprite-95/depth-113/generation-27",
+          "sprite-95/depth-113/generation-28",
+          "sprite-95/depth-113/generation-29",
+          "sprite-95/depth-113/generation-30"
+        ],
+        "semanticBindingBlocks": 101,
+        "rootTitleInstance": "root/depth-120/generation-1"
+      },
+      "nativeCoverage": "The active native companion keeps source-instance text and the reviewed semantic equation; two full sentence blocks are now withheld until source-mask-complete frames 611 and 684. Canvas glyphs remain unsuppressed.",
+      "unresolved": "Other source text still uses placement membership. Progressive glyph timing, alpha, offstage transforms, spatial reading order, overlap, responsive typography and original runtime visibility remain unestablished.",
+      "reviewedSubset": {
+        "sentenceInstances": [
+          "sprite-95/depth-84/generation-3",
+          "sprite-95/depth-94/generation-1"
+        ],
+        "completeSentenceFrames": [
+          611,
+          684
+        ]
+      }
+    },
+    {
+      "id": "bitmap-embedded-text",
+      "sourceIds": [
+        2,
+        3,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "shapeBitmapRefs": [
+        {
+          "shapeId": 4,
+          "bitmapIds": [
+            2,
+            3
+          ],
+          "sourceInstances": [
+            {
+              "instanceId": "sprite-95/depth-27/generation-1",
+              "firstFrame": 1,
+              "lastFrameExclusive": 832
+            }
+          ]
+        },
+        {
+          "shapeId": 16,
+          "bitmapIds": [
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "sourceInstances": [
+            {
+              "instanceId": "sprite-95/depth-61/generation-1",
+              "firstFrame": 1,
+              "lastFrameExclusive": 832
+            }
+          ]
+        },
+        {
+          "shapeId": 19,
+          "bitmapIds": [
+            11,
+            12
+          ],
+          "sourceInstances": [
+            {
+              "instanceId": "sprite-95/depth-67/generation-1",
+              "firstFrame": 1,
+              "lastFrameExclusive": 832
+            }
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "characterId": 2,
+          "sourceTagSha256": "cdd271eac1ff9775511567db027fc77263ba1e47ed6460a4ad052da6380824f5",
+          "sourceTagOffset": 194,
+          "exported": {
+            "path": "output/alg-l06-p004-text-risks-v1/bitmap-review/2.png",
+            "bytes": 385492,
+            "sha256": "c835035d9448f9388fdc65c108d4571ae15bc71d2e701f5f312ff80d8082e28d"
+          },
+          "observation": "Kiosk/storefront photo cutout; no clearly readable teaching words in the isolated export",
+          "textRisk": "Small or composed details remain unclassified"
+        },
+        {
+          "characterId": 3,
+          "sourceTagSha256": "d7e712179d420ff3fe6820814b6eaa076a7f04f584a7c729cb93e919fc8e3093",
+          "sourceTagOffset": 206624,
+          "exported": {
+            "path": "output/alg-l06-p004-text-risks-v1/bitmap-review/3.jpg",
+            "bytes": 497476,
+            "sha256": "d07c82ac79b5a69a6612e7812690e49b9b3eba329420707ba10fc0d0f65f6afd"
+          },
+          "observation": "Street photo contains visible environmental signage, including BROWN BEAR CAFE; this lettering is image content, not a DefineText run",
+          "textRisk": "Native text inventory does not cover photographic signage; readability and importance at lesson scale remain unreviewed"
+        },
+        {
+          "characterId": 11,
+          "sourceTagSha256": "75a24280bb583463ebeb540708049ebbbf77b3f6fb3d3d38d0ed508607dab056",
+          "sourceTagOffset": 713800,
+          "exported": {
+            "path": "output/alg-l06-p004-text-risks-v1/bitmap-review/11.jpg",
+            "bytes": 17173,
+            "sha256": "dc3e7b56c24ed3991f612bbd02e53a5a2daba3820b3df8d62548d9f93b07490a"
+          },
+          "observation": "Small blender photo; no clearly readable teaching words in the isolated export",
+          "textRisk": "Composed-scale visibility remains unreviewed"
+        },
+        {
+          "characterId": 12,
+          "sourceTagSha256": "35eddf769307038755e5649c423503bec74ff802d1fedc02eb9872dee0f606c7",
+          "sourceTagOffset": 730981,
+          "exported": {
+            "path": "output/alg-l06-p004-text-risks-v1/bitmap-review/12.png",
+            "bytes": 9298,
+            "sha256": "86d1860315757ae5138c8ac3559e1a5646e37ffe31a9d86b49576b0cf4be23bb"
+          },
+          "observation": "Small decorated drink container; markings are too small to classify as readable text",
+          "textRisk": "Do not infer that markings are source teaching text or that none exists"
+        },
+        {
+          "characterId": 13,
+          "sourceTagSha256": "aefe01c549267b26013d6bd80a7a2ef49c42f35a6f4c55df1b0d37a3c14f5fe6",
+          "sourceTagOffset": 736286,
+          "exported": {
+            "path": "output/alg-l06-p004-text-risks-v1/bitmap-review/13.png",
+            "bytes": 5664,
+            "sha256": "77c7099af0cdac14b24defe3556b283ef1c26763b2e960e36bccb34b80880bb6"
+          },
+          "observation": "Small red cup; no clearly readable text in the isolated export",
+          "textRisk": "Composed-scale visibility remains unreviewed"
+        },
+        {
+          "characterId": 14,
+          "sourceTagSha256": "5bbb21055d745bb69acdc1d29a1bddf3ef8b0405a237bb91339fe2c882ce9dbe",
+          "sourceTagOffset": 739950,
+          "exported": {
+            "path": "output/alg-l06-p004-text-risks-v1/bitmap-review/14.png",
+            "bytes": 110225,
+            "sha256": "d9050d4028c5129bf2496c242ed19f58064d3afd05a5f5c6add5859e738b20f4"
+          },
+          "observation": "Orange-fruit display photo; no clearly readable text in the isolated export",
+          "textRisk": "Composed-scale visibility remains unreviewed"
+        },
+        {
+          "characterId": 15,
+          "sourceTagSha256": "8384f47280d27d37cc5d771507c273992788989bc5c801475ce2718c4585ffab",
+          "sourceTagOffset": 793964,
+          "exported": {
+            "path": "output/alg-l06-p004-text-risks-v1/bitmap-review/15.png",
+            "bytes": 107990,
+            "sha256": "43d523159c9ebb9eccedf3f435c5588a3ec2e9bfb213555c03ef60ac37e8bc8f"
+          },
+          "observation": "Yellow-fruit display photo; no clearly readable text in the isolated export",
+          "textRisk": "Composed-scale visibility remains unreviewed"
+        }
+      ],
+      "nativeCoverage": "The seven bitmaps retain exact source IDs and visual exports; environmental photo lettering is not a native DefineText run.",
+      "unresolved": "Bitmap 3 has photographic signage; instructional importance and composed-frame legibility are unreviewed. Other images have no clearly readable teaching text at isolated export size, not proof of absence."
+    },
+    {
+      "id": "outline-title",
+      "sourceIds": [
+        96,
+        97,
+        98
+      ],
+      "evidence": {
+        "rootTextInstance": "root/depth-120/generation-1",
+        "outlineInstance": "sprite-98/depth-1/generation-1",
+        "shapeTagSha256": "c92f7e834b11b84f891662ef5fb8dd2106b048a8712b14072fc32f662f26b903",
+        "disposition": {
+          "path": "migrations/shared-alg001-l06-p004/audit/root-title-modern-disposition-v1.json",
+          "bytes": 2209,
+          "sha256": "f469e25fc6dc3e1793c288d41898a539f91fa38902c5870765d2965373a837b8"
+        }
+      },
+      "nativeCoverage": "Source title string 96 has a native text projection; separate shape 97 in sprite 98 is recorded as an outline duplicate under a modern title disposition.",
+      "unresolved": "Source-composite visibility, outline suppression in every real frame, and visual parity are not established."
+    },
+    {
+      "id": "buttons-and-hit-only-states",
+      "sourceIds": [
+        57,
+        59,
+        79,
+        80,
+        81,
+        84,
+        85,
+        86
+      ],
+      "evidence": {
+        "buttons": [
+          {
+            "characterId": 57,
+            "actionSha256": "2f92a394bed054aeca4ae6ed57b238a04f5b3aa261270c980d5f00a82c8f19a5",
+            "actionBytes": 154,
+            "states": [
+              {
+                "up": false,
+                "over": false,
+                "down": false,
+                "hitTest": true
+              }
+            ],
+            "instances": [
+              {
+                "instanceId": "sprite-95/depth-106/generation-1",
+                "firstFrame": 127,
+                "lastFrameExclusive": 832
+              }
+            ]
+          },
+          {
+            "characterId": 59,
+            "actionSha256": "1262eac21bf8a718d551c8d7b046220855f8f878214783cfdfb7d0c37f5ff5c7",
+            "actionBytes": 155,
+            "states": [
+              {
+                "up": false,
+                "over": false,
+                "down": false,
+                "hitTest": true
+              }
+            ],
+            "instances": [
+              {
+                "instanceId": "sprite-95/depth-110/generation-1",
+                "firstFrame": 195,
+                "lastFrameExclusive": 832
+              }
+            ]
+          },
+          {
+            "characterId": 79,
+            "actionSha256": "549555e0e21a60e887e614e7ff3b03592d8a7f577c5ec25e6601f039050f49c8",
+            "actionBytes": 157,
+            "states": [
+              {
+                "up": false,
+                "over": false,
+                "down": false,
+                "hitTest": true
+              }
+            ],
+            "instances": [
+              {
+                "instanceId": "sprite-95/depth-85/generation-3",
+                "firstFrame": 508,
+                "lastFrameExclusive": 832
+              },
+              {
+                "instanceId": "sprite-95/depth-95/generation-1",
+                "firstFrame": 614,
+                "lastFrameExclusive": 832
+              }
+            ]
+          },
+          {
+            "characterId": 80,
+            "actionSha256": "67233cd150df22e61b8e732bb0216388f1ba336f9fc0d105b351f6a32f5d9ba0",
+            "actionBytes": 157,
+            "states": [
+              {
+                "up": false,
+                "over": false,
+                "down": false,
+                "hitTest": true
+              }
+            ],
+            "instances": [
+              {
+                "instanceId": "sprite-95/depth-87/generation-4",
+                "firstFrame": 508,
+                "lastFrameExclusive": 832
+              }
+            ]
+          },
+          {
+            "characterId": 81,
+            "actionSha256": "6983162097c3b32dde6ff032116df2ce6f32a9caf1f901f2527ada4d6481905d",
+            "actionBytes": 154,
+            "states": [
+              {
+                "up": false,
+                "over": false,
+                "down": false,
+                "hitTest": true
+              }
+            ],
+            "instances": [
+              {
+                "instanceId": "sprite-95/depth-89/generation-3",
+                "firstFrame": 508,
+                "lastFrameExclusive": 832
+              }
+            ]
+          },
+          {
+            "characterId": 84,
+            "actionSha256": "28bc1817d8f4443043d212b45fb6406de98c38bd0ec3bb888b953940bded24ef",
+            "actionBytes": 153,
+            "states": [
+              {
+                "up": false,
+                "over": false,
+                "down": false,
+                "hitTest": true
+              }
+            ],
+            "instances": [
+              {
+                "instanceId": "sprite-95/depth-97/generation-1",
+                "firstFrame": 614,
+                "lastFrameExclusive": 832
+              }
+            ]
+          },
+          {
+            "characterId": 85,
+            "actionSha256": "2f92a394bed054aeca4ae6ed57b238a04f5b3aa261270c980d5f00a82c8f19a5",
+            "actionBytes": 154,
+            "states": [
+              {
+                "up": false,
+                "over": false,
+                "down": false,
+                "hitTest": true
+              }
+            ],
+            "instances": [
+              {
+                "instanceId": "sprite-95/depth-99/generation-1",
+                "firstFrame": 614,
+                "lastFrameExclusive": 832
+              }
+            ]
+          },
+          {
+            "characterId": 86,
+            "actionSha256": "ed604c1dec7e09651b135356f7a17dd11bb56eac95926815890e0d3d5052903b",
+            "actionBytes": 155,
+            "states": [
+              {
+                "up": false,
+                "over": false,
+                "down": false,
+                "hitTest": true
+              }
+            ],
+            "instances": [
+              {
+                "instanceId": "sprite-95/depth-101/generation-1",
+                "firstFrame": 614,
+                "lastFrameExclusive": 832
+              }
+            ]
+          }
+        ],
+        "hitRegionCount": 9
+      },
+      "nativeCoverage": "Nine source-occurrence hit regions are modeled, including two placements of button 79; glossary controls are maintained separately.",
+      "unresolved": "All eight DefineButton2 visual state records are hit-test-only; over/down rendering and action execution are not recovered by this inventory."
+    },
+    {
+      "id": "mask-and-filter-composition",
+      "sourceIds": [
+        1,
+        22,
+        76
+      ],
+      "evidence": [
+        {
+          "eventId": "sprite-95/tag-885736",
+          "frame": 1,
+          "characterId": 1,
+          "depth": 1,
+          "clipDepth": 118,
+          "instanceId": "sprite-95/depth-1/generation-1",
+          "sourceTagSha256": "d30c77a0caa6d6d4dd463db1bbe8df94b02e167dcddfb18f6896588e6b7dfe6a"
+        },
+        {
+          "eventId": "sprite-95/tag-885904",
+          "frame": 1,
+          "characterId": 22,
+          "depth": 70,
+          "clipDepth": 73,
+          "instanceId": "sprite-95/depth-70/generation-1",
+          "sourceTagSha256": "8978ec42fcb4aee65ceac76a4fe241b91236edf341b097065f1a2f1cddea1761"
+        },
+        {
+          "eventId": "sprite-95/tag-885974",
+          "frame": 1,
+          "characterId": 22,
+          "depth": 75,
+          "clipDepth": 78,
+          "instanceId": "sprite-95/depth-75/generation-1",
+          "sourceTagSha256": "4d97924f6330a5e1d87c231c817ce71651c5da44b20266b63a05245862e4a978"
+        },
+        {
+          "eventId": "sprite-95/tag-1091723",
+          "frame": 508,
+          "characterId": 76,
+          "depth": 82,
+          "clipDepth": 91,
+          "instanceId": "sprite-95/depth-82/generation-6",
+          "sourceTagSha256": "24190d2108aa3daefc57beedf61064939daed344b216d456e56b029c0d84ac1c"
+        },
+        {
+          "eventId": "sprite-95/tag-1138576",
+          "frame": 614,
+          "characterId": 76,
+          "depth": 92,
+          "clipDepth": 103,
+          "instanceId": "sprite-95/depth-92/generation-1",
+          "sourceTagSha256": "20e412a659cc2601377bb72096ead241f687edfaa4ae2a4a1b90de257cfd42d0"
+        }
+      ],
+      "nativeCoverage": "Two sentence masks have source-event- and composed-Canvas-reviewed whole-sentence thresholds 611/684; the native companion applies those thresholds. Source masks and all Canvas pixels remain unsuppressed.",
+      "unresolved": "Other masks, progressive reveal, filter/blend and any original Flash pixel result remain unvalidated.",
+      "reviewedSubset": {
+        "maskInstanceIds": [
+          "sprite-95/depth-82/generation-6",
+          "sprite-95/depth-92/generation-1"
+        ],
+        "completeSentenceFrames": [
+          611,
+          684
+        ]
+      }
+    },
+    {
+      "id": "actionscript-visibility-values",
+      "sourceIds": [
+        "root/tag-28",
+        "root/tag-129",
+        "sprite-95/tag-1233735"
+      ],
+      "evidence": [
+        {
+          "eventId": "root/tag-28",
+          "frame": 1,
+          "bytes": 73,
+          "sourceTagSha256": "c8ff5f7fc7f6f67b648b88640988b456140e03dd4e73a88e2d844f7bdad73b5e"
+        },
+        {
+          "eventId": "root/tag-129",
+          "frame": 6,
+          "bytes": 2,
+          "sourceTagSha256": "20b1d7f6e9dad53de25038aef401548bfe9a12f92d76207a7a3a027b695e15cf"
+        },
+        {
+          "eventId": "sprite-95/tag-1233735",
+          "frame": 831,
+          "bytes": 2,
+          "sourceTagSha256": "20b1d7f6e9dad53de25038aef401548bfe9a12f92d76207a7a3a027b695e15cf"
+        }
+      ],
+      "nativeCoverage": "Root and child stop boundaries and source glossary keys have separate maintained behavior models.",
+      "unresolved": "These three DoAction records are structural bytes here; AVM1-dependent text state, timing and original host effect are not executed or accepted."
+    },
+    {
+      "id": "shape-and-math-symbols",
+      "sourceIds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        16,
+        19,
+        21,
+        22,
+        26,
+        29,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        53,
+        54,
+        56,
+        66,
+        67,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        82,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        94,
+        97,
+        99
+      ],
+      "evidence": {
+        "shapeDefinitions": 49,
+        "semanticEquationSourceInstances": [
+          "sprite-95/depth-80/generation-5",
+          "sprite-95/depth-81/generation-2"
+        ],
+        "equationAudit": {
+          "path": "migrations/shared-alg001-l06-p004/audit/equation-geometry-v1.json",
+          "bytes": 8931,
+          "sha256": "080019ad49d6d1513beaffd7bf5a234183deabdec5af144c9f048c142f2aeab2"
+        }
+      },
+      "nativeCoverage": "The reviewed source x operator and adjacent source text become one maintained semantic equation; other shapes remain visual source assets.",
+      "unresolved": "The remaining vector shapes are not classified as text or non-text; outlined glyphs, mathematical symbols and compositing still need a bounded visual census."
+    },
+    {
+      "id": "language-and-translation",
+      "sourceIds": [
+        18,
+        20,
+        24,
+        25,
+        27,
+        28,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        39,
+        52,
+        55,
+        58,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        68,
+        78,
+        83,
+        93,
+        96
+      ],
+      "nativeCoverage": "English source text stays English. Separate glossary labels and user-triggered Spanish audio do not translate the source drawing.",
+      "unresolved": "Spanish visual and source translation parity, original Spanish host association and listening acceptance are unestablished."
+    }
+  ],
+  "nextGap": "Inspect and model remaining mask/alpha/offstage text reveal and image/vector lettering in composed frames; review native companion responsive layout and retained Canvas duplication. Do not infer original Flash behavior from the safe Canvas export.",
+  "gates": {
+    "nativeTypographyComplete": false,
+    "runtimeVisibilityEstablished": false,
+    "originalRuntimeAccepted": false,
+    "visualAccepted": false,
+    "SpanishTranslationAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "published": false
+  }
+}

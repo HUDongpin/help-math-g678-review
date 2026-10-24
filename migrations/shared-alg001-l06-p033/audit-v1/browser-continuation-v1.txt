@@ -1,0 +1,8 @@
+### Error
+Error: locator.click: Error: strict mode violation: locator('[data-p033-spanish]') resolved to 2 elements:
+    1) <div data-p033-frame="231" data-p033-ready="true" data-p033-player="true" data-p033-spanish="false" data-p033-phase="postquiz" data-source-sha256="fb11fd842f3f0948cf5b00bf3b7b63bde86f0af9bf41bb2f9e3a762a1daad071">…</div> aka getByText('ReproducirPausarRepetirAudio en españolWhich set of ordered pairs is a function')
+    2) <button type="button" data-p033-spanish="true">Audio en español</button> aka getByRole('button', { name: 'Audio en español' })
+
+Call log:
+[2m  - waiting for locator('[data-p033-spanish]')[22m
+

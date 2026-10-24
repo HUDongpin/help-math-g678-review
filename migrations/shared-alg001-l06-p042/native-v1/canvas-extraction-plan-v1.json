@@ -1,0 +1,523 @@
+{
+  "schemaVersion": 1,
+  "kind": "p042-full-frame-canvas-extraction-plan-v1",
+  "status": "raw-source-export-only-renderer-blocked",
+  "animationId": "shared-alg001-l06-p042",
+  "physicalSource": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/TI/L6TI02.swf",
+    "bytes": 907398,
+    "sha256": "7df2077da472138df83a4485c0e15b7f3b1063aefcdcf2e3ded9232c98f68fcb"
+  },
+  "lessonXml": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/index.xml",
+    "bytes": 13926,
+    "sha256": "9f3753a17e5e271d7bc63a1bdf8cd5237f19770bae3f5c7364cabcb62c84ce2c"
+  },
+  "sourceXml": {
+    "path": "output/g678-p042-source-intake-20261002-v1/extraction/swfmill.xml",
+    "bytes": 3484345,
+    "sha256": "40ea4ee818c50df1f5b55aeac764f056eb9e91f8aa770955415c558b903faf54"
+  },
+  "nativeModel": {
+    "path": "output/g678-p042-native-canvas-preparation-20261002-v1/native-model-v1.json",
+    "bytes": 1676871,
+    "sha256": "746677e644824564427e48c4636f88fb407e65d1bc95a2b76f9d3426799432f0"
+  },
+  "reusedSafeAdapter": {
+    "path": "scripts/build-safe-ffdec-canvas-adapter.mjs",
+    "bytes": 115553,
+    "sha256": "1d1dd117dd59a6b7191f2fa8488249ece09bfb1da8837be146677f88a01315dd"
+  },
+  "reusedClipMaskNormalizer": {
+    "path": "scripts/lib/g678-source-clip-masks-v1.mjs",
+    "bytes": 1604,
+    "sha256": "e064fb7cb98e66f08e5173bdfc756641b6a8ddae86f7e4dab02e90fdb3bbd70e"
+  },
+  "tool": "JPEXS Free Flash Decompiler v.26.2.1",
+  "command": [
+    "ffdec",
+    "-config",
+    "packJavaScripts=false",
+    "-onerror",
+    "abort",
+    "-format",
+    "frame:canvas,sprite:canvas",
+    "-export",
+    "frame,sprite",
+    "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export",
+    "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/TI/L6TI02.swf"
+  ],
+  "exportStdout": {
+    "path": "output/g678-p042-native-canvas-preparation-20261002-v1/ffdec-stdout.txt",
+    "bytes": 2041,
+    "sha256": "0be8e9f0c907f166ad6d6390028968f54ef1c02110ee6d04c6002862e0f96d94"
+  },
+  "exportStderr": {
+    "path": "output/g678-p042-native-canvas-preparation-20261002-v1/ffdec-stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "rawFiles": {
+    "frames/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/frames/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "frames/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/frames/frames.html",
+      "bytes": 3348235,
+      "sha256": "9c446d4e158b285e38b5b42e66c8b12784933e1aebbffbe988a7344cf4143f32"
+    },
+    "sprites/DefineSprite_102/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_102/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_102/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_102/frames.html",
+      "bytes": 67635,
+      "sha256": "8e4520216c97604a8249c55beafb80e6c5b57e17353ed37178dc47adbc0d386c"
+    },
+    "sprites/DefineSprite_111_rriighht/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_111_rriighht/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_111_rriighht/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_111_rriighht/frames.html",
+      "bytes": 67724,
+      "sha256": "ecc55ce2ee817f3c314513f8e6a34c4dc4d771f04e1548597155ac061d602c6a"
+    },
+    "sprites/DefineSprite_112_cnew/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_112_cnew/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_112_cnew/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_112_cnew/frames.html",
+      "bytes": 26977,
+      "sha256": "47ee63f82a76d83a1b1af1af3435960a80f816a26dbc6db30209751a3be51a9c"
+    },
+    "sprites/DefineSprite_11_FUIComponentSymbol/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_11_FUIComponentSymbol/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_11_FUIComponentSymbol/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_11_FUIComponentSymbol/frames.html",
+      "bytes": 2181,
+      "sha256": "ee525d103fcaf530d608c7e560209ba04551558118ebc1548876dd45ddf100e3"
+    },
+    "sprites/DefineSprite_123_tabl/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_123_tabl/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_123_tabl/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_123_tabl/frames.html",
+      "bytes": 67612,
+      "sha256": "1a832fd39b67d5e7f8ce1f680b737a165ba79eeb3514c885e326940a496731a1"
+    },
+    "sprites/DefineSprite_126/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_126/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_126/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_126/frames.html",
+      "bytes": 16241,
+      "sha256": "d878f2b69fc987c650c27354412acf2aae9d5482f52e015fc26d2df255efa8a2"
+    },
+    "sprites/DefineSprite_127/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_127/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_127/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_127/frames.html",
+      "bytes": 24263,
+      "sha256": "b6dfb06fc6c1b6b8dab6dec36986750cb7d67a6c7877c2bedac46d5acfe239cf"
+    },
+    "sprites/DefineSprite_128/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_128/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_128/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_128/frames.html",
+      "bytes": 24266,
+      "sha256": "adbcff8062e62d30119b0cf4d3a9ce08acc2dfb9768c4b9dcd03ec7d1c273692"
+    },
+    "sprites/DefineSprite_129/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_129/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_129/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_129/frames.html",
+      "bytes": 24264,
+      "sha256": "c2c8008146ed4338925aa8ecf2963e995cc981f598e7cfabceedd8d4395940c7"
+    },
+    "sprites/DefineSprite_12_UpArrow/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_12_UpArrow/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_12_UpArrow/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_12_UpArrow/frames.html",
+      "bytes": 2259,
+      "sha256": "b7aac0003323a2f5a358aea21f44cfdd183cf3f6a3d7c6a5fe972db886afd540"
+    },
+    "sprites/DefineSprite_130/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_130/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_130/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_130/frames.html",
+      "bytes": 24263,
+      "sha256": "17d390d5e81c52748b93b2f1ddcb7dd8806c901876fefa65753c37053e8477b2"
+    },
+    "sprites/DefineSprite_131/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_131/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_131/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_131/frames.html",
+      "bytes": 15076,
+      "sha256": "b6d489a173f3cb5afaed58d48c039954864ddf83ebf7a74a333577335c6107e7"
+    },
+    "sprites/DefineSprite_13_ScrollThumb/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_13_ScrollThumb/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_13_ScrollThumb/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_13_ScrollThumb/frames.html",
+      "bytes": 2181,
+      "sha256": "bec784a398ba47bcfe389373bb051633428c7c161732f4dd41bacb240763c8e0"
+    },
+    "sprites/DefineSprite_145_show mc1_new_001/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_145_show mc1_new_001/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_145_show mc1_new_001/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_145_show mc1_new_001/frames.html",
+      "bytes": 43371,
+      "sha256": "c49ff4ed2e8503c105eebd6b8edd5aa12a383dfb58e0141ef27881f74e81cf50"
+    },
+    "sprites/DefineSprite_14_DownArrow/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_14_DownArrow/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_14_DownArrow/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_14_DownArrow/frames.html",
+      "bytes": 2259,
+      "sha256": "0992fd5f8407dc635eb0748bc8fb789d246b2f0fb7f79d293a4158ba84784512"
+    },
+    "sprites/DefineSprite_207/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_207/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_207/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_207/frames.html",
+      "bytes": 254969,
+      "sha256": "7ea4f5f36dfd315008a3b9e8806debcdf01f1942c946ae0d43b58f6faccae13a"
+    },
+    "sprites/DefineSprite_239/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_239/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_239/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_239/frames.html",
+      "bytes": 59386,
+      "sha256": "f4ef677c078042e153bc2bdfe0f8bfe3480cf6cb4d2ed66a4edec7bcc2a42b0a"
+    },
+    "sprites/DefineSprite_247/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_247/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_247/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_247/frames.html",
+      "bytes": 739413,
+      "sha256": "6d8875d158106449f16153532161cbf9ba3d920def05cd9164fccb7a4b707d9a"
+    },
+    "sprites/DefineSprite_275/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_275/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_275/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_275/frames.html",
+      "bytes": 1225695,
+      "sha256": "9938af5d69535ea99a4720ca7851c81a93c7c6bcc6cbdf6af6e1f53e893293dd"
+    },
+    "sprites/DefineSprite_280/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_280/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_280/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_280/frames.html",
+      "bytes": 2762,
+      "sha256": "01344850ba43a04b0ddbeaa77e9308f594365cd265c8bcbc143b1ea6fc1c6b49"
+    },
+    "sprites/DefineSprite_288/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_288/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_288/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_288/frames.html",
+      "bytes": 48524,
+      "sha256": "2683b7c50e18e226f2b6b151d8e3d01b517a41a9586b5d925d9598c0e611d1d4"
+    },
+    "sprites/DefineSprite_292/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_292/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_292/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_292/frames.html",
+      "bytes": 102089,
+      "sha256": "395254b2e003403dd414d3f121942c1b1ab02588a494b541c63bb7392226911a"
+    },
+    "sprites/DefineSprite_303/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_303/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_303/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_303/frames.html",
+      "bytes": 48524,
+      "sha256": "90669721c0668b907f83e4507284922c6bc8a1ced228784cb9bf540535c2f5a1"
+    },
+    "sprites/DefineSprite_306/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_306/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_306/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_306/frames.html",
+      "bytes": 140897,
+      "sha256": "0b7c4823a2cc5c19d65167e39eca75ec1563661349864aff82d36d1356017b31"
+    },
+    "sprites/DefineSprite_317/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_317/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_317/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_317/frames.html",
+      "bytes": 48524,
+      "sha256": "6e4adbba585e3ca82460692c0bb777c379116442a260e88b9fc6c0b90e0ba833"
+    },
+    "sprites/DefineSprite_320/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_320/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_320/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_320/frames.html",
+      "bytes": 84221,
+      "sha256": "2dad08f4aab14682c4a3d7d897d0348b44344eb8e6d337c3641ee636156040e0"
+    },
+    "sprites/DefineSprite_333/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_333/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_333/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_333/frames.html",
+      "bytes": 48525,
+      "sha256": "90a2433bc2bdc8fcb0e173790f1b77dfe56c154319935e4b99b5881101fc6ea7"
+    },
+    "sprites/DefineSprite_334/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_334/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_334/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_334/frames.html",
+      "bytes": 81437,
+      "sha256": "9cbf5261be26aa2458eb19406f73a73bf371ce25ca4910d61b1bfca284a63bac"
+    },
+    "sprites/DefineSprite_341/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_341/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_341/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_341/frames.html",
+      "bytes": 3345456,
+      "sha256": "0df6b4e96c43a68e62e6c08e743269687e0e5d222b789a738d6827ebe01eb842"
+    },
+    "sprites/DefineSprite_61_4graph/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_61_4graph/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_61_4graph/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_61_4graph/frames.html",
+      "bytes": 147979,
+      "sha256": "ee9b03e6bf03e3712d33811b67fe9c35e0a59a54b4ba31d7026b6ad550e1c902"
+    },
+    "sprites/DefineSprite_62_3graph/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_62_3graph/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_62_3graph/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_62_3graph/frames.html",
+      "bytes": 79822,
+      "sha256": "329c75d0667446a4b3b82c35e106affd65412d5ac08468fdb877ceecd35b7042"
+    },
+    "sprites/DefineSprite_8_FScrollBarSymbol/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_8_FScrollBarSymbol/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_8_FScrollBarSymbol/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_8_FScrollBarSymbol/frames.html",
+      "bytes": 2179,
+      "sha256": "d822178cc1e3a10e91321ebc0f98853ffa83ad912cb42d57c273b14fb3e53c03"
+    },
+    "sprites/DefineSprite_90_correct/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_90_correct/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_90_correct/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_90_correct/frames.html",
+      "bytes": 66254,
+      "sha256": "ba5f9497fe42bf6a6b36fa03d874368f2d47e44785332be3eaf3ba29f82aead9"
+    },
+    "sprites/DefineSprite_93_awa/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_93_awa/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_93_awa/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_93_awa/frames.html",
+      "bytes": 42202,
+      "sha256": "436273e7aaeadd3a70d2fb92c3af66733343461ac818a188a13590eaa33a20f9"
+    },
+    "sprites/DefineSprite_9_FScrollPaneSymbol/canvas.js": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_9_FScrollPaneSymbol/canvas.js",
+      "bytes": 52872,
+      "sha256": "78256220d01fba044341283703c3923a1ff8ff29499c51f65ab4e6ac825ccb93"
+    },
+    "sprites/DefineSprite_9_FScrollPaneSymbol/frames.html": {
+      "path": "output/g678-p042-native-canvas-preparation-20261002-v1/source-canvas-export/sprites/DefineSprite_9_FScrollPaneSymbol/frames.html",
+      "bytes": 2492,
+      "sha256": "3722cfedf77a32d0cb16dca1b4484ecfa42b0582e61a84e312cffed1dd37bec3"
+    }
+  },
+  "rawFileCount": 72,
+  "rawBytesTotal": 12233549,
+  "frameCoverage": {
+    "rootCasesZeroBased": 10,
+    "spriteCasesZeroBased": {
+      "8": 1,
+      "9": 1,
+      "11": 1,
+      "12": 3,
+      "13": 1,
+      "14": 3,
+      "61": 15,
+      "62": 1,
+      "90": 1,
+      "93": 1,
+      "102": 1,
+      "111": 1,
+      "112": 1,
+      "123": 31,
+      "126": 1,
+      "127": 1,
+      "128": 1,
+      "129": 1,
+      "130": 1,
+      "131": 1,
+      "145": 1,
+      "207": 31,
+      "239": 25,
+      "247": 27,
+      "275": 28,
+      "280": 1,
+      "288": 1,
+      "292": 31,
+      "303": 1,
+      "306": 29,
+      "317": 1,
+      "320": 28,
+      "333": 1,
+      "334": 29,
+      "341": 400
+    },
+    "totalCases": 712,
+    "mainSpriteId": 341,
+    "quizHoldSourceFrameOneBased": 279,
+    "mainTerminalSourceFrameOneBased": 400
+  },
+  "graphicsInventory": {
+    "staticTexts": 100,
+    "readOnlyDynamicTextsMissingFromRawCanvas": [
+      287,
+      302,
+      316,
+      332
+    ],
+    "shapeDefinitions": 113,
+    "morphFunctions": 45,
+    "embeddedImageVariables": 14,
+    "maskShapeId": 182,
+    "maskOwnerSpriteId": 207,
+    "maskFramesOneBased": [
+      2,
+      8
+    ],
+    "maskSourceClipDepth": 7,
+    "maskRawPlacementCases": 7,
+    "unknownRootTag": "0x18-unclassified"
+  },
+  "adapterPlan": {
+    "base": "reuse pinned scripts/build-safe-ffdec-canvas-adapter.mjs with explicit P042 spec and full function allowlist",
+    "root": "preserve physical root matrix and explicit 1–400 main frame requests; do not run FFDec viewer autoplay",
+    "feedback": "select only source-reachable feedback4 paths after binding action state; do not draw all eight feedback sprites as simultaneous visible state",
+    "dynamicText": "overlay source-pinned native WrongFeed text for four blank edit functions",
+    "mask": "normalize shape182 clipDepth=7 only after validating affected depths and source path; raw blue fill is not an ordinary overlay",
+    "audio": "separate main and feedback stream clocks; SA remains independently user-triggered",
+    "host": "quiz, popup, glossary, Replay and navigation require maintained state machine"
+  },
+  "failClosed": {
+    "maintainedRendererReady": false,
+    "sourceGraphicsCompleteAsRuntime": false,
+    "avm1Executed": false,
+    "browserVerified": false,
+    "reasons": [
+      "raw FFDec Canvas export is a viewer artifact, not a safe maintained runtime",
+      "four dynamic edit functions are empty",
+      "mask alpha and clip depth need source-specific normalization",
+      "14 images and 45 morphs require load/render verification",
+      "UnknownTag 0x18 unclassified by swfmill",
+      "quiz, popup, glossary and host actions are not drawn/executed",
+      "sound streams and separate SA are not part of Canvas export"
+    ]
+  },
+  "acceptanceEffects": {
+    "currentJsRegistered": false,
+    "originalRuntimeAccepted": false,
+    "audioAccepted": false,
+    "fidelityAccepted": false,
+    "humanAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "published": false
+  }
+}

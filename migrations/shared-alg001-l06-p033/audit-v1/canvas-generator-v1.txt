@@ -1,0 +1,19 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]:     targetCanvas.setAttribute("data-flash-renderer", "safe-ffdec-canvas");
+    at once (file:///Volumes/WestWorld/HELP%20MATH%202.0-g678-implementation/migrations/shared-alg001-l06-p033/generator-v1/derive-canvas-v1.mjs:21:43)
+    at file:///Volumes/WestWorld/HELP%20MATH%202.0-g678-implementation/migrations/shared-alg001-l06-p033/generator-v1/derive-canvas-v1.mjs:97:9
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.18.0

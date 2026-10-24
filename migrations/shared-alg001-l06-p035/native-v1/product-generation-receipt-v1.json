@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "kind": "p035-maintained-native-source-binding-v1",
+  "status": "source-pinned-unregistered",
+  "inputs": [
+    {
+      "path": "output/alg-l06-p035-native-text-preparation-v1/prepare-native-text.py",
+      "bytes": 24769,
+      "sha256": "608af36c5d7bed3617edb69179aa339dedadf4f8f7b9f886bdd1a5c5a4c249cf"
+    },
+    {
+      "path": "output/alg-l06-p035-native-text-preparation-v1/generation-receipt-v1.json",
+      "bytes": 889,
+      "sha256": "1cb7a236fb8b7b7bacd618142d5dc6644efb04b9b9c06f80cd56db2d439e0006"
+    },
+    {
+      "path": "output/alg-l06-p035-native-interaction-preparation-v1/prepare-interaction.mjs",
+      "bytes": 12685,
+      "sha256": "97b8defd63fe5ff899f64861e6e3ba32883d53b7138e3c4066959a79b69f301f"
+    },
+    {
+      "path": "output/alg-l06-p035-native-interaction-preparation-v1/generation-receipt-v1.json",
+      "bytes": 723,
+      "sha256": "fd7b57c27a6029591406a51cec370ea78ec5c2a856a10d56d07abcdd24c9a5de"
+    },
+    {
+      "path": "scripts/prepare-alg-l06-p035-native-v1.mjs",
+      "bytes": 3332,
+      "sha256": "a5bf73d5f986474505f75f85d5e0b4ca9c7d0ed00473ae269c613a397d43ca70"
+    },
+    {
+      "path": "output/alg-l06-p035-native-text-preparation-v1/native-geometry-v1.json",
+      "bytes": 668443,
+      "sha256": "71f315ad5fdcfe5c09b23c35dbb1415bdfb9cb9a018e7f5b91ce0f31d681120c"
+    },
+    {
+      "path": "output/alg-l06-p035-native-interaction-preparation-v1/interaction-geometry-v1.json",
+      "bytes": 11761,
+      "sha256": "791243174222442878ae5438874724063300dd57637f5d56b0084091de81945b"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "migrations/shared-alg001-l06-p035/native-v1/native-geometry-v1.json",
+      "bytes": 668443,
+      "sha256": "71f315ad5fdcfe5c09b23c35dbb1415bdfb9cb9a018e7f5b91ce0f31d681120c"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p035/native-v1/interaction-geometry-v1.json",
+      "bytes": 11761,
+      "sha256": "791243174222442878ae5438874724063300dd57637f5d56b0084091de81945b"
+    }
+  ],
+  "acceptanceEffects": {
+    "registration": false,
+    "originalRuntime": false,
+    "audio": false,
+    "listening": false,
+    "human": false,
+    "owner": false,
+    "strictComplete": false,
+    "publication": false
+  }
+}

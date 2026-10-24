@@ -1,0 +1,108 @@
+{
+  "kind": "p042-proposed-deterministic-state-vectors-v1",
+  "status": "test-design-only-no-renderer-executed",
+  "sourceSwfSha256": "7df2077da472138df83a4485c0e15b7f3b1063aefcdcf2e3ded9232c98f68fcb",
+  "frameIndexing": "one-based source sprite frames",
+  "fixtures": {
+    "quizHeld": {"mainFrame": 279, "quizSection": true, "quizTryCount": 0, "feedback": null, "popup": "closed", "sessionEpoch": 0},
+    "quizAfterOneWrong": {"mainFrame": 279, "quizSection": true, "quizTryCount": 1, "feedback": null, "popup": "closed", "sessionEpoch": 0}
+  },
+  "cases": [
+    {
+      "id": "Q01-quiz-entry",
+      "basis": "source-action-plus-explicit-modern-control-eligibility",
+      "start": "prequiz main frame 278 playing",
+      "events": ["advance main to frame 279"],
+      "expect": ["main stops at 279", "quizSection=true", "quizTryCount=0", "Mc_Popup and CloseBtn hidden", "answer input becomes eligible only through the checked host adapter"],
+      "sourceRefs": ["DefineSprite_341/frame_279/DoAction.as"]
+    },
+    {
+      "id": "Q02-first-wrong-B",
+      "basis": "source-action",
+      "start": "quizHeld with host controls ready",
+      "events": ["choose B/3 via AnsBtn1/button169", "advance wrong4 sprite292 from 2 to 16 to 22", "Close via button285 jumps feedback parent to 23", "advance wrong4 to 31"],
+      "expect": ["release writes exact WrongFeed: Substitute –2 for x in the equation. Try again.", "quiz buttons and NMH disabled during feedback", "read-only popup text assigned from WrongFeed at sprite288 frame1", "frame22 stops until Close", "quizTryCount stays 0 until terminal frame31", "terminal increments count to 1 and enables controls", "main remains held at frame279 with quizSection=true"],
+      "sourceRefs": ["DefineButton2_169/BUTTONCONDACTION on(release).as", "DefineSprite_292/frame_22/DoAction.as", "DefineSprite_288/frame_1/DoAction.as", "DefineButton2_285/BUTTONCONDACTION on(release).as", "DefineSprite_292/frame_31/DoAction.as"]
+    },
+    {
+      "id": "Q03-first-wrong-C-spacing",
+      "basis": "source-action",
+      "start": "quizHeld with host controls ready",
+      "events": ["choose C/10 via AnsBtn3/button170"],
+      "expect": ["quizTryCount remains 0 on release", "exact first WrongFeed uses two spaces before Try again.", "wrong4 sprite292 starts at frame2"],
+      "sourceRefs": ["DefineButton2_170/BUTTONCONDACTION on(release).as"]
+    },
+    {
+      "id": "Q04-second-wrong-D",
+      "basis": "source-action",
+      "start": "quizAfterOneWrong with host controls ready",
+      "events": ["choose D/25 via AnsBtn4/button170", "wrong4 reaches hold22", "Close via button285", "wrong4 reaches terminal31", "main advances to 280"],
+      "expect": ["release writes exact WrongFeed: Substitute –2 for x in the equation.", "quizTryCount remains 1 through button release and hold", "terminal increments to 2 then resets to 0", "quizSection=false and parent main timeline resumes", "main frame280 also clears quizSection"],
+      "sourceRefs": ["DefineButton2_170/BUTTONCONDACTION on(release).as", "DefineSprite_292/frame_31/DoAction.as", "DefineSprite_341/frame_280/DoAction.as"]
+    },
+    {
+      "id": "Q05-right-first-A",
+      "basis": "source-action",
+      "start": "quizHeld with host controls ready",
+      "events": ["choose A/–3 via AnsBtn2/button171", "right4 sprite239 starts at 2 and reaches 25", "main advances to 280"],
+      "expect": ["quiz buttons and NMH disabled", "no WrongFeed write", "quizTryCount remains 0", "right terminal clears quizSection and resumes parent", "feedback clip resets to frame1", "no lesson-complete signal inferred"],
+      "sourceRefs": ["DefineButton2_171/BUTTONCONDACTION on(release).as", "DefineSprite_239/frame_25/DoAction.as"]
+    },
+    {
+      "id": "Q06-right-after-one-wrong",
+      "basis": "source-action",
+      "start": "quizAfterOneWrong with host controls ready",
+      "events": ["choose A/–3", "right4 reaches terminal25"],
+      "expect": ["right terminal clears quizSection and resumes main", "quizTryCount remains 1 because right terminal does not reset it"],
+      "sourceRefs": ["DefineButton2_171/BUTTONCONDACTION on(release).as", "DefineSprite_239/frame_25/DoAction.as"]
+    },
+    {
+      "id": "Q07-NMH-open-close",
+      "basis": "source-action-with-conditional-host-methods",
+      "start": "quizHeld with host controls ready",
+      "events": ["release NMH button146", "release Close button181"],
+      "expect": ["open disables NMH and invokes disableQuizButton, shows Mc_Popup and CloseBtn", "close enables NMH and invokes enableQuizButton, hides Mc_Popup and CloseBtn", "quizTryCount remains 0 and main frame remains 279"],
+      "sourceRefs": ["DefineButton2_146/BUTTONCONDACTION on(release).as", "DefineButton2_181/BUTTONCONDACTION on(release).as"]
+    },
+    {
+      "id": "Q08-guard-duplicate-answer",
+      "basis": "modern-race-guard",
+      "start": "wrong4 feedback active after Q02 choice",
+      "events": ["attempt another answer before wrong4 terminal"],
+      "expect": ["reject input", "keep one feedback owner", "do not increment try count or start another stream"],
+      "sourceRefs": ["DefineButton2_169/BUTTONCONDACTION on(release).as"]
+    },
+    {
+      "id": "Q09-glossary-request",
+      "basis": "page-action-plus-conditional-host-adapter",
+      "start": "eligible visible glossary term on active main frame",
+      "events": ["release source button135 for Substitute", "host handles open-glossary request"],
+      "expect": ["page writes KeyAttribute=Substitute and calls DoHyperLinks", "page requests stop of animation_mc.animation", "modern adapter pauses source clock and submits only a mapped glossary entry", "host allowed/denied outcome remains a separate test until term binding is verified"],
+      "sourceRefs": ["DefineButton2_135/BUTTONCONDACTION on(release).as"]
+    },
+    {
+      "id": "Q10-Replay-stale-feedback",
+      "basis": "modern-My-Lesson-contract",
+      "start": "wrong4 held at frame22 with a pending media callback",
+      "events": ["Replay", "deliver callback from previous epoch"],
+      "expect": ["retire feedback and page-owned media", "reset main to frame1, count0, quizSection=false, popup closed", "increment epoch", "ignore stale callback without repaint or audio restart"],
+      "sourceRefs": ["DefineSprite_341/frame_1/DoAction.as"]
+    },
+    {
+      "id": "Q11-SA-user-trigger",
+      "basis": "modern-SA-policy-separate-source-candidate",
+      "start": "quizHeld",
+      "events": ["change UI locale to es", "explicitly press Spanish Audio", "Return to animation"],
+      "expect": ["locale change alone starts no SA audio", "SA uses separate owner only after explicit gesture", "no splice into embedded main or feedback stream", "Return leaves source frame279 and quiz count unchanged; automatic resume is not assumed"],
+      "sourceRefs": []
+    },
+    {
+      "id": "Q12-end-and-leave",
+      "basis": "source-terminal-plus-modern-cleanup",
+      "start": "postquiz main playing",
+      "events": ["advance main to source frame400", "navigate away", "deliver late media callback"],
+      "expect": ["frame400 stops without inferring lesson completion", "leave closes media and invalidates epoch", "late callback cannot alter the next lesson"],
+      "sourceRefs": ["DefineSprite_341/frame_400/DoAction.as"]
+    }
+  ]
+}

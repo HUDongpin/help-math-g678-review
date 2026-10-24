@@ -1,0 +1,27 @@
+# P004 formal local Current-JS checkpoint — 2026-09-28
+
+Continue the same full G6–G8 migration goal in `/Volumes/WestWorld/HELP MATH 2.0-g678-implementation`. Preserve all existing dirty/untracked work. The full goal remains active.
+
+P004 is now actually registered and verified in local My Lesson. G6–G8 is **498/2,282**, with **1,784 remaining**; the private registry has 640 entries. ALG001 L6 is **21/60**. Only P004 was added in this unit. The source-ordered 60-page descriptor retains the other 59 page objects and adds five canonical glossary terms, retaining the exact existing Function definition and explicit lowercase `output` mapping.
+
+The active index is `catalog/g678-admission-v1/index-v25.json`; host-v25 verifies all eight page proofs. Seven prior proof files retain their exact bytes. P004 proof is `work/g678-workflow/candidates/shared-alg001-l06-p004-proof-v1.json`; freeze calibration is `g678-alg-l06-p004-current-js-20260928-v1`. Its canonical Canvas runtime is a byte-identical copy of the maintained candidate output, not a fabricated factory run. The actual registry and both generated dispatch files were updated together and verified.
+
+Formal EN/ES route: `/[locale]/migration-status/g678-calibration/shared-alg001-l06-p004/continuous-v1`. It uses a formal generated player with dynamic 21/60 counts, retaining the existing P004 clock/audio/glossary adapter and P003 continuous adapter. Old candidate disclosure is preserved in its historical component. Source English fallback remains explicit in ES; separate Spanish Audio is user-triggered, never autoplay or spliced into the embedded stream.
+
+Validation:
+
+- `output/alg-l06-p004-admission-v1/root-final-verification.json` is the root summary and exact artifact index.
+- `output/playwright/alg-l06-p004-formal-host-v2/admission-v2/result.json`: real registered EN/ES route, source math/price/variable/sentence states, glossary pause/focus, Replay1, P003 playback and return, 20 combinations of five widths and 100%/200% root-font size. Root inspected EN/ES worked-math and ES390/200 screenshots. This is not a browser-zoom cross-product or human acceptance.
+- `output/alg-l06-p004-formal-sa-return-v2/admission-v2/result.json`: explicit SA return resumes retained main state; delayed SA load is canceled by navigation; new P004 remains frame1/ready/idle/unselected.
+- `output/alg-l06-p004-production-v8/root-final-verification.json`: production build, full TypeScript, 605 pinned inputs and 1,740/1,740 negative requests pass. Original build link and all three configuration files restored; 23 older BUILD_ID files preserved. No deployment.
+- Canonical typography binding/check pair in `catalog/typography-v1/g678-page-bindings/` and `g678-checks/`: 110 blocks, 322 implementation pins, 39 evidence artifacts, all12 mandatory technical checks supported. The maintained checker independently marks P004 passed.
+- The authoritative maintained development command is `HELP_MATH_G678_SOURCE_ROOT='<real AWS root>' node scripts/g678-workflow.mjs check`. It remains failed overall: 44/77 changed/new pages pass; 25 lack evidence and eight have unverified evidence. The older unsplit checker reports41/77 because it cannot reuse the retained P006/P009/P010 split proof; do not confuse that with a regression in these three pages.
+- Source-semantic test, three source-backed descriptor tests, three resource-boundary tests, reproducible formal-player generation and full web TypeScript pass. The initial default-heap TypeScript OOM is preserved; the12GB run and final production typecheck pass.
+
+Preserved failure and correction: the first formal browser run reached P003 but its main audio returned404. The `next.config.ts` rewrite still matched only the candidate Referer. Host-v25 adds the exact formal Referer alternative; route/hash/origin/resource checks remain. The v1 failed receipt is retained, v2 full browser flow and v8 production scan pass. No page proof was rewritten for that host-only change.
+
+Applicability limits: earlier current-candidate natural831, all-glossary, keyboard/touch, DPR/font, lifecycle and passive6/8/10-canvas allocation observations remain bounded evidence for unchanged runtime/Canvas/CSS bytes. The fresh formal host and SA probes cover the admission gateway changes. EN detached WeakRefs were0 at the observed checkpoints; one ES checkpoint retained six weakly live temporary canvases. There was no forced GC or heap proof. Neither a leak nor absolute leak freedom is established from that checkpoint.
+
+Original-runtime authority, Flash fidelity, listening/audio acceptance, named human review, Owner acceptance, strict completion, release and publication remain false/unestablished. Source registration and technical checks do not close them. All owned dev/production test servers and browser contexts are closed and temporary next-env changes restored.
+
+Next bounded implementation: P008 is still unregistered. Root rehashed its exact SWF and separate MP3 in `output/alg-l06-p004-admission-v1/next-p008-source-preflight.json`. Resolve canonical workspace and source-audit its visible text/shapes, sprite507 timeline, stream timing and host behavior before adapting any proven P004 capability. Read-only agent extraction reported938 frames/12fps and one911-block stream with no button actions; these are investigation leads, not a family admission or implementation. Do not rerun the finished P006 SA task from the stale goal description.

@@ -1,0 +1,238 @@
+{
+  "kind": "p050-source-frame-domains-v1",
+  "sourceSha256": "4353f9cbd7e60043baa8f59c7f5193fcd930778ace4b918ab56f2953f306937e",
+  "root": {
+    "frames": 10,
+    "entryFrame": 6
+  },
+  "domains": [
+    {
+      "spriteId": 6,
+      "frameCount": 1,
+      "displayReachable": false,
+      "labels": [],
+      "disposition": "unplaced-library-definition",
+      "scripts": []
+    },
+    {
+      "spriteId": 7,
+      "frameCount": 1,
+      "displayReachable": false,
+      "labels": [],
+      "disposition": "unplaced-library-definition",
+      "scripts": []
+    },
+    {
+      "spriteId": 24,
+      "frameCount": 1,
+      "displayReachable": true,
+      "labels": [],
+      "disposition": "directions-popup",
+      "scripts": []
+    },
+    {
+      "spriteId": 26,
+      "frameCount": 1,
+      "displayReachable": true,
+      "labels": [],
+      "disposition": "reachable-visual",
+      "scripts": []
+    },
+    {
+      "spriteId": 51,
+      "frameCount": 22,
+      "displayReachable": true,
+      "labels": [],
+      "disposition": "reachable-visual",
+      "scripts": []
+    },
+    {
+      "spriteId": 265,
+      "frameCount": 20,
+      "displayReachable": true,
+      "labels": [
+        {
+          "frame": 3,
+          "label": "B1"
+        },
+        {
+          "frame": 11,
+          "label": "B2"
+        }
+      ],
+      "disposition": "score",
+      "scripts": [
+        "scripts/DefineSprite_265/frame_1/DoAction.as",
+        "scripts/DefineSprite_265/frame_10/DoAction.as",
+        "scripts/DefineSprite_265/frame_2/DoAction.as",
+        "scripts/DefineSprite_265/frame_20/DoAction.as"
+      ]
+    },
+    {
+      "spriteId": 345,
+      "frameCount": 56,
+      "displayReachable": true,
+      "labels": [],
+      "disposition": "placed-stopped-unselected-feedback",
+      "scripts": [
+        "scripts/DefineSprite_345/frame_1/DoAction.as",
+        "scripts/DefineSprite_345/frame_56/DoAction.as"
+      ]
+    },
+    {
+      "spriteId": 358,
+      "frameCount": 28,
+      "displayReachable": true,
+      "labels": [],
+      "disposition": "correct-feedback",
+      "scripts": [
+        "scripts/DefineSprite_358/frame_1/DoAction.as",
+        "scripts/DefineSprite_358/frame_28/DoAction.as"
+      ]
+    },
+    {
+      "spriteId": 379,
+      "frameCount": 1,
+      "displayReachable": true,
+      "labels": [],
+      "disposition": "wrong-feedback",
+      "scripts": [
+        "scripts/DefineSprite_379/frame_1/DoAction.as"
+      ]
+    },
+    {
+      "spriteId": 380,
+      "frameCount": 28,
+      "displayReachable": true,
+      "labels": [],
+      "disposition": "wrong-feedback",
+      "scripts": [
+        "scripts/DefineSprite_380/frame_1/DoAction.as",
+        "scripts/DefineSprite_380/frame_23/DoAction.as",
+        "scripts/DefineSprite_380/frame_28/DoAction.as"
+      ]
+    },
+    {
+      "spriteId": 432,
+      "frameCount": 25,
+      "displayReachable": true,
+      "labels": [],
+      "disposition": "correct-feedback",
+      "scripts": [
+        "scripts/DefineSprite_432/frame_1/DoAction.as",
+        "scripts/DefineSprite_432/frame_25/DoAction.as"
+      ]
+    },
+    {
+      "spriteId": 469,
+      "frameCount": 1,
+      "displayReachable": true,
+      "labels": [],
+      "disposition": "reachable-visual",
+      "scripts": []
+    },
+    {
+      "spriteId": 476,
+      "frameCount": 1,
+      "displayReachable": true,
+      "labels": [],
+      "disposition": "reachable-visual",
+      "scripts": []
+    },
+    {
+      "spriteId": 479,
+      "frameCount": 28,
+      "displayReachable": true,
+      "labels": [],
+      "disposition": "correct-feedback",
+      "scripts": [
+        "scripts/DefineSprite_479/frame_1/DoAction.as",
+        "scripts/DefineSprite_479/frame_28/DoAction.as"
+      ]
+    },
+    {
+      "spriteId": 489,
+      "frameCount": 674,
+      "displayReachable": true,
+      "labels": [
+        {
+          "frame": 72,
+          "label": "RepeatDirection"
+        },
+        {
+          "frame": 662,
+          "label": "GS_Begin"
+        },
+        {
+          "frame": 663,
+          "label": "Q1"
+        },
+        {
+          "frame": 664,
+          "label": "Q2"
+        },
+        {
+          "frame": 665,
+          "label": "Q3"
+        },
+        {
+          "frame": 666,
+          "label": "Q4"
+        },
+        {
+          "frame": 667,
+          "label": "Q5"
+        },
+        {
+          "frame": 668,
+          "label": "Q6"
+        },
+        {
+          "frame": 669,
+          "label": "Q7"
+        },
+        {
+          "frame": 670,
+          "label": "Q8"
+        },
+        {
+          "frame": 671,
+          "label": "Q9"
+        },
+        {
+          "frame": 672,
+          "label": "Q10"
+        },
+        {
+          "frame": 673,
+          "label": "Final"
+        }
+      ],
+      "disposition": "main-game",
+      "scripts": [
+        "scripts/DefineSprite_489/frame_1/DoAction.as",
+        "scripts/DefineSprite_489/frame_662/DoAction.as",
+        "scripts/DefineSprite_489/frame_662/DoAction_2.as",
+        "scripts/DefineSprite_489/frame_663/DoAction.as",
+        "scripts/DefineSprite_489/frame_664/DoAction.as",
+        "scripts/DefineSprite_489/frame_665/DoAction.as",
+        "scripts/DefineSprite_489/frame_666/DoAction.as",
+        "scripts/DefineSprite_489/frame_667/DoAction.as",
+        "scripts/DefineSprite_489/frame_668/DoAction.as",
+        "scripts/DefineSprite_489/frame_669/DoAction.as",
+        "scripts/DefineSprite_489/frame_670/DoAction.as",
+        "scripts/DefineSprite_489/frame_671/DoAction.as",
+        "scripts/DefineSprite_489/frame_672/DoAction.as",
+        "scripts/DefineSprite_489/frame_673/DoAction.as"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Mc_Final has no placed instance in this SWF",
+    "_parent.enableButton has no page definition",
+    "Q6 wrong button calls _parent.showWrongFeed before page-local showWrongFeed",
+    "Original host enableQuizButton/disableQuizButton and gSound binding",
+    "Original AVM1 RNG state, audible sync and unselected sprite345 runtime appearance"
+  ],
+  "acceptance": false
+}

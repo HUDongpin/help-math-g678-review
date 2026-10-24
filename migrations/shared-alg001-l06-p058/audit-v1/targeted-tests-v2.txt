@@ -1,0 +1,27 @@
+✔ runtime clocks all seven branches; attempts change at terminal, no intermediate feedback hold (5.449541ms)
+✔ silent step boxes never start narration, close resets only the box, and paused tween resumes fractional position (1.719208ms)
+✔ two wrong endings retire different owners and only second proceeds beyond the final question (0.780375ms)
+✔ pause, replay and source stop own exact main seeks; pending playback and browser rejection cannot revive old state (0.417042ms)
+✔ function help and dictionary are scoped to live owner and do not resume held narration (0.312042ms)
+✔ SA starts only on explicit request; pending load is aborted by Replay/leave and EOF returns to held source (0.859125ms)
+✔ main PCM EOF preserves a visual tail without looping audio or reporting lesson completion (0.452459ms)
+✔ raw SWF/script evidence fixes the answer and terminal-count rule independently (1.395584ms)
+✔ main clock clamps every authored step and final quiz; Play cannot bypass a source hold (0.400666ms)
+✔ first two source step clicks resume main; last two open and close only their boxes (0.245083ms)
+✔ all three wrong variants count at their actual terminal; second wrong resets and resumes (0.915833ms)
+✔ all four right variants continue while preserving a prior wrong count (1.281583ms)
+✔ help opens function popup, blocks answer input, and dictionary close preserves its parent (0.121791ms)
+✔ glossary ownership and source frame windows reject offstage angle vocabulary (0.081125ms)
+✔ pause at box entry resumes; content holds remain held, and stale box callbacks are rejected (0.101042ms)
+✔ Replay and leave invalidate delayed selection, feedback and main callbacks and reset full state (0.132375ms)
+✔ P058 right action resumes parent before resetting feedback; shared transition retires it atomically (0.289459ms)
+✔ native content retains curved graph, exact signal-strength statements and all source axis labels (5.493875ms)
+✔ Need More Help has no early source placement; dictionary exposes exactly the three live terms (5.482208ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 173.331917

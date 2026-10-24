@@ -1,0 +1,284 @@
+{
+  "kind": "p050-source-and-maintained-state-root-review-v1",
+  "checkedAt": "2026-10-02T17:49:03.753985+00:00",
+  "status": "unregistered-source-backed-state-candidate",
+  "goalStatus": "active",
+  "registeredBefore": 529,
+  "registeredAfter": 529,
+  "total": 2282,
+  "newRegisteredPages": 0,
+  "sourceModelSha256": "928ca5042b469795ae207921638d44ffd212034e8eb33e954d943b1721c05fb7",
+  "tests": {
+    "stateTests": 12,
+    "failures": 0,
+    "targetedStrictTypecheckExit": 0,
+    "draftSchemaValidationExit": 0,
+    "sourceModelReproduction": true,
+    "adpcmReproduction": true
+  },
+  "sourceFindings": {
+    "sourceFilesUnchanged": true,
+    "sourceAssetsExported": 538,
+    "scriptFiles": 52,
+    "questions": 10,
+    "answerKey": [
+      "D",
+      "A",
+      "B",
+      "D",
+      "C",
+      "A",
+      "B",
+      "C",
+      "D",
+      "B"
+    ],
+    "reachableSprites": 13,
+    "rawStreams": 6,
+    "adpcmSprite": 432
+  },
+  "existingAdmissionCheck": {
+    "index": "catalog/g678-admission-v1/index-v159.json",
+    "pageProofs": 39,
+    "registryCount": 529,
+    "p050Registered": false,
+    "passed": true
+  },
+  "reviewNotes": [
+    "Reviewed source start/skip/draw/feedback/score/final behavior against actual AS and display placements.",
+    "No generalized card-matching rules or unplaced text3–5 used.",
+    "Modern host Replay resets all state; source Final Start retains exhausted pool.",
+    "Pure reducer tests do not establish renderer/audio/host behavior.",
+    "Canvas/native rendering, browser sample cues, real host and registration are pending.",
+    "No provider operation or running owned P049 process remains.",
+    "Existing P049 and prior admission inputs were reverified, not edited."
+  ],
+  "artifacts": [
+    {
+      "path": "migrations/shared-alg001-l06-p050/ACCEPTANCE_CHECKLIST.md",
+      "bytes": 5428,
+      "sha256": "4530af85d93413ccb67b0b56632bcc6d0f5207370b69972291cab2acf2e831f2"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/MIGRATION_BRIEF.md",
+      "bytes": 5913,
+      "sha256": "394351c8db36e769e27c345430ad4eaf121a1f74cc1585213c5a98c280907b67"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/asset-inventory.csv",
+      "bytes": 183269,
+      "sha256": "d3caa59db1407a3702a765dca2b906ece02942c9b6f1c70ff930e814e8819308"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/assets/source-stream-345-unselected-correct.mp3",
+      "bytes": 21450,
+      "sha256": "762b84c700c45c3afdf466e38c66509e2aeaae74dc1987bd899ad90369de8464"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/assets/source-stream-358-correct-358.mp3",
+      "bytes": 11570,
+      "sha256": "ede0affb88cb9c7d0378514ff027a74e843f5f1cbac3f751820392dd9420d9e8"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/assets/source-stream-380-wrong.mp3",
+      "bytes": 11050,
+      "sha256": "1c3e481dcaa018b19c5b24eaa05b11d88e7cb75a640acd8a06133ccf3ff0c7e5"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/assets/source-stream-432-correct-432.swf-adpcm-blocks.bin",
+      "bytes": 3770,
+      "sha256": "e5c99e029d9df7717bc7755b5f4660841ad3f453d10bb8dbc8010d69b5a653b6"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/assets/source-stream-432-correct-432.wav",
+      "bytes": 11978,
+      "sha256": "f3e05365073feff502feda8779b3d3a5e3ba4ca6ee213e7a162e1ad5b3961eb8"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/assets/source-stream-479-correct-479.mp3",
+      "bytes": 11050,
+      "sha256": "3dda8c412ae366891bd7ce7f1603c70f4ec8438806191c75a25328963fdb8ee7"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/assets/source-stream-489-main.mp3",
+      "bytes": 278070,
+      "sha256": "e507c0e9eda0e12349bab2db8f88d2ce3f943d397028c22c0714e38a04ba29e9"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/audio-inventory.csv",
+      "bytes": 2428,
+      "sha256": "544080571d73829ef0cebed1c36e794c9a8930cb6e9733e38f41220f251ba5de"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/audit/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/audit/capability-support-v1.json",
+      "bytes": 4972,
+      "sha256": "e1656c3b232ef68c926ac5fda78cc82ed5ecac736c25324999c8f919d0c4fde0"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/audit/frame-domain-disposition.json",
+      "bytes": 6031,
+      "sha256": "31047821ab0b8f75255ef7948f2b61ca25e26b6aab6675281e5260ea13f9f7f4"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/audit-v1/adpcm-decode-v1.json",
+      "bytes": 936,
+      "sha256": "2856c65e1b751cf96cf569ad5851c4808b943c529ce3aafa9e6a421125e7ee36"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/audit-v1/adpcm-reproduction-v1.txt",
+      "bytes": 818,
+      "sha256": "35a457e8a0ff862a51eab21e38549a835120d5cf7df9072d2bcf5819cf107dcb"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/audit-v1/draft-validation-v1.txt",
+      "bytes": 229,
+      "sha256": "a0f9c01a4d1378eef667dc517036cff33b6348489628eff7c985e6e4a755614a"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/audit-v1/extract-source-v1.py",
+      "bytes": 2188,
+      "sha256": "d2650c7e6d53c8f22529d42685df89b4ea077448a2bab2a13438fc50a2556ddd"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/audit-v1/ffdec-export-help-v1.txt",
+      "bytes": 10376,
+      "sha256": "65ca1419d097e5125bfe06fcf3f66a83546a3d278b8a64975b4e486a06af95b7"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/audit-v1/ffdec-help-v1.txt",
+      "bytes": 4232,
+      "sha256": "0ffb414e08fdf3dd4b314aaffc03ebb67390e01ac7b138a13a6ef38f28f9ee0d"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/audit-v1/source-custody-v1.json",
+      "bytes": 1363,
+      "sha256": "0a93a26eeed503230c6962d7a07dfd9f7e32fa3219de7adbbc009ce2e90fe65f"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/audit-v1/source-extraction-v1.json",
+      "bytes": 84728,
+      "sha256": "dc1d39b3411e04b96ac8f331e60100105c1d0ed16c5ae5d242d806aa04b83f16"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/audit-v1/source-model-generation-v1.txt",
+      "bytes": 735,
+      "sha256": "464091044fc0eb2b44ba451ba780b1318689e66cd643dbf2e32f30c68d2af61a"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/audit-v1/source-model-reproduction-v1.txt",
+      "bytes": 735,
+      "sha256": "a27b6a10cbfeaf711a0d3586b928a9a7a90b27376cd86f6bdd8f66d49bf56fc7"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/audit-v1/state-tests-v1.txt",
+      "bytes": 1206,
+      "sha256": "2fb3175c6b12ee63a83c70fe0bd690ab646ddb15f34bc0eb529755c6cf1ceb3b"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/audit-v1/swfmill-version-v1.txt",
+      "bytes": 14,
+      "sha256": "c37c049c1a0ca56555608871e393fc99285ebadc221aa19bc85750990797a1bf"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/audit-v1/typecheck-v1.json",
+      "bytes": 361,
+      "sha256": "08ee41c21b7d20091303c820b14bb0403e6e5986257e45db1201e0ef628a9179"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/audit-v1/typecheck-v1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/baseline/keyframes/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/evidence/diffs/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/evidence/full-frame-coverage.json",
+      "bytes": 49830,
+      "sha256": "1bbf8c9bcfb5bb51d6591fab468f93ed1d2eacf047cba5bcdcb15d788c5303b6"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/evidence/implementation/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/generator-v1/derive-adpcm-v1.mjs",
+      "bytes": 2519,
+      "sha256": "8b05fa7dbde81970090d2a290c2f470e50bdb30632dee9ff4cff488c64a78a1e"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/generator-v1/derive-source-model-v1.py",
+      "bytes": 18144,
+      "sha256": "88a7ab16a7bdecf472fb53f73a04de3ee05a750d2f1df3ea7830b21bf7f0bd17"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/keyframes.csv",
+      "bytes": 3190,
+      "sha256": "cf92192f28aebf9059b44dbae009a435f34afc7d72c07ef2cb8f2df548dbd2ef"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/migration.json",
+      "bytes": 8897,
+      "sha256": "26293e0e45c5f20436087671b7ede90ceca36ee57403acff418a986f70cf51de"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/native-v1/source-model-v1.json",
+      "bytes": 1682220,
+      "sha256": "928ca5042b469795ae207921638d44ffd212034e8eb33e954d943b1721c05fb7"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/source-v1/L6GS02.mp3",
+      "bytes": 629664,
+      "sha256": "518d91f553c9ecf52f2a2eb1228a7193e1b2230a6357df382314a7d94c78583b"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/source-v1/L6GS02.swf",
+      "bytes": 828730,
+      "sha256": "4353f9cbd7e60043baa8f59c7f5193fcd930778ace4b918ab56f2953f306937e"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/source-v1/index.xml",
+      "bytes": 13926,
+      "sha256": "9f3753a17e5e271d7bc63a1bdf8cd5237f19770bae3f5c7364cabcb62c84ce2c"
+    },
+    {
+      "path": "packages/demos/src/alg-l06-p050-state-v1.ts",
+      "bytes": 15416,
+      "sha256": "c615f750df5eff38000d972a1b6ced4312ce300fd84f8a4eca44136b58ad566b"
+    },
+    {
+      "path": "packages/demos/src/alg-l06-p050-state-v1.test.ts",
+      "bytes": 13315,
+      "sha256": "3f0ba0d3c822a296cd4a93441cbe52fa100ccb65377134a4328417dddd51dfe7"
+    },
+    {
+      "path": "packages/demos/src/alg-l06-p050-source-bindings-v1.ts",
+      "bytes": 30587,
+      "sha256": "7be169503fbde2f6daacabd4d27f50d68cf08790811cd69edb58d3fa1a031cd3"
+    }
+  ],
+  "independentAcceptance": {
+    "originalRuntime": false,
+    "fidelity": false,
+    "listening": false,
+    "human": false,
+    "owner": false,
+    "strictComplete": false,
+    "release": false,
+    "publication": false
+  },
+  "nextAction": "Implement source-derived P050 Canvas and native question presentation from existing extraction, connect measured main/feedback/SA runtime, then candidate and registered My Lesson verification."
+}

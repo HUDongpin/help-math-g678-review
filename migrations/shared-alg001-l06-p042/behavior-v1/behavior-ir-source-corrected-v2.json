@@ -1,0 +1,448 @@
+{
+  "kind": "g678-source-bound-behavior-ir-source-corrected-v2",
+  "status": "source-stage-bound-unregistered-original-runtime-open",
+  "date": "2026-10-02",
+  "identity": {
+    "animationId": "shared-alg001-l06-p042",
+    "course": "ALG001",
+    "lesson": 6,
+    "globalLessonOrdinal": 42,
+    "section": "TI",
+    "activeSectionOrdinal": 1,
+    "sourcePage": "TI/L6TI02.swf",
+    "xmlTitleEnglish": "Question 1",
+    "xmlTitleSpanish": null,
+    "assetId": "swf-7df2077da472138df83a4485c0e15b7f3b1063aefcdcf2e3ded9232c98f68fcb"
+  },
+  "physicalSource": {
+    "root": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6",
+    "swf": {
+      "relativePath": "TI/L6TI02.swf",
+      "bytes": 907398,
+      "sha256": "7df2077da472138df83a4485c0e15b7f3b1063aefcdcf2e3ded9232c98f68fcb"
+    },
+    "lessonXml": {
+      "relativePath": "index.xml",
+      "bytes": 13926,
+      "sha256": "9f3753a17e5e271d7bc63a1bdf8cd5237f19770bae3f5c7364cabcb62c84ce2c",
+      "activePageLine": 126
+    },
+    "separateSpanishAudioCandidate": {
+      "relativePath": "SA/L6TI02.mp3",
+      "bytes": 239232,
+      "sha256": "1af6e25217490b60e3bce052a5e29f3be3d5ce932389a48de14bde0369603907",
+      "binding": "candidate-only-language-trigger-and-content-unverified"
+    },
+    "fla": null
+  },
+  "sourceEvidence": {
+    "intakeAudit": "migrations/shared-alg001-l06-p042/audit-v1/source-audit.json",
+    "swfXml": "migrations/shared-alg001-l06-p042/audit-v1/swfmill.xml",
+    "nativeModel": "migrations/shared-alg001-l06-p042/native-v1/native-model-v1.json",
+    "actionScriptRoot": "migrations/shared-alg001-l06-p042/audit-v1/actions",
+    "behaviorSourcePins": "migrations/shared-alg001-l06-p042/behavior-v1/source-pins-v2.json",
+    "historicalDraft": "migrations/shared-alg001-l06-p042/behavior-v1/historical-behavior-ir-draft-v1.json",
+    "limitations": [
+      "swfmill emitted UnknownTag/nested-end/EOF warnings",
+      "source-stage text/hit overlap binds answer labels but browser hit parity and original-runtime outcomes are unverified",
+      "no same-stem FLA in physical Lesson 6 TI source"
+    ]
+  },
+  "nativeTimeline": {
+    "stagePixels": [
+      800,
+      600
+    ],
+    "fps": 12,
+    "rootFrames": 10,
+    "rootFrame1": "preloader jump_check then stop",
+    "rootFrame6": "place sprite 341 as animation at depth 3 then stop",
+    "mainSpriteId": 341,
+    "mainFrames": 400,
+    "mainFrame1": "hide popup and Close button",
+    "quizHoldFrame": 279,
+    "quizHoldActionOrder": [
+      "stop",
+      "quizSection=true",
+      "quizTryCount=0",
+      "hide popup",
+      "hide Close button"
+    ],
+    "resumeFrame": 280,
+    "resumeAction": "quizSection=false",
+    "terminalFrame": 400,
+    "terminalAction": "stop"
+  },
+  "quiz": {
+    "questionContext": "evaluate shown function at input minus two; source text includes y = 5(−2) + 7",
+    "answerInstancePlacementsAtFrame279": [
+      {
+        "instance": "AnsBtn1",
+        "buttonId": 169,
+        "branch": "wrong",
+        "letter": "B",
+        "value": "3",
+        "letterTextId": 37,
+        "valueTextId": 164,
+        "sourceStageHitBoxPx": [
+          91.35,
+          280.6,
+          165.0214,
+          313.4122
+        ],
+        "letterBoxPx": [
+          104,
+          288.55,
+          127.25,
+          308.1
+        ],
+        "valueBoxPx": [
+          142.9,
+          287.25,
+          165.9,
+          306.65
+        ],
+        "sourceStageLabelBindingAccepted": true,
+        "browserHitParityAccepted": false
+      },
+      {
+        "instance": "AnsBtn2",
+        "buttonId": 171,
+        "branch": "right",
+        "letter": "A",
+        "value": "–3",
+        "letterTextId": 52,
+        "valueTextId": 162,
+        "sourceStageHitBoxPx": [
+          90,
+          236.45,
+          166.1103,
+          268.0961
+        ],
+        "letterBoxPx": [
+          103.5,
+          244.75,
+          127.55,
+          264.3
+        ],
+        "valueBoxPx": [
+          136.8,
+          244.45,
+          171.85,
+          263.85
+        ],
+        "sourceStageLabelBindingAccepted": true,
+        "browserHitParityAccepted": false
+      },
+      {
+        "instance": "AnsBtn3",
+        "buttonId": 170,
+        "branch": "wrong",
+        "letter": "C",
+        "value": "10",
+        "letterTextId": 60,
+        "valueTextId": 166,
+        "sourceStageHitBoxPx": [
+          90.55,
+          322.239,
+          165.9489,
+          358.5056
+        ],
+        "letterBoxPx": [
+          102.5,
+          334.6,
+          124.8,
+          354
+        ],
+        "valueBoxPx": [
+          139.6,
+          331.45,
+          172.9,
+          351
+        ],
+        "sourceStageLabelBindingAccepted": true,
+        "browserHitParityAccepted": false
+      },
+      {
+        "instance": "AnsBtn4",
+        "buttonId": 170,
+        "branch": "wrong",
+        "letter": "D",
+        "value": "25",
+        "letterTextId": 49,
+        "valueTextId": 168,
+        "sourceStageHitBoxPx": [
+          90.8,
+          369.5,
+          166.123,
+          402.4732
+        ],
+        "letterBoxPx": [
+          104.6,
+          379.15,
+          129.05,
+          398.55
+        ],
+        "valueBoxPx": [
+          137.8,
+          378.05,
+          172.9,
+          397.6
+        ],
+        "sourceStageLabelBindingAccepted": true,
+        "browserHitParityAccepted": false
+      }
+    ],
+    "visibleAnswerLabels": {
+      "status": "source-stage-bound",
+      "byLetter": {
+        "B": {
+          "value": "3",
+          "instance": "AnsBtn1",
+          "buttonId": 169,
+          "branch": "wrong"
+        },
+        "A": {
+          "value": "–3",
+          "instance": "AnsBtn2",
+          "buttonId": 171,
+          "branch": "right"
+        },
+        "C": {
+          "value": "10",
+          "instance": "AnsBtn3",
+          "buttonId": 170,
+          "branch": "wrong"
+        },
+        "D": {
+          "value": "25",
+          "instance": "AnsBtn4",
+          "buttonId": 170,
+          "branch": "wrong"
+        }
+      },
+      "browserHitParityAccepted": false,
+      "originalRuntimeOutcomeVerified": false
+    },
+    "wrongButtonScriptIds": [
+      169,
+      170
+    ],
+    "wrongButtonOrder": [
+      "choose WrongFeed text based on quizTryCount",
+      "disableQuizButton",
+      "play Mc_Wrong_Feed4 from frame 2",
+      "disable NMHBtn"
+    ],
+    "wrongFeedbackTextRule": {
+      "whenQuizTryCountEquals1": "Substitute –2 for x in the equation.",
+      "otherwise": "Substitute –2 for x in the equation. Try again.",
+      "note": "button 170 has an extra space before Try again in exported script"
+    },
+    "wrongFeedback": {
+      "spriteId": 292,
+      "instance": "Mc_Wrong_Feed4",
+      "terminalFrame": 31,
+      "terminalOrder": [
+        "stop",
+        "enableQuizButton",
+        "reset own clip to frame 1",
+        "increment quizTryCount",
+        "enable parent NMHBtn",
+        "if count >= 2: zero count, clear quizSection, play parent"
+      ]
+    },
+    "rightButtonScriptId": 171,
+    "rightButtonOrder": [
+      "disableQuizButton",
+      "play Mc_Right_Feed4 from frame 2",
+      "disable NMHBtn"
+    ],
+    "rightFeedback": {
+      "spriteId": 239,
+      "instance": "Mc_Right_Feed4",
+      "terminalFrame": 25,
+      "terminalOrder": [
+        "stop",
+        "disableQuizButton",
+        "clear quizSection",
+        "play parent",
+        "reset own clip to frame 1"
+      ]
+    },
+    "otherPlacedFeedbackSprites": [
+      {
+        "instance": "Mc_Right_Feed1",
+        "spriteId": 207,
+        "terminalFrame": 31
+      },
+      {
+        "instance": "Mc_Right_Feed2",
+        "spriteId": 275,
+        "terminalFrame": 28
+      },
+      {
+        "instance": "Mc_Right_Feed3",
+        "spriteId": 247,
+        "terminalFrame": 27
+      },
+      {
+        "instance": "Mc_Wrong_Feed1",
+        "spriteId": 334,
+        "terminalFrame": 29
+      },
+      {
+        "instance": "Mc_Wrong_Feed2",
+        "spriteId": 320,
+        "terminalFrame": 28
+      },
+      {
+        "instance": "Mc_Wrong_Feed3",
+        "spriteId": 306,
+        "terminalFrame": 29
+      }
+    ],
+    "otherFeedbackReachability": "placed at quiz hold but no observed answer button script calls these instances; do not assign to P042 answer paths without runtime or further source evidence",
+    "popup": {
+      "openButtonId": 146,
+      "closeButtonId": 181,
+      "open": [
+        "disable NMHBtn",
+        "disableQuizButton",
+        "show Mc_Popup",
+        "show CloseBtn"
+      ],
+      "close": [
+        "enable NMHBtn",
+        "enableQuizButton",
+        "hide Mc_Popup",
+        "hide CloseBtn"
+      ]
+    },
+    "otherControlScripts": "buttons 285, 301, 315 jump parent to frames 23, 24, 21 respectively and reset AnsBtn1..4 via eval; reachability/context unresolved"
+  },
+  "hostDependencies": {
+    "methods": [
+      "_root.disableQuizButton",
+      "_root.enableQuizButton",
+      "_root.DoHyperLinks"
+    ],
+    "globals": [
+      "_global.quizSection",
+      "_global.quizTryCount",
+      "_global.WrongFeed",
+      "_global.KeyAttribute"
+    ],
+    "glossaryTermsObserved": [
+      "Substitute",
+      "Input",
+      "Value",
+      "Simplify",
+      "Expression",
+      "Calculate",
+      "Output",
+      "Function"
+    ],
+    "glossaryAction": "assign KeyAttribute, call DoHyperLinks, stop _root.animation_mc.animation",
+    "adapterResolution": "unresolved: check actual modern My Lesson quiz enable/disable, glossary, return and Replay contracts; root path may depend on original host"
+  },
+  "audioOwnership": {
+    "streamFormat": "SWF SoundStreamHead compression=2 on each listed sprite",
+    "streamOwners": [
+      {
+        "spriteId": 341,
+        "role": "main timeline",
+        "blocks": 389,
+        "blockFrames": [
+          12,
+          400
+        ],
+        "blocksBeforeQuizHold": 267,
+        "blocksAtOrAfterQuizHold": 122
+      },
+      {
+        "spriteId": 207,
+        "role": "right feedback 1",
+        "blocks": 30
+      },
+      {
+        "spriteId": 239,
+        "role": "right feedback 4",
+        "blocks": 24
+      },
+      {
+        "spriteId": 247,
+        "role": "right feedback 3",
+        "blocks": 26
+      },
+      {
+        "spriteId": 275,
+        "role": "right feedback 2",
+        "blocks": 27
+      },
+      {
+        "spriteId": 292,
+        "role": "wrong feedback 4",
+        "blocks": 29
+      },
+      {
+        "spriteId": 306,
+        "role": "wrong feedback 3",
+        "blocks": 28
+      },
+      {
+        "spriteId": 320,
+        "role": "wrong feedback 2",
+        "blocks": 26
+      },
+      {
+        "spriteId": 334,
+        "role": "wrong feedback 1",
+        "blocks": 28
+      }
+    ],
+    "totalStreamHeads": 9,
+    "totalStreamBlocks": 607,
+    "separateSpanishAudioRule": "keep candidate separate and user-triggered; no auto-play, timeline splice or EN/ES coverage claim from file presence"
+  },
+  "complexity": {
+    "class": "behavior-heavy",
+    "lane": "canonical hybrid with source-locked extraction plus maintained quiz state machine or bounded advanced-manual renderer",
+    "reason": "400-frame timed main clip, quiz globals, feedback clips with independent audio and attempt control, popup, glossary host calls, and dynamic answer reset"
+  },
+  "unresolved": [
+    "browser hit parity, responsive label layout and original-runtime choice outcomes",
+    "actual runtime entry and whether preloader/host initiates sprite 341",
+    "reachability of feedback 1..3 and buttons 285/301/315",
+    "quiz button enable/disable semantics in the modern My Lesson host",
+    "glossary KeyAttribute and animation_mc path behavior",
+    "clock/audio cue timing across frame 279 stop, feedback, Replay and return",
+    "SA L6TI02 language/content/trigger/listening acceptance",
+    "original-runtime outcomes and Spanish page wording"
+  ],
+  "nextImplementationSlice": [
+    "Use source-stage label/instance binding; verify browser hit targets and original-runtime outcomes when available",
+    "Extract main and reachable feedback audio into source-bound cue plan without merging SA",
+    "Implement one maintained P042 quiz and popup state machine with explicit reset/Replay/return; use minimal host adapter",
+    "Validate right, first wrong, second wrong, popup Close, glossary, Replay and navigation in real My Lesson before any registration proposal"
+  ],
+  "gates": {
+    "registered": false,
+    "browserValidated": false,
+    "originalRuntimeValidated": false,
+    "audioListeningAccepted": false,
+    "fidelityAccepted": false,
+    "typographyAccepted": false,
+    "humanAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "published": false
+  },
+  "evidenceBoundary": {
+    "sourceStageLabelBinding": true,
+    "browserHitParity": false,
+    "originalRuntimeLauncherBindingObserved": false,
+    "originalRuntimeOutcomeVerified": false,
+    "currentJsRegistered": false
+  }
+}

@@ -1,0 +1,20 @@
+✔ all ten bindings agree with independent letter expectations and actual AS releases (7.011792ms)
+✔ Start, Skip and natural intro completion preserve the source held beginning (0.900333ms)
+✔ ten correct responses draw without replacement, earn100 and hold authored Final (0.577083ms)
+✔ wrong draws exhaust all branch identities and never deduct or retry a question (3.097375ms)
+✔ score clock uses distinct100-point branch without incrementing score twice (0.498958ms)
+✔ wrong hold cannot be skipped by a late frame or closed before frame23 (0.285333ms)
+✔ directions preserve question, score, random state and do not replay audio (0.391416ms)
+✔ pause/resume owns a fresh audio identity and rejects stale callbacks (0.10125ms)
+✔ Replay and leave invalidate all old question, feedback and audio callbacks (0.280917ms)
+✔ source Final Start is not silently turned into full Replay (0.187792ms)
+✔ Q6 extra parent call remains explicit and never produces a guessed second clip (0.161125ms)
+✔ invalid frames and old question generations cannot mutate the game (0.187791ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 198.844917

@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p041-conditional-original-host-feedback-resolution",
+  "status": "source-static-only-not-original-runtime",
+  "inputs": {
+    "hostSwf": {
+      "path": "/Volumes/WestWorld/HELP MATH Related Files/Private Recovery Containers/2026-08-26-HELP-MATH-HISTORICAL-COURSEWARE-S3-153-V1/source-paths/Transfer/FromStagingServer/HELP 1.5 VERSION CORRECTIONS/HELP_COURSES/indexMI.swf",
+      "bytes": 689006,
+      "sha256": "275499325edb24daed95952b207d2dd4ed83056ebac54cd0bc911673058086c9"
+    },
+    "hostFrame35ActionScript": {
+      "path": "output/alg-l06-p041-feedback-host-resolution-20261001-v1/host-actionscript/frame_35/DoAction.as",
+      "bytes": 104008,
+      "sha256": "380cd6581859d0ba9814833f1102b08282198713cf30b5230ce2da76c3e27a74"
+    },
+    "hostFrame49ActionScript": {
+      "path": "output/alg-l06-p041-feedback-host-resolution-20261001-v1/host-actionscript/frame_49/DoAction.as",
+      "bytes": 1918,
+      "sha256": "713f73c05dba1a9cd080b2a58b9cbfff277f6b5d5aa38136947c5a9013702ba6"
+    },
+    "lessonXml": {
+      "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/index.xml",
+      "bytes": 13926,
+      "sha256": "9f3753a17e5e271d7bc63a1bdf8cd5237f19770bae3f5c7364cabcb62c84ce2c"
+    },
+    "pageSwf": {
+      "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/IN/L6IN13.swf",
+      "bytes": 370796,
+      "sha256": "bb10cab8e835f2c3267e0add3774dc47fa38863fe12dab67f3199e4c0efadd85"
+    },
+    "pageSourceFacts": {
+      "path": "output/alg-l06-p041-source-triage-20261001-v1/source-facts-v1.json",
+      "bytes": 41714,
+      "sha256": "5512f5f65a9fd2eb3da8b22cb145c8fbf642e598eb257bc8db023dae2b14567d"
+    }
+  },
+  "extraction": {
+    "tool": "JPEXS Free Flash Decompiler 26.2.1",
+    "command": "ffdec -export script <output-directory> <exact-host-swf>",
+    "allScriptsExportedToTemporaryPacketSubdirectory": 713,
+    "retainedExactRelevantScripts": ["frame_35/DoAction.as", "frame_49/DoAction.as"],
+    "reason": "the only exported script containing either showWrongFeed or showRightFeed is frame 35; frame 49 binds the ALG001 course-image case"
+  },
+  "binding": {
+    "pageOccurrence": 41,
+    "pageReference": "IN/L6IN13.swf",
+    "lessonPageRoot": "HELP_COURSES/ALG001/L6",
+    "lessonCourseImage": "HELP_COURSES/ALG001/ALG001.jpg",
+    "hostFrame49CourseImageCaseLine": 34,
+    "hostFrame35LoadMovieLine": 660,
+    "pageCalls": ["_root.showWrongFeed()", "_root.showRightFeed()"],
+    "hostFunctionTargets": "_root.animation_mc.animation.Mc_{Wrong,Right}_Feed<index>",
+    "staticCompatibilityVerified": true,
+    "historicalLauncherAndActualHostUseVerified": false
+  },
+  "selection": {
+    "wrong": {
+      "hostFunctionLine": 1065,
+      "sourceExpression": "intMc_Name = random(3); intMc_Name += 1;",
+      "indexDomain": [1, 2, 3],
+      "sourceNamedSprites": [
+        {"index": 1, "name": "Mc_Wrong_Feed1", "spriteId": 76, "holdFrame": 23, "closeButtonId": 72, "closeJumpFrame": 24, "terminalFrame": 28},
+        {"index": 2, "name": "Mc_Wrong_Feed2", "spriteId": 105, "holdFrame": 20, "closeButtonId": 100, "closeJumpFrame": 21, "terminalFrame": 28},
+        {"index": 3, "name": "Mc_Wrong_Feed3", "spriteId": 91, "holdFrame": 21, "closeButtonId": 85, "closeJumpFrame": 22, "terminalFrame": 28}
+      ],
+      "hostEffects": "selected clip visible; gotoAndPlay(2); x=5; set global sound volume",
+      "selectionMoment": "each showWrongFeed() call, after page wrong-button release increments quizTryCount",
+      "attemptSpecificExclusionOrRotation": "none in the extracted function"
+    },
+    "right": {
+      "hostFunctionLine": 1074,
+      "sourceExpression": "intMc_Name = random(4); intMc_Name += 1;",
+      "indexDomain": [1, 2, 3, 4],
+      "sourceNamedSprites": [
+        {"index": 1, "name": "Mc_Right_Feed1", "spriteId": 168, "terminalFrame": 28},
+        {"index": 2, "name": "Mc_Right_Feed2", "spriteId": 139, "terminalFrame": 33},
+        {"index": 3, "name": "Mc_Right_Feed3", "spriteId": 119, "terminalFrame": 32},
+        {"index": 4, "name": "Mc_Right_Feed4", "spriteId": 152, "terminalFrame": 28}
+      ],
+      "hostEffects": "selected clip visible; gotoAndPlay(2); x=5; set global sound volume",
+      "selectionMoment": "each showRightFeed() call"
+    },
+    "exactHistoricalRandomSeedAndSequenceVerified": false,
+    "runtimeObserved": false
+  },
+  "hostLoopAndQuizInteraction": {
+    "disableQuizButton": "host frame 35 lines 1083-1093: iterate AnsBtn1..25, disable and hide each, disable NMHBtn",
+    "enableQuizButton": "host frame 35 lines 1095-1105: iterate AnsBtn1..25, enable and show each, enable NMHBtn",
+    "feedbackCleanup": "host frame 35 lines 1246-1255: when main resumes in nonquiz Play state, iterate 1..4 and reset/hide Mc_Feed, Mc_Right_Feed, Mc_Wrong_Feed",
+    "pageInstances": "P041 defines only AnsBtn1..4; undefined 5..25 targets in these generic host loops have no source-visible P041 object",
+    "pageWrongAttemptRule": "P041 page button 44 increments quizTryCount on release; feedback terminal checks >=2, resets to 0 and resumes parent only after second-or-later wrong; first wrong returns to stopped quiz frame 752",
+    "hostSelectorReadsQuizTryCount": false,
+    "hostSelectionIndependentOfAttemptCountInExtractedFunctions": true
+  },
+  "reconciliation": {
+    "priorBehaviorDraftHostVariantSelection": "unrecovered",
+    "newSourceStaticFinding": "conditional indexMI host source resolves random-index domain and named sprite mapping",
+    "nextIRAction": "replace pending explicit variant policy with source-backed random(3)+1 or random(4)+1 at each corresponding host call, while injecting a controlled random draw for deterministic tests; do not invent fixed order, exclusion, seed, or actual historical draw",
+    "newCurrentJsRegistration": false,
+    "originalRuntimeFidelity": false,
+    "audioListening": false,
+    "browserVisual": false,
+    "human": false,
+    "owner": false,
+    "strictCompletion": false,
+    "release": false,
+    "publication": false
+  }
+}

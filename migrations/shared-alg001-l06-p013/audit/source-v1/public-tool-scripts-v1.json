@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p013-public-tool-scripts-v1",
+  "sourceSwfSha256": "1be47750557385ef91c648fb87fdcde642d342caadc35da7a1f7a2d1fdb11d35",
+  "toolVersions": {
+    "swfmill": "swfmill 0.3.6",
+    "ffdec": "JPEXS Free Flash Decompiler v.26.2.1"
+  },
+  "files": {
+    "scripts/DefineButton2_131/BUTTONCONDACTION on(release).as": "on(release){\n   _global.KeyAttribute = \"Input\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}",
+    "scripts/DefineButton2_137/BUTTONCONDACTION on(release).as": "on(release){\n   _global.KeyAttribute = \"Output\";\n   _root.DoHyperLinks();\n   _root.animation_mc.animation.stop();\n}",
+    "scripts/frame_1/DoAction.as": "_level0.InternalPreloader.gotoAndPlay(\"jump_check\");\nstop();",
+    "scripts/frame_6/DoAction.as": "stop();"
+  }
+}

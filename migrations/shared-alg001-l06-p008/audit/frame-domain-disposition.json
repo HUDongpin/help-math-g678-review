@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l06-p008",
+  "status": "source-structural-disposition-only",
+  "sourceSwfSha256": "6ea847e4682f9581cd72ee4a2fd8a177c9584cbf7a53ab8a2421e1ee0f012350",
+  "evidence": {
+    "sourceFacts": {
+      "path": "migrations/shared-alg001-l06-p008/audit/source-v1/source-facts-v1.json",
+      "bytes": 149325,
+      "sha256": "c80269ee8c50e330d6b8820ee5de805a63ddafc43dc3b2e37dbba70554d57312"
+    },
+    "sourceText": {
+      "path": "migrations/shared-alg001-l06-p008/audit/source-v1/source-text-v1.json",
+      "bytes": 3242693,
+      "sha256": "8315bc37b710da7c1343a18bdfd3f890ff19718b8c8b71daf47d316b0641d965"
+    },
+    "sourceComposition": {
+      "path": "migrations/shared-alg001-l06-p008/audit/source-v1/source-composition-v1.json",
+      "bytes": 40204,
+      "sha256": "a738f4fa22abd482cbb4a5470a33c85f465f79ae1fd831b1c29466c4617016c7"
+    }
+  },
+  "domains": [
+    {
+      "frameDomainId": "root",
+      "sourceFrameCount": 10,
+      "observedShowFrameCount": 10,
+      "rootReachableByStaticPlacements": true,
+      "parentFrameDomainIds": [],
+      "sourcePlacements": [],
+      "disposition": "separate-declared-source-frame-domain",
+      "originalRuntimeEstablished": false
+    },
+    {
+      "frameDomainId": "sprite-20",
+      "sourceFrameCount": 22,
+      "observedShowFrameCount": 22,
+      "rootReachableByStaticPlacements": true,
+      "parentFrameDomainIds": [
+        "sprite-507"
+      ],
+      "sourcePlacements": [
+        {
+          "parentTimelineId": "sprite-507",
+          "sourceInstanceId": "sprite-507/depth-56/generation-1",
+          "firstFrame": 1,
+          "lastFrameExclusive": 19,
+          "depth": 56
+        },
+        {
+          "parentTimelineId": "sprite-507",
+          "sourceInstanceId": "sprite-507/depth-73/generation-39",
+          "firstFrame": 449,
+          "lastFrameExclusive": 464,
+          "depth": 73
+        },
+        {
+          "parentTimelineId": "sprite-507",
+          "sourceInstanceId": "sprite-507/depth-73/generation-64",
+          "firstFrame": 936,
+          "lastFrameExclusive": 939,
+          "depth": 73
+        }
+      ],
+      "disposition": "separate-declared-source-frame-domain",
+      "originalRuntimeEstablished": false
+    },
+    {
+      "frameDomainId": "sprite-194",
+      "sourceFrameCount": 22,
+      "observedShowFrameCount": 22,
+      "rootReachableByStaticPlacements": true,
+      "parentFrameDomainIds": [
+        "sprite-507"
+      ],
+      "sourcePlacements": [
+        {
+          "parentTimelineId": "sprite-507",
+          "sourceInstanceId": "sprite-507/depth-318/generation-1",
+          "firstFrame": 636,
+          "lastFrameExclusive": 646,
+          "depth": 318
+        }
+      ],
+      "disposition": "separate-declared-source-frame-domain",
+      "originalRuntimeEstablished": false
+    },
+    {
+      "frameDomainId": "sprite-507",
+      "sourceFrameCount": 938,
+      "observedShowFrameCount": 938,
+      "rootReachableByStaticPlacements": true,
+      "parentFrameDomainIds": [
+        "root"
+      ],
+      "sourcePlacements": [
+        {
+          "parentTimelineId": "root",
+          "sourceInstanceId": "root/depth-1/generation-1",
+          "firstFrame": 6,
+          "lastFrameExclusive": 11,
+          "depth": 1
+        }
+      ],
+      "disposition": "separate-declared-source-frame-domain",
+      "originalRuntimeEstablished": false
+    },
+    {
+      "frameDomainId": "sprite-510",
+      "sourceFrameCount": 1,
+      "observedShowFrameCount": 1,
+      "rootReachableByStaticPlacements": true,
+      "parentFrameDomainIds": [
+        "root"
+      ],
+      "sourcePlacements": [
+        {
+          "parentTimelineId": "root",
+          "sourceInstanceId": "root/depth-503/generation-1",
+          "firstFrame": 6,
+          "lastFrameExclusive": 11,
+          "depth": 503
+        }
+      ],
+      "disposition": "separate-declared-source-frame-domain",
+      "originalRuntimeEstablished": false
+    }
+  ],
+  "rootMainRelation": {
+    "rootEntryFrame": 6,
+    "mainDomainId": "sprite-507",
+    "sourceTransformTwips": [
+      1,
+      0,
+      0,
+      1,
+      7390,
+      5060
+    ],
+    "rootStopsAtFrame": 6,
+    "mainSourceStopFrame": 938
+  },
+  "limits": [
+    "Static placement reachability is not natural playback proof.",
+    "Audio block gaps and negative seek require separate timing work.",
+    "Original runtime, human visual review and acceptance are not established."
+  ]
+}

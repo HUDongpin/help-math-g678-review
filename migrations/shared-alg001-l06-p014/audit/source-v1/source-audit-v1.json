@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p014-source-audit-v1",
+  "animationId": "shared-alg001-l06-p014",
+  "assetId": "swf-aed0f7755d4f691cefcc28c815acc6b9d083fdfaae88ff385f22d3b32ba07603",
+  "status": "source-audit-only; not-rendered-or-registered",
+  "generator": {
+    "path": "scripts/audit-alg-l06-p014-source-v1.mjs",
+    "bytes": 23815,
+    "sha256": "f724ee56b755e74a12fc29bc3374c2a79bf710160de9485648d52351cccc1170"
+  },
+  "parsers": [
+    {
+      "path": "scripts/build-g4-l3-machine-source-audits.mjs",
+      "bytes": 56716,
+      "sha256": "079ae4c5f3034de39520ec1508079be1b8fe482c81b1d879ed2ba1a3a625a4dd"
+    },
+    {
+      "path": "scripts/lib/swf-text-source-catalog.mjs",
+      "bytes": 22928,
+      "sha256": "5a65075738bcdd62a9fb79cca0aaf7fe7ab59857bd3852fdf5063d6c1fe8a3dc"
+    }
+  ],
+  "source": {
+    "path": "G6-G8-shared/ALG001/L6/VB/L6VB05.swf",
+    "bytes": 566603,
+    "sha256": "aed0f7755d4f691cefcc28c815acc6b9d083fdfaae88ff385f22d3b32ba07603"
+  },
+  "authoringEvidence": "swf-only",
+  "flaPath": null,
+  "catalog": {
+    "path": "catalog/g678-shared-catalog.v1.json",
+    "bytes": 12534064,
+    "sha256": "a1692c2a86c6771dcb104f59195b5bfdd2b5281cceff0aaeb63a3aabcf4a5657",
+    "stableLessonKey": "shared-alg001-l06",
+    "globalOrdinal": 14,
+    "section": "VB",
+    "sectionPageOrdinal": 4
+  },
+  "lessonXml": {
+    "path": "G6-G8-shared/ALG001/L6/index.xml",
+    "bytes": 13926,
+    "sha256": "9f3753a17e5e271d7bc63a1bdf8cd5237f19770bae3f5c7364cabcb62c84ce2c"
+  },
+  "separateSaCandidate": {
+    "path": "G6-G8-shared/ALG001/L6/SA/L6VB05.mp3",
+    "bytes": 136080,
+    "sha256": "b506e9e83e9716ed9c57d358f3f6664b5e3b8d8735d94ea4acb57449e148592d"
+  },
+  "discovery": {
+    "path": "output/alg-l06-p014-discovery-v1/discovery-v1.json",
+    "bytes": 25117,
+    "sha256": "b23e6ba4d79a996dff73b43112f4caf9d67b91d67a9cd4a680ac386c2d4901f8"
+  },
+  "tools": {
+    "swfmill": "swfmill 0.3.6",
+    "ffdec": "JPEXS Free Flash Decompiler v.26.2.1",
+    "pythonXmlParser": "xml.etree.ElementTree"
+  },
+  "runtime": {
+    "header": {
+      "signature": "CWS",
+      "version": 6,
+      "compressedBytes": 566603,
+      "declaredUncompressedBytes": 687699,
+      "uncompressedSha256": "7111ae37610b527835015b6d722efa2cc5a0ca1eb85799a8c3bba2b1898de26a",
+      "stage": {
+        "xMinTwips": 0,
+        "xMaxTwips": 16000,
+        "yMinTwips": 0,
+        "yMaxTwips": 12000,
+        "width": 800,
+        "height": 600
+      },
+      "fps": 12,
+      "rootFrameCount": 10
+    },
+    "actionScript": {
+      "version": "AS1/2",
+      "actionScript3Flag": false,
+      "tagCounts": {
+        "DoAction": 31,
+        "DoInitAction": 0,
+        "DoABCDefine": 0,
+        "DoABC": 0
+      }
+    },
+    "domainCount": 14,
+    "mainDomain": "sprite-227",
+    "mainFrames": 449,
+    "rootMainPlacement": {
+      "eventId": "root/tag-687659",
+      "frame": 6,
+      "tagName": "PlaceObject2",
+      "sourceTagOffset": 687659,
+      "sourceTagSha256": "f2187e96c56281c423438db9e4d4f7add9eafa553c2c47f250076bd3f765bccc",
+      "kind": "place",
+      "depth": 3,
+      "move": false,
+      "flags": {
+        "hasClipActions": false,
+        "hasClipDepth": false,
+        "hasName": true,
+        "hasRatio": true,
+        "hasColorTransform": false,
+        "hasMatrix": true,
+        "hasCharacter": true,
+        "move": false,
+        "hasOpaqueBackground": false,
+        "hasVisible": false,
+        "hasImage": false,
+        "hasClassName": false,
+        "hasCacheAsBitmap": false,
+        "hasBlendMode": false,
+        "hasFilterList": false
+      },
+      "characterId": 227,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        8248,
+        5666
+      ],
+      "ratio": 5,
+      "name": {
+        "text": "animation",
+        "decodeStatus": "exact-ascii",
+        "rawSha256": "ec23cef03131da4f8bc0caa14b0e4719b614adc7bcc1f82e3c19a3f7577a733e",
+        "rawHex": null
+      },
+      "instanceId": "root/depth-3/generation-1"
+    },
+    "sourceTagCounts": {
+      "End": 14,
+      "ShowFrame": 662,
+      "DefineShape": 24,
+      "SetBackgroundColor": 1,
+      "DefineText": 44,
+      "DoAction": 31,
+      "SoundStreamHead": 8,
+      "SoundStreamBlock": 624,
+      "DefineShape2": 1,
+      "Tag24": 1,
+      "PlaceObject2": 878,
+      "RemoveObject2": 108,
+      "DefineShape3": 60,
+      "DefineButton2": 7,
+      "DefineBitsJPEG3": 5,
+      "DefineEditText": 3,
+      "DefineSprite": 13,
+      "FrameLabel": 1,
+      "DefineMorphShape": 62,
+      "DefineFont2": 8
+    }
+  },
+  "complexity": {
+    "lane": "behavior-heavy; advanced-manual candidate",
+    "evidence": [
+      "31 AVM1 DoAction tags across nested domains",
+      "seven button definitions",
+      "three dynamic fields",
+      "62 morph definitions",
+      "eight embedded stream domains",
+      "three source masks",
+      "unresolved 386-byte sprite-83 tail"
+    ],
+    "factoryScaleOutAuthorized": false
+  },
+  "warningReconciliation": {
+    "swfmillExitCode": 0,
+    "stderr": "WARNING: end of tag UnknownTag is @687692, should be @5868279\nWARNING: end of tag DefineSprite is @5868279, should be @100979\nWARNING: reached EOF while reading SWF\n",
+    "warnings": [
+      {
+        "line": "WARNING: end of tag UnknownTag is @687692, should be @5868279",
+        "offsets": [
+          {
+            "offset": 687692,
+            "binaryOwner": {
+              "kind": "parsed-tag",
+              "domain": "root",
+              "frame": 8,
+              "code": 1,
+              "tagOffset": 687691,
+              "tagEndOffset": 687693
+            }
+          },
+          {
+            "offset": 5868279,
+            "binaryOwner": {
+              "kind": "outside-uncompressed-file"
+            }
+          }
+        ]
+      },
+      {
+        "line": "WARNING: end of tag DefineSprite is @5868279, should be @100979",
+        "offsets": [
+          {
+            "offset": 5868279,
+            "binaryOwner": {
+              "kind": "outside-uncompressed-file"
+            }
+          },
+          {
+            "offset": 100979,
+            "binaryOwner": {
+              "kind": "bytes-after-End",
+              "domain": "sprite-83",
+              "startOffset": 100601,
+              "endOffset": 100987
+            }
+          }
+        ]
+      },
+      {
+        "line": "WARNING: reached EOF while reading SWF",
+        "offsets": []
+      }
+    ],
+    "xmlWellFormed": true,
+    "xmlTagCountsMatchBinaryThroughEnd": true,
+    "xmlIncludesAllBinaryBytes": false,
+    "unresolvedBinaryTail": [
+      {
+        "domain": "sprite-83",
+        "startOffset": 100601,
+        "endOffset": 100987,
+        "bytes": 386,
+        "sha256": "d14a608f74eab33aa50401e45f0226b845a8b29aa02417254d15dc8675accaa0",
+        "nonzeroBytes": 17,
+        "first64Hex": "ff000002580000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "last32Hex": "0000000000000000000000000000000000000000000000000000000000000000",
+        "mpeg2Layer3SyncOffsets": [
+          100727,
+          100857
+        ]
+      }
+    ],
+    "ffdecTagDump": {
+      "pin": {
+        "path": "migrations/shared-alg001-l06-p014/audit/source-v1/ffdec-tag-dump-v1.txt",
+        "bytes": 364306,
+        "sha256": "291ac2473ee98cb15800ae07eb31cf43a4e58816050354cc4b9ecc89ff434c0c"
+      },
+      "boundaryLines": [
+        "000188eb:    143. SoundStreamBlock        tagId= 19 len=       4  00 00 5f f8",
+        "000188f5:    144. ShowFrame               tagId=  1 len=       0  ",
+        "00018a7b:   94. DefineMorphShape (chid: 84) tagId= 46 len=     147  54 00 6f c9 43 58 b7 86 ff 80 6f 46 c7 32 7a a7 14 00 48 00 00 00 01 00 ff ff ff 00 ff ff ff 85 ... 99 e7 41 e6 7a 80 0a bd 00 02 b3 86 9e 74 61 a7 9d 4e 00 51 54 80 18 5e 1b 46 1b 86 80 15 38 00"
+      ],
+      "treatment": "FFDec lists sprite-83 frame31 SoundStreamBlock (4-byte payload) and ShowFrame, then resumes at next root DefineMorphShape at uncompressed offset 100987. It does not classify the 386-byte trailer as an action or audio tag."
+    },
+    "taggedAudioTraversal": {
+      "soundStreamHeadCount": 8,
+      "soundStreamBlockCount": 624,
+      "sprite83FinalTaggedBlock": {
+        "domain": "sprite-83",
+        "frame": 31,
+        "offset": 100587,
+        "code": 19,
+        "payloadBytes": 4,
+        "payloadSha256": "9c0952c8438bd5a0b7b430d571c677c01fa1be29980b1ac7dcf38afb52a94d25"
+      },
+      "trailerAppendedToAudio": false,
+      "interpretation": "All declared SoundStreamBlock tags through each End are traversed. Sprite-83 frame31 block has four metadata bytes and no tagged MP3 payload. Two MPEG2 Layer-III-looking sync headers 130 bytes apart appear in untagged trailing bytes; they are not automatically playable authored audio."
+    },
+    "disposition": "The XML is usable only for tags through each End. Sprite-83 contains 386 bytes with 17 nonzero bytes after its End inside the DefineSprite container; XML and FFDec tag lists omit them. Do not infer complete source or audio semantics from those exports."
+  },
+  "capabilityBoundary": {
+    "sourceStructureExtracted": true,
+    "xmlCompleteStructuralEvidence": false,
+    "originalRuntimeObserved": false,
+    "audioListened": false,
+    "humanReviewed": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "lessonPublished": false
+  },
+  "artifacts": [
+    {
+      "path": "migrations/shared-alg001-l06-p014/audit/source-v1/source-facts-v1.json",
+      "bytes": 68554,
+      "sha256": "621ea02a7f77c8b064dd83b0decaaad39233c55e697988c47b7dc5831e84ff8f"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p014/audit/source-v1/source-text-v1.json",
+      "bytes": 1418769,
+      "sha256": "cdc0d97c661e1bf749fb9465ceee7de73f36541cebffcc574feb4c539cad39a9"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p014/audit/source-v1/source-composition-v1.json",
+      "bytes": 523989,
+      "sha256": "a7615710e2bcf05a97f5fc2714d69be07935b5cf61d1bf6c0554126a715d8013"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p014/audit/source-v1/binary-boundary-v1.json",
+      "bytes": 175884,
+      "sha256": "3580ecb093a209f62ed6905152a3c5c93f65dbd4e4798a6dfc46501956a4a913"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p014/audit/source-v1/public-tool-scripts-v1.json",
+      "bytes": 10604,
+      "sha256": "ca982898eaa94a1744a63c6aa1df1c2adb909446d8f50dc3e884d7e1cf37a8a5"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p014/audit/source-v1/ffdec-tag-dump-v1.txt",
+      "bytes": 364306,
+      "sha256": "291ac2473ee98cb15800ae07eb31cf43a4e58816050354cc4b9ecc89ff434c0c"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p014/audit/source-v1/swfmill-v1.xml.gz",
+      "bytes": 634087,
+      "sha256": "644522709cb6d1efcba4c55c5116360b9a81bb761f0ad112bee32d96fb35a61b"
+    }
+  ]
+}

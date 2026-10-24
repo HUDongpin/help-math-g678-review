@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l06-p026",
+  "sourceEvidence": [
+    {
+      "path": "output/alg-l06-p026-behavior-ir-v1/source-structure.xml",
+      "bytes": 506970,
+      "sha256": "1cb29e1edc5a6dd670c48037cda79f3caa0329c9d23fc8457f52ea45254657a8"
+    },
+    {
+      "path": "output/alg-l06-p026-behavior-ir-v1/source-display-list-v1.json",
+      "bytes": 78208,
+      "sha256": "9b06fbc8bf2886f724df1ad7f3d24f806ff23dbcb94952701835fcd0ad097a30"
+    },
+    {
+      "path": "output/alg-l06-p026-audio-extraction-v1/audio-source-audit-v1.json",
+      "bytes": 5866,
+      "sha256": "7b1ba3bcc5251ba15bb2a5a8b35c69681421d7b9516d218c30d7a776f95aefe5"
+    },
+    {
+      "path": "output/alg-l06-p026-root-audit-v1/audio-readback-v1.json",
+      "bytes": 423,
+      "sha256": "43bd347426b4a30808dab9ee1db200ce1033cdbf9a940923f07c5a33a56d6acd"
+    }
+  ],
+  "frameDomains": [
+    {
+      "id": "root",
+      "kind": "root",
+      "sourceTimelineId": "root",
+      "parentFrameDomainId": null,
+      "frameCount": 10,
+      "scenarioIds": [
+        "default"
+      ],
+      "disposition": "source preloader/mount only",
+      "originalRuntimeObserved": false
+    },
+    {
+      "id": "sprite-2",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-2",
+      "parentFrameDomainId": "root",
+      "frameCount": 1,
+      "scenarioIds": [
+        "default"
+      ],
+      "disposition": "source child declared; maintained candidate and original runtime pending",
+      "originalRuntimeObserved": false
+    },
+    {
+      "id": "sprite-55",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-55",
+      "parentFrameDomainId": "root",
+      "frameCount": 389,
+      "scenarioIds": [
+        "default"
+      ],
+      "disposition": "source child declared; maintained candidate and original runtime pending",
+      "originalRuntimeObserved": false
+    }
+  ],
+  "sourceMasks": [
+    {
+      "domain": "sprite-55",
+      "firstPlacementFrame": 31,
+      "shapeCharacterId": 18,
+      "depth": 15,
+      "clipDepth": 24
+    },
+    {
+      "domain": "sprite-55",
+      "firstPlacementFrame": 81,
+      "shapeCharacterId": 18,
+      "depth": 25,
+      "clipDepth": 30
+    }
+  ],
+  "sourceButtonCharacterIds": [
+    8,
+    9,
+    10,
+    13,
+    21,
+    22,
+    24
+  ],
+  "acceptanceEffects": false
+}

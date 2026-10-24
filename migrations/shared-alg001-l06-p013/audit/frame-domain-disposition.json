@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l06-p013",
+  "sourceSwfSha256": "1be47750557385ef91c648fb87fdcde642d342caadc35da7a1f7a2d1fdb11d35",
+  "evidence": "audit/source-v1/source-audit-v1.json",
+  "domains": [
+    {
+      "id": "root",
+      "declaredFrames": 10,
+      "observedShowFrames": 10,
+      "staticallyRootReachable": true,
+      "sourceEntry": "initial load",
+      "scripts": "frame 1 preloader call and stop; frame 6 stop",
+      "originalRuntimeTrace": "unobserved"
+    },
+    {
+      "id": "sprite-140",
+      "declaredFrames": 372,
+      "observedShowFrames": 372,
+      "staticallyRootReachable": true,
+      "parentDomain": "root",
+      "sourceEntry": "root frame 6, depth 2, named animation, offset 8248/5666 twips",
+      "scripts": "no child DoAction; two release handlers in button definitions",
+      "terminal": "old host conditionally stops non-FQ main animation at totalFrames; page-local terminal stop absent",
+      "originalRuntimeTrace": "unobserved"
+    }
+  ],
+  "allStaticallyRootReachableDomainsDispositioned": true,
+  "strictCaptureOrBehaviorAcceptance": false
+}

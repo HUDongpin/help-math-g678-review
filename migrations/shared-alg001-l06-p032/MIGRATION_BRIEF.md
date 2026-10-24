@@ -1,0 +1,11 @@
+# ALG001 L6 P032 maintained source hybrid
+
+This workspace resumes the full G6–G8 2,282-page migration goal. P032 is XML ordinal 32, IN section page 3, `IN/L6IN04.swf`, SHA-256 `e425600d0b6cfab41ae50f7512cb8e6c4e3c6ee04bbfa10c29b437459876d836`. It is not yet registered; formal coverage remains 516/2,282.
+
+The compiler-assisted lane retains all original Canvas glyphs and two source masks, and generates nine source text definitions and 28 text placements for a native reading companion. Maintained product wrappers own sprite-22 frames 1–413 at 12fps, exact Canvas commits, Set / Ordered pair / Function / X-coordinate glossary gates, and Replay/cleanup. X-coordinate is source-present only from frame 60. The modern My Lesson and source host bridge are reused. The source drawing has no ActionScript interpreter or source audio mixed into Canvas.
+
+The embedded MP3 is a single continuous source stream: 413 blocks, frame 1 first block, frame 2 zero payload, latency seek 1,673 source samples, 758,016 measured Chrome decoded samples at 22,050Hz. Genuine AudioBufferSourceNode EOF and visual completion are separate conditions. Pause resumes the held decoded cursor; glossary close stays paused. Separate SA is explicit user-triggered, never locale autoplay or concatenated main audio. Its measured Chrome buffer is 796,032 samples at 48,000Hz. Pause/Play retains that decoded buffer and cursor; Return and Replay cancel stale asynchronous work.
+
+Canonical producers: `scripts/prepare-alg-l06-p032-{canvas-v1,native-text-v1,audio-v1}.mjs`. Canonical source packets live under this workspace, and the Canvas producer also emits the registry-required factory member path. Runtime imports do not read temporary staging output. Early source-only writer preflight passed after the Canvas producer was corrected to emit its canonical member path; this did not register a page. The original failed preflight and historical staging/promotion receipts remain preserved.
+
+Root independently reran 18 canonical audio tests, three product bridge tests, and strict TypeScript compilation. Actual My Lesson browser and production-negative validation are pending. Original Flash execution, source timing/audio alignment acceptance, listening, human/Owner review, strict completion, deployment and publication remain open.

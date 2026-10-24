@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p013-text-state-audit-v1",
+  "animationId": "shared-alg001-l06-p013",
+  "sourceSwf": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L6/VB/L6VB04.swf",
+    "bytes": 269912,
+    "sha256": "1be47750557385ef91c648fb87fdcde642d342caadc35da7a1f7a2d1fdb11d35"
+  },
+  "inputs": [
+    {
+      "path": "migrations/shared-alg001-l06-p013/audit/source-v1/source-audit-v1.json",
+      "bytes": 12299,
+      "sha256": "ec5707528c5ebc3f0992aec542c6eace1a3eebaa8256cc3d5aebfc7f037078af"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p013/audit/source-v1/source-composition-v1.json",
+      "bytes": 10877,
+      "sha256": "9882183b44543dfbd2615e15cd204f91e1e5e7928b3e99e0a15b298baa17b637"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p013/audit/source-v1/source-text-v1.json",
+      "bytes": 1236269,
+      "sha256": "0556f2663d67760f7e359a91b15e2711285f08774a0cafd58449ad68387260c1"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p013/audit/source-v1/public-tool-scripts-v1.json",
+      "bytes": 816,
+      "sha256": "e9dc01a4017ba546017a1bbe7efeb61949cc2ecf707d2318a3dd9fc14baa6602"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p013/audit/glossary-v1/input-output-crosswalk-v1.json",
+      "bytes": 9423,
+      "sha256": "7a6d26e663d948f77833378ee1c2c5e60130e55aa6299bc7b0eacf070b091e2e"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p013/audit/source-v1/swfmill-v1.xml.gz",
+      "bytes": 733279,
+      "sha256": "4b4bcb2d1a9f2d929a8650a61491beed58149ffd8b63418e4a30dd0271aae369"
+    }
+  ],
+  "output": {
+    "path": "packages/demos/src/generated/alg-l06-p013-text-state-v1.ts",
+    "bytes": 17205,
+    "sha256": "d7f9a3100510cafd057e3c33b8d60f47312a9cf3a3f03be6f3d54414769136f3"
+  },
+  "semanticReveal": {
+    "formulasPlacedAndOnstage": 2,
+    "inputButtonPlaced": 258,
+    "inputHitFirstPartial": 292,
+    "inputHitFirstFull": 296,
+    "inputLabelPlacedAlphaZero": 288,
+    "inputLabelFirstVisible": 289,
+    "inputLabelFullAlpha": 291,
+    "inputSentenceMaskSettles": 296,
+    "outputButtonPlaced": 297,
+    "outputHitFirstPartial": 360,
+    "outputHitFirstFull": 365,
+    "outputLabelPlacedAlphaZero": 360,
+    "outputLabelFirstVisible": 361,
+    "outputLabelFullAlpha": 363,
+    "outputSentenceMaskSettles": 365
+  },
+  "limits": [
+    "Source structural timing only; no original runtime comparison or acceptance.",
+    "Native full sentences wait for the last authored mask update; this is a readability policy.",
+    "Source buttons are hit-test-only. Native controls wait until the authored mask fully uncovers each hit rectangle.",
+    "Source teaching text is English only. Spanish interface uses marked English fallback.",
+    "Canvas retains source glyphs and geometry."
+  ]
+}

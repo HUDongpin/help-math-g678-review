@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 1,
+  "kind": "p035-source-placements-for-maintained-canvas-v1",
+  "animationId": "shared-alg001-l06-p035",
+  "sourceSwfSha256": "9aaf16b58c32b00b056c7c5040b38f9d1391486bb025b71c95fa0326bbae33b3",
+  "caseMapping": {
+    "main": "source one-indexed sprite-227 frame minus one",
+    "feedback": "selected source one-indexed nested sprite frame minus one"
+  },
+  "root": {
+    "frameCount": 10,
+    "entryFrame": 6,
+    "mainSpriteId": 227,
+    "titleSpriteId": 2
+  },
+  "glossary": [
+    {
+      "key": "Substitute",
+      "buttonId": 23,
+      "sourceActionSha256": "c2fb186298f604732db08af8289357326eaf198187caabab42da5f5ed93c9fea",
+      "objectId": 23,
+      "depth": 18,
+      "instanceId": "depth-18/generation-1",
+      "firstFrame": 13,
+      "lastFrame": 534,
+      "mask": {
+        "objectId": 19,
+        "instanceId": "depth-15/generation-1",
+        "depth": 15,
+        "clipDepth": 24
+      },
+      "controlGate": "source-instance+visible-blue-label+mask+hit-required-by-native-owner"
+    },
+    {
+      "key": "Equation",
+      "buttonId": 24,
+      "sourceActionSha256": "0b89848d79d735127115901984f60c2c8c2996f9561d150573068e496601ed4b",
+      "objectId": 24,
+      "depth": 20,
+      "instanceId": "depth-20/generation-1",
+      "firstFrame": 13,
+      "lastFrame": 534,
+      "mask": {
+        "objectId": 19,
+        "instanceId": "depth-15/generation-1",
+        "depth": 15,
+        "clipDepth": 24
+      },
+      "controlGate": "source-instance+visible-blue-label+mask+hit-required-by-native-owner"
+    },
+    {
+      "key": "Function",
+      "buttonId": 25,
+      "sourceActionSha256": "bf18a4b6722a58696805f4dd043c6b04a1b1c3cc9a605ef84301790c08bb4cfa",
+      "objectId": 25,
+      "depth": 22,
+      "instanceId": "depth-22/generation-1",
+      "firstFrame": 13,
+      "lastFrame": 534,
+      "mask": {
+        "objectId": 19,
+        "instanceId": "depth-15/generation-1",
+        "depth": 15,
+        "clipDepth": 24
+      },
+      "controlGate": "source-instance+visible-blue-label+mask+hit-required-by-native-owner"
+    },
+    {
+      "key": "Output",
+      "buttonId": 37,
+      "sourceActionSha256": "573534c3578af9119df87b9a8e2c4751ca88e451a2e1dde1896a9ad77acd746e",
+      "objectId": 37,
+      "depth": 28,
+      "instanceId": "depth-28/generation-1",
+      "firstFrame": 89,
+      "lastFrame": 534,
+      "mask": {
+        "objectId": 19,
+        "instanceId": "depth-25/generation-6",
+        "depth": 25,
+        "clipDepth": 32
+      },
+      "controlGate": "source-instance+visible-blue-label+mask+hit-required-by-native-owner"
+    },
+    {
+      "key": "Input",
+      "buttonId": 38,
+      "sourceActionSha256": "fc18c1b076872ddbff22a6de05a0929210cfcb8d065a27a37c654e3eb33c496a",
+      "objectId": 38,
+      "depth": 30,
+      "instanceId": "depth-30/generation-1",
+      "firstFrame": 89,
+      "lastFrame": 534,
+      "mask": {
+        "objectId": 19,
+        "instanceId": "depth-25/generation-6",
+        "depth": 25,
+        "clipDepth": 32
+      },
+      "controlGate": "source-instance+visible-blue-label+mask+hit-required-by-native-owner"
+    }
+  ],
+  "quiz": [
+    {
+      "choice": "A",
+      "correct": false,
+      "textValue": 50,
+      "buttonId": 54,
+      "depth": 81,
+      "objectId": 54,
+      "instanceId": "depth-81/generation-1",
+      "firstFrame": 145,
+      "name": "AnsBtn1",
+      "lastFrame": 145,
+      "sourceActionSha256": "e428f7783bafdfb58cdd8125afb90627f7dc010fc76e1498d1fea7ed133bd490"
+    },
+    {
+      "choice": "B",
+      "correct": true,
+      "textValue": 51,
+      "buttonId": 55,
+      "depth": 83,
+      "objectId": 55,
+      "instanceId": "depth-83/generation-1",
+      "firstFrame": 145,
+      "name": "AnsBtn2",
+      "lastFrame": 145,
+      "sourceActionSha256": "91fddc130bddd9456227b9bbd9139c44ebcf7e51db046176f2f810e5e073db02"
+    },
+    {
+      "choice": "C",
+      "correct": false,
+      "textValue": 225,
+      "buttonId": 54,
+      "depth": 85,
+      "objectId": 54,
+      "instanceId": "depth-85/generation-1",
+      "firstFrame": 145,
+      "name": "AnsBtn3",
+      "lastFrame": 145,
+      "sourceActionSha256": "e428f7783bafdfb58cdd8125afb90627f7dc010fc76e1498d1fea7ed133bd490"
+    },
+    {
+      "choice": "D",
+      "correct": false,
+      "textValue": 226,
+      "buttonId": 54,
+      "depth": 87,
+      "objectId": 54,
+      "instanceId": "depth-87/generation-1",
+      "firstFrame": 145,
+      "name": "AnsBtn4",
+      "lastFrame": 145,
+      "sourceActionSha256": "e428f7783bafdfb58cdd8125afb90627f7dc010fc76e1498d1fea7ed133bd490"
+    }
+  ],
+  "feedbackPlacements": [
+    {
+      "spriteId": 80,
+      "kind": "wrong",
+      "frameCount": 29,
+      "heldSourceTail": false,
+      "objectId": 80,
+      "depth": 89,
+      "instanceId": "depth-89/generation-1",
+      "firstFrame": 145,
+      "name": "Mc_Wrong_Feed1",
+      "lastFrame": 534,
+      "firstSourceLocalFrame": 1,
+      "lastSourceLocalFrame": 29,
+      "firstFfdecCase": 0,
+      "lastFfdecCase": 28
+    },
+    {
+      "spriteId": 95,
+      "kind": "wrong",
+      "frameCount": 28,
+      "heldSourceTail": false,
+      "objectId": 95,
+      "depth": 95,
+      "instanceId": "depth-95/generation-1",
+      "firstFrame": 145,
+      "name": "Mc_Wrong_Feed3",
+      "lastFrame": 534,
+      "firstSourceLocalFrame": 1,
+      "lastSourceLocalFrame": 28,
+      "firstFfdecCase": 0,
+      "lastFfdecCase": 27
+    },
+    {
+      "spriteId": 126,
+      "kind": "wrong",
+      "frameCount": 28,
+      "heldSourceTail": false,
+      "objectId": 126,
+      "depth": 106,
+      "instanceId": "depth-106/generation-1",
+      "firstFrame": 145,
+      "name": "Mc_Wrong_Feed2",
+      "lastFrame": 534,
+      "firstSourceLocalFrame": 1,
+      "lastSourceLocalFrame": 28,
+      "firstFfdecCase": 0,
+      "lastFfdecCase": 27
+    },
+    {
+      "spriteId": 154,
+      "kind": "right",
+      "frameCount": 28,
+      "heldSourceTail": false,
+      "objectId": 154,
+      "depth": 116,
+      "instanceId": "depth-116/generation-1",
+      "firstFrame": 145,
+      "name": "Mc_Right_Feed4",
+      "lastFrame": 534,
+      "firstSourceLocalFrame": 1,
+      "lastSourceLocalFrame": 28,
+      "firstFfdecCase": 0,
+      "lastFfdecCase": 27
+    },
+    {
+      "spriteId": 179,
+      "kind": "right",
+      "frameCount": 27,
+      "heldSourceTail": true,
+      "objectId": 179,
+      "depth": 120,
+      "instanceId": "depth-120/generation-1",
+      "firstFrame": 145,
+      "name": "Mc_Right_Feed1",
+      "lastFrame": 534,
+      "firstSourceLocalFrame": 1,
+      "lastSourceLocalFrame": 27,
+      "firstFfdecCase": 0,
+      "lastFfdecCase": 26
+    },
+    {
+      "spriteId": 195,
+      "kind": "right",
+      "frameCount": 28,
+      "heldSourceTail": false,
+      "objectId": 195,
+      "depth": 129,
+      "instanceId": "depth-129/generation-1",
+      "firstFrame": 145,
+      "name": "Mc_Right_Feed2",
+      "lastFrame": 534,
+      "firstSourceLocalFrame": 1,
+      "lastSourceLocalFrame": 28,
+      "firstFfdecCase": 0,
+      "lastFfdecCase": 27
+    },
+    {
+      "spriteId": 207,
+      "kind": "right",
+      "frameCount": 25,
+      "heldSourceTail": false,
+      "objectId": 207,
+      "depth": 139,
+      "instanceId": "depth-139/generation-1",
+      "firstFrame": 145,
+      "name": "Mc_Right_Feed3",
+      "lastFrame": 534,
+      "firstSourceLocalFrame": 1,
+      "lastSourceLocalFrame": 25,
+      "firstFfdecCase": 0,
+      "lastFfdecCase": 24
+    }
+  ],
+  "feedbackClose": [
+    {
+      "feedbackSpriteId": 80,
+      "ownerSpriteId": 79,
+      "buttonId": 76,
+      "objectId": 76,
+      "depth": 1,
+      "instanceId": "depth-1/generation-1",
+      "firstFrame": 1,
+      "name": "BtnClose",
+      "lastFrame": 1,
+      "sourceActionSha256": "3fe79f85ee919b2d07dc6e3ea32f67fe78ab058772ea4197375d1063d7be8a7c"
+    },
+    {
+      "feedbackSpriteId": 95,
+      "ownerSpriteId": 91,
+      "buttonId": 89,
+      "objectId": 89,
+      "depth": 1,
+      "instanceId": "depth-1/generation-1",
+      "firstFrame": 1,
+      "name": "BtnClose",
+      "lastFrame": 1,
+      "sourceActionSha256": "347253891f997902789749e125aa4b6eed7eaad17dbd308bc9ce40651e8222d0"
+    },
+    {
+      "feedbackSpriteId": 126,
+      "ownerSpriteId": 117,
+      "buttonId": 115,
+      "objectId": 115,
+      "depth": 1,
+      "instanceId": "depth-1/generation-1",
+      "firstFrame": 1,
+      "name": "BtnClose",
+      "lastFrame": 1,
+      "sourceActionSha256": "4057c3c6552def15f1e846f96fbf4df07b5166f278dad82eec3eea19b09b3394"
+    }
+  ],
+  "clipMasks": [
+    {
+      "objectId": 19,
+      "depth": 15,
+      "instanceId": "depth-15/generation-1",
+      "firstFrame": 13,
+      "clipDepth": 24,
+      "lastFrame": 534
+    },
+    {
+      "objectId": 19,
+      "depth": 25,
+      "instanceId": "depth-25/generation-6",
+      "firstFrame": 89,
+      "clipDepth": 32,
+      "lastFrame": 534
+    },
+    {
+      "objectId": 83,
+      "depth": 5,
+      "instanceId": "depth-5/generation-2",
+      "firstFrame": 5,
+      "clipDepth": 9,
+      "lastFrame": 27,
+      "ownerSpriteId": 95
+    },
+    {
+      "objectId": 96,
+      "depth": 1,
+      "instanceId": "depth-1/generation-1",
+      "firstFrame": 2,
+      "clipDepth": 8,
+      "lastFrame": 28,
+      "ownerSpriteId": 126
+    }
+  ],
+  "heldFeedbackSpriteId": 179,
+  "audioAndHostBehavior": "not executed by Canvas"
+}

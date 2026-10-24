@@ -1,0 +1,1464 @@
+{
+  "kind": "p050-real-browser-correct-v1",
+  "pass": true,
+  "summary": "ten distinct questions, all correct, score100, three feedback streams, Final and cleanup",
+  "prelude": {
+    "state": {
+      "epoch": 0,
+      "seed": 0,
+      "rngState": 0,
+      "phase": "intro",
+      "mainFrame": 2,
+      "mainPlaying": false,
+      "paused": true,
+      "score": 0,
+      "scoreAnimation": null,
+      "drawCount": 0,
+      "remaining": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "order": [],
+      "responses": [],
+      "questionId": null,
+      "questionGeneration": 0,
+      "selectionSerial": 0,
+      "startRequested": false,
+      "directionsOpen": false,
+      "feedback": null,
+      "wrongText": null,
+      "audioOwner": null,
+      "audioSerial": 1,
+      "lessonCompleted": false
+    },
+    "audio": {
+      "owner": null,
+      "selected": null,
+      "streams": {
+        "main": {
+          "phase": "paused",
+          "epoch": 3,
+          "decodedSample": 0,
+          "contextTime": 0.156734693877551,
+          "heldContextTime": 0.156734693877551,
+          "playbackAnchor": null,
+          "elapsedMs": 0,
+          "volume": 1,
+          "failure": null,
+          "sourceAlignment": "unresolved",
+          "lessonCompleted": false
+        },
+        "wrong": {
+          "phase": "ready",
+          "epoch": 1,
+          "decodedSample": 0,
+          "contextTime": 0.1799546485260771,
+          "heldContextTime": null,
+          "playbackAnchor": null,
+          "elapsedMs": 0,
+          "volume": 1,
+          "failure": null,
+          "sourceAlignment": "unresolved",
+          "lessonCompleted": false
+        },
+        "correct358": {
+          "phase": "ready",
+          "epoch": 1,
+          "decodedSample": 0,
+          "contextTime": 0.1799546485260771,
+          "heldContextTime": null,
+          "playbackAnchor": null,
+          "elapsedMs": 0,
+          "volume": 1,
+          "failure": null,
+          "sourceAlignment": "unresolved",
+          "lessonCompleted": false
+        },
+        "correct432": {
+          "phase": "ready",
+          "epoch": 1,
+          "decodedSample": 0,
+          "contextTime": 0.18575963718820862,
+          "heldContextTime": null,
+          "playbackAnchor": null,
+          "elapsedMs": 0,
+          "volume": 1,
+          "failure": null,
+          "sourceAlignment": "unresolved",
+          "lessonCompleted": false
+        },
+        "correct479": {
+          "phase": "ready",
+          "epoch": 1,
+          "decodedSample": 0,
+          "contextTime": 0.17414965986394557,
+          "heldContextTime": null,
+          "playbackAnchor": null,
+          "elapsedMs": 0,
+          "volume": 1,
+          "failure": null,
+          "sourceAlignment": "unresolved",
+          "lessonCompleted": false
+        }
+      }
+    },
+    "ready": true,
+    "failure": null,
+    "spanishSelected": false,
+    "spanishLoading": false,
+    "visualClockRunning": false,
+    "clockAuthority": "engineering-12fps-audio-context-observer",
+    "sourceFrameAlignmentAccepted": false,
+    "listeningAccepted": false,
+    "lessonCompleted": false
+  },
+  "directions": {
+    "snapshot": {
+      "state": {
+        "epoch": 0,
+        "seed": 0,
+        "rngState": 1831565813,
+        "phase": "question",
+        "mainFrame": 665,
+        "mainPlaying": false,
+        "paused": false,
+        "score": 0,
+        "scoreAnimation": null,
+        "drawCount": 1,
+        "remaining": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "order": [
+          3
+        ],
+        "responses": [],
+        "questionId": 3,
+        "questionGeneration": 1,
+        "selectionSerial": 0,
+        "startRequested": false,
+        "directionsOpen": true,
+        "feedback": null,
+        "wrongText": null,
+        "audioOwner": null,
+        "audioSerial": 1,
+        "lessonCompleted": false
+      },
+      "audio": {
+        "owner": null,
+        "selected": null,
+        "streams": {
+          "main": {
+            "phase": "paused",
+            "epoch": 3,
+            "decodedSample": 0,
+            "contextTime": 0.31927437641723355,
+            "heldContextTime": 0.156734693877551,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "wrong": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 0.34249433106575966,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct358": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 0.34249433106575966,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct432": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 0.34829931972789113,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct479": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 0.33668934240362813,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          }
+        }
+      },
+      "ready": true,
+      "failure": null,
+      "spanishSelected": false,
+      "spanishLoading": false,
+      "visualClockRunning": false,
+      "clockAuthority": "engineering-12fps-audio-context-observer",
+      "sourceFrameAlignmentAccepted": false,
+      "listeningAccepted": false,
+      "lessonCompleted": false
+    },
+    "focused": true
+  },
+  "focusReturn": true,
+  "rows": [
+    {
+      "ordinal": 1,
+      "question": 3,
+      "feedback": {
+        "kind": "correct",
+        "spriteId": 358,
+        "branch": null,
+        "frame": 2,
+        "endFrame": 28,
+        "token": "0:1:1"
+      },
+      "score": 10,
+      "scoreFrame": 2,
+      "audio": {
+        "owner": "correct358",
+        "selected": {
+          "phase": "playing",
+          "epoch": 3,
+          "decodedSample": 2094.0000000000005,
+          "contextTime": 0.592108843537415,
+          "heldContextTime": null,
+          "playbackAnchor": {
+            "contextTime": 0.5804988662131519,
+            "decodedSample": 1838
+          },
+          "elapsedMs": 94.96598639455785,
+          "volume": 1,
+          "failure": null,
+          "sourceAlignment": "unresolved",
+          "lessonCompleted": false
+        },
+        "streams": {
+          "main": {
+            "phase": "paused",
+            "epoch": 3,
+            "decodedSample": 0,
+            "contextTime": 0.5688888888888889,
+            "heldContextTime": 0.156734693877551,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "wrong": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 0.592108843537415,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct358": {
+            "phase": "playing",
+            "epoch": 3,
+            "decodedSample": 2094.0000000000005,
+            "contextTime": 0.592108843537415,
+            "heldContextTime": null,
+            "playbackAnchor": {
+              "contextTime": 0.5804988662131519,
+              "decodedSample": 1838
+            },
+            "elapsedMs": 94.96598639455785,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct432": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 0.603718820861678,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct479": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 0.5863038548752835,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          }
+        }
+      }
+    },
+    {
+      "ordinal": 2,
+      "question": 1,
+      "feedback": {
+        "kind": "correct",
+        "spriteId": 358,
+        "branch": null,
+        "frame": 2,
+        "endFrame": 28,
+        "token": "0:2:2"
+      },
+      "score": 20,
+      "scoreFrame": 2,
+      "audio": {
+        "owner": "correct358",
+        "selected": {
+          "phase": "playing",
+          "epoch": 6,
+          "decodedSample": 2094.0000000000055,
+          "contextTime": 2.7980045351473923,
+          "heldContextTime": null,
+          "playbackAnchor": {
+            "contextTime": 2.786394557823129,
+            "decodedSample": 1838
+          },
+          "elapsedMs": 94.96598639455807,
+          "volume": 1,
+          "failure": null,
+          "sourceAlignment": "unresolved",
+          "lessonCompleted": false
+        },
+        "streams": {
+          "main": {
+            "phase": "paused",
+            "epoch": 3,
+            "decodedSample": 0,
+            "contextTime": 2.7747845804988662,
+            "heldContextTime": 0.156734693877551,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "wrong": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 2.7980045351473923,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct358": {
+            "phase": "playing",
+            "epoch": 6,
+            "decodedSample": 2094.0000000000055,
+            "contextTime": 2.7980045351473923,
+            "heldContextTime": null,
+            "playbackAnchor": {
+              "contextTime": 2.786394557823129,
+              "decodedSample": 1838
+            },
+            "elapsedMs": 94.96598639455807,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct432": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 2.809614512471655,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct479": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 2.7921995464852607,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          }
+        }
+      }
+    },
+    {
+      "ordinal": 3,
+      "question": 4,
+      "feedback": {
+        "kind": "correct",
+        "spriteId": 358,
+        "branch": null,
+        "frame": 2,
+        "endFrame": 28,
+        "token": "0:3:3"
+      },
+      "score": 30,
+      "scoreFrame": 2,
+      "audio": {
+        "owner": "correct358",
+        "selected": {
+          "phase": "playing",
+          "epoch": 9,
+          "decodedSample": 2094.0000000000055,
+          "contextTime": 4.998095238095238,
+          "heldContextTime": null,
+          "playbackAnchor": {
+            "contextTime": 4.986485260770975,
+            "decodedSample": 1838
+          },
+          "elapsedMs": 94.96598639455807,
+          "volume": 1,
+          "failure": null,
+          "sourceAlignment": "unresolved",
+          "lessonCompleted": false
+        },
+        "streams": {
+          "main": {
+            "phase": "paused",
+            "epoch": 3,
+            "decodedSample": 0,
+            "contextTime": 4.974875283446712,
+            "heldContextTime": 0.156734693877551,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "wrong": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 4.998095238095238,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct358": {
+            "phase": "playing",
+            "epoch": 9,
+            "decodedSample": 2094.0000000000055,
+            "contextTime": 4.998095238095238,
+            "heldContextTime": null,
+            "playbackAnchor": {
+              "contextTime": 4.986485260770975,
+              "decodedSample": 1838
+            },
+            "elapsedMs": 94.96598639455807,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct432": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 5.015510204081632,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct479": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 4.992290249433107,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          }
+        }
+      }
+    },
+    {
+      "ordinal": 4,
+      "question": 5,
+      "feedback": {
+        "kind": "correct",
+        "spriteId": 432,
+        "branch": null,
+        "frame": 2,
+        "endFrame": 25,
+        "token": "0:4:4"
+      },
+      "score": 40,
+      "scoreFrame": 2,
+      "audio": {
+        "owner": "correct432",
+        "selected": {
+          "phase": "playing",
+          "epoch": 3,
+          "decodedSample": 1047.0000000000027,
+          "contextTime": 7.198185941043084,
+          "heldContextTime": null,
+          "playbackAnchor": {
+            "contextTime": 7.186575963718821,
+            "decodedSample": 919
+          },
+          "elapsedMs": 94.96598639455807,
+          "volume": 1,
+          "failure": null,
+          "sourceAlignment": "unresolved",
+          "lessonCompleted": false
+        },
+        "streams": {
+          "main": {
+            "phase": "paused",
+            "epoch": 3,
+            "decodedSample": 0,
+            "contextTime": 7.174965986394557,
+            "heldContextTime": 0.156734693877551,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "wrong": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 7.198185941043084,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct358": {
+            "phase": "paused",
+            "epoch": 10,
+            "decodedSample": 49710,
+            "contextTime": 7.198185941043084,
+            "heldContextTime": 7.157551020408163,
+            "playbackAnchor": null,
+            "elapsedMs": 2254.421768707483,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct432": {
+            "phase": "playing",
+            "epoch": 3,
+            "decodedSample": 1047.0000000000027,
+            "contextTime": 7.198185941043084,
+            "heldContextTime": null,
+            "playbackAnchor": {
+              "contextTime": 7.186575963718821,
+              "decodedSample": 919
+            },
+            "elapsedMs": 94.96598639455807,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct479": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 7.192380952380953,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          }
+        }
+      }
+    },
+    {
+      "ordinal": 5,
+      "question": 7,
+      "feedback": {
+        "kind": "correct",
+        "spriteId": 432,
+        "branch": null,
+        "frame": 2,
+        "endFrame": 25,
+        "token": "0:5:5"
+      },
+      "score": 50,
+      "scoreFrame": 2,
+      "audio": {
+        "owner": "correct432",
+        "selected": {
+          "phase": "playing",
+          "epoch": 5,
+          "decodedSample": 1175.0000000000052,
+          "contextTime": 9.160272108843538,
+          "heldContextTime": null,
+          "playbackAnchor": {
+            "contextTime": 9.137052154195011,
+            "decodedSample": 919
+          },
+          "elapsedMs": 106.57596371882133,
+          "volume": 1,
+          "failure": null,
+          "sourceAlignment": "unresolved",
+          "lessonCompleted": false
+        },
+        "streams": {
+          "main": {
+            "phase": "paused",
+            "epoch": 3,
+            "decodedSample": 0,
+            "contextTime": 9.125442176870749,
+            "heldContextTime": 0.156734693877551,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "wrong": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 9.148662131519274,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct358": {
+            "phase": "paused",
+            "epoch": 10,
+            "decodedSample": 49710,
+            "contextTime": 9.148662131519274,
+            "heldContextTime": 7.157551020408163,
+            "playbackAnchor": null,
+            "elapsedMs": 2254.421768707483,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct432": {
+            "phase": "playing",
+            "epoch": 5,
+            "decodedSample": 1175.0000000000052,
+            "contextTime": 9.160272108843538,
+            "heldContextTime": null,
+            "playbackAnchor": {
+              "contextTime": 9.137052154195011,
+              "decodedSample": 919
+            },
+            "elapsedMs": 106.57596371882133,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct479": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 9.142857142857142,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          }
+        }
+      }
+    },
+    {
+      "ordinal": 6,
+      "question": 8,
+      "feedback": {
+        "kind": "correct",
+        "spriteId": 479,
+        "branch": null,
+        "frame": 2,
+        "endFrame": 28,
+        "token": "0:6:6"
+      },
+      "score": 60,
+      "scoreFrame": 2,
+      "audio": {
+        "owner": "correct479",
+        "selected": {
+          "phase": "playing",
+          "epoch": 3,
+          "decodedSample": 384.0000000000177,
+          "contextTime": 11.087528344671203,
+          "heldContextTime": null,
+          "playbackAnchor": {
+            "contextTime": 11.070113378684807,
+            "decodedSample": 0
+          },
+          "elapsedMs": 17.41496598639536,
+          "volume": 1,
+          "failure": null,
+          "sourceAlignment": "unresolved",
+          "lessonCompleted": false
+        },
+        "streams": {
+          "main": {
+            "phase": "paused",
+            "epoch": 3,
+            "decodedSample": 0,
+            "contextTime": 11.070113378684807,
+            "heldContextTime": 0.156734693877551,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "wrong": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 11.093333333333334,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct358": {
+            "phase": "paused",
+            "epoch": 10,
+            "decodedSample": 49710,
+            "contextTime": 11.093333333333334,
+            "heldContextTime": 7.157551020408163,
+            "playbackAnchor": null,
+            "elapsedMs": 2254.421768707483,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct432": {
+            "phase": "buffer-ended",
+            "epoch": 5,
+            "decodedSample": 11935,
+            "contextTime": 11.099138321995465,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 1082.5396825396824,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct479": {
+            "phase": "playing",
+            "epoch": 3,
+            "decodedSample": 384.0000000000177,
+            "contextTime": 11.087528344671203,
+            "heldContextTime": null,
+            "playbackAnchor": {
+              "contextTime": 11.070113378684807,
+              "decodedSample": 0
+            },
+            "elapsedMs": 17.41496598639536,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          }
+        }
+      }
+    },
+    {
+      "ordinal": 7,
+      "question": 9,
+      "feedback": {
+        "kind": "correct",
+        "spriteId": 479,
+        "branch": null,
+        "frame": 2,
+        "endFrame": 28,
+        "token": "0:7:7"
+      },
+      "score": 70,
+      "scoreFrame": 2,
+      "audio": {
+        "owner": "correct479",
+        "selected": {
+          "phase": "playing",
+          "epoch": 6,
+          "decodedSample": 384.0000000000177,
+          "contextTime": 13.287619047619048,
+          "heldContextTime": null,
+          "playbackAnchor": {
+            "contextTime": 13.270204081632652,
+            "decodedSample": 0
+          },
+          "elapsedMs": 17.41496598639536,
+          "volume": 1,
+          "failure": null,
+          "sourceAlignment": "unresolved",
+          "lessonCompleted": false
+        },
+        "streams": {
+          "main": {
+            "phase": "paused",
+            "epoch": 3,
+            "decodedSample": 0,
+            "contextTime": 13.270204081632652,
+            "heldContextTime": 0.156734693877551,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "wrong": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 13.293424036281179,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct358": {
+            "phase": "paused",
+            "epoch": 10,
+            "decodedSample": 49710,
+            "contextTime": 13.293424036281179,
+            "heldContextTime": 7.157551020408163,
+            "playbackAnchor": null,
+            "elapsedMs": 2254.421768707483,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct432": {
+            "phase": "buffer-ended",
+            "epoch": 5,
+            "decodedSample": 11935,
+            "contextTime": 13.305034013605443,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 1082.5396825396824,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct479": {
+            "phase": "playing",
+            "epoch": 6,
+            "decodedSample": 384.0000000000177,
+            "contextTime": 13.287619047619048,
+            "heldContextTime": null,
+            "playbackAnchor": {
+              "contextTime": 13.270204081632652,
+              "decodedSample": 0
+            },
+            "elapsedMs": 17.41496598639536,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          }
+        }
+      }
+    },
+    {
+      "ordinal": 8,
+      "question": 6,
+      "feedback": {
+        "kind": "correct",
+        "spriteId": 432,
+        "branch": null,
+        "frame": 2,
+        "endFrame": 25,
+        "token": "0:8:8"
+      },
+      "score": 80,
+      "scoreFrame": 2,
+      "audio": {
+        "owner": "correct432",
+        "selected": {
+          "phase": "playing",
+          "epoch": 7,
+          "decodedSample": 1047.0000000000125,
+          "contextTime": 15.499319727891157,
+          "heldContextTime": null,
+          "playbackAnchor": {
+            "contextTime": 15.487709750566893,
+            "decodedSample": 919
+          },
+          "elapsedMs": 94.96598639455895,
+          "volume": 1,
+          "failure": null,
+          "sourceAlignment": "unresolved",
+          "lessonCompleted": false
+        },
+        "streams": {
+          "main": {
+            "phase": "paused",
+            "epoch": 3,
+            "decodedSample": 0,
+            "contextTime": 15.4702947845805,
+            "heldContextTime": 0.156734693877551,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "wrong": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 15.493514739229026,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct358": {
+            "phase": "paused",
+            "epoch": 10,
+            "decodedSample": 49710,
+            "contextTime": 15.493514739229026,
+            "heldContextTime": 7.157551020408163,
+            "playbackAnchor": null,
+            "elapsedMs": 2254.421768707483,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct432": {
+            "phase": "playing",
+            "epoch": 7,
+            "decodedSample": 1047.0000000000125,
+            "contextTime": 15.499319727891157,
+            "heldContextTime": null,
+            "playbackAnchor": {
+              "contextTime": 15.487709750566893,
+              "decodedSample": 919
+            },
+            "elapsedMs": 94.96598639455895,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct479": {
+            "phase": "paused",
+            "epoch": 7,
+            "decodedSample": 48128.00000000001,
+            "contextTime": 15.487709750566893,
+            "heldContextTime": 15.452879818594104,
+            "playbackAnchor": null,
+            "elapsedMs": 2182.6757369614515,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          }
+        }
+      }
+    },
+    {
+      "ordinal": 9,
+      "question": 2,
+      "feedback": {
+        "kind": "correct",
+        "spriteId": 358,
+        "branch": null,
+        "frame": 2,
+        "endFrame": 28,
+        "token": "0:9:9"
+      },
+      "score": 90,
+      "scoreFrame": 2,
+      "audio": {
+        "owner": "correct358",
+        "selected": {
+          "phase": "playing",
+          "epoch": 12,
+          "decodedSample": 2093.9999999999854,
+          "contextTime": 17.443990929705215,
+          "heldContextTime": null,
+          "playbackAnchor": {
+            "contextTime": 17.432380952380953,
+            "decodedSample": 1838
+          },
+          "elapsedMs": 94.96598639455716,
+          "volume": 1,
+          "failure": null,
+          "sourceAlignment": "unresolved",
+          "lessonCompleted": false
+        },
+        "streams": {
+          "main": {
+            "phase": "paused",
+            "epoch": 3,
+            "decodedSample": 0,
+            "contextTime": 17.42077097505669,
+            "heldContextTime": 0.156734693877551,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "wrong": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 17.443990929705215,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct358": {
+            "phase": "playing",
+            "epoch": 12,
+            "decodedSample": 2093.9999999999854,
+            "contextTime": 17.443990929705215,
+            "heldContextTime": null,
+            "playbackAnchor": {
+              "contextTime": 17.432380952380953,
+              "decodedSample": 1838
+            },
+            "elapsedMs": 94.96598639455716,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct432": {
+            "phase": "buffer-ended",
+            "epoch": 7,
+            "decodedSample": 11935,
+            "contextTime": 17.449795918367347,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 1082.5396825396824,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct479": {
+            "phase": "paused",
+            "epoch": 7,
+            "decodedSample": 48128.00000000001,
+            "contextTime": 17.438185941043084,
+            "heldContextTime": 15.452879818594104,
+            "playbackAnchor": null,
+            "elapsedMs": 2182.6757369614515,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          }
+        }
+      }
+    },
+    {
+      "ordinal": 10,
+      "question": 10,
+      "feedback": {
+        "kind": "correct",
+        "spriteId": 479,
+        "branch": null,
+        "frame": 3,
+        "endFrame": 28,
+        "token": "0:10:10"
+      },
+      "score": 100,
+      "scoreFrame": 11,
+      "audio": {
+        "owner": "correct479",
+        "selected": {
+          "phase": "playing",
+          "epoch": 9,
+          "decodedSample": 2176.000000000035,
+          "contextTime": 19.71954648526077,
+          "heldContextTime": null,
+          "playbackAnchor": {
+            "contextTime": 19.620861678004534,
+            "decodedSample": 0
+          },
+          "elapsedMs": 98.68480725623742,
+          "volume": 1,
+          "failure": null,
+          "sourceAlignment": "unresolved",
+          "lessonCompleted": false
+        },
+        "streams": {
+          "main": {
+            "phase": "paused",
+            "epoch": 3,
+            "decodedSample": 0,
+            "contextTime": 19.702131519274378,
+            "heldContextTime": 0.156734693877551,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "wrong": {
+            "phase": "ready",
+            "epoch": 1,
+            "decodedSample": 0,
+            "contextTime": 19.725351473922903,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 0,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct358": {
+            "phase": "paused",
+            "epoch": 13,
+            "decodedSample": 49837.99999999998,
+            "contextTime": 19.725351473922903,
+            "heldContextTime": 19.60925170068027,
+            "playbackAnchor": null,
+            "elapsedMs": 2260.2267573696136,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct432": {
+            "phase": "buffer-ended",
+            "epoch": 7,
+            "decodedSample": 11935,
+            "contextTime": 19.736961451247165,
+            "heldContextTime": null,
+            "playbackAnchor": null,
+            "elapsedMs": 1082.5396825396824,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          },
+          "correct479": {
+            "phase": "playing",
+            "epoch": 9,
+            "decodedSample": 2176.000000000035,
+            "contextTime": 19.71954648526077,
+            "heldContextTime": null,
+            "playbackAnchor": {
+              "contextTime": 19.620861678004534,
+              "decodedSample": 0
+            },
+            "elapsedMs": 98.68480725623742,
+            "volume": 1,
+            "failure": null,
+            "sourceAlignment": "unresolved",
+            "lessonCompleted": false
+          }
+        }
+      }
+    }
+  ],
+  "final": {
+    "state": {
+      "epoch": 0,
+      "seed": 0,
+      "rngState": 1135788946,
+      "phase": "final",
+      "mainFrame": 673,
+      "mainPlaying": false,
+      "paused": false,
+      "score": 100,
+      "scoreAnimation": null,
+      "drawCount": 11,
+      "remaining": [],
+      "order": [
+        3,
+        1,
+        4,
+        5,
+        7,
+        8,
+        9,
+        6,
+        2,
+        10
+      ],
+      "responses": [
+        {
+          "questionId": 3,
+          "choice": "B",
+          "correct": true
+        },
+        {
+          "questionId": 1,
+          "choice": "D",
+          "correct": true
+        },
+        {
+          "questionId": 4,
+          "choice": "D",
+          "correct": true
+        },
+        {
+          "questionId": 5,
+          "choice": "C",
+          "correct": true
+        },
+        {
+          "questionId": 7,
+          "choice": "B",
+          "correct": true
+        },
+        {
+          "questionId": 8,
+          "choice": "C",
+          "correct": true
+        },
+        {
+          "questionId": 9,
+          "choice": "D",
+          "correct": true
+        },
+        {
+          "questionId": 6,
+          "choice": "A",
+          "correct": true
+        },
+        {
+          "questionId": 2,
+          "choice": "A",
+          "correct": true
+        },
+        {
+          "questionId": 10,
+          "choice": "B",
+          "correct": true
+        }
+      ],
+      "questionId": null,
+      "questionGeneration": 10,
+      "selectionSerial": 10,
+      "startRequested": false,
+      "directionsOpen": false,
+      "feedback": null,
+      "wrongText": null,
+      "audioOwner": null,
+      "audioSerial": 11,
+      "lessonCompleted": false
+    },
+    "audio": {
+      "owner": null,
+      "selected": null,
+      "streams": {
+        "main": {
+          "phase": "paused",
+          "epoch": 3,
+          "decodedSample": 0,
+          "contextTime": 21.78031746031746,
+          "heldContextTime": 0.156734693877551,
+          "playbackAnchor": null,
+          "elapsedMs": 0,
+          "volume": 1,
+          "failure": null,
+          "sourceAlignment": "unresolved",
+          "lessonCompleted": false
+        },
+        "wrong": {
+          "phase": "ready",
+          "epoch": 1,
+          "decodedSample": 0,
+          "contextTime": 21.803537414965987,
+          "heldContextTime": null,
+          "playbackAnchor": null,
+          "elapsedMs": 0,
+          "volume": 1,
+          "failure": null,
+          "sourceAlignment": "unresolved",
+          "lessonCompleted": false
+        },
+        "correct358": {
+          "phase": "paused",
+          "epoch": 13,
+          "decodedSample": 49837.99999999998,
+          "contextTime": 21.803537414965987,
+          "heldContextTime": 19.60925170068027,
+          "playbackAnchor": null,
+          "elapsedMs": 2260.2267573696136,
+          "volume": 1,
+          "failure": null,
+          "sourceAlignment": "unresolved",
+          "lessonCompleted": false
+        },
+        "correct432": {
+          "phase": "buffer-ended",
+          "epoch": 7,
+          "decodedSample": 11935,
+          "contextTime": 21.81514739229025,
+          "heldContextTime": null,
+          "playbackAnchor": null,
+          "elapsedMs": 1082.5396825396824,
+          "volume": 1,
+          "failure": null,
+          "sourceAlignment": "unresolved",
+          "lessonCompleted": false
+        },
+        "correct479": {
+          "phase": "paused",
+          "epoch": 10,
+          "decodedSample": 48000.00000000005,
+          "contextTime": 21.797732426303856,
+          "heldContextTime": 21.797732426303856,
+          "playbackAnchor": null,
+          "elapsedMs": 2176.8707482993223,
+          "volume": 1,
+          "failure": null,
+          "sourceAlignment": "unresolved",
+          "lessonCompleted": false
+        }
+      }
+    },
+    "ready": true,
+    "failure": null,
+    "spanishSelected": false,
+    "spanishLoading": false,
+    "visualClockRunning": false,
+    "clockAuthority": "engineering-12fps-audio-context-observer",
+    "sourceFrameAlignmentAccepted": false,
+    "listeningAccepted": false,
+    "lessonCompleted": false
+  },
+  "cleanup": {
+    "contexts": [
+      "closed",
+      "closed",
+      "closed",
+      "closed",
+      "closed"
+    ],
+    "cleanupCalls": 1,
+    "players": 0
+  },
+  "errors": [],
+  "technicalPlayback": true,
+  "myLessonIntegration": false,
+  "originalRuntimeAccepted": false,
+  "listeningAccepted": false,
+  "registered": false
+}

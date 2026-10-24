@@ -1,0 +1,153 @@
+{
+  "kind": "p058-maintained-fixture-root-review-v1",
+  "at": "2026-10-03T02:33:25.997213+00:00",
+  "status": "local-fixture-verified",
+  "sourceModel": {
+    "path": "migrations/shared-alg001-l06-p058/native-v1/source-model-v1.json",
+    "bytes": 2190983,
+    "sha256": "0241cb5d6f0427442f56d6ac9a5188e56f9c2a7394134ab2b897092003f22c04"
+  },
+  "sourceProbe": {
+    "path": "output/playwright/g678-p058-source-controls-20261003-v1/root-review-v1.json",
+    "bytes": 3841,
+    "sha256": "5a7a393d2e7d40572d90f3dbc8cb164749345e64bbaa4a68998a3805c9a2924c"
+  },
+  "sourceCanvas": {
+    "path": "migrations/shared-alg001-l06-p058/canvas-v1/canvas-renderer-draft.js",
+    "bytes": 11258560,
+    "sha256": "bd89e6fa6d8209ae0fe12c0a1388cac2944122e8d01d6491c3fb5db4cefb1494"
+  },
+  "audioMeasurement": {
+    "path": "migrations/shared-alg001-l06-p058/audit-v1/browser-decode-v1.json",
+    "bytes": 3794,
+    "sha256": "f319546c50c2001f8e3a8b3f5d6b2f2e66de65d99c2f85a7970d84b67a65b557"
+  },
+  "flows": [
+    {
+      "path": "migrations/shared-alg001-l06-p058/audit-v1/browser-walkthrough-v1.json",
+      "bytes": 1357,
+      "sha256": "ec8a8278cae08d1d9d00a9e99a3270c1065314b56e3774dfeb4454179dc22302"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p058/audit-v1/browser-branches-v1.json",
+      "bytes": 7421,
+      "sha256": "cb636637d4b80651bdca0822863b0b64b778e9ec8e3108977acbb28708f4a515"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p058/audit-v1/browser-continuation-v1.json",
+      "bytes": 2679,
+      "sha256": "2c039700083e4410f0461562ffb3f27175fa769c9a1124910681df7af0396b54"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p058/audit-v1/browser-pending-v1.json",
+      "bytes": 429,
+      "sha256": "6039172bb12f9e9d1740f09ecb831d53d8c88bc87dcded421e400e00c2ee7294"
+    }
+  ],
+  "viewedScreenshots": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/g678-p058-native-browser-20261003-v1/canvas-0-v2.png",
+      "bytes": 40427,
+      "sha256": "e5111228a5c8884db99c092a1d19e80307d0db0294d0521cbc9a1feef5017041"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/g678-p058-native-browser-20261003-v1/canvas-5-v2.png",
+      "bytes": 42545,
+      "sha256": "4114d3acdf486f8aabae4f344879cfdb11b69bdee1f23883e175527947798ef0"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/g678-p058-native-browser-20261003-v1/canvas-6-v2.png",
+      "bytes": 64753,
+      "sha256": "efd0281ccf9c6177cea5ee424be73319440581dc0deaf97dcea8d50447efbb15"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/g678-p058-native-browser-20261003-v1/player-step3-v1.png",
+      "bytes": 196788,
+      "sha256": "1ee9666f9ddcade32bd267ca63295fb66f49855aba76d630dec168da704328b8"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/g678-p058-native-browser-20261003-v1/player-step4-v1.png",
+      "bytes": 220723,
+      "sha256": "1f2b39e5ca231b48388b27028ac4bdae1c71560c5a73ef9fb7c1da625066009e"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/g678-p058-native-browser-20261003-v1/player-help-v1.png",
+      "bytes": 276495,
+      "sha256": "678825e90c683018103b64ed8954400fbe260f025923b830c9b1b12d76cfd8c2"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/g678-p058-native-browser-20261003-v1/es-390-20px-v1.png",
+      "bytes": 265809,
+      "sha256": "a3cef6091be9e814e908e0ca6818d2bc1095f1050eec7e1c1f2d99ba3f9d3927"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/g678-p058-native-browser-20261003-v1/es-1360-20px-v1.png",
+      "bytes": 289036,
+      "sha256": "283897d9758454b669e3149ba69ad5950c6eadaaf78a67983bdc912338ab1ea6"
+    }
+  ],
+  "checks": {
+    "tests": 19,
+    "typescript": {
+      "path": "migrations/shared-alg001-l06-p058/audit-v1/player-typecheck-v1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "draftSchema": {
+      "path": "migrations/shared-alg001-l06-p058/audit-v1/draft-schema-v1.txt",
+      "bytes": 229,
+      "sha256": "02417841a5ba92fd5ca183bbb56f868ba375f6f0161ad0d061025bbe32c381ff"
+    }
+  },
+  "findings": [
+    "All seven feedbacks and two-wrong continuation passed with source audio; all four main holds retained.",
+    "Right terminal parent play then feedback reset occurs in one action; shared reducer retires feedback atomically before main tick. No original timing claim.",
+    "Shape156 XML deltas independently equal all fifteen segments and five quadratics. Original grid/labels retained; native labels inspected at20px and390/1360px.",
+    "Need More Help only934; source function268 help; Graph/Function/Time live dictionary; inactive218 never requested.",
+    "Explicit SA, natural EOF hold, pending load Replay/leave passed; contexts close.",
+    "React review: direct source imports, small native projections, stable callbacks and refs, parallel audio preparation, epoch/ticket guards, RAF and media cleanup."
+  ],
+  "rework": [
+    {
+      "cause": "Title insertion numeric rewrite changed0.05 to0.5; durable generator now asserts exact root placement and uses0.05.",
+      "failure": {
+        "path": "migrations/shared-alg001-l06-p058/audit-v1/canvas-title-scale-failed-v1.json",
+        "bytes": 1027,
+        "sha256": "ccb8f451e2907d9c5c78e688fc3448e333547bf5b433fa165221d6f76fde0d58"
+      },
+      "captures": "failed canvas-*-v1.png retained; corrected v2 viewed"
+    },
+    {
+      "cause": "Initial raw test mapped frame403 into a button identifier; source button255 corrected in test only.",
+      "failure": {
+        "path": "migrations/shared-alg001-l06-p058/audit-v1/targeted-tests-v1.txt",
+        "bytes": 3011,
+        "sha256": "0b3619008e27b262d437a74a79a171234cddb9c8d2268a2ff4edefc2730c75ee"
+      },
+      "result": {
+        "path": "migrations/shared-alg001-l06-p058/audit-v1/targeted-tests-v2.txt",
+        "bytes": 2193,
+        "sha256": "f8e7eecdb7d04d00522f6306e4d90eceaf4a14c17e2f935a61d2de5fdbb9294b"
+      }
+    }
+  ],
+  "cleanup": {
+    "path": "migrations/shared-alg001-l06-p058/audit-v1/fixture-cleanup-v1.json",
+    "bytes": 331,
+    "sha256": "d3dfab738f943baa8b6cacae7a8f8363f2802ac1af4b255751f413cdc94fbcd1"
+  },
+  "currentJsRegistered": false,
+  "myLessonVerified": false,
+  "acceptanceEffects": {
+    "originalRuntime": false,
+    "fidelity": false,
+    "audio": false,
+    "listening": false,
+    "human": false,
+    "owner": false,
+    "strictComplete": false,
+    "release": false,
+    "publication": false,
+    "deployment": false
+  }
+}

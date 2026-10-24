@@ -1,0 +1,26 @@
+✔ P048 answer labels come from source hit geometry, not AnsBtn numbering (1.443875ms)
+✔ source main clamps at quiz224; natural end327 is not lesson completion (0.419875ms)
+✔ all nine wrong-answer pairs require Close and count only at tail31 (0.445ms)
+✔ right after any first wrong preserves source count and does not choose a random variant (0.11025ms)
+✔ paused main/head/tail cannot advance until explicitly resumed (0.096166ms)
+✔ help -> host glossary -> help -> quiz retains attempt and selection (0.110375ms)
+✔ all four main glossary terms are unavailable at frame1 and return held (0.091542ms)
+✔ Replay and leave invalidate stale generation, feedback and audio callbacks (0.117875ms)
+✔ old feedback token and old retry generation cannot alter the new attempt (0.089ms)
+✔ P049 exposes real table rows and answer B association, excluding unrelated library charts (5.551583ms)
+✔ P049 preserves alpha-positive option/reveal boundaries and paired 8,800 emphasis (7.430875ms)
+✔ P049 right4 native message is supported by source text186 (0.597958ms)
+✔ P049 B is correct; authored 159/160/401 and right4 192/25 (0.775125ms)
+✔ P049 wrong popup15, stop22, Close23 and attempt increment only at28 (0.216667ms)
+✔ P049 help Convert glossary retains retry; right after one wrong preserves count (0.132708ms)
+✔ P049 Replay and leave reject stale answer, feedback and audio callbacks (0.439666ms)
+✔ source contract rejects random selection and wrong reset semantics (0.141333ms)
+✔ shared core preserves actual frozen P048 reducer across both answer paths and lifecycle (1.005834ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 236.168292

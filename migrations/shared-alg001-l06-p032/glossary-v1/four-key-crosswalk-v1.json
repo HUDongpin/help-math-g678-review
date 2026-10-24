@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p032-four-glossary-source-crosswalk-v1",
+  "animationId": "shared-alg001-l06-p032",
+  "sourcePlan": {
+    "path": "migrations/shared-alg001-l06-p032/audit/source-planning-v1/source-plan-v1.json",
+    "bytes": 11398,
+    "sha256": "593976a049450ddb17d0b344f8877ffe110c312c5324a3527358c62538f92d26"
+  },
+  "parser": {
+    "path": "scripts/build-g678-alg-l11-instructional-successor-glossary.mjs",
+    "bytes": 12493,
+    "sha256": "25c9aa4c25a4bc84539b080cebb8dfcbaee5f57189531c6798be14e87ac09d59"
+  },
+  "external": [
+    {
+      "root": "/Volumes/WestWorld/HELP MATH Related Files/HELP_OnlineKeyTerms_XML/MI",
+      "pin": {
+        "path": "L1KTE01.xml",
+        "bytes": 345838,
+        "sha256": "14d454f4c1c1a6f0939fb80b454fd3e22890eabb4a730c6bfa7efa1d9a2e5e5b"
+      }
+    },
+    {
+      "root": "/Volumes/WestWorld/HELP MATH Related Files/HELP_OnlineKeyTerms_XML/MI",
+      "pin": {
+        "path": "L1KTS01.xml",
+        "bytes": 344456,
+        "sha256": "3b437b42e75536fa8b4f110325e366c27fbe10a871439d4797650cda4238b407"
+      }
+    }
+  ],
+  "entries": [
+    {
+      "id": "function",
+      "sourceKeyAttribute": "Function",
+      "labels": {
+        "en": "Function",
+        "es": "Función"
+      },
+      "definitions": {
+        "en": "A special relation in which every value of x has one, and only one, value of y.",
+        "es": "Relación especial en la cual a cada valor x le corresponde solamente un valor y."
+      },
+      "source": {
+        "en": {
+          "assetId": "G678L1KTE01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTE01.xml",
+          "sha256": "14d454f4c1c1a6f0939fb80b454fd3e22890eabb4a730c6bfa7efa1d9a2e5e5b"
+        },
+        "es": {
+          "assetId": "G678L1KTS01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTS01.xml",
+          "sha256": "3b437b42e75536fa8b4f110325e366c27fbe10a871439d4797650cda4238b407"
+        }
+      },
+      "sourceEntrySha256": {
+        "en": "bc0f40b8bdcc75633dd2ce1de92ea861198a5343564a757ea5f466681dcb9249",
+        "es": "47b6db9a18b6e7372ce870bb9f8f1b4862c92a023ef8a0d8abbe7148796448cc"
+      },
+      "extractionLfNormalizedEntrySha256": {
+        "en": "bc0f40b8bdcc75633dd2ce1de92ea861198a5343564a757ea5f466681dcb9249",
+        "es": "47b6db9a18b6e7372ce870bb9f8f1b4862c92a023ef8a0d8abbe7148796448cc"
+      }
+    },
+    {
+      "id": "ordered-pair",
+      "sourceKeyAttribute": "Ordered pair",
+      "labels": {
+        "en": "Ordered pair",
+        "es": "Par ordenado"
+      },
+      "definitions": {
+        "en": "An ordered pair of numbers in math is two numbers presented in a specific order, often used to plot points on a graph. For example, (1, 2) is an ordered pair of numbers with an x-value of 1 and a y-value of 2. (2,1) refers to a different point.",
+        "es": "Un par ordenado de números en matemáticas son dos números presentados en un orden específico, por lo general, utilizado para representar puntos en una gráfica. Por ejemplo: (1, 2) es un par ordenado de números con un valor x de 1 y un valor y de 2. El par ordenado (2,1) se refiere a un punto diferente."
+      },
+      "source": {
+        "en": {
+          "assetId": "G678L1KTE01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTE01.xml",
+          "sha256": "14d454f4c1c1a6f0939fb80b454fd3e22890eabb4a730c6bfa7efa1d9a2e5e5b"
+        },
+        "es": {
+          "assetId": "G678L1KTS01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTS01.xml",
+          "sha256": "3b437b42e75536fa8b4f110325e366c27fbe10a871439d4797650cda4238b407"
+        }
+      },
+      "sourceEntrySha256": {
+        "en": "19c90b0f29d16cf964c615445c7e90d436c3ae3854b555e35d9335a41b7113f8",
+        "es": "59a64b8dbe33fd825ea4301a23c640ea72f29262c172016d33f3b7f35b20ba23"
+      },
+      "extractionLfNormalizedEntrySha256": {
+        "en": "19c90b0f29d16cf964c615445c7e90d436c3ae3854b555e35d9335a41b7113f8",
+        "es": "90ff88004ddb46d1b7c7733817f171d1c4d8a768596e31dc4f9db9e470297818"
+      }
+    },
+    {
+      "id": "set",
+      "sourceKeyAttribute": "Set",
+      "labels": {
+        "en": "Set",
+        "es": "Conjunto"
+      },
+      "definitions": {
+        "en": "A group or collection of things or numbers. For example red, green, blue, and purple is a set of four colors. The word \"seven\" would not fit in this set because it is not a color.",
+        "es": "Grupo o colección de cosas, objetos o números. Por ejemplo rojo, verde, azul y morado, es un conjunto de cuatro colores. La palabra \"siete\" no sería parte de este conjunto porque no es un color."
+      },
+      "source": {
+        "en": {
+          "assetId": "G678L1KTE01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTE01.xml",
+          "sha256": "14d454f4c1c1a6f0939fb80b454fd3e22890eabb4a730c6bfa7efa1d9a2e5e5b"
+        },
+        "es": {
+          "assetId": "G678L1KTS01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTS01.xml",
+          "sha256": "3b437b42e75536fa8b4f110325e366c27fbe10a871439d4797650cda4238b407"
+        }
+      },
+      "sourceEntrySha256": {
+        "en": "efa4f1742ed47a8ada39e32fec358523a4acc2819d624732918897f5a4284433",
+        "es": "24f7bf185e3eab0297be84e47c22adc8c58d00222247672ffe8e3a6ed3897dfe"
+      },
+      "extractionLfNormalizedEntrySha256": {
+        "en": "efa4f1742ed47a8ada39e32fec358523a4acc2819d624732918897f5a4284433",
+        "es": "dad642a9be4e3ad9c3cdeb25c16af71d808efa43a1731ead3b500c589bed6ed9"
+      }
+    },
+    {
+      "id": "x-coordinate",
+      "sourceKeyAttribute": "X-coordinate",
+      "labels": {
+        "en": "X-coordinate",
+        "es": "Coordenada x"
+      },
+      "definitions": {
+        "en": "The first number in an ordered pair or set of coordinates; gives the horizontal location of the point; if the value is positive, the location will be to the right of the origin; if the value is negative, the location will be to the left of the origin.",
+        "es": "El primer número de un par ordenado o conjunto de coordenadas; indica la ubicación horizontal de el punto; si el valor es positivo, la ubicación será a la derecha del origen, si el valor es negativo, el punto se ubicará a la izquierda del origen."
+      },
+      "source": {
+        "en": {
+          "assetId": "G678L1KTE01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTE01.xml",
+          "sha256": "14d454f4c1c1a6f0939fb80b454fd3e22890eabb4a730c6bfa7efa1d9a2e5e5b"
+        },
+        "es": {
+          "assetId": "G678L1KTS01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTS01.xml",
+          "sha256": "3b437b42e75536fa8b4f110325e366c27fbe10a871439d4797650cda4238b407"
+        }
+      },
+      "sourceEntrySha256": {
+        "en": "51ce66169263c668e08646f78c365e641bd4c0ecc99044699a8408879988a13d",
+        "es": "25ef9da07c2ee3459c3cefd82096a87bbd7fcd1f46df1b052145caf8d86a50e5"
+      },
+      "extractionLfNormalizedEntrySha256": {
+        "en": "51ce66169263c668e08646f78c365e641bd4c0ecc99044699a8408879988a13d",
+        "es": "25ef9da07c2ee3459c3cefd82096a87bbd7fcd1f46df1b052145caf8d86a50e5"
+      }
+    }
+  ],
+  "addedEntry": {
+    "id": "x-coordinate",
+    "sourceKeyAttribute": "X-coordinate",
+    "labels": {
+      "en": "X-coordinate",
+      "es": "Coordenada x"
+    },
+    "definitions": {
+      "en": "The first number in an ordered pair or set of coordinates; gives the horizontal location of the point; if the value is positive, the location will be to the right of the origin; if the value is negative, the location will be to the left of the origin.",
+      "es": "El primer número de un par ordenado o conjunto de coordenadas; indica la ubicación horizontal de el punto; si el valor es positivo, la ubicación será a la derecha del origen, si el valor es negativo, el punto se ubicará a la izquierda del origen."
+    },
+    "source": {
+      "en": {
+        "assetId": "G678L1KTE01.xml",
+        "path": "HELP_KEYTERMS/KT/XML/L1KTE01.xml",
+        "sha256": "14d454f4c1c1a6f0939fb80b454fd3e22890eabb4a730c6bfa7efa1d9a2e5e5b"
+      },
+      "es": {
+        "assetId": "G678L1KTS01.xml",
+        "path": "HELP_KEYTERMS/KT/XML/L1KTS01.xml",
+        "sha256": "3b437b42e75536fa8b4f110325e366c27fbe10a871439d4797650cda4238b407"
+      }
+    },
+    "sourceEntrySha256": {
+      "en": "51ce66169263c668e08646f78c365e641bd4c0ecc99044699a8408879988a13d",
+      "es": "25ef9da07c2ee3459c3cefd82096a87bbd7fcd1f46df1b052145caf8d86a50e5"
+    },
+    "extractionLfNormalizedEntrySha256": {
+      "en": "51ce66169263c668e08646f78c365e641bd4c0ecc99044699a8408879988a13d",
+      "es": "25ef9da07c2ee3459c3cefd82096a87bbd7fcd1f46df1b052145caf8d86a50e5"
+    }
+  },
+  "definitionOnly": true,
+  "extraExampleRendererRequired": false,
+  "originalClickObserved": false,
+  "sourceAlignmentAccepted": false
+}

@@ -1,0 +1,56 @@
+{
+  "kind": "p049-adpcm-codec-correction-v1",
+  "cause": "Prior producer unconditionally removed MP3-only four-byte headers from ADPCM SoundStreamBlock.",
+  "oldMp3Rejected": true,
+  "rawBinaryAndSwfmillAgree": true,
+  "browserDecodeReceipt": "output/playwright/alg-l06-p049-native-v1/decode-v1-run.json",
+  "downstreamRebound": [
+    "source-model-v2",
+    "native-bindings-v3",
+    "canvas-v2"
+  ],
+  "originalRuntimeAccepted": false,
+  "listeningAccepted": false,
+  "files": [
+    {
+      "path": "migrations/shared-alg001-l06-p049/generator-v1/derive-source-model-v1.py",
+      "bytes": 12881,
+      "sha256": "ebd5e5a50f8e9948a7f6db89481100aaa173dbb3b021db4bca1e992f9bd60a73"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p049/native-v1/source-model-v1.json",
+      "bytes": 506571,
+      "sha256": "81f503a766465d83f78826c079b695491327d908d37af0b36c60ae20cb430c58"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p049/assets/source-stream-192-right4.mp3",
+      "bytes": 3718,
+      "sha256": "ade1c20e2e29f00f8485b5c4a3fc391f1856cc53160774b58d1affed84315a92"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p049/generator-v1/derive-source-model-v2.py",
+      "bytes": 13363,
+      "sha256": "e4df17f6adb477f81ef1f14e023b968e92fa030fc9ad9a360295be5a3f0f2f7a"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p049/native-v1/source-model-v2.json",
+      "bytes": 506774,
+      "sha256": "8faf55033928e8449c96fe3a9c1a7504b7f119119f2f90a4f81d8caf309b11ff"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p049/assets/source-stream-192-right4.swf-adpcm-blocks.bin",
+      "bytes": 3770,
+      "sha256": "e5c99e029d9df7717bc7755b5f4660841ad3f453d10bb8dbc8010d69b5a653b6"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p049/assets/source-stream-192-right4.wav",
+      "bytes": 11978,
+      "sha256": "f3e05365073feff502feda8779b3d3a5e3ba4ca6ee213e7a162e1ad5b3961eb8"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p049/audit-v1/adpcm-right4-decode-v1.json",
+      "bytes": 1279,
+      "sha256": "189a07f289fcb93d80b3a575a89b2292123d4a90739526d4e3c1db8f68c38627"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "kind": "g678-p003-unregistered-drawing-candidate-receipt",
+  "recordedAt": "2026-09-25T03:15:38Z",
+  "animationId": "shared-alg001-l06-p003",
+  "sourceSwfSha256": "c3d265b61aedccc48e679cbecfe6424a2a78f2a9cb5cfa2a33791fa124933766",
+  "generator": {
+    "path": "scripts/build-g678-alg-l06-p003-canvas-candidate-v1.mjs",
+    "sha256": "0405970e4fc7d34413c916de273e823fbb417e12077953a49facdf79c08f4d1a",
+    "sourceAuditSha256": "26d5e3a113fd0268d678b8831b70deedfa913c84beb017f3c2e1b7f1a71ec35f",
+    "sourceMask": {"characterId": 1, "depth": 1, "clipDepth": 94, "sourceAlpha": 0.2509804, "candidateAlpha": 1},
+    "checkResult": "same-byte-regeneration-passed"
+  },
+  "candidate": {
+    "directory": "/Volumes/American Dream/hudongpin/g678-p003-candidate.AXwt5X",
+    "manifestSha256": "1bba74ef7833920a07c8fc288c29b6eebc3c771b08f766ee80f3630e5046c4b0",
+    "canvasRendererSha256": "12dd005081028a24f968036996b69baae98401e0d39ff6bdb221330a4062f487",
+    "frameCount": 719,
+    "frameDomain": "sprite-154",
+    "registrationStatus": "unregistered-drawing-only"
+  },
+  "browserQa": {
+    "browser": "Playwright Chromium",
+    "status": "engineering-spot-check-only",
+    "framesObserved": [1, 502, 531, 544, 719],
+    "screenshots": [
+      {"frame": 1, "file": "/Volumes/American Dream/hudongpin/g678-p003-candidate.AXwt5X/qa/frame-001.png", "sha256": "99d6abb81b5cf69d630797dd8b811a29914946f684e3920cddc2d7dfffbe1dd1"},
+      {"frame": 502, "file": "/Volumes/American Dream/hudongpin/g678-p003-candidate.AXwt5X/qa/frame-502.png", "sha256": "5cf4af289b07a7f8187a90cd61a422474ddd4dc09fde202c505e1c9e5fb35b96"},
+      {"frame": 531, "file": "/Volumes/American Dream/hudongpin/g678-p003-candidate.AXwt5X/qa/frame-531.png", "sha256": "5e0cd346b488a30998f984a938fed1e03e9e5c275e4c325a04396c2281c1598f"},
+      {"frame": 544, "file": "/Volumes/American Dream/hudongpin/g678-p003-candidate.AXwt5X/qa/frame-544.png", "sha256": "b7383eac37b52b1ad4c6e21566a5e9ae684a2368c28b46f6bdfaec72008e8298"},
+      {"frame": 719, "file": "/Volumes/American Dream/hudongpin/g678-p003-candidate.AXwt5X/qa/frame-719.png", "sha256": "b2fc7592624a59eec454993efb468327a8c22e4d728724fa89c83aa4508d96fb"}
+    ],
+    "screenshotPreviewNote": "Screenshots came from the immediately preceding preview build with the same canvasRendererSha256; the final preview changed only the favicon link and was rechecked at frame 531 with zero console errors.",
+    "finalPreviewConsoleErrors": 0,
+    "originalRuntimeAuthority": false,
+    "fullFrameCoverage": false,
+    "visualFidelityAccepted": false
+  },
+  "audioSchedule": {
+    "path": "packages/demos/src/alg-l06-p003-source-audio-schedule-v1.ts",
+    "sha256": "7e60fcae23facf10b7e8af9ed17bc49071adf1124233382fd3da4e4b4704e4e0",
+    "status": "pure-source-block-boundary-candidate",
+    "transportIntegrated": false,
+    "browserPcmVerified": true,
+    "browserPcmEvidence": "audit/browser-pcm-v1.json",
+    "listeningAccepted": false
+  },
+  "acceptanceEffects": {
+    "currentJsRegistered": false,
+    "myLessonIntegrated": false,
+    "originalRuntimeAccepted": false,
+    "audioAccepted": false,
+    "humanAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "published": false
+  }
+}

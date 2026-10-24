@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "kind": "alg-l06-p032-audio-domain-plan-v1",
+  "status": "source-extraction-plus-chrome-decode; no playback, host, or listening acceptance",
+  "sourcePlan": {
+    "path": "migrations/shared-alg001-l06-p032/audit/source-planning-v1/source-plan-v1.json",
+    "bytes": 11398,
+    "sha256": "593976a049450ddb17d0b344f8877ffe110c312c5324a3527358c62538f92d26"
+  },
+  "physicalSourceRoot": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware",
+  "sourceSwf": {
+    "path": "G6-G8-shared/ALG001/L6/IN/L6IN04.swf",
+    "bytes": 146070,
+    "sha256": "e425600d0b6cfab41ae50f7512cb8e6c4e3c6ee04bbfa10c29b437459876d836"
+  },
+  "sourceXml": {
+    "path": "G6-G8-shared/ALG001/L6/index.xml",
+    "bytes": 13926,
+    "sha256": "9f3753a17e5e271d7bc63a1bdf8cd5237f19770bae3f5c7364cabcb62c84ce2c"
+  },
+  "browserDecodeEvidence": {
+    "path": "migrations/shared-alg001-l06-p032/audio-source-v1/chrome-decode-v1/browser-decode-v1.json",
+    "bytes": 1299,
+    "sha256": "053da9d023865b72ea5a45e82dcabb0a779514b8ea0603dda1325e54219929f9"
+  },
+  "browserRawEvidence": {
+    "path": "migrations/shared-alg001-l06-p032/audio-source-v1/chrome-decode-v1/browser-decode-raw-v1.txt",
+    "bytes": 1409,
+    "sha256": "71631f8827fe9ba6b8b13cfc6e355c0ed2ee7980576e39226d7812d906d2649e"
+  },
+  "browserSourceEvidence": {
+    "path": "migrations/shared-alg001-l06-p032/audio-source-v1/chrome-decode-v1/sources-v1.json",
+    "bytes": 459,
+    "sha256": "25a794f96c5e0986f717060fc87140fe49d17ef13a44d7784e14c5a2bcad1dca"
+  },
+  "browserHistoricalReadback": {
+    "path": "migrations/shared-alg001-l06-p032/audio-source-v1/chrome-decode-v1/readback-pins-v1.json",
+    "bytes": 2364,
+    "sha256": "b8b4f1203e56ada0ff2040a55df6a2af2c12e77b0d2ff26a14be8828d3ba5cf5"
+  },
+  "frameDomain": "sprite-22",
+  "fps": 12,
+  "rootEntryFrame": 6,
+  "visualFrames": 413,
+  "main": {
+    "asset": {
+      "path": "migrations/shared-alg001-l06-p032/audio-source-v1/main-source-v1.mp3",
+      "bytes": 171080,
+      "sha256": "2584a692ee3936f02c3dc491872225f020744ce92710f890e1a31d468a75c85b"
+    },
+    "blockSchedule": {
+      "path": "migrations/shared-alg001-l06-p032/audio-source-v1/main-block-schedule-v1.json",
+      "bytes": 60494,
+      "sha256": "8a950367e0bedea837153757fa5817d897f9ec93c311172b16880a9c1c56d1e3"
+    },
+    "firstBlockFrame": 1,
+    "lastBlockFrame": 413,
+    "blockCount": 413,
+    "declaredSamples": 758016,
+    "latencySeekSamples": 1673,
+    "firstBlock": {
+      "frame": 1,
+      "samples": 3456,
+      "seek": 1673,
+      "mp3Bytes": 780
+    },
+    "zeroPayloadFrames": [
+      2
+    ],
+    "negativeSeekFrames": [],
+    "sourceSampleRate": 22050,
+    "sourceChannels": 1,
+    "ffmpegPcmCandidate": {
+      "format": "mono-f32le",
+      "sampleRate": 22050,
+      "channels": 1,
+      "samples": 758016,
+      "sha256": "3d1b76c12063ffc8886251b0648551f45656142e518c6e166663dc6258379051",
+      "browserBinding": false
+    },
+    "browserBinding": {
+      "sourceSha256": "2584a692ee3936f02c3dc491872225f020744ce92710f890e1a31d468a75c85b",
+      "sourceBytes": 171080,
+      "sampleRate": 22050,
+      "channels": 1,
+      "decodedSamples": 758016,
+      "pcmSha256": "6b33e50188fb094d75efc85565431551186f9fe47cea5020a6e73f5342940373"
+    },
+    "nativeEofRequired": true,
+    "visualEndDoesNotEstablishEof": true,
+    "sourceFrameToDecodedSampleAlignmentAccepted": false
+  },
+  "optionalSpanishAudio": {
+    "source": {
+      "path": "G6-G8-shared/ALG001/L6/SA/L6IN04.mp3",
+      "bytes": 232176,
+      "sha256": "9cdf2402eea05caebc190680eff4b15ee3baada80e366ed4e4ac96df7f3dd478"
+    },
+    "asset": {
+      "path": "migrations/shared-alg001-l06-p032/audio-source-v1/separate-sa-source-v1.mp3",
+      "bytes": 232176,
+      "sha256": "9cdf2402eea05caebc190680eff4b15ee3baada80e366ed4e4ac96df7f3dd478"
+    },
+    "trigger": "explicit-user-only",
+    "localeAutoplay": false,
+    "joinedWithMain": false,
+    "sourceSampleRate": 48000,
+    "sourceChannels": 1,
+    "ffmpegPcmCandidate": {
+      "format": "mono-f32le",
+      "sampleRate": 48000,
+      "channels": 1,
+      "samples": 796032,
+      "sha256": "95da9f0f4b8ae43948d1711993b0323929fb1a1bce43252a54698b8c3d7f2517",
+      "browserBinding": false
+    },
+    "browserBinding": {
+      "sourceSha256": "9cdf2402eea05caebc190680eff4b15ee3baada80e366ed4e4ac96df7f3dd478",
+      "sourceBytes": 232176,
+      "sampleRate": 48000,
+      "channels": 1,
+      "decodedSamples": 796032,
+      "pcmSha256": "9d800df26565b9c8c5b572e0e2f4ed3618b52ac5d99438f2c53f6674d3f7be19"
+    },
+    "hostTriggerVerified": false
+  },
+  "cueEvidence": {
+    "rootFrame6PlacesSprite22": true,
+    "glossaryButtons": [
+      {
+        "buttonId": 7,
+        "key": "Set",
+        "presentSpans": [
+          [
+            1,
+            413
+          ]
+        ],
+        "hostStopRequested": true
+      },
+      {
+        "buttonId": 8,
+        "key": "Ordered pair",
+        "presentSpans": [
+          [
+            1,
+            413
+          ]
+        ],
+        "hostStopRequested": true
+      },
+      {
+        "buttonId": 9,
+        "key": "Function",
+        "presentSpans": [
+          [
+            1,
+            413
+          ]
+        ],
+        "hostStopRequested": true
+      },
+      {
+        "buttonId": 12,
+        "key": "X-coordinate",
+        "presentSpans": [
+          [
+            60,
+            413
+          ]
+        ],
+        "hostStopRequested": true
+      }
+    ],
+    "heldGlossaryReturnRequiresHostValidation": true
+  },
+  "limits": {
+    "browserDecodeObserved": true,
+    "playbackObserved": false,
+    "originalRuntimeObserved": false,
+    "sourceSyncAccepted": false,
+    "listeningAccepted": false,
+    "audioAccepted": false,
+    "currentJsRegistered": false
+  }
+}

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript" src="canvas.js"></script><style type="text/css">#resizable {position:relative; display:inline-block; margin:0; padding:0;font-size:0px;} #width_size {width:10px; position:absolute; right:-5px; top:0px; bottom:0px; cursor:e-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #height_size {height:10px; position:absolute; bottom:-5px; left:0px; right:0px; cursor:n-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #myCanvas {margin:0; padding:0;} </style></head><body>
+
+<div id="resizable"><canvas id="myCanvas" width="201" height="147" style="border:1px solid #c3c3c3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas><div id="width_size">&nbsp;</div><div id="height_size">&nbsp;</div></div>
+
+<script>var canvas=document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+enhanceContext(ctx);
+var ctrans = new cxform(0,0,0,0,255,255,255,255);
+
+var scalingGrids = {};
+var boundRects = {};
+function shape114(ctx,ctrans,frame,ratio,time){
+	var pathData="M 2017 -432 L 601 -432 601 -918 601 -432 2017 -432 2017 36 2017 522 2017 1008 2017 1476 601 1476 -1937 1476 -1937 1008 -1937 522 -1937 36 -1937 -432 -1937 -918 601 -918 2017 -918 2017 -432 M 2017 36 L 601 36 601 -432 -1937 -432 601 -432 601 36 2017 36 M 601 36 L -1937 36 601 36 601 522 2017 522 601 522 601 36 M 601 522 L -1937 522 601 522 601 1008 -1937 1008 601 1008 601 522 M 601 1476 L 601 1008 2017 1008 601 1008 601 1476";
+	ctx.fillStyle=tocolor(ctrans.apply([243,228,177,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M 2017 -918 L 601 -918 -1937 -918 -1937 -1476 2017 -1476 2017 -918";
+	ctx.fillStyle=tocolor(ctrans.apply([241,221,156,1]));
+	drawPath(ctx,pathData,false);
+	ctx.fill("evenodd");
+	var pathData="M 601 -918 L 601 -432 2017 -432 2017 -918 601 -918 -1937 -918 -1937 -432 601 -432 601 36 2017 36 2017 -432 M -1937 -918 L -1937 -1476 2017 -1476 2017 -918 M 2017 36 L 2017 522 2017 1008 2017 1476 601 1476 -1937 1476 -1937 1008 -1937 522 -1937 36 -1937 -432 M 601 36 L 601 522 2017 522 M 2017 1008 L 601 1008 601 1476 M 601 522 L 601 1008 -1937 1008 M -1937 522 L 601 522 M -1937 36 L 601 36";
+	var scaleMode = "NORMAL";
+	ctx.strokeStyle=tocolor(ctrans.apply([0,0,0,1]));
+	ctx.lineWidth=0.05;
+	ctx.lineCap="round";
+	ctx.lineJoin="round";
+	drawPath(ctx,pathData,true,scaleMode);
+
+}
+
+function font115(ctx,ch,textColor){
+	defaultFill = textColor;
+	switch(ch){
+		case " ":
+			break;
+		case ".":
+			var pathData="M 79 -60 L 79 -60 Q 79 -32 99 -12 118 7 147 7 175 7 195 -12 215 -32 215 -60 215 -88 196 -108 176 -128 147 -128 118 -128 98 -108 79 -88 79 -60";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "2":
+			var pathData="M 179 -113 L 397 -269 Q 469 -325 503 -382 536 -439 536 -506 536 -605 468 -669 400 -734 295 -734 188 -734 118 -667 48 -600 48 -497 48 -422 87 -367 127 -311 205 -282 L 297 -366 Q 230 -374 198 -409 166 -443 166 -499 166 -554 202 -589 237 -625 291 -625 345 -625 380 -591 416 -556 416 -504 416 -466 398 -433 381 -400 340 -356 L 93 -169 Q 68 -149 54 -126 40 -104 40 -82 40 -43 66 -21 91 0 135 0 L 532 0 532 -113 179 -113";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "D":
+			var pathData="M 189 -105 L 189 0 207 0 336 -12 Q 394 -24 434 -48 522 -100 570 -181 617 -263 617 -361 617 -460 572 -539 526 -618 439 -671 396 -697 336 -709 L 195 -722 64 -722 64 0 177 0 177 -619 195 -620 211 -620 Q 345 -620 423 -550 501 -481 501 -362 501 -246 425 -175 349 -104 222 -104 L 208 -105 189 -105";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "H":
+			var pathData="M 64 0 L 177 0 177 -322 459 -322 459 0 573 0 573 -722 459 -722 459 -430 177 -430 177 -722 64 -722 64 0";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "S":
+			var pathData="M 35 0 L 267 0 Q 382 0 445 -51 509 -103 509 -197 509 -258 475 -304 442 -351 357 -387 L 261 -439 Q 192 -478 174 -498 155 -518 155 -545 155 -574 175 -592 196 -609 232 -609 L 476 -609 476 -722 263 -722 Q 159 -722 99 -674 38 -625 38 -542 38 -483 71 -438 104 -393 186 -358 L 304 -298 Q 350 -268 371 -245 392 -221 392 -192 392 -153 365 -133 339 -113 285 -113 L 35 -113 35 0";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "U":
+			var pathData="M 171 -722 L 58 -722 58 -270 Q 58 -141 127 -64 196 13 312 13 427 13 497 -64 566 -142 566 -270 L 566 -722 453 -722 453 -275 Q 453 -186 416 -141 380 -96 312 -96 243 -96 207 -141 171 -186 171 -275 L 171 -722";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "a":
+			var pathData="M 427 0 L 534 0 534 -212 528 -310 Q 521 -345 508 -365 475 -436 414 -473 354 -509 283 -509 173 -509 102 -436 31 -363 31 -251 31 -183 60 -127 88 -71 142 -34 171 -13 206 -3 L 277 8 349 0 Q 382 -8 418 -29 L 418 -137 345 -103 Q 317 -93 287 -93 223 -93 181 -138 140 -182 140 -253 140 -322 180 -365 221 -408 283 -408 347 -408 387 -364 427 -321 427 -249 L 427 0";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "b":
+			var pathData="M 51 -722 L 51 -289 Q 51 -223 58 -189 64 -156 78 -130 110 -64 171 -27 231 9 303 9 412 9 484 -64 555 -138 555 -251 555 -317 526 -373 498 -429 443 -467 L 379 -498 308 -509 237 -500 Q 203 -492 167 -472 L 167 -363 240 -397 299 -407 Q 364 -407 405 -364 447 -321 447 -252 447 -179 406 -136 366 -92 302 -92 238 -92 198 -135 159 -179 159 -251 L 159 -722 51 -722";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "c":
+			var pathData="M 376 -398 L 376 -501 323 -501 218 -490 Q 176 -479 142 -456 87 -419 59 -366 30 -312 30 -251 30 -137 110 -68 190 0 323 0 L 376 0 376 -101 328 -101 Q 242 -101 191 -142 140 -182 140 -250 140 -317 191 -358 242 -398 328 -398 L 376 -398";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "d":
+			var pathData="M 536 -722 L 429 -722 429 -251 Q 429 -179 389 -136 349 -92 285 -92 222 -92 182 -135 141 -178 141 -248 141 -318 183 -363 225 -407 289 -407 L 347 -397 420 -363 420 -471 Q 384 -492 350 -500 L 279 -509 Q 228 -509 181 -488 134 -467 106 -433 67 -393 50 -347 33 -301 33 -251 33 -138 104 -65 175 9 284 9 357 9 417 -27 477 -64 510 -130 L 530 -190 Q 536 -224 536 -289 L 536 -722";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "e":
+			var pathData="M 536 -231 L 430 -246 Q 418 -170 380 -132 341 -94 284 -94 224 -94 182 -140 140 -185 140 -252 140 -319 182 -364 224 -409 284 -409 L 338 -398 381 -373 147 -244 189 -165 519 -346 Q 481 -430 421 -470 361 -510 285 -510 233 -510 187 -491 141 -471 102 -422 68 -396 49 -350 30 -303 30 -251 30 -180 63 -121 97 -62 157 -25 185 -8 218 1 L 283 10 Q 381 10 449 -52 517 -114 536 -231";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "i":
+			var pathData="M 50 -628 L 50 -628 Q 50 -601 69 -583 87 -564 113 -564 139 -564 157 -583 175 -601 175 -628 175 -654 157 -672 139 -690 113 -690 86 -690 68 -672 50 -654 50 -628 M 60 0 L 167 0 167 -501 60 -501 60 0";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "k":
+			var pathData="M 60 0 L 167 0 167 -222 258 -222 Q 303 -222 323 -201 343 -179 343 -131 L 343 0 451 0 451 -142 Q 451 -214 420 -254 390 -295 335 -301 347 -297 366 -319 385 -340 404 -371 L 477 -501 360 -501 296 -396 Q 270 -354 249 -340 228 -326 194 -326 L 167 -326 167 -722 60 -722 60 0";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "n":
+			var pathData="M 52 0 L 159 0 159 -287 Q 159 -341 189 -373 220 -406 267 -406 315 -406 345 -373 376 -340 376 -287 L 376 0 482 0 482 -272 Q 482 -380 423 -445 365 -509 267 -509 170 -509 111 -445 52 -381 52 -272 L 52 0";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "r":
+			var pathData="M 59 0 L 166 0 166 -236 Q 166 -328 202 -367 239 -406 323 -406 L 347 -406 347 -509 314 -509 Q 246 -509 204 -489 163 -469 159 -429 L 159 -501 59 -501 59 0";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "s":
+			var pathData="M 36 -102 L 36 0 208 0 Q 315 0 368 -34 421 -69 421 -141 421 -192 391 -226 360 -259 277 -293 L 190 -328 Q 164 -339 154 -349 144 -358 144 -369 144 -384 154 -392 165 -400 185 -400 L 397 -400 397 -501 208 -501 Q 127 -501 82 -467 37 -433 37 -369 37 -318 66 -285 96 -252 171 -222 L 259 -188 300 -163 Q 311 -152 311 -138 311 -122 297 -112 282 -102 254 -102 L 36 -102";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "t":
+			var pathData="M 54 -628 L 54 -189 Q 54 -94 107 -47 161 0 267 0 L 306 0 306 -102 268 -102 Q 211 -102 186 -126 161 -150 161 -203 L 161 -399 306 -399 306 -501 161 -501 161 -628 54 -628";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "u":
+			var pathData="M 482 -501 L 376 -501 376 -213 Q 376 -160 345 -127 315 -94 267 -94 220 -94 189 -127 159 -159 159 -213 L 159 -501 52 -501 52 -228 Q 52 -119 110 -55 169 9 266 9 365 9 423 -55 482 -120 482 -228 L 482 -501";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+		case "y":
+			var pathData="M 481 -501 L 375 -501 375 -213 Q 375 -160 345 -127 315 -94 267 -94 220 -94 189 -127 159 -159 159 -213 L 159 -501 52 -501 52 -228 Q 52 -132 94 -74 135 -16 213 3 L 213 214 320 214 320 3 Q 397 -16 439 -75 481 -133 481 -228 L 481 -501";
+			ctx.fillStyle=defaultFill;
+			drawPath(ctx,pathData,false);
+			ctx.fill("evenodd");
+			break;
+	}
+}
+
+function text116(ctx,ctrans,frame,ratio,time){
+	var textColor = tocolor(ctrans.apply([0,0,0,1]));
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,0.0,280.0);
+	font115(ctx,"U",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,181.0,280.0);
+	font115(ctx,".",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,264.0,280.0);
+	font115(ctx,"S",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,422.0,280.0);
+	font115(ctx,".",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,505.0,280.0);
+	font115(ctx," ",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,588.0,280.0);
+	font115(ctx,"H",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,773.0,280.0);
+	font115(ctx,"u",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,928.0,280.0);
+	font115(ctx,"r",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,1026.0,280.0);
+	font115(ctx,"r",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,1124.0,280.0);
+	font115(ctx,"i",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,1186.0,280.0);
+	font115(ctx,"c",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,1302.0,280.0);
+	font115(ctx,"a",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,1472.0,280.0);
+	font115(ctx,"n",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,1627.0,280.0);
+	font115(ctx,"e",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,1791.0,280.0);
+	font115(ctx," ",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,1874.0,280.0);
+	font115(ctx,"S",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,2032.0,280.0);
+	font115(ctx,"t",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,2127.0,280.0);
+	font115(ctx,"r",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,2225.0,280.0);
+	font115(ctx,"i",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,2287.0,280.0);
+	font115(ctx,"k",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,2430.0,280.0);
+	font115(ctx,"e",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,2594.0,280.0);
+	font115(ctx,"s",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,2725.0,280.0);
+	font115(ctx," ",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,2808.0,280.0);
+	font115(ctx,"b",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,2978.0,280.0);
+	font115(ctx,"y",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,3133.0,280.0);
+	font115(ctx," ",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,3216.0,280.0);
+	font115(ctx,"D",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,3405.0,280.0);
+	font115(ctx,"e",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,3569.0,280.0);
+	font115(ctx,"c",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,3685.0,280.0);
+	font115(ctx,"a",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,3855.0,280.0);
+	font115(ctx,"d",textColor);
+	ctx.restore();
+	ctx.save();
+	ctx.transform(0.29296875,0.0,0.0,0.29296875,4025.0,280.0);
+	font115(ctx,"e",textColor);
+	ctx.restore();
+}
+
+function sprite132(ctx,ctrans,frame,ratio,time){
+	ctx.save();
+	ctx.transform(1,0,0,1,96.85,73.8);
+	var clips = [];
+	var frame_cnt = 1;
+	frame = frame % frame_cnt;
+	switch(frame){
+		case 0:
+			place("shape114",canvas,ctx,[0.05,0.0,0.0,0.05,0.0,0.0],ctrans,1,0,0,time);
+			place("text116",canvas,ctx,[0.04499969482421875,0.0,0.0,0.04499969482421875,-91.45,-68.2],ctrans,1,0,0,time);
+			break;
+	}
+	ctx.restore();
+}
+
+var frame = -1;
+var time = 0;
+var frames = [];
+frames.push(0);
+
+var backgroundColor = "#ffffff";
+var originalWidth = 201;
+var originalHeight= 147;
+function nextFrame(ctx,ctrans){
+	var oldframe = frame;
+	frame = (frame+1)%frames.length;
+	if(frame==oldframe){time++;}else{time=0;};
+	drawFrame();
+}
+
+function drawFrame(){
+	ctx.fillStyle = backgroundColor;
+	ctx.fillRect(0,0,canvas.width,canvas.height);
+	ctx.save();
+	ctx.transform(canvas.width/originalWidth,0,0,canvas.height/originalHeight,0,0);
+	sprite132(ctx,ctrans,frames[frame],0,time);
+	ctx.restore();
+}
+
+window.setInterval(function(){nextFrame(ctx,ctrans);},83);
+nextFrame(ctx,ctrans);
+</script>
+</body>
+</html>
