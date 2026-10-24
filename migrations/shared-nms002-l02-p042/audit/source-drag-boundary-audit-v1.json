@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "6dce91764e5744cf72cbdb2a2d1a10990a1c3eb1f42f5aace4cb3be33a67fad0",
+  "evidence": [
+    {
+      "path": "migrations/shared-nms002-l02-p042/audit/source-structure-v1.json",
+      "sha256": "08b741c8a6fa8dce01ededc1b631aaffe49e8be7a62d168fd08aeb19ef5696a4"
+    }
+  ],
+  "sourceGeometry": {
+    "lineShapeId": 251,
+    "lineBoundsTwips": {
+      "left": "-2308",
+      "right": "2317",
+      "top": "-240",
+      "bottom": "242"
+    },
+    "boundsWidthPixels": 231.25,
+    "handlePlacementXPixels": -165.9,
+    "loadResetXPixels": -142.95,
+    "derivedDragMinimumX": -185.9,
+    "derivedDragMaximumX": -14.650000000000006
+  },
+  "qualification": "Bounds-derived drag limits are a static inference; Flash _width and callback order require runtime verification.",
+  "staticCounterexample": {
+    "startPercentages": [
+      25,
+      25,
+      25,
+      25
+    ],
+    "dragHandle": 1,
+    "targetX": -99,
+    "mappedPercent": 50,
+    "stateAfterUpdate": [
+      50,
+      0,
+      25,
+      25
+    ],
+    "thenDragHandle": 2,
+    "nextTargetX": -99,
+    "nextMappedPercent": 50,
+    "nextStateFromSourceEquations": [
+      50,
+      50,
+      -25,
+      25
+    ],
+    "reason": "Second press records pair 0 and 25; delta 50 yields successor -25. Source pre-update guard checks previous successor <=0 and does not clamp desired percentage to pair total.",
+    "claim": "Static equation trace, not an observed original-runtime result."
+  },
+  "implementationRequirement": "Preserve three adjacent-pair transfer controls and total 100, with explicit source-discrepancy evidence before adding mathematically valid bounds. Do not label corrected bounds source parity.",
+  "accepted": false
+}

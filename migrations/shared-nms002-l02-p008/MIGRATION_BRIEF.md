@@ -1,0 +1,11 @@
+# NMS002 Lesson 2 page 8: Decimal vocabulary
+
+Exact SWF 120754 bytes, SHA256 `997876146ea02743532b9475914e047a1b300574f7659d66698ac2994bc9ad02`, global8/VB2/XML Decimal. SWF-only. Root10 stops6; main39 has310 frames at12fps and noStop. The source-loop query remains distinct from the modern host policy: one complete310/12-second cycle then hold310 for reading; Replay resets1.
+
+Native source text follows all310 source glyph-visibility states. Six term gates complete at11/47/65/133/160/200. Two equal-sized square examples preserve source grid paths, color, alpha, placement and progressive fill: 1/10,2/10,3/10 and10/100,20/100,30/100,35/100. Values0.3 and0.35 first appear237/292 as native MathML. Independent browser point-in-fill and point-in-stroke checks confirm all seven fill stages and internal division lines. No future example is exposed at Replay or reduced-motion start.
+
+All20 source shapes and15 reconstructed source frames inspected. Remove outlined heading3, legacy panel4, underlines6/12/15/27 and hitbox8. Retain mask geometry5/11. Shapes30/31/32 combine grid, fill and outlined Tenths: the maintained generator removes only path1 while retaining the other exact paths. Native Tenths combines source text20/23 and later outlined label timing. Source font contours remain diagnostic only. EN uses source wording; ES discloses English page fallback and offers six source Spanish glossary definitions. Original NMSL2 host lookup and glossary companion media remain unverified.
+
+Embedded MP3 127140 bytes, SHA256 ea235ecf5a54a0a37de91e5ec25c8bc6f42b913569ec3c53f8382bbccabceff1. Two Chromium decodes yield563328 mono22050Hz samples with identical PCM hashes. Declared1673-sample latency removed; every561655 remaining sample retained exactly once. Frame4 offset5512.5 rounds to5513 samples, a documented+0.5-sample quantization. Prepared total569625 samples includes2457 silent tail. Real browser signal, mute, pause, narration stop, Replay, full-cycle completion and context cleanup passed; listening and source-runtime alignment remain open.
+
+Bounded compiler-assisted advanced-manual candidate. Actual My Lesson and Current-JS admission pending. Admitted count remains429/2282. Original-runtime, fidelity, audio acceptance, human/Owner, strict completion, release and publication gates remain separate.

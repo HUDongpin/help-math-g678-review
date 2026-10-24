@@ -1,0 +1,101 @@
+{
+  "checkedAt": "2026-09-12T19:19:24.920361+00:00",
+  "status": "SOURCE_BEHAVIOR_IDENTIFIED",
+  "animationId": "shared-nms002-l02-p006",
+  "sourceSha256": "b6afc05a82304d3e0721933c2b4c3f1d8740fc46699125b1ff5149e096601b4e",
+  "sourceBytes": 1338727,
+  "rootFrames": 10,
+  "rootStop": 6,
+  "mainDomain": "sprite-54",
+  "mainFrames": 153,
+  "mainStop": 153,
+  "otherDomains": {
+    "sprite-30": 17,
+    "sprite-57": 1
+  },
+  "sourceTexts": [
+    {
+      "characterId": 44,
+      "runs": [
+        "Essential Question:",
+        "  ",
+        "How do you ",
+        "convert fractions "
+      ]
+    },
+    {
+      "characterId": 51,
+      "runs": [
+        "to ",
+        "decimals",
+        " and ",
+        "percents",
+        "?"
+      ]
+    },
+    {
+      "characterId": 55,
+      "runs": [
+        "Fractions, Decimals and Percent Concepts: ",
+        "Real World Activity"
+      ]
+    }
+  ],
+  "sourceShapes": 41,
+  "buttonActions": [
+    {
+      "buttonId": 46,
+      "sourceKey": "Convert",
+      "trigger": "pointerReleaseInside",
+      "sourceAction": "_global.KeyAttribute;_root.DoHyperLinks();_root.animation_mc.animation.stop()",
+      "nativeDisposition": "Source-bound glossary term activation and source-clock pause; no quiz answer is implied."
+    },
+    {
+      "buttonId": 47,
+      "sourceKey": "Fraction",
+      "trigger": "pointerReleaseInside",
+      "sourceAction": "_global.KeyAttribute;_root.DoHyperLinks();_root.animation_mc.animation.stop()",
+      "nativeDisposition": "Source-bound glossary term activation and source-clock pause; no quiz answer is implied."
+    },
+    {
+      "buttonId": 52,
+      "sourceKey": "Decimal",
+      "trigger": "pointerReleaseInside",
+      "sourceAction": "_global.KeyAttribute;_root.DoHyperLinks();_root.animation_mc.animation.stop()",
+      "nativeDisposition": "Source-bound glossary term activation and source-clock pause; no quiz answer is implied."
+    },
+    {
+      "buttonId": 53,
+      "sourceKey": "Percent",
+      "trigger": "pointerReleaseInside",
+      "sourceAction": "_global.KeyAttribute;_root.DoHyperLinks();_root.animation_mc.animation.stop()",
+      "nativeDisposition": "Source-bound glossary term activation and source-clock pause; no quiz answer is implied."
+    }
+  ],
+  "audio": {
+    "stream": {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p006-behavior-source-v1/audio/sprite-54/source-stream.mp3",
+      "bytes": 58370,
+      "sha256": "304bb247f277f8de9ff8a33145dd0c283986572f81640353b8b6f1b756c6a486"
+    },
+    "firstFrame": 13,
+    "lastFrame": 153,
+    "sampleRate": 22050,
+    "channels": 1,
+    "rawSampleCount": 258624,
+    "decodePending": true
+  },
+  "candidateSA": {
+    "bytes": 164640,
+    "sha256": "db8d39678e9b90319e2fbf27bd859733ea78e9dedcfabdcd2e53d243feb3566c",
+    "activated": false
+  },
+  "registered": false,
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false,
+  "humanAccepted": false,
+  "ownerAccepted": false,
+  "strictComplete": false,
+  "published": false,
+  "next": "Audit glyph/mask/button visibility and exact existing glossary source bindings, then native Essential Question/term integration."
+}

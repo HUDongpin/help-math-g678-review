@@ -1,0 +1,27 @@
+{
+  "animationId": "shared-nms002-l02-p047",
+  "sourceSha256": "6298123b7431ed8aad86a409125c7db979bfeeaf272efd67188d12f66e2d7df6",
+  "implemented": [
+    "Nine equally spaced marks, endpoints0/1, worked3/4, matched fractions and four source cards",
+    "Pointer capture with6px drag threshold, outside drop, pointer cancellation and Escape",
+    "Keyboard/click select-then-target alternative with status feedback",
+    "Wrapping44px minimum buttons, visible focus, relative font sizing"
+  ],
+  "nativeAdapters": [
+    "A\u2013G mark labels and wrapped target buttons are accessibility additions.",
+    "Native pointer targets are equal-width cells, not original Flash hit areas."
+  ],
+  "validation": {
+    "testsPassed": 2,
+    "strictTypecheck": "PASS",
+    "scope": "Coordinate mapping and server-rendered markup only; actual pointer, keyboard focus, browser rendering and CSS layout remain pending."
+  },
+  "pending": [
+    "Integrate stylesheet and component into full view",
+    "Help/glossary and intro view",
+    "Actual browser large-text/narrow-screen and pointer/keyboard checks"
+  ],
+  "currentJsRegistered": false,
+  "audioAccepted": false,
+  "originalRuntimeAccepted": false
+}

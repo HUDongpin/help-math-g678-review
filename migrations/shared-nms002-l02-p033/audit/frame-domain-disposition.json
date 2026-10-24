@@ -1,0 +1,225 @@
+{
+  "animationId": "shared-nms002-l02-p033",
+  "sourceSha256": "b1e2c172985b504c8afbe69367862e8d7835eab993996aa699849ac88135b4a1",
+  "domains": [
+    {
+      "id": "root",
+      "kind": "root",
+      "sourceTimelineId": "root",
+      "parentFrameDomainId": null,
+      "frameCount": 10,
+      "scenarioIds": [
+        "source-hundredths-quiz"
+      ]
+    },
+    {
+      "id": "sprite-9",
+      "kind": "nested",
+      "sourceTimelineId": "9",
+      "parentFrameDomainId": "root",
+      "frameCount": 1,
+      "scenarioIds": [
+        "source-hundredths-quiz"
+      ]
+    },
+    {
+      "id": "sprite-55",
+      "kind": "nested",
+      "sourceTimelineId": "55",
+      "parentFrameDomainId": "sprite-58",
+      "frameCount": 1,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-58",
+      "kind": "nested",
+      "sourceTimelineId": "58",
+      "parentFrameDomainId": "sprite-221",
+      "frameCount": 29,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-70",
+      "kind": "nested",
+      "sourceTimelineId": "70",
+      "parentFrameDomainId": "sprite-73",
+      "frameCount": 1,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-73",
+      "kind": "nested",
+      "sourceTimelineId": "73",
+      "parentFrameDomainId": "sprite-221",
+      "frameCount": 28,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-93",
+      "kind": "nested",
+      "sourceTimelineId": "93",
+      "parentFrameDomainId": "sprite-94",
+      "frameCount": 1,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-94",
+      "kind": "nested",
+      "sourceTimelineId": "94",
+      "parentFrameDomainId": "sprite-221",
+      "frameCount": 28,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-99",
+      "kind": "nested",
+      "sourceTimelineId": "99",
+      "parentFrameDomainId": "sprite-112",
+      "frameCount": 1,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-108",
+      "kind": "nested",
+      "sourceTimelineId": "108",
+      "parentFrameDomainId": "sprite-112",
+      "frameCount": 1,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-112",
+      "kind": "nested",
+      "sourceTimelineId": "112",
+      "parentFrameDomainId": "sprite-221",
+      "frameCount": 31,
+      "scenarioIds": [
+        "wrong-first",
+        "wrong-second"
+      ]
+    },
+    {
+      "id": "sprite-138",
+      "kind": "nested",
+      "sourceTimelineId": "138",
+      "parentFrameDomainId": "sprite-221",
+      "frameCount": 31,
+      "scenarioIds": [
+        "source-hundredths-quiz"
+      ]
+    },
+    {
+      "id": "sprite-150",
+      "kind": "nested",
+      "sourceTimelineId": "150",
+      "parentFrameDomainId": "sprite-221",
+      "frameCount": 27,
+      "scenarioIds": [
+        "source-hundredths-quiz"
+      ]
+    },
+    {
+      "id": "sprite-156",
+      "kind": "nested",
+      "sourceTimelineId": "156",
+      "parentFrameDomainId": "sprite-167",
+      "frameCount": 1,
+      "scenarioIds": [
+        "source-hundredths-quiz"
+      ]
+    },
+    {
+      "id": "sprite-164",
+      "kind": "nested",
+      "sourceTimelineId": "164",
+      "parentFrameDomainId": "sprite-167",
+      "frameCount": 1,
+      "scenarioIds": [
+        "source-hundredths-quiz"
+      ]
+    },
+    {
+      "id": "sprite-167",
+      "kind": "nested",
+      "sourceTimelineId": "167",
+      "parentFrameDomainId": "sprite-221",
+      "frameCount": 28,
+      "scenarioIds": [
+        "source-hundredths-quiz"
+      ]
+    },
+    {
+      "id": "sprite-181",
+      "kind": "nested",
+      "sourceTimelineId": "181",
+      "parentFrameDomainId": "sprite-221",
+      "frameCount": 32,
+      "scenarioIds": [
+        "source-hundredths-quiz"
+      ]
+    },
+    {
+      "id": "sprite-211",
+      "kind": "nested",
+      "sourceTimelineId": "211",
+      "parentFrameDomainId": "sprite-212",
+      "frameCount": 1,
+      "scenarioIds": [
+        "source-help"
+      ]
+    },
+    {
+      "id": "sprite-212",
+      "kind": "nested",
+      "sourceTimelineId": "212",
+      "parentFrameDomainId": "sprite-221",
+      "frameCount": 1,
+      "scenarioIds": [
+        "source-help"
+      ]
+    },
+    {
+      "id": "sprite-221",
+      "kind": "nested",
+      "sourceTimelineId": "221",
+      "parentFrameDomainId": "root",
+      "frameCount": 298,
+      "scenarioIds": [
+        "source-hundredths-quiz",
+        "wrong-first",
+        "wrong-second",
+        "source-help"
+      ]
+    }
+  ],
+  "dormantNativeDomains": [
+    "sprite-112",
+    "sprite-99",
+    "sprite-108"
+  ],
+  "originalRuntimeAccepted": false,
+  "qualification": "Static source reachability and query coverage; natural traces remain required for acceptance."
+}

@@ -1,0 +1,243 @@
+{
+  "checkedAt": "2026-09-19T18:11:37.768046+00:00",
+  "status": "preliminary-source-audit-only",
+  "animationId": "shared-nms002-l02-p033",
+  "source": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/IN/L2IN18.swf",
+    "bytes": 456495,
+    "sha256": "b1e2c172985b504c8afbe69367862e8d7835eab993996aa699849ac88135b4a1"
+  },
+  "sourceIdentity": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation126-p033-source-identity-v1.json",
+    "bytes": 3725,
+    "sha256": "2b95ad3ab0edbb550a442d88cf6456ad1e970c93a0cdda580a85eb7ba97dfb59"
+  },
+  "runtime": {
+    "stage": [
+      800,
+      600
+    ],
+    "fps": 12,
+    "rootFrames": 10,
+    "rootEntry": 6,
+    "mainDomain": "sprite-221",
+    "mainFrames": 298,
+    "domains": [
+      {
+        "id": "root",
+        "frames": 10
+      },
+      {
+        "id": "sprite-9",
+        "frames": 1
+      },
+      {
+        "id": "sprite-55",
+        "frames": 1
+      },
+      {
+        "id": "sprite-58",
+        "frames": 29
+      },
+      {
+        "id": "sprite-70",
+        "frames": 1
+      },
+      {
+        "id": "sprite-73",
+        "frames": 28
+      },
+      {
+        "id": "sprite-93",
+        "frames": 1
+      },
+      {
+        "id": "sprite-94",
+        "frames": 28
+      },
+      {
+        "id": "sprite-99",
+        "frames": 1
+      },
+      {
+        "id": "sprite-108",
+        "frames": 1
+      },
+      {
+        "id": "sprite-112",
+        "frames": 31
+      },
+      {
+        "id": "sprite-138",
+        "frames": 31
+      },
+      {
+        "id": "sprite-150",
+        "frames": 27
+      },
+      {
+        "id": "sprite-156",
+        "frames": 1
+      },
+      {
+        "id": "sprite-164",
+        "frames": 1
+      },
+      {
+        "id": "sprite-167",
+        "frames": 28
+      },
+      {
+        "id": "sprite-181",
+        "frames": 32
+      },
+      {
+        "id": "sprite-211",
+        "frames": 1
+      },
+      {
+        "id": "sprite-212",
+        "frames": 1
+      },
+      {
+        "id": "sprite-221",
+        "frames": 298
+      }
+    ],
+    "totalLocalFrames": 552
+  },
+  "sourceSummary": {
+    "fontRecords": 20,
+    "textDefinitions": 54,
+    "staticTextDefinitions": 50,
+    "dynamicFields": 4,
+    "textRuns": 60,
+    "decodedRuns": 60,
+    "unresolvedRuns": 0,
+    "timelines": 20,
+    "placementInstances": 274,
+    "placementEvents": 965,
+    "buttonDefinitions": 14,
+    "buttonStatePlacements": 53,
+    "shapeDefinitions": 120,
+    "bitmapDefinitions": 4,
+    "unparsedTags": 0
+  },
+  "risks": [
+    {
+      "kind": "nonzero-bytes-after-end",
+      "timelineId": "sprite-138"
+    },
+    {
+      "kind": "shape-text-unclassified",
+      "definitionCount": 120,
+      "meaning": "Shapes may include outlined text or mathematical symbols; presence is not confirmation of text."
+    },
+    {
+      "kind": "bitmap-text-unclassified",
+      "definitionCount": 4,
+      "meaning": "Bitmap presence does not establish embedded text; visual/source review required."
+    },
+    {
+      "kind": "button-runtime-state-and-actions-not-interpreted",
+      "definitionCount": 14
+    },
+    {
+      "kind": "dynamic-text-runtime-value-unresolved",
+      "fieldCount": 4
+    },
+    {
+      "kind": "actionscript-visibility-and-values-not-interpreted"
+    },
+    {
+      "kind": "mask-filter-blend-semantics-unresolved"
+    }
+  ],
+  "actions": {
+    "questionHold": 130,
+    "resume": 131,
+    "correctButtonCharacter": 31,
+    "correctInstance": "AnsBtn3",
+    "correctChoiceText": "0.25",
+    "incorrectChoices": [
+      "0.20",
+      "0.24",
+      "0.26"
+    ],
+    "wrongFeedCounter": "firstandlater source text; exactbranchclose/selectoranalysispending",
+    "helpPopup": "Mc_PopUp sprite212, NMHBtn33; fullnumeric/semanticvisualverificationpending",
+    "glossaryKeys": [
+      "Decimal",
+      "Place value",
+      "Ones group",
+      "Place value chart",
+      "Tenth",
+      "Hundredth"
+    ]
+  },
+  "audio": {
+    "sourceStreamCount": 9,
+    "allFfmpegEofDecoded": true,
+    "allBrowserDecodedTwiceIdentically": true,
+    "samples": {
+      "sprite-58": 51264,
+      "sprite-73": 45504,
+      "sprite-94": 48960,
+      "sprite-112": 52992,
+      "sprite-138": 52992,
+      "sprite-150": 47232,
+      "sprite-167": 48960,
+      "sprite-181": 54720,
+      "sprite-221": 535680
+    },
+    "actualPlaybackVerified": false,
+    "audioAccepted": false
+  },
+  "evidence": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p033-behavior-source-v1/extraction.json",
+      "bytes": 22496,
+      "sha256": "96cc223aa564efb01cc708c6116b0ebdc21575f844a52f8a4165b5c3ed08f5a3"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p033-behavior-source-v1/source-domain-summary-v1.json",
+      "bytes": 41460,
+      "sha256": "68f0d2ffae7ddb0106896818d2480d5c77af80b29a4e19c8bae1578102a4363c"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p033-behavior-source-v1/source-text-catalog-typography-v1.json",
+      "bytes": 1647186,
+      "sha256": "286d576cdda2bfa25b59479c3883ad6a800dcdb09a5299fe0f2c3eef41aeef68"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p033-behavior-source-v1/source-after-end-audit-v1.json",
+      "bytes": 699,
+      "sha256": "dbd3cb7fbdb19ffdb2d8b87e61ffc665d03f73452051fc90bc3551386e7b42e0"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p033-behavior-source-v1/audio/measured-source-v1/measurement.json",
+      "bytes": 14396,
+      "sha256": "e9fdd158c842debb7ff67b674021f40f35384c62536e48b01b6bfecb27d8734a"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p033-source-atlas-v1/receipt.json",
+      "bytes": 1530,
+      "sha256": "9c1122334102f16fdb4b3e27ab5d9abbd2e06f345b40a7ec8144f9b37f8718eb"
+    }
+  ],
+  "pending": [
+    "Resolve all20frame-domain instance semantics andsourcefeedbackselector/closebehavior",
+    "Inspect sourcegrid mathematicalcounts,helpcontent, masks/color/blend and feedbackart",
+    "Resolve sixexactglossarykeys andsourceHundredthalias onlyif sourceevidence warrants",
+    "Qualify386nonzeroafterEndbytesinsprite138; preserve rawsource and do not execute presumedtrailingtags",
+    "Prepare complete specification/inventories before nativeimplementation"
+  ],
+  "registered": false,
+  "originalRuntimeAccepted": false,
+  "fidelityAccepted": false,
+  "audioAccepted": false,
+  "humanAccepted": false,
+  "ownerAccepted": false,
+  "strictComplete": false,
+  "published": false
+}

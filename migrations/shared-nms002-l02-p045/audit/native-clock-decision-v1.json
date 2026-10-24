@@ -1,0 +1,19 @@
+{
+  "sourceSha256": "741913de5407656b5c20362d89762274bb04090a1685321cedc27e4ac00c1fcd",
+  "implementation": "packages/demos/src/nms-l02-p045-clock-v1.ts",
+  "phaseTiming": {
+    "intro": "(450-1)/12 seconds; enters practice450 and discards overrun",
+    "answerReveal": "(25-2)/12 seconds; source gotoAndPlay2 to callback25",
+    "continuation": "(498-450)/12 seconds; completes at498",
+    "feedback": "Caller-supplied validated durations from forthcoming audio plans; media end leaves dialog open"
+  },
+  "clockPolicy": [
+    "Pause stores elapsed time; resume anchors to the new monotonic time.",
+    "A phase boundary stops the anchor; a late tick cannot consume the next phase.",
+    "Nanosecond-scale boundary tolerance avoids floating-point loss at rational frame times.",
+    "Replay resets practice, elapsed, anchor and feedback branch while retaining timing configuration."
+  ],
+  "testQualification": "Clock tests use explicitly synthetic feedback durations. PCM scheduling, actual browser lifecycle and original-runtime parity are not established.",
+  "registered": false,
+  "originalRuntimeAccepted": false
+}

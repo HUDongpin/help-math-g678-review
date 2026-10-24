@@ -1,0 +1,29 @@
+{
+  "sourceSha256": "c82da2eb14e6db6fbb876e795edd8a8ebc1e890a52d9e7b1b1f5e66153b8cb62",
+  "contexts": {
+    "main": [
+      "equivalent-fraction",
+      "fraction",
+      "numerator",
+      "denominator"
+    ],
+    "definition": [
+      "equivalent-fraction",
+      "fraction",
+      "quantity"
+    ]
+  },
+  "policies": [
+    "Longer equivalent-fraction phrase matched first; next nonoverlapping fraction occurrence retained",
+    "All text characters reassemble exactly in both languages",
+    "Native nested dialog sets initial heading focus and remembers trigger; Escape stops propagation to parent feedback/help",
+    "Callback reports glossary open state for audio pause; caller must use stable callback",
+    "First wrong heading usesTryagain with source definition inlinked body and7/8=14/16example"
+  ],
+  "pending": [
+    "Actual nested modal focus and parent open-state tests",
+    "Real audio pause via assembledplayer callback",
+    "Source host lookup remains unverified"
+  ],
+  "originalRuntimeAccepted": false
+}

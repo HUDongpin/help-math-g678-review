@@ -1,0 +1,88 @@
+{
+  "sourceSha256": "741913de5407656b5c20362d89762274bb04090a1685321cedc27e4ac00c1fcd",
+  "scope": "Source direct-text and script semantics; remaining geometry/action trace audit is independent.",
+  "beats": [
+    {
+      "frame": 5,
+      "meaning": "Instruction and page number enter; form elements initially have zero alpha."
+    },
+    {
+      "frames": [
+        41,
+        44,
+        49,
+        54,
+        59,
+        64,
+        68,
+        74,
+        77,
+        82,
+        87,
+        92
+      ],
+      "meaning": "Source text58 annotates tenths at successive positions; nested/shape visibility still requires geometry audit."
+    },
+    {
+      "frame": 173,
+      "meaning": "Numerator example6 appears."
+    },
+    {
+      "frame": 235,
+      "meaning": "Denominator typing first shows1."
+    },
+    {
+      "frame": 237,
+      "meaning": "Denominator becomes10; example reads6/10."
+    },
+    {
+      "frame": 286,
+      "meaning": "Example input values cleared."
+    },
+    {
+      "frames": [
+        346,
+        361,
+        383
+      ],
+      "meaning": "Source emphasis sequences begin for numerator, denominator and values."
+    },
+    {
+      "frame": 450,
+      "meaning": "Live three-question practice initializes."
+    },
+    {
+      "frame": 498,
+      "meaning": "Authored terminal stop."
+    }
+  ],
+  "fraction58": {
+    "sourceTagSha256": "e489c89affa2b75394c9184c23b7deab032d763fe95e81c23e877b9920f078d5",
+    "runs": [
+      {
+        "text": "1",
+        "xOffsetTwips": 120,
+        "yOffsetTwips": 420
+      },
+      {
+        "text": "10",
+        "xOffsetTwips": 0,
+        "yOffsetTwips": 1040
+      }
+    ],
+    "semanticValue": "1/10",
+    "decision": "Do not use concatenated110; preserve stacked numerator/denominator semantics."
+  },
+  "wordingDecision": {
+    "source48": "Name the Fraction shown by the shope.",
+    "source128": "Name the Fraction shown by the shape.",
+    "plannedNativeWording": "Use the later source-correct shape wording consistently; retain original typo as source evidence."
+  },
+  "practiceImplementation": {
+    "path": "packages/demos/src/nms-l02-p045-practice-v1.ts",
+    "status": "unregistered pure state only",
+    "inputPolicy": "Compare input strings exactly to source answer strings; no silent trim/number parsing. HTML presentation and original-runtime equality validation remain separate.",
+    "seedPolicy": "Explicit deterministic native adapter; no Flash RNG parity claim."
+  },
+  "originalRuntimeAccepted": false
+}

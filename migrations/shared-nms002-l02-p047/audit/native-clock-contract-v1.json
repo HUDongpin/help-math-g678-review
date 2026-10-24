@@ -1,0 +1,23 @@
+{
+  "animationId": "shared-nms002-l02-p047",
+  "sourceSha256": "6298123b7431ed8aad86a409125c7db979bfeeaf272efd67188d12f66e2d7df6",
+  "clock": "Prepared PCM sample windows define intro, narration and feedback durations; silent celebration retains source frame2-to25 interval of23/12 seconds.",
+  "transitions": "Each phase stops at its boundary with no carried overshoot; the actual player must start the successor audio/timeline before advancing it.",
+  "pause": "Elapsed source time and prepared PCM offset are preserved; paused wall time is not consumed.",
+  "replay": "New phase token rejects stale phase updates.",
+  "validation": {
+    "combinedTestsPassed": 15,
+    "failed": 0,
+    "strictModuleTypecheck": "PASS with module esnext/moduleResolution bundler matching packages/demos/tsconfig.json",
+    "initialTypecheckIssue": "NodeNext invocation rejected extensionless imports. Corrected the validation invocation to project Bundler resolution; no import rewrite required."
+  },
+  "pending": [
+    "Web Audio decoding/loading/controller and onended integration",
+    "view and actual pointer/keyboard operation",
+    "real My Lesson host validation",
+    "independent acceptance"
+  ],
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false,
+  "currentJsRegistered": false
+}

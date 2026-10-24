@@ -1,0 +1,17 @@
+{
+  "sourceSha256": "741913de5407656b5c20362d89762274bb04090a1685321cedc27e4ac00c1fcd",
+  "implementation": "packages/demos/src/nms-l02-p045-audio-v1.ts",
+  "decode": "packages/demos/src/nms-l02-p045-audio-decode-v1.ts",
+  "sourceBinding": "Verify encoded byte length andSHA256, decode at source rate, validate decoded dimensions, prepare completePCM before window playback.",
+  "nativeLifecyclePolicy": [
+    "Cancel pending loads and current audio on phase-changing actions, Replay and close; stale results cannot start nodes.",
+    "Explicit feedback Close cancels any remaining feedback voice. Source scripts do not explicitly stop Coach audio on Close, so this is a documented native control policy, not original-runtime parity.",
+    "Main continuation plays source204continuationwindow; answer-reveal phase is silent and does not restart wrong feedback.",
+    "Opening a glossary pauses the clock/audio; closing does not silently resume, matching the exposed paused transport state.",
+    "Button effects use an independent node and cancellation ticket but share volume/narration controls."
+  ],
+  "validation": "Five injected-context lifecycle tests and targeted TypeScript passed. Real browser decode, audible output and My Lesson integration remain pending.",
+  "registered": false,
+  "audioAccepted": false,
+  "originalRuntimeAccepted": false
+}

@@ -1,0 +1,78 @@
+{
+  "sourceSha256": "6298123b7431ed8aad86a409125c7db979bfeeaf272efd67188d12f66e2d7df6",
+  "streams": [
+    {
+      "domain": "sprite-78",
+      "source": {
+        "path": "migrations/shared-nms002-l02-p047/audit/sprite-78-source-stream-v1.mp3",
+        "bytes": 7800,
+        "sha256": "8b843d72ae1de52bef4e2b22e65f6356f97dd115d8795bf9b3df69d87c3d16e7"
+      },
+      "pcm": {
+        "path": "migrations/shared-nms002-l02-p047/audit/sprite-78-source-pcm-v1.f32le",
+        "bytes": 138240,
+        "sha256": "6ab5d12917001820a58b0a2e09237a351602dfd56b33d78b5ad624348c50e299"
+      },
+      "format": "f32le",
+      "sampleRate": 22050,
+      "channels": 1,
+      "samples": 34560,
+      "seconds": 1.5673469387755101,
+      "peak": 0.2741737961769104,
+      "rms": 0.05499746857953768
+    },
+    {
+      "domain": "sprite-80",
+      "source": {
+        "path": "migrations/shared-nms002-l02-p047/audit/sprite-80-source-stream-v1.mp3",
+        "bytes": 21840,
+        "sha256": "e551e71005de2df6e95d44ca10fba65b6ae0131032336e67b2609c71b798e8cf"
+      },
+      "pcm": {
+        "path": "migrations/shared-nms002-l02-p047/audit/sprite-80-source-pcm-v1.f32le",
+        "bytes": 387072,
+        "sha256": "4bc7bde16304dee01cf09c3735118225a4773ac144642a9614627f31ccd5f129"
+      },
+      "format": "f32le",
+      "sampleRate": 22050,
+      "channels": 1,
+      "samples": 96768,
+      "seconds": 4.388571428571429,
+      "peak": 0.9846500754356384,
+      "rms": 0.11950621977572724
+    },
+    {
+      "domain": "sprite-81",
+      "source": {
+        "path": "migrations/shared-nms002-l02-p047/audit/sprite-81-source-stream-v1.mp3",
+        "bytes": 76960,
+        "sha256": "f2659f92f8b99414e789776ad264f7add8dda1a57d1635d3a0f3cfbff779cf13"
+      },
+      "pcm": {
+        "path": "migrations/shared-nms002-l02-p047/audit/sprite-81-source-pcm-v1.f32le",
+        "bytes": 1363968,
+        "sha256": "0d8c5cc7676a36206e9851b5a29f075e55fb5afdd8f668208ae6ceb762ba6e70"
+      },
+      "format": "f32le",
+      "sampleRate": 22050,
+      "channels": 1,
+      "samples": 340992,
+      "seconds": 15.464489795918368,
+      "peak": 1.7098890542984009,
+      "rms": 0.19969914180162623
+    }
+  ],
+  "decoder": {
+    "path": "/opt/homebrew/Cellar/ffmpeg/8.1.2_1/bin/ffmpeg",
+    "bytes": 426224,
+    "sha256": "dad4b30b36a1a999bfa4b6ffbde138bd17ee496c69e12eef638227dff2c6415c"
+  },
+  "probe": {
+    "path": "/opt/homebrew/Cellar/ffmpeg/8.1.2_1/bin/ffprobe",
+    "bytes": 236912,
+    "sha256": "cfeefcc9207eb3fa424679228fe3848db2921b15537d26c1ccc4a7a61de95d00"
+  },
+  "policy": "Decode each full original MP3 stream without cutting encoded bytes or forced resampling; frame scheduling remains separate.",
+  "audioAccepted": false,
+  "originalRuntimeAccepted": false
+}

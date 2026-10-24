@@ -1,0 +1,65 @@
+{
+  "sourceSha256": "741913de5407656b5c20362d89762274bb04090a1685321cedc27e4ac00c1fcd",
+  "fixed": {
+    "intro": {
+      "domain": "204",
+      "start": 0,
+      "end": 825038
+    },
+    "continuation": {
+      "domain": "204",
+      "start": 825038,
+      "end": 913238
+    },
+    "correct-feedback": {
+      "domain": "195",
+      "start": 1838,
+      "end": 36562
+    },
+    "click": {
+      "domain": "8",
+      "start": 0,
+      "end": 8805
+    }
+  },
+  "wrong": [
+    {
+      "label": "S1",
+      "domain": "197",
+      "start": 3675,
+      "end": 31238,
+      "authoredReturn": 27562
+    },
+    {
+      "label": "S2",
+      "domain": "197",
+      "start": 31238,
+      "end": 55125,
+      "authoredReturn": 47775
+    },
+    {
+      "label": "S3",
+      "domain": "197",
+      "start": 55125,
+      "end": 71662,
+      "authoredReturn": 64312
+    },
+    {
+      "label": "S4",
+      "domain": "197",
+      "start": 71662,
+      "end": 100608,
+      "authoredReturn": 97388
+    }
+  ],
+  "policy": [
+    "Main playback is partitioned at source-indexed practice450 and terminal498 boundaries; nearest-sample rounding is explicit.",
+    "The1477samples after terminal498 remain in the preserved full buffer but are not played by this stop-aligned native profile. This is not a claim of silence or original-runtime equivalence.",
+    "Correct feedback begins at source frame2, omitting pre-entry silence, and preserves its complete decoded tail.",
+    "Each selected wrong branch preserves the measured tail until the next authored label boundary, exclusive; final branch retains the full decoded end. Branches are not concatenated for playback.",
+    "Feedback media end leaves the dialog open; explicitClose is independent.",
+    "No encoded bytes are sliced. Human listening and original-runtime acceptance remain pending."
+  ],
+  "audioAccepted": false,
+  "originalRuntimeAccepted": false
+}

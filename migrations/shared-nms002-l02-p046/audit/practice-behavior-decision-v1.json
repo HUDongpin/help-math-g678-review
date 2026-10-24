@@ -1,0 +1,70 @@
+{
+  "animationId": "shared-nms002-l02-p046",
+  "sourceSha256": "c82da2eb14e6db6fbb876e795edd8a8ebc1e890a52d9e7b1b1f5e66153b8cb62",
+  "evidence": [
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/ffdec-scripts-v1/scripts/DefineButton2_19/BUTTONCONDACTION on(release).as",
+      "sha256": "adc7365071524c6aeec2db114125b000de13d7d91232212d888ef5dafc6a20be"
+    },
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/ffdec-scripts-v1/scripts/DefineButton2_155/BUTTONCONDACTION on(release).as",
+      "sha256": "9a8d551637795cbbe8e837de567d606e16f6a6255cfd32e3cc2e6a4666a0bd9c"
+    },
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/ffdec-scripts-v1/scripts/DefineButton2_198/BUTTONCONDACTION on(release).as",
+      "sha256": "d9be4cdd3fd96b925e5b261a26cb74214c8c3bc472d8c0b5f9b695143630acd8"
+    },
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/ffdec-scripts-v1/scripts/DefineButton2_154/BUTTONCONDACTION on(release).as",
+      "sha256": "dcacd6e66caad24b5f21ced1347e41978b689d92dfd5243064aa8036321ea44c"
+    },
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/ffdec-scripts-v1/scripts/DefineButton2_162/BUTTONCONDACTION on(release).as",
+      "sha256": "c63202ae8c466d3e6e05b28c515af7b42aeb69acdd9eda55aae8525336f60062"
+    },
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/ffdec-scripts-v1/scripts/DefineButton2_31/BUTTONCONDACTION on(release).as",
+      "sha256": "ce5d48a0816a7ad485843f2414f2f55b7820f515284f7a7f0625a04dfe0ac4e9"
+    },
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/ffdec-scripts-v1/scripts/DefineButton2_176/BUTTONCONDACTION on(release).as",
+      "sha256": "f8ecf48e97a2f1a62f74edfe2dc38670a09ce9f271f6da9b5156cdbe3f623b00"
+    },
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/ffdec-scripts-v1/scripts/DefineButton2_185/BUTTONCONDACTION on(release).as",
+      "sha256": "a7308f184a11d04e6a52af0d2b0ada68b90aed4747a432663c547b26fa853538"
+    },
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/ffdec-scripts-v1/scripts/DefineButton2_146/BUTTONCONDACTION on(release).as",
+      "sha256": "09444e90ec9f45cca6aaa52927674e9c44c599be6ca1bb152edd5264b97be8cf"
+    },
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/ffdec-scripts-v1/scripts/DefineSprite_205/frame_654/DoAction.as",
+      "sha256": "2880391c7bac8486fa081c0c5894b86ecb2153a6b56e8c95a283dd421223d53b"
+    }
+  ],
+  "facts": {
+    "partitionIncrease": "154 increments with no explicit upper bound; removes1001..tempCount and reconstructs white partitions",
+    "partitionDecrease": "155 guards count>1, then recreates white partitions; lower bound1",
+    "selection": "click toggles white/blue; global mcSelCount updates but is not reset by repartition; stale count is not used by Check",
+    "newQuestion": "resets declared part count1 and answer fields, random removal; source doGetRndQuest does not reconstruct already drawn partition clips",
+    "check": "ratios of parsed target/answer numerator and denominator, independent of selected pieces",
+    "wrongFirstClose": "restores editable inputs and up/down/check/help",
+    "wrongSecondClose": "fills target*2,targetDenominator*2 then reveal168frame2\u219225",
+    "correctClose": "enables New or resumes main",
+    "help": "preserves prior New enabled state and restores editable/awaiting-new controls"
+  },
+  "nativeMathPolicy": {
+    "kind": "documented-mathematical-correction",
+    "implementation": "packages/demos/src/nms-l02-p046-equivalence-v1.ts",
+    "accepted": "Complete finite decimal/scientific numeric strings with optional sign/outer whitespace; equivalent fractions need nonzero denominator; exact rational cross multiplication",
+    "rejected": "Trailing nonnumeric suffix, NaN/Infinity, nonzero inputs underflowing host numeric range, zero denominator",
+    "differences": "Do not emulate invalid0/0ratio equality or parseFloat prefix acceptance; exact arithmetic avoids false positives from floating division. This is a native teaching correction, not original-runtime parity."
+  },
+  "pending": [
+    "Partition upper bound and New visual reset require explicit maintained behavior decision",
+    "Original-runtime source inconsistencies remain unverified",
+    "Audio/intro/geometry extraction and state assembly"
+  ],
+  "originalRuntimeAccepted": false
+}

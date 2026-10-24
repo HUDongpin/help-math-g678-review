@@ -1,0 +1,30 @@
+{
+  "animationId": "shared-nms002-l02-p047",
+  "sourceSha256": "6298123b7431ed8aad86a409125c7db979bfeeaf272efd67188d12f66e2d7df6",
+  "domains": [
+    "78",
+    "80",
+    "81"
+  ],
+  "implementation": [
+    "Full source body length/hash and response binding checked before decode.",
+    "Offline decode requests source22050Hz mono; decoded length and finite sample content verified.",
+    "Complete PCM preparation retains every post-latency source sample and inserts audited scheduling gaps.",
+    "No normalization, encoded byte slicing or added click sound.",
+    "Abort checks guard asynchronous operations and loader releases its reader."
+  ],
+  "tests": {
+    "passed": 5,
+    "failed": 0,
+    "typecheck": "PASS for three new modules with project Bundler resolution",
+    "limitations": "OfflineAudioContext stand-in verifies decode orchestration and guards only; actual browser decoder and audible output remain unverified."
+  },
+  "pending": [
+    "Source route binding",
+    "Web Audio playback controller and resource lifecycle",
+    "Native view and My Lesson browser evidence"
+  ],
+  "currentJsRegistered": false,
+  "audioAccepted": false,
+  "originalRuntimeAccepted": false
+}

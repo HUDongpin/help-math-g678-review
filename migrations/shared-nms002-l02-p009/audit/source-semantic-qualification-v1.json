@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l02-p009",
+  "sourceSha256": "9eea32af9ab642f0cadb478eca0be31c18e277ba7bfe3754f3fc9d5a5eb2f4d1",
+  "lane": "advanced-manual",
+  "reason": "Source term interactions, alternating point emphasis, digit redistribution and non-prefix masked vertical labels require a maintained native state machine. Single page only.",
+  "inspectedArtifacts": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p009-source-atlas-v1/receipt.json",
+      "bytes": 384,
+      "sha256": "a3d35daa3a1059becbb44d3adc9ab624238a8fa81600bd10f0e25a0d74220ca6"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p009-native-source-inspection-v1/receipt.json",
+      "bytes": 3367,
+      "sha256": "8f1ee52efab11cdec57c80470825014593026215af1ef6c3ed48e49e96bfc9c9"
+    }
+  ],
+  "all8SourceArtInspected": true,
+  "sourceFramesInspected": [
+    1,
+    3,
+    12,
+    24,
+    36,
+    48,
+    60,
+    72,
+    84,
+    96,
+    108,
+    120,
+    132,
+    144,
+    158
+  ],
+  "suppressedShapeIds": [
+    3,
+    4,
+    5,
+    6,
+    13,
+    25,
+    26,
+    36
+  ],
+  "roles": {
+    "3": "native title",
+    "4": "modern background and definition panel",
+    "5,25,36": "source masks measured into per-glyph visibility, not visible backgrounds",
+    "6,13": "native term-button underlines",
+    "26": "native seven-column place-value table; upright labels and responsive rows"
+  },
+  "teaching": {
+    "definition": "A decimal point is a period symbol written between a whole number and a decimal fraction.",
+    "completeTermFrames": {
+      "Decimal point": 19,
+      "Symbol": 38,
+      "Whole numbers": 66,
+      "Decimal fraction": 80
+    },
+    "number": {
+      "oneFirst": 52,
+      "pointFirst": 69,
+      "fractionFirst": 71,
+      "pointEmphasisFrames": [
+        69,
+        71,
+        73,
+        75
+      ],
+      "spreadFirst": 84,
+      "smallerDigitsFirst": 88,
+      "tableFirst": 93,
+      "labelsComplete": 104,
+      "final": "1.75",
+      "positions": {
+        "Hundreds": "",
+        "Tens": "",
+        "Ones": "1",
+        "Decimal Point": ".",
+        "Tenths": "7",
+        "Hundredths": "5",
+        "Thousandths": ""
+      }
+    },
+    "groupHeaderAdaptation": "Replace the source horizontal Ones spanning three whole-number columns with Whole number from character7/run5. Preserve vertical Ones as its own column and Decimals as the fractional group. Explicit mathematical correction; no pixel-parity claim.",
+    "partialLabels": "Preserve source per-glyph visibility by exact instance path and depth; labels are non-prefix. Transparent missing glyphs retain word layout; accessible text contains visible glyphs only.",
+    "lineJoin": "The source space-only character7/run6 separates definition lines before character14."
+  },
+  "sourceDomain": {
+    "rootFrames": 10,
+    "rootStop": 6,
+    "mainSprite": 37,
+    "mainFrames": 158,
+    "fps": 12,
+    "mainStopActions": [],
+    "defaultPlayback": "loop"
+  },
+  "modernHostPolicy": "Play the complete 158/12-second cycle, then hold frame158; Replay returns frame1. Independent source-loop query retained.",
+  "reducedMotionPolicy": "Suppress the four alternating magenta point overlays; preserve the black decimal point, text/table reveal and digit placement stages. No autonomous CSS motion clock.",
+  "originalRuntimeAccepted": false,
+  "fidelityAccepted": false,
+  "registered": false
+}

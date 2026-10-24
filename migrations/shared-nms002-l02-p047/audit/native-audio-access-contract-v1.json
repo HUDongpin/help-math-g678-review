@@ -1,0 +1,23 @@
+{
+  "animationId": "shared-nms002-l02-p047",
+  "sourceSha256": "6298123b7431ed8aad86a409125c7db979bfeeaf272efd67188d12f66e2d7df6",
+  "implemented": "apps/web/lib/nms-l02-p047-audio-access.ts",
+  "allowedMatrix": "3 exact audio domains times64 NMS002 L2 page referers times EN/ES/default language paths =576 positive cases",
+  "rejected": [
+    "production and Vercel contexts",
+    "missing local-preview/calibration flags",
+    "non-loopback binding",
+    "wrong page/lesson/language or extra path",
+    "mismatched hash or duplicate query",
+    "unknown/prototype/path-traversal resource",
+    "cross-origin/navigation/range requests",
+    "POST/HEAD/OPTIONS"
+  ],
+  "testsPassed": 2,
+  "routeEnabled": false,
+  "reason": "Existing P046 source route reads a candidate packet with frozen source/input/output and actual module-registration bindings. P047 has no finished candidate packet yet. Preserve that binding requirement; add route/packet reader with final native candidate.",
+  "next": "Implement native view and source role/intro mapping before freezing candidate and connecting route.",
+  "currentJsRegistered": false,
+  "audioAccepted": false,
+  "originalRuntimeAccepted": false
+}

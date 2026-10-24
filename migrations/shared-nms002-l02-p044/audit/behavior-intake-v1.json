@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l02-p044",
+  "sourceSha256": "e31d34af5c1e7c5eda49981b7de68941b3f453e8709c0de0fff10ced4693f622",
+  "classification": "behavior-heavy",
+  "lane": "advanced-manual",
+  "reason": "Randomized without-replacement four-question deck,1..20partition controls,selectable parts,two-attempt feedback and answer reveal,help modal and source audio/host callbacks.",
+  "sourceFacts": {
+    "rootFrames": 10,
+    "mainDomain": "sprite-243",
+    "mainFrames": 393,
+    "matchingEntryFrame": 361,
+    "partitionDomain": "sprite-219",
+    "partitionFrames": 20,
+    "questions": [
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        6,
+        8
+      ]
+    ],
+    "selection": "random index removed by splice; no replacement",
+    "answerCheck": "Exact numerator==selected count AND denominator==partition count; equivalent but different partitions do not pass this authored check.",
+    "wrongFirst": "Lock controls; show explanatory feedback and Coach_audio_1.",
+    "wrongSecond": "Reset tryCount; showAns=true; choose denominator frame and play COR_ANS_MC.",
+    "correct": "Show Yes you are correct feedback and Coach_audio_2.",
+    "nextQuestion": "New Whole draws remaining question; last feedback close resumes parent."
+  },
+  "unresolved": [
+    "Source main361->393 terminal/host completion behavior",
+    "Complete COR_ANS_MC trace and answer reveal synchronization",
+    "Question-order deterministic seed adapter",
+    "Per-frame geometry and20partition states",
+    "Embedded audio and candidateSA role/timing",
+    "Glossary/help exact dependency bindings",
+    "Original runtime, listening and all independent acceptance"
+  ],
+  "scriptEvidence": [
+    {
+      "path": "audit/ffdec-scripts-v1/scripts/DefineSprite_243/frame_361/DoAction.as",
+      "sha256": "b6f60637c2a1ed3a11c1312384aeb8bce995a07cdac49415ceea9b0f3d8420f9"
+    },
+    {
+      "path": "audit/ffdec-scripts-v1/scripts/DefineSprite_219/frame_1/DoAction.as",
+      "sha256": "610c051bb43588f592e2aa72e8cd59dc4f53bef9b98955219c277f22e5f81d7b"
+    },
+    {
+      "path": "audit/ffdec-scripts-v1/scripts/DefineButton2_76/BUTTONCONDACTION on(release).as",
+      "sha256": "b89df644b25ba3e9032164391e4c350b2253a0d9f930adad01fb3e91b09ce496"
+    },
+    {
+      "path": "audit/ffdec-scripts-v1/scripts/DefineButton2_81/BUTTONCONDACTION on(release).as",
+      "sha256": "c63202ae8c466d3e6e05b28c515af7b42aeb69acdd9eda55aae8525336f60062"
+    },
+    {
+      "path": "audit/ffdec-scripts-v1/scripts/DefineButton2_85/BUTTONCONDACTION on(release).as",
+      "sha256": "03ea0dce7512c90b004cd4dd98f88a3ee169f142e546be52225b3d5690c36f74"
+    },
+    {
+      "path": "audit/ffdec-scripts-v1/scripts/DefineButton2_86/BUTTONCONDACTION on(release).as",
+      "sha256": "2016226f2f59edc51d3100e3f1e817b3fd5c444c28da08af71312f9a18981332"
+    },
+    {
+      "path": "audit/ffdec-scripts-v1/scripts/DefineButton2_231/BUTTONCONDACTION on(release).as",
+      "sha256": "e5d12ac1b72401a17180eb6c26f28746195a8e42105687df9596e5d82c8cca21"
+    },
+    {
+      "path": "audit/ffdec-scripts-v1/scripts/DefineButton2_236/BUTTONCONDACTION on(release).as",
+      "sha256": "e5d21288421683ce4b4e2c6b2093656c22239944f0634f1df6d6155ad3b33019"
+    },
+    {
+      "path": "audit/ffdec-scripts-v1/scripts/DefineButton2_30/BUTTONCONDACTION on(release).as",
+      "sha256": "c3b2d5a18cc8699ee66c8e48e845e45806b00f4d9bb76741f5f0597dea9b2987"
+    },
+    {
+      "path": "audit/ffdec-scripts-v1/scripts/DefineButton2_28/BUTTONCONDACTION on(release).as",
+      "sha256": "fe6fc9b007233b8392c50663f5f74e884eb09374b4bb3db4b0bf769f094d699d"
+    }
+  ],
+  "registered": false,
+  "scaleOutAuthorized": false,
+  "originalRuntimeAccepted": false,
+  "strictComplete": false
+}

@@ -1,0 +1,62 @@
+{
+  "sourceSha256": "18786203d58efb8aa54c3701e72838887d0702ff03d68819830938a252facce7",
+  "scope": "Static decompilation/P-code algebra corroboration, not original-runtime execution.",
+  "dragBounds": {
+    "minX": -330,
+    "maxX": -75,
+    "fixedY": 168
+  },
+  "formula": "round((x / 50 + 5) * 59 / 3) + 31",
+  "quantization": {
+    "unit": "hundredths",
+    "samplesAtTwipResolution": 5101,
+    "reachableValues": 101,
+    "minimum": 0,
+    "maximum": 100,
+    "monotone": true
+  },
+  "revealDiscrepancies": [
+    {
+      "targetHundredths": 85,
+      "sourceRevealX": -284.95,
+      "dragFormulaHundredths": 17,
+      "consistent": false,
+      "consistentCenterX": -112.71186440677965
+    },
+    {
+      "targetHundredths": 50,
+      "sourceRevealX": -247.95,
+      "dragFormulaHundredths": 32,
+      "consistent": false,
+      "consistentCenterX": -201.6949152542373
+    },
+    {
+      "targetHundredths": 25,
+      "sourceRevealX": -158.95,
+      "dragFormulaHundredths": 67,
+      "consistent": false,
+      "consistentCenterX": -265.2542372881356
+    }
+  ],
+  "interpretation": "Second-wrong close assigns target digits directly and source mcDragX independently. Drag formula runs only while drag is true. Thus the static source permits target digits/grid with a mismatched drag position; no original-runtime visual observation claimed.",
+  "implementationDecision": "Maintain mathematical consistency of numeric value, hundred-grid fill and drag position in native answer reveal; preserve source coordinates as discrepancy evidence. Exact pointer layout and accessibility adapter remain to be designed after geometry audit.",
+  "remaining": [
+    "Original-runtime confirmation of visible discrepancy",
+    "Source track geometry and labels",
+    "Full intro/help semantic and audio audits"
+  ],
+  "evidence": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p048-pcode-v1/scripts/DefineSprite_498/frame_330/PlaceObject2_415_22/CLIPACTIONRECORD onClipEvent(enterFrame).pcode",
+      "sha256": "1e4b2c3bb00b5204462e163f423d389cb202edc4df1371b971a514f9a8ebf63a"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p048-pcode-v1/scripts/DefineSprite_498/frame_330/DoAction.pcode",
+      "sha256": "6bdcb440aaa99867ac7793209fbc6409dbfed247f8144c4b735823486e8060a1"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p048-pcode-v1/scripts/DefineButton2_437/BUTTONCONDACTION on(release).pcode",
+      "sha256": "1df08a13b487fc299b7caa273146afded07a0e0508050d0751cf7d1cdd607c7f"
+    }
+  ]
+}

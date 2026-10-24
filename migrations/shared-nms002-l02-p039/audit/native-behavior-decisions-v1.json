@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-20T04:25:59.587775+00:00",
+  "animationId": "shared-nms002-l02-p039",
+  "classification": {
+    "lane": "advanced-manual",
+    "complexity": "behavior-heavy",
+    "reason": "Dynamic duplicated-grid/slider input, retry branches, randomcoach playback and conflicting source fallback need maintained explicit state and qualified corrections."
+  },
+  "nativeDecisions": [
+    {
+      "id": "correct-second-error-reveal",
+      "source": "Task and Done target25percent, fallback writes75digits and positionmapping73.",
+      "native": "On second-error close reveal25of100and align slider to25. Preserve source35frame dummy-feedback delay before resuming main. Record the value/position change as a mathematical correction, not fidelity acceptance."
+    },
+    {
+      "id": "preserve-fill-orientation",
+      "source": "SourceBoxindex fills columns bottom-to-top while feedback saysrows.",
+      "native": "Retain sourcegridordering. Explain25as25of100squares using orientation-neutral accessible feedback; retain original exact source message in audit."
+    },
+    {
+      "id": "normalize-reset-position",
+      "source": "Reset explicitlyzerosdigits but puts handleoutsidepressrange.",
+      "native": "Reset percent and handle to coherent0atleftendpoint; preserve retrycount because sourceResetdoes not cleartryCount."
+    },
+    {
+      "id": "one-explicit-dummy-clock",
+      "source": "Two identical35frame instances have sameMc_Run_Dummyname.",
+      "native": "Use one explicit35frame completion-delay clock; do not claim original name-resolution parity."
+    },
+    {
+      "id": "random-coach-speech-boundary",
+      "source": "S2/S3/S4stop positions intersectnonzerosamples;S4lastdecodedEOFsampleisnonzero.",
+      "native": "Keep exact sourcebytes and complete decoded branch content. Do not synthesize a missing voice tail or claim full spoken phrase. Explicitly qualify native playback beyond source stopmarkers; human listening and original stream timing stay pending."
+    },
+    {
+      "id": "press-sound-lifecycle",
+      "source": "223existsinClosebuttondownstateonly.",
+      "native": "Implement a bounded press sound with release/cancel/unmount cleanup and keyboardpress equivalent; keep it separate from wrongfeedbackvoice."
+    },
+    {
+      "id": "unstarted-coach236",
+      "source": "236isplacedstopped1andcallsundefinedlocalenableButtonat20;no page-localstart found.",
+      "native": "Keep dormant until actual reachable start evidence exists. Do not activate it merely to consume every extracted stream."
+    }
+  ],
+  "evidence": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p039-behavior-source-v1/source-slider-grid-audit-v1.json",
+      "bytes": 37855,
+      "sha256": "4e36d69e899edfe0422247dce8de93d6aa174d41ab65611a98268027eb12d78b"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p039-behavior-source-v1/source-audio-boundary-audit-v1.json",
+      "bytes": 3676,
+      "sha256": "6e9be40bf56f516434b50edc74b312b5c4f9ebb1b8fc4145222960be6a9be7f7"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p039-behavior-source-v1/source/audit/scripts/DefineButton2_210/BUTTONCONDACTION on(release).as",
+      "bytes": 942,
+      "sha256": "9991f8c7cfd38ffd18cd017ed07d361138aa4c0073a1a80d4fd270f41b64c487"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p039-behavior-source-v1/source/audit/scripts/DefineButton2_224/BUTTONCONDACTION on(release).as",
+      "bytes": 452,
+      "sha256": "f9b169d521797c61b21426d0933b55bbbc100d409a08d10472ae572e081d5891"
+    }
+  ],
+  "implemented": false,
+  "originalRuntimeAccepted": false,
+  "fidelityAccepted": false,
+  "audioAccepted": false,
+  "humanAccepted": false,
+  "ownerAccepted": false,
+  "strictComplete": false,
+  "published": false,
+  "scaleOutAuthorized": false
+}

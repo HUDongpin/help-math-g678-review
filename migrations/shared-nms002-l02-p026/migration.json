@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-nms002-l02-p026",
+  "animationId": "shared-nms002-l02-p026",
+  "assetId": "swf-d168033f7af079b7fad715adadf4c94fffaa84a8b8ddaefbd8d344ed1cfde1f5",
+  "status": "preserved",
+  "created": "2026-09-19",
+  "confidence": "medium",
+  "classification": {
+    "collection": "G6-G8-shared",
+    "grade": "shared",
+    "lesson": "NMS002-L2",
+    "section": "IN",
+    "page": 26,
+    "domain": "unknown",
+    "knowledgePoint": {
+      "en": "Match numeric fractions with equivalent shaded-circle representations.",
+      "es": "Relacionar fracciones num\u00e9ricas con representaciones circulares equivalentes."
+    },
+    "titleRaw": "Equivalent Fractions Practice",
+    "titleDisplay": "Equivalent Fractions",
+    "status": "source-resolved",
+    "evidence": [
+      "audit/source-game-contract-v1.json"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/IN/L2IN11.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/IN/L2IN11.swf",
+    "flaSha256": "",
+    "swfSha256": "d168033f7af079b7fad715adadf4c94fffaa84a8b8ddaefbd8d344ed1cfde1f5",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 240522,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "",
+    "actionScriptVersion": "AS2",
+    "complexity": "behavior-heavy",
+    "fonts": [],
+    "scripts": [
+      "root1preloaderstop;root6stop",
+      "main82stops392and425;fourpairsresumetimeline",
+      "two8cardboardswithsourcearrayandshuffle;movement/return/guardcallbacks",
+      "twoDoHyperLinks/source-stop actions with HLArecordflag"
+    ],
+    "externalDependencies": [
+      "minimal term host",
+      "legacy preloader adapter excluded from page teaching",
+      "page HLArecord flag has no provider delivery authority"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [],
+    "morphs": [],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "correct-pairs",
+      "kind": "interactive",
+      "reachable": true,
+      "description": "Native deterministic two-round matching trace; original-runtime authority pending."
+    },
+    {
+      "id": "wrong-then-correct",
+      "kind": "interactive",
+      "reachable": true,
+      "description": "Native deterministic wrong return once per round followed by correct matches; original-runtime authority pending."
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "und"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "main-stream",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/audio/sprite-82/source-stream.mp3",
+        "language": "und",
+        "frameDomain": "sprite-82",
+        "startFrame": 8
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "React/MathML/native controls plus extracted source SVG",
+    "route": "/en/migration-status/g678-calibration/shared-nms002-l02-p026",
+    "routeFile": "apps/web/app/[locale]/migration-status/g678-calibration/shared-nms002-l02-p026/page.tsx",
+    "component": "packages/demos/src/nms-l02-p026-presentation-v1.tsx",
+    "registryModule": "packages/demos/src/modules/g678-nms-l02-native-practice-p026.tsx",
+    "timelineModule": "packages/demos/src/nms-l02-p026-timeline-v1.ts",
+    "testFile": "packages/demos/tests/nms-l02-p026-timeline.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-82",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "correct-pairs",
+          "wrong-then-correct"
+        ]
+      },
+      {
+        "id": "sprite-82",
+        "kind": "nested",
+        "sourceTimelineId": "82",
+        "parentFrameDomainId": "root",
+        "frameCount": 491,
+        "scenarioIds": [
+          "correct-pairs",
+          "wrong-then-correct"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l02-p045",
+  "sourceSha256": "741913de5407656b5c20362d89762274bb04090a1685321cedc27e4ac00c1fcd",
+  "classification": "behavior-heavy",
+  "lane": "advanced-manual",
+  "reason": "Two editable answer fields, three randomized questions without replacement, conditional retry/reveal, help/feedback locks and six source host glossary calls require a bounded maintained behavior implementation. NO-GO-scale-out remains.",
+  "sourceFacts": {
+    "rootFrames": 10,
+    "mainDomain": "sprite-204",
+    "mainFrames": 498,
+    "practiceEntryFrame": 450,
+    "finishLabelFrame": 452,
+    "terminalStopFrame": 498,
+    "chartDomain": "sprite-177",
+    "chartLabels": [
+      "L1",
+      "L2",
+      "L3"
+    ],
+    "answers": [
+      "2~10",
+      "3~10",
+      "4~10"
+    ],
+    "selection": "Random index removed from both question and answer arrays; no replacement.",
+    "answerInputs": [
+      "Numtxt",
+      "Dentxt"
+    ],
+    "answerCheck": "Both TextField.text values compared to stored split answer strings using AVM1 equality; numeric coercion/normalization must not be assumed.",
+    "wrongFirst": "Close feedback restores editable inputs and Check.",
+    "wrongSecond": "Close feedback writes source answer fields and starts COR_ANS_MC at2.",
+    "revealEnd": "sprite189/frame25 returns1 then enables New or resumes main after last question.",
+    "correctClose": "Enables New or resumes main after last question.",
+    "help": "Locks inputs and relevant controls; close restores prior new-question readiness.",
+    "audioDomains": [
+      "sprite-8",
+      "sprite-195",
+      "sprite-197",
+      "sprite-204"
+    ],
+    "glossaryTargets": [
+      "Pie chart",
+      "Numerator",
+      "fraction",
+      "Show",
+      "denominator",
+      "Value"
+    ]
+  },
+  "unresolved": [
+    "Per-frame chart and intro geometry/visibility",
+    "Full source MP3 decode and stop/branch clock",
+    "ButtonUp/ButtonDown references may be stale; no matching action buttons established",
+    "Exact input validation/equality behavior and documented native semantics",
+    "Six glossary targets and external source audio candidate roles",
+    "Full child-domain traces and original-runtime/human acceptance"
+  ],
+  "scriptEvidence": [
+    {
+      "path": "audit/ffdec-scripts-v1/scripts/DefineSprite_204/frame_450/DoAction.as",
+      "sha256": "a098c8de8995b950855c8d74c0db7eebf467f14ea7ed444939e2e0dfb8157358"
+    },
+    {
+      "path": "audit/ffdec-scripts-v1/scripts/DefineSprite_204/frame_498/DoAction.as",
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "audit/ffdec-scripts-v1/scripts/DefineButton2_134/BUTTONCONDACTION on(release).as",
+      "sha256": "d6db4856d016876a8fbddd310dcdf8310c57e65df58910fb4316a8cb96613447"
+    },
+    {
+      "path": "audit/ffdec-scripts-v1/scripts/DefineButton2_185/BUTTONCONDACTION on(release).as",
+      "sha256": "143e6205a65a5db15b20a83ccd6ec94157bb312c1d32cf1bc75cf692ca65a95b"
+    },
+    {
+      "path": "audit/ffdec-scripts-v1/scripts/DefineButton2_190/BUTTONCONDACTION on(release).as",
+      "sha256": "854426c5af6132ca50e9a1b754be09bc9fe429f61888037f1a369fcc4b78794d"
+    },
+    {
+      "path": "audit/ffdec-scripts-v1/scripts/DefineSprite_189/frame_25/DoAction.as",
+      "sha256": "0170e16374bd749076894bf8105aa555a92b9b16bd13d8e118a9d1f76c8d7073"
+    },
+    {
+      "path": "audit/ffdec-scripts-v1/scripts/DefineButton2_31/BUTTONCONDACTION on(release).as",
+      "sha256": "37c3f6af0a758c9eef8639d3f7e4a4430d8860e71bcb4c74b78654fc2a75aaaf"
+    },
+    {
+      "path": "audit/ffdec-scripts-v1/scripts/DefineButton2_19/BUTTONCONDACTION on(release).as",
+      "sha256": "5fadb51bb3fcb6417dbf21fd9879faa5396d3d4162293e8316f4565750a194a8"
+    }
+  ],
+  "registered": false,
+  "originalRuntimeAccepted": false
+}

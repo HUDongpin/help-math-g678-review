@@ -1,0 +1,39 @@
+{
+  "animationId": "shared-nms002-l02-p043",
+  "sourceSha256": "a6a13838f1301d7665dd4f8a96c561fd3ef23e90ffeaf6e433909d26cc419528",
+  "sourceEvidence": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p043/audit/ffdec-picture-states-v1/DefineSprite_120/2.png",
+      "bytes": 11222,
+      "sha256": "625b90437a369a189f2496946fe7cfcc525bc8ae572b853e56dbab36fd396fdb"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p043/audit/ffdec-picture-states-v1/DefineSprite_126/2.png",
+      "bytes": 9777,
+      "sha256": "c1d9c4dc14f2835c1499564d721f6e918bb66ad0a27381c0f491661f9542a3d3"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p043/audit/ffdec-picture-states-v1/DefineSprite_131/2.png",
+      "bytes": 16394,
+      "sha256": "b28cd6ea2b456f030980329aefabd9a295b52096800f0b9c1d4fe44aa995d721"
+    }
+  ],
+  "implementation": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p043-diagrams-v1.tsx",
+    "bytes": 3305,
+    "sha256": "d932756b97f1d0972117a53edfd46533009d5cffa2c187a122239d0566edead9"
+  },
+  "decisions": [
+    "NativeSVGgeometric redraw preserves one-of-three bar, two-of-six pencil selection,75of100grid and2/4=1/2circles.",
+    "Pencils use maintained vector symbols and red grouping outline; no bitmap/pixel-parity claim.",
+    "Math captions are native text for scalable layout. EN/ESaccessible descriptions included."
+  ],
+  "mathChecks": [
+    "100cells75shaded",
+    "3barparts1shaded",
+    "6pencils2grouped",
+    "2/4and1/2bothhalf"
+  ],
+  "originalRuntimeAccepted": false,
+  "fidelityAccepted": false
+}

@@ -1,0 +1,17 @@
+{
+  "page": "shared-nms002-l02-p046",
+  "domains": [
+    "8",
+    "165",
+    "167",
+    "184",
+    "197",
+    "205"
+  ],
+  "plan": "packages/demos/src/generated/nms-l02-p046-audio-plan-v1.ts",
+  "sourceBindings": "Exact source SHA256 and byte count from source-PCM inventory; no audio upload.",
+  "requestPolicy": "Existing local G678 preview policy, continuous-audio phase, GET only, localhost same-origin CORS empty destination, exact path and single sha256 parameter; same source lesson pages001-064 inEN/ES/default UI. Reject production/provider contexts, forged host/origin, Range and malformed resources.",
+  "loader": "No redirect; exact MIME, content length, bounded streaming body and SHA256 before returning bytes; abort and cancel reader.",
+  "tests": "All6actual source streams, truncated/oversized/drifted bytes, wrong response URL/MIME/length, aborted signal;3groupsPASS.",
+  "limits": "Guards and loader only. HTTP route, server binding, module, frozen candidate and MyLesson wiring still pending."
+}

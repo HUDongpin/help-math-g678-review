@@ -1,0 +1,111 @@
+{
+  "sourceSha256": "e31d34af5c1e7c5eda49981b7de68941b3f453e8709c0de0fff10ced4693f622",
+  "roles": {
+    "8": "Button down-state click effect; also direct main placements292and323 during demonstration",
+    "240": "Coach_audio_2 enteredat2oncorrect answer; frame20returns1",
+    "242": "Coach_audio_1 enteredat2onwronganswer; randomlabelsS1..S4 return1at16/27/36/54",
+    "243": "Main source narration stream; containsblocks5..393 including stop361 and continuation"
+  },
+  "wrongFeedbackLabels": {
+    "sprite-242": [
+      {
+        "frame": 3,
+        "label": "S1"
+      },
+      {
+        "frame": 18,
+        "label": "S2"
+      },
+      {
+        "frame": 31,
+        "label": "S3"
+      },
+      {
+        "frame": 40,
+        "label": "S4"
+      }
+    ]
+  },
+  "clickButtonPlacements": [
+    {
+      "buttonId": 9,
+      "states": {
+        "up": false,
+        "over": false,
+        "down": true,
+        "hitTest": false
+      }
+    },
+    {
+      "buttonId": 30,
+      "states": {
+        "up": false,
+        "over": false,
+        "down": true,
+        "hitTest": false
+      }
+    },
+    {
+      "buttonId": 76,
+      "states": {
+        "up": false,
+        "over": false,
+        "down": true,
+        "hitTest": false
+      }
+    },
+    {
+      "buttonId": 81,
+      "states": {
+        "up": false,
+        "over": false,
+        "down": true,
+        "hitTest": false
+      }
+    },
+    {
+      "buttonId": 85,
+      "states": {
+        "up": false,
+        "over": false,
+        "down": true,
+        "hitTest": false
+      }
+    },
+    {
+      "buttonId": 86,
+      "states": {
+        "up": false,
+        "over": false,
+        "down": true,
+        "hitTest": false
+      }
+    },
+    {
+      "buttonId": 231,
+      "states": {
+        "up": false,
+        "over": false,
+        "down": true,
+        "hitTest": false
+      }
+    },
+    {
+      "buttonId": 236,
+      "states": {
+        "up": false,
+        "over": false,
+        "down": true,
+        "hitTest": false
+      }
+    }
+  ],
+  "pending": [
+    "MP3source seek/latency and per-frame segment audit",
+    "Main361stop tail audit",
+    "Separate scheduling of buttonclick and narration",
+    "Fullstream decode retained; never slice encoded MP3at perceivedsilence",
+    "Human original-runtime listening and sourceSAdependency decision"
+  ],
+  "audioAccepted": false
+}

@@ -1,0 +1,13 @@
+# NMS002 Lesson2 page10: Decimal Point
+
+Source L2VB05.swf,528243bytes SHA256 `2aa2b207666639f59f1387dbd916f98629f7613a4dcceb4817dc69006839ac92`. Global10/VB4, SWF-only. Root10stops6; main17667frames at12fps stops31 for the question and resumes32 after correct feedback; source host holds67. Fifteen domains total281local frames.
+
+Native question: Click the decimal point. Number1,998.75 contains eight distinct source answer instances. Only AnsBtn6 (the period) is correct. AnsBtn4/5 explain "A decimal point is a period symbol used between a whole number and a decimal fraction. Try again." Other wrong targets use "written between". No invented score or additional question.
+
+Wrong feedback:1=domain99 hold22/close23/end28;2=51 hold20/close21/end28;3=67 hold21/close22/end28. Popup becomes visible16/14/15 respectively. Correct feedback:1=143end28 Correct!;2=127end28 Good Job!;3=155end25 Great Job!;4=175end33 Well done! All selected host branches begin2. Seeded selection preserves branch cardinalities; no Adobe RNG equality. Replay resets source frame, attempts, feedback and term state. The modern host owns navigation and playback controls.
+
+All107source shapes,35morphs and10bitmaps inspected. Main question and number have no masks: number fades2..6, question6..13. Native text replaces source outlined heading and feedback words (shapes3/55/78/79/86); non-text feedback illustrations remain source-derived with explicit local-frame morphs. Responsive native feedback text sits separately from artwork; no pixel-parity claim. FFDec gradient rounding remains an original-runtime comparison limitation. Hidden hit shapes become native keyboard buttons.
+
+Eight streams:sevenMP3 at22050Hz andoneADPCM at5512Hz.13ADPCM blocks emit459source samples each; FFmpeg's extra initial predictor per block is excluded and all5967samples equal FFDec exactly. Two Chromium decodes of each stream agree; ADPCM resamples23870samples. Main first audio block7; feedback streams start1/2/3 according to their own clock. Pause, waiting frames, source close jumps, Replay, mute and volume must be verified through actual browser playback before admission.
+
+Source-English page text/punctuation in EN/ES, with disclosed fallback and source bilingual Decimal point glossary. Original NMSL2 glossary runtime and companion media unverified. Advanced-manual candidate inside compiler-assisted workflow; no scale-out authorization. Registration remains431/2282 until product admission. Original-runtime, fidelity, audio acceptance, human/Owner acceptance, strict completion, release and publication remain independent and open.

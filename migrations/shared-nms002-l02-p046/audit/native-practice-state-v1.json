@@ -1,0 +1,34 @@
+{
+  "animationId": "shared-nms002-l02-p046",
+  "sourceSha256": "c82da2eb14e6db6fbb876e795edd8a8ebc1e890a52d9e7b1b1f5e66153b8cb62",
+  "implementation": [
+    {
+      "path": "packages/demos/src/nms-l02-p046-practice-v1.ts",
+      "sha256": "5fb1f6a324fa22529b6ec1b0819673ecf36a14e2ff459a892a46733f1e80e392"
+    },
+    {
+      "path": "packages/demos/src/nms-l02-p046-equivalence-v1.ts",
+      "sha256": "3856730307e1b9bf6319928fe76baf0eeb3dac5097de33ffd16de50b05e367b6"
+    },
+    {
+      "path": "packages/demos/tests/nms-l02-p046-practice-v1.test.ts",
+      "sha256": "9fc63b49fcf984845617bd66e695ebd2eb2fdaaceb9c862b81fc06eab46d9887"
+    }
+  ],
+  "sourcePreserved": [
+    "Three targets2/4,4/12,6/10 drawn without replacement",
+    "Independent answer input and partition exploration",
+    "First error retries, second error reveals doubled target numerator/denominator",
+    "Help/feedback locks and New readiness",
+    "Reveal end and final continuation require separate explicit transitions"
+  ],
+  "nativeDecisions": [
+    "Repartition resets selected pieces to match rebuilt white geometry; selected count derives from selected array",
+    "New Fraction resets both declared and visible partition state to one white piece",
+    "Positive safe-integer partition count; no arbitrary20piece cap inherited from other pages; large-count renderer remains future work",
+    "Exact rational numeric validation per prior documented policy",
+    "Seeded draw order is deterministic native inspection, not Flash random parity"
+  ],
+  "boundary": "Pure practice state only; timing engine, source audio and visual renderer are pending",
+  "originalRuntimeAccepted": false
+}

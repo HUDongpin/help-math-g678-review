@@ -1,0 +1,34 @@
+{
+  "animationId": "shared-nms002-l02-p047",
+  "sourceSha256": "6298123b7431ed8aad86a409125c7db979bfeeaf272efd67188d12f66e2d7df6",
+  "implementation": "packages/demos/src/nms-l02-p047-practice-v1.ts",
+  "sourceBehavior": [
+    "Four cards 1/2, 1/4, 1/8 and 5/8 target eighth ticks 4, 2, 1 and 5; worked 3/4 remains at tick 6.",
+    "Correct release records one match and hides the card via matched state; wrong release clears selection and restores availability after feedback.",
+    "Help disables card input; closing help preserves prior matches.",
+    "All four matches require correct feedback then sprite76 celebration and main81 continuation before completion."
+  ],
+  "nativeAdapters": [
+    "Pointer and keyboard share select/drop semantics; exact geometry hit testing remains a view responsibility.",
+    "Escape or pointercancel interrupts selection without a scored wrong release.",
+    "Four wrong feedback branches use seeded deterministic sampling for reproducibility; no Flash RNG parity claim.",
+    "Replay restarts seed and clears matches; increasing phase tokens reject stale callbacks.",
+    "Feedback completion waits for audio window policy established separately; state code itself does not prove playback timing."
+  ],
+  "validation": {
+    "testsPassed": 9,
+    "testsFailed": 0,
+    "answerOrders": 24,
+    "strictTypecheck": "passed for new practice module"
+  },
+  "pending": [
+    "native playback controller",
+    "pointer and keyboard view",
+    "source role bindings",
+    "My Lesson integration and runtime checks"
+  ],
+  "currentJsRegistered": false,
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false,
+  "strictComplete": false
+}

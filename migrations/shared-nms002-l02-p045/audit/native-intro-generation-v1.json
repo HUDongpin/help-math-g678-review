@@ -1,0 +1,29 @@
+{
+  "sourceSha256": "741913de5407656b5c20362d89762274bb04090a1685321cedc27e4ac00c1fcd",
+  "generator": "scripts/generate-nms-l02-p045-intro-assets-v1.py",
+  "output": "packages/demos/src/generated/nms-l02-p045-intro-assets-v1.ts",
+  "assets": 38,
+  "frameRange": [
+    1,
+    449
+  ],
+  "combinedStateRanges": 53,
+  "preserved": [
+    "Original SVG paths, gradient stops and transforms",
+    "Source chart replacement/alpha timing",
+    "Demonstrated numerator/denominator strings and unit-label timing"
+  ],
+  "adaptations": [
+    "Responsive normalized chart placement instead of original full-stage coordinates",
+    "Unit1/10 displayed as a readable caption rather than moving source text",
+    "FFDec metadata attributes omitted; SVG element/attribute allowlist enforced",
+    "Gradient IDs receive per-instance React prefixes"
+  ],
+  "limitations": [
+    "Intro figure is not the full instructional page or audio player",
+    "Frame450 belongs to practice and is rejected by introductory frame accessor",
+    "Actual browser visual verification and My Lesson integration remain pending"
+  ],
+  "registered": false,
+  "originalRuntimeAccepted": false
+}

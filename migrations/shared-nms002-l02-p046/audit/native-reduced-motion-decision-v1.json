@@ -1,0 +1,19 @@
+{
+  "page": "shared-nms002-l02-p046",
+  "sourceEvidence": "intro-semantic-state-v1.json",
+  "sourceEmphasisFrames": [
+    578,
+    580,
+    582,
+    584,
+    586,
+    588,
+    590,
+    592
+  ],
+  "normalMode": "Preserve authored alternating emphasis at578,580,582,584,586,588,590,592.",
+  "reducedMotion": "Hold equation2/10=1/5 continuously at578 through592 inclusive, absent before577 and after593; no repeated flashing.",
+  "authority": "Modern accessibility adaptation, not original runtime parity.",
+  "hostContract": "Caller passes reducedMotion; fixture now subscribes to prefers-reduced-motion change events and passes current preference.",
+  "tests": "EN/ES every frame577 through594 in both modes."
+}

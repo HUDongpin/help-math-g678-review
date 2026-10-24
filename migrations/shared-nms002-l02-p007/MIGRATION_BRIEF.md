@@ -1,0 +1,11 @@
+# NMS002 Lesson2 page7: Fraction vocabulary
+
+Exact SWF113795bytes SHA256`a02fbf6de8d9af4a4899ff79a204576b6def396bde0243932be64b591cf97936`, global7/VB1/XMLFraction. SWF-only. Root10frames stops6; main35 has312frames at12fps and noStop. Preserve a separate source-loop query. The modernhost runs a complete26second cycle and holds312 for reading; Replay resets1. This policy does not establish original-runtime parity.
+
+Native definition follows all312source glyph-visibility states. Three source links Fraction/Whole/Group become interactive only at complete word frames11/25/44. The half and two-thirds illustrations keep source paths, transforms, arrows and magenta highlight order; native MathML replaces bars16/23 and text17/24 at120/239. Two responsive panels retain source-content ordering. Reduced motion suppresses rapid magenta overlay blinking while retaining current text and base-circle reveal times. No future examples appear early.
+
+All26source shapes and15 reconstructed source frames inspected. Replace shape3 outlined heading, shape4 legacy tan panel, shape6underlines, shape8hitbox and16/23fractionbars. Source font contours are offline diagnostic only. ENpage uses source wording; ESpage explicitly discloses English fallback. The three glossary definitions are pinned English and Spanish entries from the existing recovered L1KTE01/L1KTS01 source index. Original NMSL2host lookup and companion glossary media remain unverified.
+
+Embedded MP3128440bytes, SHA256c18d9e82abbb6a741678299fa610fa9635390c91d20fdcd7e88be7ba4ff7a9b2. Mono22050Hz,569088decoded samples; remove declared1673sample latency and place all567415remaining samples after3675leading silence. Total573300samples provides one full26second cycle with2210silent tail; no retiming, duplication or truncation. Two decodes agree, and real browser signal, volume/mute, pause/resume, narration stop, Replay and context cleanup passed. Human listening/audio acceptance remains open.
+
+Bounded compiler-assisted advanced-manual implementation. Current-JS admission and actualMyLesson validation are pending. No change to428/2282admitted pages; original-runtime,fidelity,audio acceptance,human,Owner,strict completion,release,publication remain independently open.

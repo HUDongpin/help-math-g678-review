@@ -1,0 +1,25 @@
+{
+  "animationId": "shared-nms002-l02-p044",
+  "sourceSha256": "e31d34af5c1e7c5eda49981b7de68941b3f453e8709c0de0fff10ced4693f622",
+  "sourceBindings": {
+    "questionPool": "sprite243/frame361",
+    "selectToggle": "sprite219/frame1",
+    "partitionControls": [
+      85,
+      86
+    ],
+    "check": 76,
+    "wrongClose": 231,
+    "correctClose": 236,
+    "answerReveal": "sprite235/frame25"
+  },
+  "nativeDecisions": [
+    "Seeded32bitLCG chooses successive random indices without replacement; reproducible modern adapter, not source RNG parity.",
+    "Answer reveal view uses target denominator and first numerator pieces, with controls locked. Source global intPicCount may retain old value but cannot accept answers during reveal.",
+    "Completion has separate continuation phase. finishContinuation helper is not connected to a host until source continuation has been resolved.",
+    "Replay reinitializes same seed/deck and complete state vector."
+  ],
+  "tests": "Three focused state-machine tests plus targeted TypeScript passed.",
+  "registered": false,
+  "originalRuntimeAccepted": false
+}

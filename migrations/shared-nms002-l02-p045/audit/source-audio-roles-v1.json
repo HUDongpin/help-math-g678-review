@@ -1,0 +1,18 @@
+{
+  "sourceSha256": "741913de5407656b5c20362d89762274bb04090a1685321cedc27e4ac00c1fcd",
+  "roles": {
+    "sprite-8": "Button down-state click effect; placement/event audit still pending.",
+    "sprite-195": "Correct feedback Coach_audio_2, starts frame2 and returns to1 at20.",
+    "sprite-197": "Wrong feedback selector at2, S1/S2/S3/S4 labels3/18/31/40, returns16/27/36/54.",
+    "sprite-204": "Main narration, practice stop450, continuation Finish452 and terminal stop498; do not play all trailing PCM during intro."
+  },
+  "currentClockAudit": "source-audio-clock-audit-v2.json",
+  "supersededClockAudit": "source-audio-clock-audit-v1.json",
+  "correction": "v1 applied the second scheduling-span mapping to first branch frame3; v2 maps both spans and the gap. S1 now starts at source sample1673.",
+  "unresolved": [
+    "Speech/content boundary across main450/Finish452",
+    "Selected wrong-branch tail and inter-branch gap disposition",
+    "Actual browser lifecycle and original-runtime listening"
+  ],
+  "audioAccepted": false
+}

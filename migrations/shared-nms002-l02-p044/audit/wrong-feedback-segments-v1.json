@@ -1,0 +1,57 @@
+{
+  "sourceSha256": "e31d34af5c1e7c5eda49981b7de68941b3f453e8709c0de0fff10ced4693f622",
+  "domain": "sprite-242",
+  "sampleRate": 22050,
+  "branches": [
+    {
+      "label": "S1",
+      "entryFrame": 3,
+      "returnFrame": 16,
+      "sourceScheduledStart": 3675,
+      "sourceReturnBoundary": 27562,
+      "nextBranchBoundary": 31238,
+      "authoredSeconds": 1.0833106575963718,
+      "boundedFullSeconds": 1.2500226757369615,
+      "tailPeak": 0.0,
+      "tailNonzeroSamples": 0
+    },
+    {
+      "label": "S2",
+      "entryFrame": 18,
+      "returnFrame": 27,
+      "sourceScheduledStart": 31238,
+      "sourceReturnBoundary": 47775,
+      "nextBranchBoundary": 55125,
+      "authoredSeconds": 0.7499773242630385,
+      "boundedFullSeconds": 1.0833106575963718,
+      "tailPeak": 0.14597070217132568,
+      "tailNonzeroSamples": 4353
+    },
+    {
+      "label": "S3",
+      "entryFrame": 31,
+      "returnFrame": 36,
+      "sourceScheduledStart": 55125,
+      "sourceReturnBoundary": 64312,
+      "nextBranchBoundary": 71662,
+      "authoredSeconds": 0.4166439909297052,
+      "boundedFullSeconds": 0.7499773242630385,
+      "tailPeak": 0.27481675148010254,
+      "tailNonzeroSamples": 5096
+    },
+    {
+      "label": "S4",
+      "entryFrame": 40,
+      "returnFrame": 54,
+      "sourceScheduledStart": 71662,
+      "sourceReturnBoundary": 97388,
+      "nextBranchBoundary": 100608,
+      "authoredSeconds": 1.1667120181405897,
+      "boundedFullSeconds": 1.3127437641723356,
+      "tailPeak": 0.16402462124824524,
+      "tailNonzeroSamples": 3220
+    }
+  ],
+  "qualification": "Measured on complete decoded stream projected into source frame time. No encoded MP3 slicing. Authored return boundaries and next-label boundaries are separate; nonzero tail requires explicit playback decision before implementation.",
+  "audioAccepted": false
+}

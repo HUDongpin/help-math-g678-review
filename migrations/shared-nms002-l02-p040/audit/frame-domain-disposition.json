@@ -1,0 +1,49 @@
+{
+  "animationId": "shared-nms002-l02-p040",
+  "sourceSha256": "be66f636ecc8a705fa6e61b5de03d044cfe0f9b988585a708ecaf0f1e1e832fb",
+  "domains": [
+    {
+      "domain": "root",
+      "frames": 10,
+      "structurallyReachable": true,
+      "nativeQuery": true,
+      "disposition": "root-preloader-entry-inspection"
+    },
+    {
+      "domain": "sprite-1",
+      "frames": 3,
+      "structurallyReachable": false,
+      "nativeQuery": false,
+      "disposition": "unreachable-imported-timeline-preserved-not-rendered"
+    },
+    {
+      "domain": "sprite-13",
+      "frames": 1,
+      "structurallyReachable": false,
+      "nativeQuery": false,
+      "disposition": "unreachable-imported-timeline-preserved-not-rendered"
+    },
+    {
+      "domain": "sprite-20",
+      "frames": 1,
+      "structurallyReachable": false,
+      "nativeQuery": false,
+      "disposition": "unreachable-imported-timeline-preserved-not-rendered"
+    },
+    {
+      "domain": "sprite-43",
+      "frames": 440,
+      "structurallyReachable": true,
+      "nativeQuery": true,
+      "disposition": "main-instruction-local-frame"
+    }
+  ],
+  "scenarios": [
+    "source-explanation",
+    "percent-glossary",
+    "equivalent-glossary",
+    "fraction-glossary",
+    "denominator-glossary"
+  ],
+  "qualification": "Staticqueries preserve local frame meanings; glossary scenario remains absent before completewordgate. Rootpreloader is not rebuilt. Noauthoritativeoriginalruntimeclaim."
+}

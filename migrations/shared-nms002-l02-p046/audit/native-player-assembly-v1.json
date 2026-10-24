@@ -1,0 +1,31 @@
+{
+  "sourceSha256": "c82da2eb14e6db6fbb876e795edd8a8ebc1e890a52d9e7b1b1f5e66153b8cb62",
+  "bindings": {
+    "introClicks": [
+      196,
+      198,
+      200,
+      202,
+      204,
+      235
+    ],
+    "upDownCheckNewHelpOpen": "button click8",
+    "wrongFirstClose": "click184",
+    "wrongSecondClose": "click8",
+    "correctClose": "click197",
+    "helpClose": "no source click"
+  },
+  "nativePolicies": [
+    "Per-Replay/frame timeline event deduplication",
+    "Expired timeline clicks skipped on late UI ticks rather than emitted in a burst",
+    "Stable glossary modal callback pauses transport; actual nesting remains to test",
+    "Visibilitychange pauses; teardown closes context; completion callback once perReplay"
+  ],
+  "pending": [
+    "Real browser initial decode and full form/audio flow",
+    "Nested help/wrong-feedback glossary audio pause and close ordering",
+    "Timing impact of first click decode and shortened timeline-click audibility"
+  ],
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false
+}

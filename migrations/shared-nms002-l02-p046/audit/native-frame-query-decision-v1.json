@@ -1,0 +1,66 @@
+{
+  "page": "shared-nms002-l02-p046",
+  "sourceSha256": "c82da2eb14e6db6fbb876e795edd8a8ebc1e890a52d9e7b1b1f5e66153b8cb62",
+  "mainEntry": {
+    "eventId": "root/tag-394934",
+    "frame": 6,
+    "tagName": "PlaceObject2",
+    "sourceTagOffset": 394934,
+    "sourceTagSha256": "ac37fb0e36cd2978b5a20ad2712ad1773a5232982017b813e1e0f3836c72f0a9",
+    "kind": "place",
+    "depth": 3,
+    "move": false,
+    "flags": {
+      "hasClipActions": false,
+      "hasClipDepth": false,
+      "hasName": true,
+      "hasRatio": true,
+      "hasColorTransform": false,
+      "hasMatrix": true,
+      "hasCharacter": true,
+      "move": false,
+      "hasOpaqueBackground": false,
+      "hasVisible": false,
+      "hasImage": false,
+      "hasClassName": false,
+      "hasCacheAsBitmap": false,
+      "hasBlendMode": false,
+      "hasFilterList": false
+    },
+    "characterId": 205,
+    "matrix": [
+      1,
+      0,
+      0,
+      1,
+      8288,
+      5666
+    ],
+    "ratio": 5,
+    "name": {
+      "text": "animation",
+      "decodeStatus": "exact-ascii",
+      "rawSha256": "ec23cef03131da4f8bc0caa14b0e4719b614adc7bcc1f82e3c19a3f7577a733e",
+      "rawHex": null
+    },
+    "instanceId": "root/depth-3/generation-1"
+  },
+  "supportedInspectionDomains": {
+    "root": 10,
+    "sprite-205": 706,
+    "sprite-168": 25,
+    "sprite-30": 1
+  },
+  "scope": "Four product inspection domains, not a complete source timeline disposition. Audio/feedback child timelines retain separate source audits.",
+  "scenarios": [
+    "source-inspection",
+    "first-wrong",
+    "first-correct",
+    "second-wrong-reveal",
+    "help-example",
+    "three-questions-complete"
+  ],
+  "directSeekPolicy": "source-inspection >=654 enters uncompleted first practice; >654 explicitly marks postStopInspection. Three-question completion requires named modern recipe.",
+  "claimBoundary": "Deterministic modern inspection recipes, not original runtime traces or Flash RNG parity.",
+  "tests": "Both UI languages, seeds0/17/uint32max;replay2;source counts and entry;invalid frame/query/scenario/module identities;5groupsPASS."
+}

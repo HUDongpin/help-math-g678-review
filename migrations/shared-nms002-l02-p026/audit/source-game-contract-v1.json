@@ -1,0 +1,567 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-09-19T09:21:20.432858+00:00",
+  "animationId": "shared-nms002-l02-p026",
+  "source": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/source/source.swf",
+    "bytes": 181821,
+    "sha256": "d168033f7af079b7fad715adadf4c94fffaa84a8b8ddaefbd8d344ed1cfde1f5"
+  },
+  "sourceIr": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-native-ir-v2/source-ir.json",
+    "bytes": 1833709,
+    "sha256": "afe9ced14aa6d78eaf5396e0a5668631bfe77171087478c358a3018f6f714484"
+  },
+  "lane": "advanced-manual",
+  "complexity": "behavior-heavy",
+  "reason": "Two generated shuffled boards, numeric/dynamic text plus fraction pictograms, guarded selection/movement, wrong-return and four-pair round transitions. Requires maintained deterministic state machine; generic timeline renderer cannot execute source AS.",
+  "rounds": [
+    {
+      "round": 1,
+      "stopFrame": 392,
+      "boardSprite": 64,
+      "fractionSprite": 58,
+      "rows": 4,
+      "columns": 2,
+      "cards": 8,
+      "matchesRequired": 4,
+      "sourceScript": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/source/audit/scripts/DefineSprite_82/frame_392/PlaceObject2_64_41/CLIPACTIONRECORD onClipEvent(load).as",
+        "bytes": 2173,
+        "sha256": "72d3d3482fc505064a5d8b234b7c1a73bf5a10ad0431414f8bdca86a758e0d07"
+      },
+      "pairs": [
+        {
+          "pairId": 0,
+          "numerator": 1,
+          "denominator": 2,
+          "pictogramFrame": 2,
+          "pictogramSprite": 51,
+          "pictogramShape": 32,
+          "coloredSectors": 3,
+          "totalSectors": 6,
+          "sourceShape": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/source/audit/shapes/32.svg",
+            "bytes": 1610,
+            "sha256": "7047510d8123e5fba765f3045112e91aeb43e6f609294196857d811f3c72085b"
+          }
+        },
+        {
+          "pairId": 2,
+          "numerator": 2,
+          "denominator": 3,
+          "pictogramFrame": 3,
+          "pictogramSprite": 53,
+          "pictogramShape": 52,
+          "coloredSectors": 4,
+          "totalSectors": 6,
+          "sourceShape": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/source/audit/shapes/52.svg",
+            "bytes": 1780,
+            "sha256": "672b7691de130c3e501d9047f58a364bf17563da220f8a5ce47975277409e045"
+          }
+        },
+        {
+          "pairId": 4,
+          "numerator": 3,
+          "denominator": 4,
+          "pictogramFrame": 4,
+          "pictogramSprite": 55,
+          "pictogramShape": 54,
+          "coloredSectors": 3,
+          "totalSectors": 4,
+          "sourceShape": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/source/audit/shapes/54.svg",
+            "bytes": 1552,
+            "sha256": "fc0e46d77ba1c410823eb96820e8b80bbe3f61ac393aeba39d1a7bbe4524f233"
+          }
+        },
+        {
+          "pairId": 6,
+          "numerator": 1,
+          "denominator": 8,
+          "pictogramFrame": 5,
+          "pictogramSprite": 57,
+          "pictogramShape": 56,
+          "coloredSectors": 1,
+          "totalSectors": 8,
+          "sourceShape": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/source/audit/shapes/56.svg",
+            "bytes": 2006,
+            "sha256": "f375bc985bb29911683449bcf26b20e3168047607c77328547633a5889089967"
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "stopFrame": 425,
+      "boardSprite": 81,
+      "fractionSprite": 79,
+      "rows": 4,
+      "columns": 2,
+      "cards": 8,
+      "matchesRequired": 4,
+      "sourceScript": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/source/audit/scripts/DefineSprite_82/frame_425/PlaceObject2_81_41/CLIPACTIONRECORD onClipEvent(load).as",
+        "bytes": 2174,
+        "sha256": "85287ebae8b6b3c900d1e21d4fee33d1e9298ec9eebcfb285fda4bc424681664"
+      },
+      "pairs": [
+        {
+          "pairId": 0,
+          "numerator": 2,
+          "denominator": 6,
+          "pictogramFrame": 2,
+          "pictogramSprite": 72,
+          "pictogramShape": 71,
+          "coloredSectors": 1,
+          "totalSectors": 3,
+          "sourceShape": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/source/audit/shapes/71.svg",
+            "bytes": 1438,
+            "sha256": "02c373a05ff09de08f042bab50e0f98c5b100a907199f4b967ee36ec00023879"
+          }
+        },
+        {
+          "pairId": 2,
+          "numerator": 2,
+          "denominator": 4,
+          "pictogramFrame": 3,
+          "pictogramSprite": 74,
+          "pictogramShape": 73,
+          "coloredSectors": 3,
+          "totalSectors": 6,
+          "sourceShape": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/source/audit/shapes/73.svg",
+            "bytes": 1806,
+            "sha256": "fe420d59d7190fe5e4c9225ba4e696f68e7eb2aef519276af4e755af53e2ca39"
+          }
+        },
+        {
+          "pairId": 4,
+          "numerator": 2,
+          "denominator": 10,
+          "pictogramFrame": 4,
+          "pictogramSprite": 76,
+          "pictogramShape": 75,
+          "coloredSectors": 1,
+          "totalSectors": 5,
+          "sourceShape": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/source/audit/shapes/75.svg",
+            "bytes": 2261,
+            "sha256": "2a176256b369d3a3aee78f75bd014c4fde35d7198587b7f019923e609bd0a80c"
+          }
+        },
+        {
+          "pairId": 6,
+          "numerator": 6,
+          "denominator": 9,
+          "pictogramFrame": 5,
+          "pictogramSprite": 78,
+          "pictogramShape": 77,
+          "coloredSectors": 2,
+          "totalSectors": 3,
+          "sourceShape": {
+            "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/source/audit/shapes/77.svg",
+            "bytes": 1437,
+            "sha256": "6169b43a9604bff11cca31adeee10d40711611dd982f1d4f623e2be24b6017c0"
+          }
+        }
+      ]
+    }
+  ],
+  "rootFrames": 10,
+  "rootEntry": 6,
+  "mainDomain": 82,
+  "mainFrames": 491,
+  "sourceDomains": 23,
+  "sourceLocalFrames": 661,
+  "sourceProgram": {
+    "firstSelection": "state!=2 chooses leftslot190,336; setsstate2",
+    "secondSelection": "state2 chooses rightslot300,336; setsstate1",
+    "motion": "easeOutQuad(t,b,c,20);t=0..20inclusive;completiononnextenterFrame;21poseupdatespluscompletion",
+    "inputGuard": "down!=1 and inMotion!=true",
+    "correct": "equal pair Answer IDs; remove both cards,incrementanswerCount,decrementtotalCount;fourmatchesresume main timeline",
+    "wrong": "return both to original x/y;restore down0 after movement; no score decrement or new board",
+    "shuffle": "For eachi in0..7 swap with floor(random()*8). Preserve this source algorithm with documented deterministic PRNG for native Replay.",
+    "hover": "65percent base scale;15pointincrements can overshoot130to140. Native reduced-motion/focus equivalent still requires qualification.",
+    "sourceMainLoop": "Main nofinalstop; modernfinalholdafter491/12second source time requiresqualification; holds392and425 must remain interactive"
+  },
+  "dynamicFields": [
+    {
+      "sourceTextId": "character-48",
+      "characterId": 48,
+      "tagName": "DefineEditText",
+      "sourceTagOffset": 14406,
+      "sourceTagSha256": "80d5c872a3d999ff18614aa125103955ae2b885fac92dde174444917d62ea8b8",
+      "boundsTwips": {
+        "left": -120,
+        "right": 710,
+        "top": -120,
+        "bottom": 460
+      },
+      "kind": "dynamic-field",
+      "flags": {
+        "hasText": true,
+        "wordWrap": false,
+        "multiline": false,
+        "password": false,
+        "readOnly": true,
+        "hasTextColor": true,
+        "hasMaxLength": false,
+        "hasFont": true,
+        "hasFontClass": false,
+        "autoSize": false,
+        "hasLayout": true,
+        "noSelect": true,
+        "border": false,
+        "wasStatic": false,
+        "html": false,
+        "useOutlines": false
+      },
+      "fontId": 47,
+      "fontClass": null,
+      "fontHeightTwips": 280,
+      "colorRgba": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "maxLength": null,
+      "layout": {
+        "align": 3,
+        "leftMarginTwips": 0,
+        "rightMarginTwips": 0,
+        "indentTwips": 0,
+        "leadingTwips": 0
+      },
+      "variableName": {
+        "text": "numerator",
+        "decodeStatus": "exact-ascii",
+        "rawSha256": "090889254ed380d58a95bfe6760a791e58cc6a8b052e3fb945b05cf3a1d78cd0",
+        "rawHex": null
+      },
+      "initialText": {
+        "text": "1",
+        "decodeStatus": "exact-ascii",
+        "rawSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+        "rawHex": null
+      },
+      "parseStatus": "structurally-parsed",
+      "runtimeValueResolved": false
+    },
+    {
+      "sourceTextId": "character-49",
+      "characterId": 49,
+      "tagName": "DefineEditText",
+      "sourceTagOffset": 14452,
+      "sourceTagSha256": "a44cc056d24f5392c518e4b143045462ebe628272c1aec6e20e0b3325fd5b0fb",
+      "boundsTwips": {
+        "left": -120,
+        "right": 710,
+        "top": -120,
+        "bottom": 460
+      },
+      "kind": "dynamic-field",
+      "flags": {
+        "hasText": true,
+        "wordWrap": false,
+        "multiline": false,
+        "password": false,
+        "readOnly": true,
+        "hasTextColor": true,
+        "hasMaxLength": false,
+        "hasFont": true,
+        "hasFontClass": false,
+        "autoSize": false,
+        "hasLayout": true,
+        "noSelect": true,
+        "border": false,
+        "wasStatic": false,
+        "html": false,
+        "useOutlines": false
+      },
+      "fontId": 47,
+      "fontClass": null,
+      "fontHeightTwips": 280,
+      "colorRgba": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "maxLength": null,
+      "layout": {
+        "align": 3,
+        "leftMarginTwips": 0,
+        "rightMarginTwips": 0,
+        "indentTwips": 0,
+        "leadingTwips": 0
+      },
+      "variableName": {
+        "text": "denominator",
+        "decodeStatus": "exact-ascii",
+        "rawSha256": "0e7519a5980a644d51c0806b5908e24d42717771155cc92528b0676c93c1b1cb",
+        "rawHex": null
+      },
+      "initialText": {
+        "text": "2",
+        "decodeStatus": "exact-ascii",
+        "rawSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+        "rawHex": null
+      },
+      "parseStatus": "structurally-parsed",
+      "runtimeValueResolved": false
+    },
+    {
+      "sourceTextId": "character-69",
+      "characterId": 69,
+      "tagName": "DefineEditText",
+      "sourceTagOffset": 21914,
+      "sourceTagSha256": "ad3f9ce506063a628784f4c58151deb6d28ab4bb5f61d1e79800ad83cadde5c9",
+      "boundsTwips": {
+        "left": -120,
+        "right": 710,
+        "top": -120,
+        "bottom": 460
+      },
+      "kind": "dynamic-field",
+      "flags": {
+        "hasText": true,
+        "wordWrap": false,
+        "multiline": false,
+        "password": false,
+        "readOnly": true,
+        "hasTextColor": true,
+        "hasMaxLength": false,
+        "hasFont": true,
+        "hasFontClass": false,
+        "autoSize": false,
+        "hasLayout": true,
+        "noSelect": true,
+        "border": false,
+        "wasStatic": false,
+        "html": false,
+        "useOutlines": false
+      },
+      "fontId": 47,
+      "fontClass": null,
+      "fontHeightTwips": 280,
+      "colorRgba": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "maxLength": null,
+      "layout": {
+        "align": 3,
+        "leftMarginTwips": 0,
+        "rightMarginTwips": 0,
+        "indentTwips": 0,
+        "leadingTwips": 0
+      },
+      "variableName": {
+        "text": "numerator",
+        "decodeStatus": "exact-ascii",
+        "rawSha256": "090889254ed380d58a95bfe6760a791e58cc6a8b052e3fb945b05cf3a1d78cd0",
+        "rawHex": null
+      },
+      "initialText": {
+        "text": "1",
+        "decodeStatus": "exact-ascii",
+        "rawSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+        "rawHex": null
+      },
+      "parseStatus": "structurally-parsed",
+      "runtimeValueResolved": false
+    },
+    {
+      "sourceTextId": "character-70",
+      "characterId": 70,
+      "tagName": "DefineEditText",
+      "sourceTagOffset": 21960,
+      "sourceTagSha256": "4b6535879015648cf077ad16dbb5b3ddd77f909e9537ebda9297a51c25fb1ce5",
+      "boundsTwips": {
+        "left": -120,
+        "right": 710,
+        "top": -120,
+        "bottom": 460
+      },
+      "kind": "dynamic-field",
+      "flags": {
+        "hasText": true,
+        "wordWrap": false,
+        "multiline": false,
+        "password": false,
+        "readOnly": true,
+        "hasTextColor": true,
+        "hasMaxLength": false,
+        "hasFont": true,
+        "hasFontClass": false,
+        "autoSize": false,
+        "hasLayout": true,
+        "noSelect": true,
+        "border": false,
+        "wasStatic": false,
+        "html": false,
+        "useOutlines": false
+      },
+      "fontId": 47,
+      "fontClass": null,
+      "fontHeightTwips": 280,
+      "colorRgba": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "maxLength": null,
+      "layout": {
+        "align": 3,
+        "leftMarginTwips": 0,
+        "rightMarginTwips": 0,
+        "indentTwips": 0,
+        "leadingTwips": 0
+      },
+      "variableName": {
+        "text": "denominator",
+        "decodeStatus": "exact-ascii",
+        "rawSha256": "0e7519a5980a644d51c0806b5908e24d42717771155cc92528b0676c93c1b1cb",
+        "rawHex": null
+      },
+      "initialText": {
+        "text": "2",
+        "decodeStatus": "exact-ascii",
+        "rawSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+        "rawHex": null
+      },
+      "parseStatus": "structurally-parsed",
+      "runtimeValueResolved": false
+    }
+  ],
+  "sourceQuirks": [
+    "mainInstructions is referenced by card callbacks but has no placed instance in the source tree; do not invent an extra instructional panel.",
+    "youGotIt and youGotIt_1 are explicitly hidden at both round starts; no page-authored code makes them visible during matching. Raw FFDec392image shows them because AS is not executed.",
+    "Catalog titleRaw says Equivalent Fractions Practice; titleEnglish retains Equivalent Fractions.",
+    "Intro demonstration static fractions/pictograms are distinct from the two generated exercise boards; derive its full timeline separately."
+  ],
+  "audio": {
+    "frameDomain": "sprite-82",
+    "rawSourceFormat": 2,
+    "source": {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/audio/sprite-82/source-stream.mp3",
+      "bytes": 200590,
+      "sha256": "a153d93dd77d22747200de36ac1e2771c5a957398331f9641eb3e760907b6af9"
+    },
+    "rawSourcePayload": {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/audio/sprite-82/source-stream.mp3",
+      "bytes": 200590,
+      "sha256": "a153d93dd77d22747200de36ac1e2771c5a957398331f9641eb3e760907b6af9"
+    },
+    "rawFirstFrame": 8,
+    "rawLastFrame": 491,
+    "latencySamples": 1673,
+    "decoder": {
+      "sourceSha256": "a153d93dd77d22747200de36ac1e2771c5a957398331f9641eb3e760907b6af9",
+      "sourceBytes": 200590,
+      "sampleRate": 22050,
+      "channels": 1,
+      "decodedSamples": 888768,
+      "pcmSha256": "3f3e23d687ed5586a82eae726225462923a0b3c452e967bce84629e1005446c7"
+    },
+    "ffmpegPcm": {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/audio/measured-source-v1/sprite-82/ffmpeg-native-rate.f32le",
+      "bytes": 3555072,
+      "sha256": "f2b7f6fdcd145360938571410bda17d4e440e17d2880567243b4c9fbc120f22b"
+    },
+    "browserPcm": {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/audio/measured-source-v1/sprite-82/browser-full.f32le",
+      "bytes": 3555072,
+      "sha256": "3f3e23d687ed5586a82eae726225462923a0b3c452e967bce84629e1005446c7"
+    },
+    "ffmpeg": {
+      "path": "/opt/homebrew/Cellar/ffmpeg/8.1.2_1/bin/ffmpeg",
+      "bytes": 426224,
+      "sha256": "dad4b30b36a1a999bfa4b6ffbde138bd17ee496c69e12eef638227dff2c6415c"
+    },
+    "ffmpegArgs": [
+      "-v",
+      "error",
+      "-nostdin",
+      "-xerror",
+      "-n",
+      "-i",
+      "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/audio/sprite-82/source-stream.mp3",
+      "-ar",
+      "22050",
+      "-f",
+      "f32le",
+      "-acodec",
+      "pcm_f32le",
+      "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/audio/measured-source-v1/sprite-82/ffmpeg-native-rate.f32le"
+    ],
+    "repeatedDecodeIdentical": true,
+    "ffmpegFullEofPassed": true,
+    "emptyNegativeBlocks": [],
+    "adpcmComparison": null,
+    "normalization": "unchanged-embedded-MP3",
+    "sourceHostVariantSelection": "unassigned-pending-exact-placed-instance-names",
+    "audioAccepted": false,
+    "originalRuntimeAccepted": false,
+    "outputStartSample": 12863,
+    "outputEndSample": 899958,
+    "bufferSamples": 902213,
+    "zeroSamplePlaceholderHeads": 22,
+    "audioPlaybackVerified": false,
+    "clockQualification": "WholeMP3decodedonce;sourceclockpausesat392and425whileindependentboardmotioncontinues;noencodedbytesplitting."
+  },
+  "sourceVariant": {
+    "status": "canonical-retained-variant-not-admitted",
+    "sourceSha256": "d168033f7af079b7fad715adadf4c94fffaa84a8b8ddaefbd8d344ed1cfde1f5",
+    "retainedVariantSha256": "5d594a5499f8f9c3838e47a9995c8a6ed45394ced4853e23fc0abf920ed79a59",
+    "comparison": {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-variant-semantic-differences-v1.json",
+      "bytes": 4063,
+      "sha256": "19accfd577157e9687730cebe7688deae9365904d480aa7d8639e821e1bb2d94"
+    },
+    "qualification": "Identical text-content multiset and exact embedded MP3; script-content differences are two source HLA record flags. Shapes and object graphs differ. Existing catalog canonical binding retained; no equivalence/promotion or variant admission."
+  },
+  "sourceArtifacts": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/extraction.json",
+      "bytes": 22183,
+      "sha256": "d90d1c5406cc600b1322fe3cdd56dfc5a5dd2a7befc1be5ccb8bd0477b3631e9"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/source-all-domain-state-audit-v1.json",
+      "bytes": 6450694,
+      "sha256": "5976fb73397b7f0ae6c56833f4279c2bf55a17c1b8d2cb7246564ee3867ae82c"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-behavior-source-v2/source-terms-v1.json",
+      "bytes": 2707,
+      "sha256": "6da19a181a587077899f5b4a6e6d3461b3ce750d9093f97a917fe3a326c52489"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-source-atlas-v1/receipt.json",
+      "bytes": 766,
+      "sha256": "31517eae6dc8357b3686ac9c6aab06d0b84408189ffb50fb721d61bdfecaef2e"
+    }
+  ],
+  "pending": [
+    "Complete intro source timeline teaching map and stop-aware source composites",
+    "Specify native state machine and deterministic Replay; no renderer exists",
+    "Native semantictext/layout/audio and product integration",
+    "All independent acceptance gates"
+  ],
+  "registered": false,
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false,
+  "humanAccepted": false,
+  "ownerAccepted": false,
+  "strictComplete": false,
+  "published": false
+}

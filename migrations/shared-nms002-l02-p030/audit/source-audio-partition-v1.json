@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-19T15:16:22.069529+00:00",
+  "status": "SOURCE_TIMELINE_PARTITION_VERIFIED",
+  "animationId": "shared-nms002-l02-p030",
+  "inputs": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p030-behavior-source-v1/audio/raw-streams-audit.json",
+      "bytes": 34798,
+      "sha256": "0084dbd4b0f14e35549a17b3404558dfc396960eb43b81a2dfa3117b412b0ec1"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p030-behavior-source-v1/audio/sprite-67/source-stream.mp3",
+      "bytes": 115050,
+      "sha256": "26d47b9a91209ece275b1f6ab730d7b8bdd780c764c59a840f6ff78c6126c290"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p030-behavior-source-v1/audio/measured-source-v1/sprite-67/browser-full.f32le",
+      "bytes": 2039040,
+      "sha256": "a062309d4f6831441f6cbd629adf5adc1122def6b4458574029b743c3d44754d"
+    }
+  ],
+  "sampleRate": 22050,
+  "channels": 1,
+  "decodedSamples": 509760,
+  "latencySamples": 1673,
+  "nominalSamplesPerFrame": 1837,
+  "stopSeconds": 24.916666666666668,
+  "stopSamples": 549413,
+  "segments": [
+    {
+      "firstFrame": 11,
+      "lastBlockFrame": 97,
+      "sourceStartSample": 1673,
+      "outputStartSample": 18375,
+      "declaredSeek": 1673,
+      "headLatency": 1673,
+      "mp3CumulativeSamples": 0,
+      "firstMp3ReservoirBytes": 0,
+      "sourceEndSample": 158962,
+      "samples": 157289,
+      "outputEndSample": 175664,
+      "outputStartSeconds": 0.8333333333333334,
+      "outputEndSeconds": 7.966621315192744
+    },
+    {
+      "firstFrame": 108,
+      "lastBlockFrame": 299,
+      "sourceStartSample": 158962,
+      "outputStartSample": 196613,
+      "declaredSeek": 41,
+      "headLatency": 1673,
+      "mp3CumulativeSamples": 157248,
+      "firstMp3ReservoirBytes": 255,
+      "sourceEndSample": 509760,
+      "samples": 350798,
+      "outputEndSample": 547411,
+      "outputStartSeconds": 8.916689342403629,
+      "outputEndSeconds": 24.825895691609976
+    }
+  ],
+  "gaps": [
+    {
+      "fromSample": 0,
+      "toSample": 18375
+    },
+    {
+      "fromSample": 175664,
+      "toSample": 196613
+    },
+    {
+      "fromSample": 547411,
+      "toSample": 549413
+    }
+  ],
+  "prepared": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p030-audio-segments-v1/prepared-mono-22050.f32le",
+    "bytes": 2197652,
+    "sha256": "1244414f9b3d0119be6b7e741aa7defb84685948d8957c99f74792691282788f"
+  },
+  "allPostLatencySamplesPreservedExactlyOnce": true,
+  "noTimeStretch": true,
+  "interpretation": "Decode the complete original MP3 to preserve its inter-frame bit reservoir. First segment starts at the declared latency. Subsequent source offsets equal preceding decoded sample counts plus stream latency and the first block seek. Partition at those offsets without dropping or repeating post-latency samples; place each segment at its source first-frame time. Continuous samples within each segment retain natural sample rate. Output sample starts round to nearest sample; authored stop buffer rounds up.",
+  "references": [
+    {
+      "title": "Adobe SWF19, MP3 streaming and latency/seek samples",
+      "url": "https://open-flash.github.io/mirrors/swf-spec-19.pdf#page=186"
+    },
+    {
+      "title": "Ruffle StreamTagReader MP3 gap handling, forensic implementation with unresolved runtime details",
+      "url": "https://github.com/ruffle-rs/ruffle/blob/master/core/src/backend/audio/decoders.rs"
+    }
+  ],
+  "limits": [
+    "This implements source-declared timing as engineering evidence; original Flash playback alignment is unaccepted.",
+    "Per-frame seek metadata uses1837 integer samples while22050/12=1837.5; preserve natural-rate audio within segments rather than retiming each block.",
+    "Per-frame metadata includes zero payload at12 and97 and negative seek at97; preserve records without treating them as new playback starts.",
+    "The Ruffle implementation explicitly marks aspects of gap behavior as unresolved; it is not original-runtime authority."
+  ],
+  "actualPlaybackVerified": false,
+  "audioAccepted": false,
+  "originalRuntimeAccepted": false,
+  "registered": false,
+  "published": false
+}

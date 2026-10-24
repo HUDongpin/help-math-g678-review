@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l02-p043",
+  "sourceSha256": "a6a13838f1301d7665dd4f8a96c561fd3ef23e90ffeaf6e433909d26cc419528",
+  "items": [
+    {
+      "sourceInstance": "Scr_1",
+      "sprite": 99,
+      "textCharacter": 72,
+      "term": "fraction",
+      "target": "Mc_Tar_1",
+      "targetSprite": 109,
+      "row": 2
+    },
+    {
+      "sourceInstance": "Scr_2",
+      "sprite": 101,
+      "textCharacter": 75,
+      "term": "equivalent",
+      "target": "Mc_Tar_2",
+      "targetSprite": 111,
+      "row": 4
+    },
+    {
+      "sourceInstance": "Scr_3",
+      "sprite": 103,
+      "textCharacter": 74,
+      "term": "decimal",
+      "target": "Mc_Tar_3",
+      "targetSprite": 107,
+      "row": 1
+    },
+    {
+      "sourceInstance": "Scr_4",
+      "sprite": 105,
+      "textCharacter": 73,
+      "term": "percent",
+      "target": "Mc_Tar_4",
+      "targetSprite": 110,
+      "row": 3
+    }
+  ],
+  "rows": [
+    {
+      "row": 1,
+      "definitionCharacter": 64,
+      "term": "decimal",
+      "picture": "0.25"
+    },
+    {
+      "row": 2,
+      "definitionCharacter": 67,
+      "term": "fraction",
+      "picture": "One of three equal bar parts; two of six pens; 2/6 = 1/3."
+    },
+    {
+      "row": 3,
+      "definitionCharacter": 66,
+      "term": "percent",
+      "picture": "75 shaded cells out of100; 75% =75outof100."
+    },
+    {
+      "row": 4,
+      "definitionCharacter": 65,
+      "term": "equivalent",
+      "picture": "2/4 =1/2 =0.50 =50% with two half-shaded circular diagrams."
+    }
+  ],
+  "pictureExpansionSprites": [
+    120,
+    126,
+    131
+  ],
+  "glossaryButtons": {
+    "69": "Fraction",
+    "70": "Part",
+    "71": "Whole",
+    "76": "Power",
+    "77": "Value",
+    "78": "Group"
+  },
+  "feedback": {
+    "wrong": "Pop1_mc sprite245 is explicitly hidden at main223; source Close button242 hides popup and re-enables items. Static FFDec export does not run this hiding action.",
+    "correct": "Coach_audio_2 sprite249 plays from2 to20; re-enables items and invokes host showRightFeed at4matched.",
+    "completionVariants": [
+      143,
+      171,
+      183,
+      204,
+      232
+    ],
+    "unresolvedEntry": "Coach_audio_1 sprite247 declares randomS1..S4; no page-local invocation established yet. Do not assume a host binding.",
+    "audio": "Nine embedded stream headers; sprite183usesADPCM compression1, othersMP3compression2. Full extraction/decoding remainspending."
+  },
+  "evidence": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p043/audit/source-structure-v1.json",
+      "bytes": 529951,
+      "sha256": "1f81d0a3fabdedb3e01533e60ea5fe5d1bbd430ef878f72a5be8f3497cf20235"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p043/audit/ffdec-keyframes-v1/DefineSprite_250/223.png",
+      "bytes": 101961,
+      "sha256": "32d95bd28f10610980e46cb6bfb1b76432ec8e7f543b8c0f778627681ea33b61"
+    }
+  ],
+  "qualification": "Source static drawing and script evidence; root-host execution and original runtime not verified.",
+  "registered": false,
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false
+}

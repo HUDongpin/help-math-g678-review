@@ -1,0 +1,24 @@
+{
+  "sourceSha256": "18786203d58efb8aa54c3701e72838887d0702ff03d68819830938a252facce7",
+  "nativeClock": {
+    "sampleRate": 22050,
+    "fps": 12,
+    "rounding": "nearest sample ties to even",
+    "practiceFrame": 330,
+    "practiceBoundary": 604538,
+    "terminalFrame": 363,
+    "terminalBoundary": 665175,
+    "fullScheduledEnd": 666597
+  },
+  "terminalTail": {
+    "startSample": 665010,
+    "endSample": 666432,
+    "samples": 1422,
+    "peak": 0.18531140685081482,
+    "rms": 0.04898915979349105
+  },
+  "decision": "Preserve the complete nonzero terminal tail in native audio. Keep the visual state at terminal frame363 while remaining audio completes. This is a documented native completion adapter, not a claim of original-runtime stop parity.",
+  "timingStatus": "Provisional scheduling model; actual browser decode/transport and source tag-counter differences still require validation.",
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false
+}

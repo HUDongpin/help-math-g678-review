@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l02-p013",
+  "sourceSha256": "510cd1fe9204d32d20910c1c907d50a4e35507c43b48079438aba9eb97ffa26e",
+  "sourceFonts": [
+    {
+      "characterId": 2,
+      "name": "Bauhaus Md BT bold",
+      "role": "unreferenced helper"
+    },
+    {
+      "characterId": 6,
+      "name": "Bauhaus Md BT regular",
+      "role": "active native-text source"
+    },
+    {
+      "characterId": 7,
+      "name": "Arial",
+      "role": "unreferenced helper"
+    },
+    {
+      "characterId": 109,
+      "name": "Bertram LET",
+      "role": "correct title"
+    }
+  ],
+  "nativeFontPolicy": "Existing locally bundled Nunito Sans and Fredoka; native MathML uses platform math font fallback. No new external font dependency.",
+  "artDecisions": {
+    "nativeEqualSixths": [
+      37,
+      39,
+      41,
+      42,
+      43,
+      44,
+      49,
+      50,
+      51,
+      54,
+      55,
+      59,
+      67,
+      69,
+      70,
+      71,
+      73,
+      75,
+      77,
+      79,
+      81
+    ],
+    "nativeFractionBars": [
+      34,
+      47,
+      82,
+      84,
+      86,
+      88,
+      90,
+      112,
+      118
+    ],
+    "nativeHeading": [
+      26
+    ],
+    "nativePromptAndClose": [
+      28,
+      30,
+      92,
+      94,
+      95,
+      96,
+      97,
+      98,
+      101,
+      108
+    ],
+    "nativeSourceDemoPointer": [
+      61,
+      62,
+      64,
+      65,
+      66
+    ],
+    "nativePanel": [
+      27
+    ],
+    "transparentHitRegion": [
+      40
+    ],
+    "unreferencedLibrary": [
+      1,
+      4,
+      15,
+      19,
+      20,
+      23
+    ]
+  },
+  "bitmapDecisions": {
+    "63": "Source authored pointer retained via scalable native pointer following extracted source matrices; original bitmap preserved as evidence."
+  },
+  "nativeTextDecisions": "All32 source text definitions preserved in IR. Active main text/labels/equation, wrong dynamic message and correct title use native text/MathML. Unreferenced helper text and offstage audio labels never enter the learner presentation.",
+  "adaptations": [
+    "Source left/right circle arrangement retained at all widths. Individual1/6labels move to six native numbered/color-linked controls below the diagrams; target chosen fractions appear below with retained color links. Added plus signs express the source cumulative sixths without changing arithmetic.",
+    "Pointer dragging preserves source outside-target feedback. A tap selects an item and Place completes the action without dragging; Escape/Cancel restores without an attempt. Six numbered accessible controls are a modern alternative to the six source hit clips.",
+    "Native diagrams use exact60degree sectors. Tutorial movement and pointer transforms use source pose matrices mapped to the responsive diagram. Reduced motion hides the moving pointer and suppresses blinking but preserves all teaching phases and audio timing.",
+    "Source term styling and heading use existing modern host typography. Native wrong dialog can be closed by Escape; source wrong audio continues unless explicitly paused by host.",
+    "No unreferenced decimal-multiplication helper is enabled. No additional network endpoint, score, lesson or source page invented."
+  ],
+  "registered": false,
+  "originalRuntimeAccepted": false
+}

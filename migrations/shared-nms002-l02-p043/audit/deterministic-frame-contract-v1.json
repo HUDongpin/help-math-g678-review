@@ -1,0 +1,34 @@
+{
+  "animationId": "shared-nms002-l02-p043",
+  "sourceSha256": "a6a13838f1301d7665dd4f8a96c561fd3ef23e90ffeaf6e433909d26cc419528",
+  "queryKind": "deterministic-modern-inspection",
+  "rootFrames": 10,
+  "mainFrames": 225,
+  "rootEntryFrame": 6,
+  "matchingStopFrame": 223,
+  "scenarios": [
+    "source-inspection",
+    "wrong-fraction-row1",
+    "correct-fraction-row2",
+    "four-matches-completion"
+  ],
+  "allMatchTrace": [
+    "fraction->2",
+    "finish-correct-feedback",
+    "equivalent->4",
+    "finish-correct-feedback",
+    "decimal->1",
+    "finish-correct-feedback",
+    "percent->3",
+    "finish-correct-feedback"
+  ],
+  "limitations": [
+    "Source-local post-stop inspection has no implied answers or completion.",
+    "Frame queries inspect visual states; live audio timing remains owned by the clock and media transport.",
+    "Seeded completion selection is a modern host adapter, not verified original host selection.",
+    "Picture and glossary modal source domains are not exposed by this frame contract.",
+    "Source text binding, browser renderer inspection and full My Lesson integration remain pending."
+  ],
+  "originalRuntimeAccepted": false,
+  "registered": false
+}

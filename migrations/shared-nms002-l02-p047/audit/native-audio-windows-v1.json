@@ -1,0 +1,68 @@
+{
+  "sourceSha256": "6298123b7431ed8aad86a409125c7db979bfeeaf272efd67188d12f66e2d7df6",
+  "fixed": {
+    "intro": {
+      "domain": "81",
+      "start": 0,
+      "end": 255412
+    },
+    "continuation": {
+      "domain": "81",
+      "start": 255412,
+      "end": 343612
+    },
+    "correct-feedback": {
+      "domain": "78",
+      "start": 1838,
+      "end": 36562
+    }
+  },
+  "wrong": [
+    {
+      "label": "S1",
+      "domain": "80",
+      "start": 3675,
+      "end": 27562,
+      "authoredReturn": 27562,
+      "fullBranchEnd": 31238,
+      "silentTailOmitted": true
+    },
+    {
+      "label": "S2",
+      "domain": "80",
+      "start": 31238,
+      "end": 55125,
+      "authoredReturn": 47775,
+      "fullBranchEnd": 55125,
+      "silentTailOmitted": false
+    },
+    {
+      "label": "S3",
+      "domain": "80",
+      "start": 55125,
+      "end": 71662,
+      "authoredReturn": 64312,
+      "fullBranchEnd": 71662,
+      "silentTailOmitted": false
+    },
+    {
+      "label": "S4",
+      "domain": "80",
+      "start": 71662,
+      "end": 100608,
+      "authoredReturn": 97388,
+      "fullBranchEnd": 100608,
+      "silentTailOmitted": false
+    }
+  ],
+  "policy": [
+    "Continuous PCM uses declared12fps nearest-sample scheduling; source tag-counter differences up to91samples are retained in the audit and are not resampled away.",
+    "Main140/188 boundaries split intro and continuation; final1220silent samples remain preserved but unplayed.",
+    "Correct and non-silent wrong feedback tails play through the next authored label boundary or full stream end. Native automatic readiness waits for that playback window; this is a documented audio-completion adapter, not original-runtime timing parity.",
+    "S1 tail is measured exactly silent, so its native window ends at the authored return coordinate.",
+    "No added click sound: source contains only the three stream headers/258blocks, no event-sound/button-sound tags.",
+    "All original MP3 and decoded PCM bytes remain intact. Named listening and original-runtime acceptance remain pending."
+  ],
+  "audioAccepted": false,
+  "originalRuntimeAccepted": false
+}

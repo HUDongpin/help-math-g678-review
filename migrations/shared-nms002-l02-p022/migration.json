@@ -1,0 +1,550 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-nms002-l02-p022",
+  "animationId": "shared-nms002-l02-p022",
+  "assetId": "swf-c02ece5daf5f6eab9c6852106a17fe189c94b4f1dc2c32f75a1bba49de35db1c",
+  "status": "implementing",
+  "created": "2026-09-13",
+  "confidence": "medium",
+  "classification": {
+    "collection": "G6-G8-shared",
+    "grade": "shared",
+    "lesson": "NMS002-L2",
+    "section": "IN",
+    "page": 22,
+    "domain": "unknown",
+    "knowledgePoint": {
+      "en": "Name the shaded three of eight equal parts; distinguish numerator and denominator.",
+      "es": ""
+    },
+    "titleRaw": "Naming Fractions",
+    "titleDisplay": "Naming Fractions",
+    "status": "source-bound",
+    "evidence": [
+      "audit/source-semantic-qualification-v1.json"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/IN/L2IN07.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/IN/L2IN07.swf",
+    "flaSha256": "",
+    "swfSha256": "c02ece5daf5f6eab9c6852106a17fe189c94b4f1dc2c32f75a1bba49de35db1c",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 633906,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "",
+    "actionScriptVersion": "AS2",
+    "complexity": "behavior-heavy",
+    "fonts": [
+      "Bauhaus Md BT",
+      "Bertram LET",
+      "Boink LET",
+      "GeoSlab703 Md BT",
+      "Arial",
+      "Performa Black SSi",
+      "MicrogrammaDMedExt",
+      "Revue BT",
+      "Eras Bd BT"
+    ],
+    "scripts": [
+      "root preloader stop1 and pageentry stop6",
+      "main206 stop223quiz; frame224clearquiz;501naturalwrap",
+      "correct35; wrong36; help37; close187; terms16/17",
+      "feedback62/77/98/116 holds andsecondwrongadvance; right142/154/171/185continue"
+    ],
+    "externalDependencies": [
+      "NMSsourcehost showWrongFeed/showRightFeed/enableQuizButton/disableQuizButton contract",
+      "bounded sourceGlossary Part/Fraction",
+      "modern MyLesson play/pause/replay/volume"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      {
+        "sourceCharacterId": 12,
+        "role": "questionreveal"
+      },
+      {
+        "sourceCharacterId": 117,
+        "role": "right142illustration"
+      }
+    ],
+    "morphs": [
+      {
+        "sourceCharacterId": 39
+      },
+      {
+        "sourceCharacterId": 42
+      },
+      {
+        "sourceCharacterId": 45
+      },
+      {
+        "sourceCharacterId": 60
+      },
+      {
+        "sourceCharacterId": 63
+      },
+      {
+        "sourceCharacterId": 75
+      },
+      {
+        "sourceCharacterId": 99
+      },
+      {
+        "sourceCharacterId": 100
+      },
+      {
+        "sourceCharacterId": 113
+      },
+      {
+        "sourceCharacterId": 114
+      },
+      {
+        "sourceCharacterId": 129
+      },
+      {
+        "sourceCharacterId": 137
+      },
+      {
+        "sourceCharacterId": 138
+      },
+      {
+        "sourceCharacterId": 140
+      },
+      {
+        "sourceCharacterId": 156
+      },
+      {
+        "sourceCharacterId": 157
+      },
+      {
+        "sourceCharacterId": 162
+      },
+      {
+        "sourceCharacterId": 163
+      },
+      {
+        "sourceCharacterId": 164
+      },
+      {
+        "sourceCharacterId": 169
+      },
+      {
+        "sourceCharacterId": 174
+      },
+      {
+        "sourceCharacterId": 175
+      },
+      {
+        "sourceCharacterId": 180
+      },
+      {
+        "sourceCharacterId": 182
+      }
+    ],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "source-fraction-quiz",
+      "kind": "interactive",
+      "reachable": true,
+      "description": "Mainintro,4choices,firstwrongretry,secondwrongassistedoutro,allhostfeedbackbranches,help,terms,Replay"
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "en"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "source-62",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p022-behavior-source-v1/audio/sprite-62/source-stream.mp3",
+        "language": "en",
+        "frameDomain": "sprite-62",
+        "startFrame": 2
+      },
+      {
+        "id": "source-77",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p022-behavior-source-v1/audio/sprite-77/source-stream.mp3",
+        "language": "en",
+        "frameDomain": "sprite-77",
+        "startFrame": 2
+      },
+      {
+        "id": "source-98",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p022-behavior-source-v1/audio/sprite-98/source-stream.mp3",
+        "language": "en",
+        "frameDomain": "sprite-98",
+        "startFrame": 2
+      },
+      {
+        "id": "source-116",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p022-behavior-source-v1/audio/sprite-116/source-stream.mp3",
+        "language": "en",
+        "frameDomain": "sprite-116",
+        "startFrame": 3
+      },
+      {
+        "id": "source-142",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p022-behavior-source-v1/audio/sprite-142/source-stream.mp3",
+        "language": "en",
+        "frameDomain": "sprite-142",
+        "startFrame": 2
+      },
+      {
+        "id": "source-154",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p022-behavior-source-v1/audio/sprite-154/source-stream.mp3",
+        "language": "en",
+        "frameDomain": "sprite-154",
+        "startFrame": 2
+      },
+      {
+        "id": "source-171",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p022-behavior-source-v1/audio/sprite-171/source-stream.mp3",
+        "language": "en",
+        "frameDomain": "sprite-171",
+        "startFrame": 2
+      },
+      {
+        "id": "source-185",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p022-behavior-source-v1/audio/sprite-185/source-stream.mp3",
+        "language": "en",
+        "frameDomain": "sprite-185",
+        "startFrame": 3
+      },
+      {
+        "id": "source-206",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p022-behavior-source-v1/audio/sprite-206/source-stream.mp3",
+        "language": "en",
+        "frameDomain": "sprite-206",
+        "startFrame": 7
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "React, SVG illustrations, native HTML and MathML",
+    "route": "/en/migration-status/g678-calibration/shared-nms002-l02-p022",
+    "routeFile": "apps/web/app/[locale]/migration-status/g678-calibration/shared-nms002-l02-p022/page.tsx",
+    "component": "packages/demos/src/nms-l02-p022-presentation-v1.tsx",
+    "registryModule": "packages/demos/src/modules/g678-nms-l02-native-question-p022.tsx",
+    "timelineModule": "packages/demos/src/nms-l02-p022-timeline-v1.ts",
+    "testFile": "packages/demos/tests/nms-l02-p022-state.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-206",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "source-fraction-quiz"
+        ]
+      },
+      {
+        "id": "sprite-9",
+        "kind": "nested",
+        "sourceTimelineId": "9",
+        "parentFrameDomainId": "root",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-fraction-quiz"
+        ]
+      },
+      {
+        "id": "sprite-59",
+        "kind": "nested",
+        "sourceTimelineId": "59",
+        "parentFrameDomainId": "sprite-62",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-fraction-quiz"
+        ]
+      },
+      {
+        "id": "sprite-62",
+        "kind": "nested",
+        "sourceTimelineId": "62",
+        "parentFrameDomainId": "sprite-206",
+        "frameCount": 29,
+        "scenarioIds": [
+          "source-fraction-quiz"
+        ]
+      },
+      {
+        "id": "sprite-74",
+        "kind": "nested",
+        "sourceTimelineId": "74",
+        "parentFrameDomainId": "sprite-77",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-fraction-quiz"
+        ]
+      },
+      {
+        "id": "sprite-77",
+        "kind": "nested",
+        "sourceTimelineId": "77",
+        "parentFrameDomainId": "sprite-206",
+        "frameCount": 28,
+        "scenarioIds": [
+          "source-fraction-quiz"
+        ]
+      },
+      {
+        "id": "sprite-97",
+        "kind": "nested",
+        "sourceTimelineId": "97",
+        "parentFrameDomainId": "sprite-98",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-fraction-quiz"
+        ]
+      },
+      {
+        "id": "sprite-98",
+        "kind": "nested",
+        "sourceTimelineId": "98",
+        "parentFrameDomainId": "sprite-206",
+        "frameCount": 28,
+        "scenarioIds": [
+          "source-fraction-quiz"
+        ]
+      },
+      {
+        "id": "sprite-103",
+        "kind": "nested",
+        "sourceTimelineId": "103",
+        "parentFrameDomainId": "sprite-116",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-fraction-quiz"
+        ]
+      },
+      {
+        "id": "sprite-112",
+        "kind": "nested",
+        "sourceTimelineId": "112",
+        "parentFrameDomainId": "sprite-116",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-fraction-quiz"
+        ]
+      },
+      {
+        "id": "sprite-116",
+        "kind": "nested",
+        "sourceTimelineId": "116",
+        "parentFrameDomainId": "sprite-206",
+        "frameCount": 31,
+        "scenarioIds": [
+          "source-fraction-quiz"
+        ]
+      },
+      {
+        "id": "sprite-142",
+        "kind": "nested",
+        "sourceTimelineId": "142",
+        "parentFrameDomainId": "sprite-206",
+        "frameCount": 31,
+        "scenarioIds": [
+          "source-fraction-quiz"
+        ]
+      },
+      {
+        "id": "sprite-154",
+        "kind": "nested",
+        "sourceTimelineId": "154",
+        "parentFrameDomainId": "sprite-206",
+        "frameCount": 27,
+        "scenarioIds": [
+          "source-fraction-quiz"
+        ]
+      },
+      {
+        "id": "sprite-160",
+        "kind": "nested",
+        "sourceTimelineId": "160",
+        "parentFrameDomainId": "sprite-171",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-fraction-quiz"
+        ]
+      },
+      {
+        "id": "sprite-168",
+        "kind": "nested",
+        "sourceTimelineId": "168",
+        "parentFrameDomainId": "sprite-171",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-fraction-quiz"
+        ]
+      },
+      {
+        "id": "sprite-171",
+        "kind": "nested",
+        "sourceTimelineId": "171",
+        "parentFrameDomainId": "sprite-206",
+        "frameCount": 28,
+        "scenarioIds": [
+          "source-fraction-quiz"
+        ]
+      },
+      {
+        "id": "sprite-185",
+        "kind": "nested",
+        "sourceTimelineId": "185",
+        "parentFrameDomainId": "sprite-206",
+        "frameCount": 32,
+        "scenarioIds": [
+          "source-fraction-quiz"
+        ]
+      },
+      {
+        "id": "sprite-199",
+        "kind": "nested",
+        "sourceTimelineId": "199",
+        "parentFrameDomainId": "sprite-200",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-fraction-quiz"
+        ]
+      },
+      {
+        "id": "sprite-200",
+        "kind": "nested",
+        "sourceTimelineId": "200",
+        "parentFrameDomainId": "sprite-206",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-fraction-quiz"
+        ]
+      },
+      {
+        "id": "sprite-206",
+        "kind": "nested",
+        "sourceTimelineId": "206",
+        "parentFrameDomainId": "root",
+        "frameCount": 501,
+        "scenarioIds": [
+          "source-fraction-quiz"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

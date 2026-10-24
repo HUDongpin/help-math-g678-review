@@ -1,0 +1,48 @@
+{
+  "sourceSha256": "741913de5407656b5c20362d89762274bb04090a1685321cedc27e4ac00c1fcd",
+  "rows": [
+    {
+      "label": "L1",
+      "sourceAnswer": "2/10",
+      "solidBlueSectorCount": 2,
+      "mixedFillLeaves": []
+    },
+    {
+      "label": "L2",
+      "sourceAnswer": "3/10",
+      "solidBlueSectorCount": 3,
+      "mixedFillLeaves": [
+        {
+          "characterId": 169,
+          "fills": [
+            "#0000ff",
+            "#ffffff"
+          ],
+          "svgSha256": "18009c289529ea8f58ebad8235e7a199172a90f477f1d70e9b72401be4c9b9b3"
+        }
+      ]
+    },
+    {
+      "label": "L3",
+      "sourceAnswer": "4/10",
+      "solidBlueSectorCount": 4,
+      "mixedFillLeaves": []
+    }
+  ],
+  "decision": "Use ten equal-sector question geometry with 2/3/4 selected sectors. Do not infer selected-sector count from any-blue-fill leaf count: L2 shape169 contains a tiny blue boundary fragment plus a white sector.",
+  "sourceComposition": {
+    "path": "audit/chart-source-composition-v1.svg",
+    "sha256": "aa927a945995d7ed186c55eaee430342bc6f413acf382f92cfc78f78d3051fa0"
+  },
+  "browserScreenshot": {
+    "path": "output/playwright/p045-chart-source-v2.png",
+    "sha256": "c43a0d4cfab654037a71ca241d0d04b4f34e72fb0602850a58ff15514eb17c0f"
+  },
+  "renderingQualifications": [
+    "Chromium rendering preserves source outlines and fills; inspected screenshot is static source composition, not original runtime.",
+    "ImageMagick PNG v2 omitted source outline strokes and is not the visual comparison authority.",
+    "output/playwright/p045-chart-source-v1.png captured about:blank after file protocol denial; excluded from source evidence."
+  ],
+  "originalRuntimeAccepted": false,
+  "fidelityAccepted": false
+}

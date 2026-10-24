@@ -1,0 +1,18 @@
+{
+  "sourceSha256": "741913de5407656b5c20362d89762274bb04090a1685321cedc27e4ac00c1fcd",
+  "sourceEvidence": [
+    "ffdec-scripts-v1/scripts/DefineButton2_134/BUTTONCONDACTION on(release).as",
+    "ffdec-scripts-v1/scripts/DefineButton2_185/BUTTONCONDACTION on(release).as",
+    "ffdec-scripts-v1/scripts/DefineButton2_190/BUTTONCONDACTION on(release).as"
+  ],
+  "implementation": "packages/demos/src/nms-l02-p045-practice-view-v1.tsx",
+  "behavior": [
+    "Controlled labelled numerator/denominator text inputs; Enter submits only while editable.",
+    "First/second wrong feedback text differs; state machine owns answer reveal and progression.",
+    "Native dialog opens with heading focus; close returns to editable trigger, available New button or section fallback.",
+    "Help action is delegated to parent; source help content and audio/player integration remain pending."
+  ],
+  "validation": "SSR markup/state tests and targeted TypeScript passed. Browser focus/dialog verification not yet established.",
+  "registered": false,
+  "originalRuntimeAccepted": false
+}

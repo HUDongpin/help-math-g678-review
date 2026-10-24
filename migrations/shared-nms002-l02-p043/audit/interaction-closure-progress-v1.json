@@ -1,0 +1,84 @@
+{
+  "sourceSha256": "a6a13838f1301d7665dd4f8a96c561fd3ef23e90ffeaf6e433909d26cc419528",
+  "pictureStates": [
+    {
+      "sprite": 120,
+      "inspectedFrame": 2,
+      "evidence": {
+        "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p043/audit/ffdec-picture-states-v1/DefineSprite_120/2.png",
+        "bytes": 11222,
+        "sha256": "625b90437a369a189f2496946fe7cfcc525bc8ae572b853e56dbab36fd396fdb"
+      }
+    },
+    {
+      "sprite": 126,
+      "inspectedFrame": 2,
+      "evidence": {
+        "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p043/audit/ffdec-picture-states-v1/DefineSprite_126/2.png",
+        "bytes": 9777,
+        "sha256": "c1d9c4dc14f2835c1499564d721f6e918bb66ad0a27381c0f491661f9542a3d3"
+      }
+    },
+    {
+      "sprite": 131,
+      "inspectedFrame": 2,
+      "evidence": {
+        "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p043/audit/ffdec-picture-states-v1/DefineSprite_131/2.png",
+        "bytes": 16394,
+        "sha256": "b28cd6ea2b456f030980329aefabd9a295b52096800f0b9c1d4fe44aa995d721"
+      }
+    }
+  ],
+  "pictures": [
+    "120: one-third bar, two of six pencils, 2/6=1/3",
+    "126:75of100shadedgrid",
+    "131:2/4=1/2=.50=50percent"
+  ],
+  "glossary": {
+    "entries": [
+      "fraction",
+      "group",
+      "part",
+      "power",
+      "value",
+      "whole"
+    ],
+    "evidence": {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p043/audit/source-glossary-v1.json",
+      "bytes": 8278,
+      "sha256": "739cca88e3c3600d31ea483162ac0fc3f685838d7340809841b0bb32b8b9f0ff"
+    },
+    "qualification": "Definitions from exact recovered technical EN/ES L1index; originalL2host lookup and companionmedia remain unverified."
+  },
+  "feedbackLabels": {
+    "sprite247": {
+      "S1": [
+        3,
+        16
+      ],
+      "S2": [
+        18,
+        27
+      ],
+      "S3": [
+        31,
+        36
+      ],
+      "S4": [
+        40,
+        54
+      ]
+    },
+    "qualification": "Labels and reset frames only. Page-local entry to Coach_audio_1 unresolved."
+  },
+  "matchingModel": {
+    "evidence": {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p043-matching-v1.ts",
+      "bytes": 2788,
+      "sha256": "813795d420c3fee627b57db5eeef031baafb32a59946d9f319827ebc2b2244bd"
+    },
+    "scope": "Four source pairs, feedback locking, no duplicatecount, fullReplay; media clock and callback/host binding separate.",
+    "tests": "16term-target pairs and24successorders; completion requires correctfeedback and finalfeedback gates."
+  },
+  "accepted": false
+}

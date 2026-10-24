@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-nms002-l02-p006",
+  "animationId": "shared-nms002-l02-p006",
+  "assetId": "swf-b6afc05a82304d3e0721933c2b4c3f1d8740fc46699125b1ff5149e096601b4e",
+  "status": "implementing",
+  "created": "2026-09-12",
+  "confidence": "source-structural",
+  "classification": {
+    "collection": "G6-G8-shared",
+    "grade": "shared",
+    "lesson": "NMS002-L2",
+    "section": "RW",
+    "page": 6,
+    "domain": "unknown",
+    "knowledgePoint": {
+      "en": "How do you convert fractions to decimals and percents?",
+      "es": ""
+    },
+    "titleRaw": "Page 5",
+    "titleDisplay": "Essential Question",
+    "status": "source-resolved",
+    "evidence": [
+      "audit/source-semantic-qualification-v1.json"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/RW/L2RW06.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/RW/L2RW06.swf",
+    "flaSha256": "",
+    "swfSha256": "b6afc05a82304d3e0721933c2b4c3f1d8740fc46699125b1ff5149e096601b4e",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 1364736,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "",
+    "actionScriptVersion": "AS2",
+    "complexity": "interactive-understood",
+    "fonts": [
+      "Bauhaus Md BT"
+    ],
+    "scripts": [
+      "root preloader and stop6",
+      "sprite54 stop153",
+      "buttons46/47/52/53 KeyAttribute + DoHyperLinks + animation.stop"
+    ],
+    "externalDependencies": [
+      "modern keyterm adapter"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      1,
+      4,
+      10,
+      32,
+      41,
+      48,
+      49
+    ],
+    "morphs": [
+      37,
+      39,
+      41,
+      49
+    ],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "source-essential-question",
+      "kind": "interactive",
+      "reachable": true,
+      "description": "Scene intro;source masked question91..147; four glossary terms;pause and explicitResume;source main stop153;Replay resets all."
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "und"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "source-stream",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p006-behavior-source-v1/audio/sprite-54/source-stream.mp3",
+        "language": "und",
+        "frameDomain": "sprite-54",
+        "startFrame": 13
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "Bounded compiler-assisted extraction plus native HTML keyterm state machine and retained SVG illustration; no bulk scale-out.",
+    "route": "",
+    "routeFile": "",
+    "component": "",
+    "registryModule": "",
+    "timelineModule": "",
+    "testFile": "",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-54",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "source-essential-question"
+        ]
+      },
+      {
+        "id": "sprite-30",
+        "kind": "nested",
+        "sourceTimelineId": "30",
+        "parentFrameDomainId": "sprite-54",
+        "frameCount": 17,
+        "scenarioIds": [
+          "source-essential-question"
+        ]
+      },
+      {
+        "id": "sprite-54",
+        "kind": "nested",
+        "sourceTimelineId": "54",
+        "parentFrameDomainId": "root",
+        "frameCount": 153,
+        "scenarioIds": [
+          "source-essential-question"
+        ]
+      },
+      {
+        "id": "sprite-57",
+        "kind": "nested",
+        "sourceTimelineId": "57",
+        "parentFrameDomainId": "root",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-essential-question"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

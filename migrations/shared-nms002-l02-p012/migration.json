@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-nms002-l02-p012",
+  "animationId": "shared-nms002-l02-p012",
+  "assetId": "swf-5f96b1fc2bc87ee47e9f6bd57680eb9019367df8433cf4f2f850611f41b0adab",
+  "status": "implementing",
+  "created": "2026-09-13",
+  "confidence": "medium",
+  "classification": {
+    "collection": "G6-G8-shared",
+    "grade": "shared",
+    "lesson": "NMS002-L2",
+    "section": "VB",
+    "page": 12,
+    "domain": "unknown",
+    "knowledgePoint": {
+      "en": "Equivalent fractions are two or more fractions that are equal to the same quantity.",
+      "es": ""
+    },
+    "titleRaw": "Equivalent Fraction",
+    "titleDisplay": "Equivalent Fraction",
+    "status": "unresolved",
+    "evidence": [
+      "audit/source-semantic-qualification-v1.json"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/VB/L2VB07.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/VB/L2VB07.swf",
+    "flaSha256": "",
+    "swfSha256": "5f96b1fc2bc87ee47e9f6bd57680eb9019367df8433cf4f2f850611f41b0adab",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 150458,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "",
+    "actionScriptVersion": "AS2",
+    "complexity": "interactive-understood",
+    "fonts": [
+      "Bauhaus Md BT"
+    ],
+    "scripts": [
+      "root preloader stop1; root stop6",
+      "main33 has no scripts and loops172frames",
+      "buttons9/10/11/15 set Equivalent fraction/Fraction/Equivalent/Quantity, call DoHyperLinks and animation.stop"
+    ],
+    "externalDependencies": [
+      "modern keyterm adapter"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      5,
+      12
+    ],
+    "morphs": [
+      29
+    ],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "source-vocabulary",
+      "kind": "interactive",
+      "reachable": true,
+      "description": "Two masked definition lines and four terms; three half-pizza figures and native equivalent fractions; final decimal fraction before late picture/number equalities; modern hold and Replay."
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "und"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "source-stream",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p012-behavior-source-v1/audio/sprite-33/source-stream.mp3",
+        "language": "und",
+        "frameDomain": "sprite-33",
+        "startFrame": 4
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "React, SVG and MathML",
+    "route": "",
+    "routeFile": "",
+    "component": "",
+    "registryModule": "",
+    "timelineModule": "",
+    "testFile": "",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-33",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "source-vocabulary"
+        ]
+      },
+      {
+        "id": "sprite-33",
+        "kind": "nested",
+        "sourceTimelineId": "33",
+        "parentFrameDomainId": "root",
+        "frameCount": 172,
+        "scenarioIds": [
+          "source-vocabulary"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

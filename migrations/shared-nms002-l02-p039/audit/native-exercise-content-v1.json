@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l02-p039",
+  "sourceFeedback": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p039-behavior-source-v1/source/audit/scripts/DefineButton2_210/BUTTONCONDACTION on(release).as",
+    "sha256": "9991f8c7cfd38ffd18cd017ed07d361138aa4c0073a1a80d4fd270f41b64c487",
+    "text": "Remember, to show the value of 25% you shade two rows of 10 squares and 5 squares also.",
+    "firstErrorSuffix": " Try again."
+  },
+  "nativeFeedback": "To show 25%, shade 25 of the 100 squares.",
+  "decisionReference": "audit/native-behavior-decisions-v1.json#preserve-fill-orientation",
+  "instructions": "Exact English strings and nonspace glyph timing from generated/nms-l02-p039-intro-source-v1.ts; preserved English in ES host with explicit fallback notice. Reduced motion shows both instructions immediately.",
+  "controls": "Native range0..100 step1, source-semantic Done/Reset/Close buttons. Source pressed Close sound events exposed as callbacks only; audio not connected.",
+  "focus": "Wrong feedback focuses Close. First close restores range focus. Second close focuses feedback explanation. Keyboard Enter/Space releases press before button removal.",
+  "nativeCopyQualifications": [
+    "Spanish controls and feedback are native translations, not extracted source text or human-accepted translations.",
+    "Correct! normalizes source correct!!! casing/punctuation.",
+    "Completion status and accessible percent descriptions are native host support copy."
+  ],
+  "remaining": [
+    "Source-bound page title and top heading roles",
+    "Automatic player clocks and audio transport",
+    "My Lesson integration and registration",
+    "Original-runtime and all downstream acceptance gates"
+  ]
+}

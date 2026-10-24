@@ -1,0 +1,22 @@
+{
+  "sourceSha256": "c82da2eb14e6db6fbb876e795edd8a8ebc1e890a52d9e7b1b1f5e66153b8cb62",
+  "scope": "Native scalable partition exploration",
+  "preserved": [
+    "Any positive safe-integer partition count",
+    "Each numbered piece can be selected independently and retains sourceblue color",
+    "Selection is independent of answer input"
+  ],
+  "adaptations": [
+    "Whole overview plus clearly labelled20piece detail window and direct number locator",
+    "For more than128parts, omit unreadably dense separator lines and explain use of detail controls; counts and selected proportions remain exact state",
+    "Native pressed buttons replace legacy per-strip mouse event clips",
+    "Overview drawing creates only selected rectangles and at most127separator paths; no array allocation proportional to huge part counts"
+  ],
+  "pending": [
+    "Actual browser keyboard/navigation/callback tests",
+    "Integration with practice fields and up/down controls",
+    "Source help and glossary views"
+  ],
+  "originalRuntimeAccepted": false,
+  "humanAccepted": false
+}

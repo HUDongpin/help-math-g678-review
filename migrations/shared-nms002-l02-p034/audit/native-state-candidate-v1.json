@@ -1,0 +1,162 @@
+{
+  "checkedAt": "2026-09-19T20:06:28.148432+00:00",
+  "status": "P034-source-audit-specification-and-native-state-candidate-unregistered",
+  "registeredCurrentJs": 453,
+  "totalActivePagePlacements": 2282,
+  "remaining": 1829,
+  "deltaThisContinuation": 0,
+  "goalComplete": false,
+  "registry": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/private-current-js-registry.json",
+    "bytes": 551384,
+    "sha256": "4a7ceb0054589d9a7a3b14e6fa1e4cdc393ffbdeb889f3bd6a649108575bdecf"
+  },
+  "P033FrozenBindingsUnchanged": 521,
+  "P034": {
+    "animationId": "shared-nms002-l02-p034",
+    "source": {
+      "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/IN/L2IN19.swf",
+      "bytes": 155382,
+      "sha256": "c1ba22980b841b62e84169f3c1527dd6d6ab5f678279d7938bba5af6fd47b7ee"
+    },
+    "sourceSpecification": {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p034-source-spec-v1.json",
+      "bytes": 36766,
+      "sha256": "dac72f0a01efedd7eb6e1feddb57e2b0867d60a9da05b1db62803af83821fa87"
+    },
+    "sourceIr": {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p034-native-ir-v1/source-ir.json",
+      "bytes": 894873,
+      "sha256": "c24667157548510959a738d8ac765f9d3cbbd3da31b6972b763bececffd1a23d"
+    },
+    "rawDomains": 74,
+    "rawFrames": 488,
+    "reachableDomains": 7,
+    "reachableFrames": 415,
+    "excludedUnplacedDefinitions": 67,
+    "assetRows": 99,
+    "audioRows": 2,
+    "plannedOriginalRequirements": 28,
+    "plannedKeyframes": 256,
+    "originalCaptures": 0,
+    "sourceMainFrames": 396,
+    "sourcePracticeHold": 395,
+    "initialDecimal": "0.15",
+    "resetDecimal": "0.00",
+    "range": [
+      "0.00",
+      "1.00"
+    ],
+    "sourceSliderPositionsChecked": 2491,
+    "sourceValuesCovered": 101,
+    "nativeStateTests": 5,
+    "implementation": [
+      {
+        "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/generated/nms-l02-p034-state-source-v1.ts",
+        "bytes": 1564,
+        "sha256": "994375f807532f2333d92b4b12325c454e0bcbd07672b3e5198f290812bac8b9"
+      },
+      {
+        "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p034-state-v1.ts",
+        "bytes": 4476,
+        "sha256": "a31acb7b148e5c0785ad498021197e6de60c4fd87c31a6217bd02223294673a3"
+      },
+      {
+        "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/tests/nms-l02-p034-state.test.ts",
+        "bytes": 3534,
+        "sha256": "7e7b83701609bcc3e29b1edf589b983899067c7d4bced91a8e7a0fe8aa420928"
+      }
+    ],
+    "audio": [
+      {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p034-audio-plans-v1/receipt.json",
+        "bytes": 3678,
+        "sha256": "649481232af859bc964848d263375e4dbfe38e865d3bc0d0cfdbd7017489b2db"
+      },
+      {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p034-behavior-source-v1/audio/ffmpeg-whole-stream-v1/receipt.json",
+        "bytes": 2637,
+        "sha256": "fbf8ad51e7254b5c1a788c3f56398728cc0fff817c30e767580f18c44f7a1def"
+      },
+      {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p034-behavior-source-v1/audio/measured-source-v1/measurement.json",
+        "bytes": 3823,
+        "sha256": "5042cbbb9e3df5a7929276ddf96042dcf3384379231d516cdb512518cc36d9e9"
+      }
+    ],
+    "mask": {
+      "firstInstructionFirstBounds": 292,
+      "firstInstructionFull": 334,
+      "secondInstructionFirstBounds": 335,
+      "secondInstructionFull": 365,
+      "decimalWordFull": 339
+    },
+    "reproducibility": "state constants, PCM plans and exact one-entry source glossary checked"
+  },
+  "failuresPreserved": [
+    "IR-v1 numeric filename parser rejected named export103_tabl-; v2preserves numericprefix IDs and all66shapes.",
+    "Atlas-v1 had nonnumeric labels for named exports; v2corrected source labels and all66shapes were inspected.",
+    "Grid-slider-v1 expected15cells at394; source removes staticfill at394. Corrected v2checks393=15,394=0,395static=0 plus separateASinitialization15.",
+    "Specification-v1 had a Python syntax error before execution; corrected v2completed source specification before native state implementation."
+  ],
+  "evidence": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation131-p034-extraction-v1.log",
+      "bytes": 3144,
+      "sha256": "ba91e138853d323a9223947adc428ff425af25487fcbbe9862ce443e1bea6de0"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation131-p034-ir-v2.log",
+      "bytes": 190,
+      "sha256": "fb92cf635f7ca1b464718e5cc79dbf5be44d3f009f08ac41517e2057c4fbbce2"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation131-p034-grid-slider-v2.log",
+      "bytes": 466,
+      "sha256": "8605d27df441382b31397426df95a33684e53a9da03bcad89aedef334a282b12"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation131-p034-glyph-mask-v1.log",
+      "bytes": 223,
+      "sha256": "42de5d867a7b261898290b99e42a228a547560f937e7404686d11acb59b4fd47"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation131-p034-specification-v2.log",
+      "bytes": 122,
+      "sha256": "979e4177230b5d99a410167fed83d65cd7957e0c5f6e8a950df9eca35dfa9bea"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation131-p034-draft-v1.log",
+      "bytes": 229,
+      "sha256": "a8f2d7299014e2f05733e03abf13c5a20a1cb6e8b2df72d85c307de8c6620093"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation131-p034-state-tests-v1.log",
+      "bytes": 595,
+      "sha256": "02dc051ac2ed6536c99eaa89875b2ffb2cd033447a117bf4a1351b2fe0e10d65"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation131-p034-typecheck-v1.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "independentGates": {
+    "currentJsP034": "not registered",
+    "originalRuntime": "unresolved",
+    "fidelity": "not accepted",
+    "audioListening": "not accepted",
+    "human": "not accepted",
+    "owner": "not signed",
+    "strictCompletion": "not established",
+    "publication": "not authorized by these checks"
+  },
+  "next": [
+    "Implement native source-guided diagram/text and accessible range/Reset/Decimal modal",
+    "Implement main source clock and Reset down-state sound with press/release/cancel, volume, Replay and unmount tests",
+    "Module/renderer, actual MyLesson, typography and production-isolation checks",
+    "Freeze and exact CurrentJS admission only after product gates"
+  ],
+  "ownedProcesses": "All continuation131 verification jobs terminal; established dev3343server retained",
+  "providerActions": 0
+}

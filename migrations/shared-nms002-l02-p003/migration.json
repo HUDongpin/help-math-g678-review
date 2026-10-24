@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-nms002-l02-p003",
+  "animationId": "shared-nms002-l02-p003",
+  "assetId": "swf-3b07c5011ab8f821681f95cca248bc0e28876e90101d72613b824152fb07d0ed",
+  "status": "implementing",
+  "created": "2026-09-12",
+  "confidence": "source-verified",
+  "classification": {
+    "collection": "HELP_COURSES",
+    "grade": "G6-G8-shared",
+    "lesson": 2,
+    "section": "RW",
+    "page": 3,
+    "domain": "NMS002",
+    "knowledgePoint": {
+      "en": "6 bananas out of 12 pieces of fruit = 1/2 = 0.50.",
+      "es": ""
+    },
+    "titleRaw": "Page 2",
+    "titleDisplay": "Real World Activity",
+    "status": "resolved",
+    "evidence": [
+      "catalog/g678-shared-catalog.v1.json",
+      "audit/source-semantic-qualification-v2.json"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/RW/L2RW03.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/RW/L2RW03.swf",
+    "flaSha256": "",
+    "swfSha256": "3b07c5011ab8f821681f95cca248bc0e28876e90101d72613b824152fb07d0ed",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 1310923,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "",
+    "actionScriptVersion": "AS1/2",
+    "complexity": "medium",
+    "fonts": [
+      "Bauhaus Md BT"
+    ],
+    "scripts": [
+      "source/audit/scripts/DefineSprite_326/frame_1319/DoAction.as",
+      "source/audit/scripts/frame_1/DoAction.as",
+      "source/audit/scripts/frame_6/DoAction.as"
+    ],
+    "externalDependencies": [
+      "Root readiness call to legacy preloader.jump_check; native host supplies readiness."
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      "1",
+      "267",
+      "277"
+    ],
+    "morphs": [
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "113",
+      "114",
+      "115",
+      "116",
+      "117",
+      "121",
+      "122",
+      "123",
+      "124",
+      "125",
+      "265",
+      "267",
+      "280"
+    ],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "source-real-world",
+      "kind": "linear",
+      "description": "Root stops at6; sprite326 stops at1319. No buttons. Replay restores every placement clock and audio.",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "und"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "nms-l02-p003-source-stream",
+        "language": "und",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p003-behavior-source-v1/audio/sprite-326/source-stream.mp3",
+        "startFrame": 1,
+        "frameDomain": "sprite-326"
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "",
+    "ffdec": "unavailable",
+    "swfmill": "unavailable",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "Bounded compiler-assisted advanced manual SVG illustration and native HTML/MathML; no factory scale-out.",
+    "route": "",
+    "routeFile": "",
+    "component": "packages/demos/src/nms-l02-p003-renderer-v1.tsx",
+    "registryModule": "",
+    "timelineModule": "packages/demos/src/nms-l02-p003-timeline-v1.ts",
+    "testFile": "",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-326",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "source-real-world"
+        ]
+      },
+      {
+        "id": "sprite-176",
+        "kind": "nested",
+        "sourceTimelineId": "176",
+        "parentFrameDomainId": "sprite-326",
+        "frameCount": 22,
+        "scenarioIds": [
+          "source-real-world"
+        ]
+      },
+      {
+        "id": "sprite-207",
+        "kind": "nested",
+        "sourceTimelineId": "207",
+        "parentFrameDomainId": "sprite-326",
+        "frameCount": 40,
+        "scenarioIds": [
+          "source-real-world"
+        ]
+      },
+      {
+        "id": "sprite-326",
+        "kind": "nested",
+        "sourceTimelineId": "326",
+        "parentFrameDomainId": "root",
+        "frameCount": 1319,
+        "scenarioIds": [
+          "source-real-world"
+        ]
+      },
+      {
+        "id": "sprite-329",
+        "kind": "nested",
+        "sourceTimelineId": "329",
+        "parentFrameDomainId": "root",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-real-world"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

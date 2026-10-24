@@ -1,0 +1,77 @@
+{
+  "animationId": "shared-nms002-l02-p043",
+  "sourceSha256": "a6a13838f1301d7665dd4f8a96c561fd3ef23e90ffeaf6e433909d26cc419528",
+  "scope": "Core activity text: headings, instruction, four terms, definitions, matched answers, wrong/correct/completion feedback. Diagram labels and glossary/modal snapshots remain to integrate.",
+  "coreBlockCount": 24,
+  "decisions": [
+    "Shared bilingual copy module feeds presentation and text snapshots.",
+    "Source instruction Chose corrected to Choose; drag instruction gains keyboard/select alternative.",
+    "Definition wording preserves source content with capitalization and punctuation normalization.",
+    "Correct status is a modern accessible equivalent of the source Coach_audio_2 event, not a literal source label.",
+    "Activity title and numeric row placeholders are modern presentation text tied to source exercise roles.",
+    "Spanish text is maintained translation, not extracted Spanish source text."
+  ],
+  "correction": {
+    "supersedes": "native-completion-presentation-v1.json and prior source-visual-role interpretation that sprite232 has no authored text",
+    "reason": "sprite232 frame9 places text characters140 and141, both Excellent!",
+    "events": [
+      {
+        "kind": "place",
+        "depth": 1,
+        "characterId": 138,
+        "move": true,
+        "matrix": [
+          0.7354736328125,
+          0,
+          0,
+          0.7354736328125,
+          106,
+          495
+        ],
+        "clipDepth": null
+      },
+      {
+        "kind": "place",
+        "depth": 2,
+        "characterId": 140,
+        "move": false,
+        "matrix": [
+          0.7354736328125,
+          0,
+          0,
+          0.7354736328125,
+          -1071,
+          180
+        ],
+        "clipDepth": null
+      },
+      {
+        "kind": "place",
+        "depth": 3,
+        "characterId": 141,
+        "move": false,
+        "matrix": [
+          0.7354736328125,
+          0,
+          0,
+          0.7354736328125,
+          -1027,
+          121
+        ],
+        "clipDepth": null
+      },
+      {
+        "kind": "place",
+        "depth": 4,
+        "characterId": null,
+        "move": true,
+        "matrix": null,
+        "clipDepth": null
+      }
+    ],
+    "implementation": "completion232 now Excellent! / ¡Excelente! with exact sourceTextIds140,141",
+    "test": "All five completion domains now require their bound praise text IDs to be placed in the corresponding extracted timeline."
+  },
+  "registered": false,
+  "originalRuntimeAccepted": false
+}

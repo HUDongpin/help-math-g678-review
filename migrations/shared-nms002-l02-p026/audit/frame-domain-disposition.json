@@ -1,0 +1,335 @@
+{
+  "animationId": "shared-nms002-l02-p026",
+  "sourceSha256": "d168033f7af079b7fad715adadf4c94fffaa84a8b8ddaefbd8d344ed1cfde1f5",
+  "sourceIr": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p026-native-ir-v2/source-ir.json",
+    "bytes": 1833709,
+    "sha256": "afe9ced14aa6d78eaf5396e0a5668631bfe77171087478c358a3018f6f714484"
+  },
+  "domainCount": 23,
+  "localFrameCount": 661,
+  "domains": [
+    {
+      "frameDomainId": "root",
+      "sourceFrames": 10,
+      "parents": [],
+      "disposition": "Preloader stop1 and teaching entry/stop6; later root frames are placement diagnostics, not elapsed playback.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-2",
+      "sourceFrames": 1,
+      "parents": [
+        {
+          "domain": "root",
+          "firstPlacementFrame": 6,
+          "lastPlacementFrame": 10
+        }
+      ],
+      "disposition": "Vector page title replaced by native heading.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-6",
+      "sourceFrames": 1,
+      "parents": [
+        {
+          "domain": "sprite-10",
+          "firstPlacementFrame": 4,
+          "lastPlacementFrame": 21
+        }
+      ],
+      "disposition": "Static equals-sign container; native equality text binds child shape5.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-9",
+      "sourceFrames": 1,
+      "parents": [
+        {
+          "domain": "sprite-10",
+          "firstPlacementFrame": 12,
+          "lastPlacementFrame": 21
+        }
+      ],
+      "disposition": "Question-mark container; native text binds child text8.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-10",
+      "sourceFrames": 21,
+      "parents": [
+        {
+          "domain": "sprite-82",
+          "firstPlacementFrame": 1,
+          "lastPlacementFrame": 491
+        }
+      ],
+      "disposition": "Scale and answer area; independent native answerFrame reproduces stop1, play2 and stop21.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-45",
+      "sourceFrames": 12,
+      "parents": [
+        {
+          "domain": "sprite-63",
+          "firstPlacementFrame": 1,
+          "lastPlacementFrame": 2
+        },
+        {
+          "domain": "sprite-80",
+          "firstPlacementFrame": 1,
+          "lastPlacementFrame": 2
+        }
+      ],
+      "disposition": "Random 12-frame decorative background; retained structural queries and deterministic choice, replaced by neutral native card styling.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-51",
+      "sourceFrames": 1,
+      "parents": [
+        {
+          "domain": "sprite-58",
+          "firstPlacementFrame": 2,
+          "lastPlacementFrame": 2
+        }
+      ],
+      "disposition": "Static fraction pictogram; exact source SVG retained inside a responsive native card.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-53",
+      "sourceFrames": 1,
+      "parents": [
+        {
+          "domain": "sprite-58",
+          "firstPlacementFrame": 3,
+          "lastPlacementFrame": 3
+        }
+      ],
+      "disposition": "Static fraction pictogram; exact source SVG retained inside a responsive native card.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-55",
+      "sourceFrames": 1,
+      "parents": [
+        {
+          "domain": "sprite-58",
+          "firstPlacementFrame": 4,
+          "lastPlacementFrame": 4
+        }
+      ],
+      "disposition": "Static fraction pictogram; exact source SVG retained inside a responsive native card.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-57",
+      "sourceFrames": 1,
+      "parents": [
+        {
+          "domain": "sprite-58",
+          "firstPlacementFrame": 5,
+          "lastPlacementFrame": 5
+        }
+      ],
+      "disposition": "Static fraction pictogram; exact source SVG retained inside a responsive native card.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-58",
+      "sourceFrames": 5,
+      "parents": [
+        {
+          "domain": "sprite-63",
+          "firstPlacementFrame": 1,
+          "lastPlacementFrame": 2
+        }
+      ],
+      "disposition": "Round1 fraction selector: numeric dynamic fields48/49 or one of four source pictograms.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-63",
+      "sourceFrames": 2,
+      "parents": [
+        {
+          "domain": "sprite-64",
+          "firstPlacementFrame": 1,
+          "lastPlacementFrame": 1
+        }
+      ],
+      "disposition": "Round1 card template; source stop1, native guarded button and movement state.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-64",
+      "sourceFrames": 1,
+      "parents": [
+        {
+          "domain": "sprite-82",
+          "firstPlacementFrame": 392,
+          "lastPlacementFrame": 424
+        }
+      ],
+      "disposition": "Round1 board; native deterministic duplicate-card array and source swap shuffle.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-65",
+      "sourceFrames": 50,
+      "parents": [
+        {
+          "domain": "sprite-82",
+          "firstPlacementFrame": 392,
+          "lastPlacementFrame": 491
+        }
+      ],
+      "disposition": "Empty stopped 50-frame clip; explicitly hidden by source round actions. No native teaching content.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-68",
+      "sourceFrames": 50,
+      "parents": [
+        {
+          "domain": "sprite-82",
+          "firstPlacementFrame": 392,
+          "lastPlacementFrame": 491
+        }
+      ],
+      "disposition": "Stopped congratulations clip with shape66/text67; explicitly hidden by round actions and no matching callback shows it.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-72",
+      "sourceFrames": 1,
+      "parents": [
+        {
+          "domain": "sprite-79",
+          "firstPlacementFrame": 2,
+          "lastPlacementFrame": 2
+        }
+      ],
+      "disposition": "Static fraction pictogram; exact source SVG retained inside a responsive native card.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-74",
+      "sourceFrames": 1,
+      "parents": [
+        {
+          "domain": "sprite-79",
+          "firstPlacementFrame": 3,
+          "lastPlacementFrame": 3
+        }
+      ],
+      "disposition": "Static fraction pictogram; exact source SVG retained inside a responsive native card.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-76",
+      "sourceFrames": 1,
+      "parents": [
+        {
+          "domain": "sprite-79",
+          "firstPlacementFrame": 4,
+          "lastPlacementFrame": 4
+        }
+      ],
+      "disposition": "Static fraction pictogram; exact source SVG retained inside a responsive native card.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-78",
+      "sourceFrames": 1,
+      "parents": [
+        {
+          "domain": "sprite-79",
+          "firstPlacementFrame": 5,
+          "lastPlacementFrame": 5
+        }
+      ],
+      "disposition": "Static fraction pictogram; exact source SVG retained inside a responsive native card.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-79",
+      "sourceFrames": 5,
+      "parents": [
+        {
+          "domain": "sprite-80",
+          "firstPlacementFrame": 1,
+          "lastPlacementFrame": 2
+        }
+      ],
+      "disposition": "Round2 fraction selector: numeric dynamic fields69/70 or one of four source pictograms.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-80",
+      "sourceFrames": 2,
+      "parents": [
+        {
+          "domain": "sprite-81",
+          "firstPlacementFrame": 1,
+          "lastPlacementFrame": 1
+        }
+      ],
+      "disposition": "Round2 card template; source stop1, native guarded button and movement state.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-81",
+      "sourceFrames": 1,
+      "parents": [
+        {
+          "domain": "sprite-82",
+          "firstPlacementFrame": 425,
+          "lastPlacementFrame": 491
+        }
+      ],
+      "disposition": "Round2 board; native deterministic duplicate-card array and source swap shuffle.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-82",
+      "sourceFrames": 491,
+      "parents": [
+        {
+          "domain": "root",
+          "firstPlacementFrame": 6,
+          "lastPlacementFrame": 10
+        }
+      ],
+      "disposition": "Authored 491-frame intro/two-round timeline with stops392/425; native main clock waits for four pairs, then resumes and holds final interval.",
+      "rawLocalFramesQueryable": true,
+      "originalNaturalTraceAccepted": false
+    }
+  ],
+  "strictAcceptance": false
+}

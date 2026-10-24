@@ -1,0 +1,30 @@
+{
+  "animationId": "shared-nms002-l02-p046",
+  "sourceSha256": "c82da2eb14e6db6fbb876e795edd8a8ebc1e890a52d9e7b1b1f5e66153b8cb62",
+  "implementation": [
+    {
+      "path": "packages/demos/src/nms-l02-p046-audio-v1.ts",
+      "sha256": "fa99a8ce8a58f6b3e8836466c1372024ba606a3332941e8e32dcbf04c4abeb45"
+    },
+    {
+      "path": "packages/demos/src/nms-l02-p046-audio-decode-v1.ts",
+      "sha256": "78d6eedd537ff9431b17a61eb90239fe04dc488da1274f287cfea4b4cffa7919"
+    },
+    {
+      "path": "packages/demos/tests/nms-l02-p046-audio-v1.test.ts",
+      "sha256": "ac5316d2177c861686408f5ec56bcd2f4b1215df0fd1f59aab915bc65bd49f3f"
+    }
+  ],
+  "decisions": [
+    "Main and feedback nodes use source phase windows on complete prepared buffers",
+    "Replay/close/pause/state changes cancel pending reads and stop current source/effect nodes",
+    "Modal close stays paused until explicitPlay",
+    "Feedback Close cancels unfinished feedback audio as explicit native policy; source parity unverified",
+    "Click kind button uses8full, timeline uses8oneframe, wrong-close uses184full, correct-close uses197full",
+    "Caller must schedule six source timeline click events and select wrong-second-close button8; this controller does not invent timeline events",
+    "Partition callbacks delegate to clock/state locks"
+  ],
+  "verificationBoundary": "Injected context/decode tests exercise lifecycle and scheduling; not actual browser or listening acceptance",
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false
+}

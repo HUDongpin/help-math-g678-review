@@ -1,0 +1,33 @@
+{
+  "animationId": "shared-nms002-l02-p040",
+  "sourceSha256": "be66f636ecc8a705fa6e61b5de03d044cfe0f9b988585a708ecaf0f1e1e832fb",
+  "lane": "advanced-manual",
+  "reason": "Source-understood timeline and glossary interactions require maintained semantic presentation; no factory scale-out authorized.",
+  "decisions": [
+    {
+      "behavior": "Initial pause with explicitPlay",
+      "qualification": "Modern host control adaptation, not legacy autoplay parity."
+    },
+    {
+      "behavior": "Glossary gated by complete source-word containment at60/78/83/97; open pauses, close stays paused",
+      "qualification": "Source button calls stop; native accessible dialog/focus and explicitresume must be verified in realhost."
+    },
+    {
+      "behavior": "Frame440 retained for one full interval then completion; Replay restoresframe1,paused,noterm",
+      "qualification": "Source main has no stopaction; native terminalhold is explicit modern product adaptation, not original loop parity."
+    },
+    {
+      "behavior": "Source equation transforms, alpha and intermittent overlays retained in62beats",
+      "qualification": "Native final layout and semanticmath rendering still required."
+    }
+  ],
+  "audioDecision": "Pending first-block/emptyframe6 and finaltail treatment; state code does not claim audio synchronization.",
+  "registered": false,
+  "originalRuntimeAccepted": false,
+  "fidelityAccepted": false,
+  "audioAccepted": false,
+  "humanAccepted": false,
+  "ownerAccepted": false,
+  "strictComplete": false,
+  "published": false
+}

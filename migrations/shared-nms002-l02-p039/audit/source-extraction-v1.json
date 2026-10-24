@@ -1,0 +1,143 @@
+{
+  "checkedAt": "2026-09-20T04:17:56.619958+00:00",
+  "status": "P039-source-audit-interactive-slider-and-conflicts-identified",
+  "previousGoalTurn": "progress",
+  "animationId": "shared-nms002-l02-p039",
+  "registeredCurrentJs": 458,
+  "totalActivePagePlacements": 2282,
+  "remaining": 1824,
+  "deltaThisContinuation": 0,
+  "goalComplete": false,
+  "registry": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/private-current-js-registry.json",
+    "bytes": 560689,
+    "sha256": "31bac53a67e1231953427b6ac508fe1596cbc5b64a1b7ffbcc8f69c9ea08821e"
+  },
+  "previousFreeze": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/catalog/product-bridge-calibrations/g678-nms-l02-p038-native-percent-current-js-v1-compile-v2.json",
+    "bytes": 72943,
+    "sha256": "b49d7f0797fec0d5584a87638a2d7b5be47d0697156e0701a3d4891434021fd2"
+  },
+  "source": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/IN/L2IN24.swf",
+    "bytes": 262545,
+    "sha256": "cb087b675e4ada79fb53d4a7f7368f69ed96abf6a71ea4c6e56afdaa683bd649"
+  },
+  "evidence": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p039-behavior-source-v1/extraction.json",
+      "bytes": 22191,
+      "sha256": "98b1eceb3c663f4a4079b0dcf2e3773410ff51572941feba417753a5025cfea2"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p039-behavior-source-v1/source-domain-summary-v1.json",
+      "bytes": 140679,
+      "sha256": "ad86891cb108e50bdb6c96606fabed388a45ea3352ccdbc8c8f607b242194836"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p039-behavior-source-v1/source-text-catalog-typography-v1.json",
+      "bytes": 998255,
+      "sha256": "754567485aec202f755b48d85a132f94fe781a9c933e036da2a499e3397be7c9"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p039-native-ir-v1/receipt.json",
+      "bytes": 50814,
+      "sha256": "0cec3618f66579ebada18521cdb50f2010cfc69e9aa3a840c00df337a1449c9f"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p039-source-composed-v1/receipt.json",
+      "bytes": 4391,
+      "sha256": "0fd6b18c26957be141936c58146d9269620a26c74ff525006e42a26151d01243"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p039-behavior-source-v1/audio/ffmpeg-whole-stream-v1/receipt.json",
+      "bytes": 5506,
+      "sha256": "5450d172958bf9dbae1fe5e977feb2dbb64de32d978ce9847c6b930380270279"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p039-behavior-source-v1/source/audit/scripts/DefineSprite_237/frame_546/DoAction.as",
+      "bytes": 1416,
+      "sha256": "8e49d978a0a05bc37fd8cd5f4f51dcf682aa800ce566047abc9e6e66bd956d01"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p039-behavior-source-v1/source/audit/scripts/DefineButton2_210/BUTTONCONDACTION on(release).as",
+      "bytes": 942,
+      "sha256": "9991f8c7cfd38ffd18cd017ed07d361138aa4c0073a1a80d4fd270f41b64c487"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p039-behavior-source-v1/source/audit/scripts/DefineButton2_224/BUTTONCONDACTION on(release).as",
+      "bytes": 452,
+      "sha256": "f9b169d521797c61b21426d0933b55bbbc100d409a08d10472ae572e081d5891"
+    }
+  ],
+  "sourceAudit": {
+    "domains": 79,
+    "rawLocalFrames": 809,
+    "mainDomain": "237",
+    "mainFrames": 579,
+    "practiceStop": 546,
+    "terminalStop": 579,
+    "sourceShapes": 99,
+    "textDefinitions": 52,
+    "dynamicFields": 5,
+    "buttons": 4,
+    "bitmaps": 0,
+    "fonts": 4,
+    "scriptFiles": 49,
+    "sourceProjectionFrames": 10,
+    "audioStreams": 5
+  },
+  "practice": {
+    "targetPercent": 25,
+    "sourceDoneCondition": "concatenated tenths/hundredths digit strings equal25",
+    "sourceGrid": "100runtime duplicates ofBox_Main; shade1..tempMcCount each frame",
+    "sourceSlider": "round((x/50+5)*42/2)+32",
+    "initialSliderX": -326.85,
+    "resetSliderX": -339,
+    "initialDigits": "000",
+    "wrongAttemptCounter": true
+  },
+  "sourceConflicts": [
+    {
+      "kind": "wrong-answer-reveal-math",
+      "evidence": "Second-or-later WrongClose writes digits0,7,5 although task/Donecondition request25percent; startsdummy228thenresumesmain.",
+      "qualification": "Source conflict retained; any native correction must be explicitly explained and checked against teaching intent."
+    },
+    {
+      "kind": "case-sensitive-global-reference",
+      "evidence": "Init writes_global.McDragX; WrongClose reads_global.mcDragX.",
+      "qualification": "Original AVM1version/case semantics and host bindings unverified; do not claim an actual runtime failure from spelling alone."
+    },
+    {
+      "kind": "duplicate-instance-name",
+      "evidence": "Two sprite228instances atdepth135and142bothnamedMc_Run_Dummy.",
+      "qualification": "Original duplicate-name resolution unverified; do not silently infer which source instance is addressed."
+    },
+    {
+      "kind": "unresolved-enableButton",
+      "evidence": "Coach_audio_2frame20calls_parent.enableButton; no page-localdefinition found.",
+      "qualification": "Reachability and externalhost meaning still require audit."
+    }
+  ],
+  "acceptance": {
+    "originalRuntime": false,
+    "fidelity": false,
+    "audioListeningAcceptance": false,
+    "humanVisual": false,
+    "owner": false,
+    "strictComplete": false,
+    "release": false,
+    "publication": false
+  },
+  "limitations": [
+    "Raw79domainsinclude many importedUIcomponent symbols; page-reachable closure not yet classified.",
+    "Source canvas projections do not execute drawGrid/onEnterFrame/runtime duplicate creation or actual buttons; they are not original runtime.",
+    "Five MP3streams decodedcompletely but native reachability, repeatedbrowserdecode, sourcegap/branch seek plans and realplayback remain pending.",
+    "NoP039nativeimplementation or registration."
+  ],
+  "next": [
+    "Complete reachable-symbol, slidergeometry and dynamicgrid audit, separating importedUIassets and actualpagebehavior.",
+    "Resolve source conflict treatment, source-timed feedback/randomcoach branches and fullPCMplans before nativeimplementation."
+  ],
+  "runningOwnedJobs": []
+}

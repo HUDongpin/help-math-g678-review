@@ -1,0 +1,168 @@
+{
+  "animationId": "shared-nms002-l02-p034",
+  "sourceSha256": "c1ba22980b841b62e84169f3c1527dd6d6ab5f678279d7938bba5af6fd47b7ee",
+  "domains": [
+    {
+      "id": "sprite-156",
+      "kind": "nested",
+      "sourceTimelineId": "156",
+      "parentFrameDomainId": "sprite-172",
+      "frameCount": 1,
+      "scenarioIds": [
+        "slider-explore",
+        "reset"
+      ]
+    },
+    {
+      "id": "sprite-158",
+      "kind": "nested",
+      "sourceTimelineId": "158",
+      "parentFrameDomainId": "sprite-172",
+      "frameCount": 1,
+      "scenarioIds": [
+        "slider-explore",
+        "reset"
+      ]
+    },
+    {
+      "id": "sprite-159",
+      "kind": "nested",
+      "sourceTimelineId": "159",
+      "parentFrameDomainId": "sprite-161",
+      "frameCount": 1,
+      "scenarioIds": [
+        "slider-explore",
+        "reset"
+      ]
+    },
+    {
+      "id": "sprite-161",
+      "kind": "nested",
+      "sourceTimelineId": "161",
+      "parentFrameDomainId": "sprite-172",
+      "frameCount": 1,
+      "scenarioIds": [
+        "slider-explore",
+        "reset"
+      ]
+    },
+    {
+      "id": "sprite-167",
+      "kind": "nested",
+      "sourceTimelineId": "167",
+      "parentFrameDomainId": "sprite-172",
+      "frameCount": 5,
+      "scenarioIds": [
+        "reset"
+      ]
+    },
+    {
+      "id": "sprite-172",
+      "kind": "nested",
+      "sourceTimelineId": "172",
+      "parentFrameDomainId": "root",
+      "frameCount": 396,
+      "scenarioIds": [
+        "source-decimal-practice",
+        "slider-explore",
+        "reset",
+        "decimal-glossary"
+      ]
+    },
+    {
+      "id": "root",
+      "kind": "root",
+      "sourceTimelineId": "root",
+      "parentFrameDomainId": null,
+      "frameCount": 10,
+      "scenarioIds": [
+        "source-decimal-practice"
+      ]
+    }
+  ],
+  "buttonStateEdges": [
+    {
+      "parent": "172",
+      "buttonId": 168,
+      "childDomain": "167",
+      "states": {
+        "up": false,
+        "over": false,
+        "down": true,
+        "hitTest": false
+      }
+    }
+  ],
+  "excludedDefinitionDomains": [
+    "10",
+    "102",
+    "109",
+    "12",
+    "14",
+    "16",
+    "18",
+    "20",
+    "21",
+    "22",
+    "23",
+    "25",
+    "27",
+    "28",
+    "30",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35",
+    "37",
+    "39",
+    "40",
+    "41",
+    "43",
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50",
+    "52",
+    "53",
+    "54",
+    "55",
+    "56",
+    "58",
+    "59",
+    "60",
+    "61",
+    "62",
+    "64",
+    "65",
+    "66",
+    "67",
+    "68",
+    "69",
+    "70",
+    "71",
+    "72",
+    "73",
+    "74",
+    "76",
+    "77",
+    "78",
+    "79",
+    "8",
+    "80",
+    "81",
+    "82",
+    "84",
+    "85",
+    "86",
+    "88",
+    "89",
+    "90",
+    "91"
+  ],
+  "excludedReason": "No root or page-button-state placement and no reachable page AS instantiation; preserve raw definitions for forensic inspection.",
+  "originalRuntimeAccepted": false,
+  "qualification": "Seven source reachable domains include Reset down-state audio sprite167. Source396 is beyond authored395stop and original host resume remains unresolved; all original requirements pending."
+}

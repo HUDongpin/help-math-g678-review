@@ -1,0 +1,28 @@
+{
+  "animationId": "shared-nms002-l02-p043",
+  "sourceSha256": "a6a13838f1301d7665dd4f8a96c561fd3ef23e90ffeaf6e433909d26cc419528",
+  "decisions": [
+    "Intro uses complete prepared main250timeline and holdsat223.",
+    "Correct249feedback plays complete prepared stream from its timeline origin; lock extends through audible tail rather than sourceframe20callback.",
+    "Wrong245feedback plays complete prepared stream and holds for explicit Close; source button is present fromframe1.",
+    "Native host selects one of page-present completion sprites143171183204232 using seedmod5. This is deterministic product policy, not recovered showRightFeed randomness.",
+    "Completion waits for selected fullmedia/visualduration plus two main-frame intervals before reporting main225complete.",
+    "New media stage stays paused until transport has decoded its buffer; no elapsed-time carry discards the nextclip.",
+    "Coach_audio_1randomsprite247notbound to any native page event."
+  ],
+  "qualification": "Whole-domain feedback playback retains frame1audio and source gaps. It is an explicit media-entry adaptation, not an assertion that originalgotoAndPlay2 had identical decode/seek behavior.",
+  "evidence": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p043-clock-v1.ts",
+      "bytes": 3845,
+      "sha256": "538ab70b7830b01f873c61b4f0b76d6193d460d6cebb058766ac02060b6cadb8"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation235-clock-tests-v1.log",
+      "bytes": 388,
+      "sha256": "16d5a938eff66f980918170d3b882b2c506747a53bdc133dd83750b923d19f31"
+    }
+  ],
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false
+}

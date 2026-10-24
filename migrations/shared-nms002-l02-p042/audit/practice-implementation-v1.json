@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l02-p042",
+  "sourceSha256": "6dce91764e5744cf72cbdb2a2d1a10990a1c3eb1f42f5aace4cb3be33a67fad0",
+  "sourceEvidence": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p042/audit/source-drag-boundary-audit-v1.json",
+    "bytes": 1724,
+    "sha256": "dbb5fb82bb8a0af6470a4e08c4161553615d508bc514bb48daf48b2e8fe0e7a8"
+  },
+  "implementationEvidence": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p042-practice-v1.ts",
+      "bytes": 2097,
+      "sha256": "64b5258306ecccad21c886651b016d325869a415ba00f697f005d482202f4fa9"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/tests/nms-l02-p042-practice-v1.test.ts",
+      "bytes": 2877,
+      "sha256": "310fe0c1b88a66346b31d29dd91d9bafb326fea4a84753a5afe3c0629cbe8183"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation209-p042-practice-tests-v1.log",
+      "bytes": 538,
+      "sha256": "03bd130a36cc816054d4f98f17fbb79a58e2e68b7ce12beb7b4585e19eb005aa"
+    }
+  ],
+  "preserved": [
+    "Four initial 25 percent color components.",
+    "Only three independently adjustable handles, each transfers its change to the following color.",
+    "Zero displayed as 0/100."
+  ],
+  "intentionalCorrections": [
+    {
+      "behavior": "Clamp requested percentage to the current adjacent-pair total.",
+      "reason": "Prevent source-equation negative successor trace while retaining total 100 and pair transfer."
+    },
+    {
+      "behavior": "GCD reduction with integer numerator and denominator.",
+      "reason": "Source branch for 30 percent can display 1.5/5; use conventional reduced integer fraction 3/10. Both values equal 0.3."
+    }
+  ],
+  "tests": {
+    "passed": 5,
+    "partitions": 176851,
+    "transitionChecks": 3183318,
+    "equivalentPercentages": 101
+  },
+  "limitations": [
+    "State module only; no renderer or host registration yet.",
+    "Source runtime confirmation, audio scheduling, bilingual presentation and browser interaction pending."
+  ],
+  "originalRuntimeAccepted": false,
+  "fidelityAccepted": false,
+  "registered": false
+}

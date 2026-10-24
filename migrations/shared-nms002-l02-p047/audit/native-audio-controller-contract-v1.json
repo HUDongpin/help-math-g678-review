@@ -1,0 +1,29 @@
+{
+  "animationId": "shared-nms002-l02-p047",
+  "sourceSha256": "6298123b7431ed8aad86a409125c7db979bfeeaf272efd67188d12f66e2d7df6",
+  "implementation": "packages/demos/src/nms-l02-p047-audio-v1.ts",
+  "behavior": [
+    "Feedback returns automatically after selected window. Last correct feedback starts silent sprite76 celebration and then main81 continuation.",
+    "Pausing at a transition boundary suppresses successor autoplay.",
+    "Replay/close cancel pending reads, invalidate tickets and detach/stop nodes. Context close is idempotent.",
+    "Modal pause preserves elapsed time; modal close requires explicit play.",
+    "Prepared full buffers are cached by source domain and node starts use exact phase windows.",
+    "No click effects; narration mute preserves timeline progress."
+  ],
+  "tests": {
+    "controllerPassed": 7,
+    "combinedPassed": 27,
+    "failed": 0,
+    "strictTypecheck": "PASS",
+    "scope": "Injected context/read/decode tests cover controller behavior; these are not real browser audio or named listening acceptance."
+  },
+  "pending": [
+    "Local source route binding",
+    "Native view and host polling for silent/visual phases",
+    "Actual browser decode and lifecycle evidence",
+    "Independent acceptance"
+  ],
+  "currentJsRegistered": false,
+  "audioAccepted": false,
+  "originalRuntimeAccepted": false
+}

@@ -1,0 +1,165 @@
+{
+  "animationId": "shared-nms002-l02-p037",
+  "sourceSha256": "8f7ff05a83fd8c1370f979fedca8e148bd0b80c0bb45ddb7147534d3b92607a7",
+  "domains": [
+    {
+      "id": "root",
+      "kind": "root",
+      "sourceTimelineId": "root",
+      "parentFrameDomainId": null,
+      "frameCount": 10,
+      "scenarioIds": [
+        "source-practice"
+      ]
+    },
+    {
+      "id": "sprite-80",
+      "kind": "nested",
+      "sourceTimelineId": "80",
+      "parentFrameDomainId": "root",
+      "frameCount": 483,
+      "scenarioIds": [
+        "source-practice",
+        "wrong-drop",
+        "all-correct",
+        "late-distractor",
+        "replay",
+        "column-glossary",
+        "equivalent-decimal-glossary",
+        "simple-simpler-simplest-glossary",
+        "decimal-equivalent-glossary",
+        "fraction-glossary"
+      ]
+    },
+    {
+      "id": "sprite-52",
+      "kind": "nested",
+      "sourceTimelineId": "52",
+      "parentFrameDomainId": "sprite-80",
+      "frameCount": 20,
+      "scenarioIds": [
+        "source-practice",
+        "all-correct"
+      ]
+    },
+    {
+      "id": "sprite-58",
+      "kind": "nested",
+      "sourceTimelineId": "58",
+      "parentFrameDomainId": "sprite-80",
+      "frameCount": 25,
+      "scenarioIds": [
+        "all-correct",
+        "late-distractor"
+      ]
+    },
+    {
+      "id": "sprite-79",
+      "kind": "nested",
+      "sourceTimelineId": "79",
+      "parentFrameDomainId": "sprite-80",
+      "frameCount": 15,
+      "scenarioIds": [
+        "wrong-drop",
+        "late-distractor",
+        "simple-simpler-simplest-glossary",
+        "decimal-equivalent-glossary",
+        "fraction-glossary"
+      ]
+    }
+  ],
+  "sourceDispositions": [
+    {
+      "sourceTimelineId": "root",
+      "frameCount": 10,
+      "disposition": "explicit native query/clock domain planned; source natural-trace authority remains pending"
+    },
+    {
+      "sourceTimelineId": "1",
+      "frameCount": 3,
+      "disposition": "unreferenced empty3frame symbol; no page-local placement/start path"
+    },
+    {
+      "sourceTimelineId": "40",
+      "frameCount": 1,
+      "disposition": "single-frame target/card symbol retained as parent80 scene geometry; no independent advancing clock"
+    },
+    {
+      "sourceTimelineId": "41",
+      "frameCount": 1,
+      "disposition": "single-frame target/card symbol retained as parent80 scene geometry; no independent advancing clock"
+    },
+    {
+      "sourceTimelineId": "42",
+      "frameCount": 1,
+      "disposition": "single-frame target/card symbol retained as parent80 scene geometry; no independent advancing clock"
+    },
+    {
+      "sourceTimelineId": "43",
+      "frameCount": 1,
+      "disposition": "single-frame target/card symbol retained as parent80 scene geometry; no independent advancing clock"
+    },
+    {
+      "sourceTimelineId": "44",
+      "frameCount": 1,
+      "disposition": "single-frame target/card symbol retained as parent80 scene geometry; no independent advancing clock"
+    },
+    {
+      "sourceTimelineId": "45",
+      "frameCount": 1,
+      "disposition": "single-frame target/card symbol retained as parent80 scene geometry; no independent advancing clock"
+    },
+    {
+      "sourceTimelineId": "46",
+      "frameCount": 1,
+      "disposition": "single-frame target/card symbol retained as parent80 scene geometry; no independent advancing clock"
+    },
+    {
+      "sourceTimelineId": "47",
+      "frameCount": 1,
+      "disposition": "single-frame target/card symbol retained as parent80 scene geometry; no independent advancing clock"
+    },
+    {
+      "sourceTimelineId": "48",
+      "frameCount": 1,
+      "disposition": "single-frame target/card symbol retained as parent80 scene geometry; no independent advancing clock"
+    },
+    {
+      "sourceTimelineId": "49",
+      "frameCount": 1,
+      "disposition": "single-frame target/card symbol retained as parent80 scene geometry; no independent advancing clock"
+    },
+    {
+      "sourceTimelineId": "50",
+      "frameCount": 1,
+      "disposition": "single-frame target/card symbol retained as parent80 scene geometry; no independent advancing clock"
+    },
+    {
+      "sourceTimelineId": "52",
+      "frameCount": 20,
+      "disposition": "explicit native query/clock domain planned; source natural-trace authority remains pending"
+    },
+    {
+      "sourceTimelineId": "54",
+      "frameCount": 55,
+      "disposition": "placed Coach_audio_1, stopped at1; no page-local start. Preserve S1..S4 and two-try legacy branches as dormant evidence."
+    },
+    {
+      "sourceTimelineId": "58",
+      "frameCount": 25,
+      "disposition": "explicit native query/clock domain planned; source natural-trace authority remains pending"
+    },
+    {
+      "sourceTimelineId": "79",
+      "frameCount": 15,
+      "disposition": "explicit native query/clock domain planned; source natural-trace authority remains pending"
+    },
+    {
+      "sourceTimelineId": "80",
+      "frameCount": 483,
+      "disposition": "explicit native query/clock domain planned; source natural-trace authority remains pending"
+    }
+  ],
+  "originalRuntimeAccepted": false,
+  "qualification": "All18source domains/622frames structurally enumerated. Five native advancing/query domains total553frames;11single-frame symbols remain in parent scene;3empty plus55dormant coach frames preserved without invented reachability. No original natural trace accepted."
+}

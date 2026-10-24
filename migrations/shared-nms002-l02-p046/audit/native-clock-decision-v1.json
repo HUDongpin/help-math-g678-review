@@ -1,0 +1,23 @@
+{
+  "animationId": "shared-nms002-l02-p046",
+  "sourceSha256": "c82da2eb14e6db6fbb876e795edd8a8ebc1e890a52d9e7b1b1f5e66153b8cb62",
+  "timing": {
+    "fps": 12,
+    "introSeconds": 54.416666666666664,
+    "practiceFrame": 654,
+    "revealStartFrame": 2,
+    "revealEndFrame": 25,
+    "revealSeconds": 1.9166666666666667,
+    "continuationSeconds": 4.333333333333333,
+    "terminalFrame": 706
+  },
+  "policies": [
+    "Feedback durations derive from source audio windows and do not auto-close dialogs",
+    "Late clock tick stops at the next authored interaction boundary; elapsed remainder does not consume practice",
+    "Pause/resume and Replay are deterministic native controls",
+    "Partition/input/help operations retain practice locking",
+    "Numerical boundary tolerance1e-9seconds prevents floating-point omission of terminal tick"
+  ],
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false
+}

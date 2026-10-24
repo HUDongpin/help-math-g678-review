@@ -1,0 +1,493 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-nms002-l02-p013",
+  "animationId": "shared-nms002-l02-p013",
+  "assetId": "swf-510cd1fe9204d32d20910c1c907d50a4e35507c43b48079438aba9eb97ffa26e",
+  "status": "implementing",
+  "created": "2026-09-13",
+  "confidence": "medium",
+  "classification": {
+    "collection": "G6-G8-shared",
+    "grade": "shared",
+    "lesson": "NMS002-L2",
+    "section": "VB",
+    "page": 13,
+    "domain": "unknown",
+    "knowledgePoint": {
+      "en": "",
+      "es": ""
+    },
+    "titleRaw": "Equivalent Fraction",
+    "titleDisplay": "Equivalent Fraction",
+    "status": "source-resolved",
+    "evidence": [
+      "audit/source-semantic-qualification-v1.json"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/VB/L2VB08.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/VB/L2VB08.swf",
+    "flaSha256": "",
+    "swfSha256": "510cd1fe9204d32d20910c1c907d50a4e35507c43b48079438aba9eb97ffa26e",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 170608,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "",
+    "actionScriptVersion": "AS2",
+    "complexity": "behavior-heavy",
+    "fonts": [
+      "Bauhaus Md BT (regular and bold definitions)",
+      "Arial",
+      "Bertram LET"
+    ],
+    "scripts": [
+      "root stop1/preloader and stop6",
+      "main123 stop153/243",
+      "6 draggable1/6 items; target58 advances1..4 with retained per-item colors",
+      "wrong107 4labels; wrong popup103 hold1/close hides and re-enables",
+      "correct111 start2/return25 resumesmain153"
+    ],
+    "externalDependencies": [
+      "minimal preloader and keyterm host adapters"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [],
+    "morphs": [],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "source-sixths",
+      "kind": "interactive",
+      "reachable": true,
+      "description": "Authored drag demonstration; any3of6sixths fill onehalf; wrong outside target/close/retry; correct feedback and3/6=1/2outro; source term and Replay."
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "und"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "sprite-99",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p013-behavior-source-v1/audio/sprite-99/source-stream.mp3",
+        "language": "und",
+        "frameDomain": "sprite-99",
+        "startFrame": 1
+      },
+      {
+        "id": "sprite-105",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p013-behavior-source-v1/audio/sprite-105/source-stream.mp3",
+        "language": "und",
+        "frameDomain": "sprite-105",
+        "startFrame": 2
+      },
+      {
+        "id": "sprite-107",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p013-behavior-source-v1/audio/sprite-107/source-stream.mp3",
+        "language": "und",
+        "frameDomain": "sprite-107",
+        "startFrame": 3
+      },
+      {
+        "id": "sprite-111",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p013-behavior-source-v1/audio/sprite-111/source-stream.mp3",
+        "language": "und",
+        "frameDomain": "sprite-111",
+        "startFrame": 1
+      },
+      {
+        "id": "sprite-123",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p013-behavior-source-v1/audio/sprite-123/source-stream.mp3",
+        "language": "und",
+        "frameDomain": "sprite-123",
+        "startFrame": 10
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "React, SVG, MathML; source-compiled timeline plus maintained drag state machine",
+    "route": "/en/migration-status/g678-calibration/shared-nms002-l02-p013",
+    "routeFile": "apps/web/app/[locale]/migration-status/g678-calibration/shared-nms002-l02-p013/page.tsx",
+    "component": "packages/demos/src/nms-l02-p013-presentation-v1.tsx",
+    "registryModule": "packages/demos/src/modules/g678-nms-l02-native-sixths-p013.tsx",
+    "timelineModule": "packages/demos/src/nms-l02-p013-timeline-v1.ts",
+    "testFile": "packages/demos/tests/nms-l02-p013-state.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-123",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-45",
+        "kind": "nested",
+        "sourceTimelineId": "45",
+        "parentFrameDomainId": "sprite-46",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-46",
+        "kind": "nested",
+        "sourceTimelineId": "46",
+        "parentFrameDomainId": "sprite-58",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-48",
+        "kind": "nested",
+        "sourceTimelineId": "48",
+        "parentFrameDomainId": "sprite-58",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-52",
+        "kind": "nested",
+        "sourceTimelineId": "52",
+        "parentFrameDomainId": "sprite-53",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-53",
+        "kind": "nested",
+        "sourceTimelineId": "53",
+        "parentFrameDomainId": "sprite-58",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-56",
+        "kind": "nested",
+        "sourceTimelineId": "56",
+        "parentFrameDomainId": "sprite-57",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-57",
+        "kind": "nested",
+        "sourceTimelineId": "57",
+        "parentFrameDomainId": "sprite-58",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-58",
+        "kind": "nested",
+        "sourceTimelineId": "58",
+        "parentFrameDomainId": "sprite-123",
+        "frameCount": 4,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-68",
+        "kind": "nested",
+        "sourceTimelineId": "68",
+        "parentFrameDomainId": "sprite-123",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-72",
+        "kind": "nested",
+        "sourceTimelineId": "72",
+        "parentFrameDomainId": "sprite-123",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-74",
+        "kind": "nested",
+        "sourceTimelineId": "74",
+        "parentFrameDomainId": "sprite-123",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-76",
+        "kind": "nested",
+        "sourceTimelineId": "76",
+        "parentFrameDomainId": "sprite-123",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-78",
+        "kind": "nested",
+        "sourceTimelineId": "78",
+        "parentFrameDomainId": "sprite-123",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-80",
+        "kind": "nested",
+        "sourceTimelineId": "80",
+        "parentFrameDomainId": "sprite-123",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-83",
+        "kind": "nested",
+        "sourceTimelineId": "83",
+        "parentFrameDomainId": "sprite-123",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-85",
+        "kind": "nested",
+        "sourceTimelineId": "85",
+        "parentFrameDomainId": "sprite-123",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-87",
+        "kind": "nested",
+        "sourceTimelineId": "87",
+        "parentFrameDomainId": "sprite-123",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-89",
+        "kind": "nested",
+        "sourceTimelineId": "89",
+        "parentFrameDomainId": "sprite-123",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-91",
+        "kind": "nested",
+        "sourceTimelineId": "91",
+        "parentFrameDomainId": "sprite-123",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-99",
+        "kind": "nested",
+        "sourceTimelineId": "99",
+        "parentFrameDomainId": "sprite-103",
+        "frameCount": 5,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-103",
+        "kind": "nested",
+        "sourceTimelineId": "103",
+        "parentFrameDomainId": "sprite-123",
+        "frameCount": 15,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-105",
+        "kind": "nested",
+        "sourceTimelineId": "105",
+        "parentFrameDomainId": "sprite-123",
+        "frameCount": 20,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-107",
+        "kind": "nested",
+        "sourceTimelineId": "107",
+        "parentFrameDomainId": "sprite-123",
+        "frameCount": 55,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-111",
+        "kind": "nested",
+        "sourceTimelineId": "111",
+        "parentFrameDomainId": "sprite-123",
+        "frameCount": 25,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      },
+      {
+        "id": "sprite-123",
+        "kind": "nested",
+        "sourceTimelineId": "123",
+        "parentFrameDomainId": "root",
+        "frameCount": 243,
+        "scenarioIds": [
+          "source-sixths"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

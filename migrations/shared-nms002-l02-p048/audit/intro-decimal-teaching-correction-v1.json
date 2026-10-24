@@ -1,0 +1,75 @@
+{
+  "sourceSha256": "18786203d58efb8aa54c3701e72838887d0702ff03d68819830938a252facce7",
+  "decision": "Correct native numeric display at frames124..131 to equal41..48 filled hundred-grid cells. Retain source numeric values and hashes in audit; no claim of pixel or original-runtime parity.",
+  "corrections": [
+    {
+      "frame": 124,
+      "sourceHundredths": 40,
+      "nativeHundredths": 41,
+      "sourceShapeId": 302
+    },
+    {
+      "frame": 125,
+      "sourceHundredths": 41,
+      "nativeHundredths": 42,
+      "sourceShapeId": 305
+    },
+    {
+      "frame": 126,
+      "sourceHundredths": 42,
+      "nativeHundredths": 43,
+      "sourceShapeId": 308
+    },
+    {
+      "frame": 127,
+      "sourceHundredths": 43,
+      "nativeHundredths": 44,
+      "sourceShapeId": 311
+    },
+    {
+      "frame": 128,
+      "sourceHundredths": 44,
+      "nativeHundredths": 45,
+      "sourceShapeId": 314
+    },
+    {
+      "frame": 129,
+      "sourceHundredths": 45,
+      "nativeHundredths": 46,
+      "sourceShapeId": 317
+    },
+    {
+      "frame": 130,
+      "sourceHundredths": 46,
+      "nativeHundredths": 47,
+      "sourceShapeId": 320
+    },
+    {
+      "frame": 131,
+      "sourceHundredths": 47,
+      "nativeHundredths": 48,
+      "sourceShapeId": 323
+    }
+  ],
+  "evidence": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p048-count-anomaly-centers-v1.py",
+      "sha256": "1abcec1bc65dd7fb055f777236d8c6288e3b9758d57a2f15e0410824ee319073"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p048-anomaly-center-results-v1.json",
+      "sha256": "40a1749c7769afa9678c5ce90d4127b70d0b097c1a17cb01edb80ca92f837a42"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p048/audit/intro-anomaly-effective-transforms-v1.json",
+      "sha256": "f90b7721362a167ad8bd0e264bacf479677249c1aab189a152f82f2c695f53fc"
+    }
+  ],
+  "limits": [
+    "Static geometry and point inclusion at cell centers; not rendered visual acceptance",
+    "Other source roles and pointer path remain to be completed"
+  ],
+  "humanAccepted": false,
+  "ownerAccepted": false,
+  "fidelityAccepted": false
+}

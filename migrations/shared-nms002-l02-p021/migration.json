@@ -1,0 +1,2432 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-nms002-l02-p021",
+  "animationId": "shared-nms002-l02-p021",
+  "assetId": "swf-114219149b6a6aca2037d9e4c40a6ffb7f75d620ddf2c3030f597ccc11967c69",
+  "status": "implementing",
+  "created": "2026-09-13",
+  "confidence": "medium",
+  "classification": {
+    "collection": "G6-G8-shared",
+    "grade": "shared",
+    "lesson": "NMS002-L2",
+    "section": "IN",
+    "page": 21,
+    "domain": "unknown",
+    "knowledgePoint": {
+      "en": "Divide a whole into equal parts and shade a specified proper fraction.",
+      "es": ""
+    },
+    "titleRaw": "Naming Fractions",
+    "titleDisplay": "Naming Fractions",
+    "status": "unresolved",
+    "evidence": [
+      "audit/source-semantic-qualification-v1.json"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/IN/L2IN06.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/IN/L2IN06.swf",
+    "flaSha256": "",
+    "swfSha256": "114219149b6a6aca2037d9e4c40a6ffb7f75d620ddf2c3030f597ccc11967c69",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 330711,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "",
+    "actionScriptVersion": "AS2",
+    "complexity": "behavior-heavy",
+    "fonts": [
+      "Arial",
+      "Bauhaus Md BT"
+    ],
+    "scripts": [
+      "root preloader stop1 and root stop6",
+      "main578 stop470; random non-repeating pool1/3,3/7,5/7; stop515",
+      "selector551 L1..L20; toggle Mc_i",
+      "Button552 check;553new;558up;559down;566wrongclose;571correctclose",
+      "coach575 correct;577 random S1..S4"
+    ],
+    "externalDependencies": [
+      "modern My Lesson playback and Replay controls"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [],
+    "morphs": [],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "source-partition-exercise",
+      "kind": "interactive",
+      "reachable": true,
+      "description": "Full demonstration, source question pool,1..20parts,toggle/check/retry/reveal/NewWhole,threecorrectFinish andReplay"
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "und"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "source-29",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p021-behavior-source-v1/audio/sprite-29/source-stream.mp3",
+        "language": "und",
+        "frameDomain": "sprite-29",
+        "startFrame": 1
+      },
+      {
+        "id": "source-557",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p021-behavior-source-v1/audio/sprite-557/source-stream.mp3",
+        "language": "und",
+        "frameDomain": "sprite-557",
+        "startFrame": 1
+      },
+      {
+        "id": "source-575",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p021-behavior-source-v1/audio/sprite-575/source-stream.mp3",
+        "language": "und",
+        "frameDomain": "sprite-575",
+        "startFrame": 2
+      },
+      {
+        "id": "source-577",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p021-behavior-source-v1/audio/sprite-577/source-stream.mp3",
+        "language": "und",
+        "frameDomain": "sprite-577",
+        "startFrame": 3
+      },
+      {
+        "id": "source-578",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p021-behavior-source-v1/audio/sprite-578/source-stream.mp3",
+        "language": "und",
+        "frameDomain": "sprite-578",
+        "startFrame": 3
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "React, native SVG, HTML controls and MathML",
+    "route": "/en/migration-status/g678-calibration/shared-nms002-l02-p021",
+    "routeFile": "apps/web/app/[locale]/migration-status/g678-calibration/shared-nms002-l02-p021/page.tsx",
+    "component": "packages/demos/src/nms-l02-p021-presentation-v1.tsx",
+    "registryModule": "packages/demos/src/modules/g678-nms-l02-native-partition-p021.tsx",
+    "timelineModule": "packages/demos/src/nms-l02-p021-state-v1.ts",
+    "testFile": "packages/demos/tests/nms-l02-p021-state.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-578",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-29",
+        "kind": "nested",
+        "sourceTimelineId": "29",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 5,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-56",
+        "kind": "nested",
+        "sourceTimelineId": "56",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-68",
+        "kind": "nested",
+        "sourceTimelineId": "68",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-70",
+        "kind": "nested",
+        "sourceTimelineId": "70",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-73",
+        "kind": "nested",
+        "sourceTimelineId": "73",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-75",
+        "kind": "nested",
+        "sourceTimelineId": "75",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-77",
+        "kind": "nested",
+        "sourceTimelineId": "77",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-80",
+        "kind": "nested",
+        "sourceTimelineId": "80",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-82",
+        "kind": "nested",
+        "sourceTimelineId": "82",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-84",
+        "kind": "nested",
+        "sourceTimelineId": "84",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-86",
+        "kind": "nested",
+        "sourceTimelineId": "86",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-89",
+        "kind": "nested",
+        "sourceTimelineId": "89",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-91",
+        "kind": "nested",
+        "sourceTimelineId": "91",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-93",
+        "kind": "nested",
+        "sourceTimelineId": "93",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-95",
+        "kind": "nested",
+        "sourceTimelineId": "95",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-97",
+        "kind": "nested",
+        "sourceTimelineId": "97",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-115",
+        "kind": "nested",
+        "sourceTimelineId": "115",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-117",
+        "kind": "nested",
+        "sourceTimelineId": "117",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-119",
+        "kind": "nested",
+        "sourceTimelineId": "119",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-121",
+        "kind": "nested",
+        "sourceTimelineId": "121",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-123",
+        "kind": "nested",
+        "sourceTimelineId": "123",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-125",
+        "kind": "nested",
+        "sourceTimelineId": "125",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-128",
+        "kind": "nested",
+        "sourceTimelineId": "128",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-130",
+        "kind": "nested",
+        "sourceTimelineId": "130",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-132",
+        "kind": "nested",
+        "sourceTimelineId": "132",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-134",
+        "kind": "nested",
+        "sourceTimelineId": "134",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-136",
+        "kind": "nested",
+        "sourceTimelineId": "136",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-138",
+        "kind": "nested",
+        "sourceTimelineId": "138",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-140",
+        "kind": "nested",
+        "sourceTimelineId": "140",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-143",
+        "kind": "nested",
+        "sourceTimelineId": "143",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-145",
+        "kind": "nested",
+        "sourceTimelineId": "145",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-147",
+        "kind": "nested",
+        "sourceTimelineId": "147",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-149",
+        "kind": "nested",
+        "sourceTimelineId": "149",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-151",
+        "kind": "nested",
+        "sourceTimelineId": "151",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-153",
+        "kind": "nested",
+        "sourceTimelineId": "153",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-155",
+        "kind": "nested",
+        "sourceTimelineId": "155",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-157",
+        "kind": "nested",
+        "sourceTimelineId": "157",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-194",
+        "kind": "nested",
+        "sourceTimelineId": "194",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-196",
+        "kind": "nested",
+        "sourceTimelineId": "196",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-198",
+        "kind": "nested",
+        "sourceTimelineId": "198",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-200",
+        "kind": "nested",
+        "sourceTimelineId": "200",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-202",
+        "kind": "nested",
+        "sourceTimelineId": "202",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-204",
+        "kind": "nested",
+        "sourceTimelineId": "204",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-206",
+        "kind": "nested",
+        "sourceTimelineId": "206",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-208",
+        "kind": "nested",
+        "sourceTimelineId": "208",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-210",
+        "kind": "nested",
+        "sourceTimelineId": "210",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-213",
+        "kind": "nested",
+        "sourceTimelineId": "213",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-215",
+        "kind": "nested",
+        "sourceTimelineId": "215",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-217",
+        "kind": "nested",
+        "sourceTimelineId": "217",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-219",
+        "kind": "nested",
+        "sourceTimelineId": "219",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-221",
+        "kind": "nested",
+        "sourceTimelineId": "221",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-223",
+        "kind": "nested",
+        "sourceTimelineId": "223",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-225",
+        "kind": "nested",
+        "sourceTimelineId": "225",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-227",
+        "kind": "nested",
+        "sourceTimelineId": "227",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-229",
+        "kind": "nested",
+        "sourceTimelineId": "229",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-231",
+        "kind": "nested",
+        "sourceTimelineId": "231",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-234",
+        "kind": "nested",
+        "sourceTimelineId": "234",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-236",
+        "kind": "nested",
+        "sourceTimelineId": "236",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-238",
+        "kind": "nested",
+        "sourceTimelineId": "238",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-240",
+        "kind": "nested",
+        "sourceTimelineId": "240",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-242",
+        "kind": "nested",
+        "sourceTimelineId": "242",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-244",
+        "kind": "nested",
+        "sourceTimelineId": "244",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-246",
+        "kind": "nested",
+        "sourceTimelineId": "246",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-248",
+        "kind": "nested",
+        "sourceTimelineId": "248",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-250",
+        "kind": "nested",
+        "sourceTimelineId": "250",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-252",
+        "kind": "nested",
+        "sourceTimelineId": "252",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-254",
+        "kind": "nested",
+        "sourceTimelineId": "254",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-257",
+        "kind": "nested",
+        "sourceTimelineId": "257",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-259",
+        "kind": "nested",
+        "sourceTimelineId": "259",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-261",
+        "kind": "nested",
+        "sourceTimelineId": "261",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-263",
+        "kind": "nested",
+        "sourceTimelineId": "263",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-265",
+        "kind": "nested",
+        "sourceTimelineId": "265",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-267",
+        "kind": "nested",
+        "sourceTimelineId": "267",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-269",
+        "kind": "nested",
+        "sourceTimelineId": "269",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-271",
+        "kind": "nested",
+        "sourceTimelineId": "271",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-273",
+        "kind": "nested",
+        "sourceTimelineId": "273",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-275",
+        "kind": "nested",
+        "sourceTimelineId": "275",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-277",
+        "kind": "nested",
+        "sourceTimelineId": "277",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-279",
+        "kind": "nested",
+        "sourceTimelineId": "279",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-282",
+        "kind": "nested",
+        "sourceTimelineId": "282",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-284",
+        "kind": "nested",
+        "sourceTimelineId": "284",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-286",
+        "kind": "nested",
+        "sourceTimelineId": "286",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-288",
+        "kind": "nested",
+        "sourceTimelineId": "288",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-290",
+        "kind": "nested",
+        "sourceTimelineId": "290",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-292",
+        "kind": "nested",
+        "sourceTimelineId": "292",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-294",
+        "kind": "nested",
+        "sourceTimelineId": "294",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-296",
+        "kind": "nested",
+        "sourceTimelineId": "296",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-298",
+        "kind": "nested",
+        "sourceTimelineId": "298",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-300",
+        "kind": "nested",
+        "sourceTimelineId": "300",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-302",
+        "kind": "nested",
+        "sourceTimelineId": "302",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-304",
+        "kind": "nested",
+        "sourceTimelineId": "304",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-305",
+        "kind": "nested",
+        "sourceTimelineId": "305",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-308",
+        "kind": "nested",
+        "sourceTimelineId": "308",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-310",
+        "kind": "nested",
+        "sourceTimelineId": "310",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-312",
+        "kind": "nested",
+        "sourceTimelineId": "312",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-314",
+        "kind": "nested",
+        "sourceTimelineId": "314",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-316",
+        "kind": "nested",
+        "sourceTimelineId": "316",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-318",
+        "kind": "nested",
+        "sourceTimelineId": "318",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-320",
+        "kind": "nested",
+        "sourceTimelineId": "320",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-322",
+        "kind": "nested",
+        "sourceTimelineId": "322",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-324",
+        "kind": "nested",
+        "sourceTimelineId": "324",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-326",
+        "kind": "nested",
+        "sourceTimelineId": "326",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-328",
+        "kind": "nested",
+        "sourceTimelineId": "328",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-330",
+        "kind": "nested",
+        "sourceTimelineId": "330",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-332",
+        "kind": "nested",
+        "sourceTimelineId": "332",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-334",
+        "kind": "nested",
+        "sourceTimelineId": "334",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-337",
+        "kind": "nested",
+        "sourceTimelineId": "337",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-339",
+        "kind": "nested",
+        "sourceTimelineId": "339",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-341",
+        "kind": "nested",
+        "sourceTimelineId": "341",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-343",
+        "kind": "nested",
+        "sourceTimelineId": "343",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-345",
+        "kind": "nested",
+        "sourceTimelineId": "345",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-347",
+        "kind": "nested",
+        "sourceTimelineId": "347",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-349",
+        "kind": "nested",
+        "sourceTimelineId": "349",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-351",
+        "kind": "nested",
+        "sourceTimelineId": "351",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-353",
+        "kind": "nested",
+        "sourceTimelineId": "353",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-355",
+        "kind": "nested",
+        "sourceTimelineId": "355",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-357",
+        "kind": "nested",
+        "sourceTimelineId": "357",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-359",
+        "kind": "nested",
+        "sourceTimelineId": "359",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-361",
+        "kind": "nested",
+        "sourceTimelineId": "361",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-363",
+        "kind": "nested",
+        "sourceTimelineId": "363",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-365",
+        "kind": "nested",
+        "sourceTimelineId": "365",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-368",
+        "kind": "nested",
+        "sourceTimelineId": "368",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-370",
+        "kind": "nested",
+        "sourceTimelineId": "370",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-372",
+        "kind": "nested",
+        "sourceTimelineId": "372",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-374",
+        "kind": "nested",
+        "sourceTimelineId": "374",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-376",
+        "kind": "nested",
+        "sourceTimelineId": "376",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-378",
+        "kind": "nested",
+        "sourceTimelineId": "378",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-380",
+        "kind": "nested",
+        "sourceTimelineId": "380",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-382",
+        "kind": "nested",
+        "sourceTimelineId": "382",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-384",
+        "kind": "nested",
+        "sourceTimelineId": "384",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-386",
+        "kind": "nested",
+        "sourceTimelineId": "386",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-388",
+        "kind": "nested",
+        "sourceTimelineId": "388",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-390",
+        "kind": "nested",
+        "sourceTimelineId": "390",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-392",
+        "kind": "nested",
+        "sourceTimelineId": "392",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-394",
+        "kind": "nested",
+        "sourceTimelineId": "394",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-396",
+        "kind": "nested",
+        "sourceTimelineId": "396",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-398",
+        "kind": "nested",
+        "sourceTimelineId": "398",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-401",
+        "kind": "nested",
+        "sourceTimelineId": "401",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-403",
+        "kind": "nested",
+        "sourceTimelineId": "403",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-405",
+        "kind": "nested",
+        "sourceTimelineId": "405",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-407",
+        "kind": "nested",
+        "sourceTimelineId": "407",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-409",
+        "kind": "nested",
+        "sourceTimelineId": "409",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-411",
+        "kind": "nested",
+        "sourceTimelineId": "411",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-413",
+        "kind": "nested",
+        "sourceTimelineId": "413",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-415",
+        "kind": "nested",
+        "sourceTimelineId": "415",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-417",
+        "kind": "nested",
+        "sourceTimelineId": "417",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-419",
+        "kind": "nested",
+        "sourceTimelineId": "419",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-421",
+        "kind": "nested",
+        "sourceTimelineId": "421",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-423",
+        "kind": "nested",
+        "sourceTimelineId": "423",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-425",
+        "kind": "nested",
+        "sourceTimelineId": "425",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-427",
+        "kind": "nested",
+        "sourceTimelineId": "427",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-429",
+        "kind": "nested",
+        "sourceTimelineId": "429",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-431",
+        "kind": "nested",
+        "sourceTimelineId": "431",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-433",
+        "kind": "nested",
+        "sourceTimelineId": "433",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-436",
+        "kind": "nested",
+        "sourceTimelineId": "436",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-438",
+        "kind": "nested",
+        "sourceTimelineId": "438",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-439",
+        "kind": "nested",
+        "sourceTimelineId": "439",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-441",
+        "kind": "nested",
+        "sourceTimelineId": "441",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-443",
+        "kind": "nested",
+        "sourceTimelineId": "443",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-445",
+        "kind": "nested",
+        "sourceTimelineId": "445",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-447",
+        "kind": "nested",
+        "sourceTimelineId": "447",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-449",
+        "kind": "nested",
+        "sourceTimelineId": "449",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-451",
+        "kind": "nested",
+        "sourceTimelineId": "451",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-453",
+        "kind": "nested",
+        "sourceTimelineId": "453",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-455",
+        "kind": "nested",
+        "sourceTimelineId": "455",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-457",
+        "kind": "nested",
+        "sourceTimelineId": "457",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-459",
+        "kind": "nested",
+        "sourceTimelineId": "459",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-461",
+        "kind": "nested",
+        "sourceTimelineId": "461",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-463",
+        "kind": "nested",
+        "sourceTimelineId": "463",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-465",
+        "kind": "nested",
+        "sourceTimelineId": "465",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-467",
+        "kind": "nested",
+        "sourceTimelineId": "467",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-469",
+        "kind": "nested",
+        "sourceTimelineId": "469",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-472",
+        "kind": "nested",
+        "sourceTimelineId": "472",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-474",
+        "kind": "nested",
+        "sourceTimelineId": "474",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-476",
+        "kind": "nested",
+        "sourceTimelineId": "476",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-478",
+        "kind": "nested",
+        "sourceTimelineId": "478",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-480",
+        "kind": "nested",
+        "sourceTimelineId": "480",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-482",
+        "kind": "nested",
+        "sourceTimelineId": "482",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-484",
+        "kind": "nested",
+        "sourceTimelineId": "484",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-486",
+        "kind": "nested",
+        "sourceTimelineId": "486",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-488",
+        "kind": "nested",
+        "sourceTimelineId": "488",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-490",
+        "kind": "nested",
+        "sourceTimelineId": "490",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-492",
+        "kind": "nested",
+        "sourceTimelineId": "492",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-494",
+        "kind": "nested",
+        "sourceTimelineId": "494",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-496",
+        "kind": "nested",
+        "sourceTimelineId": "496",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-498",
+        "kind": "nested",
+        "sourceTimelineId": "498",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-500",
+        "kind": "nested",
+        "sourceTimelineId": "500",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-502",
+        "kind": "nested",
+        "sourceTimelineId": "502",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-504",
+        "kind": "nested",
+        "sourceTimelineId": "504",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-506",
+        "kind": "nested",
+        "sourceTimelineId": "506",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-508",
+        "kind": "nested",
+        "sourceTimelineId": "508",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-511",
+        "kind": "nested",
+        "sourceTimelineId": "511",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-513",
+        "kind": "nested",
+        "sourceTimelineId": "513",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-515",
+        "kind": "nested",
+        "sourceTimelineId": "515",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-517",
+        "kind": "nested",
+        "sourceTimelineId": "517",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-519",
+        "kind": "nested",
+        "sourceTimelineId": "519",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-521",
+        "kind": "nested",
+        "sourceTimelineId": "521",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-523",
+        "kind": "nested",
+        "sourceTimelineId": "523",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-525",
+        "kind": "nested",
+        "sourceTimelineId": "525",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-527",
+        "kind": "nested",
+        "sourceTimelineId": "527",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-529",
+        "kind": "nested",
+        "sourceTimelineId": "529",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-531",
+        "kind": "nested",
+        "sourceTimelineId": "531",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-533",
+        "kind": "nested",
+        "sourceTimelineId": "533",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-535",
+        "kind": "nested",
+        "sourceTimelineId": "535",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-537",
+        "kind": "nested",
+        "sourceTimelineId": "537",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-539",
+        "kind": "nested",
+        "sourceTimelineId": "539",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-541",
+        "kind": "nested",
+        "sourceTimelineId": "541",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-543",
+        "kind": "nested",
+        "sourceTimelineId": "543",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-545",
+        "kind": "nested",
+        "sourceTimelineId": "545",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-547",
+        "kind": "nested",
+        "sourceTimelineId": "547",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-549",
+        "kind": "nested",
+        "sourceTimelineId": "549",
+        "parentFrameDomainId": "sprite-551",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-551",
+        "kind": "nested",
+        "sourceTimelineId": "551",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 20,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-557",
+        "kind": "nested",
+        "sourceTimelineId": "557",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 5,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-569",
+        "kind": "nested",
+        "sourceTimelineId": "569",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 15,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-570",
+        "kind": "nested",
+        "sourceTimelineId": "570",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 50,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-573",
+        "kind": "nested",
+        "sourceTimelineId": "573",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 15,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-575",
+        "kind": "nested",
+        "sourceTimelineId": "575",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 20,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-577",
+        "kind": "nested",
+        "sourceTimelineId": "577",
+        "parentFrameDomainId": "sprite-578",
+        "frameCount": 55,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      },
+      {
+        "id": "sprite-578",
+        "kind": "nested",
+        "sourceTimelineId": "578",
+        "parentFrameDomainId": "root",
+        "frameCount": 515,
+        "scenarioIds": [
+          "source-partition-exercise"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

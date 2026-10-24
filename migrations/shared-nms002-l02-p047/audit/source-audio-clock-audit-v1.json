@@ -1,0 +1,679 @@
+{
+  "sourceSha256": "6298123b7431ed8aad86a409125c7db979bfeeaf272efd67188d12f66e2d7df6",
+  "streams": [
+    {
+      "domain": "sprite-78",
+      "decodedSamples": 34560,
+      "segments": [
+        {
+          "frame": 2,
+          "sourceStart": 1673,
+          "sourceEnd": 3510,
+          "outputStart": 1838,
+          "outputEnd": 3675
+        },
+        {
+          "frame": 4,
+          "sourceStart": 3510,
+          "sourceEnd": 34560,
+          "outputStart": 5512,
+          "outputEnd": 36562
+        }
+      ],
+      "scheduledSeconds": 1.658140589569161,
+      "callbacks": [
+        {
+          "frame": 20,
+          "sourceCoordinate": 32910,
+          "followingPcm": {
+            "startSample": 32910,
+            "endSample": 34560,
+            "samples": 1650,
+            "peak": 0.032439347356557846,
+            "rms": 0.010470912397796515
+          }
+        }
+      ]
+    },
+    {
+      "domain": "sprite-80",
+      "decodedSamples": 96768,
+      "segments": [
+        {
+          "frame": 3,
+          "sourceStart": 1673,
+          "sourceEnd": 3510,
+          "outputStart": 3675,
+          "outputEnd": 5512
+        },
+        {
+          "frame": 5,
+          "sourceStart": 3510,
+          "sourceEnd": 96768,
+          "outputStart": 7350,
+          "outputEnd": 100608
+        }
+      ],
+      "scheduledSeconds": 4.562721088435374,
+      "callbacks": [
+        {
+          "frame": 16,
+          "sourceCoordinate": 23722,
+          "followingPcm": {
+            "startSample": 23722,
+            "endSample": 96768,
+            "samples": 73046,
+            "peak": 0.9846500754356384,
+            "rms": 0.11628744018273011
+          }
+        },
+        {
+          "frame": 27,
+          "sourceCoordinate": 43935,
+          "followingPcm": {
+            "startSample": 43935,
+            "endSample": 96768,
+            "samples": 52833,
+            "peak": 0.4770379960536957,
+            "rms": 0.08220944712063881
+          }
+        },
+        {
+          "frame": 36,
+          "sourceCoordinate": 60472,
+          "followingPcm": {
+            "startSample": 60472,
+            "endSample": 96768,
+            "samples": 36296,
+            "peak": 0.4770379960536957,
+            "rms": 0.0917311697010085
+          }
+        },
+        {
+          "frame": 54,
+          "sourceCoordinate": 93548,
+          "followingPcm": {
+            "startSample": 93548,
+            "endSample": 96768,
+            "samples": 3220,
+            "peak": 0.16402462124824524,
+            "rms": 0.05425300038104647
+          }
+        }
+      ],
+      "branches": [
+        {
+          "label": "S1",
+          "firstFrame": 3,
+          "returnFrame": 16,
+          "nominalPcm": {
+            "startSample": 1673,
+            "endSample": 23722,
+            "samples": 22049,
+            "peak": 0.8062869310379028,
+            "rms": 0.1337152350396257
+          }
+        },
+        {
+          "label": "S2",
+          "firstFrame": 18,
+          "returnFrame": 27,
+          "nominalPcm": {
+            "startSample": 27398,
+            "endSample": 43935,
+            "samples": 16537,
+            "peak": 0.9846500754356384,
+            "rms": 0.19529415345077136
+          }
+        },
+        {
+          "label": "S3",
+          "firstFrame": 31,
+          "returnFrame": 36,
+          "nominalPcm": {
+            "startSample": 51285,
+            "endSample": 60472,
+            "samples": 9187,
+            "peak": 0.43227753043174744,
+            "rms": 0.07294718825512037
+          }
+        },
+        {
+          "label": "S4",
+          "firstFrame": 40,
+          "returnFrame": 54,
+          "nominalPcm": {
+            "startSample": 67822,
+            "endSample": 93548,
+            "samples": 25726,
+            "peak": 0.4770379960536957,
+            "rms": 0.10635895480902625
+          }
+        }
+      ],
+      "qualification": "Label-local return boundaries are source facts. These nominal spans do not yet decide treatment of branch tails or gaps."
+    },
+    {
+      "domain": "sprite-81",
+      "decodedSamples": 340992,
+      "segments": [
+        {
+          "frame": 3,
+          "sourceStart": 1673,
+          "sourceEnd": 3510,
+          "outputStart": 3675,
+          "outputEnd": 5512
+        },
+        {
+          "frame": 5,
+          "sourceStart": 3510,
+          "sourceEnd": 340992,
+          "outputStart": 7350,
+          "outputEnd": 344832
+        }
+      ],
+      "scheduledSeconds": 15.638639455782313,
+      "callbacks": [
+        {
+          "frame": 140,
+          "sourceCoordinate": 251572,
+          "followingPcm": {
+            "startSample": 251572,
+            "endSample": 340992,
+            "samples": 89420,
+            "peak": 1.7098890542984009,
+            "rms": 0.2328588622770611
+          }
+        },
+        {
+          "frame": 188,
+          "sourceCoordinate": 339772,
+          "followingPcm": {
+            "startSample": 339772,
+            "endSample": 340992,
+            "samples": 1220,
+            "peak": 0.0,
+            "rms": 0.0
+          }
+        }
+      ],
+      "endFrameEnvelope": [
+        {
+          "frame": 130,
+          "startSample": 233198,
+          "endSample": 235035,
+          "samples": 1837,
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        {
+          "frame": 131,
+          "startSample": 235035,
+          "endSample": 236872,
+          "samples": 1837,
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        {
+          "frame": 132,
+          "startSample": 236872,
+          "endSample": 238710,
+          "samples": 1838,
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        {
+          "frame": 133,
+          "startSample": 238710,
+          "endSample": 240548,
+          "samples": 1838,
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        {
+          "frame": 134,
+          "startSample": 240548,
+          "endSample": 242385,
+          "samples": 1837,
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        {
+          "frame": 135,
+          "startSample": 242385,
+          "endSample": 244222,
+          "samples": 1837,
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        {
+          "frame": 136,
+          "startSample": 244222,
+          "endSample": 246060,
+          "samples": 1838,
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        {
+          "frame": 137,
+          "startSample": 246060,
+          "endSample": 247898,
+          "samples": 1838,
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        {
+          "frame": 138,
+          "startSample": 247898,
+          "endSample": 249735,
+          "samples": 1837,
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        {
+          "frame": 139,
+          "startSample": 249735,
+          "endSample": 251572,
+          "samples": 1837,
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        {
+          "frame": 140,
+          "startSample": 251572,
+          "endSample": 253410,
+          "samples": 1838,
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        {
+          "frame": 141,
+          "startSample": 253410,
+          "endSample": 255248,
+          "samples": 1838,
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        {
+          "frame": 142,
+          "startSample": 255248,
+          "endSample": 257085,
+          "samples": 1837,
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        {
+          "frame": 143,
+          "startSample": 257085,
+          "endSample": 258922,
+          "samples": 1837,
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        {
+          "frame": 144,
+          "startSample": 258922,
+          "endSample": 260760,
+          "samples": 1838,
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        {
+          "frame": 145,
+          "startSample": 260760,
+          "endSample": 262598,
+          "samples": 1838,
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        {
+          "frame": 146,
+          "startSample": 262598,
+          "endSample": 264435,
+          "samples": 1837,
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        {
+          "frame": 147,
+          "startSample": 264435,
+          "endSample": 266272,
+          "samples": 1837,
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        {
+          "frame": 148,
+          "startSample": 266272,
+          "endSample": 268110,
+          "samples": 1838,
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        {
+          "frame": 149,
+          "startSample": 268110,
+          "endSample": 269948,
+          "samples": 1838,
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        {
+          "frame": 150,
+          "startSample": 269948,
+          "endSample": 271785,
+          "samples": 1837,
+          "peak": 1.5439245544257574e-06,
+          "rms": 9.715874531272049e-08
+        },
+        {
+          "frame": 151,
+          "startSample": 271785,
+          "endSample": 273622,
+          "samples": 1837,
+          "peak": 1.0160304307937622,
+          "rms": 0.1711639528935288
+        },
+        {
+          "frame": 152,
+          "startSample": 273622,
+          "endSample": 275460,
+          "samples": 1838,
+          "peak": 1.1331928968429565,
+          "rms": 0.4218376964502117
+        },
+        {
+          "frame": 153,
+          "startSample": 275460,
+          "endSample": 277298,
+          "samples": 1838,
+          "peak": 1.0348109006881714,
+          "rms": 0.17254584634943732
+        },
+        {
+          "frame": 154,
+          "startSample": 277298,
+          "endSample": 279135,
+          "samples": 1837,
+          "peak": 1.2181755304336548,
+          "rms": 0.34926334503488365
+        },
+        {
+          "frame": 155,
+          "startSample": 279135,
+          "endSample": 280972,
+          "samples": 1837,
+          "peak": 1.1120160818099976,
+          "rms": 0.40415184264611664
+        },
+        {
+          "frame": 156,
+          "startSample": 280972,
+          "endSample": 282810,
+          "samples": 1838,
+          "peak": 1.0283817052841187,
+          "rms": 0.22758669945143556
+        },
+        {
+          "frame": 157,
+          "startSample": 282810,
+          "endSample": 284648,
+          "samples": 1838,
+          "peak": 0.6956217885017395,
+          "rms": 0.09290680274633606
+        },
+        {
+          "frame": 158,
+          "startSample": 284648,
+          "endSample": 286485,
+          "samples": 1837,
+          "peak": 1.059874415397644,
+          "rms": 0.42673572334438237
+        },
+        {
+          "frame": 159,
+          "startSample": 286485,
+          "endSample": 288322,
+          "samples": 1837,
+          "peak": 1.1927378177642822,
+          "rms": 0.43603793519295564
+        },
+        {
+          "frame": 160,
+          "startSample": 288322,
+          "endSample": 290160,
+          "samples": 1838,
+          "peak": 1.7098890542984009,
+          "rms": 0.3739782051593727
+        },
+        {
+          "frame": 161,
+          "startSample": 290160,
+          "endSample": 291998,
+          "samples": 1838,
+          "peak": 0.3670695722103119,
+          "rms": 0.07862986115431653
+        },
+        {
+          "frame": 162,
+          "startSample": 291998,
+          "endSample": 293835,
+          "samples": 1837,
+          "peak": 0.08674164861440659,
+          "rms": 0.008515725232207448
+        },
+        {
+          "frame": 163,
+          "startSample": 293835,
+          "endSample": 295672,
+          "samples": 1837,
+          "peak": 0.02214854210615158,
+          "rms": 0.004495365669270729
+        },
+        {
+          "frame": 164,
+          "startSample": 295672,
+          "endSample": 297510,
+          "samples": 1838,
+          "peak": 0.0016761685255914927,
+          "rms": 0.0004997789238084929
+        },
+        {
+          "frame": 165,
+          "startSample": 297510,
+          "endSample": 299348,
+          "samples": 1838,
+          "peak": 0.0011918662348762155,
+          "rms": 0.00037483725036053595
+        },
+        {
+          "frame": 166,
+          "startSample": 299348,
+          "endSample": 301185,
+          "samples": 1837,
+          "peak": 0.0028485399670898914,
+          "rms": 0.0006395294388818869
+        },
+        {
+          "frame": 167,
+          "startSample": 301185,
+          "endSample": 303022,
+          "samples": 1837,
+          "peak": 0.002509182784706354,
+          "rms": 0.0006644828570069715
+        },
+        {
+          "frame": 168,
+          "startSample": 303022,
+          "endSample": 304860,
+          "samples": 1838,
+          "peak": 0.9434837698936462,
+          "rms": 0.2707267388738222
+        },
+        {
+          "frame": 169,
+          "startSample": 304860,
+          "endSample": 306698,
+          "samples": 1838,
+          "peak": 1.2472423315048218,
+          "rms": 0.4469646812903102
+        },
+        {
+          "frame": 170,
+          "startSample": 306698,
+          "endSample": 308535,
+          "samples": 1837,
+          "peak": 1.0356308221817017,
+          "rms": 0.29004229642194157
+        },
+        {
+          "frame": 171,
+          "startSample": 308535,
+          "endSample": 310372,
+          "samples": 1837,
+          "peak": 1.0520066022872925,
+          "rms": 0.3249656993617125
+        },
+        {
+          "frame": 172,
+          "startSample": 310372,
+          "endSample": 312210,
+          "samples": 1838,
+          "peak": 1.0259686708450317,
+          "rms": 0.3731842555468879
+        },
+        {
+          "frame": 173,
+          "startSample": 312210,
+          "endSample": 314048,
+          "samples": 1838,
+          "peak": 0.012569488026201725,
+          "rms": 0.002779134999755843
+        },
+        {
+          "frame": 174,
+          "startSample": 314048,
+          "endSample": 315885,
+          "samples": 1837,
+          "peak": 1.0494836568832397,
+          "rms": 0.39594836353637686
+        },
+        {
+          "frame": 175,
+          "startSample": 315885,
+          "endSample": 317722,
+          "samples": 1837,
+          "peak": 0.9872793555259705,
+          "rms": 0.22912954526608528
+        },
+        {
+          "frame": 176,
+          "startSample": 317722,
+          "endSample": 319560,
+          "samples": 1838,
+          "peak": 0.29953309893608093,
+          "rms": 0.02823304554355208
+        },
+        {
+          "frame": 177,
+          "startSample": 319560,
+          "endSample": 321398,
+          "samples": 1838,
+          "peak": 0.7887275218963623,
+          "rms": 0.14801852464224302
+        },
+        {
+          "frame": 178,
+          "startSample": 321398,
+          "endSample": 323235,
+          "samples": 1837,
+          "peak": 0.5528984069824219,
+          "rms": 0.12329258064037966
+        },
+        {
+          "frame": 179,
+          "startSample": 323235,
+          "endSample": 325072,
+          "samples": 1837,
+          "peak": 1.1184724569320679,
+          "rms": 0.2575348841392653
+        },
+        {
+          "frame": 180,
+          "startSample": 325072,
+          "endSample": 326910,
+          "samples": 1838,
+          "peak": 1.0860803127288818,
+          "rms": 0.27462449852421644
+        },
+        {
+          "frame": 181,
+          "startSample": 326910,
+          "endSample": 328748,
+          "samples": 1838,
+          "peak": 1.015713095664978,
+          "rms": 0.3654015564610529
+        },
+        {
+          "frame": 182,
+          "startSample": 328748,
+          "endSample": 330585,
+          "samples": 1837,
+          "peak": 1.1298561096191406,
+          "rms": 0.32369284387073005
+        },
+        {
+          "frame": 183,
+          "startSample": 330585,
+          "endSample": 332422,
+          "samples": 1837,
+          "peak": 1.135475754737854,
+          "rms": 0.42667104408315837
+        },
+        {
+          "frame": 184,
+          "startSample": 332422,
+          "endSample": 334260,
+          "samples": 1838,
+          "peak": 0.8725738525390625,
+          "rms": 0.34859809214059395
+        },
+        {
+          "frame": 185,
+          "startSample": 334260,
+          "endSample": 336098,
+          "samples": 1838,
+          "peak": 0.3547384738922119,
+          "rms": 0.06891871092079499
+        },
+        {
+          "frame": 186,
+          "startSample": 336098,
+          "endSample": 337935,
+          "samples": 1837,
+          "peak": 0.02900250442326069,
+          "rms": 0.006558757655053551
+        },
+        {
+          "frame": 187,
+          "startSample": 337935,
+          "endSample": 339772,
+          "samples": 1837,
+          "peak": 1.7401109289494343e-05,
+          "rms": 1.8712354688941393e-06
+        },
+        {
+          "frame": 188,
+          "startSample": 339772,
+          "endSample": 340992,
+          "samples": 1220,
+          "peak": 0.0,
+          "rms": 0.0
+        }
+      ]
+    }
+  ],
+  "scope": "Source sample coordinates and measured envelopes only; no decoded-byte splitting and no playback-plan or original-runtime acceptance. Callback-following PCM can include later authored content and must not automatically extend an earlier scene.",
+  "audioAccepted": false,
+  "originalRuntimeAccepted": false
+}

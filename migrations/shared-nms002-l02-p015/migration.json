@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-nms002-l02-p015",
+  "animationId": "shared-nms002-l02-p015",
+  "assetId": "swf-ad417efe396213cc94270a209f3c1632f8afac1d61ea05f64a94360c5ab72e94",
+  "status": "implementing",
+  "created": "2026-09-13",
+  "confidence": "medium",
+  "classification": {
+    "collection": "G6-G8-shared",
+    "grade": "shared",
+    "lesson": "NMS002-L2",
+    "section": "VB",
+    "page": 15,
+    "domain": "unknown",
+    "knowledgePoint": {
+      "en": "The word percent means “per 100,” or out of 100. So a percent is a ratio that compares a quantity to 100.",
+      "es": ""
+    },
+    "titleRaw": "Percent",
+    "titleDisplay": "Percent",
+    "status": "unresolved",
+    "evidence": [
+      "audit/source-semantic-qualification-v1.json"
+    ]
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/VB/L2VB10.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/VB/L2VB10.swf",
+    "flaSha256": "",
+    "swfSha256": "ad417efe396213cc94270a209f3c1632f8afac1d61ea05f64a94360c5ab72e94",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 155763,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "",
+    "actionScriptVersion": "AS2",
+    "complexity": "interactive-understood",
+    "fonts": [
+      "Bauhaus Md BT"
+    ],
+    "scripts": [
+      "root preloader stop1; root stop6",
+      "main47 has no scripts and loops336frames",
+      "buttons9/10/13/14 set Percent/Ratio/Compare/Quantity, call DoHyperLinks and animation.stop"
+    ],
+    "externalDependencies": [
+      "modern keyterm adapter"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      5,
+      39,
+      41,
+      43,
+      45
+    ],
+    "morphs": [],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "source-vocabulary",
+      "kind": "interactive",
+      "reachable": true,
+      "description": "Two masked definition lines and four terms; source grid fills from 0 to 70 of 100 cells; four masked captions explain 70% shaded and 30% unshaded. Two source audio time segments; modern hold and Replay."
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "und"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "source-stream-segment-1",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p015-behavior-source-v1/audio/sprite-47/source-stream.mp3",
+        "language": "und",
+        "frameDomain": "sprite-47",
+        "startFrame": 8
+      },
+      {
+        "id": "source-stream-segment-2",
+        "source": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p015-behavior-source-v1/audio/sprite-47/source-stream.mp3",
+        "language": "und",
+        "frameDomain": "sprite-47",
+        "startFrame": 183
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "React, SVG and native text/MathML glossary",
+    "route": "",
+    "routeFile": "",
+    "component": "",
+    "registryModule": "",
+    "timelineModule": "",
+    "testFile": "",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-47",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "source-vocabulary"
+        ]
+      },
+      {
+        "id": "sprite-47",
+        "kind": "nested",
+        "sourceTimelineId": "47",
+        "parentFrameDomainId": "root",
+        "frameCount": 336,
+        "scenarioIds": [
+          "source-vocabulary"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

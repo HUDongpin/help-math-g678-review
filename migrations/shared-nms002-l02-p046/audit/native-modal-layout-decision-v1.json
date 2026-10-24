@@ -1,0 +1,16 @@
+{
+  "page": "shared-nms002-l02-p046",
+  "finding": "Spanish glossary h3 overflow at320px/root32px:scroll238 vsclient216",
+  "fix": "Include h3 in existing scoped overflow-wrap:anywhere selector.",
+  "verification": {
+    "width": 320,
+    "rootFont": "32px",
+    "client": 216,
+    "scroll": 216,
+    "headingWrap": "anywhere",
+    "injectedStyles": 0,
+    "focus": "fracciones equivalentes"
+  },
+  "preservedFailure": "continuation335-es-modal-v1.log",
+  "scope": "Standalone engineering fixture, not MyLesson host acceptance."
+}

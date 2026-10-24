@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l02-p042",
+  "createdAt": "2026-09-20T10:59:15.385225+00:00",
+  "source": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p042/audit/source-input.swf",
+    "bytes": 236805,
+    "sha256": "6dce91764e5744cf72cbdb2a2d1a10990a1c3eb1f42f5aace4cb3be33a67fad0"
+  },
+  "classification": "behavior-heavy",
+  "lane": "advanced-manual",
+  "laneReason": "Source clip events couple three draggable color components to their successor with dynamic numeric and chart updates; plain timeline generation cannot preserve this interaction.",
+  "evidence": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p042/audit/source-structure-v1.json",
+      "bytes": 379158,
+      "sha256": "08b741c8a6fa8dce01ededc1b631aaffe49e8be7a62d168fd08aeb19ef5696a4"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p042/audit/source-text-catalog-v1.json",
+      "bytes": 1662123,
+      "sha256": "15b1441b23c7a3498b6143b3bddb45ac71844c1e6c8caf5349146d4ef46af9f8"
+    }
+  ],
+  "sourceFindings": {
+    "rootEntry": "Root stops at frame 1 with InternalPreloader jump_check; frame 6 places animation sprite 261 and stops root.",
+    "animation": "Sprite 261 has 626 frames; stop and quiz initialization at 625.",
+    "initialPercentages": [
+      25,
+      25,
+      25,
+      25
+    ],
+    "dragPairs": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "fourthHandle": "Only load event found in 20 exported scripts; no independent press/release/enterFrame handler.",
+    "numericMapping": "Math.round(x / 1.72 + 108), pair adjustment from press-time values; chart seeks percent + 1.",
+    "audio": "Embedded MP3 stream header at sprite-261 frame 1; extraction and complete PCM decoding pending."
+  },
+  "openQuestions": [
+    "Validate effective drag bounds and sequential drags against raw clip actions and runtime; guard mathematical total and nonnegative components.",
+    "Audit source fraction reduction and zero boundary; do not silently call corrected output original fidelity.",
+    "Extract and decode complete source MP3, inspect timing and bilingual availability.",
+    "Bind source vector/text roles and narrated timeline before host integration."
+  ],
+  "registered": false,
+  "originalRuntimeAccepted": false,
+  "fidelityAccepted": false,
+  "audioAccepted": false,
+  "humanAccepted": false,
+  "ownerAccepted": false,
+  "strictComplete": false,
+  "published": false
+}

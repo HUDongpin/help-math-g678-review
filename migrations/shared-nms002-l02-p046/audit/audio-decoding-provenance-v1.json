@@ -1,0 +1,162 @@
+{
+  "decoder": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers",
+  "tools": [
+    {
+      "path": "/opt/homebrew/Cellar/ffmpeg/8.1.2_1/bin/ffmpeg",
+      "bytes": 426224,
+      "sha256": "dad4b30b36a1a999bfa4b6ffbde138bd17ee496c69e12eef638227dff2c6415c"
+    },
+    {
+      "path": "/opt/homebrew/Cellar/ffmpeg/8.1.2_1/bin/ffprobe",
+      "bytes": 236912,
+      "sha256": "cfeefcc9207eb3fa424679228fe3848db2921b15537d26c1ccc4a7a61de95d00"
+    }
+  ],
+  "commands": [
+    [
+      "/opt/homebrew/bin/ffmpeg",
+      "-v",
+      "error",
+      "-nostdin",
+      "-i",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p046/audit/sprite-8-source-stream-v1.mp3",
+      "-f",
+      "f32le",
+      "-c:a",
+      "pcm_f32le",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p046/audit/sprite-8-whole-pcm-v1.f32le"
+    ],
+    [
+      "/opt/homebrew/bin/ffmpeg",
+      "-v",
+      "error",
+      "-nostdin",
+      "-i",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p046/audit/sprite-165-source-stream-v1.mp3",
+      "-f",
+      "f32le",
+      "-c:a",
+      "pcm_f32le",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p046/audit/sprite-165-whole-pcm-v1.f32le"
+    ],
+    [
+      "/opt/homebrew/bin/ffmpeg",
+      "-v",
+      "error",
+      "-nostdin",
+      "-i",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p046/audit/sprite-167-source-stream-v1.mp3",
+      "-f",
+      "f32le",
+      "-c:a",
+      "pcm_f32le",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p046/audit/sprite-167-whole-pcm-v1.f32le"
+    ],
+    [
+      "/opt/homebrew/bin/ffmpeg",
+      "-v",
+      "error",
+      "-nostdin",
+      "-i",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p046/audit/sprite-184-source-stream-v1.mp3",
+      "-f",
+      "f32le",
+      "-c:a",
+      "pcm_f32le",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p046/audit/sprite-184-whole-pcm-v1.f32le"
+    ],
+    [
+      "/opt/homebrew/bin/ffmpeg",
+      "-v",
+      "error",
+      "-nostdin",
+      "-i",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p046/audit/sprite-197-source-stream-v1.mp3",
+      "-f",
+      "f32le",
+      "-c:a",
+      "pcm_f32le",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p046/audit/sprite-197-whole-pcm-v1.f32le"
+    ],
+    [
+      "/opt/homebrew/bin/ffmpeg",
+      "-v",
+      "error",
+      "-nostdin",
+      "-i",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p046/audit/sprite-205-source-stream-v1.mp3",
+      "-f",
+      "f32le",
+      "-c:a",
+      "pcm_f32le",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p046/audit/sprite-205-whole-pcm-v1.f32le"
+    ]
+  ],
+  "inputs": [
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/sprite-8-source-stream-v1.mp3",
+      "bytes": 1950,
+      "sha256": "ad4a86a727b8d4b5379655258cdffc62f85f89cb460a96565fad27d975a2aa38"
+    },
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/sprite-165-source-stream-v1.mp3",
+      "bytes": 7800,
+      "sha256": "8b843d72ae1de52bef4e2b22e65f6356f97dd115d8795bf9b3df69d87c3d16e7"
+    },
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/sprite-167-source-stream-v1.mp3",
+      "bytes": 21840,
+      "sha256": "e551e71005de2df6e95d44ca10fba65b6ae0131032336e67b2609c71b798e8cf"
+    },
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/sprite-184-source-stream-v1.mp3",
+      "bytes": 1950,
+      "sha256": "ad4a86a727b8d4b5379655258cdffc62f85f89cb460a96565fad27d975a2aa38"
+    },
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/sprite-197-source-stream-v1.mp3",
+      "bytes": 1950,
+      "sha256": "ad4a86a727b8d4b5379655258cdffc62f85f89cb460a96565fad27d975a2aa38"
+    },
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/sprite-205-source-stream-v1.mp3",
+      "bytes": 292630,
+      "sha256": "442aa034b509ad1971d6315cd9df051b25d01e55813c0be74cb16e33ce1b1550"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/sprite-8-whole-pcm-v1.f32le",
+      "bytes": 34560,
+      "sha256": "c6f05f9ac0af0f763a7950103450c5a1a2d2a5d4f9497cd75050ffa6c75bef96"
+    },
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/sprite-165-whole-pcm-v1.f32le",
+      "bytes": 138240,
+      "sha256": "6ab5d12917001820a58b0a2e09237a351602dfd56b33d78b5ad624348c50e299"
+    },
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/sprite-167-whole-pcm-v1.f32le",
+      "bytes": 387072,
+      "sha256": "4bc7bde16304dee01cf09c3735118225a4773ac144642a9614627f31ccd5f129"
+    },
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/sprite-184-whole-pcm-v1.f32le",
+      "bytes": 34560,
+      "sha256": "c6f05f9ac0af0f763a7950103450c5a1a2d2a5d4f9497cd75050ffa6c75bef96"
+    },
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/sprite-197-whole-pcm-v1.f32le",
+      "bytes": 34560,
+      "sha256": "c6f05f9ac0af0f763a7950103450c5a1a2d2a5d4f9497cd75050ffa6c75bef96"
+    },
+    {
+      "path": "migrations/shared-nms002-l02-p046/audit/sprite-205-whole-pcm-v1.f32le",
+      "bytes": 5186304,
+      "sha256": "8b9b842a0e58462261823b4514357b66bf0fa04be9ae0fff062ba0e9109e99c1"
+    }
+  ],
+  "resampling": false,
+  "trimming": false,
+  "audioAccepted": false
+}

@@ -1,0 +1,84 @@
+{
+  "sourceSha256": "18786203d58efb8aa54c3701e72838887d0702ff03d68819830938a252facce7",
+  "fixed": {
+    "intro": {
+      "domain": "498",
+      "start": 0,
+      "end": 604538
+    },
+    "continuation": {
+      "domain": "498",
+      "start": 604538,
+      "end": 666597
+    },
+    "correct-feedback": {
+      "domain": "442",
+      "start": 1838,
+      "end": 36562
+    }
+  },
+  "wrong": [
+    {
+      "domain": "444",
+      "label": "S1",
+      "start": 3675,
+      "end": 27562,
+      "authoredReturn": 27562,
+      "silentTailOmitted": true
+    },
+    {
+      "domain": "444",
+      "label": "S2",
+      "start": 31238,
+      "end": 55125,
+      "authoredReturn": 47775,
+      "silentTailOmitted": false
+    },
+    {
+      "domain": "444",
+      "label": "S3",
+      "start": 55125,
+      "end": 71662,
+      "authoredReturn": 64312,
+      "silentTailOmitted": false
+    },
+    {
+      "domain": "444",
+      "label": "S4",
+      "start": 71662,
+      "end": 100608,
+      "authoredReturn": 97388,
+      "silentTailOmitted": false
+    }
+  ],
+  "short": {
+    "8": {
+      "domain": "8",
+      "start": 0,
+      "end": 7350,
+      "triggerStatus": "pending-source-button-timeline-binding"
+    },
+    "413": {
+      "domain": "413",
+      "start": 0,
+      "end": 7350,
+      "triggerStatus": "pending-source-button-timeline-binding"
+    },
+    "436": {
+      "domain": "436",
+      "start": 0,
+      "end": 7350,
+      "triggerStatus": "pending-source-button-timeline-binding"
+    }
+  },
+  "policy": [
+    "All windows reference prepared full PCM; no encoded MP3 slicing.",
+    "Nonzero correct/S2/S3/S4 and terminal tails retained.",
+    "Wrong feedback remains user-closed; closing cancels its audio before restoring input/revealing answer. No automatic wrong-dialog dismissal added.",
+    "Correct/reveal completion clocks remain source23/12 seconds, independently of shorter correct audio.",
+    "Short source streams are inventoried but not assigned to generic controls until exact trigger evidence is completed.",
+    "180sample main source-counter versus12fps discrepancy remains disclosed."
+  ],
+  "audioAccepted": false,
+  "originalRuntimeAccepted": false
+}

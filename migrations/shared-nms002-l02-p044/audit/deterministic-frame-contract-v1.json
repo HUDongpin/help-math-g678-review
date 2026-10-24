@@ -1,0 +1,64 @@
+{
+  "animationId": "shared-nms002-l02-p044",
+  "sourceSha256": "e31d34af5c1e7c5eda49981b7de68941b3f453e8709c0de0fff10ced4693f622",
+  "domains": {
+    "root": [
+      10,
+      [
+        "source-inspection"
+      ]
+    ],
+    "sprite-243": [
+      393,
+      [
+        "source-inspection",
+        "four-questions-complete"
+      ]
+    ],
+    "sprite-219": [
+      20,
+      [
+        "partition-inspection",
+        "partition-selected"
+      ]
+    ],
+    "sprite-234": [
+      1,
+      [
+        "first-wrong"
+      ]
+    ],
+    "sprite-235": [
+      25,
+      [
+        "second-wrong-reveal"
+      ]
+    ],
+    "sprite-238": [
+      1,
+      [
+        "first-correct"
+      ]
+    ],
+    "sprite-29": [
+      1,
+      [
+        "help-example"
+      ]
+    ]
+  },
+  "queryKind": "deterministic-modern-inspection",
+  "recipes": [
+    "Sourceinspection keeps firstquestion unanswered evenpoststop.",
+    "Partitioninspection shows1..20parts;partition-selected selectsfirstpart.",
+    "Firstwrong checksinitial1part0selected;secondwrong closesfirstandchecksagain.",
+    "Firstcorrect builds exacttarget fromseededfirstquestion.",
+    "Fourquestionscomplete repeatscorrect/close/new beforefinalcontinuation."
+  ],
+  "limitations": [
+    "Audioonlydomains8/240/242 are separately scheduled andnotvisualcapture domains here.",
+    "Originalruntime andcomplete childdomain disposition stillpending.",
+    "Deterministicrenderer notyetbrowsercaptured orregistered."
+  ],
+  "registered": false
+}

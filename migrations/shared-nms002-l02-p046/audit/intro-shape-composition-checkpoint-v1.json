@@ -1,0 +1,56 @@
+{
+  "sourceSha256": "c82da2eb14e6db6fbb876e795edd8a8ebc1e890a52d9e7b1b1f5e66153b8cb62",
+  "scope": "Direct source-shape composition, not original runtime or full text/frame fidelity",
+  "method": [
+    "Preserve each SVG paths and gradient defs; remove export normalization then apply source main/root placement matrices",
+    "Isolate gradient ids by shape/depth; preserve alpha",
+    "No direct text, nested movies, masks/filters or RGB color transforms included"
+  ],
+  "observedFrames": {
+    "59": "Fading initial geometry",
+    "190": "One white rectangle, pointer over Up",
+    "204": "Multiple equal white strips, pressed Up appearance",
+    "240": "More equal white strips, pointer over Down",
+    "350": "Five equal parts; fourth from left green",
+    "600": "Five equal parts; fourth green; pointer near Check"
+  },
+  "sourceGraphReferences": {
+    "greenFivePartShape": 113,
+    "mainDomain": "sprite-205",
+    "rootPlacementTranslationTwips": [
+      8288,
+      5666
+    ]
+  },
+  "screenshots": [
+    {
+      "path": "output/playwright/p046-composition-59-v2.png",
+      "sha256": "ed3d61acb246e01339854e8046b154e240703ee048c798100de11eecd2451efd"
+    },
+    {
+      "path": "output/playwright/p046-composition-190-v2.png",
+      "sha256": "5c41aad295d726e513ea9edc896b0e7c0fe3e434a9fff422d4b3215664afc778"
+    },
+    {
+      "path": "output/playwright/p046-composition-204-v2.png",
+      "sha256": "2046f7535bf670e95a62c409214e6195b4d52ca7e5ded70a698924a4f028afab"
+    },
+    {
+      "path": "output/playwright/p046-composition-240-v2.png",
+      "sha256": "53be06e5adc11223f4efd93d79dfd2bfac5570e855667e6515e9ffa48939db4b"
+    },
+    {
+      "path": "output/playwright/p046-composition-350-v2.png",
+      "sha256": "1a5745af879224a5c54ab1962e05990b5c36614cf2a9b9983eb702baa59dca82"
+    },
+    {
+      "path": "output/playwright/p046-composition-600-v2.png",
+      "sha256": "4ab9d077b459d3d56849abe8ca6c4ae8c6df3ac2772c6b558082d0b42a65299f"
+    }
+  ],
+  "pending": [
+    "Derive all per-frame partition counts and pointer/typing beats",
+    "Full nested role/shape audit and modern rendering decision"
+  ],
+  "originalRuntimeAccepted": false
+}
