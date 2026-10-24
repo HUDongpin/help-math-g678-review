@@ -1,0 +1,63 @@
+{
+  "scope": "source static scripts and viewed FFDec PNG/SVG; implementation specification",
+  "title": {
+    "shape": 1,
+    "text": "Linear and Nonlinear Functions: Vocabulary",
+    "inspection": "audit-v1/source-shapes-v1.png"
+  },
+  "sourceRisks": [
+    {
+      "kind": "shape-text-unclassified",
+      "definitionCount": 16,
+      "meaning": "Shapes may include outlined text or mathematical symbols; presence is not confirmation of text."
+    },
+    {
+      "kind": "button-runtime-state-and-actions-not-interpreted",
+      "definitionCount": 3
+    },
+    {
+      "kind": "dynamic-text-runtime-value-unresolved",
+      "fieldCount": 6
+    },
+    {
+      "kind": "actionscript-visibility-and-values-not-interpreted"
+    },
+    {
+      "kind": "mask-filter-blend-semantics-unresolved"
+    }
+  ],
+  "nativeDecisions": {
+    "coordinateTextLayer": "Native coordinate text is above source line/grid so y=3 does not hide digit3; this modern readability decision preserves numeric meaning and does not claim source pixel depth parity.",
+    "shapes": {
+      "1": "outlined title -> source-bound native title",
+      "2": "slider backplate -> native range",
+      "3": "slope track -> native range",
+      "5": "intercept track -> native range",
+      "7": "thumb -> native range thumb",
+      "9": "thumb grip -> native range thumb",
+      "18": "equation field background -> native outputs",
+      "24": "source graph background/axes",
+      "48": "source graph grid/arrows",
+      "49": "source red demonstration line",
+      "51": "authored cursor -> native control cue",
+      "52": "paragraph reveal mask -> native complete-word reveal",
+      "53": "glossary underline -> native glossary button",
+      "55": "glossary hitarea -> native button",
+      "57": "plot mask -> source-coordinate SVG clip",
+      "61": "source blue dot with authored position; fixed origin after231"
+    },
+    "text": "Source English with exact EN/ES glossary; localized native control labels",
+    "demonstrationInteraction": "Source thumb buttons exist before231 but no DoUpdates or drag polling exists on main. Native ranges preserve thumb-only dragging with normalized rail coordinates; authored equation/graph unchanged. Next source timeline placement of that thumb overwrites the corresponding offset. Exact AVM1 duplicate sliderTrack resolution and out-of-rail coordinate quirk not asserted.",
+    "finalInteraction": "Source initialized m1/c0; finite inputs clamp-10..10 and round0.1; child events change256-sample blue line; fixed origin dot retained; no equation at231. No score or completion.",
+    "sourceVariables": "No placed instance named FormulaText exists in the extracted timelines; fields16/17/20/21 are removed at231. The source onEnterFrame attempts FormulaText writes, which cannot justify retaining a visible equation at231. Dynamic text20/21 use txtSlope/txtC variables. SliderText sprites91/96 contain edit-text90/95 bound to variable text with initial100; DoUpdates writes those sprite text variables. No literal100 runtime slider label assumed after initialization.",
+    "audio": "Source stream and explicit SA native decode; original alignment and listening pending",
+    "reuse": "Advanced-manual free exploration with source-derived dynamic drawing and two decimal sliders; existing slider-feedback or glossary-loop generators do not fit. Reuse source parsers, native audio clock, shared title and host bridge, not their quiz reducers."
+  },
+  "unresolved": [
+    "implementation and real My Lesson verification",
+    "original-runtime AVM1 ordering, duplicate names, pre-demo drag coordinates",
+    "full-frame comparison/listening",
+    "human/Owner/strict/publication"
+  ],
+  "registryModified": false
+}

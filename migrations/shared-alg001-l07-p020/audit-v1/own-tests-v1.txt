@@ -1,0 +1,27 @@
+{"allDomainQueries":1890}
+✔ all 15 binary source domains match and all applicable answer/attempt frames yield valid text snapshots (227.653583ms)
+✔ correct branch titles and answer-specific wrong strings stay separate in deterministic scenarios (2.7775ms)
+✔ 56 source outlined graph labels become native text, with authored negative upper y values retained (0.558959ms)
+✔ eight native clock plans validate, and ADPCM selected at frame2 begins after exactly one source block (0.424792ms)
+✔ native main schedule cuts audio at source stop204; Resume cannot bypass the quiz (1.150666ms)
+✔ all wrong feedback clocks hold and close, increment at exit, resume only after second attempt (4.922542ms)
+✔ every right branch returns to main and main296 finishes before wrap to1 (1.013667ms)
+✔ cancelled network load and pending decode cannot play or replace Replay state (0.5345ms)
+✔ Spanish Audio is explicit, pause/resume still emits, repeat starts again and return leaves main held (0.467625ms)
+✔ Spanish decode cancellation retires its transport; retry creates a fresh decoder (0.366625ms)
+✔ Replay reports pending playback while old audio closes, and an explicit pause cancels the pending replay (0.189167ms)
+✔ all wrong feedback paths increment only at authored exit, retry once then resume204 (1.86025ms)
+✔ B/C/D feedback strings and counter predicate are bound to exact button scripts (0.988208ms)
+✔ every right branch belongs to A and returns automatically, preserving one prior wrong count (0.194125ms)
+✔ nested popup Close appears at the source child placement; duplicate answer and Close do nothing (0.093708ms)
+✔ last296 is fully held before wrap297; next204 resets quiz, with no automatic lesson completion (0.081167ms)
+✔ Replay/leave retire branch, attempt, glossary and stale epoch (0.122625ms)
+✔ source masks reveal three separate paragraphs, then four graphs fade to the enlarged A (0.075125ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 402.742084

@@ -1,0 +1,93 @@
+{
+  "kind": "p016-source-triage-v1",
+  "at": "2026-10-03T20:43:17.822816+00:00",
+  "animationId": "shared-alg001-l07-p016",
+  "placement": {
+    "globalPageOrdinal": 16,
+    "sectionCode": "VB",
+    "sectionPageOrdinal": 10,
+    "title": "y-Intercept"
+  },
+  "source": {
+    "source": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/VB/L7VB11.swf",
+    "path": "migrations/shared-alg001-l07-p016/source-v1/L7VB11.swf",
+    "bytes": 139086,
+    "sha256": "91ef9ec67c01abddc9f192dfd81ef50fd965df79c0386d9c38d2309fa952468b"
+  },
+  "domains": [
+    {
+      "id": "root",
+      "frames": 10
+    },
+    {
+      "id": "sprite-2",
+      "frames": 1
+    },
+    {
+      "id": "sprite-81",
+      "frames": 325
+    }
+  ],
+  "scripts": [
+    {
+      "path": "migrations/shared-alg001-l07-p016/source-v1/ffdec/scripts/DefineButton2_10/BUTTONCONDACTION on(release).as",
+      "bytes": 127,
+      "sha256": "ebf084859622bb9782c616accd16671e2d39bd749b2f0c2c3cd83a5fe022430d",
+      "content": "on(release){\r\n   _global.KeyAttribute = \"Y-coordinate\";\r\n   _root.DoHyperLinks();\r\n   _root.animation_mc.animation.stop();\r\n}\r\n"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p016/source-v1/ffdec/scripts/DefineButton2_11/BUTTONCONDACTION on(release).as",
+      "bytes": 120,
+      "sha256": "e1cbc74be93eb22dfa565a20f6944ff8b1cbe375319b8a4a0ba492953d456139",
+      "content": "on(release){\r\n   _global.KeyAttribute = \"Point\";\r\n   _root.DoHyperLinks();\r\n   _root.animation_mc.animation.stop();\r\n}\r\n"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p016/source-v1/ffdec/scripts/DefineButton2_14/BUTTONCONDACTION on(release).as",
+      "bytes": 120,
+      "sha256": "45405f9a92e4e14084bc99bab7f06251f85b16fe8fa6dd206af216110960d4df",
+      "content": "on(release){\r\n   _global.KeyAttribute = \"Cross\";\r\n   _root.DoHyperLinks();\r\n   _root.animation_mc.animation.stop();\r\n}\r\n"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p016/source-v1/ffdec/scripts/DefineButton2_15/BUTTONCONDACTION on(release).as",
+      "bytes": 121,
+      "sha256": "58e6620a4f517626890d03312cd634d59b6a35d7a9f13f1d7dff71dc6605f4c8",
+      "content": "on(release){\r\n   _global.KeyAttribute = \"Y-axis\";\r\n   _root.DoHyperLinks();\r\n   _root.animation_mc.animation.stop();\r\n}\r\n"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p016/source-v1/ffdec/scripts/DefineButton2_8/BUTTONCONDACTION on(release).as",
+      "bytes": 126,
+      "sha256": "b543a02417fccbf69a3b17e950fe208f6cf3f86b32b9eb200a1c4f56bee3c4c1",
+      "content": "on(release){\r\n   _global.KeyAttribute = \"Y-intercept\";\r\n   _root.DoHyperLinks();\r\n   _root.animation_mc.animation.stop();\r\n}\r\n"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p016/source-v1/ffdec/scripts/DefineButton2_9/BUTTONCONDACTION on(release).as",
+      "bytes": 119,
+      "sha256": "18dd0ec3354b991431f7fa2890e1cbe1e65068430596bc4d3f81bbf4a50f9bdb",
+      "content": "on(release){\r\n   _global.KeyAttribute = \"Line\";\r\n   _root.DoHyperLinks();\r\n   _root.animation_mc.animation.stop();\r\n}\r\n"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p016/source-v1/ffdec/scripts/frame_1/DoAction.as",
+      "bytes": 63,
+      "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19",
+      "content": "_level0.InternalPreloader.gotoAndPlay(\"jump_check\");\r\nstop();\r\n"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p016/source-v1/ffdec/scripts/frame_6/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "content": "stop();\r\n"
+    }
+  ],
+  "observedBehavior": "Six source glossary buttons: Y-intercept, Line, Y-coordinate, Point, Cross, Y-axis. Every release sets exact KeyAttribute, invokes DoHyperLinks and stops authored main timeline. No child ActionScript quiz/answer logic in extracted scripts; main81 has325 authored frames. This source does not use the P015 slope slider/feedback family.",
+  "lane": "compiler-assisted-maintained-native; reuse existing source-native glossary/audio/graph mechanisms after exact geometry and schedule audit",
+  "pending": [
+    "source shapes and outlined title inspection",
+    "every teaching text/graph instance and reveal schedule",
+    "embedded source-stream extraction and native decode",
+    "existing dictionary exact EN/ES entries and glossary ownership",
+    "maintained renderer integration and page-owned typography evidence",
+    "actual My Lesson and production isolation"
+  ],
+  "registered": false,
+  "acceptance": false
+}

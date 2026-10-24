@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l07-p016",
+  "animationId": "shared-alg001-l07-p016",
+  "assetId": "swf-91ef9ec67c01abddc9f192dfd81ef50fd965df79c0386d9c38d2309fa952468b",
+  "status": "preserved",
+  "created": "2026-10-03",
+  "confidence": "verified",
+  "classification": {
+    "collection": "course",
+    "grade": "shared",
+    "lesson": 7,
+    "section": "VB",
+    "page": 10,
+    "domain": "algebra",
+    "knowledgePoint": {
+      "en": "The y-intercept is the y-coordinate where a line crosses the y-axis; the source example is (0, 2).",
+      "es": "La intersección y es la coordenada y donde una línea cruza el eje y; el ejemplo original es (0, 2)."
+    },
+    "titleRaw": "y-Intercept",
+    "titleDisplay": "y-Intercept",
+    "status": "confirmed",
+    "evidence": [
+      "source-v1/index.xml",
+      "native-v1/source-model-v1.json"
+    ],
+    "sectionPageOrdinal": 10,
+    "globalPageOrdinal": 16,
+    "sourceOccurrence": 16,
+    "moduleCode": "ALG001"
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/VB/L7VB11.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/VB/L7VB11.swf",
+    "flaSha256": "",
+    "swfSha256": "91ef9ec67c01abddc9f192dfd81ef50fd965df79c0386d9c38d2309fa952468b",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 159439,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#ffffff",
+    "actionScriptVersion": "AS1/2",
+    "complexity": "interactive-understood",
+    "fonts": [
+      "Bauhaus Md BT"
+    ],
+    "scripts": [
+      "migrations/shared-alg001-l07-p016/source-v1/ffdec/scripts/frame_1/DoAction.as",
+      "migrations/shared-alg001-l07-p016/source-v1/ffdec/scripts/frame_6/DoAction.as",
+      "migrations/shared-alg001-l07-p016/source-v1/ffdec/scripts/DefineButton2_8/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p016/source-v1/ffdec/scripts/DefineButton2_9/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p016/source-v1/ffdec/scripts/DefineButton2_10/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p016/source-v1/ffdec/scripts/DefineButton2_11/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p016/source-v1/ffdec/scripts/DefineButton2_14/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p016/source-v1/ffdec/scripts/DefineButton2_15/BUTTONCONDACTION on(release).as"
+    ],
+    "externalDependencies": [
+      "InternalPreloader.jump_check",
+      "DoHyperLinks",
+      "optional old-host SA button"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      {
+        "sourceShape": 3,
+        "instances": 2,
+        "disposition": "derive native complete-word reveal from exact source mask and glyph advances"
+      },
+      {
+        "sourceShape": 79,
+        "instances": 1,
+        "disposition": "derive final conclusion reveal from exact source mask"
+      }
+    ],
+    "morphs": [
+      {
+        "sourceShape": 47,
+        "firstFrame": 124,
+        "replacementAtFrame": 147,
+        "replacementShape": 69,
+        "disposition": "preserve exact red line endpoints and authored morph ratio"
+      }
+    ],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "source-intercept",
+      "kind": "interactive",
+      "description": "Source325-frame ordinary loop, masked definition, graph/line growth, coordinate labels and six glossary holds; static title child2 remains independently queryable.",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "en",
+      "es"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "source-stream",
+        "language": "en",
+        "source": "source-v1/stream-81.mp3",
+        "sourceSha256": "0496780bf1977206e0e8f937c4063b95be5a0a50096ceb1caf74de349b7ce613",
+        "frameDomain": "sprite-81",
+        "startSemantics": "explicit Play; source runs2/4;325-frame cycle",
+        "replayBehavior": "retire decoder/nodes and reset main1"
+      },
+      {
+        "id": "optional-spanish-audio",
+        "language": "es",
+        "source": "source-v1/sa.mp3",
+        "sourceSha256": "aeabdbcd572a45347cda38f18b50ef3cc4c5f1985b7ec6a52f4e1d622f80b53f",
+        "frameDomain": "held-main",
+        "startSemantics": "explicit Spanish Audio only; no locale autoplay or splice",
+        "replayBehavior": "close decoder and reset main1"
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "Planned native text and source SVG graph/morph; source outlined title and highlighted2 become native text. Real implementation pending.",
+    "route": "/en/migration-status/g678-calibration/shared-alg001-l07-p016/registered-v1",
+    "routeFile": "apps/web/app/[locale]/migration-status/g678-calibration/shared-alg001-l07-p016/registered-v1/page.tsx",
+    "component": "packages/demos/src/alg-l07-p016-presentation-v1.tsx",
+    "registryModule": "./modules/shared-alg001-l07-p016",
+    "timelineModule": "packages/demos/src/timelines/shared-alg001-l07-p016.ts",
+    "testFile": "packages/demos/src/alg-l07-p016-frame-v1.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-81",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "source-intercept"
+        ]
+      },
+      {
+        "id": "sprite-2",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-2",
+        "parentFrameDomainId": "root",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-intercept"
+        ]
+      },
+      {
+        "id": "sprite-81",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-81",
+        "parentFrameDomainId": "root",
+        "frameCount": 325,
+        "scenarioIds": [
+          "source-intercept"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

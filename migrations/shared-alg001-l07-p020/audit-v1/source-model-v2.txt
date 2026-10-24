@@ -1,0 +1,186 @@
+{
+  "pass": true,
+  "timelines": 15,
+  "scripts": 43,
+  "branches": [
+    {
+      "spriteId": 181,
+      "kind": "wrong",
+      "index": 1,
+      "child": 172,
+      "hold": 22,
+      "close": 170,
+      "closeJump": 23,
+      "terminal": 28,
+      "closeFirst": 15,
+      "closeRanges": [
+        [
+          15,
+          22
+        ]
+      ]
+    },
+    {
+      "spriteId": 135,
+      "kind": "wrong",
+      "index": 2,
+      "child": 132,
+      "hold": 20,
+      "close": 128,
+      "closeJump": 21,
+      "terminal": 28,
+      "closeFirst": 13,
+      "closeRanges": [
+        [
+          13,
+          20
+        ]
+      ]
+    },
+    {
+      "spriteId": 150,
+      "kind": "wrong",
+      "index": 3,
+      "child": 146,
+      "hold": 21,
+      "close": 144,
+      "closeJump": 22,
+      "terminal": 28,
+      "closeFirst": 14,
+      "closeRanges": [
+        [
+          14,
+          21
+        ]
+      ]
+    },
+    {
+      "spriteId": 78,
+      "kind": "right",
+      "index": 1,
+      "terminal": 28
+    },
+    {
+      "spriteId": 62,
+      "kind": "right",
+      "index": 2,
+      "terminal": 28
+    },
+    {
+      "spriteId": 90,
+      "kind": "right",
+      "index": 3,
+      "terminal": 25
+    },
+    {
+      "spriteId": 111,
+      "kind": "right",
+      "index": 4,
+      "terminal": 33
+    }
+  ],
+  "answers": [
+    {
+      "answer": 1,
+      "letter": "A",
+      "characterId": 28
+    },
+    {
+      "answer": 2,
+      "letter": "B",
+      "characterId": 32
+    },
+    {
+      "answer": 3,
+      "letter": "C",
+      "characterId": 30
+    },
+    {
+      "answer": 4,
+      "letter": "D",
+      "characterId": 34
+    }
+  ],
+  "glossary": [
+    {
+      "characterId": 8,
+      "term": "Nonlinear function",
+      "script": {
+        "path": "migrations/shared-alg001-l07-p020/source-v1/ffdec/scripts/DefineButton2_8/BUTTONCONDACTION on(release).as",
+        "bytes": 133,
+        "sha256": "e14ed4aece0a2dd3129905b65125af7b995a7edc32336a303a4e6f4e920460ca"
+      },
+      "source": "on(release){\r\n   _global.KeyAttribute = \"Nonlinear function\";\r\n   _root.DoHyperLinks();\r\n   _root.animation_mc.animation.stop();\r\n}\r\n",
+      "frameRanges": [
+        [
+          1,
+          296
+        ]
+      ]
+    },
+    {
+      "characterId": 9,
+      "term": "Function",
+      "script": {
+        "path": "migrations/shared-alg001-l07-p020/source-v1/ffdec/scripts/DefineButton2_9/BUTTONCONDACTION on(release).as",
+        "bytes": 123,
+        "sha256": "bf18a4b6722a58696805f4dd043c6b04a1b1c3cc9a605ef84301790c08bb4cfa"
+      },
+      "source": "on(release){\r\n   _global.KeyAttribute = \"Function\";\r\n   _root.DoHyperLinks();\r\n   _root.animation_mc.animation.stop();\r\n}\r\n",
+      "frameRanges": [
+        [
+          1,
+          296
+        ]
+      ]
+    },
+    {
+      "characterId": 10,
+      "term": "Graph",
+      "script": {
+        "path": "migrations/shared-alg001-l07-p020/source-v1/ffdec/scripts/DefineButton2_10/BUTTONCONDACTION on(release).as",
+        "bytes": 120,
+        "sha256": "5f789f785f961f26fba79d3dd3167089fc8251e9da0e0cff9852831b2f890788"
+      },
+      "source": "on(release){\r\n   _global.KeyAttribute = \"Graph\";\r\n   _root.DoHyperLinks();\r\n   _root.animation_mc.animation.stop();\r\n}\r\n",
+      "frameRanges": [
+        [
+          1,
+          296
+        ]
+      ]
+    },
+    {
+      "characterId": 11,
+      "term": "Line",
+      "script": {
+        "path": "migrations/shared-alg001-l07-p020/source-v1/ffdec/scripts/DefineButton2_11/BUTTONCONDACTION on(release).as",
+        "bytes": 119,
+        "sha256": "18dd0ec3354b991431f7fa2890e1cbe1e65068430596bc4d3f81bbf4a50f9bdb"
+      },
+      "source": "on(release){\r\n   _global.KeyAttribute = \"Line\";\r\n   _root.DoHyperLinks();\r\n   _root.animation_mc.animation.stop();\r\n}\r\n",
+      "frameRanges": [
+        [
+          1,
+          296
+        ]
+      ]
+    },
+    {
+      "characterId": 15,
+      "term": "Vertical-line test",
+      "script": {
+        "path": "migrations/shared-alg001-l07-p020/source-v1/ffdec/scripts/DefineButton2_15/BUTTONCONDACTION on(release).as",
+        "bytes": 133,
+        "sha256": "980d6ffac4648d150207d3157e50ef214ae03378cc62f212f53d124397932464"
+      },
+      "source": "on(release){\r\n   _global.KeyAttribute = \"Vertical-line test\";\r\n   _root.DoHyperLinks();\r\n   _root.animation_mc.animation.stop();\r\n}\r\n",
+      "frameRanges": [
+        [
+          146,
+          296
+        ]
+      ]
+    }
+  ]
+}

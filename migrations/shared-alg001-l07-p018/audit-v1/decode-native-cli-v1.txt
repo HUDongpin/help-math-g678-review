@@ -1,0 +1,19 @@
+### Result
+{"pass":true,"streams":[{"spriteId":66,"sourceBytes":5720,"sourceSha256":"533f9ecc19d8b4d4ae727b8134870878036da4675a1e4aeec3b5c27a36b1f8bc","sampleRate":22050,"channels":1,"decodedSamples":25344,"pcmSha256":"cda9920212c8885e48bc5d29edad1f18e45e405624d27207516e662afb8b55d3","peak":0.8062871694564819,"contextClosed":true,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36"},{"spriteId":76,"sourceBytes":147550,"sourceSha256":"3a0e52a3a8aa97e399887e6abd046e5849e9dc42cce0e819db0326c035939043","sampleRate":22050,"channels":1,"decodedSamples":653760,"pcmSha256":"ed35b22be0e0be0c8b9d2c816a969abe7786a21b612232e236d4f6d7a2ebab64","peak":0.553348183631897,"contextClosed":true,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36"},{"spriteId":"SA","sourceBytes":144144,"sourceSha256":"7b9d0ed2d3098f97035d172e99f26050e3fa78565407e436b8d56dc6156d9fb4","sampleRate":48000,"channels":1,"decodedSamples":494208,"pcmSha256":"4b9bd9f8f43feade2e000d4ed8a68e5581cf0110f417e65fb563f3324bf3778f","peak":0.5089272856712341,"contextClosed":true,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36"}],"sourceAlignmentAccepted":false,"listeningAccepted":false}
+### Ran Playwright code
+```js
+await (async (basePage) => {
+ const context=await basePage.context().browser().newContext();const page=await context.newPage();try{
+ await page.goto('http://127.0.0.1:4392/');
+ const streams = [{"spriteId": 66, "sampleRate": 22050, "url": "http://127.0.0.1:4392/stream-66.mp3", "bytes": 5720, "sha256": "533f9ecc19d8b4d4ae727b8134870878036da4675a1e4aeec3b5c27a36b1f8bc", "expectedSamples": 25344}, {"spriteId": 76, "sampleRate": 22050, "url": "http://127.0.0.1:4392/stream-76.mp3", "bytes": 147550, "sha256": "3a0e52a3a8aa97e399887e6abd046e5849e9dc42cce0e819db0326c035939043", "expectedSamples": 653760}, {"spriteId": "SA", "sampleRate": 48000, "url": "http://127.0.0.1:4392/sa.mp3", "bytes": 144144, "sha256": "7b9d0ed2d3098f97035d172e99f26050e3fa78565407e436b8d56dc6156d9fb4"}];
+ const result = await page.evaluate(async streams => {
+  const hash=async b=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',b))].map(x=>x.toString(16).padStart(2,'0')).join('');
+  const measured=[];
+  for(const s of streams){const c=new AudioContext({sampleRate:s.sampleRate});try{const r=await fetch(s.url),bytes=await r.arrayBuffer();if(r.status!==200||bytes.byteLength!==s.bytes||await hash(bytes)!==s.sha256)throw Error('source mismatch');const b=await c.decodeAudioData(bytes.slice(0));if(b.numberOfChannels!==1||b.sampleRate!==s.sampleRate||s.expectedSamples&&b.length!==s.expectedSamples)throw Error('decoder mismatch');const out=new ArrayBuffer(b.length*4),v=new DataView(out);let peak=0;for(let i=0;i<b.length;i++){const n=b.getChannelData(0)[i];if(!Number.isFinite(n))throw Error('nonfinite');v.setFloat32(i*4,n,true);peak=Math.max(peak,Math.abs(n));}if(!peak)throw Error('silent');await c.close();measured.push({spriteId:s.spriteId,sourceBytes:bytes.byteLength,sourceSha256:s.sha256,sampleRate:b.sampleRate,channels:b.numberOfChannels,decodedSamples:b.length,pcmSha256:await hash(out),peak,contextClosed:c.state==='closed',userAgent:navigator.userAgent});}finally{if(c.state!=='closed')await c.close();}}
+  return{pass:true,streams:measured,sourceAlignmentAccepted:false,listeningAccepted:false};
+ },streams);
+ return result;
+}finally{await context.close();}
+}
+)(page);
+```

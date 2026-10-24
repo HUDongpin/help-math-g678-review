@@ -1,0 +1,32 @@
+
+> flash-conversion-html5-rebuild@0.1.0 typecheck:demos
+> npm run typecheck --workspace @helpmath/demos
+
+
+> @helpmath/demos@0.1.0 typecheck
+> node --max-old-space-size=8192 ../../node_modules/typescript/bin/tsc --noEmit
+
+/Volumes/WestWorld/HELP MATH 2.0/node_modules/.pnpm/typescript@6.0.3/node_modules/typescript/lib/_tsc.js:123693
+      throw e;
+      ^
+
+RangeError: Map maximum size exceeded
+    at Map.set (<anonymous>)
+    at checkTypeRelatedTo (/Volumes/WestWorld/HELP MATH 2.0/node_modules/.pnpm/typescript@6.0.3/node_modules/typescript/lib/_tsc.js:64882:16)
+    at isTypeRelatedTo (/Volumes/WestWorld/HELP MATH 2.0/node_modules/.pnpm/typescript@6.0.3/node_modules/typescript/lib/_tsc.js:64794:14)
+    at isTypeIdenticalTo (/Volumes/WestWorld/HELP MATH 2.0/node_modules/.pnpm/typescript@6.0.3/node_modules/typescript/lib/_tsc.js:63902:12)
+    at isTypeOrBaseIdenticalTo (/Volumes/WestWorld/HELP MATH 2.0/node_modules/.pnpm/typescript@6.0.3/node_modules/typescript/lib/_tsc.js:69235:42)
+    at inferFromMatchingTypes (/Volumes/WestWorld/HELP MATH 2.0/node_modules/.pnpm/typescript@6.0.3/node_modules/typescript/lib/_tsc.js:68864:15)
+    at inferFromTypes (/Volumes/WestWorld/HELP MATH 2.0/node_modules/.pnpm/typescript@6.0.3/node_modules/typescript/lib/_tsc.js:68674:44)
+    at inferFromContravariantTypes (/Volumes/WestWorld/HELP MATH 2.0/node_modules/.pnpm/typescript@6.0.3/node_modules/typescript/lib/_tsc.js:68888:7)
+    at inferFromContravariantTypesIfStrictFunctionTypes (/Volumes/WestWorld/HELP MATH 2.0/node_modules/.pnpm/typescript@6.0.3/node_modules/typescript/lib/_tsc.js:68893:9)
+    at applyToParameterTypes (/Volumes/WestWorld/HELP MATH 2.0/node_modules/.pnpm/typescript@6.0.3/node_modules/typescript/lib/_tsc.js:68213:7)
+
+Node.js v24.18.0
+npm error Lifecycle script `typecheck` failed with error:
+npm error code 1
+npm error path /Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos
+npm error workspace @helpmath/demos@0.1.0
+npm error location /Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos
+npm error command failed
+npm error command sh -c node --max-old-space-size=8192 ../../node_modules/typescript/bin/tsc --noEmit

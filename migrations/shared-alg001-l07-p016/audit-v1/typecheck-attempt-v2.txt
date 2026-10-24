@@ -1,0 +1,22 @@
+
+> flash-conversion-html5-rebuild@0.1.0 typecheck:demos
+> npm run typecheck --workspace @helpmath/demos
+
+
+> @helpmath/demos@0.1.0 typecheck
+> node --max-old-space-size=8192 ../../node_modules/typescript/bin/tsc --noEmit
+
+src/alg-l07-p016-frame-v1.ts(7,14): error TS2322: Type 'Readonly<{ schemaVersion: 1; version: "alg-l07-p016-native-source-v1"; animationId: "shared-alg001-l07-p016"; placementId: "shared-alg001-l07-p016"; sourceSwfSha256: "91ef9ec67c01abddc9f192dfd81ef50fd965df79c0386d9c38d2309fa952468b"; template: "complex-figure"; blocks: readonly ({ ...; } | ... 1 more ... | { ...; })...' is not assignable to type 'LessonTextBinding'.
+  Types of property 'blocks' are incompatible.
+    Type 'readonly ({ id: string; sourceTextIds: string[]; role: "body"; language: "en"; readingOrder: number; valueSource: "maintained-page-state"; } | { id: string; sourceTextIds: string[]; sourceShapeIds: number[]; role: "label"; language: "en"; readingOrder: number; valueSource: "maintained-page-state"; } | { ...; })[]' is not assignable to type 'readonly LessonTextBlockBinding[]'.
+      Type '{ id: string; sourceTextIds: string[]; role: "body"; language: "en"; readingOrder: number; valueSource: "maintained-page-state"; } | { id: string; sourceTextIds: string[]; sourceShapeIds: number[]; role: "label"; language: "en"; readingOrder: number; valueSource: "maintained-page-state"; } | { ...; }' is not assignable to type 'LessonTextBlockBinding'.
+        Type '{ id: string; sourceTextIds: never[]; sourceShapeIds: number[]; role: string; language: string; readingOrder: number; valueSource: string; }' is not assignable to type 'LessonTextBlockBinding'.
+          Types of property 'role' are incompatible.
+            Type 'string' is not assignable to type 'LessonTextRole'.
+npm error Lifecycle script `typecheck` failed with error:
+npm error code 2
+npm error path /Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos
+npm error workspace @helpmath/demos@0.1.0
+npm error location /Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos
+npm error command failed
+npm error command sh -c node --max-old-space-size=8192 ../../node_modules/typescript/bin/tsc --noEmit

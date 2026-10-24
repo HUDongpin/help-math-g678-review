@@ -1,0 +1,70 @@
+{
+  "scope": "source static scripts and viewed FFDec PNG/SVG extractions; implementation specification, not original runtime",
+  "title": {
+    "shape": 1,
+    "text": "Linear and Nonlinear Functions: Vocabulary",
+    "inspection": "audit-v1/source-shapes-v1.png"
+  },
+  "sourceRisks": [
+    {
+      "kind": "shape-text-unclassified",
+      "definitionCount": 23,
+      "meaning": "Shapes may include outlined text or mathematical symbols; presence is not confirmation of text."
+    },
+    {
+      "kind": "button-runtime-state-and-actions-not-interpreted",
+      "definitionCount": 4
+    },
+    {
+      "kind": "dynamic-text-runtime-value-unresolved",
+      "fieldCount": 3
+    },
+    {
+      "kind": "actionscript-visibility-and-values-not-interpreted"
+    },
+    {
+      "kind": "mask-filter-blend-semantics-unresolved"
+    }
+  ],
+  "nativeDecisions": {
+    "shapes": {
+      "1": "outlined title replaced by source-bound native title",
+      "3": "slider track/knob/cursor to native source-position demonstration and integer control",
+      "4": "slider track/knob/cursor to native source-position demonstration and integer control",
+      "46": "slider track/knob/cursor to native source-position demonstration and integer control",
+      "8": "equation fields to native fixed coefficient and dynamic y-intercept",
+      "11": "source graph/grid and exact authored lines;43 native axis labels",
+      "35": "source graph/grid and exact authored lines;43 native axis labels",
+      "36": "source graph/grid and exact authored lines;43 native axis labels",
+      "97": "source graph/grid and exact authored lines;43 native axis labels",
+      "37": "Draw art/hitarea to native button",
+      "78": "Draw art/hitarea to native button",
+      "40": "instruction complete-word mask",
+      "41": "glossary underline/hitarea to native terms",
+      "43": "glossary underline/hitarea to native terms",
+      "82": "Close decorations to native Close",
+      "83": "Close decorations to native Close",
+      "84": "Close decorations to native Close",
+      "85": "Close decorations to native Close",
+      "87": "Close decorations to native Close",
+      "88": "Close decorations to native Close",
+      "89": "Close decorations to native Close",
+      "90": "Close decorations to native Close",
+      "92": "feedback background to readable native feedback"
+    },
+    "morphs": "none",
+    "text": "Source English instructions; exact EN/ES dictionaries for Equation and Y-intercept; native localized controls",
+    "sourceStateVsDisplay": "138 removes popup and named drag; static sprite95 with empty clips persists. Named text80 and Draw81 remain138..140; retained extra release increments/disables without recreating removed popup.141 replaces text80 by unnamed96 prefilled3, active Draw by static art, and source line36 by sprite98/shape97. No postquiz value assignment; internal student value stays retained while display selects source96. No arbitrary-input line simulation.",
+    "sourceDiscrepancies": "Instruction says y-intercept box; WrongFeed says slope box and target variable is txtSlope. Retain exact source feedback with explicit provenance. Instance Btnline differs in case from script BtnLine; native control uses source intent; original AVM1 name resolution is not established.",
+    "feedback": "Each accepted release increments TryCount. Exact string3 resumes main; wrong assigns popup94.txtFeed directly before goto2. No popup frame2 assignment or random/host feedback. Close exists1..8 and accepts from2; hides/stops popup at2, enables controls. First wrong holds137 with input retained; second wrong resumes138.",
+    "audio": "Two original embedded streams plus explicit original SA; native source-rate decode verified; listening pending",
+    "reuse": "Fifth bounded slider-feedback consumer with integer mapping and no postquiz assignment. Reuse pinned previous templates via source-specific successor parameters; preserve previous outputs unchanged. P017 prequiz visual demo and graph remain page-owned."
+  },
+  "unresolved": [
+    "product implementation and real My Lesson verification",
+    "original runtime behavior and AVM1 instance-case resolution",
+    "full-frame comparison and listening",
+    "human,Owner,strict,publication"
+  ],
+  "registryModified": false
+}

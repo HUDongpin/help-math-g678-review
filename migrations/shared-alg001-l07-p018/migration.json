@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l07-p018",
+  "animationId": "shared-alg001-l07-p018",
+  "assetId": "swf-6d279948c0670391d81d384cc1e17abe962a4623eb3fedc56864de27e02dee6f",
+  "status": "preserved",
+  "created": "2026-10-03",
+  "confidence": "verified",
+  "classification": {
+    "collection": "course",
+    "grade": "shared",
+    "lesson": 7,
+    "section": "VB",
+    "page": 12,
+    "domain": "algebra",
+    "knowledgePoint": {
+      "en": "Set the y-intercept to -2 and draw y = x - 2",
+      "es": "Establecer la intersección con el eje y en -2"
+    },
+    "titleRaw": "y-Intercept",
+    "titleDisplay": "y-Intercept",
+    "status": "confirmed",
+    "evidence": [
+      "source-v1/index.xml",
+      "native-v1/source-model-v1.json"
+    ],
+    "sectionPageOrdinal": 12,
+    "globalPageOrdinal": 18,
+    "sourceOccurrence": 18,
+    "moduleCode": "ALG001"
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/VB/L7VB13.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/VB/L7VB13.swf",
+    "flaSha256": "",
+    "swfSha256": "6d279948c0670391d81d384cc1e17abe962a4623eb3fedc56864de27e02dee6f",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 176931,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#ffffff",
+    "actionScriptVersion": "AS1/2",
+    "complexity": "interactive-understood",
+    "fonts": [
+      "Bauhaus Md BT",
+      "Bauhaus Md BT"
+    ],
+    "scripts": [
+      "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineButton2_46/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineButton2_47/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineButton2_63/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineButton2_67/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineSprite_66/frame_1/DoAction.as",
+      "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineSprite_66/frame_15/DoAction.as",
+      "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineSprite_66/frame_2/DoAction.as",
+      "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineSprite_76/frame_1/DoAction.as",
+      "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineSprite_76/frame_122/DoAction.as",
+      "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineSprite_76/frame_122/PlaceObject2_52_13/CLIPACTIONRECORD on(press).as",
+      "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineSprite_76/frame_122/PlaceObject2_52_13/CLIPACTIONRECORD on(releaseOutside,release).as",
+      "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineSprite_76/frame_122/PlaceObject2_52_13/CLIPACTIONRECORD onClipEvent(enterFrame).as",
+      "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/frame_1/DoAction.as",
+      "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/frame_6/DoAction.as"
+    ],
+    "externalDependencies": [
+      "InternalPreloader.jump_check",
+      "DoHyperLinks",
+      "optional old-host SA button"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      {
+        "sourceShape": 42,
+        "depths": [
+          1,
+          9
+        ],
+        "disposition": "instruction complete-word reveals"
+      }
+    ],
+    "morphs": [
+      {
+        "sourceShape": 72,
+        "frames": [
+          132,
+          154
+        ],
+        "disposition": "native SVG source-token interpolation; static73 follows155..167"
+      }
+    ],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "source-intercept",
+      "kind": "interactive",
+      "description": "361-frame source sequence; demo3.0 then-2; stop122 initializes3; integer slider correct-2; unnamed field69=-2 and line71/70 from125;361 to1.",
+      "reachable": true
+    },
+    {
+      "id": "source-second-wrong",
+      "kind": "interactive",
+      "description": "Two wrong submissions/Close; resumes123 with input retained through124;125 shows static-2. Draw67 remains through361, accepts one extra release without reopening removed popup or restarting audio.",
+      "reachable": true
+    },
+    {
+      "id": "wrong-first",
+      "kind": "interactive",
+      "description": "Popup66 frame2 assigns WrongFeed; stop15. Close immediately retains input at122.",
+      "reachable": true
+    },
+    {
+      "id": "wrong-second",
+      "kind": "interactive",
+      "description": "Popup66 second message; immediate Close resumes123 without resetting attempts.",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "en",
+      "es"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "source-stream-66",
+        "language": "en",
+        "source": "source-v1/stream-66.mp3",
+        "sourceSha256": "533f9ecc19d8b4d4ae727b8134870878036da4675a1e4aeec3b5c27a36b1f8bc",
+        "frameDomain": "sprite-66",
+        "startSemantics": "wrong submit gotoAndPlay2 assigns feedback; stop15; immediate Close",
+        "replayBehavior": "retire pending decoder/nodes and reset main1"
+      },
+      {
+        "id": "source-stream-76",
+        "language": "en",
+        "source": "source-v1/stream-76.mp3",
+        "sourceSha256": "3a0e52a3a8aa97e399887e6abd046e5849e9dc42cce0e819db0326c035939043",
+        "frameDomain": "sprite-76",
+        "startSemantics": "explicit Play; held122 and loop361 to1",
+        "replayBehavior": "retire pending decoder/nodes and reset main1"
+      },
+      {
+        "id": "optional-spanish-audio",
+        "language": "es",
+        "source": "source-v1/sa.mp3",
+        "sourceSha256": "7b9d0ed2d3098f97035d172e99f26050e3fa78565407e436b8d56dc6156d9fb4",
+        "frameDomain": "held-active-domain",
+        "startSemantics": "explicit Spanish Audio only; no locale autoplay or splice",
+        "replayBehavior": "close decoder and reset main1"
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "Native integer range/read-only y-intercept output and text; source SVG graph; reused generated feedback/session/player",
+    "route": "/en/migration-status/g678-calibration/shared-alg001-l07-p018/registered-v1",
+    "routeFile": "apps/web/app/[locale]/migration-status/g678-calibration/shared-alg001-l07-p018/registered-v1/page.tsx",
+    "component": "packages/demos/src/alg-l07-p018-presentation-v1.tsx",
+    "registryModule": "./modules/shared-alg001-l07-p018",
+    "timelineModule": "packages/demos/src/timelines/shared-alg001-l07-p018.ts",
+    "testFile": "packages/demos/src/alg-l07-p018-frame-v1.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-76",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "source-intercept"
+        ]
+      },
+      {
+        "id": "sprite-2",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-2",
+        "parentFrameDomainId": "root",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-intercept"
+        ]
+      },
+      {
+        "id": "sprite-37",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-37",
+        "parentFrameDomainId": "sprite-76",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-intercept"
+        ]
+      },
+      {
+        "id": "sprite-52",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-52",
+        "parentFrameDomainId": "sprite-76",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-intercept"
+        ]
+      },
+      {
+        "id": "sprite-66",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-66",
+        "parentFrameDomainId": "sprite-76",
+        "frameCount": 15,
+        "scenarioIds": [
+          "wrong-first",
+          "wrong-second"
+        ]
+      },
+      {
+        "id": "sprite-68",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-68",
+        "parentFrameDomainId": "sprite-76",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-intercept"
+        ]
+      },
+      {
+        "id": "sprite-71",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-71",
+        "parentFrameDomainId": "sprite-76",
+        "frameCount": 1,
+        "scenarioIds": [
+          "source-intercept"
+        ]
+      },
+      {
+        "id": "sprite-76",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-76",
+        "parentFrameDomainId": "root",
+        "frameCount": 361,
+        "scenarioIds": [
+          "source-intercept",
+          "source-second-wrong"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

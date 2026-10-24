@@ -1,0 +1,26 @@
+{
+  "page": "p017",
+  "sourceSha256": "b91a145594b557fdb3ae90138aee1d44e0ef614382bd10372f1b1c049e1ad6c5",
+  "sourceModel": "migrations/shared-alg001-l07-p017/native-v1/source-model-v1.json",
+  "sourceModelSha256": "8868175d3c9ac0f86e52b8bd69519adb231cb59f4d151a5cc1851d2f065d6b4d",
+  "values": {
+    "AFTER_LAST": 255,
+    "LAST": 254,
+    "FORCED": null,
+    "QUIZ": 137,
+    "FEEDBACK_LAST": 8,
+    "INITIAL": "0",
+    "CORRECT": "3",
+    "MAIN_ID": 99,
+    "FEEDBACK_ID": 94,
+    "TERM_UNION": "'Equation'|'Y-intercept'",
+    "PAGE_UPPER": "P017",
+    "PAGE_LOWER": "p017",
+    "SEGMENT_WINDOW_FILTER": "",
+    "MARKER_WINDOW_FILTER": "",
+    "DRAW_PHASE": "(s.phase==='quiz-held'||s.phase==='postquiz'&&s.mainFrame>=138&&s.mainFrame<=140)",
+    "POST_DRAW_FLAG": "s.phase==='postquiz'&&e.frame<=140&&s.drawEnabled",
+    "POST_SUBMIT": "  // Source Draw81 remains138..140 after popup94 removal.\n  if(s.phase==='postquiz')return{...s,attempts:s.attempts+1,drawEnabled:false,sliderEnabled:false,wrongText:S.behavior.wrongLater};\n",
+    "POST_SUBMIT_SESSION": "if(old.phase==='postquiz'){this.emit();return true;}"
+  }
+}

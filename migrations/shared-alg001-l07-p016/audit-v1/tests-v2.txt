@@ -1,0 +1,20 @@
+✔ 672 source-domain EN/ES queries preserve title-only sprite, root preloader, exact visible native text and identity (46.856208ms)
+✔ source masks reveal complete words; glossary waits for its own revealed word (0.199792ms)
+✔ all325 source frames retain vector placements, redline morph ratio and source-label provenance (48.261ms)
+✔ temporary y-axis replacement and 0/2 emphasis never duplicate native axis roles (0.600334ms)
+✔ invalid source identity is rejected before projection (0.427583ms)
+✔ source325-frame cycle schedules two source runs, wraps and never completes lesson (1.315166ms)
+✔ glossary requires a revealed term, holds exact progress and does not seek again on Resume (0.319542ms)
+✔ network cancellation and pending decode close before any stale playback (4.096084ms)
+✔ Spanish stays explicit, holds source frame, survives pause/end and returns paused (0.570791ms)
+✔ Spanish decode cancellation retires transport; retry creates a fresh instance (0.9725ms)
+✔ Replay locks restart while closing old audio, and explicit pause cancels restart (0.491083ms)
+✔ invalid seeks do not change source identity and volume is clamped (0.173584ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 211.631708

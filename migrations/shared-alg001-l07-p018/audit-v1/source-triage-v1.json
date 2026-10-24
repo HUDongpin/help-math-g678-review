@@ -1,0 +1,147 @@
+{
+  "at": "2026-10-03T22:38:16.365782+00:00",
+  "animationId": "shared-alg001-l07-p018",
+  "sourceSha256": "6d279948c0670391d81d384cc1e17abe962a4623eb3fedc56864de27e02dee6f",
+  "sourceTitle": "y-Intercept",
+  "scripts": [
+    {
+      "path": "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineButton2_46/BUTTONCONDACTION on(release).as",
+      "bytes": 123,
+      "sha256": "0b89848d79d735127115901984f60c2c8c2996f9561d150573068e496601ed4b",
+      "source": "on(release){\r\n   _global.KeyAttribute = \"Equation\";\r\n   _root.DoHyperLinks();\r\n   _root.animation_mc.animation.stop();\r\n}\r\n"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineButton2_47/BUTTONCONDACTION on(release).as",
+      "bytes": 126,
+      "sha256": "b543a02417fccbf69a3b17e950fe208f6cf3f86b32b9eb200a1c4f56bee3c4c1",
+      "source": "on(release){\r\n   _global.KeyAttribute = \"Y-intercept\";\r\n   _root.DoHyperLinks();\r\n   _root.animation_mc.animation.stop();\r\n}\r\n"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineButton2_63/BUTTONCONDACTION on(release).as",
+      "bytes": 242,
+      "sha256": "393558b53dc46cb94558911090df1ce37b1fa6ccf636042808c4e131eaedfcc0",
+      "source": "on(release){\r\n   this._visible = false;\r\n   this.gotoAndStop(2);\r\n   _parent.BtnLine.enabled = true;\r\n   _parent.Mc_Drag.enabled = true;\r\n   if(_global.TryCount >= 2)\r\n   {\r\n      _global.quizSection = false;\r\n      _parent.play();\r\n   }\r\n}\r\n"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineButton2_67/BUTTONCONDACTION on(release).as",
+      "bytes": 554,
+      "sha256": "4d7cf031539d8dcb5c17609bcbcccef1c51fc402717099169c7dea2569af4712",
+      "source": "on(release){\r\n   BtnLine.enabled = false;\r\n   Mc_Drag.enabled = false;\r\n   _global.TryCount++;\r\n   if(txtSlope.text == \"-2\")\r\n   {\r\n      _global.quizSection = false;\r\n      play();\r\n   }\r\n   else\r\n   {\r\n      if(_global.TryCount == 1)\r\n      {\r\n         _global.WrongFeed = \"Enter the value -2 in the slope box in the equation. Try again.\";\r\n      }\r\n      else\r\n      {\r\n         _global.WrongFeed = \"Enter the value -2 in the slope box in the equation.\";\r\n      }\r\n      Mc_Feed_Popup1._visible = true;\r\n      Mc_Feed_Popup1.gotoAndPlay(2);\r\n   }\r\n}\r\n"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineSprite_66/frame_1/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "source": "stop();\r\n"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineSprite_66/frame_15/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "source": "stop();\r\n"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineSprite_66/frame_2/DoAction.as",
+      "bytes": 35,
+      "sha256": "339da0ae92e066910d2af19a170d12305f2780609209769be00e48aa35d91bbc",
+      "source": "txtFeed.text = _global.WrongFeed;\r\n"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineSprite_76/frame_1/DoAction.as",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": ""
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineSprite_76/frame_122/DoAction.as",
+      "bytes": 117,
+      "sha256": "ef859ca0aef494ec1a0d3ec5649d0e6c77ff23f80ff2f9a65558675eb3859b28",
+      "source": "stop();\r\ntxtSlope.text = \"3\";\r\n_global.TryCount = 0;\r\n_global.quizSection = true;\r\nMc_Feed_Popup1._visible = false;\r\n"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineSprite_76/frame_122/PlaceObject2_52_13/CLIPACTIONRECORD on(press).as",
+      "bytes": 71,
+      "sha256": "a23f7ac6a7c20c1ba0e96c89ef0585c700f11e7d8be7848f66077be552f67f78",
+      "source": "on(press){\r\n   drag = true;\r\n   startDrag(this,0,-70,168,130,168);\r\n}\r\n"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineSprite_76/frame_122/PlaceObject2_52_13/CLIPACTIONRECORD on(releaseOutside,release).as",
+      "bytes": 66,
+      "sha256": "ced35ac3d14cbb32208f80e33df534095ce6ad80785efd73e6832db4c3e6ab24",
+      "source": "on(releaseOutside,release){\r\n   drag = false;\r\n   stopDrag();\r\n}\r\n"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineSprite_76/frame_122/PlaceObject2_52_13/CLIPACTIONRECORD onClipEvent(enterFrame).as",
+      "bytes": 141,
+      "sha256": "0b81ff3d2f6d2f12aab22ee2579b9fa88b24568828d46ad75aecca64b708bc54",
+      "source": "onClipEvent(enterFrame){\r\n   if(drag)\r\n   {\r\n      tempVal = Math.round(this._x / 10 - 3);\r\n      _parent.txtSlope.text = tempVal;\r\n   }\r\n}\r\n"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/frame_1/DoAction.as",
+      "bytes": 63,
+      "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19",
+      "source": "_level0.InternalPreloader.gotoAndPlay(\"jump_check\");\r\nstop();\r\n"
+    },
+    {
+      "path": "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/frame_6/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+      "source": "stop();\r\n"
+    }
+  ],
+  "timelines": [
+    {
+      "spriteId": 2,
+      "frames": 1
+    },
+    {
+      "spriteId": 37,
+      "frames": 1
+    },
+    {
+      "spriteId": 52,
+      "frames": 1
+    },
+    {
+      "spriteId": 66,
+      "frames": 15
+    },
+    {
+      "spriteId": 68,
+      "frames": 1
+    },
+    {
+      "spriteId": 71,
+      "frames": 1
+    },
+    {
+      "spriteId": 76,
+      "frames": 361
+    }
+  ],
+  "facts": {
+    "mainSpriteId": 76,
+    "mainFrameCount": 361,
+    "quizFrame": 122,
+    "initialInput": "3",
+    "correctInput": "-2",
+    "feedbackSpriteId": 66,
+    "feedbackFirstFrame": 2,
+    "feedbackStopFrame": 15,
+    "feedbackAssignmentFrame": 2,
+    "sliderBounds": [
+      -70,
+      130
+    ],
+    "sliderValueFormula": "Math.round(this._x / 10 - 3)",
+    "terms": [
+      "Equation",
+      "Y-intercept"
+    ],
+    "postquizInputAssignment": false
+  },
+  "next": "Derive complete timelines/instance lifetimes, exact postquiz input/display separation, graph changes, source audio and native text before specification and implementation. Assess existing source-slider-feedback templates with page-specific initial3/correct-2 and popup15 semantics; do not copy P017 popup8/direct-assignment behavior.",
+  "status": "source-extraction-and-first-script-triage-only",
+  "registered": false,
+  "acceptance": false
+}

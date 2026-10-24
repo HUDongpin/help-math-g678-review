@@ -1,0 +1,29 @@
+✔ all1534 source frame/domain/scenario/language states have exact identity and isolated static children (116.862208ms)
+✔ complete instructions and term reveal come from masked source text (0.149583ms)
+✔ authored fields, retained wrong input123/124 and fixed-2 replacement125 stay distinct from persistent Draw (3.035583ms)
+✔ all361 frames preserve source nested matrix composition, ratio, tint, and graph child identity (3.777792ms)
+✔ source morph, annotation scale and grid de-emphasis respect exact boundaries (0.315917ms)
+✔ three native-decoded audio sources and frame boundary rejection (0.1855ms)
+✔ source clock stops at122; first wrong uses popup66 and can close before15 (1.799166ms)
+✔ second Close switches bounded main clock and preserves full final interval before wrap (3.001417ms)
+✔ correct-2 Draw counts every submission and never loads feedback (0.36925ms)
+✔ feedback Close cancels pending fetch and decode without stale playback (0.824334ms)
+✔ pause and revealed glossary retain fractional clock cursor; resume does not reseek (0.315875ms)
+✔ Spanish is explicit, holds popup domain and returns paused; pending decode can cancel (1.347208ms)
+✔ Replay retires all domains and rejects late restart when explicitly paused (0.435083ms)
+✔ retained Draw changes count without clock restart or popup in playing and held postquiz (0.724916ms)
+✔ source122 stop initializes3 and only response releases the quiz (0.890209ms)
+✔ integer mapping, authored clamps, and source rounding at negative half boundaries (0.171542ms)
+✔ popup frame2 assignment, immediate first Close and retained input (0.299583ms)
+✔ second popup stops15 and Close resumes with original3 retained internally (0.172208ms)
+✔ correct-2 release increments attempts and next cycle alone resets them (0.16225ms)
+✔ glossary gates, Replay invalidation and terminal leave (0.170875ms)
+✔ persistent Draw can fire once even after input53 removal, without restarting playback (0.143041ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 301.179792

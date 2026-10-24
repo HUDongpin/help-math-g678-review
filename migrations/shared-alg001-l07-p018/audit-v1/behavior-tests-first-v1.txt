@@ -1,0 +1,23 @@
+✔ source clock stops at122; first wrong uses popup66 and can close before15 (2.058292ms)
+✔ second Close switches bounded main clock and preserves full final interval before wrap (3.756834ms)
+✔ correct-2 Draw counts every submission and never loads feedback (0.332833ms)
+✔ feedback Close cancels pending fetch and decode without stale playback (2.04ms)
+✔ pause and revealed glossary retain fractional clock cursor; resume does not reseek (0.364708ms)
+✔ Spanish is explicit, holds popup domain and returns paused; pending decode can cancel (0.610458ms)
+✔ Replay retires all domains and rejects late restart when explicitly paused (0.398042ms)
+✔ retained Draw changes count without clock restart or popup in playing and held postquiz (0.752375ms)
+✔ source122 stop initializes3 and only response releases the quiz (1.035459ms)
+✔ integer mapping, authored clamps, and source rounding at negative half boundaries (0.178333ms)
+✔ popup frame2 assignment, immediate first Close and retained input (0.102875ms)
+✔ second popup stops15 and Close resumes with original3 retained internally (0.117958ms)
+✔ correct-2 release increments attempts and next cycle alone resets them (0.131375ms)
+✔ glossary gates, Replay invalidation and terminal leave (0.533ms)
+✔ persistent Draw can fire once even after input53 removal, without restarting playback (0.149917ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 192.977583

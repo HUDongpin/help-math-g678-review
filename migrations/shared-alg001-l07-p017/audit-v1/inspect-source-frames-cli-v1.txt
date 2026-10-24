@@ -1,0 +1,9 @@
+### Result
+{"pass":true}
+### Ran Playwright code
+```js
+await (async page=>{await page.setViewportSize({width:1400,height:1100});await page.setContent('<!DOCTYPE html><body style="font:18px sans-serif;background:white;display:grid;grid-template-columns:repeat(3,1fr);gap:10px">'+[1, 28, 65, 100, 137, 138, 140, 141, 254].map(n=>'<section><h3>Extracted source frame '+n+'</h3><img style="width:100%" src="http://127.0.0.1:4392/ffdec-child-png/DefineSprite_99/'+n+'.png"></section>').join('')+'</body>');await page.locator('img').evaluateAll(xs=>Promise.all(xs.map(x=>x.decode())));await page.screenshot({path:"/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p017/audit-v1/source-frames-v1.png",fullPage:true});return{pass:true};})(page);
+```
+### Page
+- Page URL: http://127.0.0.1:4392/
+- Console: 1 errors, 0 warnings

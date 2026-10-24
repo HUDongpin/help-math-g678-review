@@ -1,0 +1,58 @@
+{
+  "scope": "Source scripts/tags, viewed FFDec shape/frame exports and maintained source-derived native implementation; not original-runtime acceptance",
+  "sourceRisks": [
+    {
+      "kind": "shape-text-unclassified",
+      "definitionCount": 19,
+      "meaning": "Shapes may include outlined text or mathematical symbols; presence is not confirmation of text."
+    },
+    {
+      "kind": "button-runtime-state-and-actions-not-interpreted",
+      "definitionCount": 6
+    },
+    {
+      "kind": "actionscript-visibility-and-values-not-interpreted"
+    },
+    {
+      "kind": "mask-filter-blend-semantics-unresolved"
+    }
+  ],
+  "nativeDecisions": {
+    "1": "outlined course/activity title to native title",
+    "3,79": "mask rectangles generate complete-word reveal",
+    "4,12": "glossary underlines to focusable source term actions",
+    "7": "button hit area to native buttons",
+    "16,17,40,44,46": "source graph/grid/axes/ticks retained as vectors",
+    "47,69": "authored red morph then static line",
+    "48": "temporary axis overlay includes outlined y and10 plus arrow; preserve axis geometry and express text through source-bound native labels, avoiding duplicated overlapping text",
+    "71,75": "source point/y-coordinate callout backgrounds; native composition must preserve associations and appearance times",
+    "74": "outlined2 over second coordinate of(0,2); native point-y emphasis at203..233",
+    "77": "source magenta arrow linked to coordinate emphasis; preserve instructional relation",
+    "78": "outlined2 at y-axis value2 from280; native y-axis emphasis",
+    "49..68,38": "temporary native y-axis labels134..154; replace matching normal labels rather than double-print them",
+    "70,73": "magenta zero and two blinks preserved at164/166/168 and172/174/176",
+    "72,76,80": "(0,2), y-coordinate and final conclusion retained with source schedules"
+  },
+  "unresolved": [
+    "Original-runtime/full-frame rendered comparison",
+    "Listening,human,Owner,strict completion and publication"
+  ],
+  "registryModified": false,
+  "implementation": {
+    "visualModel": {
+      "path": "migrations/shared-alg001-l07-p016/native-v1/visual-model-v1.json",
+      "bytes": 525881,
+      "sha256": "baf757385bd1eff7144f11068ffbf7d5ca45ad7b7075ea6039a88fedce2a3f1c"
+    },
+    "sourceSpecificTests": "migrations/shared-alg001-l07-p016/audit-v1/tests-v2.txt",
+    "candidateBrowserDebug": "output/g678-alg-l07-p016-integration-20261004-v1/real-my-lesson-candidate-v1.json",
+    "completeWordFrames": {
+      "6": 74,
+      "13": 84,
+      "80": 322
+    },
+    "nativeAxisRoles": 43,
+    "nativeCallouts": 2,
+    "duplicateRoleRule": "Only exact temporary axis depth pairs, and source0/2 overlays with matching axis roles are substituted; all original instances remain in raw IR."
+  }
+}

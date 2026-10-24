@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 2,
+  "id": "shared-alg001-l07-p025",
+  "animationId": "shared-alg001-l07-p025",
+  "assetId": "swf-cd8ab48d768b345cc941e47d0a63aa849e741c4a50057751b3c7beeaf5e3a750",
+  "status": "preserved",
+  "created": "2026-10-04",
+  "confidence": "verified",
+  "classification": {
+    "collection": "course",
+    "grade": "shared",
+    "lesson": 7,
+    "section": "IN",
+    "page": 5,
+    "domain": "algebra",
+    "knowledgePoint": {
+      "en": "A linear function has slope equal to its x-term coefficient; when no x-term is present, the slope is zero.",
+      "es": "La pendiente de una función lineal es el coeficiente del término x; sin término x, la pendiente es cero."
+    },
+    "titleRaw": "Identifying Slope of a Linear Function (from both graph and equation)",
+    "titleDisplay": "Identifying Slope of a Linear Function (from both graph and equation)",
+    "status": "confirmed",
+    "evidence": [
+      "source-v1/index.xml",
+      "native-v1/source-model-v1.json"
+    ],
+    "sectionPageOrdinal": 5,
+    "globalPageOrdinal": 25,
+    "sourceOccurrence": 25,
+    "moduleCode": "ALG001"
+  },
+  "source": {
+    "placementPath": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/IN/L7IN06.swf",
+    "fla": "",
+    "swf": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/IN/L7IN06.swf",
+    "flaSha256": "",
+    "swfSha256": "cd8ab48d768b345cc941e47d0a63aa849e741c4a50057751b3c7beeaf5e3a750",
+    "pairedFlaStatus": "missing",
+    "provenance": "owner-provided",
+    "aliasOf": null,
+    "variantOf": null
+  },
+  "runtime": {
+    "swfSignature": "CWS",
+    "swfVersion": 6,
+    "declaredFileLength": 93603,
+    "stage": {
+      "width": 800,
+      "height": 600
+    },
+    "fps": 12,
+    "frameCount": 10,
+    "durationMs": 833.3333333333334,
+    "backgroundColor": "#ffffff",
+    "actionScriptVersion": "AS1/2",
+    "complexity": "interactive-understood",
+    "fonts": [
+      "Bauhaus Md BT"
+    ],
+    "scripts": [
+      "migrations/shared-alg001-l07-p025/source-v1/ffdec/scripts/DefineButton2_10/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p025/source-v1/ffdec/scripts/DefineButton2_13/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p025/source-v1/ffdec/scripts/DefineButton2_14/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p025/source-v1/ffdec/scripts/DefineButton2_8/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p025/source-v1/ffdec/scripts/DefineButton2_9/BUTTONCONDACTION on(release).as",
+      "migrations/shared-alg001-l07-p025/source-v1/ffdec/scripts/frame_1/DoAction.as",
+      "migrations/shared-alg001-l07-p025/source-v1/ffdec/scripts/frame_6/DoAction.as"
+    ],
+    "externalDependencies": [
+      "InternalPreloader.jump_check",
+      "DoHyperLinks",
+      "optional old-host SA button"
+    ]
+  },
+  "audit": {
+    "assetsRequired": true,
+    "assetsNotRequiredReason": "",
+    "masks": [
+      {
+        "sourceShape": 3,
+        "instances": 3,
+        "disposition": "native whole-word reveal derived from three exact source masks, actual glyph outline bounds and blue glossary runs"
+      }
+    ],
+    "morphs": [],
+    "filters": [],
+    "networkCalls": []
+  },
+  "localization": {
+    "bilingualRequired": true,
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "source-slope-definition",
+      "kind": "interactive",
+      "description": "Source208-frame ordinary loop; three progressive source paragraphs, five glossary holds and explicit SA.",
+      "reachable": true
+    }
+  ],
+  "audio": {
+    "required": true,
+    "reasonNotRequired": "",
+    "languages": [
+      "en",
+      "es"
+    ],
+    "inventoryFile": "audio-inventory.csv",
+    "cues": [
+      {
+        "id": "source-stream",
+        "language": "en",
+        "source": "source-v1/stream-16.mp3",
+        "sourceSha256": "8ecc358df06edbb8992fdc4da03f6aa58afa0e12af0a583f4e3f7bb9fdc55f57",
+        "frameDomain": "sprite-16",
+        "startSemantics": "explicit Play; source runs8/10;208-frame cycle; no empty negative markers",
+        "replayBehavior": "retire decoder/nodes and reset main1"
+      },
+      {
+        "id": "optional-spanish-audio",
+        "language": "es",
+        "source": "source-v1/L7IN06.mp3",
+        "sourceSha256": "b018c3035c865b4c7908095f87d4f3fd53c6f534eca4ccb6d438018a9cf298e5",
+        "frameDomain": "held-main",
+        "startSemantics": "explicit Spanish Audio only; no locale autoplay or splice",
+        "replayBehavior": "close decoder and reset main1"
+      }
+    ]
+  },
+  "toolVersions": {
+    "ruffle": "",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "ffdec": "26.2.1",
+    "swfmill": "0.3.6",
+    "adobeAnimate": "unavailable"
+  },
+  "forensicReference": {
+    "authority": "forensic-only",
+    "renderer": "Ruffle",
+    "route": "",
+    "version": ""
+  },
+  "baseline": {
+    "authority": "undecided",
+    "renderer": "unresolved",
+    "route": "",
+    "routeFile": "",
+    "viewport": {
+      "width": 0,
+      "height": 0,
+      "deviceScaleFactor": 1
+    },
+    "keyframeCsv": "keyframes.csv",
+    "captureDirectory": "baseline/keyframes"
+  },
+  "implementation": {
+    "rendering": "Maintained native title and three source paragraphs with complete-word reveal computed from actual glyph outlines and exact mask transforms. Shared source-loop audio and five glossary holds; original pixel-fidelity unverified. Candidate pending integration.",
+    "route": "/en/migration-status/g678-calibration/shared-alg001-l07-p025/registered-v1",
+    "routeFile": "apps/web/app/[locale]/migration-status/g678-calibration/shared-alg001-l07-p025/registered-v1/page.tsx",
+    "component": "packages/demos/src/alg-l07-p025-presentation-v1.tsx",
+    "registryModule": "./modules/shared-alg001-l07-p025",
+    "timelineModule": "packages/demos/src/timelines/shared-alg001-l07-p025.ts",
+    "testFile": "packages/demos/src/alg-l07-p025-frame-v1.test.ts",
+    "standalonePackage": "",
+    "defaultFrameDomainId": "sprite-16",
+    "frameDomains": [
+      {
+        "id": "root",
+        "kind": "root",
+        "sourceTimelineId": "root",
+        "parentFrameDomainId": null,
+        "frameCount": 10,
+        "scenarioIds": [
+          "source-slope-definition"
+        ]
+      },
+      {
+        "id": "sprite-16",
+        "kind": "nested",
+        "sourceTimelineId": "sprite-16",
+        "parentFrameDomainId": "root",
+        "frameCount": 208,
+        "scenarioIds": [
+          "source-slope-definition"
+        ]
+      }
+    ],
+    "captureContract": {
+      "frameParameter": "frame",
+      "frameDomainParameter": "frameDomain",
+      "requirementIdParameter": "requirementId",
+      "traceParameter": "trace",
+      "entryStateSha256Parameter": "entryStateSha256",
+      "scenarioParameter": "scenario",
+      "languageParameter": "lang",
+      "seedParameter": "seed",
+      "frameAttribute": "data-flash-frame",
+      "animationIdAttribute": "data-animation-id",
+      "frameDomainAttribute": "data-flash-frame-domain",
+      "requirementIdAttribute": "data-flash-requirement-id",
+      "traceAttribute": "data-flash-trace-id",
+      "entryStateSha256Attribute": "data-flash-entry-state-sha256"
+    }
+  },
+  "evidence": {
+    "assetInventory": "asset-inventory.csv",
+    "audioInventory": "audio-inventory.csv",
+    "keyframeCsv": "keyframes.csv",
+    "fullFrameCoverageFile": "evidence/full-frame-coverage.json",
+    "differenceDirectory": "evidence/diffs",
+    "archiveDirectory": ""
+  },
+  "fidelity": {
+    "staticFrameMaxNormalizedRmse": 0.05,
+    "transitionFrameMaxNormalizedRmse": 0.08,
+    "timingToleranceFrames": 1
+  },
+  "accessibility": {
+    "keyboardReplay": false,
+    "reducedMotionReviewed": false,
+    "accessibleNameReviewed": false,
+    "responsiveOverflowReviewed": false,
+    "localizationReviewed": false
+  },
+  "acceptance": {
+    "engineeringReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": ""
+    },
+    "humanVisualReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "scope": "all-keyframe-and-full-frame-diffs",
+      "record": null
+    },
+    "ownerReview": {
+      "decision": "pending",
+      "reviewer": "",
+      "reviewedAt": "",
+      "reason": "",
+      "record": null
+    },
+    "knownExceptions": []
+  }
+}

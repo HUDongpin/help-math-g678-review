@@ -1,0 +1,46 @@
+from pathlib import Path
+import json,hashlib,xml.etree.ElementTree as E,sys,re
+B=Path(__file__).resolve().parents[1];m=json.loads((B/'native-v1/source-model-v1.json').read_text());main=m['timelines'][1];texts={t['characterId']:{**t,'text':''.join(r['text'] for r in t['runs'])}for t in m['texts']};xml=E.parse(B/'source-v1/movie.xml').getroot();sha=lambda b:hashlib.sha256(b).hexdigest()
+bounds={int(t.get('objectID')):{k:int(v)for k,v in t.find('bounds/Rectangle').attrib.items()}for t in xml.findall('Header/tags/*')if 'Shape'in t.tag and t.find('bounds/Rectangle')is not None}
+def alpha(p):return max(0,min(1,p.get('colorTransform',{}).get('multiply',[256]*4)[3]/256+p.get('colorTransform',{}).get('add',[0]*4)[3]/255))if p else 0
+def box(b,p):
+ a,b_,c,d,e,f=p['matrix'];q=[(a*x+c*y+e,b_*x+d*y+f)for x in [b['left'],b['right']]for y in [b['top'],b['bottom']]];return[min(x for x,y in q),max(x for x,y in q),min(y for x,y in q),max(y for x,y in q)]
+def prefix(row,id):
+ p=next((p for p in row if p['characterId']==id),None)
+ if not p or not alpha(p):return ''
+ t=texts[id];masks=[q for q in row if q.get('clipDepth')and q['depth']<p['depth']<=q['clipDepth']];assert len(masks)==1 and masks[0]['characterId']==3
+ clip=box(bounds[3],masks[0]);out='';x=0;end=False
+ for r in t['runs']:
+  if r['xOffsetTwips']is not None:x=r['xOffsetTwips']
+  for g in r['glyphs']:
+   nx=x+g['advanceTwips'];b=box(dict(left=x,right=nx,top=t['boundsTwips']['top'],bottom=t['boundsTwips']['bottom']),p)
+   if not(b[0]>=clip[0]and b[1]<=clip[1]and b[2]>=clip[2]and b[3]<=clip[3]):end=True;break
+   out+=g['unicode'];x=nx
+  if end:break
+ if out!=t['text']and len(out)<len(t['text'])and not t['text'][len(out)].isspace():out=out.rsplit(' ',1)[0]if' 'in out else''
+ return out.rstrip()
+def spans(values):
+ out=[]
+ for f,v in enumerate(values,1):
+  if out and out[-1]['value']==v:out[-1]['last']=f
+  else:out.append(dict(first=f,last=f,value=v))
+ return out
+def pose(p):return dict(sourceCharacterId=p['characterId'],matrix=p['matrix'],alpha=alpha(p),depth=p['depth'],instanceId=p['instanceId'])
+states=[]
+for frame,row in enumerate(main['frames'],1):
+ byid={p['characterId']:p for p in row};paragraphs=[prefix(row,id)for id in[6,12,15]];terms=[]
+ for g in m['glossary']:
+  if g['characterId']not in byid:continue
+  tid,rid={8:(6,1),9:(6,3),10:(6,5),13:(12,1),14:(12,3)}[g['characterId']];run=texts[tid]['runs'][rid];assert run['colorRgba']==[0,0,204,255]and run['text'].strip()==g['term'].lower()
+  end=len(''.join(r['text']for r in texts[tid]['runs'][:rid+1]).rstrip())
+  if len(paragraphs[[6,12,15].index(tid)])>=end:terms.append(g['term'])
+ states.append(dict(paragraphs=paragraphs,terms=terms,panelAlpha=alpha(byid.get(2))))
+stream=json.loads((B/'native-v1/streams-v1.json').read_text())[0];decode=json.loads((B/'native-v1/decode-native-v1.json').read_text());d=next(d for d in decode['streams']if d['spriteId']==16);sa=next(d for d in decode['streams']if d['spriteId']=='SA');assert d['sourceSha256']==stream['sourceSha256']and d['decodedSamples']==stream['decodedSamplesCandidate']and all(d['contextClosed']for d in decode['streams'])
+clock=dict(version=1,sourceSwfSha256=m['source']['sha256'],frameDomain='sprite-16',firstFrame=1,frameCount=208,fps=12,playbackMode='loop',alignmentStatus='source-run-candidate-not-original-runtime-accepted',decoder={k:d[k]for k in ['sourceBytes','sourceSha256','sampleRate','channels','decodedSamples','pcmSha256']},segments=stream['segments'],emptyNegativeBlocks=[{k:b[k]for k in ['frame','samples','seek','mp3Bytes']}for b in stream['blocks']if b['samples']==0 and b['seek']<0])
+native=dict(animationId=m['animationId'],sourceSha256=m['source']['sha256'],fps=12,rootFrameCount=10,rootEntryFrame=6,mainSpriteId=16,mainFrameCount=208,title='Linear and Nonlinear Functions: Instruction',titleSourceShapeId=1,titleSvgSha256=sha((B/'source-v1/ffdec/shapes/1.svg').read_bytes()),visualStates=spans(states),terms=json.loads((B/'native-v1/glossary-model-v1.json').read_text())['entries'],clockPlan=clock,sa={k:sa[k]for k in ['sourceBytes','sourceSha256','sampleRate','channels','decodedSamples','pcmSha256']},sourceTexts=[{k:t[k]for k in ['characterId','sourceTextId','text','sourceTagSha256']}for t in texts.values()],independentPending=['original-runtime','fidelity','listening','human','Owner','strict','publication'])
+summary=dict(status='pass',sourceFrames=len(states),spans=len(native['visualStates']),completeTextFrames={id:next((i+1 for i,r in enumerate(main['frames'])if prefix(r,id)==texts[id]['text'].rstrip()),None)for id in[6,12,15]},termsFirst={g['term']:next(i+1 for i,s in enumerate(states)if g['term']in s['terms'])for g in m['glossary']},emptyNegativeBlocks=clock['emptyNegativeBlocks'])
+for name,value in [('native-v1/visual-model-v1.json',native),('audit-v1/visual-derivation-v1.json',summary)]:
+ out=json.dumps(value,ensure_ascii=False,separators=(',',':'))+'\n';p=B/name
+ if '--check'in sys.argv:assert p.read_text()==out
+ else:p.write_text(out)
+print(json.dumps(summary))

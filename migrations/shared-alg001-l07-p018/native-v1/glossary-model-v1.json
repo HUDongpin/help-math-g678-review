@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l07-p018",
+  "sourceSwf": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/VB/L7VB13.swf",
+    "bytes": 155170,
+    "sha256": "6d279948c0670391d81d384cc1e17abe962a4623eb3fedc56864de27e02dee6f"
+  },
+  "dictionaries": {
+    "en": {
+      "path": "/Volumes/WestWorld/HELP MATH Related Files/HELP_OnlineKeyTerms_XML/MI/L1KTE01.xml",
+      "bytes": 345838,
+      "sha256": "14d454f4c1c1a6f0939fb80b454fd3e22890eabb4a730c6bfa7efa1d9a2e5e5b"
+    },
+    "es": {
+      "path": "/Volumes/WestWorld/HELP MATH Related Files/HELP_OnlineKeyTerms_XML/MI/L1KTS01.xml",
+      "bytes": 344456,
+      "sha256": "3b437b42e75536fa8b4f110325e366c27fbe10a871439d4797650cda4238b407"
+    }
+  },
+  "entries": [
+    {
+      "id": "equation",
+      "sourceKeyAttribute": "Equation",
+      "labels": {
+        "en": "Equation",
+        "es": "Ecuación"
+      },
+      "definitions": {
+        "en": "A mathematical sentence where both sides of the equal sign (=) have the same value (are equal). For example: 9 + 9 = 3 x 6.",
+        "es": "Enunciado de una igualdad en la cual ambos lados del signo igual (=) tienen el mismo valor (son iguales). Por ejemplo: 9 + 9 = 3 x 6."
+      },
+      "source": {
+        "en": {
+          "assetId": "G678L1KTE01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTE01.xml",
+          "sha256": "14d454f4c1c1a6f0939fb80b454fd3e22890eabb4a730c6bfa7efa1d9a2e5e5b"
+        },
+        "es": {
+          "assetId": "G678L1KTS01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTS01.xml",
+          "sha256": "3b437b42e75536fa8b4f110325e366c27fbe10a871439d4797650cda4238b407"
+        }
+      },
+      "sourceEntrySha256": {
+        "en": "1953b79992cc007771895437c529494dafbcf2d83ff55f53047f4cca6408a2d7",
+        "es": "04ca990e99821c237052b0e5d4bc9fcf7df46d5b45e2fa4f02d600027134779e"
+      },
+      "extractionLfNormalizedEntrySha256": {
+        "en": "1953b79992cc007771895437c529494dafbcf2d83ff55f53047f4cca6408a2d7",
+        "es": "04ca990e99821c237052b0e5d4bc9fcf7df46d5b45e2fa4f02d600027134779e"
+      }
+    },
+    {
+      "id": "y-intercept",
+      "sourceKeyAttribute": "Y-intercept",
+      "labels": {
+        "en": "Y-intercept",
+        "es": "Intersección y"
+      },
+      "definitions": {
+        "en": "The y-intercept of a line is the y-coordinate of the point where the line intersects the y-axis.",
+        "es": "La intersección \"y\" de una línea es la coordenada \"y\" del punto donde la línea interseca el eje \"y\"."
+      },
+      "source": {
+        "en": {
+          "assetId": "G678L1KTE01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTE01.xml",
+          "sha256": "14d454f4c1c1a6f0939fb80b454fd3e22890eabb4a730c6bfa7efa1d9a2e5e5b"
+        },
+        "es": {
+          "assetId": "G678L1KTS01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTS01.xml",
+          "sha256": "3b437b42e75536fa8b4f110325e366c27fbe10a871439d4797650cda4238b407"
+        }
+      },
+      "sourceEntrySha256": {
+        "en": "8efdfa814745e4994412ee7ab09d6a4bd65047ac4ea11a4409c0116158f40592",
+        "es": "e6059a0f33c25e0d073093dea6eb4708804e6fd3ffdabb476c36bc9ecafc050c"
+      },
+      "extractionLfNormalizedEntrySha256": {
+        "en": "2a3c3ac0fc285f29411c8459140896cee6c0fa405287faf3408ea4fb1c002a28",
+        "es": "5c6f693556d15601c90e6a56b9fe7d80a9190a3356cb6306933fc1731b4deaef"
+      }
+    }
+  ],
+  "sourceButtonActions": [
+    {
+      "characterId": 46,
+      "term": "Equation",
+      "script": {
+        "path": "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineButton2_46/BUTTONCONDACTION on(release).as",
+        "bytes": 123,
+        "sha256": "0b89848d79d735127115901984f60c2c8c2996f9561d150573068e496601ed4b"
+      },
+      "source": "on(release){\r\n   _global.KeyAttribute = \"Equation\";\r\n   _root.DoHyperLinks();\r\n   _root.animation_mc.animation.stop();\r\n}\r\n",
+      "frameRanges": [
+        [
+          10,
+          361
+        ]
+      ]
+    },
+    {
+      "characterId": 47,
+      "term": "Y-intercept",
+      "script": {
+        "path": "migrations/shared-alg001-l07-p018/source-v1/ffdec/scripts/DefineButton2_47/BUTTONCONDACTION on(release).as",
+        "bytes": 126,
+        "sha256": "b543a02417fccbf69a3b17e950fe208f6cf3f86b32b9eb200a1c4f56bee3c4c1"
+      },
+      "source": "on(release){\r\n   _global.KeyAttribute = \"Y-intercept\";\r\n   _root.DoHyperLinks();\r\n   _root.animation_mc.animation.stop();\r\n}\r\n",
+      "frameRanges": [
+        [
+          10,
+          361
+        ]
+      ]
+    }
+  ],
+  "modernClose": "preserve paused frame/audio; restore trigger focus; explicit Resume required",
+  "boundary": "source dictionaries and release scripts only; original-runtime/human acceptance absent"
+}

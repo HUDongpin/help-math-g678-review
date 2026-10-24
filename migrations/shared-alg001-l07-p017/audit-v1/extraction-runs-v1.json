@@ -1,0 +1,25 @@
+[
+  {
+    "at": "2026-10-03T21:48:22.177116+00:00",
+    "args": [
+      "/opt/homebrew/bin/swfmill",
+      "swf2xml",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p017/source-v1/L7VB12.swf",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p017/source-v1/movie.xml"
+    ],
+    "exitCode": 0,
+    "log": "migrations/shared-alg001-l07-p017/audit-v1/swfmill-v1.txt"
+  },
+  {
+    "at": "2026-10-03T21:48:24.072538+00:00",
+    "args": [
+      "/opt/homebrew/bin/ffdec",
+      "-export",
+      "script,text,shape,morphshape,image",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p017/source-v1/ffdec",
+      "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p017/source-v1/L7VB12.swf"
+    ],
+    "exitCode": 0,
+    "log": "migrations/shared-alg001-l07-p017/audit-v1/ffdec-assets-v1.txt"
+  }
+]

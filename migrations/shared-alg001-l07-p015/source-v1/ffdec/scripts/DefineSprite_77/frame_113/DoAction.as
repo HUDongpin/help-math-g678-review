@@ -1,0 +1,1 @@
+txtSlope.text = "0";

@@ -1,0 +1,32 @@
+[
+  {
+    "args": [
+      "/opt/homebrew/bin/ffdec",
+      "-selectid",
+      "16",
+      "-select",
+      "16:1,30,60,78,79,100,130,144,145,180,208",
+      "-export",
+      "sprite",
+      "migrations/shared-alg001-l07-p025/source-v1/ffdec-main-png",
+      "migrations/shared-alg001-l07-p025/source-v1/L7IN06.swf"
+    ],
+    "exitCode": 0,
+    "log": "ffdec-main-png-v1.txt"
+  },
+  {
+    "args": [
+      "/opt/homebrew/bin/ffdec",
+      "-selectid",
+      "1",
+      "-format",
+      "shape:png",
+      "-export",
+      "shape",
+      "migrations/shared-alg001-l07-p025/source-v1/title-png",
+      "migrations/shared-alg001-l07-p025/source-v1/L7IN06.swf"
+    ],
+    "exitCode": 0,
+    "log": "ffdec-title-v1.txt"
+  }
+]

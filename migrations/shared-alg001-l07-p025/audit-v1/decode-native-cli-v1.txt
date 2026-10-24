@@ -1,0 +1,19 @@
+### Result
+{"pass":true,"streams":[{"spriteId":16,"sourceBytes":83200,"sourceSha256":"8ecc358df06edbb8992fdc4da03f6aa58afa0e12af0a583f4e3f7bb9fdc55f57","sampleRate":22050,"channels":1,"decodedSamples":368640,"pcmSha256":"86eeb0917ddb49081e13e149d2da4bd582b6279701e453421bee55114bc1b1ff","peak":0.5534091591835022,"contextClosed":true,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36"},{"spriteId":"SA","sourceBytes":224112,"sourceSha256":"b018c3035c865b4c7908095f87d4f3fd53c6f534eca4ccb6d438018a9cf298e5","sampleRate":48000,"channels":1,"decodedSamples":768384,"pcmSha256":"697ab7b6faea8efcefea1a5c904556a219833964eece7e6b7b3b7552b205bb31","peak":0.5067955851554871,"contextClosed":true,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36"}],"sourceAlignmentAccepted":false,"listeningAccepted":false}
+### Ran Playwright code
+```js
+await (async (page) => {
+ await page.goto('http://127.0.0.1:4396/');
+ const streams = [{"spriteId": 16, "sampleRate": 22050, "url": "http://127.0.0.1:4396/stream-16.mp3", "bytes": 83200, "sha256": "8ecc358df06edbb8992fdc4da03f6aa58afa0e12af0a583f4e3f7bb9fdc55f57", "expectedSamples": 368640}, {"spriteId": "SA", "sampleRate": 48000, "url": "http://127.0.0.1:4396/L7IN06.mp3", "bytes": 224112, "sha256": "b018c3035c865b4c7908095f87d4f3fd53c6f534eca4ccb6d438018a9cf298e5"}];
+ const result = await page.evaluate(async streams => {
+  const hash=async b=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',b))].map(x=>x.toString(16).padStart(2,'0')).join('');
+  const measured=[];
+  for(const s of streams){const c=new AudioContext({sampleRate:s.sampleRate});try{const r=await fetch(s.url),bytes=await r.arrayBuffer();if(r.status!==200||bytes.byteLength!==s.bytes||await hash(bytes)!==s.sha256)throw Error('source mismatch');const b=await c.decodeAudioData(bytes.slice(0));if(b.numberOfChannels!==1||b.sampleRate!==s.sampleRate||s.expectedSamples&&b.length!==s.expectedSamples)throw Error('decoder mismatch');const out=new ArrayBuffer(b.length*4),v=new DataView(out);let peak=0;for(let i=0;i<b.length;i++){const n=b.getChannelData(0)[i];if(!Number.isFinite(n))throw Error('nonfinite');v.setFloat32(i*4,n,true);peak=Math.max(peak,Math.abs(n));}if(!peak)throw Error('silent');await c.close();measured.push({spriteId:s.spriteId,sourceBytes:bytes.byteLength,sourceSha256:s.sha256,sampleRate:b.sampleRate,channels:b.numberOfChannels,decodedSamples:b.length,pcmSha256:await hash(out),peak,contextClosed:c.state==='closed',userAgent:navigator.userAgent});}finally{if(c.state!=='closed')await c.close();}}
+  return{pass:true,streams:measured,sourceAlignmentAccepted:false,listeningAccepted:false};
+ },streams);
+ return result;
+})(page);
+```
+### Page
+- Page URL: http://127.0.0.1:4396/
+- Page Title: P025 local source decoder

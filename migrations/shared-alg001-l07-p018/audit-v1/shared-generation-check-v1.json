@@ -1,0 +1,178 @@
+{
+  "pass": true,
+  "consumers": [
+    "p017",
+    "p018"
+  ],
+  "previousConsumersByteIdentical": true,
+  "existingConsumersVerified": {
+    "pass": true,
+    "existingConsumers": [
+      "p011",
+      "p012",
+      "p014",
+      "p015"
+    ],
+    "existingConsumersVerified": {
+      "pass": true,
+      "existingConsumersUnchanged": [
+        {
+          "page": "p011",
+          "path": "packages/demos/src/alg-l07-p011-state-v1.ts",
+          "bytes": 4358,
+          "sha256": "8ea4bde19b3b04a3c1a1212b346c78fa6a7ed2ec4f381ea8599b9dc861fb6304",
+          "baseTemplateSha256": "a78f8406ad37ad76b759bee39970e4fe677cfa39cb14eb86ccee26a6cbfecd84"
+        },
+        {
+          "page": "p011",
+          "path": "packages/demos/src/alg-l07-p011-session-v1.ts",
+          "bytes": 11058,
+          "sha256": "eab4e89e8bb49dbf9308537cd135856a99079c7e806935cca5091d106e6ba956",
+          "baseTemplateSha256": "ff95d81c4cd5a59b0ef1024aac8642600848905615ee56fb522fb28249649a03"
+        },
+        {
+          "page": "p011",
+          "path": "packages/demos/src/alg-l07-p011-player-v1.tsx",
+          "bytes": 7620,
+          "sha256": "c410c04aceac34984c156d401e80bb83089f0882209acb116315dce9b3bb49a9",
+          "baseTemplateSha256": "aa5298a920a16fbda7204b5dea2bb7f15b61682349c4735f07166f5c027f68e2"
+        },
+        {
+          "page": "p012",
+          "path": "packages/demos/src/alg-l07-p012-state-v1.ts",
+          "bytes": 4690,
+          "sha256": "36beba94baf6418d104626c81d92a9a1a3c65d559fd4440a8d074e727b3a7f9d",
+          "baseTemplateSha256": "a78f8406ad37ad76b759bee39970e4fe677cfa39cb14eb86ccee26a6cbfecd84"
+        },
+        {
+          "page": "p012",
+          "path": "packages/demos/src/alg-l07-p012-session-v1.ts",
+          "bytes": 11182,
+          "sha256": "4fc179fa6ea77149bff59167213b3eaf1e6c57110be7e152fb22d6816bdc1603",
+          "baseTemplateSha256": "ff95d81c4cd5a59b0ef1024aac8642600848905615ee56fb522fb28249649a03"
+        },
+        {
+          "page": "p012",
+          "path": "packages/demos/src/alg-l07-p012-player-v1.tsx",
+          "bytes": 7620,
+          "sha256": "9dfa41da1e205830d5823a8b22139e2c6e7515447ca31222782e97320524a5c7",
+          "baseTemplateSha256": "aa5298a920a16fbda7204b5dea2bb7f15b61682349c4735f07166f5c027f68e2"
+        },
+        {
+          "page": "p014",
+          "path": "packages/demos/src/alg-l07-p014-state-v1.ts",
+          "bytes": 4714,
+          "sha256": "d428e0437a8324200492e44106a6dab796e7ded3870627161e905e7483cb4b5f",
+          "baseTemplateSha256": "a78f8406ad37ad76b759bee39970e4fe677cfa39cb14eb86ccee26a6cbfecd84"
+        },
+        {
+          "page": "p014",
+          "path": "packages/demos/src/alg-l07-p014-session-v1.ts",
+          "bytes": 11108,
+          "sha256": "390a977d1868604afe27d0c4fb31df0f11a40b6526030abadb799d843c713e56",
+          "baseTemplateSha256": "ff95d81c4cd5a59b0ef1024aac8642600848905615ee56fb522fb28249649a03"
+        },
+        {
+          "page": "p014",
+          "path": "packages/demos/src/alg-l07-p014-player-v1.tsx",
+          "bytes": 7620,
+          "sha256": "dd1c17a6ab2ff11a5a5af07e3ffb460f26cef8de273f42c550436ac03b76642f",
+          "baseTemplateSha256": "aa5298a920a16fbda7204b5dea2bb7f15b61682349c4735f07166f5c027f68e2"
+        }
+      ],
+      "newConsumer": "p015",
+      "scope": "Own source-bound profile reuses immutable v1 templates and verifies all three current consumers; no new state/session/player mechanism or shared-input mutation.",
+      "rows": [
+        {
+          "path": "packages/demos/src/alg-l07-p015-state-v1.ts",
+          "bytes": 4735,
+          "sha256": "32ffd2a907dccacd068ebb592b19222772d68a551ffc755bc4a0fcb598747202",
+          "templateSha256": "a78f8406ad37ad76b759bee39970e4fe677cfa39cb14eb86ccee26a6cbfecd84"
+        },
+        {
+          "path": "packages/demos/src/alg-l07-p015-session-v1.ts",
+          "bytes": 11110,
+          "sha256": "0dd54b060f6112ec50118219ffe5cda7db9bafe1dd21ae4d27608789bfacdc8d",
+          "templateSha256": "ff95d81c4cd5a59b0ef1024aac8642600848905615ee56fb522fb28249649a03"
+        },
+        {
+          "path": "packages/demos/src/alg-l07-p015-player-v1.tsx",
+          "bytes": 7620,
+          "sha256": "d37dbcb15229ee1a9ccba4cb3a8b9cbd24b1aee7443a57d656506c8b3c028548",
+          "templateSha256": "aa5298a920a16fbda7204b5dea2bb7f15b61682349c4735f07166f5c027f68e2"
+        }
+      ]
+    },
+    "newConsumer": "p017",
+    "scope": "Immutable shared templates with own exact source integer mapping/no-assignment/inverse-input/scenario substitutions; no shared-input mutation.",
+    "rows": [
+      {
+        "path": "packages/demos/src/alg-l07-p017-state-v1.ts",
+        "bytes": 4611,
+        "sha256": "0adcb37cb251882e12b25bedc90c1c64130c0d4e83cf9d5d7b75e1f18dc331cd",
+        "templateSha256": "a78f8406ad37ad76b759bee39970e4fe677cfa39cb14eb86ccee26a6cbfecd84"
+      },
+      {
+        "path": "packages/demos/src/alg-l07-p017-session-v1.ts",
+        "bytes": 11109,
+        "sha256": "2a98c7d1a65647e72a58d0f3b3c7960cfd255e7531563c395dceaf5a10dff6ce",
+        "templateSha256": "ff95d81c4cd5a59b0ef1024aac8642600848905615ee56fb522fb28249649a03"
+      },
+      {
+        "path": "packages/demos/src/alg-l07-p017-player-v1.tsx",
+        "bytes": 7624,
+        "sha256": "b22f9781fc0c3300df01f643c6ffb18cd594057cc4fe3a6d0fd1e0a6ea39f686",
+        "templateSha256": "aa5298a920a16fbda7204b5dea2bb7f15b61682349c4735f07166f5c027f68e2"
+      }
+    ]
+  },
+  "scope": "Shared source-proven integer mapping, inverse-input and no-assignment transform; page profiles retain distinct lifetimes and popup timing.",
+  "rows": [
+    {
+      "page": "p017",
+      "rows": [
+        {
+          "path": "packages/demos/src/alg-l07-p017-state-v1.ts",
+          "bytes": 4611,
+          "sha256": "0adcb37cb251882e12b25bedc90c1c64130c0d4e83cf9d5d7b75e1f18dc331cd",
+          "templateSha256": "a78f8406ad37ad76b759bee39970e4fe677cfa39cb14eb86ccee26a6cbfecd84"
+        },
+        {
+          "path": "packages/demos/src/alg-l07-p017-session-v1.ts",
+          "bytes": 11109,
+          "sha256": "2a98c7d1a65647e72a58d0f3b3c7960cfd255e7531563c395dceaf5a10dff6ce",
+          "templateSha256": "ff95d81c4cd5a59b0ef1024aac8642600848905615ee56fb522fb28249649a03"
+        },
+        {
+          "path": "packages/demos/src/alg-l07-p017-player-v1.tsx",
+          "bytes": 7624,
+          "sha256": "b22f9781fc0c3300df01f643c6ffb18cd594057cc4fe3a6d0fd1e0a6ea39f686",
+          "templateSha256": "aa5298a920a16fbda7204b5dea2bb7f15b61682349c4735f07166f5c027f68e2"
+        }
+      ]
+    },
+    {
+      "page": "p018",
+      "rows": [
+        {
+          "path": "packages/demos/src/alg-l07-p018-state-v1.ts",
+          "bytes": 4632,
+          "sha256": "69299a578cc92f6bc470efe36ae6ed84dcc807eba5848945e7c9a452c8f0f046",
+          "templateSha256": "a78f8406ad37ad76b759bee39970e4fe677cfa39cb14eb86ccee26a6cbfecd84"
+        },
+        {
+          "path": "packages/demos/src/alg-l07-p018-session-v1.ts",
+          "bytes": 11110,
+          "sha256": "15fcd3827c31bedc7ffa6b9c597c46b4f511e76f387bff3ee3978e223457a1f4",
+          "templateSha256": "ff95d81c4cd5a59b0ef1024aac8642600848905615ee56fb522fb28249649a03"
+        },
+        {
+          "path": "packages/demos/src/alg-l07-p018-player-v1.tsx",
+          "bytes": 7624,
+          "sha256": "4588034c366c2219d13302095e3c85859beb5e0026c74a20bac0e9368d921fea",
+          "templateSha256": "aa5298a920a16fbda7204b5dea2bb7f15b61682349c4735f07166f5c027f68e2"
+        }
+      ]
+    }
+  ]
+}
