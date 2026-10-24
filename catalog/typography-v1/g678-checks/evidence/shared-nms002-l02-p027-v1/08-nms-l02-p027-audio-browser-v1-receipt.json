@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "kind": "wrong",
+      "seed": 0,
+      "domain": "98",
+      "peak": 0.08578492703459858
+    },
+    {
+      "kind": "wrong",
+      "seed": 1,
+      "domain": "77",
+      "peak": 0.15666442292872024
+    },
+    {
+      "kind": "wrong",
+      "seed": 2,
+      "domain": "62",
+      "peak": 0.2258632669382129
+    },
+    {
+      "kind": "right",
+      "seed": 0,
+      "domain": "142",
+      "peak": 0.1568895351002168
+    },
+    {
+      "kind": "right",
+      "seed": 1,
+      "domain": "171",
+      "peak": 0.15358870644448064
+    },
+    {
+      "kind": "right",
+      "seed": 2,
+      "domain": "185",
+      "peak": 0.34067904660777326
+    },
+    {
+      "kind": "right",
+      "seed": 3,
+      "domain": "154",
+      "peak": 0.08175578464755313
+    },
+    {
+      "check": "second-wrong-assisted-continuation-and-paused-input-guards"
+    },
+    {
+      "check": "pause-fraction-narration-mute-cache-Replay"
+    },
+    {
+      "check": "reject-mime",
+      "failure": "P027_AUDIO_RESPONSE"
+    },
+    {
+      "check": "reject-redirect",
+      "failure": "P027_AUDIO_UNAVAILABLE"
+    },
+    {
+      "check": "reject-corrupt",
+      "failure": "P027_AUDIO_HASH"
+    },
+    {
+      "check": "reject-truncate",
+      "failure": "P027_AUDIO_SIZE"
+    },
+    {
+      "check": "reject-oversize",
+      "failure": "P027_AUDIO_SIZE"
+    },
+    {
+      "check": "delayed-transport-cancel-retry-close",
+      "delayed": 1
+    }
+  ],
+  "errors": [],
+  "requestCount": 86,
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false
+}

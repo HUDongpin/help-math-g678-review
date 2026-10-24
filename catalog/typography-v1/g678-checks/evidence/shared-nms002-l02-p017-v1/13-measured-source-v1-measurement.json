@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "status": "one-source-stream-measured-no-audio-acceptance",
+  "sourceSwfSha256": "31782fb2a974391e32c20d88697512432f5548fd91652b74852204e218c360c0",
+  "streams": [
+    {
+      "frameDomain": "sprite-73",
+      "rawSourceFormat": 2,
+      "source": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p017-behavior-source-v1/audio/sprite-73/source-stream.mp3",
+        "bytes": 133770,
+        "sha256": "22e434ef5f7cfc97907c27cd91c5904ca5a352836e7a4940fc8e2e19e35a215c"
+      },
+      "rawSourcePayload": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p017-behavior-source-v1/audio/sprite-73/source-stream.mp3",
+        "bytes": 133770,
+        "sha256": "22e434ef5f7cfc97907c27cd91c5904ca5a352836e7a4940fc8e2e19e35a215c"
+      },
+      "rawFirstFrame": 9,
+      "rawLastFrame": 331,
+      "latencySamples": 1673,
+      "decoder": {
+        "sourceSha256": "22e434ef5f7cfc97907c27cd91c5904ca5a352836e7a4940fc8e2e19e35a215c",
+        "sourceBytes": 133770,
+        "sampleRate": 22050,
+        "channels": 1,
+        "decodedSamples": 592704,
+        "pcmSha256": "227ce928a9abe087737e383042e1e1b7bf86f54121c22704c8838b9b7536972b"
+      },
+      "ffmpegPcm": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p017-behavior-source-v1/audio/measured-source-v1/sprite-73/ffmpeg-native-rate.f32le",
+        "bytes": 2370816,
+        "sha256": "900faaf9d6fe221a5814e904ffacda062d554271461666636ec2f61ca9c89b35"
+      },
+      "browserPcm": {
+        "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p017-behavior-source-v1/audio/measured-source-v1/sprite-73/browser-full.f32le",
+        "bytes": 2370816,
+        "sha256": "227ce928a9abe087737e383042e1e1b7bf86f54121c22704c8838b9b7536972b"
+      },
+      "ffmpeg": {
+        "path": "/opt/homebrew/Cellar/ffmpeg/8.1.2_1/bin/ffmpeg",
+        "bytes": 426224,
+        "sha256": "dad4b30b36a1a999bfa4b6ffbde138bd17ee496c69e12eef638227dff2c6415c"
+      },
+      "ffmpegArgs": [
+        "-v",
+        "error",
+        "-nostdin",
+        "-xerror",
+        "-n",
+        "-i",
+        "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p017-behavior-source-v1/audio/sprite-73/source-stream.mp3",
+        "-ar",
+        "22050",
+        "-f",
+        "f32le",
+        "-acodec",
+        "pcm_f32le",
+        "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p017-behavior-source-v1/audio/measured-source-v1/sprite-73/ffmpeg-native-rate.f32le"
+      ],
+      "repeatedDecodeIdentical": true,
+      "ffmpegFullEofPassed": true,
+      "emptyNegativeBlocks": [],
+      "adpcmComparison": null,
+      "normalization": "unchanged-embedded-MP3",
+      "sourceHostVariantSelection": "unassigned-pending-exact-placed-instance-names",
+      "audioAccepted": false,
+      "originalRuntimeAccepted": false
+    }
+  ],
+  "browserVersion": "149.0.7827.55",
+  "browserExecutable": {
+    "path": "/Users/peter/Library/Caches/ms-playwright/chromium-1228/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing",
+    "bytes": 52112,
+    "sha256": "b1b9e2dd063115031f08eadc10ed381ca0fa05b2284baff8f721d87f5f0f61b7"
+  },
+  "script": {
+    "path": "/private/tmp/helpmath-nms-l02-p017-staging/measure-audio-v1.mjs",
+    "bytes": 4344,
+    "sha256": "920107b633740e6a4cd80cd78cc4c543b44a575c1f7b82fb3335a946e8b0d997"
+  },
+  "requests": [],
+  "audioAccepted": false,
+  "originalRuntimeAccepted": false
+}

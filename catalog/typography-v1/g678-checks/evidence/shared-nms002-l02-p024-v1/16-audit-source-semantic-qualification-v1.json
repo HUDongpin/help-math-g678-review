@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l02-p024",
+  "sourceSha256": "ecdf064c4daa9dcc496a982eeb3aaa4a599a402fff2db1ec30b448b0b34fb082",
+  "lane": "advanced-manual",
+  "complexity": "behavior-heavy",
+  "reason": "Source drag/drop clip actions, masked bilingual-glossary instruction, instructional cursor/balloon animation, wrong popup and correct-coach/right-feedback clocks require a maintained native state machine and accessible pointer/keyboard equivalent. No bulk scale-out.",
+  "sourceSummary": {
+    "shapes": 73,
+    "retainedShapes": 53,
+    "bitmaps": 1,
+    "textDefinitions": 11,
+    "textRuns": 16,
+    "fonts": 2,
+    "buttons": 3,
+    "actionScriptFiles": 23,
+    "domains": 9,
+    "localFrames": 269
+  },
+  "roles": {
+    "1": "Native heading, math, controls, number-line geometry, feedback panel or mask interpretation",
+    "2": "Native heading, math, controls, number-line geometry, feedback panel or mask interpretation",
+    "3": "Native heading, math, controls, number-line geometry, feedback panel or mask interpretation",
+    "7": "Native heading, math, controls, number-line geometry, feedback panel or mask interpretation",
+    "8": "Source balloon/cursor illustration retained in source-clock order",
+    "9": "Source balloon/cursor illustration retained in source-clock order",
+    "10": "Source balloon/cursor illustration retained in source-clock order",
+    "11": "Source balloon/cursor illustration retained in source-clock order",
+    "12": "Source balloon/cursor illustration retained in source-clock order",
+    "13": "Source balloon/cursor illustration retained in source-clock order",
+    "14": "Source balloon/cursor illustration retained in source-clock order",
+    "15": "Source balloon/cursor illustration retained in source-clock order",
+    "16": "Source balloon/cursor illustration retained in source-clock order",
+    "17": "Source balloon/cursor illustration retained in source-clock order",
+    "18": "Source balloon/cursor illustration retained in source-clock order",
+    "19": "Source balloon/cursor illustration retained in source-clock order",
+    "20": "Source balloon/cursor illustration retained in source-clock order",
+    "21": "Source balloon/cursor illustration retained in source-clock order",
+    "22": "Source balloon/cursor illustration retained in source-clock order",
+    "23": "Source balloon/cursor illustration retained in source-clock order",
+    "24": "Source balloon/cursor illustration retained in source-clock order",
+    "25": "Source balloon/cursor illustration retained in source-clock order",
+    "26": "Source balloon/cursor illustration retained in source-clock order",
+    "27": "Source balloon/cursor illustration retained in source-clock order",
+    "28": "Source balloon/cursor illustration retained in source-clock order",
+    "29": "Source balloon/cursor illustration retained in source-clock order",
+    "30": "Source balloon/cursor illustration retained in source-clock order",
+    "31": "Source balloon/cursor illustration retained in source-clock order",
+    "32": "Source balloon/cursor illustration retained in source-clock order",
+    "33": "Source balloon/cursor illustration retained in source-clock order",
+    "34": "Source balloon/cursor illustration retained in source-clock order",
+    "35": "Source balloon/cursor illustration retained in source-clock order",
+    "36": "Source balloon/cursor illustration retained in source-clock order",
+    "37": "Source balloon/cursor illustration retained in source-clock order",
+    "38": "Source balloon/cursor illustration retained in source-clock order",
+    "39": "Source balloon/cursor illustration retained in source-clock order",
+    "40": "Source balloon/cursor illustration retained in source-clock order",
+    "41": "Source balloon/cursor illustration retained in source-clock order",
+    "42": "Source balloon/cursor illustration retained in source-clock order",
+    "43": "Source balloon/cursor illustration retained in source-clock order",
+    "44": "Source balloon/cursor illustration retained in source-clock order",
+    "45": "Source balloon/cursor illustration retained in source-clock order",
+    "46": "Source balloon/cursor illustration retained in source-clock order",
+    "47": "Source balloon/cursor illustration retained in source-clock order",
+    "48": "Source balloon/cursor illustration retained in source-clock order",
+    "49": "Source balloon/cursor illustration retained in source-clock order",
+    "50": "Source balloon/cursor illustration retained in source-clock order",
+    "51": "Source balloon/cursor illustration retained in source-clock order",
+    "52": "Source balloon/cursor illustration retained in source-clock order",
+    "53": "Source balloon/cursor illustration retained in source-clock order",
+    "54": "Source balloon/cursor illustration retained in source-clock order",
+    "55": "Source balloon/cursor illustration retained in source-clock order",
+    "56": "Source balloon/cursor illustration retained in source-clock order",
+    "58": "Native heading, math, controls, number-line geometry, feedback panel or mask interpretation",
+    "59": "Native heading, math, controls, number-line geometry, feedback panel or mask interpretation",
+    "61": "Native heading, math, controls, number-line geometry, feedback panel or mask interpretation",
+    "63": "Source balloon/cursor illustration retained in source-clock order",
+    "64": "Native heading, math, controls, number-line geometry, feedback panel or mask interpretation",
+    "66": "Native heading, math, controls, number-line geometry, feedback panel or mask interpretation",
+    "67": "Source balloon/cursor illustration retained in source-clock order",
+    "70": "Source balloon/cursor illustration retained in source-clock order",
+    "72": "Source balloon/cursor illustration retained in source-clock order",
+    "74": "Native heading, math, controls, number-line geometry, feedback panel or mask interpretation",
+    "78": "Native heading, math, controls, number-line geometry, feedback panel or mask interpretation",
+    "79": "Native heading, math, controls, number-line geometry, feedback panel or mask interpretation",
+    "80": "Native heading, math, controls, number-line geometry, feedback panel or mask interpretation",
+    "81": "Native heading, math, controls, number-line geometry, feedback panel or mask interpretation",
+    "83": "Native heading, math, controls, number-line geometry, feedback panel or mask interpretation",
+    "84": "Native heading, math, controls, number-line geometry, feedback panel or mask interpretation",
+    "85": "Native heading, math, controls, number-line geometry, feedback panel or mask interpretation",
+    "86": "Native heading, math, controls, number-line geometry, feedback panel or mask interpretation",
+    "88": "Native heading, math, controls, number-line geometry, feedback panel or mask interpretation",
+    "90": "Native heading, math, controls, number-line geometry, feedback panel or mask interpretation"
+  },
+  "teaching": {
+    "intervals": 12,
+    "sourceTarget": "Mc_Tar_0",
+    "sourceTargetDomain": "73",
+    "sourceTargetPosition": [
+      -166.9,
+      18.7
+    ],
+    "sourceDrag": "Scr_0",
+    "sourceDragDomain": "71",
+    "sourceDragStart": [
+      -8.5,
+      -38.5
+    ],
+    "answer": [
+      1,
+      4
+    ],
+    "nativeTargetIndex": 3,
+    "nativeDrop": "Project balloon string endpoint to nearest of13equal ticks; require in-axis horizontal range and32CSSpixel vertical band. Accept only index3. This is an explicit accessible native hit-test adaptation, not Flash _droptarget parity.",
+    "demo": "Source moves the bundle left toward about1/6 and back during51..91. This is a generic drag demonstration, not a demonstrated correct answer; source coordinates are retained."
+  },
+  "sourceActions": {
+    "mainStop": 92,
+    "finalStop": 93,
+    "wrong": {
+      "domain": "93",
+      "start": 2,
+      "hold": 15,
+      "close": "hide Pop1_mc; enableMC; NMHBtn enabled"
+    },
+    "correctCoach": {
+      "domain": "95",
+      "start": 2,
+      "triggerRight": 20,
+      "loopToStopped1": true
+    },
+    "right": {
+      "domain": "77",
+      "start": 2,
+      "end": 25,
+      "parentAdvance": 93
+    },
+    "dormantCoach": {
+      "domain": "97",
+      "labels": [
+        {
+          "name": "S1",
+          "start": 3,
+          "end": 16
+        },
+        {
+          "name": "S2",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "name": "S3",
+          "start": 31,
+          "end": 36
+        },
+        {
+          "name": "S4",
+          "start": 40,
+          "end": 54
+        }
+      ],
+      "reason": "No page-authored call reaches Coach_audio_1. Preserve source byte/branch inventory; do not invent a call."
+    },
+    "qualifications": [
+      "Only Scr_0 is placed although enableMC/disableMC loops0..9. Do not create ten draggables.",
+      "NMHBtn and Mc_Popup are not placed. Preserve no-op/host dependency evidence; no invented More Help button.",
+      "Sprite93 assigns txtFeed.text but the source has no dynamic text field. Display the authored static Divide/Try again explanation, not an invented global WrongFeed.",
+      "One successful drop sets quizDragCount1, hides Scr_0 and reveals Mc_Tar_0; Coach95triggersRight77thenmain93.",
+      "Native locks remain during correct feedback, even though source enables hidden Scr_0 before its right feedback."
+    ]
+  },
+  "wrongText": {
+    "before": "Divide the number line into four equal parts.",
+    "fraction": [
+      1,
+      4
+    ],
+    "after": "is one of four equal parts. Try again."
+  },
+  "sourceTextDispositions": {
+    "94": "offstage Coach_audio_2 helper label",
+    "96": "offstage Coach_audio_1 helper label"
+  },
+  "sourceTeaching": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p024-behavior-source-v1/source-teaching-semantics-v1.json",
+    "bytes": 124355,
+    "sha256": "f6d11e009e40c8d5ada0d429bc2e600d9e5f5d66ace14f51e25307cd3bf1d858"
+  },
+  "sourceTerms": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p024-behavior-source-v1/source-terms-v1.json",
+    "bytes": 2600,
+    "sha256": "3567aa18ddc4c5107621c0ecb078cf01603977d661ddf2a7cc1ad9b1ddfdf385"
+  },
+  "audio": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p024-behavior-source-v1/audio/measured-source-v1/measurement.json",
+    "bytes": 12186,
+    "sha256": "9d10c4001970f6b69c197b3e256c37908ea29d1aa0b4d049c01cba3531a79a41"
+  },
+  "nativeAdaptations": [
+    "Exactly12equal intervals; accept only third tick, one fourth. Native string-tip nearest-tick hit testing with32CSSpixel vertical band replaces source _droptarget.",
+    "Pointer and touch drag preserve grab offset. Keyboard Space selects, arrows move by1/12, Enter places and Escape cancels. No extra draggable or visible answer target is introduced.",
+    "Native wrong modal shows the authored four-equal-parts explanation with1/4MathML; Close restores retry. Correct source coach then Correct!!! feedback lead to source final93.",
+    "Source input is locked throughout correct feedback even though the original enables its already-hidden draggable atCoach20.",
+    "Native types replace outlined heading1, source text and fraction rule90. Source balloon vectors retained; instructional cursor uses source vector63 with a clearer modern rendering. Source rastercursor65 is classified, not teaching text.",
+    "Main92holds for interaction; Replay resets introduction, drag state, feedback and source clocks. Term modals pause until close and explicitResume.",
+    "Source English instruction and audio fallback are disclosed on SpanishUI; native controls and exact source glossary definitions bilingual."
+  ],
+  "sourceQualifications": [
+    "Only Scr_0 is placed although enableMC/disableMC loops0..9. Do not create ten draggables.",
+    "NMHBtn and Mc_Popup are not placed. Preserve no-op/host dependency evidence; no invented More Help button.",
+    "Sprite93 assigns txtFeed.text but the source has no dynamic text field. Display the authored static Divide/Try again explanation, not an invented global WrongFeed.",
+    "One successful drop sets quizDragCount1, hides Scr_0 and reveals Mc_Tar_0; Coach95triggersRight77thenmain93.",
+    "Native locks remain during correct feedback, even though source enables hidden Scr_0 before its right feedback.",
+    "All73shapes and1cursor bitmap inspected.27source composite frames captured; selected intro/drag/feedback checkpoints inspected. No Adobe runtime execution.",
+    "All9domains are source-related dictionary timelines; Coach97 and later unplayed balloon57frames remain inventoried without a natural-trace claim."
+  ],
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false,
+  "humanAccepted": false,
+  "ownerAccepted": false,
+  "strictComplete": false,
+  "published": false,
+  "registered": false
+}

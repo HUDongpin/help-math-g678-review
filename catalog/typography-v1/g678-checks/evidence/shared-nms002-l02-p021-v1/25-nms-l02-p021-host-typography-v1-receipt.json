@@ -1,0 +1,337 @@
+{
+  "status": "FAIL",
+  "results": [
+    {
+      "status": "FAIL",
+      "profile": {
+        "id": "small-en",
+        "width": 320,
+        "dpr": 1,
+        "lang": "en"
+      },
+      "errors": [],
+      "failure": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(row.stageScroll<=row.stageClient+1)\n\n    at run (file:///private/tmp/helpmath-nms-l02-p021-staging/qa-host-typography-v1.mjs:7:1008)\n    at async file:///private/tmp/helpmath-nms-l02-p021-staging/qa-host-typography-v1.mjs:10:61"
+    },
+    {
+      "status": "PASS",
+      "profile": {
+        "id": "phone-es",
+        "width": 390,
+        "dpr": 3,
+        "lang": "es"
+      },
+      "readyMs": [
+        2225,
+        2171
+      ],
+      "firstPlayMs": 989,
+      "initial": {
+        "contentLanguage": "en",
+        "bodyFont": "\"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, sans-serif",
+        "headingFont": "\"HELP Math Fredoka\", \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, sans-serif",
+        "contexts": 0,
+        "frame": 1
+      },
+      "finalFrame": 470,
+      "semantics": {
+        "frame": 470,
+        "parts": 20,
+        "selected": "0,19",
+        "checkboxes": 20,
+        "glyphText": 0
+      },
+      "layout": [
+        {
+          "zoom": 1,
+          "width": 390,
+          "pageScroll": 390,
+          "stageClient": 348,
+          "stageScroll": 348,
+          "equationClient": 323,
+          "equationScroll": 323,
+          "controlOverflow": [],
+          "frame": 470,
+          "parts": 20,
+          "contexts": 1
+        },
+        {
+          "zoom": 2,
+          "width": 390,
+          "pageScroll": 390,
+          "stageClient": 308,
+          "stageScroll": 308,
+          "equationClient": 274,
+          "equationScroll": 274,
+          "controlOverflow": [],
+          "frame": 470,
+          "parts": 20,
+          "contexts": 1
+        }
+      ],
+      "restoration": {
+        "page": "21",
+        "frame": 1,
+        "contexts": 0
+      },
+      "errors": [],
+      "failure": null
+    },
+    {
+      "status": "PASS",
+      "profile": {
+        "id": "tablet-es",
+        "width": 768,
+        "dpr": 2,
+        "lang": "es"
+      },
+      "readyMs": [
+        2280,
+        2208
+      ],
+      "firstPlayMs": 1043,
+      "initial": {
+        "contentLanguage": "en",
+        "bodyFont": "\"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, sans-serif",
+        "headingFont": "\"HELP Math Fredoka\", \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, sans-serif",
+        "contexts": 0,
+        "frame": 1
+      },
+      "finalFrame": 470,
+      "semantics": {
+        "frame": 470,
+        "parts": 20,
+        "selected": "0,19",
+        "checkboxes": 20,
+        "glyphText": 0
+      },
+      "layout": [
+        {
+          "zoom": 1,
+          "width": 768,
+          "pageScroll": 768,
+          "stageClient": 553,
+          "stageScroll": 553,
+          "equationClient": 505,
+          "equationScroll": 505,
+          "controlOverflow": [],
+          "frame": 470,
+          "parts": 20,
+          "contexts": 1
+        },
+        {
+          "zoom": 2,
+          "width": 768,
+          "pageScroll": 768,
+          "stageClient": 366,
+          "stageScroll": 366,
+          "equationClient": 318,
+          "equationScroll": 318,
+          "controlOverflow": [],
+          "frame": 470,
+          "parts": 20,
+          "contexts": 1
+        }
+      ],
+      "restoration": {
+        "page": "21",
+        "frame": 1,
+        "contexts": 0
+      },
+      "errors": [],
+      "failure": null
+    },
+    {
+      "status": "PASS",
+      "profile": {
+        "id": "laptop-en",
+        "width": 1280,
+        "dpr": 1,
+        "lang": "en"
+      },
+      "readyMs": [
+        2210,
+        2159
+      ],
+      "firstPlayMs": 1025,
+      "initial": {
+        "contentLanguage": "en",
+        "bodyFont": "\"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, sans-serif",
+        "headingFont": "\"HELP Math Fredoka\", \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, sans-serif",
+        "contexts": 0,
+        "frame": 1
+      },
+      "finalFrame": 470,
+      "semantics": {
+        "frame": 470,
+        "parts": 20,
+        "selected": "0,19",
+        "checkboxes": 20,
+        "glyphText": 0
+      },
+      "layout": [
+        {
+          "zoom": 1,
+          "width": 1280,
+          "pageScroll": 1265,
+          "stageClient": 951,
+          "stageScroll": 951,
+          "equationClient": 885,
+          "equationScroll": 885,
+          "controlOverflow": [],
+          "frame": 470,
+          "parts": 20,
+          "contexts": 1
+        },
+        {
+          "zoom": 2,
+          "width": 1280,
+          "pageScroll": 1265,
+          "stageClient": 703,
+          "stageScroll": 703,
+          "equationClient": 624,
+          "equationScroll": 624,
+          "controlOverflow": [],
+          "frame": 470,
+          "parts": 20,
+          "contexts": 1
+        }
+      ],
+      "restoration": {
+        "page": "21",
+        "frame": 1,
+        "contexts": 0
+      },
+      "errors": [],
+      "failure": null
+    },
+    {
+      "status": "PASS",
+      "profile": {
+        "id": "desktop-en",
+        "width": 1440,
+        "dpr": 2,
+        "lang": "en"
+      },
+      "readyMs": [
+        2257,
+        2268
+      ],
+      "firstPlayMs": 1036,
+      "initial": {
+        "contentLanguage": "en",
+        "bodyFont": "\"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, sans-serif",
+        "headingFont": "\"HELP Math Fredoka\", \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, sans-serif",
+        "contexts": 0,
+        "frame": 1
+      },
+      "finalFrame": 470,
+      "semantics": {
+        "frame": 470,
+        "parts": 20,
+        "selected": "0,19",
+        "checkboxes": 20,
+        "glyphText": 0
+      },
+      "layout": [
+        {
+          "zoom": 1,
+          "width": 1440,
+          "pageScroll": 1425,
+          "stageClient": 1111,
+          "stageScroll": 1111,
+          "equationClient": 1045,
+          "equationScroll": 1045,
+          "controlOverflow": [],
+          "frame": 470,
+          "parts": 20,
+          "contexts": 1
+        },
+        {
+          "zoom": 2,
+          "width": 1440,
+          "pageScroll": 1425,
+          "stageClient": 855,
+          "stageScroll": 855,
+          "equationClient": 767,
+          "equationScroll": 767,
+          "controlOverflow": [],
+          "frame": 470,
+          "parts": 20,
+          "contexts": 1
+        }
+      ],
+      "restoration": {
+        "page": "21",
+        "frame": 1,
+        "contexts": 0
+      },
+      "errors": [],
+      "failure": null
+    },
+    {
+      "status": "PASS",
+      "profile": {
+        "id": "wide-es",
+        "width": 1920,
+        "dpr": 1,
+        "lang": "es"
+      },
+      "readyMs": [
+        2379,
+        2176
+      ],
+      "firstPlayMs": 1017,
+      "initial": {
+        "contentLanguage": "en",
+        "bodyFont": "\"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, sans-serif",
+        "headingFont": "\"HELP Math Fredoka\", \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, sans-serif",
+        "contexts": 0,
+        "frame": 1
+      },
+      "finalFrame": 470,
+      "semantics": {
+        "frame": 470,
+        "parts": 20,
+        "selected": "0,19",
+        "checkboxes": 20,
+        "glyphText": 0
+      },
+      "layout": [
+        {
+          "zoom": 1,
+          "width": 1920,
+          "pageScroll": 1905,
+          "stageClient": 1543,
+          "stageScroll": 1543,
+          "equationClient": 1477,
+          "equationScroll": 1477,
+          "controlOverflow": [],
+          "frame": 470,
+          "parts": 20,
+          "contexts": 1
+        },
+        {
+          "zoom": 2,
+          "width": 1920,
+          "pageScroll": 1905,
+          "stageClient": 1311,
+          "stageScroll": 1311,
+          "equationClient": 1194,
+          "equationScroll": 1194,
+          "controlOverflow": [],
+          "frame": 470,
+          "parts": 20,
+          "contexts": 1
+        }
+      ],
+      "restoration": {
+        "page": "21",
+        "frame": 1,
+        "contexts": 0
+      },
+      "errors": [],
+      "failure": null
+    }
+  ],
+  "scope": "Six fresh actual My Lesson profiles, serial isolated browser sessions, natural introduction then20-part keyboard interaction, EN/ES100/200percent typography, reload restoration. No production-performance or original-runtime acceptance."
+}

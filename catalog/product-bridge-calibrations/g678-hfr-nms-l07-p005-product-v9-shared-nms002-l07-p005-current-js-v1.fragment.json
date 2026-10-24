@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "private-current-js-calibration-fragment-v1",
+  "freeze": {
+    "path": "catalog/product-bridge-calibrations/g678-hfr-nms-l07-p005-product-v9-shared-nms002-l07-p005-current-js-v1.json",
+    "bytes": 219334,
+    "sha256": "499c96a4b3e24996195389c407710b86f283682cc71c40874251c1930d2d7f67"
+  },
+  "calibration": {
+    "calibrationId": "g678-hfr-nms-l07-p005-product-v9-shared-nms002-l07-p005-current-js-v1",
+    "deploymentScope": "local-only",
+    "freezeManifest": "catalog/product-bridge-calibrations/g678-hfr-nms-l07-p005-product-v9-shared-nms002-l07-p005-current-js-v1.json",
+    "freezeManifestBytes": 219334,
+    "freezeManifestSha256": "499c96a4b3e24996195389c407710b86f283682cc71c40874251c1930d2d7f67",
+    "entries": [
+      {
+        "key": "shared-nms002-l07-p005",
+        "module": "./modules/shared-nms002-l07-p005",
+        "maturity": "private-current-js",
+        "complexityLane": "interactive-understood",
+        "artifacts": {
+          "kind": "generated-typescript-hfr-v1",
+          "module": {
+            "path": "packages/demos/src/modules/shared-nms002-l07-p005.tsx",
+            "bytes": 46839,
+            "sha256": "aeff48a02b6d35e2c0c9b315178874fdaf3f49dfe38116feea947adf1c3993ee"
+          },
+          "generated": {
+            "path": "packages/demos/src/hfr-pages/shared-nms002-l07-p005.ts",
+            "bytes": 2112,
+            "sha256": "b4efc9616ef0268b0bcd1a979eab1a593882a9131794a78d118a0feeb61e0625"
+          },
+          "data": {
+            "path": "work/g678-shared-page-factory/hfr-ts-nms-l07-p005-product-v9/members/shared-nms002-l07-p005/shared-nms002-l07-p005.data.json",
+            "bytes": 139547,
+            "sha256": "4b8a4a279f94efd0d56fcec3c831f61f705a1e2aab5abaeed629f7353cc6ebee"
+          },
+          "closure": {
+            "path": "work/g678-shared-page-factory/hfr-ts-nms-l07-p005-product-v9/members/shared-nms002-l07-p005/artifact-closure.json",
+            "bytes": 8682,
+            "sha256": "7babea116c3782cc73c82669c8986f2d9a7a7448f3f79a86b85878989973bbc2"
+          }
+        }
+      }
+    ]
+  }
+}

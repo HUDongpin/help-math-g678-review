@@ -1,0 +1,36 @@
+{
+  "animationId": "shared-nms002-l02-p006",
+  "sourceSha256": "b6afc05a82304d3e0721933c2b4c3f1d8740fc46699125b1ff5149e096601b4e",
+  "domains": [
+    {
+      "frameDomainId": "root",
+      "sourceFrames": 10,
+      "disposition": "retained source pure query",
+      "terminalPolicy": "stop6",
+      "originalRuntimeCaptured": false
+    },
+    {
+      "frameDomainId": "sprite-30",
+      "sourceFrames": 17,
+      "disposition": "retained source pure query",
+      "terminalPolicy": "loop;parent placement age",
+      "originalRuntimeCaptured": false
+    },
+    {
+      "frameDomainId": "sprite-54",
+      "sourceFrames": 153,
+      "disposition": "retained source pure query",
+      "terminalPolicy": "stop153 with modern host pause",
+      "originalRuntimeCaptured": false
+    },
+    {
+      "frameDomainId": "sprite-57",
+      "sourceFrames": 1,
+      "disposition": "retained source pure query",
+      "terminalPolicy": "loop;parent placement age",
+      "originalRuntimeCaptured": false
+    }
+  ],
+  "sourceReachability": "root6->54,57;54->two30instances;no child Stop",
+  "strictAcceptance": false
+}

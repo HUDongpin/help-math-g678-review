@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l02-p018",
+  "sourceSha256": "4edc7317ccc46c54f95432b0e29c167d0f6246dcdf347da550831d46a7a96510",
+  "lane": "advanced-manual",
+  "complexity": "interactive-understood",
+  "reason": "One bounded source Fractions instruction with two glossary calls, numerator/denominator emphasis, five source morph shapes and sequential half-circle construction/caption masks. Native semantic responsive math and maintained diagram state. No bulk scale-out.",
+  "inspectedArtifacts": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p018-source-atlas-v2/receipt.json",
+      "bytes": 512,
+      "sha256": "a5baa1ddec071e17e8d5aff89fff8d1f377054af74d8c25b13faeadd79cd229c"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p018-source-composed-v1/receipt.json",
+      "bytes": 6557,
+      "sha256": "6aec8fbdf1d1ab03b03f7a45f2e0b7dfab3e1a4c0bd8a9cba846a3f3b8e6beab"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p018-source-text-visibility-v1/receipt.json",
+      "bytes": 1932,
+      "sha256": "86a1af001e5ee4bb08c017c769e74d6e78f44d1cd8d28e00084b66c66621a81d"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p018-source-terms-v1/receipt.json",
+      "bytes": 4116,
+      "sha256": "fc5c6f2ade5fc951b692a7a7960e1f63a1551d8276d171589d23b75cfd7c9569"
+    }
+  ],
+  "all16SourceShapesInspected": true,
+  "sourceTextDefinitions": 9,
+  "sourceTextRuns": 12,
+  "sourceBitmaps": 0,
+  "roles": {
+    "1": "Native course/Instruction heading",
+    "2": "Modern responsive teaching panel",
+    "3": "Native Fraction underline and symbolic MathML fraction bar",
+    "6": "Native keyboard term hit target",
+    "10": "Native exact circle outline matching source concept and appearance clock",
+    "13": "Source growing split-line progression mapped into native diameter",
+    "14": "Native complete diameter",
+    "15": "Native red semicircle with exact half area",
+    "16": "Source growing arrow-shaft progression into native arrow",
+    "17": "Source moving arrowhead progression into native arrow",
+    "18": "Native complete pointer arrow",
+    "19": "Morph mask measured into native caption glyph visibility",
+    "20": "Native numerical MathML fraction bar and Circle underline",
+    "25": "First caption completed-mask state",
+    "26": "Second caption morph mask measured into native glyph visibility",
+    "28": "Final two-line caption mask"
+  },
+  "suppressedShapeIds": [
+    1,
+    2,
+    3,
+    6,
+    10,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    25,
+    26,
+    28
+  ],
+  "retainedShapeIds": [],
+  "teaching": {
+    "formula": "Fractions = numerator / denominator",
+    "fractionExample": [
+      1,
+      2
+    ],
+    "captionLines": [
+      "of the circle or 1 out of 2 ",
+      "parts of the circle is colored red.  "
+    ],
+    "completeTermFrames": {
+      "Fraction": 2,
+      "Circle": 234
+    },
+    "formulaFirstFrame": 2,
+    "numeratorEmphasisFrames": [
+      30,
+      32,
+      34,
+      36
+    ],
+    "denominatorEmphasisFrames": [
+      75,
+      77,
+      79,
+      81
+    ],
+    "circleFirstFrame": 148,
+    "circleFullFrame": 152,
+    "splitLineStartFrame": 175,
+    "splitLineFullFrame": 184,
+    "redFirstFrame": 187,
+    "redFullFrame": 190,
+    "arrowStartFrame": 210,
+    "arrowFullFrame": 216,
+    "fractionFirstFrame": 226,
+    "captionFirstFrame": 228,
+    "circleFirstInk": 231,
+    "circleCompleteFrame": 234,
+    "captionLineOneCompleteFrame": 257,
+    "captionLineTwoFirstFrame": 264,
+    "captionLineTwoCompleteFrame": 286
+  },
+  "nativeGeometryPolicy": "Normalize the approximately circular source drawing to a true circle and exact red half; retain source split-line and arrow progression ratios and appearance clocks. Native red/outline contrast and responsive layout are adaptations, not pixel fidelity. Source line13 starts with7.3/107.95 of its final length; interpolation uses its exact source morph ratio. Source arrow16/17 uses the same ratio per frame before final18.",
+  "sourceDomain": {
+    "rootFrames": 10,
+    "rootStop": 6,
+    "mainSprite": 29,
+    "mainFrames": 293,
+    "fps": 12,
+    "mainStopActions": [],
+    "defaultPlayback": "loop"
+  },
+  "modernHostPolicy": "One293/12second cycle then hold293; source-loop query separate, Replay resets1.",
+  "reducedMotionPolicy": "Hold numerator highlight through30..36 and denominator75..81 instead of blinking. Split line/arrow growth remains source-timed semantic diagram construction.",
+  "audioPolicy": {
+    "sourceSha256": "f1451b7ab0cfaa3d55b8fef79cfd6a3f31c7ebe834aa4bc50062cb7a2bc83ddb",
+    "sourceBytes": 117650,
+    "decodedSamples": 521280,
+    "latencySamples": 1673,
+    "sampleRate": 22050,
+    "sourceStartSample": 1673,
+    "sourceEndSample": 521280,
+    "outputStartSample": 16538,
+    "outputEndSample": 536145,
+    "stopSamples": 538388,
+    "roundedSourceOffsetErrorSamples": 0.5,
+    "allPostLatencySamplesPreservedExactlyOnce": true,
+    "limits": "Engineering mapping from source10..293contiguous MP3 blocks; original-runtime listening/alignment remains unaccepted."
+  },
+  "originalRuntimeAccepted": false,
+  "fidelityAccepted": false,
+  "registered": false
+}

@@ -1,0 +1,87 @@
+{
+  "status": "FAIL",
+  "rows": [
+    {
+      "check": "registered-My-Lesson-initial",
+      "phase": "intro",
+      "frame": 1,
+      "parts": 1,
+      "round": 0,
+      "correct": 0,
+      "outcome": "none",
+      "feedback": "none",
+      "replay": 0,
+      "audio": "paused",
+      "contexts": [],
+      "starts": 0
+    },
+    {
+      "check": "all-five-protected-streams-main-stop470",
+      "phase": "exercise",
+      "frame": 470,
+      "parts": 1,
+      "round": 1,
+      "correct": 0,
+      "outcome": "none",
+      "feedback": "none",
+      "replay": 0,
+      "audio": "paused",
+      "contexts": [
+        "running"
+      ],
+      "starts": 1
+    },
+    {
+      "check": "wrong-retry-keyboard-focus-and-first-correct",
+      "phase": "exercise",
+      "frame": 470,
+      "parts": 3,
+      "round": 1,
+      "correct": 1,
+      "outcome": "correct",
+      "feedback": "none",
+      "replay": 0,
+      "audio": "playing",
+      "contexts": [
+        "running"
+      ],
+      "starts": 7
+    },
+    {
+      "check": "actual-host-mute-with-active-press-source",
+      "gain": 0,
+      "rms": 0,
+      "starts": 9
+    }
+  ],
+  "errors": [],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p021/source-audio/578?sha256=50b5ab29703fbf5630e2039076dfddae8f72593df607b61659fa30bb855a9c00",
+      "status": 200,
+      "bytes": "212550"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p021/source-audio/577?sha256=e551e71005de2df6e95d44ca10fba65b6ae0131032336e67b2609c71b798e8cf",
+      "status": 200,
+      "bytes": "21840"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p021/source-audio/575?sha256=60a0282805dc064fee56e28c5832f7cc965ca813c63cd10a4f9fb3450545b35e",
+      "status": 200,
+      "bytes": "7800"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p021/source-audio/29?sha256=ad4a86a727b8d4b5379655258cdffc62f85f89cb460a96565fad27d975a2aa38",
+      "status": 200,
+      "bytes": "1950"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p021/source-audio/557?sha256=ad4a86a727b8d4b5379655258cdffc62f85f89cb460a96565fad27d975a2aa38",
+      "status": 200,
+      "bytes": "1950"
+    }
+  ],
+  "failure": "page.waitForFunction: Timeout 10000ms exceeded.\n    at /private/tmp/helpmath-nms-l02-p021-staging/qa-real-host-v2.mjs:10:469",
+  "scope": "Actual local My Lesson source-based exercise and audio controls; no original-runtime or human acceptance."
+}

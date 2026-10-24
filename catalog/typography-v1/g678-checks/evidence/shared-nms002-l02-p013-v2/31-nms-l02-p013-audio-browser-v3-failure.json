@@ -1,0 +1,85 @@
+{
+  "failure": "page.waitForFunction: Timeout 30000ms exceeded.\n    at /private/tmp/helpmath-nms-l02-p013-staging/check-audio-browser-v3.mjs:18:187",
+  "checks": [
+    {
+      "check": "close-press-audio-concurrent-with-wrong-close-does-not-stop-wrong",
+      "rms": 0.05202879529844385,
+      "frame": 3,
+      "wrong": true
+    },
+    {
+      "check": "all-four-wrong-source-segments-have-real-browser-signal",
+      "branches": [
+        {
+          "branch": 2,
+          "signal": 0.005114573756240702
+        },
+        {
+          "branch": 0,
+          "signal": 0.00955865545207714
+        },
+        {
+          "branch": 0,
+          "signal": 0.00955865545207714
+        },
+        {
+          "branch": 2,
+          "signal": 0.003201834393940911
+        },
+        {
+          "branch": 1,
+          "signal": 0.003390298955310938
+        },
+        {
+          "branch": 0,
+          "signal": 0.00955865545207714
+        },
+        {
+          "branch": 1,
+          "signal": 0.009980421286516113
+        },
+        {
+          "branch": 1,
+          "signal": 0.009980421286516113
+        },
+        {
+          "branch": 0,
+          "signal": 0.016382968622124648
+        },
+        {
+          "branch": 2,
+          "signal": 0.003201834393940911
+        },
+        {
+          "branch": 1,
+          "signal": 0.023268116764119606
+        },
+        {
+          "branch": 2,
+          "signal": 0.003201834393940911
+        },
+        {
+          "branch": 1,
+          "signal": 0.023268116764119606
+        },
+        {
+          "branch": 0,
+          "signal": 0.00955865545207714
+        },
+        {
+          "branch": 3,
+          "signal": 0.0015007164726226923
+        }
+      ]
+    }
+  ],
+  "requests": [
+    "/",
+    "/bundle.js",
+    "/audio/123",
+    "/audio/107",
+    "/audio/111",
+    "/audio/99"
+  ],
+  "errors": []
+}

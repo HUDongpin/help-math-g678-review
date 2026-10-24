@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l02-p029",
+  "sourceSha256": "4def014cda62cdfee43006ddbc1ce5b194ee89740f6576c886503b70c905fe30",
+  "checkedAt": "2026-09-19T15:03:50.349553+00:00",
+  "sourceSpec": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p029-source-spec-v1.json",
+    "bytes": 19548,
+    "sha256": "88ec800efa3d73c4bac58ba0096e6b75ab5d8ebfff33f0c25f6a4221e5b500c0"
+  },
+  "riskDispositions": [
+    {
+      "kind": "shape-text-unclassified",
+      "disposition": "All21 source shapes classified in source spec. Shape8 supplies native course heading and activity title;13/28 are glossary underlines;10 supplies100cellgrid with15 shaded cells and seven-column chart;31/32/33 are counting highlights;35/36/37/39/41/43/45/47/48 are outlined emphasis labels and numerals. Other shapes are panels or dormant button chrome. Native horizontal table labels and bounded scrolling are explicit adaptations; source31 protrusion maps to the same bottom-left cell.",
+      "evidence": [
+        {
+          "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p029-source-spec-v1.json",
+          "bytes": 19548,
+          "sha256": "88ec800efa3d73c4bac58ba0096e6b75ab5d8ebfff33f0c25f6a4221e5b500c0"
+        },
+        {
+          "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p029-behavior-source-v1/source-teaching-semantics-v1.json",
+          "bytes": 3222477,
+          "sha256": "990bb672fcd61837a241f7f2c555e2e228732796f996780e5c84c58487518a0b"
+        },
+        {
+          "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/lesson-animation-title-clarity-v1/receipt.json",
+          "bytes": 7761,
+          "sha256": "01681801c60adcaed2132e6a4bc5231fe607d80a8f538553a81084ffeb02c4ff"
+        }
+      ]
+    },
+    {
+      "kind": "button-runtime-state-and-actions-not-interpreted",
+      "disposition": "Three placed source glossary buttons15/16/30 set exact KeyAttribute Ones group/Decimal/Place value, call DoHyperLinks and stop animation. Typed host pauses and requires explicit resume. Exported button7 need is unplaced and adds no invented action.",
+      "evidence": [
+        {
+          "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p029-behavior-source-v1/source-terms-v1.json",
+          "bytes": 3774,
+          "sha256": "7737d8401d6d888c23130fa6f45bcc53caf4261457f3faa4d78afb5cc20f035a"
+        },
+        {
+          "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p029-real-host-qa-v1/receipt.json",
+          "bytes": 1321,
+          "sha256": "bee0721ee7f0bdcad9219201da34e208dcf4beeb52dbda2eaa55de7b809ccc6d"
+        }
+      ]
+    },
+    {
+      "kind": "actionscript-visibility-and-values-not-interpreted",
+      "disposition": "Root preloader stop1 and entry stop6 source facts retained. Main49 has383frames and no AS actions; child source loops, modern once/finalhold is qualified. All383 source frames queried, repeated text11 instances distinguished by depth/generation. Source emphasis/counting and reduced-motion intervals explicitly bound. Full audio stream retains frame177 zero-byte block and negative seek without invented silence.",
+      "evidence": [
+        {
+          "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p029-behavior-source-v1/source-domain-summary-v1.json",
+          "bytes": 1501,
+          "sha256": "4cfc8d1a47d14c8392e0983e23ca54c0d655dda99e1c3b217238f4f7ceccad3b"
+        },
+        {
+          "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/tests/nms-l02-p029-state.test.ts",
+          "bytes": 4402,
+          "sha256": "72d5f3f8e1b413f4795649355b77f81d6ec2197de413e76180fd41b3f5ea41a1"
+        },
+        {
+          "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p029-module-prepared-v1/receipt.json",
+          "bytes": 391,
+          "sha256": "4280441be255f1535cb01d6be63c93e466b8f2875d7fadb93544d21cef59591c"
+        },
+        {
+          "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p029-native-player-qa-v1/receipt.json",
+          "bytes": 179474,
+          "sha256": "b6e20fcd712517cc5d426facf5b8c1852ca1ac97c21c6713d56af62a8eb87641"
+        }
+      ]
+    }
+  ],
+  "technicalScope": "Source-evidenced native typography and maintained host behavior; no original-runtime or fidelity acceptance.",
+  "originalRuntimeAccepted": false,
+  "fidelityAccepted": false,
+  "audioAccepted": false,
+  "humanReviewed": false,
+  "ownerAccepted": false,
+  "strictComplete": false,
+  "published": false
+}

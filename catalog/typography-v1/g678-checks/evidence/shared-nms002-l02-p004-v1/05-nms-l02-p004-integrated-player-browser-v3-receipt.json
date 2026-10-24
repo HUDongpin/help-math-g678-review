@@ -1,0 +1,156 @@
+{
+  "checkedAt": "2026-09-12T19:39:01.116Z",
+  "status": "PASS",
+  "rows": [
+    {
+      "check": "layout-locale-motion-volume-preserve-session",
+      "state": {
+        "phase": "playing",
+        "elapsedSeconds": 0.7546485260770975,
+        "frame": 10,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "contexts": 1,
+      "reads": 1,
+      "connections": 1,
+      "artFrame": "1152",
+      "text": ""
+    },
+    {
+      "check": "real-audio-clock-0.6",
+      "frame": 752,
+      "state": {
+        "phase": "paused",
+        "elapsedSeconds": 62.64743764172336,
+        "frame": 752,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "text": "3 are carrying packs\n5 donkeys\n=\n3\n5\n=\n0.6\nCalculator\nDemonstration\n0.6\nM+\nMRC\nC\nCE\n1\n2\n3\n+\n%\n4\n5\n6\n−\n√\n7\n8\n9\n×\n=\n0\n.\n÷\n\nStart Over",
+      "math": "3 are carrying packs5 donkeys =35 =0.6",
+      "display": "0.6",
+      "conversion": 0
+    },
+    {
+      "check": "real-audio-clock-0.4",
+      "frame": 902,
+      "state": {
+        "phase": "paused",
+        "elapsedSeconds": 75.12816326530611,
+        "frame": 902,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "text": "2\n÷\n5\n=\n0.4\nCalculator\nDemonstration\n0.4\nM+\nMRC\nC\nCE\n1\n2\n3\n+\n%\n4\n5\n6\n−\n√\n7\n8\n9\n×\n=\n0\n.\n÷\n\nStart Over",
+      "math": "2÷5= 0.4",
+      "display": "0.4",
+      "conversion": 0
+    },
+    {
+      "check": "real-audio-clock-conversion",
+      "frame": 1090,
+      "state": {
+        "phase": "paused",
+        "elapsedSeconds": 90.79582766439908,
+        "frame": 1090,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "text": "2\n÷\n5\n=\n0.4\n\nConvert 0.4 to a percent.\n\nMove the decimal point two places to the right.\n\n0\n4\n.\n↷ ↷\nCalculator\nDemonstration\n0.4\nM+\nMRC\nC\nCE\n1\n2\n3\n+\n%\n4\n5\n6\n−\n√\n7\n8\n9\n×\n=\n0\n.\n÷\n\nStart Over",
+      "math": "2÷5= 0.4",
+      "display": "0.4",
+      "conversion": 1
+    },
+    {
+      "check": "player-renders-authored-stop-and-percent",
+      "state": {
+        "phase": "completed",
+        "elapsedSeconds": 95.91666666666667,
+        "frame": 1152,
+        "completed": true,
+        "replay": 0,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "math": "2÷5= 0.4 =40%",
+      "conversion": 0
+    },
+    {
+      "check": "ordinary-Play-after-completion-keeps-transport-paused",
+      "state": {
+        "phase": "completed",
+        "elapsedSeconds": 95.91666666666667,
+        "frame": 1152,
+        "completed": true,
+        "replay": 0,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "paused": true,
+      "contexts": 1,
+      "reads": 1
+    },
+    {
+      "check": "controlled-prop-Play-after-completion-keeps-transport-paused",
+      "state": {
+        "phase": "completed",
+        "elapsedSeconds": 95.91666666666667,
+        "frame": 1152,
+        "completed": true,
+        "replay": 0,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "paused": true
+    },
+    {
+      "check": "combined-replay-resets-teaching-with-single-audio-session",
+      "state": {
+        "phase": "playing",
+        "elapsedSeconds": 0,
+        "frame": 1,
+        "completed": false,
+        "replay": 1,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "terms": 0,
+      "math": 0,
+      "contexts": 1,
+      "reads": 1
+    },
+    {
+      "check": "unmount-cleans-audio-controls-scene-and-dialog",
+      "contexts": [
+        "closed"
+      ],
+      "connected": 1,
+      "disconnected": 1,
+      "svg": 0,
+      "dialogs": 0
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "scope": "Real-time integrated React player with unchanged source audio and authored terminal state; outer My Lesson adapter, protected endpoint and registration remain untested.",
+  "registered": false,
+  "audioAccepted": false,
+  "originalRuntimeAccepted": false
+}

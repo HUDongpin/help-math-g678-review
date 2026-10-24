@@ -1,0 +1,72 @@
+{
+  "status": "FAIL",
+  "rows": [
+    {
+      "check": "actual-registered-My-Lesson-initial-state",
+      "phase": "paused",
+      "frame": 1,
+      "replay": 0,
+      "contexts": 0,
+      "states": []
+    },
+    {
+      "check": "protected-source-play-and-Group-pauses-clock",
+      "phase": "paused",
+      "frame": 165,
+      "replay": 0,
+      "contexts": 1,
+      "states": [
+        "running"
+      ]
+    },
+    {
+      "check": "paused-volume-applies-to-resumed-audio-signal",
+      "gain": 0,
+      "rms": 0,
+      "calls": [
+        {
+          "args": [
+            0,
+            54.160544217687075
+          ],
+          "at": 86462.79999995232
+        }
+      ]
+    },
+    {
+      "check": "host-volume-resize-reduced-motion-completion",
+      "phase": "completed",
+      "frame": 331,
+      "replay": 0,
+      "contexts": 1,
+      "states": [
+        "running"
+      ]
+    },
+    {
+      "check": "three-terms-MathML-ordinary-Play-hold-and-Replay",
+      "phase": "playing",
+      "frame": 1,
+      "replay": 1,
+      "contexts": 1,
+      "states": [
+        "running"
+      ]
+    },
+    {
+      "check": "P018-unavailable-and-source-audio-cleanup"
+    }
+  ],
+  "errors": [],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p017/source-audio?sha256=22e434ef5f7cfc97907c27cd91c5904ca5a352836e7a4940fc8e2e19e35a215c",
+      "status": 200,
+      "bytes": "133770",
+      "type": "audio/mpeg",
+      "observedAt": 1789280600826
+    }
+  ],
+  "failure": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-p016-phase=\"paused\"]') to be visible\u001b[22m\n\u001b[2m    - waiting for\" http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p017\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p017\"\u001b[22m\n\n    at /private/tmp/helpmath-nms-l02-p017-staging/qa-real-host-v2.mjs:10:543",
+  "scope": "Actual registered local My Lesson descriptor and protected source audio; no original-runtime or human acceptance."
+}

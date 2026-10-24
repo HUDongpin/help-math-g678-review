@@ -1,0 +1,104 @@
+{
+  "checkedAt": "2026-09-13T04:11:25.183Z",
+  "status": "FAIL",
+  "source": {
+    "bytes": 124670,
+    "sha256": "2a2f187245a750124c279c03d07134a2fd80886142e7636bc91be2adba08e9a0"
+  },
+  "rows": [
+    {
+      "check": "real-pcm-prepared",
+      "samples": 617400,
+      "rate": 22050,
+      "channels": 1,
+      "first": 12949,
+      "last": 607190,
+      "sha256": "e8a47b079a19ebebafa3074bd61bddcb6b34018da7210fe92226aa52c16e5f67",
+      "snapshot": {
+        "phase": "playing",
+        "elapsedSeconds": 0,
+        "frame": 1,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.8,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "contextState": "running"
+    },
+    {
+      "check": "actual-browser-audio-signal",
+      "maxRms": 0.4047880639113112
+    },
+    {
+      "check": "pause-freezes-clock",
+      "paused": {
+        "phase": "paused",
+        "elapsedSeconds": 4.6788208616780045,
+        "frame": 57,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.8,
+        "narrationEnabled": true,
+        "failure": null
+      }
+    },
+    {
+      "check": "gain-mute",
+      "rms": 0,
+      "gain": 0,
+      "snapshot": {
+        "phase": "playing",
+        "elapsedSeconds": 4.940045351473923,
+        "frame": 60,
+        "completed": false,
+        "replay": 0,
+        "volume": 0,
+        "narrationEnabled": true,
+        "failure": null
+      }
+    },
+    {
+      "check": "narration-stop-preserves-motion",
+      "before": {
+        "phase": "playing",
+        "elapsedSeconds": 4.9458503401360545,
+        "frame": 60,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.4,
+        "narrationEnabled": false,
+        "failure": null
+      },
+      "after": {
+        "phase": "playing",
+        "elapsedSeconds": 5.201269841269841,
+        "frame": 63,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.4,
+        "narrationEnabled": false,
+        "failure": null
+      }
+    },
+    {
+      "check": "replay-reuses-decoded-source-and-resets-clock",
+      "replay": {
+        "phase": "playing",
+        "elapsedSeconds": 0,
+        "frame": 1,
+        "completed": false,
+        "replay": 1,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      }
+    }
+  ],
+  "errors": [],
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 0.4000000059604645\n- 0.4\n     ^\n\n    at file:///private/tmp/helpmath-nms-l02-p015-staging/check-audio-browser-v1.mjs:11:248",
+  "scope": "Real Chromium AudioContext/PCM/gain/clock lifecycle on standalone transport; no human listening, original-runtime alignment, product endpoint or My Lesson acceptance.",
+  "registered": false,
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false
+}

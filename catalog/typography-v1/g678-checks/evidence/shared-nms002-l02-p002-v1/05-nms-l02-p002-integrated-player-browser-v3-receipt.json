@@ -1,0 +1,111 @@
+{
+  "checkedAt": "2026-09-12T15:18:54.939Z",
+  "status": "PASS",
+  "rows": [
+    {
+      "check": "layout-locale-motion-volume-preserve-session",
+      "state": {
+        "phase": "playing",
+        "elapsedSeconds": 0.7546485260770975,
+        "frame": 10,
+        "cycle": 0,
+        "replay": 0,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "contexts": 1,
+      "reads": 1,
+      "connections": 1,
+      "artFrame": "910",
+      "text": ""
+    },
+    {
+      "check": "term-open-close-holds-until-explicit-resume",
+      "term": "Fraction",
+      "state": {
+        "phase": "paused",
+        "elapsedSeconds": 55.269297052154194,
+        "frame": 664,
+        "cycle": 0,
+        "replay": 0,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "id": "fraction",
+      "focus": "Fraction",
+      "dialogOpen": true,
+      "focusRestored": true
+    },
+    {
+      "check": "term-open-close-holds-until-explicit-resume",
+      "term": "Whole",
+      "state": {
+        "phase": "paused",
+        "elapsedSeconds": 60.10485260770975,
+        "frame": 722,
+        "cycle": 0,
+        "replay": 0,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "id": "whole",
+      "focus": "Whole",
+      "dialogOpen": true,
+      "focusRestored": true
+    },
+    {
+      "check": "term-open-close-holds-until-explicit-resume",
+      "term": "Group",
+      "state": {
+        "phase": "paused",
+        "elapsedSeconds": 61.515464852607714,
+        "frame": 739,
+        "cycle": 0,
+        "replay": 0,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "id": "group",
+      "focus": "Group",
+      "dialogOpen": true,
+      "focusRestored": true
+    },
+    {
+      "check": "combined-replay-resets-teaching-with-single-audio-session",
+      "state": {
+        "phase": "playing",
+        "elapsedSeconds": 0,
+        "frame": 1,
+        "cycle": 0,
+        "replay": 1,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "terms": 0,
+      "math": 0,
+      "contexts": 1,
+      "reads": 1
+    },
+    {
+      "check": "unmount-cleans-audio-controls-scene-and-dialog",
+      "contexts": [
+        "closed"
+      ],
+      "connected": 1,
+      "disconnected": 1,
+      "svg": 0,
+      "dialogs": 0
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "scope": "Real-time integrated React player with page-local source term dialog and unchanged source audio; outer My Lesson adapter, protected endpoint and registration remain untested.",
+  "registered": false,
+  "audioAccepted": false,
+  "originalRuntimeAccepted": false
+}

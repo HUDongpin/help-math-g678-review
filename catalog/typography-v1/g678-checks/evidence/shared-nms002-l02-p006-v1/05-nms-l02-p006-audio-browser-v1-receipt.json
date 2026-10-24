@@ -1,0 +1,194 @@
+{
+  "checkedAt": "2026-09-12T20:07:26.523Z",
+  "status": "PASS",
+  "source": {
+    "bytes": 58370,
+    "sha256": "304bb247f277f8de9ff8a33145dd0c283986572f81640353b8b6f1b756c6a486"
+  },
+  "rows": [
+    {
+      "check": "real-pcm-prepared",
+      "samples": 279300,
+      "rate": 22050,
+      "channels": 1,
+      "first": 22136,
+      "last": 279000,
+      "sha256": "8a2e8eef3393c0c74d9a90fe1849c3cefbb45c04485764273fb3cc930562cec3",
+      "snapshot": {
+        "phase": "playing",
+        "elapsedSeconds": 0,
+        "frame": 1,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.8,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "contextState": "running"
+    },
+    {
+      "check": "actual-browser-audio-signal",
+      "maxRms": 0.3092291956588062
+    },
+    {
+      "check": "pause-freezes-clock",
+      "paused": {
+        "phase": "paused",
+        "elapsedSeconds": 4.591746031746032,
+        "frame": 56,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.8,
+        "narrationEnabled": true,
+        "failure": null
+      }
+    },
+    {
+      "check": "gain-mute",
+      "rms": 0,
+      "gain": 0,
+      "snapshot": {
+        "phase": "playing",
+        "elapsedSeconds": 4.84716553287982,
+        "frame": 59,
+        "completed": false,
+        "replay": 0,
+        "volume": 0,
+        "narrationEnabled": true,
+        "failure": null
+      }
+    },
+    {
+      "check": "narration-stop-preserves-motion",
+      "before": {
+        "phase": "playing",
+        "elapsedSeconds": 4.84716553287982,
+        "frame": 59,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.4,
+        "narrationEnabled": false,
+        "failure": null
+      },
+      "after": {
+        "phase": "playing",
+        "elapsedSeconds": 5.096780045351474,
+        "frame": 62,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.4,
+        "narrationEnabled": false,
+        "failure": null
+      }
+    },
+    {
+      "check": "replay-reuses-decoded-source-and-resets-clock",
+      "replay": {
+        "phase": "playing",
+        "elapsedSeconds": 0,
+        "frame": 1,
+        "completed": false,
+        "replay": 1,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      }
+    },
+    {
+      "check": "real-authored-stop-no-loop-or-resume",
+      "terminal": {
+        "snapshot": {
+          "phase": "completed",
+          "elapsedSeconds": 12.666666666666666,
+          "frame": 153,
+          "completed": true,
+          "replay": 1,
+          "volume": 0.4,
+          "narrationEnabled": true,
+          "failure": null
+        },
+        "audioLog": {
+          "starts": [
+            {
+              "args": [
+                0,
+                0
+              ],
+              "contextTime": 0.005804988662131519
+            },
+            {
+              "args": [
+                0,
+                4.591746031746032
+              ],
+              "contextTime": 4.986485260770975
+            },
+            {
+              "args": [
+                0,
+                5.096780045351474
+              ],
+              "contextTime": 5.491519274376417
+            },
+            {
+              "args": [
+                0,
+                0
+              ],
+              "contextTime": 5.520544217687075
+            }
+          ],
+          "stops": 4,
+          "reads": 1,
+          "contexts": 1
+        }
+      },
+      "held": {
+        "snapshot": {
+          "phase": "completed",
+          "elapsedSeconds": 12.666666666666666,
+          "frame": 153,
+          "completed": true,
+          "replay": 1,
+          "volume": 0.4,
+          "narrationEnabled": true,
+          "failure": null
+        },
+        "starts": 4
+      }
+    },
+    {
+      "check": "Replay-after-authored-stop",
+      "snapshot": {
+        "phase": "playing",
+        "elapsedSeconds": 0.005804988662131194,
+        "frame": 1,
+        "completed": false,
+        "replay": 2,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      }
+    },
+    {
+      "check": "close-releases-context",
+      "snapshot": {
+        "phase": "closed",
+        "elapsedSeconds": 0.005804988662131194,
+        "frame": 1,
+        "completed": false,
+        "replay": 2,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "contextState": "closed"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "scope": "Real Chromium AudioContext/PCM/gain/clock lifecycle on standalone transport; no human listening, original-runtime alignment, product endpoint or My Lesson acceptance.",
+  "registered": false,
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false
+}

@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-09-13T06:14:18.072Z",
+  "status": "FAIL",
+  "checks": [
+    {
+      "check": "two-full-source-cycles",
+      "frames": 662
+    },
+    {
+      "check": "native-term-keyboard-focus",
+      "key": "Fraction",
+      "start": 2
+    },
+    {
+      "check": "native-term-keyboard-focus",
+      "key": "Whole",
+      "start": 147
+    },
+    {
+      "check": "native-term-keyboard-focus",
+      "key": "Group",
+      "start": 164
+    },
+    {
+      "check": "native-source-emphasis-and-continuous-reduced-motion"
+    },
+    {
+      "check": "source-teaching-beat-boundaries-and-math"
+    },
+    {
+      "check": "dual-instance-no-glyph-outlines"
+    }
+  ],
+  "errors": [],
+  "failure": "AssertionError [ERR_ASSERTION]: {\"width\":320,\"zoom\":2,\"f\":96,\"lang\":\"en\",\"x\":{\"width\":320,\"scroll\":401,\"overflow\":[\"<p data-lesson-text-block=\\\"opening\\\" class=\\\"nms-l02-p017__intro\\\"><span class=\\\"nms-l02-p017__fraction-motion\\\" style=\\\"--fraction-position: 1;\\\"><button type=\\\"button\\\" class=\\\"nms-l02-p017__term\\\" data-source\",\"<button type=\\\"button\\\" class=\\\"nms-l02-p017__term\\\" data-source-key-attribute=\\\"Fraction\\\" aria-label=\\\"fractions,\\\"><span class=\\\"sr-only\\\">fractions,</span><span class=\\\"nms-l02-p017__crossfade\\\" aria-hidden=\\\"\"]}}\n    at file:///private/tmp/helpmath-nms-l02-p017-staging/check-browser-v3.mjs:14:646",
+  "registered": false,
+  "scope": "Standalone native and integrated player; actual My Lesson and registration pending."
+}

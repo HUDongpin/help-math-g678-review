@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-09-12T21:28:21.756Z",
+  "status": "FAIL",
+  "rows": [
+    {
+      "kind": "short",
+      "state": {
+        "phase": "failed",
+        "elapsedSeconds": 0,
+        "frame": 1,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.8,
+        "narrationEnabled": true,
+        "failure": "P008_AUDIO_BYTES"
+      },
+      "reads": 1,
+      "closed": true
+    }
+  ],
+  "errors": [],
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'P008_AUDIO_BYTES'\n- 'P008_AUDIO_HASH'\n              ^\n\n    at file:///private/tmp/helpmath-nms-l02-p008-staging/check-audio-negative-v1.mjs:4:575",
+  "scope": "Negative source transport tests in real Chromium with deliberately invalid test bytes/rate and controlled pending read; no source mutation or provider access."
+}

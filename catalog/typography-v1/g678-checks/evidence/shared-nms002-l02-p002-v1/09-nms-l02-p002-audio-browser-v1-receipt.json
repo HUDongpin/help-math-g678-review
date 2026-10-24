@@ -1,0 +1,166 @@
+{
+  "checkedAt": "2026-09-12T14:53:06.542Z",
+  "status": "PASS",
+  "source": {
+    "bytes": 361010,
+    "sha256": "7ebbf9e4485ca278e38cca90125c95cc7a7a450031aab39be070d1d684ecf6d6"
+  },
+  "rows": [
+    {
+      "check": "real-pcm-prepared",
+      "samples": 1672125,
+      "rate": 22050,
+      "channels": 1,
+      "first": 53950,
+      "last": 1650776,
+      "sha256": "6bc35b9ba76460cae46428cbff4eb540f5d13d2abb67aa581aa0572bd53bcdd0",
+      "snapshot": {
+        "phase": "playing",
+        "elapsedSeconds": 0.01160997732426304,
+        "frame": 1,
+        "cycle": 0,
+        "replay": 0,
+        "volume": 0.8,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "contextState": "running"
+    },
+    {
+      "check": "actual-browser-audio-signal",
+      "maxRms": 0.3045030309715695
+    },
+    {
+      "check": "pause-freezes-clock",
+      "paused": {
+        "phase": "paused",
+        "elapsedSeconds": 5.102585034013606,
+        "frame": 62,
+        "cycle": 0,
+        "replay": 0,
+        "volume": 0.8,
+        "narrationEnabled": true,
+        "failure": null
+      }
+    },
+    {
+      "check": "gain-mute",
+      "rms": 0,
+      "gain": 0,
+      "snapshot": {
+        "phase": "playing",
+        "elapsedSeconds": 5.352199546485261,
+        "frame": 65,
+        "cycle": 0,
+        "replay": 0,
+        "volume": 0,
+        "narrationEnabled": true,
+        "failure": null
+      }
+    },
+    {
+      "check": "narration-stop-preserves-motion",
+      "before": {
+        "phase": "playing",
+        "elapsedSeconds": 5.352199546485261,
+        "frame": 65,
+        "cycle": 0,
+        "replay": 0,
+        "volume": 0.4,
+        "narrationEnabled": false,
+        "failure": null
+      },
+      "after": {
+        "phase": "playing",
+        "elapsedSeconds": 5.607619047619048,
+        "frame": 68,
+        "cycle": 0,
+        "replay": 0,
+        "volume": 0.4,
+        "narrationEnabled": false,
+        "failure": null
+      }
+    },
+    {
+      "check": "replay-reuses-decoded-source-and-resets-clock",
+      "replay": {
+        "phase": "playing",
+        "elapsedSeconds": 0,
+        "frame": 1,
+        "cycle": 0,
+        "replay": 1,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      }
+    },
+    {
+      "check": "real-complete-loop",
+      "snapshot": {
+        "phase": "playing",
+        "elapsedSeconds": 75.85378684807256,
+        "frame": 1,
+        "cycle": 1,
+        "replay": 1,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "audioLog": {
+        "starts": [
+          {
+            "args": [
+              0,
+              0
+            ],
+            "contextTime": 0.046439909297052155
+          },
+          {
+            "args": [
+              0,
+              5.102585034013606
+            ],
+            "contextTime": 5.532154195011338
+          },
+          {
+            "args": [
+              0,
+              5.607619047619048
+            ],
+            "contextTime": 6.03718820861678
+          },
+          {
+            "args": [
+              0,
+              0
+            ],
+            "contextTime": 6.060408163265306
+          }
+        ],
+        "stops": 3,
+        "reads": 1,
+        "contexts": 1
+      }
+    },
+    {
+      "check": "close-releases-context",
+      "snapshot": {
+        "phase": "closed",
+        "elapsedSeconds": 75.85378684807256,
+        "frame": 1,
+        "cycle": 1,
+        "replay": 1,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "contextState": "closed"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "scope": "Real Chromium AudioContext/PCM/gain/clock lifecycle on standalone transport; no human listening, original-runtime alignment, product endpoint or My Lesson acceptance.",
+  "registered": false,
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false
+}

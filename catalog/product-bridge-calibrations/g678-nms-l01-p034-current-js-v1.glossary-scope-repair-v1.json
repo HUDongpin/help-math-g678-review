@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-10T03:49:52.053Z",
+  "status": "local-glossary-scope-repaired-product-qa-pending",
+  "beforeRegistry": {
+    "path": "packages/demos/private-current-js-registry.json",
+    "bytes": 488181,
+    "sha256": "e50ee20747e1359798256a805e5c5a518ee2ca6b10bbecb566117dd387fb3e92"
+  },
+  "after": [
+    {
+      "path": "packages/demos/private-current-js-registry.json",
+      "bytes": 488181,
+      "sha256": "cd607ba00a857c49d51746741e3787d2aa728ac544aa7e42f1ed192fe9640ad6"
+    },
+    {
+      "path": "packages/demos/src/registry.generated.ts",
+      "bytes": 130310,
+      "sha256": "88c107cd2ed96eae29734cda07aad1d4d5d5ace87d52b218981866845f51fa76"
+    },
+    {
+      "path": "packages/demos/src/registry.metadata.generated.ts",
+      "bytes": 75696,
+      "sha256": "da599a2f4d466d581abacf1f6d774e2995034c622cf01d17941f56c518cbe785"
+    },
+    {
+      "path": "packages/demos/src/registry.local-only.generated.ts",
+      "bytes": 310545,
+      "sha256": "ec5960627a9b756f50c1820091914ac6ef5925b63226b81947f98a094ca0c0ce"
+    },
+    {
+      "path": "packages/demos/src/registry.local-only.metadata.generated.ts",
+      "bytes": 240909,
+      "sha256": "8111388b3264ba85851d5635cbc66d8f67be68d9dab27ab3c500e8db1e67a910"
+    },
+    {
+      "path": "apps/web/lib/g678-nms-l01-p034.server.ts",
+      "bytes": 9586,
+      "sha256": "0120ab5c6a3b1bfcc94ca3d5c103552d278f4993937871ee61e1accd0234ffab"
+    }
+  ],
+  "changedIds": [
+    "shared-nms002-l01-p034"
+  ],
+  "preservedOtherPages": 417,
+  "changedExistingModuleArtifacts": 0,
+  "publicFilesWritten": 0,
+  "oldCandidate": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-p034-before-glossary-scope-repair-v1/catalog/product-bridge-calibrations/g678-nms-l01-p034-current-js-v1.json",
+    "bytes": 332326,
+    "sha256": "f358a8fd07088c0e7d4c7f97b6675ae7f60d8d6eaf83cf2f7c6fd52ba4cb82e5"
+  },
+  "currentCandidate": {
+    "path": "catalog/product-bridge-calibrations/g678-nms-l01-p034-current-js-v1.json",
+    "bytes": 332326,
+    "sha256": "d3cbc208951b92d457f217b18294c2110beb1280c559cc9526cd54315a65955a"
+  },
+  "changedInput": {
+    "before": {
+      "path": "apps/web/components/nms-l01-p034-source-runtime-v1.tsx",
+      "bytes": 28095,
+      "sha256": "f872f283d47cb729de9f77b6228c532d48f94da7d6a57b27e71f7b4e0ef27d12"
+    },
+    "after": {
+      "path": "apps/web/components/nms-l01-p034-source-runtime-v1.tsx",
+      "bytes": 28095,
+      "sha256": "e76d3fc3c069e14657f3b3ee49f552644a55309335ea35aaf5675785c69efb0d"
+    }
+  },
+  "reason": "P034 has3 source glossary terms. The inherited UI guard required2; correct only that maintained UI count and its frozen binding.",
+  "transaction": {
+    "backups": [
+      {
+        "target": "packages/demos/private-current-js-registry.json",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p034-current-js-v1-glossary-scope-repair-v1/before-private-current-js-registry.json",
+          "bytes": 488181,
+          "sha256": "e50ee20747e1359798256a805e5c5a518ee2ca6b10bbecb566117dd387fb3e92"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p034-current-js-v1-glossary-scope-repair-v1/before-registry.generated.ts",
+          "bytes": 130310,
+          "sha256": "88c107cd2ed96eae29734cda07aad1d4d5d5ace87d52b218981866845f51fa76"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.metadata.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p034-current-js-v1-glossary-scope-repair-v1/before-registry.metadata.generated.ts",
+          "bytes": 75696,
+          "sha256": "da599a2f4d466d581abacf1f6d774e2995034c622cf01d17941f56c518cbe785"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.local-only.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p034-current-js-v1-glossary-scope-repair-v1/before-registry.local-only.generated.ts",
+          "bytes": 310545,
+          "sha256": "2c0a0e69a148bb551cefff81047519025e1aa473439f568328369dbdc569b07a"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.local-only.metadata.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p034-current-js-v1-glossary-scope-repair-v1/before-registry.local-only.metadata.generated.ts",
+          "bytes": 240909,
+          "sha256": "e390a4ec479cf255d11acd5b7aa4f629c49a3118496d586475a07b3b411dfab0"
+        }
+      },
+      {
+        "target": "apps/web/lib/g678-nms-l01-p034.server.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p034-current-js-v1-glossary-scope-repair-v1/before-g678-nms-l01-p034.server.ts",
+          "bytes": 9586,
+          "sha256": "abfe21f7145c5d4f617e5f40978d23a5d9f55841548579112eac76907c50942c"
+        }
+      }
+    ],
+    "completed": [
+      "packages/demos/private-current-js-registry.json",
+      "packages/demos/src/registry.local-only.generated.ts",
+      "packages/demos/src/registry.local-only.metadata.generated.ts",
+      "apps/web/lib/g678-nms-l01-p034.server.ts"
+    ],
+    "rollback": false
+  },
+  "productCalibrationPassed": false,
+  "scaleOutAuthorized": false,
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false,
+  "humanAccepted": false,
+  "ownerAccepted": false,
+  "strictComplete": false,
+  "published": false
+}

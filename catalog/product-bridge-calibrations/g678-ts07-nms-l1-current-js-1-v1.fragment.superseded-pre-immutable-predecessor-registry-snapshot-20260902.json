@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-ts07-nms-l1-current-js-fragment-v1",
+  "runId": "g678-ts07-nms-l1-current-js-1-v1",
+  "compilerRun": {
+    "path": "work/g678-shared-page-factory/g678-ts07-nms-l1-current-js-1-v1/run-manifest.json",
+    "bytes": 32104,
+    "sha256": "d969833f9580e7bf6d3291d67f270b869f3cc9870ff249c8a1c3f147c6abb617"
+  },
+  "deploymentScope": "local-only",
+  "reviewedAudit": {
+    "path": "catalog/g678-ts07-family-audit-v1.json",
+    "bytes": 1973603,
+    "sha256": "a683423f753a65b5243eefff942ed0541223ea8a0b46f0d34c3b18c8b0d18123"
+  },
+  "keyTermRecovery": {
+    "path": "catalog/g678-ts07-l1-keyterm-recovery-v1.json",
+    "bytes": 174337,
+    "sha256": "78fda81f5336991b563d173d9266494f1d7e2f17812f6aa2a84506eadf6144f7"
+  },
+  "laneRouting": {
+    "path": "catalog/product-bridge-calibrations/g678-ts07-assessment-lane-routing-v1.json",
+    "bytes": 17407,
+    "sha256": "abe31e4c36647d0509e954bf21f3e62b046fe5648722d8b717ffea6af109ed29"
+  },
+  "predecessorFreeze": {
+    "path": "catalog/product-bridge-calibrations/g678-current-js-276-page-product-calibrated-registration-v1.json",
+    "bytes": 1026118,
+    "sha256": "e3bd85b0384f5d7fe4dc86656c50fe1e8e577d18f3353a86c0e2cb54774e1109"
+  },
+  "auditedPlacementCount": 44,
+  "implementationAuthorizedPlacementCount": 1,
+  "generatedPlacementCount": 1,
+  "entries": [
+    {
+      "key": "shared-nms002-l01-p043",
+      "module": "./modules/shared-nms002-l01-p043",
+      "maturity": "private-current-js",
+      "complexityLane": "interactive-understood",
+      "deploymentScope": "local-only",
+      "adapterFamily": "ts07-nms-l1-assessment-source-static",
+      "timeline": {
+        "path": "packages/demos/src/timelines/shared-nms002-l01-p043.ts",
+        "bytes": 2130,
+        "sha256": "1b08fd067ab18f9715c7a8abda21eee78da2a6cddcb5f978cda797f58b0654c6"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/shared-nms002-l01-p043.tsx",
+        "bytes": 6704,
+        "sha256": "2af5875a163b9189b808254617dceec4433f14d76203318ac638d901809f4bbf"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-ts07-nms-l1-current-js-1-v1/members/shared-nms002-l01-p043/member-manifest.json",
+        "bytes": 28830,
+        "sha256": "5e4b22fe50400c0a260cc9b90515ccb810f4a5155e3c5b8025ce67da5d91c963"
+      },
+      "runtime": {
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/g678-ts07-nms-l1-current-js-1-v1/members/shared-nms002-l01-p043/canvas-renderer.js",
+          "bytes": 10328172,
+          "sha256": "19cd91af13b13a5fa823c687e9c3f3ed744344a1a85315bdd58cb38d5c7cebd0",
+          "url": "/flash-assets/g678-local/shared-nms002-l01-p043/canvas-renderer.js",
+          "globalRegistry": "HELP_MATH_CANVAS_ASSETS"
+        },
+        "frameDomain": "sprite-331",
+        "frameCount": 779,
+        "livePlaybackEndFrame": 779,
+        "interactiveStopFrame": 757,
+        "interactiveResumeFrame": 758
+      }
+    }
+  ],
+  "currentJavaScriptRegisteredCount": 0,
+  "overallProductCalibrationPassed": false,
+  "wholeLessonEngineeringPreviewCount": 0,
+  "productBlockers": [
+    "ts07-nms-l1-browser-product-calibration-pending",
+    "ts07-feedback-audio-acceptance-pending"
+  ],
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "behaviorAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseEligible": false,
+    "released": false,
+    "published": false
+  }
+}

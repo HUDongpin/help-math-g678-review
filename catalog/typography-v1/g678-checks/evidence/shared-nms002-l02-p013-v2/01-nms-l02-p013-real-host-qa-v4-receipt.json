@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "check": "actual-registered-My-Lesson-initial-state",
+      "phase": "paused",
+      "state": "intro",
+      "frame": 1,
+      "used": "",
+      "replay": 0,
+      "contexts": 0,
+      "states": []
+    },
+    {
+      "check": "source-term-pauses-clock-and-restores-focus",
+      "phase": "paused",
+      "state": "intro",
+      "frame": 12,
+      "used": "",
+      "replay": 0,
+      "contexts": 1,
+      "states": [
+        "running"
+      ]
+    },
+    {
+      "check": "host-volume-zero-applies-to-resumed-signal",
+      "gain": 0,
+      "rms": 0
+    },
+    {
+      "check": "actual-host-close-press-release-outside-does-not-dismiss"
+    },
+    {
+      "check": "host-drag-wrong-close-pointer-keyboard-place-and-cancel"
+    },
+    {
+      "check": "source-correct-timer-outro-equation-retained-colors-resize",
+      "phase": "completed",
+      "state": "completed",
+      "frame": 243,
+      "used": "4,2,5",
+      "replay": 0,
+      "contexts": 1,
+      "states": [
+        "running"
+      ],
+      "correctAudio": "Source111near-silent; no speech claim. Independent per-track audio check recorded separately."
+    },
+    {
+      "check": "ordinary-Play-cannot-skip-stop-and-Replay-full-reset",
+      "phase": "playing",
+      "state": "intro",
+      "frame": 1,
+      "used": "",
+      "replay": 1,
+      "contexts": 1,
+      "states": [
+        "running"
+      ]
+    },
+    {
+      "check": "P014-unavailable-and-all-source-audio-cleanup"
+    },
+    {
+      "check": "P012-and-P011-predecessor-adapters-and-audio-intact"
+    }
+  ],
+  "errors": [],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p013/source-audio/123?sha256=2076c6286c0feb7b2a354043060abfaba6cfa7e4f8c76b1fd535b2060d3cb431",
+      "status": 200,
+      "bytes": "96850",
+      "type": "audio/mpeg"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p013/source-audio/107?sha256=e551e71005de2df6e95d44ca10fba65b6ae0131032336e67b2609c71b798e8cf",
+      "status": 200,
+      "bytes": "21840",
+      "type": "audio/mpeg"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p013/source-audio/111?sha256=4de628d41cc6cd65d2ba576ba9a8bfd80a81249a2474c8a4ce0de64d40fa95e6",
+      "status": 200,
+      "bytes": "8580",
+      "type": "audio/mpeg"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p013/source-audio/99?sha256=ad4a86a727b8d4b5379655258cdffc62f85f89cb460a96565fad27d975a2aa38",
+      "status": 200,
+      "bytes": "1950",
+      "type": "audio/mpeg"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p012/source-audio?sha256=5d3a5581b90ece6ca51381274e7dad890b74ef00ced6dfae3f0ec66d616919ad",
+      "status": 200,
+      "bytes": "69940",
+      "type": "audio/mpeg"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p011/source-audio?sha256=abb185f744edefccbd2807b251af4a3f51a3161945913d6a2feb02fa53a42e35",
+      "status": 200,
+      "bytes": "47190",
+      "type": "audio/mpeg"
+    }
+  ],
+  "failure": null,
+  "scope": "Actual registered local My Lesson and four protected source streams; correct111near-silent explicitly retained. No original-runtime or human acceptance."
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "private-current-js-calibration-fragment-v1",
+  "freeze": {
+    "path": "catalog/product-bridge-calibrations/g678-hfr-nms-l07-p001-product-v3-shared-nms002-l07-p001-current-js-v1.json",
+    "bytes": 98073,
+    "sha256": "2f00f2fc0fc0d973d10c42cd4deb42c22597e4541e063d2ac3153e2b5d5f26f4"
+  },
+  "calibration": {
+    "calibrationId": "g678-hfr-nms-l07-p001-product-v3-shared-nms002-l07-p001-current-js-v1",
+    "deploymentScope": "local-only",
+    "freezeManifest": "catalog/product-bridge-calibrations/g678-hfr-nms-l07-p001-product-v3-shared-nms002-l07-p001-current-js-v1.json",
+    "freezeManifestBytes": 98073,
+    "freezeManifestSha256": "2f00f2fc0fc0d973d10c42cd4deb42c22597e4541e063d2ac3153e2b5d5f26f4",
+    "entries": [
+      {
+        "key": "shared-nms002-l07-p001",
+        "module": "./modules/shared-nms002-l07-p001",
+        "maturity": "private-current-js",
+        "complexityLane": "interactive-understood",
+        "artifacts": {
+          "kind": "generated-typescript-hfr-v1",
+          "module": {
+            "path": "packages/demos/src/modules/shared-nms002-l07-p001.tsx",
+            "bytes": 64209,
+            "sha256": "aeeae513b15c7298fe832d1086e27a22937925c88b67bda628b3797bb5e104e3"
+          },
+          "generated": {
+            "path": "packages/demos/src/hfr-pages/shared-nms002-l07-p001.ts",
+            "bytes": 112445,
+            "sha256": "c9eae8fd73a17ffc92f64893c3dae56f26e3d5885ec040c700cbec140de95204"
+          },
+          "data": {
+            "path": "work/g678-shared-page-factory/hfr-ts-nms-l07-p001-product-v3/members/shared-nms002-l07-p001/shared-nms002-l07-p001.data.json",
+            "bytes": 224286,
+            "sha256": "d6a60b647c77a05035f3a3e5bb26ce92bf8592818ce6ff33dd8f31a44f0d8f52"
+          },
+          "closure": {
+            "path": "work/g678-shared-page-factory/hfr-ts-nms-l07-p001-product-v3/members/shared-nms002-l07-p001/artifact-closure.json",
+            "bytes": 6631,
+            "sha256": "6e9801eb11a26059944939158eb5ff800032e5d493899cad5584bfde0d9ec991"
+          }
+        }
+      }
+    ]
+  }
+}

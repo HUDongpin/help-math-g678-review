@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-09-12T22:06:54.549Z",
+  "status": "FAIL",
+  "checks": [
+    {
+      "check": "three-full-source-cycles",
+      "frames": [
+        {
+          "cycle": 0,
+          "ids": 0,
+          "unique": 0,
+          "defs": 0
+        },
+        {
+          "cycle": 1,
+          "ids": 0,
+          "unique": 0,
+          "defs": 0
+        },
+        {
+          "cycle": 2,
+          "ids": 0,
+          "unique": 0,
+          "defs": 0
+        }
+      ]
+    },
+    {
+      "check": "native-term-keyboard-focus",
+      "key": "Decimal point",
+      "start": 19
+    },
+    {
+      "check": "native-term-keyboard-focus",
+      "key": "Symbol",
+      "start": 38
+    },
+    {
+      "check": "native-term-keyboard-focus",
+      "key": "Whole numbers",
+      "start": 66
+    },
+    {
+      "check": "native-term-keyboard-focus",
+      "key": "Decimal fraction",
+      "start": 80
+    },
+    {
+      "check": "reduced-motion-and-dual-instance-isolation"
+    }
+  ],
+  "errors": [],
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n2 !== 0\n\n    at file:///private/tmp/helpmath-nms-l02-p009-staging/check-browser-v1.mjs:14:635",
+  "registered": false,
+  "scope": "Standalone native and integrated player; actual My Lesson and formal registration pending."
+}

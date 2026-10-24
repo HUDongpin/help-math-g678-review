@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l02-p007",
+  "sourceSha256": "a02fbf6de8d9af4a4899ff79a204576b6def396bde0243932be64b591cf97936",
+  "lane": "advanced-manual",
+  "reason": "Source word masks, fraction values and timed region highlighting require maintained native DOM/MathML semantics and a source-locked display-list adapter. No bulk scale-out authorization.",
+  "inspectedArtifacts": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p007-source-atlas-v1/receipt.json",
+      "bytes": 639,
+      "sha256": "c98d489640cdd168c076e8fb65f4bb63b80084de905a4c01a78b2ec168e67bd1"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p007-native-source-inspection-v1/receipt.json",
+      "bytes": 3370,
+      "sha256": "90218d52cc6eec24db4926fa1b039eb07e0b3f1c16e0c11e61d797232614ee1c"
+    }
+  ],
+  "all26SourceArtInspected": true,
+  "sourceFramesInspected": [
+    1,
+    3,
+    24,
+    48,
+    72,
+    96,
+    120,
+    144,
+    168,
+    192,
+    216,
+    240,
+    264,
+    288,
+    312
+  ],
+  "suppressedShapeIds": [
+    3,
+    4,
+    6,
+    8,
+    16,
+    23
+  ],
+  "roles": {
+    "3": "outlined course and Vocabulary title replaced with source text in native headings",
+    "4": "legacy tan framing replaced with modern responsive panels",
+    "6": "authored hyperlink underline replaced with native term button decoration",
+    "8": "button hit rectangle replaced with native accessible button",
+    "16": "one-half fraction bar replaced with MathML",
+    "23": "two-thirds fraction bar replaced with MathML",
+    "5": "filled reveal mask; retained mask geometry only",
+    "12": "one-half orange base circle",
+    "13,14,15": "left arrow growth and final arrow",
+    "18,19": "left circle part highlighting",
+    "20": "two-thirds blue base circle",
+    "21,22": "right arrow growth and final arrow",
+    "25,26,27,28,29,30,31,32,33,34": "right circle sequential region highlighting"
+  },
+  "teaching": {
+    "title": "Fractions, Decimals, and Percents Concepts: Vocabulary",
+    "definition": "Fractions describe part of a whole, part of a group, or part of a number.",
+    "definitionFirstInk": 6,
+    "definitionComplete": 66,
+    "completeTermFrames": {
+      "Fraction": 11,
+      "Whole": 25,
+      "Group": 44
+    },
+    "half": {
+      "circleFirstVisible": 69,
+      "arrowStart": 112,
+      "fractionFirstVisible": 120,
+      "numerator": 1,
+      "denominator": 2
+    },
+    "twoThirds": {
+      "circleFirstVisible": 199,
+      "arrowStart": 231,
+      "fractionFirstVisible": 239,
+      "numerator": 2,
+      "denominator": 3
+    }
+  },
+  "sourceDomain": {
+    "rootFrames": 10,
+    "rootStop": 6,
+    "mainSprite": 35,
+    "mainFrames": 312,
+    "fps": 12,
+    "mainStopActions": [],
+    "defaultPlayback": "loop; no source Stop at frame312"
+  },
+  "modernHostPolicy": "One complete 26-second source cycle, hold frame312 for reading; Replay restarts at frame1. This is an explicit modern host completion policy, not original runtime parity. Source loop query remains available separately.",
+  "reducedMotionPolicy": "Keep current source text and base-circle reveal times; suppress the rapid magenta blink overlays without exposing future figures.",
+  "originalRuntimeAccepted": false,
+  "fidelityAccepted": false,
+  "registered": false
+}

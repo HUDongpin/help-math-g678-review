@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "check": "real-full-stream-output"
+    },
+    {
+      "check": "volume-and-global-pause"
+    },
+    {
+      "check": "two-source-terms-pause-and-explicit-resume"
+    },
+    {
+      "check": "round1-silent-independent-motion-and-wrong-return"
+    },
+    {
+      "check": "round1-completion-and-exact-second-stop"
+    },
+    {
+      "check": "live-text-ready-and-completion-callback-once"
+    },
+    {
+      "check": "both-round-resumptions-scheduled-before-motion-ends",
+      "starts": [
+        {
+          "when": 0.034829931972789115,
+          "offset": 0,
+          "duration": 32.583333333333336,
+          "now": 0.034829931972789115
+        },
+        {
+          "when": 1.1145578231292517,
+          "offset": 0.8591383219954648,
+          "duration": 31.72419501133787,
+          "now": 1.1145578231292517
+        },
+        {
+          "when": 1.3467573696145125,
+          "offset": 0.870748299319728,
+          "duration": 31.712585034013607,
+          "now": 1.3467573696145125
+        },
+        {
+          "when": 1.5673469387755101,
+          "offset": 0.8765532879818593,
+          "duration": 31.706780045351476,
+          "now": 1.5673469387755101
+        },
+        {
+          "when": 53.61326530612244,
+          "offset": 32.583333333333336,
+          "duration": 2.75,
+          "now": 51.79210884353741
+        },
+        {
+          "when": 71.02412698412698,
+          "offset": 35.333333333333336,
+          "duration": 5.583333333333329,
+          "now": 69.20126984126985
+        }
+      ]
+    },
+    {
+      "check": "Replay-cache-and-context-close"
+    }
+  ],
+  "errors": [],
+  "requests": [
+    "http://127.0.0.1:3326/flash-assets/g678-local/shared-nms002-l02-p026/source-audio?sha256=a153d93dd77d22747200de36ac1e2771c5a957398331f9641eb3e760907b6af9"
+  ],
+  "failure": null,
+  "registered": false,
+  "nativeAudioUIIntegrated": true,
+  "actualMyLessonVerified": false,
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false
+}

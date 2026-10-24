@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-09-13T06:58:49.731Z",
+  "status": "FAIL",
+  "source": {
+    "bytes": 117650,
+    "sha256": "f1451b7ab0cfaa3d55b8fef79cfd6a3f31c7ebe834aa4bc50062cb7a2bc83ddb"
+  },
+  "rows": [],
+  "errors": [],
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n16624 !== 14756\n\n    at file:///private/tmp/helpmath-nms-l02-p018-staging/check-audio-browser-v1.mjs:6:519",
+  "scope": "Real Chromium AudioContext/PCM/gain/clock lifecycle on standalone transport; no human listening, original-runtime alignment, product endpoint or My Lesson acceptance.",
+  "registered": false,
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false
+}

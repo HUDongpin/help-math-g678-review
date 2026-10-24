@@ -1,0 +1,89 @@
+{
+  "checkedAt": "2026-09-12T17:34:24.885Z",
+  "status": "PASS",
+  "rows": [
+    {
+      "check": "layout-locale-motion-volume-preserve-session",
+      "state": {
+        "phase": "playing",
+        "elapsedSeconds": 0.7546485260770974,
+        "frame": 10,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "contexts": 1,
+      "reads": 1,
+      "connections": 1,
+      "artFrame": "1319",
+      "text": ""
+    },
+    {
+      "check": "real-audio-clock-reveals-equation-and-pause-holds",
+      "state": {
+        "phase": "paused",
+        "elapsedSeconds": 92.54312925170068,
+        "frame": 1111,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "text": "12 pieces total and 6 are bananas\n\n6 are bananas\n12 pieces of fruit\n=\n1\n2\n=\n0.50",
+      "decimals": [
+        "1",
+        "2",
+        "0.50"
+      ]
+    },
+    {
+      "check": "player-renders-authored-stop",
+      "state": {
+        "phase": "completed",
+        "elapsedSeconds": 109.83333333333333,
+        "frame": 1319,
+        "completed": true,
+        "replay": 0,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      }
+    },
+    {
+      "check": "combined-replay-resets-teaching-with-single-audio-session",
+      "state": {
+        "phase": "playing",
+        "elapsedSeconds": 0,
+        "frame": 1,
+        "completed": false,
+        "replay": 1,
+        "volume": 0.4,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "terms": 0,
+      "math": 0,
+      "contexts": 1,
+      "reads": 1
+    },
+    {
+      "check": "unmount-cleans-audio-controls-scene-and-dialog",
+      "contexts": [
+        "closed"
+      ],
+      "connected": 1,
+      "disconnected": 1,
+      "svg": 0,
+      "dialogs": 0
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "scope": "Real-time integrated React player with unchanged source audio and authored terminal state; outer My Lesson adapter, protected endpoint and registration remain untested.",
+  "registered": false,
+  "audioAccepted": false,
+  "originalRuntimeAccepted": false
+}

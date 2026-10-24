@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "check": "initial-registered-My-Lesson",
+      "phase": "intro",
+      "frame": 1,
+      "attempts": 0,
+      "placed": "false",
+      "replay": 0,
+      "audio": "paused",
+      "contexts": [],
+      "timeOrigin": 1789806107006.5
+    },
+    {
+      "check": "source-Point-pauses-until-explicit-resume"
+    },
+    {
+      "check": "actual-volume-and-three-protected-source-streams"
+    },
+    {
+      "check": "wrong-pointer-drop-retry-and-correct-keyboard-quarter",
+      "phase": "completed",
+      "frame": 93,
+      "attempts": 2,
+      "placed": "true",
+      "replay": 0,
+      "audio": "completed",
+      "contexts": [
+        "running"
+      ],
+      "timeOrigin": 1789806107006.5
+    },
+    {
+      "check": "two-source-definitions-Replay-phone-touch-quarter",
+      "phase": "completed",
+      "frame": 93,
+      "attempts": 1,
+      "placed": "true",
+      "replay": 1,
+      "audio": "completed",
+      "contexts": [
+        "running"
+      ],
+      "timeOrigin": 1789806107006.5
+    },
+    {
+      "check": "P025-unavailable-cleanup-return-reset-and-P023-playback"
+    }
+  ],
+  "errors": [],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p024/source-audio/93?sha256=a3634114101cc46babbe7470bea683f3484c5bf31ce2813d7ca8d197ba9cbe04",
+      "status": 200,
+      "bytes": "6110"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p024/source-audio/95?sha256=8b843d72ae1de52bef4e2b22e65f6356f97dd115d8795bf9b3df69d87c3d16e7",
+      "status": 200,
+      "bytes": "7800"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p024/source-audio/98?sha256=7860ffdad0d0edfb7a08d5bb04f264c2c1a9c6d4ec110669d941ee91ac6e2011",
+      "status": 200,
+      "bytes": "31850"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p023/source-audio?sha256=e770f3529c142e7fa94b3a980c1f2b74c44ca6cb3ff4c4411ceec75122bcb599",
+      "status": 200,
+      "bytes": "191880"
+    }
+  ],
+  "navigations": [
+    {
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p024",
+      "at": 1789806105849
+    },
+    {
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p024",
+      "at": 1789806106535
+    },
+    {
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p024",
+      "at": 1789806109745
+    },
+    {
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p024",
+      "at": 1789806110302
+    }
+  ],
+  "refresh": [
+    {
+      "text": "[HMR] connected",
+      "at": 1789806106353
+    },
+    {
+      "text": "[HMR] connected",
+      "at": 1789806110208
+    },
+    {
+      "text": "[Fast Refresh] rebuilding",
+      "at": 1789806138199
+    },
+    {
+      "text": "[Fast Refresh] done in 1138ms",
+      "at": 1789806139336
+    }
+  ],
+  "failure": null,
+  "scope": "Actual local registered My Lesson drag exercise and audio; no original-runtime or human acceptance."
+}

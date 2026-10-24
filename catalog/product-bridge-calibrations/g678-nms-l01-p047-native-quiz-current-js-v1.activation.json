@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-09-12T09:23:49.659Z",
+  "status": "local-registered-single-page-product-qa-pending",
+  "beforeRegistry": {
+    "path": "packages/demos/private-current-js-registry.json",
+    "bytes": 493738,
+    "sha256": "284a18dcb7accf4d729778a1aed77b99dbc1b66e20d5b873b2d02deb7568c9ac"
+  },
+  "after": [
+    {
+      "path": "packages/demos/private-current-js-registry.json",
+      "bytes": 495528,
+      "sha256": "fb17811477fe9caa8a0dfca6136b49f5976dd1979e1743ba60a7c1e44283a134"
+    },
+    {
+      "path": "packages/demos/src/registry.generated.ts",
+      "bytes": 130310,
+      "sha256": "88c107cd2ed96eae29734cda07aad1d4d5d5ace87d52b218981866845f51fa76"
+    },
+    {
+      "path": "packages/demos/src/registry.metadata.generated.ts",
+      "bytes": 75696,
+      "sha256": "da599a2f4d466d581abacf1f6d774e2995034c622cf01d17941f56c518cbe785"
+    },
+    {
+      "path": "packages/demos/src/registry.local-only.generated.ts",
+      "bytes": 314325,
+      "sha256": "e5bb1237999db99c1913cd7ef2fe3095c7199abae81b3ae7a25c3411679021b3"
+    },
+    {
+      "path": "packages/demos/src/registry.local-only.metadata.generated.ts",
+      "bytes": 243877,
+      "sha256": "a5225f6fdd295f4b626a8c89bfaaca4ede4218be68be023a8174017dea169f6d"
+    }
+  ],
+  "addedIds": [
+    "shared-nms002-l01-p047"
+  ],
+  "preservedG678Placements": 422,
+  "changedExistingPlacements": 0,
+  "publicFilesWritten": 0,
+  "transaction": {
+    "backups": [
+      {
+        "target": "packages/demos/private-current-js-registry.json",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p047-native-quiz-current-js-v1-activation/before-private-current-js-registry.json",
+          "bytes": 493738,
+          "sha256": "284a18dcb7accf4d729778a1aed77b99dbc1b66e20d5b873b2d02deb7568c9ac"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p047-native-quiz-current-js-v1-activation/before-registry.generated.ts",
+          "bytes": 130310,
+          "sha256": "88c107cd2ed96eae29734cda07aad1d4d5d5ace87d52b218981866845f51fa76"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.metadata.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p047-native-quiz-current-js-v1-activation/before-registry.metadata.generated.ts",
+          "bytes": 75696,
+          "sha256": "da599a2f4d466d581abacf1f6d774e2995034c622cf01d17941f56c518cbe785"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.local-only.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p047-native-quiz-current-js-v1-activation/before-registry.local-only.generated.ts",
+          "bytes": 313437,
+          "sha256": "de76fffb05e1ac87cf1f44a29d5a73b784b7ba282317c66b4e3ae4d2578b35f5"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.local-only.metadata.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p047-native-quiz-current-js-v1-activation/before-registry.local-only.metadata.generated.ts",
+          "bytes": 243161,
+          "sha256": "ee09d8caefd7fe6cd7a2eff76d1a6e7bca7d19899c0d75c51946e35b89d2e014"
+        }
+      }
+    ],
+    "completed": [
+      "packages/demos/private-current-js-registry.json",
+      "packages/demos/src/registry.local-only.generated.ts",
+      "packages/demos/src/registry.local-only.metadata.generated.ts"
+    ],
+    "rollback": false
+  },
+  "freeze": {
+    "path": "catalog/product-bridge-calibrations/g678-nms-l01-p047-native-quiz-current-js-v1.json",
+    "bytes": 276262,
+    "sha256": "bf5fb873082172886c1afb2524a094f7caba1f3cf6d8435a0385c049a153a684"
+  },
+  "fragment": {
+    "path": "catalog/product-bridge-calibrations/g678-nms-l01-p047-native-quiz-current-js-v1.fragment.json",
+    "bytes": 1754,
+    "sha256": "88fec179550d5c3382d18788bb846cc9a7ac670e26e62d95752807bb3c0f1565"
+  },
+  "productCalibrationPassed": false,
+  "scaleOutAuthorized": false,
+  "acceptanceEffects": {
+    "productCalibrationPassed": false,
+    "browserProductCalibrationPassed": false,
+    "authoritativeOriginalRuntime": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "released": false,
+    "published": false
+  }
+}

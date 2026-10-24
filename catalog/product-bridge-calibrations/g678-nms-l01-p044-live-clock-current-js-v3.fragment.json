@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-nms-l01-p044-live-clock-current-js-fragment-v3",
+  "deploymentScope": "local-only",
+  "exactPlacementCount": 1,
+  "generatedPlacementCount": 1,
+  "registrationCandidatePlacementCount": 0,
+  "currentJavaScriptRegisteredCount": 0,
+  "wholeLessonEngineeringPreviewCount": 0,
+  "candidateManifest": {
+    "path": "catalog/g678-nms-l01-p044-live-clock-candidate-v3.json",
+    "bytes": 65368,
+    "sha256": "efa0bc20a5f8601c0fb2287da22b28f8105cca366d7e30ce86555efd6783e251"
+  },
+  "compilerRun": {
+    "path": "work/g678-shared-page-factory/g678-nms-l01-p044-live-clock-current-js-v3/run-manifest.json",
+    "bytes": 58646,
+    "sha256": "38c6e57a670df7c7fc4ad9479e7fefa34acdba4b47031fe59da63c22ea05f88a"
+  },
+  "predecessorFreeze": {
+    "path": "catalog/product-bridge-calibrations/g678-current-js-379-page-registration-v1.json",
+    "bytes": 2424951,
+    "sha256": "1c80050ed48b12f4f16039c3a83136781c586da4520a4108d7b6cd8e5bb9cc81"
+  },
+  "entries": [
+    {
+      "key": "shared-nms002-l01-p044",
+      "module": "./modules/g678-nms-l01-live-clock-current-js-p044",
+      "maturity": "private-current-js",
+      "deploymentScope": "local-only",
+      "adapterFamily": "nms-l01-p044-prepared-instruction-maintained-dom",
+      "source": {
+        "path": "G6-G8-shared/NMS002/L1/TS/L1TS08.swf",
+        "bytes": 657348,
+        "sha256": "8ad8df775eff49a3763f67e95fba4ed211e34912bd63f6602078119240fe6c76"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/g678-nms-l01-live-clock-current-js-p044.tsx",
+        "bytes": 700,
+        "sha256": "6e526eb47e0048346e7ad8d7e63588a67761bcd1cf07e15723da9cd6394f6908"
+      },
+      "timeline": {
+        "path": "packages/demos/src/timelines/g678-nms-l01-live-clock-current-js-p044.ts",
+        "bytes": 1434,
+        "sha256": "1522f70c698836c54d576aae64984947d641f796748286773042b31fbdf4e3b0"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-nms-l01-p044-live-clock-current-js-v3/members/shared-nms002-l01-p044/member-manifest.json",
+        "bytes": 1384,
+        "sha256": "d1470a12549e8b94362cf798c8ec0147f4327d989f0fbeb3a2e15a9e61716dbc"
+      },
+      "runtimeContract": {
+        "key": "shared-nms002-l01-p044",
+        "maturity": "private-current-js",
+        "movie": {
+          "stage": {
+            "width": 800,
+            "height": 600
+          },
+          "fps": 12,
+          "frameCount": 10,
+          "durationMs": 833
+        },
+        "runtime": {
+          "stage": {
+            "width": 800,
+            "height": 600
+          },
+          "fps": 12,
+          "frameCount": 10,
+          "durationMs": 833,
+          "defaultFrameDomain": "sprite-293",
+          "frameDomains": [
+            {
+              "id": "root",
+              "frameCount": 10,
+              "fps": 12
+            },
+            {
+              "id": "sprite-293",
+              "frameCount": 759,
+              "fps": 12,
+              "rootFrame": 6
+            }
+          ]
+        },
+        "playbackMode": "once",
+        "playbackEndFrame": 756,
+        "playbackEndFrameByDomain": {
+          "root": 1,
+          "sprite-293": 756
+        },
+        "reducedMotionFrame": 756,
+        "scenarios": [
+          {
+            "id": "nms-l01-p044-source-behavior-candidate",
+            "label": "Source-bound jeans word problem",
+            "description": "Unregistered local candidate. Full page behavior and source artwork; audio and independent acceptance remain pending."
+          }
+        ],
+        "defaultScenarioByFrameDomain": {
+          "sprite-293": "nms-l01-p044-source-behavior-candidate"
+        },
+        "interactiveStops": [
+          {
+            "id": "p044-source-stop-312",
+            "frameDomain": "sprite-293",
+            "stopFrame": 312,
+            "resumeFrame": 313,
+            "resolution": "explicit-source-control-finished",
+            "completionDisposition": "blocked-while-unresolved",
+            "rendererStateOnResume": "preserve",
+            "requiresHostInteractiveStop": true,
+            "strictAcceptanceEffect": "none"
+          },
+          {
+            "id": "p044-source-stop-449",
+            "frameDomain": "sprite-293",
+            "stopFrame": 449,
+            "resumeFrame": 450,
+            "resolution": "explicit-source-control-finished",
+            "completionDisposition": "blocked-while-unresolved",
+            "rendererStateOnResume": "preserve",
+            "requiresHostInteractiveStop": true,
+            "strictAcceptanceEffect": "none"
+          },
+          {
+            "id": "p044-source-stop-575",
+            "frameDomain": "sprite-293",
+            "stopFrame": 575,
+            "resumeFrame": 576,
+            "resolution": "explicit-source-control-finished",
+            "completionDisposition": "blocked-while-unresolved",
+            "rendererStateOnResume": "preserve",
+            "requiresHostInteractiveStop": true,
+            "strictAcceptanceEffect": "none"
+          },
+          {
+            "id": "p044-source-stop-697",
+            "frameDomain": "sprite-293",
+            "stopFrame": 697,
+            "resumeFrame": 698,
+            "resolution": "explicit-source-control-finished",
+            "completionDisposition": "blocked-while-unresolved",
+            "rendererStateOnResume": "preserve",
+            "requiresHostInteractiveStop": true,
+            "strictAcceptanceEffect": "none"
+          },
+          {
+            "id": "p044-source-stop-737",
+            "frameDomain": "sprite-293",
+            "stopFrame": 737,
+            "resumeFrame": 738,
+            "resolution": "explicit-source-feedback-finished",
+            "completionDisposition": "blocked-while-unresolved",
+            "rendererStateOnResume": "preserve",
+            "requiresHostInteractiveStop": true,
+            "strictAcceptanceEffect": "none"
+          }
+        ],
+        "audioCues": [],
+        "audioTracks": [],
+        "interactiveAudioAssets": [],
+        "lessonHost": {
+          "capabilities": [
+            "glossary",
+            "practice-feedback"
+          ],
+          "legacyOperations": "blocked",
+          "auditStorage": "memory-only",
+          "storesPersonalData": false
+        }
+      },
+      "proposedPresentation": {
+        "pageInteractionCompanionTargetIdSuffix": "nms-l01-p044-readable-instruction",
+        "descriptorActivated": false
+      },
+      "currentJavaScriptRegistered": false,
+      "registrationCandidate": false,
+      "productCalibrationPassed": false,
+      "browserProductCalibrationPassed": false,
+      "wholeLessonEngineeringPreviewReady": false,
+      "scaleOutAuthorized": false,
+      "releaseAuthorized": false,
+      "authoritativeOriginalRuntime": false,
+      "visualFidelityAccepted": false,
+      "audioAccepted": false,
+      "humanVisualAccepted": false,
+      "ownerAccepted": false,
+      "strictComplete": false,
+      "released": false,
+      "published": false,
+      "acceptanceEffects": {
+        "currentJavaScriptRegistered": false,
+        "registrationCandidate": false,
+        "productCalibrationPassed": false,
+        "browserProductCalibrationPassed": false,
+        "wholeLessonEngineeringPreviewReady": false,
+        "scaleOutAuthorized": false,
+        "releaseAuthorized": false,
+        "authoritativeOriginalRuntime": false,
+        "visualFidelityAccepted": false,
+        "audioAccepted": false,
+        "humanVisualAccepted": false,
+        "ownerAccepted": false,
+        "strictComplete": false,
+        "released": false,
+        "published": false
+      }
+    }
+  ],
+  "currentJavaScriptRegistered": false,
+  "registrationCandidate": false,
+  "productCalibrationPassed": false,
+  "browserProductCalibrationPassed": false,
+  "wholeLessonEngineeringPreviewReady": false,
+  "scaleOutAuthorized": false,
+  "releaseAuthorized": false,
+  "authoritativeOriginalRuntime": false,
+  "visualFidelityAccepted": false,
+  "audioAccepted": false,
+  "humanVisualAccepted": false,
+  "ownerAccepted": false,
+  "strictComplete": false,
+  "released": false,
+  "published": false,
+  "acceptanceEffects": {
+    "currentJavaScriptRegistered": false,
+    "registrationCandidate": false,
+    "productCalibrationPassed": false,
+    "browserProductCalibrationPassed": false,
+    "wholeLessonEngineeringPreviewReady": false,
+    "scaleOutAuthorized": false,
+    "releaseAuthorized": false,
+    "authoritativeOriginalRuntime": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "released": false,
+    "published": false
+  },
+  "predecessorRegistryWitness": {
+    "path": "catalog/product-bridge-calibrations/g678-current-js-379-v1-private-registry-witness.json",
+    "bytes": 433966,
+    "sha256": "e68a3d39213766e220795a4f0a16412e09a0e830c9978a66bcd7dd02361372cb"
+  },
+  "baseSourceAuthority": {
+    "path": "catalog/product-bridge-calibrations/g678-nms-l01-p044-prepared-current-js-v2.fragment.json",
+    "bytes": 9139,
+    "sha256": "6208880d4423d19645b508106b65f53a692dcd2bebf5c98909379851d1f1c00d"
+  }
+}

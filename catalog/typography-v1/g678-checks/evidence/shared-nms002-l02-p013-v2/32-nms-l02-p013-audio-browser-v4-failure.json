@@ -1,0 +1,41 @@
+{
+  "failure": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(concurrent.wrong>.001&&concurrent.correct>.001)\n\n    at file:///private/tmp/helpmath-nms-l02-p013-staging/check-audio-browser-v4.mjs:18:780",
+  "checks": [
+    {
+      "check": "close-press-audio-concurrent-with-wrong-close-does-not-stop-wrong",
+      "rms": 0.052709789703406326,
+      "frame": 3,
+      "wrong": true
+    },
+    {
+      "check": "all-four-wrong-source-segments-have-real-browser-signal",
+      "branches": [
+        {
+          "branch": 3,
+          "signal": 0.006862152001004336
+        },
+        {
+          "branch": 1,
+          "signal": 0.009980421286516113
+        },
+        {
+          "branch": 0,
+          "signal": 0.016382968622124648
+        },
+        {
+          "branch": 2,
+          "signal": 0.001345420793734847
+        }
+      ]
+    }
+  ],
+  "requests": [
+    "/",
+    "/bundle.js",
+    "/audio/123",
+    "/audio/107",
+    "/audio/111",
+    "/audio/99"
+  ],
+  "errors": []
+}

@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-nms-l01-p044-prepared-current-js-fragment-v1",
+  "deploymentScope": "local-only",
+  "exactPlacementCount": 1,
+  "generatedPlacementCount": 1,
+  "registrationCandidatePlacementCount": 0,
+  "currentJavaScriptRegisteredCount": 0,
+  "wholeLessonEngineeringPreviewCount": 0,
+  "candidateManifest": {
+    "path": "catalog/g678-nms-l01-p044-prepared-candidate-v1.json",
+    "bytes": 43157,
+    "sha256": "1ed80144a4453efbf5a2782adc5c3d9fdb679ad6d01c04311d8c5013efbb7c04"
+  },
+  "compilerRun": {
+    "path": "work/g678-shared-page-factory/g678-nms-l01-p044-prepared-current-js-v1/run-manifest.json",
+    "bytes": 37598,
+    "sha256": "a518df8595e09a0f86eee41e80d55314fc7aade8c01a1e709098ce66c0870a7c"
+  },
+  "predecessorFreeze": {
+    "path": "catalog/product-bridge-calibrations/g678-current-js-378-page-registration-v1.json",
+    "bytes": 2415408,
+    "sha256": "cf4921508fcaff5270c2dc4a3bd2571397b9c456b0ff5c1cae46378081e71cf5"
+  },
+  "entries": [
+    {
+      "key": "shared-nms002-l01-p044",
+      "module": "./modules/g678-nms-l01-prepared-current-js-p044",
+      "maturity": "private-current-js",
+      "deploymentScope": "local-only",
+      "adapterFamily": "nms-l01-p044-prepared-instruction-maintained-dom",
+      "source": {
+        "path": "G6-G8-shared/NMS002/L1/TS/L1TS08.swf",
+        "bytes": 657348,
+        "sha256": "8ad8df775eff49a3763f67e95fba4ed211e34912bd63f6602078119240fe6c76"
+      },
+      "moduleFile": {
+        "path": "packages/demos/src/modules/g678-nms-l01-prepared-current-js-p044.tsx",
+        "bytes": 693,
+        "sha256": "1bc7b4aff3532133607432026fbc562c9119ca0517875540482bde4e135241b3"
+      },
+      "timeline": {
+        "path": "packages/demos/src/timelines/g678-nms-l01-prepared-current-js-p044.ts",
+        "bytes": 1323,
+        "sha256": "34dc5f80194d7dd3f32f532d926e04607476484e30fefa8ffd3f49724a85130f"
+      },
+      "memberManifest": {
+        "path": "work/g678-shared-page-factory/g678-nms-l01-p044-prepared-current-js-v1/members/shared-nms002-l01-p044/member-manifest.json",
+        "bytes": 1378,
+        "sha256": "abd446c7bd02f6b9d3e31d1976179d8ada9818679c038acf395b53df4db299e7"
+      },
+      "runtimeContract": {
+        "key": "shared-nms002-l01-p044",
+        "maturity": "private-current-js",
+        "movie": {
+          "stage": {
+            "width": 800,
+            "height": 600
+          },
+          "fps": 12,
+          "frameCount": 10,
+          "durationMs": 833
+        },
+        "runtime": {
+          "stage": {
+            "width": 800,
+            "height": 600
+          },
+          "fps": 12,
+          "frameCount": 10,
+          "durationMs": 833,
+          "defaultFrameDomain": "sprite-293",
+          "frameDomains": [
+            {
+              "id": "root",
+              "frameCount": 10,
+              "fps": 12
+            },
+            {
+              "id": "sprite-293",
+              "frameCount": 759,
+              "fps": 12,
+              "rootFrame": 6
+            }
+          ]
+        },
+        "playbackMode": "once",
+        "playbackEndFrame": 756,
+        "playbackEndFrameByDomain": {
+          "root": 1,
+          "sprite-293": 756
+        },
+        "reducedMotionFrame": 756,
+        "scenarios": [
+          {
+            "id": "nms-l01-p044-source-behavior-candidate",
+            "label": "Source-bound jeans word problem",
+            "description": "Unregistered local candidate. Full page behavior and source artwork; audio and independent acceptance remain pending."
+          }
+        ],
+        "defaultScenarioByFrameDomain": {
+          "sprite-293": "nms-l01-p044-source-behavior-candidate"
+        },
+        "interactiveStops": [
+          {
+            "id": "p044-source-stop-312",
+            "frameDomain": "sprite-293",
+            "stopFrame": 312,
+            "resumeFrame": 313,
+            "resolution": "explicit-source-control-finished",
+            "completionDisposition": "blocked-while-unresolved",
+            "rendererStateOnResume": "preserve",
+            "requiresHostInteractiveStop": true,
+            "strictAcceptanceEffect": "none"
+          },
+          {
+            "id": "p044-source-stop-449",
+            "frameDomain": "sprite-293",
+            "stopFrame": 449,
+            "resumeFrame": 450,
+            "resolution": "explicit-source-control-finished",
+            "completionDisposition": "blocked-while-unresolved",
+            "rendererStateOnResume": "preserve",
+            "requiresHostInteractiveStop": true,
+            "strictAcceptanceEffect": "none"
+          },
+          {
+            "id": "p044-source-stop-575",
+            "frameDomain": "sprite-293",
+            "stopFrame": 575,
+            "resumeFrame": 576,
+            "resolution": "explicit-source-control-finished",
+            "completionDisposition": "blocked-while-unresolved",
+            "rendererStateOnResume": "preserve",
+            "requiresHostInteractiveStop": true,
+            "strictAcceptanceEffect": "none"
+          },
+          {
+            "id": "p044-source-stop-697",
+            "frameDomain": "sprite-293",
+            "stopFrame": 697,
+            "resumeFrame": 698,
+            "resolution": "explicit-source-control-finished",
+            "completionDisposition": "blocked-while-unresolved",
+            "rendererStateOnResume": "preserve",
+            "requiresHostInteractiveStop": true,
+            "strictAcceptanceEffect": "none"
+          },
+          {
+            "id": "p044-source-stop-737",
+            "frameDomain": "sprite-293",
+            "stopFrame": 737,
+            "resumeFrame": 738,
+            "resolution": "explicit-source-feedback-finished",
+            "completionDisposition": "blocked-while-unresolved",
+            "rendererStateOnResume": "preserve",
+            "requiresHostInteractiveStop": true,
+            "strictAcceptanceEffect": "none"
+          }
+        ],
+        "audioCues": [],
+        "audioTracks": [],
+        "interactiveAudioAssets": [],
+        "lessonHost": {
+          "capabilities": [
+            "glossary",
+            "practice-feedback"
+          ],
+          "legacyOperations": "blocked",
+          "auditStorage": "memory-only",
+          "storesPersonalData": false
+        }
+      },
+      "proposedPresentation": {
+        "pageInteractionCompanionTargetIdSuffix": "nms-l01-p044-readable-instruction",
+        "descriptorActivated": false
+      },
+      "currentJavaScriptRegistered": false,
+      "registrationCandidate": false,
+      "productCalibrationPassed": false,
+      "browserProductCalibrationPassed": false,
+      "wholeLessonEngineeringPreviewReady": false,
+      "scaleOutAuthorized": false,
+      "releaseAuthorized": false,
+      "authoritativeOriginalRuntime": false,
+      "visualFidelityAccepted": false,
+      "audioAccepted": false,
+      "humanVisualAccepted": false,
+      "ownerAccepted": false,
+      "strictComplete": false,
+      "released": false,
+      "published": false,
+      "acceptanceEffects": {
+        "currentJavaScriptRegistered": false,
+        "registrationCandidate": false,
+        "productCalibrationPassed": false,
+        "browserProductCalibrationPassed": false,
+        "wholeLessonEngineeringPreviewReady": false,
+        "scaleOutAuthorized": false,
+        "releaseAuthorized": false,
+        "authoritativeOriginalRuntime": false,
+        "visualFidelityAccepted": false,
+        "audioAccepted": false,
+        "humanVisualAccepted": false,
+        "ownerAccepted": false,
+        "strictComplete": false,
+        "released": false,
+        "published": false
+      }
+    }
+  ],
+  "currentJavaScriptRegistered": false,
+  "registrationCandidate": false,
+  "productCalibrationPassed": false,
+  "browserProductCalibrationPassed": false,
+  "wholeLessonEngineeringPreviewReady": false,
+  "scaleOutAuthorized": false,
+  "releaseAuthorized": false,
+  "authoritativeOriginalRuntime": false,
+  "visualFidelityAccepted": false,
+  "audioAccepted": false,
+  "humanVisualAccepted": false,
+  "ownerAccepted": false,
+  "strictComplete": false,
+  "released": false,
+  "published": false,
+  "acceptanceEffects": {
+    "currentJavaScriptRegistered": false,
+    "registrationCandidate": false,
+    "productCalibrationPassed": false,
+    "browserProductCalibrationPassed": false,
+    "wholeLessonEngineeringPreviewReady": false,
+    "scaleOutAuthorized": false,
+    "releaseAuthorized": false,
+    "authoritativeOriginalRuntime": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "released": false,
+    "published": false
+  }
+}

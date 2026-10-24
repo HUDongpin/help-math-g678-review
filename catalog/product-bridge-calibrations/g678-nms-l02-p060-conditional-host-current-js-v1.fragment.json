@@ -1,0 +1,38 @@
+{
+  "calibrationId": "g678-nms-l02-p060-conditional-host-current-js-v1",
+  "deploymentScope": "local-only",
+  "freezeManifest": "catalog/product-bridge-calibrations/g678-nms-l02-p060-conditional-host-current-js-v1.json",
+  "freezeManifestBytes": 66020,
+  "freezeManifestSha256": "50e165552fc754d82603fe7625774048d8061a7fbff0b8c852e0188db77a367d",
+  "entries": [
+    {
+      "key": "shared-nms002-l02-p060",
+      "module": "./modules/shared-nms002-l02-p060",
+      "maturity": "private-current-js",
+      "complexityLane": "behavior-heavy",
+      "artifacts": {
+        "kind": "maintained-dom-module-v1",
+        "module": {
+          "path": "packages/demos/src/modules/shared-nms002-l02-p060.tsx",
+          "bytes": 1426,
+          "sha256": "20bab931db997f026c67a6f4820ff50c5212568ddbfebcbaa97afb8dd39912d1"
+        },
+        "timeline": {
+          "path": "packages/demos/src/timelines/shared-nms002-l02-p060.ts",
+          "bytes": 2875,
+          "sha256": "87b3f3d238615a7f74c46573eb110262727d30f27af8fc69f01e906d06c0e86c"
+        },
+        "memberManifest": {
+          "path": "work/g678-shared-page-factory/g678-nms-l02-p060-conditional-host-current-js-v1/members/shared-nms002-l02-p060/member-manifest.json",
+          "bytes": 51612,
+          "sha256": "71e5025301723cf28462fa431b11be34d43a6dfc9b3c39b31cff2855b12bbfd2"
+        },
+        "sourceRun": {
+          "path": "work/g678-shared-page-factory/g678-nms-l02-p060-conditional-host-current-js-v1/run-manifest.json",
+          "bytes": 63280,
+          "sha256": "a0881dec6cc2d7ebc1ce680aef800ccf3fe0a3195065be5c108be9e3c41354bf"
+        }
+      }
+    }
+  ]
+}

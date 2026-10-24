@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "calibration": {
+    "calibrationId": "g678-nms-l01-p047-native-quiz-current-js-v1",
+    "deploymentScope": "local-only",
+    "freezeManifest": "catalog/product-bridge-calibrations/g678-nms-l01-p047-native-quiz-current-js-v1-feedback-v3.json",
+    "freezeManifestBytes": 277482,
+    "freezeManifestSha256": "161e26c38d0cb7e831265230f5fdff9002ff05e54d90fe4baeca5d7966fb57fa",
+    "entries": [
+      {
+        "key": "shared-nms002-l01-p047",
+        "module": "./modules/g678-nms-l01-native-quiz-v3-p047",
+        "maturity": "private-current-js",
+        "complexityLane": "behavior-heavy",
+        "artifacts": {
+          "kind": "maintained-dom-module-v1",
+          "module": {
+            "path": "packages/demos/src/modules/g678-nms-l01-native-quiz-v3-p047.tsx",
+            "bytes": 2832,
+            "sha256": "607a34708f7c23245f45e4837719258b1facc9c79128f64eb8f02cd589c206d0"
+          },
+          "timeline": {
+            "path": "packages/demos/src/timelines/g678-nms-l01-native-quiz-p047.ts",
+            "bytes": 1128,
+            "sha256": "c67867026be02743b479b3277907feaa95347b9d36d0439c42458d3bbb8bfb05"
+          },
+          "memberManifest": {
+            "path": "work/g678-shared-page-factory/g678-nms-l01-p047-native-quiz-current-js-v1-feedback-v3/members/shared-nms002-l01-p047/member-manifest.json",
+            "bytes": 273450,
+            "sha256": "f7f30c96097f4d4eee86ef2e5864710b21536e6ca65056de04f9f44f347945c7"
+          },
+          "sourceRun": {
+            "path": "work/g678-shared-page-factory/g678-nms-l01-p047-native-quiz-current-js-v1-feedback-v3/run-manifest.json",
+            "bytes": 127504,
+            "sha256": "cded28aeea9671bee1ee128d3a0605cb09efee6e91b9dbf3a18bb5bbd2afc779"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "calibration": {
+    "calibrationId": "g678-nms-l01-p003-source-candidate-v3",
+    "deploymentScope": "local-only",
+    "freezeManifest": "catalog/product-bridge-calibrations/g678-nms-l01-p003-source-candidate-v3.json",
+    "freezeManifestBytes": 40803,
+    "freezeManifestSha256": "1ff4ae932c93f146efff6c3ef26a7e4dfef3b2b3a6ff1a95e6bbbd50bcab4fe7",
+    "entries": [
+      {
+        "key": "shared-nms002-l01-p003",
+        "module": "./modules/g678-nms-l01-p003-v3",
+        "maturity": "private-current-js",
+        "complexityLane": "interactive-understood",
+        "artifacts": {
+          "module": {
+            "path": "packages/demos/src/modules/g678-nms-l01-p003-v3.tsx",
+            "bytes": 491309,
+            "sha256": "30ffd57afba66c56788e3c1f05913d0dde8a68a123b5773f3d79a083c892278e"
+          },
+          "timeline": {
+            "path": "packages/demos/src/timelines/shared-nms002-l01-p003.ts",
+            "bytes": 2106,
+            "sha256": "a86e5275ab7141149d9ccd74cc087b351f6290bd9a470c99cdd5a830a9c0b192"
+          },
+          "runtime": {
+            "path": "work/g678-shared-page-factory/g678-nms-l01-p003-source-candidate-v2/members/shared-nms002-l01-p003/canvas-renderer.js",
+            "bytes": 8547784,
+            "sha256": "1781ca5bb71b9d97d2e2caeb5e3f767977c7a2344a87a17757446828626600ae"
+          }
+        }
+      }
+    ]
+  }
+}

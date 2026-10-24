@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "check": "actual-registered-My-Lesson-initial-state",
+      "phase": "paused",
+      "frame": 1,
+      "replay": 0,
+      "contexts": 0,
+      "states": []
+    },
+    {
+      "check": "protected-source-play-and-Group-pauses-clock",
+      "phase": "paused",
+      "frame": 165,
+      "replay": 0,
+      "contexts": 1,
+      "states": [
+        "running"
+      ]
+    },
+    {
+      "check": "paused-volume-applies-to-resumed-audio-signal",
+      "gain": 0,
+      "rms": 0,
+      "calls": [
+        {
+          "args": [
+            0,
+            14.268662131519275
+          ],
+          "at": 30703.199999928474
+        }
+      ]
+    },
+    {
+      "check": "host-volume-resize-reduced-motion-completion",
+      "phase": "completed",
+      "frame": 331,
+      "replay": 0,
+      "contexts": 1,
+      "states": [
+        "running"
+      ]
+    },
+    {
+      "check": "three-terms-MathML-ordinary-Play-hold-and-Replay",
+      "phase": "playing",
+      "frame": 1,
+      "replay": 1,
+      "contexts": 1,
+      "states": [
+        "running"
+      ]
+    },
+    {
+      "check": "P018-unavailable-and-source-audio-cleanup"
+    },
+    {
+      "check": "P016-predecessor-percent-playback-intact"
+    },
+    {
+      "check": "P015-predecessor-percent-vocabulary-intact"
+    }
+  ],
+  "errors": [],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p017/source-audio?sha256=22e434ef5f7cfc97907c27cd91c5904ca5a352836e7a4940fc8e2e19e35a215c",
+      "status": 200,
+      "bytes": "133770",
+      "type": "audio/mpeg",
+      "observedAt": 1789281032797
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p016/source-audio/194?sha256=3709f05b0788dd206a85f439665db5229fe9598e831bd5cb4671df0861c8557d",
+      "status": 200,
+      "bytes": "83590",
+      "type": "audio/mpeg",
+      "observedAt": 1789281067825
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p016/source-audio/168?sha256=e551e71005de2df6e95d44ca10fba65b6ae0131032336e67b2609c71b798e8cf",
+      "status": 200,
+      "bytes": "21840",
+      "type": "audio/mpeg",
+      "observedAt": 1789281084854
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p016/source-audio/186?sha256=5411e0e794915162e2bb293428b6f0ddd2a15c82bb5b2ce7a86818c32a17d71a",
+      "status": 200,
+      "bytes": "8190",
+      "type": "audio/mpeg",
+      "observedAt": 1789281084900
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p016/source-audio/159?sha256=ad4a86a727b8d4b5379655258cdffc62f85f89cb460a96565fad27d975a2aa38",
+      "status": 200,
+      "bytes": "1950",
+      "type": "audio/mpeg",
+      "observedAt": 1789281084953
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p016/source-audio/175?sha256=ad4a86a727b8d4b5379655258cdffc62f85f89cb460a96565fad27d975a2aa38",
+      "status": 200,
+      "bytes": "1950",
+      "type": "audio/mpeg",
+      "observedAt": 1789281085024
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p015/source-audio?sha256=2a2f187245a750124c279c03d07134a2fd80886142e7636bc91be2adba08e9a0",
+      "status": 200,
+      "bytes": "124670",
+      "type": "audio/mpeg",
+      "observedAt": 1789281088835
+    }
+  ],
+  "failure": null,
+  "scope": "Actual registered local My Lesson descriptor and protected source audio; no original-runtime or human acceptance."
+}

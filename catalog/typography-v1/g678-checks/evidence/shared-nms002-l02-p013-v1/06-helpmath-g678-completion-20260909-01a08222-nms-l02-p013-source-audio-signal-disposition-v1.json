@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "streams": [
+    {
+      "domain": "99",
+      "decodedPcmSha256": "59f9e516707876c29033e2b75bca84dd687667e6037b8a05aa8eb190d11926da",
+      "postLatencySamples": 6967,
+      "peak": 0.36872464418411255,
+      "rms": 0.01903850341885499,
+      "nonzeroSamples": 2066,
+      "firstNonzeroSample": 0,
+      "lastNonzeroSample": 2580
+    },
+    {
+      "domain": "105",
+      "decodedPcmSha256": "0febd3a878f4a5d21d3735b8a2428d9f6eab70d56bb69d492fa038fdc9478b5c",
+      "postLatencySamples": 32887,
+      "peak": 0.27417829632759094,
+      "rms": 0.05637993467743841,
+      "nonzeroSamples": 30856,
+      "firstNonzeroSample": 56,
+      "lastNonzeroSample": 32886
+    },
+    {
+      "domain": "107",
+      "decodedPcmSha256": "6233e14384b01225fa07450a95c369f369be029ec4e175c9bcd80cb293bc9118",
+      "postLatencySamples": 95095,
+      "peak": 0.9846796989440918,
+      "rms": 0.12055475518639812,
+      "nonzeroSamples": 70113,
+      "firstNonzeroSample": 2966,
+      "lastNonzeroSample": 95094
+    },
+    {
+      "domain": "111",
+      "decodedPcmSha256": "b57f2a6112b6549e5ee4bac83f89b18e6e584a3b3eb757c99e078575c87fdd57",
+      "postLatencySamples": 36343,
+      "peak": 0.00015259254723787308,
+      "rms": 5.584624730678263e-06,
+      "nonzeroSamples": 518,
+      "firstNonzeroSample": 56,
+      "lastNonzeroSample": 2551,
+      "naturalStartFrame": 2,
+      "playedAfterFirstFramePeak": 3.0518509447574615e-05,
+      "playedAfterFirstFrameNonzero": 29
+    },
+    {
+      "domain": "123",
+      "decodedPcmSha256": "80c82d1f0668419606aab392395544a10789efe4a596fb1a2a6a156d85607057",
+      "postLatencySamples": 427447,
+      "peak": 1.0,
+      "rms": 0.1940620187753918,
+      "nonzeroSamples": 339996,
+      "firstNonzeroSample": 56,
+      "lastNonzeroSample": 421322
+    }
+  ],
+  "scope": "Source PCM machine measurement; no named-human audio acceptance. Correct111 contains low-amplitude decoder noise near its start; source natural interval2..24 is inspected separately. Mixed master output from the earlier UI test does not establish correct111 speech.",
+  "supersedesClaim": "nms-l02-p013-native-browser-v2 check third-valid-drop-correct-audio: that RMS is mixed output and may be the prior wrong coach. Retain that receipt as a UI-state check only.",
+  "unused105": "Source AS does not call Coach_audio_2_1. Do not substitute its audible payload for111.",
+  "sourceBytesChanged": false,
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false
+}

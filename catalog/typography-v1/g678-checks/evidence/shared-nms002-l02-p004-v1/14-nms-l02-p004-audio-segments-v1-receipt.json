@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-12T18:28:27.007786+00:00",
+  "status": "SOURCE_TIMELINE_PARTITION_VERIFIED",
+  "animationId": "shared-nms002-l02-p004",
+  "inputs": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p004-behavior-source-v1/audio/raw-streams-audit.json",
+      "bytes": 109395,
+      "sha256": "9246d32ae0ab07034aecdcf6362b0ba05aa603597cdaaf706289248ba3f27826"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p004-behavior-source-v1/audio/sprite-552/source-stream.mp3",
+      "bytes": 368810,
+      "sha256": "ce81813640d92f1a5625e2ee9bc571cad0a25e09970abe7c23d74afbcf939e4d"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p004-audio-measurement-v1/chromium-mono-22050.f32le",
+      "bytes": 6536448,
+      "sha256": "91161d198939a9eb57acfe232065725d56004ee3d7ffc31bf1c2df48a20c150d"
+    }
+  ],
+  "sampleRate": 22050,
+  "channels": 1,
+  "decodedSamples": 1634112,
+  "latencySamples": 1673,
+  "nominalSamplesPerFrame": 1837,
+  "stopSeconds": 95.91666666666667,
+  "stopSamples": 2114963,
+  "segments": [
+    {
+      "firstFrame": 102,
+      "lastBlockFrame": 152,
+      "sourceStartSample": 1673,
+      "outputStartSample": 185588,
+      "declaredSeek": 1673,
+      "headLatency": 1673,
+      "mp3CumulativeSamples": 0,
+      "firstMp3ReservoirBytes": 0,
+      "sourceEndSample": 93298,
+      "samples": 91625,
+      "outputEndSample": 277213,
+      "outputStartSeconds": 8.416689342403629,
+      "outputEndSeconds": 12.572018140589568
+    },
+    {
+      "firstFrame": 199,
+      "lastBlockFrame": 348,
+      "sourceStartSample": 93298,
+      "outputStartSample": 363825,
+      "declaredSeek": 41,
+      "headLatency": 1673,
+      "mp3CumulativeSamples": 91584,
+      "firstMp3ReservoirBytes": 255,
+      "sourceEndSample": 366936,
+      "samples": 273638,
+      "outputEndSample": 637463,
+      "outputStartSeconds": 16.5,
+      "outputEndSeconds": 28.90988662131519
+    },
+    {
+      "firstFrame": 453,
+      "lastBlockFrame": 510,
+      "sourceStartSample": 366936,
+      "outputStartSample": 830550,
+      "declaredSeek": 79,
+      "headLatency": 1673,
+      "mp3CumulativeSamples": 365184,
+      "firstMp3ReservoirBytes": 255,
+      "sourceEndSample": 471474,
+      "samples": 104538,
+      "outputEndSample": 935088,
+      "outputStartSeconds": 37.666666666666664,
+      "outputEndSeconds": 42.40761904761905
+    },
+    {
+      "firstFrame": 519,
+      "lastBlockFrame": 1152,
+      "sourceStartSample": 471474,
+      "outputStartSample": 951825,
+      "declaredSeek": 361,
+      "headLatency": 1673,
+      "mp3CumulativeSamples": 469440,
+      "firstMp3ReservoirBytes": 255,
+      "sourceEndSample": 1634112,
+      "samples": 1162638,
+      "outputEndSample": 2114463,
+      "outputStartSeconds": 43.166666666666664,
+      "outputEndSeconds": 95.89401360544218
+    }
+  ],
+  "gaps": [
+    {
+      "fromSample": 0,
+      "toSample": 185588
+    },
+    {
+      "fromSample": 277213,
+      "toSample": 363825
+    },
+    {
+      "fromSample": 637463,
+      "toSample": 830550
+    },
+    {
+      "fromSample": 935088,
+      "toSample": 951825
+    },
+    {
+      "fromSample": 2114463,
+      "toSample": 2114963
+    }
+  ],
+  "prepared": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p004-audio-segments-v1/prepared-mono-22050.f32le",
+    "bytes": 8459852,
+    "sha256": "f911d414fe3af9c41836c9908350f7171fe9375c745a4fcb68559ba5f798fc2c"
+  },
+  "allPostLatencySamplesPreservedExactlyOnce": true,
+  "noTimeStretch": true,
+  "interpretation": "Decode the complete original MP3 to preserve its inter-frame bit reservoir. First segment starts at the declared latency. Subsequent source offsets equal preceding decoded sample counts plus stream latency and the first block seek. Partition at those offsets without dropping or repeating post-latency samples; place each segment at its source first-frame time. Continuous samples within each segment retain natural sample rate. Output sample starts round to nearest sample; authored stop buffer rounds up.",
+  "references": [
+    {
+      "title": "Adobe SWF19, MP3 streaming and latency/seek samples",
+      "url": "https://open-flash.github.io/mirrors/swf-spec-19.pdf#page=186"
+    },
+    {
+      "title": "Ruffle StreamTagReader MP3 gap handling, forensic implementation with unresolved runtime details",
+      "url": "https://github.com/ruffle-rs/ruffle/blob/master/core/src/backend/audio/decoders.rs"
+    }
+  ],
+  "limits": [
+    "This implements source-declared timing as engineering evidence; original Flash playback alignment is unaccepted.",
+    "Per-frame seek metadata uses1837 integer samples while22050/12=1837.5; preserve natural-rate audio within segments rather than retiming each block.",
+    "First segment later seek metadata has a164-sample offset from the continuous initial-latency clock; do not treat each per-frame seek as a fresh playback start.",
+    "The Ruffle implementation explicitly marks aspects of gap behavior as unresolved; it is not original-runtime authority."
+  ],
+  "actualPlaybackVerified": false,
+  "audioAccepted": false,
+  "originalRuntimeAccepted": false,
+  "registered": false,
+  "published": false
+}

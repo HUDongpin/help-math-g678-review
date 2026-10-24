@@ -1,0 +1,57 @@
+{
+  "checkedAt": "2026-09-12T20:55:27.771Z",
+  "status": "FAIL",
+  "rows": [
+    {
+      "check": "actual-My-Lesson-ready",
+      "phase": "paused",
+      "frame": 1,
+      "replay": 0,
+      "cycle": 0,
+      "contexts": 0,
+      "contextStates": [],
+      "math": 0
+    },
+    {
+      "check": "real-protected-source-audio-play",
+      "phase": "playing",
+      "frame": 38,
+      "replay": 0,
+      "cycle": 0,
+      "contexts": 1,
+      "contextStates": [
+        "running"
+      ],
+      "math": 0
+    }
+  ],
+  "errors": [],
+  "audioResponses": [
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p007/source-audio?sha256=c18d9e82abbb6a741678299fa610fa9635390c91d20fdcd7e88be7ba4ff7a9b2",
+      "status": 200,
+      "type": "audio/mpeg",
+      "bytes": "128440"
+    }
+  ],
+  "navigation": [
+    {
+      "at": 1789246518957,
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p007"
+    },
+    {
+      "at": 1789246519898,
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p007"
+    },
+    {
+      "at": 1789246521817,
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p007"
+    },
+    {
+      "at": 1789246522455,
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p007"
+    }
+  ],
+  "failure": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(Math.abs((await p.evaluate(()=>audioContexts[0].qaGain.gain.value))-.4)<.000001)\n\n    at file:///private/tmp/helpmath-nms-l02-p007-staging/qa-real-host-v1.mjs:7:333",
+  "scope": "Actual local My Lesson route/descriptor/registered module and protected source endpoints. Original-runtime fidelity and human/audio acceptance remain separate."
+}

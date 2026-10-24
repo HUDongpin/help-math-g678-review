@@ -1,0 +1,69 @@
+{
+  "checkedAt": "2026-09-13T06:59:52.998Z",
+  "status": "PASS",
+  "rows": [
+    {
+      "kind": "short",
+      "state": {
+        "phase": "failed",
+        "elapsedSeconds": 0,
+        "frame": 1,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.8,
+        "narrationEnabled": true,
+        "failure": "P018_AUDIO_BYTES"
+      },
+      "reads": 1,
+      "closed": true
+    },
+    {
+      "kind": "wrong-hash",
+      "state": {
+        "phase": "failed",
+        "elapsedSeconds": 0,
+        "frame": 1,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.8,
+        "narrationEnabled": true,
+        "failure": "P018_AUDIO_HASH"
+      },
+      "reads": 1,
+      "closed": true
+    },
+    {
+      "kind": "wrong-rate",
+      "state": {
+        "phase": "failed",
+        "elapsedSeconds": 0,
+        "frame": 1,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.8,
+        "narrationEnabled": true,
+        "failure": "P018_AUDIO_ACTIVATION"
+      },
+      "reads": 0,
+      "closed": true
+    },
+    {
+      "kind": "cancel-pending-read",
+      "state": {
+        "phase": "paused",
+        "elapsedSeconds": 0,
+        "frame": 1,
+        "completed": false,
+        "replay": 0,
+        "volume": 0.8,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "aborted": true,
+      "closed": true
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "scope": "Negative source transport tests in real Chromium with deliberately invalid test bytes/rate and controlled pending read; no source mutation or provider access."
+}

@@ -1,0 +1,129 @@
+{
+  "checkedAt": "2026-09-19T09:50:45.416Z",
+  "status": "PASS",
+  "rows": [
+    {
+      "kind": "short",
+      "state": {
+        "phase": "failed",
+        "clock": {
+          "game": {
+            "seed": 0,
+            "replay": 0,
+            "mainFrame": 1,
+            "phase": "intro",
+            "round": 0,
+            "cards": [],
+            "first": null,
+            "second": null,
+            "motionTick": 0,
+            "matches": 0,
+            "attempts": 0
+          },
+          "paused": true,
+          "fractionalTick": 0
+        },
+        "mainSeconds": 0,
+        "narrationActive": false,
+        "volume": 0.8,
+        "narrationEnabled": true,
+        "failure": "P026_AUDIO_BYTES"
+      },
+      "reads": 1,
+      "closed": true
+    },
+    {
+      "kind": "wrong-hash",
+      "state": {
+        "phase": "failed",
+        "clock": {
+          "game": {
+            "seed": 0,
+            "replay": 0,
+            "mainFrame": 1,
+            "phase": "intro",
+            "round": 0,
+            "cards": [],
+            "first": null,
+            "second": null,
+            "motionTick": 0,
+            "matches": 0,
+            "attempts": 0
+          },
+          "paused": true,
+          "fractionalTick": 0
+        },
+        "mainSeconds": 0,
+        "narrationActive": false,
+        "volume": 0.8,
+        "narrationEnabled": true,
+        "failure": "P026_AUDIO_HASH"
+      },
+      "reads": 1,
+      "closed": true
+    },
+    {
+      "kind": "wrong-rate",
+      "state": {
+        "phase": "failed",
+        "clock": {
+          "game": {
+            "seed": 0,
+            "replay": 0,
+            "mainFrame": 1,
+            "phase": "intro",
+            "round": 0,
+            "cards": [],
+            "first": null,
+            "second": null,
+            "motionTick": 0,
+            "matches": 0,
+            "attempts": 0
+          },
+          "paused": true,
+          "fractionalTick": 0
+        },
+        "mainSeconds": 0,
+        "narrationActive": false,
+        "volume": 0.8,
+        "narrationEnabled": true,
+        "failure": "P026_AUDIO_ACTIVATION"
+      },
+      "reads": 0,
+      "closed": true
+    },
+    {
+      "kind": "cancel-pending-read",
+      "state": {
+        "phase": "paused",
+        "clock": {
+          "game": {
+            "seed": 0,
+            "replay": 0,
+            "mainFrame": 1,
+            "phase": "intro",
+            "round": 0,
+            "cards": [],
+            "first": null,
+            "second": null,
+            "motionTick": 0,
+            "matches": 0,
+            "attempts": 0
+          },
+          "paused": true,
+          "fractionalTick": 0
+        },
+        "mainSeconds": 0,
+        "narrationActive": false,
+        "volume": 0.8,
+        "narrationEnabled": true,
+        "failure": null
+      },
+      "aborted": true,
+      "closed": true
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "scope": "Negative source transport tests in real Chromium with deliberately invalid test bytes/rate and controlled pending read; no source mutation or provider access."
+}

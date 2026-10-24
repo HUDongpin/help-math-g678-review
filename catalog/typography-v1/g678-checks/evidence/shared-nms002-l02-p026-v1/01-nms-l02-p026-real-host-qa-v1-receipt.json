@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "check": "actual-My-Lesson-initial-state",
+      "audioPhase": "paused",
+      "main": 1,
+      "phase": "intro",
+      "round": 0,
+      "matches": 0,
+      "replay": 0,
+      "contexts": 0
+    },
+    {
+      "check": "both-source-terms-pause-and-focus"
+    },
+    {
+      "check": "host-volume-controls-real-gain"
+    },
+    {
+      "check": "independent-motion-and-wrong-return",
+      "audioPhase": "playing",
+      "main": 392,
+      "phase": "ready",
+      "round": 1,
+      "matches": 0,
+      "replay": 0,
+      "contexts": 1
+    },
+    {
+      "check": "round-one-completion-and-second-stop"
+    },
+    {
+      "check": "round-two-phone-reduced-motion-and-terminal",
+      "audioPhase": "completed",
+      "main": 491,
+      "phase": "completed",
+      "round": 2,
+      "matches": 4,
+      "replay": 0,
+      "contexts": 1
+    },
+    {
+      "check": "terminal-Play-hold-and-full-Replay"
+    },
+    {
+      "check": "P027-unavailable-and-audio-closed"
+    },
+    {
+      "check": "P025-predecessor-playback-intact"
+    }
+  ],
+  "errors": [],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p026/source-audio?sha256=a153d93dd77d22747200de36ac1e2771c5a957398331f9641eb3e760907b6af9",
+      "status": 200,
+      "bytes": "200590"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p025/source-audio?sha256=a2194a95a51fdc153c6fa64633f96aba17cf971b83fef3bff466698283840425",
+      "status": 200,
+      "bytes": "141310"
+    }
+  ],
+  "failure": null,
+  "admitted": false,
+  "scope": "Actual local My Lesson runtime checks, not original runtime or human acceptance."
+}

@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-09-13T11:52:50.371Z",
+  "status": "FAIL",
+  "checks": [
+    {
+      "check": "two-full-source-cycles",
+      "frames": 938
+    },
+    {
+      "check": "native-term-keyboard-focus",
+      "key": "Fraction",
+      "start": 330
+    },
+    {
+      "check": "native-term-keyboard-focus",
+      "key": "Part",
+      "start": 336
+    },
+    {
+      "check": "native-term-keyboard-focus",
+      "key": "Whole",
+      "start": 343
+    },
+    {
+      "check": "native-term-keyboard-focus",
+      "key": "Number line",
+      "start": 371
+    },
+    {
+      "check": "source-and-reduced-motion-emphasis"
+    }
+  ],
+  "errors": [],
+  "failure": "locator.innerText: Error: Node is not an HTMLElement\nCall log:\n\u001b[2m  - waiting for locator('mfrac')\u001b[22m\n\n    at /private/tmp/helpmath-nms-l02-p023-staging/check-browser-v1.mjs:13:575",
+  "registered": false,
+  "scope": "Standalone native and integrated player; actual My Lesson and registration pending."
+}

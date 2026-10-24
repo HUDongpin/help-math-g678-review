@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "check": "actual-main-signal",
+      "rms": 0.12814533351465365
+    },
+    {
+      "check": "all-three-live-full-PCM-buffers",
+      "prepared": [
+        {
+          "samples": 27562,
+          "sha256": "850e1da19d3771041034e38bfd576e8f0a56b87f2938f364910aa5ba971013b8"
+        },
+        {
+          "samples": 36750,
+          "sha256": "7a9ec34aebee18b9203a78c2be2097447036afbde74df18ee9bb94d1301109f8"
+        },
+        {
+          "samples": 170888,
+          "sha256": "51629d8df9c9a020f17aab0b4959cf5d4d70d53204f81bbf471f0fd1b027ceba"
+        }
+      ]
+    },
+    {
+      "check": "pause-volume-narration-and-clock"
+    },
+    {
+      "check": "wrong-and-correct-source-clocks-complete"
+    },
+    {
+      "check": "Replay-cache-reset-and-close"
+    },
+    {
+      "check": "reject-mime",
+      "expected": "P024_AUDIO_RESPONSE"
+    },
+    {
+      "check": "reject-short",
+      "expected": "P024_AUDIO_SIZE"
+    },
+    {
+      "check": "reject-long",
+      "expected": "P024_AUDIO_SIZE"
+    },
+    {
+      "check": "reject-hash",
+      "expected": "P024_AUDIO_HASH"
+    },
+    {
+      "check": "reject-redirect",
+      "expected": "P024_AUDIO_UNAVAILABLE"
+    },
+    {
+      "check": "delayed-read-cancellation-no-late-state-change"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "originalRuntimeAccepted": false,
+  "audioAccepted": false
+}

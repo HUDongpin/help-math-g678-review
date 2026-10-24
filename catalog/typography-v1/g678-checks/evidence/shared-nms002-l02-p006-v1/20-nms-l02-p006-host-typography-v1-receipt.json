@@ -1,0 +1,180 @@
+{
+  "status": "FAIL",
+  "results": [
+    {
+      "status": "PASS",
+      "profile": {
+        "id": "small-en",
+        "width": 320,
+        "dpr": 1,
+        "lang": "en"
+      },
+      "readyMs": [
+        46939,
+        51430
+      ],
+      "firstPlayMs": 8274,
+      "initial": {
+        "contentLanguage": "en",
+        "bodyFont": "\"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif",
+        "headingFont": "\"HELP Math Fredoka\", \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif",
+        "contexts": 0,
+        "svg": 1
+      },
+      "finalFrame": 153,
+      "semantics": {
+        "question": "How do you convert fractions to decimals and percents?",
+        "terms": [
+          "convert",
+          "fractions",
+          "decimals",
+          "percents"
+        ],
+        "sourceTextContours": 0
+      },
+      "layout": [
+        {
+          "zoom": 1,
+          "width": 320,
+          "pageScroll": 320,
+          "stageClient": 278,
+          "stageScroll": 278,
+          "equationClient": 257,
+          "equationScroll": 257,
+          "controlOverflow": [],
+          "frame": 153,
+          "contexts": 1
+        },
+        {
+          "zoom": 2,
+          "width": 320,
+          "pageScroll": 320,
+          "stageClient": 238,
+          "stageScroll": 238,
+          "equationClient": 204,
+          "equationScroll": 204,
+          "controlOverflow": [],
+          "frame": 153,
+          "contexts": 1
+        }
+      ],
+      "restoration": {
+        "page": "6",
+        "frame": 1,
+        "contexts": 0
+      },
+      "errors": [],
+      "failure": null
+    },
+    {
+      "status": "PASS",
+      "profile": {
+        "id": "phone-es",
+        "width": 390,
+        "dpr": 3,
+        "lang": "es"
+      },
+      "readyMs": [
+        47094,
+        51260
+      ],
+      "firstPlayMs": 8254,
+      "initial": {
+        "contentLanguage": "en",
+        "bodyFont": "\"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif",
+        "headingFont": "\"HELP Math Fredoka\", \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif",
+        "contexts": 0,
+        "svg": 1
+      },
+      "finalFrame": 153,
+      "semantics": {
+        "question": "How do you convert fractions to decimals and percents?",
+        "terms": [
+          "convert",
+          "fractions",
+          "decimals",
+          "percents"
+        ],
+        "sourceTextContours": 0
+      },
+      "layout": [
+        {
+          "zoom": 1,
+          "width": 390,
+          "pageScroll": 390,
+          "stageClient": 348,
+          "stageScroll": 348,
+          "equationClient": 323,
+          "equationScroll": 323,
+          "controlOverflow": [],
+          "frame": 153,
+          "contexts": 1
+        },
+        {
+          "zoom": 2,
+          "width": 390,
+          "pageScroll": 390,
+          "stageClient": 308,
+          "stageScroll": 308,
+          "equationClient": 274,
+          "equationScroll": 274,
+          "controlOverflow": [],
+          "frame": 153,
+          "contexts": 1
+        }
+      ],
+      "restoration": {
+        "page": "6",
+        "frame": 1,
+        "contexts": 0
+      },
+      "errors": [],
+      "failure": null
+    },
+    {
+      "status": "FAIL",
+      "profile": {
+        "id": "tablet-es",
+        "width": 768,
+        "dpr": 2,
+        "lang": "es"
+      },
+      "errors": [],
+      "failure": "page.waitForFunction: Timeout 125000ms exceeded.\n    at run (/private/tmp/helpmath-nms-l02-p006-staging/qa-host-typography-v1.mjs:8:9)\n    at async file:///private/tmp/helpmath-nms-l02-p006-staging/qa-host-typography-v1.mjs:15:66"
+    },
+    {
+      "status": "FAIL",
+      "profile": {
+        "id": "laptop-en",
+        "width": 1280,
+        "dpr": 1,
+        "lang": "en"
+      },
+      "errors": [],
+      "failure": "page.waitForFunction: Timeout 125000ms exceeded.\n    at run (/private/tmp/helpmath-nms-l02-p006-staging/qa-host-typography-v1.mjs:8:9)\n    at async file:///private/tmp/helpmath-nms-l02-p006-staging/qa-host-typography-v1.mjs:15:66"
+    },
+    {
+      "status": "FAIL",
+      "profile": {
+        "id": "desktop-en",
+        "width": 1440,
+        "dpr": 2,
+        "lang": "en"
+      },
+      "errors": [],
+      "failure": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p006\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p006\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at run (/private/tmp/helpmath-nms-l02-p006-staging/qa-host-typography-v1.mjs:5:167)\n    at async file:///private/tmp/helpmath-nms-l02-p006-staging/qa-host-typography-v1.mjs:15:66"
+    },
+    {
+      "status": "FAIL",
+      "profile": {
+        "id": "wide-es",
+        "width": 1920,
+        "dpr": 1,
+        "lang": "es"
+      },
+      "errors": [],
+      "failure": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3343/es/migration-status/g678-calibration/shared-nms002-l02-p006\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:3343/es/migration-status/g678-calibration/shared-nms002-l02-p006\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at run (/private/tmp/helpmath-nms-l02-p006-staging/qa-host-typography-v1.mjs:5:167)\n    at async file:///private/tmp/helpmath-nms-l02-p006-staging/qa-host-typography-v1.mjs:15:66"
+    }
+  ],
+  "scope": "Six fresh actual local My Lesson profiles, paired isolated browser sessions. Full source audio clock through authored stop153, native math/calculator, text zoom and restoration. Local development timings do not establish production performance or human acceptance."
+}

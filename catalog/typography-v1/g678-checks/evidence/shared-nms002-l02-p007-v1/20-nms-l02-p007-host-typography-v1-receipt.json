@@ -1,0 +1,337 @@
+{
+  "status": "FAIL",
+  "results": [
+    {
+      "status": "FAIL",
+      "profile": {
+        "id": "small-en",
+        "width": 320,
+        "dpr": 1,
+        "lang": "en"
+      },
+      "errors": [],
+      "failure": "AssertionError [ERR_ASSERTION]: stage overflow\n    at run (file:///private/tmp/helpmath-nms-l02-p007-staging/qa-host-typography-v1.mjs:10:1054)\n    at async file:///private/tmp/helpmath-nms-l02-p007-staging/qa-host-typography-v1.mjs:15:62"
+    },
+    {
+      "status": "PASS",
+      "profile": {
+        "id": "phone-es",
+        "width": 390,
+        "dpr": 3,
+        "lang": "es"
+      },
+      "readyMs": [
+        1963,
+        1894
+      ],
+      "firstPlayMs": 263,
+      "initial": {
+        "contentLanguage": "en",
+        "bodyFont": "\"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, sans-serif",
+        "headingFont": "\"HELP Math Fredoka\", \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, sans-serif",
+        "contexts": 0,
+        "svg": 0
+      },
+      "finalFrame": 312,
+      "semantics": {
+        "question": "Fractions describe part of a whole, part of a group, or part of a number.",
+        "terms": [
+          "Fractions",
+          "whole",
+          "group"
+        ],
+        "sourceTextContours": 0
+      },
+      "layout": [
+        {
+          "zoom": 1,
+          "width": 390,
+          "pageScroll": 390,
+          "stageClient": 348,
+          "stageScroll": 348,
+          "equationClient": 325,
+          "equationScroll": 325,
+          "controlOverflow": [],
+          "frame": 312,
+          "contexts": 1
+        },
+        {
+          "zoom": 2,
+          "width": 390,
+          "pageScroll": 390,
+          "stageClient": 308,
+          "stageScroll": 308,
+          "equationClient": 276,
+          "equationScroll": 276,
+          "controlOverflow": [],
+          "frame": 312,
+          "contexts": 1
+        }
+      ],
+      "restoration": {
+        "page": "7",
+        "frame": 1,
+        "contexts": 0
+      },
+      "errors": [],
+      "failure": null
+    },
+    {
+      "status": "PASS",
+      "profile": {
+        "id": "tablet-es",
+        "width": 768,
+        "dpr": 2,
+        "lang": "es"
+      },
+      "readyMs": [
+        2010,
+        2367
+      ],
+      "firstPlayMs": 351,
+      "initial": {
+        "contentLanguage": "en",
+        "bodyFont": "\"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, sans-serif",
+        "headingFont": "\"HELP Math Fredoka\", \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, sans-serif",
+        "contexts": 0,
+        "svg": 0
+      },
+      "finalFrame": 312,
+      "semantics": {
+        "question": "Fractions describe part of a whole, part of a group, or part of a number.",
+        "terms": [
+          "Fractions",
+          "whole",
+          "group"
+        ],
+        "sourceTextContours": 0
+      },
+      "layout": [
+        {
+          "zoom": 1,
+          "width": 768,
+          "pageScroll": 768,
+          "stageClient": 553,
+          "stageScroll": 553,
+          "equationClient": 507,
+          "equationScroll": 507,
+          "controlOverflow": [],
+          "frame": 312,
+          "contexts": 1
+        },
+        {
+          "zoom": 2,
+          "width": 768,
+          "pageScroll": 768,
+          "stageClient": 366,
+          "stageScroll": 366,
+          "equationClient": 320,
+          "equationScroll": 320,
+          "controlOverflow": [],
+          "frame": 312,
+          "contexts": 1
+        }
+      ],
+      "restoration": {
+        "page": "7",
+        "frame": 1,
+        "contexts": 0
+      },
+      "errors": [],
+      "failure": null
+    },
+    {
+      "status": "PASS",
+      "profile": {
+        "id": "laptop-en",
+        "width": 1280,
+        "dpr": 1,
+        "lang": "en"
+      },
+      "readyMs": [
+        2045,
+        1952
+      ],
+      "firstPlayMs": 231,
+      "initial": {
+        "contentLanguage": "en",
+        "bodyFont": "\"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, sans-serif",
+        "headingFont": "\"HELP Math Fredoka\", \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, sans-serif",
+        "contexts": 0,
+        "svg": 0
+      },
+      "finalFrame": 312,
+      "semantics": {
+        "question": "Fractions describe part of a whole, part of a group, or part of a number.",
+        "terms": [
+          "Fractions",
+          "whole",
+          "group"
+        ],
+        "sourceTextContours": 0
+      },
+      "layout": [
+        {
+          "zoom": 1,
+          "width": 1280,
+          "pageScroll": 1265,
+          "stageClient": 951,
+          "stageScroll": 951,
+          "equationClient": 887,
+          "equationScroll": 887,
+          "controlOverflow": [],
+          "frame": 312,
+          "contexts": 1
+        },
+        {
+          "zoom": 2,
+          "width": 1280,
+          "pageScroll": 1265,
+          "stageClient": 703,
+          "stageScroll": 703,
+          "equationClient": 626,
+          "equationScroll": 626,
+          "controlOverflow": [],
+          "frame": 312,
+          "contexts": 1
+        }
+      ],
+      "restoration": {
+        "page": "7",
+        "frame": 1,
+        "contexts": 0
+      },
+      "errors": [],
+      "failure": null
+    },
+    {
+      "status": "PASS",
+      "profile": {
+        "id": "desktop-en",
+        "width": 1440,
+        "dpr": 2,
+        "lang": "en"
+      },
+      "readyMs": [
+        1949,
+        1889
+      ],
+      "firstPlayMs": 267,
+      "initial": {
+        "contentLanguage": "en",
+        "bodyFont": "\"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, sans-serif",
+        "headingFont": "\"HELP Math Fredoka\", \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, sans-serif",
+        "contexts": 0,
+        "svg": 0
+      },
+      "finalFrame": 312,
+      "semantics": {
+        "question": "Fractions describe part of a whole, part of a group, or part of a number.",
+        "terms": [
+          "Fractions",
+          "whole",
+          "group"
+        ],
+        "sourceTextContours": 0
+      },
+      "layout": [
+        {
+          "zoom": 1,
+          "width": 1440,
+          "pageScroll": 1425,
+          "stageClient": 1111,
+          "stageScroll": 1111,
+          "equationClient": 1047,
+          "equationScroll": 1047,
+          "controlOverflow": [],
+          "frame": 312,
+          "contexts": 1
+        },
+        {
+          "zoom": 2,
+          "width": 1440,
+          "pageScroll": 1425,
+          "stageClient": 855,
+          "stageScroll": 855,
+          "equationClient": 769,
+          "equationScroll": 769,
+          "controlOverflow": [],
+          "frame": 312,
+          "contexts": 1
+        }
+      ],
+      "restoration": {
+        "page": "7",
+        "frame": 1,
+        "contexts": 0
+      },
+      "errors": [],
+      "failure": null
+    },
+    {
+      "status": "PASS",
+      "profile": {
+        "id": "wide-es",
+        "width": 1920,
+        "dpr": 1,
+        "lang": "es"
+      },
+      "readyMs": [
+        1938,
+        1888
+      ],
+      "firstPlayMs": 280,
+      "initial": {
+        "contentLanguage": "en",
+        "bodyFont": "\"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, sans-serif",
+        "headingFont": "\"HELP Math Fredoka\", \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Arial Rounded MT Bold\", \"Trebuchet MS\", \"HELP Math Nunito Sans\", \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, \"Avenir Next\", Avenir, \"Segoe UI\", system-ui, sans-serif, sans-serif",
+        "contexts": 0,
+        "svg": 0
+      },
+      "finalFrame": 312,
+      "semantics": {
+        "question": "Fractions describe part of a whole, part of a group, or part of a number.",
+        "terms": [
+          "Fractions",
+          "whole",
+          "group"
+        ],
+        "sourceTextContours": 0
+      },
+      "layout": [
+        {
+          "zoom": 1,
+          "width": 1920,
+          "pageScroll": 1905,
+          "stageClient": 1543,
+          "stageScroll": 1543,
+          "equationClient": 1479,
+          "equationScroll": 1479,
+          "controlOverflow": [],
+          "frame": 312,
+          "contexts": 1
+        },
+        {
+          "zoom": 2,
+          "width": 1920,
+          "pageScroll": 1905,
+          "stageClient": 1311,
+          "stageScroll": 1311,
+          "equationClient": 1196,
+          "equationScroll": 1196,
+          "controlOverflow": [],
+          "frame": 312,
+          "contexts": 1
+        }
+      ],
+      "restoration": {
+        "page": "7",
+        "frame": 1,
+        "contexts": 0
+      },
+      "errors": [],
+      "failure": null
+    }
+  ],
+  "scope": "Six fresh actual local My Lesson profiles, serial isolated browser sessions. Full source audio clock through one complete26second source cycle, native definition/fractions and terms, text zoom and restoration. Local development timings do not establish production performance or human acceptance."
+}

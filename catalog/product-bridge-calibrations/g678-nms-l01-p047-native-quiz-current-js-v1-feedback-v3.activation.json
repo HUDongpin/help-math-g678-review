@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "beforeRegistry": {
+    "path": "packages/demos/private-current-js-registry.json",
+    "bytes": 495564,
+    "sha256": "ece8b4d0a0cb71dc8cdf7d2c14d508df4fc8e692b2fe711784c10932adc1411e"
+  },
+  "after": [
+    {
+      "path": "packages/demos/private-current-js-registry.json",
+      "bytes": 495570,
+      "sha256": "9d355979c36c529ac6c314730c2d074a54711b4ab2bc8f7128e1b2cb76361419"
+    },
+    {
+      "path": "packages/demos/src/registry.generated.ts",
+      "bytes": 130310,
+      "sha256": "88c107cd2ed96eae29734cda07aad1d4d5d5ace87d52b218981866845f51fa76"
+    },
+    {
+      "path": "packages/demos/src/registry.metadata.generated.ts",
+      "bytes": 75696,
+      "sha256": "da599a2f4d466d581abacf1f6d774e2995034c622cf01d17941f56c518cbe785"
+    },
+    {
+      "path": "packages/demos/src/registry.local-only.generated.ts",
+      "bytes": 314328,
+      "sha256": "5e5f7524ff2fda7cf76a7435f77cabb5d7f8ef5c5dca00546c40ee6c1cfe7a5b"
+    },
+    {
+      "path": "packages/demos/src/registry.local-only.metadata.generated.ts",
+      "bytes": 243877,
+      "sha256": "3ef4d1fdef31da2e5664b38663c7b643cdd466ca2cf39aee11eb7a54bc6a1876"
+    }
+  ],
+  "registeredCount": 423,
+  "registrationDelta": 0,
+  "repairedId": "shared-nms002-l01-p047",
+  "reason": "Bind all108 source Correct/Incorrect feedback fields to the native snapshot; preserve question, scoring, audio and navigation behavior.",
+  "transaction": {
+    "backups": [
+      {
+        "target": "packages/demos/private-current-js-registry.json",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p047-native-quiz-current-js-v1-feedback-v3-activation-v1/before-private-current-js-registry.json",
+          "bytes": 495564,
+          "sha256": "ece8b4d0a0cb71dc8cdf7d2c14d508df4fc8e692b2fe711784c10932adc1411e"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p047-native-quiz-current-js-v1-feedback-v3-activation-v1/before-registry.generated.ts",
+          "bytes": 130310,
+          "sha256": "88c107cd2ed96eae29734cda07aad1d4d5d5ace87d52b218981866845f51fa76"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.metadata.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p047-native-quiz-current-js-v1-feedback-v3-activation-v1/before-registry.metadata.generated.ts",
+          "bytes": 75696,
+          "sha256": "da599a2f4d466d581abacf1f6d774e2995034c622cf01d17941f56c518cbe785"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.local-only.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p047-native-quiz-current-js-v1-feedback-v3-activation-v1/before-registry.local-only.generated.ts",
+          "bytes": 314328,
+          "sha256": "e2a1b08bf771212adc62eda31389bcbea60f7c34dd59f91825718abd1099e3b7"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.local-only.metadata.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p047-native-quiz-current-js-v1-feedback-v3-activation-v1/before-registry.local-only.metadata.generated.ts",
+          "bytes": 243877,
+          "sha256": "b9e317d0ae02772a23c160219e33b284b22697fbec44f144facfb30f485bb9a6"
+        }
+      }
+    ],
+    "completed": [
+      "packages/demos/private-current-js-registry.json",
+      "packages/demos/src/registry.local-only.generated.ts",
+      "packages/demos/src/registry.local-only.metadata.generated.ts"
+    ],
+    "rollback": false
+  },
+  "status": "registered-module-repair-product-qa-pending",
+  "published": false
+}

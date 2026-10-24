@@ -1,0 +1,89 @@
+{
+  "checkedAt": "2026-09-12T21:34:40.849Z",
+  "status": "FAIL",
+  "rows": [
+    {
+      "check": "actual-My-Lesson-ready",
+      "phase": "paused",
+      "frame": 1,
+      "replay": 0,
+      "cycle": 0,
+      "contexts": 0,
+      "contextStates": [],
+      "math": 0
+    },
+    {
+      "check": "real-protected-source-audio-play",
+      "phase": "playing",
+      "frame": 38,
+      "replay": 0,
+      "cycle": 0,
+      "contexts": 1,
+      "contextStates": [
+        "running"
+      ],
+      "math": 0
+    },
+    {
+      "check": "host-volume-resize-motion-preserve-clock",
+      "phase": "playing",
+      "frame": 47,
+      "replay": 0,
+      "cycle": 0,
+      "contexts": 1,
+      "contextStates": [
+        "running"
+      ],
+      "math": 0
+    },
+    {
+      "check": "real-host-term-pauses-clock-and-restores-focus",
+      "phase": "paused",
+      "frame": 69,
+      "replay": 0,
+      "cycle": 0,
+      "contexts": 1,
+      "contextStates": [
+        "running"
+      ],
+      "math": 0
+    }
+  ],
+  "errors": [],
+  "audioResponses": [
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p008/source-audio?sha256=ea235ecf5a54a0a37de91e5ec25c8bc6f42b913569ec3c53f8382bbccabceff1",
+      "status": 200,
+      "type": "audio/mpeg",
+      "bytes": "127140"
+    }
+  ],
+  "navigation": [
+    {
+      "at": 1789248834226,
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p008"
+    },
+    {
+      "at": 1789248834984,
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p008"
+    },
+    {
+      "at": 1789248836710,
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p008"
+    },
+    {
+      "at": 1789248837375,
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p008"
+    },
+    {
+      "at": 1789248855100,
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p008"
+    },
+    {
+      "at": 1789248858113,
+      "url": "http://127.0.0.1:3343/en/migration-status/g678-calibration/shared-nms002-l02-p008"
+    }
+  ],
+  "failure": "page.waitForFunction: Timeout 35000ms exceeded.\n    at /private/tmp/helpmath-nms-l02-p008-staging/qa-real-host-v1.mjs:9:9",
+  "scope": "Actual local My Lesson route/descriptor/registered module and protected source endpoints. Original-runtime fidelity and human/audio acceptance remain separate."
+}

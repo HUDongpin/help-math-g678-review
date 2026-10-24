@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-09-10T03:09:00.165Z",
+  "status": "local-registered-single-page-product-qa-pending",
+  "beforeRegistry": {
+    "path": "packages/demos/private-current-js-registry.json",
+    "bytes": 485403,
+    "sha256": "1796323ae0efa6f2e0f8f57d085475a66a7e5f4c9d4f361f4ca0668f44378169"
+  },
+  "after": [
+    {
+      "path": "packages/demos/private-current-js-registry.json",
+      "bytes": 486792,
+      "sha256": "9a74729aa6b3b9df6c019308a3ff5048756255c1e7ca5bd32fdd303738cdaff6"
+    },
+    {
+      "path": "packages/demos/src/registry.generated.ts",
+      "bytes": 130310,
+      "sha256": "88c107cd2ed96eae29734cda07aad1d4d5d5ace87d52b218981866845f51fa76"
+    },
+    {
+      "path": "packages/demos/src/registry.metadata.generated.ts",
+      "bytes": 75696,
+      "sha256": "da599a2f4d466d581abacf1f6d774e2995034c622cf01d17941f56c518cbe785"
+    },
+    {
+      "path": "packages/demos/src/registry.local-only.generated.ts",
+      "bytes": 309822,
+      "sha256": "7cacd0e0dd31fa17608043e5635f2b6e002019c9721d928319dbe5dce5cf1ad9"
+    },
+    {
+      "path": "packages/demos/src/registry.local-only.metadata.generated.ts",
+      "bytes": 240346,
+      "sha256": "89e7210653574f8886413dd32a814d9e64d4b70e709ee817a401a50cac2e8dbe"
+    }
+  ],
+  "addedIds": [
+    "shared-nms002-l01-p033"
+  ],
+  "preservedG678Placements": 416,
+  "changedExistingPlacements": 0,
+  "publicFilesWritten": 0,
+  "transaction": {
+    "backups": [
+      {
+        "target": "packages/demos/private-current-js-registry.json",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p033-current-js-v1-activation/before-private-current-js-registry.json",
+          "bytes": 485403,
+          "sha256": "1796323ae0efa6f2e0f8f57d085475a66a7e5f4c9d4f361f4ca0668f44378169"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p033-current-js-v1-activation/before-registry.generated.ts",
+          "bytes": 130310,
+          "sha256": "88c107cd2ed96eae29734cda07aad1d4d5d5ace87d52b218981866845f51fa76"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.metadata.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p033-current-js-v1-activation/before-registry.metadata.generated.ts",
+          "bytes": 75696,
+          "sha256": "da599a2f4d466d581abacf1f6d774e2995034c622cf01d17941f56c518cbe785"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.local-only.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p033-current-js-v1-activation/before-registry.local-only.generated.ts",
+          "bytes": 309099,
+          "sha256": "5e7b4b35c379377c775cd5d07f974f2181f3073e9aa41df703bebee8ba065fcd"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.local-only.metadata.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p033-current-js-v1-activation/before-registry.local-only.metadata.generated.ts",
+          "bytes": 239783,
+          "sha256": "746a524594ba945523a8c68dded122f4139e323faefafd0c0f6042dd9657478e"
+        }
+      }
+    ],
+    "completed": [
+      "packages/demos/private-current-js-registry.json",
+      "packages/demos/src/registry.local-only.generated.ts",
+      "packages/demos/src/registry.local-only.metadata.generated.ts"
+    ],
+    "rollback": false
+  },
+  "freeze": {
+    "path": "catalog/product-bridge-calibrations/g678-nms-l01-p033-current-js-v1.json",
+    "bytes": 328110,
+    "sha256": "520c07c4a3583665fc19c44385da28cf2f11b17e7a55a88c864b8b9d6538cbb4"
+  },
+  "fragment": {
+    "path": "catalog/product-bridge-calibrations/g678-nms-l01-p033-current-js-v1.fragment.json",
+    "bytes": 1365,
+    "sha256": "d2beee69cefe22bd6d8e84821fed36eb11fe0dba01d0c371669935cd8d288936"
+  },
+  "productCalibrationPassed": false,
+  "scaleOutAuthorized": false,
+  "acceptanceEffects": {
+    "productCalibrationPassed": false,
+    "authoritativeOriginalRuntime": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "released": false,
+    "published": false
+  }
+}

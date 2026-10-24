@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "domainQueries": 346,
+  "frameLanguageQueries": 672,
+  "queries": 1018,
+  "visibilityQueries": 6392,
+  "sourceLoopAndModernHoldQueries": 2016,
+  "termStarts": {
+    "Percent": 20,
+    "Ratio": 103,
+    "Compare": 118,
+    "Quantity": 126
+  },
+  "gridCellProbes": 2400,
+  "preparedAudio": {
+    "samples": 617400,
+    "sha256": "e8a47b079a19ebebafa3074bd61bddcb6b34018da7210fe92226aa52c16e5f67",
+    "segments": [
+      {
+        "firstFrame": 8,
+        "lastBlockFrame": 155,
+        "sourceStartSample": 1673,
+        "outputStartSample": 12863,
+        "declaredSeek": 1673,
+        "headLatency": 1673,
+        "mp3CumulativeSamples": 0,
+        "firstMp3ReservoirBytes": 0,
+        "sourceEndSample": 271720,
+        "samples": 270047,
+        "outputEndSample": 282910,
+        "outputStartSeconds": 0.5833560090702948,
+        "outputEndSeconds": 12.830385487528345
+      },
+      {
+        "firstFrame": 183,
+        "lastBlockFrame": 336,
+        "sourceStartSample": 271720,
+        "outputStartSample": 334425,
+        "declaredSeek": 479,
+        "headLatency": 1673,
+        "mp3CumulativeSamples": 269568,
+        "firstMp3ReservoirBytes": 255,
+        "sourceEndSample": 552384,
+        "samples": 280664,
+        "outputEndSample": 615089,
+        "outputStartSeconds": 15.166666666666666,
+        "outputEndSeconds": 27.895192743764174
+      }
+    ],
+    "gaps": [
+      {
+        "fromSample": 0,
+        "toSample": 12863
+      },
+      {
+        "fromSample": 282910,
+        "toSample": 334425
+      },
+      {
+        "fromSample": 615089,
+        "toSample": 617400
+      }
+    ],
+    "allPostLatencySamplesPreserved": true
+  },
+  "registered": false
+}

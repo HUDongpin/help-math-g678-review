@@ -1,0 +1,72 @@
+{
+  "status": "FAIL",
+  "results": [
+    {
+      "status": "FAIL",
+      "profile": {
+        "id": "small-en",
+        "width": 320,
+        "dpr": 1,
+        "lang": "en"
+      },
+      "errors": [],
+      "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nnull !== 'en'\n\n    at run (file:///private/tmp/helpmath-nms-l02-p024-staging/qa-host-typography-v1.mjs:6:372)\n    at async file:///private/tmp/helpmath-nms-l02-p024-staging/qa-host-typography-v1.mjs:15:61"
+    },
+    {
+      "status": "FAIL",
+      "profile": {
+        "id": "phone-es",
+        "width": 390,
+        "dpr": 3,
+        "lang": "es"
+      },
+      "errors": [],
+      "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nnull !== 'en'\n\n    at run (file:///private/tmp/helpmath-nms-l02-p024-staging/qa-host-typography-v1.mjs:6:372)\n    at async file:///private/tmp/helpmath-nms-l02-p024-staging/qa-host-typography-v1.mjs:15:61"
+    },
+    {
+      "status": "FAIL",
+      "profile": {
+        "id": "tablet-es",
+        "width": 768,
+        "dpr": 2,
+        "lang": "es"
+      },
+      "errors": [],
+      "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nnull !== 'en'\n\n    at run (file:///private/tmp/helpmath-nms-l02-p024-staging/qa-host-typography-v1.mjs:6:372)\n    at async file:///private/tmp/helpmath-nms-l02-p024-staging/qa-host-typography-v1.mjs:15:61"
+    },
+    {
+      "status": "FAIL",
+      "profile": {
+        "id": "laptop-en",
+        "width": 1280,
+        "dpr": 1,
+        "lang": "en"
+      },
+      "errors": [],
+      "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nnull !== 'en'\n\n    at run (file:///private/tmp/helpmath-nms-l02-p024-staging/qa-host-typography-v1.mjs:6:372)\n    at async file:///private/tmp/helpmath-nms-l02-p024-staging/qa-host-typography-v1.mjs:15:61"
+    },
+    {
+      "status": "FAIL",
+      "profile": {
+        "id": "desktop-en",
+        "width": 1440,
+        "dpr": 2,
+        "lang": "en"
+      },
+      "errors": [],
+      "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nnull !== 'en'\n\n    at run (file:///private/tmp/helpmath-nms-l02-p024-staging/qa-host-typography-v1.mjs:6:372)\n    at async file:///private/tmp/helpmath-nms-l02-p024-staging/qa-host-typography-v1.mjs:15:61"
+    },
+    {
+      "status": "FAIL",
+      "profile": {
+        "id": "wide-es",
+        "width": 1920,
+        "dpr": 1,
+        "lang": "es"
+      },
+      "errors": [],
+      "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nnull !== 'en'\n\n    at run (file:///private/tmp/helpmath-nms-l02-p024-staging/qa-host-typography-v1.mjs:6:372)\n    at async file:///private/tmp/helpmath-nms-l02-p024-staging/qa-host-typography-v1.mjs:15:61"
+    }
+  ],
+  "scope": "Six actual local My Lesson profiles, serial isolated browser sessions. Full source introduction through92, keyboard quarter placement and source correct feedback through93, native balloon quarter placement, two terms and equal intervals, text zoom and restoration. Local development timings do not establish production performance or human acceptance."
+}

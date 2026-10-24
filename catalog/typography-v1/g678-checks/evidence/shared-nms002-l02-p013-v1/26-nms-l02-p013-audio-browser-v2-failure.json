@@ -1,0 +1,20 @@
+{
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n3 !== 4\n\n    at file:///private/tmp/helpmath-nms-l02-p013-staging/check-audio-browser-v2.mjs:17:8",
+  "checks": [
+    {
+      "check": "close-press-audio-concurrent-with-wrong-close-does-not-stop-wrong",
+      "rms": 0.05202879529844385,
+      "frame": 3,
+      "wrong": true
+    }
+  ],
+  "requests": [
+    "/",
+    "/bundle.js",
+    "/audio/123",
+    "/audio/107",
+    "/audio/111",
+    "/audio/99"
+  ],
+  "errors": []
+}

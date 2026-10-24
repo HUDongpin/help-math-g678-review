@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "g678-ts07-nms-l1-family-calibration-v1",
+  "calibrationId": "g678-ts07-nms-l1-family-calibration-v1",
+  "adapterFamily": "ts07-nms-l1-assessment-source-static",
+  "status": "exact-one-current-js-assessment-product-host-calibrated",
+  "inputs": {
+    "audit": {
+      "path": "catalog/g678-ts07-family-audit-v1.json",
+      "bytes": 1973603,
+      "sha256": "a683423f753a65b5243eefff942ed0541223ea8a0b46f0d34c3b18c8b0d18123"
+    },
+    "recovery": {
+      "path": "catalog/g678-ts07-l1-keyterm-recovery-v1.json",
+      "bytes": 174337,
+      "sha256": "78fda81f5336991b563d173d9266494f1d7e2f17812f6aa2a84506eadf6144f7"
+    },
+    "laneRouting": {
+      "path": "catalog/product-bridge-calibrations/g678-ts07-assessment-lane-routing-v1.json",
+      "bytes": 17699,
+      "sha256": "916aee971e5aaa30fbd0d1fb9db72ca1958a28680eeb9f7d4cfb6d5d0d7e8a9e"
+    },
+    "generator": {
+      "path": "scripts/build-g678-ts07-nms-l1-current-js.mjs",
+      "bytes": 59241,
+      "sha256": "1566603110944d95d33956c06ffbca7d43467eb54becc9ff5b7cab8cc5b424bb"
+    },
+    "generatorRun": {
+      "path": "work/g678-shared-page-factory/g678-ts07-nms-l1-current-js-1-v1/run-manifest.json",
+      "bytes": 32104,
+      "sha256": "248d3c39d3ab09dc231cdd82a629802b0e38a7355fe778e036fd6c0704b5b158"
+    },
+    "generatorFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-ts07-nms-l1-current-js-1-v1.fragment.json",
+      "bytes": 3582,
+      "sha256": "7f728e6109bb538547ef7ba4e7cd1caaed2037d28b7ddb644a09aa07e80bf51d"
+    },
+    "registrationFreeze": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-277-page-registration-v1.json",
+      "bytes": 1034822,
+      "sha256": "55e74a55b56c59c2d50dcc8c6dbaa72068f6d748d2a3529c9956d765f52a5b44"
+    },
+    "registrationFragment": {
+      "path": "catalog/product-bridge-calibrations/g678-current-js-277-page-registration-v1.fragment.json",
+      "bytes": 155552,
+      "sha256": "42ccc9385f5a166ae166baacbbefc302772b5befdb22fbc7ff6bbb3bff147040"
+    },
+    "browser": {
+      "path": "output/playwright/g678-current-js-277-v1/evidence.json",
+      "bytes": 70609,
+      "sha256": "82acd58769a0a7f9d8c3db97c31833905c2c8287a76466e0a9218a0d2f838b30"
+    },
+    "browserVerifier": {
+      "path": "scripts/qa-g678-current-js-277-browser.mjs",
+      "bytes": 45572,
+      "sha256": "2bbad825f64c27bf9818fe3fc23e41e14de42bf2f0c97474382ee1d37fcf4130"
+    },
+    "sourceStaticHost": {
+      "path": "packages/demos/src/source-static-canvas-candidate.tsx",
+      "bytes": 56583,
+      "sha256": "68e4ba0254de7c48dc048146b32c3beb15f287efa9dbd59c23b698720cd5eb72"
+    },
+    "glossaryHost": {
+      "path": "packages/demos/src/private-source-static-glossary-candidate.tsx",
+      "bytes": 9928,
+      "sha256": "9514724b1a7807ab8b04e08bcf7e86a814b62a573bc4cfe493da6f2164c9c4c1"
+    },
+    "assessmentHost": {
+      "path": "packages/demos/src/private-source-static-assessment-candidate.tsx",
+      "bytes": 16780,
+      "sha256": "5f5c557c2476ba114539793419cc92aee33f88711e33586979ad55d2a62144f1"
+    },
+    "assessmentReducer": {
+      "path": "packages/demos/src/g678-ts07-assessment.ts",
+      "bytes": 9617,
+      "sha256": "91c2d8bc0a8327267bf9eda5b48c3b8066068520eab8d0d876a332434cb39fe0"
+    },
+    "feedbackSelector": {
+      "path": "packages/demos/src/g678-advanced-manual/host-feedback-selector.ts",
+      "bytes": 2976,
+      "sha256": "f73cdb10fc9c67e2fdf35b227e3abbad20adb6e2ab38599bd4031951148500b6"
+    },
+    "animationRuntime": {
+      "path": "apps/web/components/animation-runtime.tsx",
+      "bytes": 54539,
+      "sha256": "179f1d5cb52cd2a51bf2d880b291ae6a7d7dadb1ab04a16201472e21f0c49124"
+    },
+    "productBridge": {
+      "path": "apps/web/lib/g678-calibration-product-bridge.server.ts",
+      "bytes": 59186,
+      "sha256": "40a1e57bf4a4d096f8c0e88d54314fd8b989b93963173eeb8bfe02d13ac7df7a"
+    },
+    "builder": {
+      "path": "scripts/build-g678-ts07-nms-l1-family-calibration.mjs",
+      "bytes": 19302,
+      "sha256": "e8a3027cd7a35686b1cf6066dd9c2b846506f6903e7992f81d2740ca6a31553c"
+    }
+  },
+  "auditedPlacementCount": 44,
+  "authorizedPlacementIds": [
+    "shared-nms002-l01-p043"
+  ],
+  "blockedPlacementCount": 43,
+  "browserSamples": [
+    {
+      "animationId": "shared-nms002-l01-p043",
+      "frameDomain": "sprite-331",
+      "frameCount": 779,
+      "runtimeSha256": "19cd91af13b13a5fa823c687e9c3f3ed744344a1a85315bdd58cb38d5c7cebd0"
+    }
+  ],
+  "productHostCalibration": {
+    "canvasReadyAndProgressing": true,
+    "exactSourceAnswerOrderAndLabels": true,
+    "exactThreeWrongFourRightFeedbackDomains": true,
+    "exactEnglishDifferenceGlossaryDefinition": true,
+    "exactSpanishDifferenceGlossaryDefinition": true,
+    "playbackPausesWhileGlossaryOpen": true,
+    "playbackResumesAfterGlossaryClose": true,
+    "sourceQuizStopHeldUntilFeedbackResolution": true,
+    "firstWrongRetriesAndRightResumes": true,
+    "maintainedHintAndReplayReset": true,
+    "spanishSourceTextParityAccepted": false,
+    "feedbackAudioAccepted": false,
+    "localAssetIntegrityAndCrossOriginIsolation": true,
+    "allLessonsPartialRegistrationTruthful": true,
+    "familyCurrentJsVisualAssessmentCalibrationPassed": true,
+    "overallG678ProductCalibrationPassed": false
+  },
+  "authorization": {
+    "authorized": true,
+    "scope": "exact-shared-nms002-l01-p043-assessment-placement-only",
+    "permitsRemaining43Ts07Placements": false,
+    "permitsCanonicalSourcePromotion": false,
+    "permitsAudioAcceptance": false,
+    "permitsOriginalRuntimeOrVisualFidelityClaim": false,
+    "permitsWholeLessonEngineeringPreviewClaim": false,
+    "permitsReleaseOrPublication": false
+  },
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "behaviorAccepted": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "releaseEligible": false,
+    "released": false,
+    "published": false
+  },
+  "limitations": [
+    "This authority calibrates maintained Current-JS playback, source-ordered answers, feedback control flow, hint, Replay reset, and bilingual Difference glossary behavior for shared-nms002-l01-p043 only.",
+    "The other 43 TS07 placements remain blocked by content-authority, inactive-feedback, advanced-control, or representative-scale-out gates.",
+    "Spanish assessment text parity, feedback and narration audio, legacy key-term sublinks/example SWFs, authoritative original runtime, fidelity, human, Owner, strict-completion, release, and publication remain unaccepted.",
+    "All 44 lessons remain partial; this authority creates no N/N whole-lesson engineering preview or learner route."
+  ]
+}

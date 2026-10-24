@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-09-09T13:06:45.169Z",
+  "status": "local-page-layout-amended-product-qa-pending",
+  "beforeRegistry": {
+    "path": "packages/demos/private-current-js-registry.json",
+    "bytes": 464539,
+    "sha256": "7ff172f0a8d035a4970089d9f63c5cc8614384b1488f36cbb94818d32f1d306b"
+  },
+  "after": [
+    {
+      "path": "packages/demos/private-current-js-registry.json",
+      "bytes": 464545,
+      "sha256": "6c57bdbedd8e0fb31c0d61173ea58ac955a9d27e074670f7589329d3b23034cf"
+    },
+    {
+      "path": "packages/demos/src/registry.generated.ts",
+      "bytes": 130310,
+      "sha256": "88c107cd2ed96eae29734cda07aad1d4d5d5ace87d52b218981866845f51fa76"
+    },
+    {
+      "path": "packages/demos/src/registry.metadata.generated.ts",
+      "bytes": 75696,
+      "sha256": "da599a2f4d466d581abacf1f6d774e2995034c622cf01d17941f56c518cbe785"
+    },
+    {
+      "path": "packages/demos/src/registry.local-only.generated.ts",
+      "bytes": 298248,
+      "sha256": "84b6fb4c0e14f1c9eac730f48ccfd44f77768fbb53fbd88322239b20912393b1"
+    },
+    {
+      "path": "packages/demos/src/registry.local-only.metadata.generated.ts",
+      "bytes": 231338,
+      "sha256": "5be11eb40365905d819c201a506f701aab2d070b8c22a67ea1b76b3eff957862"
+    }
+  ],
+  "amendedIds": [
+    "shared-nms002-l01-p017"
+  ],
+  "previousCalibration": "g678-nms-l01-p017-current-js-v1",
+  "replacementCalibration": "g678-nms-l01-p017-current-js-v2",
+  "registeredBefore": 401,
+  "registeredAfter": 401,
+  "preservedOtherG678Placements": 400,
+  "publicFilesWritten": 0,
+  "transaction": {
+    "backups": [
+      {
+        "target": "packages/demos/private-current-js-registry.json",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p017-current-js-v2-layout-activation/before-private-current-js-registry.json",
+          "bytes": 464539,
+          "sha256": "7ff172f0a8d035a4970089d9f63c5cc8614384b1488f36cbb94818d32f1d306b"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p017-current-js-v2-layout-activation/before-registry.generated.ts",
+          "bytes": 130310,
+          "sha256": "88c107cd2ed96eae29734cda07aad1d4d5d5ace87d52b218981866845f51fa76"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.metadata.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p017-current-js-v2-layout-activation/before-registry.metadata.generated.ts",
+          "bytes": 75696,
+          "sha256": "da599a2f4d466d581abacf1f6d774e2995034c622cf01d17941f56c518cbe785"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.local-only.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p017-current-js-v2-layout-activation/before-registry.local-only.generated.ts",
+          "bytes": 298245,
+          "sha256": "245fcdc9bcc8eb33135bd73e70ce4a774a4935eae006598c2e269ed014b9142b"
+        }
+      },
+      {
+        "target": "packages/demos/src/registry.local-only.metadata.generated.ts",
+        "backup": {
+          "path": "work/g678-shared-page-factory/g678-nms-l01-p017-current-js-v2-layout-activation/before-registry.local-only.metadata.generated.ts",
+          "bytes": 231338,
+          "sha256": "d6e21d5d4affec28876b245d23dc8b2dfaad24bb60b4d5f5836d899df32521ef"
+        }
+      }
+    ],
+    "completed": [
+      "packages/demos/private-current-js-registry.json",
+      "packages/demos/src/registry.local-only.generated.ts",
+      "packages/demos/src/registry.local-only.metadata.generated.ts"
+    ],
+    "rollback": false
+  },
+  "freeze": {
+    "path": "catalog/product-bridge-calibrations/g678-nms-l01-p017-current-js-v2.json",
+    "bytes": 36812,
+    "sha256": "c828b8781df8ca4173f04069e1ec30d2eb8935e2d274af6a3b5d14b40b1e9972"
+  },
+  "fragment": {
+    "path": "catalog/product-bridge-calibrations/g678-nms-l01-p017-current-js-v2.fragment.json",
+    "bytes": 1377,
+    "sha256": "6f084f01c589dff6ac677e7a222b6b7b61bbd87b676375e53086692c6df31e25"
+  },
+  "productCalibrationPassed": false,
+  "scaleOutAuthorized": false,
+  "acceptanceEffects": {
+    "productCalibrationPassed": false,
+    "authoritativeOriginalRuntime": false,
+    "visualFidelityAccepted": false,
+    "audioAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "released": false,
+    "published": false
+  }
+}

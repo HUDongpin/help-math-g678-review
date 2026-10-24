@@ -1,0 +1,34 @@
+{
+  "status": "FAIL",
+  "rows": [
+    {
+      "check": "actual-registered-My-Lesson-initial-state",
+      "phase": "paused",
+      "frame": 1,
+      "replay": 0,
+      "contexts": 0,
+      "states": []
+    },
+    {
+      "check": "protected-source-play-and-Value-pauses-clock",
+      "phase": "paused",
+      "frame": 41,
+      "replay": 0,
+      "contexts": 1,
+      "states": [
+        "running"
+      ]
+    }
+  ],
+  "errors": [],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p011/source-audio?sha256=abb185f744edefccbd2807b251af4a3f51a3161945913d6a2feb02fa53a42e35",
+      "status": 200,
+      "bytes": "47190",
+      "type": "audio/mpeg"
+    }
+  ],
+  "failure": "page.waitForFunction: Timeout 30000ms exceeded.\n    at /private/tmp/helpmath-nms-l02-p011-staging/qa-real-host-v1.mjs:8:183",
+  "scope": "Actual registered local My Lesson descriptor and protected source audio; no original-runtime or human acceptance."
+}

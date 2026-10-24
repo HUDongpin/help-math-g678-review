@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "kind": "valid",
+      "bytes": 200590
+    },
+    {
+      "kind": "mime",
+      "failure": "P026_AUDIO_RESPONSE"
+    },
+    {
+      "kind": "length",
+      "failure": "P026_AUDIO_RESPONSE"
+    },
+    {
+      "kind": "short",
+      "failure": "P026_AUDIO_SIZE"
+    },
+    {
+      "kind": "long",
+      "failure": "P026_AUDIO_SIZE"
+    },
+    {
+      "kind": "redirect",
+      "failure": "Failed to fetch"
+    }
+  ],
+  "failure": null,
+  "scope": "Purpose-built source loader exercised in real Chromium with exact mocked same-origin response headers and bytes. No provider or original audio acceptance."
+}

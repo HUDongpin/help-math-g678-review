@@ -1,0 +1,46 @@
+{
+  "status": "FAIL",
+  "rows": [
+    {
+      "check": "actual-registered-My-Lesson-initial-state",
+      "phase": "paused",
+      "frame": 1,
+      "replay": 0,
+      "contexts": 0,
+      "states": []
+    },
+    {
+      "check": "protected-source-play-and-Value-pauses-clock",
+      "phase": "paused",
+      "frame": 41,
+      "replay": 0,
+      "contexts": 1,
+      "states": [
+        "running"
+      ]
+    },
+    {
+      "check": "volume-diagnostic",
+      "gains": [
+        {
+          "value": 0.800000011920929,
+          "time": 4.388571428571429,
+          "state": "running"
+        }
+      ],
+      "slider": "5",
+      "audio": "<div data-p011-audio-phase=\"paused\" data-p011-audio-frame=\"41\" data-p011-completed=\"false\" data-p011-replay=\"0\" data-p011-narration=\"enabled\" data-p011-motion=\"source-clock\"><section class=\"nms-l02-p011 lesson-text-presentation\" lang=\"en\" data-p011-frame=\"41\" data-p011-domain=\"sprite-27\" data-p011-text-status=\"ready\" data-content-language=\"en\" data-reduced-motion=\"false\"><header class=\"nms-l02-p011__header\"><p data-lesson-text-block=\"course-title\">Fractions, Decimals, and Percents Concepts:</p><h2 data-lesson-text-block=\"activity-title\">Vocabulary</h2></header><div class=\"nms-l02-p011__definit"
+    }
+  ],
+  "errors": [],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p011/source-audio?sha256=abb185f744edefccbd2807b251af4a3f51a3161945913d6a2feb02fa53a42e35",
+      "status": 200,
+      "bytes": "47190",
+      "type": "audio/mpeg"
+    }
+  ],
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 0.800000011920929\n- 0\n\n    at file:///private/tmp/helpmath-nms-l02-p011-staging/qa-real-host-v2.mjs:8:576",
+  "scope": "Actual registered local My Lesson descriptor and protected source audio; no original-runtime or human acceptance."
+}

@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "check": "actual-registered-My-Lesson-initial-state",
+      "phase": "paused",
+      "frame": 1,
+      "replay": 0,
+      "contexts": 0,
+      "states": []
+    },
+    {
+      "check": "protected-source-play-and-Quantity-pauses-clock",
+      "phase": "paused",
+      "frame": 68,
+      "replay": 0,
+      "contexts": 1,
+      "states": [
+        "running"
+      ]
+    },
+    {
+      "check": "paused-volume-applies-to-resumed-audio-signal",
+      "gain": 0,
+      "rms": 0,
+      "calls": [
+        {
+          "args": [
+            0,
+            6.960181405895692
+          ],
+          "at": 11667
+        }
+      ]
+    },
+    {
+      "check": "host-volume-resize-reduced-motion-completion",
+      "phase": "completed",
+      "frame": 172,
+      "replay": 0,
+      "contexts": 1,
+      "states": [
+        "running"
+      ]
+    },
+    {
+      "check": "four-terms-MathML-ordinary-Play-hold-and-Replay",
+      "phase": "playing",
+      "frame": 1,
+      "replay": 1,
+      "contexts": 1,
+      "states": [
+        "running"
+      ]
+    },
+    {
+      "check": "P013-unavailable-and-source-audio-cleanup"
+    },
+    {
+      "check": "P011-predecessor-vocabulary-audio-intact"
+    },
+    {
+      "check": "P010-predecessor-question-and-audio-intact"
+    }
+  ],
+  "errors": [],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p012/source-audio?sha256=5d3a5581b90ece6ca51381274e7dad890b74ef00ced6dfae3f0ec66d616919ad",
+      "status": 200,
+      "bytes": "69940",
+      "type": "audio/mpeg"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p011/source-audio?sha256=abb185f744edefccbd2807b251af4a3f51a3161945913d6a2feb02fa53a42e35",
+      "status": 200,
+      "bytes": "47190",
+      "type": "audio/mpeg"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p010/source-audio/51?sha256=1421b1c2ed818b79f66f9d94530176299e8ebfaff946ccbb0e851cec9d72234e",
+      "status": 200,
+      "bytes": "10270",
+      "type": "audio/mpeg"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p010/source-audio/67?sha256=3506fcffbe07e726fd4cf1c750cd2641d2aa06f4ca14379b4407ea5843e4f0f0",
+      "status": 200,
+      "bytes": "11050",
+      "type": "audio/mpeg"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p010/source-audio/99?sha256=f87ec03bf9163390a117b6ad1ea7c47dab7ea7e729219acff0e0617f6100a9f1",
+      "status": 200,
+      "bytes": "11050",
+      "type": "audio/mpeg"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p010/source-audio/127?sha256=529ef71f4768ba9c0f830a67547066e4b8b20091bc8e3cd0782e1fbdfbb64085",
+      "status": 200,
+      "bytes": "11050",
+      "type": "audio/mpeg"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p010/source-audio/143?sha256=3dda8c412ae366891bd7ce7f1603c70f4ec8438806191c75a25328963fdb8ee7",
+      "status": 200,
+      "bytes": "11050",
+      "type": "audio/mpeg"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p010/source-audio/155?sha256=1cd830798de122ce36bc2393e258d602f323c1bb7674b9231d288fffc60bf4f7",
+      "status": 200,
+      "bytes": "11978",
+      "type": "audio/wav"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p010/source-audio/175?sha256=c9502f3d979684587046242dc9022b8aa89e89c72688dfa4bc027858badd9e6e",
+      "status": 200,
+      "bytes": "12740",
+      "type": "audio/mpeg"
+    },
+    {
+      "url": "http://127.0.0.1:3343/flash-assets/g678-local/shared-nms002-l02-p010/source-audio/176?sha256=3f830f7dc5452a1ae604b1d5d1c03f0326f1ccd85f2beccbdbce771597883c8b",
+      "status": 200,
+      "bytes": "25220",
+      "type": "audio/mpeg"
+    }
+  ],
+  "failure": null,
+  "scope": "Actual registered local My Lesson descriptor and protected source audio; no original-runtime or human acceptance."
+}

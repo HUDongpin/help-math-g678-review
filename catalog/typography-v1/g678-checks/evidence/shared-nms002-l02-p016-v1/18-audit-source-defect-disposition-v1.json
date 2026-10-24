@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l02-p016",
+  "sourceSha256": "b12976880eb12956d4ee758276b06b725fe2efc89f72c0c1e26c5b0c33d04edd",
+  "corrections": [
+    {
+      "id": "fixed-target-grading",
+      "source": "Button166 accepts equality of txtChr_1+txtChr_2 and txtIP_1+txtIP_2, regardless of target25 and ignoring hundreds.",
+      "counterexamples": [
+        {
+          "shaded": 15,
+          "input": [
+            "1",
+            "5"
+          ],
+          "sourceCorrect": true,
+          "productCorrect": false
+        },
+        {
+          "shaded": 0,
+          "input": [
+            "0",
+            "0"
+          ],
+          "sourceCorrect": true,
+          "productCorrect": false
+        },
+        {
+          "shaded": 100,
+          "input": [
+            "0",
+            "0"
+          ],
+          "sourceCorrect": true,
+          "productCorrect": false
+        }
+      ],
+      "product": "Require25shaded AND input digits2,5. Preserve raw source grader as diagnostic, never learner grading.",
+      "reason": "Question explicitly targets25/100 and final authored caption says25%; mathematical correctness."
+    },
+    {
+      "id": "assisted-hundred-reset",
+      "source": "Second wrong sets only tens/ones to2,5; txtChr_F can remain1, which forces100bluecells. mcDragX is read in coach terminal but never assigned in this SWF.",
+      "product": "Set grid25 and both input digits2,5, position thumb by inverse source scale. Assisted result remains distinct from a learner-correct result.",
+      "reason": "Keep the source second-attempt reveal coherent with25/100; do not depend on absent host globals."
+    },
+    {
+      "id": "answer-clip-entry",
+      "source": "Answer189 is placed main177 but stops at child1. Red25grid begins child2; no page AS calls ANSWER_MC.play/gotoAndPlay.",
+      "product": "Explicitly enter the source-backed red25grid when main resumes/outro begins, with transparent correction evidence.",
+      "reason": "Display the authored25%conclusion with its matching source diagram; original runtime unresolved."
+    },
+    {
+      "id": "percent-input-semantics",
+      "source": "Two source inputs have no maxLength/restrict; a third read-only field displays hundreds. Percent symbol absent in static stage.",
+      "product": "Two labeled single-digit native inputs and explicit percent label; 0..100slider including endpoint100 remains independently usable.",
+      "reason": "Make the intended two-digit percent entry and mathematical quantity unambiguous and accessible."
+    }
+  ],
+  "sourceScripts": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineButton2_101/BUTTONCONDACTION on(release).as",
+      "bytes": 122,
+      "sha256": "09060598c4d91684c83931f49502501bb089e2d6e151570d37a0e6d970e9bbdd"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineButton2_126/BUTTONCONDACTION on(release).as",
+      "bytes": 119,
+      "sha256": "264356e38e45233fc2ba7212c38d14f96f267dba89e50dde620b18b4c9ad746f"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineButton2_138/BUTTONCONDACTION on(release).as",
+      "bytes": 124,
+      "sha256": "5fe1f018ed22124e503350ffe4ec3c3c3dc5ff83df7be3dbfcdb2391ac8b4490"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineButton2_160/BUTTONCONDACTION on(release).as",
+      "bytes": 257,
+      "sha256": "5cea9e72f04f0f89441668bf58237e6dba19b220274ad50486f90d5e5ba78faf"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineButton2_166/BUTTONCONDACTION on(release).as",
+      "bytes": 1911,
+      "sha256": "23ee56c1a36121ec0421f7cab41c385d8225965b19fe8333587348fca5f2771b"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineButton2_176/BUTTONCONDACTION on(release).as",
+      "bytes": 392,
+      "sha256": "933129cd4377228ff1829adfa19e9308a83f7214e9f50ad6e8079b7f7f839404"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineButton2_184/BUTTONCONDACTION on(release).as",
+      "bytes": 97,
+      "sha256": "a878cdb30824591af1cd9b7970514244a004f65be6adbc8db333117112e506c7"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineButton2_193/BUTTONCONDACTION on(release).as",
+      "bytes": 119,
+      "sha256": "264356e38e45233fc2ba7212c38d14f96f267dba89e50dde620b18b4c9ad746f"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_159/frame_5/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_168/frame_1/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_168/frame_16/DoAction.as",
+      "bytes": 145,
+      "sha256": "5739827494391f6402d6e0af4fb7c01fa0780e41ccc79777e76e4cabc9ed563c"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_168/frame_2/DoAction.as",
+      "bytes": 267,
+      "sha256": "8ce47ab8e286b7de15213df8000f92d7533e6a541f10c304c4d42fe770a5b5cb"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_168/frame_27/DoAction.as",
+      "bytes": 145,
+      "sha256": "5739827494391f6402d6e0af4fb7c01fa0780e41ccc79777e76e4cabc9ed563c"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_168/frame_36/DoAction.as",
+      "bytes": 145,
+      "sha256": "5739827494391f6402d6e0af4fb7c01fa0780e41ccc79777e76e4cabc9ed563c"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_168/frame_54/DoAction.as",
+      "bytes": 145,
+      "sha256": "5739827494391f6402d6e0af4fb7c01fa0780e41ccc79777e76e4cabc9ed563c"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_175/frame_5/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_179/frame_1/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_179/frame_15/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_179/frame_2/DoAction.as",
+      "bytes": 87,
+      "sha256": "8b0c8418ace9b71d4e8e122bf81447ac7e8eac9bbe532902407d6da1ee655897"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_186/frame_1/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_186/frame_2/DoAction.as",
+      "bytes": 85,
+      "sha256": "2d5cc961a4036e1b4aa5d10bff8a4ecf1571a0d1b16b47741955b1a129520ddc"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_186/frame_20/DoAction.as",
+      "bytes": 17,
+      "sha256": "7e1b5714d1810265f312cd677af1055e4d5d494010ae462ef4839e77dea49e13"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_189/frame_1/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_189/frame_2/DoAction.as",
+      "bytes": 84,
+      "sha256": "8d3199f54dc4a64015821860d718cd58109b6827d6921b2da2abd2a961f14607"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_189/frame_6/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_194/frame_176/DoAction.as",
+      "bytes": 1426,
+      "sha256": "47e25057da2dde0c19080bdde9d4f6b09d52b89608a5b3ce05f88bbf65c616a0"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_194/frame_176/PlaceObject2_150_10/CLIPACTIONRECORD on(press).as",
+      "bytes": 98,
+      "sha256": "ddea9d4e3379cbe96d4c5dfa50f361d39c592ff69b31570c63eab8c5beb2e65f"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_194/frame_176/PlaceObject2_150_10/CLIPACTIONRECORD on(releaseOutside,release).as",
+      "bytes": 66,
+      "sha256": "ced35ac3d14cbb32208f80e33df534095ce6ad80785efd73e6832db4c3e6ab24"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_194/frame_176/PlaceObject2_150_10/CLIPACTIONRECORD onClipEvent(enterFrame).as",
+      "bytes": 974,
+      "sha256": "0f0e4d31e7aa9076c5f1aa8cda391310d615b7d3bdb8f0995bc6dbca73f2293a"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_194/frame_209/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_21/frame_1/DoAction.as",
+      "bytes": 364,
+      "sha256": "b26447dac0f61145e96961e68e105d4985343a642beafbc9cb7e33d5fd7380f7"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_31/frame_1/DoAction.as",
+      "bytes": 364,
+      "sha256": "b26447dac0f61145e96961e68e105d4985343a642beafbc9cb7e33d5fd7380f7"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_40/frame_1/DoAction.as",
+      "bytes": 377,
+      "sha256": "c7af90754b6df948dcac0337b36a8e4fb80301cce1ea2132b8b9e2af2c6976a0"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_41_UpArrow/frame_1/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_41_UpArrow/frame_2/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_41_UpArrow/frame_3/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_48/frame_1/DoAction.as",
+      "bytes": 266,
+      "sha256": "b14c0664bc041821446974b9ad826cf79080550f955bb1b44e6f50c62af3ddf2"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_55/frame_1/DoAction.as",
+      "bytes": 314,
+      "sha256": "112ccaa014658b3f9c70c0ad70b15416201edd54cbd589162a39ae8090fba27d"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_60/frame_1/DoAction.as",
+      "bytes": 266,
+      "sha256": "9ca505cd9f94fbf35554767fc17a292f7ba6014184fc94699d63ef0f60a32ffe"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_61_ScrollThumb/frame_1/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_69/frame_1/DoAction.as",
+      "bytes": 364,
+      "sha256": "b26447dac0f61145e96961e68e105d4985343a642beafbc9cb7e33d5fd7380f7"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_77/frame_1/DoAction.as",
+      "bytes": 364,
+      "sha256": "b26447dac0f61145e96961e68e105d4985343a642beafbc9cb7e33d5fd7380f7"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_85/frame_1/DoAction.as",
+      "bytes": 377,
+      "sha256": "c7af90754b6df948dcac0337b36a8e4fb80301cce1ea2132b8b9e2af2c6976a0"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_86_DownArrow/frame_1/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_86_DownArrow/frame_2/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_86_DownArrow/frame_3/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_89/frame_1/DoAction.as",
+      "bytes": 82,
+      "sha256": "bf7ab11e1c8564a0c7631b77c74e16ba5e19d6b6679baffa1fb397916e738f10"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_8_FUIComponentSymbol/frame_1/DoAction.as",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/DefineSprite_90_FScrollBarSymbol/frame_1/DoAction.as",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/FScrollBarSymbol.as",
+      "bytes": 13570,
+      "sha256": "5ac9d9e477e7b50808c1805c33473f0e50b0121d0789cd7d208a085007047b8d"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/FUIComponentSymbol.as",
+      "bytes": 10244,
+      "sha256": "326219b08e2695ccdd29734ea68a6277cda0549e1e98479be25597ffd9496972"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/frame_1/DoAction.as",
+      "bytes": 63,
+      "sha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l02-p016-behavior-source-v1/source/audit/scripts/frame_6/DoAction.as",
+      "bytes": 9,
+      "sha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655"
+    }
+  ],
+  "sourceUnchanged": true,
+  "originalRuntimeAccepted": false,
+  "productImplementationPending": true
+}

@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-09-13T06:13:34.309Z",
+  "status": "FAIL",
+  "checks": [
+    {
+      "check": "two-full-source-cycles",
+      "frames": 662
+    },
+    {
+      "check": "native-term-keyboard-focus",
+      "key": "Fraction",
+      "start": 2
+    },
+    {
+      "check": "native-term-keyboard-focus",
+      "key": "Whole",
+      "start": 147
+    },
+    {
+      "check": "native-term-keyboard-focus",
+      "key": "Group",
+      "start": 164
+    },
+    {
+      "check": "native-source-emphasis-and-continuous-reduced-motion"
+    },
+    {
+      "check": "source-teaching-beat-boundaries-and-math"
+    },
+    {
+      "check": "dual-instance-no-glyph-outlines"
+    }
+  ],
+  "errors": [],
+  "failure": "AssertionError [ERR_ASSERTION]: {\"width\":320,\"zoom\":2,\"f\":38,\"lang\":\"en\",\"x\":{\"width\":320,\"scroll\":323,\"overflow\":[\"<p data-lesson-text-block=\\\"opening\\\" class=\\\"nms-l02-p017__opening-phrase\\\"><span style=\\\"--fraction-position: 1;\\\"><button type=\\\"button\\\" class=\\\"nms-l02-p017__term\\\" data-source-key-attribute=\\\"Fraction\\\" ari\"]}}\n    at file:///private/tmp/helpmath-nms-l02-p017-staging/check-browser-v2.mjs:14:646",
+  "registered": false,
+  "scope": "Standalone native and integrated player; actual My Lesson and registration pending."
+}
