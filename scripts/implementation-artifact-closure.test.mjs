@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import {createHash} from "node:crypto";
-import {mkdir, mkdtemp, readFile, rm, symlink, writeFile} from "node:fs/promises";
+import {mkdir, mkdtemp, readFile, rm, stat, symlink, utimes, writeFile} from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import test from "node:test";
@@ -433,4 +433,26 @@ test("rejects a symlink in any selected implementation path component", async (t
   await symlink(path.join(input.projectRoot, "outside"), linkDirectory);
   input.manifest.implementation.component = "linked/module.tsx";
   await assert.rejects(collect(input), /symbolic-link component/);
+});
+
+test('a warmed import cache observes same-size edits, removed dependencies and symlink replacement', async (t) => {
+  const input = await fixture();
+  t.after(() => rm(input.projectRoot, {recursive: true, force: true}));
+  const modulePath = path.join(input.projectRoot, 'packages/demos/src/modules/course-fixture.tsx');
+  const original = await readFile(modulePath, 'utf8');
+  const metadata = await stat(modulePath);
+  const before = await collect(input);
+  const changed = original.replace('../timelines/course-fixture', '../timelines/course-fixturx');
+  assert.equal(changed.length, original.length);
+  const dependency = 'packages/demos/src/timelines/course-fixturx.ts';
+  await write(input.projectRoot, dependency, 'export const state = {frame: 2};\n');
+  await writeFile(modulePath, changed);
+  await utimes(modulePath, metadata.atime, metadata.mtime);
+  const after = await collect(input);
+  assert.notEqual(after.aggregateSha256, before.aggregateSha256);
+  assert.ok(after.artifacts.some(row => row.path === dependency));
+  await rm(path.join(input.projectRoot, dependency));
+  await assert.rejects(collect(input), /unresolved local import/);
+  await symlink(path.join(input.projectRoot, 'packages/demos/src/timelines/course-fixture.ts'), path.join(input.projectRoot, dependency));
+  await assert.rejects(collect(input), /symbolic link|unresolved local import/);
 });

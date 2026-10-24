@@ -95,13 +95,15 @@ export interface WholeLessonPlayerPage {
   readonly runtimeEvidenceBoundary?: Readonly<{
     runtimeKind:
       | 'source-static-current-js-candidate'
-      | 'source-script-bound-product-behavior-current-js-candidate';
+      | 'source-script-bound-product-behavior-current-js-candidate'
+      | 'source-script-bound-grouped-drag-current-js-candidate';
     actionScriptExecution: 'not-executed';
     naturalTraceValidation: 'not-established';
     audioAcceptance: 'not-established';
     replaySemantics:
       | 'renderer-restart-only-source-behavior-not-established'
-      | 'product-complete-state-reset-original-runtime-parity-not-established';
+      | 'product-complete-state-reset-original-runtime-parity-not-established'
+      | 'product-complete-interaction-reset-original-runtime-parity-not-established';
     productBehavior?:
       'maintained-javascript-state-machine-implemented';
     productVisualBehaviorComposite?:
@@ -461,7 +463,11 @@ export interface PageOnlyLessonGlossaryEntry {
   readonly labels: Readonly<Record<WholeLessonPlayerLocale, string>>;
   readonly definitions: Readonly<Record<WholeLessonPlayerLocale, string>>;
   readonly source: Readonly<Record<WholeLessonPlayerLocale, Readonly<{
-    assetId: 'ELKTEG4.xml' | 'ELKTSG4.xml';
+    assetId:
+      | 'ELKTEG4.xml'
+      | 'ELKTSG4.xml'
+      | 'G678L1KTE01.xml'
+      | 'G678L1KTS01.xml';
     path: string;
     sha256: string;
   }>>>;
@@ -486,7 +492,9 @@ export interface PageOnlyLessonPlayerDescriptor {
   readonly calibrationId: string;
   readonly releaseId: string;
   readonly course: Readonly<{
+    /** Zero only for a private shared G6-G8 calibration before grade mapping. */
     grade: number;
+    gradeScope?: 'G6-G8-shared';
     lesson: number;
     /**
      * Optional for backwards compatibility with G3-G5.  Shared middle-school
@@ -522,7 +530,9 @@ export interface PageOnlyLessonPlayerDescriptor {
     rendererRegistrySnapshot: 'current-javascript-module-registry';
     lessonHostCapabilities: readonly (
       | 'audio'
+      | 'fq-scoring'
       | 'glossary'
+      | 'navigation'
       | 'practice-feedback'
     )[];
   }>;

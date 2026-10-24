@@ -1,4 +1,4 @@
-import {hasAnimationModule} from '../../../packages/demos/src/animation-registry';
+import {hasAnimationModule} from '@helpmath/demos/animation-registry-metadata';
 
 import sourceScopeDocument from '../../../reports/g5-l3-page-only-whole-lesson-source-scope.json' with {type: 'json'};
 import type {

@@ -26,14 +26,19 @@
     },
     "./styles.css": "./src/styles.css",
     "./animation-registry": "./src/animation-registry.ts",
+    "./animation-registry-metadata": "./src/animation-registry-metadata.ts",
+    "./local-only-animation-registry": "./src/local-only-animation-registry.ts",
+    "./local-only-animation-registry-metadata": "./src/local-only-animation-registry-metadata.ts",
     "./runtime": "./src/runtime.ts",
-    "./prototype-manifest": "./src/prototype-manifest.ts"
+    "./prototype-manifest": "./src/prototype-manifest.ts",
+    "./lesson-text": "./src/lesson-text.ts"
   },
   "scripts": {
     "generate:registry": "node scripts/generate-registry.mjs",
-    "check:registry": "node scripts/generate-registry.mjs --check",
-    "typecheck": "npm run check:registry && tsc --noEmit",
-    "test": "npm run check:registry && tsx --test test/*.test.mjs tests/**/*.test.ts src/modules/*.test.tsx src/timelines/*.test.ts"
+    "check:registry": "node ../../scripts/check-private-current-js-admission-registry-v3.mjs",
+    "typecheck": "node --max-old-space-size=8192 ../../node_modules/typescript/bin/tsc --noEmit",
+    "test": "npm run check:registry && tsx --test test/*.test.mjs tests/**/*.test.ts src/modules/*.test.tsx src/timelines/*.test.ts",
+    "check:typography": "node ../../scripts/check-g678-lesson-typography-v1.mjs"
   },
   "peerDependencies": {
     "react": ">=18",

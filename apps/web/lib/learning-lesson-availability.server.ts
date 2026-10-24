@@ -20,6 +20,12 @@ import {
   type SharedLessonAvailability,
   type SharedMiddleSchoolLesson,
 } from './g678-shared-course-catalog.server';
+import {
+  g678PartialRegistrationCount,
+} from './g678-calibration-product-bridge.server';
+import {g678RegisteredDescriptorsWithSplitAdmission} from './g678-split-admission.server';
+import type {PageOnlyLessonPlayerDescriptor} from
+  './whole-lesson-player-descriptor';
 import {LESSON_CATALOG_SAMPLE} from './learning-platform-sample-data';
 
 export type LessonAvailabilityStatus =
@@ -225,21 +231,20 @@ function sharedAvailableLesson(
 function sharedLessonCard(
   lesson: SharedMiddleSchoolLesson,
   availableLessons: readonly AvailableLearningLesson[],
+  partialDescriptors: readonly PageOnlyLessonPlayerDescriptor[],
 ): LearningLessonCard {
   const available = sharedAvailableLesson(lesson, availableLessons);
   // Keep a truthful partial-registration count for the engineering dashboard.
   // It is deliberately independent from `availableLearningLessons()`: a
   // partially registered lesson must remain locked, but showing `0` would
   // hide useful migration progress and could be mistaken for missing source
-  // pages.  No registration currently exists for G6–G8, so this resolves to
-  // zero until a real descriptor is admitted.
-  const registration = wholeLessonCourseRegistrations().find(({descriptor}) =>
-    descriptor.course.moduleCode?.toUpperCase() === lesson.moduleCode &&
-    descriptor.course.lesson === lesson.moduleLesson,
+  // pages. Partial calibration descriptors stay outside the N/N-only course
+  // registry and therefore cannot create a learner route.
+  const registeredPageCount = g678PartialRegistrationCount(
+    partialDescriptors,
+    lesson.moduleCode,
+    lesson.moduleLesson,
   );
-  const registeredPageCount = registration?.descriptor.pages.filter(
-    (page) => page.rendererAvailability.kind === 'registered',
-  ).length ?? 0;
   const mapped = lesson.primaryGrade !== null &&
     lesson.mappingStatus === 'approved';
   const stableLessonKey = lesson.stableLessonKey;
@@ -350,6 +355,9 @@ function legacyLessonCard(
  */
 export function allLearningLessons(
   env: CurrentJsShowcaseEnvironment = process.env,
+  options: Readonly<{
+    g678PartialDescriptors?: readonly PageOnlyLessonPlayerDescriptor[];
+  }> = {},
 ): readonly LearningLessonCard[] {
   const availableLessons = availableLearningLessons(env);
   const legacy = LESSON_CATALOG_SAMPLE.map((lesson) =>
@@ -361,6 +369,8 @@ export function allLearningLessons(
   // variable.  Local development may still show locked mapping-pending cards
   // without enabling their learner routes.
   const sharedSnapshot = sharedMiddleSchoolCatalog();
+  const partialDescriptors = options.g678PartialDescriptors ??
+    g678RegisteredDescriptorsWithSplitAdmission();
   // A malformed or stale checked-in projection must not manufacture cards
   // from fallback counts.  Keep the shared surface absent until the
   // source-bound catalog validator succeeds; the migration dashboard can
@@ -368,7 +378,7 @@ export function allLearningLessons(
   const shared = env.NODE_ENV === 'production' || !sharedSnapshot.sourceProjectionValid
     ? []
     : sharedMiddleSchoolLessonCatalog().map((lesson) =>
-        sharedLessonCard(lesson, availableLessons),
+        sharedLessonCard(lesson, availableLessons, partialDescriptors),
       );
   return Object.freeze([...legacy, ...shared]);
 }

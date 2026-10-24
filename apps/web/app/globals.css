@@ -36,6 +36,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* A previous focus scroll must not carry the next HFR control out of view. */
+html:has([data-hfr-page]) {
+  scroll-behavior: auto;
+}
+
 body {
   background: var(--paper);
   color: var(--ink);
@@ -89,14 +94,16 @@ svg {
   left: 1rem;
   padding: 0.7rem 1rem;
   position: fixed;
-  top: -5rem;
-  transition: top 150ms ease;
+  top: 0;
+  transform: translateY(calc(-100% - 1px));
+  transition: transform 150ms ease;
   z-index: 1000;
 }
 
 .skip-link:focus,
 .skip-link:focus-visible {
   top: 1rem;
+  transform: none;
 }
 
 .container {
@@ -1614,6 +1621,7 @@ svg {
   }
 
   .site-header__inner {
+    gap: 0.75rem;
     min-height: 68px;
   }
 
@@ -8759,6 +8767,24 @@ body:has(.lesson-shell2) {
   z-index: 4;
 }
 
+/* The private shared-course stage must keep every instructional pixel visible.
+   Retain the motion preference as an accessible status, not a floating panel
+   covering source mathematics. Existing non-shared lesson styling is unchanged. */
+[data-source-grade-scope='G6-G8-shared'] .lesson-shell2__stage .reduced-motion-note {
+  border: 0;
+  clip-path: inset(50%);
+  height: 1px;
+  left: 0;
+  margin: -1px;
+  max-width: 1px;
+  overflow: hidden;
+  padding: 0;
+  top: 0;
+  transform: none;
+  white-space: nowrap;
+  width: 1px;
+}
+
 html:has(.lesson-shell2) {
   scrollbar-gutter: stable;
 }
@@ -9274,6 +9300,37 @@ body:has(.lesson-shell2[data-support-modal-open='true']) {
       [data-responsive-focus-key='language-es']
     ) {
     display: none;
+  }
+
+  /* Private shared-course review needs the existing full source glossary and
+     locale controls. Keep the learner Focus skin unchanged and place these
+     controls outside the authored stage, wrapping the review toolbar as needed. */
+  [data-source-grade-scope='G6-G8-shared']
+    .lesson-shell2[data-host-presentation='modern-wide'][data-reviewer-mode='true']
+    .lesson-shell2__modern-toolbar {
+    flex-wrap: wrap;
+  }
+
+  [data-source-grade-scope='G6-G8-shared']
+    .lesson-shell2[data-host-presentation='modern-wide'][data-reviewer-mode='true']
+    .lesson-shell2__modern-toolbar > :is(
+      [data-responsive-focus-key='key-terms'],
+      [data-responsive-focus-key='language-en'],
+      [data-responsive-focus-key='language-es']
+    ) {
+    align-items: center;
+    background: #fff;
+    border: 1px solid #aac1d9;
+    border-radius: 8px;
+    color: #183f73;
+    display: inline-flex;
+    flex: none;
+    font-size: .8rem;
+    justify-content: center;
+    min-height: 44px;
+    min-width: 44px;
+    padding: .5rem .65rem;
+    text-decoration: none;
   }
 
   .lesson-shell2[data-host-presentation='modern-wide']
@@ -10118,6 +10175,30 @@ body:has(.lesson-shell2[data-tutor-modal='true']) {
     margin-inline-start: 0;
     min-width: 0;
     order: initial;
+  }
+
+  /* At 200% text size the rem-sized circles can exceed one of the three
+     tracks. Keep each touch target circular inside its own track. */
+  .lesson-shell2[data-host-presentation='modern-wide'][data-modern-control-presentation='true']
+    .lesson-shell2__modern-toolbar > :is(
+      [data-responsive-focus-key='previous'],
+      [data-responsive-focus-key='next'],
+      [data-responsive-focus-key='pause'],
+      [data-responsive-focus-key='replay'],
+      [data-responsive-focus-key='mute']
+    ) {
+    aspect-ratio: 1;
+    box-sizing: border-box;
+    height: auto;
+    justify-self: center;
+    min-height: 44px;
+    min-width: 0;
+    width: min(100%, 3rem);
+  }
+
+  .lesson-shell2[data-host-presentation='modern-wide'][data-modern-control-presentation='true']
+    .lesson-shell2__modern-toolbar > [data-responsive-focus-key='pause'] {
+    width: min(100%, 3.6rem);
   }
 
   .lesson-shell2[data-host-presentation='modern-wide'][data-modern-control-presentation='true']
@@ -11463,4 +11544,184 @@ body:has(
   .lesson-shell2[data-host-presentation='modern-wide'][data-theme='dark']
 ) {
   background: #211e38;
+}
+
+/* These two maintained DOM predecessors lay out source artwork and controls
+   in normal document flow, not in an authored 800 x 600 coordinate plane.
+   Let that flow determine the height in every state and viewport, including
+   longer quiz-review content. The exact renderer markers keep
+   canvas pages and later fixed-plane/portaled companions on their 4:3 host. */
+[data-source-grade-scope='G6-G8-shared']
+  .lesson-shell2[data-host-presentation='modern-wide']
+  .lesson-shell2__legacy-stage:has(
+    [data-source-content-successor='g678-alg-l11-tranche-d-instructional-visuals-v1']:is(
+      [data-animation-id='shared-alg001-l11-p034'],
+      [data-animation-id='shared-alg001-l11-p044']
+    ),
+    [data-animation-id='shared-alg001-l11-p034'][data-p034-feedback-successor='v1']
+  ) {
+  aspect-ratio: auto;
+  height: auto;
+  max-height: none;
+  overflow: visible;
+
+  > .lesson-shell2__stage {
+    aspect-ratio: auto;
+    height: auto;
+    inset: auto;
+    max-height: none;
+    overflow: visible;
+    position: relative;
+  }
+
+  .runtime-shell,
+  .runtime-stage,
+  .runtime-stage > div {
+    height: auto;
+  }
+}
+
+/* A source-clock adapter portals readable controls outside its fixed canvas.
+   Its native content height plus the authored centering offset must fit the
+   stage; height:100% plus that offset creates a hidden scroll range. */
+.lesson-shell2__stage .runtime-shell[data-source-clock-runtime] {
+  height: auto;
+  min-height: 0;
+}
+/* Native G678 calibration pages and HFR retain readable tool labels with
+   enlarged root text. Scale the compact grid with text, and let inspector labels wrap. */
+.lesson-shell2[data-host-presentation='modern-wide'][data-modern-control-presentation='true']:is(
+  :has([data-source-introduction-runtime='shared-nms002-l02-p001']),
+  :has([data-source-quiz-runtime='shared-nms002-l01-p047']),
+  :has(.runtime-shell[data-runtime-clock='renderer'][data-hfr-native-presentation='true'])
+) .lesson-shell2__modern-toolbar > :is(button, label, a) {
+  max-inline-size: 100%;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.lesson-shell2[data-host-presentation='modern-wide'][data-modern-control-presentation='true']:is(
+  :has([data-source-introduction-runtime='shared-nms002-l02-p001']),
+  :has([data-source-quiz-runtime='shared-nms002-l01-p047']),
+  :has(.runtime-shell[data-runtime-clock='renderer'][data-hfr-native-presentation='true'])
+) .lesson-shell2__modern-toolbar label > span {
+  max-inline-size: 100%;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+@media (max-width: 680px),
+  (orientation: landscape) and (max-height: 500px) and (max-width: 1279px) {
+  .lesson-shell2[data-host-presentation='modern-wide'][data-modern-control-presentation='true']:is(
+    :has([data-source-introduction-runtime='shared-nms002-l02-p001']),
+    :has([data-source-quiz-runtime='shared-nms002-l01-p047']),
+    :has(.runtime-shell[data-runtime-clock='renderer'][data-hfr-native-presentation='true'])
+  ) .lesson-shell2__modern-toolbar {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 7rem), 1fr));
+  }
+}
+
+/* Long localized frame labels must reflow with enlarged user text. */
+.lesson-shell2[data-modern-control-presentation='true'] .lesson-shell2__modern-toolbar .lesson-shell2__modern-timeline > span {
+  min-inline-size: 0;
+  max-inline-size: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+/* Compact modern My Lesson keeps its full platform header in document flow.
+   At enlarged text sizes a floating header can cover the teaching canvas or
+   the control receiving keyboard focus, even with a reserved top offset. */
+@media (max-width: 1279px) {
+  .lesson-shell2[data-host-presentation='modern-wide'],
+  .lesson-shell2[data-host-presentation='modern-wide'][data-mode-switch-available='false'] {
+    padding-top: 0;
+  }
+
+  .lesson-shell2[data-host-presentation='modern-wide']
+    .lesson-shell2__learning-nav[data-lesson-platform-header='true'] {
+    position: relative;
+    inset: auto;
+  }
+}
+
+
+/* HFR native text has a readable flow row and a separate source-coordinate
+   Canvas plane. This exact opt-in leaves existing frame-clocked pages alone. */
+[data-source-grade-scope='G6-G8-shared']
+  .lesson-shell2[data-host-presentation='modern-wide']
+  .lesson-shell2__legacy-stage:has(
+    .runtime-shell[data-runtime-clock='renderer'][data-hfr-native-presentation='true']
+  ) {
+  aspect-ratio: auto;
+  height: auto;
+  max-height: none;
+  overflow: visible;
+
+  > .lesson-shell2__stage {
+    aspect-ratio: auto;
+    height: auto;
+    inset: auto;
+    max-height: none;
+    overflow: visible;
+    position: relative;
+  }
+}
+
+.runtime-shell[data-runtime-clock='renderer'][data-hfr-native-presentation='true'],
+.runtime-shell[data-runtime-clock='renderer'][data-hfr-native-presentation='true'] .runtime-stage,
+.runtime-shell[data-runtime-clock='renderer'][data-hfr-native-presentation='true'] .runtime-stage > div,
+.runtime-shell[data-runtime-clock='renderer'][data-hfr-native-presentation='true'] .runtime-stage .faithful-stage-wrap {
+  aspect-ratio: auto;
+  height: auto;
+  max-height: none;
+  min-height: 0;
+  overflow: visible;
+}
+
+.runtime-shell[data-runtime-clock='renderer'][data-hfr-native-presentation='true'] .hfr-canvas-plane {
+  aspect-ratio: var(--flash-stage-aspect, 800 / 600);
+  height: auto;
+  overflow: visible;
+  position: relative;
+  width: 100%;
+}
+
+.runtime-shell[data-runtime-clock='renderer'][data-hfr-native-presentation='true'] .hfr-canvas-plane > .faithful-stage {
+  aspect-ratio: var(--flash-stage-aspect, 800 / 600);
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.runtime-shell[data-runtime-clock='renderer'][data-hfr-native-presentation='true'] .hfr-native-text-flow {
+  max-inline-size: 100%;
+  overflow-wrap: anywhere;
+}
+
+.runtime-shell[data-runtime-clock='renderer'][data-hfr-native-presentation='true'] .hfr-native-text-prose > :is(h2, h3, p) {
+  line-height: 1.3;
+  margin: 0;
+  padding: .65rem 1rem;
+}
+
+/* HFR source-language notes remain readable beside enlarged lesson titles. */
+[data-source-grade-scope='G6-G8-shared'] .lesson-shell2[data-host-presentation='modern-wide']:has(.runtime-shell[data-hfr-native-presentation='true']) .lesson-shell2__page-heading > div:first-child {
+  flex-wrap: wrap;
+  max-inline-size: 100%;
+}
+[data-source-grade-scope='G6-G8-shared'] .lesson-shell2[data-host-presentation='modern-wide']:has(.runtime-shell[data-hfr-native-presentation='true']) .lesson-shell2__page-heading h1 {
+  flex: 0 1 auto;
+  max-inline-size: 100%;
+  overflow: visible;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+[data-source-grade-scope='G6-G8-shared'] .lesson-shell2[data-host-presentation='modern-wide']:has(.runtime-shell[data-hfr-native-presentation='true']) .lesson-shell2__page-heading p {
+  max-inline-size: 100%;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+[data-source-grade-scope='G6-G8-shared'] .lesson-shell2[data-host-presentation='modern-wide']:has(.runtime-shell[data-hfr-native-presentation='true']) .lesson-shell2__page-heading > div:first-child > p:not(:first-child) {
+  flex-basis: 100%;
 }

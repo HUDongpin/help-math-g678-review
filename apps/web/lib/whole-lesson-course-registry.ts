@@ -1,4 +1,4 @@
-import {hasAnimationModule} from '@helpmath/demos/animation-registry';
+import {hasAnimationModule} from '@helpmath/demos/animation-registry-metadata';
 
 import {isG678ModuleCode} from './g678-preview-policy';
 

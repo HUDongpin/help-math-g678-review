@@ -13,6 +13,9 @@ import {getSiteUrl, SITE_DESCRIPTION, SITE_NAME} from '@/lib/site';
 
 import 'katex/dist/katex.min.css';
 import '../globals.css';
+import '../lesson-fonts.css';
+import '../lesson-typography.css';
+import '../lesson-typography-host.css';
 
 export const metadata: Metadata = {
   metadataBase: getSiteUrl(),

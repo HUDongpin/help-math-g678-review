@@ -90,7 +90,7 @@ const scopes = Object.freeze([
   }),
 ]);
 
-test('page-only showcase policy binds exactly the 329 registered runtime directories', async () => {
+test('page-only showcase policy remains isolated from the 336 local-only G678 runtime directories', async () => {
   const productionCourseAssetsRoot = path.join(
     webRoot,
     'public/flash-assets/courses',

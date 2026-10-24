@@ -1,4 +1,4 @@
-import {hasAnimationModule} from '@helpmath/demos/animation-registry';
+import {hasAnimationModule} from '@helpmath/demos/animation-registry-metadata';
 
 import {G5_L5_PRODUCT_BRIDGE_DATA} from './g5-l5-product-bridge-data.generated';
 import type {

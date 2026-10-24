@@ -1,7 +1,7 @@
 import {
   animationModuleRegistration,
   hasAnimationModule,
-} from '@helpmath/demos/animation-registry';
+} from '@helpmath/demos/animation-registry-metadata';
 
 import type {
   Grade4CourseCatalogCoverage,

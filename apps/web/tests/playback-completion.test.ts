@@ -6,7 +6,13 @@ import {
   playbackReachedEnd,
   resolveAnimationPlaybackProgress,
 } from '@/components/animation-runtime';
-import {frameAtElapsedMs, resolvePlaybackEndFrame} from '@helpmath/demos/runtime';
+import {
+  frameAtElapsedMs,
+  resolveInteractivePlaybackPolicy,
+  resolveInteractiveSeekPolicy,
+  resolveInteractiveStopResolutionPolicy,
+  resolvePlaybackEndFrame,
+} from '@helpmath/demos/runtime';
 
 const PLAYING = {
   captureFrame: undefined,
@@ -147,4 +153,90 @@ test('the runtime reports completion once per page and per replay', async () => 
     /if \(reportedCompletionRef\.current === completionIdentity\) return;\s*reportedCompletionRef\.current = completionIdentity;\s*onPlaybackComplete\?\.\(\);/,
   );
   assert.match(source, /data-runtime-playback-complete=\{playbackComplete/);
+});
+
+test('interactive source stops block completion and typed seek stays fail-closed without a host consumer', async () => {
+  const stop = {
+    id: 'nms-question-frame-97',
+    frameDomain: 'sprite-260',
+    stopFrame: 97,
+    resumeFrame: 98,
+    resolution: 'explicit-source-feedback-finished',
+    completionDisposition: 'blocked-while-unresolved',
+    requiresHostInteractiveStop: true,
+    strictAcceptanceEffect: 'none',
+  } as const;
+  assert.deepEqual(resolveInteractivePlaybackPolicy([stop], {
+    frameDomain: stop.frameDomain,
+    requestedFrame: 120,
+  }), {
+    frame: 97,
+    held: true,
+    completionAllowed: false,
+    requiresHostInteractiveStop: true,
+    activeStopId: stop.id,
+    resumeFrame: 98,
+  });
+  const seek = {
+    id: 'geo-source-progress-seek',
+    frameDomain: 'sprite-142',
+    minimumFrame: 1,
+    maximumFrame: 127,
+    terminalFrame: 127,
+    resumeDisposition: 'resume-only-when-nonterminal',
+    requiresHostSeekConsumer: true,
+    strictAcceptanceEffect: 'none',
+  } as const;
+  assert.deepEqual(resolveInteractiveSeekPolicy(seek, {
+    capabilityId: seek.id,
+    frameDomain: seek.frameDomain,
+    targetFrame: 40,
+    input: 'native-range-change',
+    source: 'maintained-source-derived-range',
+  }, {hostSeekConsumerImplemented: true}), {
+    accepted: true,
+    frame: 40,
+    resume: true,
+    blocker: null,
+  });
+  assert.deepEqual(resolveInteractiveSeekPolicy(seek, {
+    capabilityId: seek.id,
+    frameDomain: seek.frameDomain,
+    targetFrame: 40,
+    input: 'native-range-change',
+    source: 'maintained-source-derived-range',
+  }, {hostSeekConsumerImplemented: false}), {
+    accepted: false,
+    frame: null,
+    resume: false,
+    blocker: 'host-seek-consumer-unavailable',
+  });
+  assert.deepEqual(resolveInteractiveStopResolutionPolicy([stop], {
+    stopId: stop.id,
+    frameDomain: stop.frameDomain,
+    resolution: stop.resolution,
+    source: 'maintained-source-derived-interaction',
+  }, {activeStopId: stop.id}), {
+    accepted: true,
+    stopId: stop.id,
+    resumeFrame: stop.resumeFrame,
+    blocker: null,
+  });
+  assert.equal(resolveInteractiveStopResolutionPolicy([stop], {
+    stopId: stop.id,
+    frameDomain: stop.frameDomain,
+    resolution: stop.resolution,
+    source: 'maintained-source-derived-interaction',
+  }, {activeStopId: null}).blocker, 'interactive-stop-not-active');
+  const source = await readFile(
+    new URL('../components/animation-runtime.tsx', import.meta.url),
+    'utf8',
+  );
+  assert.match(source,
+    /interactivePlayback\.completionAllowed &&\s*animationModule/u);
+  assert.match(source, /onSeekIntent=\{animationModule\.interactiveSeek/u);
+  assert.match(source, /hostSeekConsumerImplemented:\s*true/u);
+  assert.match(source, /onInteractiveStopResolved=/u);
+  assert.match(source, /resolvedStopIds/u);
+  assert.match(source, /data-runtime-interactive-stop-held/u);
 });

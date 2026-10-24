@@ -6,11 +6,18 @@ import {
 
 export type {
   AnimationModuleLoader,
+  AnimationModuleDeploymentScope,
   AnimationModuleRegistration,
   AnimationModuleRegistrationScope,
   AnimationRegistryScope,
 } from './registry.generated';
-export type {AnimationModule, AnimationRendererProps} from './contract';
+export type {
+  AnimationModule,
+  AnimationRendererProps,
+  RendererPlaybackReport,
+  RendererLessonSessionScope,
+  AnimationSeekIntent,
+} from './contract';
 
 export const registeredAnimationKeys = Object.freeze(Object.keys(animationModuleLoaders));
 export const privateRegisteredAnimationKeys = Object.freeze(

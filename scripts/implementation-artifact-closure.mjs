@@ -397,7 +397,24 @@ async function resolveLocalModule(projectRoot, importerPath, specifier) {
   throw new Error(`${projectRelative(projectRoot, importerPath)}: unresolved local import ${specifier}`);
 }
 
+// Cache only the parse result, keyed by current content. Every closure still
+// reads the file, resolves imports, rejects symlinks and hashes current bytes.
+// Keeping strings rather than ASTs also bounds memory during a ledger sweep.
+const moduleSpecifierCache = new Map();
+const MODULE_SPECIFIER_CACHE_LIMIT = 4096;
 function sourceModuleSpecifiers(filePath, sourceText) {
+  const key = `${path.extname(filePath).toLowerCase()}:${createHash('sha256').update(sourceText).digest('hex')}`;
+  const cached = moduleSpecifierCache.get(key);
+  if (cached) return cached;
+  const values = parseSourceModuleSpecifiers(filePath, sourceText);
+  if (moduleSpecifierCache.size >= MODULE_SPECIFIER_CACHE_LIMIT) {
+    moduleSpecifierCache.delete(moduleSpecifierCache.keys().next().value);
+  }
+  moduleSpecifierCache.set(key, values);
+  return values;
+}
+
+function parseSourceModuleSpecifiers(filePath, sourceText) {
   const extension = path.extname(filePath).toLowerCase();
   if (extension === ".css") {
     const values = [];
@@ -429,23 +446,40 @@ function isProjectionManagedGlobal(projectRoot, filePath) {
   return PROJECTION_MANAGED_GLOBAL_FILES.has(projectRelative(projectRoot, path.resolve(filePath)));
 }
 
-async function expandLocalModuleClosure(projectRoot, initialFiles) {
+const SELECTED_DISPATCH_STOP_PATHS=new Set([
+  "packages/demos/src/registry.generated.ts",
+  "apps/web/lib/hfr-local-animation-loader-v1.generated.ts",
+  "apps/web/lib/hfr-local-candidates-v2.generated.ts",
+  "packages/demos/src/registry.local-only.generated.ts",
+  "packages/demos/src/registry.local-only.metadata.generated.ts",
+]);
+/** Optional exact dispatch leaves are fully pinned; selected module roots are supplied separately.
+ * Existing implementation capture callers retain their original closure behavior. */
+export async function expandLocalModuleClosure(projectRoot, initialFiles, {stopAt=[]}={}) {
+  const stops=new Set();
+  for(const pin of stopAt) {
+    invariant(SELECTED_DISPATCH_STOP_PATHS.has(pin?.path), 'Only inspected registry dispatch files may stop recursion');
+    const file=path.resolve(projectRoot,pin.path);
+    const actual=await assertRealFileWithinProject(projectRoot,file,'selected dispatch leaf');
+    invariant(!stops.has(file)&&actual.metadata.size===pin.bytes&&await sha256File(file)===pin.sha256,'Exact distinct dispatch stop pin');
+    stops.add(file);
+  }
   const closure = new Set(initialFiles
     .map((filePath) => path.resolve(filePath))
-    .filter((filePath) => !isProjectionManagedGlobal(projectRoot, filePath)));
+    .filter((filePath) => stops.has(filePath)||!isProjectionManagedGlobal(projectRoot, filePath)));
   const queue = [...closure].filter((filePath) => {
     const extension = path.extname(filePath).toLowerCase();
-    return PARSED_MODULE_EXTENSIONS.has(extension) || extension === ".css";
+    return !stops.has(filePath)&&(PARSED_MODULE_EXTENSIONS.has(extension) || extension === ".css");
   });
   for (let index = 0; index < queue.length; index += 1) {
     const importerPath = queue[index];
     const sourceText = await readFile(importerPath, "utf8");
     for (const specifier of sourceModuleSpecifiers(importerPath, sourceText)) {
       const resolved = await resolveLocalModule(projectRoot, importerPath, specifier);
-      if (!resolved || isProjectionManagedGlobal(projectRoot, resolved) || closure.has(resolved)) continue;
+      if (!resolved || (isProjectionManagedGlobal(projectRoot, resolved)&&!stops.has(resolved)) || closure.has(resolved)) continue;
       closure.add(resolved);
       const extension = path.extname(resolved).toLowerCase();
-      if (PARSED_MODULE_EXTENSIONS.has(extension) || extension === ".css") queue.push(resolved);
+      if (!stops.has(resolved)&&(PARSED_MODULE_EXTENSIONS.has(extension) || extension === ".css")) queue.push(resolved);
     }
   }
   return closure;
@@ -481,6 +515,33 @@ function dynamicImports(node) {
   };
   visit(node);
   return values;
+}
+
+/** Check selected import targets with the existing AST/import resolver before a dispatch leaf is used. */
+export async function verifySelectedRegistryModuleImports(projectRoot, relativePath, entries) {
+  const variables={
+    "packages/demos/src/registry.local-only.generated.ts":"localOnlyAnimationModuleLoaders",
+    "apps/web/lib/hfr-local-animation-loader-v1.generated.ts":"hfrLocalAnimationModuleLoaders",
+    "apps/web/lib/hfr-local-candidates-v2.generated.ts":"hfrLocalCandidateLoaders",
+  };
+  invariant(Object.hasOwn(variables,relativePath),'Reviewed local dispatch map required');
+  const sourceText=await readProjectionSource(projectRoot,relativePath,'selected dispatch');
+  const sourceFile=ts.createSourceFile(relativePath,sourceText,ts.ScriptTarget.Latest,true);
+  let container=unwrapExpression(findVariableInitializer(sourceFile,variables[relativePath]));
+  if(relativePath!=="apps/web/lib/hfr-local-candidates-v2.generated.ts") {
+    invariant(ts.isConditionalExpression(container)&&container.condition.getText(sourceFile).replace(/\s+/g,'')==="process.env.NODE_ENV==='production'",'Exact local-only dispatch gate');
+    const production=unwrapExpression(container.whenTrue);
+    invariant(ts.isObjectLiteralExpression(production)&&production.properties.length===0,'Empty production dispatch');
+    container=unwrapExpression(container.whenFalse);
+  }
+  invariant(ts.isObjectLiteralExpression(container),'Exact local dispatch table');
+  for(const entry of entries) {
+    const matches=container.properties.filter(p=>p.name&&propertyNameText(p.name)===entry.animationId);
+    invariant(matches.length===1,'One selected dispatch entry: '+entry.animationId);
+    const imports=dynamicImports(matches[0]);invariant(imports.length===1,'One selected dynamic module: '+entry.animationId);
+    const actual=await resolveLocalModule(projectRoot,path.resolve(projectRoot,relativePath),imports[0]);
+    invariant(actual===path.resolve(projectRoot,entry.modulePath),'Selected dispatch module equals current registration: '+entry.animationId);
+  }
 }
 
 async function collectRegistryGeneratedProjection(projectRoot, registryKey, registryModule) {

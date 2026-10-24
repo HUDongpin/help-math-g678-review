@@ -31,6 +31,42 @@ const courseRegistryUrl = new URL(
   import.meta.url,
 );
 
+test('host-owned Replay resets memory host state with the same epoch as the renderer', async () => {
+  const source = await readFile(componentUrl, 'utf8');
+  const host = source.slice(source.indexOf('const lessonHost = useMemo'), source.indexOf('const [, setLessonHostRevision]'));
+  assert.match(host, /createMemoryOnlyLessonHost\(/u);
+  assert.match(host, /\[audioEnabled, currentPage\.animationId, descriptor, progress\.locale, runtimeEpoch\]/u);
+  const replay = source.slice(source.indexOf('const replayCurrentPage'), source.indexOf('const inspectFrame'));
+  assert.match(replay, /setRuntimeEpoch\(\(value\) => value \+ 1\)/u);
+  assert.match(source, /key=\{`\$\{currentPageSessionId\}:\$\{runtimeEpoch\}`\}/u);
+});
+
+test('shared-course glossary attribution is source/count derived and motion status cannot cover math', async () => {
+  const source = await readFile(componentUrl, 'utf8');
+  const css = await readFile(new URL('../app/globals.css', import.meta.url), 'utf8');
+  assert.match(source, /source-bound-g678-bilingual-keyterms-xml/u);
+  assert.match(source, /\$\{descriptor\.glossary\.length\} source-bound bilingual definitions/u);
+  assert.match(source, /entry\.source\[progress\.locale\]\.path/u);
+  const scoped = css.match(/\[data-source-grade-scope='G6-G8-shared'\] \.lesson-shell2__stage \.reduced-motion-note \{([^}]+)\}/u)?.[1];
+  assert.ok(scoped);
+  assert.match(scoped, /clip-path: inset\(50%\)/u);
+  assert.match(scoped, /width: 1px/u); assert.match(scoped, /height: 1px/u);
+});
+
+test('all-viewport flow sizing is confined to two maintained DOM predecessors, including long review states', async () => {
+  const css = await readFile(new URL('../app/globals.css', import.meta.url), 'utf8');
+  const patch = css.slice(css.indexOf('/* These two maintained DOM predecessors'));
+  assert.doesNotMatch(patch, /@media/u);
+  assert.match(patch, /data-source-grade-scope='G6-G8-shared'/u);
+  assert.match(patch, /data-source-content-successor='g678-alg-l11-tranche-d-instructional-visuals-v1'/u);
+  assert.match(patch, /data-animation-id='shared-alg001-l11-p034'/u);
+  assert.match(patch, /data-animation-id='shared-alg001-l11-p044'/u);
+  assert.match(patch, /data-p034-feedback-successor='v1'/u);
+  assert.match(patch, /aspect-ratio: auto/u);
+  assert.match(patch, /position: relative/u);
+  assert.doesNotMatch(patch.replace(/\/\*[\s\S]*?\*\//gu, ''), /companion-successor|canvas|transform:/u);
+});
+
 test('descriptor-driven player never mounts or prefetches unavailable renderers', async () => {
   const [component, shell, animationRuntime, animationContract] = await Promise.all([
     readFile(componentUrl, 'utf8'),
@@ -85,7 +121,7 @@ test('descriptor-driven player never mounts or prefetches unavailable renderers'
   assert.match(component, /sections=\{shellSections\}/);
   assert.match(
     component,
-    /const tutorContext = novaCapabilities\.text\s*\? tutorPageContext\(\{/,
+    /const tutorContext = novaCapabilities\.text && mappedGrade > 0\s*\? tutorPageContext\(\{/,
   );
   assert.match(component, /novaTutorMode=\{novaTutorMode\}/);
   assert.match(component, /tutorContext=\{tutorContext\}/);
@@ -163,7 +199,7 @@ test('descriptor-driven player never mounts or prefetches unavailable renderers'
   assert.match(component, /Your progress stays saved on this device\./);
   assert.match(
     component,
-    /`\$\{reviewedRegisteredCount\} of \$\{registeredPages\.length\} pages complete`/,
+    /`\$\{reviewedRegisteredCount\} of \$\{totalPageCount\} pages complete`/,
   );
   assert.doesNotMatch(
     component,
@@ -389,6 +425,65 @@ test('descriptor-driven player never mounts or prefetches unavailable renderers'
   assert.match(shell, /data-lesson-nav="footer-next"/);
 });
 
+test('partial descriptors use the full source-order denominator and cannot report lesson or section completion', async () => {
+  const component = await readFile(componentUrl, 'utf8');
+
+  assert.match(component, /const totalPageCount = descriptor\.pages\.length;/);
+  assert.match(
+    component,
+    /const unavailablePageCount = totalPageCount - registeredPages\.length;/,
+  );
+  assert.match(
+    component,
+    /const completionPercent = totalPageCount\s*\? Math\.round\(\(reviewedRegisteredCount \/ totalPageCount\) \* 100\)/,
+    'one reviewed renderer in a 20-page descriptor must be 5%, never 100%',
+  );
+  assert.doesNotMatch(
+    component,
+    /reviewedRegisteredCount \/ registeredPages\.length/,
+  );
+  assert.match(
+    component,
+    /completionLabel=\{spanish[\s\S]*?\$\{reviewedRegisteredCount\} of \$\{totalPageCount\} pages complete/,
+  );
+
+  const sectionRequiresEverySourcePage =
+    /sectionPages\.every\(\s*\(page\) =>\s*page\.rendererAvailability\.kind === 'registered' &&\s*reviewed\.has\(pageSessionId\(page\)\)/g;
+  assert.equal(
+    component.match(sectionRequiresEverySourcePage)?.length,
+    2,
+    'both the course map and responsive section spine must reject partial-section completion',
+  );
+  assert.match(
+    component,
+    /data-complete=\{available && reviewed\.has\(pageId\)[\s\S]*?\? 'true'[\s\S]*?: 'false'\}/,
+    'an unavailable page must stay incomplete even if stale persisted state names it',
+  );
+
+  assert.match(component, /'Calibration tour ended'/);
+  assert.match(
+    component,
+    /`You reviewed \$\{reviewedRegisteredCount\} of \$\{totalPageCount\} pages\. \$\{unavailablePageCount\} remain unavailable; the lesson is not complete\.`/,
+  );
+  assert.match(
+    component,
+    /`Calibration tour ended · \$\{unavailablePageCount\} unavailable`/,
+  );
+
+  // A complete G3-G5 N/N descriptor has no unavailable pages, so it takes the
+  // unchanged full-lesson branch while using the same (equal) denominator.
+  assert.match(component, /const partialDescriptor = unavailablePageCount > 0;/);
+  assert.match(component, /\? 'Lección completada'\s*: 'Lesson complete'/);
+  assert.match(
+    component,
+    /`You completed \$\{reviewedRegisteredCount\} of \$\{totalPageCount\} pages\.`/,
+  );
+  assert.match(
+    component,
+    /\(spanish \? 'Lección completada ✓' : 'Lesson complete ✓'\)/,
+  );
+});
+
 test('every Course Map selection owns a focus epoch, including same-page reselection', async () => {
   const component = await readFile(componentUrl, 'utf8');
   assert.match(
@@ -402,6 +497,41 @@ test('every Course Map selection owns a focus epoch, including same-page reselec
   assert.match(
     component,
     /const navigateToPage = \([\s\S]*?setNavigationFocusEpoch\(\(value\) => value \+ 1\);/,
+  );
+});
+
+test('typed legacy navigation carries only an exact target-bound memory handoff', async () => {
+  const component = await readFile(componentUrl, 'utf8');
+  assert.match(component,
+    /useState<LessonHostNavigationHandoff \| null>\(null\)/);
+  assert.match(component,
+    /setLessonHostNavigationHandoff\(request\.handoff \?\? null\)/);
+  assert.match(component,
+    /lessonHostNavigationHandoff\?\.targetAnimationId ===\s*currentPage\.animationId\s*\? lessonHostNavigationHandoff\s*: null/);
+  assert.match(component,
+    /const navigateToPage = \([\s\S]*?setLessonHostNavigationHandoff\(null\);/);
+  for (const field of ['attempted', 'correct', 'points-awarded',
+    'points-possible']) {
+    assert.match(component, new RegExp(
+      `data-lesson-host-fq-${field.replace('-', '\\-')}`));
+  }
+});
+
+test('glossary requests preserve the page-bound pause and inspection snapshot', async () => {
+  const component = await readFile(componentUrl, 'utf8');
+
+  assert.match(component,
+    /useRef<DescriptorGlossaryPauseSession<AnimationRuntimeSeekRequest> \| null>/);
+  assert.match(component,
+    /transitionDescriptorGlossaryPause\(\{[\s\S]*?allowed: true,[\s\S]*?pageSessionId: currentPageSessionId,[\s\S]*?paused,[\s\S]*?requestType: request\.type,[\s\S]*?seekRequest,[\s\S]*?session: glossaryPauseSessionRef\.current/);
+  assert.match(component,
+    /glossaryPauseSessionRef\.current = glossaryPause\.session;[\s\S]*?setPaused\(glossaryPause\.paused\);[\s\S]*?setSeekRequest\(glossaryPause\.seekRequest\);/);
+  assert.doesNotMatch(component,
+    /if \(request\.type === 'close-glossary'\) setPaused\(false\)/);
+  assert.equal(
+    component.match(/resetGlossaryPause\(\);/g)?.length,
+    5,
+    'host navigation, page navigation, advance, replay, and tour reset clear the snapshot',
   );
 });
 

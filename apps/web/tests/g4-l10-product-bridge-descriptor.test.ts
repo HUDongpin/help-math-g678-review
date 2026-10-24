@@ -113,6 +113,7 @@ test('the descriptor is hash-bound to the freeze and private registry metadata',
     assert.deepEqual(animationModuleRegistration(animationId), {
       maturity: 'private-current-js',
       scope: 'private-engineering',
+      deploymentScope: 'bundled',
       calibrationId: 'g4-l10-page-only-current-js-46-v1',
     });
   }

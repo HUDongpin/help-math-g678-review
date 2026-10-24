@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {"incremental": false},
+  "include": [
+    "next-env.d.ts",
+    "next.config.ts",
+    "lib/g678-p064-candidate.production-stub.tsx",
+    "lib/nms-l02-p064-question-audio-access.ts",
+    "lib/nms-l02-p064-question-audio-source.ts",
+    "lib/nms-l02-p064-question-audio-response.ts",
+    "lib/nms-l02-p064-question-audio.production-stub.ts",
+    "app/[locale]/migration-status/g678-calibration/shared-nms002-l02-p064/page.tsx",
+    "app/flash-assets/g678-local/shared-nms002-l02-p064/question-audio/[folder]/[question]/route.ts",
+    "app/flash-assets/g678-local/shared-nms002-l02-p064/option-audio/[folder]/[question]/[option]/route.ts",
+    "tests/nms-l02-p064-question-audio.test.ts"
+  ]
+}

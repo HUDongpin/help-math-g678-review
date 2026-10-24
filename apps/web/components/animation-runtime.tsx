@@ -1,10 +1,11 @@
 'use client';
-import {
-  loadAnimationModule,
-  type AnimationModule,
-  type AnimationRendererProps,
+import type {
+  AnimationModule,
+  AnimationRendererProps,
 } from '@helpmath/demos/animation-registry';
 import {matchPrototype} from '@helpmath/demos/prototype-manifest';
+import {prepareG678LessonTypography} from '@/lib/g678-lesson-typography-presentation';
+import {lessonTypographyLanguages} from '@/lib/lesson-typography-policy';
 import {
   audioCueMatchesContext,
   clampFrame,
@@ -16,11 +17,14 @@ import {
   frameToElapsedMs,
   isSameOriginAssetSource,
   resolveAudioCueTransition,
+  resolveAuthoredTimelineControlPolicy,
+  resolveInteractivePlaybackPolicy,
+  resolveInteractiveSeekPolicy,
+  resolveInteractiveStopResolutionPolicy,
   resolveFrameDomain,
   resolvePlaybackEndFrame,
   resolveReducedMotionFrame,
   stateSupportsRuntimeContext,
-  type LessonHostCapability,
   type LessonHostRequest,
 } from '@helpmath/demos/runtime';
 import {useCallback, useEffect, useMemo, useRef, useState, type CSSProperties} from 'react';
@@ -28,67 +32,12 @@ import {
   LoadedSwfHostCanvas,
   type LoadedSwfHostAsset,
 } from './loaded-swf-host-canvas';
-export type AnimationRuntimeQuery = {frame?: string; frameDomain?: string; scenario?: string; lang?: string; seed?: string; requirementId?: string; trace?: string; entryStateSha256?: string; capture?: string; duplicateCaptureIdentity?: boolean};
-/**
- * Narration is the lesson for a language learner, so the host renders a
- * permanent control for it instead of surfacing a button only when a browser
- * refuses autoplay. These are every state that control has to read back:
- *
- * - `unavailable`: this page carries no narration at all.
- * - `waiting`: narration exists but is bound to the timeline, so there is
- *   nothing the learner can start on demand right now.
- * - `idle`: narration exists and a track can be started on demand.
- * - `playing`: narration is sounding, from a timeline cue, track, or explicit
- *   in-page interaction.
- * - `interactive`: exact audio exists behind in-page controls rather than the
- *   shell's general narration button.
- * - `blocked`: the browser refused autoplay and is waiting for a gesture.
- */
-export type AnimationRuntimeNarrationStatus =
-  'unavailable' | 'waiting' | 'idle' | 'interactive' | 'playing' | 'blocked';
-export interface AnimationRuntimePlaybackState {
-  readonly audioAvailable: boolean;
-  readonly frame: number;
-  readonly frameCount: number;
-  readonly frameDomain: string;
-  readonly fps: number;
-  readonly narration: AnimationRuntimeNarrationStatus;
-  /**
-   * Current playhead within the authored playback span, from 0 to 1.
-   * This is intentionally separate from lesson/page completion. `null` keeps
-   * capture, loading and unsupported renderer states fail-closed.
-   */
-  readonly playbackProgress: number | null;
-  readonly seekAvailable: boolean;
-  readonly stepFrames: number;
-  readonly transportMode: 'none' | 'visual-frame-inspector';
-}
-export interface AnimationRuntimeSeekRequest {
-  readonly frame: number;
-  readonly requestId: number;
-}
-/**
- * Host to runtime narration command. It mirrors `AnimationRuntimeSeekRequest`:
- * the host owns the control, the runtime owns the audio elements, and a
- * monotonic `requestId` keeps a repeated action from replaying on re-render.
- */
-export interface AnimationRuntimeNarrationRequest {
-  readonly action: 'play' | 'stop';
-  readonly requestId: number;
-}
-export const INITIAL_ANIMATION_RUNTIME_PLAYBACK_STATE:
-AnimationRuntimePlaybackState = Object.freeze({
-  audioAvailable: false,
-  frame: 1,
-  frameCount: 1,
-  frameDomain: 'root',
-  fps: 0,
-  narration: 'unavailable',
-  playbackProgress: null,
-  seekAvailable: false,
-  stepFrames: 0,
-  transportMode: 'none',
-});
+import {loadClientAnimationModule} from '@/lib/load-animation-module.client';
+export type {AnimationRuntimeQuery, AnimationRuntimeNarrationStatus, AnimationRuntimePlaybackState, AnimationRuntimeSeekRequest, AnimationRuntimeNarrationRequest} from './animation-runtime-types';
+export {INITIAL_ANIMATION_RUNTIME_PLAYBACK_STATE} from './animation-runtime-types';
+import type {AnimationRuntimeQuery, AnimationRuntimeNarrationStatus, AnimationRuntimePlaybackState, AnimationRuntimeSeekRequest, AnimationRuntimeNarrationRequest} from './animation-runtime-types';
+import {RendererClockedRuntime} from './renderer-clocked-runtime';
+import {moduleDeclaresLessonHostRequest} from './lesson-host-request-policy';
 type CaptureIdentityContext = Readonly<{frame: number; frameDomain: string; requirementId: string; traceId: string; entryStateSha256: string; scenario: string; lang: 'en' | 'es'; seed: number}>;
 const stableCaptureId = /^[A-Za-z0-9][A-Za-z0-9._:-]*$/;
 const canonicalPositiveInteger = /^[1-9]\d*$/;
@@ -115,44 +64,7 @@ export function isExactInteractiveAudioAsset(
     isSameOriginAssetSource(asset.source);
 }
 
-function lessonHostCapabilityForRequest(
-  request: LessonHostRequest,
-): LessonHostCapability | null {
-  if (request.type === 'navigate') return 'navigation';
-  if (request.type === 'set-language') return 'language';
-  if (request.type === 'open-glossary' || request.type === 'close-glossary') {
-    return 'glossary';
-  }
-  if (request.type === 'open-keyterm' || request.type === 'close-keyterm') {
-    return 'keyterm';
-  }
-  if (request.type === 'open-calculator' || request.type === 'close-calculator') {
-    return 'calculator';
-  }
-  if (request.type === 'play-audio' || request.type === 'stop-audio') {
-    return 'audio';
-  }
-  if (request.type === 'record-fq-score' || request.type === 'reset-fq-score') {
-    return 'fq-scoring';
-  }
-  if (
-    request.type === 'record-practice-feedback' ||
-    request.type === 'reset-practice-feedback'
-  ) {
-    return 'practice-feedback';
-  }
-  return null;
-}
-
-export function moduleDeclaresLessonHostRequest(
-  module: AnimationModule | undefined,
-  request: LessonHostRequest,
-): boolean {
-  const capability = lessonHostCapabilityForRequest(request);
-  return capability !== null &&
-    Boolean(module?.lessonHost?.capabilities.includes(capability));
-}
-
+export {moduleDeclaresLessonHostRequest} from './lesson-host-request-policy';
 /**
  * A standalone animation route has no lesson shell, so it may supply only the
  * one host capability that the runtime can execute entirely inside this
@@ -289,6 +201,7 @@ function useFrame(movie: AnimationModule['movie'] | undefined, playbackMode: Ani
   const signature = `${playbackIdentity}:${fps}:${frameCount}:${endFrame}:${mode}:${replay}`;
   const [clock, setClock] = useState({signature, frame: 1});
   const [seekRevision, setSeekRevision] = useState(0);
+  const [rendererRevision, setRendererRevision] = useState(0);
   const elapsed = useRef({signature, milliseconds: 0});
   const activeLoop = useRef<{
     signature: string;
@@ -344,7 +257,7 @@ function useFrame(movie: AnimationModule['movie'] | undefined, playbackMode: Ani
     loop.request = requestAnimationFrame(tick);
     return () => stopActiveLoop(signature);
   }, [endFrame, fps, frameCount, mode, running, seekRevision, signature, stopActiveLoop]);
-  const seekToFrame = useCallback((requestedFrame: number) => {
+  const seekToFrame = useCallback((requestedFrame: number, preserveRenderer = false) => {
     if (!fps || !frameCount) return;
     stopActiveLoop(signature);
     const normalizedFrame = clampFrame(requestedFrame, frameCount);
@@ -360,11 +273,14 @@ function useFrame(movie: AnimationModule['movie'] | undefined, playbackMode: Ani
     };
     setClock({signature, frame: normalizedFrame});
     setSeekRevision((value) => value + 1);
+    // An authored timeline jump is not a new page instance. Its source-owned
+    // selections must survive; inspector/external seeks retain full reset.
+    if (!preserveRenderer) setRendererRevision((value) => value + 1);
   }, [fps, frameCount, signature, stopActiveLoop]);
   return {
     frame: clock.signature === signature ? clock.frame : 1,
     pauseNow: useCallback(() => stopActiveLoop(signature), [signature, stopActiveLoop]),
-    seekRevision,
+    rendererRevision,
     seekToFrame,
   };
 }
@@ -713,7 +629,8 @@ export function HostAudioControls(options: HostAudioTracksOptions & {module: Ani
   />;
 }
 
-export function AnimationRuntime({
+function FrameClockedAnimationRuntime({
+  resolvedModule,
   audioEnabled = true,
   audioLanguage,
   animationId,
@@ -722,6 +639,7 @@ export function AnimationRuntime({
   labels,
   loadedSwfHostAsset,
   narrationRequest,
+  lessonHostNavigationHandoff,
   onLessonHostRequest,
   onPlaybackComplete,
   onReplay: onReplayCallback,
@@ -734,6 +652,7 @@ export function AnimationRuntime({
   uiLanguage,
   volume = 1,
 }: {
+  resolvedModule?: AnimationModule;
   audioEnabled?: boolean;
   audioLanguage?: AnimationRendererProps['lang'];
   animationId: string;
@@ -748,6 +667,7 @@ export function AnimationRuntime({
   };
   loadedSwfHostAsset?: LoadedSwfHostAsset;
   narrationRequest?: AnimationRuntimeNarrationRequest | null;
+  lessonHostNavigationHandoff?: AnimationRendererProps['lessonHostNavigationHandoff'];
   onLessonHostRequest?: AnimationRendererProps['onLessonHostRequest'];
   onPlaybackComplete?: () => void;
   onReplay?: () => void;
@@ -763,19 +683,27 @@ export function AnimationRuntime({
   const [loaded, setLoaded] = useState<{key: string; module?: AnimationModule; failed?: boolean}>({key: moduleKey});
   const [replay, setReplay] = useState(0), [reduced, setReduced] = useState<boolean | undefined>();
   const [hostAudioPaused, setHostAudioPaused] = useState(false);
+  const [interactiveHostState, setInteractiveHostState] = useState<{
+    readonly identity: string;
+    readonly resolvedStopIds: readonly string[];
+    readonly seekHeld: boolean;
+  }>({identity: '', resolvedStopIds: [], seekHeld: false});
   const [autoplayBlockedCue, setAutoplayBlockedCue] = useState<RuntimeAudioCue | null>(null);
   const [timelineAudioSounding, setTimelineAudioSounding] = useState(false);
   const animationModule = loaded.key === moduleKey ? loaded.module : undefined;
+  const typographyCapture = query.capture === '1' || Boolean(query.entryStateSha256);
+  const typographyPresentation = !typographyCapture ? animationModule?.textPresentation : undefined;
+  const typographyLanguages = lessonTypographyLanguages(query.lang, uiLanguage, typographyPresentation?.binding);
   // Keep visual/runtime identity intact while stripping every audio declaration
   // from the executable path when the server publication gate is closed.
   const audioModule = audioEnabled ? animationModule : undefined;
   const prototype = matchPrototype({animationId: moduleKey});
-  useEffect(() => {let cancelled = false; loadAnimationModule(moduleKey).then((value) => {if (!cancelled) setLoaded({key: moduleKey, module: value, failed: !value});}).catch(() => {if (!cancelled) setLoaded({key: moduleKey, failed: true});}); return () => {cancelled = true;};}, [moduleKey]);
+  useEffect(() => {let cancelled = false; (resolvedModule ? Promise.resolve(resolvedModule) : loadClientAnimationModule(moduleKey)).then(value => prepareG678LessonTypography(value, typographyCapture)).then((value) => {if (!cancelled) setLoaded({key: moduleKey, module: value, failed: !value});}).catch(() => {if (!cancelled) setLoaded({key: moduleKey, failed: true});}); return () => {cancelled = true;};}, [moduleKey, typographyCapture, resolvedModule]);
   useEffect(() => {const media = matchMedia('(prefers-reduced-motion: reduce)'), update = () => setReduced(media.matches); update(); media.addEventListener('change', update); return () => media.removeEventListener('change', update);}, []);
   const runtimeMetadata = prototype?.runtime ?? animationModule?.runtime ?? animationModule?.movie;
   const context = animationModule && runtimeMetadata
     ? createRuntimeContext(
-        query,
+        typographyPresentation ? {...query, lang: typographyLanguages.visualLanguage} : query,
         runtimeMetadata,
         animationModule.scenarios,
         animationModule.defaultScenarioByFrameDomain
@@ -787,7 +715,7 @@ export function AnimationRuntime({
   const playbackEndFrame = frameDomain
     ? animationModule?.playbackEndFrameByDomain?.[frameDomain.id] ?? animationModule?.playbackEndFrame
     : animationModule?.playbackEndFrame;
-  const capture = query.capture === '1', running = Boolean(animationModule && context?.captureFrame === undefined && reduced === false && !hostAudioPaused && !paused);
+  const capture = query.capture === '1';
   const playbackIdentity = JSON.stringify([
     animationModule?.key ?? moduleKey,
     context?.frameDomain ?? '',
@@ -798,23 +726,93 @@ export function AnimationRuntime({
     context?.requirementId ?? '',
     context?.entryStateSha256 ?? ''
   ]);
+  const resolvedStopIds = interactiveHostState.identity === playbackIdentity
+    ? interactiveHostState.resolvedStopIds
+    : [];
+  const interactiveSeekHeld = interactiveHostState.identity === playbackIdentity
+    ? interactiveHostState.seekHeld
+    : false;
+  const running = Boolean(animationModule &&
+    context?.captureFrame === undefined && reduced === false &&
+    !hostAudioPaused && !paused && !interactiveSeekHeld);
   const {
     frame: liveFrame,
     pauseNow: pauseTimelineNow,
-    seekRevision,
+    rendererRevision,
     seekToFrame,
   } = useFrame(activeMovie, animationModule?.playbackMode, playbackEndFrame, running, replay, playbackIdentity);
+  const reducedMotionFrame = animationModule && activeMovie
+    ? (frameDomain && typographyPresentation?.reducedMotionFrameByDomain?.[frameDomain.id]) || resolveReducedMotionFrame(activeMovie, animationModule.reducedMotionFrame)
+    : 1;
+  const interactivePlayback = resolveInteractivePlaybackPolicy(
+    animationModule?.interactiveStops ?? [],
+    {
+      frameDomain: frameDomain?.id ?? '',
+      requestedFrame: reduced === true ? reducedMotionFrame : liveFrame,
+      resolvedStopIds,
+    },
+  );
+  useEffect(() => {
+    if (interactivePlayback.held) pauseTimelineNow();
+  }, [interactivePlayback.held, pauseTimelineNow]);
+  const onRendererInteractiveStopResolved: NonNullable<
+    AnimationRendererProps['onInteractiveStopResolved']
+  > = (intent) => {
+    const policy = resolveInteractiveStopResolutionPolicy(
+      animationModule?.interactiveStops ?? [],
+      intent,
+      {
+        activeStopId: interactivePlayback.activeStopId,
+        resolvedStopIds,
+      },
+    );
+    if (!policy.accepted || !policy.stopId || !policy.resumeFrame) return;
+    setInteractiveHostState((current) => {
+      const currentIds = current.identity === playbackIdentity
+        ? current.resolvedStopIds
+        : [];
+      return {
+        identity: playbackIdentity,
+        resolvedStopIds: Object.freeze([...new Set([
+          ...currentIds,
+          policy.stopId!,
+        ])]),
+        seekHeld: current.identity === playbackIdentity
+          ? current.seekHeld
+          : false,
+      };
+    });
+    // Reduced motion advances through source stops by their declared static
+    // frames. Keeping the renderer mounted retains the completed answer.
+    if (reduced !== true) seekToFrame(policy.resumeFrame,
+      policy.rendererStateOnResume === 'preserve');
+  };
+  const onRendererSeekIntent: NonNullable<
+    AnimationRendererProps['onSeekIntent']
+  > = (intent) => {
+    const capability = animationModule?.interactiveSeek;
+    if (!capability) return;
+    const policy = resolveInteractiveSeekPolicy(capability, intent, {
+      hostSeekConsumerImplemented: true,
+    });
+    if (!policy.accepted || !policy.frame) return;
+    setInteractiveHostState((current) => ({
+      identity: playbackIdentity,
+      resolvedStopIds: current.identity === playbackIdentity
+        ? current.resolvedStopIds
+        : [],
+      seekHeld: !policy.resume,
+    }));
+    seekToFrame(policy.frame);
+  };
   const onHostAudioTimelinePauseChange = useCallback((paused: boolean) => {
     if (paused) pauseTimelineNow();
     setHostAudioPaused(paused);
   }, [pauseTimelineNow]);
-  const reducedMotionFrame = animationModule && activeMovie
-    ? resolveReducedMotionFrame(activeMovie, animationModule.reducedMotionFrame)
-    : 1;
   // `running` becomes false while source host narration pauses the child
   // timeline. Keep rendering the last live frame in that state; falling back
   // to frame 1 would visually restart the movie for the duration of the audio.
-  const frame = context?.captureFrame ?? (reduced === true ? reducedMotionFrame : liveFrame);
+  const frame = context?.captureFrame ?? interactivePlayback.frame;
   const transport = animationModule?.transport;
   const transportEnabledForDomain = Boolean(
     transport &&
@@ -1117,6 +1115,7 @@ export function AnimationRuntime({
       ? handleRendererLessonHostRequest
       : undefined;
   const playbackComplete = Boolean(
+    interactivePlayback.completionAllowed &&
     animationModule &&
       activeMovie &&
       !captureIdentityFailure &&
@@ -1142,13 +1141,35 @@ export function AnimationRuntime({
   }, [completionIdentity, onPlaybackComplete, playbackComplete]);
   if (loaded.failed) return <p className="runtime-unavailable">{labels.unavailable}</p>;
   if (!animationModule || !context || !runtimeMetadata || !frameDomain || !activeMovie || !playbackContext || !state) return <p aria-live="polite" className="runtime-unavailable">{labels.loading}</p>;
-  const Renderer = animationModule.Renderer;
+  const Renderer = typographyPresentation?.Renderer ?? animationModule.Renderer;
   const onReplay = () => {
     stopNarrationTrack();
     stopInteractiveAudio();
     stopTimelineAudioNow();
+    setInteractiveHostState({
+      identity: playbackIdentity,
+      resolvedStopIds: [],
+      seekHeld: false,
+    });
     setReplay((value) => value + 1);
     onReplayCallback?.();
+  };
+  const onAuthoredTimelineControl: NonNullable<
+    AnimationRendererProps['onAuthoredTimelineControl']
+  > = (intent) => {
+    const decision = resolveAuthoredTimelineControlPolicy(
+      animationModule.authoredTimelineControls ?? [], intent,
+      {frameDomain: playbackContext.frameDomain, frame: playbackContext.frame,
+        frameCount: activeMovie.frameCount,
+        paused: paused || hostAudioPaused,
+        capture: capture || context.captureFrame !== undefined || reduced === true},
+    );
+    if (!decision.accepted || decision.frame === null) return decision;
+    setInteractiveHostState((current) => ({identity: playbackIdentity,
+      resolvedStopIds: current.identity === playbackIdentity
+        ? current.resolvedStopIds : [], seekHeld: !decision.resume}));
+    seekToFrame(decision.frame, true);
+    return decision;
   };
   if (captureIdentityFailure) {
     return <p
@@ -1171,12 +1192,12 @@ export function AnimationRuntime({
       The module cannot render the requested source timeline domain.
     </p>;
   }
-  const rendererKey = `${replay}:${seekRevision}:${playbackContext.frameDomain}:${playbackContext.lang}:${playbackContext.scenario}:${playbackContext.seed}:${playbackContext.requirementId}:${playbackContext.traceId}:${playbackContext.entryStateSha256}`;
+  const rendererKey = `${replay}:${rendererRevision}:${playbackContext.frameDomain}:${playbackContext.lang}:${playbackContext.scenario}:${playbackContext.seed}:${playbackContext.requirementId}:${playbackContext.traceId}:${playbackContext.entryStateSha256}`;
   const compatibleLoadedSwfHostAsset =
-    loadedSwfHostAsset?.sourceProvenLanguage === playbackContext.lang
+    !typographyPresentation && loadedSwfHostAsset?.sourceProvenLanguage === playbackContext.lang
       ? loadedSwfHostAsset
       : undefined;
-  return <div className={`runtime-shell${capture ? ' runtime-shell--capture' : ''}`} data-audio-available={audioAvailable ? 'true' : 'false'} data-host-audio-timeline-paused={hostAudioPaused ? 'true' : 'false'} data-interactive-audio-playing={playingInteractiveAudioId ?? undefined} data-product-audio-enabled={audioEnabled ? 'true' : 'false'} data-runtime-audio-language={resolvedAudioLanguage} data-runtime-playback-complete={playbackComplete ? 'true' : 'false'} data-runtime-paused={paused ? 'true' : 'false'} data-runtime-presentation={presentation} data-runtime-replay={replay} data-runtime-transport={transportEnabledForDomain ? 'visual-frame-inspector' : 'none'} data-runtime-volume={Math.max(0, Math.min(1, volume))} data-source-transport-parity="not-established" style={{'--flash-stage-width': `${runtimeMetadata.stage.width}px`, '--flash-stage-height': `${runtimeMetadata.stage.height}px`, '--flash-stage-aspect': `${runtimeMetadata.stage.width} / ${runtimeMetadata.stage.height}`} as CSSProperties}>
+  return <div className={`runtime-shell${capture ? ' runtime-shell--capture' : ''}`} data-audio-available={audioAvailable ? 'true' : 'false'} data-host-audio-timeline-paused={hostAudioPaused ? 'true' : 'false'} data-interactive-audio-playing={playingInteractiveAudioId ?? undefined} data-product-audio-enabled={audioEnabled ? 'true' : 'false'} data-runtime-audio-language={resolvedAudioLanguage} data-runtime-host-seek-held={interactiveSeekHeld ? 'true' : 'false'} data-runtime-interactive-stop={interactivePlayback.activeStopId ?? undefined} data-runtime-interactive-stop-held={interactivePlayback.held ? 'true' : 'false'} data-runtime-interactive-stop-resolved-count={resolvedStopIds.length} data-runtime-playback-complete={playbackComplete ? 'true' : 'false'} data-runtime-paused={paused ? 'true' : 'false'} data-runtime-presentation={presentation} data-lesson-presentation={typographyPresentation?.Renderer ? 'modern-text-v1' : undefined} data-lesson-text-binding={typographyPresentation?.binding.version} data-runtime-replay={replay} data-runtime-transport={transportEnabledForDomain ? 'visual-frame-inspector' : 'none'} data-runtime-volume={Math.max(0, Math.min(1, volume))} data-source-transport-parity="not-established" style={{'--flash-stage-width': `${runtimeMetadata.stage.width}px`, '--flash-stage-height': `${runtimeMetadata.stage.height}px`, '--flash-stage-aspect': `${runtimeMetadata.stage.width} / ${runtimeMetadata.stage.height}`} as CSSProperties}>
     {/* The lesson shell owns narration: it renders a permanent, designed
         control in its top bar and drives these same tracks through
         `narrationRequest`, so the runtime adds no floating button of its own. */}
@@ -1184,6 +1205,7 @@ export function AnimationRuntime({
       ? null
       : <div className="runtime-toolbar">{presentation === 'workbench' ? <div><span className="prototype-badge">{labels.prototype}</span><span>{runtimeMetadata.stage.width} × {runtimeMetadata.stage.height}</span><span>{runtimeMetadata.fps} FPS</span><span>{runtimeMetadata.frameCount} root frames</span>{playbackContext.frameDomain !== 'root' ? <span>{playbackContext.frameDomain}: {activeMovie.frameCount} frames</span> : null}</div> : <div><span className="prototype-badge">{labels.prototype}</span></div>}<div className="runtime-toolbar__actions"><HostAudioControlsView disabled={narrationDisabled} lang={resolvedAudioLanguage} playing={playingNarrationTrackId} toggle={toggleNarrationTrack} tracks={narrationTracks} /><button data-replay-keyboard="enter-space" disabled={context.captureFrame !== undefined} onClick={onReplay} onKeyDown={(event) => {if (event.key === ' ' || event.code === 'Space') event.preventDefault();}} onKeyUp={(event) => {if (event.key === ' ' || event.code === 'Space') {event.preventDefault(); onReplay();}}} type="button">{labels.replay}</button></div></div>}
     {reduced === true && context.captureFrame === undefined ? <p className="reduced-motion-note" role="status">{labels.reduced}</p> : null}
+    {typographyLanguages.usesEnglishFallback && <p className="lesson-text-language-note" lang="es" data-lesson-text-language="en" data-spanish-translation="missing">Texto original en inglés. Esta página todavía no tiene una traducción al español verificada.</p>}
     <div className="runtime-stage" data-animation-id={animationId} data-animation-module={animationModule.key} data-capture-identity-status={capture ? 'verified' : undefined} data-flash-entry-state-sha256={playbackContext.entryStateSha256 || undefined} data-flash-frame={playbackContext.frame} data-flash-frame-domain={playbackContext.frameDomain} data-flash-lang={playbackContext.lang} data-flash-requirement-id={playbackContext.requirementId} data-flash-root-frame={playbackContext.rootFrame} data-flash-scenario={playbackContext.scenario} data-flash-seed={playbackContext.seed} data-flash-trace-id={playbackContext.traceId} data-loaded-swf-host-composite={compatibleLoadedSwfHostAsset && presentation === 'legacy-shell' ? 'true' : 'false'} data-runtime-language={playbackContext.lang} data-runtime-scenario={playbackContext.scenario} data-runtime-seed={playbackContext.seed}>
       {compatibleLoadedSwfHostAsset && presentation === 'legacy-shell'
         ? <LoadedSwfHostCanvas
@@ -1202,7 +1224,44 @@ export function AnimationRuntime({
             traceId={playbackContext.traceId}
             width={runtimeMetadata.stage.width}
           />
-        : <Renderer activeInteractiveAudioId={playingInteractiveAudioId} audioEnabled={audioEnabled} entryStateSha256={playbackContext.entryStateSha256} frame={playbackContext.frame} frameDomain={playbackContext.frameDomain} key={rendererKey} lang={playbackContext.lang} onLessonHostRequest={rendererLessonHostRequest} onReplay={onReplay} pageInteractionCompanionTargetId={pageInteractionCompanionTargetId} pageInteractionStageTargetId={pageInteractionStageTargetId} paused={paused || hostAudioPaused} reducedMotion={reduced === true} replay={playbackContext.replay} requirementId={playbackContext.requirementId} rootFrame={playbackContext.rootFrame} scenario={playbackContext.scenario} seed={playbackContext.seed} state={state} traceId={playbackContext.traceId} uiLanguage={uiLanguage ?? playbackContext.lang} />}
+        : <Renderer activeInteractiveAudioId={playingInteractiveAudioId} audioEnabled={audioEnabled} entryStateSha256={playbackContext.entryStateSha256} frame={playbackContext.frame} frameDomain={playbackContext.frameDomain} key={rendererKey} lang={playbackContext.lang} lessonHostNavigationHandoff={lessonHostNavigationHandoff} onAuthoredTimelineControl={animationModule.authoredTimelineControls?.length ? onAuthoredTimelineControl : undefined} onInteractiveStopResolved={(animationModule.interactiveStops?.length ?? 0) > 0 ? onRendererInteractiveStopResolved : undefined} onLessonHostRequest={rendererLessonHostRequest} onReplay={onReplay} onSeekIntent={animationModule.interactiveSeek ? onRendererSeekIntent : undefined} pageInteractionCompanionTargetId={pageInteractionCompanionTargetId} pageInteractionStageTargetId={pageInteractionStageTargetId} paused={paused || hostAudioPaused} reducedMotion={reduced === true} replay={playbackContext.replay} requirementId={playbackContext.requirementId} rootFrame={playbackContext.rootFrame} scenario={playbackContext.scenario} seed={playbackContext.seed} state={state} traceId={playbackContext.traceId} uiLanguage={typographyLanguages.uiLanguage} />}
     </div>
   </div>;
+}
+
+
+export type AnimationRuntimeProps = Omit<Parameters<typeof FrameClockedAnimationRuntime>[0], 'resolvedModule'> & {
+  /** Exact renderer-clocked lesson finish signal; separate from page completion. */
+  onLessonFinished?: () => void;
+  /** A renderer narration gesture may explicitly resume the controlled host. */
+  onRuntimePausedChange?: (paused: boolean) => void;
+  rendererLessonSession?: AnimationRendererProps['rendererLessonSession'];
+};
+
+/** Resolve through the existing local-only guarded loader before selecting a clock. */
+export function AnimationRuntime({onLessonFinished, rendererLessonSession, ...props}: AnimationRuntimeProps) {
+  const typographyCapture = props.query.capture === "1" || Boolean(props.query.entryStateSha256);
+  const [resolved, setResolved] = useState<{key: string; module?: AnimationModule; failed?: boolean}>({key: props.moduleKey});
+  useEffect(() => {
+    let cancelled = false;
+    loadClientAnimationModule(props.moduleKey).then((module) => module?.clock === "renderer"
+      ? prepareG678LessonTypography(module, typographyCapture) : module).then((module) => {
+      if (!cancelled) setResolved({key: props.moduleKey, module, failed: !module || module.key !== props.moduleKey});
+    }).catch(() => {
+      if (!cancelled) setResolved({key: props.moduleKey, failed: true});
+    });
+    return () => {cancelled = true;};
+  }, [props.moduleKey, typographyCapture]);
+  if (resolved.key !== props.moduleKey) return <p aria-live="polite" className="runtime-unavailable">{props.labels.loading}</p>;
+  if (resolved.failed) return <p className="runtime-unavailable">{props.labels.unavailable}</p>;
+  const module = resolved.module;
+  if (!module) return <p aria-live="polite" className="runtime-unavailable">{props.labels.loading}</p>;
+  if (module.clock === 'renderer') {
+    return <RendererClockedRuntime {...props} animationModule={module}
+      key={JSON.stringify([module.key, props.query.lang, props.query.scenario, props.query.seed])}
+      rendererLessonSession={rendererLessonSession}
+      onLessonFinished={onLessonFinished} />;
+  }
+  if (module.clock !== undefined && module.clock !== 'host') return <p className="runtime-unavailable">{props.labels.unavailable}</p>;
+  return <FrameClockedAnimationRuntime {...props} resolvedModule={module} />;
 }

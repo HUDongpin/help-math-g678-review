@@ -14,7 +14,7 @@ import {
 
 import type {
   AnimationRuntimeNarrationStatus,
-} from '@/components/animation-runtime';
+} from '@/components/animation-runtime-loader-core-v1.generated';
 import {
   LegacyCalculator,
   type LegacyCalculatorEvidence,

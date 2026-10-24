@@ -1,4 +1,4 @@
-import {hasAnimationModule} from '@helpmath/demos/animation-registry';
+import {hasAnimationModule} from '@helpmath/demos/animation-registry-metadata';
 
 import animationsCatalogDocument from '../../../catalog/animations.json' with {type: 'json'};
 import lessonsCatalogDocument from '../../../catalog/lessons.json' with {type: 'json'};

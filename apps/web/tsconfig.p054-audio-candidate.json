@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {"incremental": false},
+  "include": [
+    "next-env.d.ts",
+    "next.config.ts",
+    "lib/nms-l02-p054-feedback-audio-access.ts",
+    "lib/nms-l02-p054-feedback-audio.server.ts",
+    "app/[locale]/migration-status/g678-calibration/shared-nms002-l02-p054/page.tsx",
+    "app/flash-assets/g678-local/shared-nms002-l02-p054/feedback-audio/[kind]/route.ts"
+  ]
+}

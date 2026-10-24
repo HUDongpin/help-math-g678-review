@@ -1,7 +1,7 @@
 import {readFileSync} from 'node:fs';
 import path from 'node:path';
 
-import {registeredAnimationKeys} from '@helpmath/demos/animation-registry';
+import {registeredAnimationKeys} from '@helpmath/demos/animation-registry-metadata';
 
 import {
   buildGrade4CourseCatalogCoverage,

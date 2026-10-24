@@ -1,12 +1,14 @@
 'use client';
 
-import {loadAnimationModule} from '@helpmath/demos/animation-registry';
+import {PrivateAudioGlossaryPortal} from './private-audio-glossary-portal';
+import {disposeLessonSession} from '../../../packages/demos/src/hfr/session';
 import {
   createMemoryOnlyLessonHost,
   type LessonHostDecision,
+  type LessonHostNavigationHandoff,
   type LessonHostRequest,
 } from '@helpmath/demos/runtime';
-import {useCallback, useEffect, useMemo, useRef, useState} from 'react';
+import {useCallback, useEffect, useId, useMemo, useRef, useState, type ComponentType} from 'react';
 
 import {
   AnimationRuntime,
@@ -15,6 +17,8 @@ import {
   type AnimationRuntimePlaybackState,
   type AnimationRuntimeSeekRequest,
 } from '@/components/animation-runtime';
+import type {PrivateLessonRuntimeAdapter,LessonRuntimeAdapterControls,LessonRuntimeAdapterProps} from '@/lib/lesson-runtime-adapter';
+import {resolveUnregisteredPrivateRuntimeCandidate} from '@/lib/g678-private-runtime-adapters-v1';
 import type {LegacyCalculatorEvidence} from '@/components/legacy-calculator';
 import {LegacyKeyTermsBrowser} from '@/components/legacy-key-terms-browser';
 import {
@@ -33,7 +37,13 @@ import {
   appendLegacyLessonHistory,
   takeLegacyLessonHistory,
 } from '@/lib/legacy-shell-controls';
+import {
+  resetDescriptorGlossaryPause,
+  transitionDescriptorGlossaryPause,
+  type DescriptorGlossaryPauseSession,
+} from '@/lib/descriptor-driven-glossary-pause';
 import {LEGACY_MAP_RAIL_MIN_WIDTH} from '@/lib/legacy-lesson-layout';
+import {loadClientAnimationModule} from '@/lib/load-animation-module.client';
 import type {PublicAuthStatus} from '@/lib/auth-session';
 import {
   EMPTY_NOVA_CLIENT_CAPABILITIES,
@@ -104,12 +114,25 @@ function calculatorEvidence(
   });
 }
 
+function initialLessonProgress(
+  descriptor: DescriptorDrivenLessonPlayerDescriptor,
+  locale: WholeLessonPlayerLocale,
+  initialPlacementId?: string,
+) {
+  const progress = createInitialWholeLessonSessionProgress(descriptor, locale);
+  return initialPlacementId
+    ? visitWholeLessonPage(progress, descriptor, initialPlacementId)
+    : progress;
+}
+
 export function DescriptorDrivenWholeLessonPlayer({
   audioEnabled = false,
+  privateRuntimeAdapter,
   authStatus = 'disabled',
   candidateMode,
   descriptor,
   hostPresentation = 'legacy-composite',
+  initialPlacementId,
   locale,
   novaCapabilities = EMPTY_NOVA_CLIENT_CAPABILITIES,
   novaTutorMode = 'focus',
@@ -118,10 +141,12 @@ export function DescriptorDrivenWholeLessonPlayer({
   strictCompleteMemberCount,
 }: {
   audioEnabled?: boolean;
+  privateRuntimeAdapter?: PrivateLessonRuntimeAdapter;
   authStatus?: PublicAuthStatus;
   candidateMode: boolean;
   descriptor: DescriptorDrivenLessonPlayerDescriptor;
   hostPresentation?: WholeLessonHostPresentation;
+  initialPlacementId?: string;
   locale: WholeLessonPlayerLocale;
   novaCapabilities?: NovaClientCapabilities;
   novaTutorMode?: NovaTutorMode;
@@ -129,8 +154,11 @@ export function DescriptorDrivenWholeLessonPlayer({
   reviewerMode?: boolean;
   strictCompleteMemberCount: number;
 }) {
+  const rendererHostId = useId();
+  const rendererLessonSession = useMemo(() => Object.freeze({id: `lesson:${rendererHostId}`}), [rendererHostId]);
+  useEffect(() => () => disposeLessonSession(rendererLessonSession), [rendererLessonSession]);
   const [progress, setProgress] = useState(() =>
-    createInitialWholeLessonSessionProgress(descriptor, locale)
+    initialLessonProgress(descriptor, locale, initialPlacementId)
   );
   const [hydrated, setHydrated] = useState(false);
   const [mapOpen, setMapOpen] = useState(false);
@@ -151,6 +179,8 @@ export function DescriptorDrivenWholeLessonPlayer({
     useState<AnimationRuntimeNarrationRequest | null>(null);
   const [runtimeEpoch, setRuntimeEpoch] = useState(0);
   const [navigationFocusEpoch, setNavigationFocusEpoch] = useState(0);
+  const [lessonHostNavigationHandoff, setLessonHostNavigationHandoff] =
+    useState<LessonHostNavigationHandoff | null>(null);
   const [tourFinished, setTourFinished] = useState(false);
   const initialPageFocusSkippedRef = useRef(false);
   const pendingScrubberFocusRef = useRef<
@@ -161,6 +191,10 @@ export function DescriptorDrivenWholeLessonPlayer({
   const seekRequestIdRef = useRef(0);
   const narrationRequestIdRef = useRef(0);
   const lessonNavigationHistoryRef = useRef<readonly string[]>([]);
+  const glossaryPauseSessionRef =
+    useRef<DescriptorGlossaryPauseSession<AnimationRuntimeSeekRequest> | null>(
+      null,
+    );
   const currentPage = descriptor.pages.find(
     (page) => pageSessionId(page) === progress.currentAnimationId,
   ) ?? descriptor.pages[0]!;
@@ -174,8 +208,34 @@ export function DescriptorDrivenWholeLessonPlayer({
   const currentLabel = currentPage.labels[progress.locale];
   const currentRenderer = currentPage.rendererAvailability;
   const runtimeEvidenceBoundary = currentPage.runtimeEvidenceBoundary;
-  const runtimeAvailable = currentRenderer.kind === 'registered';
-  const currentRuntimeSeed = resolveWholeLessonRuntimeSeed(
+  const unregisteredRuntimeCandidate = resolveUnregisteredPrivateRuntimeCandidate(privateRuntimeAdapter, {
+    animationId: currentPage.animationId, rendererKind: currentRenderer.kind, sourceAssetId: currentPage.source.assetId,
+    nodeEnv: process.env.NODE_ENV, candidateMode, reviewerMode, releasePublished,
+  });
+  const runtimeAvailable = currentRenderer.kind === 'registered' || Boolean(unregisteredRuntimeCandidate);
+  const activeRuntimeAdapter = unregisteredRuntimeCandidate ? privateRuntimeAdapter :
+    process.env.NODE_ENV !== 'production' && candidateMode && reviewerMode && !releasePublished &&
+    currentRenderer.kind === 'registered' && !privateRuntimeAdapter?.candidateBinding &&
+    privateRuntimeAdapter?.animationId === currentPage.animationId ? privateRuntimeAdapter : undefined;
+  const runtimeModuleKey = currentRenderer.kind === 'registered' ? currentRenderer.moduleKey : unregisteredRuntimeCandidate?.moduleKey;
+  const runtimeQuery = currentRenderer.kind === 'registered' ? currentRenderer.runtimeQuery : unregisteredRuntimeCandidate?.runtimeQuery;
+  const currentAudioEnabled = audioEnabled || Boolean(activeRuntimeAdapter?.audioEnabled);
+  const adapterControls = useRef<{animationId:string;controls:LessonRuntimeAdapterControls}|null>(null);
+  const connectRuntimeControls = useCallback((controls:LessonRuntimeAdapterControls)=>{
+    const binding={animationId:currentPage.animationId,controls};adapterControls.current=binding;
+    return()=>{if(adapterControls.current===binding)adapterControls.current=null;};
+  },[currentPage.animationId]);
+  const currentAdapterControls=()=>activeRuntimeAdapter && adapterControls.current?.animationId===currentPage.animationId ? adapterControls.current.controls : undefined;
+  const sourceGlossaryHoldsPlayback = () => glossaryPauseSessionRef.current?.playbackDisposition === 'source-stop-timeline-and-audio-until-explicit-resume';
+  const setPlaybackPaused=(value:boolean)=>{
+    if (!value && sourceGlossaryHoldsPlayback()) return;
+    currentAdapterControls()?.setPaused(value);setPaused(value);
+  };
+  const setRuntimePaused=(value:boolean)=>{
+    if (!value && sourceGlossaryHoldsPlayback()) return;
+    setPaused(value);
+  };
+  const currentRuntimeSeed = unregisteredRuntimeCandidate ? unregisteredRuntimeCandidate.runtimeQuery.seed : resolveWholeLessonRuntimeSeed(
     currentRenderer,
     progress.replayCounts[currentPageSessionId] ?? 0,
   );
@@ -187,26 +247,119 @@ export function DescriptorDrivenWholeLessonPlayer({
     currentAnimationId: currentPage.animationId,
     enabledCapabilities: descriptor.schemaVersion === 2
       ? descriptor.support.lessonHostCapabilities.filter(
-          (capability) => capability !== 'audio' || audioEnabled,
+          (capability) => capability !== 'audio' || currentAudioEnabled,
         )
-      : audioEnabled ? ['audio'] : [],
+      : currentAudioEnabled ? ['audio'] : [],
     initialLanguage: progress.locale,
     mode: 'audit',
     releasePublished: false,
-  }), [audioEnabled, currentPage.animationId, descriptor, progress.locale]);
+  // Host-owned Replay and same-page reselection remount the runtime through
+  // runtimeEpoch. Reset its memory-only feedback/score/support state at the
+  // same boundary; resetting just the rendered question leaves stale host data.
+  }), [currentAudioEnabled, currentPage.animationId, descriptor, progress.locale, runtimeEpoch]);
   const [, setLessonHostRevision] = useState(0);
   const lessonHostState = lessonHost.snapshot();
+  const glossaryFocusSessionId = `${currentPageSessionId}:${runtimeEpoch}:${progress.locale}`;
+  const activeGlossaryPageSession = useRef(glossaryFocusSessionId);
+  activeGlossaryPageSession.current = glossaryFocusSessionId;
+  const glossaryTrigger = useRef<{pageSessionId: string; trigger: HTMLElement} | null>(null);
+  const resetGlossaryPause = useCallback(() => {
+    const reset =
+      resetDescriptorGlossaryPause<AnimationRuntimeSeekRequest>();
+    glossaryPauseSessionRef.current = reset.session;
+    glossaryTrigger.current = null;
+    setPaused(reset.paused);
+    setSeekRequest(reset.seekRequest);
+  }, []);
   const handleLessonHostRequest = useCallback((
     request: LessonHostRequest,
+    context?: Readonly<{trigger?: HTMLElement}>,
   ): LessonHostDecision => {
+    if ((request.type === 'open-glossary' || request.type === 'close-glossary') &&
+        activeGlossaryPageSession.current !== glossaryFocusSessionId) {
+      return {status: 'blocked', code: 'invalid-request', reason: 'The glossary page session is stale.', state: lessonHost.snapshot()};
+    }
+    if (request.type === 'open-glossary' && request.playbackDisposition !== undefined &&
+        (request.sourceAnimationId !== currentPage.animationId ||
+          descriptor.schemaVersion !== 2 || !descriptor.glossary.some(entry => entry.id === request.entryId))) {
+      return {status: 'blocked', code: 'invalid-request',
+        reason: 'Source glossary requests must bind to this page and an available lesson entry.', state: lessonHost.snapshot()};
+    }
+    const navigationTarget = request.type === 'navigate'
+      ? descriptor.pages.find((page) =>
+          page.animationId === request.targetAnimationId &&
+          page.rendererAvailability.kind === 'registered')
+      : undefined;
+    if (request.type === 'navigate' && !navigationTarget) {
+      return {
+        status: 'blocked',
+        code: 'navigation-target-not-admitted',
+        reason: 'Navigation targets must be registered members of this lesson preview.',
+        state: lessonHost.snapshot(),
+      };
+    }
     const decision = lessonHost.dispatch(request);
     setLessonHostRevision((revision) => revision + 1);
     if (decision.status === 'allowed') {
-      if (request.type === 'open-glossary') setPaused(true);
-      if (request.type === 'close-glossary') setPaused(false);
+      if (request.type === 'open-glossary' ||
+          request.type === 'close-glossary') {
+        const glossaryPause = transitionDescriptorGlossaryPause({
+          allowed: true,
+          pageSessionId: currentPageSessionId,
+          paused,
+          requestType: request.type,
+          playbackDisposition: request.type === 'open-glossary' ? request.playbackDisposition : undefined,
+          seekRequest,
+          session: glossaryPauseSessionRef.current,
+        });
+        glossaryPauseSessionRef.current = glossaryPause.session;
+        setPaused(glossaryPause.paused);
+        setSeekRequest(glossaryPause.seekRequest);
+        if (request.type === 'open-glossary' && request.playbackDisposition === 'source-stop-timeline-and-audio-until-explicit-resume') {
+          glossaryTrigger.current = context?.trigger ? {pageSessionId: glossaryFocusSessionId, trigger: context.trigger} : null;
+        } else if (request.type === 'close-glossary') {
+          const focus = glossaryTrigger.current;
+          glossaryTrigger.current = null;
+          if (focus?.pageSessionId === glossaryFocusSessionId) requestAnimationFrame(() => {
+            if (activeGlossaryPageSession.current === focus.pageSessionId && focus.trigger.isConnected) {
+              focus.trigger.focus();
+              const sourcePage = focus.trigger.closest('[data-hfr-page="shared-nms002-l11-p012"]');
+              const nativeLabels = focus.trigger.closest<HTMLElement>('.hfr-native-text-label-plane');
+              // A resized glossary can leave this retained source heading outside
+              // its horizontal figure viewport even after browser focus returns.
+              if (document.activeElement === focus.trigger && nativeLabels?.style.visibility === 'visible' &&
+                  sourcePage?.getAttribute('data-hfr-source-sha256') === '6a374691151f299737f718a17921db4d50b68040c6516df1d779279f17a002a5' &&
+                  focus.trigger.matches('button[data-hfr-anchored-glossary="source-hit-and-glyph-v1"]')) {
+                focus.trigger.scrollIntoView({behavior: 'instant', block: 'nearest', inline: 'center'});
+              }
+            }
+          });
+        }
+      }
+      if (request.type === 'navigate' && navigationTarget) {
+        setLessonHostNavigationHandoff(request.handoff ?? null);
+        const destinationId = pageSessionId(navigationTarget);
+        lessonNavigationHistoryRef.current = appendLegacyLessonHistory(
+          lessonNavigationHistoryRef.current,
+          currentPageSessionId,
+          destinationId,
+        );
+        setProgress((value) =>
+          visitWholeLessonPage(value, descriptor, destinationId)
+        );
+        setNavigationFocusEpoch((value) => value + 1);
+        setRuntimeEpoch((value) => value + 1);
+        setTourFinished(false);
+        setMapOpen(false);
+        setActiveTool(null);
+        resetGlossaryPause();
+        setPlaybackState(INITIAL_ANIMATION_RUNTIME_PLAYBACK_STATE);
+        setNarrationRequest(null);
+      }
     }
     return decision;
-  }, [lessonHost]);
+  }, [currentPageSessionId, currentPage.animationId, glossaryFocusSessionId, descriptor, lessonHost, paused,
+    resetGlossaryPause, seekRequest]);
   const closeGlossary = useCallback(() => {
     handleLessonHostRequest({type: 'close-glossary'});
   }, [handleLessonHostRequest]);
@@ -221,7 +374,9 @@ export function DescriptorDrivenWholeLessonPlayer({
   const registeredPages = descriptor.pages.filter(
     (page) => page.rendererAvailability.kind === 'registered',
   );
-  const unavailablePageCount = descriptor.pages.length - registeredPages.length;
+  const totalPageCount = descriptor.pages.length;
+  const unavailablePageCount = totalPageCount - registeredPages.length;
+  const partialDescriptor = unavailablePageCount > 0;
   const shellImplementation = descriptor.schemaVersion === 1
     ? descriptor.shellImplementation
     : undefined;
@@ -229,8 +384,8 @@ export function DescriptorDrivenWholeLessonPlayer({
   const reviewedRegisteredCount = registeredPages.filter(
     (page) => reviewed.has(pageSessionId(page)),
   ).length;
-  const completionPercent = registeredPages.length
-    ? Math.round((reviewedRegisteredCount / registeredPages.length) * 100)
+  const completionPercent = totalPageCount
+    ? Math.round((reviewedRegisteredCount / totalPageCount) * 100)
     : 0;
   const requiredMemberCount =
     descriptor.course.expectedReleaseMemberCount;
@@ -277,15 +432,22 @@ export function DescriptorDrivenWholeLessonPlayer({
       descriptor,
       locale,
     );
+    const initialProgress = initialPlacementId
+      ? visitWholeLessonPage(
+          storedProgress,
+          descriptor,
+          initialPlacementId,
+        )
+      : storedProgress;
     queueMicrotask(() => {
       if (!active) return;
-      setProgress(storedProgress);
+      setProgress(initialProgress);
       setHydrated(true);
     });
     return () => {
       active = false;
     };
-  }, [descriptor, locale]);
+  }, [descriptor, initialPlacementId, locale]);
 
   useEffect(() => {
     // See the G4 L3 player: a permanent section spine makes an auto-opened
@@ -314,7 +476,7 @@ export function DescriptorDrivenWholeLessonPlayer({
     : null;
   useEffect(() => {
     if (runtimeAvailable && nextModuleKey) {
-      void loadAnimationModule(nextModuleKey);
+      void loadClientAnimationModule(nextModuleKey);
     }
   }, [nextModuleKey, runtimeAvailable]);
 
@@ -339,10 +501,13 @@ export function DescriptorDrivenWholeLessonPlayer({
     pageHeadingRef.current?.focus();
   }, [currentPageSessionId, hydrated, navigationFocusEpoch]);
 
+  const stopActiveRuntime = () => {currentAdapterControls()?.stop();};
   const navigateToPage = (
     pageId: string,
     recordHistory: boolean,
   ) => {
+    stopActiveRuntime();
+    setLessonHostNavigationHandoff(null);
     if (recordHistory) {
       lessonNavigationHistoryRef.current = appendLegacyLessonHistory(
         lessonNavigationHistoryRef.current,
@@ -358,9 +523,8 @@ export function DescriptorDrivenWholeLessonPlayer({
     setTourFinished(false);
     setMapOpen(false);
     setActiveTool(null);
-    setPaused(false);
+    resetGlossaryPause();
     setPlaybackState(INITIAL_ANIMATION_RUNTIME_PLAYBACK_STATE);
-    setSeekRequest(null);
     setNarrationRequest(null);
   };
   const selectPage = (pageId: string) => {
@@ -386,8 +550,10 @@ export function DescriptorDrivenWholeLessonPlayer({
 
   // Next only moves. Stepping past a page never records it as reviewed.
   const advance = () => {
+    stopActiveRuntime();
     if (!nextPage && tourFinished) return;
     if (nextPage) {
+      setLessonHostNavigationHandoff(null);
       lessonNavigationHistoryRef.current = appendLegacyLessonHistory(
         lessonNavigationHistoryRef.current,
         currentPageSessionId,
@@ -400,9 +566,8 @@ export function DescriptorDrivenWholeLessonPlayer({
     setRuntimeEpoch((value) => value + 1);
     setMapOpen(false);
     setActiveTool(null);
-    setPaused(false);
+    resetGlossaryPause();
     setPlaybackState(INITIAL_ANIMATION_RUNTIME_PLAYBACK_STATE);
-    setSeekRequest(null);
     setNarrationRequest(null);
     if (!nextPage) setTourFinished(true);
   };
@@ -412,10 +577,9 @@ export function DescriptorDrivenWholeLessonPlayer({
     setProgress((value) =>
       recordWholeLessonReplay(value, descriptor, currentPageSessionId)
     );
-    setRuntimeEpoch((value) => value + 1);
-    setPaused(false);
+    if(!currentAdapterControls()?.replay())setRuntimeEpoch((value) => value + 1);
+    resetGlossaryPause();
     setPlaybackState(INITIAL_ANIMATION_RUNTIME_PLAYBACK_STATE);
-    setSeekRequest(null);
     setNarrationRequest(null);
   };
 
@@ -436,6 +600,8 @@ export function DescriptorDrivenWholeLessonPlayer({
   };
 
   const toggleNarration = () => {
+    const controls=currentAdapterControls();
+    if(controls){controls.narration(playbackState.narration === 'playing'?'stop':'play');return;}
     narrationRequestIdRef.current += 1;
     setNarrationRequest({
       action: playbackState.narration === 'playing' ? 'stop' : 'play',
@@ -445,6 +611,7 @@ export function DescriptorDrivenWholeLessonPlayer({
 
   const learningHomeHref = spanish ? '/es' : '/';
   const returnToPreviousLocation = () => {
+    stopActiveRuntime();
     const transition = takeLegacyLessonHistory(
       lessonNavigationHistoryRef.current,
     );
@@ -459,7 +626,7 @@ export function DescriptorDrivenWholeLessonPlayer({
     }
     window.location.assign(learningHomeHref);
   };
-  const exitToLearningHome = () => window.location.assign(learningHomeHref);
+  const exitToLearningHome = () => {stopActiveRuntime();window.location.assign(learningHomeHref);};
 
   const restartTour = () => {
     const confirmed = window.confirm(spanish
@@ -474,11 +641,11 @@ export function DescriptorDrivenWholeLessonPlayer({
     setTourFinished(false);
     setMapOpen(false);
     setActiveTool(null);
-    setPaused(false);
+    resetGlossaryPause();
     setPlaybackState(INITIAL_ANIMATION_RUNTIME_PLAYBACK_STATE);
-    setSeekRequest(null);
     setNarrationRequest(null);
     lessonNavigationHistoryRef.current = [];
+    setLessonHostNavigationHandoff(null);
   };
 
   // The course map is the only section-level navigation. It already lists every
@@ -488,11 +655,9 @@ export function DescriptorDrivenWholeLessonPlayer({
     {descriptor.sections.map((section) => {
       const label = section.labels[progress.locale];
       const sectionPages = pagesBySection[section.code]!;
-      const availableSectionPages = sectionPages.filter(
-        (page) => page.rendererAvailability.kind === 'registered',
-      );
-      const sectionReviewed = availableSectionPages.length > 0 &&
-        availableSectionPages.every((page) =>
+      const sectionReviewed = sectionPages.length > 0 &&
+        sectionPages.every((page) =>
+          page.rendererAvailability.kind === 'registered' &&
           reviewed.has(pageSessionId(page))
         );
       const firstSectionPage = sectionPages[0]!;
@@ -523,7 +688,9 @@ export function DescriptorDrivenWholeLessonPlayer({
                   ? 'step'
                   : undefined}
                 data-animation-id={page.animationId}
-                data-complete={reviewed.has(pageId) ? 'true' : 'false'}
+                data-complete={available && reviewed.has(pageId)
+                  ? 'true'
+                  : 'false'}
                 data-placement-id={page.placementId}
                 data-renderer-availability={available ? 'registered' : 'unavailable'}
                 data-visited={visited.has(pageId) ? 'true' : 'false'}
@@ -568,12 +735,21 @@ export function DescriptorDrivenWholeLessonPlayer({
       </li>;
     })}
   </ol>;
+  const sharedSourceGlossary = descriptor.schemaVersion === 2 &&
+    descriptor.glossary.some(entry => entry.source.en.assetId === 'G678L1KTE01.xml');
+  const sharedGlossarySourceFiles = sharedSourceGlossary && descriptor.schemaVersion === 2
+    ? [...new Set(descriptor.glossary.map(entry => entry.source[progress.locale].path.split('/').at(-1)))].join(', ')
+    : '';
   const keyTermsPanel = descriptor.schemaVersion === 2
     ? <div
         className="lesson-shell2__key-terms"
-        data-key-terms-authority="canonical-grade-four-master-xml"
+        data-key-terms-authority={sharedSourceGlossary
+          ? 'source-bound-g678-bilingual-keyterms-xml' : 'canonical-grade-four-master-xml'}
       >
-        <p>{spanish
+        <p>{sharedSourceGlossary ? spanish
+          ? `Este puente privado incluye ${descriptor.glossary.length} definiciones bilingües vinculadas a las fuentes de esta lección.`
+          : `This private bridge includes ${descriptor.glossary.length} source-bound bilingual definitions for this lesson.`
+          : spanish
           ? 'Este puente privado usa únicamente las tres definiciones bilingües exactas solicitadas por VB003.'
           : 'This private bridge uses only the three exact bilingual definitions requested by VB003.'}</p>
         <dl>
@@ -582,7 +758,10 @@ export function DescriptorDrivenWholeLessonPlayer({
             <dd>{entry.definitions[progress.locale]}</dd>
           </div>)}
         </dl>
-        <small>{spanish
+        <small>{sharedSourceGlossary ? spanish
+          ? `Fuentes vinculadas por SHA-256: ${sharedGlossarySourceFiles}.`
+          : `Sources bound by SHA-256: ${sharedGlossarySourceFiles}.`
+          : spanish
           ? 'Fuente ligada por SHA-256: ELKTSG4.xml.'
           : 'Source bound by SHA-256: ELKTEG4.xml.'}</small>
         <details>
@@ -636,8 +815,8 @@ export function DescriptorDrivenWholeLessonPlayer({
       ? <p lang="es">La fuente no proporciona un título en español; se conserva el título original en inglés.</p>
       : null}
     {spanish &&
-      currentRenderer.kind === 'registered' &&
-      currentRenderer.runtimeQuery?.language === 'fixed-en'
+      runtimeAvailable &&
+      runtimeQuery?.language === 'fixed-en'
       ? <p lang="es">{currentLabel.usesEnglishFallback
         ? 'El candidato visual current-JS permanece limitado al contenido fuente en inglés.'
         : 'El título en español procede del XML; el candidato visual current-JS permanece limitado al contenido fuente en inglés.'}</p>
@@ -645,8 +824,8 @@ export function DescriptorDrivenWholeLessonPlayer({
   </div>;
 
   const runtimeLanguage =
-    currentRenderer.kind === 'registered' &&
-    currentRenderer.runtimeQuery?.language === 'fixed-en'
+    runtimeAvailable &&
+    runtimeQuery?.language === 'fixed-en'
       ? 'en'
       : progress.locale;
   const pageInteractionCompanionTargetId =
@@ -657,9 +836,13 @@ export function DescriptorDrivenWholeLessonPlayer({
     currentPage.presentation?.pageInteractionStageTargetIdSuffix
       ? `${descriptor.course.domIdPrefix}-${currentPage.presentation.pageInteractionStageTargetIdSuffix}`
       : undefined;
-  const stage = currentRenderer.kind === 'registered'
-    ? <AnimationRuntime
-        audioEnabled={audioEnabled}
+  const RuntimeComponent:ComponentType<LessonRuntimeAdapterProps>=activeRuntimeAdapter?.Component ?? AnimationRuntime;
+  const stage = runtimeAvailable && runtimeModuleKey
+    ? <RuntimeComponent
+        rendererLessonSession={rendererLessonSession}
+        onRuntimePausedChange={setRuntimePaused}
+        connectRuntimeControls={connectRuntimeControls}
+        audioEnabled={currentAudioEnabled}
         audioLanguage={progress.locale}
         animationId={currentPage.animationId}
         key={`${currentPageSessionId}:${runtimeEpoch}`}
@@ -678,8 +861,14 @@ export function DescriptorDrivenWholeLessonPlayer({
           currentPage.source.xmlBackgroundText
           ? descriptor.visualSkin.backgroundCompanion?.loadedSwfHostAsset
           : undefined}
-        moduleKey={currentRenderer.moduleKey}
+        moduleKey={runtimeModuleKey}
         narrationRequest={narrationRequest}
+        lessonHostNavigationHandoff={
+          lessonHostNavigationHandoff?.targetAnimationId ===
+            currentPage.animationId
+            ? lessonHostNavigationHandoff
+            : null
+        }
         onLessonHostRequest={handleLessonHostRequest}
         onPlaybackComplete={reviewCurrentPage}
         onPlaybackStateChange={setPlaybackState}
@@ -695,9 +884,9 @@ export function DescriptorDrivenWholeLessonPlayer({
         pageInteractionStageTargetId={pageInteractionStageTargetId}
         presentation="legacy-shell"
         query={{
-          frameDomain: currentRenderer.runtimeQuery?.frameDomain,
+          frameDomain: runtimeQuery?.frameDomain,
           lang: runtimeLanguage,
-          scenario: currentRenderer.runtimeQuery?.scenario,
+          scenario: runtimeQuery?.scenario,
           seed: currentRuntimeSeed,
         }}
         seekRequest={seekRequest}
@@ -724,29 +913,39 @@ export function DescriptorDrivenWholeLessonPlayer({
         </div>
       </section>;
 
-  const glossaryOverlay = activeGlossaryEntry
+  // HFR uses the same source glossary host before and after registration.
+  const viewportGlossary = Boolean(activeRuntimeAdapter) ||
+    (currentPage.rendererAvailability.kind === 'registered' &&
+      currentPage.rendererAvailability.runtimeQuery?.scenario === 'hfr');
+
+  const glossaryPanel = activeGlossaryEntry
     ? <section
         aria-labelledby={`${descriptor.course.domIdPrefix}-glossary-title`}
         aria-modal="true"
         className="lesson-shell2__page-only-glossary"
+        style={viewportGlossary?{position:'fixed',zIndex:10000,padding:16,overflowY:'auto'}:undefined}
         data-glossary-entry-id={activeGlossaryEntry.id}
         data-glossary-storage="memory-only"
         data-source-key-attribute={activeGlossaryEntry.sourceKeyAttribute}
         data-source-sha256={activeGlossaryEntry.source[progress.locale].sha256}
         role="dialog"
       >
-        <div>
+        <div style={viewportGlossary?{maxHeight:'calc(100dvh - 32px)',overflowY:'auto',boxSizing:'border-box'}:undefined}>
           <p>{spanish ? 'Glosario' : 'Glossary'}</p>
-          <h2 id={`${descriptor.course.domIdPrefix}-glossary-title`}>
+          <h2 id={`${descriptor.course.domIdPrefix}-glossary-title`}
+            style={viewportGlossary ? {overflowWrap: 'anywhere'} : undefined}>
             {activeGlossaryEntry.labels[progress.locale]}
           </h2>
           <p>{activeGlossaryEntry.definitions[progress.locale]}</p>
           <button autoFocus onClick={closeGlossary} type="button">
-            {spanish ? 'Cerrar y continuar' : 'Close and continue'}
+            {glossaryPauseSessionRef.current?.playbackDisposition === 'source-stop-timeline-and-audio-until-explicit-resume'
+              ? (spanish ? 'Cerrar' : 'Close') : (spanish ? 'Cerrar y continuar' : 'Close and continue')}
           </button>
         </div>
       </section>
     : undefined;
+
+  const glossaryOverlay=glossaryPanel&&viewportGlossary?<PrivateAudioGlossaryPortal>{glossaryPanel}</PrivateAudioGlossaryPortal>:glossaryPanel;
 
   const helpPanel = <div className="lesson-shell2__help">
     <p>{spanish
@@ -768,7 +967,8 @@ export function DescriptorDrivenWholeLessonPlayer({
     (section) => {
       const sectionPages = pagesBySection[section.code] ?? [];
       const allReviewed = sectionPages.length > 0 && sectionPages.every(
-        (page) => reviewed.has(pageSessionId(page)),
+        (page) => page.rendererAvailability.kind === 'registered' &&
+          reviewed.has(pageSessionId(page)),
       );
       const firstSectionPage = sectionPages[0];
       return {
@@ -786,10 +986,11 @@ export function DescriptorDrivenWholeLessonPlayer({
       };
     },
   );
-  const tutorContext = novaCapabilities.text
+  const mappedGrade = descriptor.course.grade;
+  const tutorContext = novaCapabilities.text && mappedGrade > 0
     ? tutorPageContext({
         releaseId: descriptor.releaseId,
-        grade: descriptor.course.grade,
+        grade: mappedGrade,
         lesson: descriptor.course.lesson,
         animationId: currentPage.animationId,
         sectionCode: currentPage.sectionCode,
@@ -807,6 +1008,7 @@ export function DescriptorDrivenWholeLessonPlayer({
     : undefined;
 
   return <div
+    data-source-grade-scope={descriptor.schemaVersion === 2 ? descriptor.course.gradeScope : undefined}
     data-current-animation-id={currentPage.animationId}
     data-current-placement-id={currentPage.placementId}
     data-current-page={currentPage.globalPageOrdinal}
@@ -816,7 +1018,11 @@ export function DescriptorDrivenWholeLessonPlayer({
       : 'descriptor-driven-whole-lesson-audit'}
     data-progress-kind="learner-session"
     data-progress-storage="local-device-only"
-    data-renderer-availability={currentRenderer.kind}
+    data-renderer-availability={unregisteredRuntimeCandidate ? 'candidate' : currentRenderer.kind}
+    data-descriptor-renderer-availability={currentRenderer.kind}
+    data-private-runtime-candidate={unregisteredRuntimeCandidate ? 'source-bound-unregistered' : undefined}
+    data-private-runtime-source-sha256={unregisteredRuntimeCandidate?.sourceSha256}
+    data-private-runtime-module-key={unregisteredRuntimeCandidate?.moduleKey}
     data-page-runtime-kind={runtimeEvidenceBoundary?.runtimeKind}
     data-page-actionscript-execution={
       runtimeEvidenceBoundary?.actionScriptExecution
@@ -830,6 +1036,17 @@ export function DescriptorDrivenWholeLessonPlayer({
       runtimeEvidenceBoundary?.productVisualBehaviorComposite
     }
     data-page-replay-semantics={runtimeEvidenceBoundary?.replaySemantics}
+    data-lesson-host-fq-attempted={lessonHostState.fqScore.attempted}
+    data-lesson-host-fq-correct={lessonHostState.fqScore.correct}
+    data-lesson-host-fq-points-awarded={
+      lessonHostState.fqScore.pointsAwarded
+    }
+    data-lesson-host-fq-points-possible={
+      lessonHostState.fqScore.pointsPossible
+    }
+    data-lesson-host-practice-feedback-active={
+      lessonHostState.practiceFeedback ? 'true' : 'false'
+    }
     data-shell-actionscript-executed={shellImplementation ? 'false' : undefined}
     data-shell-current-js-candidate={shellCurrentJsCandidate
       ? 'true'
@@ -849,8 +1066,8 @@ export function DescriptorDrivenWholeLessonPlayer({
       candidateMode={candidateMode}
       reviewerMode={reviewerMode}
       completionLabel={spanish
-        ? `${reviewedRegisteredCount} de ${registeredPages.length} páginas completadas`
-        : `${reviewedRegisteredCount} of ${registeredPages.length} pages complete`}
+        ? `${reviewedRegisteredCount} de ${totalPageCount} páginas completadas`
+        : `${reviewedRegisteredCount} of ${totalPageCount} pages complete`}
       completionPercent={completionPercent}
       courseContext={{
         courseTitle: descriptor.course.labels[progress.locale],
@@ -877,18 +1094,32 @@ export function DescriptorDrivenWholeLessonPlayer({
         ? <section aria-live="polite" className="lesson-shell2__finished">
             <span aria-hidden="true">★</span>
             <div>
-              <h2>{spanish
-                ? 'Lección completada'
-                : 'Lesson complete'}</h2>
-              <p>{spanish
-                ? `Completaste ${reviewedRegisteredCount} de ${registeredPages.length} páginas.`
-                : `You completed ${reviewedRegisteredCount} of ${registeredPages.length} pages.`}</p>
+              <h2>{partialDescriptor
+                ? spanish
+                  ? 'Recorrido de calibración finalizado'
+                  : 'Calibration tour ended'
+                : spanish
+                  ? 'Lección completada'
+                  : 'Lesson complete'}</h2>
+              <p>{partialDescriptor
+                ? spanish
+                  ? `Revisaste ${reviewedRegisteredCount} de ${totalPageCount} páginas. ${unavailablePageCount} permanecen no disponibles; la lección no está completa.`
+                  : `You reviewed ${reviewedRegisteredCount} of ${totalPageCount} pages. ${unavailablePageCount} remain unavailable; the lesson is not complete.`
+                : spanish
+                  ? `Completaste ${reviewedRegisteredCount} de ${totalPageCount} páginas.`
+                  : `You completed ${reviewedRegisteredCount} of ${totalPageCount} pages.`}</p>
             </div>
           </section>
         : undefined}
-      gradeLessonLabel={spanish
-        ? `Grado ${descriptor.course.grade} · Lección ${descriptor.course.lesson}`
-        : `Grade ${descriptor.course.grade} · Lesson ${descriptor.course.lesson}`}
+      gradeLessonLabel={descriptor.schemaVersion === 2 &&
+          descriptor.course.gradeScope === 'G6-G8-shared' &&
+          descriptor.course.moduleCode
+        ? spanish
+          ? `G6–G8 compartido · ${descriptor.course.moduleCode} · Lección ${descriptor.course.lesson}`
+          : `G6–G8 shared · ${descriptor.course.moduleCode} · Lesson ${descriptor.course.lesson}`
+        : spanish
+          ? `Grado ${descriptor.course.grade} · Lección ${descriptor.course.lesson}`
+          : `Grade ${descriptor.course.grade} · Lesson ${descriptor.course.lesson}`}
       helpPanel={helpPanel}
       idPrefix={descriptor.course.domIdPrefix}
       keyTermsPanel={keyTermsPanel}
@@ -907,13 +1138,21 @@ export function DescriptorDrivenWholeLessonPlayer({
         totalPages: currentSectionPages.length,
       }}
       nextControlLabel={tourFinished
-        ? (spanish ? 'Lección completada' : 'Lesson complete')
+        ? partialDescriptor
+          ? spanish
+            ? `Recorrido de calibración finalizado · ${unavailablePageCount} no disponibles`
+            : `Calibration tour ended · ${unavailablePageCount} unavailable`
+          : (spanish ? 'Lección completada' : 'Lesson complete')
         : nextPage
           ? (spanish ? 'Página siguiente' : 'Next page')
           : (spanish ? 'Terminar recorrido' : 'Finish tour')}
       nextDisabled={!nextPage && tourFinished}
       nextLabel={tourFinished
-        ? (spanish ? 'Lección completada ✓' : 'Lesson complete ✓')
+        ? partialDescriptor
+          ? spanish
+            ? `Recorrido finalizado · ${unavailablePageCount} no disponibles ✓`
+            : `Tour ended · ${unavailablePageCount} unavailable ✓`
+          : (spanish ? 'Lección completada ✓' : 'Lesson complete ✓')
         : nextPage
           ? (spanish ? 'Siguiente →' : 'Next →')
           : (spanish ? 'Terminar recorrido ✓' : 'Finish tour ✓')}
@@ -922,7 +1161,7 @@ export function DescriptorDrivenWholeLessonPlayer({
       onHeaderBack={returnToPreviousLocation}
       onExit={exitToLearningHome}
       onNext={advance}
-      onPausedChange={setPaused}
+      onPausedChange={setPlaybackPaused}
       onPlaybackResumeFromInspection={resumeFromInspectedFrame}
       onPlaybackSeek={inspectFrame}
       onPrevious={() =>

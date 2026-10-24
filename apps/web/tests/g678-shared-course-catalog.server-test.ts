@@ -73,8 +73,8 @@ test('shared identity helpers are module-aware and normalized', () => {
 
 test('local G6-G8 preview is explicit and production always closes it', () => {
   assert.equal(isG678LocalPreviewEnabled({NODE_ENV: 'development'}), false);
-  assert.equal(isG678LocalPreviewEnabled({NODE_ENV: 'development', HELP_MATH_G678_LOCAL_PREVIEW: 'true'}), true);
-  assert.equal(isG678LocalPreviewEnabled({NODE_ENV: 'development', HELP_MATH_G678_LOCAL_PREVIEW: '1'}), true);
+  assert.equal(isG678LocalPreviewEnabled({NODE_ENV: 'development', HELP_MATH_G678_LOCAL_PREVIEW: 'true', HELP_MATH_G678_LOCAL_PREVIEW_BIND: '127.0.0.1'}), true);
+  assert.equal(isG678LocalPreviewEnabled({NODE_ENV: 'development', HELP_MATH_G678_LOCAL_PREVIEW: '1', HELP_MATH_G678_LOCAL_PREVIEW_BIND: '127.0.0.1'}), true);
   assert.equal(isG678LocalPreviewEnabled({NODE_ENV: 'production', HELP_MATH_G678_LOCAL_PREVIEW: 'true'}), false);
 });
 
@@ -87,17 +87,17 @@ test('engineering preview requires descriptor binding and whole-lesson N/N', () 
   } as const;
   assert.equal(wholeLessonEngineeringPreviewReady({
     ...base,
-    env: {NODE_ENV: 'development', HELP_MATH_G678_LOCAL_PREVIEW: 'true'},
+    env: {NODE_ENV: 'development', HELP_MATH_G678_LOCAL_PREVIEW: 'true', HELP_MATH_G678_LOCAL_PREVIEW_BIND: '127.0.0.1'},
   }), true);
   assert.equal(wholeLessonEngineeringPreviewReady({
     ...base,
     registeredPageCount: 46,
-    env: {NODE_ENV: 'development', HELP_MATH_G678_LOCAL_PREVIEW: 'true'},
+    env: {NODE_ENV: 'development', HELP_MATH_G678_LOCAL_PREVIEW: 'true', HELP_MATH_G678_LOCAL_PREVIEW_BIND: '127.0.0.1'},
   }), false);
   assert.equal(wholeLessonEngineeringPreviewReady({
     ...base,
     descriptorBound: false,
-    env: {NODE_ENV: 'development', HELP_MATH_G678_LOCAL_PREVIEW: 'true'},
+    env: {NODE_ENV: 'development', HELP_MATH_G678_LOCAL_PREVIEW: 'true', HELP_MATH_G678_LOCAL_PREVIEW_BIND: '127.0.0.1'},
   }), false);
   assert.equal(wholeLessonEngineeringPreviewReady({
     ...base,
