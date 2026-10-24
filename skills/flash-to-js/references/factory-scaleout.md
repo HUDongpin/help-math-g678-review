@@ -26,7 +26,19 @@ Keep tool roles explicit:
 - Use Playwright for deterministic candidate and product-host QA. Treat a callable renderer or smoke screenshot as runtime evidence for the candidate only, never as visual fidelity.
 - Use Ruffle only under the forensic restrictions in the canonical skill and existing evidence references.
 
+Before claiming a page or new family is automatically convertible, assess every
+required capability with [capability-support.md](capability-support.md). Keep
+extraction, current generation, maintained implementation and executed behavior
+checks separate; a complexity label is not a support declaration.
+
 Fix AVM1/AVM2 behavior in a generator, normalized IR, shared adapter, or source-evidenced product state machine. Do not hide unresolved random branches, scoring, drag/scroll behavior, host calls, nested timelines, or audio clocks behind successful Canvas rendering.
+
+For the admitted G4 L3 recipe, use its bounded
+[product integration pipeline](product-integration-pipeline.md). For G6–G8,
+use the actual lane's writer and
+[lesson delivery loop](current-js-throughput.md#lesson-batches-and-separate-delivery-gates).
+Keep source checks and applicable My Lesson evidence bound to the candidate;
+intermediate generation or cached state tests are not product success.
 
 ## Map The Operational Funnel
 
@@ -49,6 +61,15 @@ Do not convert the funnel into one ordinal status or a combined acceptance boole
 Use the page-only catalog denominator from `AGENTS.md`. Exclude legacy Flash course-shell SWFs from factory coverage, product registration, acceptance, and release counts.
 
 ## Calibrate A Representative Vertical Slice
+
+This section qualifies a new or materially changed behavior path. For an
+unchanged, already calibrated path, proceed with a lesson or exact compatible
+batch using [the delivery loop](current-js-throughput.md#lesson-batches-and-separate-delivery-gates).
+Do not repeat initial calibration for each lesson. Keep every page's source
+identity and required product checks. An exceptional failed member stays in the
+lesson's gap list while an explicitly named, independently ready subset can
+advance through a supported recoverable transaction. This does not make the
+failed slice pass, authorize an unknown behavior, or complete the whole lesson.
 
 Freeze the slice before implementation. Bind every selected page to its `animationId`, `assetId`, placement path, source hashes, lesson order, complexity lane, and selection reason. Do not replace a difficult page after failure merely to make the slice pass.
 
@@ -130,6 +151,10 @@ Keep these layers identifiable and independently hashable:
 4. `generated candidate`: reproducible Canvas/assets/modules produced from the bound source, IR, toolchain, and generator.
 5. `maintained product integration`: reviewed shared wrappers, state machines, host adapters, registry entries, descriptors, tests, and product contracts.
 6. `evidence and receipts`: immutable run manifests, checksums, captures, comparisons, reviews, and ledgers governed by their existing references.
+
+For instructional events and state transitions, follow
+[teaching-behavior-ir.md](teaching-behavior-ir.md). Validate predicates against
+source handlers independently of the generated code and consumer expectations.
 
 Never replace preserved source or raw extraction with the compact IR. Keep large generated outputs on the filesystem rather than pasting them into model context; provide the model only the hash-bound IR, indexes, and smallest source-evidenced excerpts required for the task.
 

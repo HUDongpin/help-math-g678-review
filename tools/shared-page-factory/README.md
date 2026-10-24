@@ -92,3 +92,31 @@ The generated structural artifacts are inputs to a later IR/generator,
 maintained adapter, registry, My Lesson, original-runtime, fidelity, audio,
 human-review, Owner, strict, and release workflow. They must not be counted as
 registered Current-JS or published lessons.
+
+
+## G6–G8 lesson typography development — 2026-09-10
+
+Implementation marker: `HELP_MATH_G678_TYPOGRAPHY_DEVELOPMENT_V1_2026_09_10`.
+
+The Owner's animation typography plan applies to new and changed G6–G8 pages.
+Read `docs/G678_LESSON_TYPOGRAPHY_INTEGRATION.md` and the shared
+`docs/LESSON_TYPOGRAPHY_DEVELOPMENT.md` before adding a page. Use the source-bound
+text interfaces and native HTML/SVG/semantic math from `@helpmath/demos/lesson-text`,
+the pinned self-hosted fonts and shared responsive templates. This supersedes
+old fixed text-box/pixel-font constraints for the modern student presentation;
+original text bounds and original renderers remain evidence.
+
+Run `npm run check:typography --workspace @helpmath/demos` alongside the page's
+source, behavior, My Lesson and registry checks. It is also part of demos
+typecheck. New/changed page modules require their own actual-source text catalog,
+binding, exact implementation inventory and technical check evidence. Do not
+claim a typography pass from a registration, a generated file or an empty
+source-risk list. Preserve current G6–G8 authored timeline/interactive-stop,
+audio and navigation contracts; an unsupported new host extension must be
+implemented and tested before using it.
+
+Existing G6–G8 pages remain an explicit separate typography backlog. Never add
+their denominator to G3–G5's 1,751 placements. Keep typography implementation,
+technical checks, actual human review, Current-JS, original runtime, fidelity,
+audio/listening, Owner, strict completion and publication separate. An ES page
+with English source text is a disclosed fallback and is not a translation.

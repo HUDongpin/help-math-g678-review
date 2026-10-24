@@ -358,3 +358,27 @@ The exact versions used by the current migration workstation, including the
 downloaded FFDec release-asset checksum and the Adobe Animate availability
 gate, are recorded in `catalog/toolchain.json`. Update that record whenever a
 baseline or audit is regenerated with a different tool version.
+
+## Large migration worktree checks
+
+`npm run typecheck` and `npm run typecheck:demos` give TypeScript an explicit
+8 GiB heap. The current worktree has about one million lines of TypeScript;
+a full cold check measured approximately 6.6 GiB of compiler memory. These
+commands still check all application/demo source and tests with strict mode.
+The web tsconfig includes the current `.next/types` and `.next/dev/types`
+contracts, rather than accumulated `.next-*` historical QA outputs. Keep
+historical builds as evidence; do not delete them to make type checking pass.
+
+The G6–G8 opted-in loopback webpack development host uses a memory cache with
+one retained generation. This avoids disk pack writes on the source/evidence
+volume. Production and other QA build profiles keep their existing cache
+policy. This is not a storage cleanup operation; check current free capacity
+before any capture or build that persists artifacts.
+
+`verify:workbench` runs both complete strict ledger scans in one process.
+The implementation closure reader caches only parsed import lists, keyed by
+current source content and file extension, with a bounded 4,096-entry cache.
+It continues to read files, resolve imports, reject symlinks, and hash current
+artifacts on each scan. Strict migration, review, audio, fidelity and release
+requirements are unchanged. A stale ledger remains a failure and must be
+regenerated and checked from the current worktree.
