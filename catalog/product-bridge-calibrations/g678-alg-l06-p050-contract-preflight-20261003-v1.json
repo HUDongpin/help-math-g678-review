@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "calibrationId": "g678-alg-l06-p050-contract-preflight-20261003-v1",
+  "deploymentScope": "local-only",
+  "purpose": "writer-contract-preflight-only",
+  "registered": false,
+  "sourceSha256": "4353f9cbd7e60043baa8f59c7f5193fcd930778ace4b918ab56f2953f306937e",
+  "selectedPages": [
+    {
+      "animationId": "shared-alg001-l06-p050",
+      "complexityLane": "behavior-heavy",
+      "runtime": {
+        "canvasRenderer": {
+          "path": "work/g678-shared-page-factory/alg-l06-p050-maintained-canvas-v1-20261003-v1/members/shared-alg001-l06-p050/canvas-renderer.js",
+          "bytes": 10456890,
+          "sha256": "d384ef32b39c8bd1e013c667653bcb5a643cbe703be6c145b87ce87a752347ff"
+        },
+        "frameDomain": "sprite-489",
+        "frameCount": 674,
+        "beginFrame": 662,
+        "finalFrame": 673
+      }
+    }
+  ],
+  "producer": {
+    "path": "migrations/shared-alg001-l06-p050/generator-v1/derive-canvas-v1.mjs",
+    "bytes": 18139,
+    "sha256": "d8f3e331c3822e76380441e3660bbd3aa0e625d5041dabf3613e39f48ea6fd22"
+  },
+  "evidence": [
+    {
+      "path": "migrations/shared-alg001-l06-p050/native-v1/source-model-v1.json",
+      "bytes": 1682220,
+      "sha256": "928ca5042b469795ae207921638d44ffd212034e8eb33e954d943b1721c05fb7"
+    },
+    {
+      "path": "migrations/shared-alg001-l06-p050/native-v1/native-bindings-v1.json",
+      "bytes": 23222,
+      "sha256": "f8e35ff41c426f48d03c8cf686c5242e5ad71bddc8aee6b5c7e7f3f6443a1bdd"
+    }
+  ],
+  "fullAdmissionProofPrepared": false,
+  "myLessonVerified": false,
+  "activationAuthorizedByThisPreflight": false,
+  "acceptanceEffects": {
+    "authoritativeOriginalRuntime": false,
+    "fidelityAccepted": false,
+    "audioAccepted": false,
+    "listeningAccepted": false,
+    "humanVisualAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "published": false
+  }
+}

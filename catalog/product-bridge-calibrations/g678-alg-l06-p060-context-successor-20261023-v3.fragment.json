@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "private-current-js-calibration-fragment-v1",
+  "freeze": {
+    "path": "catalog/product-bridge-calibrations/g678-alg-l06-p060-context-successor-20261023-v3.json",
+    "bytes": 143207,
+    "sha256": "cf5d24da00f9f86de2d7b3bccee03580fe96f0ed1805d1f1e4b66973b01f1ee8"
+  },
+  "calibration": {
+    "calibrationId": "g678-alg-l06-p060-current-js-20261003-v1",
+    "deploymentScope": "local-only",
+    "freezeManifest": "catalog/product-bridge-calibrations/g678-alg-l06-p060-context-successor-20261023-v3.json",
+    "freezeManifestBytes": 143207,
+    "freezeManifestSha256": "cf5d24da00f9f86de2d7b3bccee03580fe96f0ed1805d1f1e4b66973b01f1ee8",
+    "entries": [
+      {
+        "key": "shared-alg001-l06-p060",
+        "module": "./modules/shared-alg001-l06-context-v3-p060",
+        "maturity": "private-current-js",
+        "complexityLane": "behavior-heavy",
+        "artifacts": {
+          "kind": "maintained-dom-module-v1",
+          "module": {
+            "path": "packages/demos/src/modules/shared-alg001-l06-context-v3-p060.tsx",
+            "bytes": 2575,
+            "sha256": "e30a165332f281a9a353b7e9c076b6a0868c460f8825cab0f795c35868b2297e"
+          },
+          "timeline": {
+            "path": "packages/demos/src/timelines/shared-alg001-l06-context-v3-p060.ts",
+            "bytes": 1653,
+            "sha256": "ca17f59454b7a75da61f7af4cf41f532d16887c130298919c2c02b9678127c44"
+          },
+          "memberManifest": {
+            "path": "work/g678-shared-page-factory/alg-l06-p060-context-successor-20261023-v3/members/shared-alg001-l06-p060/member-manifest.json",
+            "bytes": 11127,
+            "sha256": "cb0cda8b96a51dbd9587082a69549cd9dec64bb22744c14845e12b2250b5cbce"
+          },
+          "sourceRun": {
+            "path": "work/g678-shared-page-factory/alg-l06-p060-context-successor-20261023-v3/run-manifest.json",
+            "bytes": 8269,
+            "sha256": "8197f929cd4eccfd61e12ebd2d38344b27839fded6ec674a96cb50acbd7b89a7"
+          }
+        }
+      }
+    ]
+  },
+  "changedAnimationIds": [
+    "shared-alg001-l06-p060"
+  ],
+  "registeredDelta": 0,
+  "historicalEvidenceRenewed": false,
+  "admissionRenewed": false
+}
