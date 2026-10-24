@@ -1,0 +1,101 @@
+ConstantPool "_global", "Y", "", "C", "Mc_Popup3", "txtFeed", "text", "You have selected two points. Please click the Draw Line Button", "_visible", "Wrong_Btn", "enabled", "DL_Btn", "NMHBtn", "disableMC", "mcCount", "tempMcName", "Mc_", "point_mc", "_x", "_y"
+Push "_global"
+GetVariable
+Push "Y"
+GetMember
+Push ""
+Equals2
+Not
+PushDuplicate
+Not
+If loc00f0
+Pop
+Push "_global"
+GetVariable
+Push "C"
+GetMember
+Push ""
+Equals2
+Not
+loc00f0:Not
+If loc0157
+Push "Mc_Popup3"
+GetVariable
+Push "txtFeed"
+GetMember
+Push "text", "You have selected two points. Please click the Draw Line Button"
+SetMember
+Push "Mc_Popup3"
+GetVariable
+Push "_visible", true
+SetMember
+Push "Wrong_Btn"
+GetVariable
+Push "enabled", false
+SetMember
+Push "DL_Btn"
+GetVariable
+Push "enabled", false
+SetMember
+Push "NMHBtn"
+GetVariable
+Push "enabled", false
+SetMember
+Push 0.0, "disableMC"
+CallFunction
+Pop
+Jump loc01ff
+loc0157:Push "_global"
+GetVariable
+Push "mcCount", "_global"
+GetVariable
+Push "mcCount"
+GetMember
+Increment
+SetMember
+Push "tempMcName", "Mc_", "_global"
+GetVariable
+Push "mcCount"
+GetMember
+Add2
+SetVariable
+Push "point_mc", "tempMcName"
+GetVariable
+Push 16384, "_global"
+GetVariable
+Push "mcCount"
+GetMember
+Add2
+CloneSprite
+Push "tempMcName"
+GetVariable
+GetVariable
+Push "_x", "", 20
+GetProperty
+SetMember
+Push "tempMcName"
+GetVariable
+GetVariable
+Push "_y", "", 21
+GetProperty
+SetMember
+Push "_global"
+GetVariable
+Push "Y"
+GetMember
+Push ""
+Equals2
+Not
+If loc01f0
+Push "_global"
+GetVariable
+Push "Y", "tempMcName"
+GetVariable
+SetMember
+Jump loc01ff
+loc01f0:Push "_global"
+GetVariable
+Push "C", "tempMcName"
+GetVariable
+SetMember
+loc01ff:

@@ -1,0 +1,7 @@
+// Generated from audited source data; edit generator inputs, never this output.
+import type {FixedExitNativeSourceV3,FixedExitGraphAnswerV3} from './source-fixed-exit-help-native-v3';
+import type {FixedExitNativeVisualV2} from './source-fixed-exit-help-native-v2';
+import type {FixedExitGraphV1,FixedExitVectorPathV1} from './source-fixed-exit-help-native-v1';
+export type P049SourceTerm='Function'|'Nonlinear function'|'Graph'|'Vertical-line test'|'Vertical'|'Intersect'|'Point'|'Line';
+export interface P049Visual extends FixedExitNativeVisualV2<P049SourceTerm>{readonly bMove:number;readonly graphs:readonly {readonly name:string;readonly paths:readonly {readonly sourceShapeId:number;readonly matrix:readonly number[];readonly alpha:number}[];readonly labels:readonly {readonly depth:number;readonly alpha:number}[];readonly overlays:readonly {readonly sourceShapeId:number;readonly depth:number;readonly matrix:readonly number[];readonly alpha:number}[]}[];}
+export type P049Model=FixedExitNativeSourceV3<P049SourceTerm,154|238,243,P049Visual,FixedExitGraphAnswerV3> & {readonly graphs:readonly FixedExitGraphV1[];readonly graphOverlaySources:readonly {readonly sourceShapeId:number;readonly paths:readonly FixedExitVectorPathV1[]}[];};

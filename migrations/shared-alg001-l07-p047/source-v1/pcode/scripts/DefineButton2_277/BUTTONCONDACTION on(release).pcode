@@ -1,0 +1,18 @@
+ConstantPool "NMHBtn", "enabled", "_root", "enableQuizButton", "Mc_Popup", "_visible", "CloseBtn"
+Push "NMHBtn"
+GetVariable
+Push "enabled", true
+SetMember
+Push 0.0, "_root"
+GetVariable
+Push "enableQuizButton"
+CallMethod
+Pop
+Push "Mc_Popup"
+GetVariable
+Push "_visible", false
+SetMember
+Push "CloseBtn"
+GetVariable
+Push "_visible", false
+SetMember

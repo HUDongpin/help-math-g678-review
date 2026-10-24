@@ -1,0 +1,14 @@
+Push 0.0, "_root"
+GetVariable
+Push "disableQuizButton"
+CallMethod
+Pop
+Push 2, 1, "Mc_Right_Feed4"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "NMHBtn"
+GetVariable
+Push "enabled", false
+SetMember

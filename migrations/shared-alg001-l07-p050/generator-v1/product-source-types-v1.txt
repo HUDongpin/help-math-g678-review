@@ -1,0 +1,7 @@
+// Generated from audited source data; edit generator inputs, never this output.
+import type {FixedExitNativeSourceV4,FixedExitNumberAnswerV4} from './source-fixed-exit-help-native-v4';
+import type {FixedExitNativeVisualV2} from './source-fixed-exit-help-native-v2';
+export type P050SourceTerm='Area'|'Calculate'|'Circle'|'Equation'|'Evaluate'|'Expression'|'Function'|'Function table'|'Nonlinear function'|'Order of operations'|'Radius'|'Substitute'|'Value';
+export interface P050RichText{readonly characterId:number;readonly sourceTextId:string;readonly text:string;readonly tokens:readonly {readonly text:string;readonly superscript:boolean;readonly term?:P050SourceTerm}[];}
+export interface P050Visual extends FixedExitNativeVisualV2<P050SourceTerm>{readonly correctMove:number;readonly tableAlpha:number;readonly tableOffset:number;readonly postEquations:readonly {readonly characterId:number;readonly alpha:number;readonly offset:number}[];}
+export type P050Model=FixedExitNativeSourceV4<P050SourceTerm,257|340,345,P050Visual,FixedExitNumberAnswerV4>&{readonly richTexts:readonly P050RichText[];readonly table:{readonly captionId:number;readonly headingIds:readonly number[];readonly rows:readonly {readonly inputId:number;readonly outputId:number|null;readonly input:string;readonly output:string|null}[];readonly missingCell:string;}};

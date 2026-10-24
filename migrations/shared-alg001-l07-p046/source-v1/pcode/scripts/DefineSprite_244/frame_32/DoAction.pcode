@@ -1,0 +1,27 @@
+ConstantPool "_root", "disableQuizButton", "_global", "quizSection", "this", "gotoAndStop", "_parent", "GLine_Mc", "_visible", "play"
+Stop
+Push 0.0, "_root"
+GetVariable
+Push "disableQuizButton"
+CallMethod
+Pop
+Push "_global"
+GetVariable
+Push "quizSection", false
+SetMember
+Push 1, 1, "this"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "_parent"
+GetVariable
+Push "GLine_Mc"
+GetMember
+Push "_visible", false
+SetMember
+Push 0.0, "_parent"
+GetVariable
+Push "play"
+CallMethod
+Pop

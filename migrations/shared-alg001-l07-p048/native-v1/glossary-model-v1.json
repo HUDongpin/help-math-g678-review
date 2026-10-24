@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-alg001-l07-p048",
+  "sourceSwf": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/TI/L7TI11.swf",
+    "bytes": 219379,
+    "sha256": "63e6c8e4474d9fcaa6c2f5dc23b04210619210bafbfaf4e907f7ca12b2470a2f"
+  },
+  "dictionaries": {
+    "en": {
+      "path": "/Volumes/WestWorld/HELP MATH Related Files/HELP_OnlineKeyTerms_XML/MI/L1KTE01.xml",
+      "bytes": 345838,
+      "sha256": "14d454f4c1c1a6f0939fb80b454fd3e22890eabb4a730c6bfa7efa1d9a2e5e5b"
+    },
+    "es": {
+      "path": "/Volumes/WestWorld/HELP MATH Related Files/HELP_OnlineKeyTerms_XML/MI/L1KTS01.xml",
+      "bytes": 344456,
+      "sha256": "3b437b42e75536fa8b4f110325e366c27fbe10a871439d4797650cda4238b407"
+    }
+  },
+  "entries": [
+    {
+      "id": "function",
+      "sourceKeyAttribute": "Function",
+      "labels": {
+        "en": "Function",
+        "es": "Función"
+      },
+      "definitions": {
+        "en": "A special relation in which every value of x has one, and only one, value of y.",
+        "es": "Relación especial en la cual a cada valor x le corresponde solamente un valor y."
+      },
+      "source": {
+        "en": {
+          "assetId": "G678L1KTE01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTE01.xml",
+          "sha256": "14d454f4c1c1a6f0939fb80b454fd3e22890eabb4a730c6bfa7efa1d9a2e5e5b"
+        },
+        "es": {
+          "assetId": "G678L1KTS01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTS01.xml",
+          "sha256": "3b437b42e75536fa8b4f110325e366c27fbe10a871439d4797650cda4238b407"
+        }
+      },
+      "sourceEntrySha256": {
+        "en": "bc0f40b8bdcc75633dd2ce1de92ea861198a5343564a757ea5f466681dcb9249",
+        "es": "47b6db9a18b6e7372ce870bb9f8f1b4862c92a023ef8a0d8abbe7148796448cc"
+      },
+      "extractionLfNormalizedEntrySha256": {
+        "en": "bc0f40b8bdcc75633dd2ce1de92ea861198a5343564a757ea5f466681dcb9249",
+        "es": "47b6db9a18b6e7372ce870bb9f8f1b4862c92a023ef8a0d8abbe7148796448cc"
+      }
+    },
+    {
+      "id": "linear-function",
+      "sourceKeyAttribute": "Linear function",
+      "labels": {
+        "en": "Linear function",
+        "es": "Función lineal"
+      },
+      "definitions": {
+        "en": "A linear function is a function whose graph is a straight line.",
+        "es": "Una función lineal es una función cuya gráfica es una línea recta."
+      },
+      "source": {
+        "en": {
+          "assetId": "G678L1KTE01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTE01.xml",
+          "sha256": "14d454f4c1c1a6f0939fb80b454fd3e22890eabb4a730c6bfa7efa1d9a2e5e5b"
+        },
+        "es": {
+          "assetId": "G678L1KTS01.xml",
+          "path": "HELP_KEYTERMS/KT/XML/L1KTS01.xml",
+          "sha256": "3b437b42e75536fa8b4f110325e366c27fbe10a871439d4797650cda4238b407"
+        }
+      },
+      "sourceEntrySha256": {
+        "en": "a9783fcf1e26da4c7a867ce027a143d0c3d42593d13586448f377250c664d41b",
+        "es": "20a63b82b763ff8599ab548e4a2682a296d8f7de4849ce34d5d4a91db57a67ed"
+      },
+      "extractionLfNormalizedEntrySha256": {
+        "en": "a9783fcf1e26da4c7a867ce027a143d0c3d42593d13586448f377250c664d41b",
+        "es": "20a63b82b763ff8599ab548e4a2682a296d8f7de4849ce34d5d4a91db57a67ed"
+      }
+    }
+  ],
+  "sourceButtonActions": [
+    {
+      "characterId": 138,
+      "term": "Function",
+      "script": {
+        "path": "migrations/shared-alg001-l07-p048/source-v1/ffdec/scripts/DefineButton2_138/BUTTONCONDACTION on(release).as",
+        "bytes": 130,
+        "sha256": "abb9aad9c70bdfa302746c66f8b22cfb52c5b34af5705f9e78100737b9664f63"
+      },
+      "bareQStatement": true,
+      "bareVStatement": false
+    },
+    {
+      "characterId": 149,
+      "term": "Linear function",
+      "script": {
+        "path": "migrations/shared-alg001-l07-p048/source-v1/ffdec/scripts/DefineButton2_149/BUTTONCONDACTION on(release).as",
+        "bytes": 137,
+        "sha256": "b177b657a7b69f7035f242097a9b906e4c0486e7e91c8c8c25435546995a7425"
+      },
+      "bareQStatement": true,
+      "bareVStatement": false
+    }
+  ],
+  "caseBindings": [
+    {
+      "sourceActionKey": "Function",
+      "dictionaryKey": "Function"
+    },
+    {
+      "sourceActionKey": "Linear function",
+      "dictionaryKey": "Linear function"
+    }
+  ],
+  "modernClose": "preserve paused frame/audio; restore trigger focus; explicit Resume required",
+  "boundary": "source dictionaries and release scripts only; original-runtime/human acceptance absent"
+}

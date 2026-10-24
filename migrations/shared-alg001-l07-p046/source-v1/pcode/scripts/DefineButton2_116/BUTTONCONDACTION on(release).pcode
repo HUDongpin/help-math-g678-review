@@ -1,0 +1,19 @@
+ConstantPool "_global", "KeyAttribute", "Numerator", "_root", "DoHyperLinks", "animation_mc", "animation", "stop"
+Push "_global"
+GetVariable
+Push "KeyAttribute", "Numerator"
+SetMember
+Push 0.0, "_root"
+GetVariable
+Push "DoHyperLinks"
+CallMethod
+Pop
+Push 0.0, "_root"
+GetVariable
+Push "animation_mc"
+GetMember
+Push "animation"
+GetMember
+Push "stop"
+CallMethod
+Pop

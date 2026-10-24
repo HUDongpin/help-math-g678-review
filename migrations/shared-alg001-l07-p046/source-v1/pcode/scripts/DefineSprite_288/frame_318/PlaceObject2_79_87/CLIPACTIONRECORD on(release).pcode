@@ -1,0 +1,14 @@
+ConstantPool "this", "enabled", "gotoAndStop", "_global", "Firstpoint"
+Push "this"
+GetVariable
+Push "enabled", false
+SetMember
+Push 2, 1, "this"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "_global"
+GetVariable
+Push "Firstpoint", true
+SetMember

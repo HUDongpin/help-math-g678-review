@@ -1,0 +1,32 @@
+ConstantPool "_global", "quizTryCount", "WrongFeed", "Form a triangle using two points whose coordinates you know. The slope equals the vertical length divided by horizontal length.", "Form a triangle using two points whose coordinates you know. The slope equals the vertical length divided by horizontal length. Try again.", "_root", "disableQuizButton", "Mc_Wrong_Feed4", "gotoAndPlay", "NMHBtn", "enabled"
+Push "_global"
+GetVariable
+Push "quizTryCount"
+GetMember
+Push 1
+Equals2
+Not
+If loc019f
+Push "_global"
+GetVariable
+Push "WrongFeed", "Form a triangle using two points whose coordinates you know. The slope equals the vertical length divided by horizontal length."
+SetMember
+Jump loc01ad
+loc019f:Push "_global"
+GetVariable
+Push "WrongFeed", "Form a triangle using two points whose coordinates you know. The slope equals the vertical length divided by horizontal length. Try again."
+SetMember
+loc01ad:Push 0.0, "_root"
+GetVariable
+Push "disableQuizButton"
+CallMethod
+Pop
+Push 2, 1, "Mc_Wrong_Feed4"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "NMHBtn"
+GetVariable
+Push "enabled", false
+SetMember

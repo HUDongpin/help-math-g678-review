@@ -1,0 +1,22 @@
+ConstantPool "q", "_global", "KeyAttribute", "Triangle", "_root", "DoHyperLinks", "animation_mc", "animation", "stop"
+Push "q"
+GetVariable
+Pop
+Push "_global"
+GetVariable
+Push "KeyAttribute", "Triangle"
+SetMember
+Push 0.0, "_root"
+GetVariable
+Push "DoHyperLinks"
+CallMethod
+Pop
+Push 0.0, "_root"
+GetVariable
+Push "animation_mc"
+GetMember
+Push "animation"
+GetMember
+Push "stop"
+CallMethod
+Pop

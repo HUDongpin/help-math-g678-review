@@ -1,0 +1,6 @@
+// Generated from audited source data; edit generator inputs, never this output.
+import type {FixedExitNativeSourceV3,FixedExitEquationAnswerV3} from './source-fixed-exit-help-native-v3';
+import type {FixedExitNativeVisualV2} from './source-fixed-exit-help-native-v2';
+export type P048SourceTerm='Function'|'Linear function';
+export interface P048Visual extends FixedExitNativeVisualV2<P048SourceTerm>{readonly bMove:number;readonly emphasis:readonly {readonly shapeId:number;readonly sourceTextId:string;readonly token:string;readonly alpha:number}[];}
+export type P048Model=FixedExitNativeSourceV3<P048SourceTerm,234|317,332,P048Visual,FixedExitEquationAnswerV3>;

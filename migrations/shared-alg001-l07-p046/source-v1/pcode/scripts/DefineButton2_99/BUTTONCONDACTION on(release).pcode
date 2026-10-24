@@ -1,0 +1,28 @@
+ConstantPool "this", "_visible", "_parent", "Wrong_Btn", "enabled", "DL_Btn", "NMHBtn", "enableMC"
+Push "this"
+GetVariable
+Push "_visible", false
+SetMember
+Push "_parent"
+GetVariable
+Push "Wrong_Btn"
+GetMember
+Push "enabled", true
+SetMember
+Push "_parent"
+GetVariable
+Push "DL_Btn"
+GetMember
+Push "enabled", true
+SetMember
+Push "_parent"
+GetVariable
+Push "NMHBtn"
+GetMember
+Push "enabled", true
+SetMember
+Push 0.0, "_parent"
+GetVariable
+Push "enableMC"
+CallMethod
+Pop

@@ -1,0 +1,1277 @@
+ConstantPool "this", "str", "false", "true", "init", "width", "_width", "height", "_height", "_xscale", "_yscale", "contentWidth", "contentHeight", "hScroll", "vScroll", "auto", "dragContent", "offset", "Object", "boolToString", "hostStyle", "styleTable", "hScrollBar_mc", "FScrollBarSymbol", "attachMovie", "setHorizontal", "setSmallScroll", "onScroll", "setChangeHandler", "vScrollBar_mc", "setSize", "scrollContent", "", "setScrollContent", "setDragContent", "FScrollPaneClass", "prototype", "FUIComponentClass", "FScrollPaneSymbol", "registerClass", "getScrollContent", "content_mc", "getPaneWidth", "getPaneHeight", "getScrollPosition", "x", "y", "target", "_visible", "removeMovieClip", "unloadMovie", "string", "tmp_mc", "localToGlobal", "_parent", "globalToLocal", "_x", "_y", "getBounds", "xMin", "yMin", "mask_mc", "setMask", "h", "w", "arguments", "length", "isNaN", "super", "Math", "max", "boundingBox_mc", "setHandV", "initScrollBars", "FBoundingBoxSymbol", "hWidth", "vHeight", "_alpha", "setScrollPosition", "minPos", "maxPos", "min", "refreshPane", "loadScrollContent", "loadTemp", "loadContent", "duplicateMovieClip", "dupeFlag", "contentLoaded", "loadReady", "executeCallBack", "location", "handler", "url", "loadMovie", "setHScroll", "prop", "setVScroll", "dragFlag", "useHandCursor", "onPress", "startDragLoop", "tabEnabled", "onRelease", "onReleaseOutside", "pressFocus", "onMouseMove", "tabFocused", "myOnSetFocus", "lastX", "_xmouse", "lastY", "_ymouse", "scrollXMove", "scrollYMove", "updateAfterEvent", "setScrollProperties", "component", "XorY", "_name", "myOnKeyDown", "Key", "isDown", "pageSize"
+DefineFunction "FScrollPaneClass", 0 {
+Push "this"
+GetVariable
+StoreRegister 1
+Pop
+DefineFunction "boolToString", 1, "str"  {
+Push "str"
+GetVariable
+StoreRegister 1
+Pop
+Push register1, "false"
+Equals2
+Not
+If loc0538
+Push false
+Return
+loc0538:Push register1, "true"
+Equals2
+Not
+If loc054c
+Push true
+Return
+loc054c:Push register1
+Return
+}
+Push 0.0, register1, "init"
+CallMethod
+Pop
+Push register1, "width", register1, "_width"
+GetMember
+SetMember
+Push register1, "height", register1, "_height"
+GetMember
+SetMember
+Push register1, "_xscale", register1, "_yscale", 100
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register1, "contentWidth", register1, "contentHeight", 0.0
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register1, "hScroll"
+GetMember
+Push undefined
+Equals2
+Not
+If loc05ed
+Push register1, "hScroll", register1, "vScroll", "auto"
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register1, "dragContent", false
+SetMember
+loc05ed:Push register1, "offset", 0.0, "Object"
+NewObject
+SetMember
+Push register1, "vScroll", register1, "vScroll"
+GetMember
+Push 1, "boolToString"
+CallFunction
+SetMember
+Push register1, "hScroll", register1, "hScroll"
+GetMember
+Push 1, "boolToString"
+CallFunction
+SetMember
+Push "hostStyle", register1, "styleTable"
+GetMember
+Push 1
+InitObject
+Push 100, "hScrollBar_mc", "FScrollBarSymbol", 4, register1, "attachMovie"
+CallMethod
+Pop
+Push true, 1, register1, "hScrollBar_mc"
+GetMember
+Push "setHorizontal"
+CallMethod
+Pop
+Push 5, 1, register1, "hScrollBar_mc"
+GetMember
+Push "setSmallScroll"
+CallMethod
+Pop
+Push register1, "onScroll", 2, register1, "hScrollBar_mc"
+GetMember
+Push "setChangeHandler"
+CallMethod
+Pop
+Push "hostStyle", register1, "styleTable"
+GetMember
+Push 1
+InitObject
+Push 99, "vScrollBar_mc", "FScrollBarSymbol", 4, register1, "attachMovie"
+CallMethod
+Pop
+Push 5, 1, register1, "vScrollBar_mc"
+GetMember
+Push "setSmallScroll"
+CallMethod
+Pop
+Push register1, "onScroll", 2, register1, "vScrollBar_mc"
+GetMember
+Push "setChangeHandler"
+CallMethod
+Pop
+Push register1, "height"
+GetMember
+Push register1, "width"
+GetMember
+Push 2, register1, "setSize"
+CallMethod
+Pop
+Push register1, "scrollContent"
+GetMember
+Push ""
+Equals2
+Not
+Not
+If loc0746
+Push register1, "scrollContent"
+GetMember
+Push 1, register1, "setScrollContent"
+CallMethod
+Pop
+loc0746:Push register1, "dragContent"
+GetMember
+Push 1, register1, "setDragContent"
+CallMethod
+Pop
+}
+Push "FScrollPaneClass"
+GetVariable
+Push "prototype", 0.0, "FUIComponentClass"
+NewObject
+SetMember
+Push "FScrollPaneClass"
+GetVariable
+Push "FScrollPaneSymbol", 2, "Object"
+GetVariable
+Push "registerClass"
+CallMethod
+Pop
+Push "FScrollPaneClass"
+GetVariable
+Push "prototype"
+GetMember
+Push "getScrollContent"
+DefineFunction "", 0 {
+Push "this"
+GetVariable
+Push "content_mc"
+GetMember
+Return
+}
+SetMember
+Push "FScrollPaneClass"
+GetVariable
+Push "prototype"
+GetMember
+Push "getPaneWidth"
+DefineFunction "", 0 {
+Push "this"
+GetVariable
+Push "width"
+GetMember
+Return
+}
+SetMember
+Push "FScrollPaneClass"
+GetVariable
+Push "prototype"
+GetMember
+Push "getPaneHeight"
+DefineFunction "", 0 {
+Push "this"
+GetVariable
+Push "height"
+GetMember
+Return
+}
+SetMember
+Push "FScrollPaneClass"
+GetVariable
+Push "prototype"
+GetMember
+Push "getScrollPosition"
+DefineFunction "", 0 {
+Push "this"
+GetVariable
+StoreRegister 1
+Pop
+Push register1, "hScrollBar_mc"
+GetMember
+Push undefined
+Equals2
+If loc0855
+Push 0.0, register1, "hScrollBar_mc"
+GetMember
+Push "getScrollPosition"
+CallMethod
+Jump loc0861
+loc0855:Push 0.0
+loc0861:StoreRegister 3
+Pop
+Push register1, "vScrollBar_mc"
+GetMember
+Push undefined
+Equals2
+If loc0894
+Push 0.0, register1, "vScrollBar_mc"
+GetMember
+Push "getScrollPosition"
+CallMethod
+Jump loc08a0
+loc0894:Push 0.0
+loc08a0:StoreRegister 2
+Pop
+Push "x", register3, "y", register2, 2
+InitObject
+Return
+}
+SetMember
+Push "FScrollPaneClass"
+GetVariable
+Push "prototype"
+GetMember
+Push "setScrollContent"
+DefineFunction "", 1, "target"  {
+Push "this"
+GetVariable
+StoreRegister 1
+Pop
+Push "target"
+GetVariable
+StoreRegister 2
+Pop
+Push register1, "offset"
+GetMember
+Push "x", 0.0
+SetMember
+Push register1, "offset"
+GetMember
+Push "y", 0.0
+SetMember
+Push register1, "content_mc"
+GetMember
+Push undefined
+Equals2
+Not
+Not
+If loc0982
+Push register2, register1, "content_mc"
+GetMember
+Equals2
+Not
+Not
+If loc0982
+Push register1, "content_mc"
+GetMember
+Push "_visible", false
+SetMember
+Push 0.0, register1, "content_mc"
+GetMember
+Push "removeMovieClip"
+CallMethod
+Pop
+Push 0.0, register1, "content_mc"
+GetMember
+Push "unloadMovie"
+CallMethod
+Pop
+loc0982:Push register2
+TypeOf
+Push "string"
+Equals2
+Not
+If loc09bd
+Push 3, "tmp_mc", register2, 3, register1, "attachMovie"
+CallMethod
+Pop
+Push register1, "content_mc", register1, "tmp_mc"
+GetMember
+SetMember
+Jump loc09f1
+loc09bd:Push register2, undefined
+Equals2
+Not
+If loc09e7
+Push 0.0, register1, "content_mc"
+GetMember
+Push "unloadMovie"
+CallMethod
+Pop
+Jump loc09f1
+loc09e7:Push register1, "content_mc", register2
+SetMember
+loc09f1:Push register1, "offset"
+GetMember
+Push 1, register1, "localToGlobal"
+CallMethod
+Pop
+Push register1, "offset"
+GetMember
+Push 1, register1, "content_mc"
+GetMember
+Push "_parent"
+GetMember
+Push "globalToLocal"
+CallMethod
+Pop
+Push register1, "content_mc"
+GetMember
+Push "_x", register1, "offset"
+GetMember
+Push "x"
+GetMember
+SetMember
+Push register1, "content_mc"
+GetMember
+Push "_y", register1, "offset"
+GetMember
+Push "y"
+GetMember
+SetMember
+Push register1, 1, register1, "content_mc"
+GetMember
+Push "getBounds"
+CallMethod
+StoreRegister 3
+Pop
+Push register1, "offset"
+GetMember
+Push "x", 0.0, register3, "xMin"
+GetMember
+Subtract
+SetMember
+Push register1, "offset"
+GetMember
+Push "y", 0.0, register3, "yMin"
+GetMember
+Subtract
+SetMember
+Push register1, "offset"
+GetMember
+Push 1, register1, "localToGlobal"
+CallMethod
+Pop
+Push register1, "offset"
+GetMember
+Push 1, register1, "content_mc"
+GetMember
+Push "_parent"
+GetMember
+Push "globalToLocal"
+CallMethod
+Pop
+Push register1, "content_mc"
+GetMember
+Push "_x", register1, "offset"
+GetMember
+Push "x"
+GetMember
+SetMember
+Push register1, "content_mc"
+GetMember
+Push "_y", register1, "offset"
+GetMember
+Push "y"
+GetMember
+SetMember
+Push register1, "contentWidth", register1, "content_mc"
+GetMember
+Push "_width"
+GetMember
+SetMember
+Push register1, "contentHeight", register1, "content_mc"
+GetMember
+Push "_height"
+GetMember
+SetMember
+Push register1, "mask_mc"
+GetMember
+Push 1, register1, "content_mc"
+GetMember
+Push "setMask"
+CallMethod
+Pop
+Push register1, "height"
+GetMember
+Push register1, "width"
+GetMember
+Push 2, register1, "setSize"
+CallMethod
+Pop
+}
+SetMember
+Push "FScrollPaneClass"
+GetVariable
+Push "prototype"
+GetMember
+Push "setSize"
+DefineFunction "", 2, "w" , "h"  {
+Push "this"
+GetVariable
+StoreRegister 1
+Pop
+Push "h"
+GetVariable
+StoreRegister 2
+Pop
+Push "w"
+GetVariable
+StoreRegister 3
+Pop
+Push "arguments"
+GetVariable
+Push "length"
+GetMember
+Push 2
+Less2
+PushDuplicate
+If loc0be1
+Pop
+Push register3, 1, "isNaN"
+CallFunction
+loc0be1:PushDuplicate
+If loc0bf5
+Pop
+Push register2, 1, "isNaN"
+CallFunction
+loc0bf5:Not
+If loc0c00
+Jump loc0d4d
+loc0c00:Push register2, register3, 2, "super"
+GetVariable
+Push "setSize"
+CallMethod
+Pop
+Push register1, "width", 60, register3, 2, "Math"
+GetVariable
+Push "max"
+CallMethod
+SetMember
+Push register1, "height", 60, register2, 2, "Math"
+GetVariable
+Push "max"
+CallMethod
+SetMember
+Push register1, "boundingBox_mc"
+GetMember
+Push "_xscale", 100
+SetMember
+Push register1, "boundingBox_mc"
+GetMember
+Push "_yscale", 100
+SetMember
+Push register1, "boundingBox_mc"
+GetMember
+Push "_width", register1, "width"
+GetMember
+SetMember
+Push register1, "boundingBox_mc"
+GetMember
+Push "_height", register1, "height"
+GetMember
+SetMember
+Push 0.0, register1, "setHandV"
+CallMethod
+Pop
+Push 0.0, register1, "initScrollBars"
+CallMethod
+Pop
+Push register1, "mask_mc"
+GetMember
+Push undefined
+Equals2
+Not
+If loc0cea
+Push 3000, "mask_mc", "FBoundingBoxSymbol", 3, register1, "attachMovie"
+CallMethod
+Pop
+loc0cea:Push register1, "mask_mc"
+GetMember
+Push "_xscale", 100
+SetMember
+Push register1, "mask_mc"
+GetMember
+Push "_yscale", 100
+SetMember
+Push register1, "mask_mc"
+GetMember
+Push "_width", register1, "hWidth"
+GetMember
+SetMember
+Push register1, "mask_mc"
+GetMember
+Push "_height", register1, "vHeight"
+GetMember
+SetMember
+Push register1, "mask_mc"
+GetMember
+Push "_alpha", 0.0
+SetMember
+}
+loc0d4d:SetMember
+Push "FScrollPaneClass"
+GetVariable
+Push "prototype"
+GetMember
+Push "setScrollPosition"
+DefineFunction "", 2, "x" , "y"  {
+Push "this"
+GetVariable
+StoreRegister 1
+Pop
+Push "y"
+GetVariable
+StoreRegister 2
+Pop
+Push "x"
+GetVariable
+StoreRegister 3
+Pop
+Push register3, register1, "hScrollBar_mc"
+GetMember
+Push "minPos"
+GetMember
+Push 2, "Math"
+GetVariable
+Push "max"
+CallMethod
+StoreRegister 3
+Pop
+Push register3, register1, "hScrollBar_mc"
+GetMember
+Push "maxPos"
+GetMember
+Push 2, "Math"
+GetVariable
+Push "min"
+CallMethod
+StoreRegister 3
+Pop
+Push register2, register1, "vScrollBar_mc"
+GetMember
+Push "minPos"
+GetMember
+Push 2, "Math"
+GetVariable
+Push "max"
+CallMethod
+StoreRegister 2
+Pop
+Push register2, register1, "vScrollBar_mc"
+GetMember
+Push "maxPos"
+GetMember
+Push 2, "Math"
+GetVariable
+Push "min"
+CallMethod
+StoreRegister 2
+Pop
+Push register3, 1, register1, "hScrollBar_mc"
+GetMember
+Push "setScrollPosition"
+CallMethod
+Pop
+Push register2, 1, register1, "vScrollBar_mc"
+GetMember
+Push "setScrollPosition"
+CallMethod
+Pop
+}
+SetMember
+Push "FScrollPaneClass"
+GetVariable
+Push "prototype"
+GetMember
+Push "refreshPane"
+DefineFunction "", 0 {
+Push "this"
+GetVariable
+Push "content_mc"
+GetMember
+Push 1, "this"
+GetVariable
+Push "setScrollContent"
+CallMethod
+Pop
+}
+SetMember
+Push "FScrollPaneClass"
+GetVariable
+Push "prototype"
+GetMember
+Push "loadScrollContent"
+DefineFunction "", 3, "url" , "handler" , "location"  {
+Push "this"
+GetVariable
+StoreRegister 1
+Pop
+Push 0.0, register1, "content_mc"
+GetMember
+Push "removeMovieClip"
+CallMethod
+Pop
+Push 0.0, register1, "content_mc"
+GetMember
+Push "unloadMovie"
+CallMethod
+Pop
+Push register1, "content_mc"
+GetMember
+Push "_visible", 0.0
+SetMember
+Push 3, "loadTemp", 2, register1, "loadContent"
+GetMember
+Push "duplicateMovieClip"
+CallMethod
+Pop
+Push register1, "dupeFlag", true
+SetMember
+Push register1, "contentLoaded"
+DefineFunction "", 0 {
+Push "this"
+GetVariable
+StoreRegister 1
+Pop
+Push register1, "loadReady", false
+SetMember
+Push register1, "content_mc", register1, "loadTemp"
+GetMember
+SetMember
+Push 0.0, register1, "refreshPane"
+CallMethod
+Pop
+Push 0.0, register1, "executeCallBack"
+CallMethod
+Pop
+}
+SetMember
+Push "location"
+GetVariable
+Push "handler"
+GetVariable
+Push 2, register1, "setChangeHandler"
+CallMethod
+Pop
+Push "url"
+GetVariable
+Push 1, register1, "loadTemp"
+GetMember
+Push "loadMovie"
+CallMethod
+Pop
+}
+SetMember
+Push "FScrollPaneClass"
+GetVariable
+Push "prototype"
+GetMember
+Push "setHScroll"
+DefineFunction "", 1, "prop"  {
+Push "this"
+GetVariable
+StoreRegister 1
+Pop
+Push register1, "hScroll", "prop"
+GetVariable
+SetMember
+Push register1, "height"
+GetMember
+Push register1, "width"
+GetMember
+Push 2, register1, "setSize"
+CallMethod
+Pop
+}
+SetMember
+Push "FScrollPaneClass"
+GetVariable
+Push "prototype"
+GetMember
+Push "setVScroll"
+DefineFunction "", 1, "prop"  {
+Push "this"
+GetVariable
+StoreRegister 1
+Pop
+Push register1, "vScroll", "prop"
+GetVariable
+SetMember
+Push register1, "height"
+GetMember
+Push register1, "width"
+GetMember
+Push 2, register1, "setSize"
+CallMethod
+Pop
+}
+SetMember
+Push "FScrollPaneClass"
+GetVariable
+Push "prototype"
+GetMember
+Push "setDragContent"
+DefineFunction "", 1, "dragFlag"  {
+Push "this"
+GetVariable
+StoreRegister 1
+Pop
+Push "dragFlag"
+GetVariable
+Not
+If loc1148
+Push register1, "boundingBox_mc"
+GetMember
+Push "useHandCursor", true
+SetMember
+Push register1, "boundingBox_mc"
+GetMember
+Push "onPress"
+DefineFunction "", 0 {
+Push 0.0, "this"
+GetVariable
+Push "_parent"
+GetMember
+Push "startDragLoop"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "boundingBox_mc"
+GetMember
+Push "tabEnabled", false
+SetMember
+Push register1, "boundingBox_mc"
+GetMember
+Push "onRelease", register1, "boundingBox_mc"
+GetMember
+Push "onReleaseOutside"
+DefineFunction "", 0 {
+Push 0.0, "this"
+GetVariable
+Push "_parent"
+GetMember
+Push "pressFocus"
+CallMethod
+Pop
+Push "this"
+GetVariable
+Push "_parent"
+GetMember
+Push "onMouseMove", null
+SetMember
+}
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Jump loc1167
+loc1148:Push register1, "boundingBox_mc"
+GetMember
+Push "onPress"
+Delete
+Pop
+Push register1, "boundingBox_mc"
+GetMember
+Push "useHandCursor", false
+SetMember
+}
+loc1167:SetMember
+Push "FScrollPaneClass"
+GetVariable
+Push "prototype"
+GetMember
+Push "setSmallScroll"
+DefineFunction "", 2, "x" , "y"  {
+Push "x"
+GetVariable
+Push 1, "this"
+GetVariable
+Push "hScrollBar_mc"
+GetMember
+Push "setSmallScroll"
+CallMethod
+Pop
+Push "y"
+GetVariable
+Push 1, "this"
+GetVariable
+Push "vScrollBar_mc"
+GetMember
+Push "setSmallScroll"
+CallMethod
+Pop
+}
+SetMember
+Push "FScrollPaneClass"
+GetVariable
+Push "prototype"
+GetMember
+Push "setHandV"
+DefineFunction "", 0 {
+Push "this"
+GetVariable
+StoreRegister 1
+Pop
+Push register1, "contentHeight"
+GetMember
+Push register1, "height"
+GetMember
+Subtract
+Push 2
+Greater
+PushDuplicate
+Not
+If loc1217
+Pop
+Push register1, "vScroll"
+GetMember
+Push false
+Equals2
+Not
+loc1217:PushDuplicate
+If loc122c
+Pop
+Push register1, "vScroll"
+GetMember
+Push true
+Equals2
+loc122c:Not
+If loc1253
+Push register1, "hWidth", register1, "width"
+GetMember
+Push register1, "vScrollBar_mc"
+GetMember
+Push "_width"
+GetMember
+Subtract
+SetMember
+Jump loc1260
+loc1253:Push register1, "hWidth", register1, "width"
+GetMember
+SetMember
+loc1260:Push register1, "contentWidth"
+GetMember
+Push register1, "width"
+GetMember
+Subtract
+Push 2
+Greater
+PushDuplicate
+Not
+If loc1291
+Pop
+Push register1, "hScroll"
+GetMember
+Push false
+Equals2
+Not
+loc1291:PushDuplicate
+If loc12a6
+Pop
+Push register1, "hScroll"
+GetMember
+Push true
+Equals2
+loc12a6:Not
+If loc12cd
+Push register1, "vHeight", register1, "height"
+GetMember
+Push register1, "hScrollBar_mc"
+GetMember
+Push "_height"
+GetMember
+Subtract
+SetMember
+Jump loc12da
+loc12cd:Push register1, "vHeight", register1, "height"
+GetMember
+SetMember
+}
+loc12da:SetMember
+Push "FScrollPaneClass"
+GetVariable
+Push "prototype"
+GetMember
+Push "startDragLoop"
+DefineFunction "", 0 {
+Push "this"
+GetVariable
+StoreRegister 1
+Pop
+Push register1, "tabFocused", false
+SetMember
+Push 0.0, register1, "myOnSetFocus"
+CallMethod
+Pop
+Push register1, "lastX", register1, "_xmouse"
+GetMember
+SetMember
+Push register1, "lastY", register1, "_ymouse"
+GetMember
+SetMember
+Push register1, "onMouseMove"
+DefineFunction "", 0 {
+Push "this"
+GetVariable
+StoreRegister 1
+Pop
+Push register1, "scrollXMove", register1, "lastX"
+GetMember
+Push register1, "_xmouse"
+GetMember
+Subtract
+SetMember
+Push register1, "scrollYMove", register1, "lastY"
+GetMember
+Push register1, "_ymouse"
+GetMember
+Subtract
+SetMember
+Push register1, "scrollXMove", register1, "scrollXMove"
+GetMember
+Push 0.0, register1, "hScrollBar_mc"
+GetMember
+Push "getScrollPosition"
+CallMethod
+Add2
+SetMember
+Push register1, "scrollYMove", register1, "scrollYMove"
+GetMember
+Push 0.0, register1, "vScrollBar_mc"
+GetMember
+Push "getScrollPosition"
+CallMethod
+Add2
+SetMember
+Push register1, "scrollYMove"
+GetMember
+Push register1, "scrollXMove"
+GetMember
+Push 2, register1, "setScrollPosition"
+CallMethod
+Pop
+Push register1, "scrollXMove"
+GetMember
+Push register1, "hScrollBar_mc"
+GetMember
+Push "maxPos"
+GetMember
+Less2
+PushDuplicate
+Not
+If loc1419
+Pop
+Push register1, "scrollXMove"
+GetMember
+Push register1, "hScrollBar_mc"
+GetMember
+Push "minPos"
+GetMember
+Greater
+loc1419:Not
+If loc142c
+Push register1, "lastX", register1, "_xmouse"
+GetMember
+SetMember
+loc142c:Push register1, "scrollYMove"
+GetMember
+Push register1, "vScrollBar_mc"
+GetMember
+Push "maxPos"
+GetMember
+Less2
+PushDuplicate
+Not
+If loc1462
+Pop
+Push register1, "scrollYMove"
+GetMember
+Push register1, "vScrollBar_mc"
+GetMember
+Push "minPos"
+GetMember
+Greater
+loc1462:Not
+If loc1475
+Push register1, "lastY", register1, "_ymouse"
+GetMember
+SetMember
+loc1475:Push 0.0, register1, "updateAfterEvent"
+CallMethod
+Pop
+}
+SetMember
+}
+SetMember
+Push "FScrollPaneClass"
+GetVariable
+Push "prototype"
+GetMember
+Push "initScrollBars"
+DefineFunction "", 0 {
+Push "this"
+GetVariable
+StoreRegister 1
+Pop
+Push register1, "hScrollBar_mc"
+GetMember
+Push "_y", register1, "height"
+GetMember
+Push register1, "hScrollBar_mc"
+GetMember
+Push "_height"
+GetMember
+Subtract
+SetMember
+Push register1, "hWidth"
+GetMember
+Push 1, register1, "hScrollBar_mc"
+GetMember
+Push "setSize"
+CallMethod
+Pop
+Push register1, "contentWidth"
+GetMember
+Push register1, "hWidth"
+GetMember
+Subtract
+Push 0.0, register1, "hWidth"
+GetMember
+Push 3, register1, "hScrollBar_mc"
+GetMember
+Push "setScrollProperties"
+CallMethod
+Pop
+Push register1, "vScrollBar_mc"
+GetMember
+Push "_visible", register1, "hWidth"
+GetMember
+Push register1, "width"
+GetMember
+Equals2
+If loc154b
+Push true
+Jump loc1550
+loc154b:Push false
+loc1550:SetMember
+Push register1, "vScrollBar_mc"
+GetMember
+Push "_x", register1, "width"
+GetMember
+Push register1, "vScrollBar_mc"
+GetMember
+Push "_width"
+GetMember
+Subtract
+SetMember
+Push register1, "vHeight"
+GetMember
+Push 1, register1, "vScrollBar_mc"
+GetMember
+Push "setSize"
+CallMethod
+Pop
+Push register1, "contentHeight"
+GetMember
+Push register1, "vHeight"
+GetMember
+Subtract
+Push 0.0, register1, "vHeight"
+GetMember
+Push 3, register1, "vScrollBar_mc"
+GetMember
+Push "setScrollProperties"
+CallMethod
+Pop
+Push register1, "hScrollBar_mc"
+GetMember
+Push "_visible", register1, "vHeight"
+GetMember
+Push register1, "height"
+GetMember
+Equals2
+If loc15ef
+Push true
+Jump loc15f4
+loc15ef:Push false
+loc15f4:SetMember
+}
+SetMember
+Push "FScrollPaneClass"
+GetVariable
+Push "prototype"
+GetMember
+Push "onScroll"
+DefineFunction "", 1, "component"  {
+Push "this"
+GetVariable
+StoreRegister 2
+Pop
+Push "component"
+GetVariable
+StoreRegister 3
+Pop
+Push 0.0, register3, "getScrollPosition"
+CallMethod
+StoreRegister 1
+Pop
+Push "XorY", register3, "_name"
+GetMember
+Push "hScrollBar_mc"
+Equals2
+If loc1664
+Push "y"
+Jump loc1669
+loc1664:Push "x"
+loc1669:DefineLocal
+Push register3, "_name"
+GetMember
+Push "hScrollBar_mc"
+Equals2
+Not
+If loc16ac
+Push register2, "content_mc"
+GetMember
+Push "_x", 0.0, register1
+Subtract
+Push register2, "offset"
+GetMember
+Push "x"
+GetMember
+Add2
+SetMember
+Jump loc16d5
+loc16ac:Push register2, "content_mc"
+GetMember
+Push "_y", 0.0, register1
+Subtract
+Push register2, "offset"
+GetMember
+Push "y"
+GetMember
+Add2
+SetMember
+}
+loc16d5:SetMember
+Push "FScrollPaneClass"
+GetVariable
+Push "prototype"
+GetMember
+Push "myOnKeyDown"
+DefineFunction "", 0 {
+Push "this"
+GetVariable
+StoreRegister 1
+Pop
+Push 0.0, register1, "hScrollBar_mc"
+GetMember
+Push "getScrollPosition"
+CallMethod
+StoreRegister 3
+Pop
+Push 0.0, register1, "vScrollBar_mc"
+GetMember
+Push "getScrollPosition"
+CallMethod
+StoreRegister 2
+Pop
+Push register1, "hScrollBar_mc"
+GetMember
+Push "maxPos"
+GetMember
+Push register1, "hScrollBar_mc"
+GetMember
+Push "minPos"
+GetMember
+Greater
+Not
+If loc17c8
+Push 37, 1, "Key"
+GetVariable
+Push "isDown"
+CallMethod
+Not
+If loc1791
+Push register2, register3, 3
+Subtract
+Push 2, register1, "setScrollPosition"
+CallMethod
+Pop
+Jump loc17c8
+loc1791:Push 39, 1, "Key"
+GetVariable
+Push "isDown"
+CallMethod
+Not
+If loc17c8
+Push register2, register3, 3
+Add2
+Push 2, register1, "setScrollPosition"
+CallMethod
+Pop
+loc17c8:Push register1, "vScrollBar_mc"
+GetMember
+Push "maxPos"
+GetMember
+Push register1, "vScrollBar_mc"
+GetMember
+Push "minPos"
+GetMember
+Greater
+Not
+If loc18e2
+Push 38, 1, "Key"
+GetVariable
+Push "isDown"
+CallMethod
+Not
+If loc1827
+Push register2, 3
+Subtract
+Push register3, 2, register1, "setScrollPosition"
+CallMethod
+Pop
+Jump loc18e2
+loc1827:Push 40, 1, "Key"
+GetVariable
+Push "isDown"
+CallMethod
+Not
+If loc1863
+Push register2, 3
+Add2
+Push register3, 2, register1, "setScrollPosition"
+CallMethod
+Pop
+Jump loc18e2
+loc1863:Push 34, 1, "Key"
+GetVariable
+Push "isDown"
+CallMethod
+Not
+If loc18a5
+Push register2, register1, "vScrollBar_mc"
+GetMember
+Push "pageSize"
+GetMember
+Add2
+Push register3, 2, register1, "setScrollPosition"
+CallMethod
+Pop
+Jump loc18e2
+loc18a5:Push 33, 1, "Key"
+GetVariable
+Push "isDown"
+CallMethod
+Not
+If loc18e2
+Push register2, register1, "vScrollBar_mc"
+GetMember
+Push "pageSize"
+GetMember
+Subtract
+Push register3, 2, register1, "setScrollPosition"
+CallMethod
+Pop
+}
+loc18e2:SetMember

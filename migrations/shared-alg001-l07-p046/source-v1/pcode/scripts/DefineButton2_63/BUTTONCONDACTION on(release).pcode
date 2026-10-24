@@ -1,0 +1,240 @@
+ConstantPool "_global", "Y", "", "C", "Mc_Popup3", "txtFeed", "text", "Please click the y-intercept and click the second point then click the Draw Line button.", "_visible", "Wrong_Btn", "enabled", "DL_Btn", "NMHBtn", "disableMC", "GLine_Mc", "createEmptyMovieClip", "tempAns", "PT_2,PT_3,PT_4,PT_5", "PT_1", "indexOf", "PT_5", "PT_3", "_y", "_x", "moveTo", "lineStyle", "lineTo", "hideMovieClip", "_root", "ShowRightFeed", "quizTryCount", "WrongFeed", "Click the y-intercept (0, 2) and then use the slope 1/3 to count up 1 unit and right 3 units to click the second point. Try again.", "Click the y-intercept (0, 2) and then use the slope 1/3 to count up 1 unit and right 3 units to click the second point.", "ShowWrongFeed"
+Push "_global"
+GetVariable
+Push "Y"
+GetMember
+Push ""
+Equals2
+PushDuplicate
+If loc0291
+Pop
+Push "_global"
+GetVariable
+Push "C"
+GetMember
+Push ""
+Equals2
+loc0291:Not
+If loc02f8
+Push "Mc_Popup3"
+GetVariable
+Push "txtFeed"
+GetMember
+Push "text", "Please click the y-intercept and click the second point then click the Draw Line button."
+SetMember
+Push "Mc_Popup3"
+GetVariable
+Push "_visible", true
+SetMember
+Push "Wrong_Btn"
+GetVariable
+Push "enabled", false
+SetMember
+Push "DL_Btn"
+GetVariable
+Push "enabled", false
+SetMember
+Push "NMHBtn"
+GetVariable
+Push "enabled", false
+SetMember
+Push 0.0, "disableMC"
+CallFunction
+Pop
+Jump loc059c
+loc02f8:Push 1001, "GLine_Mc", 2, "createEmptyMovieClip"
+CallFunction
+Pop
+Push "tempAns", "PT_2,PT_3,PT_4,PT_5"
+SetVariable
+Push "_global"
+GetVariable
+Push "Y"
+GetMember
+Push "PT_1"
+Equals2
+PushDuplicate
+Not
+If loc0354
+Pop
+Push "_global"
+GetVariable
+Push "C"
+GetMember
+Push 1, "tempAns"
+GetVariable
+Push "indexOf"
+CallMethod
+Push -1
+Equals2
+Not
+loc0354:Trace
+Push "_global"
+GetVariable
+Push "Y"
+GetMember
+Push "PT_1"
+Equals2
+PushDuplicate
+Not
+If loc0396
+Pop
+Push "_global"
+GetVariable
+Push "C"
+GetMember
+Push 1, "tempAns"
+GetVariable
+Push "indexOf"
+CallMethod
+Push -1
+Equals2
+Not
+loc0396:Not
+If loc03b8
+Push "_global"
+GetVariable
+Push "C", "PT_5"
+SetMember
+Push "_global"
+GetVariable
+Push "Y", "PT_3"
+SetMember
+loc03b8:Push "_global"
+GetVariable
+Push "C"
+GetMember
+GetVariable
+Push "_y"
+GetMember
+Push "_global"
+GetVariable
+Push "C"
+GetMember
+GetVariable
+Push "_x"
+GetMember
+Push 2, "GLine_Mc"
+GetVariable
+Push "moveTo"
+CallMethod
+Pop
+Push 100, 255, 3, 3, "GLine_Mc"
+GetVariable
+Push "lineStyle"
+CallMethod
+Pop
+Push "_global"
+GetVariable
+Push "Y"
+GetMember
+GetVariable
+Push "_y"
+GetMember
+Push "_global"
+GetVariable
+Push "Y"
+GetMember
+GetVariable
+Push "_x"
+GetMember
+Push 2, "GLine_Mc"
+GetVariable
+Push "lineTo"
+CallMethod
+Pop
+Push "_global"
+GetVariable
+Push "Y"
+GetMember
+Push 1, "tempAns"
+GetVariable
+Push "indexOf"
+CallMethod
+Push -1
+Equals2
+Not
+PushDuplicate
+Not
+If loc049f
+Pop
+Push "_global"
+GetVariable
+Push "C"
+GetMember
+Push 1, "tempAns"
+GetVariable
+Push "indexOf"
+CallMethod
+Push -1
+Equals2
+Not
+loc049f:Not
+If loc04de
+Push 0.0, "hideMovieClip"
+CallFunction
+Pop
+Push "GLine_Mc"
+GetVariable
+Push "_visible", true
+SetMember
+Push 0.0, "_root"
+GetVariable
+Push "ShowRightFeed"
+CallMethod
+Pop
+Jump loc059c
+loc04de:Push "_global"
+GetVariable
+Push "quizTryCount", "_global"
+GetVariable
+Push "quizTryCount"
+GetMember
+Increment
+SetMember
+Push "_global"
+GetVariable
+Push "Y", ""
+SetMember
+Push "_global"
+GetVariable
+Push "C", ""
+SetMember
+Push "_global"
+GetVariable
+Push "quizTryCount"
+GetMember
+Push 1
+Equals2
+Not
+If loc053e
+Push "_global"
+GetVariable
+Push "WrongFeed", "Click the y-intercept (0, 2) and then use the slope 1/3 to count up 1 unit and right 3 units to click the second point. Try again."
+SetMember
+Jump loc054c
+loc053e:Push "_global"
+GetVariable
+Push "WrongFeed", "Click the y-intercept (0, 2) and then use the slope 1/3 to count up 1 unit and right 3 units to click the second point."
+SetMember
+loc054c:Push 0.0, "_root"
+GetVariable
+Push "ShowWrongFeed"
+CallMethod
+Pop
+Push "Wrong_Btn"
+GetVariable
+Push "enabled", false
+SetMember
+Push "DL_Btn"
+GetVariable
+Push "enabled", false
+SetMember
+Push "NMHBtn"
+GetVariable
+Push "enabled", false
+SetMember
+Push 0.0, "disableMC"
+CallFunction
+Pop
+loc059c:

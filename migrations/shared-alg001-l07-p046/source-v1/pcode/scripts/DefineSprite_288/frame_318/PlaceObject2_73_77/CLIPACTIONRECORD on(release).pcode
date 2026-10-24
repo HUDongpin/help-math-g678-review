@@ -1,0 +1,76 @@
+ConstantPool "_global", "Y", "", "C", "_parent", "Mc_Popup3", "txtFeed", "text", "You have choosen two points. Please click on Draw Line Button", "_visible", "Wrong_Btn", "enabled", "DL_Btn", "NMHBtn", "disableMC", "this", "_name", "gotoAndStop"
+Push "_global"
+GetVariable
+Push "Y"
+GetMember
+Push ""
+Equals2
+Not
+PushDuplicate
+Not
+If loc00e7
+Pop
+Push "_global"
+GetVariable
+Push "C"
+GetMember
+Push ""
+Equals2
+Not
+loc00e7:Not
+If loc0172
+Push "_parent"
+GetVariable
+Push "Mc_Popup3"
+GetMember
+Push "txtFeed"
+GetMember
+Push "text", "You have choosen two points. Please click on Draw Line Button"
+SetMember
+Push "_parent"
+GetVariable
+Push "Mc_Popup3"
+GetMember
+Push "_visible", true
+SetMember
+Push "_parent"
+GetVariable
+Push "Wrong_Btn"
+GetMember
+Push "enabled", false
+SetMember
+Push "_parent"
+GetVariable
+Push "DL_Btn"
+GetMember
+Push "enabled", false
+SetMember
+Push "_parent"
+GetVariable
+Push "NMHBtn"
+GetMember
+Push "enabled", false
+SetMember
+Push 0.0, "_parent"
+GetVariable
+Push "disableMC"
+CallMethod
+Pop
+Jump loc01ac
+loc0172:Push "_global"
+GetVariable
+Push "Y", "this"
+GetVariable
+Push "_name"
+GetMember
+SetMember
+Push "this"
+GetVariable
+Push "enabled", false
+SetMember
+Push 2, 1, "this"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+loc01ac:

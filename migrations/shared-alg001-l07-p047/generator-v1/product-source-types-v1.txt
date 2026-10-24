@@ -1,0 +1,21 @@
+// Generated from audited source data; edit generator inputs, never this output.
+import type {FixedExitNativeSourceV2,FixedExitNativeVisualV2,FixedExitCurrencyAnswerV2} from './source-fixed-exit-help-native-v2';
+import type {FixedExitLetterV1,FixedExitGraphV1,FixedExitVectorPathV1} from './source-fixed-exit-help-native-v1';
+export type P047SourceTerm='Axis'|'Calculate'|'Coordinate'|'Function'|'Graph'|'Horizontal'|'Length'|'Line'|'Linear function'|'Point'|'Rate'|'Right triangle'|'Slope'|'Triangle'|'Vertical';
+export type P047Letter=FixedExitLetterV1;
+export interface P047Visual extends FixedExitNativeVisualV2<P047SourceTerm> {
+ readonly bMove:number;readonly graphAlpha:number;
+ readonly graphOverlays:readonly {readonly sourceShapeId:number;readonly depth:number;readonly matrix:readonly number[];readonly alpha:number;readonly clips:readonly (readonly number[])[]}[];
+ readonly coordinate:readonly {readonly characterId:number;readonly depth:number;readonly text:string;readonly alpha:number;readonly x:number;readonly y:number}[];
+ readonly changeTexts:readonly {readonly characterId:number;readonly text:string;readonly alpha:number}[];
+ readonly formula:readonly {readonly characterId:number;readonly depth:number;readonly alpha:number;readonly matrix:readonly number[]}[];
+ readonly fractionBars:readonly {readonly characterId:number;readonly depth:number;readonly matrix:readonly number[];readonly alpha:number;readonly ratio:number}[];
+}
+export type P047Model=Omit<FixedExitNativeSourceV2<P047SourceTerm,333|415,447,P047Visual>,'answers'> & {
+ readonly answers:readonly FixedExitCurrencyAnswerV2[];
+ readonly graphs:readonly FixedExitGraphV1[];
+ readonly graphOverlaySources:readonly {readonly sourceShapeId:number;readonly paths:readonly FixedExitVectorPathV1[]}[];
+ readonly formulaTexts:readonly {readonly characterId:number;readonly sourceTextId:string;readonly text:string}[];
+ readonly fractionBarSources:readonly {readonly characterId:number;readonly paths:readonly FixedExitVectorPathV1[]}[];
+ readonly morphBarSource:{readonly characterId:number;readonly path:string;readonly startLength:number;readonly endLength:number;readonly sourceRatioDenominator:number};
+};

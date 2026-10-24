@@ -1,0 +1,188 @@
+ConstantPool "_global", "i", "mcCount", "tempMcName", "Mc_", "enabled", "PT_1", "PT_2", "PT_3", "PT_4", "PT_5", "Mc_Popup", "_visible", "Mc_Popup1", "Mc_Popup2", "Mc_Popup3", "Mc_txt1", "quizSection", "quizDragCount", "quizTryCount", "Firstpoint", "Secpoint", "WFeed", "Y", "", "C", "GLine_Mc"
+DefineFunction "rmMovieClip", 0 {
+Push "_global"
+GetVariable
+StoreRegister 1
+Pop
+Push "i", 101
+SetVariable
+loc00f7:Push "i"
+GetVariable
+Push register1, "mcCount"
+GetMember
+Greater
+Not
+Not
+If loc012f
+Push "tempMcName", "Mc_", "i"
+GetVariable
+Add2
+SetVariable
+Push "tempMcName"
+GetVariable
+RemoveSprite
+Push "i", "i"
+GetVariable
+Increment
+SetVariable
+Jump loc00f7
+}
+loc012f:DefineFunction "hideMovieClip", 0 {
+}
+DefineFunction "disableMC", 0 {
+Push "i", 101
+SetVariable
+loc0160:Push "i"
+GetVariable
+Push "_global"
+GetVariable
+Push "mcCount"
+GetMember
+Greater
+Not
+Not
+If loc01a4
+Push "tempMcName", "Mc_", "i"
+GetVariable
+Add2
+SetVariable
+Push "tempMcName"
+GetVariable
+GetVariable
+Push "enabled", false
+SetMember
+Push "i", "i"
+GetVariable
+Increment
+SetVariable
+Jump loc0160
+loc01a4:Push "PT_1"
+GetVariable
+Push "enabled", false
+SetMember
+Push "PT_2"
+GetVariable
+Push "enabled", false
+SetMember
+Push "PT_3"
+GetVariable
+Push "enabled", false
+SetMember
+Push "PT_4"
+GetVariable
+Push "enabled", false
+SetMember
+Push "PT_5"
+GetVariable
+Push "enabled", false
+SetMember
+}
+DefineFunction "enableMC", 0 {
+Push "i", 101
+SetVariable
+loc0205:Push "i"
+GetVariable
+Push "_global"
+GetVariable
+Push "mcCount"
+GetMember
+Greater
+Not
+Not
+If loc0249
+Push "tempMcName", "Mc_", "i"
+GetVariable
+Add2
+SetVariable
+Push "tempMcName"
+GetVariable
+GetVariable
+Push "enabled", true
+SetMember
+Push "i", "i"
+GetVariable
+Increment
+SetVariable
+Jump loc0205
+loc0249:Push "PT_1"
+GetVariable
+Push "enabled", true
+SetMember
+Push "PT_2"
+GetVariable
+Push "enabled", true
+SetMember
+Push "PT_3"
+GetVariable
+Push "enabled", true
+SetMember
+Push "PT_4"
+GetVariable
+Push "enabled", true
+SetMember
+Push "PT_5"
+GetVariable
+Push "enabled", true
+SetMember
+}
+Stop
+Push "Mc_Popup"
+GetVariable
+Push "_visible", false
+SetMember
+Push "Mc_Popup1"
+GetVariable
+Push "_visible", false
+SetMember
+Push "Mc_Popup2"
+GetVariable
+Push "_visible", false
+SetMember
+Push "Mc_Popup3"
+GetVariable
+Push "_visible", false
+SetMember
+Push "Mc_txt1"
+GetVariable
+Push "_visible", false
+SetMember
+Push "_global"
+GetVariable
+Push "quizSection", true
+SetMember
+Push "_global"
+GetVariable
+Push "quizDragCount", 0.0
+SetMember
+Push "_global"
+GetVariable
+Push "quizTryCount", 0.0
+SetMember
+Push "_global"
+GetVariable
+Push "Firstpoint", false
+SetMember
+Push "_global"
+GetVariable
+Push "Secpoint", 0.0
+SetMember
+Push "_global"
+GetVariable
+Push "WFeed", false
+SetMember
+Push "_global"
+GetVariable
+Push "mcCount", 100
+SetMember
+Push "_global"
+GetVariable
+Push "Y", ""
+SetMember
+Push "_global"
+GetVariable
+Push "C", ""
+SetMember
+Push "GLine_Mc"
+GetVariable
+Push "_visible", false
+SetMember

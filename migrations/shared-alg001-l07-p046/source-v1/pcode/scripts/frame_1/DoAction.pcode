@@ -1,0 +1,8 @@
+Push "jump_check", 1, "_level0"
+GetVariable
+Push "InternalPreloader"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Stop

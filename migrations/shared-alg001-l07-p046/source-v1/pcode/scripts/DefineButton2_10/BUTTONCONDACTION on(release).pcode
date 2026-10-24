@@ -1,0 +1,38 @@
+ConstantPool "Mc_Popup1", "_visible", "Mc_Ani", "Mc_Ani1", "gotoAndPlay", "Mc_Ani2", "Wrong_Btn", "enabled", "DL_Btn", "NMHBtn", "disableMC"
+Push "Mc_Popup1"
+GetVariable
+Push "_visible", true
+SetMember
+Push 2, 1, "Mc_Popup1"
+GetVariable
+Push "Mc_Ani"
+GetMember
+Push "Mc_Ani1"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push 2, 1, "Mc_Popup1"
+GetVariable
+Push "Mc_Ani"
+GetMember
+Push "Mc_Ani2"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "Wrong_Btn"
+GetVariable
+Push "enabled", false
+SetMember
+Push "DL_Btn"
+GetVariable
+Push "enabled", false
+SetMember
+Push "NMHBtn"
+GetVariable
+Push "enabled", false
+SetMember
+Push 0.0, "disableMC"
+CallFunction
+Pop

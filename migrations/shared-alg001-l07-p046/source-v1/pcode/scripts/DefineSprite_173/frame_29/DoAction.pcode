@@ -1,0 +1,74 @@
+ConstantPool "_root", "enableQuizButton", "this", "gotoAndStop", "_parent", "Wrong_Btn", "enabled", "DL_Btn", "NMHBtn", "enableMC", "GLine_Mc", "_visible", "hideMovieClip", "rmMovieClip", "_global", "quizTryCount", "quizSection", "play"
+Stop
+Push 0.0, "_root"
+GetVariable
+Push "enableQuizButton"
+CallMethod
+Pop
+Push 1, 1, "this"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "_parent"
+GetVariable
+Push "Wrong_Btn"
+GetMember
+Push "enabled", true
+SetMember
+Push "_parent"
+GetVariable
+Push "DL_Btn"
+GetMember
+Push "enabled", true
+SetMember
+Push "_parent"
+GetVariable
+Push "NMHBtn"
+GetMember
+Push "enabled", true
+SetMember
+Push 0.0, "_parent"
+GetVariable
+Push "enableMC"
+CallMethod
+Pop
+Push "_parent"
+GetVariable
+Push "GLine_Mc"
+GetMember
+Push "_visible", false
+SetMember
+Push 0.0, "_parent"
+GetVariable
+Push "hideMovieClip"
+CallMethod
+Pop
+Push 0.0, "_parent"
+GetVariable
+Push "rmMovieClip"
+CallMethod
+Pop
+Push "_global"
+GetVariable
+Push "quizTryCount"
+GetMember
+Push 2
+Less2
+Not
+Not
+If loc01c5
+Push "_global"
+GetVariable
+Push "quizTryCount", 0.0
+SetMember
+Push "_global"
+GetVariable
+Push "quizSection", false
+SetMember
+Push 0.0, "_parent"
+GetVariable
+Push "play"
+CallMethod
+Pop
+loc01c5:
