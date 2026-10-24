@@ -1,0 +1,12 @@
+McRT_Img1._visible = false;
+McRT_Img2._visible = false;
+McAT_Img1._visible = false;
+McAT_Img2._visible = false;
+McST_Img1._visible = false;
+McST_Img2._visible = false;
+McIRT_Img1._visible = false;
+McIRT_Img2._visible = false;
+McIT_Img1._visible = false;
+McIT_Img2._visible = false;
+McET_Img1._visible = false;
+McET_Img2._visible = false;

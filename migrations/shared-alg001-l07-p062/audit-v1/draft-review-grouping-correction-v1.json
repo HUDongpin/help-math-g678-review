@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-06T00:37:32.410265+00:00",
+  "kind": "draft-review-graph-grouping-correction",
+  "drafts": [
+    "native-v1/questions-v1.json",
+    "native-v1/questions-v2.json"
+  ],
+  "affected": "review.options for questions 4 through 7",
+  "cause": "Shapes 702, 703 and 706 span several graph regions. Whole-shape bbox grouping cannot split their geometry correctly.",
+  "activeQuestionProductAffected": false,
+  "disposition": "Keep immutable drafts. Do not consume review.options. Generate whole source scenes for dormant review frame inspection.",
+  "claim": "No in-page review entry exists; full original runtime and review acceptance remain open."
+}

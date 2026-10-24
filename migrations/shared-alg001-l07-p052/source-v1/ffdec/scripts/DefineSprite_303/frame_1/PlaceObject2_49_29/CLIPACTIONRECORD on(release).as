@@ -1,0 +1,11 @@
+on(release){
+   this.gotoAndStop(3);
+   if(_global.gameLevel1)
+   {
+      _parent.gotoAndStop("Level1");
+   }
+   if(_global.gameLevel2)
+   {
+      _parent.gotoAndStop("Level2");
+   }
+}

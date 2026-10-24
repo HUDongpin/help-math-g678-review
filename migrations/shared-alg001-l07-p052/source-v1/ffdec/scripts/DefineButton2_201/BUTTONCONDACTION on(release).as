@@ -1,0 +1,10 @@
+on(release){
+   if(_global.gameLevel1)
+   {
+      gotoAndStop("Level1");
+   }
+   if(_global.gameLevel2)
+   {
+      gotoAndStop("Level2");
+   }
+}

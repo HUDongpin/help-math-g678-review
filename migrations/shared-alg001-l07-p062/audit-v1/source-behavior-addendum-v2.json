@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-06T00:21:51.699665+00:00",
+  "sourceScript": {
+    "path": "/Volumes/American Dream/.g6p62a1/ffdec/scripts/DefineButton2_11/BUTTONCONDACTION on(release).as",
+    "bytes": 826,
+    "sha256": "e247ae39aabc621f0ae1f861ff9bf20dc89d16b6b0ef8e1ccd8d5d16c346aaef"
+  },
+  "finishContinue": "Button11 calls bookmark/close when Report_URL absent, otherwise remote legacy Report_URL. It does not enter Review.",
+  "review": "No in-page caller of gotoAndPlay/Stop(Review) found. Preserve review data/state for audit; do not add an ordinary Review button.",
+  "missingResult": "Mc_Result has zero placements across all247 extracted timelines. Source score/grade writes target a missing instance; no result overlay is implemented on that basis.",
+  "audio": "212 controls/cues are reachable: question EN/ES for all30 and option EN/ES for19 nongraph-choice questions.88 option cues are source-only; damagedENQ27D is among them.",
+  "audioAcrossAnswers": "Source doGetRandomQuiz and120 release scripts do not stop the global audio. Preserve a playing/pending cue over a next question until it completes, a new audio action replaces it, Replay or exit.",
+  "timer": "Wall-clock hundredths continues independently of audio Pause; original dtfTIMETAKEN placement is outside800x600stage, so keep timing in session/report state, not a new visible timer.",
+  "replay": "Reset arrays/score/timer while continuing the seeded engineering random sequence. No Flash PRNG identity claimed.",
+  "decode": {
+    "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-alg001-l07-p062/native-v1/decode-native-v2.json",
+    "bytes": 189158,
+    "sha256": "a5662f5a41ae2121e64598cee060353bea4d446b73304b0f9d254462d4b6431b"
+  },
+  "independentGatesOpen": true,
+  "registered": false
+}

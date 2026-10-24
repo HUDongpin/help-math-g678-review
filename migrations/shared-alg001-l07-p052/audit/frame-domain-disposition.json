@@ -1,0 +1,607 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "ec2a84931df2f7280466e0dac5cbe6c9e636b6700a35696bacb03baf5a4a905d",
+  "productDomains": [
+    {
+      "id": "root",
+      "kind": "root",
+      "sourceTimelineId": "root",
+      "parentFrameDomainId": null,
+      "frameCount": 10,
+      "scenarioIds": [
+        "source-game"
+      ]
+    },
+    {
+      "id": "sprite-303",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-303",
+      "parentFrameDomainId": "root",
+      "frameCount": 6,
+      "scenarioIds": [
+        "source-game",
+        "directions-popup"
+      ]
+    },
+    {
+      "id": "sprite-157",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-157",
+      "parentFrameDomainId": "sprite-303",
+      "frameCount": 28,
+      "scenarioIds": [
+        "wrong-feedback"
+      ]
+    },
+    {
+      "id": "sprite-170",
+      "kind": "nested",
+      "sourceTimelineId": "sprite-170",
+      "parentFrameDomainId": "sprite-303",
+      "frameCount": 27,
+      "scenarioIds": [
+        "right-feedback"
+      ]
+    }
+  ],
+  "sourceDomains": [
+    {
+      "frameDomain": "root",
+      "declaredFrames": 10,
+      "observedFrames": 10,
+      "productFrameFactory": true,
+      "disposition": "Maintained main/root/feedback projection"
+    },
+    {
+      "frameDomain": "sprite-1",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-2",
+      "declaredFrames": 3,
+      "observedFrames": 3,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-3",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-4",
+      "declaredFrames": 3,
+      "observedFrames": 3,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-5",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-21",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-23",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-37",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-39",
+      "declaredFrames": 3,
+      "observedFrames": 3,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-43",
+      "declaredFrames": 3,
+      "observedFrames": 3,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-49",
+      "declaredFrames": 3,
+      "observedFrames": 3,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-57",
+      "declaredFrames": 3,
+      "observedFrames": 3,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-64",
+      "declaredFrames": 3,
+      "observedFrames": 3,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-70",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-75",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-76",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-79",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-81",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-83",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-85",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-87",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-89",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-91",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-93",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-95",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-97",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-99",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-101",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-110",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-113",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-124",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-127",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-129",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-131",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-132",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-135",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-138",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-140",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-142",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-145",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-157",
+      "declaredFrames": 28,
+      "observedFrames": 28,
+      "productFrameFactory": true,
+      "disposition": "Maintained main/root/feedback projection"
+    },
+    {
+      "frameDomain": "sprite-170",
+      "declaredFrames": 27,
+      "observedFrames": 27,
+      "productFrameFactory": true,
+      "disposition": "Maintained main/root/feedback projection"
+    },
+    {
+      "frameDomain": "sprite-185",
+      "declaredFrames": 7,
+      "observedFrames": 7,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-194",
+      "declaredFrames": 2,
+      "observedFrames": 2,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-206",
+      "declaredFrames": 3,
+      "observedFrames": 3,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-211",
+      "declaredFrames": 3,
+      "observedFrames": 3,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-214",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-216",
+      "declaredFrames": 3,
+      "observedFrames": 3,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-218",
+      "declaredFrames": 3,
+      "observedFrames": 3,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-220",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-224",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-226",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-228",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-230",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-232",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-234",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-236",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-238",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-240",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-242",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-244",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-246",
+      "declaredFrames": 1,
+      "observedFrames": 1,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-254",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-268",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-271",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-275",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-279",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-281",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-284",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-286",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-288",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-293",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-296",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-299",
+      "declaredFrames": 5,
+      "observedFrames": 5,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-302",
+      "declaredFrames": 2,
+      "observedFrames": 2,
+      "productFrameFactory": false,
+      "disposition": "Retained source child timeline; geometry, controls and libraries are audited in source model. No independent child-runtime fidelity claim."
+    },
+    {
+      "frameDomain": "sprite-303",
+      "declaredFrames": 6,
+      "observedFrames": 6,
+      "productFrameFactory": true,
+      "disposition": "Maintained main/root/feedback projection"
+    }
+  ],
+  "declaredUnreachable": [
+    {
+      "domain": "sprite-303",
+      "frames": [
+        6
+      ],
+      "status": "structural-only; ordinary maintained source flow never advances here"
+    }
+  ],
+  "originalRuntimeAccepted": false,
+  "risks": [
+    "Matching is by McN partner frame2, not mathematical recomputation. Preserve inconsistent original table/graph content.",
+    "No embedded reward music or event sounds exist in this SWF. Only right/wrong feedback streams are present.",
+    "Initial frame1 controls immediately leave for Level1/Level2; Sound Off is not placed in either playable frame.",
+    "Reward sprites stop on frame1; frame2 actions and parent.play are not normally reached.",
+    "Wrong frame1 enableButton has no local definition; do not treat it as enableMc.",
+    "Close receiver this._visible is a native-close projection with original-runtime scope still unobserved.",
+    "Layout triangle-image names have no matching placed instances; retained inactive references."
+  ]
+}
