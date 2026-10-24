@@ -1,0 +1,32 @@
+ConstantPool "_global", "quizTryCount", "WrongFeed", "Find the y-coordinate where the graph intersects the y-axis.", "Find the y-coordinate where the graph intersects the y-axis. Try again.", "_root", "disableQuizButton", "Mc_Wrong_Feed4", "gotoAndPlay", "NMHBtn", "enabled"
+Push "_global"
+GetVariable
+Push "quizTryCount"
+GetMember
+Push 1
+Equals2
+Not
+If loc0119
+Push "_global"
+GetVariable
+Push "WrongFeed", "Find the y-coordinate where the graph intersects the y-axis."
+SetMember
+Jump loc0127
+loc0119:Push "_global"
+GetVariable
+Push "WrongFeed", "Find the y-coordinate where the graph intersects the y-axis. Try again."
+SetMember
+loc0127:Push 0.0, "_root"
+GetVariable
+Push "disableQuizButton"
+CallMethod
+Pop
+Push 2, 1, "Mc_Wrong_Feed4"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "NMHBtn"
+GetVariable
+Push "enabled", false
+SetMember

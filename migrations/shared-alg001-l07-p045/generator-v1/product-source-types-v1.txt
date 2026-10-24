@@ -1,0 +1,6 @@
+// Generated from audited source data; edit generator inputs, never the generated product file.
+import type{FixedExitNativeSourceV1,FixedExitNativeVisualV1,FixedExitLetterV1,FixedExitFractionAnswerV1,FixedExitGraphV1,FixedExitGraphLabelV1,FixedExitGraphOverlayV1,FixedExitVectorPathV1}from'./source-fixed-exit-help-native-v1';
+export type P045SourceTerm="Constant"|"Linear function"|"Negative sign"|"Term"|"Y-intercept";
+export type P045Letter=FixedExitLetterV1;
+export interface P045Visual extends FixedExitNativeVisualV1<P045SourceTerm>{readonly bMove:number;readonly paragraphs:readonly string[];readonly negativeSignHighlight:boolean;readonly overlayMinus:boolean;}
+export type P045Model=FixedExitNativeSourceV1<P045SourceTerm,317|399,407,P045Visual>&{readonly questionMath:{readonly negative:true;readonly numerator:string;readonly denominator:string;readonly constantNumerator:string;readonly constantDenominator:string;readonly sourceTextIds:readonly number[];readonly fractionShape:number};readonly completeTextFrames:Readonly<Record<string,number>>;};

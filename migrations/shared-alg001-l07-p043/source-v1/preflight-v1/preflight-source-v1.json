@@ -1,0 +1,32 @@
+{
+  "source": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/TI/L7TI06.swf",
+    "bytes": 230076,
+    "sha256": "cf10fe6958ff249ba5f81711be5058e8a7fbf038d59b2eeca9a1ceca83516c40"
+  },
+  "readOnly": true,
+  "commands": [
+    {
+      "tool": "swfmill",
+      "args": [
+        "/opt/homebrew/bin/swfmill",
+        "swf2xml",
+        "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/TI/L7TI06.swf",
+        "/tmp/alg-l07-p043-readonly-preflight-20261005/movie.xml"
+      ],
+      "exitCode": 0
+    },
+    {
+      "tool": "ffdec",
+      "args": [
+        "/opt/homebrew/bin/ffdec",
+        "-export",
+        "script,text",
+        "/tmp/alg-l07-p043-readonly-preflight-20261005/ffdec",
+        "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/ALG001/L7/TI/L7TI06.swf"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "registered": false
+}

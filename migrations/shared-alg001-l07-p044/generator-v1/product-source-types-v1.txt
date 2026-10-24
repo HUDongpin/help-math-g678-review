@@ -1,0 +1,6 @@
+// Generated from audited source data; edit generator inputs, never the generated product file.
+import type{FixedExitNativeSourceV1,FixedExitNativeVisualV1,FixedExitLetterV1,FixedExitFractionAnswerV1,FixedExitGraphV1,FixedExitGraphLabelV1,FixedExitGraphOverlayV1,FixedExitVectorPathV1}from'./source-fixed-exit-help-native-v1';
+export type P044SourceTerm="Graph"|"Intersect"|"Linear function"|"Point"|"Y-axis"|"Y-coordinate"|"Y-intercept"|"y-intercept";
+export type P044Letter=FixedExitLetterV1;
+export interface P044Visual extends FixedExitNativeVisualV1<P044SourceTerm>{readonly bMove:number;readonly graphAlpha:number;readonly graphOverlays:readonly FixedExitGraphOverlayV1[];readonly coordinate:readonly (FixedExitGraphLabelV1&{readonly characterId:number})[];}
+export type P044Model=Omit<FixedExitNativeSourceV1<P044SourceTerm,328|409,417,P044Visual>,'answers'>&{readonly answers:readonly (Omit<FixedExitFractionAnswerV1,'denominator'>&{readonly denominator:string|null})[];readonly graphs:readonly FixedExitGraphV1[];readonly graphOverlaySources:readonly {readonly sourceShapeId:number;readonly paths:readonly FixedExitVectorPathV1[]}[];readonly coordinateText:{readonly sourceTextIds:readonly number[];readonly originalParts:readonly string[];readonly display:string;readonly spoken:string};};

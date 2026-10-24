@@ -1,0 +1,6 @@
+// Generated from the audited native source model; edit the generator, never this output.
+import type{FixedExitNativeSourceV1,FixedExitNativeVisualV1,FixedExitLetterV1,FixedExitGraphV1,FixedExitGraphLabelV1,FixedExitGraphOverlayV1,FixedExitVectorPathV1}from'./source-fixed-exit-help-native-v1';
+export type P043SourceTerm="Coefficient"|"Independent variable"|"Linear function"|"Slope"|"slope-intercept form"|"Variable";
+export type P043Letter=FixedExitLetterV1;
+export interface P043Visual extends FixedExitNativeVisualV1<P043SourceTerm>{readonly aMove:number;readonly paragraphs:readonly string[];}
+export type P043Model=FixedExitNativeSourceV1<P043SourceTerm,314|396,407,P043Visual>&{readonly questionMath:{readonly negative:true;readonly numerator:string;readonly denominator:string;readonly constantNumerator:string;readonly constantDenominator:string;readonly sourceTextIds:readonly number[];readonly fractionShape:number};readonly completeTextFrames:Readonly<Record<string,number>>;};

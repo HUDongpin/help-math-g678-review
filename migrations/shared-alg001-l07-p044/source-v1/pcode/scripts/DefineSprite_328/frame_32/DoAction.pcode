@@ -1,0 +1,20 @@
+Stop
+Push 0.0, "_root"
+GetVariable
+Push "disableQuizButton"
+CallMethod
+Pop
+Push "_global"
+GetVariable
+Push "quizSection", false
+SetMember
+Push 1, 1, "this"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "_parent"
+GetVariable
+Push "play"
+CallMethod
+Pop

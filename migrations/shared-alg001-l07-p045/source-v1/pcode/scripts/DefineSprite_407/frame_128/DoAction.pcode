@@ -1,0 +1,18 @@
+ConstantPool "_global", "quizSection", "quizTryCount", "Mc_Popup", "_visible", "CloseBtn"
+Stop
+Push "_global"
+GetVariable
+Push "quizSection", true
+SetMember
+Push "_global"
+GetVariable
+Push "quizTryCount", 0.0
+SetMember
+Push "Mc_Popup"
+GetVariable
+Push "_visible", false
+SetMember
+Push "CloseBtn"
+GetVariable
+Push "_visible", false
+SetMember

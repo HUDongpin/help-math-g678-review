@@ -1,0 +1,40 @@
+ConstantPool "this", "_parent", "loadReady", "contentLoaded", "_name", "loadContent"
+Push "this"
+GetVariable
+Push "_parent"
+GetMember
+Push "loadReady"
+GetMember
+Not
+If loc0088
+Push 0.0, "this"
+GetVariable
+Push "_parent"
+GetMember
+Push "contentLoaded"
+CallMethod
+Pop
+Push "this"
+GetVariable
+Push "_parent"
+GetMember
+Push "loadReady"
+Delete
+Pop
+Jump loc00b5
+loc0088:Push "this"
+GetVariable
+Push "_name"
+GetMember
+Push "loadContent"
+Equals2
+Not
+Not
+If loc00b5
+Push "this"
+GetVariable
+Push "_parent"
+GetMember
+Push "loadReady", true
+SetMember
+loc00b5:

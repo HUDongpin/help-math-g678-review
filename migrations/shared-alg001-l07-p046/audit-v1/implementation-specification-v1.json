@@ -1,0 +1,22 @@
+{
+  "animationId": "shared-alg001-l07-p046",
+  "sourceSha256": "fa315ff75fe7ddc63a2cd2f8d72266f7834b64ca210a96fb38bf0e415f31b336",
+  "lane": "advanced-manual",
+  "reason": "Two arbitrary coordinate slots, source-named hotspots and clone interaction, independent randomized feedback domains and source timeline require a maintained state machine. Fixed-exit answer family is not compatible.",
+  "source": ["native-v1/source-model-v1.json", "native-v1/two-point-behavior-v1.json", "audit-v1/conditional-feedback-host-resolution-v1.json"],
+  "requirements": [
+    "Main sprite288 has 641 frames at 12fps, stops at318 and641. Eight active embedded streams use existing decoded sample clocks; Spanish original is explicit user action.",
+    "PT1 assigns Y; PT2..5 assign C. Empty opposite slot permits overwrite. Highlight and disabled states are independent of slot ownership. Background fills Y then C with precise source pointer coordinates and new monotonically named clones.",
+    "Full slots open authored prompt. Missing slots at Draw open a different prompt. Prompt and Help close reenable every point without clearing highlights or slots.",
+    "Correct Y=PT1,C in PT2..5 rewrites Y=PT3,C=PT5 before drawing. Correct draw does not disable controls or remaining points. Fresh host-compatible random4 right or random3 wrong selection may restart a same branch or overlap distinct right branches.",
+    "Wrong Draw increments count immediately and clears Y/C; closing feedback jumps to its exit segment, later removes clones, preserves named highlights and resumes parent only after two wrong attempts. Right exit hides line and resumes parent without clone cleanup.",
+    "Help125 is static seven paragraphs, no actual nested animation. It persists on319..641 if opened before a concurrent right exit; closing remains operable.",
+    "Modern native text, fraction, native glossary links, responsive source graph vectors and a keyboard coordinate cursor replace raster text. Pointer hit behavior uses exact source coordinates and point bounds.",
+    "Replay/leave and host pause dispose or pause every owned independent clock, abort pending decode and prevent stale async state. Locale changes cannot autoplay SA.",
+    "Tests cover all five named point paths, arbitrary coordinates, replacement and disabled persistence, missing/full prompts, all seven feedback branches, early/held close, repeated concurrent right draws, help through postquiz, cancellation and source-boundary stop.",
+    "Real producer/reader and candidate/formal My Lesson desktop/mobile EN/ES, font matrix, bounded source checks and production-negative review are required before local closure. No downstream acceptance implied."
+  ],
+  "implemented": false,
+  "registered": false,
+  "pendingGates": ["original-runtime", "fidelity", "listening", "human", "Owner", "strict", "release", "publication"]
+}

@@ -1,0 +1,49 @@
+ConstantPool "_root", "enableQuizButton", "this", "gotoAndStop", "_global", "quizTryCount", "_parent", "NMHBtn", "enabled", "quizSection", "play"
+Stop
+Push 0.0, "_root"
+GetVariable
+Push "enableQuizButton"
+CallMethod
+Pop
+Push 1, 1, "this"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "_global"
+GetVariable
+Push "quizTryCount", "_global"
+GetVariable
+Push "quizTryCount"
+GetMember
+Increment
+SetMember
+Push "_parent"
+GetVariable
+Push "NMHBtn"
+GetMember
+Push "enabled", true
+SetMember
+Push "_global"
+GetVariable
+Push "quizTryCount"
+GetMember
+Push 2
+Less2
+Not
+Not
+If loc0117
+Push "_global"
+GetVariable
+Push "quizTryCount", 0.0
+SetMember
+Push "_global"
+GetVariable
+Push "quizSection", false
+SetMember
+Push 0.0, "_parent"
+GetVariable
+Push "play"
+CallMethod
+Pop
+loc0117:
