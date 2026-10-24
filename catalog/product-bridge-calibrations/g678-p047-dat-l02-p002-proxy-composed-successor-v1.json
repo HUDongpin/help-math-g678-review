@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "kind": "p047-dat-l02-p002-proxy-composed-successor-v1",
+  "deploymentScope": "local-only",
+  "predecessorManifest": {
+    "path": "catalog/product-bridge-calibrations/g678-p047-proxy-host-successor-v4.json",
+    "bytes": 1807,
+    "sha256": "989dafe0c17624be3818d70e23d332aa1a7e5390984dcb212b1d35154d7be379"
+  },
+  "predecessorProxy": {
+    "path": "apps/web/proxy.ts",
+    "bytes": 13151,
+    "sha256": "8c295f89c038b25729e8e549a9b243334e06aed9f999f3dbe50c3398708fd55f"
+  },
+  "currentProxy": {
+    "path": "apps/web/proxy.ts",
+    "bytes": 13745,
+    "sha256": "b28295af0e8e3ec04431ca0b560ffa66e98ac8a661d316279c6afa22a84f7b21"
+  },
+  "newGuardModules": [
+    {
+      "path": "apps/web/lib/dat-l02-p002-source-audio-access.ts",
+      "bytes": 1745,
+      "sha256": "0ac03a375df17a8d6d28daed77e2351a28415c6afd5e1ecfecf03250e351903e"
+    },
+    {
+      "path": "apps/web/lib/dat-l02-p002-symbol-access.ts",
+      "bytes": 1522,
+      "sha256": "6fcd6363651debfb2b7a5e8c364a0fb53da4e2317b15b59314e2cc91ae778e9a"
+    }
+  ],
+  "acceptanceEffects": {
+    "originalRuntime": false,
+    "audio": false,
+    "human": false,
+    "owner": false,
+    "strict": false,
+    "publication": false
+  }
+}
