@@ -1,0 +1,194 @@
+[
+  {
+    "exitCode": 0,
+    "seconds": 0.4135457500087796,
+    "command": [
+      "node_modules/.bin/tsx",
+      "work/hfr-typescript/hfr/tests/compiler-observable-evaluation.test.ts",
+      "node_modules/esbuild/lib/main.js",
+      "<local-report-directory>/compiler-observable-semantics.report.json"
+    ]
+  },
+  {
+    "exitCode": 0,
+    "seconds": 0.33380795900302473,
+    "command": "node --test work/hfr-typescript/hfr/tests/source-generation.test.mjs"
+  },
+  {
+    "id": "demos-types",
+    "exitCode": -6,
+    "seconds": 56.447,
+    "command": [
+      "node",
+      "--max-old-space-size=8192",
+      "node_modules/typescript/bin/tsc",
+      "-p",
+      "packages/demos/tsconfig.json",
+      "--noEmit",
+      "--incremental",
+      "false"
+    ],
+    "gate": "TypeScript consistency",
+    "source": "frozen review snapshot"
+  },
+  {
+    "id": "exact-registry-readback",
+    "exitCode": 1,
+    "seconds": 1.496,
+    "command": [
+      "node",
+      "scripts/check-private-current-js-admission-registry-v3.mjs"
+    ],
+    "gate": "Existing registry consistency; not new registration or page acceptance",
+    "source": "frozen review snapshot"
+  },
+  {
+    "id": "host-server-condition",
+    "exitCode": 1,
+    "seconds": 0.676,
+    "command": [
+      "node",
+      "--conditions=react-server",
+      "--import",
+      "tsx",
+      "--test",
+      "tests/hfr-product-module-pages.test.ts"
+    ]
+  },
+  {
+    "id": "host-server-local-preview",
+    "exitCode": 1,
+    "seconds": 0.8793941660114797,
+    "command": [
+      "node",
+      "--conditions=react-server",
+      "--import",
+      "tsx",
+      "--test",
+      "tests/hfr-product-module-pages.test.ts"
+    ],
+    "nonSecretFlags": {
+      "NODE_ENV": "development",
+      "HELP_MATH_G678_LOCAL_PREVIEW": "1",
+      "HELP_MATH_G678_LOCAL_PREVIEW_BIND": "127.0.0.1"
+    }
+  },
+  {
+    "id": "host-unit",
+    "exitCode": 1,
+    "seconds": 18.02,
+    "command": [
+      "node_modules/.bin/tsx",
+      "--tsconfig",
+      "apps/web/tsconfig.json",
+      "--test-concurrency=2",
+      "--test",
+      "apps/web/tests/g678-preview-policy.test.ts",
+      "apps/web/tests/descriptor-driven-whole-lesson-player.test.ts",
+      "apps/web/tests/playback-completion.test.ts",
+      "apps/web/tests/load-animation-module.client.test.ts",
+      "apps/web/tests/hfr-local-access.test.ts",
+      "apps/web/tests/hfr-local-candidates-v2.test.ts",
+      "apps/web/tests/hfr-product-module-pages.test.ts"
+    ],
+    "gate": "Host/local-only integration",
+    "source": "frozen review snapshot"
+  },
+  {
+    "id": "portable-contract-unit",
+    "exitCode": 1,
+    "seconds": 1.46,
+    "command": [
+      "node",
+      "--test-concurrency=2",
+      "--test",
+      "scripts/hfr-current-js-artifact-contract.test.mjs",
+      "scripts/private-current-js-registry.test.mjs",
+      "scripts/implementation-artifact-closure.test.mjs",
+      "scripts/build-safe-ffdec-canvas-adapter.test.mjs",
+      "scripts/build-g678-acceptance-matrix.test.mjs"
+    ],
+    "gate": "Maintained contracts",
+    "source": "frozen review snapshot"
+  },
+  {
+    "id": "runtime-affected-rerun",
+    "exitCode": 0,
+    "seconds": 43.434,
+    "command": [
+      "node_modules/.bin/tsx",
+      "--tsconfig",
+      "apps/web/tsconfig.json",
+      "--test-concurrency=2",
+      "--test",
+      "packages/demos/tests/hfr-shared-loop-resume.test.ts",
+      "packages/demos/tests/hfr-reduced-motion-shared-source.test.ts",
+      "packages/demos/tests/hfr-source-glyph-layout.test.ts",
+      "packages/demos/tests/hfr-source-link-underlines.test.ts"
+    ]
+  },
+  {
+    "id": "runtime-unit",
+    "exitCode": 1,
+    "seconds": 42.6,
+    "command": [
+      "node_modules/.bin/tsx",
+      "--tsconfig",
+      "apps/web/tsconfig.json",
+      "--test-concurrency=2",
+      "--test",
+      "packages/demos/tests/runtime.test.ts",
+      "packages/demos/tests/lesson-host-contract.test.ts",
+      "packages/demos/tests/hfr-product-clock.test.ts",
+      "packages/demos/tests/hfr-lesson-runtime-version.test.ts",
+      "packages/demos/tests/hfr-required-media.test.ts",
+      "packages/demos/tests/hfr-implemented-clip-calls.test.ts",
+      "packages/demos/tests/hfr-retarget-scope.test.ts",
+      "packages/demos/tests/hfr-shared-loop-resume.test.ts",
+      "packages/demos/tests/hfr-source-glyph-layout.test.ts",
+      "packages/demos/tests/hfr-source-link-underlines.test.ts",
+      "packages/demos/tests/hfr-reduced-motion-shared-source.test.ts",
+      "packages/demos/tests/hfr-entry-state-button-owner.test.ts"
+    ],
+    "gate": "Shared runtime regression, not browser acceptance",
+    "source": "frozen review snapshot"
+  },
+  {
+    "exitCode": 1,
+    "seconds": 0.40319741700659506,
+    "command": [
+      "node_modules/.bin/tsx",
+      "--test",
+      "work/hfr-typescript/hfr/tests/verification-state.test.ts"
+    ]
+  },
+  {
+    "id": "web-types",
+    "exitCode": -6,
+    "seconds": 32.318,
+    "command": [
+      "node",
+      "--max-old-space-size=8192",
+      "node_modules/typescript/bin/tsc",
+      "-p",
+      "apps/web/tsconfig.json",
+      "--noEmit",
+      "--incremental",
+      "false"
+    ],
+    "gate": "TypeScript consistency",
+    "source": "frozen review snapshot"
+  },
+  {
+    "id": "workbench-contracts",
+    "exitCode": 1,
+    "seconds": 0.361,
+    "command": [
+      "npm",
+      "run",
+      "verify:workbench"
+    ],
+    "gate": "Workbench contracts",
+    "source": "frozen review snapshot"
+  }
+]

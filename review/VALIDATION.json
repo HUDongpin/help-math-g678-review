@@ -1,0 +1,92 @@
+{
+  "technicalHead": "e11f6bd7b94bb6b34c8b4336c0a7ad2d0625b6a4",
+  "runtime": {
+    "initial": {
+      "tests": 84,
+      "passed": 77,
+      "failed": 7
+    },
+    "affectedRerun": {
+      "tests": 20,
+      "passed": 20,
+      "failed": 0
+    },
+    "effectiveDistinctTests": 84,
+    "effectivePassed": 84,
+    "explanation": "64 unaffected first-pass cases plus 20 cases in four affected files, rerun after adding three exact fixtures. No assertions or runtime code changed."
+  },
+  "compilerSourceGuards": {
+    "tests": 5,
+    "passed": 5
+  },
+  "compilerObservableSemantics": {
+    "cases": 40,
+    "passed": 40
+  },
+  "portableContracts": {
+    "tests": 90,
+    "passed": 70,
+    "failed": 20,
+    "failureClass": "Missing external G3-G5 source/Canvas fixtures"
+  },
+  "legacyVerifierState": {
+    "tests": 9,
+    "passed": 8,
+    "failed": 1,
+    "failure": "tellTarget read returns undefined where the test expects 0"
+  },
+  "host": {
+    "tests": 36,
+    "passed": 31,
+    "failed": 5,
+    "details": [
+      "Three descriptor-driven host source assertions do not match the snapshot",
+      "A client-loader test requires browser document state",
+      "The server-only module test, with react-server and documented loopback flags, reaches a missing historical frozen16-glossary predecessor"
+    ]
+  },
+  "typechecks": {
+    "demos": "incomplete: V8 out of memory at 8192 MiB heap",
+    "web": "incomplete: V8 out of memory at 8192 MiB heap"
+  },
+  "registryReadback": {
+    "passed": false,
+    "firstFailure": {
+      "animationId": "shared-alg001-l06-p001",
+      "modulePath": "packages/demos/src/modules/g678-alg-l06-source-title-p001.tsx",
+      "registeredBytes": 3792,
+      "observedBytes": 3810,
+      "registeredSha256": "511ad1c0a9f1758a45bd2c22747eaea19bce68db4ddd27c69836fe8bf1a66fca",
+      "observedSha256": "3df7b40431e87909f3e184880557102e50ae1887873c65b6afc52c76e6974e2f"
+    }
+  },
+  "workbench": {
+    "passed": false,
+    "firstFailure": "reports/g4-l3-single-frame-disposition-candidates.json is outside this public snapshot"
+  },
+  "diffWhitespace": {
+    "fullDiffPassed": false,
+    "maintainedPathsChecked": 1032,
+    "maintainedWarningFiles": 13,
+    "explanation": "Existing blank EOF lines/trailing spaces retained; source/extracted and license bytes were not rewritten to satisfy whitespace checks."
+  },
+  "sourceIntegrity": {
+    "candidateFiles": 78134,
+    "byteMismatches": 0,
+    "additionalFixtures": 3,
+    "sourceHeadBranchAndIndexUnchanged": true
+  },
+  "publicScreening": {
+    "privateRecordsExcluded": 15,
+    "customPatternsUnresolved": 0,
+    "namedCredentialAssignmentsUnresolved": 0,
+    "gitleaksVersion": "8.30.1",
+    "gitleaksRawDetections": 12304,
+    "gitleaksUnresolvedAfterClassification": 0,
+    "gitleaksExtraFixtureDetections": 0,
+    "gitleaksDecodeDepth": 0,
+    "gitleaksRawExit": 1,
+    "limitation": "Path, pattern and classified detector review; not an absolute guarantee covering every possible secret encoding."
+  },
+  "browserPlaybackOrDeploymentPerformed": false
+}
