@@ -1,0 +1,89 @@
+{
+  "checkedAt": "2026-09-22T05:47:17.858006+00:00",
+  "kind": "codex-independent-p050-intro-layout-check-v1",
+  "status": "passed-bounded-engineering-check",
+  "animationId": "shared-nms002-l02-p050",
+  "executor": "OpenCodex xai/grok-4.7 xhigh",
+  "reviewerRole": "Codex automated independent engineering verification, not human acceptance",
+  "sourceSha256": "28600adb8cd9a280e5052a25e448b7c71fc4b85ac4a5e89f6a73f23d7768a197",
+  "files": [
+    {
+      "path": "packages/demos/src/nms-l02-p050-intro-view-v1.tsx",
+      "sha256": "88cad3fe259fb740f2245c41d26a4ae5420606d2c404b166461d34badf7f5bf6"
+    },
+    {
+      "path": "packages/demos/src/nms-l02-p050-practice-view-v1.tsx",
+      "sha256": "5fe1e2f3e89b5b1de80de9365bf15a3230aecbe3ab24ae87d56667570515209d"
+    },
+    {
+      "path": "packages/demos/src/nms-l02-p050-view-v1.css",
+      "sha256": "6ce7a9da2ed7e0d9548b111e199aa97dec07318a80ab4034d77707ab973114a4"
+    },
+    {
+      "path": "scripts/check-nms-l02-p050-intro-view-v1.tsx",
+      "sha256": "07d728fedfce24ec4edafbee469de501e6aa765ef312c20527807875621f2372"
+    }
+  ],
+  "checks": {
+    "ssrCases": 832,
+    "sourceFrames": 208,
+    "geometryMeasurements": 80,
+    "maxGeometryErrorPx": 0.011871337890625,
+    "actualAlphaFrame3": 0.199219,
+    "hiddenKeyboardFocusFrames": [
+      1,
+      2
+    ],
+    "reducedMotionBoundary": [
+      126,
+      127
+    ],
+    "focusedTypeScript": "passed",
+    "practiceState": "passed",
+    "sessionState": "passed",
+    "scopeComparison": "3 existing files changed +1 new test;0 missing among 70465 baseline small files"
+  },
+  "artifacts": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-grok-20260922/codex-task02-browser-matrix.json",
+      "sha256": "9c96ce1420443a7a5be1e2ebfa58c2a550511c852647b7e937063e1c9cb9a177"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-grok-20260922/codex-task02-alpha-focus-motion.json",
+      "sha256": "9d02dbbf6fa8674e85a831d6a6e4c5d674debb445ae45722b52fbb5aa36d6a14"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-grok-20260922/codex-task02-checks.json",
+      "sha256": "d2bba3a127efb4bc1e39247336467fc4e49437b7fc935b4fcb6f62cfe31c0cd9"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-grok-20260922/codex-post-task02-scope.json",
+      "sha256": "e93b7722d2c5f4d5cba685470791711d0023fb02744b7d107099231b5ce69313"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-grok-20260922/output/playwright/p050/intro-320-f127-corrected.png",
+      "sha256": "2e25d92be740a27fd47065843ea87d174cee7f26f7d8b1b97add8aef803e81f5"
+    }
+  ],
+  "remainingP050": [
+    "Source-exact red emphasis mapping; current aggregate red boolean is not complete source reconstruction",
+    "Source-backed bilingual glossary/help integration",
+    "Complete native player and actual My Lesson integration",
+    "Typography bindings and full responsive/input/audio lifecycle matrix",
+    "Versioned freeze and exact private Current-JS registration with production-negative checks"
+  ],
+  "currentJsRegistered": 468,
+  "total": 2282,
+  "remaining": 1814,
+  "independentGates": {
+    "p050Registered": false,
+    "originalRuntimeAccepted": false,
+    "fidelityAccepted": false,
+    "audioListeningAccepted": false,
+    "humanAccepted": false,
+    "ownerAccepted": false,
+    "strictComplete": false,
+    "published": false
+  },
+  "goalComplete": false
+}

@@ -1,0 +1,160 @@
+{
+  "sourceSha256": "28600adb8cd9a280e5052a25e448b7c71fc4b85ac4a5e89f6a73f23d7768a197",
+  "domain": 94,
+  "frame": 209,
+  "rows": [
+    {
+      "sourceName": "Scr_1",
+      "targetName": "Mc_Tar_1",
+      "decimal": "0.8",
+      "sourceCharacterId": 75,
+      "targetCharacterId": 68,
+      "sourceMatrix": [
+        1,
+        0,
+        0,
+        1,
+        -2712,
+        2343
+      ],
+      "targetMatrix": [
+        1,
+        0,
+        0,
+        1,
+        -2922,
+        -445
+      ],
+      "sourceTagSha256": "1392eaf074af371bfc48af229f410ddc26339b032c8ae59eafc9dc18efb9fd7d",
+      "targetTagSha256": "66147334b5ffe76c813b3650c0bbae59ff774e78b3f37eb0534a1b7442a6d70b"
+    },
+    {
+      "sourceName": "Scr_2",
+      "targetName": "Mc_Tar_2",
+      "decimal": "1.5",
+      "sourceCharacterId": 76,
+      "targetCharacterId": 70,
+      "sourceMatrix": [
+        1,
+        0,
+        0,
+        1,
+        -959,
+        2343
+      ],
+      "targetMatrix": [
+        1,
+        0,
+        0,
+        1,
+        -265,
+        -446
+      ],
+      "sourceTagSha256": "f77be72d4ae32dfd71100ee0346b12bfe09e620f6052001912205293adabb544",
+      "targetTagSha256": "743883ccfb9c8185ad047ac78a34ac7b6d782fe55c622afeb6202e571d14c439"
+    },
+    {
+      "sourceName": "Scr_3",
+      "targetName": "Mc_Tar_3",
+      "decimal": "2.7",
+      "sourceCharacterId": 77,
+      "targetCharacterId": 73,
+      "sourceMatrix": [
+        1,
+        0,
+        0,
+        1,
+        798,
+        2343
+      ],
+      "targetMatrix": [
+        1,
+        0,
+        0,
+        1,
+        4334,
+        -405
+      ],
+      "sourceTagSha256": "8779b83921958a0bb2127b914d687152c852db48b3dd777b0dd2e4a958432edd",
+      "targetTagSha256": "ff870d43b2fbdc0888e164956c7489b5c0554454df22e5348c539d2c918e1eec"
+    },
+    {
+      "sourceName": "Scr_4",
+      "targetName": "Mc_Tar_4",
+      "decimal": "3.1",
+      "sourceCharacterId": 78,
+      "targetCharacterId": 74,
+      "sourceMatrix": [
+        1,
+        0,
+        0,
+        1,
+        2553,
+        2344
+      ],
+      "targetMatrix": [
+        1,
+        0,
+        0,
+        1,
+        5857,
+        -405
+      ],
+      "sourceTagSha256": "0d21b4b6a8902e752bee521ba44c7eb274bb8cff0db7a437852e0c3e7bfe956a",
+      "targetTagSha256": "de4c9feb436f1f58052bb2cc8de438c09187ee15d49b3f670e6e6393815e69b2"
+    },
+    {
+      "sourceName": "Scr_5",
+      "targetName": "Mc_Tar_5",
+      "decimal": "0.2",
+      "sourceCharacterId": 79,
+      "targetCharacterId": 69,
+      "sourceMatrix": [
+        1,
+        0,
+        0,
+        1,
+        4308,
+        2344
+      ],
+      "targetMatrix": [
+        1,
+        0,
+        0,
+        1,
+        -5229,
+        -445
+      ],
+      "sourceTagSha256": "0939f603924eb9434c624d621a8c55c7848787ad7b9bfacd91a30ce8770cd2c4",
+      "targetTagSha256": "f8ec60486a1dcb4455f49b69d846ee19c103afbe90e7aa5947c76a544f6e6c68"
+    }
+  ],
+  "nonDraggable": {
+    "name": "Mc_Tar_0",
+    "decimal": "2.1",
+    "characterId": 71,
+    "noScr0At209": true,
+    "interpretation": "Non-student target; introduction demonstration timeline still to audit."
+  },
+  "feedbackDuplicate": {
+    "name": "Right_Feed",
+    "placements": [
+      {
+        "characterId": 85,
+        "depth": 87
+      },
+      {
+        "characterId": 89,
+        "depth": 101
+      }
+    ],
+    "sharedVisualChildren": [
+      82,
+      84
+    ],
+    "sharedCallback": "Frame25 stop; quizSection=false; parent.play; own gotoAndStop1",
+    "limitation": "Duplicate-name resolution not inferred from structural identity; compare transforms and runtime effects before native decision."
+  },
+  "coordinateSpace": "Matrices are parent-local SWF twips, not screen pixels.",
+  "sourceReturn": "Five onClipEvent(load) handlers store oX/oY; failed drop restores them."
+}

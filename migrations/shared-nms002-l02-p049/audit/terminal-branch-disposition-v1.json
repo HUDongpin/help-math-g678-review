@@ -1,0 +1,19 @@
+{
+  "sourceSha256": "896e38a05c5e6392f7e9284aa278a5b7e10c13b15f7911fa09d1dc9b1de865b2",
+  "mainDomain": "sprite-156",
+  "decisionFrame": 385,
+  "condition": "quizTrySkipCount>=3",
+  "allCorrectNextFrame": 386,
+  "otherwiseJumpLabel": "Tries_Over",
+  "otherwiseJumpFrame": 411,
+  "terminalFrame": 435,
+  "labelDisplayEvidence": "No new display placement at411; static390/411/435 display lists retain0.98. Jump reconstruction and dynamic field/visibility require further validation.",
+  "correctionToInitialHypothesis": "The label name does not establish a separate remedial teaching screen; both branches share the tail from411. The failed-answer branch skips386..410.",
+  "audioGap": "Main sound blocks absent346..387, then resume388. Whole decoded main stream712512samples equals source count sum. Do not use a continuous two-segment plan copied fromP048.",
+  "pending": [
+    "Analyze exact post-answer shape graphics",
+    "Inspect first-part/tail audio envelopes and stopping semantics",
+    "Resolve source jump reconstruction and input/host semantics"
+  ],
+  "originalRuntimeAccepted": false
+}

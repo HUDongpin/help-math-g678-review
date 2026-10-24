@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l02-p051",
+  "createdAt": "2026-09-22T09:23:22.469804+00:00",
+  "sourceSha256": "9c4c9857bb497497b4301a7b1cfec475b5f7bdf9d2cecabcd779fbd887de5d1f",
+  "claim": "Real Chromium rendered player with actual audio/session; isolated fixture, not My Lesson registration or listening acceptance.",
+  "result": {
+    "status": "PASS",
+    "complete": {
+      "reads": [
+        "257",
+        "248",
+        "250"
+      ],
+      "completed": 1,
+      "replayed": 0,
+      "state": {
+        "state": {
+          "phase": "complete",
+          "solved": [
+            8,
+            0,
+            3,
+            2,
+            5
+          ],
+          "activeItem": null,
+          "token": 15,
+          "replay": 0
+        },
+        "frame": 503,
+        "elapsed": 0,
+        "running": false,
+        "loading": false,
+        "closed": false,
+        "failure": null,
+        "narrationEnabled": true
+      }
+    },
+    "replay": {
+      "reads": [
+        "257",
+        "248",
+        "250"
+      ],
+      "completed": 1,
+      "replayed": 1,
+      "state": {
+        "state": {
+          "phase": "intro",
+          "solved": [],
+          "activeItem": null,
+          "token": 16,
+          "replay": 1
+        },
+        "frame": 1,
+        "elapsed": 0,
+        "running": true,
+        "loading": false,
+        "closed": false,
+        "failure": null,
+        "narrationEnabled": true
+      }
+    },
+    "unmounted": true
+  },
+  "trace": [
+    "Natural intro to ready frame485",
+    "Distractor1 to target0",
+    "Nested Fraction glossary Escape retained wrong dialog",
+    "Close wrong dialog",
+    "Correct order8,0,3,2,5 via real buttons",
+    "Natural complete503",
+    "Replay1 with empty solved",
+    "Unmount removed player"
+  ],
+  "fixture": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p050-browser-audio-v1/p051-player.html",
+  "volume": 0,
+  "limitations": [
+    "No named listening or original runtime",
+    "No My Lesson integration",
+    "AudioContext closure covered by earlier session-level evidence, not instrumented here",
+    "First runner completed actions but final result read incorrectly referenced window outside page.evaluate; failure log preserved, then live complete/Replay/unmount verified",
+    "This flow used the initial intro view; separate visual review found red highlight role mapping requiring correction. Flow success does not approve intro visuals."
+  ],
+  "evidence": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation557-browser-player-v1.log",
+      "sha256": "efda4274721a7c08aa622f94f1d46ea173b791cc8e6f0c8c78f3b355d2667305"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/continuation557-browser-player-v2.log",
+      "sha256": "1e39d2b5aeab83ca81834c5456ed8e1a16aa4d6bf32ea2e13590a4f6d02811da"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p051-player-v1.tsx",
+      "sha256": "a377f62f9113beb42367c5717ba3554bf854f4846b79aa0a305820d6e1f87c2a"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p051-outro-view-v1.tsx",
+      "sha256": "ceb1cb2f9b6e2e75c813fda1c5d47445ddc739ed0d1c872c292ec52403f11c2d"
+    }
+  ]
+}

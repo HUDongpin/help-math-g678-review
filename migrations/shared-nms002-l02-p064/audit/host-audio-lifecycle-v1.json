@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "kind": "g678-p064-static-host-audio-lifecycle-v1",
+  "authority": "source-script-and-media-index-only-not-original-runtime",
+  "animationId": "shared-nms002-l02-p064",
+  "source": {
+    "relativePath": "G6-G8-shared/NMS002/L2/FQ/L2FQ02.swf",
+    "bytes": 55392,
+    "sha256": "f655f05d7be5576503a66f52909b322bd3fce3e7b51a7fcda52291f755bf346c"
+  },
+  "tool": {
+    "name": "FFDec",
+    "version": "26.2.1"
+  },
+  "scripts": {
+    "englishButton": {
+      "relativePath": "DefineButton2_58/BUTTONCONDACTION on(release).as",
+      "sha256": "8bbeee06a2f6f663596208db1822c70c1b96e8c3034be27327169ac1f2e2a45e"
+    },
+    "spanishButton": {
+      "relativePath": "DefineButton2_52/BUTTONCONDACTION on(release).as",
+      "sha256": "a2e4af1cd1fa0b238c8cc73348d24070857ef9e3db12862551437bef99cf397d"
+    },
+    "audioControls": {
+      "relativePath": "DefineSprite_67/frame_1/DoAction.as",
+      "sha256": "fbfa67d478fcdcd7ea8241930c25e0e508dca10ef67a6dd5f0850f0d43d7daad"
+    },
+    "quizState": {
+      "relativePath": "DefineSprite_1258/frame_1/DoAction.as",
+      "sha256": "480d21cd236fb63365d4db7b5dc14777c0ec854191c91e052f40d7ee7427ff04"
+    },
+    "result": {
+      "relativePath": "DefineSprite_17/frame_2/DoAction.as",
+      "sha256": "6bc233ce1b89ed3819951a8836b0dd0d7ea8cb2e5d15e8646c3f6b95ac9dbc66"
+    },
+    "reviewButton": {
+      "relativePath": "DefineButton2_607/BUTTONCONDACTION on(release).as",
+      "sha256": "d51b52523ac0e44edbc12fd740c8156c95f1359a0873b10ac8d22fe729d41829"
+    }
+  },
+  "mediaIndex": {
+    "relativePath": "migrations/shared-nms002-l02-p064/audit/audio-source-candidates-v1.json",
+    "sha256": "60937f89ba02f67723dc534d5e6316517e82325053d3bacafe903c28b1510e58",
+    "questionCandidates": 70,
+    "optionCandidates": 280,
+    "hostFileMappingVerified": false
+  },
+  "staticFindings": {
+    "questionAudio": "EN/SP button branch calls host doPlayFQQuestionAudio",
+    "optionAudio": "same button scripts call host doPlayFQAnswerAudio for non-question controls",
+    "optionControls": "four per question, gated by external host audio flags",
+    "resultReport": "result frame constructs legacy report and starts host report movie twice",
+    "reviewExit": "review count above ten unloads and calls legacy bookmark/close or URL path"
+  },
+  "unresolved": [
+    "host function bodies and MP3 mapping",
+    "effective host audio flags",
+    "original-runtime natural trace and cue timing",
+    "spoken language and listening",
+    "modern privacy-safe score/progress decision",
+    "post-review host navigation"
+  ]
+}

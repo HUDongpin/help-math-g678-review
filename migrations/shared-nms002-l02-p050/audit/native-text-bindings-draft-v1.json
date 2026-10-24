@@ -1,0 +1,54 @@
+{
+  "sourceSha256": "28600adb8cd9a280e5052a25e448b7c71fc4b85ac4a5e89f6a73f23d7768a197",
+  "module": "packages/demos/src/nms-l02-p050-text-v1.ts",
+  "bindings": {
+    "title": [
+      37
+    ],
+    "question": [
+      50
+    ],
+    "instruction": [
+      48
+    ],
+    "helpInstruction": [
+      54
+    ],
+    "help": [
+      4,
+      5
+    ],
+    "close": [
+      29
+    ],
+    "correct": [
+      84
+    ],
+    "wrong": [
+      87
+    ],
+    "explanation": [
+      9
+    ],
+    "example": [
+      15,
+      23
+    ]
+  },
+  "nativeAdditions": [
+    "keyboard",
+    "select",
+    "selected",
+    "position",
+    "solved",
+    "complete"
+  ],
+  "translation": "Spanish authored from recovered English teaching roles; human localization review pending.",
+  "adaptations": [
+    "Select replaces click for input-neutral help instruction.",
+    "Example is concise source-derived explanation of five tenths.",
+    "Question prefix and completion status are native accessibility text."
+  ],
+  "engineering": "Feedback component and selection guard compile; browser integration pending.",
+  "accepted": false
+}

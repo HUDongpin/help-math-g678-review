@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "domain": "88",
+      "length": 27237,
+      "sampleRate": 22050,
+      "channels": 1,
+      "peak": 0.8062871694564819,
+      "hashRejected": true,
+      "aborted": true
+    },
+    {
+      "domain": "91",
+      "length": 36562,
+      "sampleRate": 22050,
+      "channels": 1,
+      "peak": 0.2741737365722656,
+      "hashRejected": true,
+      "aborted": true
+    },
+    {
+      "domain": "94",
+      "length": 477312,
+      "sampleRate": 22050,
+      "channels": 1,
+      "peak": 1,
+      "hashRejected": true,
+      "aborted": true
+    }
+  ],
+  "failure": null,
+  "contextState": "closed",
+  "listeningAccepted": false,
+  "browser": "Actual Chromium via Playwright local fixture",
+  "amplitudeComparison": [
+    {
+      "domain": "88",
+      "browserPeak": 0.8062871694564819,
+      "ffmpegPeak": 0.8062869310379028,
+      "note": "Decoder amplitude may differ; no sample-amplitude identity claim."
+    },
+    {
+      "domain": "91",
+      "browserPeak": 0.2741737365722656,
+      "ffmpegPeak": 0.2741737961769104,
+      "note": "Decoder amplitude may differ; no sample-amplitude identity claim."
+    },
+    {
+      "domain": "94",
+      "browserPeak": 1,
+      "ffmpegPeak": 1.0790506601333618,
+      "note": "Decoder amplitude may differ; no sample-amplitude identity claim."
+    }
+  ],
+  "scope": "Browser full-source decoding and guards only; not listening or original runtime acceptance.",
+  "fixture": "http://127.0.0.1:3464",
+  "consoleDisposition": "One missing favicon404; source MP3/app responses200."
+}

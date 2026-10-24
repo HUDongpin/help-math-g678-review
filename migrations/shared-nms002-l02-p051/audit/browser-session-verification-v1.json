@@ -1,0 +1,148 @@
+{
+  "sourceSha256": "9c4c9857bb497497b4301a7b1cfec475b5f7bdf9d2cecabcd779fbd887de5d1f",
+  "result": {
+    "status": "PASS",
+    "failure": null,
+    "trace": [
+      {
+        "label": "paused",
+        "phase": "intro",
+        "frame": 10,
+        "solved": [],
+        "elapsed": 0.7546485260770974,
+        "running": false
+      },
+      {
+        "label": "resumed",
+        "phase": "intro",
+        "frame": 11,
+        "solved": [],
+        "elapsed": 0.84172335600907,
+        "running": true
+      },
+      {
+        "label": "ready",
+        "phase": "ready",
+        "frame": 485,
+        "solved": [],
+        "elapsed": 0,
+        "running": false
+      },
+      {
+        "label": "wrong waits",
+        "phase": "wrong-feedback",
+        "frame": 485,
+        "solved": [],
+        "elapsed": 1.1518820861678005,
+        "running": false
+      },
+      {
+        "label": "solved 8",
+        "phase": "ready",
+        "frame": 485,
+        "solved": [
+          8
+        ],
+        "elapsed": 0,
+        "running": false
+      },
+      {
+        "label": "solved 0",
+        "phase": "ready",
+        "frame": 485,
+        "solved": [
+          8,
+          0
+        ],
+        "elapsed": 0,
+        "running": false
+      },
+      {
+        "label": "solved 3",
+        "phase": "ready",
+        "frame": 485,
+        "solved": [
+          8,
+          0,
+          3
+        ],
+        "elapsed": 0,
+        "running": false
+      },
+      {
+        "label": "solved 2",
+        "phase": "ready",
+        "frame": 485,
+        "solved": [
+          8,
+          0,
+          3,
+          2
+        ],
+        "elapsed": 0,
+        "running": false
+      },
+      {
+        "label": "solved 5",
+        "phase": "completion-feedback",
+        "frame": 485,
+        "solved": [
+          8,
+          0,
+          3,
+          2,
+          5
+        ],
+        "elapsed": 0,
+        "running": true
+      },
+      {
+        "label": "outro",
+        "phase": "outro",
+        "frame": 486,
+        "solved": [
+          8,
+          0,
+          3,
+          2,
+          5
+        ],
+        "elapsed": 0,
+        "running": true
+      },
+      {
+        "label": "complete",
+        "phase": "complete",
+        "frame": 503,
+        "solved": [
+          8,
+          0,
+          3,
+          2,
+          5
+        ],
+        "elapsed": 0,
+        "running": false
+      },
+      {
+        "label": "Replay",
+        "phase": "intro",
+        "frame": 1,
+        "solved": [],
+        "elapsed": 0,
+        "running": true
+      }
+    ],
+    "reads": [
+      "257",
+      "248",
+      "250"
+    ],
+    "contextStates": [
+      "closed"
+    ],
+    "closed": true,
+    "listeningAccepted": false
+  },
+  "scope": "Real source audio/context natural progression with programmatic events,volume0; not rendered pointer/keyboard or host acceptance."
+}

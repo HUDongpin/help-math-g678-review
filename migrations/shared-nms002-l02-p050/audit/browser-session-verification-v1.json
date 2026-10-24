@@ -1,0 +1,144 @@
+{
+  "status": "PASS",
+  "failure": null,
+  "trace": [
+    {
+      "label": "paused",
+      "phase": "intro",
+      "frame": 10,
+      "solved": [],
+      "elapsed": 0.7604535147392287,
+      "running": false
+    },
+    {
+      "label": "resumed",
+      "phase": "intro",
+      "frame": 11,
+      "solved": [],
+      "elapsed": 0.8475283446712014,
+      "running": true
+    },
+    {
+      "label": "ready",
+      "phase": "ready",
+      "frame": 209,
+      "solved": [],
+      "elapsed": 0,
+      "running": false
+    },
+    {
+      "label": "wrong waits",
+      "phase": "wrong-feedback",
+      "frame": 209,
+      "solved": [],
+      "elapsed": 1.1518820861678005,
+      "running": false
+    },
+    {
+      "label": "solved 5",
+      "phase": "ready",
+      "frame": 209,
+      "solved": [
+        5
+      ],
+      "elapsed": 0,
+      "running": false
+    },
+    {
+      "label": "solved 1",
+      "phase": "ready",
+      "frame": 209,
+      "solved": [
+        5,
+        1
+      ],
+      "elapsed": 0,
+      "running": false
+    },
+    {
+      "label": "solved 3",
+      "phase": "ready",
+      "frame": 209,
+      "solved": [
+        5,
+        1,
+        3
+      ],
+      "elapsed": 0,
+      "running": false
+    },
+    {
+      "label": "solved 2",
+      "phase": "ready",
+      "frame": 209,
+      "solved": [
+        5,
+        1,
+        3,
+        2
+      ],
+      "elapsed": 0,
+      "running": false
+    },
+    {
+      "label": "solved 4",
+      "phase": "completion-feedback",
+      "frame": 209,
+      "solved": [
+        5,
+        1,
+        3,
+        2,
+        4
+      ],
+      "elapsed": 0,
+      "running": true
+    },
+    {
+      "label": "outro",
+      "phase": "outro",
+      "frame": 210,
+      "solved": [
+        5,
+        1,
+        3,
+        2,
+        4
+      ],
+      "elapsed": 0,
+      "running": true
+    },
+    {
+      "label": "complete",
+      "phase": "complete",
+      "frame": 260,
+      "solved": [
+        5,
+        1,
+        3,
+        2,
+        4
+      ],
+      "elapsed": 0,
+      "running": false
+    },
+    {
+      "label": "Replay",
+      "phase": "intro",
+      "frame": 1,
+      "solved": [],
+      "elapsed": 0,
+      "running": true
+    }
+  ],
+  "reads": [
+    "94",
+    "88",
+    "91"
+  ],
+  "contextStates": [
+    "closed"
+  ],
+  "closed": true,
+  "listeningAccepted": false
+}

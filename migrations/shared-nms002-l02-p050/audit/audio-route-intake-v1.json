@@ -1,0 +1,80 @@
+{
+  "sourceSha256": "28600adb8cd9a280e5052a25e448b7c71fc4b85ac4a5e89f6a73f23d7768a197",
+  "streams": [
+    {
+      "domain": "sprite-88",
+      "samples": 27072,
+      "sampleRate": 22050,
+      "channels": 1,
+      "encodedSha256": "a3634114101cc46babbe7470bea683f3484c5bf31ce2813d7ca8d197ba9cbe04"
+    },
+    {
+      "domain": "sprite-91",
+      "samples": 34560,
+      "sampleRate": 22050,
+      "channels": 1,
+      "encodedSha256": "8b843d72ae1de52bef4e2b22e65f6356f97dd115d8795bf9b3df69d87c3d16e7"
+    },
+    {
+      "domain": "sprite-93",
+      "samples": 96768,
+      "sampleRate": 22050,
+      "channels": 1,
+      "encodedSha256": "e551e71005de2df6e95d44ca10fba65b6ae0131032336e67b2609c71b798e8cf"
+    },
+    {
+      "domain": "sprite-94",
+      "samples": 473472,
+      "sampleRate": 22050,
+      "channels": 1,
+      "encodedSha256": "a49f90a06171aa795da06a5af24c94a9b92c86cbd2fe63ba1b4e226aa0979773"
+    }
+  ],
+  "allSampleTotalsMatchSourceTags": true,
+  "labels": [
+    {
+      "domain": "root",
+      "frame": 6,
+      "label": "begin",
+      "sourceTagSha256": "1811192ce2718c9d7267f4559e37bc483c98e6345ccbdef9da063be460f94fc1"
+    },
+    {
+      "domain": "sprite-93",
+      "frame": 3,
+      "label": "S1",
+      "sourceTagSha256": "1375f6683bb6300de8e74c5cf7031f08993e43178f2a6e793583ceb6d45378f4"
+    },
+    {
+      "domain": "sprite-93",
+      "frame": 18,
+      "label": "S2",
+      "sourceTagSha256": "c82bcb15e7219ecef89966d34995c143847df666d36fbec77dd44a6edd4071c2"
+    },
+    {
+      "domain": "sprite-93",
+      "frame": 31,
+      "label": "S3",
+      "sourceTagSha256": "1dad2a96cea617432938f78a30a575476f49fd3a143966c1b77e4846156fb311"
+    },
+    {
+      "domain": "sprite-93",
+      "frame": 40,
+      "label": "S4",
+      "sourceTagSha256": "f3e6252ad3e993653578fc22e3fb584d2a73d9f737044d25e5acb7ced2d157a9"
+    }
+  ],
+  "selectedSourceRoutes": {
+    "main": "sprite94 startsstreamframe3; practice stop209; terminal260; fullPCM timing still to audit",
+    "correct": "sprite91 startsframe2 triggeredbyfivecorrectdroproutes",
+    "wrong": "sprite88 startsframe1 but invokedgotoAndPlay2; head-trim/seek scheduling still to audit",
+    "wrongClose": "sprite88 containsbutton34; closesparentpopup and invokes parent.enableMC/restoresNMHBtn"
+  },
+  "nonselectedCandidate": {
+    "domain": 93,
+    "reason": "Placed Coach_audio_1 stopsframe1; no Coach_audio_1 reference in45scripts. Conditionalcallbacks mention absent main Wronglabel/Mc_Main. Host-driven reachability not proven; preserve as nonselected candidate pending full audit."
+  },
+  "acceptance": {
+    "audioListening": false,
+    "originalRuntime": false
+  }
+}

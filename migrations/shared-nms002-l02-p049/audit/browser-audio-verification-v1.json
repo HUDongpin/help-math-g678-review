@@ -1,0 +1,123 @@
+{
+  "browserDecode": {
+    "status": "PASS",
+    "rows": [
+      {
+        "domain": "8",
+        "samples": 8805,
+        "rate": 22050,
+        "channels": 1,
+        "peak": 0.36871451139450073
+      },
+      {
+        "domain": "35",
+        "samples": 8805,
+        "rate": 22050,
+        "channels": 1,
+        "peak": 0.36871451139450073
+      },
+      {
+        "domain": "72",
+        "samples": 36562,
+        "rate": 22050,
+        "channels": 1,
+        "peak": 1
+      },
+      {
+        "domain": "74",
+        "samples": 100608,
+        "rate": 22050,
+        "channels": 1,
+        "peak": 0.9846503734588623
+      },
+      {
+        "domain": "117",
+        "samples": 8805,
+        "rate": 22050,
+        "channels": 1,
+        "peak": 0.36871451139450073
+      },
+      {
+        "domain": "143",
+        "samples": 36562,
+        "rate": 22050,
+        "channels": 1,
+        "peak": 1
+      },
+      {
+        "domain": "153",
+        "samples": 36562,
+        "rate": 22050,
+        "channels": 1,
+        "peak": 1
+      },
+      {
+        "domain": "156",
+        "samples": 799129,
+        "rate": 22050,
+        "channels": 1,
+        "peak": 1
+      }
+    ],
+    "corruptRejected": 8,
+    "preAbortedRejected": true,
+    "context": "closed",
+    "listeningAccepted": false
+  },
+  "browserSession": {
+    "pausedFrame": 8,
+    "resumedFrame": 11,
+    "replayFrame": 1,
+    "replayCount": 1,
+    "closed": [
+      "closed"
+    ],
+    "failure": null,
+    "volume": 0
+  },
+  "decoderComparison": [
+    {
+      "domain": "8",
+      "ffmpegPeak": 0.36871445178985596,
+      "browserPeak": 0.36871451139450073
+    },
+    {
+      "domain": "35",
+      "ffmpegPeak": 0.36871445178985596,
+      "browserPeak": 0.36871451139450073
+    },
+    {
+      "domain": "72",
+      "ffmpegPeak": 1.3206757307052612,
+      "browserPeak": 1
+    },
+    {
+      "domain": "74",
+      "ffmpegPeak": 0.9846500754356384,
+      "browserPeak": 0.9846503734588623
+    },
+    {
+      "domain": "117",
+      "ffmpegPeak": 0.36871445178985596,
+      "browserPeak": 0.36871451139450073
+    },
+    {
+      "domain": "143",
+      "ffmpegPeak": 1.3206757307052612,
+      "browserPeak": 1
+    },
+    {
+      "domain": "153",
+      "ffmpegPeak": 1.3206757307052612,
+      "browserPeak": 1
+    },
+    {
+      "domain": "156",
+      "ffmpegPeak": 1.0821421146392822,
+      "browserPeak": 1
+    }
+  ],
+  "qualification": "Sample counts/rate/channel and guards verified. Browser decoded peaks clamp to1 for domains72/143/153/156 whereas ffmpeg f32 peak exceeds1. Cross-decoder byte/amplitude identity is not claimed; audible/runtime acceptance remains open. Session test was gain0 and covers intro pause/resume/replay/close, not complete exercise playback.",
+  "audioAccepted": false,
+  "originalRuntimeAccepted": false
+}

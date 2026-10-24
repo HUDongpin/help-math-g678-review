@@ -1,0 +1,47 @@
+{
+  "sourceSha256": "18786203d58efb8aa54c3701e72838887d0702ff03d68819830938a252facce7",
+  "bindings": [
+    {
+      "domain": "8",
+      "buttonIds": [
+        155
+      ],
+      "sourceState": "down",
+      "productRoles": [
+        "help-open"
+      ]
+    },
+    {
+      "domain": "413",
+      "buttonIds": [
+        419,
+        422
+      ],
+      "sourceState": "down",
+      "productRoles": [
+        "check-answer",
+        "reset"
+      ],
+      "directMainPlacement": {
+        "firstFrame": 305,
+        "lastFrameExclusive": 307
+      }
+    },
+    {
+      "domain": "436",
+      "buttonIds": [
+        437
+      ],
+      "sourceState": "down",
+      "productRoles": [
+        "wrong-feedback-close"
+      ]
+    }
+  ],
+  "otherSourceReference": "Button9 also references8; not included in current root-reachable exercise binding without further role evidence.",
+  "implementationStatus": "not-yet-wired",
+  "requiredNext": "Add separate short-effect channel with exact source triggers so it does not replace narration; preserve source intro placement305..306. Explicit keyboard activation adapter and cancellation policy required.",
+  "sourceHelper490": "Placed330..362 but onEnterFrame only changes grid when parent currentframe298. No demonstrated main rewind to298 in recovered exercise path; preserve as legacy predicate mismatch, no runtime exclusion claim.",
+  "source416": "Child of duplicated cell418; geometry wrapper role, not independent exercise.",
+  "acceptanceEffects": "None"
+}

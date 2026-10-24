@@ -1,0 +1,7 @@
+### Result
+[{"state":"intro-paused","width":320,"font":"16px","frame":"128","overflow":[]},{"state":"intro-paused","width":320,"font":"32px","frame":"128","overflow":[]},{"state":"intro-paused","width":390,"font":"16px","frame":"128","overflow":[]},{"state":"intro-paused","width":390,"font":"32px","frame":"128","overflow":[]},{"state":"intro-paused","width":768,"font":"16px","frame":"128","overflow":[]},{"state":"intro-paused","width":768,"font":"32px","frame":"128","overflow":[]},{"state":"intro-paused","width":1280,"font":"16px","frame":"128","overflow":[]},{"state":"intro-paused","width":1280,"font":"32px","frame":"128","overflow":[]},{"state":"intro-paused","width":1920,"font":"16px","frame":"128","overflow":[]},{"state":"intro-paused","width":1920,"font":"32px","frame":"128","overflow":[]}]
+### Ran Playwright code
+```js
+await (async(page)=>{const rows=[];for(const width of [320,390,768,1280,1920]){await page.setViewportSize({width,height:1000});for(const font of [16,32]){await page.evaluate(f=>document.documentElement.style.fontSize=f+"px",font);await page.waitForTimeout(300);rows.push(await page.evaluate(()=>({state:"intro-paused",width:innerWidth,font:getComputedStyle(document.documentElement).fontSize,frame:document.querySelector("[data-p051-player-frame]").dataset.p051PlayerFrame,overflow:[...document.querySelectorAll(".p051-intro th,.p051-intro td,.p051-intro-card,[data-p051-language-boundary],.lesson-shell2__modern-toolbar button")].filter(e=>e.scrollWidth>e.clientWidth+1).map(e=>e.textContent)})));}}return rows;})(page);
+```
+

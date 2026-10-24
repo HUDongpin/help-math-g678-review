@@ -1,0 +1,118 @@
+{
+  "sourceSha256": "28600adb8cd9a280e5052a25e448b7c71fc4b85ac4a5e89f6a73f23d7768a197",
+  "rounding": "nearest ties-to-even",
+  "sampleRate": 22050,
+  "fps": 12,
+  "rows": [
+    {
+      "domain": "sprite-88",
+      "segments": [
+        {
+          "frame": 1,
+          "sourceStart": 1673,
+          "sourceEnd": 3510,
+          "outputStart": 0,
+          "outputEnd": 1837
+        },
+        {
+          "frame": 3,
+          "sourceStart": 3510,
+          "sourceEnd": 27072,
+          "outputStart": 3675,
+          "outputEnd": 27237
+        }
+      ],
+      "preparedSamples": 27237,
+      "lastFrame": 15,
+      "tailAfterLastFrameStart": {
+        "sourceStart": 25560,
+        "samples": 1512,
+        "peak": 0.0
+      },
+      "status": "candidate sample anchors, scheduling not implemented"
+    },
+    {
+      "domain": "sprite-91",
+      "segments": [
+        {
+          "frame": 2,
+          "sourceStart": 1673,
+          "sourceEnd": 3510,
+          "outputStart": 1838,
+          "outputEnd": 3675
+        },
+        {
+          "frame": 4,
+          "sourceStart": 3510,
+          "sourceEnd": 34560,
+          "outputStart": 5512,
+          "outputEnd": 36562
+        }
+      ],
+      "preparedSamples": 36562,
+      "lastFrame": 20,
+      "tailAfterLastFrameStart": {
+        "sourceStart": 32910,
+        "samples": 1650,
+        "peak": 0.032439347356557846
+      },
+      "status": "candidate sample anchors, scheduling not implemented"
+    },
+    {
+      "domain": "sprite-93",
+      "segments": [
+        {
+          "frame": 3,
+          "sourceStart": 1673,
+          "sourceEnd": 3510,
+          "outputStart": 3675,
+          "outputEnd": 5512
+        },
+        {
+          "frame": 5,
+          "sourceStart": 3510,
+          "sourceEnd": 96768,
+          "outputStart": 7350,
+          "outputEnd": 100608
+        }
+      ],
+      "preparedSamples": 100608,
+      "lastFrame": 55,
+      "tailAfterLastFrameStart": {
+        "sourceStart": 95385,
+        "samples": 1383,
+        "peak": 0.12563925981521606
+      },
+      "status": "candidate sample anchors, scheduling not implemented"
+    },
+    {
+      "domain": "sprite-94",
+      "segments": [
+        {
+          "frame": 3,
+          "sourceStart": 1673,
+          "sourceEnd": 3510,
+          "outputStart": 3675,
+          "outputEnd": 5512
+        },
+        {
+          "frame": 5,
+          "sourceStart": 3510,
+          "sourceEnd": 473472,
+          "outputStart": 7350,
+          "outputEnd": 477312
+        }
+      ],
+      "preparedSamples": 477312,
+      "lastFrame": 260,
+      "tailAfterLastFrameStart": {
+        "sourceStart": 472072,
+        "samples": 1400,
+        "peak": 0.0
+      },
+      "status": "candidate sample anchors, scheduling not implemented"
+    }
+  ],
+  "policy": "Preserve each complete decoded stream after one1673sample source latency trim; do not cut encoded MP3. Callback/end windows still require explicit tail policy.",
+  "audioAccepted": false
+}

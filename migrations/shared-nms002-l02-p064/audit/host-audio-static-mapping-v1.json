@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "kind": "g678-p064-static-indexmi-host-audio-mapping-v1",
+  "authority": "hash-bound-two-swf-static-source-only-not-original-runtime-or-deployed-host",
+  "animationId": "shared-nms002-l02-p064",
+  "pageSource": {
+    "relativePath": "G6-G8-shared/NMS002/L2/FQ/L2FQ02.swf",
+    "sha256": "f655f05d7be5576503a66f52909b322bd3fce3e7b51a7fcda52291f755bf346c"
+  },
+  "hostSource": {
+    "pathDisplay": "NewHelpProgram/HELP_COURSES/indexMI.swf",
+    "sha256": "275499325edb24daed95952b207d2dd4ed83056ebac54cd0bc911673058086c9",
+    "sourceBindingSha256": "fe51eaf89a3df121c7cfe487a1f3358daa6630b2f295d59bc6723768c07aa57c",
+    "exportedScript": {
+      "relativePath": "scripts/frame_35/DoAction.as",
+      "sha256": "380cd6581859d0ba9814833f1102b08282198713cf30b5230ce2da76c3e27a74"
+    }
+  },
+  "inputs": {
+    "questionIr": {
+      "relativePath": "migrations/shared-nms002-l02-p064/audit/question-content-ir-v1.json",
+      "sha256": "ecc84d6053005e5d34f9f1dd615144a6a1c5638bf650bf572ff071f42169c350"
+    },
+    "mediaIndex": {
+      "relativePath": "migrations/shared-nms002-l02-p064/audit/audio-source-candidates-v1.json",
+      "sha256": "60937f89ba02f67723dc534d5e6316517e82325053d3bacafe903c28b1510e58"
+    },
+    "pageAudioContract": {
+      "relativePath": "migrations/shared-nms002-l02-p064/audit/host-audio-lifecycle-v1.json",
+      "sha256": "8787dc38222cbe83a192eabc0ac7d8734408abba0ef7da5434a6e85c6c0c68b9"
+    }
+  },
+  "staticMapping": {
+    "pageQuestionFrames": "Q1-Q35 occupy main-sprite frames 2-36",
+    "hostQuestionNumber": "current main-sprite frame minus one",
+    "hostOptionLetter": {
+      "Mc_Quiz_Audio_1": "A",
+      "Mc_Quiz_Audio_2": "B",
+      "Mc_Quiz_Audio_3": "C",
+      "Mc_Quiz_Audio_4": "D"
+    },
+    "hostLanguageFolders": {
+      "EN": "EA",
+      "SP": "SA"
+    },
+    "hostDirectory": "directory of the loaded page SWF",
+    "filesPresentInHashBoundIndex": {
+      "questions": 70,
+      "options": 280
+    }
+  },
+  "unresolved": [
+    "whether this indexMI byte sequence was the deployed P064 host",
+    "effective lesson audio flags and control reachability",
+    "actual file requests and audio timing",
+    "spoken language, listening, and Replay acceptance",
+    "modern UI/host integration and privacy-safe result handling"
+  ]
+}

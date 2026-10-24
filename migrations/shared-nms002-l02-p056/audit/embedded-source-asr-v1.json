@@ -1,0 +1,76 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | DOTPROD = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/peter/.cache/hyperframes/whisper/models/ggml-small.bin",
+		"language": "auto",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:06,600"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 6600
+			},
+			"text": " Step two is to organize the information you are given in the problem."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,600",
+				"to": "00:00:11,500"
+			},
+			"offsets": {
+				"from": 6600,
+				"to": 11500
+			},
+			"text": " Ask yourself, \"What information do I have?\""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:11,500",
+				"to": "00:00:16,000"
+			},
+			"offsets": {
+				"from": 11500,
+				"to": 16000
+			},
+			"text": " And, \"What information do I need?\""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:16,000",
+				"to": "00:00:19,000"
+			},
+			"offsets": {
+				"from": 16000,
+				"to": 19000
+			},
+			"text": " Write the information in box two."
+		}
+	]
+}

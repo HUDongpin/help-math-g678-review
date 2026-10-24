@@ -1,0 +1,1900 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l02-p054",
+  "sourceSha256": "06bde171fe294f555f983c15b50afbb53344851cdc2f76e31e5eb5a4719cabb8",
+  "inputs": {
+    "staticGraph": {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p054/audit/frame-domain-static-graph-v1.json",
+      "sha256": "541c11e12dd93c2819084f9ac57e8149947f3d7cdc1dc285735244d48697fb93"
+    },
+    "gameDisplayList": {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p054/audit/game-display-list-v1.json",
+      "sha256": "8887c62a93824e851b2b6bba3779742ba43143b5c8e38b47c49b81c04fa6c40c"
+    },
+    "cardLayout": {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/migrations/shared-nms002-l02-p054/audit/card-layout-v1.json",
+      "sha256": "d34c6f2b89a99f110138c07b9b108ab96afa56db294a085a68a670d2cb034863"
+    }
+  },
+  "totalDefinedSpriteCount": 128,
+  "staticPlacementGraphDomainCount": 66,
+  "outsideStaticPlacementGraphCount": 63,
+  "domains": [
+    {
+      "frameDomainId": "root",
+      "sourceCharacterId": null,
+      "sourceFrames": 10,
+      "placedFrom": [],
+      "placementSites": [],
+      "sourceRole": "preloader-and-page-entry",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-84",
+      "sourceCharacterId": 84,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "101"
+      ],
+      "placementSites": [],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-101",
+      "sourceCharacterId": 101,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 1,
+          "depth": 343,
+          "sourceInstanceName": "Mc_Popup"
+        }
+      ],
+      "sourceRole": "popup-content",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-103",
+      "sourceCharacterId": 103,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "root"
+      ],
+      "placementSites": [],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-107",
+      "sourceCharacterId": 107,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "108"
+      ],
+      "placementSites": [],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-108",
+      "sourceCharacterId": 108,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 2,
+          "sourceInstanceName": "McLayout"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-111",
+      "sourceCharacterId": 111,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 6,
+          "sourceInstanceName": "Mc1_Img1"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-113",
+      "sourceCharacterId": 113,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 8,
+          "sourceInstanceName": "Mc2_Img1"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-115",
+      "sourceCharacterId": 115,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 10,
+          "sourceInstanceName": "Mc3_Img1"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-117",
+      "sourceCharacterId": 117,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 12,
+          "sourceInstanceName": "Mc4_Img1"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-119",
+      "sourceCharacterId": 119,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 14,
+          "sourceInstanceName": "Mc6_Img1"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-121",
+      "sourceCharacterId": 121,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 16,
+          "sourceInstanceName": "Mc1_Img2"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-123",
+      "sourceCharacterId": 123,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 18,
+          "sourceInstanceName": "Mc6_Img2"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-125",
+      "sourceCharacterId": 125,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 20,
+          "sourceInstanceName": "Mc5_Img2"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-127",
+      "sourceCharacterId": 127,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 22,
+          "sourceInstanceName": "Mc2_Img2"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-129",
+      "sourceCharacterId": 129,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 24,
+          "sourceInstanceName": "Mc4_Img2"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-131",
+      "sourceCharacterId": 131,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 26,
+          "sourceInstanceName": "Mc5_Img1"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-133",
+      "sourceCharacterId": 133,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 28,
+          "sourceInstanceName": "Mc3_Img2"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-138",
+      "sourceCharacterId": 138,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 30,
+          "sourceInstanceName": "Mc1_1"
+        }
+      ],
+      "sourceRole": "level-1-card-Mc1_1",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-142",
+      "sourceCharacterId": 142,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 36,
+          "sourceInstanceName": "Mc2_1"
+        }
+      ],
+      "sourceRole": "level-1-card-Mc2_1",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-145",
+      "sourceCharacterId": 145,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 42,
+          "sourceInstanceName": "Mc3_1"
+        }
+      ],
+      "sourceRole": "level-1-card-Mc3_1",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-148",
+      "sourceCharacterId": 148,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 48,
+          "sourceInstanceName": "Mc4_1"
+        }
+      ],
+      "sourceRole": "level-1-card-Mc4_1",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-150",
+      "sourceCharacterId": 150,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 54,
+          "sourceInstanceName": "Mc6_1"
+        }
+      ],
+      "sourceRole": "level-1-card-Mc6_1",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-153",
+      "sourceCharacterId": 153,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 60,
+          "sourceInstanceName": "Mc1_2"
+        }
+      ],
+      "sourceRole": "level-1-card-Mc1_2",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-155",
+      "sourceCharacterId": 155,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 64,
+          "sourceInstanceName": "Mc6_2"
+        }
+      ],
+      "sourceRole": "level-1-card-Mc6_2",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-157",
+      "sourceCharacterId": 157,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 68,
+          "sourceInstanceName": "Mc5_2"
+        }
+      ],
+      "sourceRole": "level-1-card-Mc5_2",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-159",
+      "sourceCharacterId": 159,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 72,
+          "sourceInstanceName": "Mc2_2"
+        }
+      ],
+      "sourceRole": "level-1-card-Mc2_2",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-161",
+      "sourceCharacterId": 161,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 76,
+          "sourceInstanceName": "Mc4_2"
+        }
+      ],
+      "sourceRole": "level-1-card-Mc4_2",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-164",
+      "sourceCharacterId": 164,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 80,
+          "sourceInstanceName": "Mc5_1"
+        }
+      ],
+      "sourceRole": "level-1-card-Mc5_1",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-166",
+      "sourceCharacterId": 166,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 86,
+          "sourceInstanceName": "Mc3_2"
+        }
+      ],
+      "sourceRole": "level-1-card-Mc3_2",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-194",
+      "sourceCharacterId": 194,
+      "sourceFrames": 27,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 90,
+          "sourceInstanceName": "Mc_Feed2"
+        },
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 90,
+          "sourceInstanceName": "Mc_Feed2"
+        }
+      ],
+      "sourceRole": "correct-feedback",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-199",
+      "sourceCharacterId": 199,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "208"
+      ],
+      "placementSites": [],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-208",
+      "sourceCharacterId": 208,
+      "sourceFrames": 31,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 94,
+          "sourceInstanceName": "Mc_Feed1"
+        },
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 94,
+          "sourceInstanceName": "Mc_Feed1"
+        }
+      ],
+      "sourceRole": "wrong-feedback",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-227",
+      "sourceCharacterId": 227,
+      "sourceFrames": 7,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 2,
+          "depth": 324,
+          "sourceInstanceName": "Mc_Score"
+        }
+      ],
+      "sourceRole": "score-display",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-648",
+      "sourceCharacterId": 648,
+      "sourceFrames": 121,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 3,
+          "depth": 6,
+          "sourceInstanceName": ""
+        }
+      ],
+      "sourceRole": "level-1-result-content",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-659",
+      "sourceCharacterId": 659,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "661"
+      ],
+      "placementSites": [],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-661",
+      "sourceCharacterId": 661,
+      "sourceFrames": 3,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 3,
+          "depth": 337,
+          "sourceInstanceName": "mcL1"
+        },
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 5,
+          "depth": 337,
+          "sourceInstanceName": "mcL1"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-664",
+      "sourceCharacterId": 664,
+      "sourceFrames": 3,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 3,
+          "depth": 340,
+          "sourceInstanceName": "mcL2"
+        },
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 5,
+          "depth": 340,
+          "sourceInstanceName": "mcL2"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-667",
+      "sourceCharacterId": 667,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "668"
+      ],
+      "placementSites": [],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-668",
+      "sourceCharacterId": 668,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 2,
+          "sourceInstanceName": "McLayout"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-671",
+      "sourceCharacterId": 671,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 6,
+          "sourceInstanceName": "Mc1_Img1"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-673",
+      "sourceCharacterId": 673,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 8,
+          "sourceInstanceName": "Mc6_Img2"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-675",
+      "sourceCharacterId": 675,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 10,
+          "sourceInstanceName": "Mc3_Img1"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-677",
+      "sourceCharacterId": 677,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 12,
+          "sourceInstanceName": "Mc4_Img2"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-679",
+      "sourceCharacterId": 679,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 14,
+          "sourceInstanceName": "Mc4_Img1"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-681",
+      "sourceCharacterId": 681,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 16,
+          "sourceInstanceName": "Mc5_Img1"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-683",
+      "sourceCharacterId": 683,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 18,
+          "sourceInstanceName": "Mc1_Img2"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-685",
+      "sourceCharacterId": 685,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 20,
+          "sourceInstanceName": "Mc5_Img2"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-687",
+      "sourceCharacterId": 687,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 22,
+          "sourceInstanceName": "Mc2_Img2"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-689",
+      "sourceCharacterId": 689,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 24,
+          "sourceInstanceName": "Mc3_Img2"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-691",
+      "sourceCharacterId": 691,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 26,
+          "sourceInstanceName": "Mc6_Img1"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-693",
+      "sourceCharacterId": 693,
+      "sourceFrames": 1,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 28,
+          "sourceInstanceName": "Mc2_Img1"
+        }
+      ],
+      "sourceRole": "static-graph-role-unreviewed",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-696",
+      "sourceCharacterId": 696,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 30,
+          "sourceInstanceName": "Mc1_1"
+        }
+      ],
+      "sourceRole": "level-2-card-Mc1_1",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-699",
+      "sourceCharacterId": 699,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 36,
+          "sourceInstanceName": "Mc6_2"
+        }
+      ],
+      "sourceRole": "level-2-card-Mc6_2",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-701",
+      "sourceCharacterId": 701,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 40,
+          "sourceInstanceName": "Mc3_1"
+        }
+      ],
+      "sourceRole": "level-2-card-Mc3_1",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-704",
+      "sourceCharacterId": 704,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 46,
+          "sourceInstanceName": "Mc4_2"
+        }
+      ],
+      "sourceRole": "level-2-card-Mc4_2",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-706",
+      "sourceCharacterId": 706,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 50,
+          "sourceInstanceName": "Mc4_1"
+        }
+      ],
+      "sourceRole": "level-2-card-Mc4_1",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-708",
+      "sourceCharacterId": 708,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 56,
+          "sourceInstanceName": "Mc5_1"
+        }
+      ],
+      "sourceRole": "level-2-card-Mc5_1",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-710",
+      "sourceCharacterId": 710,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 62,
+          "sourceInstanceName": "Mc1_2"
+        }
+      ],
+      "sourceRole": "level-2-card-Mc1_2",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-713",
+      "sourceCharacterId": 713,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 66,
+          "sourceInstanceName": "Mc5_2"
+        }
+      ],
+      "sourceRole": "level-2-card-Mc5_2",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-715",
+      "sourceCharacterId": 715,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 70,
+          "sourceInstanceName": "Mc2_2"
+        }
+      ],
+      "sourceRole": "level-2-card-Mc2_2",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-717",
+      "sourceCharacterId": 717,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 74,
+          "sourceInstanceName": "Mc3_2"
+        }
+      ],
+      "sourceRole": "level-2-card-Mc3_2",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-719",
+      "sourceCharacterId": 719,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 78,
+          "sourceInstanceName": "Mc6_1"
+        }
+      ],
+      "sourceRole": "level-2-card-Mc6_1",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-721",
+      "sourceCharacterId": 721,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 4,
+          "depth": 84,
+          "sourceInstanceName": "Mc2_1"
+        }
+      ],
+      "sourceRole": "level-2-card-Mc2_1",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-729",
+      "sourceCharacterId": 729,
+      "sourceFrames": 118,
+      "placedFrom": [
+        "731"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "sprite-731",
+          "sourceFrame": 5,
+          "depth": 6,
+          "sourceInstanceName": ""
+        }
+      ],
+      "sourceRole": "level-2-result-content",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    },
+    {
+      "frameDomainId": "sprite-731",
+      "sourceCharacterId": 731,
+      "sourceFrames": 5,
+      "placedFrom": [
+        "root"
+      ],
+      "placementSites": [
+        {
+          "parentFrameDomainId": "root",
+          "sourceFrame": 6,
+          "depth": 3,
+          "sourceInstanceName": ""
+        }
+      ],
+      "sourceRole": "two-level-game-controller",
+      "staticPlacementGraphMember": true,
+      "disposition": "unresolved",
+      "runtimeReachabilityAccepted": false,
+      "rawLocalFramesQueryable": false,
+      "originalNaturalTraceAccepted": false
+    }
+  ],
+  "outsideStaticPlacementGraph": [
+    {
+      "frameDomainId": "sprite-1",
+      "sourceCharacterId": 1,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-3",
+      "sourceCharacterId": 3,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-5",
+      "sourceCharacterId": 5,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-7",
+      "sourceCharacterId": 7,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-9",
+      "sourceCharacterId": 9,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-11",
+      "sourceCharacterId": 11,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-13",
+      "sourceCharacterId": 13,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-14",
+      "sourceCharacterId": 14,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-15",
+      "sourceCharacterId": 15,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-16",
+      "sourceCharacterId": 16,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-18",
+      "sourceCharacterId": 18,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-20",
+      "sourceCharacterId": 20,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-21",
+      "sourceCharacterId": 21,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-23",
+      "sourceCharacterId": 23,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-24",
+      "sourceCharacterId": 24,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-25",
+      "sourceCharacterId": 25,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-26",
+      "sourceCharacterId": 26,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-27",
+      "sourceCharacterId": 27,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-28",
+      "sourceCharacterId": 28,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-30",
+      "sourceCharacterId": 30,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-32",
+      "sourceCharacterId": 32,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-33",
+      "sourceCharacterId": 33,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-34",
+      "sourceCharacterId": 34,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-36",
+      "sourceCharacterId": 36,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-38",
+      "sourceCharacterId": 38,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-39",
+      "sourceCharacterId": 39,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-40",
+      "sourceCharacterId": 40,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-41",
+      "sourceCharacterId": 41,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-42",
+      "sourceCharacterId": 42,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-43",
+      "sourceCharacterId": 43,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-45",
+      "sourceCharacterId": 45,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-46",
+      "sourceCharacterId": 46,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-47",
+      "sourceCharacterId": 47,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-48",
+      "sourceCharacterId": 48,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-49",
+      "sourceCharacterId": 49,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-51",
+      "sourceCharacterId": 51,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-52",
+      "sourceCharacterId": 52,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-53",
+      "sourceCharacterId": 53,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-54",
+      "sourceCharacterId": 54,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-55",
+      "sourceCharacterId": 55,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-57",
+      "sourceCharacterId": 57,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-58",
+      "sourceCharacterId": 58,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-59",
+      "sourceCharacterId": 59,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-60",
+      "sourceCharacterId": 60,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-61",
+      "sourceCharacterId": 61,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-62",
+      "sourceCharacterId": 62,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-63",
+      "sourceCharacterId": 63,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-64",
+      "sourceCharacterId": 64,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-65",
+      "sourceCharacterId": 65,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-66",
+      "sourceCharacterId": 66,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-67",
+      "sourceCharacterId": 67,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-69",
+      "sourceCharacterId": 69,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-70",
+      "sourceCharacterId": 70,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-71",
+      "sourceCharacterId": 71,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-72",
+      "sourceCharacterId": 72,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-73",
+      "sourceCharacterId": 73,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-74",
+      "sourceCharacterId": 74,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-75",
+      "sourceCharacterId": 75,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-77",
+      "sourceCharacterId": 77,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-78",
+      "sourceCharacterId": 78,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-79",
+      "sourceCharacterId": 79,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-81",
+      "sourceCharacterId": 81,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    },
+    {
+      "frameDomainId": "sprite-82",
+      "sourceCharacterId": 82,
+      "staticPlacementGraphMember": false,
+      "dynamicOrButtonStateReachability": "unresolved",
+      "disposition": "unresolved"
+    }
+  ],
+  "status": "source-static-enumeration-with-unresolved-runtime-dispositions",
+  "limitations": [
+    "Static placement in any declared source frame is not a natural runtime trace.",
+    "Button-state and dynamically attached sprites may be absent from the static placement graph.",
+    "No root-reachable domain has a final accepted runtime/fidelity disposition; strict acceptance remains blocked."
+  ],
+  "originalRuntimeAccepted": false,
+  "strictComplete": false
+}

@@ -1,0 +1,35 @@
+{
+  "sourceSha256": "28600adb8cd9a280e5052a25e448b7c71fc4b85ac4a5e89f6a73f23d7768a197",
+  "lane": "behavior-heavy",
+  "reason": "Five named drag targets, per-drop audio lock, modal recovery and timed completion require a maintained state machine; structural generation alone does not implement behavior.",
+  "phases": [
+    "intro",
+    "ready",
+    "correct-feedback",
+    "wrong-feedback",
+    "completion-feedback",
+    "outro",
+    "complete"
+  ],
+  "sourceRules": [
+    "Intro stop209 then five draggable items1..5",
+    "Correct matching target removes item/reveals target; disableinteraction until correctaudio completes",
+    "Fifth correct starts Right_Feed2..25 then parent210..260",
+    "Wrongdrop restoresorigin and opens closeable popup; close restoresinteraction; no attemptlimit supported",
+    "Helpclose restoresready; solveditems remain solved"
+  ],
+  "nativeDecisions": [
+    "Pointer and keyboard/tap placement use the same exact source-target identity; invaliddrop is wrongfeedback",
+    "Correct91 callback waits complete nonzero1650sampletail before unlock",
+    "Wrong88 sourcefirst1837postlatencysamples are zero; sourcegoto2 starts at its prepared frame2 without losing measured nonzerohead",
+    "Two same-named Right_Feed symbols share staticchildren and identical25framecallback; native uses one completion feedback, does not assert Flash name resolution",
+    "Finish main at260 once and preserve completed state untilReplay as modernMyLesson adaptation; source contains no explicit260stop",
+    "Replay resets solveditems/help/feedback and increments token; late callbacks ignored"
+  ],
+  "pending": [
+    "visual role and introduction pointer audit",
+    "audio clock browser validation",
+    "host integration and independent acceptance"
+  ],
+  "independentAcceptance": false
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "authority": "source-static-navigation-resolution-only",
+  "animationIds": ["shared-nms002-l02-p053", "shared-nms002-l02-p054"],
+  "hostBinding": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-source-host-binding-v1.json",
+    "sha256": "beb92189c1c2d81e035322de426c8f0f07ae02ba03127942236a2a1ca78311f1"
+  },
+  "hostScripts": {
+    "initialXmlLoad": {
+      "relativeToExtraction": "scripts/scripts/frame_2/DoAction.as",
+      "sha256": "3e0dd52444cfa5daa05a771aa4c00172a498192e634c6bef5a8815a02f51ce8a"
+    },
+    "navigationFunctions": {
+      "relativeToExtraction": "scripts/scripts/frame_35/DoAction.as",
+      "sha256": "380cd6581859d0ba9814833f1102b08282198713cf30b5230ce2da76c3e27a74"
+    }
+  },
+  "lessonXml": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/index.xml",
+    "sha256": "550aee4286e8a701caf3dc58360f709a606561db8b766057ac36720833d7ff61",
+    "candidateXmlUrlLogicalPath": "HELP_COURSES/NMS002/L2/index.xml",
+    "pageRoot": "HELP_COURSES/NMS002/L2",
+    "gsPagesInOrder": ["GS/L2GS02.swf", "GS/L2GS03.swf"],
+    "nextSectionFirstPage": "TS/L2TS02.swf"
+  },
+  "p053Actions": {
+    "scriptsRoot": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p053-source-audit-rjgSPq/scripts",
+    "earlyStart": {
+      "relativePath": "DefineSprite_187/frame_1/PlaceObject2_136_24/CLIPACTIONRECORD on(release).as",
+      "sha256": "d4de1288cfac868acd5a131b57047afecca7084a78792afca69d81f5378dccde",
+      "requestedBasename": "L7GS03",
+      "matchesCurrentGsSection": false
+    },
+    "selectLevelStart": {
+      "relativePath": "DefineSprite_187/frame_693/PlaceObject2_136_43/CLIPACTIONRECORD on(release).as",
+      "sha256": "73e3330ff7d670fc88f8e574c4aaa34b490d978e690ab2fe3e6aed7500ab2102",
+      "requestedBasename": "L2GS03",
+      "matchesCurrentGsSection": true
+    }
+  },
+  "verifiedSources": [
+    {"role": "first-default-lesson-page", "logicalPath": "HELP_COURSES/NMS002/L2/IR/L2IR01.swf", "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/IR/L2IR01.swf", "sha256": "1985e363a5f283bfde0c9e48718a97d49a055b583220525c8e6ed1e20e6b1b42"},
+    {"role": "current-game-1", "logicalPath": "HELP_COURSES/NMS002/L2/GS/L2GS02.swf", "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/GS/L2GS02.swf", "sha256": "f42f6a4759759561035a7c97e7392241513d0410d69214af422425ef37523fdf"},
+    {"role": "requested-game-2", "logicalPath": "HELP_COURSES/NMS002/L2/GS/L2GS03.swf", "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/GS/L2GS03.swf", "sha256": "06bde171fe294f555f983c15b50afbb53344851cdc2f76e31e5eb5a4719cabb8"},
+    {"role": "next-section-preload-candidate", "logicalPath": "HELP_COURSES/NMS002/L2/TS/L2TS02.swf", "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/TS/L2TS02.swf", "sha256": "8581db0c66f2b9640eb8ea244e22ec6831d0cb98d1fd9b3fb60b15bcc745758e"},
+    {"role": "course-title-image-candidate", "logicalPath": "HELP_COURSES/NMS002/NMS002.jpg", "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/NMS002.jpg", "sha256": "0399e8e20bd8321fc8d0de9e31b70df1bf9dc35e9fdf17bd9eae1c530ae5d54b"},
+    {"role": "same-basename-outside-current-lesson", "logicalPath": "HELP_COURSES/NMS002/L7/GS/L7GS03.swf", "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L7/GS/L7GS03.swf", "sha256": "ae16db51336cfc39f0e345c4de5e2bd6d1659fed205ad54e7783e25e1ba551c7"}
+  ],
+  "staticInterpretation": [
+    "The host reads ServerRoot and XML_URL from root variables before loading the lesson XML; their actual runtime values have not been observed.",
+    "doNeedMoreHelp searches only arrayTotalSectionDetails[sectionNumber] for a matching SWF basename; its framePlay and tempSection parameters are not used in that function.",
+    "Under the NMS002 L2 GS entry state with L2GS02 selected, the early L7GS03 request finds no GS-list match and leaves playSwfFileName unchanged before doCreateSlide and loadSWFMovie. The later L2GS03 request matches the second GS page.",
+    "The NMS002 L7 L7GS03 SWF physically exists, but that is not evidence that the L2 host branch loads it. Runtime global state, visual behavior, and navigation remain unverified.",
+    "After the last GS page, the host has a conditional next-section preload path; TS/L2TS02 is the XML's next-section first page. This is a candidate dependency, not an observed request audit."
+  ],
+  "unresolvedRuntimeInputs": [
+    "Actual ServerRoot and XML_URL values in a contained original-host session",
+    "Whether the host requests the XML-declared English/Spanish key-term files during the selected GS trace; these files were not located in the exact AWS courseware tree",
+    "Whether the host's CourseIMGName plus Temp load requests NMS002.jpgTemp; that same-path file was not located in the exact AWS courseware tree",
+    "Actual preload and audio/network request set, including the next TS page, under the selected trace",
+    "Named-operator contained original-runtime trace of both Start branches and P054 game/result/Replay"
+  ],
+  "dependencyClosureComplete": false,
+  "originalRuntimeAccepted": false,
+  "currentJsRegistered": false,
+  "strictComplete": false,
+  "published": false
+}

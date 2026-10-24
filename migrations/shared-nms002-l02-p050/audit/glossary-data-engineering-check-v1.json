@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-09-22T06:55:52.913456+00:00",
+  "animationId": "shared-nms002-l02-p050",
+  "status": "source-bound-glossary-data-engineering-verified",
+  "implementationBy": "Grok4.7 xhigh via OpenCodex",
+  "independentReviewBy": "Codex automated engineering verification; not human acceptance",
+  "codexRepair": "Changed output creation to flag wx and added deterministic race regression test; initial Grok delivery retained externally.",
+  "files": [
+    {
+      "path": "scripts/generate-nms-l02-p050-glossary-v1.mjs",
+      "sha256": "7d57983ea4c9759953d1a0ec56eb172e66afe35a5a1011151d9ad53f2914d68d"
+    },
+    {
+      "path": "scripts/generate-nms-l02-p050-glossary-v1.test.mjs",
+      "sha256": "95321da20ce94a2afcb2d7c399cfbdf15ac8303867126bda760b5ae90797bb89"
+    },
+    {
+      "path": "packages/demos/src/generated/nms-l02-p050-glossary-v1.ts",
+      "sha256": "3a7779ff488fb4c86924b2b39959a03d1383fbd2f77992d7d00587f707e64b3a"
+    }
+  ],
+  "inputPinsUnchanged": true,
+  "checks": {
+    "nodeTestsPassed": 7,
+    "nodeTestsFailed": 0,
+    "generatorCheck": "PASS",
+    "sixExactKeys": "PASS",
+    "soleWholeCorrection": "PASS",
+    "sourceDefinitionsPreserved": "PASS",
+    "runtimePrivateProvenanceExcluded": "PASS",
+    "concurrentCreateNoOverwrite": "PASS after Codex repair"
+  },
+  "registry": {
+    "registered": 468,
+    "total": 2282,
+    "added": 0
+  },
+  "pending": [
+    "Glossary dialog implementation",
+    "Help nested-modal behavior and focus lifecycle",
+    "Real My Lesson integration",
+    "Typography binding and browser matrix",
+    "Registration freeze and production-negative checks"
+  ],
+  "independentAcceptanceChanged": false,
+  "goalComplete": false
+}

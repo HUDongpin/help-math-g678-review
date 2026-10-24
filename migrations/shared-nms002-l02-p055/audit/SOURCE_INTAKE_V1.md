@@ -1,0 +1,19 @@
+# P055 source intake — 2026-09-23
+
+This is a source-bound engineering intake, not a renderer, original-runtime trace, or acceptance record. The canonical placement is `shared-nms002-l02-p055`, NMS002 lesson 2, TS page 1, XML occurrence 55, titled `4 - Step Plan` (catalog display titles `4 Step Plan` / `Plan de 4 Pasos`). The exact source is the real, non-symlink directory's `G6-G8-shared/NMS002/L2/TS/L2TS02.swf`, 149,059 bytes, SHA-256 `8581db0c66f2b9640eb8ea244e22ec6831d0cb98d1fd9b3fb60b15bcc745758e`. No same-path FLA exists. The catalog declares no source alias or variant.
+
+The SWF is CWS v6, declared uncompressed length 158,409 bytes, 800×600 at 12 fps. The 10-frame root calls `_level0.InternalPreloader.gotoAndPlay("jump_check")` and stops at frame 1; the `begin` label and another stop are at root frame 6. Its placed main timeline is sprite 26 with 351 frames. Static SWF XML gives seven shapes, 12 text definitions, two embedded fonts (`Bauhaus Md BT`, `Arial`), three buttons, one stream header and 347 stream blocks. The background is RGB 184/216/247 (`#b8d8f7`). Root duration is not the teaching-animation duration. These are structural facts from the hash-matched source and [frozen TS02 family audit](../../../catalog/g678-ts02-family-audit-v1.json); AVM1 is present, but the AS1-versus-AS2 authoring generation is not proven by shipped tags.
+
+| Button character | First main frame | Literal `KeyAttribute` | Source action |
+| --- | ---: | --- | --- |
+| 15 | 84 | `Restate` | `DoHyperLinks()` then `animation_mc.animation.stop()` |
+| 16 | 84 | `Question` | same |
+| 22 | 145 | `Problem` | same |
+
+The five exact FFDec script exports, their individual hashes, the action-order classifier, and main-domain frame count are recorded in `catalog/g678-ts02-family-audit-v1.json` under source SHA-256 `8581db0c…758e`. The 2026-09-23 readback of all three button scripts agreed with that audit. This supports an `interactive-understood` lane with a maintained host adapter, not automatic factory generation. The 351-frame presentation and audio still need product calibration; no local renderer or registry entry is asserted here.
+
+Audio is **required but unresolved**. The source contains an embedded stream; the lesson-SA candidate `G6-G8-shared/NMS002/L2/SA/L2TS02.mp3` exists at 288,288 bytes, SHA-256 `148a963e1d0e87136cc65b36a73d97625170f53865842c6a12cda2a94c7df576`, MP3 mono 48 kHz, container duration 20.592 s. The external file is not yet proven to be the embedded stream, the audible language, the selected runtime cue, or a synchronized native transport. `audio-inventory.csv` stays empty until a defensible cue and frame-domain binding is established; `migration.json` marks audio required so strict validation cannot silently pass as a no-audio case.
+
+The legacy host's lesson-referenced `HELP_KEYTERMS/KT/XML/L2KTE01.xml` and `L2KTS01.xml` were not recovered in the frozen L1-only key-term audit. An exact filename scan of the current WestWorld related-files root found neither on 2026-09-23. This is a source/host dependency hold for the three glossary dialogs; do not substitute another lesson's definitions or treat P050's separate number-line glossary as this page's source. The original host lookup, term body, sublinks, EN/ES presentation, natural entry/terminal behavior, narration/listening, and original-runtime visual trace remain unresolved.
+
+Next bounded implementation decision: recover or independently source-verify the exact lesson 2 EN/ES key-term XML and host lookup; then reuse the maintained TS02 source-static glossary adapter only after a P055-specific candidate has an exact generated visual payload, 351-frame timing/audio analysis, bilingual button semantics, and My Lesson browser checks. Do not hand-edit generated Canvas output or extend the L1-only factory authority to this L2 page. The original-runtime, visual/audio fidelity, human/Owner, strict, release, and publication gates remain open.

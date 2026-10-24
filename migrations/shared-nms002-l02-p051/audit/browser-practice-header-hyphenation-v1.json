@@ -1,0 +1,31 @@
+{
+  "kind": "p051-practice-header-hyphenation-verification-v1",
+  "createdAt": "2026-09-22T09:26:00.031942+00:00",
+  "status": "pass",
+  "change": "Added hyphens:auto and -webkit-hyphens:auto to table headers; existing section lang=es selects language-specific hyphenation. No font-size or text changes.",
+  "observed": {
+    "viewportWidth": 320,
+    "documentScrollWidth": 320,
+    "headerFontSize": "32px",
+    "computedHyphens": "auto",
+    "visibleLineBreaks": [
+      "Frac- / ci\u00f3n",
+      "Deci- / mal",
+      "equiva- / lente"
+    ]
+  },
+  "evidence": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p051-practice-ui-agent-v1/es-320-200-hyphen.png",
+      "sha256": "4ea01436fb328783a84e4458b311093a6e40f77a69eb7f5e52f0f2ea755a996e"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p051-view-v1.css",
+      "sha256": "d09760494bd9f2d9faa592248aadaadc57bb9f39395eeb26fd38ef597dee843d"
+    }
+  ],
+  "supersedes": "Header legibility concern in es-320-200-v3.png; prior browser-practice-ui-verification-v1.json remains original pre-hyphenation evidence.",
+  "limitations": [
+    "Single Chromium fixture screenshot, not full browser support claim or human/Owner acceptance."
+  ]
+}

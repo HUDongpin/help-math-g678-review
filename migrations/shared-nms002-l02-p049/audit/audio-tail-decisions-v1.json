@@ -1,0 +1,74 @@
+{
+  "sourceSha256": "896e38a05c5e6392f7e9284aa278a5b7e10c13b15f7911fa09d1dc9b1de865b2",
+  "classification": "native-playback-decision-draft",
+  "correctFeedback": {
+    "domains": [
+      "sprite-72",
+      "sprite-143",
+      "sprite-153"
+    ],
+    "nonzeroTailSamples": 1650,
+    "tailMilliseconds": 74.82993197278911,
+    "decision": "Retain complete selected correct-feedback stream. Native next-question transition must wait for its audio completion rather than truncating at source callback20. Document this timing adaptation; original runtime overlap not established."
+  },
+  "wrongFeedback": {
+    "domain": "sprite-74",
+    "decision": "Preserve selected branch nonzero tails; S1 gap is silent. Do not play the following randomized branch. Exact source-frame windows to be generated from pinned labels and measured tails."
+  },
+  "click": {
+    "domains": [
+      "sprite-8",
+      "sprite-35",
+      "sprite-117"
+    ],
+    "tailAfterReturnSamples": 1455,
+    "tailPeak": 0,
+    "decision": "Source frame5 return may end click playback; omitted remainder proven silent."
+  },
+  "main": {
+    "domain": "sprite-156",
+    "segments": [
+      {
+        "frame": 5,
+        "sourceStart": 1673,
+        "sourceEnd": 3510,
+        "outputStart": 7350,
+        "outputEnd": 9187
+      },
+      {
+        "frame": 7,
+        "sourceStart": 3510,
+        "sourceEnd": 624495,
+        "outputStart": 11025,
+        "outputEnd": 632010
+      },
+      {
+        "frame": 388,
+        "sourceStart": 624495,
+        "sourceEnd": 712512,
+        "outputStart": 711112,
+        "outputEnd": 799129
+      }
+    ],
+    "gap": "No authored main blocks346..387. Prepared main clock preserves the gap before frame388.",
+    "terminalTailSamples": 1654,
+    "terminalTailPeak": 0,
+    "decision": "Stop at435 without dropping nonzero terminal audio under measured schedule. Correct-vs-not-all-correct branch paths remain distinct.",
+    "maximumTagClockDeltaSamples": 168,
+    "maximumTagClockDeltaMilliseconds": 7.619047619047619,
+    "seamEvidence": {
+      "start": 624384,
+      "end": 624495,
+      "samples": 111,
+      "peak": 0.0,
+      "rms": 0.0
+    }
+  },
+  "openQuestions": [
+    "Match main parent.play next-frame entry precisely to phase boundaries in native state model",
+    "Validate whole-buffer preparation against source sample mapping",
+    "Original-runtime overlap and actual listening remain independent"
+  ],
+  "audioAccepted": false,
+  "originalRuntimeAccepted": false
+}

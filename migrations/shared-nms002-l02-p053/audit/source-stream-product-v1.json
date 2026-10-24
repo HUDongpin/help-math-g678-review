@@ -1,0 +1,72 @@
+{
+  "schema": "nms-l02-p053-source-stream-product-v1",
+  "animationId": "shared-nms002-l02-p053",
+  "disposition": "reusable-source-stream-candidate",
+  "source": {
+    "root": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware",
+    "relativePath": "G6-G8-shared/NMS002/L2/GS/L2GS02.swf",
+    "bytes": 236774,
+    "sha256": "f42f6a4759759561035a7c97e7392241513d0410d69214af422425ef37523fdf",
+    "signature": "CWS",
+    "declaredUncompressedBytes": 311455,
+    "uncompressedSha256": "49e189af6e34bc79cbbd049e8b34bab3671901bba9e89a492514980bc9f4e67e",
+    "rootFrameCount": 10
+  },
+  "stream": {
+    "frameDomain": "sprite-187",
+    "headFrame": 1,
+    "firstBlockFrame": 4,
+    "lastBlockFrame": 694,
+    "blockCount": 619,
+    "declaredSamples": 1135296,
+    "missingFrameRanges": [
+      {
+        "first": 303,
+        "last": 374,
+        "count": 72
+      }
+    ],
+    "emptyPayloadFrames": [
+      5,
+      302
+    ],
+    "negativeSeekFrames": [
+      302
+    ]
+  },
+  "externalFiles": {
+    "mp3": {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p053-source-stream-product-v1/sprite-187-source-stream-v1.mp3",
+      "bytes": 256230,
+      "sha256": "225177c9c27670c636ce383e0ec58e439888b14afa33427a53c14ff1ca7a4e7d"
+    },
+    "rawIndex": {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p053-source-stream-product-v1/raw-block-index-v1.json",
+      "bytes": 447231,
+      "sha256": "71b102949ed66206315863a290691f1f4db1b2331ce3d0283ea90684b0ff8fa8"
+    }
+  },
+  "decode": {
+    "method": "ffprobe-count-frames-and-ffmpeg-full-eof-decode",
+    "codec": "mp3",
+    "sampleRateHz": 22050,
+    "channels": 1,
+    "mp3FramesRead": 1971,
+    "sampleFormat": "signed-16-bit-little-endian",
+    "decodedPcmBytes": 2270592,
+    "decodedSamples": 1135296,
+    "decodedDurationSeconds": 51.48734693877551,
+    "decodedPcmSha256": "df1dbec69ef5e95d71b036e1e8b923a66ed1a6c1db89bab9d24ec1d4c4f453b0",
+    "fullEofDecode": true
+  },
+  "limits": {
+    "sourceTagTimelineOnly": true,
+    "naturalRuntimeAudibilityResolved": false,
+    "headAndBlockSeekRetainedNotApplied": true,
+    "authoredSilenceInAbsentFramesEstablished": false,
+    "audioListeningAccepted": false,
+    "originalRuntimeAccepted": false,
+    "strictComplete": false,
+    "spanishAudioSpliced": false
+  }
+}

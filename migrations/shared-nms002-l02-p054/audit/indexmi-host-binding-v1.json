@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l02-p054",
+  "authority": "source-static-host-binding-only",
+  "hostBinding": {
+    "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/nms-l01-source-host-binding-v1.json",
+    "sha256": "beb92189c1c2d81e035322de426c8f0f07ae02ba03127942236a2a1ca78311f1",
+    "logicalSourcePath": "NewHelpProgram/HELP_COURSES/indexMI.swf"
+  },
+  "hostSource": {
+    "bytes": 689006,
+    "sha256": "275499325edb24daed95952b207d2dd4ed83056ebac54cd0bc911673058086c9",
+    "recoveredCustodyBatch": "historical-courseware-s3-153-v1",
+    "custodyTaskId": "swf-0002",
+    "sourceModified": false
+  },
+  "pageSource": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/GS/L2GS03.swf",
+    "sha256": "06bde171fe294f555f983c15b50afbb53344851cdc2f76e31e5eb5a4719cabb8",
+    "scriptsRoot": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p054-source-audit-gkoof5/scripts",
+    "rootFrame1ActionSha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19",
+    "rootFrame6ActionSha256": "3271a793e3f9600314c6b0facc05023c4f3ed09c116d452966200a5d04735655",
+    "feedbackSprite194Frame27ActionSha256": "185d34e0898833a307b20a529bf106798f240f9832f741d998a06a68a25ffab8",
+    "rootFrameCount": 10,
+    "heldEntryFrame": 6
+  },
+  "lessonXml": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/index.xml",
+    "sha256": "550aee4286e8a701caf3dc58360f709a606561db8b766057ac36720833d7ff61",
+    "activePageRef": "GS/L2GS03.swf"
+  },
+  "swfmillWitness": {
+    "version": "0.3.6",
+    "hostRootFrame": 38,
+    "internalPreloader": {
+      "name": "InternalPreloader",
+      "objectId": 211,
+      "depth": 53,
+      "frameCount": 3,
+      "jumpCheckLabelFrame": 2
+    },
+    "animationContainer": {
+      "name": "animation_mc",
+      "objectId": 204,
+      "hostRootFrame": 38
+    },
+    "pageRootTail": {
+      "gameSpriteObjectId": 731,
+      "gameSpritePlacementFrame": 6,
+      "showFramesAfterPlacement": 4,
+      "nonShowFrameTagsAfterPlacement": 0
+    }
+  },
+  "hostScriptWitnesses": {
+    "nmsCourseGallery": {
+      "relativeToExtraction": "scripts/scripts/frame_49/DoAction.as",
+      "sha256": "713f73c05dba1a9cd080b2a58b9cbfff277f6b5d5aa38136947c5a9013702ba6"
+    },
+    "preloaderFrame2": {
+      "relativeToExtraction": "scripts/scripts/DefineSprite_211/frame_2/DoAction.as",
+      "sha256": "c9fac2f0dc32b210df79d1c8333baf33dd86ea4ba834511dad60f523840fb5e9"
+    },
+    "hostFunctions": {
+      "relativeToExtraction": "scripts/scripts/frame_35/DoAction.as",
+      "sha256": "380cd6581859d0ba9814833f1102b08282198713cf30b5230ce2da76c3e27a74"
+    },
+    "pageObserver": {
+      "relativeToExtraction": "scripts/scripts/frame_50/PlaceObject2_743_130/CLIPACTIONRECORD onClipEvent(enterFrame).as",
+      "sha256": "0f74c16ab4c673bd21f5d82f4c7bd77f2c003198d8870bda7764b3cd7699c035"
+    }
+  },
+  "sourceInterpretation": [
+    "The P054 root frame 1 calls _level0.InternalPreloader.gotoAndPlay(jump_check) and stops; the exact indexMI source places an InternalPreloader instance with that label.",
+    "The host loader uses animation_mc.loadMovie(playSwfFileName,1) and the preloader advances animation_mc to begin after loading; the lesson XML names GS/L2GS03.swf as the active Game 2 page.",
+    "The host frame-50 enterFrame observer calls doCheckPrevAndNext; that function conditionally resumes a non-final non-FQ page when Play is true, CompClick is empty, quizSection is false, and current frame equals CurPlayFrame, then stops at the page root final frame.",
+    "P054 frame 6 itself stops. Root frames 7-10 contain only ShowFrame tags, so any host-driven root continuation has no new root placements, actions, or labels; the placed game sprite can still change on its own nested timeline.",
+    "At the sixth match, feedback sprite 194 frame 27 changes quizSection to false and calls its own nextFrame(); this does not directly advance the game sprite 731 or page root. No original-runtime trace proves the exact execution order, game-to-result transition, or visible terminal state in this host."
+  ],
+  "disposition": "exact-host-source-identified-runtime-path-unverified",
+  "currentJsRegistered": false,
+  "originalRuntimeAccepted": false,
+  "visualFidelityAccepted": false,
+  "audioAccepted": false,
+  "humanAccepted": false,
+  "ownerAccepted": false,
+  "strictComplete": false,
+  "published": false
+}

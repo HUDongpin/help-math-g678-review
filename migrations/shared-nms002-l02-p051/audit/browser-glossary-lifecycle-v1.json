@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l02-p051",
+  "kind": "current-js-independent-glossary-browser-lifecycle",
+  "browserSession": "p051-glossary-lifecycle",
+  "url": "http://127.0.0.1:3471/",
+  "reactStrictMode": true,
+  "checks": {
+    "escapeClosesChild": true,
+    "escapeDoesNotBubbleToParent": true,
+    "focusRestoredToEnabledTrigger": true,
+    "disabledTriggerCannotOpen": true,
+    "disablingWhileOpenLeavesReadableDialog": true,
+    "closeWhileDisabled": true,
+    "languageChangeNoExtraCallbacks": true,
+    "unmountClosesPortal": true,
+    "visibilityRemovalClosesPortal": true,
+    "balancedCallbacks": {
+      "open": 4,
+      "close": 4
+    }
+  },
+  "limits": [
+    "Separate fixture, not actual My Lesson integration.",
+    "Nested wrong-dialog Escape is checked separately by practice UI agent.",
+    "Disabled trigger cannot receive focus on close; no claim of forced focus onto disabled controls.",
+    "An initial immediate post-setState read observed pre-commit DOM; subsequent explicit settled-state waits confirmed cleanup."
+  ],
+  "pins": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p051-glossary-v1.tsx",
+      "sha256": "956a95de299fde990bafe0f9c8706e01d3054dd60d9d76b5c64ddf76e5ebb882"
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/generated/nms-l02-p051-glossary-v1.ts",
+      "sha256": "bdff107b57d47203fa298519d93c5be5264cf28af13eeb5db77fd2751bdac07b"
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p051-glossary-lifecycle-v1/entry.tsx",
+      "sha256": "969c9742759c6e4cd6293dd13989c985697b881f735ecb225ee56a15c6533ab8"
+    }
+  ],
+  "originalRuntimeVerified": false,
+  "humanAcceptance": false
+}

@@ -1,0 +1,28 @@
+{
+  "sourceSha256": "896e38a05c5e6392f7e9284aa278a5b7e10c13b15f7911fa09d1dc9b1de865b2",
+  "sourceBindings": {
+    "helpDomain": "sprite-109",
+    "hintDomain": "sprite-131",
+    "helpGridShape": 104,
+    "hintGridShape": 122,
+    "fractionBarShape": 124,
+    "hintDefinitionText": 121,
+    "hintDecimalText": 123,
+    "hintFractionText": 125,
+    "closeHintButton": 118
+  },
+  "nativePresentationAdapters": [
+    "Add accessible Decimal help heading for firstwrong dialog",
+    "Readable whole-number/decimal group headings clarify source Ones/Decimals group labels",
+    "Standalone Equivalent trigger exposes source button130 dictionary link with accessible text",
+    "Correct/completion status text is native feedback, not a source audio transcript",
+    "Focus returns to MoreHelp after normal help close and first input after firstwrong close"
+  ],
+  "sourceMeaningPreserved": [
+    "Help23/100 and0.23, tenths2hundredths3",
+    "Firstwrong14/100 and0.14 with exact14redcells",
+    "Firstwrong close preserves wrongAttempts1 and restores input",
+    "NestedEscape does not dismiss parentdialog"
+  ],
+  "originalRuntimeAccepted": false
+}

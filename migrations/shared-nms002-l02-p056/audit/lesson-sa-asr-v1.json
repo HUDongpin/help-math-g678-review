@@ -1,0 +1,65 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | DOTPROD = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/peter/.cache/hyperframes/whisper/models/ggml-small.bin",
+		"language": "auto",
+		"translate": false
+	},
+	"result": {
+		"language": "es"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,620"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4620
+			},
+			"text": " El segundo paso es organizar la información que se te presenta en el problema."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,620",
+				"to": "00:00:09,660"
+			},
+			"offsets": {
+				"from": 4620,
+				"to": 9660
+			},
+			"text": " Pregúntate ¿Qué información tengo y qué información necesito?"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:09,660",
+				"to": "00:00:12,160"
+			},
+			"offsets": {
+				"from": 9660,
+				"to": 12160
+			},
+			"text": " Escribe la información en el segundo recuadro."
+		}
+	]
+}

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "animationId": "shared-nms002-l02-p054",
+  "recordedAtUtc": "2026-09-23T10:48:27Z",
+  "authority": "forensic-ruffle-only",
+  "source": {
+    "path": "/Volumes/WestWorld/HELP MATH Related Files/AWS Grade-Classified Courseware/G6-G8-shared/NMS002/L2/GS/L2GS03.swf",
+    "bytes": 2077270,
+    "sha256": "06bde171fe294f555f983c15b50afbb53344851cdc2f76e31e5eb5a4719cabb8",
+    "modifiedForObservation": false
+  },
+  "harness": {
+    "script": "scripts/forensic-nms-l02-p054-ruffle-v1.mjs",
+    "sha256": "57e2772d82cc767eb96b9217793458e6d3100f5290ffa9746fbaa75c03e99e89",
+    "host": "127.0.0.1",
+    "port": 54063,
+    "resourcePolicy": "exact local SWF plus allowlisted installed Ruffle JavaScript/WASM; no remote resource serving",
+    "browserRequestPolicy": "abort every request not starting with http://127.0.0.1:54063/",
+    "browserSession": "p054-forensic-20260923",
+    "browserSessionClosed": true,
+    "localServerStopped": true
+  },
+  "ruffle": {
+    "version": "0.4.1",
+    "renderer": "wgpu-webgl",
+    "apiReadyState": 2,
+    "metadata": {
+      "width": 800,
+      "height": 600,
+      "frameRate": 12,
+      "numFrames": 10,
+      "swfVersion": 6,
+      "backgroundColor": "#B8D8F7",
+      "isActionScript3": false,
+      "uncompressedLength": 2987765
+    }
+  },
+  "requestAudit": {
+    "successfulRequests": [
+      "http://127.0.0.1:54063/",
+      "http://127.0.0.1:54063/ruffle.js",
+      "http://127.0.0.1:54063/",
+      "http://127.0.0.1:54063/ruffle.js",
+      "http://127.0.0.1:54063/core.ruffle.0875e44536e955474b0c.js",
+      "http://127.0.0.1:54063/63468f5322aed2e768a8.wasm",
+      "http://127.0.0.1:54063/source.swf"
+    ],
+    "externalRequestsObserved": 0,
+    "consoleErrors": 0,
+    "consoleWarnings": 0
+  },
+  "sourceEntryEvidence": {
+    "rootFrame1ActionScript": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p054-source-audit-gkoof5/scripts/frame_1/DoAction.as",
+    "rootFrame1ActionSha256": "af7188282949f2613421ba9c8be629f489bbe2ee1e370a072024794b2d2cfc19",
+    "rootFrame1Action": "_level0.InternalPreloader.gotoAndPlay(\"jump_check\"); stop();",
+    "rootPlacedSpriteIds": [103, 731],
+    "bothSpritePlacementFrame": 6,
+    "hostDependencyInterpretation": "The SWF asks an _level0 InternalPreloader to advance while stopping its own root frame 1. A standalone host does not provide that named controller. This is a source-backed host dependency; it does not uniquely prove why Ruffle rendered a blank stage."
+  },
+  "observations": {
+    "loadStatus": "SWF loaded in forensic Ruffle runtime",
+    "stageAppearance": "uniform light-blue stage; no cards, popup, score, or game controls observed",
+    "stageBeforeClick": {
+      "file": "output/playwright/p054-ruffle-stage-20260923T1050Z.png",
+      "sha256": "87207dc5a2e5c96e9d09c01729b642d7e0f3ad836426aedc66fd86f5266b2f0d",
+      "width": 800,
+      "height": 600
+    },
+    "stageAfterCenterClick": {
+      "file": "output/playwright/p054-ruffle-stage-after-click-20260923T1050Z.png",
+      "sha256": "87207dc5a2e5c96e9d09c01729b642d7e0f3ad836426aedc66fd86f5266b2f0d",
+      "width": 800,
+      "height": 600
+    },
+    "centerClickChangedCaptureBytes": false
+  },
+  "disposition": "standalone-forensic-entry-did-not-exercise-game",
+  "nextAction": "Resolve a hash-bound original host/preloader path and permitted local dependencies before natural gameplay observation; do not force a source-modified frame jump into an authoritative trace.",
+  "originalRuntimeAccepted": false,
+  "currentJsRegistered": false,
+  "visualFidelityAccepted": false,
+  "audioAccepted": false,
+  "humanAccepted": false,
+  "ownerAccepted": false,
+  "strictComplete": false,
+  "published": false
+}

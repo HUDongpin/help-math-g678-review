@@ -1,0 +1,300 @@
+{
+  "kind": "p051-browser-practice-ui-verification-v1",
+  "createdAt": "2026-09-22T09:21:11.916639+00:00",
+  "status": "pass",
+  "scope": "Independent ready-state React fixture, real reducer and P051PracticeView; manual phase finish buttons bypass audio timing. Not My Lesson or listening acceptance.",
+  "browserSession": "p051-practice-agent",
+  "fixtureUrl": "http://127.0.0.1:3477/",
+  "interactions": {
+    "correct": "{\"phase\":\"correct-feedback\",\"solved\":[0,2],\"activeItem\":2,\"token\":4,\"replay\":0}",
+    "rows": [
+      {
+        "item": 1,
+        "result": {
+          "phase": "ready",
+          "focus": "1"
+        },
+        "nested": {
+          "wrong": true,
+          "focus": "fraction"
+        }
+      },
+      {
+        "item": 4,
+        "result": {
+          "phase": "ready",
+          "focus": "4"
+        },
+        "nested": {
+          "wrong": true,
+          "focus": "fraction"
+        }
+      },
+      {
+        "item": 6,
+        "result": {
+          "phase": "ready",
+          "focus": "6"
+        },
+        "nested": {
+          "wrong": true,
+          "focus": "fraction"
+        }
+      },
+      {
+        "item": 7,
+        "result": {
+          "phase": "ready",
+          "focus": "7"
+        },
+        "nested": {
+          "wrong": true,
+          "focus": "fraction"
+        }
+      }
+    ],
+    "replay": "{\"phase\":\"ready\",\"solved\":[],\"activeItem\":null,\"token\":15,\"replay\":1}",
+    "pressed": 0
+  },
+  "layout": [
+    {
+      "language": "en",
+      "width": 320,
+      "font": 16,
+      "scroll": 320,
+      "min": 44,
+      "dialogWidth": 288
+    },
+    {
+      "language": "en",
+      "width": 320,
+      "font": 32,
+      "scroll": 320,
+      "min": 71.1875,
+      "dialogWidth": 256
+    },
+    {
+      "language": "en",
+      "width": 390,
+      "font": 16,
+      "scroll": 390,
+      "min": 44,
+      "dialogWidth": 358
+    },
+    {
+      "language": "en",
+      "width": 390,
+      "font": 32,
+      "scroll": 390,
+      "min": 71.1875,
+      "dialogWidth": 326
+    },
+    {
+      "language": "en",
+      "width": 768,
+      "font": 16,
+      "scroll": 768,
+      "min": 44,
+      "dialogWidth": 576
+    },
+    {
+      "language": "en",
+      "width": 768,
+      "font": 32,
+      "scroll": 768,
+      "min": 77.59375,
+      "dialogWidth": 704
+    },
+    {
+      "language": "en",
+      "width": 1280,
+      "font": 16,
+      "scroll": 1280,
+      "min": 44,
+      "dialogWidth": 576
+    },
+    {
+      "language": "en",
+      "width": 1280,
+      "font": 32,
+      "scroll": 1280,
+      "min": 77.59375,
+      "dialogWidth": 1152
+    },
+    {
+      "language": "en",
+      "width": 1920,
+      "font": 16,
+      "scroll": 1920,
+      "min": 44,
+      "dialogWidth": 576
+    },
+    {
+      "language": "en",
+      "width": 1920,
+      "font": 32,
+      "scroll": 1920,
+      "min": 77.59375,
+      "dialogWidth": 1152
+    },
+    {
+      "language": "es",
+      "width": 320,
+      "font": 16,
+      "scroll": 320,
+      "min": 44,
+      "dialogWidth": 288
+    },
+    {
+      "language": "es",
+      "width": 320,
+      "font": 32,
+      "scroll": 320,
+      "min": 71.1875,
+      "dialogWidth": 256
+    },
+    {
+      "language": "es",
+      "width": 390,
+      "font": 16,
+      "scroll": 390,
+      "min": 44,
+      "dialogWidth": 358
+    },
+    {
+      "language": "es",
+      "width": 390,
+      "font": 32,
+      "scroll": 390,
+      "min": 71.1875,
+      "dialogWidth": 326
+    },
+    {
+      "language": "es",
+      "width": 768,
+      "font": 16,
+      "scroll": 768,
+      "min": 44,
+      "dialogWidth": 576
+    },
+    {
+      "language": "es",
+      "width": 768,
+      "font": 32,
+      "scroll": 768,
+      "min": 77.59375,
+      "dialogWidth": 704
+    },
+    {
+      "language": "es",
+      "width": 1280,
+      "font": 16,
+      "scroll": 1280,
+      "min": 44,
+      "dialogWidth": 576
+    },
+    {
+      "language": "es",
+      "width": 1280,
+      "font": 32,
+      "scroll": 1280,
+      "min": 77.59375,
+      "dialogWidth": 1152
+    },
+    {
+      "language": "es",
+      "width": 1920,
+      "font": 16,
+      "scroll": 1920,
+      "min": 44,
+      "dialogWidth": 576
+    },
+    {
+      "language": "es",
+      "width": 1920,
+      "font": 32,
+      "scroll": 1920,
+      "min": 77.59375,
+      "dialogWidth": 1152
+    }
+  ],
+  "visualReview": "Inspected es-320-200-v3.png: semantic fractions and all nine choices visible; small screen uses full-width table followed by source-order choices.",
+  "repairs": [
+    "Initial 320px/200% screenshot showed excessive single-character header wrapping in side-by-side layout. Switched <=600px layout to table then choices.",
+    "First responsive revision allowed long header overflow 331px/320px; preserved layout-v2 failure and restored word wrapping; final 20 profiles passed."
+  ],
+  "evidence": [
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p051-practice-ui-agent-v1/entry.tsx",
+      "sha256": "ecea89e7da4b5559f0e163dbd97b051b0f547029c895af170ca50bfffda9dc2a",
+      "bytes": 1499
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p051-practice-ui-agent-v1/index.html",
+      "sha256": "caae964808c848c1fa9deaf96bc8d09cae5b3ece712532fc9b80220e80a6a3ac",
+      "bytes": 194
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p051-practice-ui-agent-v1/interactions.log",
+      "sha256": "7237d166e86c93d64f3d3f3bfac5d21aea6e36dbb26c002b26cd8347e7a04533",
+      "bytes": 2802
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p051-practice-ui-agent-v1/layout.log",
+      "sha256": "9130f5780899e52393ae0299da15b9428c1256c98de1a4c00d16558091e71a54",
+      "bytes": 2782
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p051-practice-ui-agent-v1/layout-v2.log",
+      "sha256": "104e87a19699e157b12bd7041a80ff6f81fd22e7b09783bfa3ce61af49fdf6e3",
+      "bytes": 107
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p051-practice-ui-agent-v1/layout-v3.log",
+      "sha256": "9130f5780899e52393ae0299da15b9428c1256c98de1a4c00d16558091e71a54",
+      "bytes": 2782
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p051-practice-ui-agent-v1/es-320-200.png",
+      "sha256": "c681337af35863522a6ae74e3fca2496d111372d1625ca7da335ba8f0505d55e",
+      "bytes": 124139
+    },
+    {
+      "path": "/Volumes/American Dream/hudongpin/helpmath-g678-completion-20260909-01a08222/p051-practice-ui-agent-v1/es-320-200-v3.png",
+      "sha256": "060ce8d7440c1eb13bb714ff264f71e29978e2421adb703944a763ad08339ca6",
+      "bytes": 124268
+    }
+  ],
+  "implementation": [
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p051-practice-view-v1.tsx",
+      "sha256": "1ae505754a0133713df2b0d223edd7c50c0fea01353c1bd08e77e8f9a483fe0f",
+      "bytes": 5988
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p051-text-v1.ts",
+      "sha256": "5a1fe493dd1bfea08ffe87a2dc2d2d17d386a3644c714373282593324dc19481",
+      "bytes": 1957
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p051-view-v1.css",
+      "sha256": "3e69abf8fdfcee13264f6a63d497b1d740f812009b61261a6758ce526aa4477b",
+      "bytes": 2955
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p051-practice-v1.ts",
+      "sha256": "408d1a019d5d355c81226328ec4ecfa06628817a9bac451c9e8cc4b9a83acdd7",
+      "bytes": 2138
+    },
+    {
+      "path": "/Volumes/WestWorld/HELP MATH 2.0-g678-implementation/packages/demos/src/nms-l02-p051-glossary-v1.tsx",
+      "sha256": "956a95de299fde990bafe0f9c8706e01d3054dd60d9d76b5c64ddf76e5ebb882",
+      "bytes": 2861
+    }
+  ],
+  "limits": [
+    "Pointer drag tested at desktop 1280px; touch-device pointer behavior not tested.",
+    "200% modeled by root 16px to32px font-size.",
+    "Audio, actual host, original runtime, fidelity, named human/Owner acceptance remain unproven."
+  ]
+}
