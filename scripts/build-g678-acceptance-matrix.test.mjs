@@ -1,7 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import {buildMatrix} from './build-g678-acceptance-matrix.mjs';
+import {
+  buildMatrix,
+  parseLocalOnlyRegistryMetadata,
+} from './build-g678-acceptance-matrix.mjs';
 
 const profile = {
   profileId: 'fixture',
@@ -77,4 +80,63 @@ test('acceptance matrix does not treat a registered page as downstream acceptanc
   assert.equal(nms?.acceptance.fidelity, false);
   assert.equal(nms?.acceptance.audio, false);
   assert.equal(nms?.acceptance.humanVisual, false);
+});
+
+test('calibration evidence reports partial page registration without inventing a whole-lesson preview', () => {
+  const calibrationEvidence = {
+    freeze: {path: 'freeze.json', sha256: 'c'.repeat(64)},
+    privateRegistry: {path: 'private.json', sha256: 'd'.repeat(64)},
+    localRegistry: {path: 'local.ts', sha256: 'e'.repeat(64)},
+    advancedFragment: {path: 'advanced.json', sha256: 'f'.repeat(64)},
+    summary: {
+      calibrationId: 'g678-16-page-product-calibration-v1',
+      frozenCalibrationPlacementCount: 16,
+      sharedGeneratedCandidatePages: 13,
+      advancedGeneratedCandidatePages: 3,
+      registeredCurrentJsPages: 16,
+      localPagePreviews: 16,
+      wholeLessonEngineeringPreviews: 0,
+      advancedRegisteredPages: 3,
+      scaleOutAuthorized: false,
+      productCalibrationPassed: false,
+    },
+  };
+  const matrix = buildMatrix({
+    profile,
+    mapping,
+    profileIdentity: {path: 'fixture-profile', sha256: 'a'.repeat(64)},
+    mappingIdentity: {path: 'fixture-mapping', sha256: 'b'.repeat(64)},
+    calibrationEvidence,
+    registeredByLesson: new Map([['shared-nms002-l01', 1]]),
+  });
+  assert.equal(matrix.funnel.registeredCurrentJsPages, 1);
+  assert.equal(matrix.funnel.engineeringPreviewLessons, 0);
+  assert.equal(matrix.calibration?.advancedRegisteredPages, 3);
+  assert.equal(matrix.source.calibrationFreezeSha256, 'c'.repeat(64));
+  assert.equal(matrix.matrixId, 'g678-current-js-calibration-funnel-v1');
+  assert.equal(matrix.source.scope,
+    'canonical-active-page-only-with-private-local-calibration');
+});
+
+test('local registry parser ignores comments and requires exact key/metadata sets', () => {
+  const key = 'shared-nms002-l01-p001';
+  const source = `
+    // shared-geo001-l01-p001 must not count as a registration.
+    export const registeredLocalOnlyAnimationKeys: readonly string[] =
+      process.env.NODE_ENV === 'production' ? Object.freeze([]) : Object.freeze([
+        '${key}'
+      ]);
+    export const localOnlyAnimationModuleRegistrations =
+      process.env.NODE_ENV === 'production' ? Object.freeze({}) : Object.freeze({
+        '${key}': Object.freeze({maturity: 'private-current-js', scope: 'private-engineering', deploymentScope: 'local-only', calibrationId: 'g678-16-page-product-calibration-v1', freezeManifestSha256: '${'a'.repeat(64)}', moduleSha256: '${'b'.repeat(64)}', timelineSha256: '${'c'.repeat(64)}', runtimeSha256: '${'d'.repeat(64)}'})
+      });
+  `;
+  const parsed = parseLocalOnlyRegistryMetadata(source);
+  assert.deepEqual(parsed.keys, [key]);
+  assert.equal(parsed.records.size, 1);
+  assert.equal(parsed.records.get(key)?.runtimeSha256, 'd'.repeat(64));
+  assert.throws(() => parseLocalOnlyRegistryMetadata(source.replace(
+    `        '${key}'\n`,
+    `        '${key}', '${key}'\n`,
+  )), /repeats|key and metadata sets differ/u);
 });

@@ -122,54 +122,62 @@ export async function generateCompletionLedger({ migrationsRoot = DEFAULT_MIGRAT
   const statusCounts = {};
   let declaredComplete = 0;
 
-  for (const directory of directories) {
-    const source = await readManifest(directory.workspace);
-    const manifest = source.manifest || {};
-    const animationId = manifest.animationId || manifest.id || directory.name;
-    const status = manifest.status || "unreadable";
-    statusCounts[status] = (statusCounts[status] || 0) + 1;
-    if (status === "complete") declaredComplete += 1;
-    let result;
-    try {
-      result = await validateMigration(directory.workspace, {
-        evidenceProjectRoot: path.dirname(resolvedMigrationsRoot),
-      });
-    } catch (error) {
-      result = { ok: false, mode: "strict", errors: [`Validator threw: ${error.message}`], warnings: [] };
-    }
-    const errors = Array.isArray(result.errors) ? result.errors : [];
-    markerInputs.push({
-      workspace: directory.name,
-      animationId,
-      manifestSha256: source.manifestSha256,
-      strict: result.ok === true,
-      errors,
-    });
-    if (result.ok === true) {
-      entries.push({
+  // Independent workspaces can overlap filesystem reads. Keep the fanout
+  // bounded and collect in source order so markers/diagnostics stay identical
+  // to the sequential strict scan.
+  for (let offset = 0; offset < directories.length; offset += 4) {
+    const batch = await Promise.all(directories.slice(offset, offset + 4).map(async (directory) => {
+      const source = await readManifest(directory.workspace);
+      let result;
+      try {
+        result = await validateMigration(directory.workspace, {
+          evidenceProjectRoot: path.dirname(resolvedMigrationsRoot),
+        });
+      } catch (error) {
+        result = { ok: false, mode: "strict", errors: [`Validator threw: ${error.message}`], warnings: [] };
+      }
+      return {directory, source, result};
+    }));
+    for (const {directory, source, result} of batch) {
+      const manifest = source.manifest || {};
+      const animationId = manifest.animationId || manifest.id || directory.name;
+      const status = manifest.status || "unreadable";
+      statusCounts[status] = (statusCounts[status] || 0) + 1;
+      if (status === "complete") declaredComplete += 1;
+      const errors = Array.isArray(result.errors) ? result.errors : [];
+      markerInputs.push({
+        workspace: directory.name,
         animationId,
-        assetId: manifest.assetId,
-        workspace: projectRelative(directory.workspace),
         manifestSha256: source.manifestSha256,
-        route: manifest.implementation?.route || null,
-        registryModule: manifest.implementation.registryModule,
-        validation: {
-          mode: "strict",
-          validatorPath: validator.path,
-          validatorVersion: validator.version,
-          validatorSha256: validator.sha256,
-        },
-        acceptance: acceptanceSummary(manifest),
+        strict: result.ok === true,
+        errors,
       });
-    } else {
-      diagnostics.push({
-        animationId,
-        workspace: projectRelative(directory.workspace),
-        status,
-        manifestSha256: source.manifestSha256,
-        errorCount: errors.length || (source.parseError ? 1 : 0),
-        errors: (errors.length ? errors : source.parseError ? [`Invalid migration.json: ${source.parseError}`] : ["Strict validation did not pass"]).slice(0, 5),
-      });
+      if (result.ok === true) {
+        entries.push({
+          animationId,
+          assetId: manifest.assetId,
+          workspace: projectRelative(directory.workspace),
+          manifestSha256: source.manifestSha256,
+          route: manifest.implementation?.route || null,
+          registryModule: manifest.implementation.registryModule,
+          validation: {
+            mode: "strict",
+            validatorPath: validator.path,
+            validatorVersion: validator.version,
+            validatorSha256: validator.sha256,
+          },
+          acceptance: acceptanceSummary(manifest),
+        });
+      } else {
+        diagnostics.push({
+          animationId,
+          workspace: projectRelative(directory.workspace),
+          status,
+          manifestSha256: source.manifestSha256,
+          errorCount: errors.length || (source.parseError ? 1 : 0),
+          errors: (errors.length ? errors : source.parseError ? [`Invalid migration.json: ${source.parseError}`] : ["Strict validation did not pass"]).slice(0, 5),
+        });
+      }
     }
   }
 
