@@ -271,6 +271,12 @@ export abstract class AVM1 {
       const [v, holder] = s.getWithHolder(name, s);
       if (holder) return [true, v];
     }
+    // tellTarget can change the write target without adding it to a function's
+    // captured scope. Preserve captured/local precedence, then read the target.
+    if (ctx.target instanceof ASObject) {
+      const [v, holder] = ctx.target.getWithHolder(name, ctx.target);
+      if (holder) return [true, v];
+    }
     return [false, undefined];
   }
   getVariable(ctx: Ctx, name: string): any {
